@@ -4,6 +4,7 @@ import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 import type { Cell, Labels } from '../src/analyse.ts';
 import type { Pair } from '../src/data.ts';
+import { parseScore, parseVerdict, unshow } from '../src/judge.ts';
 import { RUN, readJson, walk } from './common.ts';
 
 export type Texts = { A: string; B: string; padded: string | null; ratio: number | null };
@@ -24,7 +25,17 @@ export function loadTexts(pairs: Pair[]): Map<string, Texts> {
 
 export type SavedCell = Cell & { model: string; text: string; usage: { input: number; output: number }; cost: number | null };
 
-export const loadCells = (): SavedCell[] => walk(join(RUN, 'judgments')).map((f) => readJson<SavedCell>(f));
+/**
+ * Every judgment on disk, with its verdict or score read again from the saved reply text, so a fix to the
+ * parser applies to judgments that are already done (the stored verdict is only what was read at the time).
+ */
+export const loadCells = (): SavedCell[] =>
+  walk(join(RUN, 'judgments')).map((f) => {
+    const c = readJson<SavedCell>(f);
+    if (c.kind === 'score') return { ...c, score: parseScore(c.text) };
+    const shown = parseVerdict(c.format, c.text);
+    return { ...c, shown, verdict: shown && unshow(shown, c.order) };
+  });
 
 export const LABELS_PATH = join(RUN, 'labels.json');
 

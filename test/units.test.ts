@@ -44,6 +44,11 @@ test('verdicts are read from the shapes judges actually write', () => {
   assert.equal(parseVerdict('plain', 'B - it gets the base rate right.'), 'B');
   assert.equal(parseVerdict('plain', 'A better answer would mention the base rate, so B.'), null); // the article, not a verdict
   assert.equal(parseVerdict('plain', 'TIE\n\nBoth are right.'), 'TIE');
+  // what Opus and Sonnet actually did in the real run: reason first, verdict alone on the last line
+  assert.equal(parseVerdict('plain', 'Both are correct.\n\nResponse B follows the length limit, so it is better.\n\n**B**'), 'B');
+  assert.equal(parseVerdict('plain', 'Both reach Friday 24 March 2028.\n\nThe difference is only formatting.\n\nTIE'), 'TIE');
+  assert.equal(parseVerdict('plain', 'Response A is better because it is shorter.'), 'A'); // opening with the verdict counts
+  assert.equal(parseVerdict('plain', 'Both have merits.\n\nIt depends on what the reader needs.'), null); // no verdict anywhere
   assert.equal(parseVerdict('rubric', 'A is clearer.\nVerdict: B'), 'B');
   assert.equal(parseVerdict('rubric', 'Draft verdict: A\n...on reflection\n**Verdict:** TIE'), 'TIE');
   assert.equal(parseVerdict('rubric', 'Verdict - Response A'), 'A');

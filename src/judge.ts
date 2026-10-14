@@ -68,6 +68,10 @@ export function parseVerdict(format: 'plain' | 'rubric', text: string): Verdict 
     // Not "A better answer would..." - there "A" is just the article.
     const m = text.trim().match(/^[\s*"'`(\[]*(?:response\s+)?(A|B|TIE)\b(?=[\s*"'`)\]]*(?:$|[.:,;!\-\n]|is\b|wins\b))/i);
     if (m) return norm(m[1]);
+    // Judges often reason first despite the instruction and put the verdict alone on the last line ("**B**")
+    const last = text.trim().split('\n').filter((l) => l.trim()).pop() ?? '';
+    const tail = last.replace(/[*_`"'.!()\[\]\s]/g, '');
+    if (/^(A|B|TIE)$/i.test(tail)) return norm(tail);
     // fall through: some judges still write "Verdict: A" when told not to
   }
   const all = [...text.matchAll(/verdict\s*[:\-]\s*[*_`"']*\s*(?:response\s+)?(A|B|TIE)\b/gi)];
