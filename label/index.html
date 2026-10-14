@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Label pairs</title>
+<style>
+  :root {
+    --bg: #f6f4ef; --card: #ffffff; --ink: #0d1726; --muted: #5b6575; --line: #e2ddd3;
+    --accent: #e0533f; --accent-ink: #ffffff; --blue: #3D5FA8; --soft: #efece5; --ok: #2f7d4f;
+    --mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0b111b; --card: #121a27; --ink: #e8ebf0; --muted: #98a2b3; --line: #243044; --accent: #e85f51; --blue: #6F8CD6; --soft: #182234; --ok: #5fbf86; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  header { position: sticky; top: 0; z-index: 2; background: var(--bg); border-bottom: 1px solid var(--line); padding: 10px 20px; display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+  header h1 { font-size: 15px; margin: 0; font-weight: 650; }
+  .bar { flex: 1; min-width: 160px; height: 6px; background: var(--soft); border-radius: 3px; overflow: hidden; }
+  .bar > i { display: block; height: 100%; background: var(--accent); transition: width .2s; }
+  .count { color: var(--muted); font-variant-numeric: tabular-nums; font-size: 13px; }
+  main { max-width: 1280px; margin: 0 auto; padding: 18px 20px 140px; }
+  .meta { display: flex; gap: 8px; align-items: center; margin-bottom: 10px; flex-wrap: wrap; }
+  .tag { font-size: 12px; padding: 2px 8px; border-radius: 99px; background: var(--soft); color: var(--muted); }
+  .tag.kind { background: var(--blue); color: #fff; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+  .label { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 0 0 6px; font-weight: 600; }
+  .request { max-height: 260px; overflow: auto; }
+  .request.open { max-height: none; }
+  .more { background: none; border: 0; color: var(--blue); cursor: pointer; padding: 6px 0 0; font: inherit; font-size: 13px; }
+  .text { white-space: pre-wrap; overflow-wrap: anywhere; }
+  .text pre { white-space: pre; overflow-x: auto; background: var(--soft); padding: 8px 10px; border-radius: 6px; font: 13px/1.45 var(--mono); margin: 6px 0; }
+  .text code { font: 13px var(--mono); background: var(--soft); padding: 0 3px; border-radius: 3px; }
+  .code-task .request .text { font: 13px/1.45 var(--mono); }
+  .answers { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 14px; }
+  @media (max-width: 800px) { .answers { grid-template-columns: 1fr; } }
+  .answer.picked { outline: 2px solid var(--accent); }
+  .answer.tie { outline: 2px dashed var(--muted); }
+  .ref { margin-top: 14px; border-left: 3px solid var(--blue); }
+  .ref .text { color: var(--muted); }
+  .flag { margin-top: 10px; font-size: 13px; color: var(--accent); }
+  footer { position: fixed; bottom: 0; left: 0; right: 0; background: var(--bg); border-top: 1px solid var(--line); padding: 12px 20px; }
+  .actions { max-width: 1280px; margin: 0 auto; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .actions .q { flex: 1 1 100%; color: var(--muted); font-size: 13px; }
+  button.choice { flex: 1; min-width: 120px; padding: 12px; border-radius: 8px; border: 1px solid var(--line); background: var(--card); color: var(--ink); font: inherit; font-weight: 600; cursor: pointer; }
+  button.choice:hover { border-color: var(--accent); }
+  button.choice.on { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  button.nav { padding: 12px 14px; border-radius: 8px; border: 1px solid var(--line); background: transparent; color: var(--muted); font: inherit; cursor: pointer; }
+  kbd { font: 11px var(--mono); border: 1px solid currentColor; border-radius: 3px; padding: 0 4px; margin-left: 6px; opacity: .7; }
+  .done { text-align: center; padding: 80px 20px; }
+  .err { color: var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Who Judges the Judge - labelling</h1>
+  <div class="bar"><i id="bar" style="width:0"></i></div>
+  <span class="count" id="count"></span>
+</header>
+<main id="main"><p class="count">Loading...</p></main>
+<footer><div class="actions" id="actions"></div></footer>
+<script>
+let items = [], answered = {}, flags = {}, i = 0, shownAt = Date.now();
+
+const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+// Just enough markdown to read answers comfortably: code fences, inline code, bold.
+function md(s) {
+  const parts = esc(s).split(/```[a-zA-Z0-9]*\n?/);
+  return parts.map((p, k) => k % 2 ? `<pre>${p.replace(/\n$/, '')}</pre>` :
+    p.replace(/`([^`\n]+)`/g, '<code>$1</code>').replace(/\*\*([^*\n]+)\*\*/g, '<b>$1</b>')).join('');
+}
+
+async function load() {
+  const r = await fetch('/api/state');
+  const s = await r.json();
+  items = s.items; answered = s.answered; flags = s.flags;
+  i = items.findIndex((it) => !answered[it.key]);
+  if (i < 0) i = items.length;
+  render();
+}
+
+async function save(body) {
+  const r = await fetch('/api/save', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) });
+  if (!r.ok) { alert('Not saved: ' + (await r.json()).error); return false; }
+  return true;
+}
+
+const TITLES = { label: 'Which answer is better?', repeat: 'Second look: which answer is better?', pad: 'Padding check' };
+const CHOICES = {
+  label: [['left', 'Left is better', '1'], ['tie', 'About the same', '2'], ['right', 'Right is better', '3']],
+  repeat: [['left', 'Left is better', '1'], ['tie', 'About the same', '2'], ['right', 'Right is better', '3']],
+  pad: [['ok', 'Adds nothing new', '1'], ['adds', 'Adds content', '3']],
+};
+
+function render() {
+  const done = Object.keys(answered).length;
+  document.getElementById('bar').style.width = (100 * done / items.length) + '%';
+  document.getElementById('count').textContent = `${done} / ${items.length} done`;
+  const main = document.getElementById('main');
+  const actions = document.getElementById('actions');
+  if (i >= items.length) {
+    main.innerHTML = `<div class="done"><h2>All done</h2><p class="count">${done} of ${items.length} answered. Run <code>npm run analyse</code>.</p><p><button class="nav" onclick="go(-1)">Back</button></p></div>`;
+    actions.innerHTML = '';
+    return;
+  }
+  const it = items[i];
+  const pick = answered[it.key];
+  const isPad = it.kind === 'pad';
+  document.body.className = it.task === 'code' ? 'code-task' : '';
+  main.innerHTML = `
+    <div class="meta">
+      <span class="tag kind">${TITLES[it.kind]}</span>
+      <span class="tag">${it.task === 'qa' ? 'Question' : it.task === 'summary' ? 'Summary' : 'Code review'}</span>
+      <span class="tag">${esc(it.topic)}</span>
+      <span class="tag">${i + 1} of ${items.length}</span>
+    </div>
+    <div class="card"><p class="label">User request</p><div class="request" id="req"><div class="text">${md(it.request)}</div></div>
+      <button class="more" id="more" onclick="document.getElementById('req').classList.toggle('open')">Show all / less</button></div>
+    <div class="answers">
+      <div class="card answer ${!isPad && pick === 'left' ? 'picked' : ''} ${pick === 'tie' ? 'tie' : ''}"><p class="label">${isPad ? 'Original' : 'Left'}</p><div class="text">${md(it.left)}</div></div>
+      <div class="card answer ${!isPad && pick === 'right' ? 'picked' : ''} ${pick === 'tie' ? 'tie' : ''}"><p class="label">${isPad ? 'Padded' : 'Right'}</p><div class="text">${md(it.right)}</div></div>
+    </div>
+    ${isPad ? '' : `<div class="card ref"><p class="label">Reference (what a good answer contains)</p><div class="text">${md(it.reference)}</div></div>`}
+    ${flags[it.pair] ? `<p class="flag">Flagged: ${esc(flags[it.pair])}</p>` : ''}`;
+  const req = document.getElementById('req');
+  if (req.scrollHeight <= req.clientHeight + 2) document.getElementById('more').style.display = 'none';
+  actions.innerHTML =
+    `<div class="q">${isPad ? 'Does the padded version add anything the original doesn\'t say (a fact, number, claim, fix, caveat or recommendation)? Ignore wording and length.' : 'Judge on substance: correctness first, then what matters to the reader. Length is not a merit.'}</div>` +
+    `<button class="nav" onclick="go(-1)">Back<kbd>&larr;</kbd></button>` +
+    CHOICES[it.kind].map(([v, t, k]) => `<button class="choice ${pick === v ? 'on' : ''}" onclick="choose('${v}')">${t}<kbd>${k}</kbd></button>`).join('') +
+    `<button class="nav" onclick="flag()">Flag<kbd>F</kbd></button>` +
+    `<button class="nav" onclick="go(1)">Skip<kbd>&rarr;</kbd></button>`;
+  shownAt = Date.now();
+  window.scrollTo(0, 0);
+}
+
+async function choose(v) {
+  const it = items[i];
+  if (!CHOICES[it.kind].some(([c]) => c === v)) return;
+  if (await save({ key: it.key, choice: v, ms: Date.now() - shownAt })) {
+    answered[it.key] = v;
+    const next = items.findIndex((x, k) => k > i && !answered[x.key]);
+    i = next < 0 ? items.findIndex((x) => !answered[x.key]) : next;
+    if (i < 0) i = items.length;
+    render();
+  }
+}
+
+async function flag() {
+  const it = items[i];
+  const note = prompt('What\'s wrong with this item? (e.g. the reference is wrong). Leave empty to clear.', flags[it.pair] || '');
+  if (note === null) return;
+  if (await save({ key: it.key, choice: '', flag: note })) {
+    if (note.trim()) flags[it.pair] = note.trim(); else delete flags[it.pair];
+    render();
+  }
+}
+
+function go(d) { i = Math.max(0, Math.min(items.length, i + d)); render(); }
+
+document.addEventListener('keydown', (e) => {
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  const it = items[i];
+  if (e.key === 'ArrowLeft') return go(-1);
+  if (e.key === 'ArrowRight') return go(1);
+  if (!it) return;
+  if (e.key === 'f' || e.key === 'F') return flag();
+  const c = CHOICES[it.kind].find(([, , k]) => k === e.key);
+  if (c) choose(c[0]);
+});
+
+load().catch((e) => { document.getElementById('main').innerHTML = `<p class="err">Couldn't load: ${esc(String(e))}. Is npm run label running?</p>`; });
+</script>
+</body>
+</html>

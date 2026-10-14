@@ -1,0 +1,322 @@
+[
+  {
+    "id": "code-01",
+    "task": "code",
+    "topic": "usage billing totals",
+    "language": "python",
+    "input": "This runs nightly to bill customers for their metered usage.\n\nimport csv\n\nTAX_RATE = 0.1\n\n\ndef load_usage(path):\n    with open(path, newline=\"\") as f:\n        return [row for row in csv.DictReader(f)]\n\n\ndef invoice_total(rows):\n    subtotal = 0.0\n    for row in rows:\n        subtotal += float(row[\"units\"]) * float(row[\"unit_price\"])\n    tax = subtotal * TAX_RATE\n    return round(subtotal + tax, 2)\n\n\ndef bill_customers(path, charge):\n    by_customer = {}\n    for row in load_usage(path):\n        by_customer.setdefault(row[\"customer_id\"], []).append(row)\n    for customer_id, rows in by_customer.items():\n        amount = invoice_total(rows)\n        if amount > 0:\n            charge(customer_id, int(amount * 100))",
+    "reference": "1. Float money truncated (line 26, with lines 12-16): totals are summed as floats and int(amount * 100) truncates, so 0.29 becomes 28 cents and 1.15 becomes 114. Customers are undercharged by a cent on many invoices. Use Decimal or integer cents and round, not truncate.\n2. Minor: float accumulation on line 14 can drift across many rows before the round on line 16."
+  },
+  {
+    "id": "code-02",
+    "task": "code",
+    "topic": "event normalisation",
+    "language": "python",
+    "input": "Called by the ingest worker for every batch of events pulled off the queue.\n\nimport logging\nfrom datetime import datetime, timezone\n\nlog = logging.getLogger(__name__)\n\n\ndef normalise_event(raw, tags=[]):\n    event = {\n        \"id\": raw[\"id\"],\n        \"type\": raw.get(\"type\", \"unknown\").lower(),\n        \"received_at\": datetime.now(timezone.utc).isoformat(),\n    }\n    if raw.get(\"priority\") == \"high\":\n        tags.append(\"urgent\")\n    if raw.get(\"source\") == \"mobile\":\n        tags.append(\"mobile\")\n    event[\"tags\"] = tags\n    return event\n\n\ndef normalise_batch(raws):\n    out = []\n    for raw in raws:\n        try:\n            out.append(normalise_event(raw))\n        except KeyError:\n            log.warning(\"skipping event with no id: %r\", raw)\n    return out",
+    "reference": "1. Mutable default argument (line 7): tags=[] is created once, so every event that relies on the default shares the same list. After one high-priority event, every later event in the process is tagged 'urgent' (and 'mobile' piles up too), and all events reference the same list object. Use tags=None and create a new list inside.\nNot a problem: catching KeyError in normalise_batch (line 26) only fires for a missing id, which is what the log says; datetime.now(timezone.utc) is correct."
+  },
+  {
+    "id": "code-03",
+    "task": "code",
+    "topic": "order lookup query",
+    "language": "python",
+    "input": "Used by the support portal so staff can look up a customer's orders by email.\n\nimport sqlite3\n\nDB_PATH = \"/var/lib/shop/shop.db\"\n\n\ndef find_orders(customer_email, status=None):\n    conn = sqlite3.connect(DB_PATH)\n    cur = conn.cursor()\n    query = f\"SELECT id, total_cents, status FROM orders WHERE email = '{customer_email}'\"\n    if status:\n        query += \" AND status = ?\"\n        cur.execute(query, (status,))\n    else:\n        cur.execute(query)\n    rows = cur.fetchall()\n    if not rows:\n        return []\n    return [\n        {\"id\": r[0], \"total_cents\": r[1], \"status\": r[2]}\n        for r in rows\n    ]",
+    "reference": "1. SQL injection (line 9): customer_email is interpolated into the query with an f-string, so an input like x' OR '1'='1 returns every order. Pass it as a ? parameter.\n2. Connection never closed (line 7): sqlite3.connect is opened on every call and never closed, leaking file handles in a long-running portal. Use a with block or close it.\nNot a problem: the status filter on lines 11-12 is properly parameterised, and mixing it with the f-string does not break placeholder binding."
+  },
+  {
+    "id": "code-04",
+    "task": "code",
+    "topic": "payment charge retries",
+    "language": "python",
+    "input": "Called from checkout when a customer confirms payment.\n\nimport time\n\nimport requests\n\nPAYMENTS_URL = \"https://payments.internal.example/v1/charges\"\n\n\ndef create_charge(customer_id, amount_cents, max_attempts=3):\n    payload = {\"customer\": customer_id, \"amount\": amount_cents, \"currency\": \"AUD\"}\n    last_error = None\n    for attempt in range(1, max_attempts + 1):\n        try:\n            resp = requests.post(PAYMENTS_URL, json=payload, timeout=10)\n            resp.raise_for_status()\n            return resp.json()[\"charge_id\"]\n        except requests.RequestException as exc:\n            last_error = exc\n            print(f\"charge attempt {attempt} failed: {exc}\")\n            time.sleep(1)\n    raise RuntimeError(f\"charge failed after {max_attempts} attempts\") from last_error",
+    "reference": "1. Retrying a non-idempotent charge (lines 11-19): a timeout or 5xx can happen after the provider has already created the charge, so the retry charges the customer twice. Send an idempotency key with the request or only retry when the charge is known not to exist.\n2. Retries client errors (lines 14 and 16): HTTPError is a RequestException, so a 400 or 402 decline is retried three times. Only retry connection errors, timeouts and 5xx/429.\n3. Fixed 1s sleep with no backoff or jitter (line 19); print instead of logging (line 18) is minor."
+  },
+  {
+    "id": "code-05",
+    "task": "code",
+    "topic": "shift pay DST",
+    "language": "python",
+    "input": "Payroll uses this to work out pay for casual staff shifts entered as Sydney local times.\n\nfrom datetime import datetime\nfrom zoneinfo import ZoneInfo\n\nSYDNEY = ZoneInfo(\"Australia/Sydney\")\nWEEKEND_LOADING = 1.5\n\n\ndef parse_local(ts):\n    return datetime.strptime(ts, \"%Y-%m-%d %H:%M\").replace(tzinfo=SYDNEY)\n\n\ndef shift_hours(start_ts, end_ts):\n    start = parse_local(start_ts)\n    end = parse_local(end_ts)\n    if end <= start:\n        raise ValueError(\"shift must end after it starts\")\n    return (end - start).total_seconds() / 3600\n\n\ndef shift_pay_cents(start_ts, end_ts, base_rate_cents):\n    hours = shift_hours(start_ts, end_ts)\n    rate = base_rate_cents\n    if parse_local(start_ts).weekday() >= 5:\n        rate = base_rate_cents * WEEKEND_LOADING\n    return round(hours * rate)",
+    "reference": "1. DST bug in shift_hours (line 17): subtracting two datetimes that share the same ZoneInfo tzinfo does wall-clock arithmetic and ignores the UTC offset change. A 22:00 to 06:00 shift over the October DST change returns 8.0 hours when 7 were worked, and the April change returns 8.0 instead of 9. Convert both to UTC (astimezone(timezone.utc)) before subtracting.\nNot a problem: .replace(tzinfo=ZoneInfo(...)) on line 9 is correct with zoneinfo (the localize() rule only applies to pytz), and weekday() >= 5 correctly picks Saturday and Sunday."
+  },
+  {
+    "id": "code-06",
+    "task": "code",
+    "topic": "order ownership check",
+    "language": "python",
+    "input": "API handlers call these when a logged-in customer views or cancels an order.\n\nfrom dataclasses import dataclass\n\n\nclass Forbidden(Exception):\n    pass\n\n\n@dataclass\nclass Order:\n    id: int\n    customer_id: int\n    status: str\n    total_cents: int\n\n\ndef get_order_for_user(repo, order_id: int, current_user_id: int) -> Order:\n    order = repo.get_order(order_id)\n    if order is None:\n        raise LookupError(f\"order {order_id} not found\")\n    if order.customer_id is not current_user_id:\n        raise Forbidden(\"not your order\")\n    return order\n\n\ndef cancel_order(repo, order_id: int, current_user_id: int) -> Order:\n    order = get_order_for_user(repo, order_id, current_user_id)\n    if order.status not in (\"pending\", \"paid\"):\n        raise ValueError(f\"cannot cancel order in status {order.status}\")\n    order.status = \"cancelled\"\n    repo.save(order)\n    return order",
+    "reference": "1. Identity comparison on ints (line 20): 'is not' compares object identity, not value. CPython caches only small ints (-5 to 256), so for real customer ids like 1234 loaded from the database and the session, the check fails and customers get Forbidden on their own orders. Use != instead. It works in tests with small ids, which is why it slips through.\nNot a problem: 'is None' on line 18 is the right idiom, and mutating the dataclass before repo.save is fine."
+  },
+  {
+    "id": "code-07",
+    "task": "code",
+    "topic": "CRM contact sync",
+    "language": "python",
+    "input": "Runs hourly to push contacts from our database into the CRM.\n\nimport logging\n\nlog = logging.getLogger(__name__)\nBATCH_SIZE = 500\n\n\ndef chunked(items, size):\n    num_batches = len(items) // size\n    for i in range(num_batches):\n        yield items[i * size:(i + 1) * size]\n\n\ndef sync_contacts(contacts, client):\n    sent = 0\n    for batch in chunked(contacts, BATCH_SIZE):\n        try:\n            client.upsert_contacts(batch)\n            sent += len(batch)\n        except Exception:\n            log.exception(\"batch failed\")\n    log.info(\"synced %d contacts\", sent)\n    return sent",
+    "reference": "1. Off-by-one in chunked (lines 8-10): len(items) // size drops the final partial batch, so with 1,234 contacts only 1,000 are synced and the last 234 are silently never sent; with fewer than 500 contacts nothing is sent at all. Use range(0, len(items), size) or ceil division.\n2. Failed batches are logged and skipped (lines 19-20): the job reports success with a lower count and the failed contacts are not retried, so the caller cannot tell the sync was incomplete. Re-raise or return failures."
+  },
+  {
+    "id": "code-08",
+    "task": "code",
+    "topic": "JSONL import job",
+    "language": "python",
+    "input": "Cron job that imports JSON-lines files dropped into the inbox by a partner's SFTP upload.\n\nimport json\nimport os\n\nINBOX = \"/srv/imports/inbox\"\nDONE = \"/srv/imports/done\"\n\n\ndef read_records(path):\n    f = open(path)\n    records = []\n    for line in f:\n        line = line.strip()\n        if not line:\n            continue\n        records.append(json.loads(line))\n    return records\n\n\ndef process_inbox(save):\n    imported = 0\n    for name in sorted(os.listdir(INBOX)):\n        if not name.endswith(\".jsonl\"):\n            continue\n        path = os.path.join(INBOX, name)\n        try:\n            for record in read_records(path):\n                save(record)\n                imported += 1\n        except Exception:\n            pass\n        os.rename(path, os.path.join(DONE, name))\n    return imported",
+    "reference": "1. Swallowed exception then file moved to done (lines 29-31): any error (bad JSON line, save failure) is ignored with pass and the file is still moved to DONE, so a partly imported file is never retried and the records are lost with no log. Log and leave the file (or move it to a failed folder).\n2. Partly uploaded files (lines 21-31): nothing checks the partner's SFTP upload has finished, so a file still being written is read, imported partially and moved to DONE. Have the partner upload to a temp name and rename, or skip recently modified files.\n3. File never closed (line 9): open() without a with block leaks a handle per file; on an exception mid-read it stays open until GC.\nNot a problem: sorted(os.listdir()) and skipping blank lines are fine."
+  },
+  {
+    "id": "code-09",
+    "task": "code",
+    "topic": "permission cache",
+    "language": "python",
+    "input": "Every API request calls can() to check the user's permissions.\n\n_permission_cache = {}\n\n\ndef get_permissions(db, user_id):\n    if user_id in _permission_cache:\n        return _permission_cache[user_id]\n    rows = db.execute(\n        \"SELECT permission FROM user_permissions WHERE user_id = ?\", (user_id,)\n    ).fetchall()\n    perms = frozenset(r[0] for r in rows)\n    _permission_cache[user_id] = perms\n    return perms\n\n\ndef revoke_permission(db, user_id, permission):\n    db.execute(\n        \"DELETE FROM user_permissions WHERE user_id = ? AND permission = ?\",\n        (user_id, permission),\n    )\n    db.commit()\n\n\ndef can(db, user_id, permission):\n    return permission in get_permissions(db, user_id)",
+    "reference": "1. Cache never invalidated (lines 1-12, 15-20): revoke_permission deletes the row but leaves _permission_cache untouched, so a revoked admin keeps the permission until the process restarts. This is a security problem. Pop the user from the cache on revoke (and on grant), or add a TTL. With several worker processes, each has its own copy, so a shared cache or short TTL is needed.\n2. The module-level dict grows without bound, one entry per user seen (minor)."
+  },
+  {
+    "id": "code-10",
+    "task": "code",
+    "topic": "report download route",
+    "language": "python",
+    "input": "Lets logged-in staff download generated PDF reports by slug.\n\nimport os\nimport re\n\nfrom flask import Flask, abort, send_file\n\napp = Flask(__name__)\nREPORT_DIR = \"/srv/reports\"\nSLUG_RE = re.compile(r\"[a-z0-9-]+\")\n\n\n@app.route(\"/reports/<path:slug>\")\ndef download_report(slug):\n    if not SLUG_RE.match(slug):\n        abort(400)\n    path = os.path.join(REPORT_DIR, slug + \".pdf\")\n    if not os.path.exists(path):\n        abort(404)\n    return send_file(path, mimetype=\"application/pdf\")",
+    "reference": "1. Unanchored regex plus path converter allows traversal (lines 8, 11, 13): re.match only anchors the start, so 'q3/../../../etc/x' passes because it begins with valid characters, and <path:slug> accepts slashes. os.path.join then resolves outside REPORT_DIR, letting a user read any .pdf on the server. Use fullmatch (or ^...$) and a plain <slug> converter, or flask.send_from_directory.\nNot a problem: the os.path.exists check before send_file is fine as a 404 guard."
+  },
+  {
+    "id": "code-11",
+    "task": "code",
+    "topic": "stock reservation lock",
+    "language": "python",
+    "input": "Called from multiple web worker threads when customers add items to their cart.\n\nimport threading\n\n\nclass Inventory:\n    def __init__(self, db):\n        self.db = db\n        self.lock = threading.Lock()\n\n    def available(self, sku):\n        with self.lock:\n            return self.db.get_stock(sku)\n\n    def reserve(self, sku, qty):\n        if self.available(sku) < qty:\n            return False\n        with self.lock:\n            current = self.db.get_stock(sku)\n            self.db.set_stock(sku, current - qty)\n        return True\n\n    def release(self, sku, qty):\n        with self.lock:\n            current = self.db.get_stock(sku)\n            self.db.set_stock(sku, current + qty)",
+    "reference": "1. Check-then-act race in reserve (lines 14-18): the stock check runs under one lock acquisition and the decrement under another, so two threads can both see 5 in stock, both pass the check for 3, and stock goes to -1. The read in line 17 is fresh but nothing re-checks it. Do the check and the decrement inside the same with self.lock block.\nNot a problem: calling available() and then taking the lock is not a deadlock, because available() releases the lock before reserve acquires it again."
+  },
+  {
+    "id": "code-12",
+    "task": "code",
+    "topic": "monthly statement report",
+    "language": "python",
+    "input": "Generates the monthly statement export for the finance team; a month has around 20,000 invoices.\n\ndef monthly_statement(conn, month):\n    invoices = conn.execute(\n        \"SELECT id, customer_id, total_cents FROM invoices \"\n        \"WHERE strftime('%Y-%m', issued_at) = ? ORDER BY customer_id\",\n        (month,),\n    ).fetchall()\n\n    lines = []\n    for invoice_id, customer_id, total_cents in invoices:\n        name, email = conn.execute(\n            \"SELECT name, email FROM customers WHERE id = ?\", (customer_id,)\n        ).fetchone()\n        items = conn.execute(\n            \"SELECT COUNT(*) FROM invoice_items WHERE invoice_id = ?\", (invoice_id,)\n        ).fetchone()[0]\n        lines.append(\n            {\n                \"invoice\": invoice_id,\n                \"customer\": name,\n                \"email\": email,\n                \"items\": items,\n                \"total\": f\"${total_cents / 100:,.2f}\",\n            }\n        )\n    return lines",
+    "reference": "1. N+1 queries (lines 9-15): two extra queries per invoice, so 20,000 invoices means 40,000 round trips. Join customers and a grouped COUNT of invoice_items into the first query.\n2. Missing customer crashes the report (lines 10-12): fetchone() returns None if a customer row was deleted, and unpacking None raises TypeError, killing the whole export. Use a LEFT JOIN or handle None.\nNot a problem: total_cents / 100 in the f-string on line 22 is only for display formatting, so float use there is fine."
+  },
+  {
+    "id": "code-13",
+    "task": "code",
+    "topic": "subscription billing dates",
+    "language": "python",
+    "input": "Used to build the billing schedule when a customer starts a monthly subscription.\n\nfrom datetime import date\n\n\ndef next_billing_date(current: date) -> date:\n    return current.replace(month=current.month + 1)\n\n\ndef billing_schedule(start: date, months: int) -> list[date]:\n    dates = [start]\n    for _ in range(months - 1):\n        dates.append(next_billing_date(dates[-1]))\n    return dates\n\n\ndef prorated_cents(monthly_cents: int, start: date, period_end: date) -> int:\n    days_used = (period_end - start).days\n    days_in_period = 30\n    return monthly_cents * days_used // days_in_period",
+    "reference": "1. next_billing_date crashes (line 5): month + 1 raises ValueError in December (month 13), and replace fails for start days 29-31 when the next month is shorter (31 Jan has no 31 Feb). Every December or end-of-month signup breaks. Roll the year over and clamp the day, computing each date from the start date so a 31st does not drift to the 28th.\n2. Fixed 30-day period in prorated_cents (line 17): a 31-day period charges more than the monthly price and February undercharges. Use the real length of the billing period.\nNot a problem: integer // on cents (line 18) is a deliberate floor and fine."
+  },
+  {
+    "id": "code-14",
+    "task": "code",
+    "topic": "event archiving pagination",
+    "language": "python",
+    "input": "Nightly job that moves old events into cold storage, then deletes them from the live table.\n\nimport sqlite3\n\nBATCH = 100\n\n\ndef archive_old_events(conn: sqlite3.Connection, cutoff: str, archive) -> int:\n    offset = 0\n    archived = 0\n    while True:\n        rows = conn.execute(\n            \"SELECT id, payload FROM events WHERE created_at < ? \"\n            \"ORDER BY id LIMIT ? OFFSET ?\",\n            (cutoff, BATCH, offset),\n        ).fetchall()\n        if not rows:\n            break\n        archive(rows)\n        ids = [r[0] for r in rows]\n        conn.executemany(\"DELETE FROM events WHERE id = ?\", [(i,) for i in ids])\n        conn.commit()\n        archived += len(rows)\n        offset += BATCH\n    return archived",
+    "reference": "1. OFFSET pagination while deleting (lines 10-22): each batch deletes the rows it just read, so the remaining rows shift down, but offset still grows by 100. The second query skips 100 unread rows, and so on. With 350 old events only 200 are archived and 150 stay behind. Since rows are deleted, keep offset at 0 (or page by id > last_id).\nNot a problem: executemany for the deletes and committing per batch are fine."
+  },
+  {
+    "id": "code-15",
+    "task": "code",
+    "topic": "login timestamp update",
+    "language": "typescript",
+    "input": "Called by the auth service after a successful password check.\n\ninterface User {\n  id: string;\n  email: string;\n  lastLoginAt: string | null;\n}\n\ninterface Db {\n  getUser(id: string): Promise<User | null>;\n  updateLastLogin(id: string, at: Date): Promise<void>;\n}\n\nexport async function recordLogin(db: Db, userId: string): Promise<User> {\n  const user = await db.getUser(userId);\n  if (!user) {\n    throw new Error(`unknown user ${userId}`);\n  }\n  db.updateLastLogin(userId, new Date());\n  return { ...user, lastLoginAt: new Date().toISOString() };\n}\n\nexport async function recordLogins(db: Db, userIds: string[]): Promise<User[]> {\n  const results: User[] = [];\n  for (const id of userIds) {\n    results.push(await recordLogin(db, id));\n  }\n  return results;\n}",
+    "reference": "1. Missing await (line 17): db.updateLastLogin is not awaited, so the function returns before the write finishes, and if it rejects the error becomes an unhandled promise rejection (which crashes Node by default) instead of reaching the caller. The returned lastLoginAt can also claim a write that never happened. Await it.\n2. Minor: two separate new Date() calls (lines 17-18) give slightly different timestamps in the database and the response; use one value.\nNot a problem: the sequential await in recordLogins is intentional and correct."
+  },
+  {
+    "id": "code-16",
+    "task": "code",
+    "topic": "cart totals GST",
+    "language": "typescript",
+    "input": "Used on the cart page and again at checkout to show totals.\n\ntype Item = { sku: string; priceCents: number; qty: number };\n\nconst GST_RATE = 0.1;\n\nexport function cartTotals(items: Item[], discountCode?: string) {\n  const subtotalCents = items.reduce((sum, i) => sum + i.priceCents * i.qty, 0);\n  let discountCents = 0;\n  if (discountCode == \"WELCOME10\") {\n    discountCents = Math.round(subtotalCents * 0.1);\n  }\n  const afterDiscount = subtotalCents - discountCents;\n  const gstCents = Math.round(afterDiscount * GST_RATE);\n  return {\n    subtotalCents,\n    discountCents,\n    gstCents,\n    totalCents: afterDiscount + gstCents,\n  };\n}\n\nexport function formatAud(cents: number): string {\n  return `$${(cents / 100).toFixed(2)}`;\n}\n\nexport function sortByPrice(items: Item[]): Item[] {\n  return items.sort((a, b) => a.priceCents - b.priceCents);\n}",
+    "reference": "1. sortByPrice mutates its argument (line 26): Array.prototype.sort sorts in place, so sorting the cart for display reorders the caller's items array too (for example the stored cart). Use [...items].sort() or toSorted().\nNot a problem: == on line 8 compares two strings, so it behaves the same as ===; Math.round on the cent amounts and the GST on the discounted amount are correct; formatAud dividing by 100 is display only."
+  },
+  {
+    "id": "code-17",
+    "task": "code",
+    "topic": "address list pagination",
+    "language": "javascript",
+    "input": "Express route behind login that backs the saved-addresses page in account settings.\n\nconst express = require(\"express\");\nconst router = express.Router();\n\n// Shows a page of a user's saved addresses\nrouter.get(\"/users/:userId/addresses\", async (req, res) => {\n  const page = parseInt(req.query.page) || 1;\n  const pageSize = 20;\n\n  if (req.session.userId !== req.params.userId && !req.session.isAdmin) {\n    return res.status(403).json({ error: \"forbidden\" });\n  }\n\n  const addresses = await req.db.query(\n    \"SELECT id, line1, suburb, postcode FROM addresses WHERE user_id = $1 ORDER BY id LIMIT $2 OFFSET $3\",\n    [req.params.userId, pageSize, page * pageSize]\n  );\n\n  res.json({ page, items: addresses.rows });\n});\n\nmodule.exports = router;",
+    "reference": "1. Off-by-one pagination (line 15): page defaults to 1 but the offset is page * pageSize, so page 1 starts at row 20 and the first 20 addresses are never shown. Use (page - 1) * pageSize.\n2. Negative or huge page values are not validated (line 6): page=-1 gives a negative OFFSET, which Postgres rejects with an error that becomes an unhandled rejection in Express 4.\nNot a problem: the auth check on line 9 compares two strings (session id and route param) and lets admins through, which is intended, assuming the session stores userId as a string."
+  },
+  {
+    "id": "code-18",
+    "task": "code",
+    "topic": "FX rate cache",
+    "language": "typescript",
+    "input": "Used by the invoicing service to convert AUD amounts into the customer's currency.\n\nconst cache = new Map<string, { value: unknown; expiresAt: number }>();\nconst TTL_MS = 60_000;\n\nexport async function cached<T>(key: string, load: () => Promise<T>): Promise<T> {\n  const hit = cache.get(key);\n  if (hit && hit.expiresAt > Date.now()) {\n    return hit.value as T;\n  }\n  const value = await load();\n  cache.set(key, { value, expiresAt: Date.now() + TTL_MS });\n  return value;\n}\n\nexport async function getExchangeRate(from: string, to: string): Promise<number> {\n  return cached(`fx:${from}`, async () => {\n    const res = await fetch(`https://fx.example.internal/rates?from=${from}&to=${to}`);\n    if (!res.ok) {\n      throw new Error(`fx lookup failed: ${res.status}`);\n    }\n    const body = (await res.json()) as { rate: number };\n    return body.rate;\n  });\n}",
+    "reference": "1. Cache key missing the target currency (line 15): the key is fx:${from}, so after an AUD to USD lookup, AUD to EUR returns the cached USD rate for the next minute. Invoices get converted at the wrong rate. Include to in the key.\n2. Concurrent misses all hit the API (lines 5-10): no in-flight promise is cached, so a burst of requests for the same pair fires many lookups (minor).\nNot a problem: errors are thrown before cache.set, so failed lookups are not cached."
+  },
+  {
+    "id": "code-19",
+    "task": "code",
+    "topic": "thumbnail batch resize",
+    "language": "javascript",
+    "input": "CLI script run after a bulk photo upload to make thumbnails.\n\nconst fs = require(\"fs/promises\");\nconst path = require(\"path\");\n\n// Resizes every uploaded image in a folder and records the output paths\nasync function processUploads(dir, resize) {\n  const files = await fs.readdir(dir);\n  const outputs = [];\n\n  files.forEach(async (name) => {\n    if (!/\\.(jpe?g|png)$/i.test(name)) return;\n    const input = path.join(dir, name);\n    const output = path.join(dir, \"thumbs\", name);\n    await resize(input, output, { width: 320 });\n    outputs.push(output);\n  });\n\n  return outputs;\n}\n\nasync function main() {\n  const outputs = await processUploads(process.argv[2], require(\"./resize\"));\n  console.log(`made ${outputs.length} thumbnails`);\n}\n\nmain().catch((err) => {\n  console.error(err);\n  process.exit(1);\n});",
+    "reference": "1. async callback in forEach (lines 9-15): forEach ignores the returned promises, so processUploads returns the empty outputs array straight away and main prints 'made 0 thumbnails'. Any resize error becomes an unhandled rejection instead of reaching main's catch, and the process may exit while work is still running. Use for...of with await or Promise.all(files.map(...)).\n2. The thumbs folder is never created (line 12), so resize may fail on a fresh folder.\nNot a problem: the case-insensitive extension regex is fine."
+  },
+  {
+    "id": "code-20",
+    "task": "code",
+    "topic": "invoice due dates",
+    "language": "typescript",
+    "input": "Drives the 'Due in N days' labels and the overdue list on the invoices page; runs in the browser.\n\nconst MS_PER_DAY = 24 * 60 * 60 * 1000;\n\n// dueDate is a plain \"YYYY-MM-DD\" string from the invoices table\nexport function daysUntil(dueDate: string, now: Date = new Date()): number {\n  const due = new Date(`${dueDate}T00:00:00`);\n  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());\n  return Math.floor((due.getTime() - today.getTime()) / MS_PER_DAY);\n}\n\nexport function reminderLabel(dueDate: string, now: Date = new Date()): string {\n  const days = daysUntil(dueDate, now);\n  if (days < 0) return `Overdue by ${-days} day${days === -1 ? \"\" : \"s\"}`;\n  if (days === 0) return \"Due today\";\n  if (days === 1) return \"Due tomorrow\";\n  return `Due in ${days} days`;\n}\n\nexport function overdueInvoices<T extends { dueDate: string; paid: boolean }>(\n  invoices: T[],\n  now: Date = new Date()\n): T[] {\n  return invoices.filter((inv) => !inv.paid && daysUntil(inv.dueDate, now) < 0);\n}",
+    "reference": "1. DST bug in daysUntil (line 7): both dates are local midnights, so across a daylight saving start the gap is 23 hours short of whole days and Math.floor rounds down. In Sydney, a due date of 10 Oct seen on 1 Oct gives 8 days instead of 9. Use Math.round, or compare UTC dates (Date.UTC on the parts).\nNot a problem: parsing with T00:00:00 and no Z is deliberate so the due date is local midnight like today; the singular/plural check on line 12 is correct."
+  },
+  {
+    "id": "code-21",
+    "task": "code",
+    "topic": "HTTP retry wrapper",
+    "language": "typescript",
+    "input": "Shared fetch wrapper used by several services; issueRefund is called from the support console.\n\nconst RETRYABLE = new Set([429, 502, 503, 504]);\n\nfunction sleep(ms: number) {\n  return new Promise((resolve) => setTimeout(resolve, ms));\n}\n\nexport async function fetchWithRetry(\n  url: string,\n  init: RequestInit = {},\n  maxAttempts = 5\n): Promise<Response> {\n  let attempt = 0;\n  while (true) {\n    attempt++;\n    try {\n      const res = await fetch(url, init);\n      if (!RETRYABLE.has(res.status) || attempt >= maxAttempts) {\n        return res;\n      }\n    } catch (err) {\n      if (attempt >= maxAttempts) throw err;\n    }\n    const backoff = Math.min(30_000, 2 ** attempt * 100);\n    await sleep(backoff + Math.random() * backoff);\n  }\n}\n\nexport async function issueRefund(orderId: string, amountCents: number): Promise<string> {\n  const res = await fetchWithRetry(\"https://payments.example.internal/refunds\", {\n    method: \"POST\",\n    headers: { \"content-type\": \"application/json\" },\n    body: JSON.stringify({ orderId, amountCents }),\n  });\n  if (!res.ok) throw new Error(`refund failed: ${res.status}`);\n  return ((await res.json()) as { refundId: string }).refundId;\n}",
+    "reference": "1. Retrying a non-idempotent POST (lines 29-33): issueRefund goes through fetchWithRetry, which retries on network errors and 502/503/504. A gateway timeout after the payment service has processed the refund leads to a second refund. Send an idempotency key or do not retry POSTs.\n2. Retry-After on 429 is ignored (line 23) (minor).\nNot a problem: the backoff on lines 23-24 is exponential with jitter and capped, operator precedence in 2 ** attempt * 100 is correct, and the while (true) loop always exits via return or throw."
+  },
+  {
+    "id": "code-22",
+    "task": "code",
+    "topic": "admin JWT middleware",
+    "language": "javascript",
+    "input": "Protects the /admin routes of the internal back office.\n\nconst jwt = require(\"jsonwebtoken\");\n\nconst SECRET = process.env.JWT_SECRET;\n\n// Express middleware: only lets admins through to /admin routes\nfunction requireAdmin(req, res, next) {\n  const header = req.headers.authorization || \"\";\n  const token = header.replace(\"Bearer \", \"\");\n  let claims;\n  try {\n    claims = jwt.decode(token);\n  } catch (err) {\n    return res.status(401).json({ error: \"invalid token\" });\n  }\n  if (!claims || claims.role !== \"admin\") {\n    return res.status(403).json({ error: \"admins only\" });\n  }\n  req.user = { id: claims.sub, role: claims.role };\n  next();\n}\n\nmodule.exports = { requireAdmin, SECRET };",
+    "reference": "1. Token not verified (line 11): jwt.decode only base64-decodes the payload and does not check the signature, so anyone can craft a token with role admin and get in. SECRET is loaded but never used. Use jwt.verify(token, SECRET, { algorithms: [...] }), which also checks expiry.\n2. SECRET is exported from the module (line 22), widening who can read it (minor).\n3. replace('Bearer ', '') is not anchored and accepts headers with no Bearer prefix (minor)."
+  },
+  {
+    "id": "code-23",
+    "task": "code",
+    "topic": "sensor reading averages",
+    "language": "typescript",
+    "input": "Builds the averages panel on the cold-room monitoring dashboard.\n\ntype Reading = { sensorId: string; at: string; value: number | null };\n\nexport function averageBySensor(readings: Reading[]): Record<string, number> {\n  const sums: Record<string, { total: number; count: number }> = {};\n  for (const r of readings) {\n    if (!r.value) continue;\n    const s = (sums[r.sensorId] ??= { total: 0, count: 0 });\n    s.total += r.value;\n    s.count += 1;\n  }\n  const out: Record<string, number> = {};\n  for (const [id, { total, count }] of Object.entries(sums)) {\n    out[id] = total / count;\n  }\n  return out;\n}\n\nexport function latestReading(readings: Reading[], sensorId: string): Reading | undefined {\n  return readings\n    .filter((r) => r.sensorId === sensorId)\n    .sort((a, b) => (a.at < b.at ? 1 : -1))[0];\n}",
+    "reference": "1. Falsy check drops zero readings (line 6): !r.value skips 0 as well as null, so a sensor reading 0 degrees and 10 degrees averages to 10 instead of 5. For a cold room, 0 is a normal reading. Use r.value === null (or == null).\nNot a problem: latestReading sorts the new array from filter, so the input is not mutated; ISO timestamps compare correctly as strings, and the ??= initialisation is correct."
+  },
+  {
+    "id": "code-24",
+    "task": "code",
+    "topic": "payment webhook handler",
+    "language": "javascript",
+    "input": "Receives payment events from the provider, which retries deliveries and sometimes sends duplicates at the same time.\n\n// Webhook receiver for payment events from our provider\nconst crypto = require(\"crypto\");\n\nconst processed = new Set();\n\nasync function handleWebhook(req, res, { secret, markInvoicePaid }) {\n  const signature = req.headers[\"x-signature\"];\n  const expected = crypto\n    .createHmac(\"sha256\", secret)\n    .update(req.rawBody)\n    .digest(\"hex\");\n\n  if (signature !== expected) {\n    return res.status(401).send(\"bad signature\");\n  }\n\n  const event = JSON.parse(req.rawBody);\n  if (processed.has(event.id)) {\n    return res.status(200).send(\"duplicate\");\n  }\n\n  if (event.type === \"payment.succeeded\") {\n    await markInvoicePaid(event.data.invoiceId, event.data.amountCents);\n  }\n  processed.add(event.id);\n  res.status(200).send(\"ok\");\n}\n\nmodule.exports = { handleWebhook };",
+    "reference": "1. Duplicate check races with the await (lines 18-25): the event id is only added after markInvoicePaid finishes, so two concurrent deliveries of the same event both pass the check and the invoice is marked paid twice. Add the id before awaiting (removing it on failure) or use a unique constraint in the database.\n2. In-memory Set (line 4) is lost on restart and not shared across instances, so it does not dedupe reliably.\n3. Signature compared with !== (line 13) rather than crypto.timingSafeEqual.\nNot a problem: parsing JSON after verifying the raw body is the right order."
+  },
+  {
+    "id": "code-25",
+    "task": "code",
+    "topic": "login rate limiter",
+    "language": "typescript",
+    "input": "Called on every login attempt to slow down password guessing.\n\nexport class RateLimiter {\n  private hits = new Map<string, number[]>();\n\n  constructor(private limit: number, private windowMs: number) {}\n\n  allow(key: string, now = Date.now()): boolean {\n    const windowStart = now - this.windowMs;\n    const recent = (this.hits.get(key) ?? []).filter((t) => t > windowStart);\n    if (recent.length > this.limit) {\n      this.hits.set(key, recent);\n      return false;\n    }\n    recent.push(now);\n    this.hits.set(key, recent);\n    return true;\n  }\n}\n\n// 5 login attempts per minute per IP\nexport const loginLimiter = new RateLimiter(5, 60_000);\n\nexport function checkLogin(ip: string): { ok: boolean; retryAfterSec?: number } {\n  if (!loginLimiter.allow(ip)) {\n    return { ok: false, retryAfterSec: 60 };\n  }\n  return { ok: true };\n}",
+    "reference": "1. Off-by-one in the limit check (line 9): recent.length > this.limit only blocks once there are already 6 hits, so 6 attempts per minute get through instead of 5. Use >=.\n2. The hits map never removes keys (line 2), so every IP seen stays in memory forever (minor, single process only).\nNot a problem: filtering with t > windowStart correctly keeps a sliding window, and pushing only on allowed attempts is a valid design."
+  },
+  {
+    "id": "code-26",
+    "task": "code",
+    "topic": "order CSV summary",
+    "language": "javascript",
+    "input": "Parses the daily order-lines CSV export for the sales dashboard.\n\n// Groups a flat list of order lines into per-order summaries for the dashboard\nfunction summariseOrders(lines) {\n  const orders = {};\n  for (const line of lines) {\n    if (!orders[line.orderId]) {\n      orders[line.orderId] = { orderId: line.orderId, items: 0, totalCents: 0 };\n    }\n    const o = orders[line.orderId];\n    o.items += line.qty;\n    o.totalCents += line.qty * line.unitCents;\n  }\n  return Object.values(orders);\n}\n\nfunction topOrders(lines, n = 10) {\n  return summariseOrders(lines)\n    .sort((a, b) => b.totalCents - a.totalCents)\n    .slice(0, n);\n}\n\nfunction parseLines(csvText) {\n  return csvText\n    .trim()\n    .split(\"\\n\")\n    .slice(1)\n    .map((row) => {\n      const [orderId, sku, qty, unitCents] = row.split(\",\");\n      return { orderId, sku, qty: qty, unitCents: Number(unitCents) };\n    });\n}\n\nmodule.exports = { summariseOrders, topOrders, parseLines };",
+    "reference": "1. qty left as a string (line 28): parseLines keeps qty as the raw string, so o.items += line.qty on line 9 does string concatenation. Two lines with qty 2 and 3 give items '023' instead of 5. totalCents is still right because * coerces to number, which hides the bug. Use Number(qty).\nNot a problem: slice(1) skips the header row on purpose, the truthiness check on line 5 is fine because the stored value is always an object, and sorting the new array from Object.values does not mutate input."
+  },
+  {
+    "id": "code-27",
+    "task": "code",
+    "topic": "newsletter send loop",
+    "language": "typescript",
+    "input": "Sends the monthly newsletter to opted-in customers; the list is around 80,000 addresses.\n\ninterface Page<T> {\n  items: T[];\n  nextCursor: string | null;\n}\n\ninterface Customer {\n  id: string;\n  email: string;\n  marketingOptIn: boolean;\n}\n\ntype FetchPage = (cursor: string | null) => Promise<Page<Customer>>;\n\nexport async function collectOptedIn(fetchPage: FetchPage): Promise<string[]> {\n  const emails: string[] = [];\n  let cursor: string | null = null;\n  do {\n    const page = await fetchPage(cursor);\n    for (const c of page.items) {\n      if (c.marketingOptIn) emails.push(c.email.toLowerCase());\n    }\n    cursor = page.nextCursor;\n  } while (cursor);\n  return [...new Set(emails)];\n}\n\nexport async function sendNewsletter(\n  fetchPage: FetchPage,\n  send: (to: string) => Promise<void>\n): Promise<number> {\n  const emails = await collectOptedIn(fetchPage);\n  await Promise.all(emails.map((e) => send(e)));\n  return emails.length;\n}",
+    "reference": "1. Unbounded Promise.all over every address (line 32): all 80,000 sends start at once, which will hit the mail provider's rate limits and exhaust sockets. If any send rejects, Promise.all rejects immediately while the rest keep sending, so the job reports failure with no record of who received it and a rerun double-sends. Send in limited-concurrency batches and track successes (Promise.allSettled).\nNot a problem: the do...while with a null starting cursor and the lowercase Set dedupe are correct."
+  },
+  {
+    "id": "code-28",
+    "task": "code",
+    "topic": "wallet transfer transaction",
+    "language": "javascript",
+    "input": "Used by the API to move credit between two customer wallets.\n\nconst { Pool } = require(\"pg\");\nconst pool = new Pool();\n\n// Moves money between two wallets inside one transaction\nasync function transfer(fromId, toId, amountCents) {\n  if (!Number.isInteger(amountCents) || amountCents <= 0) {\n    throw new Error(\"amount must be a positive whole number of cents\");\n  }\n  const client = await pool.connect();\n  try {\n    await client.query(\"BEGIN\");\n    const { rows } = await client.query(\n      \"SELECT balance_cents FROM wallets WHERE id = $1\",\n      [fromId]\n    );\n    if (rows.length === 0) throw new Error(\"source wallet not found\");\n    if (rows[0].balance_cents < amountCents) throw new Error(\"insufficient funds\");\n    await client.query(\n      \"UPDATE wallets SET balance_cents = balance_cents - $1 WHERE id = $2\",\n      [amountCents, fromId]\n    );\n    await client.query(\n      \"UPDATE wallets SET balance_cents = balance_cents + $1 WHERE id = $2\",\n      [amountCents, toId]\n    );\n    await client.query(\"COMMIT\");\n  } catch (err) {\n    await client.query(\"ROLLBACK\");\n    throw err;\n  }\n}\n\nmodule.exports = { transfer };",
+    "reference": "1. Client never released (lines 9-30): there is no finally { client.release() }, so every call leaks a pool connection and the API hangs once the pool (10 by default) is exhausted.\n2. Balance check races (lines 12-17): the SELECT takes no row lock, so two concurrent transfers can both pass the check and overdraw the wallet. Use SELECT ... FOR UPDATE or a conditional UPDATE ... WHERE balance_cents >= $1.\n3. Missing destination wallet (lines 22-25): the UPDATE silently affects 0 rows and the money disappears. Check rowCount.\nNot a problem: the Number.isInteger guard is fine."
+  },
+  {
+    "id": "code-29",
+    "task": "code",
+    "topic": "referral campaign audience",
+    "language": "sql",
+    "input": "Builds the audience for this month's referral email; signups.referrer_id is NULL for people who signed up without a referral.\n\n-- Customers to target with the \"refer a mate\" campaign:\n-- active customers who have never referred anyone yet.\nSELECT\n    c.id,\n    c.email,\n    c.first_name,\n    c.created_at\nFROM customers c\nWHERE c.status = 'active'\n  AND c.marketing_opt_in = 1\n  AND c.id NOT IN (\n      SELECT s.referrer_id\n      FROM signups s\n      WHERE s.created_at >= '2026-01-01'\n  )\n  AND c.created_at < date('now', '-30 days')\nORDER BY c.created_at\nLIMIT 5000;",
+    "reference": "1. NOT IN with NULLs (lines 11-15): signups.referrer_id is NULL for unreferred signups, and c.id NOT IN (..., NULL) evaluates to NULL for every customer who is not in the list, so the query returns no rows at all. Use NOT EXISTS, or add WHERE s.referrer_id IS NOT NULL in the subquery.\n2. Date filter contradicts the intent (line 14): only referrals since 1 January 2026 are excluded, so customers who referred someone before then are still targeted as having never referred anyone. Drop the date condition.\nNot a problem: date('now', '-30 days') and the opt-in filter are fine."
+  },
+  {
+    "id": "code-30",
+    "task": "code",
+    "topic": "support ticket report",
+    "language": "sql",
+    "input": "Weekly report emailed to support team leads.\n\n-- Weekly support report: open tickets per agent, including agents with none,\n-- plus their average first response time in minutes.\nSELECT\n    a.id AS agent_id,\n    a.name AS agent_name,\n    COUNT(*) AS open_tickets,\n    COALESCE(AVG(t.first_response_mins), 0) AS avg_first_response_mins,\n    MAX(t.opened_at) AS latest_ticket\nFROM agents a\nLEFT JOIN tickets t\n    ON t.assignee_id = a.id\n   AND t.status = 'open'\nWHERE a.active = 1\nGROUP BY a.id, a.name\nORDER BY open_tickets DESC, a.name;",
+    "reference": "1. COUNT(*) on a LEFT JOIN (line 6): an agent with no open tickets still has one joined row of NULLs, so COUNT(*) reports 1 open ticket for them. Use COUNT(t.id).\n2. COALESCE(AVG(...), 0) (line 7) shows agents with no tickets as a 0-minute response time, which looks like the best result on the report. Leaving it NULL is clearer (minor).\nNot a problem: putting t.status = 'open' in the ON clause rather than WHERE is correct for a LEFT JOIN and keeps agents with no tickets."
+  },
+  {
+    "id": "code-31",
+    "task": "code",
+    "topic": "audit log export",
+    "language": "sql",
+    "input": "Run in a loop by the export job until it returns fewer than 1000 rows.\n\n-- Export job pulls audit log rows in pages of 1000.\n-- :last_seen is the created_at of the final row from the previous page\n-- (NULL on the first call). created_at is stored to the second.\nSELECT\n    id,\n    actor_id,\n    action,\n    target_type,\n    target_id,\n    created_at\nFROM audit_log\nWHERE tenant_id = :tenant_id\n  AND (\n      :last_seen IS NULL\n      OR created_at > :last_seen\n  )\nORDER BY created_at\nLIMIT 1000;",
+    "reference": "1. Keyset pagination on a non-unique column (lines 15 and 17): created_at is only stored to the second, so several rows can share a timestamp. If a page ends partway through a second, created_at > :last_seen skips the remaining rows from that second, and they are never exported. Page on (created_at, id) with a tie-breaker, ORDER BY created_at, id.\nNot a problem: the :last_seen IS NULL OR ... pattern for the first page is fine."
+  },
+  {
+    "id": "code-32",
+    "task": "code",
+    "topic": "store revenue dashboard",
+    "language": "sql",
+    "input": "Feeds the monthly revenue tiles on the finance dashboard.\n\n-- Finance dashboard: September revenue and average order value per store.\n-- orders.placed_at is an ISO timestamp, e.g. '2026-09-30 14:22:05'.\n-- total_cents and item_count are INTEGER columns.\nSELECT\n    s.id AS store_id,\n    s.name AS store_name,\n    COUNT(o.id) AS orders,\n    SUM(o.total_cents) AS revenue_cents,\n    SUM(o.total_cents) / COUNT(o.id) AS avg_order_cents,\n    SUM(o.item_count) / COUNT(o.id) AS avg_items_per_order\nFROM stores s\nJOIN orders o\n    ON o.store_id = s.id\nWHERE o.placed_at BETWEEN '2026-09-01' AND '2026-09-30'\n  AND o.status <> 'refunded'\nGROUP BY s.id, s.name\nHAVING COUNT(o.id) > 0\nORDER BY revenue_cents DESC;",
+    "reference": "1. BETWEEN drops most of 30 September (line 14): placed_at includes a time, and '2026-09-30 14:22:05' sorts after '2026-09-30', so everything after midnight on the last day is excluded. Use placed_at >= '2026-09-01' AND placed_at < '2026-10-01'.\n2. Integer division (line 10): item_count is INTEGER, so the average items per order truncates (1 and 2 items gives 1, not 1.5). Multiply by 1.0 or CAST to REAL.\nNot a problem: the integer division on line 9 only truncates fractions of a cent, and HAVING COUNT > 0 is redundant but harmless; division by zero cannot happen with an inner join."
+  },
+  {
+    "id": "code-33",
+    "task": "code",
+    "topic": "churn risk query",
+    "language": "sql",
+    "input": "Customer success uses this list to call customers who may cancel.\n\n-- Churn-risk list: every paying customer with the number of successful\n-- payments in the last 90 days. Zero payments means they're at risk.\nSELECT\n    c.id,\n    c.email,\n    c.plan,\n    COUNT(p.id) AS payments_90d,\n    COALESCE(SUM(p.amount_cents), 0) AS paid_90d_cents\nFROM customers c\nLEFT JOIN payments p\n    ON p.customer_id = c.id\n   AND p.paid_at >= date('now', '-90 days')\nWHERE c.plan <> 'free'\n  AND p.status = 'succeeded'\nGROUP BY c.id, c.email, c.plan\nORDER BY payments_90d, c.id;",
+    "reference": "1. WHERE on the outer-joined table (line 14): p.status = 'succeeded' in the WHERE clause removes rows where p is NULL, turning the LEFT JOIN into an inner join. Customers with zero payments, the exact at-risk group the report is for, never appear. Move the status condition into the ON clause.\nNot a problem: COUNT(p.id) is right (COUNT(*) would count 1 for customers without payments), and COALESCE on the SUM is fine."
+  },
+  {
+    "id": "code-34",
+    "task": "code",
+    "topic": "parallel health checks",
+    "language": "go",
+    "input": "Our CI image builds this with Go 1.21; it backs the status page.\n\npackage main\n\nimport (\n\t\"fmt\"\n\t\"sync\"\n)\n\ntype Result struct {\n\tURL    string\n\tStatus int\n}\n\n// checkAll pings every health endpoint in parallel and returns the results.\nfunc checkAll(urls []string, ping func(string) (int, error)) []Result {\n\tvar wg sync.WaitGroup\n\tvar mu sync.Mutex\n\tresults := make([]Result, 0, len(urls))\n\n\tfor _, u := range urls {\n\t\twg.Add(1)\n\t\tgo func() {\n\t\t\tdefer wg.Done()\n\t\t\tstatus, err := ping(u)\n\t\t\tif err != nil {\n\t\t\t\tstatus = 0\n\t\t\t}\n\t\t\tmu.Lock()\n\t\t\tresults = append(results, Result{URL: u, Status: status})\n\t\t\tmu.Unlock()\n\t\t}()\n\t}\n\twg.Wait()\n\treturn results\n}\n\nfunc main() {\n\turls := []string{\"https://a.example.internal/health\", \"https://b.example.internal/health\"}\n\tfor _, r := range checkAll(urls, func(string) (int, error) { return 200, nil }) {\n\t\tfmt.Println(r.URL, r.Status)\n\t}\n}",
+    "reference": "1. Loop variable capture (lines 19-28): before Go 1.22 the goroutines share the single u variable, so by the time they run most of them see the last URL. The results list the same URL several times and other endpoints are never checked. Pass u as an argument to the closure or add u := u inside the loop. (Fixed by the Go 1.22 per-iteration semantics, but this builds with 1.21.)\nNot a problem: the mutex around append and the WaitGroup usage are correct; the result order being non-deterministic is fine for a status page."
+  },
+  {
+    "id": "code-35",
+    "task": "code",
+    "topic": "driver payout CSV",
+    "language": "go",
+    "input": "Reads the weekly payout file before payments go out to drivers.\n\npackage main\n\nimport (\n\t\"encoding/csv\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n)\n\ntype Payout struct {\n\tDriverID string\n\tCents    int64\n}\n\n// loadPayouts reads the weekly payout CSV: driver_id,amount_cents\nfunc loadPayouts(path string) ([]Payout, error) {\n\tf, err := os.Open(path)\n\tif err != nil {\n\t\treturn nil, err\n\t}\n\tdefer f.Close()\n\n\trows, err := csv.NewReader(f).ReadAll()\n\tif err != nil {\n\t\treturn nil, err\n\t}\n\n\tvar payouts []Payout\n\tfor i, row := range rows {\n\t\tif i == 0 {\n\t\t\tcontinue // header\n\t\t}\n\t\tcents, _ := strconv.ParseInt(row[1], 10, 64)\n\t\tpayouts = append(payouts, Payout{DriverID: row[0], Cents: cents})\n\t}\n\treturn payouts, nil\n}\n\nfunc main() {\n\tpayouts, err := loadPayouts(os.Args[1])\n\tif err != nil {\n\t\tfmt.Fprintln(os.Stderr, err)\n\t\tos.Exit(1)\n\t}\n\tvar total int64\n\tfor _, p := range payouts {\n\t\ttotal += p.Cents\n\t}\n\tfmt.Printf(\"%d payouts, total $%d.%02d\\n\", len(payouts), total/100, total%100)\n}",
+    "reference": "1. Ignored parse error (line 33): strconv.ParseInt errors are discarded, so a malformed amount like 12.50 or a blank cell silently becomes 0 and that driver is paid nothing, with no error. Return an error with the line number.\nNot a problem: defer f.Close() after the error check is correct, and csv.Reader enforces the same field count on every row, so row[1] cannot be out of range once the header has two columns; skipping index 0 for the header is fine."
+  },
+  {
+    "id": "code-36",
+    "task": "code",
+    "topic": "tenant token cache",
+    "language": "go",
+    "input": "Shared by all request goroutines in the API gateway to cache upstream tokens.\n\npackage main\n\nimport (\n\t\"fmt\"\n\t\"sync\"\n\t\"time\"\n)\n\ntype entry struct {\n\tvalue     string\n\texpiresAt time.Time\n}\n\n// TokenCache holds short-lived API tokens per tenant.\ntype TokenCache struct {\n\tmu    sync.RWMutex\n\titems map[string]entry\n\tttl   time.Duration\n}\n\nfunc NewTokenCache(ttl time.Duration) *TokenCache {\n\treturn &TokenCache{items: make(map[string]entry), ttl: ttl}\n}\n\nfunc (c *TokenCache) Get(tenant string, fetch func(string) (string, error)) (string, error) {\n\tc.mu.RLock()\n\te, ok := c.items[tenant]\n\tc.mu.RUnlock()\n\tif ok && time.Now().Before(e.expiresAt) {\n\t\treturn e.value, nil\n\t}\n\n\ttoken, err := fetch(tenant)\n\tif err != nil {\n\t\treturn \"\", err\n\t}\n\tc.mu.Lock()\n\tc.items[tenant] = entry{value: token, expiresAt: time.Now().Add(c.ttl)}\n\tc.mu.Unlock()\n\treturn token, nil\n}\n\n// Invalidate drops a tenant's token after the upstream rejects it.\nfunc (c *TokenCache) Invalidate(tenant string) {\n\tc.mu.RLock()\n\tdelete(c.items, tenant)\n\tc.mu.RUnlock()\n}\n\nfunc main() {\n\tc := NewTokenCache(5 * time.Minute)\n\ttok, err := c.Get(\"acme\", func(t string) (string, error) { return \"tok-\" + t, nil })\n\tfmt.Println(tok, err)\n}",
+    "reference": "1. Write under a read lock (lines 44-47): Invalidate deletes from the map while holding only RLock, so it can run at the same time as Get's reads or another Invalidate. Concurrent map writes are a data race and can crash with 'concurrent map read and map write'. Use c.mu.Lock().\nNot a problem: releasing the RLock before calling fetch in Get is deliberate so the network call does not block other readers; at worst two goroutines fetch at once, which is harmless here."
+  },
+  {
+    "id": "code-37",
+    "task": "code",
+    "topic": "invoice list handler",
+    "language": "go",
+    "input": "HTTP handler for the invoices API; X-Account-ID is set by our auth proxy.\n\npackage main\n\nimport (\n\t\"encoding/json\"\n\t\"net/http\"\n\t\"strconv\"\n)\n\ntype Store interface {\n\tListInvoices(accountID string, limit, offset int) ([]Invoice, error)\n}\n\ntype Invoice struct {\n\tID          string `json:\"id\"`\n\tAccountID   string `json:\"account_id\"`\n\tAmountCents int64  `json:\"amount_cents\"`\n}\n\nfunc listInvoicesHandler(store Store) http.HandlerFunc {\n\treturn func(w http.ResponseWriter, r *http.Request) {\n\t\taccountID := r.Header.Get(\"X-Account-ID\")\n\t\tif accountID == \"\" {\n\t\t\thttp.Error(w, \"missing account\", http.StatusUnauthorized)\n\t\t\treturn\n\t\t}\n\t\tlimit, err := strconv.Atoi(r.URL.Query().Get(\"limit\"))\n\t\tif err != nil || limit <= 0 {\n\t\t\tlimit = 50\n\t\t}\n\t\toffset, _ := strconv.Atoi(r.URL.Query().Get(\"offset\"))\n\n\t\tinvoices, err := store.ListInvoices(accountID, limit, offset)\n\t\tif err != nil {\n\t\t\thttp.Error(w, \"could not load invoices\", http.StatusInternalServerError)\n\t\t}\n\t\tw.Header().Set(\"Content-Type\", \"application/json\")\n\t\tjson.NewEncoder(w).Encode(invoices)\n\t}\n}\n\nfunc main() {}",
+    "reference": "1. Missing return after error (lines 33-35): after http.Error the handler falls through, sets the header and writes JSON 'null' after the error text, giving a corrupt response body. Add return.\n2. No upper bound on limit (lines 26-29): a client can ask for limit=1000000 and load every invoice in one request. Cap it.\nNot a problem: ignoring the Atoi error for offset (line 30) is fine because it defaults to 0 (a negative offset is not rejected, which is minor); trusting X-Account-ID is fine given the auth proxy sets it."
+  },
+  {
+    "id": "code-38",
+    "task": "code",
+    "topic": "nightly uploads backup",
+    "language": "bash",
+    "input": "Runs nightly from cron on the web server.\n\n#!/usr/bin/env bash\n# Nightly: back up each site's uploads folder, keep 14 days of archives.\nset -euo pipefail\n\nSRC_ROOT=/srv/sites\nDEST=/backups/uploads\nKEEP_DAYS=14\nSTAMP=$(date +%Y-%m-%d)\n\nmkdir -p \"$DEST\"\n\nfor site_dir in $SRC_ROOT/*/; do\n  site=$(basename $site_dir)\n  archive=\"$DEST/${site}-${STAMP}.tar.gz\"\n  echo \"backing up $site\"\n  tar -czf \"$archive\" -C $site_dir uploads\ndone\n\n# prune old archives\nfind \"$DEST\" -name '*.tar.gz' -mtime +$KEEP_DAYS -print -delete\n\necho \"done: $(ls \"$DEST\" | wc -l) archives on disk\"",
+    "reference": "1. Unquoted paths (lines 13 and 16): glob results on line 12 are not word-split, but $site_dir is unquoted in basename and tar -C, so a site folder with a space (for example 'my site') splits into two words; with set -e the tar failure aborts the whole run and later sites are not backed up. Quote \"$site_dir\".\n2. One site without an uploads folder aborts the run (line 16): tar exits non-zero, set -e stops the script, later sites are skipped and old archives are never pruned. Check the folder exists or handle the failure per site.\nNot a problem: -mtime +$KEEP_DAYS with -delete is correct, and ls | wc -l for a count in the summary message is fine."
+  },
+  {
+    "id": "code-39",
+    "task": "code",
+    "topic": "build cache cleanup",
+    "language": "bash",
+    "input": "Run by the deploy pipeline before each rebuild.\n\n#!/usr/bin/env bash\n# Deploy helper: clears the build cache for one app before a rebuild.\n# Usage: ./clear-cache.sh <app-name>\nset -uo pipefail\n\nAPP_NAME=${1:-}\nCACHE_ROOT=/var/cache/builds\n\nif [ -z \"$APP_NAME\" ]; then\n  echo \"usage: $0 <app-name>\" >&2\n  exit 64\nfi\n\ncd \"$CACHE_ROOT/$APP_NAME\"\necho \"clearing cache in $(pwd)\"\nrm -rf ./*\n\ncount=0\nwhile read -r line; do\n  count=$((count + 1))\ndone < <(find . -type f)\n\nif [[ \"$count\" -eq 0 ]]; then\n  echo \"cache empty\"\nelse\n  echo \"warning: $count files left behind\" >&2\nfi",
+    "reference": "1. Unchecked cd then rm -rf (lines 4, 14, 16): set -e is not set, so if the app folder does not exist the cd fails, the script carries on in the current directory, and rm -rf ./* deletes whatever is there (often the checkout), then still exits 0. Use cd ... || exit 1 or set -e.\n2. APP_NAME is not validated (line 6): '../..' climbs out of CACHE_ROOT.\n3. rm -rf ./* skips dotfiles (line 16), so hidden cache files survive and the script warns but still exits 0 (minor).\nNot a problem: ${1:-} with set -u is correct, and the < <(find ...) process substitution keeps count in the current shell."
+  },
+  {
+    "id": "code-40",
+    "task": "code",
+    "topic": "disk usage alert",
+    "language": "bash",
+    "input": "Runs every 5 minutes from cron on each server; a non-zero exit pages the on-call.\n\n#!/usr/bin/env bash\n# Every 5 min from cron: alert if any disk is over the threshold.\nset -euo pipefail\n\nTHRESHOLD=90\nALERT_URL=\"https://alerts.example.internal/hook\"\nHOST=$(hostname -s)\n\nalerts=0\ndf -P | tail -n +2 | while read -r fs size used avail pct mount; do\n  usage=${pct%\\%}\n  if [ \"$usage\" -gt \"$THRESHOLD\" ]; then\n    echo \"$HOST: $mount at ${usage}%\"\n    curl -fsS -X POST \"$ALERT_URL\" \\\n      --data-urlencode \"text=$HOST: $mount is at ${usage}%\" >/dev/null\n    alerts=$((alerts + 1))\n  fi\ndone\n\nif [ \"$alerts\" -gt 0 ]; then\n  echo \"$alerts alert(s) sent\"\n  exit 1\nfi\necho \"all disks under ${THRESHOLD}%\"",
+    "reference": "1. Counter lost in a pipeline subshell (lines 9-20): the while loop runs in a subshell because it is on the right of a pipe, so alerts=$((alerts + 1)) never changes the outer variable. The script always prints 'all disks under 90%' and exits 0, so the on-call page never fires. Use done < <(df -P | tail -n +2) or shopt -s lastpipe.\nNot a problem: ${pct%\\%} correctly strips the percent sign, and quoting in the curl call is fine."
+  }
+]

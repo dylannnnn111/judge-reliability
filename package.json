@@ -1,0 +1,24 @@
+{
+  "name": "judge-reliability",
+  "version": "0.1.0",
+  "description": "Who judges the judge? A small, careful study of LLM-as-judge bias: position, length and self-preference, against 120 hand-labelled pairs.",
+  "engines": { "node": ">=22.6" },
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-strip-types --no-warnings --test test/*.test.ts",
+    "check-data": "node --experimental-strip-types --no-warnings scripts/check-data.ts",
+    "simulate": "node --experimental-strip-types --no-warnings scripts/simulate.ts",
+    "smoke": "node --experimental-strip-types --no-warnings scripts/smoke.ts",
+    "generate": "node --experimental-strip-types --no-warnings scripts/generate.ts",
+    "pad": "node --experimental-strip-types --no-warnings scripts/pad.ts",
+    "label": "node --experimental-strip-types --no-warnings scripts/label.ts",
+    "judge": "node --experimental-strip-types --no-warnings scripts/judge.ts",
+    "analyse": "node --experimental-strip-types --no-warnings scripts/analyse.ts",
+    "smoke:keychain": "ANTHROPIC_API_KEY=$(security find-generic-password -s aussie-data-mcp-anthropic -w) npm run smoke --",
+    "generate:keychain": "ANTHROPIC_API_KEY=$(security find-generic-password -s aussie-data-mcp-anthropic -w) npm run generate --",
+    "pad:keychain": "ANTHROPIC_API_KEY=$(security find-generic-password -s aussie-data-mcp-anthropic -w) npm run pad --",
+    "judge:keychain": "ANTHROPIC_API_KEY=$(security find-generic-password -s aussie-data-mcp-anthropic -w) npm run judge --"
+  },
+  "license": "MIT",
+  "author": "Dylan Lewis"
+}

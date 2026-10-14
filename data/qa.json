@@ -1,0 +1,282 @@
+[
+  {
+    "id": "qa-01",
+    "task": "qa",
+    "topic": "Base-rate probability",
+    "input": "A condition affects 1% of people. A test detects 90% of people who have it, but also returns a positive result for 9% of people who don't. A randomly chosen person tests positive. What is the probability they have the condition?",
+    "reference": "About 9.2% (0.009 / 0.0981 = 0.0917). Steps: true positives = 1% x 90% = 0.9%; false positives = 99% x 9% = 8.91%; total positives = 9.81%; P(condition | positive) = 0.9 / 9.81. A good answer explains that the low base rate means most positives are false. Common wrong answers: 90% (confusing sensitivity with the posterior) or 91% (1 minus the false-positive rate)."
+  },
+  {
+    "id": "qa-02",
+    "task": "qa",
+    "topic": "Average speed trap",
+    "input": "You drive 160 km to a town at 80 km/h and drive the same 160 km back at 120 km/h. What is your average speed for the whole round trip?",
+    "reference": "96 km/h. Time out = 160/80 = 2 h; time back = 160/120 = 1.333 h; total 320 km in 3.333 h = 96 km/h. It is the harmonic mean, not the arithmetic mean, because more time is spent at the slower speed. Common wrong answer: 100 km/h (simple average of 80 and 120)."
+  },
+  {
+    "id": "qa-03",
+    "task": "qa",
+    "topic": "Percentage points",
+    "input": "A home loan interest rate rises from 4% p.a. to 5% p.a. By what percentage has the interest rate increased?",
+    "reference": "25%. The rate rose by 1 percentage point, which is a 25% relative increase (1 / 4 = 0.25). A good answer distinguishes percentage points (absolute change) from percent (relative change). Common wrong answer: 1% (confusing the 1 percentage point change with a percentage increase). Mentioning that interest payments rise roughly 25% is a fair extra."
+  },
+  {
+    "id": "qa-04",
+    "task": "qa",
+    "topic": "Successive percentage changes",
+    "input": "A $500 jacket has its price raised by 20%, then the new price is discounted by 20%. What is the final price, and what is the overall percentage change from $500?",
+    "reference": "$480, an overall decrease of 4%. Steps: $500 x 1.2 = $600; $600 x 0.8 = $480. The 20% discount applies to a larger base, so it removes more dollars ($120) than the increase added ($100). Overall factor 1.2 x 0.8 = 0.96. Common wrong answer: back to $500 / no change."
+  },
+  {
+    "id": "qa-05",
+    "task": "qa",
+    "topic": "Leap year date arithmetic",
+    "input": "What date and day of the week is exactly 365 days after Thursday 29 February 2024?",
+    "reference": "Friday 28 February 2025. 2025 has no 29 February, and the 365 days from 29 Feb 2024 run to 28 Feb 2025 (366 days would reach 1 March 2025). 365 days = 52 weeks + 1 day, so the weekday moves on by one, from Thursday to Friday. Common wrong answers: 1 March 2025, or keeping the weekday as Thursday, or claiming the date is 29 February 2025 (which does not exist)."
+  },
+  {
+    "id": "qa-06",
+    "task": "qa",
+    "topic": "Date arithmetic leap year",
+    "input": "What date and day of the week is 100 days after Wednesday 15 December 2027?",
+    "reference": "Friday 24 March 2028. Steps: 16 days remain in December (to 31 Dec), 31 in January = 47, 29 in February 2028 (a leap year) = 76, then 24 more days in March = 100. 100 days = 14 weeks + 2 days, so Wednesday + 2 = Friday. Common wrong answer: 25 March 2028 (forgetting that 2028 is a leap year with 29 February), or a weekday off by one."
+  },
+  {
+    "id": "qa-07",
+    "task": "qa",
+    "topic": "Fuel economy conversion",
+    "input": "A US car review quotes fuel economy of 30 miles per US gallon. What is that in litres per 100 km, the unit used in Australia?",
+    "reference": "About 7.8 L/100 km (7.84). Steps: 30 miles = 48.28 km; 1 US gallon = 3.785 L; 48.28 / 3.785 = 12.75 km/L; 100 / 12.75 = 7.84 L/100 km. The unit is inverted (fuel per distance), so the conversion is not a simple multiplication. Common wrong answers: 12.75 (stopping at km/L), or about 9.4 L/100 km (using the 4.546 L imperial gallon instead of the US gallon)."
+  },
+  {
+    "id": "qa-08",
+    "task": "qa",
+    "topic": "Australian standard drinks",
+    "input": "In Australia a standard drink is 10 g of pure alcohol. How many standard drinks are in a 375 mL can of beer that is 4.8% alcohol by volume? (Ethanol density is 0.789 g/mL.)",
+    "reference": "About 1.4 standard drinks. Steps: 375 x 0.048 = 18 mL of ethanol; 18 x 0.789 = 14.2 g; 14.2 / 10 = 1.42. A good answer converts volume of alcohol to mass using the density. Common wrong answer: 1.8 (treating 10 g as 10 mL, i.e. ignoring the density)."
+  },
+  {
+    "id": "qa-09",
+    "task": "qa",
+    "topic": "Clock hands angle",
+    "input": "What is the smaller angle between the hour and minute hands of an analogue clock at 3:15?",
+    "reference": "7.5 degrees. The minute hand is at 90 degrees (pointing at the 3). The hour hand moves 0.5 degrees per minute, so at 3:15 it is at 90 + 15 x 0.5 = 97.5 degrees. The difference is 7.5 degrees. Common wrong answer: 0 degrees (assuming the hour hand sits exactly on the 3)."
+  },
+  {
+    "id": "qa-10",
+    "task": "qa",
+    "topic": "Conditional probability families",
+    "input": "Among all families with exactly two children where at least one child is a girl, what fraction have two girls? Assume each child is independently equally likely to be a boy or a girl.",
+    "reference": "1/3. The equally likely combinations are BB, BG, GB, GG. Conditioning on at least one girl removes BB, leaving BG, GB, GG, of which only GG has two girls. A good answer lists the cases and notes that BG and GB are distinct outcomes. Common wrong answer: 1/2 (treating it as asking about the other child's sex independently, as if a specific child were known to be a girl)."
+  },
+  {
+    "id": "qa-11",
+    "task": "qa",
+    "topic": "Monty Hall variant",
+    "input": "Three doors hide one car and two goats. You pick door 1. The host does NOT know where the car is; he opens door 2 at random and it happens to show a goat. Should you switch to door 3, and what is your chance of winning the car if you do?",
+    "reference": "It makes no difference: switching wins with probability 1/2, and staying also wins with probability 1/2. Because the host opened a door at random, the reveal of a goat is evidence that equally favours door 1 and door 3 (the cases where door 2 would have shown the car are eliminated). Common wrong answer: switch, with 2/3 chance, which only holds in the classic version where the host knowingly always reveals a goat."
+  },
+  {
+    "id": "qa-12",
+    "task": "qa",
+    "topic": "At least one six",
+    "input": "If you roll a fair six-sided die four times, what is the probability of getting at least one six?",
+    "reference": "671/1296, about 51.8%. Use the complement: P(no six in four rolls) = (5/6)^4 = 625/1296, so P(at least one six) = 1 - 625/1296 = 671/1296 = 0.518. Common wrong answer: 4/6 = 66.7% (adding the single-roll probabilities, which double counts rolls with more than one six). This is the Chevalier de Mere problem."
+  },
+  {
+    "id": "qa-13",
+    "task": "qa",
+    "topic": "Knights and knaves",
+    "input": "On an island, knights always tell the truth and knaves always lie. You meet A and B. A says: \"We are both knaves.\" What are A and B?",
+    "reference": "A is a knave and B is a knight. If A were a knight, the statement would be true, making A a knave, which is a contradiction, so A is a knave. Then the statement is false, so they are not both knaves; since A is a knave, B must be a knight. Common wrong answers: both knaves (taking the statement at face value) or saying B cannot be determined."
+  },
+  {
+    "id": "qa-14",
+    "task": "qa",
+    "topic": "Fill and drain rates",
+    "input": "A tap can fill an empty tank in 3 hours. A drain can empty the full tank in 5 hours. If the tank starts empty and both the tap and the drain are open, how long does it take to fill?",
+    "reference": "7.5 hours (7 hours 30 minutes). The tap adds 1/3 of a tank per hour, the drain removes 1/5 per hour, so the net rate is 1/3 - 1/5 = 2/15 of a tank per hour, and 1 / (2/15) = 7.5 hours. Common wrong answers: 2 hours (subtracting times, 5 - 3) or 1.875 hours (adding the rates as if both were filling)."
+  },
+  {
+    "id": "qa-15",
+    "task": "qa",
+    "topic": "Temperature difference conversion",
+    "input": "The overnight low in Sydney is 15 degrees C and the afternoon high is 25 degrees C. By how many degrees Fahrenheit did the temperature rise?",
+    "reference": "18 degrees F. A temperature difference converts with the scale factor only: 10 C-degrees x 9/5 = 18 F-degrees. The +32 offset applies to absolute readings, not differences (15 C = 59 F and 25 C = 77 F, and 77 - 59 = 18). Common wrong answer: 50 degrees F (applying the full formula 10 x 9/5 + 32 to the difference)."
+  },
+  {
+    "id": "qa-16",
+    "task": "qa",
+    "topic": "Largest desert",
+    "input": "What is the largest desert in the world?",
+    "reference": "Antarctica, at about 14 million square km. A desert is defined by very low precipitation, not by heat, and the Antarctic interior receives very little. The Arctic is the second largest. The Sahara (about 9 million square km) is the largest hot desert. Common wrong answer: the Sahara, which is only correct if the answer explicitly says largest hot (or non-polar) desert. A good answer explains the precipitation-based definition."
+  },
+  {
+    "id": "qa-17",
+    "task": "qa",
+    "topic": "Hottest planet",
+    "input": "Which planet in our solar system has the hottest surface, and why?",
+    "reference": "Venus, with an average surface temperature of about 465 degrees C, hotter than Mercury's daytime maximum of about 430 degrees C despite Venus being nearly twice as far from the Sun. The reason is Venus's very thick carbon dioxide atmosphere (surface pressure about 90 times Earth's), which produces a runaway greenhouse effect and keeps temperatures high day and night. Common wrong answer: Mercury, because it is closest to the Sun."
+  },
+  {
+    "id": "qa-18",
+    "task": "qa",
+    "topic": "First Europeans in Australia",
+    "input": "Who were the first Europeans recorded as landing on the Australian mainland, and when?",
+    "reference": "The Dutch, in 1606: Willem Janszoon in the Duyfken charted and landed on the western coast of Cape York Peninsula (Gulf of Carpentaria). Other Dutch landings followed, including Dirk Hartog on Dirk Hartog Island, off the Western Australian coast, in 1616. Common wrong answer: Captain James Cook in 1770, who charted the east coast more than 160 years later. A good answer may note Aboriginal and Torres Strait Islander peoples had lived there for tens of thousands of years."
+  },
+  {
+    "id": "qa-19",
+    "task": "qa",
+    "topic": "Origin of kangaroo",
+    "input": "Where does the English word \"kangaroo\" come from? Is it true it means \"I don't understand\"?",
+    "reference": "No, the \"I don't understand\" story is a myth. The word comes from the Guugu Yimithirr language word \"gangurru\" (a large grey or black kangaroo), recorded by James Cook and Joseph Banks in 1770 near the Endeavour River (present-day Cooktown, Queensland) while the Endeavour was being repaired. Linguist John Haviland's work in the 1970s confirmed the word in Guugu Yimithirr. A good answer rejects the myth and names the language."
+  },
+  {
+    "id": "qa-20",
+    "task": "qa",
+    "topic": "Australian capital and parliament",
+    "input": "What is the capital of Australia, and in what year did Federal Parliament first sit there?",
+    "reference": "Canberra; Federal Parliament first sat there in 1927, when the provisional Parliament House (now Old Parliament House) opened on 9 May 1927. From Federation in 1901 until then Parliament sat in Melbourne. Canberra was chosen as a compromise between rivals Sydney and Melbourne. Common wrong answers: Sydney (largest city) or Melbourne as the capital, or giving 1913 (when Canberra was named) or 1988 (when the current Parliament House opened)."
+  },
+  {
+    "id": "qa-21",
+    "task": "qa",
+    "topic": "Earth-Sun distance",
+    "input": "At what time of year is the Earth closest to the Sun?",
+    "reference": "In early January (perihelion, around 2 to 5 January), at about 147 million km, versus about 152 million km at aphelion in early July. So Earth is closest to the Sun during the Australian summer but the northern winter, which shows distance does not cause the seasons; axial tilt does. Common wrong answer: in (northern) summer, June or July, from the belief that being closer causes summer."
+  },
+  {
+    "id": "qa-22",
+    "task": "qa",
+    "topic": "Draining water direction",
+    "input": "Does water drain from a sink or toilet in the opposite direction in Australia because of the Coriolis effect?",
+    "reference": "No. The Coriolis effect is real but far too weak to control the swirl in a sink or toilet; the direction is set by the basin's shape, the way the water entered, and leftover motion, so drains can swirl either way in either hemisphere. Coriolis does matter at large scales over long times: cyclones rotate clockwise in the Southern Hemisphere and anticlockwise in the Northern. Common wrong answer: yes, drains swirl clockwise in the south."
+  },
+  {
+    "id": "qa-23",
+    "task": "qa",
+    "topic": "0.999 recurring",
+    "input": "Is 0.999... (with the 9s repeating forever) less than 1, or equal to 1?",
+    "reference": "It is exactly equal to 1. Proofs: 1/3 = 0.333..., so 3 x 1/3 = 0.999... = 1; or let x = 0.999..., then 10x = 9.999..., so 9x = 9 and x = 1; or the geometric series 9/10 + 9/100 + ... sums to 1. There is no real number between them. Common wrong answer: it is infinitesimally less than 1. A good answer gives at least one valid argument."
+  },
+  {
+    "id": "qa-24",
+    "task": "qa",
+    "topic": "Tallest mountain",
+    "input": "Mount Everest is the highest mountain above sea level. Is it also the tallest mountain from base to peak, and is its summit the point farthest from Earth's centre?",
+    "reference": "No to both. Everest is highest above sea level (about 8,849 m). Measured base to peak, Mauna Kea in Hawaii is taller, at just over 10,000 m (about 10,210 m) from its base on the sea floor (only about 4,207 m above sea level). The summit farthest from Earth's centre is Chimborazo in Ecuador, because Earth bulges at the equator. Common wrong answer: Everest wins every measure."
+  },
+  {
+    "id": "qa-25",
+    "task": "qa",
+    "topic": "Viking helmets",
+    "input": "Did Viking warriors wear horned helmets?",
+    "reference": "No. There is no evidence that Viking Age warriors wore horned helmets in battle. The best-preserved Viking Age helmet, the Gjermundbu helmet from Norway, is a rounded iron cap with a spectacle guard and no horns (the Yarm helmet from England, identified in 2020, is also hornless). The popular image comes from 19th-century Romanticism, notably costume designs (by Carl Emil Doepler) for the 1876 production of Wagner's Ring cycle. Older Bronze Age horned helmets predate the Vikings by well over a thousand years."
+  },
+  {
+    "id": "qa-26",
+    "task": "qa",
+    "topic": "Sky and sunset colour",
+    "input": "Why is the sky blue during the day but sunsets are red or orange?",
+    "reference": "Points: (1) Rayleigh scattering by molecules much smaller than the wavelength scales roughly with 1/wavelength^4, so blue scatters far more than red and reaches us from all over the sky. (2) At sunset sunlight passes through much more atmosphere, so most blue is scattered out of the direct beam, leaving reds and oranges. (3) Sky is not violet because sunlight has less violet, some is absorbed high up, and eyes are less sensitive to it. Classic errors: reflection of the ocean; dust or water as the main cause of blue."
+  },
+  {
+    "id": "qa-27",
+    "task": "qa",
+    "topic": "Why ice floats",
+    "input": "Why does ice float on water, and why does it matter for life in lakes?",
+    "reference": "Points: (1) Ice is less dense than liquid water (about 0.92 vs 1.00 g/cm3). (2) Hydrogen bonding locks molecules into an open hexagonal lattice when frozen, holding them further apart than in the liquid, where bonds constantly break and molecules pack closer. (3) Floating ice insulates the water below, so lakes freeze from the top down and aquatic life survives. Bonus: liquid water is densest at about 4 degrees C. Classic error: ice floats because of trapped air bubbles."
+  },
+  {
+    "id": "qa-28",
+    "task": "qa",
+    "topic": "Hash table collisions",
+    "input": "How does a hash table handle collisions, and what does that do to performance?",
+    "reference": "Points: (1) A collision is when two keys hash to the same bucket. (2) Separate chaining stores a list (or tree) of entries per bucket; open addressing probes other slots (linear probing, quadratic probing, double hashing). (3) Performance depends on the load factor; tables resize and rehash when it passes a threshold, keeping average lookup O(1). (4) Worst case, e.g. many keys colliding, degrades to O(n). Classic errors: claiming collisions can be avoided entirely, or that lookups are always O(1)."
+  },
+  {
+    "id": "qa-29",
+    "task": "qa",
+    "topic": "Compound vs simple interest",
+    "input": "Why does compound interest beat simple interest over long periods?",
+    "reference": "Points: (1) Simple interest is paid only on the original principal, so growth is linear: P(1 + rt). (2) Compound interest is paid on the principal plus accumulated interest (interest on interest), so growth is exponential: P(1 + r)^t. (3) The gap is small early but widens over time; e.g. $10,000 at 5% for 30 years gives $25,000 simple versus about $43,219 compounded annually. More frequent compounding adds a little more. Classic error: saying compounding means a higher rate, or that the advantage is constant each year."
+  },
+  {
+    "id": "qa-30",
+    "task": "qa",
+    "topic": "What a p-value is",
+    "input": "What is a p-value, and what is it NOT?",
+    "reference": "Points: (1) A p-value is the probability of getting a result at least as extreme as the one observed, assuming the null hypothesis (and model assumptions) are true. (2) It is NOT the probability that the null hypothesis is true, nor the probability the result occurred by chance. (3) It does not measure effect size or practical importance; a tiny effect can be significant with a large sample. (4) p > 0.05 does not prove the null. Classic error: \"p = 0.03 means a 3% chance the null is true\"."
+  },
+  {
+    "id": "qa-31",
+    "task": "qa",
+    "topic": "Reversed seasons",
+    "input": "Why is it summer in Australia when it is winter in Europe?",
+    "reference": "Points: (1) Earth's axis is tilted about 23.4 degrees relative to its orbit, and the tilt stays pointed the same way in space. (2) From about December to February the Southern Hemisphere is tilted towards the Sun, so sunlight hits it more directly (more energy per square metre) and days are longer; the Northern Hemisphere gets the opposite. (3) Distance from the Sun is not the cause; Earth is actually closest in early January. Classic error: Australia is closer to the Sun in its summer."
+  },
+  {
+    "id": "qa-32",
+    "task": "qa",
+    "topic": "Leap year rules",
+    "input": "Why do we have leap years, and why was 1900 not a leap year when 2000 was?",
+    "reference": "Points: (1) The tropical (solar) year is about 365.2422 days, so a 365-day calendar drifts about a quarter-day per year against the seasons. (2) Adding a day every four years (Julian rule) overcorrects to 365.25 days. (3) The Gregorian calendar skips leap years in century years unless divisible by 400: 1900 is not a leap year, 2000 was. This averages 365.2425 days. Classic errors: saying every fourth year is always a leap year, or that 2000 was not one."
+  },
+  {
+    "id": "qa-33",
+    "task": "qa",
+    "topic": "Moon same face",
+    "input": "Why do we always see the same side of the Moon?",
+    "reference": "Points: (1) The Moon is tidally locked: it rotates once on its axis in the same time it takes to orbit Earth (about 27.3 days). (2) Earth's gravity raised tidal bulges in the Moon, and the torque on those bulges slowed its spin over time until rotation and orbit synchronised. (3) Because of libration, about 59% of the surface is visible from Earth over time. Classic errors: claiming the Moon does not rotate, or calling the far side the permanently \"dark side\" (it gets sunlight)."
+  },
+  {
+    "id": "qa-34",
+    "task": "qa",
+    "topic": "Public-key encryption",
+    "input": "How can two strangers set up an encrypted connection over the internet without sharing a secret key in advance?",
+    "reference": "Points: (1) Public-key cryptography uses a key pair: a public key anyone can have and a private key kept secret. (2) A key exchange (e.g. Diffie-Hellman) or encrypting with the other party's public key lets both sides agree on a shared secret that an eavesdropper cannot compute. (3) That secret then becomes a fast symmetric session key. (4) Authenticity needs certificates or signatures (e.g. from a certificate authority) to stop man-in-the-middle attacks. Classic error: encrypting with your private key for confidentiality."
+  },
+  {
+    "id": "qa-35",
+    "task": "qa",
+    "topic": "Antibiotics and viruses",
+    "input": "Why don't antibiotics work against viruses, and how does antibiotic resistance develop?",
+    "reference": "Points: (1) Antibiotics target structures and processes specific to bacteria, such as peptidoglycan cell walls or bacterial (70S) ribosomes. (2) Viruses lack these; they replicate inside host cells using the host's machinery, so there is nothing for antibiotics to hit. (3) Resistance arises by natural selection: bacteria with resistance mutations or genes (including those gained by horizontal gene transfer) survive treatment and multiply. Classic error: saying the person's body becomes resistant to antibiotics, or that bacteria deliberately adapt."
+  },
+  {
+    "id": "qa-36",
+    "task": "qa",
+    "topic": "How wings make lift",
+    "input": "How does an aeroplane wing generate lift?",
+    "reference": "Points: (1) The wing, through its shape and angle of attack, turns airflow downward; by Newton's third law the air pushes it up. (2) Equivalently, air over the top moves faster with lower pressure than below, and this pressure difference is the lift force (Bernoulli; both descriptions are consistent). (3) Angle of attack is crucial, which is why planes can fly upside down and why too high an angle causes a stall. Classic error: the equal-transit-time myth, that air over the top must rejoin air underneath at the trailing edge."
+  },
+  {
+    "id": "qa-37",
+    "task": "qa",
+    "topic": "Why Uluru is red",
+    "input": "Why is Uluru red?",
+    "reference": "Points: (1) Uluru is made of arkose, a coarse sandstone rich in feldspar. (2) Its red colour comes from iron-bearing minerals in the rock oxidising (rusting) at the surface, forming iron oxide. (3) Fresh, unweathered rock inside is grey, as seen in some eroded or broken surfaces. A good answer may mention the colour changes with sunlight at sunrise and sunset. Classic errors: saying Uluru is granite, or that it is red because it is covered in red desert sand or dust."
+  },
+  {
+    "id": "qa-38",
+    "task": "qa",
+    "topic": "Antarctic ozone hole",
+    "input": "Why does the ozone hole form over Antarctica, and why mainly in spring?",
+    "reference": "Points: (1) Chlorine and bromine from CFCs and halons are the ozone-destroying agents. (2) The extremely cold Antarctic winter stratosphere, isolated by the polar vortex, forms polar stratospheric clouds, on whose surfaces stable chlorine reservoirs (HCl, ClONO2) are converted into reactive forms such as Cl2. (3) When sunlight returns in spring (September to October), it releases chlorine atoms that destroy ozone rapidly. Classic errors: blaming carbon dioxide or the greenhouse effect, or saying the hole lets heat in and causes global warming."
+  },
+  {
+    "id": "qa-39",
+    "task": "qa",
+    "topic": "Floating point sum",
+    "input": "Why does 0.1 + 0.2 not equal 0.3 exactly in most programming languages?",
+    "reference": "Points: (1) Most languages use binary floating point (IEEE 754 doubles). (2) 0.1 and 0.2 have infinitely repeating binary expansions, like 1/3 in decimal, so they are stored as the nearest representable values, slightly off. (3) The rounding errors add up so the result is 0.30000000000000004, which differs from the stored value nearest 0.3. (4) Fixes: compare within a tolerance, or use decimal or integer types (e.g. cents) for money. Classic error: calling it a language bug."
+  },
+  {
+    "id": "qa-40",
+    "task": "qa",
+    "topic": "Lightning and thunder",
+    "input": "Why do you see lightning before you hear the thunder, and how can you estimate how far away a strike was?",
+    "reference": "Points: (1) Light travels at about 300,000 km/s, so it arrives effectively instantly; sound travels at about 343 m/s in air at 20 degrees C. (2) Thunder is the sound of air expanding explosively after being heated by the lightning channel, so both are produced at the same time. (3) Count the seconds between flash and thunder and divide by 3 for kilometres (about 3 seconds per km). Classic errors: dividing by 5 for km (that rule gives miles), or saying thunder happens after the lightning."
+  }
+]
