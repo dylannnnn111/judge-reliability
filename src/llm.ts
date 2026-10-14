@@ -3,7 +3,7 @@
 
 export type Request = { system: string; user: string; maxTokens: number; temperature?: number };
 export type Usage = { input: number; output: number };
-export type Reply = { text: string; usage: Usage; stop: string };
+export type Reply = { text: string; usage: Usage; stop: string; blocks?: string[] }; // blocks: content block types, e.g. ['thinking', 'text']
 
 /** Anything that answers a request. The real ones call an API; tests and the simulation use fakes. */
 export type Model = (req: Request) => Promise<Reply>;
@@ -43,7 +43,7 @@ export function claude(model: string, apiKey: string): Model {
       usage: { input_tokens: number; output_tokens: number };
     };
     const text = res.content.filter((b) => b.type === 'text').map((b) => b.text).join('');
-    return { text, stop: res.stop_reason, usage: { input: res.usage.input_tokens, output: res.usage.output_tokens } };
+    return { text, stop: res.stop_reason, blocks: res.content.map((b) => b.type), usage: { input: res.usage.input_tokens, output: res.usage.output_tokens } };
   };
 }
 

@@ -35,7 +35,7 @@ export function pairPrompt(format: 'plain' | 'rubric', item: Item, first: string
     return {
       system: JUDGE_SYSTEM,
       user: `${head}\n\nWhich response is better? Reply with exactly one of: A, B, TIE.`,
-      maxTokens: 10,
+      maxTokens: 4000, // the reply is one token, but models that think first spend their thinking out of this
     };
   }
   return {
@@ -44,7 +44,7 @@ export function pairPrompt(format: 'plain' | 'rubric', item: Item, first: string
       `${head}\n\nCompare the two responses on ${CRITERIA[item.task]}. ${LENGTH_NOTE} ` +
       'The order the responses are shown in has no meaning. Use TIE only if neither is better in any way that matters.\n\n' +
       'Think it through in a few sentences, then finish with a final line in exactly this form:\nVerdict: A\nor\nVerdict: B\nor\nVerdict: TIE',
-    maxTokens: 800,
+    maxTokens: 8000,
   };
 }
 
@@ -56,7 +56,7 @@ export function scorePrompt(item: Item, answer: string): Request {
       `${block('User request', requestText(item))}\n\n${block('Response', answer)}\n\n` +
       `Score the response from 1 to 10 on ${CRITERIA[item.task]}. ${LENGTH_NOTE}\n\n` +
       'Think it through in a few sentences, then finish with a final line in exactly this form:\nScore: N',
-    maxTokens: 600,
+    maxTokens: 8000,
   };
 }
 

@@ -128,4 +128,12 @@ test('generate, pad, judge, label and analyse, start to finish', { timeout: 1200
   assert.ok(r('haiku', 'score').verbosity.est > 0);
   assert.equal(r('opus', 'plain').verbosity.est, 0); // order bias only: padding changes nothing
   assert.ok(!existsSync('results.json') || !readFileSync('results.json', 'utf8').includes(NAME)); // test runs never touch the root copy
+
+  // smoke: runs every kind of call per model and saves the measured output tokens for the cost estimates.
+  // The fake answers are wrong on purpose, so smoke flags them and exits non-zero; that's expected here.
+  const before = calls;
+  await step('smoke').catch(() => {});
+  assert.equal(calls - before, 12);
+  const smoke = JSON.parse(readFileSync(`runs/${NAME}/smoke.json`, 'utf8'));
+  assert.deepEqual(Object.keys(smoke.outputTokens['claude-opus-9']).sort(), ['answer', 'plain', 'rubric', 'score']);
 });

@@ -6,7 +6,7 @@ import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { AUTHOR_SYSTEM, buildPairs, loadItems, requestText } from '../src/data.ts';
 import { modelFor } from '../src/llm.ts';
-import { DRY, MODELS, RUN, costOf, modelIds, money, pool, priceFor, tokensIn, writeJson } from './common.ts';
+import { costOf, DRY, modelIds, MODELS, money, outTokens, pool, priceFor, RUN, tokensIn, writeJson } from './common.ts';
 
 const pairs = buildPairs(loadItems(), MODELS);
 const ids = await modelIds(MODELS);
@@ -17,7 +17,7 @@ console.log(`${jobs.length} answers, ${jobs.length - todo.length} already done, 
 if (DRY) {
   const est = todo.reduce((s, j) => {
     const p = priceFor(ids[j.alias]);
-    return s + (p ? (tokensIn(requestText(j.item)) * p.input + 250 * p.output) / 1e6 : 0);
+    return s + (p ? (tokensIn(requestText(j.item)) * p.input + outTokens(ids[j.alias], 'answer', 250) * p.output) / 1e6 : 0);
   }, 0);
   console.log(`Rough cost: ${money(est)}`);
   process.exit(0);
@@ -27,7 +27,7 @@ await pool(
   todo,
   async ({ item, alias, path }) => {
     const model = ids[alias];
-    const reply = await modelFor(model)({ system: AUTHOR_SYSTEM, user: requestText(item), maxTokens: 700 });
+    const reply = await modelFor(model)({ system: AUTHOR_SYSTEM, user: requestText(item), maxTokens: 6000 });
     if (reply.stop === 'max_tokens') console.warn(`  ${item.id} ${alias}: hit the token limit, answer is cut off`);
     writeJson(path, { item: item.id, alias, model, text: reply.text.trim(), stop: reply.stop, usage: reply.usage, cost: costOf(model, reply.usage), at: new Date().toISOString() });
   },

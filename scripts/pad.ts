@@ -39,11 +39,11 @@ await pool(
     if (!existsSync(ansPath)) throw new Error(`${p.id}: no answer from ${author} yet - run npm run generate first`);
     const original = readJson<{ text: string }>(ansPath).text;
     const call = modelFor(model);
-    let reply = await call({ system: PAD_SYSTEM, user: padPrompt(original), maxTokens: 1500 });
+    let reply = await call({ system: PAD_SYSTEM, user: padPrompt(original), maxTokens: 8000 });
     let usage = reply.usage;
     if (words(reply.text) / words(original) < 1.5) {
       // too short: one more go, asking harder
-      reply = await call({ system: PAD_SYSTEM, user: padPrompt(original, true), maxTokens: 1500 });
+      reply = await call({ system: PAD_SYSTEM, user: padPrompt(original, true), maxTokens: 8000 });
       usage = { input: usage.input + reply.usage.input, output: usage.output + reply.usage.output };
     }
     const text = reply.text.trim();

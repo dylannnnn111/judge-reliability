@@ -106,6 +106,15 @@ export async function pool<T>(jobs: T[], work: (job: T) => Promise<void>, label 
   if (failed) console.log(`${failed} failed - run the same command again to retry just those.`);
 }
 
+/**
+ * Output tokens one call of this kind takes for this model (thinking included), as measured by
+ * npm run smoke. Falls back to a guess when smoke hasn't been run for that model.
+ */
+export function outTokens(modelId: string, kind: 'answer' | 'plain' | 'rubric' | 'score', fallback: number): number {
+  const s = readJson<{ outputTokens: Record<string, Record<string, number>> }>(join(RUN, 'smoke.json'), { outputTokens: {} });
+  return s.outputTokens[modelId]?.[kind] ?? fallback;
+}
+
 /** Rough token count for dry-run estimates (about 3.5 characters per token for English and code). */
 export const tokensIn = (s: string) => Math.ceil(s.length / 3.5);
 

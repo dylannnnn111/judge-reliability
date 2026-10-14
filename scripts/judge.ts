@@ -22,7 +22,7 @@ import { FORMATS, pairPrompt, parseScore, parseVerdict, scorePrompt, unshow } fr
 import type { Request } from '../src/llm.ts';
 import { modelFor } from '../src/llm.ts';
 import { rng, shuffle } from '../src/rng.ts';
-import { DRY, MODELS, RUN, costOf, list, modelIds, money, pool, priceFor, tokensIn, writeJson } from './common.ts';
+import { DRY, MODELS, RUN, costOf, list, modelIds, money, outTokens, pool, priceFor, tokensIn, writeJson } from './common.ts';
 import { loadTexts } from './load.ts';
 
 const JUDGES = list(process.env.JUDGES, MODELS.join(','));
@@ -37,7 +37,7 @@ const repeatIds = new Set(shuffle(pairs, rng('judge-repeat')).slice(0, REPEAT_PA
 const texts = loadTexts(pairs);
 const ids = await modelIds(JUDGES);
 
-type Job = { path: string; judge: string; req: Request; save: (text: string) => Record<string, unknown> };
+type Job = { path: string; judge: string; kind: Format; req: Request; save: (text: string) => Record<string, unknown> };
 const jobs: Job[] = [];
 let missing = 0;
 
@@ -65,6 +65,7 @@ for (const p of pairs) {
             jobs.push({
               path: join(dir, `${p.id}__${side}.json`),
               judge,
+              kind: 'score',
               req: scorePrompt(p.item, answer(side)),
               save: (text) => ({ kind: 'score', judge, variant, pair: p.id, side, score: parseScore(text) }),
             });
@@ -75,6 +76,7 @@ for (const p of pairs) {
             jobs.push({
               path: join(dir, `${p.id}__${order}.json`),
               judge,
+              kind: format,
               req: pairPrompt(format, p.item, first, second),
               save: (text) => {
                 const shown = parseVerdict(format, text);
@@ -95,11 +97,11 @@ console.log(
 );
 
 if (DRY) {
-  const outTokens = (r: Request) => (r.maxTokens <= 10 ? 3 : r.maxTokens >= 800 ? 300 : 250); // plain / rubric / score
+  const guess = { plain: 3, rubric: 300, score: 250 }; // used only when npm run smoke hasn't measured a model
   const byJudge: Record<string, number> = {};
   for (const j of todo) {
     const p = priceFor(ids[j.judge]);
-    if (p) byJudge[j.judge] = (byJudge[j.judge] ?? 0) + (tokensIn(j.req.system + j.req.user) * p.input + outTokens(j.req) * p.output) / 1e6;
+    if (p) byJudge[j.judge] = (byJudge[j.judge] ?? 0) + (tokensIn(j.req.system + j.req.user) * p.input + outTokens(ids[j.judge], j.kind, guess[j.kind]) * p.output) / 1e6;
   }
   const total = Object.values(byJudge).reduce((a, b) => a + b, 0);
   console.log(`Rough cost: ${money(total)} (${Object.entries(byJudge).map(([k, v]) => `${k} ${money(v)}`).join(', ')})`);
