@@ -37,7 +37,7 @@ const server = createServer(async (req, res) => {
     const original = block(user, 'Response');
     text = `${original} ${original} ${original}`;
   } else if (user.includes('Reply with exactly one of')) {
-    assert.equal(body.temperature, 0);
+    assert.equal(body.temperature, undefined);
     text = 'A';
   } else if (user.includes('Verdict: TIE')) {
     const a = block(user, 'Response A');
@@ -76,10 +76,10 @@ test('generate, pad, judge, label and analyse, start to finish', { timeout: 1200
   assert.equal(calls, 360);
 
   const dry = await step('judge', { DRY: '1' });
-  assert.match(dry.stdout, /3960 judge calls/);
+  assert.match(dry.stdout, /4200 judge calls/);
   assert.equal(calls, 360);
   await step('judge');
-  assert.equal(calls, 360 + 3960);
+  assert.equal(calls, 360 + 4200);
 
   // label through the real labelling server: always pick the left answer, mark every padding check ok
   const port = String(4000 + Math.floor(Math.random() * 2000));
@@ -115,10 +115,12 @@ test('generate, pad, judge, label and analyse, start to finish', { timeout: 1200
   const res = JSON.parse(readFileSync(`runs/${NAME}/results.json`, 'utf8'));
   assert.equal(res.labelled, 120);
   assert.equal(res.invalidReplies, 0);
-  assert.ok(Math.abs(res.totalCostUsd - (4320 * (1000 * 2 + 100 * 10)) / 1e6) < 3); // mixed prices, sanity bound only
+  assert.ok(Math.abs(res.totalCostUsd - (4560 * (1000 * 2 + 100 * 10)) / 1e6) < 3); // mixed prices, sanity bound only
   const r = (judge: string, format: string) => res.results.find((x: { judge: string; format: string }) => x.judge === judge && x.format === format);
   assert.equal(r('sonnet', 'plain').position.firstRate.est, 1); // always picks first
   assert.equal(r('sonnet', 'plain').position.consistent.est, 0);
+  assert.equal(r('sonnet', 'plain').position.sameOrder.n, 40); // the noise check: same order, asked again
+  assert.equal(r('sonnet', 'plain').position.sameOrder.est, 1); // a deterministic fake never changes its mind
   assert.equal(r('sonnet', 'rubric').position.firstRate.est > 0.4 && r('sonnet', 'rubric').position.firstRate.est < 0.6, true);
   // picks the longer answer: padding only changes the call on the 40 sonnet-vs-haiku pairs (equal length, a tie
   // until one side is padded); opus's answers are long enough to stay ahead padded or not. So 40/120 swing by +1.

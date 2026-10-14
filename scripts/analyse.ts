@@ -57,7 +57,7 @@ const out = {
     model: manifest.models[j.judge] ?? j.judge,
     format: j.format,
     valid: round(j.valid),
-    position: j.position && { firstRate: ri(j.position.firstRate), p: round(j.position.p, 4), consistent: ri(j.position.consistent), flips: round(j.position.flips) },
+    position: j.position && { firstRate: ri(j.position.firstRate), p: round(j.position.p, 4), consistent: ri(j.position.consistent), sameOrder: ri(j.position.sameOrder), flips: round(j.position.flips) },
     agreement: j.agreement && {
       kappa: ri(j.agreement.kappa),
       accuracy: ri(j.agreement.accuracy),
@@ -101,8 +101,8 @@ if (results.human) {
 }
 md.push('## Agreement with the human labels', '', 'Accuracy = share of pairs the human called where the judge made the same call (judge ties and order-dependent verdicts count as misses).', '');
 md.push(table(['Judge', 'Format', 'Readable', 'Accuracy', 'Kappa', ...TASK_TYPES.map((t) => `Acc ${t}`)], results.judges.filter((j) => j.agreement).map((j) => [...name(j), pct(j.valid), ci(j.agreement!.accuracy, pct), ci(j.agreement!.kappa, num), ...TASK_TYPES.map((t) => ci(j.agreement!.byTask[t], pct))])));
-md.push('', '## Position bias', '', 'Picks first = share of decisive verdicts that went to whichever answer was shown first (fair = 50%). Same both ways = share of pairs with the same verdict after swapping the order.', '');
-md.push(table(['Judge', 'Format', 'Picks first', 'p', 'Same both ways', 'Flips'], results.judges.filter((j) => j.position).map((j) => [...name(j), ci(j.position!.firstRate, pct), j.position!.p < 0.001 ? '<0.001' : num(j.position!.p, 3), ci(j.position!.consistent, pct), pct(j.position!.flips)])));
+md.push('', '## Position bias', '', 'Picks first = share of decisive verdicts that went to whichever answer was shown first (fair = 50%). Same both ways = share of pairs with the same verdict after swapping the order. Same, asked again = share with the same verdict when asked again in the same order - the models do not take a temperature, so this is how much changes by chance alone; the gap between the two is the order effect.', '');
+md.push(table(['Judge', 'Format', 'Picks first', 'p', 'Same both ways', 'Same, asked again', 'Flips'], results.judges.filter((j) => j.position).map((j) => [...name(j), ci(j.position!.firstRate, pct), j.position!.p < 0.001 ? '<0.001' : num(j.position!.p, 3), ci(j.position!.consistent, pct), ci(j.position!.sameOrder, pct), pct(j.position!.flips)])));
 md.push('', '## Length bias', '', `One answer per pair padded to about twice the length with nothing new in it (median ${out.padding.medianRatio ?? '-'}x; ${out.padding.addedContent} of ${out.padding.spotChecked} spot-checked added content). Swing = change in preference towards the padded answer on a -2 to +2 scale (0 = no effect).`, '');
 md.push(table(['Judge', 'Format', 'Swing to padded'], results.judges.filter((j) => j.verbosity).map((j) => [...name(j), ci(j.verbosity, signed)])));
 md.push('', '## Self-preference', '', 'Bias = how much more the judge favours its own model\'s answers than neutral judges (whose model wrote neither answer) do on the same pairs (-2 to +2, 0 = none). Picks own when worse = on pairs where the human preferred the other answer, how often the judge still picked its own, vs how often neutral judges picked that same answer.', '');

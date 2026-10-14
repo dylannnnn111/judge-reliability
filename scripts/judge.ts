@@ -5,8 +5,11 @@
 // Options (environment variables, plus NAME/MODELS/CONCURRENCY from common.ts):
 //   JUDGES=opus,sonnet,haiku   default: the same models that wrote the answers (needed for self-preference)
 //   FORMATS=plain,rubric,score default: all three
-//   VARIANTS=orig,pad          default: both. 'pad' is the verbosity test
-//   TEMPERATURE=0              judge temperature. Default 0, so order effects aren't sampling noise
+//   VARIANTS=orig,pad,repeat   default: all three. 'pad' is the verbosity test. 'repeat' asks the pairwise
+//                              judges about REPEAT_PAIRS pairs again in the same order, to measure how much
+//                              verdicts change by chance alone (current models don't accept a temperature)
+//   REPEAT_PAIRS=40            how many pairs the repeat variant covers
+//   TEMPERATURE=0              only for models that still accept it. Default: not sent
 // Pairwise calls happen twice per pair (A first, then B first). Pointwise scores each answer once.
 // Saves runs/<NAME>/judgments/<judge>/<format>/<variant>/<pair>__<order or side>.json. Resumable.
 
@@ -18,16 +21,19 @@ import type { Format } from '../src/judge.ts';
 import { FORMATS, pairPrompt, parseScore, parseVerdict, scorePrompt, unshow } from '../src/judge.ts';
 import type { Request } from '../src/llm.ts';
 import { modelFor } from '../src/llm.ts';
+import { rng, shuffle } from '../src/rng.ts';
 import { DRY, MODELS, RUN, costOf, list, modelIds, money, pool, priceFor, tokensIn, writeJson } from './common.ts';
 import { loadTexts } from './load.ts';
 
 const JUDGES = list(process.env.JUDGES, MODELS.join(','));
 const formats = list(process.env.FORMATS, FORMATS.join(',')) as Format[];
-const variants = list(process.env.VARIANTS, 'orig,pad') as Variant[];
+const variants = list(process.env.VARIANTS, 'orig,pad,repeat') as Variant[];
+const REPEAT_PAIRS = Number(process.env.REPEAT_PAIRS ?? 40);
 for (const f of formats) if (!FORMATS.includes(f)) throw new Error(`Unknown format ${f}`);
-const TEMPERATURE = process.env.TEMPERATURE === '' ? undefined : Number(process.env.TEMPERATURE ?? 0);
+const TEMPERATURE = process.env.TEMPERATURE ? Number(process.env.TEMPERATURE) : undefined;
 
 const pairs = buildPairs(loadItems(), MODELS);
+const repeatIds = new Set(shuffle(pairs, rng('judge-repeat')).slice(0, REPEAT_PAIRS).map((p) => p.id));
 const texts = loadTexts(pairs);
 const ids = await modelIds(JUDGES);
 
@@ -46,10 +52,12 @@ for (const p of pairs) {
       missing++;
       continue;
     }
+    if (variant === 'repeat' && !repeatIds.has(p.id)) continue;
     const answer = (side: 'A' | 'B') => (variant === 'pad' && side === p.padSide ? t.padded! : t[side]);
     for (const judge of JUDGES) {
       for (const format of formats) {
         const dir = join(RUN, 'judgments', judge, format, variant);
+        if (format === 'score' && variant === 'repeat') continue; // the noise check is for pairwise verdicts
         if (format === 'score') {
           // In the pad variant only the padded side changes, so only that side is scored again
           const sides: ('A' | 'B')[] = variant === 'orig' ? ['A', 'B'] : [p.padSide];
@@ -62,7 +70,7 @@ for (const p of pairs) {
             });
           }
         } else {
-          for (const order of ['ab', 'ba'] as Order[]) {
+          for (const order of (variant === 'repeat' ? ['ab'] : ['ab', 'ba']) as Order[]) {
             const [first, second] = order === 'ab' ? [answer('A'), answer('B')] : [answer('B'), answer('A')];
             jobs.push({
               path: join(dir, `${p.id}__${order}.json`),

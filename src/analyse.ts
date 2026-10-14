@@ -8,7 +8,7 @@ import { scoresToVerdict } from './judge.ts';
 import type { Interval } from './stats.ts';
 import { binomialP, bootstrap, cohenKappa, mean } from './stats.ts';
 
-export type Variant = 'orig' | 'pad';
+export type Variant = 'orig' | 'pad' | 'repeat'; // repeat = the same pair asked again in the same order (noise check)
 export type Order = 'ab' | 'ba';
 
 /** One pairwise judgment. `verdict` is in canonical A/B terms; `shown` is what the judge actually wrote. */
@@ -42,6 +42,7 @@ export type JudgeResult = {
     p: number; // binomial test against 0.5
     consistent: Interval; // share of pairs where swapping the order gives the same verdict
     flips: number; // share of pairs where the decisive verdict changes with the order
+    sameOrder: Interval | null; // share of repeated pairs where asking again in the SAME order gives the same verdict (the noise floor)
   };
   agreement: null | {
     kappa: Interval; // Cohen's kappa against the human labels, 3 classes (A, B, TIE)
@@ -170,6 +171,16 @@ export function analyse(input: { pairs: Pair[]; cells: Cell[]; judges: string[];
                 return a !== 'TIE' && b !== 'TIE' && a !== b;
               }).length / both.length
             : NaN,
+          sameOrder: (() => {
+            const reps = pairs
+              .map((p) => {
+                const a = cells.find((c): c is PairCell => c.kind === 'pair' && c.judge === judge && c.format === format && c.variant === 'orig' && c.pair === p.id && c.order === 'ab');
+                const b = cells.find((c): c is PairCell => c.kind === 'pair' && c.judge === judge && c.format === format && c.variant === 'repeat' && c.pair === p.id && c.order === 'ab');
+                return a?.verdict && b?.verdict ? (a.verdict === b.verdict ? 1 : 0) : null;
+              })
+              .filter((x): x is 0 | 1 => x !== null);
+            return reps.length ? bootstrap(reps.length, (idx) => mean(idx.map((i) => reps[i])), { seed: `${tag}|same`, reps: input.reps }) : null;
+          })(),
         };
       }
 

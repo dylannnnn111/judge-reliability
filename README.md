@@ -27,10 +27,10 @@ Each item has a reference: what a good answer contains. The labeller sees it; th
 | `rubric` | The task's criteria, an explicit note that length and order don't matter, and reasoning before a `Verdict:` line. The standard advice for a fairer judge. |
 | `score` | One answer at a time, scored 1-10. The higher score wins. No order to be biased by, but no direct comparison either. |
 
-Pairwise formats run twice per pair, A first then B first. Temperature 0, so an order effect is the judge, not sampling noise.
+Pairwise formats run twice per pair, A first then B first. Current Claude models don't accept a temperature setting, so a verdict can change between calls by chance alone. To separate that from position bias, 40 pairs are asked again in the same order: the share that change then is the noise floor, and swapping the order has to beat it.
 
 **The three biases:**
-- Position = share of decisive verdicts that went to whichever answer was shown first (fair is 50%), plus how often the verdict survives swapping the order.
+- Position = share of decisive verdicts that went to whichever answer was shown first (fair is 50%), plus how often the verdict survives swapping the order, next to how often it survives simply being asked again.
 - Length = one answer per pair (seeded coin) is rewritten to about twice the length with no new content, then the pair is judged again. The swing is the change in preference towards the padded answer, from -2 to +2. I spot-check 20 padded answers to make sure nothing was added.
 - Self-preference = on pairs a judge's model wrote one answer for, how much more it favours that answer than a neutral judge does on the same pair. The neutral judge is the model that wrote neither answer. Comparing with all other judges would let the opponent's own self-preference leak in: the simulation showed that gives false positives for a judge with no bias at all.
 
@@ -54,13 +54,13 @@ npm run generate:keychain    # 240 answers                       (~$1)
 npm run pad:keychain         # 120 padded answers (Haiku)        (cents)
 npm run label                # http://localhost:3100 - label 120 pairs, 20 repeats, 20 padding checks
 DRY=1 npm run judge          # count the calls and estimate the cost
-npm run judge:keychain       # 3,960 judge calls                 (~$15)
+npm run judge:keychain       # 4,200 judge calls                 (~$16)
 npm run analyse              # runs/main/results.md and results.json
 ```
 
 `:keychain` reads the API key from the macOS Keychain (`aussie-data-mcp-anthropic`); otherwise set `ANTHROPIC_API_KEY`. Labelling and analysis need no key.
 
-Options: `MODELS` (default `opus,sonnet,haiku`, resolved to the newest of each family on the first run and pinned in `runs/main/manifest.json`), `JUDGES`, `FORMATS`, `VARIANTS`, `CONCURRENCY`, `NAME`, `PAD_MODEL`, `TEMPERATURE`. To add a non-Anthropic model, put its id in `MODELS` (e.g. `gpt-...`) and set `OPENAI_API_KEY`; that client is written but hasn't been run against the real API yet, so run `npm run smoke` first.
+Options: `MODELS` (default `opus,sonnet,haiku`, resolved to the newest of each family on the first run and pinned in `runs/main/manifest.json`), `JUDGES`, `FORMATS`, `VARIANTS`, `CONCURRENCY`, `NAME`, `PAD_MODEL`, `REPEAT_PAIRS` (default 40), `TEMPERATURE` (not sent unless set; only for models that still accept it). To add a non-Anthropic model, put its id in `MODELS` (e.g. `gpt-...`) and set `OPENAI_API_KEY`; that client is written but hasn't been run against the real API yet, so run `npm run smoke` first.
 
 ## Files
 

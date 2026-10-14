@@ -1,5 +1,5 @@
 // Before spending real money: one tiny call per model with the exact settings the judges use
-// (temperature 0, a one-token reply), so a model that rejects a parameter fails here and not 2,000 calls in.
+// (a one-token reply, no temperature), so a model that rejects a parameter fails here and not 2,000 calls in.
 //   ANTHROPIC_API_KEY=... npm run smoke
 import { modelFor } from '../src/llm.ts';
 import { parseVerdict } from '../src/judge.ts';
@@ -15,7 +15,6 @@ for (const a of aliases) {
       system: 'You are an impartial judge of AI assistant responses.',
       user: '[User request]\nWhat is 2 + 2?\n[End of User request]\n\n[Response A]\n4\n[End of Response A]\n\n[Response B]\n5\n[End of Response B]\n\nWhich response is better? Reply with exactly one of: A, B, TIE.',
       maxTokens: 10,
-      temperature: 0,
     });
     const v = parseVerdict('plain', r.text);
     console.log(`${a} = ${ids[a]}: replied ${JSON.stringify(r.text)} -> ${v ?? 'UNREADABLE'} (${r.usage.input} in / ${r.usage.output} out)`);
