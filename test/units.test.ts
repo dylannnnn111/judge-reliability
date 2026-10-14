@@ -40,6 +40,10 @@ test('verdicts are read from the shapes judges actually write', () => {
   assert.equal(parseVerdict('plain', 'Response B'), 'B');
   assert.equal(parseVerdict('plain', 'Both are fine, but I lean towards... Verdict: A'), 'A');
   assert.equal(parseVerdict('plain', 'Apples'), null); // "A" followed by more letters isn't a verdict
+  assert.equal(parseVerdict('plain', 'A is correct: the total distance is 320 km'), 'A'); // what Sonnet actually wrote in smoke
+  assert.equal(parseVerdict('plain', 'B - it gets the base rate right.'), 'B');
+  assert.equal(parseVerdict('plain', 'A better answer would mention the base rate, so B.'), null); // the article, not a verdict
+  assert.equal(parseVerdict('plain', 'TIE\n\nBoth are right.'), 'TIE');
   assert.equal(parseVerdict('rubric', 'A is clearer.\nVerdict: B'), 'B');
   assert.equal(parseVerdict('rubric', 'Draft verdict: A\n...on reflection\n**Verdict:** TIE'), 'TIE');
   assert.equal(parseVerdict('rubric', 'Verdict - Response A'), 'A');

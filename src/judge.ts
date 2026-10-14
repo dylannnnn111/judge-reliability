@@ -64,7 +64,9 @@ export function scorePrompt(item: Item, answer: string): Request {
 export function parseVerdict(format: 'plain' | 'rubric', text: string): Verdict | null {
   const norm = (s: string): Verdict => (s.toUpperCase() === 'TIE' ? 'TIE' : (s.toUpperCase() as Verdict));
   if (format === 'plain') {
-    const m = text.trim().match(/^[\s*"'`(\[]*(?:response\s+)?(A|B|TIE)\b/i);
+    // Only a bare verdict at the start counts: "A", "**B**", "TIE.", "Response A", "A is better: ...".
+    // Not "A better answer would..." - there "A" is just the article.
+    const m = text.trim().match(/^[\s*"'`(\[]*(?:response\s+)?(A|B|TIE)\b(?=[\s*"'`)\]]*(?:$|[.:,;!\-\n]|is\b|wins\b))/i);
     if (m) return norm(m[1]);
     // fall through: some judges still write "Verdict: A" when told not to
   }
