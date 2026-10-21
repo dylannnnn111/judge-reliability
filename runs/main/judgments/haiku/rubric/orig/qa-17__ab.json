@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-17",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify Venus and give the accurate average surface temperature of about 465°C (870°F). Both explain the runaway greenhouse effect driven by the thick CO₂ atmosphere and note that Venus is hotter than the closer Mercury. Both are under 120 words; Response B is close to the limit at roughly 119 words.\n\nResponse A is concise and covers the core mechanism, the reflective sulfuric acid clouds, and the high surface pressure. Response B gives the same core reasoning with more detail: the CO₂ composition, the explicit infrared-trapping mechanism, the heat distribution across the planet, and the contrast with Mercury's lack of atmosphere, which explains why Mercury is cooler despite its proximity to the Sun. The bullet format makes it easier to scan. Its extra words add correct, relevant explanation rather than padding, so it is somewhat more useful while staying within the limit.\n\nVerdict: B",
+  "usage": {
+    "input": 768,
+    "output": 1647
+  },
+  "cost": 0.0009002999999999999
+}

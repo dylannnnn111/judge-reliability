@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-26",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response is scientifically correct. It names Rayleigh scattering as the mechanism, explains that shorter blue wavelengths scatter far more than longer red and orange ones, and attributes sunset colors to the longer atmospheric path that removes the blue light from the direct beam. It covers the key reasoning for both the daytime and sunset cases. It is clear and well organized, and at about 102 words it meets the under-120 limit without padding. The only minor omission is that it doesn't mention that the scattered blue light is what makes the sky look blue overall, but it implies this already.\n\nScore: 9",
+  "usage": {
+    "input": 404,
+    "output": 1050
+  },
+  "cost": 0.0005654
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-04",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is the better response.\n\nBoth responses open with the same top two issues: the missing idempotency key and the retrying of 4xx errors. Both run slightly over the 200-word limit (A is roughly 209 words, B roughly 219), so length does not separate them much.\n\nThe deciding factor is accuracy on the JSON parsing issue. In modern versions of `requests`, `resp.json()` raises `requests.exceptions.JSONDecodeError`, which is a `RequestException`.\n- **B** notes that the bad-JSON error may be caught and retried, which risks a second charge, while `KeyError` escapes. That is correct and ties the point back to the double-charge risk.\n- **A** says these errors \"aren't caught,\" which is wrong for current `requests` when the body is invalid JSON.\n\nB also catches a real defect that A misses: the loop sleeps after the final failed attempt, wasting a second. B's remaining points are also sound. It suggests deriving the key from the order ID, adds 429 to the retryable statuses, and recommends distinct exception types so callers can tell a decline from an outage.\n\nA's one distinctive strength is the \"ambiguous failure state\" point, that checkout cannot tell \"definitely not charged\" from \"unknown.\" This is a good observation, but it is partly covered by B's point about distinct exception types.\n\nB is more accurate and finds a few more concrete issues.\n\n**B**",
+  "usage": {
+    "input": 1495,
+    "output": 2199
+  },
+  "cost": 0.02498
+}

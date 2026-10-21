@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-22",
+  "side": "A",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate and about 106 words, under the 120 limit. Every figure and date checks out against the minutes: $340 senior fee, $180 junior fee, 9% turf increase, 18-player drop, $3,200 shortfall, 14 November grant deadline, 24 October presentation night, $45 tickets, $600 gazebo, $41,820 balance and the 28 October next meeting.\n\nSmall imprecisions:\n- Wes \"will arrange\" the globe, and the summary says he'll \"replace\" it.\n- The decision to hold junior fees is framed through the 18-player drop, which fits Bryce's argument.\n- It doesn't say the fee motion was carried 5-0, though \"rises\" implies a decision.\n\nMinor omissions: Natalie organising trophies, the thanks to Kylie, and the seniors' wish for balls and a better canteen. None of these is essential for a busy manager. The layout is clear and scannable, and the key decisions and actions are covered.\n\nScore: 9",
+  "usage": {
+    "input": 1181,
+    "output": 1143
+  },
+  "cost": 0.013792
+}

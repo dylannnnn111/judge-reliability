@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "qa-12",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**",
+  "usage": {
+    "input": 412,
+    "output": 106
+  },
+  "cost": 0.003768
+}

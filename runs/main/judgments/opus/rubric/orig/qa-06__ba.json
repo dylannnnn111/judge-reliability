@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-06",
+  "order": "ba",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-opus-5-5",
+  "text": "Both responses give the correct answer, **Friday, 24 March 2028**.\n\n**Checking the answer**\n- 15 December 2027 is indeed a Wednesday. 1 January 2027 is a Friday, and 15 December is 348 days later. Since 348 mod 7 = 5, Friday plus 5 days gives Wednesday.\n- Counting forward, 16 days remain in December, then 31 in January and 29 in February 2028 (a leap year). That makes 76 days, and the remaining 24 land on 24 March.\n- For the weekday, 100 mod 7 = 2, so Wednesday plus 2 days is Friday.\n\n**Comparing the responses**\nBoth give the same key reasoning: the month-by-month count, the leap-year February, and the 14 weeks plus 2 days weekday shift.\n- **Response A** adds the days up to a running total.\n- **Response B** subtracts the days from 100 in bullet points.\n\nB's bullets are marginally easier to scan, while A is slightly more compact. Neither adds or omits anything substantive, and both are well under the word limit. Neither is better in any way that matters.\n\nVerdict: TIE",
+  "usage": {
+    "input": 527,
+    "output": 670
+  },
+  "cost": 0.015508
+}

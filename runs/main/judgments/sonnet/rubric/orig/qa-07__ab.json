@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-07",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-sonnet-5-5",
+  "text": "Both give 7.84 L/100 km, which is correct (235.215/30 = 7.84).\n\nChecking Response A's details: 100/1.609344 = 62.137 miles; 62.137/30 = 2.0712 gallons; × 3.78541 = 7.840 L. That's correct. The imperial figure: 282.48/30 = 9.416, so \"about 9.4\" is also correct. Its statement that \"US gallons are smaller than imperial gallons\" is correct. The word count is about 85, under 120.\n\nChecking Response B: 30 miles = 48.28 km, on 3.785 L gives 12.755 km/L, and 100/12.75 = 7.84. Correct. Its note on EPA vs Australian ratings (ADR/NEDC/WLTP) is a reasonable caveat. Its word count is about 85, also under the limit.\n\nBoth are correct and within the word limit. A's extra note warns against a common error, using the imperial gallon, which is directly relevant to a conversion to Australian units, since Australia uses metric but the imperial/US gallon confusion is common. B's note about test-cycle differences is also useful and practically relevant to comparing a US review figure with Australian ratings. B's working is more intuitive (km per litre), and A's is more precise.\n\nBoth are close to equal. A's caveat is about conversion correctness, which is the heart of the question, while B's is about real-world comparability, which is arguably more useful to the user's context (an Australian reading a US review). Neither is clearly better. B's working is slightly simpler to follow, but A's is more precise with its constants.\n\nI lean toward a tie.\n\nVerdict: TIE",
+  "usage": {
+    "input": 762,
+    "output": 540
+  },
+  "cost": 0.006924
+}

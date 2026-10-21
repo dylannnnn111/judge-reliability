@@ -1,0 +1,14 @@
+{
+  "pair": "qa-16",
+  "side": "A",
+  "author": "opus",
+  "model": "claude-haiku-5-5",
+  "original": "The **largest desert in the world is the Antarctic Desert**, covering about **14 million square kilometers (5.5 million sq mi)**. A desert is defined by low precipitation, not heat, and Antarctica's interior receives very little.\n\n- **Largest overall:** Antarctic Desert (~14 million km²)\n- **Second largest:** Arctic Desert (~13.9 million km²)\n- **Largest hot desert:** Sahara Desert in North Africa (~9.2 million km²), roughly the size of the United States\n\nSo if you mean the classic sandy, hot desert, the answer is the **Sahara**.",
+  "text": "To answer your question directly, the **largest desert in the world is the Antarctic Desert**, which covers about **14 million square kilometers (5.5 million sq mi)**. It is worth keeping in mind that a desert is defined by how little precipitation it receives, not by how hot it is, and Antarctica's interior receives very little.\n\nTo put the main contenders in context, here is how the largest deserts compare:\n\n- **Largest overall:** Antarctic Desert (~14 million km²)\n- **Second largest:** Arctic Desert (~13.9 million km²)\n- **Largest hot desert:** Sahara Desert in North Africa (~9.2 million km²), roughly the size of the United States\n\nSo, if you are thinking of the classic sandy, hot desert that many people picture first, the answer you are looking for is the **Sahara**.",
+  "ratio": 1.54,
+  "usage": {
+    "input": 388,
+    "output": 682
+  },
+  "cost": 0.0003798
+}

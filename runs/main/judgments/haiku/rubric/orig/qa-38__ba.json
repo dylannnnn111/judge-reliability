@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-38",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are scientifically accurate. Each covers the cold stratosphere, polar stratospheric clouds converting chlorine reservoirs into reactive forms, the polar vortex isolating the air, and sunlight returning in spring to split Cl₂ and drive catalytic ozone destruction. Both also explain the recovery as the vortex breaks down.\n\nThe main difference is the explicit length limit. Response A is about 100 words and complies. Response B is about 125 words by my count, so it exceeds the \"under 120 words\" constraint. B's extra material, such as the −78°C threshold and the Arctic comparison, is accurate and somewhat useful, but it does not outweigh breaking an explicit instruction. On clarity, B's bolded key terms are helpful, but the two are close.\n\nVerdict: A",
+  "usage": {
+    "input": 827,
+    "output": 1670
+  },
+  "cost": 0.0009177
+}

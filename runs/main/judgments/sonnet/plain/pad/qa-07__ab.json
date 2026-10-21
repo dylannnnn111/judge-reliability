@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-07",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better. Both give the correct answer of about 7.8 L/100 km, with similar working and the same 235.2 ÷ mpg shortcut.\n\nThe difference is the word limit. I counted Response A at roughly 83 words, which is within the 120-word limit. I counted Response B at about 125 words, which exceeds it. B also has filler such as \"To answer your question,\" \"I hope this helps,\" and \"To begin, recall...\".\n\nA's closing note, which warns against using the imperial-gallon conversion, is also more relevant to a US-to-Australia conversion.\n\n**A**",
+  "usage": {
+    "input": 702,
+    "output": 1818
+  },
+  "cost": 0.019584
+}

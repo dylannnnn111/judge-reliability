@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-38",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are scientifically correct. Both cover the key chain: the cold winter stratosphere forms polar stratospheric clouds, which convert chlorine reservoirs into reactive forms. The polar vortex isolates the air, and returning sunlight in spring drives catalytic ozone destruction.\n\nThe main difference is the length limit of under 120 words.\n\n- Response A is about 95 words, so it complies.\n- Response B is about 126 words, so it breaks the limit.\n\nB adds some useful detail: it names CFCs as the chlorine source, gives the −78°C threshold, and contrasts the Arctic. A makes the spring-sunlight link just as clearly, but it never mentions CFCs. B's extra content does not outweigh breaking an explicit constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 827,
+    "output": 1835
+  },
+  "cost": 0.020004
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-33",
+  "side": "A",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "Checking accuracy: The release date, 12.4, the automatic overnight rollout, and the three new features are all stated correctly. \"Managers can approve shift swaps only for their own areas\" is a slight simplification: it's a configurable option, though the meaning is close. Improvements and fixes are accurate. The action item is correct: v1 users (about 8%) must switch to v2, which takes about 15 minutes, and the shutdown moved from 30 Nov to 31 Jan 2027. \"Switching soon is still advised\" matches the \"please still plan to switch soon\" in the update.\n\nOmissions: it doesn't mention that staff can turn off notifications (minor), or that the consequence includes staff possibly being paid late (it says timesheets stop reaching payroll, which is adequate). It doesn't say the date change was in response to customer requests (not essential). \"No action is needed for most customers\" is correct.\n\nWord count: roughly 130 words. Let me count more carefully.\n\nHeader: \"ShiftNest 12.4 (released 28 Oct 2026)\" = 6. \"Updates roll out automatically overnight. No action is needed for most customers.\" = 12 → 18. \"New:\" 1 → 19. Bullet 1: \"Managers can approve shift swaps only for their own areas.\" 10 → 29. Bullet 2: \"Public holiday penalty rates now apply automatically for Hospitality and Retail awards, by state.\" 14 → 43. Bullet 3: \"Staff get push notifications for open shifts.\" 7 → 50. \"Improvements:\" 1 → 51. \"Faster roster loading for large sites, unpaid break minutes in timesheet exports, and availability can be set 12 weeks ahead.\" 20 → 71. \"Fixes:\" 1 → 72. \"Daylight saving hour errors on overnight shifts and South Australia time zone display.\" 13 → 85. \"Action required (only if you use the v1 payroll connector, about 8% of customers):\" 14 → 99. \"Switch to v2 (about 15 minutes) or timesheets will stop reaching payroll.\" 12 → 111. \"The shutdown was moved from 30 Nov to 31 Jan 2027, but switching soon is still advised.\" 16 → 127.\n\nThat's about 127 words, over the 120 limit. This is a constraint violation, albeit a small one. Otherwise, the content is accurate and well prioritized, with the key action item and updated date correct.\n\nThe word limit breach is a real flaw, though modest.\n\nScore: 6",
+  "usage": {
+    "input": 1180,
+    "output": 820
+  },
+  "cost": 0.01056
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-37",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is slightly better. Both responses stay under 120 words (A is about 115, B about 109) and both correctly attribute the colour to iron oxidation, with a grey interior beneath the weathered surface.\n\nB is more precise in two ways. It names hematite as the iron oxide. It also explains the sunrise and sunset glow more accurately: sunlight passes through more atmosphere, which scatters away the blue and leaves the warmer tones. A says only that low-angle light is \"richer in red wavelengths\", which is vaguer.\n\nA's mention of quartz and its \"mostly superficial\" framing are fine, but they add little.\n\n**B**",
+  "usage": {
+    "input": 581,
+    "output": 1729
+  },
+  "cost": 0.018452
+}

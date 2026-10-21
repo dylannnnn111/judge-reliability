@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-31",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.**\n\n**Accuracy:** Both responses report the figures correctly: 10% speed gain (142→156 lines per hour), errors from 0.62% to 0.41%, 17% gain for new workers, 64% preference, $210,000 setup and 14-month payback. Neither introduces errors. Response B's \"gains levelled off within four weeks\" is a fair paraphrase of the source.\n\n**Coverage:** Response B keeps a few extra nuances. It notes the smaller accuracy gain at the low-error site and that some workers missed talking to colleagues. It also adds a takeaway. Response A covers every essential point a manager needs, including the method, the results, cost, payback and limitations.\n\n**Concision and the length limit:** This decides it. Response A is about 103 words, within the user's 120-word limit. Response B runs to roughly 200 words, clearly breaking the explicit constraint. It also pads with filler such as \"This summary sets out the main results…\" and \"It is worth keeping this limitation in mind when reading the findings above.\" Its extra nuances do not justify ignoring a hard instruction.\n\nVerdict: A",
+  "usage": {
+    "input": 1611,
+    "output": 793
+  },
+  "cost": 0.022304
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-36",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. Both responses identify the same core bugs, but Response B stays under the 200-word limit and Response A runs roughly 225 words. Response B's point about in-flight fetches re-caching a token that `Invalidate` just rejected is also the most specific match to this code's behavior.\n\nB",
+  "usage": {
+    "input": 1641,
+    "output": 1279
+  },
+  "cost": 0.0008036
+}

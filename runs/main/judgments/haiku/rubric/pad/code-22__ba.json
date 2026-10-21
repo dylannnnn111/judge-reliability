@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-22",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the critical flaw: `jwt.decode` never checks the signature, so forged admin tokens are accepted. Both also catch the 403-instead-of-401 status issue, the case-sensitive and unvalidated `Bearer` prefix, the unchecked `exp` claim, and the missing `JWT_SECRET` check. Response B separately calls out algorithm pinning, which is important for a verification fix, while Response A includes it only inside its example. Response B's concrete corrected snippet, which anchors the `Bearer` check and verification together, is more immediately actionable, though it leaves `claims` undeclared. Response A's claim that a missing secret \"fails open\" is inaccurate, since `jwt.verify` throws without a key. Response B's claim that `SECRET` is \"unused\" is also misleading, since it is exported, and its \"Minor\" section adds some low-value filler. Both run somewhat past the 200-word limit. On balance, Response B's stronger fix guidance and explicit algorithm pinning slightly outweigh its filler and the minor inaccuracy.\n\nVerdict: B",
+  "usage": {
+    "input": 1878,
+    "output": 1239
+  },
+  "cost": 0.0008072999999999999
+}

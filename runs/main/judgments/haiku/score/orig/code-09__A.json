@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-09",
+  "side": "A",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly identifies the most important bug: `revoke_permission` never invalidates `_permission_cache`, so revoked permissions stay active until restart. The other points are real and mostly well ordered: cross-process staleness, missing invalidation on grants, unbounded growth, and thread safety. It also correctly notes that the thread-safety issue is usually a redundant query rather than corruption, which avoids overstating it.\n\nThe response misses a subtle race that survives the suggested fix. If thread A reads the old permissions from the database before thread B's revoke commits, and A writes its cache entry after B's invalidation, the stale permissions get re-cached. Invalidating after commit does not prevent this, so point 6 is incomplete. Point 6 also reads as a standalone issue when it is really a refinement of point 1's fix.\n\nThe response is also slightly over the 200-word limit, which the user explicitly requested. The fix suggestion is practical and concrete, though it could be more specific about the race.\n\nOverall the response is accurate and well prioritized, with one notable omission and a minor length violation.\n\nScore: 7",
+  "usage": {
+    "input": 949,
+    "output": 962
+  },
+  "cost": 0.0005759
+}

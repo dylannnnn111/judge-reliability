@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-40",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better, mainly because it meets the word limit and Response A does not.\n\n**Length:** Response A comes to about 126 words, over the 120-word cap. Response B comes to about 116 words, so it stays within the limit.\n\n**Accuracy:** Both responses report the main figures correctly: 1,622 students, 11 schools, 1.8 vs 1.1 marks, a 0.7-mark gap that was not significant, and 71% of students saying water helped. Response A says \"no significant problems\", which is slightly softer than the source's \"no reports of problems\". Response B says \"No problems were reported\", which matches the source more closely.\n\n**Content:** Response B also includes the teachers' observation that students seemed calmer, and it frames the overseas claim clearly. Response A says the overseas claim \"was not supported\", which is a fair reading. It also carries the limitations and the recommendation. Response B adds a clear \"bottom line\" for a busy manager.\n\nResponse B is therefore the better summary: it is accurate, complete enough and within the limit.\n\nVerdict: B",
+  "usage": {
+    "input": 1385,
+    "output": 2056
+  },
+  "cost": 0.02333
+}

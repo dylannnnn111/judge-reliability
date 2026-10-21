@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-22",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate and under 120 words. Response A correctly states the fee rise, the junior fee freeze, the $3,200 shortfall, the grant deadline, the grounds actions, presentation night details, and the gazebo approval. It omits that the motion carried 5-0 and that Natalie is organising trophies, though neither omission is a serious gap. Response B is equally accurate. It adds the 5-0 vote and the trophy organiser, and it states that the shortfall arises from holding junior fees, which matches the minutes. Its \"Key decision\" and \"Actions\" structure is easier for a busy manager to scan, and it does this at a similar length. Response B's extra words carry correct, useful content, so it is somewhat better.\n\nVerdict: B",
+  "usage": {
+    "input": 1571,
+    "output": 955
+  },
+  "cost": 0.0006346
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-28",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B",
+  "usage": {
+    "input": 1824,
+    "output": 961
+  },
+  "cost": 0.0006629
+}

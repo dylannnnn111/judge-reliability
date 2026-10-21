@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-39",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses identify the same core problems: the unchecked `cd` leading to `rm -rf` in the wrong directory, path traversal via `APP_NAME` (including `..`), dotfiles surviving the `./*` glob, and the exit-0 on leftover files. Both rank the `cd` and traversal issues first, which is correct.\n\nResponse A adds a valid point that `find -type f` skips symlinks, and it correctly notes that the warning still fires for dotfiles because `find` counts them. However, it runs well over the 200-word limit, and its \"add `-e`\" fix for `cd` is less direct than an explicit `|| exit 1`.\n\nResponse B is tighter and more precise. Its regex for `APP_NAME` rejects leading dots, which blocks `..` and `.` in one check. It also catches a real subtlety that A misses: the `while read` loop miscounts filenames containing newlines. Its fixes are concrete and its length is closer to the requested limit. It omits the symlink point, but that is minor.\n\nOn balance, Response B better meets the brief: accurate, concise, and with sharper fixes.\n\nVerdict: B",
+  "usage": {
+    "input": 1850,
+    "output": 1264
+  },
+  "cost": 0.000817
+}

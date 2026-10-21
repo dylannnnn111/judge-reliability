@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-11",
+  "side": "B",
+  "score": 5,
+  "model": "claude-sonnet-5-5",
+  "text": "The facts are accurate. The dates check out: Friday is 14 Nov, Monday is 17 Nov, boxes are available from Mon 10 Nov, and files are due Wed 12 Nov. Roles, the two-crate limit, the 3pm deadline, the 8:30am welcome and the 14 parking spaces are all correct. The one small stretch is \"isn't eligible\" for people who skipped the survey. The source says only that they aren't on the list, though the effect is the same.\n\nThe main problem is length. The user asked for under 120 words, and my count is about 139 (the first five items alone come to roughly 122). This breaks an explicit constraint. The format also reads more like a full restatement than a quick manager's summary. It omits the \"delays getting to client files\" consequence and the point that people should come to the welcome even if they normally start later. The omitted dishwasher detail is trivial.\n\nAccuracy and coverage are strong, but the word limit is clearly exceeded.\n\nScore: 5",
+  "usage": {
+    "input": 1239,
+    "output": 1255
+  },
+  "cost": 0.015028
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-16",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is the better one. Response A runs to roughly 155 words, well over the 120-word limit. Response B comes in at about 120 (my count was 120 exactly), so it is borderline at worst and far closer to the limit.\n\nBoth are accurate on the main facts: the amber status, the 17 November date pending approval on 15 October, the $412k of $520k spent, the $38k delay cost, the $12k verbal credit giving $26k net, and the 24 October fix date.\n\n- **Response A** keeps more detail, including the 98.6% test result, the duplicate records and the training materials. These are useful but not essential for a busy manager, and they push it over the limit.\n- **Response B** drops that detail but keeps what the manager needs: the delay, its causes, the budget, the key risk and the decisions. It also links the December risk to the sales director's no-training request, which is a reasonable inference from the source and adds value. Its phrase \"cut-over moves\" is slightly firmer than \"proposed\", but the pending approval is stated right next to it.\n\nBecause A fails the explicit length constraint and B meets it while keeping the essentials, B wins.\n\nVerdict: B",
+  "usage": {
+    "input": 1540,
+    "output": 1483
+  },
+  "cost": 0.01791
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-35",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Neither misstates the dates, the $18,000 bond, the kitchenette condition, the two-quote basis for a payment in lieu, or the three-month notice requirement. Response A mentions that the landlord's payment option must be supported by two quotes, and B does too, so neither drops a key condition.\n\nResponse A is clearly over the 120-word limit, at roughly 170 words. Its prose is also more padded, with phrases like \"This make-good obligation must be completed by\" and \"Turning to the 2023 kitchenette specifically.\" It covers the same points as B but with more words.\n\nResponse B is close to the limit, at roughly 120 words. Its bulleted structure suits a busy manager, and it puts the key risks (daily rent for overruns, bond return timing) in a clear final section. It keeps every point the reader needs and is more concise, which satisfies the explicit word limit.\n\nResponse B is better on the constraint and on concision, with no loss of accuracy or key content.\n\nVerdict: B",
+  "usage": {
+    "input": 1550,
+    "output": 1154
+  },
+  "cost": 0.000732
+}

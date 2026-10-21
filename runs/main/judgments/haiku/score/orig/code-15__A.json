@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-15",
+  "side": "A",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response catches the most important bug: `updateLastLogin` is not awaited, so write failures become unhandled rejections while the caller is told the login was recorded. The duplicate `new Date()` mismatch and the partial-failure behavior in `recordLogins` are also real and correctly ranked below it, with concrete fixes. The race condition is correctly labeled minor. The sequential-execution point is debatable, since serial writes may be intentional to limit DB load, and the response presents it as a clear problem without noting that trade-off. It stays under 200 words, and each item is accurate and actionable. It could have noted that the function's contract (returning a user whose stored value may not match) is itself a design issue, but that is a small omission.\n\nScore: 8",
+  "usage": {
+    "input": 968,
+    "output": 584
+  },
+  "cost": 0.0003888
+}

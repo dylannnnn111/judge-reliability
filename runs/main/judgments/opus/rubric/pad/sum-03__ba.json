@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-03",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.**\n\n**Accuracy.** Both responses are essentially correct.\n\n- Both report the time window, the cause, the failure and retry figures, the 451 non-buyers, the $41,900 estimate with its caveat, and support volume at four times normal (312).\n- Both state the action statuses and due dates correctly.\n- A's \"Of the affected attempts, 1,940 customers…\" slightly blurs attempts with customers.\n- A also calls the 451 customers \"abandoned their purchase\", where the source only says they did not buy on Saturday, though A adds the caveat.\n- B's claim that alerts were per connector is a fair reading of the source.\n\n**Key points.** Both keep the essentials, including why detection was slow and the fixes. B adds that support escalated at 11:35, which is useful context. A names owners for two of the actions, which is a small plus.\n\n**Concision and the length limit.** This is where they differ most.\n\n- A runs to about 159 words, well over the 120-word limit.\n- A also includes filler, such as \"To show the scale of the incident, here is its impact\" and \"Following the incident, the following actions…\".\n- B is about 115 words without its heading, so it is at or under the limit.\n- B is tightly structured for a busy manager.\n\nB meets the brief more faithfully with equal or better accuracy.\n\nVerdict: B",
+  "usage": {
+    "input": 1688,
+    "output": 1741
+  },
+  "cost": 0.041572
+}

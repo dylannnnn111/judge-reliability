@@ -1,0 +1,13 @@
+{
+  "item": "sum-28",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**Annual leave changes, effective 1 December 2026**\n\n84 staff have over eight weeks' leave banked, and $3.9M is owed in total. This is both a cost risk and a burnout risk.\n\n- **Balance cap:** Staff with over eight weeks must agree a reduction plan with their manager. Without agreement, the company can direct them to take up to a quarter of their balance, with eight weeks' notice.\n- **Cash-out (new):** Staff can cash out up to two weeks a year, agreed in writing, if four weeks remain.\n- **Christmas shutdown (24 Dec–2 Jan):** Staff use four days' leave, or take unpaid leave or make up time.\n\n**Applies to:** Permanent staff under the 2025 Enterprise Agreement. 24/7 warehouse staff at Erskine Park and Truganina are exempt from the shutdown only.\n\n**Your action:** You'll receive your team's high-balance list by 31 October.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 627,
+    "output": 773
+  },
+  "cost": 0.017968,
+  "at": "2026-10-14T01:52:11.862Z"
+}

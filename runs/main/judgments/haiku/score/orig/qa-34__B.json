@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-34",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly identifies public-key key exchange (Diffie-Hellman) as the mechanism, and its explanation is accurate: each party keeps a private key, exchanges public keys, and derives the same shared secret, which then becomes a symmetric session key. It also correctly flags the man-in-the-middle risk and notes that certificates address it in TLS. The core content is sound and well organized.\n\nHowever, it exceeds the explicit \"under 120 words\" limit. My count is roughly 124 words, so it fails a stated constraint. The extra material is not essential, and the \"This is how HTTPS works every day\" line adds little. Trimming a few words would have satisfied the requirement without losing substance.\n\nScore: 6",
+  "usage": {
+    "input": 476,
+    "output": 1035
+  },
+  "cost": 0.0005651
+}

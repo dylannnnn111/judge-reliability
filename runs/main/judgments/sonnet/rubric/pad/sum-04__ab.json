@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-04",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Accuracy check:\n\nResponse A: \"Leave can now be split into up to three separate blocks, provided that each block is taken within 24 months\" – the original says all leave must be taken within 24 months; this is roughly equivalent. It omits that splitting applies to primary carers, a minor point. \"Casual staff need 12 months of regular work\" – it drops \"regular and systematic\" but is fine. It says \"Superannuation will also be paid on the government-funded portion for primary carers\" and omits the up-to-18-weeks cap. It also omits that the entitlements are on top of government pay, and that those with earlier arrivals stay on the current entitlements, though \"the increase applies to children born or placed on or after\" implies it. Its opening, \"pleased to share,\" is fluff. Word count is about 150, which is over the 120-word limit, so it breaks the explicit constraint.\n\nResponse B: Accurate on all points. \"Earlier arrivals keep the current entitlements\" is correct. \"Plan rosters for split leave\" is an addition not in the original, but a reasonable inference for a manager, not a factual claim. \"You'll be notified automatically\" is accurate (the manager is notified). Word count is about 125 words, so it may be slightly over 120. Counting more carefully:\n\nTitle: \"Parental leave changes from 1 January 2027\" = 6.\nBullet 1: \"More paid leave: Primary carers go from 12 to 18 weeks at full pay, and secondary carers from 2 to 4 weeks. Both are on top of government Parental Leave Pay.\" ≈ 30.\nBullet 2: \"Flexibility: Primary carers can split leave into up to three blocks within 24 months of the birth or adoption.\" ≈ 19.\nBullet 3: \"Cut-off: This applies only to children born or adopted on or after 1 Jan 2027. Earlier arrivals keep the current entitlements.\" ≈ 21.\nBullet 4: \"Eligibility: Staff need 12 months' continuous service. Regular, systematic casuals also qualify.\" ≈ 13.\nBullet 5: \"Super: It will now also be paid on the government-funded portion for primary carers, up to 18 weeks.\" ≈ 18.\nBullet 6: \"For you: Staff apply via the portal at least 10 weeks ahead, and you'll be notified automatically. Plan rosters for split leave.\" ≈ 22.\nBullet 7: \"Info sessions: 5 and 19 Nov, 12:30pm.\" ≈ 7.\n\nTotal ≈ 136, so B is also likely over 120 words, but less over than A (~150). B is more complete and more accurate, and more useful to a manager since it covers the automatic notification and the cut-off.\n\nResponse B is better on accuracy, completeness, and concision.\n\nVerdict: B",
+  "usage": {
+    "input": 1644,
+    "output": 921
+  },
+  "cost": 0.012498
+}

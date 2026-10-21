@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-25",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Response A has no factual errors. Its only small liberty is calling the all-staff \"message\" an \"email\". Response B states the job \"was stopped after 35 minutes\". The source never says when the job started. It only says the first call came at 8:20am and the job was stopped at 9:35am, which is 75 minutes after that call. So B's figure is invented and misleading, and that is a concrete accuracy error. Since accuracy comes first, this counts heavily against B.\n\n**Coverage:** A keeps the media angle. The all-staff message wrongly saying \"we've been hacked\" was forwarded outside and ended up in local news, which a manager would want to know about. A also includes the follow-up action to update the comms guide. B drops both, and it omits the date the regulator was notified.\n\n**Concision:** B is about 110 words and meets the 120-word limit. A is about 145 words and breaks the explicit constraint, which is a real failing. Its extra words, however, carry correct and useful content rather than padding.\n\n**Overall:** A is longer than allowed, while B contains a fabricated number and leaves out the media and comms points. Weighing accuracy first, A is the better summary.\n\nVerdict: A",
+  "usage": {
+    "input": 1443,
+    "output": 1385
+  },
+  "cost": 0.033472
+}

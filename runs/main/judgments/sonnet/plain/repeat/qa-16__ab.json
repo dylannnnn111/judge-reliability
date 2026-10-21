@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "qa-16",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "A",
+  "usage": {
+    "input": 521,
+    "output": 576
+  },
+  "cost": 0.006802
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-27",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Both responses get the core numbers right: 81% vs 74%, the 60% free-month share, 78% vs 76% among paying customers, $95 per session and ~$410,000 a year. Both correctly name the 21 October meeting and the November start.\n\n- **Response A** describes the proposal as \"a 60-day test.\" The original says \"at least 60 days,\" so A turns a minimum into a fixed duration. It also states the November start as a firm plan rather than as conditional on approval. Framing it as a \"Decision needed\" partly restores that condition.\n- **Response B** keeps both conditions intact: \"for at least 60 days, starting in November if approved at the 21 October leadership meeting.\"\n\n**Coverage:** A includes the Aug–Sep timing and names the 7-point apparent lift explicitly. B gives the 81% vs 74% figures, so the reader can see the gap, and its \"Caution\" point on the sales claim does the same job as A's \"Note.\" A's \"inconclusive\" headline and its \"Decision needed\" framing are helpful for a manager. B's summary line covers the main recommendation adequately. Neither omits anything the manager needs.\n\n**Concision:** Both are under 120 words and similarly tight.\n\nBecause accuracy, including conditions, comes first, B's faithful \"at least 60 days\" and \"if approved\" wording edges out A's small distortion. A's extra date detail does not outweigh that.\n\nVerdict: B",
+  "usage": {
+    "input": 1514,
+    "output": 820
+  },
+  "cost": 0.022456
+}

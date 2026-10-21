@@ -1,0 +1,13 @@
+{
+  "item": "sum-18",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**Stridewell 3.8 (released 14 Oct 2026): Summary**\n\n**New features**\n- **Route sharing:** Users can share saved routes by link, viewable without the app.\n- **Heat warnings:** Alerts before workouts when the forecast is 35° or above. Users can turn these off.\n- **Weekly summary email:** Sent each Monday with distance, active minutes and personal bests.\n\n**Improvements**\n- More accurate GPS in cities\n- About 15% less battery use on long workouts (recent phones)\n- Faster workout history and more frequent health-app syncing\n\n**Fixes**\n- Paused workouts no longer record distance.\n- Cycling calorie estimates are now correct for weights entered in pounds.\n- Time zone errors for New Zealand users are fixed.\n\n**Accessibility**\n- Screen reader labels on the workout screen\n- Adjustable pace chart colours for colour-blind users",
+  "stop": "end_turn",
+  "usage": {
+    "input": 572,
+    "output": 319
+  },
+  "cost": 0.008668,
+  "at": "2026-10-14T01:51:41.483Z"
+}

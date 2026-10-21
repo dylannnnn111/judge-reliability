@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-19",
+  "side": "B",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "Accuracy check: \"Kangaroo\" comes from gangurru in Guugu Yimithirr, and it refers to the eastern grey kangaroo (more precisely, the large black/grey species). Cook and Banks recorded it in 1770 near the Endeavour River, now Cooktown, while the ship was being repaired. All of this is correct. The myth about \"I don't understand\" is indeed false. Haviland's 1970s work confirmed the word's meaning, and the claim that it was an animal name is correct. The explanation that the myth arose because other Aboriginal people elsewhere didn't recognize the word is plausible, since Australia had many languages. Some versions of the myth say the locals said \"kangaroo\" meaning \"I don't understand\" in reply to Cook's question, and the response doesn't spell that out. Even so, it covers the myth's origin adequately. The claim \"it likely arose because...\" is hedged appropriately, and it is a commonly cited explanation, though the true origin of the myth is uncertain.\n\nWord count: roughly 115 words, which is under 120. Counting: first paragraph ~48 words, second ~70. Let me estimate more carefully. Paragraph 1: \"Kangaroo comes from gangurru, a word in Guugu Yimithirr, an Aboriginal language of far north Queensland.\" (16) \"It refers to a specific species, the eastern grey kangaroo.\" (10) \"James Cook and Joseph Banks recorded it in 1770 while repairing their ship Endeavour near present-day Cooktown.\" (17) That totals 43. Paragraph 2: \"The story that it means 'I don't understand' is a myth.\" (11) \"It likely arose because later Europeans found that Aboriginal people elsewhere didn't recognize the word, since Australia had hundreds of distinct languages.\" (21) \"In the 1970s, linguist John Haviland, studying Guugu Yimithirr, confirmed that gangurru genuinely names the animal.\" (15) \"The 'I don't understand' tale persists because it's an appealing story about cross-cultural miscommunication, but it isn't true.\" (17) That totals 64. Overall: 107 words, so it is under the limit.\n\nIt is accurate, concise, and meets the constraint. A small quibble: the claim that the myth arose from later Europeans finding that others didn't recognize the word is somewhat speculative, and the myth's persistence explanation is a bit redundant.\n\nScore: 9",
+  "usage": {
+    "input": 485,
+    "output": 804
+  },
+  "cost": 0.00901
+}

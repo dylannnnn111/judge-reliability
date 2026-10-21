@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-13",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. The user asked for under 200 words, and neither response clearly meets that limit. Response A runs roughly 330 words, while Response B is much tighter at roughly 220–240.\n\nBoth responses find the same core problems, in a sensible order:\n- the December crash\n- the day-of-month overflow\n- schedule drift\n- the fixed 30-day proration period\n- missing input validation\n- rounding\n\nResponse B has the following advantages:\n- It frames drift correctly, as something that appears if you fix the overflow bug naively. In the current code, the crash happens first.\n- It gives concrete fixes, namely `relativedelta`, `calendar.monthrange`, and capping `days_used`.\n- It notes that a 31-day month would bill more than `monthly_cents`.\n- It has no filler preamble.\n\nResponse A has these weaknesses:\n- It opens with filler (\"Below are the six issues identified...\").\n- It states that `//` \"floors toward zero\". That is wrong, because floor division floors toward negative infinity.\n- It is wordier throughout.\n- It suggests `Decimal` with `ROUND_HALF_UP`, which is a reasonable idea but adds length.",
+  "usage": {
+    "input": 1573,
+    "output": 738
+  },
+  "cost": 0.010526
+}

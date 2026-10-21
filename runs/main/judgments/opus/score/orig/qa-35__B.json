@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-35",
+  "side": "B",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "This response is **accurate, complete and concise**, and it respects the length limit.\n\n**Correctness:** Everything stated is accurate.\n- **Drug targets:** Penicillin acts on cell wall synthesis, tetracyclines on bacterial ribosomes, and fluoroquinolones on DNA gyrase and topoisomerase IV. Calling the last group \"bacterial DNA enzymes\" is an acceptable simplification.\n- **Why viruses are unaffected:** They lack a cell wall and their own metabolism, and they use host machinery. This is the right reason antibiotics fail against them.\n- **Resistance:** It correctly describes natural selection acting on random mutations and horizontal gene transfer.\n- **Minor imprecision:** Plasmids are carriers of resistance genes rather than a transfer mechanism. That is a phrasing slip, not an error.\n\n**Key reasoning:** Both parts of the question are answered with the causal logic intact. Antibiotics need a bacterial target that viruses don't have. Resistant variants already exist, are selected under drug pressure, and overuse speeds this up. It could have noted explicitly that resistance arises in bacteria, not in patients. That is a common misconception, but the explanation doesn't depend on it.\n\n**Clarity and length:** It is about 92 words, under the 120-word limit. The two paragraphs map to the two questions, and the examples are concrete and helpful. Nothing is padded.\n\nScore: 9",
+  "usage": {
+    "input": 446,
+    "output": 1176
+  },
+  "cost": 0.025304
+}

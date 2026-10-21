@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-11",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response's answer is correct. Conditioning on door 2 showing a goat, the car is behind door 1 or door 3 with equal probability (each 1/2), because the random host's choice carries no information about the car's location. The explanation identifies the key point: the host's knowing avoidance is what gives 2/3 in the classic problem, and its absence makes the conditional probabilities equal. The case breakdown is clear and accurate. The response is about 120 words, right at the limit, but the extra material is useful and not padding.\n\nScore: 9",
+  "usage": {
+    "input": 507,
+    "output": 940
+  },
+  "cost": 0.0005207
+}

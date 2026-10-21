@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-30",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.** Both responses lead with the same three real issues, in the same sensible order:\n\n1. `COUNT(*)` counts the NULL row produced by the LEFT JOIN, so idle agents show 1.\n2. `COALESCE(AVG(...), 0)` makes idle agents look like they respond instantly.\n3. `AVG` silently drops unanswered tickets, which flatters the average.\n\n**Response A** goes further on the third issue. It explains why the bias matters: unanswered tickets are the slowest ones. It also gives concrete fixes, either a separate unanswered count or the wait time so far. Its two extra points are real and relevant. The missing time window matters for a report labelled \"weekly.\" Integer `AVG` truncation is correctly flagged as minor and database-dependent. Its closing note on the `ON`-clause placement confirms correct code without calling it a problem.\n\n**Response B's** extra points are weaker. \"Hard-coded assumptions\" about `status = 'open'` and `active = 1` is speculative schema-checking rather than a bug. Its \"minor\" point 5 calls the `ORDER BY` fine and then adds generic email advice, which adds little. B also pads heavily with an introduction, a closing summary, and \"to explain this more fully.\" This pushes it well past the 200-word limit. A also runs somewhat over, but much less.\n\nVerdict: A",
+  "usage": {
+    "input": 1714,
+    "output": 630
+  },
+  "cost": 0.019456
+}

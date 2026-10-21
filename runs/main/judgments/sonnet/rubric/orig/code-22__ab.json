@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-22",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the critical bug: `jwt.decode` never verifies the signature, so anyone can forge an admin token. Both give the right fix, `jwt.verify` with pinned algorithms. Both also catch the 403-versus-401 problem, the unchecked `Bearer` prefix, the missing `JWT_SECRET` check, the exported secret, and the ignored `exp`.\n\n**Response A**\n- Strengths: it includes a concise fixed code block, and it notes that the middleware never uses `SECRET`.\n- Weaknesses: it runs well over the 200-word limit, around 290 words including the code.\n- It adds low-value padding. The \"algorithm pinning\" item repeats point 1, and with a string secret `jwt.verify` already rejects `none`. The \"Minor\" list (a single role string being brittle, no logging, swallowed errors) flags things that aren't real bugs.\n- It never says outright that the `try/catch` is dead code, though point 5 implies it.\n\n**Response B**\n- Strengths: it states that the `try/catch` is dead code because `decode` returns null instead of throwing, which is a real finding. Its items are all substantive and ranked sensibly with severity labels. It is shorter, about 230 words, though still over the limit.\n- Weaknesses: \"fails open\" for a missing secret is slightly inaccurate, because `verify` throws without a secret, so it fails closed. The statement is hedged (\"or fails late\"). It rates the exported secret \"High\", which is arguably too high. It gives no code snippet, but the fixes are described clearly.\n\nOverall, B is tighter and closer to the length constraint, and it avoids the padding in A. It also catches the dead `try/catch`, which A only implies. A's code snippet is a plus but doesn't outweigh the extra length and filler.\n\nVerdict: B",
+  "usage": {
+    "input": 1718,
+    "output": 1271
+  },
+  "cost": 0.016146
+}

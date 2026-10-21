@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-07",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses reach the correct answer of about 7.84 L/100 km, so correctness is equal. The difference is the \"under 120 words\" constraint. Response A runs to roughly 80–85 words, so it complies. Response B comes to about 145–150 words once the filler is counted (\"To begin,\" \"I hope this helps,\" \"There is also a quicker route…\"), so it breaks the limit. A also adds something useful: a warning not to use the imperial-gallon conversion, with the figure that would give. B's closing caveat about EPA versus Australian ratings is useful but does not justify going over the limit.\n\nVerdict: A",
+  "usage": {
+    "input": 847,
+    "output": 1368
+  },
+  "cost": 0.015374
+}

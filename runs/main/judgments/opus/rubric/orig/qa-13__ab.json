@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-13",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both responses reach the correct answer, A is a knave and B is a knight, and both stay under 120 words.\n\nBoth also give the key reasoning:\n- A cannot be a knight, because that would make his statement true and so make him a knave, which is a contradiction.\n- So A is a knave, and his statement is false.\n- Since A is a knave and they are not both knaves, B must be a knight.\n\nThe difference is in clarity and economy. Response A gives the same logic in two clean bullets. Response B states the answer at the start and repeats it at the end. It also breaks the reasoning into more steps, which adds no new substance. The extra length in B is redundant rather than useful, so Response A is slightly better on clarity.\n\nVerdict: A",
+  "usage": {
+    "input": 582,
+    "output": 294
+  },
+  "cost": 0.008208
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-20",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.**\n\n**Accuracy of the main issue.** Both responses lead with the DST bug, which is real and the most important problem.\n- Response A's arithmetic checks out. Spring forward gives 71h, and floor(2.96) = 2. Fall back gives −25h, and floor(−1.04) = −2.\n- Response A also correctly notes that the overdue list is unaffected, because the sign stays correct.\n- Response B wrongly claims a DST-affected invoice \"may land in the wrong place on the overdue list.\" The filter only checks `< 0`, and an invoice due yesterday still yields −2, which is negative. This is a false claim about a problem that doesn't exist.\n\n**Fixes.** Both suggest a UTC calendar-date comparison.\n- Response B's version returns the raw division without rounding. That works because UTC days are exact.\n- Response A adds `Math.round`, which is harmless and slightly more defensive.\n\n**Secondary issues.** Both raise the same ones, with comparable accuracy: NaN from malformed input (B explains the `NaN < 0` mechanism a bit more explicitly), timezone of \"today\", and stale labels after midnight.\n\n**Length and format.** The user asked for under 200 words. Response B includes meta-filler such as \"I've kept the explanations and the suggested fix as they were, and have tried to make each point easier to follow\" and \"This is a second, separate problem.\" It clearly exceeds the limit with words that add nothing. Response A is tighter and closer to the constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 1983,
+    "output": 922
+  },
+  "cost": 0.026372
+}

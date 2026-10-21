@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-20",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the main bug: `Math.floor` over local-midnight differences miscounts across DST transitions, producing \"Due today\" for a tomorrow invoice in spring and \"Overdue by 2 days\" for a yesterday invoice in autumn. Both give a valid UTC-based fix. Both also correctly flag invalid input producing NaN, which silently drops overdue invoices. Both mention the timezone and stale-after-midnight issues as minor points.\n\nResponse A says the fall-back bug \"may land in the wrong place on the overdue list.\" That is wrong. The overdue filter only checks the sign, and -1.04 floors to -2, which is still negative, so membership is unaffected. Response B states this correctly and limits the damage to labels. That is a real accuracy difference.\n\nResponse B's worked example (71h giving 2) is also precise. Response A's fix drops the rounding and returns an exact integer, which is clean, but B's `Math.round` is equally valid. Neither response is meaningfully longer or padded.\n\nOverall, the two are close, but B avoids A's factual error about the overdue list.\n\nVerdict: B",
+  "usage": {
+    "input": 1859,
+    "output": 1057
+  },
+  "cost": 0.0007144
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-13",
+  "order": "ba",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses reach the correct answer: A is a knave and B is a knight. Both use the same valid argument. If A were a knight, the statement \"We are both knaves\" would be true, which would make A a knave, a contradiction. So A is a knave, which makes the statement false, so at least one of them is not a knave. Since A is a knave, B must be a knight. Response A states the negation step more precisely. Response B is wordier, with some filler phrasing, but its steps are equally clear. Neither has a substantive advantage.\n\nVerdict: TIE",
+  "usage": {
+    "input": 661,
+    "output": 744
+  },
+  "cost": 0.0004381
+}

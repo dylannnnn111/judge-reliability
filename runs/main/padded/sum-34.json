@@ -1,0 +1,14 @@
+{
+  "pair": "sum-34",
+  "side": "A",
+  "author": "haiku",
+  "model": "claude-haiku-5-5",
+  "original": "Clinic Desk 7.2 (released 13 October 2026) adds three main features: an online waitlist that texts the next patient when a booked slot is cancelled, with 30 minutes to accept; telehealth video links included in reminder texts and emails; and a practitioner leave calendar that automatically blocks online bookings on leave days.\n\nImprovements include next free appointments shown in the day view, patient search by Medicare number, and per-clinic reminder timing of 24 or 48 hours. Several bugs are fixed, including recurring appointments skipping weeks after public holidays.\n\nOne known issue: on some older Android phones, waitlist links open in the browser instead of the app, though patients can still accept there.\n\nComing next month: SMS two-factor login for staff and a reporting dashboard for practice managers.",
+  "text": "I'm pleased to share an overview of Clinic Desk 7.2, which was released on 13 October 2026. This release introduces three main features, and I have described each one below so you can see how they work together.\n\nThe first feature is an online waitlist. When a booked slot is cancelled, the system texts the next patient on the waitlist, and that patient has 30 minutes to accept the slot. The second feature is telehealth video links, which are now included in reminder texts and emails, so patients receive their video connection details alongside their appointment reminders. The third feature is a practitioner leave calendar. This calendar automatically blocks online bookings on days when a practitioner is on leave, so practitioners do not need to adjust the booking schedule by hand.\n\nBeyond these three features, the release also includes several improvements. The next free appointments are now shown in the day view, making it easier to see availability at a glance. Staff can also search for patients by Medicare number. In addition, reminder timing can now be set for each clinic, with the option of 24 or 48 hours.\n\nThis release also corrects several bugs. One of the more significant fixes addresses recurring appointments that skipped weeks after public holidays.\n\nThere is one known issue to be aware of. On some older Android phones, waitlist links open in the browser instead of the app. Patients who open the link this way can still accept the slot there.\n\nFinally, two features are planned for the coming month: SMS two-factor login for staff, and a reporting dashboard for practice managers. We will share further details as these features approach their release.",
+  "ratio": 2.2,
+  "usage": {
+    "input": 891,
+    "output": 1056
+  },
+  "cost": 0.0006171
+}

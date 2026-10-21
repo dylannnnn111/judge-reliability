@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-04",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate on the key figures: 12→18 weeks for primary carers, 2→4 for secondary carers, the three-block split within 24 months, the 1 January 2027 cut-off, the 12-month service requirement, the 10-week application window, and the 5 and 19 November sessions. Neither has a factual error. Both also exceed the 120-word limit, at roughly 145–150 words each, so neither fully meets the brief.\n\nResponse B covers more of what a manager needs. It states that the leave is on top of government Parental Leave Pay, which Response A omits. It makes the cut-off explicit, including that earlier arrivals keep current entitlements, which matters for managers handling in-flight cases. Its bulleted format is easier to scan, and the \"plan rosters for split leave\" line gives the manager an actionable takeaway. Its one addition not in the source is a mild inference, not a factual error.\n\nResponse A is well written prose, but it is no shorter than B and delivers less of the practical detail. Response B is the better summary for this reader.\n\nVerdict: B",
+  "usage": {
+    "input": 1644,
+    "output": 1429
+  },
+  "cost": 0.0008789
+}

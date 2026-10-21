@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-35",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are factually correct. Each explains that antibiotics target bacterial-specific structures (cell walls, ribosomes, enzymes), that viruses lack these and replicate using host machinery, and that resistance arises from mutation or gene transfer followed by selection when susceptible bacteria are killed. Both cover the key reasoning.\n\nThe deciding factor is the explicit \"under 120 words\" constraint. Response B is roughly 110 words and complies. Response A runs to roughly 190-200 words, which clearly violates it. Its extra material (examples of misuse, the point about bacterial reproduction speed) is accurate but not needed to answer the question, so the added length doesn't earn its place. Response B is also clearer and more direct.\n\nVerdict: B",
+  "usage": {
+    "input": 932,
+    "output": 458
+  },
+  "cost": 0.00032219999999999997
+}

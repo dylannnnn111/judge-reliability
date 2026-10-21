@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-31",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response is factually correct. It correctly attributes the seasons to Earth's axial tilt, not distance from the Sun, and correctly states that the Southern Hemisphere is tilted toward the Sun in December while the Northern Hemisphere is tilted away. It also gives the right reason for the reversal in June and correctly notes that Earth is closest to the Sun (perihelion) in early January. The key mechanisms are covered: the angle of sunlight, the spread of energy over the surface, and day length. The explanation is clear and well organized, and at about 114 words it fits the 120-word limit without padding.\n\nScore: 9",
+  "usage": {
+    "input": 465,
+    "output": 592
+  },
+  "cost": 0.0003425
+}

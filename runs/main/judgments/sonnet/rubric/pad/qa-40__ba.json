@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-40",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Constraint: under 120 words. Count Response A: roughly 110 words? Let me estimate.\n\n\"You see lightning first because light travels far faster than sound.\" (11) \"Light moves at about 300,000 km per second, so the flash reaches you almost instantly.\" (15) → 26. \"Sound travels at only about 343 meters per second in air, so the thunder lags behind.\" (15) → 41. \"To estimate distance:\" (3) → 44. \"Start counting seconds when you see the flash.\" (8) → 52. \"Stop when you hear the thunder.\" (6) → 58. \"Divide by 3 for kilometers or by 5 for miles.\" (10) → 68. \"Example: A 15-second gap means the strike was about 5 km (3 miles) away.\" (14) → 82. \"Safety tip: If the gap is 30 seconds or less (within about 10 km or 6 miles), you're within striking range.\" (20) → 102. \"Seek shelter and wait 30 minutes after the last thunder.\" (10) → 112. Under 120, fine.\n\nResponse B is clearly over 120 words (around 190). It violates the length constraint.\n\nCorrectness: A's example: 15 s / 3 = 5 km, /5 = 3 miles. Correct. 30 s = 10 km, 6 miles. Correct. B's example: 10 s → 3 km, 2 miles. Correct.\n\nA meets the constraint and is correct; B violates it.\n\nVerdict: A",
+  "usage": {
+    "input": 895,
+    "output": 472
+  },
+  "cost": 0.00651
+}

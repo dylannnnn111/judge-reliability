@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-21",
+  "side": "B",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The response catches the most important bug: `issueRefund` is a non-idempotent POST that gets retried on 502/503/504 and network errors, so a refund can be issued twice. It ranks this first and gives a concrete fix (an Idempotency-Key reused across retries). The other points are also real: no request timeout, ignored Retry-After, unconsumed bodies on discarded responses, and unvalidated `amountCents`. The jitter math is correctly described as reaching about 60s. Flagging the console double-submit is reasonable but is a UI concern rather than a code bug, and it is ranked second. The response misses little significant. However, it runs to roughly 230 words, which breaks the explicit \"under 200 words\" limit. Its ordering and fixes are sound, but the length violation is a clear instruction failure.\n\nScore: 7",
+  "usage": {
+    "input": 1182,
+    "output": 1152
+  },
+  "cost": 0.0006942000000000001
+}

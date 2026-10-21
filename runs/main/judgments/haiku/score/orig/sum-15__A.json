@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-15",
+  "side": "A",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate on every figure and condition I checked: 96 workers, the 3am 20-minute nap, the 22% drop in lane drifting, the 0.09-second reaction-time gain, the six-month and three-month experience thresholds, the 15-minute grogginess, the doubled drifting for 7am versus 6am drives, the simulator limitation, and the sample demographics. It stays well under 120 words and is easy to scan. Minor gaps: it doesn't note that the 7am/6am comparison held with or without a nap, and it omits that the study was run in a sleep lab with randomised order. Neither changes the main message for a manager, so the response is strong but not perfect.\n\nScore: 8",
+  "usage": {
+    "input": 1055,
+    "output": 638
+  },
+  "cost": 0.0004245
+}

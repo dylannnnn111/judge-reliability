@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-20",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. Its DST examples are correct: a 3-day gap across spring forward is 71h, which floors to 2. Its fix uses `Math.round`, so the result is a whole number and the `=== 0` and `=== 1` checks work. A's replacement code drops rounding entirely, so it returns fractional days and breaks those checks, even though A's prose suggests rounding. A also wrongly says the fall-back case can put an invoice in the wrong place on the overdue list, when the sign is still correct and only the label is affected. B states this correctly.\n\nB",
+  "usage": {
+    "input": 1827,
+    "output": 766
+  },
+  "cost": 0.0005657
+}

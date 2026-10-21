@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-29",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better mainly because it respects the word limit, and its accuracy is close to A's.\n\n**Length:** The user asked for under 120 words. Response A runs to roughly 180 words, so it breaks the constraint. Response B comes to about 112 words and stays within it.\n\n**Accuracy:** Both responses get the prices, data amounts, dates, the 15 November exit-fee window, the device repayment caveat and the regional investment details right. B's line \"Classic plan customers and those on fixed-price contracts are unaffected until their contract ends\" is slightly loose. It could suggest Classic customers are protected only until a contract ends, whereas the original says Classic customers see no change this year. This is a minor blur. A states the distinction more precisely, but \"this year\" is the only nuance lost in B.\n\n**Content and concision:** B keeps all the points a manager needs. A adds a support-contact section and a longer framing, which a busy manager can do without. A's extra words add little, and they cost it the length requirement.\n\nOverall, B's tiny imprecision is outweighed by A's clear failure to meet the word limit.\n\nVerdict: B",
+  "usage": {
+    "input": 1524,
+    "output": 944
+  },
+  "cost": 0.012488
+}

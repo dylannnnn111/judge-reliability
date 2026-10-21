@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-38",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate on the key figures: the 18 November launch, 431 of 600 beta installs, the 4.3 rating, 21 of 23 bugs fixed, the $268,500 of $290,000 spend, and the review-delay risk. Neither invents facts or misattributes decisions. Response A's \"431 members installed the app\" is slightly more precise than B's \"used it,\" which is a minor wording point. Response A is plain prose and runs close to the 120-word limit. Response B is shorter, uses bold headings and bullets that a busy manager can scan quickly, and includes the next update date, which is useful for someone who won't read the original. Neither drops anything the manager needs, so B's extra scannability and brevity give it a modest edge.\n\nVerdict: B",
+  "usage": {
+    "input": 1409,
+    "output": 1280
+  },
+  "cost": 0.0007809
+}

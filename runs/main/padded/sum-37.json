@@ -1,0 +1,14 @@
+{
+  "pair": "sum-37",
+  "side": "B",
+  "author": "opus",
+  "model": "claude-haiku-5-5",
+  "original": "**Finance Data Warehouse: Amber (was Green), week ending 10 October**\n\nOn schedule: general ledger and accounts payable data load nightly, and 14 of 22 reports are rebuilt and match the old system.\n\n**Risk:** Lead data engineer Tomas Novak leaves 7 November. He's the only person who knows the payroll system, and the payroll load isn't built. Without him, go-live likely slips from 8 December to late January.\n\n**Options (no decision yet):**\n1. Hire a payroll contractor for about 8 weeks (~$64k, unbudgeted). This is the team's preference.\n2. Go live 8 December without payroll, though four month-end reports need it.\n3. Delay to late January.\n\nOption 1 needs approval from sponsor Margaret Lowe, who returns 20 October. Meanwhile, Tomas is documenting payroll.\n\n**Budget:** $298k of $455k spent.",
+  "text": "**Finance Data Warehouse: Amber (was Green), week ending 10 October**\n\nI'm pleased to report that the project is on schedule in most respects. To begin with, the general ledger and accounts payable data load nightly as planned. I'm also glad to say that 14 of 22 reports have now been rebuilt and match the old system.\n\n**Risk:** I'd like to draw your attention to the risk that has led us to move the project status from Green to Amber. Lead data engineer Tomas Novak is scheduled to leave on 7 November. He is currently the only person who knows the payroll system, and the payroll load has not yet been built. Without him, go-live would likely slip from 8 December to late January.\n\n**Options (no decision yet):**\nWe have not yet made a decision, and the following options are set out for consideration:\n1. Hire a payroll contractor for about 8 weeks (~$64k, unbudgeted). This is the team's preference.\n2. Go live on 8 December without payroll, although four month-end reports need it.\n3. Delay go-live to late January.\n\nOption 1 requires approval from sponsor Margaret Lowe, who returns on 20 October. In the meantime, Tomas is documenting payroll.\n\n**Budget:** To summarise the financial position, $298k of the $455k budget has been spent to date.",
+  "ratio": 1.69,
+  "usage": {
+    "input": 489,
+    "output": 1084
+  },
+  "cost": 0.0005909
+}

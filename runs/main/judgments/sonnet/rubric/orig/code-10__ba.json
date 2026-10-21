@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-10",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the two important problems. The unanchored `match` combined with `<path:slug>` allows path traversal, and the code has no authentication check. Both also give correct fixes for the traversal: `fullmatch` and the plain `<slug>` converter.\n\n**Response A**\n- Its fixes are stronger. It suggests `send_from_directory`, which does its own containment check.\n- It catches a real bug that B misses: `os.path.exists` is true for a directory named `foo.pdf`, which makes `send_file` fail with a 500.\n- Its claim that `isfile` removes the race is slightly wrong. Catching `FileNotFoundError` is what removes it.\n- The per-report authorization point is speculative.\n- The cache-control point is reasonable.\n- The final \"minor\" item (logging, hard-coded `REPORT_DIR`) is mostly padding.\n- It is clearly over the 200-word limit.\n\n**Response B**\n- It is more calibrated on auth, noting that enforcement might exist elsewhere.\n- Its symlink escape and TOCTOU points are legitimate but minor hardening.\n- Its item 6 is muddled. It says the regex is fine, then claims invalid slugs fall through to a 404, but the code already returns 400 for them. This flags something that is not a problem.\n- It is also over the word limit, though by less.\n\nOverall, A finds more real issues and gives better remediation. B's last item is incorrect, and its symlink point is less likely to matter than A's directory crash. A's extra length is mostly useful, though it breaks the word limit more.\n\nVerdict: A",
+  "usage": {
+    "input": 1550,
+    "output": 1351
+  },
+  "cost": 0.01661
+}

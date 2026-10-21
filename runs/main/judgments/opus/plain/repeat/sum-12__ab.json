@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "sum-12",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth summaries capture the same core facts: the new fees, the concession pass, the repair rationale, staff being unaffected, and the petition. Both also slightly exceed the 120-word limit (roughly 124–125 words each), so length doesn't separate them.\n\nThe deciding difference is accuracy on the concession:\n\n- **Response B** states the weekly pass \"will replace the current $9 daily concession.\" The article never says this. It says concession parking is being \"extended\" and notes the current daily rate, without saying that rate will end. A manager relying on B could wrongly conclude the daily concession is being abolished.\n- **Response A** says users \"can buy a $15 weekly pass instead of the current $9 daily concession.\" This reads as an option rather than a definite replacement, which is less misleading.\n\nA's added line, \"This is a significant saving for regular users,\" is editorial. However, it is reasonably supported by the arithmetic and by Barry Sutton's quote, and it gives a busy manager a useful takeaway.\n\nB also includes an unnecessary \"**Summary:**\" label.",
+  "usage": {
+    "input": 1210,
+    "output": 2017
+  },
+  "cost": 0.04518
+}

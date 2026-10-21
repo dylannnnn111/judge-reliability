@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-36",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same core problems, in nearly the same order. They list the `RLock` used for `delete` first, then the stampede, the stale re-cache after `Invalidate`, the TTL mismatch, unbounded growth, and the missing context. The top item is correctly ranked first in both.\n\n**Response A:**\n- Item 2 states the stale-token problem concretely: an in-flight fetch can re-cache the token upstream just rejected, which is the scenario `Invalidate` exists for.\n- It gives no fix for that stale-token problem.\n- Item 6 is slightly inaccurate. In the current code no request waits on another request's fetch, so \"blocks every request waiting on that tenant\" only holds if singleflight is added.\n- At roughly 190 words, it meets the \"under 200 words\" limit.\n\n**Response B:**\n- It has somewhat better fix guidance: a generation counter, a per-tenant mutex with a re-check, and the note that `recover` cannot catch the fatal map error.\n- Its stale-overwrite item is accurate and slightly broader, since it also covers one fetch overwriting a newer one.\n- Item 6 adds a speculative \"errors aren't cached, no backoff\" point. That is not a real bug in the code, though it is arguable design feedback.\n- At roughly 210–225 words, it breaks the explicit \"under 200 words\" constraint.\n\nB is a little richer on remedies, but A is accurate enough, keeps to the stated length, and avoids the speculative negative-caching point. The explicit word limit tips the balance narrowly to A.\n\nVerdict: A",
+  "usage": {
+    "input": 1797,
+    "output": 2726
+  },
+  "cost": 0.030854
+}

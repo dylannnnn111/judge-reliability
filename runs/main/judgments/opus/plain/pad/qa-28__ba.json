@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-28",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A.** Response A stays at or very near the 120-word limit, while Response B runs to roughly 200 words, far over the cap. Both are accurate and cover the same core points: chaining, open addressing, load factor, the O(1) average versus O(n) worst case, and resizing. B adds some extras, such as Java's tree-based bins and specific load-factor thresholds, but it pads with filler like \"Let me explain…\" and clearly breaks the explicit length constraint. A is concise and complete, and it even notes amortized resize cost.\n\n**A**",
+  "usage": {
+    "input": 817,
+    "output": 535
+  },
+  "cost": 0.013968
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-26",
+  "side": "B",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The summary is largely accurate. The timing (stuck 7:50am, released 8:50am, so \"about an hour\"), the cause, the return to service at 2:10pm Wednesday, the impact figures, and the $2,300 spare-board decision and its approval date all match the report. The one small inaccuracy is \"printed updates every day\": the report specifies a printed notice on Monday and afternoon updates, with no mention of print for the later ones. The summary also omits who approved the spare board (the village manager), though that is minor for a busy manager.\n\nThe main failure is the explicit length limit. The response runs to roughly 210–230 words, nearly double the 120-word cap. The heading and the odd first-person line (\"I am pleased to report\") add words without value. The key points (incident, cause, impact, actions, feedback) are all present, so the content is well organised, but the excess length ignores a direct instruction and the reader would need to cut it before use.\n\nScore: 4",
+  "usage": {
+    "input": 1310,
+    "output": 876
+  },
+  "cost": 0.000569
+}

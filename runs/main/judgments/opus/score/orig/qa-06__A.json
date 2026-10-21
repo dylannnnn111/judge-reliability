@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-06",
+  "side": "A",
+  "score": 10,
+  "model": "claude-opus-5-5",
+  "text": "The answer **Friday, 24 March 2028** is correct.\n\n**Date check:**\n- From 15 Dec to 31 Dec 2027 is 16 days, leaving 84.\n- Using all 31 days of January leaves 53.\n- 2028 is a leap year (divisible by 4, not a century year), so February has 29 days, leaving 24.\n- That lands on 24 March 2028.\n\n**Weekday check:**\n- 100 days is 14 weeks plus 2 days, so Wednesday + 2 = Friday.\n- Cross-check: 1 Jan 2027 is a Friday, so 15 Dec 2027 (day 349) is a Wednesday, confirming the premise.\n- 1 Jan 2028 is a Saturday, so 24 March 2028 (day 84) is a Friday.\n\n**Reasoning and clarity:** The response covers the key steps: counting through the months and noting the leap year. Its weekday shortcut using 100 mod 7 is efficient and sound. It is concise, well under 120 words, and easy to follow. The only small addition would be confirming that the stated starting weekday is correct, but that is unnecessary.\n\nScore: 10",
+  "usage": {
+    "input": 345,
+    "output": 675
+  },
+  "cost": 0.01488
+}

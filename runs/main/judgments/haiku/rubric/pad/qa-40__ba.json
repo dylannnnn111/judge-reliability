@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-40",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give correct distance rules. Response A's examples check out: 15 seconds is about 5 km or 3 miles, and 30 seconds is about 10 km or 6 miles. Its safety advice (wait 30 minutes after the last thunder) is the standard guidance. Response B's examples are also correct (10 seconds is roughly 3 km or 2 miles), and it adds the useful point that the flash and thunder start simultaneously. However, B runs to roughly 190-200 words, well over the 120-word limit, while A is about 110 words and within it. Since B's extra content is modest and the length requirement is explicit, A better satisfies the request.\n\nVerdict: A",
+  "usage": {
+    "input": 895,
+    "output": 830
+  },
+  "cost": 0.0005045
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-18",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. Both identify the critical cache-key bug and the other main problems in a similar order. B's in-flight deduplication point also says to evict the promise on rejection, which A omits. Without that, a failed fetch would stay cached for 60 seconds. B also flags float precision for money conversion, which matters for an invoicing service, and it suggests validating currency codes against ISO 4217. A's advantages are a more precise type check and the unsafe generic cast point, which are less important here.\n\nB",
+  "usage": {
+    "input": 1481,
+    "output": 541
+  },
+  "cost": 0.00041860000000000004
+}

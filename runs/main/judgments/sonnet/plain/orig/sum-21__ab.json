@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-21",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is slightly better. Both summaries are accurate and cover the recommendation, the cost against budget, the alternative and the deadline.\n\n- **Length:** B is about 110 words, comfortably under the 120 limit. A is about 119, which only just fits.\n- **Content:** B adds a useful derived figure: the hire-car cost of about $21,600 in total (6 cars × 2 months × $1,800), which is correct. A spends words on Coastal Fleet Sales, which does not affect the decision.\n- **Structure:** B opens with a heading that states the decision and the 24 October deadline, which suits a busy manager. A is scannable, but its \"Decision needed\" line comes last.",
+  "usage": {
+    "input": 1364,
+    "output": 2153
+  },
+  "cost": 0.024258
+}

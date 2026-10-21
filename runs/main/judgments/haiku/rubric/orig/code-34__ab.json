@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-34",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the key bug: the loop variable is shared across goroutines under Go 1.21, so the status page can show wrong URLs. Both also flag the discarded errors, the nondeterministic result order, the missing timeout, and unbounded concurrency. Response A is more precise about the Go 1.22 behavior, since it depends on the `go.mod` version, and it adds useful points about the `main` stub not exercising the bug and about testing with `-race`. However, Response A runs to roughly 240 words, which exceeds the explicit 200-word limit. Response B stays under the limit, ranks the same core issues sensibly, and gives clear fixes. Its one imprecision is describing the Go 1.22 change without the `go.mod` caveat, which is minor here since the CI uses 1.21. Given the user's explicit length cap and similar substance, Response B is slightly better.\n\nVerdict: B",
+  "usage": {
+    "input": 1602,
+    "output": 1586
+  },
+  "cost": 0.0009532000000000001
+}

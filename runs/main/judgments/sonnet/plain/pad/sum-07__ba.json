@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-07",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. Both responses lead with the Classic CSV removal, which is the one change that could break a manager's workflow. Neither fully meets the 120-word limit, but the gap is very different.\n\n- **Response A** comes to about 124 words, only slightly over the limit. It has no filler and covers the new features, key improvements, the breaking change and the roadmap.\n- **Response B** runs to roughly 200 words, far over the limit. It opens with filler (\"Thank you for your interest…\", \"grouped by topic so you can review them quickly\"). It also puts the bug fixes under \"Improvements\", which is a structural slip.\n\nA is much closer to the brief and wastes less of a busy reader's time.\n\n**A**",
+  "usage": {
+    "input": 1360,
+    "output": 1531
+  },
+  "cost": 0.01803
+}

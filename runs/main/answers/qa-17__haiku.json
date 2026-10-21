@@ -1,0 +1,13 @@
+{
+  "item": "qa-17",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "Venus has the hottest surface in our solar system, averaging about 465°C (870°F), hotter than Mercury even though Mercury is closer to the Sun. The reason is its extremely thick carbon dioxide atmosphere, which creates a runaway greenhouse effect. The dense CO₂ traps outgoing infrared heat, while the thick clouds of sulfuric acid reflect much sunlight, yet enough energy still gets trapped to heat the surface intensely. The atmospheric pressure at the surface is about 90 times that of Earth's, further contributing to the planet's scorching conditions.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 50,
+    "output": 200
+  },
+  "cost": 0.000105,
+  "at": "2026-10-14T01:50:26.819Z"
+}

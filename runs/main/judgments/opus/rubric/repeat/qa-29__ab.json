@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "qa-29",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** Both responses are accurate. Each explains that compound interest earns \"interest on interest,\" contrasts linear with exponential growth, and gives the same correct example: $1,000 at 5% for 30 years yields $2,500 simple versus about $4,322 compounded. B's Rule of 72 figure is also correct (72 ÷ 5 = 14.4).\n\n**Key reasoning:** Both supply the essential mechanism and explain why time matters. B adds that the difference starts small and widens faster and faster, which is a nice touch. A covers the same idea when it says growth \"accelerates\" and the gap compounds over longer horizons.\n\n**Constraint:** The user asked for under 120 words.\n- A is about 98 words, comfortably within the limit.\n- B comes to roughly 121 words even without counting symbols, which slightly exceeds the limit.\n\nMost of B's overage comes from the Rule of 72 aside. It is correct and somewhat useful, but it is tangential to the question of *why* compounding wins. So B's extra length breaks an explicit instruction without adding core reasoning.\n\n**Clarity:** B's formatting is slightly easier to scan. A is clear and concise as well.\n\nSince both are correct and explain the key mechanism equally well, A's clean adherence to the word limit outweighs B's minor formatting advantage and tangential extra.\n\nVerdict: A",
+  "usage": {
+    "input": 721,
+    "output": 1885
+  },
+  "cost": 0.040584
+}

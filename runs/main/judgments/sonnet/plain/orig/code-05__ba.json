@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-05",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is slightly better. Both responses find the same main problems and get the technical details right:\n\n- DST arithmetic on same-tzinfo datetimes\n- nonexistent and ambiguous local times\n- weekend loading based only on the start day\n- float and banker's rounding\n- public holidays and input validation\n\nB is better on three counts:\n\n- **Concrete DST examples.** B names the real Sydney transitions (April fall-back, October spring-forward) and gives exact hour discrepancies, for example 4h paid against 5h worked. These are correct and easier for a reviewer to verify.\n- **More actionable fix for nonexistent times.** B suggests a UTC round-trip check. A only says they \"should be detected and rejected\".\n- **Better last item.** B flags the lack of a sanity limit on shift length, which is a real payroll risk. A's last item, that `parse_local` is called repeatedly, is trivial and padded.\n\nOn length, both are near or over the 200-word limit. B, at about 200 words, is closer to the limit than A, at about 230.\n\n**B**",
+  "usage": {
+    "input": 1618,
+    "output": 2359
+  },
+  "cost": 0.026826
+}

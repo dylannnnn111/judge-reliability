@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-34",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate on the main points: the waitlist's 30-minute window, the telehealth links, the leave calendar, the reminder timing, the fixes, the Android known issue, and next month's features. Both also run slightly over the 120-word limit, with Response A around 135 words and Response B around 130, so neither gains an edge there. Response A's \"Patient search now works by Medicare number\" drops \"as well as name and phone,\" which slightly misstates the change, but Response B has the same omission. Response A's labelled sections (new features, improvements, fixes, known issue, next month) let a busy manager scan quickly, and it names the specific fixes. Response B reads as dense prose and only summarises the fixes as \"several bugs.\" Response B is marginally tighter, but A's structure serves the reader better.\n\nVerdict: A",
+  "usage": {
+    "input": 1397,
+    "output": 1808
+  },
+  "cost": 0.0010437
+}

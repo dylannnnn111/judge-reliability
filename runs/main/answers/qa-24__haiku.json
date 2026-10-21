@@ -1,0 +1,13 @@
+{
+  "item": "qa-24",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "No, Everest is not the tallest mountain from base to peak. Mauna Kea in Hawaii rises about 10,200 metres from its base on the seafloor, though only about 4,200 metres of that is above sea level. Everest's summit is about 8,849 metres above sea level.\n\nNo, its summit is not the point farthest from Earth's centre. Earth's equatorial bulge means that points nearer the equator are farther from the centre. Ecuador's Chimborazo, although much lower above sea level, has a summit that is roughly 2 kilometres farther from the centre than Everest's peak. Chimborazo is the mountain whose summit is farthest from Earth's centre.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 83,
+    "output": 563
+  },
+  "cost": 0.0002898,
+  "at": "2026-10-14T01:50:40.735Z"
+}

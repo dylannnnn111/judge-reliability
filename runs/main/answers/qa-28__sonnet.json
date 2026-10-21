@@ -1,0 +1,13 @@
+{
+  "item": "qa-28",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "A collision happens when two keys hash to the same bucket. The two main fixes are:\n\n**Chaining:** each bucket holds a linked list (or tree) of entries. Colliding keys are appended to that bucket's list.\n\n**Open addressing:** if the slot is taken, probe for another one using linear probing, quadratic probing, or double hashing.\n\n**Performance:** With a good hash function and a controlled load factor (entries ÷ buckets), lookups, inserts, and deletes average O(1). As collisions pile up, chains or probe sequences lengthen, and the worst case degrades to O(n) (or O(log n) if chains become balanced trees, as in Java's HashMap). Open addressing also suffers from clustering as it fills.\n\nTo keep performance up, tables resize (typically doubling) and rehash when the load factor crosses a threshold, such as 0.7–0.75.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 51,
+    "output": 288
+  },
+  "cost": 0.002982,
+  "at": "2026-10-14T01:50:45.436Z"
+}

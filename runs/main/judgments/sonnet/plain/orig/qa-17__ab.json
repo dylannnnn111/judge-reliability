@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-17",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B\n\nBoth responses correctly name Venus, give about 465°C, and explain the runaway greenhouse effect. Both also stay under 120 words: A is roughly 88 and B roughly 119.\n\nB is the more informative of the two. It adds the roughly 96% CO₂ composition, the way the dense atmosphere evens out temperatures across the planet, and the explicit contrast with Mercury's lack of atmosphere. Those details answer the \"why\" more fully than A does.\n\nA is a clean, concise paragraph, but it covers less. B's bullet formatting is a little heavy for a short answer, and it sits close to the word limit, but it does not exceed it.",
+  "usage": {
+    "input": 623,
+    "output": 1475
+  },
+  "cost": 0.015996
+}

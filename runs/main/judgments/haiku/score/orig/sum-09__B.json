@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-09",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The summary is largely accurate. The starting rent, 1 March review date, CPI floor and cap of 3% to 5% for years 2 to 4, the year 4 floor under the year 5 market review, the 30-day dispute window with equally split costs, outgoings being separate, and the 14-day notice rule all match the source. The one small embellishment is \"landlord-appointed valuer.\" The guide says only that the landlord gets a valuer, so this is a reasonable inference but not stated. The main problem is the length constraint. Counting the bullets and the closing line, the response runs to roughly 135 words, which exceeds the 120-word limit. It also keeps the key points a manager needs, so the shortfall is in concision rather than content.\n\nScore: 6",
+  "usage": {
+    "input": 1122,
+    "output": 781
+  },
+  "cost": 0.0005027
+}

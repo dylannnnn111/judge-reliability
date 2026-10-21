@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-21",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. It stays under the 120-word limit (about 110 words), while A runs to roughly 200 words and breaks the main constraint.\n\nB is also accurate. Its extra figure of about $21,600 for two months of hire cars is correct (6 cars × $1,800 × 2 months). It puts the deadline in the headline, so a busy manager sees the decision and timing first.\n\nA also confuses the voice. It opens with \"I'd like to ask for Ruth's sign-off\", which doesn't fit a summary written for the manager.\n\n**B**",
+  "usage": {
+    "input": 1520,
+    "output": 677
+  },
+  "cost": 0.00981
+}

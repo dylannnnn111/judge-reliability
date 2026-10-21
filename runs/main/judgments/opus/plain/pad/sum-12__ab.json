@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-12",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is far tighter. It comes in at roughly 120 words, perhaps a few over depending on how figures are counted, and it covers every key point: the fee changes, the concession pass, the reason for the increase, the repair timeline, staff being unaffected, and the petition.\n\nResponse B runs to about 200 words, well beyond the 120-word limit. It also adds padding a busy manager doesn't need (\"I would like to let you know,\" \"I want to reassure you,\" \"For your information\").\n\nResponse A's remark that the pass is \"a significant saving for regular users\" is an inference rather than a stated fact. It is reasonable, though, since the article's dialysis example confirms it.",
+  "usage": {
+    "input": 1314,
+    "output": 674
+  },
+  "cost": 0.018736
+}

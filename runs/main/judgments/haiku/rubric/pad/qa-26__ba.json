@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-26",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly explain Rayleigh scattering: shorter blue wavelengths scatter more strongly, so the daytime sky looks blue, and at sunset the longer atmospheric path scatters away most of the blue, leaving reds and oranges. Neither contains a factual error.\n\nResponse A also adds a correct point about why the sky looks blue rather than violet (less violet in sunlight and reduced eye sensitivity to violet). It stays under the 120-word limit, at roughly 115 words.\n\nResponse B runs well past 120 words, roughly 180, so it violates the explicit length constraint. Its extra length adds some repetition rather than new correct content. Its explanation is clear, but it doesn't outweigh the constraint violation.\n\nResponse A is correct, covers the key reasoning, and follows the length instruction.\n\nVerdict: A",
+  "usage": {
+    "input": 846,
+    "output": 730
+  },
+  "cost": 0.00044960000000000003
+}

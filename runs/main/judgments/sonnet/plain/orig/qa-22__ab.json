@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-22",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is slightly better. Both answers correctly call it a myth and stay under 120 words (A is about 116, B about 115).\n\nB adds accurate detail that A lacks. Southern Hemisphere hurricanes do rotate clockwise. Toilet rim jets set the flush direction, so the same model flushes the same way anywhere. Shapiro's 1962 MIT experiment and the 1965 Sydney replication are real, and the Sydney one fits the Australian framing of the question.\n\nA is also correct, but its claim that \"two identical sinks side by side may drain differently\" is less concrete.\n\n**B**",
+  "usage": {
+    "input": 596,
+    "output": 1652
+  },
+  "cost": 0.017712
+}

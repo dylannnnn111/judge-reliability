@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-07",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the main bug: `len(items) // size` silently drops the final partial batch, and both rank it first. Both also flag the swallowed batch failures, the missing retries, and the sliceable-input assumption. Response A adds two useful points that B lacks: the overly broad `except Exception` and the advice not to retry permanent errors. However, A is well over the 200-word limit and pads its text with filler such as \"Taken together, the issues below are listed...\" and \"Each item is described in turn.\" B stays within the limit, covers the important problems, and adds a useful point about confirming `upsert_contacts` is idempotent before adding retries. B's item 3 partly repeats item 2, but it is a small cost. Since the user explicitly asked for brevity, B's tighter coverage is the better response overall, though A's extra points keep the gap from being large.\n\nVerdict: B",
+  "usage": {
+    "input": 1717,
+    "output": 777
+  },
+  "cost": 0.0005602000000000001
+}

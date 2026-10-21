@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-03",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both summaries are broadly accurate on the dates, times, failure counts, retries, the 451 abandoned orders, the $41,900 estimate with its caveat, the 312 support contacts and the action items.\n\n**Accuracy:**\n- **Response A** is clean. \"An outdated certificate pinned in its config\" correctly reflects the root cause. It also gives the 11:35 support escalation time, which shows how detection actually happened.\n- **Response B** is slightly loose. \"Of the affected attempts, 1,940 customers retried\" mixes up attempts and customers. \"451 abandoned their purchase\" is a bit firmer than the source, which says only that they didn't buy on Saturday, though B does add the \"may still buy later\" caveat. \"Ultimately brought to light through support escalation, which led to the fix\" is vague and drops the timing.\n\n**Key points:** Both cover what a manager needs. A states detection more precisely, with the escalation time, and B adds nothing A lacks. B does name owners for the open actions (SRE, Security), which A omits, but that is a minor gain.\n\n**Concision and the word limit:** This decides it. A is around 116–124 words depending on whether the heading counts, so it is at or very near the limit. B runs to roughly 150+ words, clearly over the 120-word cap. It also carries filler such as \"To show the scale of the incident, here is its impact,\" which adds nothing.\n\nA is tighter, slightly more precise, and respects the length constraint. B breaks the constraint and pads.\n\nVerdict: A",
+  "usage": {
+    "input": 1688,
+    "output": 1884
+  },
+  "cost": 0.044432
+}

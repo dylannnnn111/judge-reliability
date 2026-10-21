@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-30",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses define the p-value correctly as the probability of data at least as extreme as observed, assuming the null hypothesis is true, and both list the main misreadings: it is not the probability the null is true, not the probability of chance findings, not replication probability, and not effect size.\n\nResponse A adds a useful point that p > 0.05 does not mean \"no effect,\" but it is clearly over the 120-word limit. Its first paragraph repeats the definition in different words, and the closing paragraphs are filler. The user explicitly asked for brevity.\n\nResponse B covers the same core content in roughly 90 words, within the limit. Its last bullet, \"Evidence that the alternative hypothesis is true with a given confidence,\" is slightly loose, but it is not wrong. B is correct, complies with the constraint, and has no padding.\n\nVerdict: B",
+  "usage": {
+    "input": 800,
+    "output": 740
+  },
+  "cost": 0.00045
+}

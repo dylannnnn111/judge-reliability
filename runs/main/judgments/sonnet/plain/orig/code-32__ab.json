@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-32",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better, mainly because it follows the length limit more closely.\n\nBoth responses find the same main problems in the same order:\n- The `BETWEEN` upper bound drops September 30.\n- Integer division truncates the averages.\n- The status filter mishandles NULLs and may count the wrong statuses.\n- Stores with no orders disappear.\n\nBoth also mention hardcoded dates and timezone.\n\n**Length:** The user asked for under 200 words. A runs a little over, at roughly 215 words. B is far over, at roughly 300 words, and adds a \"Minor\" section with extras such as the `ORDER BY` tiebreaker.\n\n**Accuracy:** B suggests `AVG(o.item_count)` as the fix after naming SQL Server as affected by truncation. SQL Server's `AVG` on an integer column also returns an integer, so that fix would not work there. A's fix, multiplying by `1.0` before dividing, works on every engine.\n\n**Substance:** B's handling of the NULL status is slightly more concrete, since it offers `IS DISTINCT FROM`. A's suggestion of an explicit status whitelist is also reasonable. This small edge does not outweigh B's length overrun and the weaker averaging fix.",
+  "usage": {
+    "input": 1674,
+    "output": 954
+  },
+  "cost": 0.012888
+}

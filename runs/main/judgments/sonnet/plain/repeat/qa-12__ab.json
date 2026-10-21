@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "qa-12",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are correct: 671/1296 ≈ 0.518. Both are under 120 words.\n\nResponse A is concise and gets to the answer directly. Response B is more explanatory and adds context (Chevalier de Méré). It is also under 120 words, at roughly 80.\n\nIs B's claim accurate? De Méré's problem involved betting on at least one six in four rolls of a single die, which was favorable, and then double sixes in 24 throws of two dice, which was not. So the claim is accurate.\n\nB is more thorough, with a clear step-by-step breakdown, and the added context is accurate. A is fine but terse. Most judges would likely prefer B for clarity and helpfulness, though some may prefer A for brevity. The constraint is only \"under 120 words,\" which both meet.\n\nI lean B.\n\n**B**",
+  "usage": {
+    "input": 412,
+    "output": 265
+  },
+  "cost": 0.003474
+}

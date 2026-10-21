@@ -1,0 +1,13 @@
+{
+  "item": "code-31",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "**Bugs and problems, most important first:**\n\n1. **Rows are silently skipped at page boundaries.** `created_at` has one-second precision, so many rows share a timestamp. If a tie straddles the 1000-row boundary, the next query uses `created_at > :last_seen`, which excludes the remaining tied rows. They are never exported. Fix: use a unique keyset cursor on `(created_at, id)`:\n   ```sql\n   AND (created_at, id) > (:last_created_at, :last_id)\n   ORDER BY created_at, id\n   ```\n\n2. **Non-deterministic ordering.** `ORDER BY created_at` has no tiebreaker, so rows with equal timestamps can come back in different orders across queries. The `id` tiebreaker in fix 1 also addresses this.\n\n3. **Late-committed rows are lost.** A transaction that gets an earlier `created_at` but commits after the cursor has advanced will never be picked up. Consider reading only up to a safety lag (e.g., `created_at < now() - interval 'N seconds'`), or use a commit-ordered sequence if available.\n\n4. **Missing index.** Without an index on `(tenant_id, created_at, id)`, each page may scan and sort a large part of the table.\n\n5. **`:last_seen IS NULL OR ...` can hurt the planner.** Use a sentinel minimum value for the first page, or build two query variants.\n\n6. **No persisted cursor.** If the job crashes, it's unclear where it resumes. Store the last `(created_at, id)` after each committed page, and make downstream writes idempotent in case a page is reprocessed.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 257,
+    "output": 1249
+  },
+  "cost": 0.0006502000000000001,
+  "at": "2026-10-14T01:54:35.378Z"
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-27",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. It ranks the problems more sensibly, gives concrete fixes, and flags fewer things that are fine.\n\n**Response A**\n- Its first item is a speculative compliance problem: it assumes suppression lists for unsubscribes, bounces and complaints that the code never mentions. The code does filter on `marketingOptIn`, so ranking this above the real runtime defects is misleading.\n- The real bugs appear but are ranked lower: unbounded `Promise.all`, partial failure with no record of who was mailed, the misleading return value, the null email crash, and the cursor loop with no guard.\n- Its last item flags holding 80k strings in memory, which is fine, and the lowercasing nitpick adds little.\n- It offers almost no concrete fixes.\n- It opens with filler and restates points, and it runs well over the 200-word limit.\n\n**Response B**\n- It leads with unbounded concurrency, the most important real problem at 80k sends.\n- It follows with `Promise.all` failure semantics and the risk of resending on a rerun.\n- Each item comes with an actionable fix: p-limit with 10–50 concurrent sends, `allSettled`, idempotent tracking of sent IDs, and cursor repeat detection.\n- It does not flag fine things, though the stale opt-in point is minor.\n- It is also somewhat over 200 words, but it is tighter than A.\n\nVerdict: B",
+  "usage": {
+    "input": 1830,
+    "output": 739
+  },
+  "cost": 0.01105
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-28",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Accuracy check on A: it states 84 staff with over eight weeks and $3.9M liability, which is correct. The cap is described correctly (a plan, then a direction of up to a quarter with eight weeks' notice). Cash-out is correct, though it omits that cashing out was previously not allowed (a minor omission). The shutdown is correct. The exemption for 24/7 warehouse staff is correct, including that they are still covered by the cap and cash-out. It omits the leave-without-pay and make-up-time options. The action is correct: lists go to managers by 31 October. A is word-efficient, at around 120 words or just under.\n\nAccuracy check on B: \"Staff with over eight weeks are asked to agree a reduction plan\" softens \"will need to,\" which is mildly misleading. \"Eight weeks' notice given\" is fine. The cash-out mentions \"(new)\", which is good. The shutdown says \"use four days' leave,\" which omits that those are the non-public-holiday days, and gives the alternatives of unpaid leave or make-up time. The scope says \"permanent staff\" and drops part-time/full-time, which is minor. \"The only exemption is for 24/7 warehouse staff... exempt from the shutdown only\" is correct. \"You will receive your team's high-balance list by 31 October\" is wrong, because managers receive the list, not staff, and it is addressed to the reader as if they were a manager. That is a \"who decided what\" or who receives what error. B also opens with filler (\"We would like to draw your attention\") and is likely over 120 words. Counting roughly: B is about 190 words, which breaks the limit.\n\nA is more accurate, within the word limit (let me estimate A: about 125 words?). Counting A: title ~7, intro ~13, bullet 1 ~35, bullet 2 ~15, bullet 3 ~20, warehouse ~17, action ~12, so about 119. That is borderline but roughly fine. B clearly exceeds the limit.\n\nA is better on accuracy, concision and the length constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 1590,
+    "output": 666
+  },
+  "cost": 0.00984
+}

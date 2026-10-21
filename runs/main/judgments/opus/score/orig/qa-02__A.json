@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-02",
+  "side": "A",
+  "score": 10,
+  "model": "claude-opus-5-5",
+  "text": "The response's final answer of **96 km/h** is correct.\n\n- **Correctness:** Each step checks out. The outbound leg takes 160/80 = 2 h, and the return takes 160/120 = 4/3 h. That gives a total of 320 km in 10/3 h, and 320 ÷ (10/3) = 96 km/h. The harmonic-mean formula, 2·80·120/200 = 19200/200 = 96, confirms it.\n- **Key reasoning:** It gives the essential logic: total distance divided by total time. It also explains why the tempting answer of 100 km/h is wrong, because more time is spent at the slower speed. This is the main conceptual trap in the problem, so addressing it adds real value.\n- **Clarity and length:** The answer appears up front and the steps follow cleanly. At about 85 words it stays under the 120-word limit. The harmonic-mean line slightly overlaps the direct calculation, but it serves as a quick check and a general rule, so it is not padding.\n\nThere are no errors and nothing is missing.\n\nScore: 10",
+  "usage": {
+    "input": 461,
+    "output": 518
+  },
+  "cost": 0.012204
+}

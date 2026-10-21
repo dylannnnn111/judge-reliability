@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-02",
+  "side": "A",
+  "score": 8,
+  "model": "claude-opus-5-5",
+  "text": "The response is accurate on the substance:\n- **Dates:** 1 Dec–31 Jan, 10 Nov, 24 Oct and 12 Nov are all correct.\n- **Figures:** 11 vs 64 visitors and the 1pm and 7pm times are correct.\n- **Decision record:** Helen proposed, Ross objected, there was no agreement, hours are unchanged, and a revised proposal comes in November. Helen owns the capital works bid. The volunteer action correctly sits with managers.\n\nThere are small losses of nuance:\n- **\"Only 11 visitors\" omits \"averaged\".** The source figure is an average for 2pm–5pm.\n- **The trade-off is lost.** The proposal is presented as two independent changes, when the source says Corrie Creek's Thursday evening opening would be funded by Mount Lavell's saved staff hours.\n- **Anjali's position is missing.** She backed the Corrie Creek Thursday evening but opposed making it depend on cutting Mount Lavell. A manager would want to know the Thursday idea has independent support and the real dispute is the trade-off.\n- **The reason for re-running the figures is missing.** The summary does not say Helen will exclude the faulty weeks.\n\nNone of these makes the summary wrong, but leaving out the trade-off and Anjali's view weakens the reader's grasp of the dispute.\n\nCoverage is otherwise good. The actionable volunteer deadline is flagged, and the roof replacement recommendation is kept. Leaving out the air-conditioning service, morning tea roster and Christmas party is reasonable.\n\nOn length, the body is about 116 words, or around 123 including the title heading. That is borderline but likely acceptable, since headings usually aren't counted. The writing is tight and scannable.\n\nOverall it is a strong, accurate summary with one meaningful nuance lost on the central agenda item.\n\nScore: 8",
+  "usage": {
+    "input": 1284,
+    "output": 2102
+  },
+  "cost": 0.047176
+}

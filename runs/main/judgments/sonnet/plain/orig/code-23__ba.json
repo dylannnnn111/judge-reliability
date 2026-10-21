@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-23",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. Both responses find the main bug: `!r.value` drops legitimate `0` readings, which matters in a cold room. They also share most secondary findings: string timestamp comparison, null-valued latest readings, sensors vanishing from the output, and the O(n log n) sort with a comparator that never returns 0.\n\nThe difference is the 200-word limit. By my rough count, Response A runs about 220 words, clearly over. Response B runs about 205, much closer to the limit.\n\nB also orders its points better for a monitoring dashboard. It ranks disappearing dead sensors second and explains why that is dangerous. A ranks the same issue last. B folds the minor sort issues into one short item, which suits the \"problems that matter\" framing.\n\nA has some extras: `Number.isFinite` for NaN, and the `__proto__`/`constructor` key collision. These are valid but marginal for this use case, and they push A further over the word limit.\n\nB follows the length constraint better and prioritizes more usefully, so I pick it.\n\n**B**",
+  "usage": {
+    "input": 1474,
+    "output": 1850
+  },
+  "cost": 0.021448
+}

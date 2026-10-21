@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-05",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses give the correct answer, **Friday, 28 February 2025**. Here is the check:\n\n- 29 February 2024 plus 1 day is 1 March 2024.\n- 1 March 2024 to 1 March 2025 is 365 days, since no 29 February falls in that span.\n- So 29 February 2024 plus 366 days is 1 March 2025, and plus 365 days is 28 February 2025.\n- 365 days is 52 weeks plus 1 day, so Thursday moves to Friday.\n\nBoth stay under 120 words. Response A is more concise and better organised. It gives both pieces of reasoning cleanly. Response B adds filler (\"To explain how this answer was reached, consider first that…\") and repeats points without adding substance.",
+  "usage": {
+    "input": 376,
+    "output": 448
+  },
+  "cost": 0.010464
+}

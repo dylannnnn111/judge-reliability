@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-38",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better because it meets the word limit and **B** does not.\n\n**Word count:** I counted about 119 words for A, which is just under the 120-word limit. B comes to roughly 145 words, so it clearly exceeds the limit the user set.\n\n**Content:** Both cover the key points: green status, launch date, beta results, the fixed timetable issue, the bug count, key dates, budget and the app store risk. B adds a few extra details, such as the liked features, the load time, the guideline check and the next update date. These are useful, but they are the reason it goes over the limit. A also has a small slip, \"app store submissions on 3 November\", which is fine, but B has a minor grammar error, \"App stores submissions\".\n\n**Format:** B's bulleted layout is easy to scan for a busy manager, but that does not make up for breaking an explicit constraint.\n\n**A**",
+  "usage": {
+    "input": 1255,
+    "output": 1434
+  },
+  "cost": 0.01685
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-05",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. Both responses find the same main bugs: DST arithmetic on a shared `tzinfo`, ambiguous and nonexistent times, start-day-only weekend loading, float money, and missing holiday and validation handling. The technical claims in both are correct. A's worked examples are right: a 01:00–05:00 shift is 5h on fall-back night and 3h on spring-forward night, while the code pays 4h either way. B's directional claim is also right, since the code overpays when clocks go forward and underpays when they go back.\n\nThe difference is the 200-word limit. B is roughly 230 words, slightly over. A is roughly 350 words, well over. B is also tighter and more direct. A has some awkward filler, such as \"This is the most serious problem in the response\" and the \"Next/Another/Finally\" transitions.\n\nB also adds a small useful point about repeated `parse_local` calls and suggests keeping minutes as integers. Neither response is fully compliant, but B is closer to the constraint and no less accurate.\n\n**B**",
+  "usage": {
+    "input": 1853,
+    "output": 1060
+  },
+  "cost": 0.014306
+}

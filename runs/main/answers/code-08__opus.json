@@ -1,0 +1,13 @@
+{
+  "item": "code-08",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "1. **Files still uploading get imported.** Nothing checks that the partner's SFTP upload has finished. Cron can read a half-written file. Its truncated last line raises an error, and the file is moved to `done`. Agree on an upload convention: upload as `.tmp` and then rename, or send a `.ready` marker.\n\n2. **Failures are silently swallowed and the file is marked done.** `except Exception: pass` followed by an unconditional `os.rename` means bad or failed files vanish into `done` with no log. Move them to an `error/` directory and log the exception.\n\n3. **Partial imports are not recoverable.** If `save` fails midway, earlier records are already saved, but the file is treated as finished. Reprocessing it would duplicate those records. Make saves idempotent (upsert by record key) or wrap each file in a transaction.\n\n4. **No protection against overlapping runs.** A slow run can overlap the next cron run and double-import. Use a lock, such as `flock`.\n\n5. **`imported` is misleading.** It counts records from files that later failed.\n\n6. **`os.rename` problems.** It silently overwrites a same-named file already in `done`. Any rename error aborts the whole loop.\n\n7. **File handle never closed.** Use `with open(path, encoding=\"utf-8\")`. The encoding is currently left to the system default.\n\n8. **Whole file loaded into memory.** Stream records with a generator instead.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 329,
+    "output": 828
+  },
+  "cost": 0.017876,
+  "at": "2026-10-14T01:53:16.606Z"
+}

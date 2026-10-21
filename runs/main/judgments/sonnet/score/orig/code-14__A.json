@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-14",
+  "side": "A",
+  "score": 7,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds the main bug and handles most of the rest well, but it runs slightly long and includes some low-value points.\n\n**Main bug:** The response correctly identifies that OFFSET pagination combined with deleting the rows just read causes skipped rows. I traced it by hand. Batch 1 takes rows 1-100 and deletes them. Batch 2 at offset 100 then skips the now-shifted rows 101-200 and takes 201-300. Roughly every other batch is archived. The claim that each run only halves the backlog is approximately right. The fix (always read from the start, or use keyset pagination on `id`) is correct and specific.\n\n**Second issue:** The crash window between `archive()` and `commit()` does cause duplicate archiving on the next run. Suggesting an idempotent archive keyed on `id` is sound. The point about confirming the archive is durable before deleting is also valid and important for a job that deletes data.\n\n**Third issue:** The string-comparison concern on `created_at` is a reasonable but conditional caveat. It is speculative, since the schema is unknown, but it is flagged as conditional and is worth a brief mention.\n\n**Fourth issue:** The index suggestion is sensible. The advice to make the batch size larger is weak, since 100 is not a bug and the response gives no real reason to change it. It reads as mild padding.\n\n**Ranking and length:** The order is sensible, with the data-loss bug first. The response is around 220 words, which slightly exceeds the 200-word limit.\n\nOverall the key issues are correct, ranked sensibly and come with fixes. The minor deductions are for the small length overrun and the speculative and weak lower-priority points.\n\nScore: 7",
+  "usage": {
+    "input": 958,
+    "output": 1128
+  },
+  "cost": 0.013196
+}

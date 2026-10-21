@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-04",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B",
+  "usage": {
+    "input": 1354,
+    "output": 1920
+  },
+  "cost": 0.0010954
+}

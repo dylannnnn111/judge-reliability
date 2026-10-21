@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-31",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. Both responses explain the axial tilt correctly. Response A is about 108 words, so it meets the \"under 120 words\" limit. Response B comes to about 121 words by my count, which breaks the limit. A also explains why the hemispheres always have opposite seasons.\n\n**A**",
+  "usage": {
+    "input": 615,
+    "output": 1433
+  },
+  "cost": 0.01556
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-28",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are technically accurate. Both explain chaining and open addressing, the role of the load factor, and resizing. Response A adds useful detail, such as clustering in open addressing and Java's tree-based chains giving O(log n) worst case. However, it runs to roughly 170 words, well over the 120-word limit. Response B is around 125 words, at or very slightly over the limit, and covers the same core ideas. It also adds the amortized O(1) insert cost, which is the key reasoning behind why resizing doesn't ruin performance. Since A's extra detail comes at a clear cost to instruction-following, B is the better response, though the margin is modest.\n\nVerdict: B",
+  "usage": {
+    "input": 962,
+    "output": 809
+  },
+  "cost": 0.0005007
+}

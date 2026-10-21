@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-01",
+  "order": "ba",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses reach the correct answer. Using 10,000 people, they find 90 true positives and 891 false positives, so the probability is 90/981 ≈ 9.2%. Both also stay under the 120-word limit, at roughly 96 words for A and 100 for B. Their reasoning is the same natural-frequency approach, and both are clear.\n\nThe differences are minor:\n- B puts the answer first, which is slightly more direct.\n- A gives a slightly more precise value (0.0917) and names Bayes' theorem.\n- B's closing line calls the effect \"the base rate fallacy\". That label is a little loose, since the fallacy is the error of ignoring base rates, not the effect itself.\n\nNeither difference clearly makes one response better.\n\nVerdict: TIE",
+  "usage": {
+    "input": 745,
+    "output": 1408
+  },
+  "cost": 0.01557
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-29",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response is correct. Simple interest on $1,000 at 5% for 30 years gives $1,000 + 30 × $50 = $2,500, and annual compounding gives 1.05³⁰ × $1,000 ≈ $4,322, so both figures check out. It states the key mechanism clearly: compounding pays interest on prior interest, so growth accelerates while simple interest grows linearly. The line about the gap growing \"exponentially rather than steadily\" is slightly loose, since the gap itself grows roughly with the compounded balance, but it is not wrong in substance. It is about 100 words, within the limit, and every sentence contributes.\n\nScore: 9",
+  "usage": {
+    "input": 387,
+    "output": 600
+  },
+  "cost": 0.0003387
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-01",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses reach the correct answer. Using 10,000 people, there are 90 true positives and 891 false positives, so the probability is 90/981 ≈ 9.2%. Both also explain the reasoning clearly and stay under the 120-word limit (A is roughly 99 words, B is somewhat shorter). A adds the \"base rate fallacy\" label, and B names Bayes' theorem and gives a slightly more precise 0.0917. Neither extra makes a meaningful difference. They are essentially equal in correctness, reasoning and clarity.\n\nVerdict: TIE",
+  "usage": {
+    "input": 745,
+    "output": 918
+  },
+  "cost": 0.01067
+}

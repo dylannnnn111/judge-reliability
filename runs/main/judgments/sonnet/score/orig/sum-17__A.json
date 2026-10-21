@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-17",
+  "side": "A",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate. It correctly separates the midnight opening hours, which are allowed, from the 10pm amplified-music cut-off, which is the actual licence condition. It also gets right who did what: David spoke to the manager, the manager agreed to turn the speakers and have staff check at 10pm, residents keep logging, and David reports back on 20 October. It keeps the key points, including the regulator fallback and the evidence needed.\n\nIts main flaw is length. I count about 124 words (123 without the \"Summary:\" label), which breaks the explicit \"under 120 words\" limit. A busy manager would not notice, but it is still a clear miss on the constraint. The sentence about one resident not wanting conflict is also low-value and could have been cut to meet the limit. It also omits the \"three other complaints\" detail, which is minor.\n\nScore: 6",
+  "usage": {
+    "input": 1199,
+    "output": 1212
+  },
+  "cost": 0.014518
+}

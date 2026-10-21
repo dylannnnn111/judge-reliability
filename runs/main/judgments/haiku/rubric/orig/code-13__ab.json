@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-13",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the same core bugs: the December crash, the day-of-month overflow, schedule drift, the hardcoded 30-day proration, missing validation, and floor rounding. Both rank the crashes first and suggest sensible fixes. Response B adds more concrete fixes (`dateutil.relativedelta`, `calendar.monthrange`, deriving the period length from the calendar), which is useful. However, its December point is slightly wrong: a December start alone doesn't crash, only a schedule that advances into January does. It also includes filler (\"Both bugs are common in real billing\") and a timezone point that doesn't really apply to `date` objects. Response A's statements are accurate throughout, and its note about confirming the inclusive vs. exclusive end-date convention is a sharp observation. Response A is slightly better on correctness and focus, though B's concrete fixes narrow the gap.\n\nVerdict: A",
+  "usage": {
+    "input": 1499,
+    "output": 1145
+  },
+  "cost": 0.0007224
+}

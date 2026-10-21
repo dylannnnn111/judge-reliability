@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-21",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct answer: perihelion occurs in early January, and both correctly attribute the seasons to axial tilt rather than distance. Response B adds accurate detail, including the aphelion comparison and the roughly 3% difference in distance, but it runs to about 190 words, well over the explicit \"under 120 words\" limit. Response A is about 70 words, stays within the limit, and still conveys the key reasoning that distance does not cause the seasons. Since the user set a hard length limit, the extra material in B is a failure rather than a merit.\n\nVerdict: A",
+  "usage": {
+    "input": 821,
+    "output": 389
+  },
+  "cost": 0.0002766
+}

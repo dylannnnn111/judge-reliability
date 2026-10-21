@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-06",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly give Friday, 24 March 2028. The day count checks out: 16 days to 31 December, 31 in January, and 29 in February 2028 total 76, leaving 24 days into March. The weekday also checks out: 100 days is 14 weeks plus 2 days, so Wednesday becomes Friday. Both are well under 120 words. Response B's running countdown is slightly easier to follow, but Response A's accumulated total is equally clear, so the difference is negligible.\n\nTIE",
+  "usage": {
+    "input": 382,
+    "output": 513
+  },
+  "cost": 0.0002947
+}

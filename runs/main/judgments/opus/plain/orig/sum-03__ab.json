@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-03",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth summaries are accurate and cover the essentials: what failed, the impact figures, why detection was slow, and the follow-up actions.\n\nThe deciding factor is the explicit word limit. By my count, Response A is roughly 124 words, slightly over the 120-word cap. Response B is about 100 words and stays within it.\n\nResponse B also gives the busy manager a little more:\n- It names the owners for the outstanding actions.\n- Its bulleted action list is easier to scan.\n\nResponse A does add the severity and the year, but these are minor details. They don't make up for missing the stated constraint.",
+  "usage": {
+    "input": 1443,
+    "output": 2018
+  },
+  "cost": 0.046132
+}

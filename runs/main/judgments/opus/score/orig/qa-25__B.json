@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-25",
+  "side": "B",
+  "score": 8,
+  "model": "claude-opus-5-5",
+  "text": "The core answer is correct: Viking warriors did not wear horned helmets, and the response says so plainly at the start.\n\n**Supporting facts**\n- **Gjermundbu helmet:** Correctly identified as the only nearly complete Viking-age helmet, with a rounded iron cap and a spectacle guard.\n- **Origin of the myth:** Correctly attributed to 19th-century Romanticism, specifically Gustav Malmström's illustrations and Carl Emil Doepler's costume designs for the 1876 Bayreuth *Ring*. This is the standard and accurate account.\n- **Bronze Age helmets:** Mentioning ritual horned helmets like Veksø's is a useful addition, since it explains where the confusion might have some basis.\n\n**Flaws**\n- **Date gap:** The Veksø helmets date to about 900 BC, and the Viking Age began around AD 800. The gap is therefore about 1,700 years, not \"about 1,500.\"\n- **Leather caps:** The claim lacks archaeological evidence and is speculative, though \"probably\" hedges it.\n- **Severity:** Neither error undermines the main answer.\n\n**Reasoning, clarity and length**\n- The key points are all there: the absence of evidence, what real helmets looked like, why the myth arose, and where actual horned helmets come from.\n- The writing is clear and well organized.\n- At about 112 words it meets the length limit, and nothing in it is padding.\n\nThe answer is strong overall, losing points only for the date imprecision.\n\nScore: 8",
+  "usage": {
+    "input": 468,
+    "output": 1068
+  },
+  "cost": 0.023232
+}

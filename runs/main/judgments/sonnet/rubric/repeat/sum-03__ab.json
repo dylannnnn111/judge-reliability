@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-03",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries are broadly accurate and cover the key points: the window, the failure counts, the revenue estimate, the support spike, slow detection and the actions.\n\n**Accuracy:** A says the certificate was \"outdated\", which loses the point that it had expired. B says \"expired\", but its phrasing (\"pinned an expired intermediate certificate after the vendor's August renewal\") is slightly muddled. B's claim that \"Support escalation led to the fix\" is a reasonable reading of the timeline. A's \"retried successfully\" and \"affected customers\" are fine. Neither contains a clear error, and B names the cause more precisely (connector B).\n\n**Constraint:** The request set a limit of under 120 words. A comes to about 125 words, so it breaks the limit. B comes to about 105–110 and stays within it.\n\n**Content:** B includes owners for the pending actions and states the root cause more precisely. A omits owners but adds the 11:35 escalation time. This is a minor difference.\n\nB meets the word limit and is slightly more precise on the cause, so it is better.\n\nVerdict: B",
+  "usage": {
+    "input": 1597,
+    "output": 2021
+  },
+  "cost": 0.023404
+}

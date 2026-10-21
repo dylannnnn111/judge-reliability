@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-21",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses identify the most important bug: `issueRefund` POSTs through a wrapper that retries on network errors and 502/503/504, so a refund can be duplicated. Both suggest an idempotency key, and both also cover the missing timeout, the ignored `Retry-After`, and undrained response bodies. Both run over the 200-word limit, so that doesn't separate them.\n\n**Response A:**\n- Its item 2 (UI double-submit) is speculative, since no UI code was shown, and it is secondary to the real retry problem.\n- Its item 6 (amount validation) is marginal, and the non-JSON point is minor.\n- Its item 7 (jitter reaching about 60s) is accurate but minor.\n- It misses that the `catch` block retries `AbortError` and permanent failures.\n- It does not mention that the `refundId` cast can return `undefined` as a \"successful\" refund.\n\n**Response B:**\n- It raises the same top issue and gives a more practical fix: `maxAttempts = 1` for non-idempotent methods, or refusing to retry POST/PATCH without a key.\n- It catches that the `catch` retries everything, including caller aborts and permanent `TypeError`s. This is a real bug in the code shown.\n- Its timeout suggestion composes with the caller's signal.\n- It flags the unvalidated `refundId` cast, which is a real correctness issue for a refund function.\n- It avoids the speculative UI and validation items.\n\nB's issues are more real and better targeted, and its fixes are more concrete.\n\nVerdict: B",
+  "usage": {
+    "input": 1746,
+    "output": 1042
+  },
+  "cost": 0.013912
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-06",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "A is better. Both responses identify the same core problems: the `is not` identity check, the enumeration leak from distinct `LookupError` and `Forbidden`, the check-then-save race, and the missing refund logic. B's race-fix SQL is more precise, since it includes `customer_id` and checks the row count. However, B runs to roughly 220 words, over the 200-word limit, while A stays under it. A also adds useful points: small-int caching hides the bug in tests, and the in-memory object is mutated before `save`. B's note that `ValueError` leaks internal status strings is a good catch, but it doesn't outweigh A's length compliance and extra insights.\n\nA",
+  "usage": {
+    "input": 1393,
+    "output": 978
+  },
+  "cost": 0.0006282999999999999
+}

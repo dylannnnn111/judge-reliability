@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-36",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Issues found:** Both responses identify the same six issues in nearly the same order:\n\n1. The `RLock` in `Invalidate`, which is clearly the top bug.\n2. The stampede.\n3. The stale overwrite after invalidation.\n4. TTL decoupled from the token's real lifetime.\n5. Unbounded growth.\n6. No timeout or context on `fetch`.\n\nThe real issues are all covered by both, and both rank the crash-causing race first, which is correct.\n\n**Response A:** A is concise and roughly within the 200-word limit. Its stale re-cache item (#2) gives no fix. Its #6 says a hung fetch \"blocks every request waiting on that tenant.\" In this code there is no in-flight sharing, so a hung fetch only blocks its own caller. That claim is slightly inaccurate.\n\n**Response B:** B adds useful precision to the top bug: the fatal \"concurrent map writes\" error cannot be caught by `recover`. It gives a concrete fix for every item, including a generation counter or singleflight for the stale overwrite. Its stampede fix is more specific: a per-tenant mutex with a re-check after locking. Its \"errors aren't cached\" point is debatable as a defect, but the missing backoff and context concerns are legitimate. B runs somewhat over 200 words, about 215 by my count, which is a mild violation of the limit.\n\n**Weighing:** The criteria put correctness and actionable fixes first. B is more accurate and gives a fix for every item, while A leaves its stale re-cache issue without a fix and misstates the blocking behaviour. B's slight length overrun is outweighed by these advantages.\n\nVerdict: B",
+  "usage": {
+    "input": 1797,
+    "output": 2261
+  },
+  "cost": 0.052408
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-03",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the relative increase as 25% and the absolute change as 1 percentage point, and both show the calculation. Response A is concise and fully answers the question. Response B makes the same two points but states the distinction between percentage points and percent more explicitly, so the reader sees why there are two answers. Its worked example ($400,000 at 4% versus 5%, giving $16,000 versus $20,000 in annual interest) is arithmetically correct and shows what the 25% means for a borrower. Its claim that the interest portion rises by 25% holds if the balance is unchanged, and it says \"all else equal.\" Both stay under 120 words. B's extra content is accurate and useful rather than padding, so it edges ahead.\n\nVerdict: B",
+  "usage": {
+    "input": 590,
+    "output": 629
+  },
+  "cost": 0.0003735
+}

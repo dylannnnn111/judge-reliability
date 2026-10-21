@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "sum-02",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse B is about 113 words, inside the 120-word limit. Response A comes to roughly 120–125 depending on how the title and date ranges are counted, so it sits at or over the limit. For a request with an explicit word cap, that is a meaningful failure.\n\nBoth cover the essentials: the unresolved opening-hours dispute, the reading program dates and volunteer deadline, the roof replacement, and the next meeting. A has some nice touches, such as the visitor figures and the \"Action:\" label. B leads with \"No agreement reached\", which suits a busy reader. B's only weak spot is spending words on the trivial air-conditioning service. That doesn't outweigh A's likely breach of the length requirement.",
+  "usage": {
+    "input": 1467,
+    "output": 2038
+  },
+  "cost": 0.046628
+}

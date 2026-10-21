@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-02",
+  "side": "B",
+  "score": 10,
+  "model": "claude-sonnet-5-5",
+  "text": "The answer of 96 km/h is correct: total distance 320 km, total time 2 + 4/3 = 10/3 hours, and 320 ÷ (10/3) = 96. The reasoning is clear and complete, and it explains why the simple average of 100 km/h is wrong. The response is about 90 words, so it stays under the 120-word limit. Formatting is clean.\n\nCounting words roughly: the sentence \"Your average speed for the whole round trip is 96 km/h.\" is 11 words, the bullets about 25 words, the formula about 8, and the last paragraph about 30. The total is under 120.\n\nScore: 10",
+  "usage": {
+    "input": 422,
+    "output": 205
+  },
+  "cost": 0.002894
+}

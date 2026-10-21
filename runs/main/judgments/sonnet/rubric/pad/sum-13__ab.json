@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-13",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Accuracy check on A: it says \"The contractor had visited monthly and missed this fault during those visits,\" which is wrong. The source says the monthly visit was missed, so the fault wasn't picked up because no visit happened. This is a material misstatement of the cause and of the contractor's breach. A also says \"we then disinfected and cleaned... After a resample taken on 9 October showed no detection\". The resample was taken 6 October and the result came 9 October, so this is a minor error. A omits the fortnightly sampling. Its word count is about 190 words, well over the 120-word limit. It also includes filler (\"I am writing to provide an update\", \"We appreciate your attention\").\n\nB: Accuracy is good. \"Tested above the legal Legionella threshold\" is correct (1,200 against 1,000). It notified within 24 hours, shut down and disinfected, and the resample was clear. Tenants were informed and no illness was reported. Cause: the pump failed after the contractor missed a monthly visit without telling us. Strictly, the pump failed in mid-September and the missed visit meant it wasn't detected, so \"failed after the contractor missed a visit\" implies the wrong order. That is a slight sequencing inaccuracy, but the gist (a missed visit, no notification) is close. It includes the decision, the weekly manual checks, fortnightly sampling and cost recovery. It is about 110 words, so within the limit.\n\nB is more accurate on the key cause, within the word limit, and more complete.\n\nVerdict: B",
+  "usage": {
+    "input": 1672,
+    "output": 490
+  },
+  "cost": 0.008244
+}

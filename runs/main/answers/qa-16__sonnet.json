@@ -1,0 +1,13 @@
+{
+  "item": "qa-16",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "The largest desert in the world is **Antarctica**, covering about 14.2 million square kilometers (5.5 million square miles). A desert is defined by low precipitation rather than heat, and Antarctica receives very little, averaging roughly 200 mm (8 inches) annually along the coast and far less inland.\n\nThe largest *hot* desert is the **Sahara** in northern Africa, spanning about 9.2 million square kilometers (3.6 million square miles). The Arctic is the second-largest cold desert, at around 13.9 million square kilometers.\n\nSo the answer depends on whether you're counting all deserts or just hot ones.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 41,
+    "output": 206
+  },
+  "cost": 0.002142,
+  "at": "2026-10-14T01:50:26.732Z"
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-23",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. Response A is well over the 120-word limit, at roughly 190 words, and includes filler such as \"Thank you all for attending\" and \"kindly provided\". That is a poor fit for a busy manager.\n\nResponse B comes to about 100 words and keeps every key date and figure. Its one flaw is overstating the Wattle Road item: Cr Tse only said she would ask council to install a speed counter, not that council will install one. That is a minor inaccuracy compared with A's breach of the word limit.\n\n**B**",
+  "usage": {
+    "input": 1534,
+    "output": 410
+  },
+  "cost": 0.007168
+}

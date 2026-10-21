@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-31",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better, mainly because it meets the word limit and stays accurate.\n\n**Length:** The user asked for under 120 words. Response A runs to roughly 200 words, which breaks the constraint. It also spends words on filler such as \"This summary sets out…\" and \"It is worth keeping this limitation in mind…\". Response B is about 110 words and fits.\n\n**Accuracy:**\n- Response B's figures are all correct: 10%, 142 to 156 lines per hour, 0.62% to 0.41% errors, 17% for new workers, 64% preference, $210,000 and 14 months.\n- B slightly overstates the heat complaint. It says headsets \"were uncomfortable in summer heat\", where the source calls this the most common complaint. This is minor.\n- Response A is also largely accurate, but it adds its own recommendation (\"worth considering, especially for sites with many newer staff\") that the source doesn't quite state.\n- A's \"gains levelled off within four weeks\" is a slight rewording of \"most of the gain came in the first four weeks\".\n\n**Coverage:** Both include the key results, cost, payback and limitation. A adds the smaller accuracy gain at the second centre, the chatting complaint and the plan-for-comfort advice. That extra detail is useful but doesn't justify breaking the limit. B keeps the essentials and notes the comfort issue.\n\nVerdict: B",
+  "usage": {
+    "input": 1611,
+    "output": 1066
+  },
+  "cost": 0.013882
+}

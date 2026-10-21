@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-05",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct answer, Friday 28 February 2025. I checked the date: 29 February 2024 plus 364 days is 28 February 2025, and 28 February 2025 is indeed a Friday. Both use the same key reasoning: 365 days is 52 weeks plus one day, so the weekday advances by one, and 2025 has no 29 February. Response B adds a sentence explaining why full weeks leave the weekday unchanged, but Response A covers the same essential logic more concisely. Neither has an error, and the difference in clarity is minimal.\n\nVerdict: TIE",
+  "usage": {
+    "input": 521,
+    "output": 1025
+  },
+  "cost": 0.0005646000000000001
+}

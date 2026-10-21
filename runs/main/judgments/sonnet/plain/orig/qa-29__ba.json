@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-29",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. Response A comes to about 123 words by my count, which breaks the \"under 120 words\" limit. Response B is about 108 words, so it stays within the limit. Both explain the concept correctly and use the same 30-year example, so the length constraint decides it.\n\nB",
+  "usage": {
+    "input": 576,
+    "output": 1357
+  },
+  "cost": 0.014722
+}

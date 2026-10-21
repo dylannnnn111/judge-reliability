@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-36",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the most important bug: `Invalidate` deletes from the map while holding only a read lock, which can cause a fatal concurrent-map-write crash. Both also cover the same core set of real issues: cache stampede, stale re-caching after invalidation, TTL not matching the token's real lifetime, unbounded map growth, and missing context/timeout on `fetch`. Both stay under 200 words and give fixes.\n\nResponse A is slightly stronger. Its stale-token point is specific: an in-flight fetch that finishes after `Invalidate` re-caches a token upstream just rejected. Its item 6 focuses cleanly on cancellation and timeouts. Response B's item 6 bundles in \"errors aren't cached,\" which is not a bug; not caching errors is a reasonable default, so flagging it dilutes the list. B's item 3 also mixes two scenarios and is a bit less precise. B does add a useful detail about `recover` not catching the fatal error, and its singleflight suggestion is slightly more concrete, but these don't outweigh the cleaner, more accurate list in A.\n\nVerdict: A",
+  "usage": {
+    "input": 1978,
+    "output": 1085
+  },
+  "cost": 0.0007402999999999999
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-40",
+  "side": "B",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "Correctness check: Light speed ~300,000 km/s, sound ~343 m/s, both correct. Dividing the seconds by 3 gives km (343 m/s means about 3 s per km), and dividing by 5 gives miles (about 4.7 s per mile), so both are correct. The 15 s example gives 5 km or 3 miles, which is correct.\n\nSafety tip: a 30-second gap corresponds to about 10 km, or 6 miles. The standard \"30-30 rule\" says to seek shelter if the gap is under 30 seconds and to wait 30 minutes after the last thunder. This is correct. \"Within about 10 km or 6 miles\" is consistent.\n\nWord count: the answer is roughly 105-110 words. Counting: the first paragraph has about 40 words, the steps about 30, the example about 17, and the safety tip about 33. That totals about 120, which is borderline. A more careful count:\n\n\"You see lightning first because light travels far faster than sound.\" (11)\n\"Light moves at about 300,000 km per second, so the flash reaches you almost instantly.\" (15) → 26\n\"Sound travels at only about 343 meters per second in air, so the thunder lags behind.\" (16) → 42\n\"To estimate distance:\" (3) → 45\n\"1. Start counting seconds when you see the flash.\" (8, plus the number) → 53\n\"2. Stop when you hear the thunder.\" (6) → 59\n\"3. Divide by 3 for kilometers or by 5 for miles.\" (10) → 69\n\"Example: A 15-second gap means the strike was about 5 km (3 miles) away.\" (14) → 83\n\"Safety tip: If the gap is 30 seconds or less (within about 10 km or 6 miles), you're within striking range.\" (20) → 103\n\"Seek shelter and wait 30 minutes after the last thunder.\" (10) → 113\n\nThe total is about 113, which is under 120. The response is accurate, clear and concise, and it explains the key reasoning. The safety tip is a useful extra.\n\nScore: 9",
+  "usage": {
+    "input": 450,
+    "output": 665
+  },
+  "cost": 0.00755
+}

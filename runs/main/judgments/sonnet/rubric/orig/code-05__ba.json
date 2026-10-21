@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-05",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same core problems, and their factual claims check out. Both correctly identify:\n- Same-`tzinfo` aware subtraction is wall-clock arithmetic, so DST nights are paid wrongly.\n- Ambiguous and nonexistent local times are silently accepted.\n- Weekend loading is applied by start day only.\n- Floats and banker's rounding are a problem.\n- Public holidays are missing.\n\n**Response A:**\n- Its DST direction (overpaid on spring-forward, underpaid on fall-back) is correct, but it uses a vague example (\"22:00 to 06:00\").\n- It gives less actionable detail on detecting nonexistent times (\"detected and rejected\").\n- Its last point (repeated `parse_local` calls) is trivial padding.\n- It likely runs a bit over the 200-word limit.\n\n**Response B:**\n- It gives concrete, correct Sydney examples: a 01:00–05:00 shift is 5h on the April fall-back night and 3h on the October spring-forward night, versus the 4h paid.\n- It gives a specific mechanism for detecting nonexistent times (a UTC round-trip check).\n- It adds a useful sanity limit on shift length.\n- Its rounding fix (`Decimal` with an explicit rule) is sensible.\n- It is tighter and closer to the word limit.\n\nResponse B is more concrete and actionable, with slightly more useful extras and less filler.\n\nVerdict: B",
+  "usage": {
+    "input": 1774,
+    "output": 1811
+  },
+  "cost": 0.021658
+}

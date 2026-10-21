@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-08",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** Both are correct. 375 mL × 0.048 = 18 mL of ethanol. 18 mL × 0.789 g/mL = 14.2 g. 14.2 ÷ 10 ≈ 1.42 standard drinks.\n\n**Reasoning:** Both show the same three key steps (volume, then mass, then standard drinks). They are equally complete.\n\n**Clarity and precision:**\n- **Response A** writes \"18 × 0.789 = 14.2 g\" with an equals sign, though the exact value is 14.202. This is a trivial imprecision.\n- **Response B** uses ≈ where appropriate and leads with the answer.\n- **Response B** also notes that Australian labels round this to 1.4 standard drinks. That is accurate, since Australian food labelling rules require standard drinks to be stated to one decimal place. It is relevant because the question is set in the Australian context. The extra sentence adds correct, useful information without padding, and both stay well under the word limit.\n\nThe difference is small, but B is slightly more useful and precise.\n\nVerdict: B",
+  "usage": {
+    "input": 596,
+    "output": 578
+  },
+  "cost": 0.013944
+}

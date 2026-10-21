@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-06",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer: Friday, 24 March 2028. Dec 15 to Dec 31 is 16 days, January adds 31 and February 2028 adds 29, which makes 76 days. The remaining 24 days land on 24 March. Since 100 days is 14 weeks plus 2 days, Wednesday moves to Friday.\n\nThe difference is the length limit of under 120 words. Response A is roughly 150 words, with filler such as \"beginning from the starting date in the calculation\" and \"I took a slightly different approach\", so it breaks the constraint. Response B is concise, under 120 words, and gives the same key reasoning clearly.\n\nResponse B is better.\n\nVerdict: B",
+  "usage": {
+    "input": 667,
+    "output": 582
+  },
+  "cost": 0.007154
+}

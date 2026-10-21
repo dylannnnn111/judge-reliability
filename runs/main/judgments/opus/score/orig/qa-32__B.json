@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-32",
+  "side": "B",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The response is **correct**. A tropical year is about 365.2422 days, and the Gregorian rule is stated accurately: divisible by 4, except century years, unless divisible by 400. The 1900 and 2000 cases are applied correctly.\n\n**Reasoning:** It gives the key logic for both parts of the question.\n- Leap years keep the calendar aligned with the seasons.\n- The century rule corrects a small overcorrection.\n\nIt could say more explicitly that a leap day every 4 years assumes 365.25 days, which is slightly too long. That gap is why the century exception exists. \"Small excess\" gestures at this but is slightly ambiguous. Strictly, the relevant period is the tropical (seasonal) year rather than simply \"Earth's orbit,\" but this is a minor imprecision.\n\n**Clarity:** The answer is clear, well organised, and about 83 words, so it meets the under-120-word constraint.\n\nScore: 9",
+  "usage": {
+    "input": 367,
+    "output": 666
+  },
+  "cost": 0.014788
+}

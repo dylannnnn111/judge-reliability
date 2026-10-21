@@ -1,0 +1,13 @@
+{
+  "item": "code-05",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**1. DST shifts are paid wrong (most serious).**\nBoth datetimes share the same `tzinfo` object, so Python subtracts wall-clock times and ignores the offset change. A 01:00–05:00 shift on the April fall-back night is paid as 4h but lasts 5h. On the October spring-forward night it is paid 4h for 3h worked. Fix: convert both to UTC before subtracting: `end.astimezone(timezone.utc) - start.astimezone(timezone.utc)`.\n\n**2. Invalid and ambiguous times are silently accepted.**\n02:30 on spring-forward day doesn't exist. 02:30 on fall-back day occurs twice, and `fold=0` silently picks the first. Detect nonexistent times with a UTC round-trip check. Require disambiguation (or UTC input) for ambiguous ones.\n\n**3. Weekend loading uses only the start day.**\nA Friday 22:00–Saturday 06:00 shift gets no loading. A Sunday 20:00–Monday 08:00 shift gets loading on every hour. Split hours at midnight boundaries and apply the rate per segment.\n\n**4. Float money arithmetic.**\n`hours * rate` is float, and `round()` uses banker's rounding (x.5 rounds to even). Use `Decimal` with an explicit `ROUND_HALF_UP`, or whatever rounding rule payroll specifies.\n\n**5. Missing rules and validation.**\nPublic holidays aren't handled. `base_rate_cents` isn't checked for negative or non-integer values. There's no sanity limit on shift length, so a typo'd date could pay a 300-hour shift.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 413,
+    "output": 911
+  },
+  "cost": 0.019872,
+  "at": "2026-10-14T01:53:02.047Z"
+}

@@ -1,0 +1,13 @@
+{
+  "item": "code-08",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Most important first:**\n\n1. **Failures are silently swallowed, and the file is moved to `done` anyway.** `except Exception: pass` followed by `os.rename` means a malformed line, a `save()` error, or a DB outage causes the file to be marked done with no log or alert. This is data loss.\n\n2. **Partially uploaded files get processed.** Cron can fire while SFTP is still writing. A truncated last line raises a JSON error, which is swallowed, and the file is moved to `done`. The rest of the upload never arrives. Require the partner to upload under a temp name and rename on completion, or skip files that are recently modified or lack a marker file.\n\n3. **Partial imports with no idempotency.** Records are saved one at a time. If the file fails midway, the earlier records stay saved and the file is lost, so a retry would create duplicates. Use a transaction per file, or dedupe on a record key.\n\n4. **No locking.** If a run takes longer than the cron interval, overlapping runs import the same files twice. Use `flock` or a lockfile.\n\n5. **`os.rename` overwrites a same-named file in `done`** on POSIX, destroying the earlier archive. It also fails across filesystems. Add a timestamp to the name or use `shutil.move`.\n\n6. **The file handle is never closed.** Use `with open(path, encoding=\"utf-8\")`.\n\n7. **One bad line kills the whole file, and the whole file is read into memory.** Stream the file, and handle or quarantine bad lines in a `failed/` directory with logging.\n\n8. **The `.jsonl` filter is case-sensitive**, so `.JSONL` files are ignored.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 329,
+    "output": 919
+  },
+  "cost": 0.009848,
+  "at": "2026-10-14T01:53:09.960Z"
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-40",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A** is better. It covers all the key points (study design, results, non-significance, survey findings, recommendation, limitations) in about 116 words, within the 120-word limit. Its \"Bottom line\" and \"Caveats\" labels make it easy for a busy manager to scan.\n\n**Response B** is accurate and clearly states that the overseas 10 per cent claim wasn't supported. However, it runs to about 126 words, breaking the explicit limit. It also introduces small distortions: \"no significant problems\" where the source says no problems were reported, and \"most students\" without noting this means students in the water-bottle schools.\n\n**A**",
+  "usage": {
+    "input": 1231,
+    "output": 1054
+  },
+  "cost": 0.026004
+}

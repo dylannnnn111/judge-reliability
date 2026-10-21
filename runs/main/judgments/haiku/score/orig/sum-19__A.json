@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-19",
+  "side": "A",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The response is largely accurate. It correctly covers the consent requirement, the landlord's permitted requests (financials, three months' rent guarantee, $1,500–$3,000 legal costs), the non-retail-lease status and resulting liability, the 30% sublet cap, change of control, the 28-day response period, and the Kingsley Property Group contact. Its main accuracy gap is that it drops the condition that post-assignment liability arises only if the new tenant defaults, so the liability reads as broader than the guide states. It also omits the guarantor's exposure. On the user's explicit constraint, the response runs about 130 words, over the 120-word limit, so it fails the brief despite being reasonably well structured for a busy manager.\n\nScore: 5",
+  "usage": {
+    "input": 1138,
+    "output": 1585
+  },
+  "cost": 0.0009063
+}

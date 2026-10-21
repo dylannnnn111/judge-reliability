@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-24",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses report the corrected figures accurately: $88,200 approved, $31,800 rolling over, the right Round 3 dates, the 31 October feedback deadline, and the 30 November acquittal cutoff. Both stay under 120 words. Response B also includes the conflict of interest, where Jarrah Wilson left the call for the Saltwater item. That is a governance point a manager may want to know, and Response A omits it. Response B's note that Saltwater was \"corrected from $45,000\" is useful because the manager may have seen the original figure elsewhere. Response A's extra framing adds little beyond what B already covers. Neither response has a factual error, so B is slightly better on the points the reader needs.\n\nVerdict: B",
+  "usage": {
+    "input": 1755,
+    "output": 831
+  },
+  "cost": 0.000591
+}

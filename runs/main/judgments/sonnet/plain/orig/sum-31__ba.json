@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-31",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "B\n\nBoth responses are accurate and appear to fit the word limit. A comes to about 103 words. B comes to about 119 with its heading, so it is close to the cap but still under it.\n\nB is easier for a busy manager to scan. Its bullets separate speed, accuracy, new staff, worker views, cost and caveat. It also carries more of the source's nuance: gains levelled off within four weeks, the smaller accuracy gain at the site with already low errors, and the colleague-chat complaint. It ends with a clear takeaway that includes the headset-comfort advice from the conclusion. Its \"especially for sites with many newer staff\" is a mild inference, but it follows from the finding that new workers gained most.\n\nA is accurate and concise but is one dense paragraph. It leaves out the stability of the gains, the smaller improvement at the second centre, and the colleague-chat complaint. It also gives no clear takeaway.\n\nB's tight margin on the word limit is a small risk, but its structure and completeness make it the stronger summary.\n\n**B**",
+  "usage": {
+    "input": 1316,
+    "output": 2079
+  },
+  "cost": 0.023422
+}

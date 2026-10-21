@@ -1,0 +1,13 @@
+{
+  "item": "sum-30",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**Kelso Ridge bus changes start Monday 19 January**\n\n- **410:** Weekday peak buses every 15 minutes, up from 30.\n- **New 412:** First direct link from Mill Flat to Kelso Ridge station and shopping centre. Runs every 20 minutes, 6am–9pm, seven days a week.\n- **408 scrapped:** It averages nine passengers per trip. The 412 will cover its industrial estate stops.\n- **Why:** A six-week community consultation found a direct Mill Flat–station link was the top request.\n- **Concern:** Industrial estate workers with early starts lose service before 6am. The authority will monitor demand and may add earlier buses.\n- **Other:** Fares are unchanged. Printed timetables arrive in December, and the routes appear in journey planning apps in early January. An info stall runs at the shopping centre on Saturday 6 December, 10am–2pm.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 651,
+    "output": 628
+  },
+  "cost": 0.015164,
+  "at": "2026-10-14T01:52:18.471Z"
+}

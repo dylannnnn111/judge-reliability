@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-06",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. Both identify the same core issues in nearly the same order, but Response A runs about 230 words, over the 200-word limit, while Response B fits. Response B also adds a valid point that Response A lacks: the in-memory order is mutated before `save`, so a failed save leaves callers with a false status.\n\nB",
+  "usage": {
+    "input": 1393,
+    "output": 1245
+  },
+  "cost": 0.0007618
+}

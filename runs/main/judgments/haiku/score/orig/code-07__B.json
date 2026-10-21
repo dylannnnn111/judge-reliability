@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-07",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly identifies the most important bug: `len(items) // size` silently drops the final partial batch, so 1,200 contacts send only 1,000. Its fix is accurate. The second issue, that failures are swallowed and the function returns success regardless, is also real and well ranked. The retry, broad-except, and input-type points are valid, though lower priority. The logging note is a minor but accurate observation. Nothing flagged is wrong or a false alarm. The ranking is sensible, and each item says how to fix it. The main weakness is the user's explicit \"under 200 words\" limit, which the response likely exceeds by a little, and item 6 adds little. Overall it is accurate and well prioritized with a small instruction-following lapse.\n\nScore: 8",
+  "usage": {
+    "input": 951,
+    "output": 681
+  },
+  "cost": 0.0004356
+}

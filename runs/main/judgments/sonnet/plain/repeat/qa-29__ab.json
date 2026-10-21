@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "qa-29",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** Response A follows the \"under 120 words\" limit at about 98 words. Response B comes to roughly 123 words, so it breaks the constraint. Both explain the idea correctly and give the same $1,000 at 5% over 30 years example. B's formatting and Rule of 72 add some value, but they cost it the length requirement.\n\nA",
+  "usage": {
+    "input": 576,
+    "output": 1354
+  },
+  "cost": 0.014692
+}

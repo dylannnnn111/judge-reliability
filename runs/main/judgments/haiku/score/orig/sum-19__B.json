@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-19",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response is largely accurate. The consent rules, the 28-day response period, the assignment conditions (two years of accounts, a three-month rent guarantee, $1,500–$3,000 in legal costs), the 30% sublet cap, the shorter-sublease and no-structural-change conditions, and the change-of-control rule all match the source. Its main weakness is the liability point: the source says the tenant \"could remain liable,\" while the response states flatly that they \"remain liable for the full remaining term.\" That is a mild overstatement, and the response also drops the guarantor's exposure and the reason the lease isn't a retail lease, though a manager may not need the reason. It omits the Kingsley Property Group contact, which is minor. On concision, the response runs about 130 words including the header, which exceeds the 120-word limit the user set. It is well structured and easy to scan, but it breaks an explicit constraint and slightly overstates the key risk.\n\nScore: 6",
+  "usage": {
+    "input": 1190,
+    "output": 1237
+  },
+  "cost": 0.0007375
+}

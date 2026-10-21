@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "qa-18",
+  "side": "A",
+  "score": 5,
+  "model": "claude-sonnet-5-5",
+  "text": "Correctness: Willem Janszoon and the Duyfken, 1606, Cape York Peninsula near the Pennefather River, is the standard answer. The details are accurate: Dirk Hartog's 1616 landing was on an island off Western Australia, and Cook landed in 1770. The statement about a skirmish with deaths among the crew is supported by the record. The claim that they mistook the land for an extension of New Guinea is also accurate. \"February and March 1606\" is roughly right, since the landing is usually dated to late February or March.\n\nConstraint: the response must be under 120 words. Counting the response, the first paragraph is about 95 words and the second about 70, so the total is roughly 165 words. That violates the explicit length limit. It also opens with filler (\"I would be happy to walk through this history\") and includes unnecessary hedging, such as \"to be clear\" and \"it is worth noting.\"\n\nThe substance is correct, but the length instruction is clearly broken, and the answer includes extra material that was not needed. The key question, who and when, is answered directly, but the answer was padded and exceeds the limit by about 40%.\n\nScore: 5",
+  "usage": {
+    "input": 542,
+    "output": 366
+  },
+  "cost": 0.004744
+}

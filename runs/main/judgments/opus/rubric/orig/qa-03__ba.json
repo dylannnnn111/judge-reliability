@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-03",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses are correct. Each distinguishes the 1 percentage point rise from the 25% relative increase, and each shows the calculation (5 − 4) ÷ 4 × 100 = 25%. Both stay under 120 words: A is about 97 and B is much shorter.\n\n**Directness of the answer:** The question asks \"by what percentage,\" so the literal answer is 25%. A frames the distinction first, then states plainly that the rate has risen by 25% in relative terms. B leads with the bolded \"1 percentage point,\" which could read as the main answer before it clarifies 25%. This is a minor clarity edge for A.\n\n**Value of the extra content:** A's $400,000 loan example (interest rising from $16,000 to $20,000) is accurate, appropriately hedged with \"all else equal,\" and shows concretely why the relative figure matters to a borrower. That extra length adds correct, useful content rather than padding. B is clean and efficient but offers nothing beyond the bare calculation.\n\nOn correctness and reasoning the two are essentially equal. A wins narrowly on how clearly it answers the question asked and on its useful illustration.\n\nVerdict: A",
+  "usage": {
+    "input": 590,
+    "output": 945
+  },
+  "cost": 0.02126
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-35",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** Both responses are accurate. Each explains that antibiotics target bacterial structures (cell walls, ribosomes, enzymes) that viruses lack, and that resistance arises through mutation, natural selection, and gene transfer, accelerated by overuse. A's mention of \"not finishing courses\" is commonly cited, though debated, so it is a minor point.\n\n**Constraint:** The user asked for under 120 words. Response A runs to roughly 220 words, well over the limit. It is padded with filler like \"It helps to start with...\" and repeats itself (\"accelerate the process\" appears twice in effect). Response B is about 95 words and complies.\n\n**Reasoning and clarity:** B adds concrete drug-class examples (penicillin, tetracyclines, fluoroquinolones) and names horizontal gene transfer. That makes it more informative per word. A's extra length mostly adds redundancy rather than useful content.\n\nB is equally correct, meets the length requirement, and is tighter.\n\nVerdict: B",
+  "usage": {
+    "input": 932,
+    "output": 423
+  },
+  "cost": 0.012188
+}

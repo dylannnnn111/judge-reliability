@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-01",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. It stays under the 200-word limit, which Response A exceeds once its introductory sentence and filler phrasing are counted. B's examples are concrete and accurate (`10.29 * 100` truncating to 1028 cents), and it catches the `customer_id` normalization problem and the silently dropped credits, which A misses. A's extra points, such as NaN/inf acceptance and missing logging, are valid but don't outweigh B's tighter, more specific list.\n\nB",
+  "usage": {
+    "input": 1535,
+    "output": 568
+  },
+  "cost": 0.0004375
+}

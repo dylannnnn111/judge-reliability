@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-23",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is under the 120-word limit (roughly 100 words) and covers the main items: council works, finances, Clean Up Day, carols, Wattle Road and the next meeting. It has one accuracy slip. It says council \"will install\" a speed counter, but the minutes say Cr Tse would only ask council traffic staff to put one on Wattle Road and report back. That overstates a conditional commitment. It also omits the Facebook point and the named coordinators, which are minor for a busy manager.\n\nResponse B is accurate on the speed counter (\"will request\") and includes the Facebook item and the names of those responsible. However, it runs to roughly 200 words, well over the 120-word cap. It also wastes words on filler such as \"Thank you all for attending\" and \"kindly provided\", which is odd in a summary written for someone who wasn't there. Its added detail is mostly minor, and it breaks an explicit instruction by a wide margin.\n\nOn accuracy alone B is slightly better, since A's error is a real overstatement. But A's error is limited to one line, while B fails the core constraint of the request and carries filler that doesn't belong in a manager's summary. A is the more usable response overall.\n\nVerdict: A",
+  "usage": {
+    "input": 1688,
+    "output": 1253
+  },
+  "cost": 0.015906
+}

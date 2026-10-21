@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-05",
+  "side": "A",
+  "score": 8,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds the real, high-impact bugs and ranks them well.\n\n**Accuracy:**\n- **DST (item 1):** This is the real top bug. Subtracting two aware datetimes that share the same `tzinfo` object uses wall-clock difference. Both examples check out. On the April fall-back night, 01:00–05:00 is 5 real hours but the code counts 4. On the October spring-forward night, it is 3 real hours but the code counts 4. The UTC-conversion fix is correct.\n- **Nonexistent and ambiguous times (item 2):** Correct. Both cases exist in Sydney, `fold=0` is the default, and the round-trip detection suggestion is valid.\n- **Weekend loading (item 3):** Correct. Only the start day determines the rate, and both examples are accurate. The fix of splitting at midnight is appropriate.\n- **Float and rounding (item 4):** Real, though less likely to matter than the earlier items. A rate like 2501 × 1.5 gives an exact .5, so banker's rounding does occur. The Decimal suggestion is sound.\n- **Missing rules and validation (item 5):** Somewhat speculative. Public holidays are a plausible payroll concern, but the code doesn't claim to handle them. The remaining points are reasonable hardening and are placed last.\n\n**Ranking and fixes:** The order is sensible, with correctness bugs that cause underpayment or overpayment first. Most items include a concrete fix.\n\n**Weaknesses:**\n- The response runs right around the 200-word limit.\n- Item 5 is mild padding.\n- The code snippet uses `timezone` without noting the import.\n- The response does not flag anything that is actually fine.\n\nScore: 8",
+  "usage": {
+    "input": 1130,
+    "output": 2088
+  },
+  "cost": 0.02314
+}

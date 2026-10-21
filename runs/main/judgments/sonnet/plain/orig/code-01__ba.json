@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-01",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better, mainly because it respects the length limit.\n\nThe two responses cover mostly the same ground. Both rank idempotency and fault tolerance first, then truncation and float money, then validation, skipped credits, and hard-coded tax. Both of their truncation examples are real: `10.29 * 100` and `19.99 * 100` each land just under the whole number of cents.\n\n- **Length:** A comes to roughly 200 words, right at the limit. B is around 250 words, clearly over. B repeats the double-charge point in #2 after making it in #1. Its closing \"minor\" item adds little.\n- **Content:** B has a few good extras, such as NaN/inf strings passing through `float()`, no billing-period scoping, and no currency on `charge`. A's customer-ID normalization point is fairly minor. A's explicit demonstration of the truncation bug is concrete and useful.\n\nOverall, A is tighter, follows the instruction better, and prioritizes the issues that matter most.\n\n**A**",
+  "usage": {
+    "input": 1418,
+    "output": 1423
+  },
+  "cost": 0.017066
+}

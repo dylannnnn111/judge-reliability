@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-23",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is more accurate. Response A says the council \"will install a speed counter\" on Wattle Road, but the minutes only say Councillor Tse would ask council traffic staff to put one there and report back. A turns a request into a commitment, which could mislead a manager. Response B words it correctly: \"Tse will request a speed counter.\"\n\nB also keeps more of the points a reader might need: who is coordinating the Clean Up Day, who is booking the sound system, and the Facebook follow-up. It does this while staying under 120 words, at roughly 113 by my count. A is slightly shorter, but its extra brevity comes from dropping those points and from the overstatement.\n\nVerdict: B",
+  "usage": {
+    "input": 1550,
+    "output": 777
+  },
+  "cost": 0.01087
+}

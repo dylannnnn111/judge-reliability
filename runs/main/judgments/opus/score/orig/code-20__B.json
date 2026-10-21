@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "code-20",
+  "side": "B",
+  "score": 8,
+  "model": "claude-opus-5-5",
+  "text": "**Score: 8/10.** The top-ranked issue is the real bug and is analyzed correctly; the later points are reasonable but softer, and the response probably runs slightly over the length limit.\n\n**What's right**\n\n- **DST is the real, deterministic bug, and it is ranked first.** The arithmetic checks out:\n  - Spring forward, due 3 days away: 71/24 floors to 2.\n  - Spring forward, due tomorrow: 23h floors to 0, so \"Due tomorrow\" becomes \"Due today\".\n  - Fall back, due yesterday: −25h floors to −2.\n- **The overdue list really is unaffected,** because the sign never flips.\n- **The fix is correct.** Using `Date.UTC` on the calendar components removes the DST skew. `Math.round` is harmless and adds a little defensiveness.\n- **The NaN point is valid.** Malformed, null or full-ISO `dueDate` values all produce Invalid Date. The label then reads \"Due in NaN days\", and the invoice silently drops out of the overdue filter, since every comparison with NaN is false.\n\n**Weaker points**\n\n- **The timezone point (#3) is a design concern, not a bug.** It is still worth raising for invoice due dates, and its fix is only sketched.\n- **The stale-after-midnight point (#4) assumes caller behaviour.** These are pure functions that take `now`, so this is about how the page uses them, not this code.\n- **The first DST bullet blends two examples.** It shows \"3 days → 2\" and then says \"Due tomorrow → Due today\", which reads slightly confusingly, though both statements are true.\n- **Length is probably a bit over the 200-word limit** once the code is counted.\n\n**False positives:** none. Nothing flagged is actually fine.\n\nScore: 8",
+  "usage": {
+    "input": 1203,
+    "output": 1249
+  },
+  "cost": 0.029792
+}

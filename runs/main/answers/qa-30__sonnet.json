@@ -1,0 +1,13 @@
+{
+  "item": "qa-30",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**What it is:** A p-value is the probability of seeing data at least as extreme as what you observed, *assuming the null hypothesis is true* (along with the model's other assumptions). It measures how surprising your data would be in a world where there's no effect.\n\n**What it is NOT:**\n- Not the probability the null hypothesis is true\n- Not the probability your result happened \"by chance\"\n- Not the probability your finding will replicate\n- Not a measure of effect size or practical importance\n- Not proof: p < 0.05 doesn't mean \"real,\" and p > 0.05 doesn't mean \"no effect\"\n\nA small p-value suggests the data are incompatible with the null model, but it can't tell you how likely any hypothesis is without prior information.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 45,
+    "output": 237
+  },
+  "cost": 0.00246,
+  "at": "2026-10-14T01:50:47.974Z"
+}

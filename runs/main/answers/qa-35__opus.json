@@ -1,0 +1,13 @@
+{
+  "item": "qa-35",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**Why antibiotics don't work on viruses:** Antibiotics target structures and processes unique to bacteria, such as cell walls, bacterial ribosomes, or specific bacterial enzymes. Viruses lack these. They have no cell wall or metabolism of their own and replicate inside your cells using your cellular machinery, so antibiotics have nothing to attack.\n\n**How resistance develops:** Bacteria reproduce rapidly, and random mutations occasionally make some resistant, for example by destroying the drug, pumping it out, or altering its target. Antibiotics kill susceptible bacteria, leaving resistant ones to multiply. That is natural selection. Bacteria can also share resistance genes with each other through plasmids. Overuse, such as taking antibiotics for viral infections, not finishing courses, or using them in agriculture, accelerates this process.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 59,
+    "output": 298
+  },
+  "cost": 0.006196,
+  "at": "2026-10-14T01:50:55.181Z"
+}

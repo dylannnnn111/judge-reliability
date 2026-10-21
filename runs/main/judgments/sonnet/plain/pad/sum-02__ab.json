@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-02",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. It covers the key decisions and actions: the unresolved opening-hours dispute and next steps, the volunteer deadline, the roof replacement, and the next meeting. It is also much closer to the 120-word limit, at roughly 120–126 words depending on how you count, so it may be marginally over.\n\n**B** is clearly over the limit at around 170 words. It opens with filler (\"Thank you for taking the time…\"), which a busy manager doesn't need. It also gives less useful detail on the roof leak, and it includes the air conditioning service, which is minor.",
+  "usage": {
+    "input": 1588,
+    "output": 686
+  },
+  "cost": 0.010036
+}

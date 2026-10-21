@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-01",
+  "order": "ba",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly compute P(condition | positive) = 90/981 ≈ 9.2%, using the same 10,000-person breakdown: 90 true positives and 891 false positives. Both are under 120 words. Response A states the key insight directly: false positives from the large healthy group outnumber true positives from the small affected group. Response B leads with the answer and names the base rate fallacy, which is useful added context. Neither has a substantive advantage in correctness, reasoning, or clarity.\n\nVerdict: TIE",
+  "usage": {
+    "input": 745,
+    "output": 659
+  },
+  "cost": 0.000404
+}

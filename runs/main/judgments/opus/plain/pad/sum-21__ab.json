@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-21",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse B is better. It meets the under-120-word limit at roughly 110 words. It covers every decision-relevant point: the recommendation, the total cost and overspend, the delegation issue, the fuel-saving rationale, the within-budget alternative, and the 24 October deadline with the cost of missing it. It is written clearly for the manager as the reader. Its added total of $21,600 for hire cars (6 cars × $1,800 × 2 months) is correct and useful.\n\nResponse A runs to about 225 words, nearly double the limit. It also has a confused voice: it opens \"I'd like to ask for Ruth's sign-off\" while also referring to Dominic in the third person. It repeats the delegation point and includes the less relevant Coastal Fleet detail.",
+  "usage": {
+    "input": 1520,
+    "output": 1203
+  },
+  "cost": 0.03014
+}

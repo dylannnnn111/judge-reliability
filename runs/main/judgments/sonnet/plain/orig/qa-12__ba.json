@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-12",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer of 671/1296 ≈ 51.8%, and both fall under the 120-word limit.\n\nResponse A walks through the complement method step by step and adds a short note about the Chevalier de Méré. The word count is about 70, so it stays within the limit. The extra context is accurate and mildly useful.\n\nResponse B is concise and also correct, but it gives less explanation.\n\nFor a simple probability question, either style is acceptable. Response A is a bit more explanatory and still within the limit, so it may be slightly more helpful. Response B is more direct, which some people would prefer given the brevity constraint, though the constraint is only a maximum and both comply.\n\nI lean slightly toward A for the clearer explanation.\n\n**A**",
+  "usage": {
+    "input": 412,
+    "output": 238
+  },
+  "cost": 0.003204
+}

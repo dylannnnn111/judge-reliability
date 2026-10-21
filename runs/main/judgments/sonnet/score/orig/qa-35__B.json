@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-35",
+  "side": "B",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "Checking word count: the first paragraph is about 52 words and the second about 48, so roughly 100 words in total, under the 120 limit.\n\nAccuracy: Antibiotics target bacteria-specific structures. Penicillin targets cell wall synthesis, tetracyclines target the bacterial ribosome (30S), and fluoroquinolones target DNA gyrase/topoisomerase. All of this is correct. Viruses lack cell walls, have no independent metabolism, and use host machinery. Correct. The resistance explanation covers mutation, horizontal gene transfer via plasmids, selection pressure, and overuse. Also correct.\n\nA minor omission is that viruses do have capsids and some enzymes (such as polymerases) that antivirals target, but that isn't needed here. Another is that \"no independent metabolism\" is slightly simplified, but it is accurate. The response is concise and clear, and it meets the length constraint.\n\nScore: 9",
+  "usage": {
+    "input": 446,
+    "output": 312
+  },
+  "cost": 0.004012
+}

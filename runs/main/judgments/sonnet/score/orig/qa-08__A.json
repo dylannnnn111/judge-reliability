@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-08",
+  "side": "A",
+  "score": 10,
+  "model": "claude-sonnet-5-5",
+  "text": "Check the calculation: 375 × 0.048 = 18.0 mL. 18 × 0.789 = 14.202 g. Dividing by 10 g gives 1.42 standard drinks. The response is correct.\n\nIt shows the key reasoning in three steps, is clear, and stays well under the 120-word limit. Nothing is missing. The result could be rounded to 1.4, but 1.42 is accurate.\n\nScore: 10",
+  "usage": {
+    "input": 383,
+    "output": 142
+  },
+  "cost": 0.002186
+}

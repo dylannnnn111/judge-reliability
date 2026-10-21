@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-13",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B.** Both responses exceed the 120-word limit, so the choice rests on the other differences.\n\n- **Length:** By my count, A is about 127 words and B about 146. A is closer to the limit, but both break it.\n- **Accuracy:** A's cause statement is muddled. \"A failed biocide dosing pump that the contractor missed during a monthly visit\" suggests the technician missed the failure while on site. In fact the whole visit was missed. B states this correctly: the pump failed after the contractor missed a monthly visit without telling them.\n- **Usefulness for a busy manager:** B puts the required decision first and is clearly labelled. It also includes the fortnightly sampling and tenant notification, which A leaves out.\n\nA's smaller overrun is a point in its favour. B's accuracy and its decision-first layout slightly outweigh that.\n\n**B**",
+  "usage": {
+    "input": 1348,
+    "output": 2763
+  },
+  "cost": 0.030326
+}

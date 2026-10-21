@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-28",
+  "side": "B",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds every substantive problem in the code:\n\n- **Race condition:** The balance check uses a plain `SELECT`, so concurrent transfers can overdraw a wallet. The fixes are correct: `FOR UPDATE` or a conditional `UPDATE` with a `rowCount` check.\n- **Missing destination wallet:** The debit commits even if `toId` doesn't exist, so money vanishes. This is a real bug with a correct fix.\n- **Connection leak:** `client.release()` is never called. This is a real and severe bug, since every call leaks a client and the pool exhausts after about 10 calls. Arguably it should rank first, because it breaks the function outright. Ranking the race condition first is still defensible, since it is the data-integrity issue.\n- **Deadlock:** The current code already locks rows in opposite order for A→B and B→A, so the deadlock is real. The fix, consistent lock ordering, is correct.\n- **ROLLBACK masking the original error:** This is a legitimate minor issue.\n- **CHECK constraint and `fromId === toId`:** Both are reasonable defensive suggestions, and the response labels the second as minor.\n\nNone of the items is a false positive. Every item has a concrete fix, and the response stays at about 200 words, right at the limit. The main weakness is that the leak is probably underranked.\n\nScore: 9",
+  "usage": {
+    "input": 1171,
+    "output": 1468
+  },
+  "cost": 0.017022
+}

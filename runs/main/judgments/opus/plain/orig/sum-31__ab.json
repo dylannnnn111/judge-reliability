@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-31",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A fits a busy manager better. Its bullets can be scanned in seconds, and it keeps details Response B drops:\n\n- the gains levelling off within four weeks\n- the smaller accuracy improvement where error rates were already low\n- the complaint about not being able to talk to colleagues\n\nIts closing takeaway on headset comfort mirrors the report's own conclusion. The \"worth considering\" line goes slightly beyond the source but is a reasonable reading of it.\n\nResponse B is accurate and clearly under the limit at roughly 105 words. However, it is a dense paragraph with no takeaway and omits some nuances.\n\nResponse A's one weakness is length. It is about 113 words in the body, or exactly 120 with the heading, which is borderline against \"under 120\". Headings are usually excluded from word counts, so on balance A is better.",
+  "usage": {
+    "input": 1316,
+    "output": 1498
+  },
+  "cost": 0.035224
+}

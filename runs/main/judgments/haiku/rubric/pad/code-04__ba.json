@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-04",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses identify the most important issue, the double-charge risk from retrying a POST without an idempotency key, and both correctly flag retrying 4xx errors. Response A's point about the ambiguous failure state (whether a charge might exist after the final attempt) is important and absent from B as a distinct item. Response A's claim that `ValueError` and `KeyError` \"aren't caught\" is partly wrong, since newer `requests` versions raise a `RequestException` subclass for bad JSON. Response B handles this more accurately and also catches the wasted sleep after the final attempt. B adds useful detail on 429 handling and per-attempt idempotency keys derived from order IDs.\n\nThe user explicitly asked for under 200 words. Response A runs slightly over, but stays close. Response B is roughly twice that length, with an unnecessary intro sentence and wordier items. Its extra accuracy on the JSON-parsing and sleep issues is valuable, but it is a minor gain against a clear constraint violation, and some items (the generic `RuntimeError`, the currency hardcoding) are lower-value padding. Response A better follows the instructions while covering the critical issues.\n\nVerdict: A",
+  "usage": {
+    "input": 1971,
+    "output": 1282
+  },
+  "cost": 0.0008381
+}

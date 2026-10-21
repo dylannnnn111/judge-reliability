@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "qa-33",
+  "side": "B",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer in under 120 words. The response is well over that: counting roughly, paragraph 1 is about 55 words, paragraph 2 about 75, paragraph 3 about 50, and paragraph 4 about 55, for roughly 235 words. That is nearly double the limit, which is a clear violation of an explicit constraint.\n\nOn correctness, the content is accurate. Tidal locking is correct, and the 27.3-day period is the sidereal period, so that is fine. The explanation of the tidal bulge is reasonable. Libration allowing about 59% to be seen is correct. The far side does get sunlight, which is also correct. The claim that \"the Moon rotated much faster\" early on is plausible and generally accepted.\n\nThe key reasoning is present, but the length constraint was explicitly stated and badly violated. The extra material on libration and the far side adds correct but unrequested content, which doesn't justify the violation.\n\nBecause the constraint is explicit and clearly broken, the score should be reduced substantially, though the core answer is right.\n\nScore: 4",
+  "usage": {
+    "input": 605,
+    "output": 345
+  },
+  "cost": 0.00466
+}

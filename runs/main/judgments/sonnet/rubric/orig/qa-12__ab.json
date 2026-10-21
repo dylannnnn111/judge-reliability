@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-12",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses reach the correct answer: 1 − (5/6)^4 = 671/1296 ≈ 0.518. Both also stay under the 120-word limit.\n\nOn reasoning, A gives the complement method concisely. B lays out the same method with more steps, including the single-roll probability and the independence assumption, and adds a historical note. The note is accurate: the Chevalier de Méré problem is the classic case of at least one six in four rolls. It is also useful context, since it says the odds are slightly better than even.\n\nChecking B's word count: roughly 90–100 words, so it is under 120. Counting more carefully, the first line is about 17 words, the three bullets about 12 + 13 + 14, the \"So there's...\" line about 17, and the parenthetical about 17. That totals about 90, which is fine.\n\nB is somewhat more explanatory and still within the limit. A is cleaner and more concise, and it is fully correct. B's extra content is correct and mildly useful: it states independence and gives the single-roll probability, so the reasoning is more complete. The difference is small, but B is slightly better on the reasoning criterion.\n\nVerdict: B",
+  "usage": {
+    "input": 557,
+    "output": 371
+  },
+  "cost": 0.004824
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-18",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The core answer is correct: Willem Janszoon and the *Duyfken* reached Cape York Peninsula in 1606, which is generally recognized as the first recorded European landing on the Australian mainland. The details about the New Guinea assumption, the Pennefather River area, and the fatal skirmish are also accurate, as are the comparisons with Hartog (1616, an island off Western Australia) and Cook (1770). The speculation about earlier Portuguese or Spanish contact is appropriately flagged as undocumented.\n\nHowever, the user asked for an answer under 120 words, and this response runs roughly 145 words, so it violates an explicit constraint. The opening sentence is filler, and the Hartog and Cook comparisons go beyond what was asked. The reasoning is sound and clearly organized, but the length violation weighs against it.\n\nScore: 6",
+  "usage": {
+    "input": 542,
+    "output": 662
+  },
+  "cost": 0.0003852
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-13",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse A misstates the cause. It says the contractor \"missed\" the failed pump *during* a monthly visit, which implies the visit happened. In fact the visit was skipped entirely, and nobody told Facilities. A also omits the move to fortnightly sampling and the tenant notification.\n\nResponse B has a smaller imprecision. It says the pump failed \"after\" the contractor missed a visit. The report says the pump failed in mid-September and went unnoticed because the visit was missed. B still conveys the essential point, a skipped and unreported visit, and does not invent a visit that never happened.\n\nB also suits a busy manager better. It leads with the one decision required, the $4,800 approval and the interim weekly checks. It then covers what happened, the cause and next steps under clear labels, including fortnightly sampling and cost recovery.\n\nOn length, both are close to the 120-word limit. B lands at or just over it depending on whether the bold labels are counted. A runs longer, around 130 words.",
+  "usage": {
+    "input": 1348,
+    "output": 1229
+  },
+  "cost": 0.029972
+}

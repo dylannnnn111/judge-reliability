@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-24",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "A is better. Both responses answer correctly that Mauna Kea is the tallest mountain from base to peak and that Chimborazo's summit is farther from Earth's centre than Everest's. Response B, however, says Everest rises \"roughly 4,600 to 5,000 m from its base on the Tibetan Plateau,\" which overstates the figure, since the plateau base is around 5,000 m and Everest's rise from it is closer to 3,500 to 4,000 m. Response A avoids this error and stays within the word limit.\n\nA",
+  "usage": {
+    "input": 632,
+    "output": 1420
+  },
+  "cost": 0.0007732
+}

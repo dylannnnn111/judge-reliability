@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-39",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "B",
+  "usage": {
+    "input": 781,
+    "output": 42
+  },
+  "cost": 0.003964
+}

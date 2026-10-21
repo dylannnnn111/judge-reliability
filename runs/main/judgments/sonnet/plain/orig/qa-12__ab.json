@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-12",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer, 671/1296 ≈ 51.8%, and both stay under 120 words.\n\nResponse A is concise and correct. It computes the complement and states the answer clearly.\n\nResponse B explains the steps more fully, with the single-roll probability, independence, and the complement. It also adds the Chevalier de Méré note. That note is accurate: de Méré's first game was betting on at least one six in four rolls, which has probability about 0.518. B's reasoning is clearer and slightly richer, and it stays within the word limit, at roughly 85 words.\n\nB's extra explanation and context give it a slight edge in helpfulness. A is sufficient, but B is more instructive without being excessive.\n\n**B**",
+  "usage": {
+    "input": 412,
+    "output": 233
+  },
+  "cost": 0.003154
+}

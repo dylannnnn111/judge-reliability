@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-04",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses reach the correct answer: $480 and a 4% decrease. Next is the word limit of under 120 words.\n\nResponse A: counting words. \"Final price: $480\" (3) + \"20% increase: $500 × 1.20 = $600\" (~6) + \"20% discount: $600 × 0.80 = $480\" (~6) + \"Overall change: a 4% decrease ($20 less than $500)\" (~9) + the paragraph: \"The two changes don't cancel out because the 20% discount applies to the larger $600 price, so it removes $120, while the increase added only $100.\" (~26) + \"In general, raising and then lowering by the same percentage p gives a net change of −p², here 0.20² = 0.04, or −4%.\" (~22). Total is about 72 words, well under 120.\n\nResponse B: \"Step 1: 20% increase\" (4) + \"$500 × 1.20 = $600\" (4) + \"Step 2: 20% discount on the new price\" (7) + \"$600 × 0.80 = $480\" (4) + \"Final price: $480\" (3) + \"Overall change: ($480 − $500) / $500 = −4%\" (8) + \"The price ends up 4% lower than the original, a $20 decrease.\" (12) + \"The percentages don't cancel out because the 20% discount is applied to the larger $600 price, so it removes more dollars ($120) than the increase added ($100).\" (27) + \"Equivalently, 1.20 × 0.80 = 0.96, which is a 4% decrease.\" (11). Total is about 80 words, also under 120.\n\nBoth are correct and within the limit. A adds the general −p² rule, which is correct and useful. B adds the 0.96 multiplier check, which is also useful and arguably more direct. B shows the percentage change calculation explicitly. A is more concise and puts the answer first. Differences are minor.\n\nA's general formula is a nice insight, but the user did not ask for it. B's explicit percent-change calculation answers the \"overall percentage change from $500\" question directly. It is close to a tie, but the two add comparable value.\n\nVerdict: TIE",
+  "usage": {
+    "input": 658,
+    "output": 679
+  },
+  "cost": 0.008106
+}

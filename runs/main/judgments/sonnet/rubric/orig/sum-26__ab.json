@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-26",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are accurate on the main facts: the dates, the 2:10pm return to service, the cause, the 11 meal deliveries, the four residents helped with the evacuation chair, the $2,300 spare board and the second-lift request. Both also run over the 120-word limit, at roughly 150 words each, so neither gains an edge on that constraint.\n\n**Accuracy:** A says residents were \"carried down the stairs,\" which slightly overstates the report's \"helped down the stairs … using an evacuation chair.\" B says \"daily printed updates,\" but only the Monday notice was specified as printed. B's phrase \"helped four residents to medical appointments\" is a loose compression. These are minor flaws on each side.\n\n**Coverage:** B keeps more of what a manager needs. It includes the families of high-care residents being phoned, the staff refresher training, and the 26 Sept approval date. A omits the refresher and the family calls. B is also easier to scan because of its labelled sections.\n\nB is slightly better on coverage and scannability, with no meaningful accuracy disadvantage.\n\nVerdict: B",
+  "usage": {
+    "input": 1541,
+    "output": 1925
+  },
+  "cost": 0.022332
+}

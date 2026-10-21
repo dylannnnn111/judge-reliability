@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-15",
+  "side": "B",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate on every figure and condition: 96 workers, a 20-minute nap at 3am, a 22% drop in lane drifting, a 0.09 s reaction-time gain, the 6+ month and under-3-month groups, 15 minutes of grogginess, and 7am drives having about twice the drifting of 6am drives. \"Timing matters more\" fairly captures the finding that the nap effect was smaller than the effect of drive time. It keeps the key takeaway (naps help experienced workers but don't replace earlier shift ends or transport home) and the limitations. I count roughly 117 words, so it stays under the 120 limit, and it is well structured for a busy manager. Small omissions, such as the contact and the randomised design, are reasonable cuts. It is slightly tight on the word limit but compliant.\n\nScore: 9",
+  "usage": {
+    "input": 1084,
+    "output": 870
+  },
+  "cost": 0.010868
+}

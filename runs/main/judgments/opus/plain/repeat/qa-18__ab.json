@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "qa-18",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses are accurate and stay under the 120-word limit: A is about 112 words and B about 85. Both correctly identify Willem Janszoon and the *Duyfken* crew in 1606, landing on the western side of Cape York Peninsula near the Pennefather River.\n\nA edges ahead on substance. It narrows the date to February–March 1606 and explains that the crew mistook the land for part of New Guinea. It also notes the documented clash with Aboriginal people that killed some crew members. Its comparisons to Hartog (1616) and Cook (1770) directly support the \"first\" claim, which is useful because many people wrongly assume Cook was first.\n\nB is clean and well formatted, but its Hartog pewter-plate detail is more tangential than A's added context.",
+  "usage": {
+    "input": 569,
+    "output": 673
+  },
+  "cost": 0.015736
+}

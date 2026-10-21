@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "code-32",
+  "side": "B",
+  "score": 7,
+  "model": "claude-opus-5-5",
+  "text": "The technical content is strong, but the response breaks the explicit length constraint.\n\n**Technical accuracy:**\n- **Date bug (#1):** Correctly identified and fixed. With ISO timestamps, `'2026-09-30 14:22:05'` sorts after `'2026-09-30'`. This holds whether the column is typed as a timestamp or stored as text, as in SQLite. It is the most important bug, since revenue is understated, and it is rightly ranked first.\n- **Integer division (#2):** Real. The response sensibly notes that the dialect matters and that `avg_items_per_order` is hit hardest. The `AVG` fix is clean.\n- **NULL status (#3):** A legitimate concern, though it depends on whether `status` is nullable. The fix is appropriate, and the note about cancelled or failed orders is useful.\n- **Missing stores (#4):** Real for a dashboard tile. The response correctly notes that the `HAVING` is redundant and gives the subtle advice to move the filters into `ON` when using a `LEFT JOIN`. The \"guard against division by zero\" remark is slightly muddled, though it does resolve itself.\n- **Minor items:** Reasonable and correctly labelled as minor. Timezone ambiguity is a genuine concern for monthly boundaries. None of them flag code that is actually fine.\n\n**Ranking:** Sensible, and every item includes a fix.\n\n**Main shortfall:** The user asked for under 200 words, and the response runs to roughly 240. That is a clear instruction violation. Some items, such as #2 and #4, could have been tightened without losing substance.\n\nOverall, this is an excellent and accurate review held back by ignoring the length constraint.\n\nScore: 7",
+  "usage": {
+    "input": 1198,
+    "output": 1050
+  },
+  "cost": 0.025792
+}

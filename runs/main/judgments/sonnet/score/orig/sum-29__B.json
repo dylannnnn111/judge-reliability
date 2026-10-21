@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-29",
+  "side": "B",
+  "score": 8,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate. The prices, data increases, effective date (\"first bill after 15 November 2026\"), the Classic and fixed-contract exemptions, the exit-fee deadline, device repayments, the reason and the support hours all match the original. It does not misattribute anything. The one small loss is that \"regional\" is dropped from \"120 new sites in regional Queensland and Western Australia\", though \"regional coverage\" appears just before it, so the meaning holds.\n\nIt keeps what a manager needs: the price and data changes per plan, who is affected, what customers can do, and why. It leaves out only minor detail, such as the app path for checking a plan.\n\nThe format is easy to scan. The length is borderline. I count about 117 words without the arrows and about 123 if the arrows are counted, so it may marginally exceed the 120-word limit depending on how symbols are counted. That is the main deduction.\n\nScore: 8",
+  "usage": {
+    "input": 1100,
+    "output": 1667
+  },
+  "cost": 0.01887
+}

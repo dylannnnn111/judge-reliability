@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-06",
+  "side": "B",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The summary is accurate on every date, number and condition I checked:\n\n- **Opening:** 31 October.\n- **Project:** eight months, $3.2 million.\n- **Enrolments:** open online 20 October.\n- **Prices:** $6.50 adults, $4.50 children and concession, free under three.\n- **Free entry:** 10am–4pm on opening day.\n- **Hours:** 6am–8pm weekdays, 7am–6pm weekends.\n\nFunding is correctly attributed to council plus a state grant. The program pool's age and leaking are reported correctly. The programs resuming on opening day are correctly listed.\n\nTwo small fidelity slips:\n\n- **Solar:** The original says the array is *expected* to cover about a third of power needs. The summary says \"covering\", which presents a projection as fact.\n- **Price freeze:** The original says prices hold \"for the rest of the 2026-27 season\". The summary's \"Unchanged for 2026-27\" is close enough.\n\nNeither is seriously misleading, but the solar wording is a minor loss of hedging.\n\nOn coverage, everything a manager needs is kept: when it opens, what changed, cost and funding, programs, enrolments, pricing, opening-day events and hours. Leaving out the quotes and Margaret Yeo's anecdote is the right call. Dropping the adult change table detail is acceptable.\n\nOn concision, it is roughly 110 words, under the 120-word limit. The bolded headings make it quick to scan, and there is no padding.\n\nOverall this is a strong, accurate and well-prioritised summary, held back only by the small loss of hedging on the solar figure.\n\nScore: 9",
+  "usage": {
+    "input": 1132,
+    "output": 1729
+  },
+  "cost": 0.039108
+}

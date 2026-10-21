@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-28",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse A runs about 133 words, clearly over the 120-word limit. Response B lands at roughly 120 words, depending on how list markers and symbols are counted. That makes it essentially compliant.\n\nBoth are accurate and cover the same core ideas: chaining, open addressing, load factor, average O(1) versus worst-case O(n), and resizing. A adds the Java HashMap tree detail and specific thresholds. B adds the useful point that resizing keeps insertion at amortized O(1). B's content is just as strong, and it better respects the length constraint.",
+  "usage": {
+    "input": 690,
+    "output": 932
+  },
+  "cost": 0.0214
+}

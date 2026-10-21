@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-06",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the same answer, Friday 24 March 2028, and both check out. Counting from 15 December 2027, December 31 is 16 days away, January 31 adds 31 more (47 total), and February 2028 (a leap year) adds 29 more (76 total), so 100 days lands on 24 March. Since 100 = 14 × 7 + 2, Wednesday plus 2 days is Friday. Both explain the key steps and fit under 120 words. Response A lays out the steps as a clear bulleted countdown, while Response B summarizes the same arithmetic in prose with the 76-day running total stated explicitly. Neither has a meaningful advantage in correctness, reasoning, or clarity.\n\nVerdict: TIE",
+  "usage": {
+    "input": 527,
+    "output": 550
+  },
+  "cost": 0.0003277
+}

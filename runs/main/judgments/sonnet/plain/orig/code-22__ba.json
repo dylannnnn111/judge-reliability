@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-22",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "A\n\nBoth responses go over the 200-word limit, but Response A (about 265 words) is closer to it than Response B (about 320 words, including an unrequested code block). Both correctly rank the unverified `jwt.decode` as the critical bug. They also both catch the 401/403 mix-up, the loose `Bearer` parsing, the unchecked expiry and the unvalidated secret.\n\nResponse A mostly sticks to problems that matter. Its weakness is calling the exported `SECRET` a \"High\" issue, which is overrated. Response B has better insights, such as noting that `SECRET` is unused and that the algorithm should be pinned. But it pads the list with \"Minor\" items that don't really matter (single role claim, logging) and adds the fix code, which pushes it further past the length limit.\n\nBecause the user asked for a short list of what matters, A's tighter adherence to the format edges out B's extra insight.",
+  "usage": {
+    "input": 1562,
+    "output": 969
+  },
+  "cost": 0.012814
+}

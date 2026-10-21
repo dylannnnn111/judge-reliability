@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-07",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nThe user asked for a review under 200 words. Response A runs to roughly 450 words and opens with an empty filler paragraph. Response B is about 220–230 words: slightly over the limit, but far closer.\n\nOn content, both put the correct critical bug first: the final partial batch is dropped. A adds the useful note that fewer than 500 contacts means nothing is sent at all, and it mentions the overly broad `except`. B's points 2–4 overlap somewhat, but its point about checking `upsert_contacts` idempotency before adding retries is a good one. Their substance is roughly comparable, and neither has errors.\n\nThe explicit length constraint is the deciding factor, and B honors it much better.",
+  "usage": {
+    "input": 1561,
+    "output": 408
+  },
+  "cost": 0.014404
+}

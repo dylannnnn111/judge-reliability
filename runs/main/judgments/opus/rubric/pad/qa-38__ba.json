@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-38",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses are scientifically correct. Each explains the same mechanism:\n\n- **Winter cold:** the extreme cold of the Antarctic winter allows polar stratospheric clouds to form.\n- **Chlorine activation:** reactions on the cloud surfaces convert the reservoir compounds HCl and ClONO₂ into reactive forms such as Cl₂.\n- **Isolation:** the polar vortex isolates the air mass.\n- **Spring sunlight:** the returning sun photolyzes Cl₂ into chlorine radicals that catalytically destroy ozone.\n- **Recovery:** the hole fills as the vortex breaks down.\n\nResponse B adds that the chlorine comes from CFCs, gives the −78°C temperature threshold, and contrasts the warmer, less isolated Arctic. These additions are accurate. Response A omits the explicit CFC link, but its account of the mechanism is still complete and correct.\n\nThe user, however, asked for an answer under 120 words. Response A is about 92 words and complies. Response B runs to roughly 230 words, nearly double the limit. That is a clear failure to follow an explicit instruction. B's extra details do not make up for the violation, because A already delivers the key reasoning within the requested length.\n\nResponse A is correct, complete on the essential causes of both the location and the timing, clear, and compliant. Response B is equally correct but ignores the length constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 965,
+    "output": 905
+  },
+  "cost": 0.02196
+}

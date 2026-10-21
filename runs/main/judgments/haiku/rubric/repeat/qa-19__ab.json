@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "qa-19",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify *gangurru* from Guugu Yimithirr as the source, name the grey kangaroo, date the recording to Cook's 1770 stay near Cooktown, and call the \"I don't understand\" story a myth. Neither contains a clear factual error, so correctness is essentially tied.\n\nOn reasoning, Response B goes further by offering a plausible explanation for why the myth arose: Australia had hundreds of languages, so the word may not have been recognized elsewhere. That explanation is somewhat speculative, but it addresses why the story seems believable. Response A gives the myth's content and Haviland's confirmation but doesn't explain its appeal or origin as well. Response B also adds the detail about Joseph Banks. Both are within the word limit and clear.\n\nResponse B has a slight edge on reasoning and is no less accurate.\n\nVerdict: B",
+  "usage": {
+    "input": 788,
+    "output": 1031
+  },
+  "cost": 0.0005943
+}

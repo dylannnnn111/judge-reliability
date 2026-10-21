@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-24",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses answer \"no\" to both questions and give the right replacements.\n\n- **Base to peak:** both name Mauna Kea, at about 10,200 m from the seafloor with roughly 4,200 m above sea level.\n- **Farthest from the centre:** both name Chimborazo, citing the equatorial bulge and a summit about 2 km farther out than Everest's.\n\nOn correctness the two are equal. B's extra figures (Chimborazo at 6,263 m elevation and about 6,384 km from the centre) are accurate. Its estimate of Everest's own base-to-peak height is a reasonable approximation.\n\nBoth also give the key reasoning: the seafloor base explains Mauna Kea, and the equatorial bulge explains Chimborazo.\n\nThe deciding factor is the explicit instruction to answer in under 120 words. Response A is about 100 words and complies. Response B runs to roughly 190 words, clearly breaking the limit. Its additions, such as Everest's base on the Tibetan Plateau and the exact distance from the centre, are mildly informative but not needed. They come at the cost of ignoring the user's constraint. Its opening line and closing summary also repeat the answer without adding anything.\n\nResponse A is concise and clear and meets every requirement. Response B is equally correct but fails the length limit.\n\nVerdict: A",
+  "usage": {
+    "input": 888,
+    "output": 849
+  },
+  "cost": 0.020532
+}

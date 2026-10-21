@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-29",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the critical bug: `NOT IN` against a subquery containing NULLs returns no rows. Both also flag the 2026 date filter that contradicts the \"never referred\" intent and the `LIMIT` with `ORDER BY` bias toward the oldest customers. Both give the correct `NOT EXISTS` fix and rank the issues sensibly.\n\nResponse A adds a useful point for an email campaign: it doesn't exclude duplicates, bounced or suppressed addresses, or people already contacted. Response B's point that the same oldest cohort would be emailed every month ties the `LIMIT` issue to the monthly cadence, which is a sharp observation. B's date-format note is also more precise about why string comparison matters.\n\nOn length, the user asked for under 200 words. Response B fits that limit. Response A is probably around 220 words, so it slightly overruns. The substance is close, and B's compliance with the explicit constraint tips it.\n\nVerdict: B",
+  "usage": {
+    "input": 1568,
+    "output": 1091
+  },
+  "cost": 0.0007023
+}

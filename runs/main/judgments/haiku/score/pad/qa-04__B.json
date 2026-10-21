@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-04",
+  "side": "B",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The final price of $480 and the overall change of −4% are both correct, and the response explains why the discount removes more dollars than the increase added. The reasoning is clear and the 1.20 × 0.80 = 0.96 check is a useful addition. However, the user explicitly asked for an answer under 120 words, and this response runs roughly 190 words. Its repetition (the −4% is stated twice, and the final paragraph restates the same point) adds length without adding substance, so the response fails a direct instruction.\n\nScore: 5",
+  "usage": {
+    "input": 634,
+    "output": 420
+  },
+  "cost": 0.0002734
+}

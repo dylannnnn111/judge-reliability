@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-23",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B is better, mainly because it comes closer to the 200-word limit. Response A runs well over it, at roughly 350 words, while Response B is about 215. Response A's prototype-key point is a real addition, but it doesn't outweigh the length violation. Both correctly identify the most important bug, the `!r.value` check dropping 0 readings.\n\nB",
+  "usage": {
+    "input": 1751,
+    "output": 820
+  },
+  "cost": 0.0005851000000000001
+}

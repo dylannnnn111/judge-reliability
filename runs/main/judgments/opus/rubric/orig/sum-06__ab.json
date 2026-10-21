@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-06",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy.** Both get the date, the cost, the funding, the prices, the hours, the enrolment date and the opening-day details right.\n\n- **Solar:** B says the solar array is \"covering about a third of power needs.\" The source says it is *expected* to cover about a third, so B states a projection as fact. A keeps \"expected.\"\n- **Programs:** A's \"All programs ... resume on opening day\" is a slight generalisation. However, the source lists only lap swimming, aqua aerobics and learn-to-swim, and says all of them resume that day, so A is not actually misleading. B lists the programs by name, which is more precise but adds little here.\n- **Prices:** Both shorten \"for the rest of the 2026-27 season\" to \"for 2026-27.\" This is equivalent, so neither is penalised.\n\n**Coverage.** A keeps two useful points that B drops:\n\n- the adult change table, which is a notable accessibility feature;\n- the year-round swim lessons, which is the practical benefit the mayor highlights.\n\n**Concision.** Both are under 120 words. B is a little shorter, but A's extra words add correct, relevant content rather than padding.\n\nA is better overall: it preserves the \"expected\" qualifier and keeps slightly more of what the manager needs.\n\nVerdict: A",
+  "usage": {
+    "input": 1512,
+    "output": 1571
+  },
+  "cost": 0.037468
+}

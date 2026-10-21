@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-30",
+  "side": "B",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The definition is accurate: a p-value is the probability of data at least as extreme as observed, assuming the null hypothesis is true. The phrase \"how surprising the data would be\" is a helpful, correct gloss. Strictly, it is computed via a test statistic under the full statistical model, not just the null, but omitting that is a reasonable simplification for a short answer.\n\nThe \"NOT\" list matches standard misconceptions, including those in the ASA's 2016 statement, and each item is correct:\n- **Not the probability the null is true.** This is the classic error.\n- **Not the probability the result happened \"by chance alone.\"** Correct and often overlooked.\n- **Not effect size or practical importance.** Correct.\n- **Not the probability of replication.** Correct.\n- **Not confidence that the alternative is true.** This is essentially the \"1 − p\" fallacy, worded a bit loosely but correct.\n\nOn reasoning, the answer gives the conditional nature of the p-value (\"assuming the null is true\"), which is the key idea that explains why most of the misconceptions are wrong. It does not spell that link out, but the word limit justifies the omission. It could also have mentioned the arbitrariness of the 0.05 threshold.\n\nOn clarity, it is well structured, concise and about 80 words, so it meets the constraint without padding.\n\nThere are no errors, it is clear and complete for the space allowed, and only minor nuances are missing.\n\nScore: 9",
+  "usage": {
+    "input": 342,
+    "output": 651
+  },
+  "cost": 0.014388
+}

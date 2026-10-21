@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-01",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are accurate on the new deadline (Friday 30 October, close of business), the three deliverables, the new template and its software subscriptions line, the variance threshold (\"whichever is smaller\"), the no-screenshots rule, the leave nomination, and Marcus's optional Thursday 2pm session. Both are also under 120 words (A about 118, B about 116).\n\nB has a small edge on completeness and attribution. It says the CFO moved the board meeting forward, which A leaves out. It also keeps Priya's \"call rather than email\" instruction. A only says \"call Priya today.\"\n\nB's headed bullets also make the deadline, deliverables and requirements quicker for a busy manager to scan. A is a dense block of text, which is harder to read quickly.\n\nNeither includes anything incorrect or unnecessary, so B wins on attribution and readability.\n\nVerdict: B",
+  "usage": {
+    "input": 1412,
+    "output": 1506
+  },
+  "cost": 0.017884
+}

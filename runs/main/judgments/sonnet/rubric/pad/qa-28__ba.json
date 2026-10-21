@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-28",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "The request limits the answer to under 120 words, so I'll check each response against that first.\n\nResponse A, counted roughly: the intro is about 14 words, chaining about 24, open addressing about 24, and the performance paragraph about 60. That is around 120-125 words, which is borderline. A careful count:\n\n\"A collision occurs when two keys hash to the same slot.\" (11) \"There are two main fixes:\" (5) = 16.\n\"Separate chaining: Each slot holds a list (or tree) of entries. Colliding keys are appended there, and a lookup scans that list.\" = 2+ 11 + 8... roughly 24. Running total about 40.\n\"Open addressing: If a slot is taken, probe for another using linear probing, quadratic probing, or double hashing. Lookups follow the same probe sequence.\" About 24. Running total about 64.\n\"Performance: With a good hash function and a moderate load factor (entries ÷ slots), operations average O(1).\" About 17. Total about 81.\n\"As collisions grow, chains lengthen or probe sequences cluster, degrading toward O(n) in the worst case.\" About 16. Total about 97.\n\"To prevent this, tables resize (typically doubling and rehashing) when the load factor passes a threshold.\" About 16. Total about 113.\n\"Each resize costs O(n), but the amortized cost per insert stays O(1).\" About 12. Total about 125.\n\nSo A is roughly 120-125 words, which is borderline and possibly slightly over.\n\nResponse B is clearly longer, probably 200 words or more. It plainly violates the under-120-word constraint.\n\nOn correctness, both are accurate. B adds detail such as tree bins and the 0.7–0.75 threshold. Its \"Java's HashMap\" remark is correct. But it ignores the length constraint by a wide margin.\n\nA is much closer to the constraint and is accurate and concise, and it includes amortized resizing. B's violation is more serious.\n\nVerdict: A",
+  "usage": {
+    "input": 962,
+    "output": 638
+  },
+  "cost": 0.008304
+}

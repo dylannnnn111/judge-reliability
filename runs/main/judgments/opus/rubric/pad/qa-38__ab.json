@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-38",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** Both responses are scientifically accurate. Each covers the essential mechanism:\n- The polar vortex isolates the air.\n- Extreme cold produces polar stratospheric clouds.\n- Heterogeneous reactions on their surfaces convert the reservoir compounds HCl and ClONO₂ into reactive forms.\n- Returning spring sunlight photolyzes Cl₂, releasing chlorine that catalytically destroys ozone.\n- The vortex breakup lets ozone-rich air mix back in.\n\nB correctly adds HOCl as a product. A correctly cites the ~−78°C threshold and the Arctic comparison.\n\n**Instruction compliance:** The user explicitly asked for under 120 words.\n- Response A runs roughly 210 words, well over the limit.\n- Response B is about 95 words, within it.\n\nA's extra details (the temperature threshold, the Arctic contrast) are correct but not needed to answer the question. They come at the cost of a direct violation of the user's constraint.\n\n**Key reasoning and clarity:** B delivers all the key causal links concisely and clearly: why Antarctica (cold, PSCs, vortex isolation) and why spring (sunlight needed to release active chlorine). Nothing essential is missing.\n\nSince both are correct and both give the key reasoning, B's compliance with the explicit length limit makes it the better response.\n\nVerdict: B",
+  "usage": {
+    "input": 965,
+    "output": 641
+  },
+  "cost": 0.01668
+}

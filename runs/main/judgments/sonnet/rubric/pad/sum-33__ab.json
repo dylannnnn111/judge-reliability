@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-33",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are accurate on the points that matter. Each uses the updated 31 January 2027 shutdown date rather than the original 30 November. Each also keeps the v1-connector action, the 15-minute switch time, the roughly 8% of customers affected, and the consequence of late staff pay. The new features are correct in both.\n\nThe difference is the length limit. Response A is about 125 words, so it may slightly exceed the 120-word cap, but it is close and tightly written. Response B is roughly 200 words, well over the cap. It opens with filler (\"Thank you for taking the time to read this summary…\") and repeats the point that no action is needed. It also adds the menu path and the help-centre guide, which a busy manager doesn't need. B leads with the action item, which is a good choice, but its length and padding outweigh that.\n\nResponse A is more concise and closer to the brief, with no loss of accuracy or key content.\n\nVerdict: A",
+  "usage": {
+    "input": 1707,
+    "output": 888
+  },
+  "cost": 0.012294
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-32",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the same core problems: the `BETWEEN` upper bound drops September 30 afternoon orders, integer division truncates the averages, the `<> 'refunded'` filter mishandles NULL status, and the inner join hides stores with no orders. Both give correct fixes, and the half-open date range is the right one in each. Response B is slightly more precise on the NULL fix (`IS DISTINCT FROM`) and adds a useful tiebreaker note. Response A's point that partial refunds slip through is a reasonable extra concern. Response B also ranks the timezone question as minor, which is defensible, while Response A ranks the integer-division issue sensibly with the item average as the worst case.\n\nThe user asked for under 200 words. Response A lands at about 200, while Response B runs closer to 240 with its extra \"Minor\" section. That is a clear instruction miss, and B's extra detail doesn't add enough correct, useful content to justify it. On substance the two are close, so the length compliance tips it toward A.\n\nVerdict: A",
+  "usage": {
+    "input": 1830,
+    "output": 1874
+  },
+  "cost": 0.00112
+}

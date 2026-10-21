@@ -1,0 +1,14 @@
+{
+  "pair": "qa-35",
+  "side": "A",
+  "author": "opus",
+  "model": "claude-haiku-5-5",
+  "original": "**Why antibiotics don't work on viruses:** Antibiotics target structures and processes unique to bacteria, such as cell walls, bacterial ribosomes, or specific bacterial enzymes. Viruses lack these. They have no cell wall or metabolism of their own and replicate inside your cells using your cellular machinery, so antibiotics have nothing to attack.\n\n**How resistance develops:** Bacteria reproduce rapidly, and random mutations occasionally make some resistant, for example by destroying the drug, pumping it out, or altering its target. Antibiotics kill susceptible bacteria, leaving resistant ones to multiply. That is natural selection. Bacteria can also share resistance genes with each other through plasmids. Overuse, such as taking antibiotics for viral infections, not finishing courses, or using them in agriculture, accelerates this process.",
+  "text": "**Why antibiotics don't work on viruses:** It helps to start with what antibiotics actually do. They target structures and processes unique to bacteria, such as cell walls, bacterial ribosomes, or specific bacterial enzymes. In other words, each drug is designed to interfere with something bacteria have and human cells do not. Viruses, however, lack these features. They have no cell wall or metabolism of their own. Instead, they replicate inside your cells by using your cellular machinery. Because there is no bacterial target for the drug to act on, antibiotics have nothing to attack in a viral infection.\n\n**How resistance develops:** To understand why resistance is a concern, it helps to consider how quickly bacteria reproduce. Because bacteria reproduce rapidly, random mutations occasionally arise that make some of them resistant, for example by destroying the drug, pumping it out, or altering its target. When antibiotics are used, they kill the susceptible bacteria, which leaves the resistant ones free to multiply. This process is simply natural selection at work. Bacteria can also share resistance genes with one another through plasmids. Finally, overuse speeds this process along. Examples include taking antibiotics for viral infections, not finishing courses, or using them in agriculture, all of which accelerate the process.",
+  "ratio": 1.7,
+  "usage": {
+    "input": 470,
+    "output": 1081
+  },
+  "cost": 0.0005875
+}

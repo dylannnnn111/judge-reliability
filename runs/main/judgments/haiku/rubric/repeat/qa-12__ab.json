@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "qa-12",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses reach the correct answer. (5/6)⁴ = 625/1296, so the probability of at least one six is 671/1296 ≈ 51.8%. Both are well under 120 words.\n\nResponse A is concise and correct, but it states the complement step without explaining why it works. Response B makes the key reasoning explicit: it uses the complement, names the independence of the rolls, and shows each step. Its historical note about the Chevalier de Méré is accurate and adds some context without padding. Its extra length is short and useful, so it is modestly better on reasoning and clarity.\n\nVerdict: B",
+  "usage": {
+    "input": 557,
+    "output": 661
+  },
+  "cost": 0.0003862
+}

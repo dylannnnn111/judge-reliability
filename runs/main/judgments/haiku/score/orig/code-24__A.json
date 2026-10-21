@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-24",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response finds the most important bugs. The concurrent-duplicate race (check before `await`, add after) is the top issue, and the non-durable in-memory dedupe, the crash between side effect and marking, and the unhandled `markInvoicePaid` error are all real and correctly prioritized. The timing-safe comparison point is also valid. The amount check and replay window are reasonable but more speculative, since the code doesn't show what `markInvoicePaid` validates or whether the provider includes a timestamp. Point 1 also doesn't state a concrete fix, leaving it to point 2. The biggest problem is length: the response runs about 260 words, which breaks the explicit \"under 200 words\" limit. Its content is solid, but it doesn't follow the constraint.\n\nScore: 6",
+  "usage": {
+    "input": 1108,
+    "output": 871
+  },
+  "cost": 0.0005463
+}

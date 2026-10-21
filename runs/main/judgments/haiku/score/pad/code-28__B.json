@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "code-28",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response's technical content is accurate. Every issue it raises is real: the check-then-act race, the unverified `toId` causing money to vanish, the never-released client, the opposite-order deadlock, the ROLLBACK masking the original error, and the missing CHECK constraint. The fixes are sound, and the `fromId === toId` note is correctly labeled minor. The ranking is reasonable, though the connection leak, which hangs the whole API, could arguably sit higher. Nothing important is missing.\n\nThe main failure is the length constraint. The user asked for under 200 words, and this response runs roughly 330, with a filler preamble that adds nothing. The instruction was explicit, so this counts against it substantially even though the content is good.\n\nScore: 6",
+  "usage": {
+    "input": 1330,
+    "output": 971
+  },
+  "cost": 0.0006185
+}

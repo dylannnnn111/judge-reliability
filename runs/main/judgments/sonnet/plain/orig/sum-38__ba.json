@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-38",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. The request set a limit of 120 words. By my count, B comes in at about 117 words, while A runs to roughly 140. B is also accurate: its dates, figures and risk all match the source. A is easier to scan, but going over the limit is a clear failure of an explicit instruction.\n\n**B**",
+  "usage": {
+    "input": 1255,
+    "output": 855
+  },
+  "cost": 0.01106
+}

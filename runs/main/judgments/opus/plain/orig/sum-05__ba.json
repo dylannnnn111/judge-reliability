@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-05",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses are under 120 words and accurate on the core numbers. The difference is in how they treat the 78% \"felt more productive\" figure.\n\n- **Response A** lists it under \"Benefits found,\" next to the reduced back discomfort. A busy manager skimming that heading could conclude the desks deliver a productivity benefit. That is the opposite of the study's main point: perceived productivity rose, but measured output did not change.\n- **Response B** sets the two side by side: no difference in speed or accuracy, \"even though 78% of sit-stand users *felt* more productive.\" This reflects the study's own interpretation.\n\nB also adds two things that help a manager:\n- It notes the study was randomised, which signals the finding is credible.\n- It offers a clear takeaway: justify the desks on comfort and health, not productivity.",
+  "usage": {
+    "input": 1217,
+    "output": 383
+  },
+  "cost": 0.012528
+}

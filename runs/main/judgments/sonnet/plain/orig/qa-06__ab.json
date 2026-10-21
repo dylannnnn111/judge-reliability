@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-06",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Verify: Dec 15 + 16 days = Dec 31; 84 left. Jan 31 → 53 left. Feb 29 → 24 left. March 24, 2028. Weekday: Wednesday + 2 = Friday. Check: March 24, 2028 is a Friday (March 1, 2028 is a Wednesday, so 22 is Wednesday, 24 is Friday). Correct.\n\nBoth answers are correct. Now compare the explanations.\n\nResponse A: \"15 Dec → 31 Dec 2027 uses 16 days, leaving 84. January leaves 53. February leaves 24.\" Clear and correct.\n\nResponse B: 16+31+29 = 76, remaining 24. Correct, and concise. Both are under 120 words.\n\nA is clearer with its step-by-step bullets. B is compact but fine. B's \"which makes 76 days\" is correct: 16+31=47, +29=76. Good.\n\nA is slightly more readable; both are accurate. The difference is minor, and A's step-by-step layout is easier to follow.\n\n**A**",
+  "usage": {
+    "input": 382,
+    "output": 348
+  },
+  "cost": 0.004244
+}

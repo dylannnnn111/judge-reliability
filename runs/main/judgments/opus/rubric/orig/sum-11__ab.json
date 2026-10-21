@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-11",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Both are correct on names, roles, dates, deadlines and conditions.\n- Response B infers \"Mon 17 Nov\" for the welcome and laptop return. This is correct, because 15–16 Nov is the weekend.\n- Response A's \"Everyone must attend\" and \"non-respondents miss out\" are fair readings of the email.\n- Both drop the warning that unboxed files may delay access to client files. That is a minor and equal omission.\n- Neither contains an error or anything misleading.\n\n**Key points:** Both keep everything a manager needs: who coordinates what, the do-not-pack instruction, laptop handling, the file-boxing deadline and box availability, the crate limit and deadline, the access-card welcome and why attendance matters, and the parking allocation rules. Response A folds parking into Rachel's bullet, which is sensible because she allocates it. Response B gives it a separate bullet and adds small details such as \"ground-floor lobby\" and \"archive.\" These add little.\n\n**Concision:** Both exceed the 120-word limit. Response A is about 134 words including the heading; Response B is about 141. Response B's extra words mostly restate the full dates (e.g. \"Fri 14 Nov\") or add minor detail, not new information the reader needs. Response A is slightly tighter and closer to the limit.\n\nWith accuracy and coverage effectively equal, Response A edges ahead on concision and on keeping closer to the word limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1628,
+    "output": 2721
+  },
+  "cost": 0.060932
+}

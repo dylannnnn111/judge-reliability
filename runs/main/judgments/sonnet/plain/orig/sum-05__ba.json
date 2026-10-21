@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-05",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. Both summaries are accurate and under 120 words. The deciding point is how each treats the 78% of participants who said they felt more productive, which is the main trap in the source.\n\n- **Response A** lists \"78% … felt more productive\" under \"Benefits found\". That can leave a busy manager thinking productivity improved in some sense, which the study's own interpretation contradicts.\n- **Response B** contrasts the 78% who *felt* more productive with the lack of any measured change. It also notes the study was randomised. It ends with a practical implication for a manager, to justify the desks on comfort and health rather than productivity, which follows from the brief's interpretation.\n\nB conveys the key finding more clearly and is more useful to the reader.\n\n**B**",
+  "usage": {
+    "input": 1217,
+    "output": 907
+  },
+  "cost": 0.011504
+}

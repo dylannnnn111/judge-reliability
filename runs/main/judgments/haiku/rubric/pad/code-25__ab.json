@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-25",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the most important issues: the off-by-one that allows six attempts, unbounded memory growth from never-deleted keys, per-IP-only limiting that distributed guessing bypasses, in-memory state, and the hardcoded `retryAfterSec`. Both are under 200 words and rank the off-by-one and memory issues first, which is sensible.\n\nResponse A gives a more precise fix for the hardcoded retry value, with the exact formula and the note that `allow` must return it. It also flags that proxies can make every user share one IP, which is a real and common deployment problem. Response B's point about spoofed `X-Forwarded-For` is valid, but it is less specific than A's proxy discussion. Response B's strongest addition is that successful logins consume the quota, which A does not mention. That is a genuine usability issue, though it is less important than the others. Response B also opens with a filler sentence and gives more generic fixes.\n\nOn balance, Response A is slightly more precise and actionable, and its extra detail is correct, so I rate it modestly better.\n\nVerdict: A",
+  "usage": {
+    "input": 1791,
+    "output": 945
+  },
+  "cost": 0.0006516
+}

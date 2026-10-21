@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-24",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main bug: `processed.add` runs after the `await`, so simultaneous duplicates both pass the check. Both also flag the non-durable in-memory `Set`, the non-constant-time signature comparison, replay risk, error handling, and the amount check. Neither stays under 200 words. A runs roughly 270 words and B roughly 240, so B is closer to the limit.\n\n**A:**\n- It covers the crash window between the side effect and the marking. That is real, but it largely overlaps with item 2's atomic-commit advice and takes space from other points.\n- Its race-condition item gives no direct fix, such as claiming the ID before processing. The fix only appears under item 2.\n- The signature-length caveat for `timingSafeEqual` is a good detail.\n- The amount-check item is speculative, since `markInvoicePaid` may already validate.\n- It does not mention malformed JSON.\n\n**B:**\n- Its race-condition item gives the right fix: claim the ID atomically before processing, and release the claim on failure so retries still work. That is the most useful advice for the main bug.\n- It notes that malformed JSON and a missing `event.data` throw, and recommends 400 for bad payloads and 500 for processing failures.\n- It ties replay protection to the dedup memory being lost.\n- It is more concise and has less redundancy.\n\nB ranks the issues sensibly, gives a more actionable fix for the top issue, and is tighter against the word limit.\n\nVerdict: B",
+  "usage": {
+    "input": 1681,
+    "output": 911
+  },
+  "cost": 0.012472
+}

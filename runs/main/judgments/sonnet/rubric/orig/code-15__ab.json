@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-15",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses correctly identify the main bug: the unawaited `updateLastLogin`. Both also catch the double `new Date()` and the partial failure and sequential issues in `recordLogins`.\n\nResponse A: The ordering is sensible. Fixes are concrete. Item 3 is accurate, and item 4 suggests concurrency, which has a small caveat (concurrent runs could have side effects, but they're fine here). Item 5, the read-then-write race, is marked minor and is a plausible, real point. Its suggestion to have the update return the row is a good design improvement. Its word count is likely around 230, over the 200-word limit.\n\nResponse B: Item 1 is the same. Item 2 is the same. Item 3 is the same. Item 4 is similar (\"N+1\" is a bit of a stretch, but fine). Item 5, duplicate IDs, is a speculative non-problem: the caller is the auth service after a successful password check, so duplicates are unlikely, and recording two logins for the same ID is arguably harmless. Item 6, error message leaking the user ID, is weak: the caller is internal, and the user ID was already supplied by the auth service after a successful password check, so it's not sensitive. Those two are noise and flag things that are mostly fine. B is also around 220 words, similarly over the limit.\n\nBoth exceed 200 words, though A is perhaps slightly longer. A's extra item (race) is more substantive than B's two weak items. B's flagged items 5 and 6 are close to false positives, which the rubric penalizes. A also gives clearer fixes.\n\nA is better.\n\nVerdict: A",
+  "usage": {
+    "input": 1465,
+    "output": 525
+  },
+  "cost": 0.00818
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "code-21",
+  "side": "A",
+  "score": 8,
+  "model": "claude-opus-5-5",
+  "text": "**Correctness and coverage.** The top issue is right. Retrying a non-idempotent refund POST on network errors and 5xx responses can issue duplicate refunds. The response explains why: the failure can happen after the server has processed the request. It gives sound fixes: an idempotency key generated once per refund intent, or no retries by default for POST.\n\nThe other issues are also real:\n- The `catch` retries `AbortError` and non-network `TypeError`s, including a bad URL or an unreusable stream body.\n- There is no per-attempt timeout, so a hung request stalls forever.\n- `Retry-After` is ignored.\n- Discarded response bodies are not cancelled, which ties up sockets in undici.\n- The unvalidated `refundId` cast can return `undefined` as a success.\n\nNone of these are false positives. Nothing correct in the code is flagged wrongly, and it rightly leaves the backoff math and the final-attempt return alone.\n\n**Ranking and fixes.** The order is sensible: financial correctness first, then hangs and wasted retries, then resource and throttling problems, then validation. Each item has a concrete fix. One small gap is that `sleep` itself can't be aborted, though this is close to item 2.\n\n**Instruction-following.** By my count the response is about 205–210 words, slightly over the 200-word limit. The fix list in item 1 is also a little padded.\n\n**Overall.** The review is strong, accurate and well prioritised, with only a minor length overrun.\n\nScore: 8",
+  "usage": {
+    "input": 1192,
+    "output": 1592
+  },
+  "cost": 0.036608
+}

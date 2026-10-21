@@ -1,0 +1,1069 @@
+{
+  "study": "Who Judges the Judge",
+  "run": "main",
+  "date": "2026-10-14",
+  "models": {
+    "opus": "claude-opus-5-5",
+    "sonnet": "claude-sonnet-5-5",
+    "haiku": "claude-haiku-5-5"
+  },
+  "judges": [
+    "opus",
+    "sonnet",
+    "haiku"
+  ],
+  "formats": [
+    "plain",
+    "rubric",
+    "score"
+  ],
+  "pairs": 120,
+  "labelled": 120,
+  "judgeCalls": 4200,
+  "invalidReplies": 0,
+  "padding": {
+    "pairs": 120,
+    "medianRatio": 1.7,
+    "spotChecked": 20,
+    "addedContent": 0
+  },
+  "costUsd": {
+    "answers": 1.6,
+    "padding": 0.08,
+    "judging": 53.29
+  },
+  "totalCostUsd": 54.96,
+  "human": {
+    "split": {
+      "A": 22,
+      "B": 26,
+      "TIE": 72
+    },
+    "repeat": {
+      "n": 20,
+      "agree": 1,
+      "kappa": 1
+    }
+  },
+  "results": [
+    {
+      "judge": "opus",
+      "model": "claude-opus-5-5",
+      "format": "plain",
+      "valid": 1,
+      "position": {
+        "firstRate": {
+          "est": 0.502,
+          "lo": 0.476,
+          "hi": 0.526,
+          "n": 120
+        },
+        "p": 1,
+        "consistent": {
+          "est": 0.917,
+          "lo": 0.867,
+          "hi": 0.959,
+          "n": 120
+        },
+        "sameOrder": {
+          "est": 0.9,
+          "lo": 0.8,
+          "hi": 0.975,
+          "n": 40
+        },
+        "flips": 0.075
+      },
+      "agreement": {
+        "kappa": {
+          "est": 0.095,
+          "lo": 0.007,
+          "hi": 0.186,
+          "n": 120
+        },
+        "accuracy": {
+          "est": 0.583,
+          "lo": 0.437,
+          "hi": 0.727,
+          "n": 120
+        },
+        "byTask": {
+          "qa": {
+            "est": 0.455,
+            "lo": 0.166,
+            "hi": 0.769,
+            "n": 40
+          },
+          "summary": {
+            "est": 0.625,
+            "lo": 0.375,
+            "hi": 0.867,
+            "n": 40
+          },
+          "code": {
+            "est": 0.619,
+            "lo": 0.4,
+            "hi": 0.826,
+            "n": 40
+          }
+        },
+        "called": 48,
+        "calledByTask": {
+          "qa": 11,
+          "summary": 16,
+          "code": 21
+        }
+      },
+      "calls": {
+        "A": 49,
+        "B": 58,
+        "TIE": 13
+      },
+      "humanTies": {
+        "n": 72,
+        "judgeTie": 0.139
+      },
+      "verbosity": {
+        "est": -0.887,
+        "lo": -1.067,
+        "hi": -0.725,
+        "n": 120
+      },
+      "selfPreference": {
+        "bias": {
+          "est": 0.263,
+          "lo": 0.131,
+          "hi": 0.4,
+          "n": 80
+        },
+        "pickOwnWhenWorse": {
+          "own": 1,
+          "others": 1,
+          "n": 4
+        }
+      }
+    },
+    {
+      "judge": "opus",
+      "model": "claude-opus-5-5",
+      "format": "rubric",
+      "valid": 1,
+      "position": {
+        "firstRate": {
+          "est": 0.464,
+          "lo": 0.429,
+          "hi": 0.496,
+          "n": 120
+        },
+        "p": 0.2945,
+        "consistent": {
+          "est": 0.858,
+          "lo": 0.792,
+          "hi": 0.917,
+          "n": 120
+        },
+        "sameOrder": {
+          "est": 0.775,
+          "lo": 0.65,
+          "hi": 0.9,
+          "n": 40
+        },
+        "flips": 0.133
+      },
+      "agreement": {
+        "kappa": {
+          "est": 0.122,
+          "lo": 0.018,
+          "hi": 0.224,
+          "n": 120
+        },
+        "accuracy": {
+          "est": 0.646,
+          "lo": 0.51,
+          "hi": 0.778,
+          "n": 120
+        },
+        "byTask": {
+          "qa": {
+            "est": 0.455,
+            "lo": 0.166,
+            "hi": 0.75,
+            "n": 40
+          },
+          "summary": {
+            "est": 0.688,
+            "lo": 0.444,
+            "hi": 0.909,
+            "n": 40
+          },
+          "code": {
+            "est": 0.714,
+            "lo": 0.5,
+            "hi": 0.905,
+            "n": 40
+          }
+        },
+        "called": 48,
+        "calledByTask": {
+          "qa": 11,
+          "summary": 16,
+          "code": 21
+        }
+      },
+      "calls": {
+        "A": 42,
+        "B": 58,
+        "TIE": 20
+      },
+      "humanTies": {
+        "n": 72,
+        "judgeTie": 0.167
+      },
+      "verbosity": {
+        "est": -0.846,
+        "lo": -0.996,
+        "hi": -0.679,
+        "n": 120
+      },
+      "selfPreference": {
+        "bias": {
+          "est": 0.225,
+          "lo": 0.056,
+          "hi": 0.4,
+          "n": 80
+        },
+        "pickOwnWhenWorse": {
+          "own": 0.5,
+          "others": 0.75,
+          "n": 4
+        }
+      }
+    },
+    {
+      "judge": "opus",
+      "model": "claude-opus-5-5",
+      "format": "score",
+      "valid": 1,
+      "position": null,
+      "agreement": {
+        "kappa": {
+          "est": 0.085,
+          "lo": -0.038,
+          "hi": 0.212,
+          "n": 120
+        },
+        "accuracy": {
+          "est": 0.458,
+          "lo": 0.32,
+          "hi": 0.596,
+          "n": 120
+        },
+        "byTask": {
+          "qa": {
+            "est": 0.182,
+            "lo": 0,
+            "hi": 0.444,
+            "n": 40
+          },
+          "summary": {
+            "est": 0.563,
+            "lo": 0.316,
+            "hi": 0.8,
+            "n": 40
+          },
+          "code": {
+            "est": 0.524,
+            "lo": 0.313,
+            "hi": 0.737,
+            "n": 40
+          }
+        },
+        "called": 48,
+        "calledByTask": {
+          "qa": 11,
+          "summary": 16,
+          "code": 21
+        }
+      },
+      "calls": {
+        "A": 34,
+        "B": 46,
+        "TIE": 40
+      },
+      "humanTies": {
+        "n": 72,
+        "judgeTie": 0.347
+      },
+      "verbosity": {
+        "est": -0.833,
+        "lo": -0.975,
+        "hi": -0.692,
+        "n": 120
+      },
+      "selfPreference": {
+        "bias": {
+          "est": 0.25,
+          "lo": 0.1,
+          "hi": 0.4,
+          "n": 80
+        },
+        "pickOwnWhenWorse": {
+          "own": 0.75,
+          "others": 0.75,
+          "n": 4
+        }
+      }
+    },
+    {
+      "judge": "sonnet",
+      "model": "claude-sonnet-5-5",
+      "format": "plain",
+      "valid": 1,
+      "position": {
+        "firstRate": {
+          "est": 0.473,
+          "lo": 0.443,
+          "hi": 0.502,
+          "n": 120
+        },
+        "p": 0.4624,
+        "consistent": {
+          "est": 0.858,
+          "lo": 0.792,
+          "hi": 0.917,
+          "n": 120
+        },
+        "sameOrder": {
+          "est": 0.9,
+          "lo": 0.8,
+          "hi": 0.975,
+          "n": 40
+        },
+        "flips": 0.092
+      },
+      "agreement": {
+        "kappa": {
+          "est": 0.07,
+          "lo": -0.025,
+          "hi": 0.169,
+          "n": 120
+        },
+        "accuracy": {
+          "est": 0.5,
+          "lo": 0.364,
+          "hi": 0.642,
+          "n": 120
+        },
+        "byTask": {
+          "qa": {
+            "est": 0.545,
+            "lo": 0.25,
+            "hi": 0.857,
+            "n": 40
+          },
+          "summary": {
+            "est": 0.5,
+            "lo": 0.25,
+            "hi": 0.75,
+            "n": 40
+          },
+          "code": {
+            "est": 0.476,
+            "lo": 0.263,
+            "hi": 0.684,
+            "n": 40
+          }
+        },
+        "called": 48,
+        "calledByTask": {
+          "qa": 11,
+          "summary": 16,
+          "code": 21
+        }
+      },
+      "calls": {
+        "A": 45,
+        "B": 53,
+        "TIE": 22
+      },
+      "humanTies": {
+        "n": 72,
+        "judgeTie": 0.208
+      },
+      "verbosity": {
+        "est": -0.833,
+        "lo": -0.996,
+        "hi": -0.667,
+        "n": 120
+      },
+      "selfPreference": {
+        "bias": {
+          "est": -0.156,
+          "lo": -0.275,
+          "hi": -0.044,
+          "n": 80
+        },
+        "pickOwnWhenWorse": {
+          "own": 0.091,
+          "others": 0.182,
+          "n": 11
+        }
+      }
+    },
+    {
+      "judge": "sonnet",
+      "model": "claude-sonnet-5-5",
+      "format": "rubric",
+      "valid": 1,
+      "position": {
+        "firstRate": {
+          "est": 0.471,
+          "lo": 0.436,
+          "hi": 0.505,
+          "n": 120
+        },
+        "p": 0.4217,
+        "consistent": {
+          "est": 0.825,
+          "lo": 0.758,
+          "hi": 0.892,
+          "n": 120
+        },
+        "sameOrder": {
+          "est": 0.85,
+          "lo": 0.725,
+          "hi": 0.95,
+          "n": 40
+        },
+        "flips": 0.117
+      },
+      "agreement": {
+        "kappa": {
+          "est": 0.135,
+          "lo": 0.019,
+          "hi": 0.245,
+          "n": 120
+        },
+        "accuracy": {
+          "est": 0.563,
+          "lo": 0.422,
+          "hi": 0.705,
+          "n": 120
+        },
+        "byTask": {
+          "qa": {
+            "est": 0.545,
+            "lo": 0.231,
+            "hi": 0.833,
+            "n": 40
+          },
+          "summary": {
+            "est": 0.438,
+            "lo": 0.188,
+            "hi": 0.692,
+            "n": 40
+          },
+          "code": {
+            "est": 0.667,
+            "lo": 0.458,
+            "hi": 0.864,
+            "n": 40
+          }
+        },
+        "called": 48,
+        "calledByTask": {
+          "qa": 11,
+          "summary": 16,
+          "code": 21
+        }
+      },
+      "calls": {
+        "A": 46,
+        "B": 48,
+        "TIE": 26
+      },
+      "humanTies": {
+        "n": 72,
+        "judgeTie": 0.264
+      },
+      "verbosity": {
+        "est": -0.904,
+        "lo": -1.058,
+        "hi": -0.746,
+        "n": 120
+      },
+      "selfPreference": {
+        "bias": {
+          "est": -0.112,
+          "lo": -0.262,
+          "hi": 0.038,
+          "n": 80
+        },
+        "pickOwnWhenWorse": {
+          "own": 0.273,
+          "others": 0.091,
+          "n": 11
+        }
+      }
+    },
+    {
+      "judge": "sonnet",
+      "model": "claude-sonnet-5-5",
+      "format": "score",
+      "valid": 1,
+      "position": null,
+      "agreement": {
+        "kappa": {
+          "est": 0.078,
+          "lo": -0.053,
+          "hi": 0.203,
+          "n": 120
+        },
+        "accuracy": {
+          "est": 0.354,
+          "lo": 0.217,
+          "hi": 0.5,
+          "n": 120
+        },
+        "byTask": {
+          "qa": {
+            "est": 0.091,
+            "lo": 0,
+            "hi": 0.3,
+            "n": 40
+          },
+          "summary": {
+            "est": 0.438,
+            "lo": 0.2,
+            "hi": 0.688,
+            "n": 40
+          },
+          "code": {
+            "est": 0.429,
+            "lo": 0.222,
+            "hi": 0.65,
+            "n": 40
+          }
+        },
+        "called": 48,
+        "calledByTask": {
+          "qa": 11,
+          "summary": 16,
+          "code": 21
+        }
+      },
+      "calls": {
+        "A": 32,
+        "B": 38,
+        "TIE": 50
+      },
+      "humanTies": {
+        "n": 72,
+        "judgeTie": 0.458
+      },
+      "verbosity": {
+        "est": -0.825,
+        "lo": -0.958,
+        "hi": -0.692,
+        "n": 120
+      },
+      "selfPreference": {
+        "bias": {
+          "est": 0.05,
+          "lo": -0.1,
+          "hi": 0.225,
+          "n": 80
+        },
+        "pickOwnWhenWorse": {
+          "own": 0.091,
+          "others": 0.364,
+          "n": 11
+        }
+      }
+    },
+    {
+      "judge": "haiku",
+      "model": "claude-haiku-5-5",
+      "format": "plain",
+      "valid": 1,
+      "position": {
+        "firstRate": {
+          "est": 0.467,
+          "lo": 0.426,
+          "hi": 0.507,
+          "n": 120
+        },
+        "p": 0.372,
+        "consistent": {
+          "est": 0.767,
+          "lo": 0.692,
+          "hi": 0.842,
+          "n": 120
+        },
+        "sameOrder": {
+          "est": 0.85,
+          "lo": 0.725,
+          "hi": 0.95,
+          "n": 40
+        },
+        "flips": 0.15
+      },
+      "agreement": {
+        "kappa": {
+          "est": 0.123,
+          "lo": 0.011,
+          "hi": 0.236,
+          "n": 120
+        },
+        "accuracy": {
+          "est": 0.438,
+          "lo": 0.306,
+          "hi": 0.578,
+          "n": 120
+        },
+        "byTask": {
+          "qa": {
+            "est": 0.273,
+            "lo": 0,
+            "hi": 0.571,
+            "n": 40
+          },
+          "summary": {
+            "est": 0.5,
+            "lo": 0.25,
+            "hi": 0.75,
+            "n": 40
+          },
+          "code": {
+            "est": 0.476,
+            "lo": 0.261,
+            "hi": 0.7,
+            "n": 40
+          }
+        },
+        "called": 48,
+        "calledByTask": {
+          "qa": 11,
+          "summary": 16,
+          "code": 21
+        }
+      },
+      "calls": {
+        "A": 35,
+        "B": 48,
+        "TIE": 37
+      },
+      "humanTies": {
+        "n": 72,
+        "judgeTie": 0.389
+      },
+      "verbosity": {
+        "est": -0.871,
+        "lo": -1.021,
+        "hi": -0.725,
+        "n": 120
+      },
+      "selfPreference": {
+        "bias": {
+          "est": 0.031,
+          "lo": -0.119,
+          "hi": 0.181,
+          "n": 80
+        },
+        "pickOwnWhenWorse": {
+          "own": 0.394,
+          "others": 0.394,
+          "n": 33
+        }
+      }
+    },
+    {
+      "judge": "haiku",
+      "model": "claude-haiku-5-5",
+      "format": "rubric",
+      "valid": 1,
+      "position": {
+        "firstRate": {
+          "est": 0.5,
+          "lo": 0.452,
+          "hi": 0.544,
+          "n": 120
+        },
+        "p": 1,
+        "consistent": {
+          "est": 0.75,
+          "lo": 0.675,
+          "hi": 0.825,
+          "n": 120
+        },
+        "sameOrder": {
+          "est": 0.7,
+          "lo": 0.55,
+          "hi": 0.825,
+          "n": 40
+        },
+        "flips": 0.2
+      },
+      "agreement": {
+        "kappa": {
+          "est": 0.19,
+          "lo": 0.073,
+          "hi": 0.315,
+          "n": 120
+        },
+        "accuracy": {
+          "est": 0.563,
+          "lo": 0.417,
+          "hi": 0.702,
+          "n": 120
+        },
+        "byTask": {
+          "qa": {
+            "est": 0.455,
+            "lo": 0.154,
+            "hi": 0.778,
+            "n": 40
+          },
+          "summary": {
+            "est": 0.563,
+            "lo": 0.316,
+            "hi": 0.8,
+            "n": 40
+          },
+          "code": {
+            "est": 0.619,
+            "lo": 0.409,
+            "hi": 0.815,
+            "n": 40
+          }
+        },
+        "called": 48,
+        "calledByTask": {
+          "qa": 11,
+          "summary": 16,
+          "code": 21
+        }
+      },
+      "calls": {
+        "A": 38,
+        "B": 46,
+        "TIE": 36
+      },
+      "humanTies": {
+        "n": 72,
+        "judgeTie": 0.375
+      },
+      "verbosity": {
+        "est": -0.812,
+        "lo": -0.962,
+        "hi": -0.671,
+        "n": 120
+      },
+      "selfPreference": {
+        "bias": {
+          "est": -0.044,
+          "lo": -0.212,
+          "hi": 0.131,
+          "n": 80
+        },
+        "pickOwnWhenWorse": {
+          "own": 0.242,
+          "others": 0.182,
+          "n": 33
+        }
+      }
+    },
+    {
+      "judge": "haiku",
+      "model": "claude-haiku-5-5",
+      "format": "score",
+      "valid": 1,
+      "position": null,
+      "agreement": {
+        "kappa": {
+          "est": 0.011,
+          "lo": -0.097,
+          "hi": 0.125,
+          "n": 120
+        },
+        "accuracy": {
+          "est": 0.25,
+          "lo": 0.13,
+          "hi": 0.375,
+          "n": 120
+        },
+        "byTask": {
+          "qa": {
+            "est": 0.091,
+            "lo": 0,
+            "hi": 0.3,
+            "n": 40
+          },
+          "summary": {
+            "est": 0.313,
+            "lo": 0.091,
+            "hi": 0.556,
+            "n": 40
+          },
+          "code": {
+            "est": 0.286,
+            "lo": 0.1,
+            "hi": 0.5,
+            "n": 40
+          }
+        },
+        "called": 48,
+        "calledByTask": {
+          "qa": 11,
+          "summary": 16,
+          "code": 21
+        }
+      },
+      "calls": {
+        "A": 38,
+        "B": 34,
+        "TIE": 48
+      },
+      "humanTies": {
+        "n": 72,
+        "judgeTie": 0.444
+      },
+      "verbosity": {
+        "est": -0.933,
+        "lo": -1.067,
+        "hi": -0.8,
+        "n": 120
+      },
+      "selfPreference": {
+        "bias": {
+          "est": -0.05,
+          "lo": -0.237,
+          "hi": 0.138,
+          "n": 80
+        },
+        "pickOwnWhenWorse": {
+          "own": 0.364,
+          "others": 0.303,
+          "n": 33
+        }
+      }
+    }
+  ],
+  "crossAgreement": [
+    {
+      "a": "opus/plain",
+      "b": "opus/rubric",
+      "same": 0.767,
+      "n": 120
+    },
+    {
+      "a": "opus/plain",
+      "b": "opus/score",
+      "same": 0.633,
+      "n": 120
+    },
+    {
+      "a": "opus/plain",
+      "b": "sonnet/plain",
+      "same": 0.8,
+      "n": 120
+    },
+    {
+      "a": "opus/plain",
+      "b": "sonnet/rubric",
+      "same": 0.692,
+      "n": 120
+    },
+    {
+      "a": "opus/plain",
+      "b": "sonnet/score",
+      "same": 0.542,
+      "n": 120
+    },
+    {
+      "a": "opus/plain",
+      "b": "haiku/plain",
+      "same": 0.633,
+      "n": 120
+    },
+    {
+      "a": "opus/plain",
+      "b": "haiku/rubric",
+      "same": 0.608,
+      "n": 120
+    },
+    {
+      "a": "opus/plain",
+      "b": "haiku/score",
+      "same": 0.508,
+      "n": 120
+    },
+    {
+      "a": "opus/rubric",
+      "b": "opus/score",
+      "same": 0.617,
+      "n": 120
+    },
+    {
+      "a": "opus/rubric",
+      "b": "sonnet/plain",
+      "same": 0.658,
+      "n": 120
+    },
+    {
+      "a": "opus/rubric",
+      "b": "sonnet/rubric",
+      "same": 0.7,
+      "n": 120
+    },
+    {
+      "a": "opus/rubric",
+      "b": "sonnet/score",
+      "same": 0.483,
+      "n": 120
+    },
+    {
+      "a": "opus/rubric",
+      "b": "haiku/plain",
+      "same": 0.55,
+      "n": 120
+    },
+    {
+      "a": "opus/rubric",
+      "b": "haiku/rubric",
+      "same": 0.608,
+      "n": 120
+    },
+    {
+      "a": "opus/rubric",
+      "b": "haiku/score",
+      "same": 0.442,
+      "n": 120
+    },
+    {
+      "a": "opus/score",
+      "b": "sonnet/plain",
+      "same": 0.675,
+      "n": 120
+    },
+    {
+      "a": "opus/score",
+      "b": "sonnet/rubric",
+      "same": 0.583,
+      "n": 120
+    },
+    {
+      "a": "opus/score",
+      "b": "sonnet/score",
+      "same": 0.65,
+      "n": 120
+    },
+    {
+      "a": "opus/score",
+      "b": "haiku/plain",
+      "same": 0.592,
+      "n": 120
+    },
+    {
+      "a": "opus/score",
+      "b": "haiku/rubric",
+      "same": 0.45,
+      "n": 120
+    },
+    {
+      "a": "opus/score",
+      "b": "haiku/score",
+      "same": 0.558,
+      "n": 120
+    },
+    {
+      "a": "sonnet/plain",
+      "b": "sonnet/rubric",
+      "same": 0.725,
+      "n": 120
+    },
+    {
+      "a": "sonnet/plain",
+      "b": "sonnet/score",
+      "same": 0.583,
+      "n": 120
+    },
+    {
+      "a": "sonnet/plain",
+      "b": "haiku/plain",
+      "same": 0.717,
+      "n": 120
+    },
+    {
+      "a": "sonnet/plain",
+      "b": "haiku/rubric",
+      "same": 0.592,
+      "n": 120
+    },
+    {
+      "a": "sonnet/plain",
+      "b": "haiku/score",
+      "same": 0.467,
+      "n": 120
+    },
+    {
+      "a": "sonnet/rubric",
+      "b": "sonnet/score",
+      "same": 0.567,
+      "n": 120
+    },
+    {
+      "a": "sonnet/rubric",
+      "b": "haiku/plain",
+      "same": 0.625,
+      "n": 120
+    },
+    {
+      "a": "sonnet/rubric",
+      "b": "haiku/rubric",
+      "same": 0.625,
+      "n": 120
+    },
+    {
+      "a": "sonnet/rubric",
+      "b": "haiku/score",
+      "same": 0.475,
+      "n": 120
+    },
+    {
+      "a": "sonnet/score",
+      "b": "haiku/plain",
+      "same": 0.608,
+      "n": 120
+    },
+    {
+      "a": "sonnet/score",
+      "b": "haiku/rubric",
+      "same": 0.45,
+      "n": 120
+    },
+    {
+      "a": "sonnet/score",
+      "b": "haiku/score",
+      "same": 0.517,
+      "n": 120
+    },
+    {
+      "a": "haiku/plain",
+      "b": "haiku/rubric",
+      "same": 0.6,
+      "n": 120
+    },
+    {
+      "a": "haiku/plain",
+      "b": "haiku/score",
+      "same": 0.517,
+      "n": 120
+    },
+    {
+      "a": "haiku/rubric",
+      "b": "haiku/score",
+      "same": 0.417,
+      "n": 120
+    }
+  ]
+}

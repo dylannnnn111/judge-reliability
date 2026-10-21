@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-24",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "A\n\nResponse A stays under the 120-word limit (roughly 95 words) and answers both questions correctly. Response B is noticeably longer, roughly 200 words, so it breaks the word limit even though its facts are sound.",
+  "usage": {
+    "input": 743,
+    "output": 382
+  },
+  "cost": 0.0002653
+}

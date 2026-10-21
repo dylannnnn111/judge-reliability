@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-03",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the rise as 1 percentage point and the relative increase as 25%, so neither has an error. Response A states the distinction between percentage points and relative percent clearly, then ends by giving 25% as the answer to the question asked. Its $400,000 example is accurate (4% of $400,000 is $16,000, 5% is $20,000, a 25% rise) and shows why the relative figure matters to borrowers. Response B has the same core reasoning and the same calculation, but adds filler such as \"Thank you for your question\" and \"I hope this explanation is helpful,\" which contributes nothing. Response A is slightly better on usefulness and clarity, and both stay under 120 words.\n\nVerdict: A",
+  "usage": {
+    "input": 696,
+    "output": 538
+  },
+  "cost": 0.00033860000000000004
+}

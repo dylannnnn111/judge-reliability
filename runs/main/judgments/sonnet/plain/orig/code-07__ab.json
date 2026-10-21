@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-07",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**Response A** is better, mainly because it meets the length limit.\n\nBy my rough count, A comes to about 197 words, just under the 200-word limit. B comes to about 228, clearly over. The user set that limit explicitly.\n\nBoth responses find the most important bug first: `len(items) // size` drops the final partial batch. Both also cover swallowed failures, missing retries, and the sliceable-input assumption. Neither misses a major issue.\n\nB has some real strengths. It notes that fewer than 500 contacts means nothing is sent. It warns against retrying permanent errors. It points out that the broad `except Exception` keeps hitting the CRM when auth is broken. Its suggestion to log `sent` against `len(contacts)` is also useful.\n\nA is more redundant, since items 2, 3, and 4 overlap on swallowed failures. It does add the point about confirming `upsert_contacts` is idempotent before retrying, which matters for safe retries.\n\nB's extra content is useful, but it is what pushes the response past the limit.\n\n**A**",
+  "usage": {
+    "input": 1283,
+    "output": 1747
+  },
+  "cost": 0.020036
+}

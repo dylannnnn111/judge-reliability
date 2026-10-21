@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-01",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "A is better. It stays closer to the 200-word limit, while B spends words on a preamble and extra commentary that the user didn't ask for. A also catches the customer ID normalization problem, which B misses. The truncation example in A may be inaccurate, but B's similar example is correct, so that doesn't change the verdict.\n\nA",
+  "usage": {
+    "input": 1535,
+    "output": 548
+  },
+  "cost": 0.0004275
+}

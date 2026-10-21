@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-20",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses identify the same core problems: the DST day-count error, invalid input producing NaN, timezone dependence, and labels going stale after midnight. Both DST examples are arithmetically correct, and both suggested fixes work. Response A, however, claims the DST bug \"may land in the wrong place on the overdue list.\" That is wrong. Across DST transitions, the sign of the difference doesn't change for any due date, so the overdue filter is unaffected, and only the labels are wrong. Response B states this correctly, which matters for prioritizing the fix. Response B is also tighter and avoids the odd meta-remark in Response A (\"I've kept the explanations... as they were\") that refers to nothing. Response A's extra \"minor\" section adds little beyond B's list. Response B's ranking and accuracy are better.\n\nVerdict: B",
+  "usage": {
+    "input": 1983,
+    "output": 1160
+  },
+  "cost": 0.0007783
+}

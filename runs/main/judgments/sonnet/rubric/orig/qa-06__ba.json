@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-06",
+  "order": "ba",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-sonnet-5-5",
+  "text": "Check the date: 15 Dec 2027 + 100 days. Days left in December after the 15th: 16 (to reach Dec 31). 100 − 16 = 84. January 31 → 53 remaining. February 2028 has 29 days → 24 remaining. So the date is March 24, 2028. The weekday: 100 mod 7 = 2, so Wednesday + 2 = Friday. Both responses give Friday, 24 March 2028, which is correct.\n\nResponse A's wording: \"Dec 15 to Dec 31 is 16 days, January has 31, and February 2028 has 29, which makes 76 days. The remaining 24 days land on 24 March.\" 16 + 31 + 29 = 76, and 100 − 76 = 24, so this is correct and concise.\n\nResponse B gives the same steps as a countdown. It is clear and correct.\n\nBoth are correct with the same reasoning. B's step-by-step list is a little clearer, while A is more compact. The difference is minor, and both are under 120 words. A's statement \"which makes 76 days\" is correct. B's format is slightly easier to follow. Neither is meaningfully better, so this is close to a tie.\n\nVerdict: TIE",
+  "usage": {
+    "input": 527,
+    "output": 391
+  },
+  "cost": 0.004964
+}

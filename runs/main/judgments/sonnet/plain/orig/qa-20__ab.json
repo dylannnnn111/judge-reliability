@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-20",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer: Canberra and 1927. Both are under 120 words.\n\nAccuracy check:\n- Response A: says the Provisional Parliament House opened on 9 May 1927. That is correct. Melbourne was the seat of government from 1901, which is also correct.\n- Response B: repeats these facts and adds that the Duke of York, later King George VI, opened it. That is correct. It also says Parliament moved to the current Parliament House on Capital Hill in 1988, which is correct. \"Parliament had met in Melbourne from Federation in 1901\" is correct.\n\nResponse B gives more detail, all of it accurate and relevant. Response A is more concise. The question asked for the capital and the year, and both answer that directly. The extra detail in B is mildly useful context, but it goes beyond what was asked. The word limit is respected by both, so the extra context doesn't count against B.\n\nA grader could prefer either. B's extra facts are accurate and add value, such as the Duke of York and the 1988 move. A is tighter and sticks to the question. The slight edge probably goes to B for informativeness, since the constraints are met and the content is correct.\n\nOne nuance: \"Federal Parliament first sat there\" could be read as the first sitting, which was 9 May 1927. Both handle it the same way.\n\nI lean slightly toward B.\n\n**B**",
+  "usage": {
+    "input": 340,
+    "output": 438
+  },
+  "cost": 0.00506
+}

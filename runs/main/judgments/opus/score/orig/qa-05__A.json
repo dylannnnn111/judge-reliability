@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-05",
+  "side": "A",
+  "score": 8,
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** 29 February 2024 was indeed a Thursday. From 1 March 2024 to 1 March 2025 is 365 days, since no leap day falls in that span. So 29 February 2024 to 1 March 2025 is 366 days, and 365 days lands on 28 February 2025. That date was a Friday. The answer is correct.\n\n**Reasoning:** The weekday logic is sound and clearly stated: 365 = 52×7 + 1, so the weekday advances by one. The date reasoning is weaker. \"2025 is not a leap year, so it has no 29 February\" explains why the answer can't be 29 February 2025. It doesn't really show that the count lands on the 28th rather than 1 March. The real justification is that the year-long span after 29 February 2024 contains no leap day. That is merely asserted (\"counting… lands on\"), not demonstrated. It is a minor gap, but it is the trickiest part of the question.\n\n**Clarity:** The response leads with the answer, is concise, and is well under 120 words.\n\nThe answer is correct with a mostly adequate explanation, slightly thin on the date step.\n\nScore: 8",
+  "usage": {
+    "input": 313,
+    "output": 778
+  },
+  "cost": 0.016812
+}

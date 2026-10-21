@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-36",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both summaries are accurate on the term, inclusions, fee, price review, page allowance, early-exit penalty and end-of-term options.\n\n**Response A**\n- **Accuracy:** \"Rising by up to 4%\" keeps the conditional sense of \"can increase\". It drops \"last year\" from the colour-usage point, but the past tense still conveys that it is historical, so this is not misleading.\n- **Coverage:** It gives the overage rates (0.9c black-and-white, 6.5c colour). These let a manager judge exposure beyond the single $195 example.\n- **Length:** About 116 words, which meets the under-120 limit.\n\n**Response B**\n- **Accuracy:** \"Can rise up to 4%\" is accurate. It correctly says \"based on last year's usage\". The phrase \"exceed the colour allowance by about $195/month\" is slightly awkward, because it mixes pages and dollars, but the meaning is clear.\n- **Coverage:** It leaves out the per-page overage rates, which are a key cost term. It adds the contact name instead, which is useful but less essential than pricing.\n- **Length:** About 127 words including the heading, or about 120 without it. That breaks or at best just reaches the explicit limit.\n\nResponse A therefore stays within the word limit and keeps the more decision-relevant cost detail. Response B goes over the limit and drops the overage pricing in favour of a contact name.\n\nVerdict: A",
+  "usage": {
+    "input": 1514,
+    "output": 2935
+  },
+  "cost": 0.064756
+}

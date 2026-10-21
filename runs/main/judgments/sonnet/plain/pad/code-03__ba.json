@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-03",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better. Both responses correctly put SQL injection first and give the same sound parameterized fix. Both also correctly point out that `with sqlite3.connect()` does not close the connection.\n\n**Length:** The user asked for under 200 words. Both responses probably exceed that, but B overshoots by far more, at roughly 330 words against A's roughly 240. B also pads with filler such as \"I want to flag this first\" and \"With this change, the database driver handles both values safely.\"\n\n**Content:** A includes authorization and audit logging as its third item. For a support portal that exposes customer PII, that is a real concern, and A ranks it above minor issues. B mentions audit logging only as a last minor point and does not mention authorization. B's extra items are reasonable: case-sensitive email matching, no ordering or limit, and a redundant `if not rows`. Most of them are lower-impact polish, though email normalization is useful. A's input-validation and hardcoded-path items are also minor but are stated briefly.\n\nA is more concise, better prioritized for the stated context, and closer to the length limit.\n\n**A**",
+  "usage": {
+    "input": 1582,
+    "output": 712
+  },
+  "cost": 0.010284
+}

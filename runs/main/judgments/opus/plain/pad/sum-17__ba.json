@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-17",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse A runs to roughly 200 words, well over the 120-word limit. It also misattributes the \"fourth weekend in a row\" remark to Arjun, when Colleen said it. And it is framed as an update to residents rather than a summary for a manager.\n\nResponse B is about 123 words, slightly over the limit but far closer. It is accurate and covers the key points: the licence terms, the evidence the regulator needs, the outcome with the venue, the dissenting resident, and the fallback complaint.",
+  "usage": {
+    "input": 1510,
+    "output": 995
+  },
+  "cost": 0.02594
+}

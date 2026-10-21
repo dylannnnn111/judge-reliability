@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-10",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses find the two critical problems. There is **no authentication**, even though the description says the endpoint is for logged-in staff. And there is **path traversal**: `SLUG_RE.match` anchors only at the start, and `<path:slug>` accepts slashes. Both explain the traversal mechanism correctly and recommend `fullmatch` with the default `<slug>` converter. Either ordering of these two is defensible.\n\n**Response A** goes further on fixes. It suggests `send_from_directory`, which performs its own containment check and is the idiomatic Flask remedy. Its secondary points are also real:\n- `os.path.exists` returns true for directories, so a directory named `foo.pdf` would cause a 500 error; `os.path.isfile` or catching `FileNotFoundError` avoids this.\n- The check-then-use race is noted.\n- Per-report authorization is reasonable, appropriately hedged on whether reports are team- or customer-specific.\n- `Cache-Control` and `as_attachment` hardening are sensible for sensitive files.\n\nIts weaknesses are a padded preamble, wordy phrasing, and clearly exceeding the 200-word limit.\n\n**Response B** is tighter, though still slightly over 200 words. Its symlink-escape point is speculative: it only matters if someone can plant symlinks inside the report directory, which is not a flaw of this code as written. Its item 6 is incoherent. It says non-matching slugs should get a 400 rather than \"falling through to a 404\". But the code already returns 400 on regex failure, and the real regex problem, the missing anchoring, is already item 1. That is a muddled, effectively false flag. B also misses the directory-versus-file issue and gives no concrete authentication fix.\n\nOn the primary criteria, A is more accurate, offers better fixes, and makes no false flags. B is more concise and closer to the word limit, but it includes a confused, invalid issue and a marginal one. A's content advantage outweighs its verbosity.\n\nVerdict: A",
+  "usage": {
+    "input": 1715,
+    "output": 1189
+  },
+  "cost": 0.03064
+}

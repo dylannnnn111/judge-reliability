@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-27",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "A is better. Response A is about 120 words, right at the limit, while Response B runs to roughly 190 words, well over the stated cap. Response B also repeats its headline in an opening sentence and adds stilted phrasing such as \"kindly recommend\" and \"kindly ask\". That wording misrepresents Marcus's tone and adds length. Response A is tighter and covers the key points: the pilot result, the free-month confound, the caution about Sales' claim, the cost, and the proposal with its dates.\n\n**A**",
+  "usage": {
+    "input": 1494,
+    "output": 879
+  },
+  "cost": 0.011778
+}

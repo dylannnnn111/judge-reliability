@@ -1,0 +1,14 @@
+{
+  "pair": "qa-38",
+  "side": "A",
+  "author": "opus",
+  "model": "claude-haiku-5-5",
+  "original": "The ozone hole forms over Antarctica because of its extremely cold winter stratosphere. During the polar night, a strong **polar vortex** isolates the air and temperatures drop below about −78°C. That allows **polar stratospheric clouds** to form. On their ice and particle surfaces, chlorine from CFCs is converted from inactive \"reservoir\" compounds (HCl, ClONO₂) into reactive forms such as Cl₂.\n\nDestruction waits for **spring** because breaking Cl₂ into ozone-destroying chlorine atoms requires **sunlight**. When the sun returns in September–October, the stored chlorine is released rapidly. It catalytically destroys ozone while the vortex still blocks replenishment from outside.\n\nBy late spring the vortex warms and breaks down. Ozone-rich air then mixes in, and the hole fills. The Arctic is warmer and less isolated, so its losses are smaller.",
+  "text": "The ozone hole over Antarctica forms mainly because of the extremely cold winter stratosphere found there. During the polar night, which is the period when the sun does not rise over the region, a strong **polar vortex** develops and isolates the air within it. Because the air is cut off from the warmer air around it, temperatures inside the vortex drop below about −78°C. These very low temperatures allow **polar stratospheric clouds** to form. On the surfaces of their ice and particles, chlorine that came from CFCs is converted from inactive \"reservoir\" compounds, namely HCl and ClONO₂, into reactive forms such as Cl₂.\n\nThe destruction of ozone, however, waits for **spring**. Breaking Cl₂ apart into the chlorine atoms that destroy ozone requires **sunlight**, so the chemistry cannot proceed fully during the dark winter months. When the sun returns in September and October, the stored chlorine is released rapidly. The released chlorine then catalytically destroys ozone, and it does so while the vortex still blocks replenishment from the surrounding atmosphere.\n\nBy late spring, the vortex warms and gradually breaks down. Ozone-rich air from outside the region then mixes in, and the hole fills back in. By contrast, the Arctic is warmer and less isolated than Antarctica, so its ozone losses are smaller.",
+  "ratio": 1.66,
+  "usage": {
+    "input": 987,
+    "output": 1093
+  },
+  "cost": 0.0006452000000000001
+}

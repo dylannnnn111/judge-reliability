@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "code-27",
+  "side": "A",
+  "score": 7,
+  "model": "claude-opus-5-5",
+  "text": "The two most important issues are real, correctly identified and ranked first. Unbounded concurrency is #1: 80,000 simultaneous sends will hit rate limits, exhaust sockets and risk spam flagging. Lost outcome on failure is #2: `Promise.all` rejects on the first error while other sends continue, so you can't tell who was mailed, and rerunning double-sends. Both come with concrete, correct fixes: p-limit or batching, `allSettled`, and idempotent tracking per campaign.\n\nThe response has two weaknesses:\n\n- **Low-value padding.** Item 3 (misleading return value) is really a consequence of #2, not a separate problem. Items 5–7 are progressively weaker:\n  - The null-email crash contradicts the declared `Customer` type. It is defensible only as boundary validation.\n  - The repeated-cursor loop guard is speculative.\n  - The stale opt-in recheck is a design nicety rather than a bug.\n  \n  Including these is not wrong, but it dilutes a list meant to cover the bugs \"that matter.\"\n- **Over the word limit.** The response runs slightly over the 200-word limit, about 205–210 words. Trimming items 3, 6 or 7 would have fixed this without losing anything important.\n\nNothing flagged is actually incorrect. The fixes are actionable, and the ranking is sensible overall. The top-priority content is excellent; the deductions are for the limit breach and the filler items.\n\nScore: 7",
+  "usage": {
+    "input": 1113,
+    "output": 1157
+  },
+  "cost": 0.027592
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-05",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same real bugs in the same order:\n- The DST arithmetic is wrong, because aware datetimes sharing one tzinfo are subtracted as naive wall-clock times.\n- Nonexistent and ambiguous local times are accepted silently.\n- Weekend loading depends only on the start day.\n- Float money math is combined with banker's rounding.\n- Public holidays and input validation are missing.\n\nI checked the facts in both and found no false claims. Response A's directions are correct: clocks going forward means overpaid, and clocks going back means underpaid. Response B's worked examples are correct for Sydney, since 01:00–05:00 is 5h on fall-back night and 3h on spring-forward night. Neither flags anything that is actually fine.\n\nResponse B adds a few useful details: a UTC round-trip check for nonexistent times, an explicit `ROUND_HALF_UP` suggestion, and a sanity cap on shift length. It also gives concrete DST examples. Its wording has problems, though. It says \"the most serious problem in the response\" and \"the response also uses floating-point\", which confuses the code with the response. It is also noticeably longer, at roughly 330 words against a 200-word limit, with filler transitions such as \"Next\", \"Another problem\" and \"Finally.\"\n\nResponse A is tighter, at roughly 270 words, so it also overshoots the limit but by less. It covers the same substance and includes fixes for each point. Its extra items, such as repeated parsing, are minor but harmless.\n\nThe substance is nearly equal. A is somewhat better on conciseness and clarity, while B has slightly more concrete detail but pads and misuses wording. I lean slightly toward A.\n\nVerdict: A",
+  "usage": {
+    "input": 2009,
+    "output": 1612
+  },
+  "cost": 0.020138
+}

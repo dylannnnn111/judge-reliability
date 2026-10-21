@@ -1,0 +1,13 @@
+{
+  "item": "code-23",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**1. Zero readings are silently dropped (serious).**\n`if (!r.value) continue;` treats `0` as missing. In a cold room, 0 °C is a normal and important value. Excluding it pushes averages away from zero, so a room hovering around freezing reports wrong numbers. Use `if (r.value == null) continue;`.\n\n**2. Dead sensors disappear from the panel.**\nA sensor whose readings are all `null` never enters `sums`, so it is absent from the output instead of showing \"no data.\" On a monitoring dashboard, a sensor that vanishes is worse than one flagged as offline. Consider returning `number | null` per known sensor.\n\n**3. Timestamp ordering relies on string comparison.**\n`a.at < b.at` is only correct if every `at` is ISO-8601 in the same format and offset. Mixed offsets (`+00:00` vs `Z` vs `+02:00`) or missing milliseconds will misorder readings. Compare `Date.parse(a.at)` values, or enforce normalized UTC upstream.\n\n**4. `latestReading` may return a null-valued reading.**\nIf the newest record is a dropout, callers get `value: null`. Decide whether that is intended, since it signals the sensor is currently offline, or whether you want the latest non-null value. Document the choice either way.\n\n**5. Minor issues.**\nSorting is O(n log n) where a single linear scan finds the max. The comparator never returns 0 for equal timestamps.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 377,
+    "output": 754
+  },
+  "cost": 0.016588,
+  "at": "2026-10-14T01:54:07.049Z"
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-33",
+  "side": "B",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The content is accurate. Tidal locking, the friction-driven slowdown of the Moon's spin, libration (about 59% of the surface visible over time), and the sunlit far side are all correct. The key reasoning is clearly present. However, the response runs roughly 200 words, well over the explicit \"under 120 words\" limit. The extra material (libration and the far-side point) is correct but goes beyond what was asked, and the length violates a direct constraint. The clarity is good, with clean paragraphs and a clear bolded key term.\n\nScore: 4",
+  "usage": {
+    "input": 605,
+    "output": 426
+  },
+  "cost": 0.0002735
+}

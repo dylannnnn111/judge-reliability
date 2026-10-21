@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-20",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "A is slightly better. Both identify the same main issues (DST breaking the `Math.floor` day count, silent NaN handling, timezone dependence, and staleness after midnight) and both give a working fix. A is more accurate on the DST impact: it correctly says the overdue list is unaffected because the sign stays right. B claims the fall-back case \"may land in the wrong place on the overdue list,\" which is wrong. Both responses run slightly over 200 words, so neither has a clear edge on length.\n\nA",
+  "usage": {
+    "input": 1703,
+    "output": 1145
+  },
+  "cost": 0.0007428
+}

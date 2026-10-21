@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-31",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is the better answer. It is more accurate and much closer to the user's under-200-word limit, at roughly 215 words. It finds the key problems in a sensible order:\n- rows skipped at page boundaries when timestamps tie\n- non-deterministic ordering\n- late-committed rows being lost\n- the missing index\n- the planner problem with the `IS NULL OR` pattern\n- no persisted cursor for crash recovery\n\nIts fixes are short and correct.\n\nResponse B runs about 450 words, more than double the limit. It also contains a factual error. With `created_at > :last_seen`, a second with 1000 or more rows does not make the job stall or loop forever. The cursor moves to the next second and silently skips the leftover rows. B also pads its list: it spends a whole item on the fix, and its last point offers little of value.",
+  "usage": {
+    "input": 1741,
+    "output": 489
+  },
+  "cost": 0.016744
+}

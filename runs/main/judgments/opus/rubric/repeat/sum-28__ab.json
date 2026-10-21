@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-28",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy.** Response A has no factual errors. Its figures, dates and conditions all match the notice:\n- the 40-day cap\n- direction to take up to a quarter of the balance, with *at least* eight weeks' notice\n- the cash-out conditions\n- the shutdown dates and four leave days\n- the warehouse exemption\n\nResponse B is mostly accurate, but its shutdown line is misleading. \"Staff use four days' leave, or take unpaid leave or make up time\" presents unpaid leave and make-up time as open alternatives for everyone. In the original, those options apply only to staff *without enough leave*, and making up time needs the *manager's agreement*. B drops both conditions, so it misstates who decides. A manager could easily act on that wrongly, which makes it a material error. B's \"with eight weeks' notice\" also loses the \"at least\", though that matters less.\n\n**Coverage.** B includes some useful points that A leaves out:\n- the burnout rationale\n- that cash-out is new\n- that the policy applies to permanent staff under the Enterprise Agreement\n\nA also omits the unpaid-leave and make-up options entirely. That is a gap, but leaving something out is less harmful than stating it wrongly.\n\n**Concision.** Both are over the 120-word limit, A at roughly 129 words and B at roughly 134, so neither has an advantage here.\n\nBecause accuracy comes first, A's clean record outweighs B's somewhat fuller coverage.\n\nVerdict: A",
+  "usage": {
+    "input": 1466,
+    "output": 2379
+  },
+  "cost": 0.053444
+}

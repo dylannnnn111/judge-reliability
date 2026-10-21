@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-31",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the main bug: second-precision `created_at` ties that straddle a page boundary cause rows to be skipped. Both propose the same `(created_at, id)` keyset fix, and both flag the missing index and the `IS NULL OR` planner issue. Response A adds a claim that the job \"stalls or loops forever\" on large ties. That is inaccurate, since a `>` comparison on the timestamp would advance past the tied rows rather than repeat the same page. Its final point is also filler, not a real bug. Response B is more accurate and includes two useful points A lacks: late-committed rows being permanently missed, and the lack of a persisted cursor with idempotent downstream writes. B omits A's termination-condition discussion and snapshot upper bound, but those overlap with its late-commit point. Overall B is tighter and more correct.\n\nVerdict: B",
+  "usage": {
+    "input": 1632,
+    "output": 868
+  },
+  "cost": 0.0005972000000000001
+}

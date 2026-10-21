@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-29",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is about 112 words, so it meets the under-120-word limit. Response B runs to roughly 200 words, which breaks the user's main constraint. B also adds detail a busy manager doesn't need, such as support hours and contact details.\n\nA has one flaw. It merges the two exemptions so that Classic customers seem unaffected \"until their contract ends.\" The notice actually says Classic plans won't change this year. That inaccuracy is smaller than B's clear failure on length.",
+  "usage": {
+    "input": 1370,
+    "output": 534
+  },
+  "cost": 0.01616
+}

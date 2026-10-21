@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-11",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses reach the correct answer: after seeing a goat behind door 2 from a host who chose at random, the car is equally likely behind doors 1 and 3, so switching gives no advantage (1/2 either way). Both are also roughly at the 120-word limit.\n\nResponse A gives a clear case analysis and, more usefully, explains why the classic Monty Hall answer of 2/3 doesn't carry over: the classic host knowingly avoids the car, and that choice is itself information. This addresses the likely source of confusion behind the question. Response B's calculation is also valid under the model where the host randomizes between doors 2 and 3, but it doesn't explain the contrast with the classic problem and frames the host's choice a bit less directly.\n\nNeither is wrong, but Response A's key insight is more valuable, so it edges out B.\n\nVerdict: A",
+  "usage": {
+    "input": 831,
+    "output": 1867
+  },
+  "cost": 0.0010166
+}

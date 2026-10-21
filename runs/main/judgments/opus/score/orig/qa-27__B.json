@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-27",
+  "side": "B",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** The physics is accurate.\n- Water expands on freezing.\n- Ice forms an open hexagonal lattice held by hydrogen bonds.\n- Ice is about 9% less dense than liquid water (0.917 vs ~1.000 g/cm³).\n- Water's maximum density is near 4°C.\n\nOne minor imprecision: \"when cooled, molecules lock into\" really applies to *freezing*, not cooling in general. Liquid water does start forming more ordered structures below 4°C, though, so this is defensible.\n\nThe ecological claims are also standard and correct. Surface ice insulates the water below, deeper water stays around 4°C, organisms survive beneath, and sinking ice would lead to bottom-up freezing.\n\n**Key reasoning:** Both parts of the question are answered with the causal chain intact: hydrogen-bonded lattice → lower density → floats → insulation → liquid refuge for life. The 4°C point is included, though the response doesn't spell out that 4°C water sinks and settles at the bottom. That is a small omission in an otherwise complete explanation.\n\n**Clarity and length:** The response is about 103 words, within the 120-word limit. It is cleanly organized into two paragraphs matching the two questions, with no filler.\n\nThis is a strong, accurate, well-structured answer with only trivial imprecision.\n\nScore: 9",
+  "usage": {
+    "input": 419,
+    "output": 880
+  },
+  "cost": 0.019276
+}

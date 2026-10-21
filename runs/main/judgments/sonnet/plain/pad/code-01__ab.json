@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-01",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. Both responses cover the core issues: idempotency, truncation, float money, dropped credits, bad rows and hardcoded tax. The difference is the 200-word limit. Response A is well over it, at roughly 380 words, and it opens with a filler sentence that adds nothing. Response B is also slightly over, at around 220 words, but it is much closer and more concise. B also gives a concrete, verifiable truncation example (`10.29 * 100` gives `1028.999…`) and flags the customer-ID normalization problem. A's extras, such as NaN/inf input, billing-period scoping and the missing currency, are valid but lower priority.\n\n**B**",
+  "usage": {
+    "input": 1535,
+    "output": 586
+  },
+  "cost": 0.00893
+}

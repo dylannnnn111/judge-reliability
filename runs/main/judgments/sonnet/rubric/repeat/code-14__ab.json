@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "code-14",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the critical bug and rank it first. Deleting each batch while advancing `OFFSET` makes the next query skip a batch, so roughly half the rows are never archived. Both give the correct fix, either dropping the offset or using keyset pagination. Both also flag the same second problem: a crash between `archive` and `commit` leads to duplicate archiving, so `archive` should be idempotent and durable before the delete.\n\nThe difference is in the lower-ranked items.\n\n- **Response A** adds string-comparison fragility on `created_at`, a missing index, and a batch-size suggestion. These are all reasonable and mostly accurate, and the batch-size point is minor. It also notes that the backlog only halves each night, which is correct.\n- **Response B** adds a \"no error handling or rollback\" item and ranks it third. This is only partly valid. In Python's sqlite3, a failure in `archive` leaves no open transaction, and an open one is rolled back when the connection closes. It is a weak point presented as a main issue. B also pads its minor list with \"no logging or metrics\", which is generic filler. Its remark that nothing fails and the count looks plausible is a nice touch about how silently the bug fails.\n\nBoth run a little over the word limit, and B is longer. A has fewer questionable or filler items and keeps its list tighter, so A is slightly better.\n\nVerdict: A",
+  "usage": {
+    "input": 1514,
+    "output": 1271
+  },
+  "cost": 0.015738
+}

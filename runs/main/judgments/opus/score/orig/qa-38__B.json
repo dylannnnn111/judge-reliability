@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-38",
+  "side": "B",
+  "score": 8,
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** The science is accurate.\n- Antarctic winter cold produces polar stratospheric clouds.\n- Heterogeneous reactions on those clouds convert HCl and ClONO₂ into Cl₂ and HOCl.\n- The polar vortex isolates the air.\n- Returning spring sunlight photolyzes Cl₂, releasing chlorine radicals that destroy ozone catalytically.\n- Loss peaks in September–October, then the hole recovers as the vortex breaks down.\n\n**Key reasoning:** Both parts of the question are answered. Spring timing is explained by the need for sunlight after the winter chemical \"priming.\" The Antarctic location is explained by the extreme cold and the isolating vortex. There are two gaps:\n- It never says the chlorine comes from human-made CFCs.\n- It does not explicitly contrast Antarctica with the Arctic, where a warmer, weaker vortex is why the hole is mainly Antarctic.\n\n**Clarity and length:** The response is clear and well organized. At about 94 words it meets the limit. \"Spring brings sunlight back. When sunlight returns…\" is slightly redundant.\n\nOverall, this is a strong, accurate answer with minor omissions.\n\nScore: 8",
+  "usage": {
+    "input": 453,
+    "output": 842
+  },
+  "cost": 0.018652
+}

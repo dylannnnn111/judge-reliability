@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-16",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Both responses report the numbers, dates and conditions correctly. Each makes clear that the 17 November date depends on steering committee approval on 15 October. Each also gives the $38k figure, or $26k if the $12k vendor credit is confirmed in writing.\n\nB's \"Causes\" framing attributes the delay to the sandbox outage and the quoting-tool fix. That matches the report's \"What's behind\" section. B also links the early-December slip risk to the sales director's request for no December training. That link is a reasonable connection between two risks the report lists, not an invention.\n\n**Coverage:** A keeps more detail. It includes the progress items: data mapping, the 98.6% clean migration and the roughly 3,100 duplicate-email records. B drops the progress section and the duplicate-records risk. Those are lower-priority points for a manager focused on decisions. B keeps everything needed for the 15 October decisions and the main risk.\n\n**Concision and the word limit:** The user set a hard limit of under 120 words. A runs to about 156 words, which clearly breaks that instruction. B comes in at about 120 words, right at the limit. A's extra detail is accurate, but it costs the response compliance with an explicit requirement, so it does not count in A's favour.\n\nB meets the brief and keeps the decision-critical content. A fails the length constraint by a wide margin.\n\nVerdict: B",
+  "usage": {
+    "input": 1540,
+    "output": 2077
+  },
+  "cost": 0.0477
+}

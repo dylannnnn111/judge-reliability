@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "qa-18",
+  "side": "A",
+  "score": 5,
+  "model": "claude-opus-5-5",
+  "text": "The core answer is accurate. Willem Janszoon and the crew of the *Duyfken* made the first recorded European landing on the Australian mainland in early 1606. They came ashore on the western side of Cape York Peninsula, near the Pennefather River. The response also correctly notes that Janszoon thought the land was part of New Guinea and that the encounter turned violent. Its side facts hold up: Hartog's 1616 landing was on an island, Cook landed in 1770, and Portuguese or Spanish contact remains speculative.\n\nThe response clearly breaks the explicit instruction to answer in under 120 words. It runs to about 170 words, roughly 40% over the limit. Much of the excess is filler, such as \"I would be happy to walk through this history,\" \"To put this in context,\" \"It is worth noting,\" and \"to be clear.\" The Hartog and Cook comparisons are relevant but were not requested. They could have been cut or shortened to stay within the limit. Following a stated constraint is part of answering correctly, and the padding also weakens clarity.\n\nThe content is correct and well supported, but a substantial failure on an explicit, easily met requirement significantly lowers the score.\n\nScore: 5",
+  "usage": {
+    "input": 542,
+    "output": 831
+  },
+  "cost": 0.018788
+}

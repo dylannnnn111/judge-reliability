@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-35",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is well over 120 words, roughly 190, so it breaks the explicit length constraint. It is also wordy and repetitive: \"accelerate the process\" appears twice, and \"it helps to\" shows up twice.\n\nResponse B counts to about 100 words, so it fits the limit. It is accurate and concise, and it gives specific examples of antibiotic classes along with the main mechanisms of resistance.\n\nB is better.\n\n**B**",
+  "usage": {
+    "input": 787,
+    "output": 140
+  },
+  "cost": 0.002974
+}

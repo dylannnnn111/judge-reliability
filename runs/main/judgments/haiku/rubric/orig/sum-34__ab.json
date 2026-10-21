@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-34",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Neither misstates dates, the 30-minute acceptance window, the 24/48-hour reminder option, or the Android known issue. Both also appear to run slightly over the 120-word limit, with Response A at roughly 127 words and Response B in a similar range.\n\nResponse B is more complete on the points a manager needs. It lists the specific fixes, including the large-invoice printing error, whereas Response A reduces the fixes to \"several bugs\" and mentions only one. Response B's labelled sections also make it easier to scan quickly. Response A reads smoothly as prose and is well organised, but it is no shorter and omits a fix.\n\nVerdict: B",
+  "usage": {
+    "input": 1397,
+    "output": 1968
+  },
+  "cost": 0.0011237
+}

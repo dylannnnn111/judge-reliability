@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-17",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. At roughly 123 words it slightly exceeds the 120-word limit, but it is a real summary: it covers the licence rules, the evidence the regulator needs, the outcome of the call with the venue, the next steps and the fallback of a regulator complaint. It also notes the one resident who has had no problems.\n\n**B** is about 200 words, far over the limit. It is also framed as an email update to residents rather than a summary for a busy manager. Its \"resolved for now\" subject line overstates the situation, since the outcome is still being monitored.\n\nA's small overrun is much less serious than B's overrun and wrong format.\n\n**A**",
+  "usage": {
+    "input": 1510,
+    "output": 1024
+  },
+  "cost": 0.01326
+}

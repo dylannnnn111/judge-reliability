@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-11",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.** Both responses find the same core issues in the same sensible order:\n\n1. The check-then-act race in `reserve`.\n2. `threading.Lock` not coordinating across worker processes or hosts, with the atomic `UPDATE ... WHERE qty >= ?` fix.\n3. Missing `qty` validation.\n4. `release` not being tied to an actual reservation.\n5. The global lock serializing all SKUs.\n\nAll of these are real, and the ranking is good in both.\n\n**Response A's edge:**\n- It adds useful points: abandoned carts never releasing stock (with reservation expiry as the fix), the lock being held during DB I/O, and a plausible `None`/missing-SKU failure.\n- It stays much closer to the 200-word limit, though it still slightly exceeds it.\n\n**Response B's weaknesses:**\n- It opens with filler (\"Thank you for sharing the code…\") and pads each point with verbose phrasing.\n- It runs well over the word limit the user set.\n- Its sixth point (`available()` is advisory) largely restates the race in point 1.\n- Its one real advantage is a concrete code snippet for the race fix. A's one-line description of the same fix is clear enough.\n\nVerdict: A",
+  "usage": {
+    "input": 1789,
+    "output": 604
+  },
+  "cost": 0.019236
+}

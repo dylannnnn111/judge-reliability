@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "qa-29",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the same correct core explanation: compounding earns interest on interest, simple interest grows linearly, and the example figures are right ($2,500 versus about $4,322 after 30 years at 5%).\n\nThe deciding factor is the word limit of under 120 words. Response A comes to roughly 98 words, which complies. Response B comes to about 123 words by my count, so it exceeds the limit. Its Rule of 72 addition is useful but wasn't needed to answer the question, and it pushes B over.\n\nResponse A is correct, gives the key reasoning, and follows the constraint, so it is better.\n\nVerdict: A",
+  "usage": {
+    "input": 721,
+    "output": 1241
+  },
+  "cost": 0.013852
+}

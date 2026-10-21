@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-25",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly answer \"No\" and cite the Gjermundbu helmet as the main evidence. Both also trace the horned image to 19th-century Romantic art and Doepler's 1876 Wagner costumes, and both note the Bronze Age Scandinavian horned helmets. Both fall under the 120-word limit.\n\nResponse A is slightly more precise. It names Gustav Malmström, a key 19th-century source of the image, and gives the roughly 1,500-year gap between the Veksø helmets and the Viking Age. Response B's \"centuries before\" understates that gap. Response B's structure is clear and easy to scan, but it adds no substantive content that Response A lacks. Response A's extra detail is accurate and relevant, so it edges ahead.\n\nVerdict: A",
+  "usage": {
+    "input": 815,
+    "output": 998
+  },
+  "cost": 0.0005805
+}

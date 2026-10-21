@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-33",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries are accurate on the key facts. Each gives the 8% figure, the 15-minute switch time and the 31 January 2027 extension, and neither contains an error. Both also run slightly over the 120-word limit, A at about 128 words and B at about 129, so length doesn't separate them.\n\n**Response A:**\n- It says up front that most customers need to do nothing.\n- It gives both the old date (30 Nov) and the new one (31 Jan 2027).\n- It puts the action item last, where a busy manager might skim past it.\n- It leaves out that staff could be paid late, which is the real consequence.\n- It doesn't say where the v1 connector is configured or that a guide exists.\n\n**Response B:**\n- It leads with the action item, which is the most important item for a manager.\n- It names the Admin path that identifies v1 use, states the late-pay consequence, and mentions the help-centre guide.\n- It drops the original 30 Nov date, but \"extended to 31 January 2027\" is still correct and clear.\n- Its \"Also\" line is more compressed but still covers the improvements and fixes.\n\nB puts the actionable and consequential information first and keeps more of what the reader needs for the one task that matters. A is clean and clear but gives that item less weight.\n\nVerdict: B",
+  "usage": {
+    "input": 1556,
+    "output": 2734
+  },
+  "cost": 0.030452
+}

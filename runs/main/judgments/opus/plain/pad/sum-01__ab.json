@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-01",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A stays under the 120-word limit, at roughly 116 words. It is easy to scan for a busy manager and captures every key point:\n- the new deadline and why it moved\n- the three required items\n- the template location and the reason for the new template\n- the variance threshold, the no-screenshots rule and the leave-cover rule\n- the optional walkthrough\n- the instruction to call Priya today\n\nResponse B runs to roughly 250 words, about double the limit. It is also written as an email to the regional leads (\"I'm writing to let you know...\") rather than as a summary for a manager.",
+  "usage": {
+    "input": 1417,
+    "output": 409
+  },
+  "cost": 0.013848
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-01",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same top problems: no idempotency, one failure aborting the whole batch, `int(amount * 100)` truncation, floats for money, skipped non-positive totals, and the hardcoded tax rate. Both rank idempotency first, which is right for a billing job.\n\n**Accuracy:** Response A's truncation example, `10.29 * 100`, probably evaluates to exactly 1029.0 in Python, so the illustration is wrong even though the bug is real. Response B's example, 19.99 becoming 1998 cents, is correct, since `19.99 * 100` gives 1998.9999999999998.\n\n**Coverage:**\n- Response B notes that `charge` gets no idempotency key, and that a rerun after a partial failure double-charges. It also catches `KeyError` for missing columns and NaN/inf strings, which `float()` accepts. It points out that negative units or prices can silently change a bill.\n- Response A flags `customer_id` whitespace normalization, which is speculative and low-value, and it splits float money and truncation into separate items with some overlap.\n- Response B's billing-period scoping point is somewhat speculative but relevant to a nightly job. Its \"minor\" items (memory use, no currency passed to `charge`) are reasonable and labeled as minor.\n\n**Ranking and fixes:** Both give fixes. Response B's treatment of failure handling, tied back to the idempotency risk, is more insightful. Both are over the 200-word limit, roughly equally.\n\nResponse B is more accurate and has more useful substance, with fewer weak points.\n\nVerdict: B",
+  "usage": {
+    "input": 1574,
+    "output": 1237
+  },
+  "cost": 0.015518
+}

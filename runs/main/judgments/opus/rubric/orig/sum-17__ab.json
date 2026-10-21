@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-17",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A** is accurate throughout:\n- The four weekends, the licence terms (bar open until midnight Fri/Sat, amplified music off at 10pm), the evidence the regulator needs, the venue manager's explanation and commitments, the 20 October report-back and the regulator fallback all match the thread.\n- \"Music audible past midnight\" fairly reflects Colleen's complaint.\n- It is the only response to keep the evidence requirement and Fiona's dissenting view, both useful context for a manager.\n- At about 124 words it slightly exceeds the 120-word limit.\n\n**Response B** has two accuracy problems:\n- It says Arjun \"noted this was the fourth weekend in a row.\" That was Colleen, not Arjun. The thread asks us to check who said what, so this misattribution counts.\n- The heading \"resolved for now\" overstates things. The chair explicitly said \"let's see how this weekend goes,\" so nothing is resolved yet.\n\nB also has gaps and a larger length problem:\n- It drops what evidence the regulator needs.\n- It omits the resident who has no complaint.\n- It runs to roughly 140 words, further over the limit than A.\n\nA is more accurate, keeps more of what the reader needs, and is closer to the length limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1559,
+    "output": 1528
+  },
+  "cost": 0.036796
+}

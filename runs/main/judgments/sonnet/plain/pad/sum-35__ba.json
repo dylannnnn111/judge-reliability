@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-35",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better. It keeps to the 120-word limit and B does not.\n\n**Response A** comes to about 118 words by my count, so it meets the constraint. It is also easy for a busy manager to scan. It covers the deadline, the Annexure C standard, the removal list, the kitchenette condition, the payment alternative with its three-month notice, the daily rent for overruns, and the bond. It leaves out a few details, such as the 2 March 2023 consent letter and the fact that the landlord's estimate must be \"reasonable\". It also doesn't say the landlord's payment option is the landlord's choice alone, though \"the landlord may take a payment\" implies it.\n\n**Response B** runs to roughly 170–190 words, well over the limit. It also uses \"we\", which doesn't suit a summary for a manager. It is less scannable, and it leaves out the specific repair of wall patching and painting.\n\nA follows the explicit instruction and B breaks it, so A wins.\n\n**A**",
+  "usage": {
+    "input": 1396,
+    "output": 1400
+  },
+  "cost": 0.016792
+}

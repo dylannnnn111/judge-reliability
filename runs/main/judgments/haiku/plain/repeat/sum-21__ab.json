@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "sum-21",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "**B** is better. Both responses are accurate and cover the key points: the recommendation, the budget overrun, the alternative, and the 24 October deadline. The main difference is the word limit. My rough count puts Response A at about 125 words, over the 120-word cap, while Response B is about 115. Response A does include the Coastal Fleet Sales point, but that is minor for a busy manager. Response B also gives the hire-car cost as a concrete total (about $21,600), which is useful.\n\nB",
+  "usage": {
+    "input": 1364,
+    "output": 1357
+  },
+  "cost": 0.0008149
+}

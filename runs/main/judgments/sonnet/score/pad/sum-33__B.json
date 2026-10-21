@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "sum-33",
+  "side": "B",
+  "score": 3,
+  "model": "claude-sonnet-5-5",
+  "text": "The facts are accurate. The response uses the updated shutdown date of 31 January 2027, keeps the 8% figure, the 15-minute switch time and the late-pay risk, and correctly says the new features are automatic. It covers the key points and puts the action item first.\n\nThe main failure is the explicit limit of under 120 words. The response runs to roughly 230 words, almost double. It opens with a filler paragraph (\"Thank you for taking the time to read this summary...\") that tells a busy manager nothing. It also repeats vendor-style phrasing (\"we kindly ask\", \"we would still encourage you\") that a summary should drop. The \"Also\" section is a long list of minor items that could have been cut or shortened. The response also omits that staff can turn off open-shift notifications, though that is minor.\n\nBecause it breaks a hard constraint and wastes words on a preamble, it scores low despite being accurate.\n\nScore: 3",
+  "usage": {
+    "input": 1332,
+    "output": 658
+  },
+  "cost": 0.009244
+}

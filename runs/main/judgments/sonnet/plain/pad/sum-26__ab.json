@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-26",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "A\n\nBoth responses go over the 120-word limit. Response A is about 150 words and Response B is about 200. Response A is closer to the constraint, and it is tighter and more direct. Response B adds filler such as an opening sentence that restates the title, and \"I am pleased to report\", which are wasteful for a busy manager. Response A also covers the key facts: cause, duration, impact, follow-up and the capital plan request.",
+  "usage": {
+    "input": 1499,
+    "output": 792
+  },
+  "cost": 0.010918
+}

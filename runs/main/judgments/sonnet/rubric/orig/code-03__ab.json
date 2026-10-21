@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-03",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses correctly put SQL injection first, give the same parameterized fix, and catch the connection leak along with the `with` gotcha. Both also run a bit over 200 words, by about the same amount, so length doesn't separate them.\n\n**Response A** adds issues that matter for a support lookup tool:\n- Case-sensitive, whitespace-sensitive email matching would cause real missed lookups.\n- Missing ordering and limits is a legitimate concern.\n- The minor notes are accurate: the redundant `if not rows` check, and `if status:` treating an empty string as no filter.\n- The audit-logging suggestion is brief and sensible.\n\n**Response B** has weaker content after the first two items:\n- Its claim that \"worse inputs can modify data depending on the driver\" is misleading, because sqlite3's `execute` rejects stacked statements.\n- Its first fix for the leak (`with ... as conn`) is the one it immediately says doesn't close the connection, which is confusing.\n- Authorization and audit are speculative, since the function is just a data-access helper and the caller likely handles that.\n- Validating `status` against an allowed set is unnecessary once the query is parameterized.\n- The hardcoded path is a nitpick.\n\nResponse A's extra points are more concrete and more likely to matter in practice, and it has fewer questionable claims.\n\nVerdict: A",
+  "usage": {
+    "input": 1531,
+    "output": 1429
+  },
+  "cost": 0.017352
+}

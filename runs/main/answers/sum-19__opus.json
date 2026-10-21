@@ -1,0 +1,13 @@
+{
+  "item": "sum-19",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**Lease Clause 14 – Brightside Physio, Unit 6 Kurralta Business Park**\n\n- **Consent required:** We can't transfer the lease (assignment) or sublet without the landlord's written consent. The landlord can't refuse unreasonably and must respond within 28 days.\n- **Assignment (e.g. selling the business):** The landlord may require two years of the buyer's accounts, a three-month rent bank guarantee and legal costs ($1,500–$3,000).\n- **Key risk:** This isn't a retail lease, so we remain liable for the full remaining term if the buyer defaults, unless the landlord releases us in writing.\n- **Subletting:** Allowed for up to 30% of the floor area. Subleases must end before ours and can't permit structural changes.\n- **Change of control:** A new controlling shareholder counts as an assignment.\n- **Action:** Before any sale, have a lawyer negotiate a release.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 719,
+    "output": 795
+  },
+  "cost": 0.018776,
+  "at": "2026-10-14T01:51:54.450Z"
+}

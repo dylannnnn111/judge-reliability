@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-11",
+  "side": "B",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The response is largely accurate. The dates it adds (Monday 17 November for the welcome and laptop return) are reasonable inferences from \"Monday\" after the 14th, though the source never states them. Responsibilities, crate limits, the Wednesday 12 November deadline, the Monday 10 November box pickup, and the parking rule are all correctly represented. It omits the consequence that unboxed files may delay access to client files, a minor loss.\n\nThe main failure is length. The user asked for a summary under 120 words, and this response runs to roughly 280 words. It also includes filler such as the opening and closing thank-yous and \"make this move together,\" and it reads more like a reformatted rewrite than a condensed briefing. For a busy manager, the extra words add nothing the reader needs, so the concision failure is serious.\n\nScore: 4",
+  "usage": {
+    "input": 1408,
+    "output": 851
+  },
+  "cost": 0.0005662999999999999
+}

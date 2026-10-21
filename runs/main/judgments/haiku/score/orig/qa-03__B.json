@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-03",
+  "side": "B",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response gives the correct answer to the question as most likely intended: the rate rises by 25% in relative terms, calculated as (5 − 4) ÷ 4 × 100. It also correctly notes the 1 percentage point difference, which avoids confusion between the two measures. The $400,000 example checks out: 4% gives $16,000 and 5% gives $20,000, a $4,000 increase, or 25%. The response is well under 120 words, and the worked formula and example make the reasoning easy to follow. The only minor quibble is that the example assumes a simple annual interest calculation, but it is stated clearly enough.\n\nScore: 9",
+  "usage": {
+    "input": 438,
+    "output": 412
+  },
+  "cost": 0.0002498
+}

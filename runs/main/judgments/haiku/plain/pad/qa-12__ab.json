@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-12",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. Both responses give the correct answer, 671/1296 ≈ 51.8%, and both are under 120 words. B lays out the complement calculation step by step, which makes the reasoning easier to follow. Its note on the Chevalier de Méré is accurate and adds context. A's final paragraph mostly restates the method without adding anything.\n\nB",
+  "usage": {
+    "input": 483,
+    "output": 298
+  },
+  "cost": 0.0001973
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-20",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries are accurate on dates, times, location, the five-priority cap, the prep tasks, the dietary deadline, the out-of-office arrangement and the optional pub visit. Neither misstates anything.\n\nThe deciding factor is the explicit limit of under 120 words. Response A is about 133 words, which is over the limit. Response B is about 153 words, which is further over. Response B also spends words on framing (\"Hannah Pryce has invited the Customer Insights Team…\"), which a busy manager doesn't need. Response A's labelled bullets are quicker to scan, and it keeps the same essential content, including \"no need to send them in advance\".\n\nNeither complies, but A is closer to the limit, more concise and easier for a busy reader to use.\n\nVerdict: A",
+  "usage": {
+    "input": 1473,
+    "output": 2062
+  },
+  "cost": 0.023566
+}

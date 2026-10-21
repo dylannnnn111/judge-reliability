@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-08",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. Its one flaw is a fabricated fault date: it says the fridge failed on 29 September, but the ticket only says \"Sunday\". It does stay under 120 words (about 114) and covers the key points: exchange status, the pending food claim, the escalation trigger and the customer's frustration.\n\n**B** is worse. It opens with a wrong date (4 Oct) and then admits the error in a \"Correction\" note at the end, which is confusing for a manager who won't read the original. It also likely exceeds the 120-word limit.\n\n**A**",
+  "usage": {
+    "input": 1486,
+    "output": 950
+  },
+  "cost": 0.012472
+}

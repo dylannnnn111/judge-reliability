@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-14",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. Both responses find the main bug, that OFFSET pagination combined with deleting rows skips batches. Both also cover the archive/commit crash window and idempotency, archive durability, string date comparison, and indexing.\n\nThe deciding factor is the word limit. The request says to stay under 200 words. A comes in at roughly 199 words, while B runs to about 230 with its extra minor-issues list, including the logging bullet. B does add a reasonable point about rollback on error, but that is minor and comes at the cost of breaking the explicit length constraint.\n\nA's ordering is also clean, with the critical bug first and then crash-safety, then the lesser issues.\n\n**A**",
+  "usage": {
+    "input": 1358,
+    "output": 1548
+  },
+  "cost": 0.018196
+}

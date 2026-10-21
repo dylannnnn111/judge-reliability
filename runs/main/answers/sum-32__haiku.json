@@ -1,0 +1,13 @@
+{
+  "item": "sum-32",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "**Ref C-55309 (Ortiz, variable home loan):** The customers say loan officer Jordan promised a 5.79% rate for the loan's life if they kept a package account. Their rate is now 6.04%, after a 0.25% standard variable rate rise in August.\n\nCustomer Care found no overcharge. Jordan's 12 May email guaranteed only the 0.90% discount for the loan's life, and that discount still applies. Care acknowledged the wording was confusing, passed feedback to lending, and paid a $250 goodwill credit.\n\nThe customers accepted the credit but still feel misled and want a call about fixing their rate. The complaint was closed as resolved and referred to lending.\n\n**Flag:** The customers haven't accepted the outcome, so the closure may be premature.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 767,
+    "output": 1304
+  },
+  "cost": 0.0007287000000000001,
+  "at": "2026-10-14T01:52:26.199Z"
+}

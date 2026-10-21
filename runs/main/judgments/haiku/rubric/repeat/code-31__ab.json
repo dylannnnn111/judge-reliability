@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "code-31",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the main bug: `created_at` has second precision, so `created_at > :last_seen` silently drops tied rows that straddle a page boundary. Both fix it with a `(created_at, id)` keyset cursor and flag the missing tiebreaker and index.\n\nResponse A adds a point that matters for this specific job. If more than 1000 rows share one second, the cursor never advances and the export loops forever. That bears directly on the \"until fewer than 1000 rows\" termination the user described. Response B misses this case. Response A's fix for late-committed or backfilled rows (snapshotting an upper bound) is weaker than Response B's safety-lag suggestion, since an upper bound doesn't stop a transaction with an older timestamp from committing after the export passes it. Response B also adds a useful point about persisting the cursor and making downstream writes idempotent, which Response A omits. Response A's final \"minor\" item is filler.\n\nOverall the two are close. Response A's catch of the non-advancing cursor is the more directly relevant bug for this loop, which gives it a slight edge.\n\nVerdict: A",
+  "usage": {
+    "input": 1632,
+    "output": 1097
+  },
+  "cost": 0.0007117
+}

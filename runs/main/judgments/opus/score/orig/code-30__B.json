@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "code-30",
+  "side": "B",
+  "score": 7,
+  "model": "claude-opus-5-5",
+  "text": "The response catches the main bug, ranks it correctly and gives sound fixes, but pads the list with weaker items and runs past the length limit.\n\n**What it gets right**\n- **Item 1 is the critical bug, correctly ranked first.** `COUNT(*)` counts the NULL row a LEFT JOIN produces for unmatched agents, so agents with no open tickets show 1. `COUNT(t.id)` is the right fix.\n- **Item 2 is a real, important problem.** Coalescing to 0 makes agents with no tickets look like perfect responders. Returning NULL and showing \"n/a\" is a sensible fix.\n- **Item 3 is a genuine, useful point.** In a report on open tickets, unanswered tickets with NULL `first_response_mins` are exactly the ones that matter. Dropping them flatters the average, and suggesting an unanswered count is a good remedy.\n\n**Where it falls short**\n- **Item 4 is speculative.** Other unresolved statuses and the type of the `active` column are \"confirm the schema\" caveats, not demonstrated problems. They are hedged, which keeps them from being outright false positives.\n- **Item 5 is filler.** It says the ordering is fine, then gives presentation advice. It admits it is not a bug but still spends words on it.\n- **It exceeds the length limit.** At roughly 215–220 words, it breaks the explicit under-200 requirement. Dropping items 4 and 5 would have fit the limit and made the review sharper.\n\n**Overall**\nThere are no false claims, and the ranking and fixes are good.\n\nScore: 7",
+  "usage": {
+    "input": 904,
+    "output": 864
+  },
+  "cost": 0.020896
+}

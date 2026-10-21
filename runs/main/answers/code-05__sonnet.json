@@ -1,0 +1,13 @@
+{
+  "item": "code-05",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Most important first:**\n\n1. **DST makes hours wrong.** Subtracting two aware datetimes that share the same `tzinfo` does naive wall-clock arithmetic and ignores the UTC offset change. A shift from 22:00 to 06:00 across a DST change is off by an hour: it is overpaid when clocks go forward and underpaid when they go back. Convert both to UTC (`.astimezone(timezone.utc)`) before subtracting.\n\n2. **Ambiguous and nonexistent local times are silently accepted.** `.replace(tzinfo=...)` defaults to `fold=0`. During the autumn clock-back, 02:00-02:59 occurs twice and the code always picks the first. During the spring clock-forward, 02:00-02:59 doesn't exist, and the code accepts it anyway. These should be detected and rejected, or the caller should specify which occurrence is meant.\n\n3. **The weekend loading is based on the start day only.** A Friday 20:00 to Saturday 04:00 shift gets no loading. A Sunday 20:00 to Monday 04:00 shift gets loading for the whole shift. The shift needs to be split at midnight and each part rated by its own day.\n\n4. **Float money math with `round()`.** `base_rate_cents * 1.5` and `hours * rate` use floats, and `round()` rounds half to even. Use `Decimal` or integer arithmetic with an explicit rounding rule, and keep minutes as integers rather than fractional hours.\n\n5. **No public-holiday handling.** Public holidays usually carry a higher loading, and this code ignores them.\n\n6. **No input validation.** Negative or non-integer rates are accepted, and `parse_local` is called repeatedly for the same values.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 413,
+    "output": 944
+  },
+  "cost": 0.010266,
+  "at": "2026-10-14T01:53:02.374Z"
+}

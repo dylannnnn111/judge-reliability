@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-26",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate on the key facts: the dates, the one-hour rescue, the worn controller board, the 2:10pm return to service, the $2,300 spare part and its approval, and the board referral. Both also run well over the 120-word limit (roughly 150-160 words each), so neither fully meets the brief.\n\nResponse B is more useful for a busy manager. Its bolded sections separate impact, actions and feedback, and it includes the staff evacuation-chair refresher training, which Response A omits. Its one small imprecision is \"daily printed updates\", since only the first notice was printed and the afternoon updates may not have been. Response A is accurate throughout and reads as plain prose, but it leaves out a follow-up action and is no more concise. The gap is small, but B covers slightly more of what the reader needs in a more scannable form.\n\nVerdict: B",
+  "usage": {
+    "input": 1541,
+    "output": 1791
+  },
+  "cost": 0.0010496
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-38",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main problems. Both also run over the 200-word limit, by about the same amount, so length doesn't separate them.\n\n**Shared strengths:**\n- Both put the `set -e` abort first, which is the most damaging issue. One bad site stops all later backups.\n- Both flag the non-atomic archive write, the unquoted variables, the lack of `flock`, the same-server backup location and the `-mtime +14` off-by-one.\n\n**Response A:**\n- It gives a separate, correct point on tar's exit code 1 for \"file changed as we read it\", with a concrete fix (tolerate 1, fail on 2 or more).\n- It adds a monitoring point, which is useful.\n- It notes that an abort also skips pruning.\n- It spends space on minor items such as `-type f`.\n- It misses the empty-glob case and the misleading final `ls | wc -l` count.\n- Splitting the abort and exit-1 points makes it a bit redundant.\n\n**Response B:**\n- It folds the exit-1 case into the first item, which is tighter.\n- It adds the empty-glob problem, where the literal `/srv/sites/*/` is used, and gives the fix `shopt -s nullglob`.\n- It explains why `umask 077` matters, since uploads may hold private files.\n- It catches that the final count includes non-archive files.\n- It has no monitoring point and gives a less specific fix for exit 1.\n\nEvery point in B is a concrete issue with a fix, and it catches two real bugs that A misses (the empty glob and the misleading count). A's monitoring point and explicit exit-code handling are good, but they are offset by some padding and redundancy. B is slightly better.\n\nVerdict: B",
+  "usage": {
+    "input": 1656,
+    "output": 1940
+  },
+  "cost": 0.022712
+}

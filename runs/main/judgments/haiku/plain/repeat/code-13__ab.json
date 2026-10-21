@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "code-13",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "A",
+  "usage": {
+    "input": 1343,
+    "output": 1524
+  },
+  "cost": 0.0008962999999999999
+}

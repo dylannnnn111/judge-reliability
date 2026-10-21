@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-22",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses correctly debunk the myth and stay under the word limit. B is slightly better because it adds accurate, specific detail. It notes that hurricanes rotate clockwise in the Southern Hemisphere. It explains that a toilet model flushes the same way everywhere because of its angled rim jets. It also cites the real experiments: Shapiro at MIT in 1962 and the 1965 replication in Sydney. These details make B more informative and credible without exceeding the limit.",
+  "usage": {
+    "input": 596,
+    "output": 452
+  },
+  "cost": 0.011424
+}

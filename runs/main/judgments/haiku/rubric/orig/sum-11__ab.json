@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-11",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both summaries are accurate. Response B's dates are correct: 14 Nov is the Friday, so Monday is the 17th, and it states that explicitly. Response A leaves the Monday unspecified, which is less precise but not wrong. Both capture the key points: the coordinators, the crates, the laptops, the boxing deadline, the access-card welcome, and the parking eligibility rule. Response A folds parking into Rachel's entry, which is accurate but slightly less clear. Response B gives parking its own bullet, which reads better.\n\nOn length, the user asked for under 120 words. By my count, Response A is about 130 words and Response B about 140, so both exceed the limit, and B exceeds it more. Response A is closer to the constraint while keeping every needed point. Response B's extra words mostly add explicit dates, which are helpful but not essential for a manager.\n\nOn balance, Response A is slightly better because it is more concise and closer to the word limit without losing necessary content.\n\nVerdict: A",
+  "usage": {
+    "input": 1628,
+    "output": 2182
+  },
+  "cost": 0.0012538
+}

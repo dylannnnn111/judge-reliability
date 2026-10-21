@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-27",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct core answer: ice is about 9% less dense than liquid water because hydrogen bonds hold molecules in an open hexagonal lattice, and floating ice insulates the water below. Response A says the lattice begins forming below about 4°C, which is imprecise, since 4°C is where density peaks and the open structure forms as water approaches freezing. A's stratification point is a useful addition, but its word count is close to or slightly over the 120-word limit. Response B is accurate, stays clearly under the limit, and covers the same key points, including that deeper water stays near 4°C. The difference is small, but B is slightly more accurate and better meets the length constraint.\n\nVerdict: B",
+  "usage": {
+    "input": 749,
+    "output": 1279
+  },
+  "cost": 0.0007144
+}

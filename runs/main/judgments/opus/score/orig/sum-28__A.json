@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-28",
+  "side": "A",
+  "score": 6,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** The response gets the facts right. The dates (1 December 2026, 24 December to 2 January, 31 October), the numbers (84 staff, $3.9M, eight weeks/40 days, a quarter of the balance, eight weeks' notice, two weeks' cash-out, four weeks remaining, four working days) and the conditions (written agreement, warehouse exemption limited to the shutdown) all match the source. Saying staff \"can be directed\" leaves out who directs them, but it doesn't mislead, and nothing is distorted.\n\n**Coverage:** A few things a manager would need are missing:\n- **Scope:** The policy applies only to permanent full-time and part-time staff under the 2025 Enterprise Agreement. A manager with casual or contract staff would want to know they're excluded.\n- **Leave shortfall options:** Staff without enough leave for the shutdown can take unpaid leave or make up the time with manager agreement. This lands directly on managers, so it matters.\n- **Cash-out is new:** It was previously not allowed. This is minor but useful context.\n\n**Concision and constraint:** The format is tight and easy to scan. However, my count comes to about 130 words, which breaks the explicit \"under 120 words\" instruction. The overrun is small but clear. It could have been fixed by trimming the opening rationale line, which would also have freed room for the missing scope point.\n\nOverall, the summary is accurate and well structured. It loses marks for exceeding the word limit and for dropping the scope and leave-shortfall details.\n\nScore: 6",
+  "usage": {
+    "input": 1083,
+    "output": 1755
+  },
+  "cost": 0.039432
+}

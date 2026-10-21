@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-21",
+  "side": "B",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The response is **correct**. Perihelion falls in early January, around January 2–5. The stated distance of about 147 million km (≈91.4 million miles) is accurate.\n\nThe added context is also accurate and useful:\n- Perihelion occurs during the Northern Hemisphere's winter.\n- This shows that distance does not cause the seasons.\n- The axial tilt of about 23.4° is correct.\n\nThis addresses a common misconception without padding. The answer is clear, concise and well under 120 words. A minor nitpick is that it could note it is Southern Hemisphere summer, but that is implied.\n\nScore: 9",
+  "usage": {
+    "input": 316,
+    "output": 283
+  },
+  "cost": 0.006924
+}

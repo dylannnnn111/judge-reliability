@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-40",
+  "side": "B",
+  "score": 5,
+  "model": "claude-opus-5-5",
+  "text": "The summary gets the core findings right: 11 regional NSW schools, 1,622 Year 10 students, gains of 1.8 vs 1.1 marks, a 0.7-mark gap that was not statistically significant, and no support for the overseas 10 per cent claim. It also keeps the recommendation and both limitations.\n\n**Accuracy problems**\n- **Overstated survey result:** \"Most students (71 per cent)\" drops the qualifier that only students in the water-bottle schools were surveyed. It reads as if 71 per cent of all students agreed.\n- **Wording that adds or shifts meaning:**\n  - \"No significant problems\" replaces the original \"no reports of problems.\" In a summary that has just used \"statistically significant,\" this could mislead.\n  - \"Should not expect better marks\" is slightly stronger than the original \"noticeable difference.\"\n  - \"Low-cost\" softens \"costs nothing.\"\n- **Minor omission:** The teachers' observation that students seemed calmer is missing.\n\n**Length and concision**\n- **Word limit missed:** The response runs to about 126 words, over the explicit 120-word limit. That limit was a clear instruction and could have been met easily.\n- **Redundancy:** The conclusion and the \"decision should rest on…\" sentence partly repeat each other.\n\nOverall, the summary is mostly faithful and useful, but it breaks the word limit and misframes the survey figure.\n\nScore: 5",
+  "usage": {
+    "input": 1069,
+    "output": 1058
+  },
+  "cost": 0.025436
+}

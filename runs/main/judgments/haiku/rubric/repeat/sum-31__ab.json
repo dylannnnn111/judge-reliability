@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-31",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Every figure, the trial design, the 60-picker cost basis, the 14-month payback, and the single-company caveat match the source, and neither misattributes any decision. Response A adds one useful nuance that B omits: the accuracy gain was smaller at the centre that already had low error rates. A also gives the manager a clear takeaway and flags the headset-comfort planning point, which matters for acting on the findings. Its bulleted layout is easier to scan. Response B is tighter, comfortably under 120 words, and covers the core facts in a single paragraph. A runs close to the limit once its header is counted, which is a minor drawback, but its extra words add correct and useful content, so A is slightly better.\n\nVerdict: A",
+  "usage": {
+    "input": 1470,
+    "output": 1698
+  },
+  "cost": 0.000996
+}

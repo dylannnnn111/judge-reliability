@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "sum-02",
+  "side": "B",
+  "score": 3,
+  "model": "claude-opus-5-5",
+  "text": "The response gets most facts right but runs to about 195 words against a hard 120-word limit, and it overstates one item.\n\n**Accuracy**\n- Dates, the program theme, the volunteer deadline and the next meeting date are all correct.\n- The outcome on opening hours is correct: no agreement, no change in the meantime, and Helen brings revised figures in November.\n- The roof is stated as certain: it \"will need full replacement within the next two years.\" The minutes only say the contractor *recommends* replacement within two years.\n- \"Serviced during this period\" replaces the precise date (2 October) with vague wording.\n- \"Include this work in the capital works bid\" is slightly stronger than \"raise this,\" though only marginally.\n\n**Coverage**\n- It omits Anjali's position: she supported Thursday evenings at Corrie Creek but said this should not depend on cutting Mount Lavell. For a manager, that matters because it shows the two parts of the proposal could be separated.\n- It drops the specific visitor numbers (11 vs 64), which were the basis for Helen's proposal.\n- It does capture the main action items.\n\n**Concision**\n- It runs to roughly 195 words, well over the 120-word limit.\n- Much of the excess is filler that adds nothing for a busy reader:\n  - \"Thank you for taking the time to review…\"\n  - \"The main items discussed are summarised below.\"\n  - \"so please plan accordingly\"\n  - \"As a result\"\n\nBreaking an explicit length limit by over 60%, padding with courtesy text, and overstating the roof recommendation together outweigh the largely correct core content.\n\nScore: 3",
+  "usage": {
+    "input": 1351,
+    "output": 1319
+  },
+  "cost": 0.031784
+}

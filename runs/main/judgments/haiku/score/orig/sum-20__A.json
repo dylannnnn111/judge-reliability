@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-20",
+  "side": "A",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The response is factually accurate. The date, times, venue, address, travel details, the morning and afternoon agendas, the five-priority limit, the pre-work, the catering deadline, the optional pub visit, and the out-of-office arrangement all match the original. It omits only the note that pre-work need not be sent beforehand, which is minor.\n\nThe main problem is the explicit length limit. The response runs to roughly 155 words, well over the 120-word cap. Some of that is non-essential detail for a busy manager, such as the full street address, the bus route, and the \"about ten minutes\" travel note. The summary also reads more like a condensed rewrite than a tight executive brief. Because the user set a hard word limit, this is a clear failure of instruction-following, even though the content is sound.\n\nScore: 4",
+  "usage": {
+    "input": 1086,
+    "output": 1233
+  },
+  "cost": 0.0007251
+}

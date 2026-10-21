@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-10",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. It is accurate, keeps the key points a manager needs, and stays within the limit.\n\n**Accuracy:** Both responses get the numbers and dates right: the 1 December go-live, 12 testers, 48 to 21 seconds, three issues fixed, and $186k of $310k. Response A adds \"the steering group\" as the body that needs to make decisions, which the source never mentions. Response A also says the helpdesk risk was reduced but omits why. Response B is accurate throughout, and its \"$186k\" shorthand is faithful.\n\n**Length constraint:** I counted Response B at about 118 words, just under the 120-word limit. Response A runs to roughly 170 words, which breaks the explicit instruction.\n\n**Content kept:** Both cover status, progress, budget, risk, next steps and no decisions needed. Response B also keeps the vendor's API confirmation and the PDF invoice download. It adds the new hire and the next update date in very few words. Response A's filler (\"I am pleased to report\", \"Turning to budget\", \"Finally, I would like to note\") adds length without information.\n\n**Concision and format:** Response B's headline-plus-bullets layout suits a busy manager who will skim it. Response A is a dense block of prose.\n\nVerdict: B",
+  "usage": {
+    "input": 1404,
+    "output": 1772
+  },
+  "cost": 0.020528
+}

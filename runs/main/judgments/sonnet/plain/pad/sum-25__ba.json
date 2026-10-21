@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-25",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. Response A runs to roughly 170 words, well over the 120-word limit. It is also padded with filler such as \"To give some background,\" \"We would like to note,\" and \"Please be aware.\" It does cover the media leak and the communications-guide update, which B omits.\n\nResponse B stays under 120 words and is tightly written. It covers the key points: the cause, what data was exposed, the number of members affected, the regulator notification, the fixes and the date the remaining statements go out. Its flaw is the claim that the job was \"stopped after 35 minutes.\" The source gives only a 9:35am stop time and a first call at 8:20am, so the gap would be about 75 minutes, not 35. That is a real inaccuracy, but a minor one for this summary.\n\nResponse A breaks an explicit constraint and wastes a busy reader's time. That outweighs B's small factual slip and its omission of the media point.\n\n**B**",
+  "usage": {
+    "input": 1337,
+    "output": 1176
+  },
+  "cost": 0.014434
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-14",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. The deciding factor is the 120-word limit.\n\nResponse A comes to about 145 words, which is clearly over the limit. Response B comes to about 122 words with the heading and about 111 without it, so it is at worst marginally over and plausibly within the limit.\n\nBoth responses cover the key points accurately: the three-day minimum, the exceptions, the excluded teams, equipment, hot desking and the rationale. Response A adds the \"Questions\" pointer and the lockers, but those extras are what push it over the limit. Response B is tighter and follows the constraint much more closely.\n\n**B**",
+  "usage": {
+    "input": 1301,
+    "output": 2048
+  },
+  "cost": 0.023082
+}

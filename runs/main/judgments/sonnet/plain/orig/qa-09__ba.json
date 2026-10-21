@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-09",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer, 7.5°, and both use the same method. Both are under 120 words.\n\nResponse A explains each step a little more and adds a closing check that 7.5° is less than 180°, which confirms it is the smaller angle. That check is relevant because the question asks for the smaller angle.\n\nResponse B is more concise but leaves out that check. It is still correct and complete enough.\n\nResponse A is slightly better because of the extra explanation and the explicit check on \"smaller\".\n\n**A**",
+  "usage": {
+    "input": 431,
+    "output": 158
+  },
+  "cost": 0.002442
+}

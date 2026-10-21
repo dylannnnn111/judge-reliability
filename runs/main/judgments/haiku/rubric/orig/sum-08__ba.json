@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-08",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is the better summary. It stays under the 120-word limit and covers what a manager needs: the replacement booked for Wednesday, the outstanding food-loss claim, the $500 no-sign-off threshold, and the 9 October escalation trigger. Its one weakness is stating \"29 September\" as the failure date, which is an inference from \"on Sunday\" that the ticket doesn't confirm.\n\nResponse B is longer and its main text contains a clear error: it says the fridge failed on 4 October, which is after the 2 October complaint. The footnote correction admits the date is unclear, but a busy manager would have to reconcile the contradiction. B also runs past 120 words once the correction is included. Its risk flag and clearer status headings are useful, but they don't outweigh the factual error and length breach.\n\nVerdict: A",
+  "usage": {
+    "input": 1640,
+    "output": 860
+  },
+  "cost": 0.000594
+}

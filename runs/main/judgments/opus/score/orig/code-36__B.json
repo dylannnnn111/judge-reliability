@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "code-36",
+  "side": "B",
+  "score": 7,
+  "model": "claude-opus-5-5",
+  "text": "**Score: 7/10.** The top of the list is excellent, but the response breaks the word limit and pads the end with weaker items.\n\n**What's right**\n- **Item 1 is correct and properly ranked first.** Calling `delete` under `RLock` is a real data race. Go's runtime can abort with a fatal \"concurrent map writes\" or \"concurrent map read and map write\" error, and `recover` cannot catch it. The fix given is correct.\n- **Items 2 and 3 are real and well explained.** The stampede and the stale overwrite both have concrete fixes. The stale overwrite is especially relevant: a slow fetch started before `Invalidate` can write the rejected token back into the cache.\n- **Item 4 is reasonable.** It applies when the configured TTL is close to the real token lifetime.\n\n**Problems**\n- **Item 5 is overstated.** The map is keyed by tenant, and each fetch overwrites that tenant's entry. Memory is therefore bounded by the number of distinct tenants and does not \"grow forever.\" Expired entries lingering is a minor issue at most.\n- **Item 6 is marginal hardening.** It is not a bug.\n- **The response breaks the explicit length limit.** It runs to roughly 210–215 words against a \"under 200 words\" instruction. Dropping or compressing items 5 and 6, the weakest ones, would have met the limit and lost almost nothing.\n\nScore: 7",
+  "usage": {
+    "input": 1298,
+    "output": 1403
+  },
+  "cost": 0.033252
+}

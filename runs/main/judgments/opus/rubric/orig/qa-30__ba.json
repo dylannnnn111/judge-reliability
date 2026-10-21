@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-30",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** Both responses define the p-value correctly as the probability of data at least as extreme as observed, assuming the null hypothesis is true. Both also list the standard misconceptions accurately:\n- the probability the null is true\n- the probability the result is \"due to chance\"\n- a measure of effect size\n- the probability of replication\n\nNeither contains a factual error.\n\n**Key reasoning:** B adds some useful nuance:\n- The p-value also depends on the model's other assumptions.\n- p > 0.05 doesn't mean \"no effect.\"\n- You can't get the probability of a hypothesis without priors.\n\nThese are valuable points. A covers the core misconceptions well, and its final bullet (not evidence for the alternative with a given confidence) partly overlaps B's \"not proof\" point.\n\n**Instruction compliance:** The user explicitly asked for under 120 words. A is about 85 words, comfortably within the limit. Counting every word, including the bold headers and the symbols, B comes to roughly 121–123 words. That puts it at or slightly over the limit. It only falls under if the headers are excluded. Since the length limit was an explicit requirement, B's likely violation counts against it. A still delivers all the essential content.\n\n**Clarity:** Both are clear and well organized. B's formatting is slightly more polished, but this doesn't outweigh the constraint issue.\n\nOverall, A is fully correct, covers the essential points, and clearly satisfies the explicit word limit. B's extra nuance pushes it over that limit.\n\nVerdict: A",
+  "usage": {
+    "input": 644,
+    "output": 1740
+  },
+  "cost": 0.037376
+}

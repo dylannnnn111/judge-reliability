@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-32",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Response A correctly explains the 0.90% discount, the August 0.25% rise, Jordan's 12 May email, the $250 goodwill payment, and the referral to lending. However, it runs to roughly 160 words, well over the 120-word limit, and it omits the package-account condition on the original promise.\n\nResponse B is also accurate. It keeps the package-account condition, gives the rate movement and the scope of Jordan's email, and notes the customers' ongoing dissatisfaction and the referral for a fixed-rate call. Its flag that closure may be premature is useful for a manager. At roughly 120 words it is at or just under the limit, and it is tighter than A without dropping any material fact.\n\nResponse B is better on concision and keeps the one condition that matters for the promise.\n\nVerdict: B",
+  "usage": {
+    "input": 1598,
+    "output": 1045
+  },
+  "cost": 0.0006822999999999999
+}

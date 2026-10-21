@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-28",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same core bugs: the connection leak, the race condition on the balance check, the unvalidated destination wallet, the deadlock risk, the ROLLBACK masking the original error, and the same-wallet transfer. Both fix suggestions are sound.\n\n**Ranking:** The connection leak is the most important bug because it fails deterministically. Every call leaks a client, so the pool is exhausted after a handful of transfers and the API hangs. Response B puts it first. Response A ranks it third, behind the race condition, which only appears under concurrency. B's ordering is better.\n\n**Accuracy:**\n- B says deadlock risk arises \"once you add row locks\". The two UPDATEs already lock rows in opposite order for A→B and B→A, so the risk exists already. A states it correctly.\n- B's point about `bigint` returning as a string is real, but \"unreliable\" is overstated. JS coerces the comparison, and only precision is a concern.\n- B's item 7 (audit trail and idempotency) is a feature suggestion rather than a bug in this code, which adds noise.\n- A's `CHECK (balance_cents >= 0)` is a reasonable defense-in-depth suggestion.\n\n**Length:** Both exceed the 200-word limit. B is longer and its extra items (7 and 8) add less value.\n\nOverall, B's better ranking of the most critical bug outweighs its slightly noisier tail and minor imprecision on deadlocks.\n\nVerdict: B",
+  "usage": {
+    "input": 1821,
+    "output": 1197
+  },
+  "cost": 0.015612
+}

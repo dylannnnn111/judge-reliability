@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-25",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response answers the question correctly: Viking warriors did not generally wear horned helmets. It supports this with the Gjermundbu helmet, a 10th-century Norwegian find with no horns, and correctly attributes the popular image to 19th-century costume design, specifically Carl Emil Doepler's work for Wagner's *Ring* (1876). The Bronze Age horned helmets (such as the Veksø examples) are a accurate caveat. The main weakness is \"only one fairly complete Viking-age helmet,\" which slightly overstates the evidence, since other fragmentary finds exist. \"Romantic artists\" is also vague. The answer is within the word limit and clearly organized.\n\nScore: 9",
+  "usage": {
+    "input": 478,
+    "output": 869
+  },
+  "cost": 0.0004823
+}

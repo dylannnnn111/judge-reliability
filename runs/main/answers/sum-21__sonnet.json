@@ -1,0 +1,13 @@
+{
+  "item": "sum-21",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Summary:** Dominic needs Ruth's sign-off on replacing six home-care hatchbacks whose leases end in December.\n\n- **Recommendation:** Elmwood Auto hybrids, $229,140 total. That's $13,140 over the $216,000 budget and above his delegation.\n- **Why:** Hybrids save about $1,350 per car per year in fuel, or about $5,400 over four years. That exceeds the hybrid's price premium. Servicing costs are similar.\n- **Alternative:** Northside petrol, $209,880 total, within budget.\n- **Deadline:** Confirm by **24 October** for delivery in four weeks. Otherwise the next allocation is February, leaving a roughly two-month gap with hire cars at about $1,800 per car per month.\n- Coastal Fleet Sales is dearer and has no hybrid until March.\n\n**Decision needed:** Approve the over-budget hybrid or stay within budget with petrol.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 706,
+    "output": 319
+  },
+  "cost": 0.004602,
+  "at": "2026-10-14T01:51:59.162Z"
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-10",
+  "side": "B",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate. Status, go-live date (1 December 2026 is a Tuesday), the 12 of 12 login result, the 48 to 21 second improvement, the three accessibility issues now fixed, the spend figures, the risk downgrade, and \"no decisions needed\" all match the source. It is about 100 words, under the 120 limit.\n\nThe omissions are minor. It doesn't say the accessibility audit covered only the first six screens. It leaves out why the helpdesk risk dropped, which was the vendor's API confirmation. It also leaves out connecting the support ticket screen to the helpdesk, the new team member, and the next update date. None of these would mislead a busy manager, and the summary keeps what they need.\n\nScore: 9",
+  "usage": {
+    "input": 931,
+    "output": 566
+  },
+  "cost": 0.007522
+}

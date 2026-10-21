@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-34",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main bug: the loop variable `u` is captured by the goroutines, and Go 1.21 shares it across iterations. Both give the right fixes (`u := u` or passing it as an argument). Both also raise the discarded errors, the nondeterministic order (with the index-write fix), the missing timeout, and unbounded concurrency. All of these are real.\n\n**Accuracy:**\n- Response A explains the capture bug well. It notes that `ping(u)` and `Result{URL: u}` can see different values, so the page could show a URL with another endpoint's status.\n- Response B's go.mod caveat is correct but adds little, since the CI toolchain is 1.21 anyway.\n- B's extra points are valid but marginal. The panic/`recover` point is nitpicky, and the `main` stub observation is minor, though the advice to test with `go test -race` is useful.\n\n**Ranking:** A puts the hang-forever timeout second, which fits a status page well, because a single stuck endpoint blocks every update. B ranks it fourth, behind error detail and ordering, and bundles it with concurrency limits and cancellation.\n\n**Length constraint:** The user asked for under 200 words. A is roughly 190 words and stays within the limit. B is roughly 235 words and goes over. B's extra material is the minor point 5 and the go.mod aside, which are not important enough to justify breaking the limit.\n\nA follows the instruction, ranks more sensibly, and has no incorrect claims. B is slightly broader but is over length and ranks the hang risk too low.\n\nVerdict: A",
+  "usage": {
+    "input": 1602,
+    "output": 1784
+  },
+  "cost": 0.021044
+}

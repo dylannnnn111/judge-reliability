@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-29",
+  "side": "B",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The content is accurate. Both figures check out: $1,000 at 5% simple for 30 years gives $2,500, and compounding gives about $4,322. The Rule of 72 estimate (72 ÷ 5 ≈ 14) is reasonable. The response explains the key mechanism, interest earning interest, and why the gap widens over time.\n\nHowever, the user explicitly asked for an answer under 120 words, and this response runs roughly 180 words. That is a clear violation of a stated constraint. The extra material, including the Rule of 72 and some repetition in the closing paragraphs, is useful but does not justify ignoring the limit. Clarity is good.\n\nGiven the explicit length violation, the response falls short despite its correct and well-explained content.\n\nScore: 4",
+  "usage": {
+    "input": 563,
+    "output": 956
+  },
+  "cost": 0.0005342999999999999
+}

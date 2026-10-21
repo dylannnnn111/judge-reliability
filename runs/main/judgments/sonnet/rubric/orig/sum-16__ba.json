@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-16",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better: both summaries are accurate, but A comes much closer to the 120-word limit.\n\n**Accuracy:** Both are accurate on the dates, the $38k/$12k/$26k budget figures, the 24 October vendor fix, the 17 November proposal and the verbal status of the credit. Neither mentions the \"before the meeting\" condition on the $26k option, and both treat the credit as written confirmation. Response A's link between an early-December cut-over and the no-December-training request is a reasonable inference from risk 3, not a distortion.\n\n**Content kept:** Response B keeps more detail, including the 98.6% clean migration, the 3,100 duplicate records and the training materials. These are secondary for a busy manager. Response A drops the duplicate-records issue but keeps the main points: status, new date, causes, budget, key risk and decisions needed. A's tie of the December risk to the training constraint is useful for a decision-maker.\n\n**Concision:** Response A is about 120 words, right at the limit, depending on how hyphenated words are counted. Response B is roughly 150 words, clearly over the limit. The extra B content is correct but is not worth breaking the explicit constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 1540,
+    "output": 2162
+  },
+  "cost": 0.0247
+}

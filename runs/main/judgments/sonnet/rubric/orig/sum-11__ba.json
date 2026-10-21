@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-11",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are accurate on the facts I checked. They differ mainly in length, and both break the 120-word limit.\n\n**Accuracy:** Neither has a material error. Response A's \"Mon 17\" is consistent with 15 November being a Saturday. A's \"isn't eligible\" for non-respondents is slightly stronger than the source's \"not on the list\", and B's \"miss out\" is about the same. B's \"everyone must attend\" is a fair reading of the source.\n\n**Completeness:** A is slightly fuller. It names the archive room and client files and gives the Monday date. B leaves these out but keeps every action a staff member needs: the dates, the crate limit, the monitor warning, the card pickup and the parking rule.\n\n**Length:** The request said under 120 words. By my count A is about 143 words and B about 134. Both exceed the limit, but B is closer and tighter.\n\nSince accuracy is equal and A's extra content is only marginally useful, B's closer adherence to the length limit gives it a small edge.\n\nVerdict: B",
+  "usage": {
+    "input": 1628,
+    "output": 2138
+  },
+  "cost": 0.024636
+}

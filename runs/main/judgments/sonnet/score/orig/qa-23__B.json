@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-23",
+  "side": "B",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The response correctly states that 0.999... equals 1. It gives two standard arguments (the algebraic manipulation and the 1/3 argument), and the limit-based explanation is the rigorous justification. The word count is roughly 85, under 120. The explanations are clear and concise.\n\nMinor critique: the algebraic and 1/3 proofs are heuristic, since they presume the arithmetic of infinite decimals is valid, but the final note on limits addresses the underlying definition. \"There is no gap\" is a nice intuitive statement. Overall it is excellent.\n\nScore: 9",
+  "usage": {
+    "input": 388,
+    "output": 189
+  },
+  "cost": 0.002666
+}

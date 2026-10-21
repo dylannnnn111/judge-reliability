@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-31",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better because it stays within the word limit.\n\nBoth responses give the same correct explanation: Earth's axial tilt, with the hemispheres tilting toward or away from the Sun at opposite times of year.\n\nResponse A adds a useful point, that Earth is closest to the Sun in January, but it is about 121 words by my count. That is just over the \"under 120 words\" limit. Response B is about 108 words, so it complies.\n\n**B**",
+  "usage": {
+    "input": 615,
+    "output": 1691
+  },
+  "cost": 0.01814
+}

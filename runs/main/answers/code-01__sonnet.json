@@ -1,0 +1,13 @@
+{
+  "item": "code-01",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Problems, most important first:**\n\n1. **No idempotency.** If the job is rerun or retried, every customer is charged again. Nothing records what has already been billed, and `charge` gets no idempotency key. This is the worst problem for a billing job.\n\n2. **One failure aborts the whole run.** An exception from `charge` (network error, declined card) or a malformed row (`ValueError` from `float()`, `KeyError` on a missing column) stops the loop partway. Some customers are billed and others aren't. Combined with #1, a rerun double-charges the ones already billed. There is also no logging or per-customer error handling.\n\n3. **Float money with truncation.** `int(amount * 100)` truncates, so a rounded 19.99 can become 1998 cents, which undercharges. Use `Decimal` or integer cents throughout, and round once with an explicit rounding mode.\n\n4. **No input validation.** Negative units or prices, blank values, and NaN/inf strings (which `float()` accepts) pass straight through. A bad row can silently reduce or inflate a bill. Customers whose total is ≤ 0 are skipped with no log or credit handling.\n\n5. **No billing-period scoping.** The code bills whatever is in the file. Nothing prevents usage from being billed twice across nights, or being missed.\n\n6. **Hard-coded flat 10% tax** for all customers. This ignores jurisdiction and exemptions, and the tax isn't itemized.\n\n7. **Minor:** the whole file is held in memory, and `charge` receives no currency.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 336,
+    "output": 872
+  },
+  "cost": 0.009392,
+  "at": "2026-10-14T01:52:44.561Z"
+}

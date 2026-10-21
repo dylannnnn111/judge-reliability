@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-07",
+  "side": "A",
+  "score": 10,
+  "model": "claude-sonnet-5-5",
+  "text": "The conversion is correct. 100 km is about 62.137 miles, which at 30 mpg uses about 2.0712 US gallons. That is about 7.84 L, so 7.8 L/100 km. The shortcut 235.2 ÷ 30 = 7.84 agrees. The imperial comparison is also right: 282.5 ÷ 30 ≈ 9.4. At roughly 85 words, the response stays under the 120-word limit. The working is clear and well organised, and the closing note on imperial versus US gallons is a useful warning rather than padding. The \"Fuel used per 100 km\" line is slightly awkwardly phrased, but this is a very minor flaw.\n\nScore: 10",
+  "usage": {
+    "input": 473,
+    "output": 651
+  },
+  "cost": 0.007456
+}

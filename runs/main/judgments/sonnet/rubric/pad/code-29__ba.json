@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-29",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same three main issues in the same order: the NOT IN NULL problem, the date filter that contradicts the stated intent, and the LIMIT/ORDER bias. Both also add a minor note about date format. The fixes they give are essentially identical.\n\nLength constraint: the user asked for under 200 words. Response A is probably around 300 words, with a verbose preamble (\"The issues below are listed in order...\") and an extra minor bullet about duplicates and suppression lists. That bullet is speculative, since it flags things not evidenced in the code, and it breaks the word limit. Response B is around 230 words, which may also be slightly over 200 but is much closer, and it is tighter.\n\nAccuracy: both are correct. B says \"almost certainly contains a NULL,\" which is reasonable. B notes the SQLite specificity. A says date() returns a date-only string, which is true, and that the comparison may behave unexpectedly. Both are fine.\n\nFlagging fine things: A's second minor bullet (duplicate emails, bounced, already contacted) is generic speculation beyond the code. Item 3's \"track who was already sent to\" is scope creep too. B stays focused.\n\nB is more concise, adheres better to the word limit, and avoids speculative extras. B is better.\n\nVerdict: B",
+  "usage": {
+    "input": 1749,
+    "output": 419
+  },
+  "cost": 0.007688
+}

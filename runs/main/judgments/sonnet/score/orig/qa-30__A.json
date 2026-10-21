@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-30",
+  "side": "A",
+  "score": 7,
+  "model": "claude-sonnet-5-5",
+  "text": "The content is accurate. The definition correctly includes \"at least as extreme\" and the conditioning on the null and the model's assumptions. The list of misconceptions is standard and correct: not P(H0), not \"by chance,\" not replication probability, not effect size, not proof either way. The closing line is also right.\n\nThe problem is the length limit of under 120 words. My count is about 123 words, or about 121 if the \"<\" and \">\" symbols are excluded. Either way it is slightly over, so the response breaks an explicit constraint, though only by a small margin. Clarity and structure are good.\n\nScore: 7",
+  "usage": {
+    "input": 432,
+    "output": 1118
+  },
+  "cost": 0.012044
+}

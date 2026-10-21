@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "code-29",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response catches the most important bug: `NOT IN` returns no rows when the subquery contains a NULL, and `referrer_id` is NULL for non-referred signups. Its `NOT EXISTS` fix is correct, and the `IS NOT NULL` alternative is also valid. The second point, that the hardcoded 2026 date contradicts \"never referred,\" is a real logic problem, and the ranking of these two is sensible. The `LIMIT` bias point is a reasonable but more debatable concern. The \"Minor\" items are plausible but speculative, since the query doesn't show the timestamp format or any duplicate-send logic, and the response doesn't flag that. The response is also well over the 200-word limit, with a filler preamble and wordy explanations. The core findings and fixes are strong, but the length violation and speculative extras lower the score.\n\nScore: 6",
+  "usage": {
+    "input": 1181,
+    "output": 759
+  },
+  "cost": 0.0004976000000000001
+}

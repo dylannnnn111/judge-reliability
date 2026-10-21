@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-25",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is accurate throughout: the cause, the 347 misdirected statements, the 11,200 unsent statements, the 3 and 6 October notifications, the mistaken \"hacked\" all-staff message, and the fixes and dates all match the report. Its main weakness is length. At roughly 180 words it breaks the explicit under-120 limit, and some of that space goes to background the manager doesn't need.\n\nResponse B is concise and under the limit, and it covers the core facts well. However, it states the job \"was stopped after 35 minutes.\" The report gives the 9:35am stop time but not when the job started, so this figure is unsupported and inaccurate. B also drops the mistaken \"we've been hacked\" staff message and its leak to the press, which matters for a manager handling communications, and the comms-guide action.\n\nOn accuracy first, A is better, because B contains a fabricated detail. B wins on concision and the word limit, but accuracy comes first in the comparison, and A's omissions are smaller than B's error.\n\nVerdict: A",
+  "usage": {
+    "input": 1491,
+    "output": 1412
+  },
+  "cost": 0.0008551
+}

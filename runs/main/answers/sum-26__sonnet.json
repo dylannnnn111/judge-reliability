@@ -1,0 +1,13 @@
+{
+  "item": "sum-26",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Summary: Tower B lift outage, 21–23 Sept 2026**\n\nOn Monday 21 September, Tower B's only lift stopped between levels 2 and 3 with two residents inside. A technician freed them within about an hour, and neither was hurt. A worn door controller board was the cause. The replacement part came from Melbourne, and the lift returned to service on Wednesday 23 September at 2:10pm.\n\n**Impact:** Staff delivered meals to 11 residents and helped four residents to medical appointments using an evacuation chair. Two residents stayed with family. Residents received daily printed updates, and families of high-care residents were phoned.\n\n**Actions:** The Tower A lift (same model) was checked and is fine. A $2,300 spare board will now be held on site (approved 26 Sept). Staff completed evacuation chair refresher training.\n\n**Feedback:** Residents praised staff. The Residents' Committee wants a second Tower B lift considered; the manager has referred this to the board.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 711,
+    "output": 328
+  },
+  "cost": 0.004702,
+  "at": "2026-10-14T01:52:03.788Z"
+}

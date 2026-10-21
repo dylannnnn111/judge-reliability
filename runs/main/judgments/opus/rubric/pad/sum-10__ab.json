@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-10",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Response A is accurate throughout. The dates, the figures ($186k of $310k; 48 to 21 seconds; 12 customers), the risk change and its reason, and the next steps all match the source. Response B is mostly accurate but adds a detail that isn't in the source: \"no decisions are needed from the steering group.\" The original just says \"None this fortnight\" and never mentions a steering group. B also writes in the first person (\"I am pleased to report\"), as if it were the project lead, which is odd in a summary for a manager.\n\n**Key points:** Both responses cover go-live, progress, budget, risks and next steps.\n- **A** also includes \"no new risks\" and the reason the helpdesk risk fell (vendor confirmed API support), which tell the manager why the risk picture improved.\n- **B** omits both.\n\n**Concision:** A is about 118 words, within the 120-word limit. B is roughly 180 words, well over it, padded with filler such as \"Turning to budget,\" \"I am happy to confirm\" and \"Finally, I would like to note.\" A's headings and bullets also suit a busy reader better.\n\nA is better on all three criteria: it is accurate, more complete and within the word limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1404,
+    "output": 1280
+  },
+  "cost": 0.031216
+}

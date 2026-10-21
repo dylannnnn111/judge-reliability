@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-40",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is more accurate and better within the word limit. Its caveats are correctly hedged: hot weather \"may have affected\" results, as the original says. Its statement that no problems were reported after clear, label-free bottles were required matches the source. Its \"bottom line\" gives the manager the decision guidance directly. It also keeps the key numbers (1.8 vs 1.1 marks, the non-significant 0.7 gap, 71% survey result) and the non-random allocation limitation.\n\nResponse B is also accurate on the main figures, but it runs to roughly 130 words, over the 120-word cap. Its limitations line, \"hot exam weather,\" drops the hedge that the weather may have affected results, which slightly overstates the source. Its \"no significant problems\" is a small shift from the source's \"no reports of problems.\" Its prose is clear, but it adds no information that A lacks.\n\nVerdict: A",
+  "usage": {
+    "input": 1385,
+    "output": 1008
+  },
+  "cost": 0.0006425
+}

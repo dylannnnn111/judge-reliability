@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "code-11",
+  "side": "B",
+  "score": 6,
+  "model": "claude-opus-5-5",
+  "text": "The technical content is strong.\n\n- **Correct top issue:** the check-then-act race in `reserve` comes first and is the bug that matters most. Its fix, a single critical section, is correct.\n- **Multi-process point:** item #2 is accurate and highly relevant to web workers. `threading.Lock` does nothing across processes or hosts. The atomic `UPDATE ... WHERE qty >= ?` fix with a row-count check is the right production answer. One could argue it belongs at #1 or tied with it, but the order is sensible.\n- **Lesser issues:** negative `qty`, unchecked `release`, the global lock serializing all SKUs, and `available()` being advisory are all real. Each comes with a fix.\n- **No false flags:** nothing is reported that is actually fine.\n- **Redundancy:** item #6 largely repeats item #1.\n\nThe response clearly breaks the user's explicit constraint of under 200 words. It runs to roughly 350–400 words, close to double the limit. Much of the excess is filler: the \"Thank you for sharing the code\" preamble and wordy phrasing such as \"To prevent this, perform the check and the update inside a single critical section, as in the following example.\" The same findings and fixes would fit easily within 200 words. Ignoring a stated length limit is a real failure to follow instructions. Length is not a merit here, and this length adds no correct or useful content beyond what a compliant answer would carry.\n\nOverall, the substance is excellent and well ranked, but the response ignores the explicit length requirement and pads its wording.\n\nScore: 6",
+  "usage": {
+    "input": 1174,
+    "output": 786
+  },
+  "cost": 0.020416
+}

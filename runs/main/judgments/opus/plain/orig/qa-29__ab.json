@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-29",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses are accurate. Both explain \"interest on interest\" and use the same correct figures: $2,500 simple versus about $4,322 compounded over 30 years.\n\nThe deciding factor is the word limit. Response A is about 98 words, comfortably under 120. Response B comes to about 121–123 words, depending on whether symbols like \"÷\" and \"≈\" count. That breaks the explicit \"under 120 words\" constraint.\n\nResponse B's formatting and Rule of 72 tip are helpful extras. However, that extra content is what pushes it over the limit. Response A delivers a complete, correct explanation within the constraint.",
+  "usage": {
+    "input": 576,
+    "output": 1606
+  },
+  "cost": 0.034424
+}

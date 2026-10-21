@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-04",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both responses are correct. Each gets $600 after the increase, a final price of $480, and an overall change of −4% (a $20 decrease). Both stay under 120 words.\n\nBoth also give the key reasoning: the 20% discount applies to the larger $600 base, so it removes $120, while the increase added only $100. The extra content is where they differ:\n- **Response A** adds the multiplier check, 1.20 × 0.80 = 0.96. This confirms the 4% decrease but restates the same calculation.\n- **Response B** adds the general rule that raising then lowering by the same percentage *p* gives a net change of −*p*². This is correct, since (1+p)(1−p) = 1−p², and it explains why the answer is exactly 4%. It also lets the reader handle any similar problem.\n\nResponse B also states the final answer up front, which makes it slightly clearer. Its generalization is a modest but real gain in usefulness without extra length.\n\nVerdict: B",
+  "usage": {
+    "input": 658,
+    "output": 495
+  },
+  "cost": 0.012532
+}

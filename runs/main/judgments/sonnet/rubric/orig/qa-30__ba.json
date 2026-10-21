@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-30",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses define the p-value correctly and list similar misconceptions, so correctness is roughly even. B adds a useful nuance (the model's other assumptions, and that p > 0.05 doesn't mean \"no effect\"). The deciding factor is the explicit constraint of under 120 words.\n\nBy my count, A comes to about 79 words, well within the limit. B comes to about 123 words, or about 121 if the \"<\" and \">\" symbols are not counted, so it breaks the limit. B's extra content is valuable but does not excuse ignoring a clear instruction. A is concise, accurate, and compliant.\n\nVerdict: A",
+  "usage": {
+    "input": 644,
+    "output": 1698
+  },
+  "cost": 0.018268
+}

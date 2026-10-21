@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-14",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A runs to about 147 words by my count, well over the 120-word limit. It also says team leaders will set \"one\" common day, where the source says \"at least one\", a small inaccuracy. Otherwise it is accurate and includes extras such as lockers and the Q&A pointer.\n\nResponse B comes to about 124 words including the heading, or about 113 without it, so it is at or only just over the limit. It is accurate, and \"Each team will have a common day\" is acceptable. It keeps the key points: the three-day minimum, the exceptions, the excluded teams, equipment, hot desking, and the reason. It drops only low-value details such as lockers and the Q&A pointer.\n\nB respects the constraint far better while keeping what a manager needs, so it is the better response.\n\nVerdict: B",
+  "usage": {
+    "input": 1455,
+    "output": 1655
+  },
+  "cost": 0.01946
+}

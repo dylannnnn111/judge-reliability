@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-15",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** Both responses give the correct answer of 18 °F. Both reach it by finding the 10 °C rise and scaling by 9/5. Both then verify by converting each temperature separately (59 °F and 77 °F).\n\n**Key reasoning:** Both explain the central point, that a temperature difference does not use the +32 offset. B states this slightly more precisely by noting that the offset cancels out, which explains why it is dropped.\n\n**Clarity and length:** Both stay under 120 words. A adds filler (\"I'm happy to walk through this,\" \"To see how we arrive at that figure\") that contributes nothing correct or useful. B delivers the same content more directly and readably, with the calculation set on its own line.\n\nSince content is equivalent and B is cleaner without losing anything, B is better.\n\nVerdict: B",
+  "usage": {
+    "input": 648,
+    "output": 616
+  },
+  "cost": 0.014912
+}

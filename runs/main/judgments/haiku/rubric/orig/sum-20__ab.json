@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-20",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Neither invents details, and both correctly convey the date, times, venue, the morning/afternoon split, the five-priority cap, the prep task, the dietary deadline, the optional pub visit, and the out-of-office arrangement. Response B adds the note that the prep notes need not be sent in advance, which Response A omits, though that is minor.\n\nBoth exceed the 120-word limit. Response A is roughly 155 words, while Response B is roughly 135, so B is closer to the constraint. B's bulleted, labelled format also suits a busy manager who wants to scan quickly. A's prose is readable but longer, with some repetition in its framing sentences.\n\nVerdict: B",
+  "usage": {
+    "input": 1473,
+    "output": 1853
+  },
+  "cost": 0.0010738
+}

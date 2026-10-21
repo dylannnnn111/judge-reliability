@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-37",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify iron oxidation (rust) as the reason Uluru is red, and both note that the interior is grey. Both fit under 120 words, with A close to the limit.\n\nResponse B's explanation of the sunset colours is more accurate. It attributes them to atmospheric scattering removing blue wavelengths, which is the actual mechanism. Response A says the low-angle light is \"richer in red wavelengths,\" which is a looser description that skips the scattering reasoning. Response B also names hematite as the specific iron oxide, which adds a correct and useful detail. Response A's point that a freshly broken piece reveals the grey interior is a good piece of evidence, but B covers the same idea with the flaked-surface observation. B is also more concise without losing any key content.\n\nResponse B is slightly better on correctness of the secondary explanation and on clarity.\n\nVerdict: B",
+  "usage": {
+    "input": 726,
+    "output": 1139
+  },
+  "cost": 0.0006421
+}

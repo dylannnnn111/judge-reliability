@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-39",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is slightly better. Both cover the same core problems in a similar order and stay near the 200-word limit. B's fixes are more concrete: it gives the exact `cd ... || exit 1` line, a specific validation regex that also rejects dot-prefixed names, and a concrete example of what the dotfile bug leaves behind (`.cache/`, `.npm/`). B also notes that the line-based count miscounts filenames containing newlines, a real if minor point that A misses.\n\nB",
+  "usage": {
+    "input": 1470,
+    "output": 920
+  },
+  "cost": 0.000607
+}

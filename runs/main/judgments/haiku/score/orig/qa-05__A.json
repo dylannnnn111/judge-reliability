@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-05",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response gives the correct answer. Friday 28 February 2025 is right: 29 February 2024 is Thursday, and 365 days is 52 weeks plus one day, so the weekday advances by one. It also correctly notes that 2025 is not a leap year, so the date falls on 28 February. The one weak point is that it asserts the date rather than showing why 365 days lands on 28 February instead of 1 March. Still, the key reasoning (52 weeks plus 1 day, and no leap day in 2025) is present, and the response is concise and clear.\n\nScore: 9",
+  "usage": {
+    "input": 313,
+    "output": 827
+  },
+  "cost": 0.0004448
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-39",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are correct and within the 120-word limit (A is about 101 words, B is shorter). Both explain that binary floating-point can't represent 0.1 and 0.2 exactly, using the 1/3 analogy, and both give accurate approximate stored values.\n\nResponse A adds the actual double that results from the sum (0.3000000000000000444) and the double closest to 0.3 (0.299999999999999988898). That shows concretely why the two differ, and both values are correct. It also notes that printing gives 0.30000000000000004 and lists three workarounds: an epsilon comparison, decimal types and integer storage. Each of these is useful.\n\nResponse B is correct and concise. It is vaguer, though: \"the rounding errors combine\" is loose, and it never shows the other double for 0.3. Its workarounds are fewer, though the epsilon example is concrete.\n\nA explains the mechanism more completely and stays within the limit, so it is slightly better.\n\nVerdict: A",
+  "usage": {
+    "input": 784,
+    "output": 1359
+  },
+  "cost": 0.015158
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "qa-16",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer: the Antarctic Desert, about 14 million km². Both also name the Sahara as the largest hot desert and the Arctic as second largest.\n\nWord limit: Response A is about 75 words. Response B is about 95 words. Both are under 120.\n\nAccuracy: Response A says the Sahara is \"roughly the size of the United States.\" That holds up, since the Sahara is about 9.2M km² and the US is about 9.8M km². It also says the Antarctic interior receives very little precipitation, which is true.\n\nResponse B says Antarctica averages roughly 200 mm annually along the coast. That is plausible, since coastal areas get about 200 mm or more, and some sources say up to 200 mm. It says \"far less inland,\" which is true. B also calls the Arctic \"the second-largest cold desert,\" which is slightly off, because the Arctic is the second-largest desert overall, though it is still a cold desert, so the statement is not wrong. B's closing line, \"depends on whether you're counting all deserts or just hot ones,\" is a bit loose, but fine.\n\nResponse A uses a clear list format with a direct answer. Response B adds detail on precipitation. Neither is wrong, so the difference is mostly stylistic. A is more concise and clearer to scan. B gives slightly more reasoning, with the precipitation figure.\n\nA's \"classic sandy, hot desert\" is a small imprecision, since the Sahara is not entirely sand. This is minor.\n\nThe two are very close. A's structure and brevity give it a slight edge on clarity, while B's extra reasoning gives it a slight edge on content. I lean toward a tie, with a slight preference for A on clarity.\n\nVerdict: TIE",
+  "usage": {
+    "input": 666,
+    "output": 557
+  },
+  "cost": 0.006902
+}

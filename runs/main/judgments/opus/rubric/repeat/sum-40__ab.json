@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-40",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Both get the core numbers right: 1,622 students, 11 schools, 1.8 vs 1.1 marks, a 0.7-mark gap that was not statistically significant, and 71%. B has several small slips:\n- It drops \"up to\" from the overseas claim, turning it into a flat \"10 per cent gain\".\n- It says \"no significant problems\", when the original reported no problems at all.\n- It describes hot exam weather without the qualifier \"in some regions\".\n- Its \"Most students (71 per cent)\" drops the fact that the survey covered only water-bottle schools.\n\nA keeps \"up to 10%\", correctly says no problems were reported once clear, label-free bottles were required, and keeps \"in some regions\". A's only notable omission is \"could be due to chance\", but \"not statistically significant\" covers that.\n\n**Key points:** Both include the result, student and teacher perceptions, the practical conclusion and the limitations. A also includes the teachers' observation that students seemed calmer, which B omits. A's \"Bottom line\" framing suits a busy manager well.\n\n**Concision:** A is about 117 words, within the 120-word limit. B is about 126 words, exceeding the user's explicit constraint.\n\nA is more accurate, slightly more complete, and meets the length limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1385,
+    "output": 1303
+  },
+  "cost": 0.0316
+}

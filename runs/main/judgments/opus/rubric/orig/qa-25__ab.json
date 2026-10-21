@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-25",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses give the correct answer: Vikings did not wear horned helmets. Both also cite the right evidence. The Gjermundbu helmet is the only near-complete Viking-age find, and it is a plain rounded cap with a spectacle guard. Both trace the myth to Carl Emil Doepler's 1876 costumes for Wagner's *Ring*, and both note that horned helmets did exist earlier, in the Bronze Age, probably for ceremonial use. Each stays under 120 words (A is about 119, B about 112).\n\n**Response B** adds accurate, useful detail:\n- It names Gustav Malmström's illustrations as another source of the myth.\n- It gives the Veksø helmets as a concrete Bronze Age example.\n- It connects the image to Romantic nationalism.\n- Its phrasing, \"no solid evidence… in battle,\" is appropriately hedged.\n\nIts one weakness is the \"about 1,500 years\" gap. Veksø dates to roughly 900 BCE, so the gap is closer to 1,700 years. This is a minor imprecision, not a wrong answer.\n\n**Response A** says \"centuries before,\" which is safe but vague. Its bolded headers are tidy, but it gives less concrete information within a similar word budget.\n\nSince correctness and core reasoning are equivalent, B wins narrowly on specificity and a more precise framing of the evidence.\n\nVerdict: B",
+  "usage": {
+    "input": 815,
+    "output": 1346
+  },
+  "cost": 0.03018
+}

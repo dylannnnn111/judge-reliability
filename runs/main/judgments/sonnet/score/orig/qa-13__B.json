@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-13",
+  "side": "B",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The correct answer is that A is a knave and B is a knight. The response reaches this answer, and its reasoning is valid. It assumes A is a knight, derives a contradiction, concludes A is a knave, and then notes the statement is false, so at least one is not a knave. Since A is a knave, B must be a knight.\n\nThe word count is about 90, under the 120 limit. There is slight redundancy: the answer is stated at the start and again at the end. The reasoning is clear and complete.\n\nScore: 9",
+  "usage": {
+    "input": 394,
+    "output": 161
+  },
+  "cost": 0.002398
+}

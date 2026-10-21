@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-09",
+  "side": "B",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate throughout. The starting rent, 1 March review date, CPI floor and cap of 3–5% for years 2–4, and the year 5 market review by the landlord's valuer all match the source. So do the no-fall-below-year-4 rule, the 30-day independent valuer option with equal cost split, the separate outgoings, the 14 days' notice and the late-notice rule. It also keeps the points a manager needs.\n\nHowever, it breaks the explicit limit of under 120 words. I count about 131 words including the title and closing line, and about 115 without the title and closing line. The overrun is modest, but it is a clear failure of a stated constraint. The \"Other points\" bullet and the closing line could easily have been trimmed.\n\nScore: 6",
+  "usage": {
+    "input": 1122,
+    "output": 1509
+  },
+  "cost": 0.017334
+}

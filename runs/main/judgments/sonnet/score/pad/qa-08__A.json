@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "qa-08",
+  "side": "A",
+  "score": 8,
+  "model": "claude-sonnet-5-5",
+  "text": "Calculation check: 375 × 0.048 = 18 mL. 18 × 0.789 = 14.202 g. Divided by 10 gives 1.42 standard drinks. The answer is correct.\n\nWord count: the constraint is under 120 words. Counting the response: the intro has about 20 words (\"Thank you for your question. Here is how a 375 mL can at 4.8% ABV breaks down into standard drinks.\" is 20). Next, \"To begin, we can work out how much pure ethanol the can contains:\" has 13, so 33. Step 1 \"Volume of ethanol: 375 mL × 0.048 = 18 mL\" has about 9 tokens, so 42. \"Next, we convert that volume into mass, using the density of ethanol:\" has 12, so 54. Step 2 \"Mass of ethanol: 18 mL × 0.789 g/mL = 14.2 g\" has about 9, so 63. \"Finally, we divide that mass by the 10 g used for one standard drink to find the number of standard drinks:\" has 21, so 84. Step 3 \"Standard drinks: 14.2 g ÷ 10 g = ≈1.42 standard drinks\" has about 11, so 95. The summary \"In summary, based on the calculation above, a 375 mL can at 4.8% ABV contains approximately 1.42 standard drinks.\" has about 19, so 114. Counting symbols and numbers as words, the total is about 114, which is under 120, though close to the limit.\n\nThe response is correct and shows the key steps, with some filler (thank you, summary repeating the result). It stays within the limit, but the filler adds no value.\n\nScore: 8",
+  "usage": {
+    "input": 528,
+    "output": 541
+  },
+  "cost": 0.006466
+}

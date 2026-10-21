@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-26",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Both responses report the core facts correctly: the stoppage on 21 September, the release within about an hour, the worn door controller board, the part from Melbourne, return to service at 2:10pm on 23 September, the 11 meal deliveries, four residents helped with the evacuation chair, two staying with family, the $2,300 spare approved by the manager, and the referral to the board.\n\n- Response A adds \"I am pleased to report.\" This puts the summary in the incident author's voice, which is odd and slightly misleading in a summary written for someone else.\n- Response B says the residents were \"carried down the stairs with an evacuation chair.\" That is a fair paraphrase.\n- Neither response introduces a substantive factual error.\n\n**Coverage:** Each response drops something the other keeps.\n\n- Response A keeps that the Tower A lift is the same model, the phone calls to families of high-care residents, and the staff refresher training.\n- Response B keeps that the second lift would go in the long-term capital plan.\n- Both omit the risk assessment before the evacuation chair was used.\n- Response A's extra details are useful but minor for a busy manager.\n\n**Concision and length limit:** The user set a hard limit of under 120 words.\n\n- Response A runs to roughly 230 words, nearly double the limit, and includes filler such as \"This summary sets out…\" and \"so they were kept informed.\"\n- Response B is about 155 words. It is also over the limit, but much closer, and it is tighter throughout.\n\nResponse A's extra content does not justify blowing far past the explicit limit. Response B therefore serves the reader better.\n\nVerdict: B",
+  "usage": {
+    "input": 1653,
+    "output": 1523
+  },
+  "cost": 0.037072
+}

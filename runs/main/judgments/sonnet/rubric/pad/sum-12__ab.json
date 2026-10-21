@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-12",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better, mainly because it is much closer to the brief.\n\n**Accuracy:**\n- Both get the dates, fees, concession details and the 18-month repair timeline right.\n- Both say the $15 weekly pass replaces the $9 daily concession. The article doesn't say outright that the daily concession ends, so this is a small inference in both.\n- A adds \"This is a significant saving for regular users.\" That overreaches: a once-a-week visitor would pay $9 now and $15 under the pass. The article only supports savings for people like Barry Sutton, who visits three times a week, and he hedges with \"if the weekly pass is real\".\n- B adds nothing misleading, but it also never says who benefits.\n\n**Coverage:** Both cover the fee rises, the concession, the reason for the changes, the staff exemption and the petition. Neither mentions that the closed levels will reopen in stages, which is a minor omission.\n\n**Concision:** The limit was 120 words.\n- A is about 125 words, slightly over.\n- B is roughly 200 words, far over.\n- B also uses filler such as \"I would like to let you know\", \"Turning to concessions\" and \"I want to reassure you\", which a busy manager doesn't need.\n\nA's small overrun and its editorial \"significant saving\" line are lesser faults than B's large breach of the word limit and its padding. A is more usable for the stated reader.\n\nVerdict: A",
+  "usage": {
+    "input": 1468,
+    "output": 1612
+  },
+  "cost": 0.019056
+}

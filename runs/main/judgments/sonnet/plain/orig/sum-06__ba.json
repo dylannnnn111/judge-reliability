@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-06",
+  "order": "ba",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-sonnet-5-5",
+  "text": "TIE\n\nBoth summaries are accurate and come in under the 120-word limit (A is about 111 words, B about 115). Both cover the key facts: the reopening date, cost, funding, upgrades, enrolment date, prices, hours and opening-day events.\n\n- **Response A** groups the information under clear headings (programs, prices, hours), so a manager can find each fact quickly. It lists the programs that resume accurately.\n- **Response B** uses bullets and keeps more detail, such as the adult change table and the year-round lessons. It also says \"all programs\" resume, which slightly overstates the source. It also places prices and hours under a general \"Operations\" heading, which is less tidy.\n\nThese strengths and weaknesses roughly offset each other.",
+  "usage": {
+    "input": 1358,
+    "output": 1642
+  },
+  "cost": 0.019136
+}

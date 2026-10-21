@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-07",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses lead with the Classic CSV removal and describe it accurately. Both also cover Android 9, the new features and the coming-soon items. Neither contains a factual error. The deciding differences are the word limit and a small classification issue.\n\n**Response A:** I count about 118 words including the title, which is under the 120-word limit. It puts the bug fixes under \"Improvements\", which is a slight mislabel but not misleading. It leaves out the 40% figure and the fact that the help article has a column mapping table. Neither omission matters much to a busy manager.\n\n**Response B:** I count about 124 words, which exceeds the explicit \"under 120\" limit. Its content is accurate and slightly richer, with the 40% figure, per-client reminder wording, the mapping table and beta access. But the user set a hard constraint, and the extra detail is low-value for a manager skimming.\n\nA meets the constraint, and its only flaw is the mislabelled bug fixes. B breaks the word limit. A is better.\n\nVerdict: A",
+  "usage": {
+    "input": 1401,
+    "output": 2445
+  },
+  "cost": 0.027252
+}

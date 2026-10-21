@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "code-16",
+  "side": "A",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The response finds several real issues: the client-side total being trusted at checkout, the float-based discount rounding (`subtotal * 0.1` can misround), input validation gaps, and the `sortByPrice` mutation. Its ordering is questionable, though. The mutation is a real but local problem, and it ranks first above the checkout-trust and rounding issues that affect money. It also misses that unknown discount codes fail silently. Some items are weak: the `==` point is harmless with string comparisons, and the thousands-separator note in `formatAud` is cosmetic. The GST-inclusive question is a legitimate business check, but it is not a code bug. Finally, the response runs about 330 words against a 200-word limit, with filler like \"Thank you for sharing this code\" and \"it is worth noting.\"\n\nScore: 4",
+  "usage": {
+    "input": 1347,
+    "output": 930
+  },
+  "cost": 0.0005997
+}

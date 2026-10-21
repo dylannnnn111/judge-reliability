@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-31",
+  "side": "B",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is correct: axial tilt causes seasons, not distance. It explains the opposite hemisphere tilt, lower sun angle, and day length. It notes the reversal six months later.\n\nWord count check: the first paragraph has about 29 words (\"Seasons come from Earth's axial tilt of about 23.5°, not from distance to the Sun.\" = 15; \"As Earth orbits the Sun, the tilt stays pointed in the same direction in space.\" = 15) so about 30. Second paragraph: \"When the Northern Hemisphere (including Europe) tilts away from the Sun, around December, it receives sunlight at a lower angle and for fewer hours each day.\" ≈ 26; \"That means less heating, so winter.\" = 6 → 32. Third: \"At the same time, the Southern Hemisphere (including Australia) tilts toward the Sun.\" = 12; \"Sunlight strikes more directly and days are longer, producing summer.\" = 10 → 22. Fourth: \"Six months later, the situation reverses: the north tilts toward the Sun and the south tilts away.\" = 17; \"So the hemispheres always have opposite seasons.\" = 7 → 24. Total ≈ 108, under 120.\n\nMinor nitpick: \"tilts away\" is slightly loose, but standard. Overall excellent, concise, and meets the constraint.\n\nScore: 9",
+  "usage": {
+    "input": 430,
+    "output": 443
+  },
+  "cost": 0.00529
+}

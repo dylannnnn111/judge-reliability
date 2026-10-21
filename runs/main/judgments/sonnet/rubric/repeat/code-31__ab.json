@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "code-31",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main bug: with second-precision `created_at` and a `>` cursor, rows tied at a page boundary are skipped. Both also propose the same `(created_at, id)` keyset fix. They also agree on the missing tiebreaker, the late-commit gap, the index, and the `IS NULL OR` planner concern.\n\nResponse A makes one incorrect claim. It says that if 1000 or more rows share a second, the job \"stalls or loops forever\" because the cursor never advances. With `created_at > :last_seen`, the cursor always moves past the tied timestamp, so the remaining tied rows are skipped rather than looped on. This is a factual error in the top-priority item. A also says non-deterministic ordering can make pages \"overlap\". Under a strict `>` cursor, overlap is unlikely, so that claim is also shaky. Listing the fix as its own numbered \"bug\" is a slightly odd structure, though it does no harm.\n\nResponse B states the main bug accurately and puts the fix inline. Its late-committed-rows point is correct and gives a practical mitigation (a safety lag). Its extra point about a persisted cursor and idempotent downstream writes is reasonable and useful, if not strictly about the query. It contains no incorrect claims.\n\nBoth run a bit long, but B is more accurate and just as complete.\n\nVerdict: B",
+  "usage": {
+    "input": 1632,
+    "output": 977
+  },
+  "cost": 0.013034
+}

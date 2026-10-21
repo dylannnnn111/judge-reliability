@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "sum-37",
+  "side": "B",
+  "score": 3,
+  "model": "claude-opus-5-5",
+  "text": "The summary is mostly accurate but runs to about 210 words against a hard limit of 120, padded with filler and repetition.\n\n**Accuracy** is mostly sound. Dates, amounts, names and the reason for the Amber status are correct. There are a few minor slips:\n- \"Only person who knows the payroll system\" overstates the original, which says he is the only one who knows it *well*.\n- \"On schedule in most respects\" is vaguer than \"development is on schedule.\"\n- Option 2 drops finance's condition: partial go-live is acceptable only if month-end reports don't depend on payroll. \"Although four month-end reports need it\" hints at this but loses its force as a blocker.\n\n**Coverage** keeps most of the key points: the status change, the resignation and its impact, the three options, the team's preference, the need for sponsor approval and the budget. It omits that the team is proceeding on the current plan meanwhile, and that the delay estimate is five to six weeks. Neither omission is critical.\n\n**Concision** is a clear failure:\n- At roughly 210 words, the summary is nearly double the 120-word limit.\n- Filler phrases add nothing for a busy manager: \"I'm pleased to report,\" \"To begin with,\" \"I'm also glad to say,\" \"I'd like to draw your attention to,\" \"To summarise the financial position.\"\n- \"No decision yet\" is stated twice in a row.\n- Writing in the first person as if the summariser were the PM is also odd.\n\nThe key content could easily fit within 120 words, so the length is pure padding. Breaking a hard length constraint so badly is a major failure for this task.\n\nScore: 3",
+  "usage": {
+    "input": 1238,
+    "output": 1398
+  },
+  "cost": 0.032912
+}

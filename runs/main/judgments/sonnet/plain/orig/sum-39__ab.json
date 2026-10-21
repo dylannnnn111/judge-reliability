@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-39",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better, mainly because of the word limit.\n\n- **Word limit:** Response A is about 126 words, which breaks the \"under 120\" instruction. Response B comes to about 120 including the headline. That is borderline, but it is closer and arguably within the limit depending on how the headline and hyphenated terms are counted.\n- **Accuracy:** Both are accurate on the main facts: the 7-2 vote, the 1 December start date, the $38,000 in wiped fines, the exceptions, the rationale, the review period and the email in November.\n- **Usefulness to a manager:** B adds a derived net cost of about $33,000 ($52,000 minus $19,000), which a busy manager can use directly. B's bullet format is also easier to scan.",
+  "usage": {
+    "input": 1254,
+    "output": 2204
+  },
+  "cost": 0.024548
+}

@@ -1,0 +1,13 @@
+{
+  "item": "code-21",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "1. **Refunds can be issued twice.** `issueRefund` is a POST with no idempotency key, and `fetchWithRetry` retries it on 502/503/504 and on thrown network errors. Those responses often arrive after the payments service has already processed the request, so a retry can refund the same order again. Send an `Idempotency-Key` header (for example, a UUID generated once per refund attempt and reused across retries), or don't retry non-idempotent requests.\n\n2. **Support console double-submits are unguarded.** A slow retry loop invites the agent to click again. Disable the button while a refund is pending, and make the server reject duplicate refunds for the same order.\n\n3. **No request timeout.** `fetch` has no `AbortSignal`, so a hung connection can stall the console and the retry loop indefinitely.\n\n4. **Retry-After is ignored.** On 429 and 503, the server's `Retry-After` header should set the delay, not the fixed exponential backoff.\n\n5. **Discarded response bodies leak connections.** Intermediate retryable responses are never consumed or cancelled. Call `res.body?.cancel()` before retrying.\n\n6. **Unvalidated input.** `amountCents` isn't checked to be a positive integer, and there's no upper bound. Non-JSON success responses will throw from `res.json()` with an unclear error.\n\n7. **Minor:** the jitter formula `backoff + random * backoff` can reach about 60s, and the retry loop has no cancellation.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 532,
+    "output": 824
+  },
+  "cost": 0.0004652,
+  "at": "2026-10-14T01:53:54.686Z"
+}

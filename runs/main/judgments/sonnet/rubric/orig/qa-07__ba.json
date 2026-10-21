@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-07",
+  "order": "ba",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer, about 7.84 L/100 km, which rounds to 7.8. Both show valid working and the 235.2 ÷ mpg shortcut, and both stay under 120 words.\n\nResponse A's working is more intuitive, going through km per litre. It adds a note that EPA figures may differ from Australian ratings, which is relevant to the user's purpose.\n\nResponse B uses slightly more precise constants. Its note warns against using the imperial-gallon formula, and the figure it gives for that mistake (282.5 ÷ 30 ≈ 9.4) is correct. That is useful for avoiding a common conversion error.\n\nEach adds a different, correct and useful closing note, so neither is better in a way that matters.\n\nVerdict: TIE",
+  "usage": {
+    "input": 762,
+    "output": 901
+  },
+  "cost": 0.010534
+}

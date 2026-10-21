@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-25",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. Both catch the off-by-one, unbounded memory growth, per-IP-only limiting, in-memory state, and the hardcoded `retryAfterSec`. B is more actionable: it gives the exact retry formula and notes that `allow` must return it. It also adds two points A lacks: keying on an IPv6 /64 prefix, and the risk that a proxy's address locks out everyone at once. A's point that successful logins consume quota is valuable, but B is closer to the 200-word limit, and A runs noticeably longer.\n\nB",
+  "usage": {
+    "input": 1635,
+    "output": 962
+  },
+  "cost": 0.0006445
+}

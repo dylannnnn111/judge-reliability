@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-18",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. It stays under the 120-word limit, while Response A does not.\n\n- **Response A:** I count roughly 145–150 words, well over the limit. It also adds \"No action is required from the team,\" which the source never says.\n- **Response B:** I count about 119 words, which is just inside the limit. It covers every section of the release notes (new features, improvements, fixes, accessibility) without adding anything unsupported. Its omissions are minor, such as the Settings path for turning off heat warnings, which is reasonable given the length cap.\n\n**B**",
+  "usage": {
+    "input": 1287,
+    "output": 1353
+  },
+  "cost": 0.016104
+}

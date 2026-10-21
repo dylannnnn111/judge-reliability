@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-25",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** Both responses find the same main bug, the off-by-one where `> this.limit` lets a sixth attempt through, and they order the issues sensibly. Both also run over the 200-word limit. A is closer to it, at roughly 210–230 words. B runs about 270 and adds a low-value \"Minor\" item about missing tests and key reset. B has slightly richer details, such as the IPv6 /64 prefix point and the `retryAfterSec` formula. A's items are still accurate and more concise, so it follows the length instruction better.",
+  "usage": {
+    "input": 1484,
+    "output": 765
+  },
+  "cost": 0.010618
+}

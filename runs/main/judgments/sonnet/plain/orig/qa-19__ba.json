@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-19",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is slightly better. Both responses stay under the word limit and give the same core facts: the Guugu Yimithirr word *gangurru*, the 1770 *Endeavour* repairs near Cooktown, and the \"I don't understand\" story as a myth backed by Haviland's work.\n\n- **Myth explanation:** B says what the myth actually claims, that Cook's crew pointed at the animal and took the reply as its name. That is the story the user is asking about. A instead speculates about why the myth arose and why it persists, which is less direct.\n- **Accuracy:** A names the species as the \"eastern grey kangaroo,\" which is more specific and riskier, since the exact species is debated. B's \"a type of large grey kangaroo\" is safer.\n- **Extra detail:** A adds Joseph Banks and the point about Australia's many languages. These are nice touches but don't outweigh B's clearer treatment of the myth.\n\n**B**",
+  "usage": {
+    "input": 643,
+    "output": 1137
+  },
+  "cost": 0.012656
+}

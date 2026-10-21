@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-05",
+  "order": "ba",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-opus-5-5",
+  "text": "Both responses give the correct answer: **Friday, 28 February 2025**.\n\n**Checking the date:** From 1 March to 31 December 2024 is 306 days. January and February 2025 add 31 + 28 = 59 days. That totals 365 days, landing on 28 February 2025.\n\n**Checking the weekday:** 365 days is 52 weeks plus 1 day, so the weekday advances one, from Thursday to Friday.\n\n**Reasoning:** Both responses give the same two points. They note the 52-weeks-plus-one-day shift and that 2025 has no 29 February. Neither actually shows the day count. Each simply asserts that 365 days lands on 28 February.\n\n**Clarity and length:** B orders its points date-first and bolds the weekday again. A is marginally shorter. Neither difference adds or removes anything meaningful.\n\nThe two are substantively equivalent in correctness, reasoning and clarity.\n\nVerdict: TIE",
+  "usage": {
+    "input": 467,
+    "output": 558
+  },
+  "cost": 0.013028
+}

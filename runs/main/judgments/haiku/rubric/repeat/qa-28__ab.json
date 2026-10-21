@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "qa-28",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are correct. Both explain chaining and open addressing, tie performance to load factor, and note the O(n) worst case. Response A adds concrete details: clustering in open addressing, Java's tree-based O(log n) fallback, and a typical 0.7–0.75 resize threshold. Response B explains why resizing doesn't ruin performance: each resize costs O(n), but the amortized insert cost stays O(1). That is the key reasoning behind the resize strategy, which Response A only states. B also notes that lookups follow the same probe sequence as inserts, and its structure is clear. The edge goes to B for the amortized explanation, though A's specifics are useful.\n\nVerdict: B",
+  "usage": {
+    "input": 835,
+    "output": 603
+  },
+  "cost": 0.000385
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-09",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer of 7.5° and use the same correct calculation: the minute hand at 90° and the hour hand at 97.5°.\n\nResponse A adds a short explanation of why the minute hand is at 90° (the 3 is 90° from the 12) and of the hour hand's movement. It also says why 7.5° is the smaller angle, since it is under 180°. The question asks specifically for the \"smaller angle\", so that last check is a useful step.\n\nResponse B is more concise and gives the same key computations, but it never says why 7.5° is the smaller angle. That is a minor omission, since the answer is obviously the smaller one.\n\nBoth are within the word limit. A is slightly more complete because it justifies the \"smaller\" part, and its extra words add something correct and useful.\n\nVerdict: A",
+  "usage": {
+    "input": 576,
+    "output": 257
+  },
+  "cost": 0.003722
+}

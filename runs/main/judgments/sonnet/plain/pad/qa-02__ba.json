@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-02",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer in under 120 words. Both responses give the correct answer of 96 km/h, so the deciding factor is the word limit.\n\nResponse A: counting roughly, the intro runs about 25 words, the bullets about 70, the formula line about 15, and the final paragraph about 70. That totals well over 120, probably around 190 words.\n\nResponse B: the header is about 5 words and the bullets about 30. The formula line adds about 8, and the final paragraph is about 40. That comes to roughly 85-95 words, under the limit.\n\nB meets the constraint and A does not, so B is better.\n\n**B**",
+  "usage": {
+    "input": 722,
+    "output": 198
+  },
+  "cost": 0.003424
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-17",
+  "side": "B",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "Correctness: Venus is right. The average surface temperature of about 465°C (870°F) is accurate, and so are the 96% CO₂ and the roughly 90 times Earth's surface pressure. Lead melts at about 327°C, so \"hot enough to melt lead\" holds. Mercury is hotter on its day side at peak, about 430°C, but Venus's average and maximum are higher, so the claim is fine. The point about uniform temperatures is also correct.\n\nWord count: the constraint is under 120 words. Counting by section:\n\n- Opening paragraph: \"Venus has the hottest surface, averaging about 465°C (870°F), hot enough to melt lead.\" is 14 words. \"It is hotter than Mercury even though Mercury is closer to the Sun.\" is 13 words. Subtotal 27.\n- \"The reason is a runaway greenhouse effect:\" is 7 words. Running total 34.\n- Bullet 1: \"Thick CO₂ atmosphere: About 96% carbon dioxide, with surface pressure roughly 90 times Earth's.\" is about 14 words. Total 48.\n- Bullet 2: \"Trapped heat: Sunlight warms the surface, but the dense CO₂ absorbs the outgoing infrared radiation and keeps the heat from escaping.\" is about 21 words. Total 69.\n- Bullet 3: \"Sulfuric acid clouds: These reflect much of the incoming sunlight, but they also help trap heat below.\" is about 17 words. Total 86.\n- Bullet 4: \"Even temperatures: The dense atmosphere spreads heat so well that day and night sides, and poles and equator, are almost equally hot.\" is about 22 words. Total 108.\n- Last line: \"Mercury, with almost no atmosphere, loses its heat to space.\" is 10 words. Total 118.\n\nThat comes to about 118 words, just under the limit. It is tight, but it complies.\n\nReasoning: it explains the greenhouse effect well and contrasts Mercury. The \"even temperatures\" bullet is a consequence rather than a cause, so it adds little to the \"why,\" but it is correct and useful context. The clarity is good.\n\nScore: 9",
+  "usage": {
+    "input": 503,
+    "output": 718
+  },
+  "cost": 0.008186
+}

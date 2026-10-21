@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "sum-31",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A suits a busy manager better.\n\n- **Scannable layout:** a heading, labelled bullets and a clear takeaway let a manager grasp the findings quickly. Response B is one dense paragraph.\n- **Covers more within the limit:** both stay under 120 words. Within that, A keeps details B drops: speed gains settled within four weeks, the smaller accuracy improvement where errors were already low, and workers missing chat with colleagues.\n- **Actionable close:** A ends with a recommendation (consider it, especially with many newer staff, and plan for headset comfort in heat). This mirrors the report's own conclusion.\n- **B's advantages are minor:** B briefly explains what voice picking is and notes the method-switching design. That is useful context but less valuable to this reader.",
+  "usage": {
+    "input": 1316,
+    "output": 802
+  },
+  "cost": 0.021304
+}

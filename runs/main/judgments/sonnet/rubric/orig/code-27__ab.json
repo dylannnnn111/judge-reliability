@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-27",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main real problems: unbounded `Promise.all` over about 80,000 sends, the lost per-address outcome when one send fails, the misleading `emails.length` return, and the missing retries. Both also raise the same lower-value points, namely null emails and a non-advancing cursor.\n\n**Response A** puts concurrency first, which is the most important bug. It gives concrete fixes: a limiter such as p-limit, `allSettled`, idempotent retries that track sent IDs, and returning sent/failed counts. Its weaker items are the null-email crash (the type says `email` is a string), the cursor loop guard, and the stale opt-in recheck. These are speculative or low-impact, but they are labeled reasonably. It is clearly over the 200-word limit, at roughly 280 words.\n\n**Response B** leads with a suppression and unsubscribe check, citing CAN-SPAM and GDPR. That is a legitimate concern for a newsletter, but the code and data model give no sign that bounce or complaint data exists, so it is speculative and ranks too high. Its concurrency item is vaguer (\"risk duplicate or dropped sends\"). It gives almost no fixes. Its last item flags in-memory storage of 80k addresses, which is fine, and lowercasing, which is trivia. It is also over the limit, at roughly 220 words, but by less.\n\nA's ranking is more sensible and its fixes are actionable. B flags a couple of things that are fine and offers fewer remedies. B is somewhat closer to the word limit, but that does not outweigh A's advantages.\n\nVerdict: A",
+  "usage": {
+    "input": 1635,
+    "output": 1176
+  },
+  "cost": 0.01503
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-06",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. It stays under the 120-word limit (about 117 words), while A runs to roughly 180 words. B also covers every key fact concisely, and A's filler phrasing (\"we are pleased to share the details\") adds length without content.\n\nB",
+  "usage": {
+    "input": 1468,
+    "output": 530
+  },
+  "cost": 0.00041180000000000003
+}

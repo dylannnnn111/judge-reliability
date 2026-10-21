@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-19",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is accurate. It covers consent, the buyer conditions, the non-retail-lease liability risk and the need for a written release, subletting limits, change of control, the 28-day response period, and the next steps. It is written for a manager and reads quickly. It may run slightly past the 120-word limit, but it stays close to it.\n\nResponse B is also accurate, but it runs to roughly 300 words, well over the limit. Much of it is filler, such as \"Thank you for reviewing this summary,\" \"To put this another way,\" and \"Put simply,\" which adds no content. It repeats the liability point and the consent process without adding anything new. Its key content matches the source, so it is not wrong, just much less concise, and a busy manager gains nothing from the extra length.\n\nResponse A keeps the same essential points at a fraction of the length and better meets the brief.\n\nVerdict: A",
+  "usage": {
+    "input": 1841,
+    "output": 786
+  },
+  "cost": 0.0005771
+}

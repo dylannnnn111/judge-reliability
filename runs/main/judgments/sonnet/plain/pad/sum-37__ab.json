@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-37",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** Both responses appear to exceed the 120-word limit. A is roughly 140 words, while B is well over 150 and includes filler such as \"I'm pleased to report\", \"To begin with\" and \"To summarise the financial position\". A is closer to the limit and more concise.\n\nA also captures the essentials accurately: the status change, the resignation, the delay, the three options, the sponsor approval needed, the budget and the next update. It correctly notes that option 2 may be unacceptable because four month-end reports depend on payroll.\n\nB includes progress details, which is a reasonable choice. But it adds first-person framing (\"I'd like to draw your attention\") that doesn't suit a summary written for a manager. It also leaves out the estimated 5–6 week delay and the next update date.",
+  "usage": {
+    "input": 1441,
+    "output": 722
+  },
+  "cost": 0.010102
+}

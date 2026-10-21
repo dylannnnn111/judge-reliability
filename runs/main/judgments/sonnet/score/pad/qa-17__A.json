@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "qa-17",
+  "side": "A",
+  "score": 5,
+  "model": "claude-sonnet-5-5",
+  "text": "Correctness: Venus is right, and ~465°C (870°F) is accurate. The CO₂ greenhouse effect is the correct explanation. Mercury is hotter in daytime peaks, but Venus has the hottest average surface temperature, and the response says \"hotter than Mercury\" in the average sense, which is fine. \"Runaway greenhouse effect\" is commonly used, though technically debatable. Surface pressure ~90 times Earth's is correct. The claim that pressure \"further contributes\" to the heat is somewhat loose, since pressure is a consequence of the dense atmosphere and relates to the heat only indirectly, but it is not a significant error.\n\nWord count: let me count approximately. Sentence 1: \"Venus has the hottest surface in our solar system, with an average temperature of about 465°C (870°F).\" ~17. Sentence 2: \"It is worth noting that this is hotter than Mercury, even though Mercury is closer to the Sun.\" ~18. Sentence 3: \"The reason for this surprising difference lies in the planet's extremely thick carbon dioxide atmosphere, which produces a runaway greenhouse effect.\" ~21. Sentence 4: \"To explain this more fully, the dense CO₂ traps outgoing infrared heat that would otherwise escape into space.\" ~18. Sentence 5: \"At the same time, the thick clouds of sulfuric acid reflect much of the incoming sunlight.\" ~16. Sentence 6: \"Even so, enough energy still gets trapped to heat the surface intensely.\" ~12. Sentence 7: \"Finally, it is also important to mention that the atmospheric pressure at the surface is about 90 times that of Earth's, which further contributes to the planet's scorching conditions.\" ~30. Total ≈ 132. That exceeds the 120-word limit, so the response breaks an explicit constraint.\n\nReasoning is good, but the response contains filler (\"It is worth noting,\" \"To explain this more fully,\" \"it is also important to mention\") and goes over the word limit. Clarity is fine but padded.\n\nThe correct answer and reasoning are present, but the constraint violation and padding lower the score.\n\nScore: 5",
+  "usage": {
+    "input": 468,
+    "output": 714
+  },
+  "cost": 0.008076
+}

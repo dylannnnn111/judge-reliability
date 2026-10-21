@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-05",
+  "side": "A",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The response is accurate and well compressed, at about 100 words against the 120-word limit.\n\n**Accuracy**\n- All figures are correct: 214 workers, 12 weeks, 78% felt more productive, 31% vs 44% back discomfort, and standing time falling from 47 to 19 extra minutes.\n- \"Extra\" correctly frames standing time relative to the control group.\n- The headline \"did not improve afternoon productivity\" is slightly stronger than the study's \"no change in measured output.\" It is defensible, though, because it is anchored to the measured task and paired with the limitations.\n- \"Comfort and health\" stretches the evidence a little, since only lower-back discomfort was measured.\n- It does not say the comparisons were at weeks 2 and 12, but this does not mislead.\n\n**Coverage**\n- It keeps what a manager needs: no measured productivity gain, the gap between perceived and actual productivity, the back-discomfort benefit, the novelty effect, and both limitations.\n- It adds a clear, actionable implication that matches the study's own interpretation.\n- It omits the independent funding, which a manager weighing supplier claims might want. This is a minor gap.\n\n**Concision**\n- It is tight and well structured with no wasted words.\n\nThese are small quibbles against a strong summary.\n\nScore: 9",
+  "usage": {
+    "input": 1112,
+    "output": 1325
+  },
+  "cost": 0.030948
+}

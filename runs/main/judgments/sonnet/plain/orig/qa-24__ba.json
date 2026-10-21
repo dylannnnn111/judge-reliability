@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-24",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is slightly better. Both responses are accurate and stay under 120 words (A is about 103, B about 115). Both correctly identify Mauna Kea as the tallest mountain from base to peak and Chimborazo as having the summit farthest from Earth's centre, with the roughly 2 km difference over Everest.\n\nB adds useful detail:\n- It gives Everest's own base-to-peak height (roughly 4,600–5,000 m), which makes the comparison with Mauna Kea concrete.\n- It gives Chimborazo's distance from the centre and its height above sea level.\n- Its \"No to both\" opening and closing summary answer the two-part question more directly.\n\nA is clear and correct but doesn't state Everest's base-to-peak height. It gives Everest's elevation above sea level instead, which isn't what the first question asks.\n\n**B**",
+  "usage": {
+    "input": 632,
+    "output": 1164
+  },
+  "cost": 0.012904
+}

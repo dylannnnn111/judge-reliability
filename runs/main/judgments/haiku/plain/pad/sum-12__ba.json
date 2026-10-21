@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-12",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. Response A runs to roughly 195 words, well over the 120-word limit. Response B is about 125 words, close to the limit, and covers the key points more concisely: the fee changes, the concession pass, the reason for the increase, and the staff and petition notes.\n\nB's \"significant saving\" remark is a mild editorial addition, but it is a reasonable inference from the $15 weekly pass versus the $9 daily rate.\n\n**B**",
+  "usage": {
+    "input": 1314,
+    "output": 938
+  },
+  "cost": 0.0006004
+}

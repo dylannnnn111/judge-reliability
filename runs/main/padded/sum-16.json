@@ -1,0 +1,14 @@
+{
+  "pair": "sum-16",
+  "side": "A",
+  "author": "haiku",
+  "model": "claude-haiku-5-5",
+  "original": "Status: Amber. The CRM migration is about two weeks behind, so the 3 November cut-over is off the table. The proposed new date is 17 November, pending steering committee approval on 15 October.\n\nProgress: Data mapping is complete and two of three test migrations have run. The latest test moved 98.6% of records cleanly; about 3,100 duplicate-email records are being fixed. Sales training materials are drafted.\n\nDelays: A vendor sandbox outage cost six working days, and the quoting tool integration is taking longer than planned. The vendor expects a fix by 24 October.\n\nBudget: $412K of $520K spent. The delay adds about $38K, or about $26K net after a $12K vendor credit still awaiting written confirmation.\n\nKey risk: If the quoting fix slips past 24 October, cut-over likely moves to early December.\n\nDecisions needed on 15 October: approve the 17 November date and the budget variation ($38K, or $26K if the credit is confirmed in writing).",
+  "text": "**Overall status:** The project is currently rated Amber. I want to be clear that the CRM migration is about two weeks behind schedule, which means the 3 November cut-over is no longer achievable. The proposed new date is 17 November, and this is subject to steering committee approval on 15 October.\n\n**Progress to date:** Good headway has been made in several areas. Data mapping is complete, and two of the three planned test migrations have now been run. The most recent test moved 98.6% of records cleanly. Work is continuing on the remaining issue, where about 3,100 duplicate-email records are being corrected. In addition, the sales training materials have been drafted.\n\n**Delays:** Two factors have contributed to the delay. First, a vendor sandbox outage cost six working days. Second, the quoting tool integration is taking longer than originally planned. The vendor expects a fix to be in place by 24 October.\n\n**Budget:** To date, $412K of the $520K budget has been spent. The delay adds about $38K to the forecast. After accounting for a $12K vendor credit, the net impact is about $26K. However, this credit is still awaiting written confirmation.\n\n**Key risk:** The main risk to the revised timeline is the quoting fix. If it slips past 24 October, the cut-over would likely move to early December.\n\n**Decisions needed on 15 October:** We are asking for approval of two items. The first is the 17 November date. The second is the budget variation of $38K, or $26K if the vendor credit is confirmed in writing.",
+  "ratio": 1.64,
+  "usage": {
+    "input": 509,
+    "output": 582
+  },
+  "cost": 0.00034189999999999996
+}

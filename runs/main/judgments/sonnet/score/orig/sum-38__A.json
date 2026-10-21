@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-38",
+  "side": "A",
+  "score": 7,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is mostly accurate and covers the main points: status, launch date, beta results, key dates, budget and risk. The dates, figures and the bug count all match the source.\n\n- **Risk misstated:** The source says the launch could slip by up to a week if either store *rejects* the app. The response says \"review delays\" could push it back, which blurs rejection with the normal review wait. It also leaves out that the team has already checked the submission against both stores' guidelines, which is reassuring context.\n- **Length:** By my count it is about 120 words, which only just meets or misses \"under 120\".\n- **Omissions:** It omits who owns what, though that is arguably not essential for a busy manager. It also gives 431 installs without the 600 invited, so the reader cannot judge the uptake.\n\nThe risk wording is a small accuracy slip, and the length is borderline.\n\nScore: 7",
+  "usage": {
+    "input": 1045,
+    "output": 1492
+  },
+  "cost": 0.01701
+}

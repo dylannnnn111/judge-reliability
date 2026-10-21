@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-15",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.** Both are clear, well structured and under 120 words, but B is more accurate on one point.\n\n**Accuracy:**\n- **New workers:** The source says that for new night-shift workers the nap made \"no measurable difference to lane drifting.\" It says nothing about reaction time for this group.\n  - Response A says new workers \"saw no measurable benefit.\" That overgeneralises to all outcomes, a subtle but real distortion.\n  - Response B says \"lane drifting didn't improve,\" which matches the source exactly.\n- **Transport home:** Response A drops the condition \"after long shift runs.\" Response B keeps it.\n- **Drive time:** Both get it right. B's \"nap or not\" makes explicit that the doubling holds regardless of napping.\n\n**Completeness:** Both cover the headline result, the experience caveat, the grogginess, the timing effect, the implication and the limitations. B also states up front that this was a simulator study, which helps the reader.\n\n**Concision:** Both are tight and roughly the same length. B's extra words add accuracy rather than padding.\n\nVerdict: B",
+  "usage": {
+    "input": 1400,
+    "output": 645
+  },
+  "cost": 0.0185
+}

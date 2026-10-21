@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-27",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better. It ranks the real, high-impact problems first: the unbounded `Promise.all` over about 80,000 sends, then the lost per-recipient outcomes and unsafe reruns. It gives concrete fixes (a concurrency limiter, `allSettled`, tracking sent IDs per campaign, retry with backoff, cursor-repeat detection). Its extra points (trimming addresses, rechecking opt-in at send time) are reasonable and short. It runs over the 200-word limit, but by less than B.\n\nResponse B finds most of the same real issues. It opens with filler and puts a suppression/bounce check first. That is plausible but speculative, because the code never claims to handle bounces and the data model has no such field, so it outranks the more serious concurrency and failure-handling problems. It mostly names problems without fixes. Its \"minor\" items are weak: holding 80,000 emails in memory is fine, and the lowercasing note is trivial. It is also longer and further over the word limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1830,
+    "output": 708
+  },
+  "cost": 0.01074
+}

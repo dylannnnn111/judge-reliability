@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-31",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy.** Both responses report the figures correctly:\n- speed rose about 10% (142 to 156 lines per hour);\n- errors fell from 0.62% to 0.41%;\n- new workers' speed rose 17%;\n- 64% of pickers preferred voice picking;\n- setup cost about $210,000 for a 60-picker centre, with 14-month payback;\n- the same-company, grocery-only limitation applies.\n\nNeither contains a factual error. Response A adds two correct nuances: gains levelled off after four weeks, and the accuracy improvement was smaller where errors were already low. Response B notes that workers switched methods, which strengthens the design.\n\n**Constraint.** Response A is roughly 185 words, well over the 120-word limit the user explicitly set. Much of the excess is filler, such as \"This summary sets out…\", \"The key findings are listed below\" and \"It is worth keeping this limitation in mind…\". Response B is about 100 words and stays within the limit.\n\n**Coverage.** Response B keeps every point a manager needs: results, new-staff gains, preference, the headset-heat issue, cost and payback, and the limitation. It drops only minor details. Response A's extra nuances are useful but do not justify breaking the stated limit with padding.\n\nResponse B is better: equally accurate, complete on the key points, and compliant with the length requirement.\n\nVerdict: B",
+  "usage": {
+    "input": 1611,
+    "output": 1049
+  },
+  "cost": 0.027424
+}

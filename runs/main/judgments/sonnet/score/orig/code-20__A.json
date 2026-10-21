@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-20",
+  "side": "A",
+  "score": 8,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds the main bug and explains it correctly.\n\n**Real issues it finds**\n- **DST bug.** Both dates are local midnights, so on a DST day the gap is 23 or 25 hours and `Math.floor` gives the wrong day count. Its examples hold:\n  - Spring forward: due tomorrow becomes 0.96, floored to 0, so the label says \"Due today\".\n  - Fall back: due yesterday becomes -1.04, floored to -2, so it says \"Overdue by 2 days\".\n- **Fix.** The UTC calendar-day arithmetic is correct and yields an exact integer. The `Math.round` alternative would also work.\n- **Malformed input.** An empty or non-date string gives `NaN`. The label then reads \"Due in NaN days\", and the invoice silently drops out of the overdue list because `NaN < 0` is false. This is real, but less likely here since the data is described as a plain `YYYY-MM-DD` string from a table. Ranking it second is reasonable.\n\n**Minor points**\n- The timezone and stale-label notes are hedged and labelled minor. They are fair and not wrong. The stale-label point is a real, if small, concern for a page that may stay open overnight.\n\n**Nothing wrongly flagged**\n- The pluralisation and the local-time parsing of `T00:00:00` are fine, and the response doesn't complain about them.\n\n**Weaknesses**\n- It likely runs a bit over the 200-word limit.\n- It doesn't mention that the DST error also affects multi-day spans, such as due in 2 days across spring-forward showing \"tomorrow\". This is a small omission.\n\nOverall it is accurate, well ranked and actionable.\n\nScore: 8",
+  "usage": {
+    "input": 1250,
+    "output": 1193
+  },
+  "cost": 0.01443
+}

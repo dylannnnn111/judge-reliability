@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-16",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better. It is accurate and covers the key points: status, new date, causes, budget with the unconfirmed credit, the main risk, and the decisions needed. It also notes that an early December cut-over would clash with the sales director's request for no December training, which is a useful link. I count roughly 120 words, so it is at or just over the limit, but it is close to what was asked. Its wording on the credit being verbal and on the budget variation matches the source.\n\nResponse B is also accurate, but it runs to about 280 words, well over double the 120-word limit. It also adds filler such as \"I want to be clear\" and \"Good headway has been made\". The extra detail on progress and duplicates is not essential for a busy manager. Because it clearly breaks the constraint, A is the better answer.\n\nVerdict: A",
+  "usage": {
+    "input": 1704,
+    "output": 1104
+  },
+  "cost": 0.014448
+}

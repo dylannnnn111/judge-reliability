@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "sum-21",
+  "side": "A",
+  "score": 3,
+  "model": "claude-sonnet-5-5",
+  "text": "The facts are accurate: the figures, the 24 October deadline, the February fallback, the hire-car cost, the budget overage and the delegation point all match the email. The voice is slightly muddled, though. It opens with \"I'd like to ask for Ruth's sign-off\" and then addresses Ruth directly as \"you\", so it is unclear who is speaking and who is reading. It also omits the $2,790 hybrid premium, but nothing in it misleads.\n\nThe response covers the key points a manager needs: the recommendation, the cost, the budget overage, the alternative, the deadline and the decision required. However, it breaks the explicit limit of under 120 words, running to roughly 230-240 words, about double. It also repeats itself: the over-budget and delegation points appear twice, once in the opening and again in the recommendation bullet. The Coastal bullet adds little. Because the length limit was a clear instruction, this is a significant failure, even though the content is otherwise good.\n\nScore: 3",
+  "usage": {
+    "input": 1340,
+    "output": 817
+  },
+  "cost": 0.01085
+}

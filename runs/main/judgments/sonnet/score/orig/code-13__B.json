@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-13",
+  "side": "B",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds the real bugs and ranks them sensibly, but it runs over the length limit and adds some padding.\n\n**Real issues found:**\n- The December crash, where month 13 raises `ValueError`, is correctly put first.\n- Day-of-month overflow (Jan 31 → Feb 31) is correct and ranked second.\n- The fixed 30-day proration period is a real billing bug. The response correctly notes that a 31-day month would bill more than `monthly_cents`.\n- Missing validation is real: `months <= 0` still returns `[start]`, and `period_end < start` gives a negative charge.\n- Floor rounding is real, though minor.\n\n**Fixes:** Most items come with a concrete fix: compute from `start` with clamping, use `relativedelta` or `calendar.monthrange`, use the real period length, and cap `days_used`.\n\n**Problems:**\n- It is over the 200-word limit, at roughly 250 words. This is a clear instruction violation.\n- Item 3 describes a bug that only appears if someone fixes #2 naively, so it is not a bug in the current code. It is useful design advice but takes space that should go to actual defects.\n- \"No timezone handling\" is spurious, because `date` objects are naive and have no timezone.\n- \"No tests\" is filler.\n- The proration fix calls `next_billing_date`, which is itself buggy, though that is implied to be fixed.\n\nOverall, the content is mostly accurate and well prioritized, but it breaks the word limit and includes a couple of unneeded or false flags.\n\nScore: 6",
+  "usage": {
+    "input": 963,
+    "output": 933
+  },
+  "cost": 0.011256
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-22",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A** is better.\n\n**Accuracy:** Response A has no errors. Saying Bryce will apply \"by 14 November\" fits the grant's closing date.\n\nResponse B has two inaccuracies:\n- It says Wes will get two quotes for both the dugout roof and the light globe. The minutes say the quotes are for the roof only; he will simply arrange the globe.\n- It says the junior decline was \"mostly due to cost.\" The minutes say only that cost was the most common reason given, which is a weaker claim.\n\n**Coverage:** Both keep the key points: the fee decision and its reasons, the shortfall, the grant, grounds, presentation night, the gazebo, the cash balance and the next meeting. Response B adds the 5-0 vote and Natalie organising trophies. These are minor and not worth the extra length.\n\n**Concision:** Response A is roughly 105 words, within the 120-word limit. Response B is close to 300 words, well over the limit. It is padded with filler (\"Thank you all for attending,\" \"kindly,\" \"We look forward to seeing everyone there\"). It also reads like a message to attendees rather than a summary for a manager.\n\nVerdict: A",
+  "usage": {
+    "input": 1783,
+    "output": 673
+  },
+  "cost": 0.020592
+}

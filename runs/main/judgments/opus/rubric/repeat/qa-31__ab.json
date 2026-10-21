@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "qa-31",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** Both responses are correct. Each attributes the seasons to Earth's roughly 23.5° axial tilt and notes that the axis stays fixed in direction in space. Each explains that around December the Southern Hemisphere tilts toward the Sun, getting more direct light and longer days, while the Northern Hemisphere tilts away.\n\n**Key reasoning:**\n- Both cover sun angle and day length, and both note that the pattern reverses six months later.\n- A adds the perihelion fact: Earth is closest to the Sun in early January. This usefully rebuts the distance misconception.\n- B also dismisses the distance idea, more briefly. It adds a concluding line that the hemispheres always have opposite seasons.\n\n**Constraint compliance:** The user asked for under 120 words.\n- A comes to about 121 words, which slightly exceeds the limit. Its extra perihelion detail is what pushes it over.\n- B is about 109 words, comfortably within the limit.\n\n**Clarity:** Both are clear. A's bullets are easy to scan, and B's prose flows well.\n\nThe explanations are essentially equivalent in substance. B meets the explicit length constraint while A slightly breaks it, so B is the better response.\n\nVerdict: B",
+  "usage": {
+    "input": 760,
+    "output": 1100
+  },
+  "cost": 0.02504
+}

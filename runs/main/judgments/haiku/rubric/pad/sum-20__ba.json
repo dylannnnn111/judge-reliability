@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-20",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is accurate on every detail I checked: the venue and travel options, the hours, the five-priority cap with leads, the prep items, the Tariq dietary deadline of 31 October, the out-of-office arrangement with Ella, and the optional pub at 4:15pm. It is organised for a busy manager who skims. It also keeps the \"no need to send in advance\" point. It runs to roughly 130 words, so it is at or slightly over the 120-word limit.\n\nResponse B is also accurate, but it is far longer, around 200 words, so it clearly breaks the length limit. It reads as a rewritten invitation rather than a summary, and it adds padding such as the travel framing and \"I would kindly ask\" phrasing that a busy manager doesn't need. It drops the note that prep doesn't need to be sent in advance.\n\nResponse A keeps the same key facts at a fraction of the length and is much easier to scan. Its slight overrun is minor compared with B's.\n\nVerdict: A",
+  "usage": {
+    "input": 1614,
+    "output": 1157
+  },
+  "cost": 0.0007398999999999999
+}

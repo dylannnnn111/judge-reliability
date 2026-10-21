@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-24",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response answers both questions correctly. Mauna Kea rises about 10,200 m from the seafloor, more than Everest's roughly 4,600–5,000 m from its base, so Everest is not the tallest from base to peak. Chimborazo's summit is about 6,384 km from Earth's centre, roughly 2 km farther than Everest's summit, because of the equatorial bulge. The response gives the key reasoning: the equatorial bulge explains the centre-distance answer, and the seafloor-to-summit comparison explains the base-to-peak answer. The Everest base-height range is approximate, but it is reasonable. The text is about 114 words, under the 120-word limit. The structure is clear, with a short \"No to both\" followed by two labelled explanations.\n\nScore: 9",
+  "usage": {
+    "input": 491,
+    "output": 935
+  },
+  "cost": 0.0005166
+}

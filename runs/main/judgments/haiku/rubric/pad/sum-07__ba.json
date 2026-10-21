@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-07",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Neither misstates the dates, the 40% dashboard figure, the Classic CSV removal, or the Android 9 end of support. Response A also notes that the Android 9 app still works, which is slightly closer to the source. Response B drops that nuance and says Android 9 \"will no longer receive updates,\" which is fine but less complete.\n\nOn length, Response A is about 124 words, just over the 120 limit. Response B is roughly 170 words, well over. B's extra words are mostly filler: \"Thank you for your interest,\" \"Please be aware,\" \"Please also be aware,\" and \"The main points are summarised below.\" It also gives less detail on the key feature points. Both cover the CSV breaking change and the help article, but A states the cause more directly and cleanly. A is tighter, keeps the reader-critical action item prominent, and is closer to the word limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1514,
+    "output": 1490
+  },
+  "cost": 0.0008964
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-20",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly give Canberra and 1927, and both state the 9 May opening of the Provisional Parliament House and the earlier Melbourne period from 1901. Neither contains a factual error. Response B adds accurate, useful context: the opening was performed by the Duke of York (later King George VI), the building is now called Old Parliament House, and Parliament moved to the current building in 1988. Response A is padded with filler (\"I hope this helpful background is useful\") and a summary that repeats points already made, without adding new information. Response B is therefore more informative and clearer.\n\nVerdict: B",
+  "usage": {
+    "input": 570,
+    "output": 438
+  },
+  "cost": 0.000276
+}

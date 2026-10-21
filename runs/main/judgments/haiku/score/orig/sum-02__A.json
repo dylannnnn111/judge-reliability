@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-02",
+  "side": "A",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The summary is accurate throughout. The Mount Lavell and Corrie Creek proposal, the 11 vs 64 visitor figures, Ross's objection, the no-agreement outcome, the November re-run, the reading program dates and volunteer deadline, and the roof recommendation all match the minutes. It is about 80 words, well under the limit. It omits some minor items a busy manager might still want: the air conditioning service, the 12 December staff Christmas party, and the morning tea roster. It also drops the detail that the counter was faulty for three weeks, though \"faulty in August\" is close enough. These gaps are small, so the summary keeps the points the reader needs and stays concise.\n\nScore: 8",
+  "usage": {
+    "input": 1284,
+    "output": 1434
+  },
+  "cost": 0.0008454
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-37",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are accurate on the main facts: the dates, the $64,000 contractor cost, the sponsor's absence until 20 October, and the fact that nothing has been decided.\n\n**Accuracy:** Neither has a real error.\n- A says option 2 \"may not be acceptable\". That is a fair reading of Finance's condition, given four month-end reports depend on payroll.\n- B says option 2 is possible \"though four month-end reports need it\". That is accurate but gives less of the reasoning.\n- B says Margaret Lowe \"returns 20 October\", where the source says she is overseas until then. This is a negligible difference.\n\n**Coverage:**\n- B includes the progress made (14 of 22 reports matching, nightly loads) and that Tomas is documenting the payroll system. It also keeps the \"Amber (was Green)\" status.\n- A omits the progress and the documentation work, and says only \"on schedule\".\n- A keeps the February add-on detail and the next update date, which B drops.\n- Overall B gives a slightly fuller picture of status and mitigation. A has a slightly better treatment of option 2.\n\n**Concision:** The brief was under 120 words.\n- By my count A runs to about 139 words, which clearly breaks the limit.\n- B runs to about 126 words, which also exceeds it, but by less.\n\nB is tighter and covers a bit more of what the manager needs to know, so it comes out slightly ahead.\n\nVerdict: B",
+  "usage": {
+    "input": 1475,
+    "output": 2416
+  },
+  "cost": 0.02711
+}

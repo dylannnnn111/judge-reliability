@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-11",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate. Names, roles, dates (Mon 10th, Wed 12th, Fri 14th), the two-crate limit, the 3pm deadline, the 8:30am welcome, and the parking allocation all match the source. It drops a minor consequence (Lena warns that late boxing may delay client files), but the core actions are all there.\n\nThe main problem is the word limit. I counted about 134 words including the title, or roughly 122 without it, so it breaks the \"under 120 words\" instruction either way. The bullets are reasonably tight, but the Rachel and access bullets carry some padding, such as \"Direct questions about the move and desk locations to her\" and \"as you can't get past the lobby without a card.\" Cutting these would bring it under the limit without losing any needed information.\n\nAccuracy is strong, the key points are kept, but the response fails the explicit length constraint.\n\nScore: 6",
+  "usage": {
+    "input": 1185,
+    "output": 1924
+  },
+  "cost": 0.0010805
+}

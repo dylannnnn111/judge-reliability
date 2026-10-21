@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-37",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Word count matters, since the request says under 120 words.\n\nResponse A: Paragraph 1 is roughly 52 words (\"Uluru is red because of rust.\" 6; \"The rock is arkose, a sandstone rich in feldspar and quartz, and it contains small amounts of iron-bearing minerals.\" 19, so 25; \"Over millions of years, exposure to oxygen and water has oxidized this iron, forming iron oxides (essentially rust) that coat the surface and give it its rusty-orange to red colour.\" about 29, so about 54). Paragraph 2: \"The effect is mostly superficial.\" 5; \"If you look at a freshly broken piece of the rock, the interior is grey.\" 15; \"The outer weathered layer is what appears red.\" 8. That is 28, so the total so far is about 82. Paragraph 3: \"Uluru's colour also seems to change throughout the day.\" 9; \"At sunrise and sunset, the low-angle light is richer in red wavelengths, so the rock can glow deep red, orange, or even purple.\" 22. That is 31, so the total is about 113. This is under 120.\n\nResponse B is clearly over 120, probably around 200 words. It violates the constraint.\n\nA is better.\n\n**A**",
+  "usage": {
+    "input": 724,
+    "output": 398
+  },
+  "cost": 0.005428
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-33",
+  "side": "B",
+  "score": 5,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy.** The action item is handled well. It gives the extended 31 January 2027 deadline rather than the superseded 30 November date. It also keeps the conditional (\"if your payroll export uses v1\"), the consequence (late pay), the 15-minute effort, the help-centre guide and the ~8% figure. The improvements and fixes are summarised correctly.\n\nThere is one misleading error. The heading \"New features (automatic)\" covers area-based shift swap approvals, but that feature needs setting up in Admin > Permissions > Areas. A manager reading this would assume nothing needs doing, when this feature does nothing until configured. The heading undermines the very \"do I need to act?\" distinction the summary is built around.\n\n**Coverage.** The key points are all present, and the action item correctly comes first. Nothing important is missing.\n\n**Concision.** By my count the response is about 129 words including the title, or about 123 without it. Either way it exceeds the explicit 120-word limit. Some wording is redundant. \"Only ~8% of customers are affected\" adds little once the condition is stated. The repeated \"switch to v2… but switch soon\" could be tightened.\n\n**Overall.** This is a well-structured summary that gets the date change right. However, it breaks the explicit length constraint and wrongly labels a feature that needs setup as automatic.\n\nScore: 5",
+  "usage": {
+    "input": 1181,
+    "output": 1757
+  },
+  "cost": 0.039864
+}

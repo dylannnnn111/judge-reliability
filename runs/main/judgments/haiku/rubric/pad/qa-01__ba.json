@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-01",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses reach the correct answer: 90 true positives out of 981 total positives gives about 9.2%. Both also explain the key reason, the base rate effect from the rare condition and the large healthy group. Both lay out the same clear 10,000-person breakdown.\n\nThe deciding difference is the explicit \"under 120 words\" constraint. Response A runs well over 120 words, with a preamble, a longer setup, and a multi-sentence interpretation. Response B comes in comfortably under the limit while keeping every essential step and the key insight. A's extra words add some explanatory value, but not enough to justify breaking the stated length limit.\n\nVerdict: B",
+  "usage": {
+    "input": 977,
+    "output": 413
+  },
+  "cost": 0.00030419999999999997
+}

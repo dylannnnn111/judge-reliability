@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-31",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. It stays close to the 120-word limit (about 120 words), while A runs to roughly 250. B also gives the same core explanation (axial tilt, opposite hemispheres, reversal in June) more concisely.\n\nB",
+  "usage": {
+    "input": 821,
+    "output": 1460
+  },
+  "cost": 0.0008121000000000001
+}

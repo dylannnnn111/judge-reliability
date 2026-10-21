@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "qa-03",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both responses give the correct answers: a **1 percentage point** rise, which is a **25% relative increase**. Both also show the key calculation, (5 − 4) ÷ 4 × 100 = 25%. They are therefore equal on correctness and on reasoning.\n\n**Response A** states both interpretations clearly and briefly. It fully answers the question.\n\n**Response B** adds a borrower example: on $400,000, annual interest rises from $16,000 to $20,000. The numbers are correct, but the example goes beyond what was asked.\n- It is framed as showing that \"this distinction matters,\" yet it does not show why the percentage-point versus percent distinction matters. It only restates the 25% figure in dollars.\n- The claim that the interest portion of repayments rises by 25% is a simplification for an amortising loan. It holds only at a fixed balance, which \"all else equal\" partly covers.\n- Opening with \"The answer depends…\" adds a hedge that A avoids while conveying the same content.\n\nB's extra material is correct but adds little useful insight. Since length is not a merit in itself, A's concise, complete answer is slightly better on clarity.\n\nVerdict: A",
+  "usage": {
+    "input": 590,
+    "output": 1068
+  },
+  "cost": 0.02372
+}

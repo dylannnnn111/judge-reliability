@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-02",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses reach the correct answer, 96 km/h. Both show the work correctly: 320 km total, 10/3 hours total, and 320 ÷ (10/3) = 96. Both explain why the simple average of 100 km/h is wrong, and both stay under 120 words.\n\nResponse A adds the harmonic-mean formula with its explicit calculation, 2 × 80 × 120 / (80 + 120) = 96, and notes that it applies to equal distances. That qualifier is useful, since the formula doesn't hold for equal times. Response B is more concise and names the harmonic mean, but it omits the formula and the equal-distance condition. The extra content in A is correct and relevant, so it is a slight improvement rather than padding.\n\nVerdict: A",
+  "usage": {
+    "input": 719,
+    "output": 480
+  },
+  "cost": 0.0003119
+}

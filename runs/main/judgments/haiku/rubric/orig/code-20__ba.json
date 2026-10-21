@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-20",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the main DST bug, with accurate spring-forward and fall-back examples and a working UTC-based fix. Both also flag the NaN and silent-drop problem for malformed dates, and both mention timezone and stale-after-midnight issues. Neither misses anything important.\n\nResponse A is more precise. It correctly notes that the overdue list is unaffected by the DST error, since the sign of the difference stays right. Response B claims the fall-back case \"may land in the wrong place on the overdue list,\" which is wrong: a due-yesterday invoice is still negative and still overdue. Response A's specific example of a full ISO timestamp producing `\"...T00:00:00ZT00:00:00\"` is also a concrete, useful detail. Response B's fix drops `Math.floor` without rounding, which works here because UTC day differences are exact integers, but its reasoning is less careful. Response A's timezone point is also more substantive than B's \"minor\" framing.\n\nLength is similar and both fit the limit, so length doesn't separate them. Response A's accuracy edge on the overdue-list impact makes it the better response.\n\nVerdict: A",
+  "usage": {
+    "input": 1859,
+    "output": 1305
+  },
+  "cost": 0.0008384
+}

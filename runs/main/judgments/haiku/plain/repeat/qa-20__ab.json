@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "qa-20",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B",
+  "usage": {
+    "input": 340,
+    "output": 237
+  },
+  "cost": 0.0001525
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-08",
+  "side": "A",
+  "score": 4,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** The opening states the fridge failed on 4 Oct. That is wrong. Daniel complained on 2 Oct that it stopped \"on Sunday\", so the failure came before 2 Oct. The parenthetical that follows is garbled. A correction is tacked on at the end asking the reader to disregard the date. For a busy manager who won't read the original, this is confusing and undermines trust in the summary.\n\nThe rest is accurate:\n- Priya Nand arranged a Wednesday delivery.\n- Frostline will collect the faulty unit separately, so there may be two calls.\n- Kevin Hales hasn't sent the claim form despite being chased.\n- Claims up to $500 need no manager sign-off.\n- If the form isn't sent by 9 Oct, escalate to Amara Osei.\n- The customer chased twice.\n\n**Coverage:** The key points are there. These are the outstanding claim, the replacement status, the escalation trigger and the customer-frustration risk. The 90-day store-responsibility point is also kept.\n\n**Concision:** The response runs to roughly 160 words, well over the 120-word limit, even before the appended correction. The muddled parenthetical and the correction note add words without adding value. They actively harm clarity.\n\nOverall, the core content is useful and mostly correct. However, a factual date error, an untidy self-correction left in the deliverable, and a breach of the word limit significantly reduce its quality.\n\nScore: 4",
+  "usage": {
+    "input": 1323,
+    "output": 753
+  },
+  "cost": 0.020352
+}

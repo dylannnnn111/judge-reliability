@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-30",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the two most important bugs: `COUNT(*)` counting the NULL row for agents with no tickets, and `COALESCE(AVG(...), 0)` presenting idle agents as having perfect response times. Both also note that `AVG` skips NULL response times, which biases the average.\n\nResponse B goes further in useful ways. It explains that the `COUNT(*)` bug also distorts the sort order, and its point about the average is sharper: unanswered tickets are typically the slowest, so dropping them flatters the figure. It also raises the missing time window, which matters because the report is described as weekly yet covers every open ticket regardless of age. That is probably the most significant gap in the report's intent that neither response's bugs fully capture. The integer-truncation note is real on some databases, though it is conditional. Its closing note that the `status` filter is correctly placed in the `ON` clause is a useful check that prevents a wrong \"fix.\"\n\nResponse A's point on hard-coded `status` and `active` values is reasonable but speculative, and its final point about the email wording is weak filler. Its ordering is sensible but it misses the time-window issue.\n\nBoth are roughly the same length, near the 200-word limit. Response B finds more real issues, explains their impact better, and avoids flagging something that is fine.\n\nVerdict: B",
+  "usage": {
+    "input": 1492,
+    "output": 1047
+  },
+  "cost": 0.0006727
+}

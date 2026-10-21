@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-35",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better.\n\n**Length:** Response A comes to exactly 120 words by my count, which does not meet \"under 120\". Response B is about 118 words, so it stays within the limit.\n\n**Accuracy:** B states \"Overrunning means paying daily rent\", while the source says the tenant \"may have to pay\". That overstates a little. A keeps the hedge with \"may incur\". The slip is minor and does not outweigh A's miss on the length limit.\n\n**Usability:** B's headings and bullets are easier for a busy manager to scan. Both responses cover the same key points: the deadline, the required work, the kitchenette exception, the payment alternative with its notice period, and the bond.\n\nB is the safer pick.\n\n**B**",
+  "usage": {
+    "input": 1300,
+    "output": 2258
+  },
+  "cost": 0.02518
+}

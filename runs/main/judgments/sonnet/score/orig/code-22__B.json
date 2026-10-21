@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-22",
+  "side": "B",
+  "score": 5,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds the critical bug: `jwt.decode()` skips signature verification, so anyone can forge an admin token. It also gives a correct fix, `jwt.verify` with a pinned algorithm. The 401 versus 403 point for a missing token is real, and the dead `try/catch` observation is correct.\n\nIt has several weaknesses:\n- **Ranking:** Exporting `SECRET` is rated \"High\", which overstates a minor hygiene concern and puts it above more concrete problems like the 401/403 mix-up.\n- **Padding and overlap:** Item 7 (expiration unchecked) is a consequence of item 1 rather than a separate bug. Item 6 is speculative, and its claim that a missing secret \"fails open\" is not supported, because the code never uses the secret in verification. Item 5 is a marginal point.\n- **Length:** The user asked for under 200 words, and the response runs to roughly 230–250. It breaks the instruction in order to include low-value items.\n\nThe top finding is solid and well fixed, but the ranking is off, there is some padding, and the word limit is exceeded.\n\nScore: 5",
+  "usage": {
+    "input": 1001,
+    "output": 887
+  },
+  "cost": 0.010872
+}

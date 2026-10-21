@@ -1,0 +1,13 @@
+{
+  "item": "code-25",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Bugs and problems, most important first:**\n\n1. **Off-by-one allows 6 attempts, not 5.** With 5 recent hits, `5 > 5` is false, so a sixth is allowed. Use `>=`.\n\n2. **Unbounded memory growth.** Keys are never deleted, and stale timestamps are only pruned when the same key returns. An attacker rotating IPs (easy with IPv6) can grow the Map until the process runs out of memory. Delete empty entries and sweep periodically, or use an LRU/TTL store.\n\n3. **Per-IP only, so it's weak against real guessing attacks.** A distributed attacker can hit one account from many IPs without ever tripping the limit. Also limit per username/account. Rotating through an IPv6 /64 defeats per-address limits, so key on the prefix.\n\n4. **In-memory state.** Counters reset on restart and aren't shared across instances or workers, so the effective limit is `limit × instances`. Use Redis or similar.\n\n5. **Hardcoded `retryAfterSec: 60`.** This is inaccurate. Compute it from the oldest hit in the window: `ceil((oldest + windowMs - now) / 1000)`. `allow` would need to return that value.\n\n6. **Proxy and NAT concerns.** Behind a reverse proxy, `ip` may be the proxy's address, which would lock out everyone at once. Make sure you derive the client IP from trusted headers only. Shared NAT users also share a budget.\n\n7. **Minor:** The `now` parameter is fine for tests, but there are no tests, and there is no way to reset a key after a successful login.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 388,
+    "output": 933
+  },
+  "cost": 0.010106,
+  "at": "2026-10-14T01:54:13.765Z"
+}

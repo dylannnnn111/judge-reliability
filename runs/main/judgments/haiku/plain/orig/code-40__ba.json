@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-40",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "**A**\n\nBoth responses correctly identify the two most important bugs: the pipe-subshell problem that stops `alerts` from updating, and the `set -e` abort when `curl` fails. Both also catch the non-numeric `pct` crash.\n\nResponse A covers more real issues. Squashfs and snap loop mounts sit at 100% and would cause false pages on Ubuntu servers. A stale NFS mount can hang `df` and pile up cron runs. Response A also gives a more careful fix for the curl failure, handling it explicitly rather than suppressing it with `|| true`, which would silently drop alerts. Its dedup point is also more concrete.\n\nResponse A exceeds the 200-word limit by roughly 30 words, while Response B stays under it. That is a real instruction violation, but the substantive gap in coverage and fix quality outweighs it.",
+  "usage": {
+    "input": 1573,
+    "output": 1270
+  },
+  "cost": 0.0007922999999999999
+}

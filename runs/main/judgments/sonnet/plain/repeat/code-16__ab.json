@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "code-16",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. It meets the 200-word limit (roughly 175 words), while A runs to about 260.\n\nB also puts the likely GST problem first. The code adds 10% on top of `priceCents`, and Australian prices are normally GST-inclusive, so this could overcharge every customer. A buries that point at #7 as a mild \"verify this\" note.\n\nA's rounding advice is also weak. `Math.round(subtotalCents * 10 / 100)` is not meaningfully better than the original, and the float-misrounding concern is overstated. A also pads the list with low-value items such as the hardcoded code lacking expiry and limits.\n\nBoth responses cover the same core issues: the mutating sort, missing input validation, trusting client-side totals, brittle code matching, and `formatAud` edge cases. B states them more tightly and in a better priority order.\n\n**B**",
+  "usage": {
+    "input": 1543,
+    "output": 1194
+  },
+  "cost": 0.015026
+}

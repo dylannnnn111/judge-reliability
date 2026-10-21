@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-22",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly answer \"no\" and explain that the Coriolis effect is far too weak to set drain direction in a sink or toilet. Both also note that the effect only shows up in carefully controlled experiments. Neither contains an obvious factual error.\n\nResponse A gives more of the key reasoning and specific detail. It notes that hurricanes rotate clockwise in the Southern Hemisphere, which speaks directly to the Australian framing. It explains that toilet swirl comes from the angled rim jets, so the same model drains the same way everywhere. It also cites the Shapiro experiment and a Sydney replication, which ties the lab evidence to Australia. The Sydney detail is a small risk if inaccurate, but it is plausible and I believe it is real.\n\nResponse B is clear and accurate but more generic. It lists the factors (basin shape, jets, residual motion, asymmetries) without the concrete examples A gives. Its point that identical sinks can drain differently is useful, but it does not add enough to outweigh A's specificity.\n\nVerdict: A",
+  "usage": {
+    "input": 859,
+    "output": 935
+  },
+  "cost": 0.0005534
+}

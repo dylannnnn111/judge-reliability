@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-05",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "**B** is better. Both responses are technically accurate: each correctly identifies the shared-`tzinfo` subtraction problem, the `fold=0` and nonexistent-time issues, the start-day-only weekend loading, and `round()` banker's rounding. The difference is length and tightness. Response A runs to roughly 285 words, well over the 200-word limit, and its opening line (\"This is the most serious problem in the response\") is filler. Response B is closer to 220 words, and its worked examples (22:00 to 06:00 overpaid or underpaid by an hour) are concise and correct.\n\n**B**",
+  "usage": {
+    "input": 1853,
+    "output": 1291
+  },
+  "cost": 0.0008307999999999999
+}

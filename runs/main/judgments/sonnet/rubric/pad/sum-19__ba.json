@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-19",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. Response A is far over the 120-word limit, at roughly 280 words. It also pads with filler such as \"Thank you for reviewing this summary\", \"To put this another way\" and \"For completeness\". Its content is mostly accurate, but the padding defeats the purpose of a summary for a busy manager.\n\nResponse B is accurate on the key points: consent is required, the landlord's conditions on an assignment, the continuing liability because this is not a retail lease, the 30% subletting cap, the change-of-control rule, the 28-day response period, and the advice to negotiate a release. It also includes the Kingsley contact. It runs slightly over the limit, at about 130 words by my count, but it is much closer to the brief and denser with useful content. Neither response is misleading.\n\nVerdict: B",
+  "usage": {
+    "input": 1841,
+    "output": 1502
+  },
+  "cost": 0.018702
+}

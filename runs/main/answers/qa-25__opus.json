@@ -1,0 +1,13 @@
+{
+  "item": "qa-25",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "No, Viking warriors didn't wear horned helmets. This is a popular myth.\n\n**The evidence:** Only one fairly complete Viking-age helmet has been found: the Gjermundbu helmet from Norway (10th century). It's a simple rounded iron cap with a spectacle-like face guard and no horns. Many warriors likely wore leather caps or no helmet at all, since iron was expensive.\n\n**Where the myth came from:** It largely stems from the 19th century. Romantic artists and costume designer Carl Emil Doepler, who outfitted Wagner's opera *Der Ring des Nibelungen* (1876), popularized horned helmets.\n\n**A grain of truth:** Horned helmets did exist in Scandinavia, but in the Bronze Age, centuries before the Vikings, and they were probably ceremonial rather than for battle.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 46,
+    "output": 299
+  },
+  "cost": 0.006164,
+  "at": "2026-10-14T01:50:42.570Z"
+}

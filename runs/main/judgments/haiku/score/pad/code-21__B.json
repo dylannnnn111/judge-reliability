@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "code-21",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response identifies the most important problem: retrying a non-idempotent POST on 502/503/504 and on network errors can double-issue a refund, and it correctly recommends an idempotency key. The other points are mostly real: missing timeout, ignored `Retry-After`, unconsumed bodies on discarded responses, input validation, and the jitter reaching about 60s. The ranking is sensible, and the fixes are concrete. Item 2 is weaker, since it speculates about agent behavior rather than the code. The jitter and cancellation points are minor, as the response admits. The main flaw is length: the user asked for under 200 words, and this runs roughly 330, which violates an explicit constraint. The extra words add some useful fixes, but not enough to justify exceeding the limit.\n\nScore: 6",
+  "usage": {
+    "input": 1380,
+    "output": 758
+  },
+  "cost": 0.000517
+}

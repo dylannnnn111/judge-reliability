@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-24",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better. Both responses use the corrected figures ($14,500 for Saltwater, $88,200 total, $31,800 rollover), and neither contains a factual error.\n\n**Response A:**\n- It counts about 114 words, so it meets the under-120 limit.\n- It keeps the key points: the corrected total and rollover, the approved grants, the conflict of interest, the feedback deadline, the acquittal deadline, the Round 3 dates and the quick-response grant discussion.\n- It also flags the correction to the Saltwater amount, which helps a reader who may have seen the earlier figure.\n\n**Response B:**\n- It runs well over 120 words, roughly 150, so it breaks the explicit constraint.\n- It opens with filler (\"Thank you for reviewing the update below…\") that adds nothing for a busy manager.\n- It omits the conflict of interest, which is a governance point.\n- It does not mention that the Saltwater figure was corrected, though its numbers are right.\n\nResponse A is accurate, within the limit and more complete, so it is the better summary.\n\nVerdict: A",
+  "usage": {
+    "input": 1891,
+    "output": 1622
+  },
+  "cost": 0.020002
+}

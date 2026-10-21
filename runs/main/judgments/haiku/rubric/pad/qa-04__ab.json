@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-04",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses reach the correct final price of $480 and the correct overall change of −4%, so correctness is tied. Both also explain why the changes don't cancel: the discount applies to the larger $600 base.\n\nResponse A adds the general result that a ±p% change gives a net −p² effect, which is correct and useful. It stays well under the 120-word limit, at roughly 90 words.\n\nResponse B is correct but runs to about 200 words, breaking the explicit length constraint. Its extra material, including the restated calculations and the 1.20 × 0.80 = 0.96 check, mostly repeats what it already said and adds little.\n\nResponse A is better because it is correct, gives the key reasoning, and follows the word limit.\n\nVerdict: A",
+  "usage": {
+    "input": 865,
+    "output": 442
+  },
+  "cost": 0.0003075
+}

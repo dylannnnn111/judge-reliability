@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-40",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A** is better: it respects the explicit word limit, while B overshoots it, partly with minor padding.\n\n**Correctness.** Both responses are accurate and lead with the most important bug. The `while` loop runs in a pipe subshell, so `alerts` never leaves 0 and the script never pages on a full disk. Both also correctly note that a failed `curl -f` under `set -e`/`pipefail` aborts the loop. That makes the job page only when the webhook is broken, not when a disk is full. Both catch the non-numeric `-` in `Use%` crashing the script, and both flag alert spam from repeating every 5 minutes with no state.\n\n**Coverage.** B covers more ground:\n- Squashfs/snap loop mounts always show 100% and would cause false alerts once the main bug is fixed. This is a real point A misses.\n- A stale NFS mount can hang `df`, so cron runs pile up.\n- Minor items: unused variables and unchecked inode usage.\n\n**Length.** The user asked for under 200 words, focused on what matters. A runs about 200 words, essentially at the limit. B runs roughly 250–260, well over. Some of B's extra length goes to trivia: unused variables have no practical consequence, and inode checking is a feature suggestion rather than a bug.\n\nB's squashfs and NFS points are valuable, but they don't outweigh ignoring a clear, explicit length constraint.\n\nA",
+  "usage": {
+    "input": 1573,
+    "output": 1693
+  },
+  "cost": 0.040152
+}

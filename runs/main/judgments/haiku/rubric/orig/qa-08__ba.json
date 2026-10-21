@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-08",
+  "order": "ba",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses reach the same correct result: 375 mL × 0.048 = 18 mL of ethanol, × 0.789 g/mL ≈ 14.2 g, ÷ 10 g ≈ 1.42 standard drinks. Both show the same key steps and fit the under-120-word limit. Response A adds a headline answer of \"About 1.4\" and a note that Australian labels round to one decimal place. That note is plausible and mildly useful, but it is an unsupported extra claim that the question did not ask for. Response B is equally clear and gives the precise figure without the extra claim. Neither is meaningfully better on correctness, reasoning, or clarity.\n\nVerdict: TIE",
+  "usage": {
+    "input": 596,
+    "output": 565
+  },
+  "cost": 0.0003421
+}

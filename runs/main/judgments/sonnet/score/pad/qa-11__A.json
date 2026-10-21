@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "qa-11",
+  "side": "A",
+  "score": 5,
+  "model": "claude-sonnet-5-5",
+  "text": "The correct answer is that switching and staying are equally good, each winning with probability 1/2. The response gets this right, and its reasoning is correct too: the car is behind door 1 or door 3 with equal likelihood once door 2 shows a goat.\n\nThe problem is the length limit. The user asked for under 120 words. Counting the response's words, it comes to roughly 250, so it clearly breaks the constraint. That is a real instruction-following failure, though the correctness is intact.\n\nThe content is also somewhat verbose. The three-case walkthrough and the contrast with the classic problem are useful, but they could have been compressed.\n\nBecause the answer and reasoning are correct but the explicit length limit is violated by a wide margin, the score should be lowered noticeably.\n\nScore: 5",
+  "usage": {
+    "input": 671,
+    "output": 249
+  },
+  "cost": 0.003832
+}

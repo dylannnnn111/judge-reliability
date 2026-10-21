@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-02",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** both are largely faithful, and each has one small slip.\n\n- **A:** \"only 11 visitors on Saturday afternoons\" drops \"averaged,\" so it can read as a total rather than an average over the 2–5pm window. Otherwise it is careful: \"faulty visitor counter in August,\" \"re-run the figures,\" and \"full replacement is recommended\" all match the source.\n- **B:** \"The children's area roof needs full replacement\" turns the contractor's *recommendation* into a firm need, and it omits that the leak has been patched. \"To fund Thursday evening opening\" is a loose paraphrase of reallocating saved staff hours, but it is acceptable. \"Each branch must send two launch-day volunteers\" means sending names, which is close enough.\n\nThese slips are comparable in weight.\n\n**Coverage:** both keep what the manager needs.\n\n- **Opening hours:** both cover the proposal, the objection, that there was no agreement, that nothing changes for now, and the November follow-up.\n- **Summer program:** both give the dates, theme, registration opening, and the 24 October volunteer action.\n- **Maintenance:** both include the roof replacement and the capital works bid.\n- **Next meeting:** both give the date.\n\nA adds the 11-vs-64 comparison, which is useful context. B leads with \"No agreement reached,\" which suits a busy reader. B includes the air-conditioning service, which is low value, and A rightly drops it.\n\n**Length:** this is the user's explicit hard limit. A counts at roughly 123 words including its heading, or about 116 without it. That puts it at or over the 120-word cap. B is around 113 words and clearly within it. Since the accuracy flaws roughly balance out, A's likely breach of the limit tips the decision.\n\nVerdict: B",
+  "usage": {
+    "input": 1621,
+    "output": 2605
+  },
+  "cost": 0.058584
+}

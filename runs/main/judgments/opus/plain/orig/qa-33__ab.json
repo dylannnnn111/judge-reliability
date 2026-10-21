@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-33",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses are accurate and cover the same key points: tidal locking, the 27.3-day period, libration revealing about 59% of the surface, and the far side receiving sunlight. Response B explains the tidal-bulge mechanism in slightly more detail.\n\nHowever, the user asked for an answer *under* 120 words. Response A comes in at roughly 95 words. Response B counts to exactly 120 words, which does not satisfy \"under 120.\"\n\nBecause A meets the length constraint while remaining clear, complete, and correct, A is the better response.",
+  "usage": {
+    "input": 532,
+    "output": 1207
+  },
+  "cost": 0.026268
+}

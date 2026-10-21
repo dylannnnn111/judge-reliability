@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-10",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the two real core problems: the unanchored `match` combined with `<path:slug>` allows path traversal, and nothing in the code checks login or role. Both give correct fixes: `fullmatch`, the plain `<slug>` converter, and an auth check. B also suggests `send_from_directory`, which is a good, idiomatic fix.\n\n**Ranking:** A puts traversal first. It is exploitable even for authenticated users and is the concrete bug in the code. B puts missing authentication first, which is also defensible, since the stated purpose is staff-only access. Neither ordering is clearly wrong.\n\n**Secondary points:**\n- A's symlink escape is a legitimate hardening point. Its TOCTOU point is weak but harmless. Its \"no download filename\" point is minor but valid.\n- A's point 6 is muddled. It says the regex class is fine, then complains about a 400 vs 404 distinction that doesn't match the code's actual behavior. This is the kind of flagging-something-fine the prompt warns against.\n- B's `os.path.exists` vs `isfile` point is real, since a directory named `foo.pdf` would cause a 500. Its cache-control point is reasonable.\n- B's \"per-report authorization\" point is speculative, because nothing says reports are scoped.\n- B's logging and hard-coded config points are noise.\n- B also opens with filler (\"Thank you for sharing…\").\n\n**Length constraint:** The user asked for under 200 words. Both exceed it, but B (~350 words) overshoots far more than A (~250 words). B's extra length is mostly speculative or low-value content.\n\nA is more concise, leads with the most concrete critical bug, and has less speculative padding. B has a couple of better individual points (`send_from_directory`, `isfile`) but dilutes them with noise and breaks the length limit more. Overall A is slightly better.\n\nVerdict: A",
+  "usage": {
+    "input": 1715,
+    "output": 1570
+  },
+  "cost": 0.01913
+}

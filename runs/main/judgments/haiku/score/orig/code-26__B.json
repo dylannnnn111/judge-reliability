@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-26",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response identifies the real bugs. The string `qty` concatenation (`0 + \"2\" + \"3\"` gives `\"023\"`) is correctly ranked first, since it silently corrupts the main dashboard figure. The `NaN` propagation into the sort comparator is real, and the naive `split(\",\")` parser is a genuine problem. The `__proto__` and `constructor` keys are also real: `orders[\"constructor\"]` returns the truthy `Object` function, so the code writes onto built-in objects. The CRLF point is accurate, though minor, and the `Object.values` key-ordering note is correct. The ranking is sensible and each item includes a fix. The response is close to the 200-word limit but stays within it. It could have been slightly sharper about the prototype issue's severity, and it doesn't mention that `NaN` values are not caught by `Number(\"\")` returning 0, but those are small gaps. Overall it is accurate, well ordered, and concise.\n\nScore: 8",
+  "usage": {
+    "input": 1119,
+    "output": 1095
+  },
+  "cost": 0.0006594
+}

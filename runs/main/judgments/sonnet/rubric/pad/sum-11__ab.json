@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-11",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better. Both responses go over the 120-word limit, but A overshoots far less.\n\n**Accuracy:** Both are largely accurate. A has no errors. B infers \"Monday 17 November\", which is correct since 15 November is a Saturday. B's \"not eligible for a space\" is slightly stronger than the source, which says only that people who skipped the survey aren't on the list.\n\n**Coverage:** Both keep the key points: who to ask, the IT and laptop instructions, the records deadline and box availability, the two-crate limit, the access card collection, and parking. A leaves out the warning that unboxed files could mean delays reaching client files. B also leaves out that consequence. A's coverage is adequate for a busy manager.\n\n**Concision:** A is about 135 words, so it breaks the limit by roughly 15. B is about 230, nearly double the limit. B also adds filler (\"Thank you for your cooperation\", \"warmly invited\") that gives the manager nothing. A is tighter and more usable.\n\nVerdict: A",
+  "usage": {
+    "input": 1797,
+    "output": 1511
+  },
+  "cost": 0.018704
+}

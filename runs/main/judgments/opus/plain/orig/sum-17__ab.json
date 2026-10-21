@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-17",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A** is better. It is accurate, more complete and closer to the word limit, though both responses exceed 120 words.\n\n**Word count:**\n- **Response A** is about 124 words including its \"Summary:\" label, slightly over the limit.\n- **Response B** is about 134 words in the body alone, or roughly 143 with its subject line. That is well over the limit.\n\n**Accuracy:**\n- **Response A** reflects the thread correctly. It explains the licence distinction: the bar may open until midnight on Friday and Saturday, but amplified music must stop at 10pm. It also covers the chair's call with the venue manager and the agreed fixes. It names the regulator complaint as the fallback and the 20 October report-back.\n- **Response B** misattributes a key detail. It says Arjun Mehta noted this was the fourth weekend in a row, but Colleen Barker said that. Its headline \"resolved for now\" also overstates the outcome. The chair said \"let's see how this weekend goes,\" so the matter is pending, not resolved.\n\n**Completeness:**\n- **Response A** includes that one resident likes the bar and doesn't want conflict. A manager would want to know the residents are not unanimous.\n- **Response B** omits that view entirely.\n\n**Concision:**\n- **Response A** is tighter overall, which suits a busy manager.\n\n**A**",
+  "usage": {
+    "input": 1405,
+    "output": 1954
+  },
+  "cost": 0.0447
+}

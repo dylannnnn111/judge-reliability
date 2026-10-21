@@ -1,0 +1,13 @@
+{
+  "item": "qa-32",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "Leap years exist because Earth's orbit around the Sun takes about 365.2422 days, not a whole 365. Adding an extra day (February 29) every four years keeps the calendar aligned with the seasons.\n\nThe rule is refined to correct for the small excess: years divisible by 100 are not leap years, unless they're also divisible by 400. So 1900 was divisible by 100 but not by 400, making it a common year. The year 2000 was divisible by 400, so it was a leap year.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 58,
+    "output": 159
+  },
+  "cost": 0.0000853,
+  "at": "2026-10-14T01:50:50.148Z"
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-36",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.** Both are under 120 words and broadly correct, but B is more accurate on two points.\n\n**Response A's weaknesses:**\n- It ties the speed difference to the \"curved upper surface\" versus the \"flatter lower surface.\" This edges toward the popular misconception that camber alone explains lift.\n- It presents Bernoulli and Newton as separate mechanisms that combine (\"Together... produce lift\"). That is misleading, because they are two descriptions of the same physical phenomenon.\n\n**Response B's strengths:**\n- It frames lift as deflecting air downward, which is accurate.\n- It names both the airfoil shape and the angle of attack as causes.\n- It describes the pressure difference and explicitly calls the Newton's third law view \"equivalent,\" which is the correct relationship.\n- It adds useful, correct context: lift increases with speed and angle of attack, and too steep an angle causes a stall.\n\nThe extra content in B is correct and useful, not padding.\n\nVerdict: B",
+  "usage": {
+    "input": 685,
+    "output": 534
+  },
+  "cost": 0.01342
+}

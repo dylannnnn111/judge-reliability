@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-11",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Verdict: A**\n\nBoth responses give the correct answer: with a host who doesn't know where the car is, a randomly revealed goat leaves door 1 and door 3 equally likely, so switching wins with probability 1/2.\n\n**Reasoning.** Both are sound.\n- **A** works through the joint probabilities explicitly. Each surviving case gets 1/3 × 1/2 = 1/6, which normalizes to 1/2 each. This shows the conditioning cleanly.\n- **B** reasons that both surviving cases fit the evidence equally well. That is also valid. Its contrast with the classic Monty Hall problem is a genuinely useful insight.\n\n**Constraint.** The user asked for an answer in under 120 words.\n- **A** is about 110 words, so it complies.\n- **B** is roughly 230 words, nearly double the limit. Much of that length is wordy restatement rather than essential content.\n\nBoth answers are correct with valid reasoning. A is clear and respects the explicit length limit, while B clearly violates it. A is better.\n\nVerdict: A",
+  "usage": {
+    "input": 995,
+    "output": 594
+  },
+  "cost": 0.01586
+}

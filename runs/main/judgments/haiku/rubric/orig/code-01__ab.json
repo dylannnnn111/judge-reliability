@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-01",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses identify the most serious problems: no idempotency, a single failure aborting the batch, float money, and the `int(amount * 100)` truncation. Both correctly flag that the truncation can undercharge, and both explain the float-rounding issue. Response A catches that `float()` accepts NaN and inf and mentions billing-period scoping, both real and useful. Response B catches the unnormalized `customer_id` (`\" 123\"` vs `\"123\"`), which can split one customer into several bills, and gives a concrete truncation example (10.29 becomes 1028 cents). B also more consistently pairs each problem with a fix, while A's minor point about in-memory loading and currency is filler. The differences are small, and B's concrete examples and actionable fixes give it a slight edge.\n\nVerdict: B",
+  "usage": {
+    "input": 1574,
+    "output": 1089
+  },
+  "cost": 0.0007019
+}

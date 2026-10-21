@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-04",
+  "side": "A",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The response is largely accurate. The leave amounts (18 and 4 weeks at full pay), the 1 January 2027 start date, the three-block split within 24 months, the eligibility rules, the 10-week application deadline and the information session dates all match the source. Its main accuracy gap is the superannuation point: it mentions super on the government-funded portion but omits that employer-paid leave continues to attract super. It also leaves out the rule that a child arriving before 1 January 2027 keeps the old entitlements even if leave falls after that date. A manager could reasonably misread the changes without that exception, so this is a material omission.\n\nOn the requirements, the response runs to roughly 180–190 words, well over the 120-word limit. That is a clear failure of the explicit instruction. Its structure is reasonable, but some of the length goes to context and logistics the manager may not need, while the key exception is missing.\n\nGiven accurate core facts, a meaningful omitted exception, and a substantial breach of the word limit, I score it low-to-middling.\n\nScore: 4",
+  "usage": {
+    "input": 1248,
+    "output": 874
+  },
+  "cost": 0.0005618
+}

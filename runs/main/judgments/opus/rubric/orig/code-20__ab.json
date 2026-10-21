@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-20",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B is better.** Both responses find the same real issues in the same order: the DST miscount, silent `NaN` on malformed input, viewer-timezone dependence, and labels going stale after midnight. Both offer essentially the same UTC-based fix.\n\n**DST explanation**\n- Both give correct arithmetic for spring forward and fall back. A's spring-forward example (23h → floor 0.96 → \"Due today\") is accurate. B's 71h example is also accurate, though its phrasing is a little looser.\n- A says the fall-back error \"may land in the wrong place on the overdue list.\" That is wrong. `overdueInvoices` only checks `< 0`, so −2 versus −1 doesn't change membership.\n- On the spring-forward side, a due-yesterday invoice floors −0.96 to −1, so it is still correctly overdue.\n- B explicitly and correctly states that the overdue list is unaffected and only the labels are wrong. That avoids overstating the bug and shows more careful reasoning.\n\n**Fix**\n- A's fix with exact UTC division is fine.\n- B's fix adds `Math.round`, which is also fine and slightly more defensive.\n\n**Other issues**\n- Both handle malformed input equally well.\n- A downgrades timezone and staleness to \"minor.\" B lists them as items 3 and 4. Both rankings are defensible.\n\n**Length**\n- The two are similar in length. Neither adds fluff.\n\nB's correct scoping of the DST impact, set against A's small inaccuracy about the overdue list, makes B the better review.\n\nVerdict: B",
+  "usage": {
+    "input": 1859,
+    "output": 1033
+  },
+  "cost": 0.028096
+}

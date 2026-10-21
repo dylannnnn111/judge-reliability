@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-24",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses use the corrected figures: $14,500 for Saltwater, $88,200 approved in total, and $31,800 rolling over. The five grants do sum to $88,200. Both stay under 120 words.\n\n**Accuracy**\n- On the quick-response grant, Response A says \"a possible $2,000 quick-response grant.\" The minutes specify \"up to $2,000,\" so A turns a cap into a fixed amount. Response B keeps \"up to $2,000.\"\n- Response A says \"Two are encouraged to reapply,\" which suggests this has already happened. The minutes say the committee *asked Sunita to* encourage them, so it is a pending action. B's \"will be encouraged\" is more precise.\n- Response A also drops \"with revised budgets,\" the condition attached to reapplying. B keeps it.\n\n**Coverage**\n- Response A has two useful extras. It notes that Saltwater's amount was \"corrected from $45,000,\" which helps a manager who may have seen the earlier figure. It also records Jarrah's conflict-of-interest recusal, which matters for governance.\n- These are real merits, but they do not outweigh A's small distortions, since accuracy comes first.\n\n**Concision**\n- The two responses are roughly equal in length and tightness.\n\nResponse B is fully faithful to the corrected minutes. Response A has minor but real inaccuracies about a condition and the status of an action.\n\nVerdict: B",
+  "usage": {
+    "input": 1755,
+    "output": 972
+  },
+  "cost": 0.02646
+}

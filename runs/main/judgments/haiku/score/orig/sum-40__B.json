@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-40",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The summary is largely accurate. The participant numbers, the 1.8 versus 1.1 mark gains, the non-significant 0.7-mark gap, the 71 per cent survey figure, the clear-bottle condition and both limitations all match the original. Two phrasings are slightly loose. \"Not supported\" is a bit stronger than the study's \"did not find,\" though it is defensible. \"No significant problems\" changes \"no reports of problems,\" which is a minor shift. The summary also omits that teachers saw students as calmer, which is a small but relevant point. Its main flaw is length: my count is about 124 words, which exceeds the 120-word limit the user set. The content is well chosen and concise in style, but the word count is a clear instruction failure.\n\nScore: 6",
+  "usage": {
+    "input": 1069,
+    "output": 1411
+  },
+  "cost": 0.0008124
+}

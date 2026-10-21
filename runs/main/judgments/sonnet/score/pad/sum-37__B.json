@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "sum-37",
+  "side": "B",
+  "score": 3,
+  "model": "claude-sonnet-5-5",
+  "text": "The response breaks the explicit limit. It runs to roughly 220–230 words against a ceiling of 120, and it wastes words on filler such as \"I'm pleased to report,\" \"To begin with,\" \"I'd like to draw your attention,\" and \"To summarise the financial position.\"\n\nAccuracy has smaller problems:\n- \"On schedule in most respects\" softens the source, which says development is on schedule.\n- \"Load nightly as planned\" adds \"as planned\" and drops that the load is into the test warehouse.\n- Option 2 omits that Finance accepts a partial go-live only if the month-end reports don't depend on payroll, and four of them do. That makes the option look more viable than it is.\n- The February add-on date for payroll is missing.\n\nMost key points are present: Amber status, the Tomas risk and dates, the three options with cost, the team's preference, the sponsor approval needed by 20 October, and the budget. Even so, the length failure is significant, and the option 2 framing is slightly misleading.\n\nScore: 3",
+  "usage": {
+    "input": 1238,
+    "output": 801
+  },
+  "cost": 0.010486
+}

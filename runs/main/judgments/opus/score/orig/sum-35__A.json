@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-35",
+  "side": "A",
+  "score": 8,
+  "model": "claude-opus-5-5",
+  "text": "The summary is accurate on every key fact: the address, the Annexure C baseline, fair wear and tear, the 30 June 2027 deadline, the 2023 partitions, the kitchenette condition, the three-month notice, the two quotes, the $18,000 bond and the 30-day return. It is about 118 words, so it fits the limit, though only just.\n\nMinor imprecisions, none of them misleading:\n- **Repair work:** \"Repairing damage\" broadens the source's \"damage caused by removing fixtures, including patching and painting.\" It could be read as covering all damage.\n- **Payment option:** \"A payment based on two quotes\" compresses \"the landlord's reasonable estimate, supported by two quotes.\" The gist survives, and \"may instead accept\" still conveys that this is the landlord's option.\n- **Kitchenette:** It omits that the landlord agreed to this in writing, in the 2 March 2023 consent letter. A manager might want to know a document exists, but the condition itself is stated correctly.\n- **Standard:** It omits the explicit \"not a brand new standard\" point, though citing Annexure C largely covers it.\n- **Late completion:** It omits that extra-day rent is charged at the lease's daily rate. This is minor.\n\nIt keeps all the points a manager needs, in a sensible order, with no padding. The \"us\" framing suits a manager at the tenant firm.\n\nScore: 8",
+  "usage": {
+    "input": 1106,
+    "output": 1093
+  },
+  "cost": 0.026284
+}

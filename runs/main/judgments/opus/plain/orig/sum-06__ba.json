@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-06",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth summaries are accurate and come in under 120 words (roughly 108–109 each). B edges ahead on two points:\n\n- **Coverage:** B includes the adult change table and year-round swim lessons from the heated pool. A leaves both out.\n- **Format:** B's bulleted layout is easier for a busy manager to scan.\n\nB's \"all programs\" is slightly less specific than A's list, but it is still correct.",
+  "usage": {
+    "input": 1358,
+    "output": 761
+  },
+  "cost": 0.020652
+}

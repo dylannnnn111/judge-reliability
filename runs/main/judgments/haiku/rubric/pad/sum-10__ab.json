@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-10",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses report the core facts correctly: Green status, the 1 December go-live, the login results (12 of 12 unaided, 48 to 21 seconds), the three accessibility issues now fixed, the $186k of $310k spent, and the lowered helpdesk risk. Response B adds \"steering group,\" which the source never mentions, so it introduces an unsupported detail. Response A says \"No decisions needed from you,\" which is a reasonable reading of \"Decisions needed: None\" for a manager reader. A also gives the reason for the lower helpdesk risk (vendor API confirmation), which a manager would want. Response B is shorter (about 105 words against A's roughly 120), but it is written as dense prose, which is harder to scan. A is at the word limit, not clearly over it. Overall, A is more scannable and keeps more of the useful detail without the invented element, so it is the better summary.\n\nVerdict: A",
+  "usage": {
+    "input": 1404,
+    "output": 1408
+  },
+  "cost": 0.0008443999999999999
+}

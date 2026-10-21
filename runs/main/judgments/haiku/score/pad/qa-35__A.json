@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-35",
+  "side": "A",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The content is accurate. Antibiotics target bacterial structures like cell walls, ribosomes, and enzymes, which viruses lack, since viruses replicate using host cell machinery. The resistance explanation is also correct: random mutations, selection by antibiotic exposure, horizontal gene transfer via plasmids, and overuse all drive resistance. The reasoning is clear and well organized.\n\nHowever, the user explicitly asked for an answer under 120 words. Counting the two paragraphs gives roughly 200 words, so the response clearly violates a stated constraint. The extra length also doesn't add essential content; the explanation could be trimmed substantially. Because the content is correct but the explicit length requirement is badly missed, the score should drop noticeably.\n\nScore: 4",
+  "usage": {
+    "input": 630,
+    "output": 750
+  },
+  "cost": 0.000438
+}

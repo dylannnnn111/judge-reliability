@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-15",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "A\n\nBoth responses are accurate and stay under 120 words. Response A comes in at roughly 119, which is very tight but within the limit.\n\nA's structure suits a busy manager better. It labels the overall result, the \"not for everyone\" finding, the timing effect, the takeaway and the caveats separately. B puts the nap's main results under \"Key caveats\", which is a mislabel. B also folds the experience-level split and the timing finding into that same list.\n\nB is shorter and leaves more margin under the word limit. A includes the \"Timing matters more\" finding as its own item and says \"nap or not\", which is clearer.\n\nA is slightly better.\n\n**A**",
+  "usage": {
+    "input": 1246,
+    "output": 1301
+  },
+  "cost": 0.015502
+}

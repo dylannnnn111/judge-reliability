@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-30",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** Both responses are accurate on the main facts, but Response B is over the 120-word limit, while Response A is not clearly over.\n\n- **Length:** By my count, Response A is about 120 words, which is borderline against \"under 120\". Response B is about 127, which is clearly over.\n- **Accuracy:** Response B says industrial estate workers \"lose service before 6am\". The article only says the 412 won't run before 6am, so this is an unsupported inference. Response A's wording is closer to the source.\n- **Content:** Response B includes why the changes were made (the consultation finding), which is useful. That doesn't outweigh the length overrun and the inaccuracy.",
+  "usage": {
+    "input": 1337,
+    "output": 2186
+  },
+  "cost": 0.024534
+}

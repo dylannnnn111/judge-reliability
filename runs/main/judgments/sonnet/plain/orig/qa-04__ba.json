@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-04",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are correct: the final price is $480, a 4% decrease. Each stays well under the 120-word limit and explains why the changes don't cancel, noting that the discount removes $120 while the increase added only $100.\n\nResponse A walks through the steps in more detail and confirms the result with the 1.20 × 0.80 = 0.96 multiplier. It is clear but slightly repetitive.\n\nResponse B leads with the final price, which answers the question directly. It is more concise and adds a correct general rule: raising then lowering by the same percentage p gives a net change of −p², here 0.04, or −4%.\n\nResponse B is a little tighter and gives more insight, so I give it a slight edge.\n\n**B**",
+  "usage": {
+    "input": 513,
+    "output": 628
+  },
+  "cost": 0.007306
+}

@@ -1,0 +1,14 @@
+{
+  "pair": "qa-40",
+  "side": "A",
+  "author": "sonnet",
+  "model": "claude-haiku-5-5",
+  "original": "You see lightning first because light travels about 300,000 km per second, essentially instantaneous over any storm distance, while sound travels only about 343 meters per second in air. The flash and the thunder start at the same moment, but the light arrives almost immediately and the sound lags behind.\n\nTo estimate distance, count the seconds between the flash and the thunder:\n\n- **Divide by 3** for kilometers (about 3 seconds per km)\n- **Divide by 5** for miles (about 5 seconds per mile)\n\nFor example, a 10-second gap means the strike was roughly 3 km (2 miles) away.\n\nIf the gap is 30 seconds or less, the storm is close enough to be dangerous, so seek shelter.",
+  "text": "When you see a flash of lightning, you will notice it before you hear the thunder, and the reason for this is worth understanding. Light travels at roughly 300,000 km per second, which is so fast that over any distance a storm could cover, it arrives essentially instantaneously. Sound, by comparison, moves through air at only about 343 meters per second. The flash and the thunder actually begin at the same moment, but the light reaches your eyes almost immediately, while the sound takes noticeably longer to reach your ears and so seems to lag behind.\n\nBecause of this difference in speed, you can make a rough estimate of how far away a lightning strike is. To do so, count the number of seconds between the flash and the thunder, and then use one of the following simple rules:\n\n- **Divide by 3** to get the distance in kilometers (about 3 seconds per km)\n- **Divide by 5** to get the distance in miles (about 5 seconds per mile)\n\nFor example, if you count a 10-second gap, the strike was roughly 3 km (2 miles) away.\n\nFinally, keep in mind that if the gap is 30 seconds or less, the storm is close enough to be dangerous, so please seek shelter.",
+  "ratio": 1.79,
+  "usage": {
+    "input": 414,
+    "output": 516
+  },
+  "cost": 0.00029939999999999996
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-26",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "A\n\nBoth responses exceed the 120-word limit, each coming in at roughly 150 words, so neither follows that instruction and length does not separate them.\n\nThe difference is in usefulness for a busy manager. Response A uses bold headings (Impact, Actions, Feedback), which makes it quicker to scan. It also includes the staff refresher training, which Response B leaves out. Response B is accurate and reads smoothly, but it is a denser block of prose.\n\nA is slightly better because it is easier to skim and covers a little more of the follow-up.",
+  "usage": {
+    "input": 1387,
+    "output": 1959
+  },
+  "cost": 0.022364
+}

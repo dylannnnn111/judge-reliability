@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "code-36",
+  "side": "A",
+  "score": 7,
+  "model": "claude-opus-5-5",
+  "text": "**Item 1 is correct and correctly ranked first.** `Invalidate` calls `delete` under `RLock`, so concurrent deletes and reads race. That can trigger Go's fatal \"concurrent map writes\" or a concurrent read/write crash. The fix (`Lock`) is right.\n\n**Item 2 is overstated.** The underlying race is real: an in-flight fetch can write after an invalidation. But the stated harm is doubtful. A fetch that is in flight returns whatever upstream issues, normally a fresh token, not the one upstream \"just rejected.\" The scenario only works if upstream re-issues the same rejected token, which the response doesn't establish. Ranking this second, above the stampede, overweights a speculative concern. It also gives no fix, such as a generation counter or a version check on write.\n\n**Item 3 (stampede) is real and important for a shared gateway.** The `singleflight` fix is apt, and it arguably deserves the #2 slot.\n\n**Item 4 (TTL vs. real token lifetime) is a legitimate design issue.** The fix is concrete and sensible.\n\n**Items 5 and 6 are fair but minor.**\n- Item 5: unbounded growth is mitigated if the tenant set is bounded, though the eviction suggestion is fine.\n- Item 6: the wording is slightly off. With no in-flight coalescing, there is no \"waiting on that tenant.\" Each request hangs on its own fetch. The practical effect, that all requests for that tenant hang, is still true, and since fetch runs outside the lock, nothing blocks globally.\n\n**Length:** roughly 186 words, within the limit and without padding.\n\n**Overall:** It catches the most important bug, ranks it first, and gives fixes for most items. The deductions are for item 2's dubious harm claim and its inflated rank, plus the imprecise wording in item 6.\n\nScore: 7",
+  "usage": {
+    "input": 1228,
+    "output": 1674
+  },
+  "cost": 0.038392
+}

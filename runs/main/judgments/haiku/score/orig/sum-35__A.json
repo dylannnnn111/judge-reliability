@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-35",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate on every point I checked: the make-good standard and Annexure C baseline, the 30 June 2027 deadline, the required tasks, the kitchenette condition, the landlord's payment option and its three-month notice, the daily-rate rent for overrun, and the $18,000 bond timing. It stays under 120 words and covers what a manager needs to act on. Minor omissions include the patching and painting detail, the fact that the landlord agreed the kitchenette could stay in writing, and the consent letter date. None of these change the decisions a manager would make. The line \"payment based on two quotes\" is slightly compressed but not wrong.\n\nScore: 9",
+  "usage": {
+    "input": 1106,
+    "output": 769
+  },
+  "cost": 0.0004951
+}

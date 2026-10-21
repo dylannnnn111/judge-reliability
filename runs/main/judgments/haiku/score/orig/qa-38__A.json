@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-38",
+  "side": "A",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response is scientifically sound. It correctly identifies the polar vortex, the roughly −78°C threshold for polar stratospheric clouds, the conversion of chlorine reservoirs (HCl, ClONO₂) into Cl₂ on cloud surfaces, and sunlight-driven photolysis as the reason destruction waits for spring. It also covers the catalytic ozone loss and the late-spring vortex breakdown that refills the layer. Minor weaknesses: \"stored chlorine is released\" is loose wording for activation, and the text runs about 125–130 words, slightly over the 120-word limit.\n\nScore: 8",
+  "usage": {
+    "input": 515,
+    "output": 917
+  },
+  "cost": 0.00051
+}

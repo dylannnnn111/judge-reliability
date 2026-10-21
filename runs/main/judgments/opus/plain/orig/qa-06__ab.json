@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-06",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-opus-5-5",
+  "text": "Both responses correctly reach **Friday, 24 March 2028**, and both are under 120 words.\n\n**Checking the answer:**\n- 15 December 2027 is indeed a Wednesday.\n- The rest of December uses 16 days, January 31, and February 2028 (a leap year) 29. That totals 76, leaving 24, so the date is 24 March.\n- 100 days is 14 weeks plus 2 days, so Wednesday moves to Friday.\n\n**Comparing them:**\n- **A** counts the days down in bullet points.\n- **B** sums the same figures in a short paragraph.\n\nBoth are correct, clear and concise. The difference is only formatting, which doesn't make either meaningfully better.\n\n**TIE**",
+  "usage": {
+    "input": 382,
+    "output": 471
+  },
+  "cost": 0.010948
+}

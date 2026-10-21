@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-19",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better. Response A runs to about 129 words, slightly over the 120-word limit, but it covers every key point concisely. Response B is roughly 300 words and badly breaches the limit. It is also padded with filler (\"To put this another way\", \"For completeness\", \"Put simply\") that a busy manager doesn't need. B also switches to \"we\" and \"our\" and opens with \"Thank you for reviewing this summary,\" which doesn't suit a neutral summary. Both are accurate on substance, but A is far closer to the brief.\n\n**A**",
+  "usage": {
+    "input": 1687,
+    "output": 922
+  },
+  "cost": 0.012594
+}

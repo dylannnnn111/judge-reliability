@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-20",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.** Neither response contains a factual error, and both keep the same key points. The deciding factors are the length limit and format.\n\n**Accuracy:** Both are accurate on:\n- Date and time: Friday 7 November, 9:30am–4pm.\n- Venue and transport: Boathouse Room, Lakeside Community Centre, 12 Shore Road; free parking or the number 56 bus.\n- Priorities: no more than five, each with a lead.\n- Prep: about 30 minutes, covering two proudest pieces of work, one thing to stop and one idea.\n- Dietary requirements: to Tariq by 31 October.\n- Out-of-office: urgent requests to the central insights inbox, which Ella from the Data team will monitor.\n- Drinks: optional pub from 4:15pm.\n\nA drops \"about\" from 4:15pm, which is trivial. Both correctly present the pub as optional.\n\n**Coverage:** Both keep the points a manager needs. A adds that notes needn't be sent beforehand. B adds the \"what worked/didn't, feedback on reports\" detail. Neither addition matters much.\n\n**Concision and the length limit:** Both exceed the 120-word limit. By my count A is about 133 words and B about 153. A breaks the explicit constraint by much less. Its bulleted format is also easier for a busy manager to scan. B spends words on framing such as \"Hannah Pryce has invited…\" and \"each person should…\".\n\nVerdict: A",
+  "usage": {
+    "input": 1473,
+    "output": 2250
+  },
+  "cost": 0.050892
+}

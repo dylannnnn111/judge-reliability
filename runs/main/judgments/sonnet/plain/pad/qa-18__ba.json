@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-18",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** Response A answers correctly: Willem Janszoon and the *Duyfken* landed in 1606 on Cape York Peninsula. It stays within the 120-word limit at about 90 words. Response B gives the same core facts but runs to roughly 190 words, which breaks the explicit length constraint. Its added detail, such as the skirmish and the mention of Cook, was not requested.\n\n**A**",
+  "usage": {
+    "input": 660,
+    "output": 420
+  },
+  "cost": 0.00552
+}

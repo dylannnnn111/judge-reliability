@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-03",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly rank SQL injection first and give the same parameterized fix. Both also correctly note that `with sqlite3.connect(...)` does not close the connection. Response A catches more practical issues: case-sensitive and whitespace-brittle email matching, the missing ORDER BY and LIMIT, and the redundant `if not rows` check. Response B's point about authorization and audit trails for PII is arguably more important for a support portal than A's closing bullet on audit logging. However, B says worse inputs \"can modify data,\" which is inaccurate for `sqlite3`, since `execute()` rejects stacked statements. B's input-validation and hardcoded-path points are weaker. Both exceed the 200-word limit, but A exceeds it by more (roughly 370 words versus 250), which is a real instruction violation. On balance, A's accuracy and coverage of concrete issues edge out B's better-prioritized authorization point and tighter length.\n\nVerdict: A",
+  "usage": {
+    "input": 1738,
+    "output": 1103
+  },
+  "cost": 0.0007252999999999999
+}

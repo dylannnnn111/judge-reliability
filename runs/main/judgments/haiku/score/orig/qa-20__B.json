@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-20",
+  "side": "B",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response answers both parts correctly. Canberra is the capital, and Federal Parliament first sat there in 1927, when the Provisional Parliament House opened on 9 May, opened by the Duke of York (later George VI). The added context is also accurate: Parliament met in Melbourne from Federation in 1901, and moved to the current Parliament House in 1988. The response is well under 120 words, and the extra detail is relevant and correct rather than padding. The formatting is clear, with the key answers bolded.\n\nScore: 9",
+  "usage": {
+    "input": 334,
+    "output": 427
+  },
+  "cost": 0.0002469
+}

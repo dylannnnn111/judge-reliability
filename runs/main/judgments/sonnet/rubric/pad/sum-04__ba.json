@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-04",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is more accurate and meets the brief better. Response B is further over the word limit and has a small inaccuracy.\n\n**Length:** The limit is 120 words. A comes to about 137, so it is over, but only slightly. B is roughly 190 words, so it is far over. B also opens with fluff (\"pleased to share\") that the manager doesn't need.\n\n**Accuracy:** A is mostly accurate. Its additions, \"Plan rosters for split leave\" and the line about automatic notification, are inferences. They are reasonable for a manager audience but are not in the source. B says leave \"can now be split\" generally, when only primary carers get the split. It also says \"each block\" must fall within 24 months, which is a looser version of the rule that all leave falls within 24 months. B omits that the new entitlements sit on top of government pay.\n\n**Key points:** A covers the entitlements, the split option, the cut-off, eligibility, super, the application deadline and the info sessions. It also notes that earlier arrivals keep the current entitlements. B covers most of these but is less precise and omits the \"on top of government pay\" point.\n\n**Format:** A's bullets suit a busy manager who won't read the original.\n\nVerdict: A",
+  "usage": {
+    "input": 1644,
+    "output": 1752
+  },
+  "cost": 0.020808
+}

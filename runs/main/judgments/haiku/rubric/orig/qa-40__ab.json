@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-40",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are correct. Both explain that light travels far faster than sound, and both give the right rules: divide the seconds by 3 for kilometers and by 5 for miles. Both examples check out (10 s ≈ 3 km / 2 miles; 15 s ≈ 5 km / 3 miles), and both stay under 120 words.\n\nResponse A makes a useful conceptual point: the flash and the thunder start at the same moment. Response B has the clearer step-by-step counting procedure and a more complete safety note. It converts the 30-second threshold into distances and adds the standard guidance to wait 30 minutes after the last thunder, which is practically important. That extra detail is correct and relevant, so it adds value rather than just length.\n\nOverall, Response B is slightly more useful for the user's practical purpose.\n\nVerdict: B",
+  "usage": {
+    "input": 745,
+    "output": 1225
+  },
+  "cost": 0.000687
+}

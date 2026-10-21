@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-06",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses rank the same top four issues correctly: the identity check, the existence leak, the race condition and the missing refund. Response A is more accurate and precise in a few places.\n\n- **Issue #1:** A says most legitimate customers with larger IDs will get `Forbidden`, and that tests with small IDs will pass and hide the bug. That is the realistic failure mode and a useful insight. B calls the failures \"intermittent,\" which understates them. For IDs above 256 from separate sources, the check fails almost every time.\n- **Race condition:** A names the concrete harm: a concurrent ship or refund gets overwritten with \"cancelled.\" B leads with two concurrent cancels both passing the check, which is mostly harmless. Its conditional update with `customer_id` and a row-count check is a nice touch, though.\n- **Minor items:** A's point about mutating the order before `save` is valid. B's concern that the status string leaks through `ValueError` is weak, since customers can already see their own order's status. B's note that `save` isn't transactional repeats its #3.\n- **Length:** Both are roughly at the 200-word limit, with B slightly longer.",
+  "usage": {
+    "input": 1393,
+    "output": 2037
+  },
+  "cost": 0.046312
+}

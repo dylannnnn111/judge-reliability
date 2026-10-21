@@ -1,0 +1,13 @@
+{
+  "item": "code-28",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "Bugs and problems, most important first:\n\n1. **Connection leak.** `client.release()` is never called, on success or failure. The pool will be exhausted after a few transfers and the API will hang. Add a `finally { client.release(); }`.\n\n2. **Race condition (double spend).** The `SELECT` doesn't lock the row, so two concurrent transfers can both pass the balance check and overdraw the wallet. Use `SELECT ... FOR UPDATE`, or do a conditional update: `UPDATE ... SET balance_cents = balance_cents - $1 WHERE id = $2 AND balance_cents >= $1` and check `rowCount`.\n\n3. **Destination never validated.** If `toId` doesn't exist, the second `UPDATE` affects 0 rows, yet the transaction commits and the money vanishes. Check `rowCount === 1`.\n\n4. **Same-wallet transfer.** `fromId === toId` isn't rejected, so the transfer is a pointless no-op that still passes through the balance check.\n\n5. **Deadlock risk.** Once you add row locks, opposing transfers (A→B and B→A) can deadlock. Lock rows in a consistent order (e.g., by id), or update both in a single statement.\n\n6. **ROLLBACK can mask the original error.** If the connection is broken, `ROLLBACK` throws and replaces the real error. Wrap it in its own try/catch.\n\n7. **No audit trail or idempotency.** There's no ledger record, and retries from the API could apply a transfer twice. Consider a transfers table with an idempotency key.\n\n8. **Minor:** `balance_cents` may come back from `pg` as a string if the column is `bigint`, making the comparison unreliable. Doing the check in SQL avoids this.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 495,
+    "output": 585
+  },
+  "cost": 0.00684,
+  "at": "2026-10-14T01:54:19.203Z"
+}

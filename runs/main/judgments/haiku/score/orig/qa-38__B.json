@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-38",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response is scientifically accurate. It correctly describes polar stratospheric clouds converting HCl and ClONO₂ into Cl₂ and HOCl, the polar vortex keeping the air isolated, and sunlight photolyzing Cl₂ to release chlorine radicals that destroy ozone catalytically. It also correctly places peak ozone loss in September and October and explains the recovery as the vortex breaks down. It stays well under 120 words. Its main omissions are that it never names human-made CFCs as the source of the chlorine, and it doesn't explicitly state that winter darkness is why chemistry waits for spring. Those gaps keep it from a top score, but the core reasoning is complete and clear.\n\nScore: 8",
+  "usage": {
+    "input": 453,
+    "output": 816
+  },
+  "cost": 0.0004533
+}

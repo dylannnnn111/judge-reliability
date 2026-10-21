@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-05",
+  "side": "B",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The response identifies real problems. Subtracting aware datetimes that share a `tzinfo` does wall-clock arithmetic, so DST shifts are miscounted, and its overpay/underpay directions are correct. The fold/nonexistent-time issue and the start-day-only weekend loading are also real and correctly described. The float rounding point is valid, though it ranks below the more consequential pay errors. Ranking is sensible, and each item gives a usable fix.\n\nWeaknesses: the public-holiday item is a missing business rule rather than a bug in this code, so it is weaker as a \"problem that matters.\" The \"parse_local called repeatedly\" remark is trivial and not a real problem. The response also runs to roughly 200-215 words, slightly over the 200-word limit. It omits nothing critical, but it spends space on marginal items.\n\nScore: 7",
+  "usage": {
+    "input": 1153,
+    "output": 1214
+  },
+  "cost": 0.0007222999999999999
+}

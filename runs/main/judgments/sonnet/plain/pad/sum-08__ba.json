@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-08",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "A is better.\n\n**Response A** is about 113 words, so it meets the 120-word limit. It covers the key points: the exchange is booked, Frostline will collect the old unit separately, the food claim form is still outstanding, and the escalation path is clear. Its one flaw is the date \"29 September\". The ticket's own dates put the Sunday before 2 Oct at 28 September, and the ticket never states the failure date. This is a minor error.\n\n**Response B** is well over 120 words. It is padded with filler like \"I would ask that…\" and \"kindly\", and it contains an error that it then corrects in a note at the end. It states \"failed on 4 Oct\" and then tells the reader to disregard it. That is confusing and unhelpful for a busy manager. It also says Kevin was chased \"on more than one occasion\", but the ticket shows only one chase. Its formatting is clear, but the length, the errors and the self-correction make it a poor summary.\n\n**A**",
+  "usage": {
+    "input": 1685,
+    "output": 953
+  },
+  "cost": 0.0129
+}

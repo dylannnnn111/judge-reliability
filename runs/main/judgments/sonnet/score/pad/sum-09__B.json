@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "sum-09",
+  "side": "B",
+  "score": 3,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is accurate. The figures, the 1 March review date, the 3-5% CPI collar for years 2-4, the landlord-appointed valuer, the year-4 floor, the 30-day dispute window with split costs, and the 14-day notice and late-notice rules all match the source. It also covers the points a manager would need.\n\nHowever, it breaks the explicit limit of under 120 words. It runs to roughly 250-270 words, more than double the limit. Much of the excess is padding: an introductory sentence that restates the title, a closing \"In short\" paragraph that repeats the bullets, and a disclaimer. The detail on outgoings and late notice could also have been trimmed. A busy manager asked for a short summary and got one more than twice as long as requested.\n\nBecause the length constraint is clearly violated, despite good accuracy and coverage, the score is low.\n\nScore: 3",
+  "usage": {
+    "input": 1316,
+    "output": 600
+  },
+  "cost": 0.008632
+}

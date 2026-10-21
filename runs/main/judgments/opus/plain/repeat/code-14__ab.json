@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "code-14",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses correctly identify the critical bug: OFFSET pagination combined with deletion skips batches and leaves roughly half the old rows unarchived. Both also give the right fixes, either re-querying from the start or using keyset pagination. Both also correctly flag the crash window between `archive()` and `commit()`, and the need for an idempotent, durable `archive`.\n\nThe difference is in focus and length. Both exceed the 200-word limit, A at roughly 220 words and B at roughly 235. B pads its answer with weaker points. Its \"no error handling or rollback\" item is of marginal value: if `archive` raises, no transaction has been opened for that batch yet, and an exception propagating out is reasonable behaviour for a nightly job. The \"no logging or metrics\" item is generic filler. A sticks to substantive issues in a sensible priority order.",
+  "usage": {
+    "input": 1358,
+    "output": 823
+  },
+  "cost": 0.021892
+}

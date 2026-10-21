@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-32",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give correct answers. Both state the 365.2422-day orbit, the divide-by-4 rule, the century exception, and the 400-year exception, and both correctly explain why 1900 was skipped and 2000 was not. A's numbers check out: the 0.0078-day overcorrection is about 11 minutes a year, or roughly 3 days per 400 years. A also explains the reasoning more fully, showing why the 365.25-day assumption needs the century correction. B gives the rule but only calls the excess \"small.\" On reasoning, A is stronger. However, A runs about 123 words by my count, which breaks the explicit \"under 120 words\" limit, while B is comfortably under it (about 85 words). Since the length constraint was explicit and A's extra depth is modest, B's compliance tips the balance.\n\nVerdict: B",
+  "usage": {
+    "input": 702,
+    "output": 1441
+  },
+  "cost": 0.0007907000000000001
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-16",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate on the key figures: the 17 November date, the $412K/$520K spend, the $38K variation, the $26K net if the credit is confirmed, and the 24 October fix dependency. Neither misstates who decided what or what is conditional.\n\nResponse A covers more ground, including test progress and the duplicate-record issue behind the 1.4% failure. However, it runs to roughly 150 words, well over the 120-word limit. Its extra detail is mostly useful, but the length works against the brief.\n\nResponse B is about 120 words, staying close to the limit. It omits the data-quality detail and the test progress, which a manager might want, but it keeps the decision points, the main risk, and the link to the no-December-training request. Its structure is easier to scan for a busy reader.\n\nOn balance, Response B better meets the brief's constraints while keeping the essentials, so it is slightly better overall.\n\nVerdict: B",
+  "usage": {
+    "input": 1540,
+    "output": 1976
+  },
+  "cost": 0.001142
+}

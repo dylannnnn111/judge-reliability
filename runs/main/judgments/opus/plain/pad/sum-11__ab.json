@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-11",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is the better summary, though it is not perfect. By my count it runs to about 134 words (about 122 without the heading), so it slightly exceeds the 120-word limit. It is still tight, well organised by person, and keeps every key fact and deadline. It also frames the access-card welcome correctly as mandatory.\n\nResponse B is far longer, well over 200 words, so it misses the limit badly. It is padded with courtesies like \"Thank you all for your patience\" and \"kindly asked\". It reads as a rewritten all-staff email rather than a brief for a busy manager. It also softens the access-card session into \"warmly invited\", which undercuts the original's point that everyone must attend.",
+  "usage": {
+    "input": 1643,
+    "output": 1255
+  },
+  "cost": 0.031672
+}

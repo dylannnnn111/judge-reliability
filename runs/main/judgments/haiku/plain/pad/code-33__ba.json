@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-33",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. It finds the same critical bug as A: the `WHERE p.status = 'succeeded'` filter drops customers with no payments. B also explains that customers whose only payments failed are dropped too. B then raises issues that matter for a call list. Annual and quarterly subscribers would show zero payments in 90 days without being at risk, and cancelled or brand-new accounts would be included. Refunds counted as successful payments is another real concern. A's date-format point is overstated, and its minor points are filler. A also runs well over the 200-word limit, while B stays close to it.\n\nB",
+  "usage": {
+    "input": 1598,
+    "output": 737
+  },
+  "cost": 0.0005283
+}

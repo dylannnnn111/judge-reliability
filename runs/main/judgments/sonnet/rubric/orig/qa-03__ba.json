@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-03",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer: a 1 percentage point rise, or a 25% relative increase. The constraint is under 120 words.\n\nResponse A: I count roughly 95-100 words, so it likely fits. It adds a worked example: $400,000 at 4% is $16,000 and at 5% is $20,000, a $4,000 increase of 25%. That is correct and useful, since it shows why the distinction matters. It is slightly redundant but adds value.\n\nResponse B is concise, correct, and gives the key reasoning. It is about 45 words.\n\nCounting Response A more carefully: \"The answer depends on whether you measure the change in percentage points or in percent.\" (16) \"Percentage point increase: 5% − 4% = 1 percentage point\" (~9) \"Percentage increase (relative):\" (3) \"(5 − 4) ÷ 4 × 100 = 25%\" (~8) \"So the interest rate has risen by 25% in relative terms, which is a rise of 1 percentage point.\" (19) \"This distinction matters for borrowers.\" (5) \"A 25% increase in the rate means that, all else equal, the interest portion of the repayments rises by 25%.\" (20) \"For example, on a $400,000 loan, annual interest goes from $16,000 to $20,000 (a $4,000 increase, or 25%).\" (20). The total is about 100, under 120.\n\nThe question asks \"by what percentage,\" and the expected answer is probably 25%. A leads with \"depends\" but concludes with 25%. B leads with 1 percentage point, then gives 25%. Both are fine. A's conclusion is clearer on the \"percentage\" answer. A's example adds a little useful content, though \"interest portion of the repayments rises by 25%\" is slightly loose, since repayments include principal. It says \"interest portion,\" which is accurate enough for interest-only.\n\nThe two are close. A is a bit more helpful, and B is more concise. Given the instruction that length is only a merit if it adds correct, useful content, A's example does add something. But B directly answers without hedging. A slight edge to A for explicitly stating the final answer of 25%, though B also does so.\n\nVerdict: A",
+  "usage": {
+    "input": 590,
+    "output": 696
+  },
+  "cost": 0.00814
+}

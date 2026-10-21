@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-11",
+  "side": "A",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "Accuracy check: The move date, the addresses, Rachel's roles, the 14 spaces, the survey condition, Sam's responsibilities, laptop dates, Lena's boxes from Mon 10th, the Wed 12th deadline, two crates, 3pm Friday, access cards at 8:30am Monday in the lobby: all correct. \"Everyone must attend\" is a fair paraphrase of \"please come even if you normally start later.\"\n\nMinor issues: \"Take laptops home Friday 14th\" is fine. \"Take any excess home\" is correct. \"Files must be boxed by Wed 12th\" is correct; the consequence (left behind, possible delays) is conveyed partly (\"left behind\"). \"Boxes for paper files are available from Mon 10th\" is fine, though it omits that Lena also provides labels, and that the archive room is her responsibility. The dishwasher detail is omitted, which is trivial. \"Monday\" for the welcome is implicitly 17 Nov, which isn't stated, but is fine.\n\nOmissions: Lena's responsibility for the archive room and client files, and the delay consequence. Not critical. The text says \"Monday morning welcome\" and laptops \"come back on Monday\", consistent.\n\nWord count: Roughly 130 words? Count: Title ~12 words. Rachel bullet: ~38. Sam bullet: ~22. Lena: ~22. Personal: ~13. Access: ~25. Total ≈ 132. That exceeds the 120-word limit. Let me count more carefully.\n\nTitle: \"Office move: Collins St to 200 Lygon Rd, weekend of 15-16 Nov\" = 12.\nRachel: \"Rachel Tan (Office Manager): overall coordinator and removalist contact.\" = 9; \"Direct questions about the move and desk locations to her.\" = 10; \"She also allocates the 14 parking spaces, using last month's survey list (non-respondents miss out).\" = 15. Total 34.\nSam: \"Sam Okonkwo (IT): moves all monitors, docking stations and phones, so don't pack them.\" = 13; \"Take laptops home Friday 14th and bring them back Monday.\" = 10. Total 23.\nLena: \"Lena Fischer (Records): boxes for paper files are available from Mon 10th.\" = 12; \"Files must be boxed by Wed 12th or they'll be left behind.\" = 11. Total 23.\nPersonal: \"Personal items: pack into two crates by 3pm Friday. Take any excess home.\" = 13.\nAccess: \"Access cards (Grant): collect at the 8:30am Monday welcome in the Lygon Rd lobby.\" = 13; \"Everyone must attend, as you can't get past the lobby without a card.\" = 12. Total 25.\n\nSum: 12+34+23+23+13+25 = 130. Over the 120 limit by about 10 words. That's a clear constraint violation, though modest.\n\nContent is accurate and well organised, but the word limit is broken.\n\nScore: 6",
+  "usage": {
+    "input": 1185,
+    "output": 986
+  },
+  "cost": 0.01223
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-15",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Response A says \"more than six months\" became \"6 or more months,\" a trivial shift. Response B states the figures correctly, and its \"drifting roughly doubled\" matches the source's \"about twice as many.\"\n\nThe deciding factor is the length limit. Response B comes to roughly 107 words, under the 120-word cap. Response A runs to roughly 220 words, nearly double the limit, and its extra wording mostly restates points, such as \"In other words\" and \"so the nap did not clearly help them.\" It keeps the same key points as B but doesn't earn the extra length.\n\nResponse B covers every point a busy manager needs: the main result, who benefits, the timing effect, the implication for policy, and the limitations. It does so concisely and within the constraint.\n\nVerdict: B",
+  "usage": {
+    "input": 1568,
+    "output": 1172
+  },
+  "cost": 0.0007428
+}

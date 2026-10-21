@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-38",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are scientifically accurate. They cover the key mechanisms: the polar vortex, cold temperatures forming polar stratospheric clouds, chlorine activation on cloud surfaces, sunlight returning in spring to split Cl₂, catalytic ozone destruction, and recovery as the vortex breaks down. Response A adds useful detail, such as the −78°C threshold and the Arctic comparison, but it runs to roughly 225 words, nearly double the 120-word limit. Response B stays under the limit at roughly 95 words while still giving the core reasoning. Since the extra length in A is a clear violation of an explicit constraint rather than added value, B is the better response.\n\nVerdict: B",
+  "usage": {
+    "input": 965,
+    "output": 899
+  },
+  "cost": 0.000546
+}

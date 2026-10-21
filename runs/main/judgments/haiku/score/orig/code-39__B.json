@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-39",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response identifies the most serious problems in the right order. The unchecked `cd` followed by `rm -rf ./*` is the top risk, and the path-traversal issue (`APP_NAME=..` deleting `/var/cache`) is real and correctly ranked second. The dotfile omission and the exit-0 behavior on a dirty cache are also genuine. Its fixes are concrete and mostly correct. The regex check works because the unquoted `.*` in `[[ ]]` is a glob prefix match.\n\nWeaknesses: the minor item is weak. \"Ignores leftover empty directories\" isn't a meaningful defect here, and its suggested replacement, `find . -type f`, still ignores directories, so the critique undercuts its own fix. The response also doesn't mention that `set -e` is absent as a general pattern, though item 1 implies it. The length is within the limit and the extra words are mostly useful.\n\nScore: 8",
+  "usage": {
+    "input": 1066,
+    "output": 1218
+  },
+  "cost": 0.0007156
+}

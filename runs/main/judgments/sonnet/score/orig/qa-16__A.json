@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-16",
+  "side": "A",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The answer is correct: Antarctica is the largest desert (~14 million km²), with the Arctic second (~13.9 million km² is the commonly cited figure; some sources say 13.7) and the Sahara the largest hot desert (~9.2 million km²). The definition of a desert by precipitation is the key reasoning. The comparison of the Sahara to the US is accurate (US ~9.8 million km², Sahara ~9.2, so \"roughly the size\" is fine). The word count is under 120 (about 85). The response is clear and well-formatted, and it addresses the ambiguity in the question.\n\nMinor nitpick: \"Antarctica's interior receives very little\" is slightly incomplete, but it's fine.\n\nScore: 9",
+  "usage": {
+    "input": 395,
+    "output": 240
+  },
+  "cost": 0.00319
+}

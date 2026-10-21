@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-22",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses correctly identify the critical flaw: `jwt.decode` never checks the signature, so anyone can forge an admin token. Both give the right fix, and both then cover the 401/403 mix-up, the loose `Bearer` parsing, missing expiry enforcement and the unvalidated secret. Both also exceed the 200-word limit, and B overshoots more.\n\n**Response A**\n- It rates the exported `SECRET` as \"High\" severity. That is a minor hygiene concern, so it is mis-ranked above the 401/403 and parsing problems.\n- It correctly notes that the `try/catch` is dead code, since `decode` returns null rather than throwing. This is a good catch that B only touches indirectly.\n- It says a missing `JWT_SECRET` \"fails open or fails late\". With `verify`, an undefined secret throws and so fails closed. The wording is slightly inaccurate, though the advice to fail fast at startup is right.\n- It doesn't list algorithm pinning as its own issue, but its suggested fix does include `algorithms`.\n- It provides no code for the fix beyond the `verify` call.\n\n**Response B**\n- Its ordering is more sensible: forgery first, then secret handling, algorithm pinning, expiry, and status codes with parsing.\n- It notes that `SECRET` is unused in the module, which is accurate.\n- It names algorithm pinning explicitly, which is a real concern once `verify` is used, and it suggests `iss`/`aud` checks.\n- It includes a concise corrected snippet that fixes the parsing, status codes and verification together.\n- Its \"Minor\" bullets (single role claim being brittle, no logging) are mostly noise and flag things that aren't really bugs. They also add to the overshoot of the word limit.\n\nOverall, B's ranking is better, it gives a concrete fix, and its extra content is mostly useful apart from the minor bullets. A's \"High\" rating for the exported secret is a ranking flaw, and its \"fails open\" claim is slightly off. B is modestly better.\n\nVerdict: B",
+  "usage": {
+    "input": 1718,
+    "output": 1400
+  },
+  "cost": 0.017436
+}

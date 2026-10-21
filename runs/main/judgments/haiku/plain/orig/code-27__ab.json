@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-27",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. It ranks the missing suppression check first, which matters most for a newsletter because unsubscribed and bounced addresses must be excluded for compliance. A only raises a weaker version of this as its last point, as \"stale opt-in.\" B also notes that lowercasing the local part is technically incorrect, a nuance A misses. A's fixes are a bit more concrete, such as `Promise.allSettled` and a concurrency limiter, but B's prioritization better fits the request.\n\nB",
+  "usage": {
+    "input": 1479,
+    "output": 1325
+  },
+  "cost": 0.0008104
+}

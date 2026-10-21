@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-35",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are scientifically correct. Each explains that antibiotics target bacteria-specific structures, which viruses lack, and that resistance arises through natural selection, with mutation and horizontal gene transfer as the sources of resistance.\n\nResponse A adds the mechanisms of resistance (destroying the drug, efflux, target alteration) and specific drivers of overuse. However, it comes to about 121 words including the bolded headers (about 112 without them). That breaks the \"under 120 words\" limit if the headers count. Its \"not finishing courses\" point is also somewhat contested in current guidance.\n\nResponse B gives drug examples for each target and covers mutation, horizontal gene transfer, and selection concisely. It stays well under the limit, at roughly 100 words. It has less detail on resistance mechanisms, but it covers the key reasoning accurately.\n\nSince correctness and key reasoning are roughly equal, the word-limit compliance tips it toward B.\n\nVerdict: B",
+  "usage": {
+    "input": 797,
+    "output": 1388
+  },
+  "cost": 0.015474
+}

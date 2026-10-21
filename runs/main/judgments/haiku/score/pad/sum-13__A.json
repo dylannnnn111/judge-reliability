@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-13",
+  "side": "A",
+  "score": 3,
+  "model": "claude-haiku-5-5",
+  "text": "The response has two factual errors. It says the resample was taken on 9 October, but it was taken on 6 October; 9 October is when the result came back. It also says the contractor \"visited monthly and missed this fault during those visits,\" which reverses the report's account: the pump failed in mid-September and was not picked up because the monthly visit was missed. It omits the fortnightly sampling and the breach-based cost recovery basis, and it is about 230 words, nearly double the 120-word limit. The core decision (approve $4,800) and the interim weekly checks are clear and correctly stated, but the errors and length failure weigh heavily.\n\nScore: 3",
+  "usage": {
+    "input": 1346,
+    "output": 746
+  },
+  "cost": 0.0005076
+}

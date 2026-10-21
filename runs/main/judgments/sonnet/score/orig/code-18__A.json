@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-18",
+  "side": "A",
+  "score": 7,
+  "model": "claude-sonnet-5-5",
+  "text": "The response correctly identifies the critical bug and puts it first: the cache key `fx:${from}` ignores `to`, so a rate for one target currency is reused for others for 60s. It gives the right fix. Items 2 to 5 are real, plausible problems with concrete fixes: response validation, in-flight deduplication, fetch timeout and URL encoding. The ranking is sensible overall.\n\nWeaknesses:\n- Item 6 (unbounded cache growth) is admitted to be minor, and item 7 (decimal precision) is speculative because it concerns caller code that isn't shown. Both pad a list the user wanted limited to what matters.\n- At roughly 210 words, it likely exceeds the 200-word limit.\n- Item 3 (deduplication) is a legitimate but lower-priority concern, and it ranks above the more practical timeout, which is a reasonable but debatable order.\n\nOverall it finds the key bug and most of the real secondary issues, but it is slightly over length and includes some low-value items.\n\nScore: 7",
+  "usage": {
+    "input": 1052,
+    "output": 798
+  },
+  "cost": 0.010084
+}

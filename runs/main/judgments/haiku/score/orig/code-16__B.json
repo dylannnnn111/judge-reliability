@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-16",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response flags real problems. The GST issue is ranked first and hedged appropriately, since Australian prices are usually GST-inclusive and adding GST on top would overcharge. The mutating `sort`, missing input validation, client-side trust at checkout, and the `formatAud` negative and grouping problems are all genuine and come with concrete fixes. The case-sensitive discount matching is also valid. The ranking is sensible, with the money-affecting issues first and the formatting issue last. Minor gaps: it doesn't mention that the discount is computed on a GST-inclusive or exclusive base, and it doesn't note that `Math.round` per-line rounding can drift from line-item totals. It also stays within the word limit without padding.\n\nScore: 8",
+  "usage": {
+    "input": 1045,
+    "output": 758
+  },
+  "cost": 0.0004835
+}

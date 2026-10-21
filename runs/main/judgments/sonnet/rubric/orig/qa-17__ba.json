@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-17",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses correctly identify Venus, give the same ~465°C figure, and explain the runaway greenhouse effect from a thick CO₂ atmosphere. Both are within the 120-word limit (A is about 118 words, B about 85).\n\nResponse A adds useful, accurate detail:\n- CO₂ makes up about 96% of the atmosphere.\n- The dense CO₂ absorbs outgoing infrared radiation.\n- Temperatures are nearly uniform across the planet.\n- Mercury, with almost no atmosphere, loses its heat to space.\n\nThe Mercury point directly explains why the closer planet is cooler, which Response B only states without explaining. The bullet format in A is also easy to scan.\n\nResponse B is correct and concise, but it is thinner. Its claim that surface pressure \"further contributes\" to the heat is acceptable but less clearly explained.\n\nResponse A is slightly better on reasoning and clarity, and it stays within the word limit.\n\nVerdict: A",
+  "usage": {
+    "input": 768,
+    "output": 1223
+  },
+  "cost": 0.013766
+}

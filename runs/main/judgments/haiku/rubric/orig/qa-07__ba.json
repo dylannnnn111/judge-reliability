@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-07",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct answer: 30 mpg (US) ≈ 7.84 L/100 km. Response A's working is correct (30 miles = 48.28 km, about 12.75 km/L, giving 7.84 L/100 km), and its shortcut 235.2 ÷ mpg is also right. Its caveat that EPA figures can differ from Australian ratings is reasonable but peripheral.\n\nResponse B's derivation is also correct: 100 km ≈ 62.14 miles, which is 2.0712 US gallons, which is 7.84 L. Its note about not using the imperial gallon is the more useful addition, since it flags the most likely conversion error. The imperial figure it cites (282.5 ÷ 30 ≈ 9.4 L/100 km) is also correct. Both stay under 120 words.\n\nOn the key reasoning, B's gallon-based derivation and its warning about the imperial conversion add more that is correct and useful than A's caveat. The difference is slight.\n\nVerdict: B",
+  "usage": {
+    "input": 762,
+    "output": 974
+  },
+  "cost": 0.0005632
+}

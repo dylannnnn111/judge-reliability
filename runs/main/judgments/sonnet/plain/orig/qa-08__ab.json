@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-08",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses compute the same numbers correctly: 375 × 0.048 = 18 mL, 18 × 0.789 = 14.202 g, which gives about 1.42 standard drinks. Both stay well under 120 words.\n\nThe difference is that Response B adds the claim \"Australian labels round this to 1.4 standard drinks.\" That is plausible, since labels typically show one decimal place, but it is a slightly unsupported assertion. It is a reasonable and mostly accurate statement, and it also leads with the answer.\n\nResponse A is concise and correct. Response B has a bolded headline answer plus a bit of useful context. The \"labels round\" claim is not strictly necessary, but Australian standard drinks labelling does show values like \"1.4 standard drinks\", so it holds up.\n\nResponse B is marginally better because it puts the answer first and adds the rounding context. A grader could instead penalize the unverified claim, but it is largely accurate.\n\n**B**",
+  "usage": {
+    "input": 451,
+    "output": 308
+  },
+  "cost": 0.003982
+}

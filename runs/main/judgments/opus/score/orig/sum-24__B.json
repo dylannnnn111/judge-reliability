@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-24",
+  "side": "B",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The response applies the 8 October correction properly. Saltwater Theatre Collective is shown at $14,500, and the total of **$88,200** checks out: 24,000 + 8,500 + 35,000 + 14,500 + 6,200 = 88,200. The **$31,800** rollover is also correct (120,000 − 88,200).\n\nEvery other date and figure matches the source:\n\n- $286,000 requested against a $120,000 pool\n- feedback due by 31 October\n- acquittal deadline of 30 November, with ineligibility as the consequence\n- Round 3 open from 2 February to 16 March\n- quick-response grant of up to $2,000\n\nNothing is misattributed or misleading.\n\n**Coverage** is strong. It includes the funding decisions, the rollover, the follow-ups and the deadlines, which are what a manager needs. There are a few minor omissions:\n\n- It doesn't mention Jarrah's conflict-of-interest declaration and absence for the 2026-14 decision, a modest governance point.\n- It doesn't say that the two encouraged applicants are invited to reapply in Round 3 specifically, though this is implied.\n- It doesn't explain the purpose of the quick-response grant, which is for artists responding to local events.\n\nNone of these makes the summary inaccurate, and all are defensible cuts under a tight word limit.\n\n**Concision** is good. At about 116 words it is under the 120-word limit, and the bolded bullets make it easy to scan. The title line uses some words but helpfully signals that the correction has been applied.\n\nOverall the summary is accurate, well prioritised and concise, with only minor omissions.\n\nScore: 9",
+  "usage": {
+    "input": 1327,
+    "output": 1832
+  },
+  "cost": 0.041948
+}

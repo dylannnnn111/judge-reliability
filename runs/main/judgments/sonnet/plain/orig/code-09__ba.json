@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-09",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses put the main bug first: `revoke_permission` never clears `_permission_cache`, so revoked permissions stay active. Both also come in just under the 200-word limit, with A at roughly 190 words and B at roughly 198.\n\n**Response A** gives a one-line fix for the main bug (`_permission_cache.pop(user_id, None)`). It points out that the cache stores nonexistent user IDs, which makes the memory-growth problem concrete and attacker-triggerable. It also mentions deleted or banned users keeping cached permissions. Its ordering note (invalidate after commit) is correct and well explained. Items 2 and 3 overlap somewhat on staleness, but each adds something distinct.\n\n**Response B** covers similar ground, but its thread-safety item is low value. A plain dict with a check-then-set is safe under CPython's GIL, and B itself admits the worst case is a redundant query. That item is padding in a \"bugs that matter\" list. Item 6 is labeled \"not atomic\" but really repeats the invalidate-after-commit ordering point. The closing \"Suggested fix\" is useful, but it consumes much of the word budget and partly repeats earlier points.\n\nA is tighter, more actionable, and has less filler, so it better fits the request for the bugs that matter, most important first.\n\n**A**",
+  "usage": {
+    "input": 1314,
+    "output": 1874
+  },
+  "cost": 0.021368
+}

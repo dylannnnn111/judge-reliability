@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "sum-03",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth summaries are accurate and cover the same points: cause, impact, slow detection and fixes. The difference is the word limit.\n\n- **Response A** comes to roughly 120–125 words including its title. That is at or over the 120-word cap the user set.\n- **Response B** comes in around 95–100 words, comfortably inside the limit.\n- B is also slightly more useful for a manager. It names the affected connector and notes the vendor's August renewal behind the pinning problem. It lists owners for the open actions and uses scannable bullets.",
+  "usage": {
+    "input": 1443,
+    "output": 1181
+  },
+  "cost": 0.029392
+}

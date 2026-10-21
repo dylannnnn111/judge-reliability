@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-22",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response finds the real problems: `jwt.decode` doesn't verify signatures (the critical flaw), `SECRET` is unvalidated and wrongly exported, algorithms aren't pinned, `exp` isn't enforced, and the 403/401 status codes and Bearer parsing are wrong. The ranking is sensible, and the fixed snippet is correct. It misses that the try/catch around `decode` can never trigger, but that's minor. The main failure is the explicit \"under 200 words\" limit: the response is well over that once the code and the minor-issues list are counted. The \"Minor\" bullets also add little. The substance is strong, but it ignores a clear constraint and pads with low-value items.\n\nScore: 6",
+  "usage": {
+    "input": 1133,
+    "output": 760
+  },
+  "cost": 0.0004933
+}

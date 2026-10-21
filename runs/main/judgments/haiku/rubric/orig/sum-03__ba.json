@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-03",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both summaries are largely accurate. They report the window, the 2,391 of 4,812 failures, the 451 abandoned orders and $41,900 estimate, the 312 support contacts, the connector B certificate cause, and the completed and pending actions with their owners' dates. Response A has one minor imprecision: \"Support escalation led to the fix\" blurs the record, since the on-call engineer identified the cause at 12:10 and the fix followed at 12:58. Response B's facts check out, including the 11:35 escalation time.\n\nThe clearer differentiator is the length limit. Response B runs to roughly 135 words, over the 120-word cap, while Response A is around 110 words. Response B's extra detail, such as the escalation timestamp, is useful but not essential for a busy manager. Response A keeps the points the manager needs (impact, cause, detection gap, open actions) within the limit, so it better meets the brief despite the small wording issue.\n\nVerdict: A",
+  "usage": {
+    "input": 1597,
+    "output": 1557
+  },
+  "cost": 0.0009382
+}

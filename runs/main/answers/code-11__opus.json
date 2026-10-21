@@ -1,0 +1,13 @@
+{
+  "item": "code-11",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**Bugs and problems, most important first**\n\n1. **Race condition in `reserve` (overselling).** The stock check and the decrement take the lock separately. Two threads can both pass `available()` before either decrements, so stock goes negative. Do the check and the update inside a single critical section:\n   ```python\n   with self.lock:\n       current = self.db.get_stock(sku)\n       if current < qty:\n           return False\n       self.db.set_stock(sku, current - qty)\n   return True\n   ```\n\n2. **`threading.Lock` only works within one process.** Web servers usually run several worker processes or hosts, and the lock does nothing across them. Use an atomic DB operation, e.g. `UPDATE stock SET qty = qty - ? WHERE sku = ? AND qty >= ?`, and check the affected row count. A transaction with `SELECT ... FOR UPDATE` also works.\n\n3. **No input validation.** A negative `qty` in `reserve` increases stock, and in `release` it decreases stock with no check. Reject `qty <= 0`.\n\n4. **`release` is unchecked.** Nothing ties a release to a prior reservation. Double releases or bogus calls inflate stock. Track reservations by ID or cart.\n\n5. **One global lock serializes all SKUs.** Unrelated items block each other. This becomes moot once you use DB-level atomicity.\n\n6. **`available()` is only advisory.** Its result can be stale as soon as it returns. Don't use it for reservation decisions.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 284,
+    "output": 730
+  },
+  "cost": 0.015736,
+  "at": "2026-10-14T01:53:23.729Z"
+}

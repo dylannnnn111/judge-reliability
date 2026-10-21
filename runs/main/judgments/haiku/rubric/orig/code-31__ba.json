@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-31",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the main bug: with second-precision `created_at` and `created_at > :last_seen`, tied rows that straddle a page boundary are silently skipped. Both also recommend keyset pagination on `(created_at, id)` with a matching index. Response A's fix is clean and it explains the sentinel needed for the first page. Response A's late-commit point is concrete and important, and its suggestion of a safety lag is practical. Its point 2 partly repeats point 1, and its persisted-cursor point is useful.\n\nResponse B contains a factual error. It claims that 1000+ rows sharing one second cause the job to \"stall or loop forever.\" With `>`, the next query skips past that timestamp, so there is no loop. The real failure is silent data loss, which B already described. B's point 6 is filler, not a bug. B does have a good suggestion to snapshot an upper bound, which helps with consistency, but its late-arriving-rows point is less concrete than A's.\n\nOverall, Response A is more accurate and its ranking and fixes are sounder, while Response B includes a wrong claim and a non-issue.\n\nVerdict: A",
+  "usage": {
+    "input": 1632,
+    "output": 1003
+  },
+  "cost": 0.0006647000000000001
+}

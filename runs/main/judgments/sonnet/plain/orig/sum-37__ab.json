@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-37",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. Both summaries are accurate and cover the main issue, the three options and the approval needed. Both also run over the 120-word limit by my count, but B is much closer, at about 125 words against A's roughly 140.\n\nB also covers more. It includes the progress (the nightly loads and 14 of 22 reports matching) and the interim step of Tomas documenting the payroll system. A leaves both out. A does explain more clearly why option 2 may not be acceptable, but that is a small advantage next to B's better compliance with the length limit and fuller coverage.\n\n**B**",
+  "usage": {
+    "input": 1321,
+    "output": 1137
+  },
+  "cost": 0.014012
+}

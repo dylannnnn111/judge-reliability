@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-12",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Constraints: under 200 words, list bugs that matter, most important first.\n\nResponse A: 7 items, concise. Word count is roughly 250 words, probably over 200. Response B is longer, around 400 words, and opens with filler (\"The review below raises eight points...\"). Both exceed the limit, but B exceeds it far more.\n\nQuality: A prioritizes N+1 first, which is arguably the main issue given the 20,000 invoices. The missing-customer crash is also a strong point. A's item 4 (formatted strings) is valid. Negative formatting \"$-12.34\" is accurate. A's item 5 on ordering is minor but valid. Item 6, input validation, is minor.\n\nB includes weaker or speculative points: the quantity column (speculative), snapshot consistency (valid but minor), reconciliation (padding), currency (speculative). B's money-formatting point, \"float is usually fine\", is weak. B also has preamble fluff and restates things.\n\nA is better: tighter, closer to the word limit, more relevant, no preamble.\n\n**A**",
+  "usage": {
+    "input": 1764,
+    "output": 343
+  },
+  "cost": 0.006958
+}

@@ -1,0 +1,13 @@
+{
+  "item": "qa-21",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "Earth is closest to the Sun (called perihelion) in early January, typically around January 2–5. At that point, Earth is about 147.1 million km (91.4 million miles) away, compared with roughly 152.1 million km (94.5 million miles) at aphelion in early July.\n\nThis may seem surprising, since January is winter in the Northern Hemisphere. Seasons are caused by Earth's 23.5° axial tilt, not by distance from the Sun. When the Northern Hemisphere is tilted away from the Sun, it gets less direct sunlight, even though Earth is slightly closer overall.\n\nThe distance difference is only about 3%, so its effect on climate is small compared with the tilt.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 48,
+    "output": 227
+  },
+  "cost": 0.002366,
+  "at": "2026-10-14T01:50:35.207Z"
+}

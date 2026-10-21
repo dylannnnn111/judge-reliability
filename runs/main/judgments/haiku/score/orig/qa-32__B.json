@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-32",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response is factually correct. It gives the tropical year as about 365.2422 days, which is why a leap day is needed every four years. It states the Gregorian rule accurately: years divisible by 100 are common unless also divisible by 400. It then applies that rule correctly to 1900 (divisible by 100, not by 400, so common) and 2000 (divisible by 400, so leap). It is under 120 words and clearly organized. Its one gap is that it doesn't explicitly say the century rule exists to correct the drift that the simple every-four-years rule would otherwise cause, though \"the small excess\" implies this. That omission is minor.\n\nScore: 8",
+  "usage": {
+    "input": 367,
+    "output": 452
+  },
+  "cost": 0.0002627
+}

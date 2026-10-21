@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-36",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. It stays under the 120-word limit, while Response B does not.\n\n- **Word count:** I counted Response A at about 116 words, which meets the limit. Response B comes to about 127 words, or about 120 without the title. Either way it breaks the \"under 120 words\" instruction.\n- **Content:** Response A includes the overage rates (0.9c and 6.5c per page), which a manager would want. Response B leaves them out. B does add the contact name, but that matters less than the length limit and the missing rates.\n- **Accuracy:** Both state the $195 figure correctly. It is 3,000 extra colour pages at 6.5c.\n\nA",
+  "usage": {
+    "input": 1360,
+    "output": 1921
+  },
+  "cost": 0.02193
+}

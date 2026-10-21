@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-04",
+  "side": "A",
+  "score": 10,
+  "model": "claude-sonnet-5-5",
+  "text": "The math: 500 × 1.2 = 600, then 600 × 0.8 = 480. That is a 4% decrease, and the response gets both answers right. The explanation that the discount applies to the larger base is correct: the discount removes $120 while the increase added $100. The general formula (1+p)(1−p) = 1−p², so the net change is −p² as a fraction, is also correct. With p = 0.20, p² = 0.04, giving −4%. The response states \"net change of −p²\" and then uses 0.20², which is consistent.\n\nOn length, the response is about 90 words, under the 120-word limit. It is clear and well formatted.\n\nScore: 10",
+  "usage": {
+    "input": 396,
+    "output": 212
+  },
+  "cost": 0.002912
+}

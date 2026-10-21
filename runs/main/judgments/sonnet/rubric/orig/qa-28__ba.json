@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-28",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are correct. Each names chaining and open addressing, lists the probing methods, and gives O(1) average and O(n) worst-case performance. Each also explains resizing when the load factor passes a threshold.\n\nThe difference is the \"under 120 words\" limit, and both break it. A comes to about 123 words and B to about 131. A's extra content is the amortized O(1) insert point and the note that lookups follow the same probe sequence. B adds the O(log n) tree-bucket worst case, clustering, and a typical load-factor threshold. B's extras are accurate and useful, but they push it further over the limit. A is closer to compliance and still covers the key reasoning, so I give it a slight edge.\n\nVerdict: A",
+  "usage": {
+    "input": 835,
+    "output": 2280
+  },
+  "cost": 0.02447
+}

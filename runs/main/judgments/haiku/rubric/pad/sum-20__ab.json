@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-20",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are factually accurate. Dates, times, venue, transport, the five-priority cap, the 31 October dietary deadline, Ella's role and the optional pub drinks all match the original. Neither invents details or misstates who decides what.\n\nResponse A is written as a flowing letter, but it runs to roughly 220 words, well over the 120-word limit. It also shifts into the first person (\"I would kindly ask\") when it is meant to summarise Hannah's email, which is slightly awkward. Its extra words mostly restate the original's phrasing rather than adding decision-relevant content.\n\nResponse B is a tight, scannable bullet summary of about 135 words. It is also slightly over the limit, but far closer. It keeps every point a manager needs: logistics, agenda, prep, food deadline, out-of-office arrangements and the optional social event. For a busy reader, its structure is more useful.\n\nB is better on concision and comparable on accuracy, and it is closer to the word limit.\n\nVerdict: B",
+  "usage": {
+    "input": 1614,
+    "output": 1173
+  },
+  "cost": 0.0007479
+}

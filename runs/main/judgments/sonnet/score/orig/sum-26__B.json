@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-26",
+  "side": "B",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is mostly accurate, but it breaks the explicit \"under 120 words\" limit.\n\n**Accuracy:** The facts are mostly right. The lift stopped between levels 2 and 3 with two residents inside. They were freed after about an hour, which matches 7:50 to 8:50. The cause, return time, meals for 11 residents, two residents staying with family, the $2,300 spare board, the Tower A check, and the board referral all match the source. There are two small slips:\n- \"Daily printed updates\" overstates the source, which says only the Monday notice was printed and the afternoon updates had no stated format.\n- \"Approved 26 Sept\" leaves out that the village manager approved it.\n\n**Content kept:** The coverage is good. It includes the cause, duration, impact, follow-up actions and committee request. It omits that the residents were checked by the nurse.\n\n**Concision:** My count is roughly 145–150 words, including headings. That is well over the 120-word cap the user set for a busy manager. This is a clear instruction failure and the main weakness. Several details could have been cut, such as the Melbourne sourcing, the \"residents praised staff\" line and the family phone calls.\n\nScore: 4",
+  "usage": {
+    "input": 1198,
+    "output": 1050
+  },
+  "cost": 0.012896
+}

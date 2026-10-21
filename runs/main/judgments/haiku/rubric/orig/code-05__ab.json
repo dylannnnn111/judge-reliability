@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-05",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses find the same core problems: the shared `tzinfo` makes subtraction ignore DST offsets, ambiguous and nonexistent local times are silently accepted, weekend loading checks only the start day, float money arithmetic uses banker's rounding, and public holidays are ignored. I checked their examples and both are accurate, including B's overpaid/underpaid directions and A's 4h-vs-5h and 4h-vs-3h figures.\n\nResponse A is somewhat stronger. Its DST example is concrete and correctly worked, and its fix for the first issue is an actual code line. It also gives a specific detection method for nonexistent times (a UTC round-trip check) and suggests a sanity limit on shift length, which matters for payroll. Response B's point 6 is weak, since repeated `parse_local` calls are a trivial efficiency concern. B does have one useful touch in suggesting integer minutes instead of fractional hours. Both run close to the 200-word limit, so length does not separate them.\n\nVerdict: A",
+  "usage": {
+    "input": 1774,
+    "output": 1532
+  },
+  "cost": 0.0009434
+}

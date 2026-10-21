@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-38",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are factually correct. Both explain the polar vortex, the cold temperatures and polar stratospheric clouds, the conversion of chlorine reservoirs into reactive forms, and the role of spring sunlight in splitting Cl₂. Both also describe the hole's recovery as the vortex breaks down.\n\nResponse A adds useful detail: the approximate −78°C threshold, the explicit note that the Arctic's losses are smaller, and bold headers that aid scanning. However, it runs to roughly 125–130 words, which exceeds the user's explicit \"under 120 words\" limit. Response B stays within the limit (about 110 words) while still covering the key reasoning, including why destruction is concentrated in spring and why it peaks in September and October. Its clarity is slightly less polished, but it meets the constraint without losing any essential reasoning.\n\nSince the two are equally correct and both give the key reasoning, the word-limit compliance tips the comparison toward Response B.\n\nVerdict: B",
+  "usage": {
+    "input": 827,
+    "output": 1355
+  },
+  "cost": 0.0007602
+}

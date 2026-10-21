@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-07",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both give the correct answer: 7.84 L/100 km, which rounds to about 7.8.\n\nThe request also asks for fewer than 120 words, so I counted each response.\n\nResponse A is roughly 115-125 words, so I counted it carefully:\n- \"To answer your question, 30 miles per gallon (US) works out to about **7.8 L/100 km**.\" is about 15 words.\n- \"Working:\" is 1.\n- \"To begin, recall the two conversion factors needed: 1 US gallon = 3.785 L, and 1 mile = 1.609 km.\" is about 19 (To, begin, recall, the, two, conversion, factors, needed, 1, US, gallon, =, 3.785, L, and, 1, mile, =, 1.609, km), so 20.\n- \"Applying the mile conversion, 30 miles = 48.28 km. This means the car travels 48.28 km on 3.785 L, or 12.75 km per litre.\" is about 24.\n- \"Finally, 100 km ÷ 12.75 km/L ≈ 7.84 L, which matches the figure given above.\" is about 14.\n- \"Shortcut: There is also a quicker route to the same result. L/100 km ≈ 235.2 ÷ mpg (US). So, for this car, 235.2 ÷ 30 ≈ 7.84.\" is about 27.\n- \"I hope this helps. Please note that US test figures (EPA) can differ from Australian ratings, so real-world comparisons may vary somewhat.\" is about 22.\n\nThe total is about 15+1+20+24+14+27+22 = 123. That is over 120, or at least borderline.\n\nResponse B:\n- The heading is about 6 words.\n- The working is about 40.\n- The quick formula is about 15.\n- The note is about 30.\n\nThe total is about 90-95, which is within the limit.\n\nSince A likely breaks the length constraint and B is more concise and adds a useful point about imperial gallons, B is better. The imperial figure it quotes is 282.5/30 = 9.42, which is correct.\n\nVerdict: B",
+  "usage": {
+    "input": 847,
+    "output": 669
+  },
+  "cost": 0.008384
+}

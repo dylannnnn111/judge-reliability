@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-12",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries cover the same key facts: the fee changes, the concession pass, the repair reason, staff being unaffected and the petition. Both are also close to the 120-word limit, at roughly 124 and 126 words by my count, so length does not separate them.\n\nThe difference is accuracy. Response A adds \"This is a significant saving for regular users.\" The article does not say this. It only has one resident saying he would pay less, and a $15 weekly pass costs more than a single $9 daily pass for someone who visits once a week. That is an unsupported judgement, and it could mislead a manager who won't check the original.\n\nResponse B says the weekly pass \"will replace\" the $9 daily concession. The article does not say the daily rate is withdrawn, so this is also a small overstatement. Response A's \"instead of the current $9 daily concession\" implies much the same, so both share that flaw.\n\nResponse A therefore has the shared ambiguity plus an extra editorial claim. Response B is slightly cleaner and more neutral. It also leads with the fee change and its reason in one block, which suits a busy reader.\n\nVerdict: B",
+  "usage": {
+    "input": 1364,
+    "output": 2016
+  },
+  "cost": 0.022888
+}

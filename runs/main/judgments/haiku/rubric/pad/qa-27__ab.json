@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-27",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are scientifically correct. Each explains that ice is less dense than liquid water because hydrogen bonds hold the molecules in an open hexagonal lattice, and each explains that the floating ice insulates the water below and lets aquatic life survive winter. A gives slightly more detail, including the 4°C density maximum and the layering of water temperatures, but that extra material doesn't fix a larger problem. A runs roughly 210 words, well over the 120-word limit. B is about 100 words, so it follows the instruction, and it still covers the key reasoning, including the 4°C point, and the lake-life consequences. Since A violates an explicit constraint without offering enough additional correct value to compensate, B is the better response.\n\nVerdict: B",
+  "usage": {
+    "input": 917,
+    "output": 707
+  },
+  "cost": 0.0004452
+}

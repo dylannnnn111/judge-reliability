@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "code-30",
+  "side": "A",
+  "score": 7,
+  "model": "claude-opus-5-5",
+  "text": "The response is accurate, well ranked and actionable, but it runs over the requested length.\n\n**Correctness and ranking**\n- **Issue 1 (`COUNT(*)`):** This is the real, critical bug. A LEFT JOIN gives a zero-ticket agent one NULL row, which `COUNT(*)` counts as 1. This breaks the stated goal of including agents with none. Ranking it first, with the fix `COUNT(t.id)` and a note on the sort order, is right.\n- **Issue 2 (`COALESCE` to 0):** This is a genuine reporting problem. It makes idle agents look like they have perfect response times, and the suggested fix is sensible.\n- **Issue 3 (`AVG` skipping NULLs):** This is a sharp, real insight. Open tickets often have no first response yet, and those are the slowest ones. The fix is concrete.\n- **Issue 4 (no time window):** This is plausible but more speculative. The comment describes a snapshot of open tickets, which needs no window. The response hedges appropriately (\"decide whether...\"), so it is not a false flag, though it is weaker.\n- **Issue 5 (integer averaging):** This is valid, correctly labelled as minor and database-dependent, and comes with a fix.\n- **Closing note:** It correctly says the `ON`-clause filter is fine and should stay where it is. This is useful reassurance.\n- **False positives:** None. The query's `GROUP BY` and other clauses are fine, and the response does not flag them.\n\n**Length**\nThe user asked for under 200 words. The response runs to roughly 230–240 words, a clear breach of an explicit constraint. Several items could be tightened, for example the explanation in item 1 or the closing paragraph.\n\nScore: 7",
+  "usage": {
+    "input": 983,
+    "output": 817
+  },
+  "cost": 0.020272
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-27",
+  "side": "A",
+  "score": 3,
+  "model": "claude-haiku-5-5",
+  "text": "The science is accurate. Ice is about 8–9% less dense than liquid water, the hydrogen-bonded lattice explains why, and the 4°C density maximum and the insulating ice layer are both correctly tied to lake survival. The reasoning is complete and clearly organized.\n\nHowever, the response clearly violates the explicit \"under 120 words\" constraint. The first paragraph alone runs roughly 110 words, and the second adds roughly 85 more, for about 195 total. The extra length does not add a correctness benefit that would justify ignoring the limit. Since the user set a hard length requirement, this is a significant failure of instruction-following even though the content is sound.\n\nScore: 3",
+  "usage": {
+    "input": 635,
+    "output": 838
+  },
+  "cost": 0.0004825
+}

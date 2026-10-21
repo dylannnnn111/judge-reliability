@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-39",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same five problems in nearly the same order, and the issues they raise are all real:\n- The unchecked `cd` with no `-e` means `rm -rf ./*` can run in the wrong directory.\n- `APP_NAME` is not validated, so traversal is possible.\n- The `*` glob skips dotfiles.\n- Failures and leftover files still exit 0.\n- The counting loop is clumsy.\n\n**Response A:**\n- It covers the traversal inputs `..`, `.` and `../..`. `.` matters because it would wipe every app's cache.\n- Its validation regex also rejects names starting with a dot, so it covers `.` and `..`.\n- It correctly notes that the count loop miscounts filenames containing newlines.\n- It gives concrete fixes for every item.\n\n**Response B:**\n- It states the consequence of `..` precisely: `/var/cache/builds/..` is `/var/cache`.\n- It notes that the `find` check does count dotfiles, so the warning fires even though the real bug is the glob. That is a useful observation.\n- Its validation advice (\"reject `/` or `..`\") misses `.`, which resolves to the cache root and deletes all apps' caches. Its fallback (\"a plain directory name that exists\") also lets `.` through.\n- The glob fix `.[!.]*` and `..?*` is correct.\n- It correctly notes that `find -type f` ignores symlinks and empty directories.\n\nThe two are close in quality and length, and both run slightly over 200 words. A's validation is more complete and its fixes are more precise. B's insight about the warning firing on dotfiles is a small plus but does not outweigh the gap on `.`. I give a slight edge to A.\n\nVerdict: A",
+  "usage": {
+    "input": 1626,
+    "output": 1682
+  },
+  "cost": 0.020072
+}

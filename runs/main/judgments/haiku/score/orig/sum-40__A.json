@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-40",
+  "side": "A",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate throughout. It correctly gives the sample size, school count, year level, the 1.8 vs 1.1 mark improvements, the non-significant 0.7 difference, the 71% survey figure, and the caveats. It stays under 120 words (about 116). The main gap is that it never states outright that the 10% overseas effect was not found, and it doesn't clearly say schools should not expect a noticeable effect on results. The \"not higher marks\" line conveys this only partly. The bottom line and caveats are otherwise well chosen for a busy manager.\n\nScore: 8",
+  "usage": {
+    "input": 1067,
+    "output": 1583
+  },
+  "cost": 0.0008982
+}

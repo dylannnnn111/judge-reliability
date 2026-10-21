@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "code-30",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A** is better. Both responses correctly lead with the two key bugs. First, `COUNT(*)` returns 1 for agents with no open tickets and should be `COUNT(t.id)`. Second, `COALESCE(AVG(...), 0)` makes idle agents look like perfect performers.\n\nResponse A is stronger on the remaining points:\n\n- **Biased average:** A explains why the excluded NULL rows matter. Unanswered tickets are the slowest ones, so dropping them systematically flatters the average. A also offers a concrete fix (report the unanswered count, or measure wait time so far). B notes the exclusion but treats it as possibly intended.\n- **No time window:** A flags that a \"weekly\" report has no date filter and frames it as a decision for the author.\n- **Integer truncation:** A catches that `AVG` of an integer column returns an integer on some databases, which is a real portability issue.\n- **Filter placement:** A confirms the `status = 'open'` condition is correctly in the `ON` clause, which heads off a likely \"fix\" that would break the query.\n\nResponse B's later items are weaker. Item 4 is generic advice to check the schema. Item 5 is mostly filler, calling the sort tiebreaker \"fine\" and suggesting email wording.\n\nA likely runs somewhat over the 200-word limit, while B is closer to it. That counts against A, but its substantially more insightful and actionable content outweighs it.\n\n**A**",
+  "usage": {
+    "input": 1336,
+    "output": 729
+  },
+  "cost": 0.019924
+}

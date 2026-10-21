@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-10",
+  "side": "B",
+  "score": 10,
+  "model": "claude-sonnet-5-5",
+  "text": "The answer 1/3 is correct. The reasoning is standard and correct: four equally likely outcomes, remove BB, and one of the remaining three is GG. The closing note about a specific child being a girl giving 1/2 is also accurate and useful.\n\nThe word limit is under 120 words. The response is roughly 90 words, so it complies.\n\nClarity is good, with a clear structure and a bolded answer. There are no errors.\n\nScore: 10",
+  "usage": {
+    "input": 396,
+    "output": 144
+  },
+  "cost": 0.002232
+}

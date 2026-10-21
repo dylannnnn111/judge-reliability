@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-17",
+  "side": "A",
+  "score": 6,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** The core facts are right:\n- The licence allows trading until midnight on Friday and Saturday, but amplified music must stop at 10pm every night.\n- David spoke to Clare, who blamed a new DJ and agreed to turn the speakers away and have staff check the music is off at 10pm.\n- David will report back at the 20 October meeting, with a regulator complaint as the fallback.\n\nThere are two small distortions:\n- It says \"Residents… have complained… for four weekends running, with music audible past midnight.\" The four-weekends and past-midnight claims came from one resident, Colleen. The complaint count was Arjun's four complaints this month, not a confirmed four-weekend pattern across residents.\n- It says \"Residents will keep logging,\" but David *asked* affected residents to keep a log. Nobody actually committed to it.\n\n**Key points:** All the essentials are there: the breach, the evidence needed, the venue's fix, the dissenting resident, the follow-up date and the fallback. But the ordering doesn't help a busy manager. The current status (a fix was agreed and is being tested this weekend) sits in the middle. \"The regulator needs dated evidence\" also appears before any complaint to the regulator has been mentioned, so it reads oddly.\n\n**Concision:** The summary body is about 123 words, and about 124 with the \"Summary:\" label. That breaks the explicit \"under 120 words\" limit, so a hard constraint is missed. The label is padding, and a couple of sentences could be tighter.\n\nOverall, it is mostly accurate and complete, but it slightly overgeneralises one resident's claim and goes over the word limit.\n\nScore: 6",
+  "usage": {
+    "input": 1199,
+    "output": 2090
+  },
+  "cost": 0.046596
+}

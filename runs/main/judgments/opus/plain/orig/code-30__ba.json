@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-30",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B is better.**\n\nBoth responses correctly lead with the two most important bugs:\n- **`COUNT(*)` counts the NULL row.** With the LEFT JOIN, agents with no open tickets show 1 instead of 0.\n- **`COALESCE(AVG(...), 0)` is misleading.** Idle agents appear to have a perfect 0-minute response time.\n\nB's remaining points are sharper and more useful:\n- **The average is biased.** B explains the mechanism: open tickets with no first response yet are the slowest, so excluding them flatters the average. It also gives a concrete fix (`COUNT(t.id) - COUNT(t.first_response_mins)`). A raises the same issue, but more vaguely.\n- **There is no time window.** For a \"weekly\" report, this is a relevant problem that A misses.\n- **Integer truncation of `AVG`.** This is a valid, database-specific note that is correctly flagged as minor.\n- **Sort order.** B notes the `COUNT(*)` bug also distorts the ordering.\n- **The `ON`-clause filter.** B confirms it is placed correctly, which heads off a common mistaken \"fix.\"\n\nA's points 4 and 5 are weaker. They are generic \"confirm your schema\" advice and a non-bug about the email wording.\n\nOn the word limit, both exceed 200 words. A is roughly 205 and B roughly 225. B's substantially better content outweighs that modest difference.\n\nB",
+  "usage": {
+    "input": 1336,
+    "output": 1298
+  },
+  "cost": 0.031304
+}

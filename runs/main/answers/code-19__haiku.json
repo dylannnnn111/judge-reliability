@@ -1,0 +1,13 @@
+{
+  "item": "code-19",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "**Bugs, most important first:**\n\n1. **`forEach` with an async callback.** `forEach` doesn't await the promises, so `processUploads` returns `outputs` before any resize finishes. `main` will log `made 0 thumbnails` while work is still running.\n\n2. **Errors escape `main`'s `catch`.** A rejected `resize` call inside the `forEach` callback becomes an unhandled rejection. One bad image can crash the process or fail silently, with no indication of which file failed.\n\n3. **Missing output directory.** Nothing creates `dir/thumbs`, so writes will likely fail with ENOENT. Add `await fs.mkdir(path.join(dir, \"thumbs\"), { recursive: true })`.\n\n4. **Unbounded concurrency.** Every image is resized at once. A large bulk upload can exhaust memory or file descriptors. Process files sequentially or with a small concurrency limit.\n\n5. **No input validation.** If `process.argv[2]` is missing, `readdir(undefined)` throws an unclear error. Check it and print usage.\n\n6. **Minor:** The regex doesn't exclude directories, so a folder named `photo.jpg` would be passed to `resize`. Re-runs also regenerate every thumbnail, with no skip for existing outputs.\n\n**Fix for 1, 2, and 4:** make `processUploads` sequential with `for...of` and `await`, collect per-file results or errors, and report failures at the end.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 358,
+    "output": 1027
+  },
+  "cost": 0.0005493,
+  "at": "2026-10-14T01:53:49.754Z"
+}

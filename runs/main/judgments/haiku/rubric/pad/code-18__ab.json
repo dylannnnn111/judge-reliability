@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-18",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the critical bug: the cache key `fx:${from}` ignores `to`, so one currency pair's rate gets served for every other pair. Both also flag missing response validation, the lack of a fetch timeout, thundering-herd misses, and unencoded query parameters.\n\nResponse A adds money precision (floating-point rates in invoicing), which matters for this service. Its in-flight deduplication advice also covers evicting a rejected promise, which avoids caching failures. It is about 195 words, so it meets the under-200 limit. Response B's \"unsafe generic cast\" point is valid but minor, and it misses the precision concern. It runs to roughly 280 words, breaking the length constraint without adding anything more important.\n\nResponse A is more precise, covers the more relevant issues, and respects the word limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1802,
+    "output": 804
+  },
+  "cost": 0.0005822000000000001
+}

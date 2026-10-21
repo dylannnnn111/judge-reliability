@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-37",
+  "side": "A",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The response gets the core science right. Uluru's red color comes from iron-bearing minerals in its arkose weathering into iron oxides such as hematite, the fresh rock is grey beneath the weathered skin, and sunrise and sunset colors result from light scattering over a longer atmospheric path. The reasoning is clear and well organized.\n\nHowever, the user explicitly asked for an answer under 120 words, and this response runs to roughly 180 words. The first paragraph alone is about 88 words. The extra material on the grey interior and the sunset colors is accurate and somewhat useful, but it does not justify breaking an explicit length limit. Correctness is strong, but the instruction violation is significant.\n\nScore: 4",
+  "usage": {
+    "input": 571,
+    "output": 1015
+  },
+  "cost": 0.0005646000000000001
+}

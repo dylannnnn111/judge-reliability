@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-11",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses capture the key information: who handles what, the deadlines, the Monday access-card welcome, and parking allocation. Neither includes errors. B's inferred \"Mon 17 Nov\" is correct, since 15–16 November is a weekend.\n\nThe word limit is the main difference. By my count, both slightly exceed 120 words. A comes to about 129 and B to about 135, so A is closer to the constraint. A gets there by folding parking under Rachel, who allocates it, rather than giving it a separate bullet. This loses no information and reads naturally. A's phrasing is also tighter throughout, for example \"so don't pack them\" and \"or they'll be left behind.\" That suits a busy manager.\n\nB is marginally more explicit in places. It mentions Lena's archive responsibility and gives full dates. However, this comes at the cost of further overshooting the limit, without adding anything a manager needs.",
+  "usage": {
+    "input": 1474,
+    "output": 1614
+  },
+  "cost": 0.038176
+}

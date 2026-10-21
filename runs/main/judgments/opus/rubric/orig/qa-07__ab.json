@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-07",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both responses give the correct answer, about 7.84 L/100 km, so they tie on correctness.\n\n**Response A** gets there by working out the gallons needed per 100 km: 62.137 miles ÷ 30 = 2.0712 gal, then × 3.78541 = 7.84 L. It uses precise conversion constants. It gives the 235.2 ÷ mpg shortcut. It also warns that applying the imperial formula would wrongly give about 9.4 L/100 km. That warning bears directly on getting the conversion right, and imperial gallons are a plausible source of confusion for an Australian reader.\n\n**Response B** works through km per litre: 48.28 km ÷ 3.785 L = 12.75 km/L, and 100 ÷ 12.75 = 7.84. This is also correct and clear, and it gives the same shortcut. Its closing note, that EPA and Australian test figures differ, is true and somewhat relevant. However, it concerns comparing test results rather than the conversion itself.\n\nBoth are clear and under the word limit. The difference is small, but A's extra content more directly protects the reader from a numerical error in exactly this task. That gives it a slight edge in usefulness.\n\nVerdict: A",
+  "usage": {
+    "input": 762,
+    "output": 859
+  },
+  "cost": 0.020228
+}

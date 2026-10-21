@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-38",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A** is accurate throughout. Its figures and dates match the source: 431 of 600 installed, 4.3/5 rating, 21 of 23 bugs fixed, submissions on 3 November, packs by 12 November, training by 14 November, and spend of $268,500 of $290,000. Grouping the email and posters as \"17–18 November\" is fair shorthand, since posters go up from the 17th and the email goes out on the 18th. It also covers what a manager needs: status, launch date, beta outcome, the fixed complaint, key dates, budget and the main risk. By my count it is exactly 120 words, so it technically misses \"under 120\" by a hair. That is borderline, though the effect on a reader is negligible.\n\n**Response B** is also factually accurate, and it adds a couple of small details: the most-liked features, timetable loads now under two seconds, and the mitigation of checking the submission against both stores' guidelines. However, it is roughly 270 words, more than double the limit. It also pads with filler such as \"I am pleased to report\" and a paragraph previewing its own sections. It restates \"green (to 10 Oct)\" redundantly and speaks in the first person as if it were the author. The extra details do not justify ignoring an explicit length constraint for a busy reader.\n\nBoth are accurate. A keeps the essential points and is near-compliant on length, while B badly violates it with padding.\n\nVerdict: A",
+  "usage": {
+    "input": 1566,
+    "output": 1594
+  },
+  "cost": 0.038144
+}

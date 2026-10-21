@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-25",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses get the core issues right, and in a sensible order:\n\n- **Off-by-one:** `recent.length > this.limit` lets a sixth attempt through when there are already 5 recent hits.\n- **Unbounded memory growth:** keys are never deleted, so rotating IPs can exhaust memory.\n- **Per-IP only:** distributed guessing against one account is never limited.\n- **Others:** the hardcoded `retryAfterSec`, per-process in-memory state, and IP trust/proxy concerns.\n\n**Response A's strengths:**\n- Its fixes are more concrete. It keys IPv6 limits on the /64 prefix and gives an exact `retryAfter` formula, noting that `allow` would need to return the value.\n- Its proxy point, that every client could appear as the proxy's address and be locked out together, is a real and significant failure mode.\n- It notes there is no way to reset a key after a successful login, which is useful.\n\n**Response A's weaknesses:**\n- Item 7's \"no tests\" is not a problem in the code shown. It is filler, and remarking that the `now` parameter \"is fine\" adds nothing.\n- At roughly 260 words, it clearly exceeds the user's 200-word limit.\n\n**Response B's strengths:**\n- It covers the same main ground with less padding.\n- Its \"counts all attempts, not failures\" point is a legitimate design concern. It is somewhat overstated, since five successful logins a minute is rare, but it is relevant.\n- Its `X-Forwarded-For` spoofing point is a real security concern, arguably more security-relevant than A's lockout framing.\n\n**Response B's weaknesses:**\n- Its fixes are slightly less specific.\n- At about 220 words, it is only modestly over the limit.\n\n**Weighing them:** A's extra detail is somewhat useful, but it comes with filler and a bigger breach of an explicit constraint. B delivers essentially equivalent substance more tightly, with every item a genuine code or design issue. On balance B is slightly better.\n\nVerdict: B",
+  "usage": {
+    "input": 1640,
+    "output": 1340
+  },
+  "cost": 0.03336
+}

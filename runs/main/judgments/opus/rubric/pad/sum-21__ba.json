@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-21",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.**\n\n**Accuracy:** Both responses report the figures correctly: $229,140 total, $13,140 over the $216,000 budget, $209,880 for the petrol alternative, $5,400 fuel saving per car over four years, the 24 October deadline, February as the next allocation, and $1,800 per car per month for hire cars. A's added figure of about $21,600 for hire cars is correct (6 cars × 2 months × $1,800) and shows the cost of missing the deadline.\n\nB's framing is muddled. It opens with \"I'd like to ask for Ruth's sign-off,\" as if Dom were writing. It refers to Ruth in the third person and then ends with \"Please indicate…\", addressed to the reader. This blurs who is asking whom, which matters when the summary's purpose is to say who decides.\n\n**Key points:** Both keep the essentials: the recommendation, the overspend and delegation issue, the rationale, the within-budget alternative, and the deadline with its consequence. B also mentions Coastal Fleet Sales, but that supplier is not a live option, so including it adds little.\n\n**Concision and constraints:** A is about 107 words and meets the under-120 limit. B is roughly twice that, which breaks an explicit instruction. It also repeats the sign-off and delegation point three times.\n\nVerdict: A",
+  "usage": {
+    "input": 1674,
+    "output": 919
+  },
+  "cost": 0.025076
+}

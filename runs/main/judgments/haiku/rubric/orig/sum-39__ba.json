@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-39",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are largely accurate. Response A covers the lost-or-damaged exclusion and the blocked-account consequence, which Response B omits. Response A's \"net about $33,000\" is a fair derivation from the $52,000 and $19,000 figures, though it adds a calculation the source doesn't state. Response B says \"opponents\" in the plural when only one councillor is quoted, a minor imprecision. Response B has no outright errors, but its exceptions section is less complete. Both are close to the 120-word limit, and Response A's bullets are easier for a busy manager to scan. Response A is slightly better on completeness and usability.\n\nVerdict: A",
+  "usage": {
+    "input": 1408,
+    "output": 1148
+  },
+  "cost": 0.0007147999999999999
+}

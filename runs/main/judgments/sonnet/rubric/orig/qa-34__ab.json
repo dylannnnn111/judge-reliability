@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-34",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are correct and cover the same ground: Diffie-Hellman key exchange, a symmetric session key, and certificates to prevent man-in-the-middle attacks. The difference is the word limit of under 120.\n\nI counted Response A at about 111 words, or 115 if the list numerals are counted, so it stays under the limit.\n\nI counted Response B at about 120 words, or 124 with the numerals. That is at or over the limit, so it does not meet \"under 120.\"\n\nResponse B's content is slightly more explicit about certificates binding a public key to a domain name. That does not outweigh missing the length constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 773,
+    "output": 1755
+  },
+  "cost": 0.019096
+}

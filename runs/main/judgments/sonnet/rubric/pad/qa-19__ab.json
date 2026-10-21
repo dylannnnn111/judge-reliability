@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-19",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer under 120 words, so I count each response.\n\nResponse A: Sentence 1: \"The word \"kangaroo\" comes from gangurru, a word in Guugu Yimithirr, an Aboriginal language of northeastern Queensland.\" (~19 words). Sentence 2: \"It referred specifically to a type of large grey kangaroo.\" (10). Sentence 3: \"Europeans first recorded it in 1770, when Captain James Cook's expedition repaired the Endeavour near present-day Cooktown.\" (17). Sentence 4: \"The story that it means \"I don't understand\" is a popular myth.\" (12). Sentence 5: \"Supposedly, Cook's crew pointed at the animal, asked what it was, and took the reply as its name.\" (18). Sentence 6: \"Linguist John Haviland documented in the 1970s that gangurru really did refer to the grey kangaroo.\" (16). Sentence 7: \"The myth is widespread but false, though it's often repeated as a fun anecdote.\" (14). Total ≈ 106, which is under 120.\n\nResponse B is clearly longer. Paragraph 1 is roughly 60 words and paragraph 2 roughly 110, so the total is around 170. That exceeds 120, so B violates the explicit constraint.\n\nOn correctness, both are accurate. B's claim about why the myth arose is plausible, since Phillip Parker King in 1820 found that locals didn't know the word. A says \"Supposedly... took the reply as its name,\" which is the myth as usually told. Both are fine.\n\nA satisfies the length constraint and B does not, so A wins.\n\nVerdict: A",
+  "usage": {
+    "input": 886,
+    "output": 534
+  },
+  "cost": 0.007112
+}

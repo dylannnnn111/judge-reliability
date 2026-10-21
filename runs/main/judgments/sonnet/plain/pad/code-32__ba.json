@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-32",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. Both responses find the same main bugs: the `BETWEEN` end date that drops September 30 orders, integer-division truncation, the NULL status handling, and stores with no orders disappearing. The differences are in length and accuracy.\n\n**Length:** The user asked for under 200 words. Response B is roughly 225 words, slightly over. Response A is roughly 350 words and opens with filler (\"Let me walk through the issues...\") that adds nothing. B is much closer to the limit.\n\n**Accuracy:** A recommends `AVG(o.item_count)` as the fix for integer division. In SQL Server, `AVG` of an integer column returns an integer, so that fix would still truncate. B's fix, `AVG(o.item_count * 1.0)` or `SUM(...) * 1.0 / COUNT(...)`, works across dialects. A also suggests `IS DISTINCT FROM`, which is not available in every dialect.\n\n**Content:** B adds a point A lacks: the status filter lets pending, failed and cancelled orders count as revenue, and it ignores partial refunds. B also says the `HAVING` clause does nothing, so it can be deleted if zero-revenue stores aren't needed. A mentions the `HAVING` redundancy too, but B ties it more directly to a decision. A's ORDER BY tiebreaker point is minor and not worth the extra words.\n\nB is the more concise, more correct, and better prioritized review.\n\n**B**",
+  "usage": {
+    "input": 1816,
+    "output": 1011
+  },
+  "cost": 0.013742
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-23",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. Both responses find the same main bug: `!r.value` drops legitimate `0` readings, which matters in a cold room. Both also flag the string timestamp comparison, the possible null-valued latest reading, and the comparator and sorting problems.\n\nThe difference is the 200-word limit. Response A runs to roughly 400 words, about double the limit. It also spends space on weaker points, such as `__proto__` key collisions, and treats the comparator and sorting as a separate numbered item.\n\nResponse B is much tighter, though at around 210–230 words it may be slightly over. It keeps the priority order and groups the minor issues into one item. It also explains why sensors vanishing from a monitoring panel is a real problem.",
+  "usage": {
+    "input": 1751,
+    "output": 558
+  },
+  "cost": 0.009082
+}

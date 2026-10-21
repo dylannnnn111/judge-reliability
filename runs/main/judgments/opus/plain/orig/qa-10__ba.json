@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-10",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses give the correct answer, 1/3, with the same sound reasoning. Both also explain the 1/2 intuition and stay under the 120-word limit.\n\nResponse A is more concise, at about 80 words. Response B runs to about 109 words and repeats the answer at both the start and the end. A's explanation also says more clearly why the 1/2 intuition fails: the condition doesn't identify *which* child is a girl. Given the explicit brevity constraint, A's tighter version is slightly better.",
+  "usage": {
+    "input": 526,
+    "output": 475
+  },
+  "cost": 0.011604
+}

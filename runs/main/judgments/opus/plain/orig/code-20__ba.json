@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-20",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses find the same four issues in the same order: the DST off-by-one, silent NaN on malformed input, viewer-timezone dependence, and labels going stale after midnight. They also propose essentially the same UTC-based fix.\n\n**Response A is more accurate.**\n- It correctly notes that the overdue list is unaffected by the DST bug, because the sign stays negative.\n- Response B wrongly says a fall-back miscount \"may land in the wrong place on the overdue list.\" The filter only checks `< 0`, so −2 still qualifies.\n- Response A's spring-forward example is slightly muddled: it computes a 3-day case but then describes \"Due tomorrow\" becoming \"Due today.\" The underlying claim is still correct.\n\n**Response A also fits the length limit better.** It is tighter and fits within the 200-word limit. Response B is wordier and likely exceeds it.",
+  "usage": {
+    "input": 1703,
+    "output": 649
+  },
+  "cost": 0.019792
+}

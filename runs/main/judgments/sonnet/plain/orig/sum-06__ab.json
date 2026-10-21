@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-06",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. Both responses are accurate and organized for a busy reader, but they differ on the word limit and on precision.\n\n- **Word limit:** Response A is about 117 words by a simple count. Counting hyphenated terms and ranges as separate words would push it over 120. Response B is around 100 words and sits comfortably under the limit.\n- **Precision:** Response A says \"All programs … resume on opening day,\" which generalizes the source. The article names only lap swimming, aqua aerobics and learn-to-swim. Response B lists these exactly.\n- **Content:** Response A includes the adult change table and the year-round lessons point. These are nice details but not essential for a manager.\n- **Format:** A's bullets are easy to scan. B's bold-labelled short paragraphs are just as readable and more compact.\n\nB is more compact and keeps closer to the source.\n\n**B**",
+  "usage": {
+    "input": 1358,
+    "output": 1297
+  },
+  "cost": 0.015686
+}

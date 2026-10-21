@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-35",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer under 120 words. Response A is clearly over that limit, at roughly 190 words. Response B comes to about 90 words, so it stays under.\n\nBoth are factually correct. Response B has the key points: antibiotics target bacteria-specific structures, viruses lack those targets, and resistance arises through mutation or gene transfer followed by selection. It also gives concrete examples and mentions that overuse accelerates resistance.\n\nResponse A covers a bit more, such as resistance mechanisms. It also has filler and repetition (\"accelerate the process\" appears twice), and it breaks the length constraint.\n\nSince following the length constraint is part of correctly answering the request, B is better.\n\nVerdict: B",
+  "usage": {
+    "input": 932,
+    "output": 231
+  },
+  "cost": 0.004174
+}

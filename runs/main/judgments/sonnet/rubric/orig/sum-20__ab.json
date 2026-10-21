@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-20",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are accurate on dates, times, the 31 October dietary deadline, the five-priority cap, the prep items and the out-of-office arrangement. Neither misstates anything. B correctly keeps \"no need to send them in advance\", which A omits, while A keeps the morning's \"feedback on our reports\", which B drops. Both omissions are minor.\n\nThe main difference is the explicit 120-word limit. By my count, A runs to about 155 words and B to about 130 (counting the heading and bullet labels). Both are over, but A is much further over. B's labelled bullets also let a busy manager scan the logistics quickly, and the optional pub item sits clearly at the end.\n\nSince neither response is accurate in a way the other isn't, concision and the length constraint decide it, and B is closer to the limit and easier to scan.\n\nVerdict: B",
+  "usage": {
+    "input": 1473,
+    "output": 1847
+  },
+  "cost": 0.021416
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-18",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is accurate. Its figures, conditions and feature descriptions match the release notes, and it stays under the 120-word limit at roughly 117 words. It keeps every major change in a scannable structure a busy manager can use quickly. It omits minor details like the unsubscribe option and the Settings path, which the manager likely doesn't need.\n\nResponse B is also accurate in its specifics, but it runs to roughly 220 words, well over the limit. Its opening sentence is filler, and phrases like \"should users prefer not to receive these alerts\" add length without adding useful content. It also ends with \"Overall, no action is required from the team,\" a conclusion the source doesn't state. That is an unsupported claim, and it is the kind of judgment the manager should be the one to make.\n\nResponse A better meets the accuracy, retained-content and concision criteria.\n\nVerdict: A",
+  "usage": {
+    "input": 1587,
+    "output": 911
+  },
+  "cost": 0.0006142000000000001
+}

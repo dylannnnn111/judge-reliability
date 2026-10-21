@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-21",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Totals ($229,140 and $209,880), the $13,140 overage, the 24 October deadline, the February alternative, and the hire-car cost all match the email. Response B's $21,600 hire-car figure is a correct derivation (6 cars × 2 months × $1,800). Response A is slightly more complete in one respect: it mentions Coastal Fleet Sales and ends with an explicit \"Decision needed\" line. Response B covers the essentials but omits Coastal, which is a minor loss since Coastal is clearly the weakest option. On concision, Response A runs to roughly 121 words, which breaks the user's \"under 120 words\" limit, while Response B is about 113. Since the length limit is an explicit requirement, Response B's compliance and its useful cost estimate give it the edge.\n\nVerdict: B",
+  "usage": {
+    "input": 1518,
+    "output": 1957
+  },
+  "cost": 0.0011302999999999999
+}

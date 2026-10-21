@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "code-06",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response catches the most important real defects. The `is not` comparison is a genuine bug that causes intermittent false `Forbidden` errors for IDs above the small-int cache, and it is correctly ranked first. The not-found vs. forbidden enumeration leak and the check-then-write race in cancel are both real and well explained, with concrete fixes (uniform 404 and a conditional UPDATE checking row count). The refund concern is speculative but reasonably flagged as dependent on downstream handling. The minor items are accurate but low value.\n\nThe main weakness is the explicit length limit. The response runs roughly 280 words, well over the 200-word cap, and the minor point could be cut entirely to comply. The ranking and fixes are sound, but the response does not follow the stated constraint.\n\nScore: 6",
+  "usage": {
+    "input": 1209,
+    "output": 773
+  },
+  "cost": 0.0005074
+}

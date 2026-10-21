@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-17",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the most important bug, the off-by-one in `OFFSET page * pageSize`, and both flag the unhandled async rejection in Express 4, the negative `page` value, the possible string/number mismatch in the auth check, and the missing `hasMore` or total. Their rankings are similar. Response B adds a distinct, plausible issue: a malformed `userId` reaching the query for admins and causing a DB cast error. Response A adds a useful confirmation that the parameterized query is safe, and it explicitly notes the risk of deep scans from huge page values. Response B's extra point is a real finding that A misses, while A's SQL-injection note is a helpful \"this is fine\" statement rather than a missed bug. On balance, B's coverage of an actual failure mode gives it a slight edge, though the difference is small.\n\nVerdict: B",
+  "usage": {
+    "input": 1531,
+    "output": 832
+  },
+  "cost": 0.0005691
+}

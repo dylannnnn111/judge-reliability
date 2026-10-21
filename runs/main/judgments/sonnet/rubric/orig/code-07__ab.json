@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-07",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the most important bug: `len(items) // size` drops the final partial batch. Both also cover swallowed failures, missing retries, and the sliceable-input assumption, and both give sensible fixes.\n\n**Response A:**\n- It is about 195 words, so it fits the 200-word limit.\n- Items 2, 3, and 4 overlap, since all three describe the same failure-visibility problem.\n- It adds a useful caveat: confirm `upsert_contacts` is idempotent before adding retries.\n\n**Response B:**\n- It is roughly 240 words, so it clearly breaks the explicit \"under 200 words\" instruction.\n- It makes a good point that fewer than 500 contacts means nothing is sent at all.\n- It distinguishes retryable from permanent errors, and notes that broken auth would cause pointless attempts on every batch.\n- The `except Exception` item largely repeats the retry item.\n- The `math.ceil` suggestion is slightly awkward next to a range-based fix.\n\nOn content quality they are close. B is slightly better at concrete detail, and A is more repetitive. The decisive difference is that B ignores the length constraint and A respects it.\n\nVerdict: A",
+  "usage": {
+    "input": 1439,
+    "output": 1493
+  },
+  "cost": 0.017808
+}

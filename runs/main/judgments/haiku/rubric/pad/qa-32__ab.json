@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-32",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses answer correctly. Each gives the 365.2422-day year as the reason for leap years, and each correctly explains that 1900 was skipped because it is divisible by 100 but not 400, while 2000 was divisible by 400. Response A's supporting facts are also accurate: the 6-hour yearly drift, the roughly 11-minute overcorrection of a plain every-four-years rule, and the 1582 Gregorian reform.\n\nHowever, Response A runs about 200 words, well over the \"under 120 words\" limit. Response B is about 75 words and covers the key reasoning, the rule, and both example years. Its extra detail in A adds some value, but it does not outweigh breaking an explicit constraint. B is also clearer and more direct.\n\nVerdict: B",
+  "usage": {
+    "input": 843,
+    "output": 868
+  },
+  "cost": 0.0005183
+}

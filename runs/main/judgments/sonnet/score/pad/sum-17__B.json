@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "sum-17",
+  "side": "B",
+  "score": 3,
+  "model": "claude-sonnet-5-5",
+  "text": "The response breaks the explicit length limit and contains a few accuracy problems.\n\n**Length:** The summary runs to roughly 200+ words against a limit of under 120. For a busy manager this is a major failure. It also adds a \"Subject:\" line and a letter-style opening (\"I'd like to update residents...\"), which wastes words and assumes the wrong audience.\n\n**Accuracy:**\n- The \"fourth weekend in a row\" point is credited to Arjun Mehta, but Colleen Barker said it. Arjun only mentioned the three other complaints.\n- The subject line says \"resolved for now\". That overstates the position, because David said \"let's see how this weekend goes\", so the fix is untested.\n- It says music continued \"past midnight\". This comes from Colleen's complaint and was not verified, and Arjun's reply was conditional (\"if the music was going past 10pm\").\n- The licence terms, the DJ explanation, the two agreed measures, the logging and the 20 October report-back are all correct.\n\n**Key points:** The main points are mostly covered: the licence terms, the talk with the venue, the agreed fixes, the escalation route and the next meeting. It leaves out that evidence (dates, times, recordings) is needed for a regulator complaint. It also says nothing about the neighbour who likes the bar, which is minor.\n\nThe length violation, the misattribution and the overclaimed resolution together pull the score down substantially.\n\nScore: 3",
+  "usage": {
+    "input": 1351,
+    "output": 816
+  },
+  "cost": 0.010862
+}

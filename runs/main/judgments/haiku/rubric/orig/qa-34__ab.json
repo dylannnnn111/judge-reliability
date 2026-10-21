@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-34",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are correct. They name Diffie-Hellman key exchange, explain why an eavesdropper who sees only the public values can't derive the shared key, note the move to symmetric encryption, and identify certificates as the defense against man-in-the-middle attacks. Neither has a factual error.\n\nThe main difference is the word limit. Response B runs to roughly 130 words, which exceeds the 120-word cap. Response A is about 120 words, so it is at or just under the limit. Response B adds a useful detail (a certificate binds a public key to a domain name), but that doesn't outweigh the overrun. Response A explains the man-in-the-middle threat more directly and reads clearly. On balance, Response A is slightly better because it follows the length constraint while covering the same key reasoning.\n\nVerdict: A",
+  "usage": {
+    "input": 773,
+    "output": 1200
+  },
+  "cost": 0.0006772999999999999
+}

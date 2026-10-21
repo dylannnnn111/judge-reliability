@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "sum-34",
+  "side": "A",
+  "score": 3,
+  "model": "claude-sonnet-5-5",
+  "text": "The response breaks the explicit limit. It runs to roughly 280 words against a cap of 120, and much of the excess is filler: \"I'm pleased to share\", \"so you can see how they work together\", and the long narrative framing.\n\nAccuracy has several problems:\n- It ends with \"We will share further details as these features approach their release,\" which the source never says.\n- It says the leave calendar means \"practitioners do not need to adjust the booking schedule by hand.\" The source says admins must enter leave in advance, so this is a slightly misleading gloss and drops the admin step.\n- It calls the recurring-appointment fix \"one of the more significant fixes,\" an editorial judgment not in the source.\n- It says appointments \"skipped weeks,\" where the source says \"sometimes skipped a week.\"\n- The day-view change is slightly blurred. The source gives each practitioner's next free appointment, and the response says only \"next free appointments.\"\n\nThe core facts are mostly right: the date, the 30-minute waitlist window, the telehealth links, the 24 or 48 hour reminders, the Android known issue, and the upcoming features.\n\nIt does keep the main points, though it leaves out the tablet and invoice fixes, which is acceptable in a summary. Concision is the weakest area, because a busy manager would not want a text this long.\n\nScore: 3",
+  "usage": {
+    "input": 1229,
+    "output": 726
+  },
+  "cost": 0.009718
+}

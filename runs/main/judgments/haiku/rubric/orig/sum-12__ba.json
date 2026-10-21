@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-12",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate on the core facts: the 1 November start, the fee changes, the $15 weekly pass, the eligibility rules, the 20 October application date, the letter requirement, the 180 closed spaces, the 18-month repair timeline, and the unaffected staff. Both also share a minor misreading: each says the weekly pass replaces the $9 daily concession, but the article describes it as an extension. B adds \"This is a significant saving for regular users,\" which the article doesn't state. The Barry Sutton quote only supports a saving in his case, so this is an unsupported editorial claim in a summary meant for a manager who won't read the original. A avoids that and stays closer to the source. Both run slightly over 120 words, with A's \"Summary:\" label adding little. B reads a little more smoothly, but the extra claim outweighs that. A is slightly better.\n\nVerdict: A",
+  "usage": {
+    "input": 1364,
+    "output": 1872
+  },
+  "cost": 0.0010724
+}

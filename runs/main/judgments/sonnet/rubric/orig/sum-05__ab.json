@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-05",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries are accurate on the numbers and both include the main limitations. They differ in framing.\n\nResponse A sets the 78% who *felt* more productive against the null result on measured speed and accuracy. That contrast is the brief's central interpretive point. It also gives the manager a clear implication: justify the desks on comfort and health, not productivity. Its claim that the desks \"did not improve\" productivity is slightly firmer than \"no significant difference\", but it is within a reasonable reading.\n\nResponse B lists the 78% under \"Benefits found\", next to the back-discomfort result. That treats a subjective perception as a benefit alongside a measured one, which blurs the brief's distinction between feeling productive and being productive. A busy manager skimming it could come away with a more favourable impression than the evidence supports. It also gives no clear takeaway about what to do. Its caveats section is accurate and covers the fading novelty effect and the study limitations.\n\nBoth are within the word limit. A is more faithful to the interpretation and more useful to the reader.\n\nVerdict: A",
+  "usage": {
+    "input": 1371,
+    "output": 708
+  },
+  "cost": 0.009822
+}

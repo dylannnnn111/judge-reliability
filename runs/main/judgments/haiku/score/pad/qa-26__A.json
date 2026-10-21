@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-26",
+  "side": "A",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The explanation is scientifically correct. It identifies Rayleigh scattering as the cause, explains why shorter blue wavelengths scatter more strongly, and attributes the red and orange sunsets to the longer atmospheric path that scatters blue out of the direct beam. The reasoning is complete and clearly organized.\n\nHowever, the user explicitly asked for an answer under 120 words, and this response runs to roughly 170 words across its three paragraphs. That is a clear violation of a stated constraint, and the extra length adds little beyond restating points already made, such as repeating the scattering mechanism in the second and third paragraphs.\n\nWeighing a correct answer and strong reasoning against the clear length violation, the response is good but not compliant.\n\nScore: 4",
+  "usage": {
+    "input": 544,
+    "output": 645
+  },
+  "cost": 0.0003769
+}

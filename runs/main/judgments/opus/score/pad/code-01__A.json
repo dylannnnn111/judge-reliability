@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "code-01",
+  "side": "A",
+  "score": 6,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy and coverage.** The issues raised are real and the most important ones are found:\n- Lack of idempotency is the top risk for a nightly billing job.\n- Partial-failure behavior is a genuine problem, and it compounds the idempotency issue.\n- The float-truncation bug is concrete and correct: `19.99 * 100` evaluates to `1998.9999…`, so `int()` yields 1998.\n- NaN/inf being accepted by `float()` is a sharp catch.\n- Billing-period scoping and the hard-coded tax are legitimate concerns.\n\nNothing flagged is spurious, and the ranking is sensible.\n\n**Fixes.** These are uneven. #3 gives a clear fix: use `Decimal` or integer cents, and round explicitly. #1 implies one (record billed state, pass an idempotency key). #2 only hints at per-customer error handling and logging. #4–6 mostly describe the problem without saying what to do.\n\n**Length.** The response is about 330 words, well over the requested 200. Some of that is pure padding. The opening sentence restates the header, and \"Put plainly, this is the worst problem…\" repeats the point just made. The minor #7 and the itemization remark in #6 add little. Missing the explicit length limit by over 50% is a significant instruction-following failure, especially since the extra words are partly filler rather than useful content.\n\nStrong technical content, but the length violation and the padding pull the score down noticeably.\n\nScore: 6",
+  "usage": {
+    "input": 1121,
+    "output": 788
+  },
+  "cost": 0.020244
+}

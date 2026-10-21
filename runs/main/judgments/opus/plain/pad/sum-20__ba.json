@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-20",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is the better summary, though neither fully meets the brief.\n\n- **Word limit:** Response A is about 133 words, slightly over the 120-word limit. Response B is about 270 words, more than double the limit.\n- **Format:** Response A's labelled bullet points let a busy manager scan the key facts quickly. Response B is in long paragraphs and adds filler such as \"To give you a sense of how the day is structured…\".\n- **Voice:** Response B slips into Hannah's first-person voice (\"I would kindly ask each person…\"). That reads like a rewrite of the email, not a summary for a third party.\n- **Content:** Both capture the essential details accurately. Response A does so far more concisely.",
+  "usage": {
+    "input": 1460,
+    "output": 1457
+  },
+  "cost": 0.03498
+}

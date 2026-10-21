@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-09",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries are accurate on the key facts: the $62,400 starting rent, the CPI-linked increases in years 2-4 with a 3% floor and 5% cap, the market review in year 5 with no cap and no fall below year-4 rent, the 30-day dispute window with costs split equally, the 14-day notice, and the back-payment of any difference if notice is late. Both also note that the lease is the binding document.\n\nThe deciding factor is the 120-word limit. Response A runs to roughly 230 words, nearly double the limit. It also spends words on a restating intro and a closing \"In short\" paragraph that add nothing for a busy manager. Response B is about 129 words by my count, slightly over the limit but much closer, and it is tighter and easier to scan. It also keeps the useful detail on what outgoings cover.\n\nNeither response meets the limit strictly, but B comes far closer to the instruction and loses nothing important.\n\nVerdict: B",
+  "usage": {
+    "input": 1697,
+    "output": 1440
+  },
+  "cost": 0.017794
+}

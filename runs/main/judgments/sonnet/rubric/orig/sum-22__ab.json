@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-22",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries are accurate on the facts I checked: the fee figures, the 9% turf rise, the $3,200 shortfall, the 14 November grant deadline, the dates and the gazebo limit. B adds \"mostly due to cost\", which is a fair reading of \"cost was the most common reason given\". Neither response misattributes a decision.\n\nThe difference is the 120-word limit. A comes to roughly 108 words, which is within it. B comes to roughly 126 words, which is over it. B's extra detail is the \"5-0\" vote, Natalie organising trophies, and \"mostly due to cost\". These are minor and don't offset breaking an explicit constraint for a busy manager. A leaves out the trophies detail, but that is the least important item.\n\nA meets the constraint, is accurate, and keeps the essential points, so it is better.\n\nVerdict: A",
+  "usage": {
+    "input": 1571,
+    "output": 1839
+  },
+  "cost": 0.021532
+}

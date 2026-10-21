@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "sum-26",
+  "side": "B",
+  "score": 3,
+  "model": "claude-sonnet-5-5",
+  "text": "The response breaks the explicit limit. It runs to roughly 225 words against a maximum of 120, nearly double. It also contains filler a busy manager doesn't need: \"This summary sets out…\", \"I am pleased to report\", and \"Residents took the time to praise…\".\n\nThe facts are mostly accurate. The lift stopped between levels 2 and 3 with two residents inside, and the cause was a worn door controller board. The part came from Melbourne, and the lift returned to service at 2:10pm on Wednesday. Meals went to 11 residents, four residents were helped, and two stayed with family. The Tower A lift was checked, and the $2,300 spare board was approved on 26 September.\n\nThere are small blemishes:\n- It doesn't say the village manager approved the spare board.\n- It frames \"printed updates every day\" loosely, when the original gives a Monday notice plus afternoon updates.\n- \"Helped four residents to medical appointments\" glosses over their being carried down the stairs.\n\nThe key points are mostly retained, but the length violation is a major failure of the task.\n\nScore: 3",
+  "usage": {
+    "input": 1310,
+    "output": 978
+  },
+  "cost": 0.0124
+}

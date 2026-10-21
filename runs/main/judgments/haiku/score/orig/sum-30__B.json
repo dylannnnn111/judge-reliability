@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-30",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate throughout. The dates, route frequencies, the 408 removal and its nine-passenger average, the consultation finding, the 6am start for the 412, the monitoring commitment, and the fare and timetable details all match the source. One small liberty is \"lose service before 6am,\" which implies a service that existed before. The source only says the 412 won't run before 6am, so this is a slight overstatement. It covers every point a busy manager needs, and the bullet format scans quickly. It is a little over the 120-word limit, at roughly 123 words by my count, so it misses the constraint by a few words. The headline is also counted in that total.\n\nScore: 8",
+  "usage": {
+    "input": 1116,
+    "output": 1661
+  },
+  "cost": 0.0009421
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-21",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "A is better. It stays within the 200-word limit, which B clearly exceeds at roughly 290 words. A also identifies more important technical issues. It notes that the `catch` block retries `AbortError` and permanent `TypeError` failures, which B misses. A also flags that the `as { refundId }` cast can return `undefined` as a successful refund ID, a real risk for a payments call. B's double-submit point is reasonable but less central than these.\n\nA",
+  "usage": {
+    "input": 1788,
+    "output": 490
+  },
+  "cost": 0.0004238
+}

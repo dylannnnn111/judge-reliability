@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-19",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy**\n\n- **Response A** is accurate on the key facts: consent requirements, the buyer's financials, the three-month bank guarantee, the $1,500–$3,000 legal costs, the 30% sublet cap with its conditions, change of control, the 28-day response window and Kingsley Property Group. It correctly says liability may last \"possibly for the rest of the term.\" This matches the guide's \"could remain liable.\" Its line \"only a written release ends that liability\" slightly simplifies things, since the lease ending would also end it. That is minor.\n- **Response B** overstates the risk as a certainty: \"we remain liable for the full remaining term.\" It also says \"sublet it,\" which loosely implies the whole lease, when only up to 30% of the floor area may be sublet. It omits where to get consent forms.\n\n**Coverage**\n\nBoth keep the essential points for a manager. A is slightly more complete because it includes the Kingsley contact.\n\n**Concision**\n\n- A is about 129 words, a little over the 120-word limit.\n- B runs to roughly 350 words, nearly three times the limit. It is padded with filler that adds nothing, such as \"Thank you for reviewing this summary,\" \"To put this another way,\" \"In other words\" and \"For completeness.\" For a busy manager, this badly fails the brief.\n\nA is more accurate, slightly more complete, and far closer to the length constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 1841,
+    "output": 1154
+  },
+  "cost": 0.030444
+}

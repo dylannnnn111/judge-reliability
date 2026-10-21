@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "sum-10",
+  "side": "B",
+  "score": 4,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Most facts are correct:\n- Green status and the 1 December go-live.\n- The 12 testers and the 48s → 21s login time.\n- The three minor accessibility issues, all fixed.\n- The $186k / $310k spend, in line with plan.\n- The helpdesk risk reduced to low, no decisions needed, and the three next-fortnight items.\n\nThere are some problems, though:\n- **Invented detail:** \"from the steering group\" does not appear in the source. It adds a body that was never mentioned.\n- **Assumed authorship:** The first-person voice (\"I am pleased to report\", \"I am happy to confirm\") presents the summary as written by the project lead. That framing is not the summariser's to adopt.\n- **Inconsistent count:** \"Two important areas of work were completed\" is followed by a third item (the audit) under \"in addition\", which reads awkwardly.\n\n**Key points:** Coverage is good. Nothing a manager would need is missing. Leaving out the audit's scope and the new team member is fine.\n\n**Concision:** This is the main failure. The response is about 180 words against a hard limit of under 120, roughly 50% over. Much of the excess is filler: \"I am pleased to report\", \"Turning to budget\", \"Regarding risk\", \"Finally, I would like to note\", \"Looking ahead to next fortnight\". For a busy manager, breaking an explicit length constraint while padding with throat-clearing is a significant flaw. The extra words add nothing correct or useful.\n\nOverall, the content is mostly accurate and complete. However, it clearly breaks the word limit, invents a \"steering group\", and adopts an unwarranted first-person voice.\n\nScore: 4",
+  "usage": {
+    "input": 1060,
+    "output": 1123
+  },
+  "cost": 0.0267
+}

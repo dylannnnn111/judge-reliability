@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-14",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better, mainly because it comes closer to the word limit. My counts are approximate, but neither response fits under 120 words.\n\n- **Response A** comes to about 127 words, a small overrun. It covers the key points: the three-day rule, the exceptions, the excluded teams, equipment, hot desking, and the rationale. It leaves out lockers, the questions contact, and that team leaders set the common day.\n- **Response B** comes to about 144 words, a clear overrun. It is slightly more complete, with lockers, the questions contact, and the team leader detail. But those extras are what push it well past the limit.\n\nA busy manager is better served by the shorter response, and A overshoots by far less.\n\n**A**",
+  "usage": {
+    "input": 1301,
+    "output": 1794
+  },
+  "cost": 0.020542
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-31",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B is slightly better. Its first point explains that a tie larger than a page makes the job loop forever, which bears directly on the stated loop-until-fewer-than-1000 termination. It also covers snapshotting the upper bound and clock skew in the termination item. Response A's persisted-cursor advice is useful, but B's sixth item is filler, so the edge is small.\n\nB",
+  "usage": {
+    "input": 1476,
+    "output": 795
+  },
+  "cost": 0.0005451000000000001
+}

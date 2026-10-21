@@ -1,0 +1,14 @@
+{
+  "pair": "qa-18",
+  "side": "A",
+  "author": "sonnet",
+  "model": "claude-haiku-5-5",
+  "original": "The first recorded European landing on the Australian mainland was by the Dutch, led by Willem Janszoon, captain of the ship *Duyfken*. In February–March 1606, his crew landed on the western side of Cape York Peninsula, near the Pennefather River in modern Queensland. They were exploring the New Guinea coast and mistook the land for an extension of it. A skirmish with local Aboriginal people reportedly resulted in some crew deaths.\n\nEarlier European contact is sometimes speculated, such as Portuguese or Spanish voyages, but nothing is firmly documented. Dirk Hartog's 1616 landing on an island off Western Australia was later, and Cook's 1770 landing at Botany Bay came much later still.",
+  "text": "I would be happy to walk through this history. The first recorded European landing on the Australian mainland was made by the Dutch, led by Willem Janszoon, who was captain of the ship *Duyfken*. In February and March of 1606, his crew landed on the western side of Cape York Peninsula, near the Pennefather River in what is now Queensland. To put this in context, they were exploring the New Guinea coast at the time, and they mistook the land they reached for an extension of it. Their arrival was not peaceful: a skirmish with local Aboriginal people reportedly resulted in some deaths among the crew.\n\nIt is worth noting that earlier European contact is sometimes speculated, with Portuguese or Spanish voyages often proposed as possibilities. However, to be clear, nothing from these possible voyages is firmly documented. By comparison, Dirk Hartog's landing on an island off Western Australia took place in 1616, which was later than Janszoon's voyage. Cook's landing at Botany Bay in 1770 came much later still.",
+  "ratio": 1.53,
+  "usage": {
+    "input": 428,
+    "output": 490
+  },
+  "cost": 0.0002878
+}

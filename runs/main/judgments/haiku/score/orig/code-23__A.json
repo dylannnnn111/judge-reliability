@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-23",
+  "side": "A",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response identifies the most important bug: `if (!r.value)` silently drops 0 °C readings, which matters a lot in a cold room. Its other points are real and reasonably ranked. The dead-sensor disappearance and the null-valued `latestReading` are genuine design concerns for a monitoring dashboard, and the string-comparison timestamp issue is valid when formats or offsets vary. Fixes are given for each point. Point 5 is weak: the comparator returning -1 on ties is harmless here, and the O(n log n) cost is trivial for this use. The response also misses nothing critical, though it could have noted that averages span all history with no time window, which may or may not be intended. It stays under the word limit and avoids flagging things that are fine. Overall it is accurate and well prioritized, with only a minor filler item at the end.\n\nScore: 8",
+  "usage": {
+    "input": 1027,
+    "output": 839
+  },
+  "cost": 0.0005222
+}

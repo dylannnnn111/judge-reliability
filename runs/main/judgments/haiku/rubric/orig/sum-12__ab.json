@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-12",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate on the key figures: the free first hour, the $3-to-$4 hourly rate, the $18-to-$24 daily maximum, the $15 weekly pass, the 20 October application date, the 180 closed spaces, and the 18-month repair timeline. Both also correctly note that staff are unaffected and that the petition has over 2,000 signatures. Neither has a material error, and both are well under 120 words.\n\nResponse A adds that the weekly pass is a significant saving for regular users. That is a reasonable reading of the $15 pass against the $9 daily rate, and it reflects Barry Sutton's comment, so it is the most decision-relevant point for a manager. Response B is slightly better organised, grouping the content by topic, but it omits that impact. Its statement that the weekly pass \"will replace\" the $9 daily concession is a small inference the source does not state outright, and Response A's \"instead of\" carries a similar inference.\n\nOverall, Response A delivers the reader's main takeaway more directly and is marginally more useful, though the gap is small.\n\nVerdict: A",
+  "usage": {
+    "input": 1364,
+    "output": 1032
+  },
+  "cost": 0.0006524
+}

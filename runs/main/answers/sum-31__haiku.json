@@ -1,0 +1,13 @@
+{
+  "item": "sum-31",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "Voice-directed picking (headsets that call out each item and location) was trialled against handheld scanners for ten weeks across two western Sydney distribution centres, with 118 pickers switching between methods. It lifted picking speed about 10 per cent (142 to 156 lines per hour) and cut error rates from 0.62 to 0.41 per cent. New workers gained most, with speed up 17 per cent. Among pickers, 64 per cent preferred voice picking, though headsets were uncomfortable in summer heat. Setup for a 60-picker centre costs about $210,000, with an estimated 14-month payback. Limitations: one company and grocery products only, so results may differ elsewhere.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 696,
+    "output": 227
+  },
+  "cost": 0.00018310000000000003,
+  "at": "2026-10-14T01:52:15.952Z"
+}

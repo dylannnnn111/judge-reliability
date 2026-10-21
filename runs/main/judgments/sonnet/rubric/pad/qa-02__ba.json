@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-02",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer of 96 km/h, with correct reasoning. The user also asked for an answer under 120 words, so I'll check each response against that limit.\n\nResponse A: counting words roughly. \"Thank you for your question. Your average speed for the whole round trip works out to 96 km/h.\" is about 18 words. \"To see how this result comes about, let's walk through the calculation step by step.\" is about 15, for a running total of 33. Bullets: \"Distance: the trip out covers 160 km, and the return covers the same 160 km, so the total distance is 160 km + 160 km = 320 km\" is about 27, for 60. \"Time going: at 80 km/h, 160 ÷ 80 = 2 hours\" is about 11, for 71. \"Time returning: at 120 km/h, 160 ÷ 120 = 4/3 hours (about 1 h 20 min)\" is about 16, for 87. \"Total time: 2 + 4/3 = 10/3 hours\" is about 8, for 95. \"Putting these figures together, the average speed = 320 ÷ (10/3) = 96 km/h\" is about 14, for 109. The last paragraph is \"It may seem natural to expect the answer to be the simple average of the two speeds, which would be 100 km/h.\" at about 21, then \"However, the result of 96 km/h is actually the harmonic mean of 80 and 120, not the simple average.\" at about 19, then \"The reason is that you spend more time on the slower leg of the journey, and that extra time pulls the overall average down.\" at about 24. That adds up to roughly 173 words, which is over the limit.\n\nResponse B: the header is about 5 words. The bullets total about 35 and the average-speed line about 8, so roughly 48. The last paragraph is about 40. That comes to roughly 95 words, which is under the limit.\n\nResponse B follows the length constraint and Response A does not. Both are correct, so B wins.\n\nVerdict: B",
+  "usage": {
+    "input": 867,
+    "output": 630
+  },
+  "cost": 0.008034
+}

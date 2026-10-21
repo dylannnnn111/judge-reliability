@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-14",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**B.** Both responses find the same critical bug first: OFFSET pagination combined with deletion skips rows. Both also cover the archive/commit atomicity gap, the durability assumption, string date comparison and the missing index. The deciding factor is the 200-word limit.\n\n- **Length:** Response A comes to about 230 words, clearly over the limit. Response B comes to about 200, so it is at or just over the limit but much closer to following the instruction.\n- **Content:** A adds a rollback and error-handling point and a logging note. These are valid but low-impact, since SQLite rolls back an uncommitted transaction when the connection closes. B promotes the string-comparison problem to its own numbered item, which is a more meaningful issue than A's minor bullets. B also states the consequence of the main bug clearly: each run only halves the backlog.\n- **Ordering:** Both put the most important issue first and rank the rest sensibly.\n\nB is tighter and better matches the format and length constraint, with no loss of important content.\n\n**B**",
+  "usage": {
+    "input": 1358,
+    "output": 1516
+  },
+  "cost": 0.017876
+}

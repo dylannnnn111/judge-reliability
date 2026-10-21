@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-01",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Each gives the new 30 October deadline, the three required items, the template location and software subscriptions split, the variance threshold, the no-screenshots rule, the leave-cover requirement, Marcus's optional session, and the instruction to call Priya today if there's a problem. Neither invents or misstates any date, number or condition.\n\nThe difference is concision against the 120-word limit. Response B is about 130 words, slightly over, but its bulleted structure is easy to scan. Response A is roughly 230 words, nearly double the limit, and its extra sentences mostly restate the deadline change and add framing (\"I'm writing to let you know\") rather than new information. The manager would get the same content from B faster and closer to the requested length. Response B also drops the coffee aside, which is correct, since it isn't useful to the manager.\n\nVerdict: B",
+  "usage": {
+    "input": 1571,
+    "output": 895
+  },
+  "cost": 0.0006046000000000001
+}

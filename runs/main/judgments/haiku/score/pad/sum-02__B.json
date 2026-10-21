@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-02",
+  "side": "B",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The response is largely accurate. The opening-hours outcome, the reasons Ross objected, Helen's action to re-run the figures, the reading program dates and the 24 October volunteer deadline, the roof work and the next meeting date all match the minutes. The one overstatement is the roof: the minutes say the contractor *recommends* full replacement within two years, but the response states it as a firm requirement. It also omits Anjali's condition that the Corrie Creek idea should not depend on cutting Mount Lavell, which matters for the opening-hours item. The main failure is length. The brief asked for under 120 words, and the response runs to roughly 180–190 words. The opening paragraph (\"Thank you for taking the time...\") adds nothing for a busy manager, so the response is not concise.\n\nScore: 4",
+  "usage": {
+    "input": 1351,
+    "output": 831
+  },
+  "cost": 0.0005506
+}

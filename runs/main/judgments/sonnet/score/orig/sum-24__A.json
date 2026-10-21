@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-24",
+  "side": "A",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate and handles the correction well. The five grant amounts sum to $88,200, and the $31,800 rollover is right. It uses the corrected $14,500 for Saltwater, flags the change, and stays at about 114 words, under the limit.\n\nThe remaining problems are small:\n- \"A possible $2,000 quick-response grant\" drops the \"up to\" qualifier.\n- It omits that the two encouraged applicants should reapply in Round 3 with revised budgets.\n- It doesn't say Sunita is the person sending feedback and reminders.\n\nNone of these is misleading, though the first is slightly imprecise. It covers the key points a manager needs: the money, the decisions, the deadlines and the consequence for overdue acquittals. It is tight and well structured.\n\nScore: 9",
+  "usage": {
+    "input": 1333,
+    "output": 1392
+  },
+  "cost": 0.016586
+}

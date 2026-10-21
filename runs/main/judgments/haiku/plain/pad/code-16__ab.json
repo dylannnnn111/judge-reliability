@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-16",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "**B**\n\nResponse B is better on both criteria. It stays within the 200-word limit, while Response A runs well over it. B also ranks the likely GST double-counting first, since Australian shelf prices normally include GST. A mentions the same issue only as its last item. B's list is also tighter, and its discount-code advice (normalize, reject unknown codes) is more actionable than A's rounding point, which overstates a problem that rarely occurs with these values.",
+  "usage": {
+    "input": 1723,
+    "output": 485
+  },
+  "cost": 0.0004148
+}

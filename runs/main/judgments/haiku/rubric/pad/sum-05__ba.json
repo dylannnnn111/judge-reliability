@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-05",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses get the core finding right: no measurable productivity gain, a lower-back discomfort benefit, a 78% \"felt more productive\" figure, the fading standing time, and the key limitations. Neither contains a factual error.\n\nResponse A runs about 145 words, which breaks the \"under 120 words\" instruction. Its padding (\"To summarize the main finding,\" \"It is worth noting,\" \"There are also a few points to keep in mind\") adds no content.\n\nResponse B lands at roughly 110 words, within the limit. It keeps every point a manager needs and adds a practical implication: justify the desks on comfort and health rather than productivity. It also states the sample is 214 workers, that the study was randomised, and that the drop in standing time was from 47 to 19 minutes, with the numbers accurate throughout.\n\nResponse B meets the length constraint, is at least as accurate, and is more useful for a busy manager.\n\nVerdict: B",
+  "usage": {
+    "input": 1457,
+    "output": 740
+  },
+  "cost": 0.0005157
+}

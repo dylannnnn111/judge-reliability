@@ -1,0 +1,13 @@
+{
+  "item": "qa-31",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "Seasons come from Earth's axial tilt of about 23.5°, not from distance to the Sun. As Earth orbits the Sun, the tilt stays pointed in the same direction in space.\n\nWhen the Northern Hemisphere (including Europe) tilts away from the Sun, around December, it receives sunlight at a lower angle and for fewer hours each day. That means less heating, so winter.\n\nAt the same time, the Southern Hemisphere (including Australia) tilts toward the Sun. Sunlight strikes more directly and days are longer, producing summer.\n\nSix months later, the situation reverses: the north tilts toward the Sun and the south tilts away. So the hemispheres always have opposite seasons.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 50,
+    "output": 230
+  },
+  "cost": 0.0024,
+  "at": "2026-10-14T01:50:50.382Z"
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-26",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are correct. Both identify Rayleigh scattering as the mechanism, explain that shorter wavelengths scatter more strongly, and attribute sunset colors to the longer atmospheric path that scatters blue out of the direct beam. Both fall under 120 words; my count puts A at roughly 113 and B at roughly 117.\n\nResponse B adds two accurate points that A omits: why the sky is blue rather than violet (sunlight contains less violet, and our eyes are less sensitive to it), and why daytime light takes a short path. Response A explains the sunset path clearly, and its shorter length is not a flaw, but B's extra content is correct and useful. B's bolded section labels also make the day-versus-sunset contrast easier to follow.\n\nVerdict: B",
+  "usage": {
+    "input": 706,
+    "output": 1415
+  },
+  "cost": 0.0007781
+}

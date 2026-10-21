@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-11",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are accurate on the dates, numbers and conditions. B's \"Mon 17 Nov\" is a correct inference from the 15–16 November weekend. Neither mentions that staff should attend the Monday welcome even if they normally start later, though both say everyone must attend.\n\nBoth also break the 120-word limit. My rough counts are about 133 words for A and about 138 for B, so A is slightly closer.\n\nA is also clearer on Rachel's role. It says she is the removalist contact and the person to ask about the move and desk locations. B's \"Overall coordination, removalists, desk locations\" is terser and less clear. B does give explicit dates and puts parking in its own bullet, which helps scanning, but this adds length and does not change the content.\n\nThe difference is small, but A is marginally more concise and clearer.\n\nVerdict: A",
+  "usage": {
+    "input": 1628,
+    "output": 1783
+  },
+  "cost": 0.021086
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-25",
+  "side": "B",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The core answer is correct: there is no solid evidence that Viking warriors wore horned helmets, and the Gjermundbu helmet is described accurately. The reasoning is strong, citing the 19th-century origin of the image (Malmström, Doepler's 1876 Ring designs) and the Bronze Age Veksø helmets as a source of confusion. The facts check out, and the prose is clear. However, the response runs roughly 170 words, well over the explicit \"under 120 words\" limit. The extra material, particularly the Bronze Age digression, is interesting but not needed to answer the question, so the overrun is a real instruction failure rather than useful added detail.\n\nScore: 4",
+  "usage": {
+    "input": 559,
+    "output": 956
+  },
+  "cost": 0.0005339
+}

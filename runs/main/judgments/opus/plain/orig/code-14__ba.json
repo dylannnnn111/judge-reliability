@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-14",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses correctly put the critical bug first: OFFSET pagination combined with deletion skips roughly half the rows. Both give the right fixes (drop OFFSET, or use keyset pagination). Both also cover the non-atomic archive/delete crash scenario, archive durability, the string-format comparison on `created_at`, and the missing index.\n\nThe differences:\n\n- **Length:** Both exceed the 200-word limit. A runs about 240 words and B about 225, so B comes closer.\n- **Insight:** B adds that each nightly run only halves the backlog, which shows the bug's real operational impact.\n- **Severity ordering:** A spends space on lower-value items (rollback handling, logging/metrics). B gives the string comparison issue its own numbered point, which matches its silent-data-error severity.\n- **Wording:** A labels issue 1 \"data-loss risk\", which is slightly imprecise. The skipped rows stay in the live table rather than being lost, though A does clarify this.",
+  "usage": {
+    "input": 1358,
+    "output": 886
+  },
+  "cost": 0.023152
+}

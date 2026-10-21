@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-29",
+  "side": "A",
+  "score": 8,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds the one bug that matters most. `NOT IN` against a subquery containing NULLs returns no rows, and the prompt says `referrer_id` is NULL for non-referred signups. It ranks this first, explains the mechanism correctly, and gives two valid fixes (`NOT EXISTS` or an `IS NOT NULL` filter).\n\nThe second issue is also real. The `2026-01-01` filter contradicts the comment's \"never referred anyone\", so earlier referrers would be wrongly targeted. The fix is clear.\n\nThe third point, `LIMIT 5000` with `ORDER BY created_at`, is a legitimate design concern. It is a bit speculative, but the response hedges it appropriately (\"decide whether truncation is intended\").\n\nThe fourth point, date format dependence, is labeled minor and is somewhat nitpicky. The comparison does work if the data is ISO text, and the query is evidently SQLite already. It is low-cost noise, not a false alarm.\n\nThe response stays under 200 words (about 190) and orders the issues sensibly. It does not flag anything that is clearly fine, such as `marketing_opt_in` or the status filter. The weak spots are the speculative third point and the marginal fourth.\n\nScore: 8",
+  "usage": {
+    "input": 959,
+    "output": 1249
+  },
+  "cost": 0.014408
+}

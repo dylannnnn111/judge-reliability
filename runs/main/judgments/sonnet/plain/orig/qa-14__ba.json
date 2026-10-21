@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-14",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are correct (7.5 hours), both are under 120 words, and both use the same method. The differences are small and mostly stylistic.\n\nResponse A gives the answer first, with the conversion to hours and minutes in the headline, then the steps as a bulleted list. Response B gives a short headline answer, then the steps, and states the final result again at the end with the conversion to hours and minutes. The two are essentially equivalent.\n\nResponse B has a slightly redundant structure, but its bolding of the key net rate is helpful. Response A is slightly cleaner, with the whole answer up front and a purely sequential list. I see no meaningful quality difference.\n\nTIE",
+  "usage": {
+    "input": 455,
+    "output": 212
+  },
+  "cost": 0.00303
+}

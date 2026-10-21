@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-02",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the critical bug: the mutable default `tags=[]` is shared across calls, so tags leak between events and the list grows forever. Both give the same correct fix. Both also flag the narrow `except KeyError`, the misleading \"no id\" message, and logging the full payload. Neither misses a major issue.\n\nResponse A is more precise. It notes that a non-string `type` raises `AttributeError` and suggests `raw.get(\"type\") or \"unknown\"` plus `log.exception` for per-event handling. It stays tight and avoids filler. Response B adds a few useful points, such as silent data loss with no metric or dead-letter path and the explicit id check. Its item 5, per-event `received_at`, is a weak nitpick that edges toward flagging something that is fine. Its \"re-queuing\" claim assumes behaviour the code doesn't show.\n\nResponse A's ranking and fixes are slightly sharper and it avoids the weaker point, so it edges out Response B, though the difference is small.\n\nVerdict: A",
+  "usage": {
+    "input": 1523,
+    "output": 929
+  },
+  "cost": 0.0006167999999999999
+}

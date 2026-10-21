@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-35",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate. The deadline, the Annexure C benchmark, the five make-good tasks, the kitchenette condition, the landlord's payment option with two quotes and three months' notice, and the bond timing all match the source. The one slight imprecision is \"Overrunning means paying daily rent,\" which drops the source's \"may have to\" and \"for extra days\" qualifiers. That overstates the consequence a little but doesn't mislead about the substance. It keeps every point a manager needs and is concise. Its length is about 120 words, right at the limit.\n\nScore: 8",
+  "usage": {
+    "input": 1149,
+    "output": 1074
+  },
+  "cost": 0.0006519
+}

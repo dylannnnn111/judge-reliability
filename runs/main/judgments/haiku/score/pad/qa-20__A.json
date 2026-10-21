@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-20",
+  "side": "A",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly identifies Canberra as Australia's capital and gives 1927 as the year Federal Parliament first sat there. The date of 9 May 1927 and the Provisional Parliament House are also accurate, and Melbourne's role as the seat of government from Federation in 1901 is correct. The key reasoning is present: the 1927 move followed the Melbourne period. The answer is about 85 words, under the 120-word limit. Clarity is slightly weakened by an awkward opening (\"I hope this helpful background is useful\") and a closing summary that repeats points already made. These are minor issues that don't affect correctness.\n\nScore: 8",
+  "usage": {
+    "input": 378,
+    "output": 401
+  },
+  "cost": 0.00023830000000000002
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-31",
+  "side": "A",
+  "score": 8,
+  "model": "claude-sonnet-5-5",
+  "text": "The response correctly attributes the seasons to Earth's axial tilt (about 23.5°) and explains the hemispheric opposition. It covers the key reasoning: more direct sunlight and longer days in the hemisphere tilted toward the Sun, and the reverse in the hemisphere tilted away. It also corrects the distance misconception and accurately notes that perihelion is in early January.\n\nWord count: the response comes to about 115 words. Counting roughly: the first paragraph has ~30 words, the bullets ~25 + ~33 + ~6, and the final paragraph ~28, which adds up to roughly 120. That is borderline. A more careful count:\n\n\"It comes down to Earth's tilt.\" (6) \"Earth's axis is tilted about 23.5° relative to its orbit around the Sun, and that tilt always points in the same direction in space.\" (25) → 31.\n\nBullet 1: \"Around December, the Southern Hemisphere (including Australia) is tilted toward the Sun.\" (11) \"Sunlight hits it more directly and days are longer, so it's summer.\" (12) → 23.\n\nBullet 2: \"At the same time, the Northern Hemisphere (including Europe) is tilted away from the Sun.\" (14) \"Sunlight arrives at a lower angle and spreads over a larger area, and days are shorter, so it's winter.\" (19) → 33.\n\nBullet 3: \"Around June, the situation reverses.\" (5)\n\nFinal: \"A common misconception is that seasons depend on Earth's distance from the Sun.\" (13) \"In fact, Earth is closest to the Sun in early January, during the northern winter.\" (15) → 28.\n\nTotal: 31 + 23 + 33 + 5 + 28 = 120. That is right at the limit; \"under 120\" is arguably missed by a hair, depending on how the degree figure and hyphens are counted. This is a minor concern, as the content is accurate and clear.\n\nOverall, the content is correct, well reasoned and clear, with a possible marginal overrun of the word limit.\n\nScore: 8",
+  "usage": {
+    "input": 465,
+    "output": 668
+  },
+  "cost": 0.00761
+}

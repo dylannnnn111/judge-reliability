@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-34",
+  "side": "A",
+  "score": 5,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate. The waitlist's 30-minute window, the telehealth links, the leave calendar, the Medicare search, the 24/48-hour reminder choice, the Android known issue and next month's items all match the source. The only quibble is \"skipping weeks\", where the source says a week. It also covers the points a manager needs: the main features, the headline improvements, the known issue and what's coming.\n\nHowever, the user set a hard limit of under 120 words. Counting by words, the response comes to about 127 (52 + 36 + 24 + 15), so it breaks the stated constraint. The overshoot is small, but the limit was explicit. It could have been met by trimming detail such as the release date or the fix wording.\n\nAccuracy and coverage are strong, but the word limit is missed.\n\nScore: 5",
+  "usage": {
+    "input": 1007,
+    "output": 1249
+  },
+  "cost": 0.014504
+}

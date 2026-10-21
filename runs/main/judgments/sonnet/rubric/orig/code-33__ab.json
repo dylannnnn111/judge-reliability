@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-33",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the critical bug: `p.status = 'succeeded'` in `WHERE` turns the LEFT JOIN into an inner join and removes the zero-payment customers. Both give the same correct fix, moving the condition into the `ON` clause. The difference is in the secondary items.\n\n**Response A**\n- It raises the annual and quarterly plan issue, which is a real source of false alarms for a churn list and one B misses.\n- Its NULL `plan` and date-format points are valid.\n- Items 3 and 6 (cancelled accounts, refunds) are speculative, since the schema isn't shown.\n- Item 6 is a bare heading with no explanation, so it looks truncated.\n- It is probably slightly over the word limit.\n\n**Response B**\n- Its date and UTC point is useful.\n- Its \"paying is not the same as plan <> 'free'\" point and its NULL `plan` remark are reasonable.\n- Its minor item is wrong. It says `COUNT(*)` would be clearer than `COUNT(p.id)`. After the fix, `COUNT(*)` would return 1 for customers with no matching payments, which would hide exactly the zero-payment signal the list exists to show. This is harmful advice, and it also flags something that is already correct.\n- It misses the billing-interval problem.\n\nA's weaknesses are speculation and an unfinished last item. B's COUNT(*) suggestion would break the query's main purpose if followed, and B misses the billing-interval false alarms. A is better overall.\n\nVerdict: A",
+  "usage": {
+    "input": 1524,
+    "output": 1256
+  },
+  "cost": 0.015608
+}

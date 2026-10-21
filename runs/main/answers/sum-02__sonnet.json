@@ -1,0 +1,13 @@
+{
+  "item": "sum-02",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Branch Managers Meeting, 8 Oct 2026 – Summary**\n\n- **Opening hours:** Helen proposed closing Mount Lavell at 1pm Saturdays from January (only 11 visitors on Saturday afternoons, against 64 at Westbrook Central) and opening Corrie Creek until 7pm Thursdays. Ross objected, citing farming families and a faulty visitor counter in August. No agreement. Helen will re-run the figures and present a revised proposal in November. Hours stay unchanged for now.\n- **Summer reading program:** Runs 1 Dec–31 Jan, \"Under the Sea\". Registration opens 10 Nov. **Action:** managers send two launch-day volunteer names per branch to Kate by 24 Oct.\n- **Maintenance:** Westbrook Central roof leak patched, but full replacement is recommended within two years. Helen will include it in the capital works bid.\n- **Next meeting:** 12 November.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 799,
+    "output": 326
+  },
+  "cost": 0.004858,
+  "at": "2026-10-14T01:51:04.367Z"
+}

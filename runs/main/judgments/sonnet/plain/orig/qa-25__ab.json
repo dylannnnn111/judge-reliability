@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-25",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is slightly better. Both answers are accurate, cover the same points, and fall under the 120-word limit. A runs to about 119 words, while B is about 112, leaving B a safer margin. B's wording, \"no solid evidence... in battle\", is a little more careful. It also adds specifics: Gustav Malmström's illustrations and the Veksø helmets. A's bold headings and direct \"No\" make it a bit easier to scan, but that does not outweigh B's extra detail.\n\n**B**",
+  "usage": {
+    "input": 670,
+    "output": 2096
+  },
+  "cost": 0.0223
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "code-31",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better.\n\n- **Accuracy:** Response A claims the job \"stalls or loops forever\" if 1000+ rows share one second. That is wrong. With `created_at > :last_seen` the cursor always advances, so the real failure is silent data loss, not a loop. Response B states the skipped-rows problem correctly.\n- **Structure:** Response A lists the fix as numbered item 3, as if it were a bug. Response B puts the fix inside the first bug, which fits a \"list the bugs\" request better.\n- **Coverage:** Both cover the tie-skipping, ordering, late-commit, index and `IS NULL OR` planner issues. Response B adds the missing persisted cursor and the need for idempotent downstream writes, which are useful practical points.\n- **Length:** Both look over the 200-word limit. Response B is somewhat shorter and tighter.\n\n**B**",
+  "usage": {
+    "input": 1476,
+    "output": 774
+  },
+  "cost": 0.010692
+}

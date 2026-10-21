@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-18",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response B is better. Both state the release facts accurately, but Response A has two problems. First, it runs well past the 120-word limit, padded with an opening line about \"taking the time to review\" and a closing sentence. Second, its closing claim that \"no action is required from the team\" is an inference the original never makes, which is exactly the kind of unsupported statement a manager might act on. Response B stays under 120 words, covers every feature, improvement, fix and accessibility change, and is accurate throughout. It drops minor details such as the Settings path and the unsubscribe option, but a busy manager doesn't need those.\n\nVerdict: B",
+  "usage": {
+    "input": 1587,
+    "output": 914
+  },
+  "cost": 0.0006157000000000001
+}

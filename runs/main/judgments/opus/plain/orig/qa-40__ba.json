@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-40",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses are accurate, give the correct speeds of light and sound, explain the divide-by-3 (km) and divide-by-5 (miles) rule, and stay under 120 words.\n\nResponse A is slightly better for three reasons:\n\n- **Cleaner example:** A 15-second gap converts exactly to 5 km (3 miles). Response B's 10-second gap gives an approximate 3.3 km.\n- **Fuller safety guidance:** Response A gives the danger range in distance (about 10 km or 6 miles). It also includes the 30-minute rule for waiting after the last thunder.\n- **Easy-to-follow steps:** Its numbered steps make the counting method simple.\n\nResponse B does add a useful point: the flash and thunder start at the same moment. This does not outweigh Response A's more practical safety advice.",
+  "usage": {
+    "input": 600,
+    "output": 988
+  },
+  "cost": 0.02216
+}

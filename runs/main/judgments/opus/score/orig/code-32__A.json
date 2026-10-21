@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "code-32",
+  "side": "A",
+  "score": 8,
+  "model": "claude-opus-5-5",
+  "text": "This is a strong review: every issue it raises is real, the ranking is sensible, and it gives a concrete fix for each.\n\n1. **September 30 dropped (correct, rightly first).** Comparing the timestamp string `'2026-09-30 14:22:05'` against `'2026-09-30'` puts it outside the range, so a whole day of revenue goes missing. The half-open range is the standard fix.\n2. **Integer division (correct, rightly second).** It notes that `avg_items_per_order` is materially distorted while the cents truncation is minor, which is the right calibration. Both suggested fixes work.\n3. **Status filter (real, appropriately hedged).** NULL statuses are silently excluded and pending or cancelled orders are counted. \"May be wrong\" fits, since the business rules aren't known. The suggested allow-list is an example rather than an assertion.\n4. **Inner join and redundant `HAVING` (correct).** It also correctly says the filters must move into `ON` with a `LEFT JOIN`, a common pitfall. It misses that this fix introduces a new bug: zero-order stores would then divide by `COUNT(o.id) = 0`. That needs `NULLIF` or a CASE, and it's a real gap in the fix advice.\n5. **Timezone and parameterization (fair, low-priority).** Ranked last, as it should be.\n\nIt flags nothing that is actually fine, and it comes in at roughly 190–200 words, so it meets the length limit with little slack. The main deductions are the unaddressed division-by-zero consequence of fix #4, and the status item's leaning somewhat on speculation about the schema.\n\nScore: 8",
+  "usage": {
+    "input": 1139,
+    "output": 1461
+  },
+  "cost": 0.033776
+}

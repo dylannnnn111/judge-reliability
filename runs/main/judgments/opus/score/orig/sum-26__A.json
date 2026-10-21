@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-26",
+  "side": "A",
+  "score": 4,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy.** The facts are mostly right:\n- Dates, the 2:10pm return to service, the 11 meal deliveries, the four residents helped down using the evacuation chair, the two who stayed with family, and the $2,300 cost are all correct.\n- \"Freed within an hour\" is accurate (7:50 to 8:50am).\n- \"The manager approved\" is accurate, since it was the village manager.\n\nThere are small softenings:\n- \"Residents have praised staff\" overgeneralises \"several residents.\"\n- The four residents were taken down \"after a risk assessment\" by two staff, and that safety condition is dropped.\n- The Tower A lift being the same model, which is why the check mattered, is omitted.\n\n**Coverage.** It keeps nearly all the decision-relevant points: the cause, the duration, the impact, the spare part spend, and the second-lift request going to the board. It leaves out that staff completed evacuation-chair refresher training, which a manager would want to know.\n\n**Length.** The response runs to about 155 words, against an explicit limit of under 120. That is a clear failure of a stated constraint, not a minor overrun. Trimming the cause detail, the Melbourne mention and the praise line would have fit it within the limit.\n\nThe content is mostly accurate and useful, but breaking the word limit by about 30% is a significant flaw, and there are minor omissions.\n\nScore: 4",
+  "usage": {
+    "input": 1148,
+    "output": 1038
+  },
+  "cost": 0.025352
+}

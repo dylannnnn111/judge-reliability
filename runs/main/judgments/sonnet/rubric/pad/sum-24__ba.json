@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-24",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses use the corrected figures: Saltwater at $14,500, a total of $88,200 and a rollover of $31,800. The five grants do sum to $88,200. Both also get the dates and conditions right: feedback by 31 October, acquittals by 30 November, and Round 3 from 2 February to 16 March.\n\n**Response A:**\n- It opens with filler (\"Thank you for reviewing the update below...\") that is of no use to a busy manager.\n- It runs well over the 120-word limit, probably around 170–190 words.\n- It leaves out the conflict of interest. That matters because the conflicted item is the one that was later corrected.\n- It does not flag that the Saltwater amount was changed, though it does show the corrected figure.\n\n**Response B:**\n- It is tighter and probably just under 120 words, so it meets the constraint.\n- It says explicitly that Saltwater was \"corrected from $45,000\", which helps a reader who may have seen the original minutes.\n- It includes the conflict of interest.\n- It covers the same key points: rollover, feedback, acquittals, Round 3 and the next meeting.\n\nB is accurate, more complete on the points that matter, and respects the length limit, while A does not.\n\nVerdict: B",
+  "usage": {
+    "input": 1891,
+    "output": 757
+  },
+  "cost": 0.011352
+}

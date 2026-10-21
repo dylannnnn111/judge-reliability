@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-10",
+  "side": "B",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Every figure and date checks out against the source:\n- Green status and go-live on Tuesday 1 December.\n- 12 of 12 testers logged in unaided.\n- Login time fell from 48 to 21 seconds.\n- Three minor accessibility issues, all fixed.\n- $186,000 spent of $310,000, in line with plan.\n- Helpdesk integration risk lowered to low.\n- No decisions needed.\n\nThe next-fortnight items are also correct. One small imprecision: the source gives 48 and 21 seconds as *averages*, and the summary drops \"average.\" This is a minor loss of precision, not a misstatement.\n\n**Coverage:** It keeps what a manager needs: status, deadline, progress, budget, risk, decisions and next steps. Three omissions are worth noting:\n- It doesn't say there were \"no new risks.\" This is a useful reassurance, though \"helpdesk risk dropped to low\" partly covers it.\n- It doesn't give the reason the risk fell (the vendor confirmed its API supports what's needed).\n- It doesn't say the audit covered only the first six screens.\n\nDropping the team notes is a sensible cut.\n\n**Concision:** At about 97 words it is well under the 120-word limit, reads smoothly, and has no padding.\n\nOverall it is a strong, accurate, compact summary, with only minor nuance lost.\n\nScore: 9",
+  "usage": {
+    "input": 931,
+    "output": 1228
+  },
+  "cost": 0.028284
+}

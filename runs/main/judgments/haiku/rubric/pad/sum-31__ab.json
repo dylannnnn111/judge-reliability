@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-31",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Response A's figures, the four-week plateau, the smaller accuracy gain at the low-error centre, and the single-company caveat all match the source. Response B's numbers are also correct, though it leaves out the smaller accuracy gain at the second centre and the fact that the payback figure is the partner's estimate. Those omissions are minor for a busy manager.\n\nResponse A runs to roughly 190 words, well over the requested limit of under 120. Its extra detail (the bolded headers, the separate caveat and takeaway sections) adds some structure but not much that a busy reader needs beyond what B already covers. Response B is about 105 words, meets the limit, and keeps the points that matter: the speed and accuracy gains, the new-staff effect, staff preference with the heat complaint, cost and payback, and the limitation.\n\nOn accuracy the two are roughly even, and on retained key points they are close. Response B is clearly better on concision and on following the length constraint.\n\nVerdict: B",
+  "usage": {
+    "input": 1611,
+    "output": 781
+  },
+  "cost": 0.0005516000000000001
+}

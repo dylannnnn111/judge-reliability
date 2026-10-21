@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-10",
+  "side": "A",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The summary is accurate throughout and gives a busy manager what they need, in about 118 words.\n\n**Accuracy**\n- All dates match the original: week ending 10 October 2026, go-live Tuesday 1 December, Ben Castillo joining 6 October and next update 24 October.\n- All figures match: 12 of 12 customers, 48 to 21 seconds, three issues all fixed, and $186k spent of $310k.\n- The status (Green), no decisions needed, no new risks, and helpdesk risk reduced to low after vendor confirmation are all correct.\n- \"Screens are complete\" is a fair paraphrase of \"built\", and of \"passed QA\" for account settings.\n- Nothing is wrong or misleading.\n\n**Coverage**\n- The key points for a manager are all there: status, go-live date, no decisions needed, progress, budget, risks and next steps.\n- Putting \"No decisions needed from you\" at the top is a good choice for this reader.\n- Omissions are minor:\n  - The audit covered only the first six screens.\n  - The support ticket screen will connect to the helpdesk system.\n  - Marketing will review the customer communications.\n  - The project lead's name and the thanks to customer service are left out.\n- None of these would change a manager's view. The audit scope is the only detail that adds slight context.\n\n**Concision**\n- It is tight, scannable and under the 120-word limit.\n- Little is wasted, though the closing line about the new developer is optional.\n\nThis is a strong, accurate summary with only negligible trade-offs.\n\nScore: 9",
+  "usage": {
+    "input": 1015,
+    "output": 1638
+  },
+  "cost": 0.03682
+}

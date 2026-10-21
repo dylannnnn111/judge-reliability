@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-22",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. It is shorter, more scannable, and accurate. A adds filler (\"Thank you all for attending,\" \"We look forward to seeing everyone there\") and misstates that Wes will get quotes for the light globe, when the minutes say he will simply arrange its replacement.\n\nB",
+  "usage": {
+    "input": 1629,
+    "output": 483
+  },
+  "cost": 0.00040439999999999996
+}

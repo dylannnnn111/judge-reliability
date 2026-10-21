@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-09",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. It is tighter and closer to the 120-word limit (roughly 130 words versus roughly 250 for A), and its bullet format suits a busy manager. A is well over the limit and includes padding such as the opening and closing sentences.\n\nB",
+  "usage": {
+    "input": 1543,
+    "output": 958
+  },
+  "cost": 0.0006332999999999999
+}

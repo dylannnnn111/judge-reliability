@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-36",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Both are essentially accurate on term, cost, price review, early exit and end-of-term terms.\n- Response A's phrase \"exceed the colour allowance by about $195/month\" is slightly loose. The allowance is exceeded in pages, and $195 is the resulting cost, though the meaning is clear.\n- Response B drops \"last year\" from the usage figure. This is minor, since the context implies historical data.\n- Neither mentions that the Business Manager signed on 15 September. Both omit this equally.\n\n**Key points:**\n- Response B keeps the overage rates (0.9c black-and-white, 6.5c colour). These are core commercial terms and explain where the ~$195 figure comes from. Response A leaves them out.\n- Response A keeps the account manager contact, which Response B drops. A contact name is useful, but less central to understanding the agreement's financial exposure than the per-page charges.\n- Response B also labels the colour overage explicitly as a \"Risk.\" That helps a busy manager spot the main issue quickly.\n\n**Concision:** Both are close to the 120-word limit. Response B is slightly tighter.\n\nOn balance, Response B keeps the more important information, the overage pricing, and presents the main cost risk more clearly. Response A's advantage is only the contact line.\n\nVerdict: B",
+  "usage": {
+    "input": 1514,
+    "output": 1135
+  },
+  "cost": 0.028756
+}

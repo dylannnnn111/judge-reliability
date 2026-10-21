@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-40",
+  "side": "A",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The physics and arithmetic are sound. Light's travel time is negligible, sound moves at about 343 m/s, so roughly 3 seconds per kilometer and 5 seconds per mile are good approximations. The 10-second example (about 3 km or 2 miles) checks out, and the 30-second safety guideline is standard. The explanation covers the key reasoning clearly.\n\nHowever, the response clearly exceeds the explicit \"under 120 words\" limit. My rough count is around 200 words, so this is a direct instruction failure. The extra length mostly comes from the opening paragraph's padding, such as \"the reason for this is worth understanding,\" and the closing safety note, which goes beyond the question. Correctness is strong, but the constraint violation significantly lowers the score.\n\nScore: 4",
+  "usage": {
+    "input": 592,
+    "output": 907
+  },
+  "cost": 0.0005127
+}

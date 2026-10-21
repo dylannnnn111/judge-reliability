@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "sum-31",
+  "side": "A",
+  "score": 3,
+  "model": "claude-sonnet-5-5",
+  "text": "The content is mostly accurate. The 10% speed gain, the error rates, the 17% gain for new staff, the 64% preference, the $210,000 cost and the 14-month payback all match the source. \"Levelled off within four weeks\" is a slight simplification of \"most of the gain came in the first four weeks.\"\n\nThe response breaks the explicit \"under 120 words\" limit. I count about 200 words, and the staff-view bullet alone brings the running total past 120. It also wastes words on filler: \"This summary sets out the main results…\", \"The key findings are listed below,\" and \"It is worth keeping this limitation in mind when reading the findings above.\" The takeaway adds a mild recommendation (\"worth considering\") that the source does not strongly make. The response keeps the right points but ignores the main constraint a busy manager needs.\n\nScore: 3",
+  "usage": {
+    "input": 1319,
+    "output": 1247
+  },
+  "cost": 0.015108
+}

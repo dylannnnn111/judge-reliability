@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-01",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries are accurate on the new date (Friday 30 October, moved up from 4 November), the three deliverables, the new template and its software subscriptions line, the variance threshold, the no-screenshots rule, the leave nomination, and the optional drop-in on Thursday at 2pm. Both leave out the coffee remark. By my count both come in just under 120 words, A at about 117 and B at about 118.\n\nThe differences are small:\n- **Who decided:** A says the CFO brought the meeting forward, which matches the source. B says only that the board meeting was brought forward, so it loses who made the call.\n- **Call instruction:** A keeps \"call Priya today rather than emailing\". B says \"call Priya today\" and drops the explicit instruction not to email.\n- **Format:** A is laid out in short sections and bullets, so a busy manager can scan it quickly. B is a dense single paragraph that conveys the same content but is harder to skim.\n\nA is slightly more complete and easier to read.\n\nVerdict: A",
+  "usage": {
+    "input": 1412,
+    "output": 1500
+  },
+  "cost": 0.017824
+}

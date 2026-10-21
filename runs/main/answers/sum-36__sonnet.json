@@ -1,0 +1,13 @@
+{
+  "item": "sum-36",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Printer Lease Summary (Crestline Office Solutions)**\n\n- **Term:** 48 months from 3 November 2026. Covers 22 multifunction printers across both campuses, including toner, parts, servicing and an 8-business-hour technician response.\n- **Cost:** $3,480/month plus GST, fixed for 24 months, then rising by up to 4% a year.\n- **Allowance:** 120,000 black-and-white and 15,000 colour pages monthly, with no carry-over. Excess pages cost 0.9c (black-and-white) and 6.5c (colour).\n- **Risk:** The school printed about 18,000 colour pages a month during terms, so expect roughly $195 extra in term months. Unused holiday allowances are lost.\n- **Early exit:** Costs 75% of remaining fees, even if enrolments fall.\n- **End of term:** Return, buy or re-lease. Otherwise it rolls over monthly at the same fee.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 647,
+    "output": 689
+  },
+  "cost": 0.008184,
+  "at": "2026-10-14T01:52:31.761Z"
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-27",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses report the figures correctly: 81% vs 74%, the free-month promotion affecting 60% of Sydney customers, the 78% vs 76% paid-from-day-one comparison, the $95 per session cost, the roughly $410,000 national estimate, and the 21 October decision point. Neither introduces an error. Both omit that the guided call happens in week one, a minor detail.\n\nResponse A adds the word \"inconclusive\" in its header, which is a fair reading of Marcus's \"mixed\" and \"doesn't support that yet.\" Its phrasing is wordier, and \"kindly\" appears twice without adding meaning. Response B covers the same key points (the skewed comparison, the Sales overclaim, the cost, and the proposed test) in fewer words, with clear bullets.\n\nSince neither is less accurate and B delivers the same decision-relevant content more concisely, B is slightly better.\n\nVerdict: B",
+  "usage": {
+    "input": 1648,
+    "output": 734
+  },
+  "cost": 0.0005317999999999999
+}

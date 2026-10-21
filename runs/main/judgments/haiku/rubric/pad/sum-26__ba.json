@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-26",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Neither invents facts or misstates dates, times, costs, or who approved what. Response A's \"about an hour\" is a fair reading of 7:50am to 8:50am, and \"carried\" in Response B is a slight stretch of \"helped down with an evacuation chair,\" but it does not mislead. Response A adds the staff refresher training, which Response B omits, but that is a minor point for a busy manager.\n\nThe main difference is the 120-word limit. Response A runs to roughly 200 words, well over. Response B is about 155 words, also over but much closer. Response A's headings and fuller sentences add clarity but not essential content, so the extra length is not justified. Response B keeps the key points the manager needs: the incident, the cause, the outage duration, the impact, the follow-up, and the pending capital-plan request.\n\nVerdict: B",
+  "usage": {
+    "input": 1653,
+    "output": 1394
+  },
+  "cost": 0.0008623
+}

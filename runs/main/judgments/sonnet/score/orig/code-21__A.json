@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-21",
+  "side": "A",
+  "score": 8,
+  "model": "claude-sonnet-5-5",
+  "text": "The response correctly puts the most important problem first. `issueRefund` sends a POST through a wrapper that retries on network errors and 502/503/504, so a retry after the server has already processed the request can refund the same order twice. The fix is sound: an idempotency key, or no retries for non-idempotent methods.\n\nThe remaining items are all real:\n- **Aborts and permanent errors:** the `catch` retries `AbortError` and `TypeError`, including a consumed stream body.\n- **No per-attempt timeout:** a hung connection blocks the loop forever.\n- **`Retry-After`:** the header is ignored on 429/503.\n- **Undrained bodies:** discarded retryable responses are not cancelled.\n- **Unvalidated cast:** `refundId` can come back `undefined`.\n\nThe ranking is sensible, with the money-affecting bug first and the minor validation point last. It flags nothing that is fine, and each item comes with a fix.\n\nIt has two weaknesses. It runs slightly over the 200-word limit, at roughly 210 words. It also doesn't mention that the support console could block for minutes because of the retry and backoff total. That is minor.\n\nScore: 8",
+  "usage": {
+    "input": 1192,
+    "output": 1519
+  },
+  "cost": 0.017574
+}

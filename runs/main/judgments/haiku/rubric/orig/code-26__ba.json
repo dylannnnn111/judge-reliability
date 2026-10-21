@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-26",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the most important bug: `qty` stays a string, so `items` concatenates instead of summing. Both also flag the naive CSV split, the `\\r` line-ending issue, missing validation, and the plain-object `__proto__` risk. Neither misses a major problem.\n\nResponse A is more accurate on the details. Its CRLF point is correct: the `\\r` lands on the last column, which here is `unitCents`, and `Number` absorbs it, so A rightly says it would only matter for string fields added later. Response B says `sku` will carry the `\\r`, but `sku` is not the last column, so that claim is wrong. A also explains the NaN comparator problem in `topOrders`, which B only mentions as a generic propagation issue.\n\nResponse B has a few weak spots. Its \"empty input yields a bogus row\" point contradicts itself, since it notes `slice(1)` handles it. It does add a valid tie-breaker point for `topOrders` that A omits, and its suggestion of `Object.create(null)` as an alternative to `Map` is useful. Those additions don't outweigh the incorrect sku claim and the self-refuted point.\n\nOverall, Response A is more correct and tighter, with slightly better fix guidance.\n\nVerdict: A",
+  "usage": {
+    "input": 1738,
+    "output": 1107
+  },
+  "cost": 0.0007273
+}

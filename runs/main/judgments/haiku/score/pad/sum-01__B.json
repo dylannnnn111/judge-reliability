@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-01",
+  "side": "B",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The response is factually accurate. It correctly gives the new deadline (Friday 30 October, close of business, moved from 4 November), the reason (board meeting brought forward a week), the three required items, the template location, the software subscriptions split, the commentary threshold, the numbers-not-screenshots rule, the leave nomination, Marcus's optional Thursday 2pm session in the Level 6 boardroom, and the instruction to call Priya rather than email if there's a problem. Nothing is misstated.\n\nIt also keeps the points a manager needs. The main weakness is the explicit length limit. The response runs to roughly 190 words, well over the 120-word cap, and the extra length comes from restating the deadline change, repeating the template path and wording, and adding framing like \"I'm writing to let you know.\" A manager who won't read the original would be better served by a tighter version that drops the redundancy. Its opening also reads as if the manager is writing to their team, which is a minor tone issue.\n\nAccuracy is essentially complete, the key content is present, but it fails the stated concision requirement.\n\nScore: 5",
+  "usage": {
+    "input": 1224,
+    "output": 856
+  },
+  "cost": 0.0005503999999999999
+}

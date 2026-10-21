@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-31",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A is better.** Both responses are scientifically correct. Each attributes the seasons to Earth's roughly 23.5° axial tilt, and each notes that the tilt keeps a fixed orientation in space. Both explain that in December the Southern Hemisphere receives more direct sunlight and longer days while the Northern Hemisphere gets the reverse, and that the situation flips six months later.\n\nNeither has a correctness problem, and both give the key reasoning. A briefly dismisses the distance misconception in its first sentence. B gives it more room and adds the useful detail that Earth is closest to the Sun in early January, during northern winter. B also mentions sunlight spreading over a larger area, a small extra point on why low-angle light heats less.\n\nThe deciding factor is the explicit instruction to answer in under 120 words. A comes to about 109 words. B, counted carefully, comes to about 121, so it slightly breaks a hard constraint the user set. B's extra perihelion detail is a nice addition, but it is what pushes the response over the limit. The core explanation is equally complete and clear in A, which is well structured and fully meets the requirement.\n\nVerdict: A",
+  "usage": {
+    "input": 760,
+    "output": 1762
+  },
+  "cost": 0.03828
+}

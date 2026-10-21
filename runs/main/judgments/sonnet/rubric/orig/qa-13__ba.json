@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-13",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses reach the correct answer: A is a knave and B is a knight. Both also give the same valid reasoning, so the comparison comes down to length and clarity.\n\nBoth are under 120 words. Response A is about 90 words, and it repeats the answer at the start and end. Response B is about 70 words and is more concise. Neither adds anything that matters beyond the other.\n\nResponse A's wording on the key step is slightly more precise: \"The statement is false when at least one of us is not a knave.\" Response B says the same thing in a compact form.\n\nResponse A states the answer twice, which is redundant. Response B states it once and is tighter. The extra words in A add nothing useful, so B is marginally better, though the difference is small.\n\nWord count matters here because of the 120-word limit. A is around 95 words, which is still within it. Neither violates the limit.\n\nThe result is essentially a tie, with a slight edge to B for concision.\n\nVerdict: B",
+  "usage": {
+    "input": 582,
+    "output": 297
+  },
+  "cost": 0.004134
+}

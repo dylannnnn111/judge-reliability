@@ -1,0 +1,13 @@
+{
+  "item": "code-13",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Bugs, most important first:**\n\n1. **December crash.** `current.month + 1` gives 13, so `replace` raises `ValueError`. Any schedule crossing December fails, and so does any subscription that starts in December.\n\n2. **Day-of-month overflow.** Starting on the 29th, 30th, or 31st raises `ValueError` the first time the next month is shorter (e.g. Jan 31 → \"Feb 31\"). Both bugs are common in real billing.\n\n3. **Schedule drift if you \"fix\" #2 naively.** If you clamp to the month's last day and then chain from the previous result, Jan 31 becomes Feb 28, then Mar 28, and so on. Compute each date from the original `start` (start + n months, clamped) rather than iterating from the last date. `dateutil.relativedelta` handles the clamping, or write it with `calendar.monthrange`.\n\n4. **Proration uses a fixed 30-day period.** Actual periods are 28–31 days, so charges are wrong. For a 31-day month, a full period would bill more than `monthly_cents`. Use the real period length, e.g. `(next_billing_date(start) - start).days`, and cap `days_used` to that range.\n\n5. **No input validation.**\n   - `months <= 0` still returns `[start]`.\n   - `period_end < start` produces a negative charge.\n   - Negative amounts aren't rejected.\n\n6. **Rounding.** Integer floor division always rounds down, so you systematically under-bill. Decide on a rounding policy explicitly.\n\n7. **Minor:** there is no timezone handling, and there are no tests for the edge cases above.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 262,
+    "output": 540
+  },
+  "cost": 0.005924,
+  "at": "2026-10-14T01:53:28.350Z"
+}

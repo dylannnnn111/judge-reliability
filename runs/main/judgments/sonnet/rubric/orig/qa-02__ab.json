@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-02",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer of 96 km/h, with the same correct steps. Next I check the word limit of under 120 words.\n\nResponse A word count: Heading \"Average speed = 96 km/h\" (5 words). Bullets: \"Going: 160 km ÷ 80 km/h = 2 hours\" (~9), \"Returning: 160 km ÷ 120 km/h = 4/3 hours (1 h 20 min)\" (~14), \"Total distance: 320 km\" (4), \"Total time: 2 + 4/3 = 10/3 hours\" (~8). Then \"Average speed = 320 ÷ (10/3) = 96 km/h\" (~7). Then the last paragraph: \"The answer is not simply (80 + 120)/2 = 100 km/h, because you spend more time driving at the slower speed.\" (~19) and \"For equal distances, the average speed is the harmonic mean: 2 × 80 × 120 / (80 + 120) = 96 km/h.\" (~21). The total is about 87 words, which is under 120 either way, depending on how symbols are counted.\n\nResponse B is shorter, about 70 words.\n\nBoth comply. Response A adds the harmonic mean formula, which is useful and correct. Response B mentions the harmonic mean but without the formula. The difference is slight. A gives a bit more useful content (the explicit formula), and it stays within the limit. B is more concise, but it is not clearly better.\n\nCounting tokens liberally, A could reach about 100 words, still under 120. So A's extra formula is a small plus, and I lean slightly toward A.\n\nVerdict: A",
+  "usage": {
+    "input": 719,
+    "output": 523
+  },
+  "cost": 0.006668
+}

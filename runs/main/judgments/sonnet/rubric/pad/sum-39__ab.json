@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-39",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is the better summary. Response B is the less accurate of the two and breaks the word limit by much more.\n\n**Length:** The request says under 120 words. Response A comes to about 126 words, a slight overrun. Response B comes to roughly 190 words, which is far over.\n\n**Accuracy:** Response A's facts match the source: the 7-2 vote, the 1 December date, the $38,000 across 6,400 members, the 60-day replacement charge, the inter-library exception, the $52,000 and $19,000 figures, the November email and the 12-month review. Response B is mostly correct but adds its own inference. It says the net cost is about $33,000, which the source does not state, and treating staff time as an offsetting saving is questionable. It also says \"lost or damaged items\" still incur replacement cost, which blends the source's wording on the 60-day rule. \"Across the district\" is also unsupported.\n\n**Content kept:** Both cover the key points: the change, the exceptions, the rationale, the cost, the opposition and the review. Response A includes the point about the opposing councillor in a shorter form. Response B adds filler such as \"It is also worth noting\" and \"To make sure the policy is working as intended\".\n\n**Concision:** Response A is considerably tighter and closer to the manager's needs.\n\nVerdict: A",
+  "usage": {
+    "input": 1496,
+    "output": 1669
+  },
+  "cost": 0.019682
+}

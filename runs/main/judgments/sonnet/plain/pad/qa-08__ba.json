@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-08",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both give the correct calculation: 375 × 0.048 = 18 mL, × 0.789 = 14.202 g, so 1.42 standard drinks.\n\nWord count: Response B has about 105 words, so it is under 120. Response A is much shorter. Both meet the constraint.\n\nResponse A is concise and direct, and it adds the useful note that Australian labels round to 1.4. Response B has filler, with a \"Thank you for your question\" opener and a redundant summary, but it is still correct.\n\nResponse A is the better one because it is more concise and has no padding.\n\n**A**",
+  "usage": {
+    "input": 596,
+    "output": 185
+  },
+  "cost": 0.003042
+}

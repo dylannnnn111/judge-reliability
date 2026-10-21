@@ -1,0 +1,14 @@
+{
+  "pair": "sum-15",
+  "side": "B",
+  "author": "opus",
+  "model": "claude-haiku-5-5",
+  "original": "**Night-shift naps and the drive home**\n\nA simulator study of 96 night-shift workers tested whether a 20-minute nap at 3am improves driving home.\n\n- **Overall:** With a nap, lane drifting fell 22% and reaction time improved by 0.09 seconds.\n- **Not for everyone:** Benefits went mostly to workers with 6+ months on nights. For new night workers (under 3 months), lane drifting didn't improve, and some felt groggy for 15 minutes after waking.\n- **Timing matters more:** 7am drives had about twice the lane drifting of 6am drives, nap or not.\n\n**Takeaway:** Naps are a cheap aid for experienced staff, not a substitute for earlier shift end times or transport home after long shift runs.\n\n**Caveats:** Simulator only; mostly men aged 25–50.",
+  "text": "**Night-shift naps and the drive home**\n\nThis article reports on a simulator study of 96 night-shift workers. The study tested whether a 20-minute nap at 3am improves driving home afterward.\n\n- **Overall:** When workers napped, lane drifting fell by 22%, and reaction time improved by 0.09 seconds. In other words, the nap was associated with measurable gains in both measures during the simulated drive.\n- **Not for everyone:** The benefits went mostly to workers with 6 or more months on nights. For new night workers, defined as those under 3 months, lane drifting did not improve. Some of these workers also felt groggy for about 15 minutes after waking, so the nap did not clearly help them.\n- **Timing matters more:** Drives at 7am showed about twice the lane drifting of drives at 6am, whether or not the driver had napped. Put differently, the time of day of the drive had a larger effect on lane drifting than the nap did.\n\n**Takeaway:** Naps can be a cheap aid for experienced staff, but they are not a substitute for earlier shift end times or for transport home after long shift runs. It is worth keeping this in mind when deciding how to support night-shift drivers as a whole.\n\n**Caveats:** These findings come from a simulator only, not real roads. The participants were mostly men aged 25–50, so the results may not apply equally to other groups.",
+  "ratio": 1.93,
+  "usage": {
+    "input": 464,
+    "output": 563
+  },
+  "cost": 0.0003279
+}

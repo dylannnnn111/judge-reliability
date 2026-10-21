@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-13",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.** It is more accurate and keeps an extra useful point.\n\n**Accuracy.**\n- **Response B on the cause:** It says the failed pump was one \"the contractor missed during a monthly visit.\" This implies a visit took place and the technician overlooked the fault. In fact, the visit never happened, and that is the core of the contractor's breach.\n- **Response B on dates:** It says the tower returned to service \"after a resample on 9 October.\" The resample was taken on 6 October; 9 October is when the result came back.\n- **Response A on the cause:** It says the pump \"failed after the contractor missed a monthly visit without telling us.\" This loosely suggests the pump failed after the missed visit, whereas the report says the failure went undetected because of it. It is a mild imprecision, but it correctly conveys that the visit was missed and not reported.\n\n**Key points.**\n- Both responses lead with or clearly flag the $4,800 decision and the interim weekly manual checks.\n- Both cover the health department notification, the clear resample, no illness, the pump replacement, written visit confirmation, and recovery of the $7,350.\n- Response A also includes the fortnightly sampling for three months. Response B omits it.\n- Response B includes the actual count (1,200 CFU/mL) and the duty to report missed visits. These are useful but less important to a manager than the ongoing monitoring change.\n\n**Concision.** Both run to roughly 125 words including headings, so each slightly exceeds the 120-word limit. Neither has an advantage here.\n\nVerdict: A",
+  "usage": {
+    "input": 1502,
+    "output": 2159
+  },
+  "cost": 0.049188
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-11",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A** is the better summary, though it has one flaw.\n\n**Accuracy**\n- **A** is accurate throughout. Its one compression, that Sam \"moves all monitors, docking stations and phones\", is faithful to the original instruction not to pack monitors or docking stations.\n- **B** is also mostly accurate. Its inference of \"Monday 17 November\" is correct.\n- However, B weakens an important condition. It says everyone is \"warmly invited to attend\" the 8:30am welcome. In the original, staff cannot get past the lobby without the card handed out there, so attendance is effectively required. A captures this correctly with \"Everyone must attend.\"\n\n**Coverage**\n- Both keep the key points: who is responsible for what, the key dates, the file-boxing deadline, the crate limit, access cards and parking.\n- A folds the parking point into Rachel's entry, which is efficient.\n- Neither mentions that unboxed files may delay access to client files. This is a minor omission in both.\n\n**Concision and format**\n- **A** is about 130 words, slightly over the 120-word limit. That is a flaw, but a small one.\n- **B** is roughly 250 words, about double the limit. It also reads as a rewritten all-staff email (\"Thank you all for your patience…\", \"Thank you for your cooperation…\") rather than a summary for a busy manager. Its extra words add no useful information.\n\nA is more accurate on the access-card point and far closer to the length and audience brief.\n\nVerdict: A",
+  "usage": {
+    "input": 1797,
+    "output": 1281
+  },
+  "cost": 0.032808
+}

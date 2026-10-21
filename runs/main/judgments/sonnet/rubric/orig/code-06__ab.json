@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-06",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same four main issues in the same order: the `is not` identity comparison, the existence leak from distinguishing 404 from 403, the check-then-save race in `cancel_order`, and the missing refund handling for paid orders. Both give fixes. Both run a little over the 200-word limit, by about the same amount, so length does not separate them.\n\nThe differences are in the details:\n\n- **Issue 1:** B says most legitimate customers will be blocked and that tests with small IDs will hide the bug, which is accurate and useful. A calls the failure \"intermittent\", which understates it, since IDs above 256 from a DB driver will usually be distinct objects.\n- **Issue 3:** B gives a concrete harmful scenario, where a concurrent ship or refund gets overwritten with \"cancelled\". It also lists several fix options. A's conditional-update example is good because it includes `customer_id`. But its \"both pass the check\" scenario is less harmful, since a double cancel is mostly benign.\n- **Minor issues:** B's point that the in-memory order is mutated before `save` is a real problem. A's minor points are weaker: the status string in the `ValueError` is trivial, and \"save not shown to be transactional\" is vague.\n\nB is slightly more accurate and its minor items are more useful.\n\nVerdict: B",
+  "usage": {
+    "input": 1549,
+    "output": 1707
+  },
+  "cost": 0.020168
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-10",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Both responses are essentially accurate on status, go-live date, testing results, the accessibility audit, budget, risk and next steps.\n- Response A says \"login time fell from 48 to 21 seconds\" and drops the word \"average\". That turns a mean into what reads like a universal figure, a small but real loss of precision.\n- Response B keeps \"average login time\". It also correctly attributes the risk reduction to the vendor's API confirmation.\n- B's \"No decisions needed from you\" is a fair rendering of \"Decisions needed: None this fortnight.\"\n\n**Coverage:**\n- B includes the next update date (24 October), which is useful for a manager deciding when to look again. It also includes the PDF invoice download feature.\n- B omits that the customer communications are for marketing review, a minor detail that A keeps.\n- B's mention of the new developer is less essential, but it is correct and brief.\n\n**Concision and format:**\n- A is about 97 words; B is about 118. Both are under the 120-word limit.\n- B's bold go-live date, up-front \"no decisions needed\" and labelled bullets suit a busy reader who will skim.\n\nB is slightly more precise on the key metric and easier to scan, with its extra words adding correct, useful content.\n\nVerdict: B",
+  "usage": {
+    "input": 1275,
+    "output": 1228
+  },
+  "cost": 0.02966
+}

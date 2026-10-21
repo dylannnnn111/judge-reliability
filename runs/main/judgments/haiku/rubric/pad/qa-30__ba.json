@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-30",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses define the p-value correctly as the probability of data at least as extreme as observed, assuming the null hypothesis is true, and both list the standard misreadings. Neither has a substantive error.\n\nResponse A stays under the 120-word limit, at roughly 85 words. It covers the key misconceptions concisely, though its last bullet is a bit vague.\n\nResponse B is roughly 190 words, which breaks the explicit length constraint. Much of the extra text is filler, such as \"Because these points are easy to confuse...\" and \"I hope this clarifies...\", and it repeats the list. Its one real addition is the point that p > 0.05 doesn't mean \"no effect,\" which is useful. That does not offset the violation of the word limit.\n\nSince correctness is equal and Response A follows the instruction while Response B does not, Response A is better.\n\nVerdict: A",
+  "usage": {
+    "input": 800,
+    "output": 546
+  },
+  "cost": 0.000353
+}

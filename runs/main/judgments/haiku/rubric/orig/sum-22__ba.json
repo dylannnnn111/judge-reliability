@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-22",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both summaries are accurate. Neither misstates the fee figures, the grant deadline, the presentation night details, or who was responsible for each action. Response A adds useful detail: the 5-0 vote, Natalie organising trophies, and the 9% turf hire rise as the reason for the fee increase. However, it runs to roughly 127 words, which breaks the explicit under-120 limit. Response B stays at about 105 words, covers the main decisions, figures, and actions, and is easier to scan. It omits the trophies and the vote count, which are minor for a busy manager. Since the length limit is a stated requirement and B keeps the essentials, B is the better response overall.\n\nVerdict: B",
+  "usage": {
+    "input": 1571,
+    "output": 2230
+  },
+  "cost": 0.0012721
+}

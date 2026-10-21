@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-03",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses rank SQL injection first and give essentially the same correct parameterized fix. A is the stronger review overall.\n\n- **Connection leak:** A gives clean, accurate advice. B first recommends `with sqlite3.connect(...) as conn:` and then has to retract it, noting it doesn't close the connection. That reads as self-contradictory.\n- **Injection claim:** B says crafted input \"can modify data depending on the driver.\" With `sqlite3`, `execute` rejects stacked statements, so this is overstated for this code. A's \"could do worse\" is more cautious.\n- **Real bugs in this code:** A catches concrete issues that matter for a staff email lookup:\n  - case-sensitive, whitespace-sensitive email matching that will cause missed results\n  - unordered, unbounded results\n  - `if status:` treating `\"\"` as \"no filter\"\n  - the redundant empty-list check\n- **B's lower-value points:** B spends space on function-level authorization, which belongs to the portal layer rather than this helper, and on a hardcoded DB path, which is a minor style point. A still notes audit logging briefly.",
+  "usage": {
+    "input": 1375,
+    "output": 624
+  },
+  "cost": 0.01798
+}

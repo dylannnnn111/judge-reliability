@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-35",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly explain that antibiotics target bacterial structures absent in viruses, and that resistance arises through mutation, selection, and horizontal gene transfer. Neither contains a factual error. Response B is richer in detail: it names specific resistance mechanisms (drug destruction, efflux, target alteration) and gives concrete misuse examples such as treating viral infections. However, its word count is roughly 124, which exceeds the under-120-word limit. Response A is about 97 words, so it meets the constraint while still covering the key reasoning, including the host-machinery point and the role of overuse. Given that the constraint is explicit and B's extra detail is only modestly valuable, A is the better response.\n\nVerdict: A",
+  "usage": {
+    "input": 797,
+    "output": 1204
+  },
+  "cost": 0.0006817
+}

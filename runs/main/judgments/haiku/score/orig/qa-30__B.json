@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-30",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response defines the p-value correctly: the probability of data at least as extreme as observed, assuming the null hypothesis is true. The list of misconceptions covers the most important errors, especially confusing P(data | H0) with P(H0 | data). It does not explicitly explain that conditional direction, which would strengthen the key reasoning. The \"happened by chance alone\" bullet is somewhat redundant with the first, and it is slightly imprecise. It is well under 120 words and clearly organized.\n\nScore: 8",
+  "usage": {
+    "input": 342,
+    "output": 446
+  },
+  "cost": 0.00025719999999999996
+}

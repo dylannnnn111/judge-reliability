@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-10",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The final answer, 1/3, is correct. The response lists the four equally likely outcomes, removes BB because it has no girl, and counts one two-girl case among the three remaining, which is the key reasoning. It also explains why the common intuition of 1/2 is wrong and gives the contrasting case where a specific child is known to be a girl. The explanation is clear and well organized.\n\nHowever, the user asked for an answer under 120 words, and this response runs to roughly 140 words. That is a clear violation of an explicit constraint. The extra sentences about the 1/2 intuition are useful, but they do not justify exceeding the limit.\n\nScore: 6",
+  "usage": {
+    "input": 502,
+    "output": 653
+  },
+  "cost": 0.0003767
+}

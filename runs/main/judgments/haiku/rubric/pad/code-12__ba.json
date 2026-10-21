@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-12",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is the stronger review. It opens with the two most serious problems, the N+1 query pattern and the crash on a missing customer, and it names a concrete fix for each. Its other points are also real: the non-sargable date filter, the formatted-string totals (including the `$-12.34` rendering of negatives), nondeterministic ordering, input validation, and timezone ambiguity. It stays under the 200-word limit.\n\nResponse B covers much of the same ground and adds a few valid points, such as the lack of a consistent snapshot. But it runs over the word limit, and several items are padding or speculative. \"Dividing by 100 as a float is usually fine\" concedes that the item is not a real problem. \"No reconciliation\" is a design suggestion rather than a bug. The item-count concern depends on a quantity column that the code never shows. Its introduction is also filler that the user did not need.\n\nResponse A is more accurate, better ranked, more actionable, and within the length constraint, so it is better.\n\nVerdict: A",
+  "usage": {
+    "input": 1920,
+    "output": 650
+  },
+  "cost": 0.000517
+}

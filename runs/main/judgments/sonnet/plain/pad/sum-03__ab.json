@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-03",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "A\n\nResponse A is better. Both responses go over the 120-word limit, but A only slightly (about 125 words), while B runs to roughly 170. B also pads with filler such as \"To show the scale of the incident, here is its impact\" and \"Following the incident, the following actions have been taken or scheduled\". It also muddles the numbers by saying \"Of the affected attempts, 1,940 customers retried\", which mixes attempts with customers. A is tighter, accurate and easier for a busy manager to scan.",
+  "usage": {
+    "input": 1534,
+    "output": 1734
+  },
+  "cost": 0.020408
+}

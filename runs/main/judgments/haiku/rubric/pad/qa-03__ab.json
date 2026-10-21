@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-03",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the relative increase as 25% and note the 1 percentage point difference, so neither gets the answer wrong. Response B states the distinction between percentage points and percent more directly, and its worked example ($400,000 loan, interest rising from $16,000 to $20,000) is arithmetically correct and shows why the relative change matters to borrowers. Response A is accurate but includes filler (\"Thank you for your question,\" \"I hope this explanation is helpful\") and its wording \"the 1-point rise is 25% of the original 4% rate\" is less clear. Both are under 120 words, so length does not separate them.\n\nVerdict: B",
+  "usage": {
+    "input": 696,
+    "output": 493
+  },
+  "cost": 0.00031610000000000004
+}

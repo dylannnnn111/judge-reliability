@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-07",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is accurate and leads with the breaking change. Its word count is about 124, slightly over the 120-word limit. Response B is far over the limit, at roughly 190 words.\n\n**Accuracy:** Response A is correct throughout. It says imports of the Classic CSV will break because of the new column names and separate GST column, and it names the help article.\n\nResponse B has small inaccuracies. \"Thank you for your interest in Ledgerly 5.0\" is filler that misrepresents the source, where the thanks went to beta testers. It describes teams \"exports data\" when the real problem is imports breaking. It files bug fixes under \"Improvements\". It also says \"planned for future releases\" and drops the beta-access option.\n\n**Coverage:** Response A covers the key points: the new features, the performance gain, the breaking change, Android 9 and the upcoming features. It omits the GST rounding change and the specific bug fixes, which matter little to a manager. Response B includes more of these but loses accuracy and brevity doing so.\n\n**Concision:** Response B has padding (\"The main points are summarised below, grouped by topic so you can review them quickly\") and is much longer. Response A is tighter and closer to the limit.\n\nResponse A is better overall.\n\nVerdict: A",
+  "usage": {
+    "input": 1514,
+    "output": 1829
+  },
+  "cost": 0.021318
+}

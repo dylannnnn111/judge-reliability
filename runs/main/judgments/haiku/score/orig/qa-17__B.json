@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-17",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The answer is correct: Venus has the hottest surface, at about 465°C, and the runaway greenhouse effect from its thick CO₂ atmosphere is the right explanation. The CO₂ share (about 96%) and surface pressure (about 90 times Earth's) are accurate, and the contrast with Mercury is apt. The weakest point is the claim that the sulfuric acid clouds \"help trap heat below.\" They mainly reflect sunlight, and their warming role is less standard than the CO₂ effect. The response is clearly organized and about 117 words, under the 120-word limit. Its key reasoning is complete, and the one shaky detail is minor.\n\nScore: 8",
+  "usage": {
+    "input": 503,
+    "output": 893
+  },
+  "cost": 0.0004968
+}

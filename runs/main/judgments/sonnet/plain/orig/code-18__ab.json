@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-18",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better.\n\nBoth responses find the same critical bug: the cache key ignores `to`, so one target currency's rate gets served for every other. Both also cover response validation, timeout, thundering herd, unencoded parameters, and unbounded cache growth.\n\n**Length limit:** The user asked for under 200 words. My counts put Response A at about 189 words and Response B at about 205. A stays within the limit and B likely exceeds it.\n\n**Quality of the final item:** For an invoicing service, A's point about float precision in money calculations is more relevant than B's point about the `unknown`-to-`T` cast. The cast is a real but low-impact code smell.\n\n**Ordering:** A puts in-flight deduplication before the timeout. B puts the timeout first, which is arguably slightly better for a hung upstream. This difference is small.\n\nA also notes that a bad rate such as `0` would be cached, and suggests evicting a rejected in-flight promise. Both add useful detail.\n\n**A**",
+  "usage": {
+    "input": 1481,
+    "output": 2230
+  },
+  "cost": 0.025262
+}

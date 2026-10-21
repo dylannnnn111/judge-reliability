@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-24",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly answer \"no\" to both questions. Mauna Kea is the tallest base-to-peak mountain, and Chimborazo's summit is farther from Earth's centre than Everest's, by roughly 2 km. Both give the key reasoning: the seafloor base for Mauna Kea and the equatorial bulge for Chimborazo.\n\nResponse A is more detailed, with useful context such as Chimborazo's lower elevation, but it runs to roughly 220 words. That breaks the explicit \"under 120 words\" limit. Response B comes in at roughly 105 words, within the limit, and still covers the essential facts and reasoning. Since the length constraint is part of the request and A's extra words add no essential correctness, B is the better response.\n\nVerdict: B",
+  "usage": {
+    "input": 888,
+    "output": 997
+  },
+  "cost": 0.0005872999999999999
+}

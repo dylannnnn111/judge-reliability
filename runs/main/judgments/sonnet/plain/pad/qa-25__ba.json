@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-25",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer in under 120 words. Response A runs roughly 190 words, so it breaks that limit. Response B is about 120 words, so I should count it precisely.\n\nResponse B:\n\"No, Viking warriors didn't wear horned helmets. This is a popular myth.\" = 12 words.\n\"The evidence: Only one fairly complete Viking-age helmet has been found: the Gjermundbu helmet from Norway (10th century).\" = The(1) evidence(2) Only(3) one(4) fairly(5) complete(6) Viking-age(7) helmet(8) has(9) been(10) found(11) the(12) Gjermundbu(13) helmet(14) from(15) Norway(16) (10th(17) century)(18) = 18. Total 30.\n\"It's a simple rounded iron cap with a spectacle-like face guard and no horns.\" = It's(1) a(2) simple(3) rounded(4) iron(5) cap(6) with(7) a(8) spectacle-like(9) face(10) guard(11) and(12) no(13) horns(14) = 14. Total 44.\n\"Many warriors likely wore leather caps or no helmet at all, since iron was expensive.\" = 14. Total 58.\n\"Where the myth came from: It largely stems from the 19th century.\" = Where(1) the(2) myth(3) came(4) from(5) It(6) largely(7) stems(8) from(9) the(10) 19th(11) century(12) = 12. Total 70.\n\"Romantic artists and costume designer Carl Emil Doepler, who outfitted Wagner's opera Der Ring des Nibelungen (1876), popularized horned helmets.\" = Romantic(1) artists(2) and(3) costume(4) designer(5) Carl(6) Emil(7) Doepler(8) who(9) outfitted(10) Wagner's(11) opera(12) Der(13) Ring(14) des(15) Nibelungen(16) (1876)(17) popularized(18) horned(19) helmets(20) = 20. Total 90.\n\"A grain of truth: Horned helmets did exist in Scandinavia, but in the Bronze Age, centuries before the Vikings, and they were probably ceremonial rather than for battle.\" = A(1) grain(2) of(3) truth(4) Horned(5) helmets(6) did(7) exist(8) in(9) Scandinavia(10) but(11) in(12) the(13) Bronze(14) Age(15) centuries(16) before(17) the(18) Vikings(19) and(20) they(21) were(22) probably(23) ceremonial(24) rather(25) than(26) for(27) battle(28) = 28. Total 118.\n\nResponse B comes to about 118 words, under the limit. Response A clearly exceeds it, so B is better.\n\n**B**",
+  "usage": {
+    "input": 761,
+    "output": 928
+  },
+  "cost": 0.010802
+}

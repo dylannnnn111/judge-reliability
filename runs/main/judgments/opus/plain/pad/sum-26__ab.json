@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-26",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A.** Both responses break the 120-word limit, but A breaks it far less.\n\n- **Length:** Response A runs to roughly 150 words. Response B runs to about 250, more than double the limit.\n- **Filler and voice:** Response B adds padding such as \"This summary sets out…\" and \"I am pleased to report.\" It also switches to an inappropriate first-person voice. Neither suits a busy manager.\n- **Content:** Response A leaves out the staff refresher training and the phone calls to families. Those are minor omissions next to B's much larger breach of the length requirement.",
+  "usage": {
+    "input": 1499,
+    "output": 638
+  },
+  "cost": 0.018756
+}

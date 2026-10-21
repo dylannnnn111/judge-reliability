@@ -1,0 +1,13 @@
+{
+  "item": "sum-06",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**Narrawin Aquatic Centre reopens Saturday 31 October after an eight-month, $3.2 million upgrade**, funded jointly by Greendale Regional Council and a state government grant.\n\n**Key improvements:**\n- New heated 25m program pool, allowing year-round swim lessons (it replaces a leaking, nearly 50-year-old pool)\n- Accessible change rooms with adult change table\n- Ramp entry to the 50m pool\n- Solar array expected to supply about a third of power needs\n\n**Operations:**\n- All programs and the water play area resume on opening day\n- Term one swim school enrolments open online 20 October\n- Prices unchanged for 2026-27: adults $6.50, children/concession $4.50, under-3s free\n- Hours: 6am–8pm weekdays, 7am–6pm weekends\n\n**Opening day:** free entry 10am–4pm, sausage sizzle, and a surf life saving demonstration.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 658,
+    "output": 555
+  },
+  "cost": 0.013732,
+  "at": "2026-10-14T01:51:14.800Z"
+}

@@ -1,0 +1,13 @@
+{
+  "item": "qa-06",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "**Friday, 24 March 2028.**\n\nDec 15 to Dec 31 is 16 days, January has 31, and February 2028 (a leap year) has 29, which makes 76 days. The remaining 24 days land on 24 March. Since 100 days is 14 weeks plus 2 days, the weekday moves from Wednesday to Friday.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 56,
+    "output": 528
+  },
+  "cost": 0.00026960000000000005,
+  "at": "2026-10-14T01:50:15.027Z"
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-03",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses correctly put SQL injection first and give the same working parameterized fix. Both also catch the unclosed connection and correctly warn that `with sqlite3.connect()` doesn't close it. Both run somewhat over the 200-word limit, so that doesn't separate them.\n\n**Response A** spends its remaining items on points that are weaker or outside the code:\n- \"No authorization or audit trail\" is a concern about the caller, not a defect in this function.\n- The hardcoded path is a style nitpick.\n- \"No input validation\" is vague.\n- Its claim that injection \"can modify data depending on the driver\" is shaky, since sqlite3's `execute` rejects stacked statements.\n\n**Response B** gives more concrete, code-grounded issues:\n- Case and whitespace mismatches on email lookup, which is a real problem for a support-lookup tool, with a specific fix.\n- Unbounded and unordered results.\n- The redundant `if not rows` check.\n- The `if status:` empty-string edge case.\n- A brief audit-logging suggestion, placed last.\n\nB's claim about descriptor exhaustion is slightly overstated, because CPython usually closes the connection on garbage collection. Its ranking is still sensible, with the critical issue first and the minor items grouped at the end. B's findings are more relevant to the actual code, and it flags less that is out of scope.\n\nVerdict: B",
+  "usage": {
+    "input": 1531,
+    "output": 1078
+  },
+  "cost": 0.013842
+}

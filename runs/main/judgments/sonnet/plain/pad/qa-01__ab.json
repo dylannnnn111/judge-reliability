@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-01",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer under 120 words. Response A is about 90 words, so it meets the limit. Response B is well over 120 words, so it breaks the constraint.\n\nCounting Response A: the heading is 3 words, and \"Imagine 10,000 people:\" adds 3. The two bullets come to about 22 words. \"Total positives = 90 + 891 = 981\" is around 7. The probability line is about 12, and the 90/981 line about 6. The final paragraph is about 50. That puts the total near 105, which is under 120.\n\nResponse B is roughly 250 words.\n\nBoth responses reach the same correct answer, so A is better because it follows the length limit.\n\n**A**",
+  "usage": {
+    "input": 832,
+    "output": 217
+  },
+  "cost": 0.003834
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-32",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same four real problems, in the same order: the `BETWEEN` upper bound that drops September 30 orders, integer division truncating the averages, `<> 'refunded'` dropping NULL statuses, and the inner join with a redundant `HAVING`. They also both note hardcoded dates and timezone. The difference comes down to precision and the length limit.\n\n**Response A:**\n- Its fixes are correct. The `* 1.0` cast and the half-open date range both work.\n- It proposes `status IN ('paid', 'fulfilled')`, which invents status values it can't know. It presents them only as an example.\n- Its remarks on partial refunds and cancelled orders are speculative, but they are framed as things to check.\n- It runs roughly 240 words, over the 200-word limit but by less than B.\n\n**Response B:**\n- It has the same core findings and a clear \"Minor\" section, which separates priorities well.\n- It says `AVG` fixes the truncation and lists SQL Server among the affected databases. In SQL Server, `AVG` on an integer column also returns an integer, so the fix is wrong there.\n- `IS DISTINCT FROM` is not portable to every engine it mentions.\n- The sentence about guarding against division by zero and then saying NULL is fine is muddled.\n- The ORDER BY tiebreaker point is a trivial nit.\n- It runs roughly 330 words, well over the limit.\n\nA is slightly more accurate, more concise, and closer to the word limit. B's structure is a little nicer, but it has a small technical error and extra low-value content.\n\nVerdict: A",
+  "usage": {
+    "input": 1830,
+    "output": 1348
+  },
+  "cost": 0.01714
+}

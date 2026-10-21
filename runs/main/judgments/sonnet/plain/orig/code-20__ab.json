@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-20",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. Both responses find the same main bugs: the DST miscount, the silent NaN on bad input, the viewer-timezone dependence and the stale labels. They differ in accuracy.\n\n**Response A** wrongly says the DST bug may put an invoice \"in the wrong place on the overdue list\". The sign of `days` stays correct across DST. A -25h gap floors to -2, still negative, and a 23h gap on a due-tomorrow invoice floors to 0, which is not negative either. The overdue filter is therefore unaffected, and only the labels are wrong. A's worked examples are otherwise correct. It is also longer, and it puts the timezone and stale-label issues under \"Minor\" with less detail.\n\n**Response B** correctly notes that the overdue list is unaffected and that only the labels are wrong. It also spots that a full ISO timestamp becomes `\"...ZT00:00:00\"`. Its one flaw is the spring-forward example, which says a due date 3 days away floors to 2, then claims \"Due tomorrow\" can become \"Due today\". Those two statements don't match, but the underlying point (floor undercounts across the transition) is right. B's fix is correct, and the `Math.round` is harmless. It is also more concise.\n\nB's one muddled example is a smaller flaw than A's incorrect claim about the overdue list.\n\n**B**",
+  "usage": {
+    "input": 1703,
+    "output": 1488
+  },
+  "cost": 0.018286
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-15",
+  "side": "B",
+  "score": 10,
+  "model": "claude-sonnet-5-5",
+  "text": "The correct answer is 18 °F. The temperature difference is 10 °C, and multiplying by 9/5 gives 18 °F. The response's verification is also correct: 15 °C is 59 °F, 25 °C is 77 °F, and the difference is 18 °F.\n\nThe reasoning is clear and explains why the +32 offset cancels. The response is concise and well under 120 words.\n\nScore: 10",
+  "usage": {
+    "input": 361,
+    "output": 133
+  },
+  "cost": 0.002052
+}

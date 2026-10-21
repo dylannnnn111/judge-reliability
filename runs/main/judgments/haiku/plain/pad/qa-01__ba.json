@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-01",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. Both responses reach the correct answer, about 9.2% (90/981). However, Response A runs well over the 120-word limit, while Response B comes in at roughly 95 words and stays within it.\n\n**B**",
+  "usage": {
+    "input": 832,
+    "output": 515
+  },
+  "cost": 0.0003407
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "qa-28",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are correct and cover the same core points: chaining, open addressing, load factor, O(1) average and O(n) worst case, and resizing. Neither strictly meets the \"under 120 words\" limit. By my count, A is about 133 words and B about 122 to 123, so B is much closer to the limit.\n\nA adds treeified buckets (O(log n) worst case in Java's HashMap), clustering, and a typical load-factor threshold. B adds that lookups follow the same probe sequence and that resizing is amortized O(1) per insert, which explains why resizing doesn't ruin performance.\n\nSince correctness is roughly equal, B's smaller overrun of the length limit and its amortization point give it a slight edge.\n\nVerdict: B",
+  "usage": {
+    "input": 835,
+    "output": 1655
+  },
+  "cost": 0.01822
+}

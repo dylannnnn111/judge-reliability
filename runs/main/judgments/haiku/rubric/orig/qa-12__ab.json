@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-12",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses reach the correct answer: (5/6)⁴ = 625/1296, so the probability of at least one six is 671/1296 ≈ 51.8%. Both use the complement method and stay under 120 words.\n\nResponse A gives the key reasoning concisely but does not state the independence assumption. Response B lays out the steps more clearly, names the complement approach, and notes the independence of the rolls implicitly through the four-fold product. Its historical aside about the Chevalier de Méré is accurate and adds a little context without padding the answer. Its extra decimal for (5/6)⁴ is correct too.\n\nResponse B is clearer and slightly more complete, while staying within the length limit, so it has a modest edge.\n\nVerdict: B",
+  "usage": {
+    "input": 557,
+    "output": 477
+  },
+  "cost": 0.0002942
+}

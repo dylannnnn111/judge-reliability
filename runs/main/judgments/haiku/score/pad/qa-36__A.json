@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-36",
+  "side": "A",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The response's physics is broadly sound. It correctly attributes lift to downward deflection of air (Newton's third law) and to the pressure difference from faster airflow over the upper surface. It also correctly notes that excessive angle of attack causes a stall. It omits why the flow accelerates over the top, but it avoids the common \"equal transit time\" myth. The main problem is the explicit constraint: the response runs roughly 190 words, well over the 120-word limit. The extra length adds some repetition, such as restating the same lift mechanism twice, rather than new useful content. The writing is clear, but it is verbose and fails a hard requirement.\n\nScore: 4",
+  "usage": {
+    "input": 641,
+    "output": 581
+  },
+  "cost": 0.0003546
+}

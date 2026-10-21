@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-22",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly answers \"no\" and identifies the main reason: the Coriolis effect is far too weak at sink or toilet scale to set drain direction. It also names the real factors (basin shape, residual motion, and inflow or jet geometry) and gives accurate examples, including the hurricane rotation and the controlled MIT experiment. The Sydney replication claim is less certain to me, and the answer could have said more directly that the direction is effectively random for a given sink. Its length is within the limit and every sentence adds something.\n\nScore: 8",
+  "usage": {
+    "input": 458,
+    "output": 805
+  },
+  "cost": 0.0004483
+}

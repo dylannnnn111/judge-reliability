@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-20",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses correctly identify Canberra and 1927, and both are under 120 words. The comparison therefore comes down to the key reasoning and to clarity.\n\nResponse A adds correct, useful detail: the opening on 9 May 1927 by the Duke of York (later George VI), the earlier Melbourne period, and the move to the current Parliament House in 1988. All of this is accurate and concise.\n\nResponse B contains filler such as \"To answer your question directly\" and \"I hope this helpful background is useful\", plus a redundant closing summary that restates what it has already said. It leaves out who opened the building, and the mention of Melbourne is repeated. It does say that Melbourne was the seat of government since 1901, which is accurate. Its extra words add little.\n\nResponse A is more informative and clearer, so it is better.\n\nVerdict: A",
+  "usage": {
+    "input": 570,
+    "output": 266
+  },
+  "cost": 0.0038
+}

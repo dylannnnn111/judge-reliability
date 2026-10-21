@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-14",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the most important bug: OFFSET pagination combined with deleting the rows just read. Each batch shifts the remaining rows up, so advancing the offset skips unarchived data. Both give valid fixes (drop OFFSET or use keyset pagination). Both also correctly flag the non-atomic archive-then-delete sequence and the need for idempotent archiving.\n\nResponse A adds a real issue that B misses: if `archive` or the delete raises, the open transaction is left unhandled, and the next commit could persist partial work. A's ranking is also sensible, placing the lexicographic cutoff comparison and indexing among minor concerns, which is fair since the format is only a risk if inconsistent. Response B gives the string comparison issue more weight, which is defensible, and explains durability well. However, its suggestion to enlarge the batch size to reduce commit overhead is weak and its performance point is less useful. B also omits error handling entirely.\n\nOverall, A covers a real failure mode that B does not, ranks issues reasonably, and stays concise.\n\nVerdict: A",
+  "usage": {
+    "input": 1630,
+    "output": 904
+  },
+  "cost": 0.000615
+}

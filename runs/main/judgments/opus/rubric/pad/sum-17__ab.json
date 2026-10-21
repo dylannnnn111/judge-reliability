@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-17",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy**\n\nResponse A is essentially accurate:\n- The four weekends running and the licence terms (open until midnight Fri/Sat, amplified music off at 10pm nightly) are correct.\n- So are the evidence the regulator needs, Clare's explanation and the two measures, the continued logging, Fiona's dissent, the 20 October meeting, and the regulator as fallback.\n- \"Music audible past midnight\" is a fair reading of Colleen's complaint.\n\nResponse B has a clear misattribution. It says Arjun \"noted that this was the fourth weekend in a row.\" Colleen said that; Arjun only reported the three other complaints. B also frames itself as an update to residents (\"I'd like to update residents\"), but the reader is a busy manager. Its subject line, \"resolved for now,\" overstates the position: the fix hasn't been tested yet.\n\n**Coverage**\n\nBoth keep the key points. B leaves out that the regulator needs evidence, such as recordings. It also omits the dissenting resident. A includes both.\n\n**Concision**\n\nA is about 124 words, slightly over the 120-word limit. B is roughly 230 words, nearly double the limit, and much of it is padding (\"First… Second…\", \"As a result of that conversation\").\n\nA is more accurate, more complete on what matters, and far closer to the length requirement.\n\nVerdict: A",
+  "usage": {
+    "input": 1664,
+    "output": 1087
+  },
+  "cost": 0.028396
+}

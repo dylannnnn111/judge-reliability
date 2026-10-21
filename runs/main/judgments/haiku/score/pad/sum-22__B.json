@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-22",
+  "side": "B",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The response has a few accuracy problems. It says Wes will get two quotes for both the dugout roof and the north-side light globe, but the minutes only require quotes for the roof; Wes will simply arrange the globe. It also says junior numbers fell \"mostly due to cost,\" where the minutes say cost was \"the most common reason given,\" a slight overstatement. It adds an invitation for volunteers to contact the committee, which is not in the source. The core facts are otherwise right: the $40 senior rise to $340, juniors held at $180, the 5-0 vote, the $3,200 shortfall, the 14 November grant deadline, presentation night details, and the $600 gazebo cap.\n\nThe bigger failure is length. The brief asked for under 120 words, and the response runs to roughly 280, with filler such as \"Thank you all for attending,\" \"We look forward to seeing everyone there,\" and \"The following actions were agreed upon.\" That padding adds nothing for a busy manager. The key points are there, but the response is poorly concise and breaks an explicit constraint.\n\nScore: 4",
+  "usage": {
+    "input": 1457,
+    "output": 979
+  },
+  "cost": 0.0006352
+}

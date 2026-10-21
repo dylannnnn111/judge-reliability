@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-19",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. It stays under the 200-word limit, at roughly 185 words by my count, while still covering the same main issues in a sensible order. These are the unawaited `forEach`, the unhandled rejections, the missing `thumbs` directory, unbounded concurrency, and missing argument validation. It also ends with one concrete fix.\n\n**B** covers the same ground, but at about 250 words it breaks the explicit length constraint. Its last minor bullet is also muddled: it says re-runs would not reprocess the `thumbs` contents and then says existing thumbnails get silently overwritten, which confuses the point.",
+  "usage": {
+    "input": 1528,
+    "output": 1095
+  },
+  "cost": 0.014006
+}

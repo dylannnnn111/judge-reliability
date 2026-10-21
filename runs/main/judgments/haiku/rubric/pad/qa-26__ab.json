@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-26",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly attribute the blue daytime sky and the red-orange sunsets to Rayleigh scattering, with shorter wavelengths scattered more strongly and sunsets involving a longer atmospheric path. Neither contains a factual error.\n\nResponse A runs about 185 words, well over the 120-word limit the user specified. Response B is about 115 words, just under it. B also adds a correct point that A omits: the sky looks blue rather than violet because sunlight contains less violet and our eyes are less sensitive to it. Its formatting is clear and it covers both the daytime and sunset cases.\n\nSince A violates an explicit constraint and B satisfies it while adding a useful nuance, B is better.\n\nVerdict: B",
+  "usage": {
+    "input": 846,
+    "output": 1077
+  },
+  "cost": 0.0006231
+}

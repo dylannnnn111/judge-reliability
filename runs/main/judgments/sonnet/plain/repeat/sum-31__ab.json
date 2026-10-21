@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "sum-31",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B.** Both responses are accurate, but Response A does not clearly meet the \"under 120 words\" limit. I counted A at about 120 words, which is not strictly under 120, and a different counting method could push it over. Response B comes to roughly 105 words, which is comfortably compliant.\n\nA's bullet format is easy for a busy manager to scan. It also keeps a few details that B drops, such as the smaller accuracy gain at the second centre and the fact that speed gains settled within four weeks. Its \"Takeaway\" line adds a mild recommendation that the source text does not make.\n\nB is a single dense paragraph, but it covers the main findings: speed, accuracy, new workers, preference, the heat complaint, cost and payback, and the limitation. It leaves out only minor nuances.\n\nBecause the length limit was an explicit constraint and B meets it with room to spare, B is the better response.\n\n**B**",
+  "usage": {
+    "input": 1316,
+    "output": 2456
+  },
+  "cost": 0.027192
+}

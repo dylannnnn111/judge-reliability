@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-05",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses flag the same core issues and get them right:\n\n- **DST arithmetic:** subtracting two datetimes that share a `tzinfo` uses wall-clock time, so shifts across a clock change are paid wrongly.\n- **Ambiguous and nonexistent local times:** these are silently accepted.\n- **Weekend loading:** it is based on the start day only.\n- **Money maths:** it uses floats and banker's rounding.\n- **Missing checks:** there is no public-holiday handling and no input validation.\n\nTheir technical claims are accurate. A correctly says spring-forward overpays and fall-back underpays. B's worked example (01:00–05:00 paid as 4h but worked 5h at fall-back, and paid 4h for 3h at spring-forward) is also correct.\n\nThe difference is in following instructions and presentation. The user asked for under 200 words. A runs to roughly 280 words and B to roughly 400, so both overshoot, but B is far worse. B is padded with transitional filler (\"Next,\" \"Another problem is,\" \"Finally\"). It also repeats itself (\"the most serious issue\" followed by \"This is the most serious problem\"). It twice calls the code \"the response,\" which is a confusing slip. B's one unique addition, a sanity limit on shift length, is useful but minor.\n\nA is tighter, gives the same substance, and is closer to the length limit.",
+  "usage": {
+    "input": 1853,
+    "output": 711
+  },
+  "cost": 0.021632
+}

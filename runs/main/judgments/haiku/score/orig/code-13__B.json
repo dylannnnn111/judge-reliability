@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-13",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response catches the most serious defects: the December `ValueError` from `month + 1`, the day-of-month overflow (Jan 31 → Feb 31), and the drift risk when clamping is chained. It ranks them correctly and gives workable fixes, including `relativedelta` or `calendar.monthrange`. The fixed 30-day proration is a real bug, and the 31/30 overcharge example is accurate.\n\nWeaknesses: the response runs past the 200-word limit, roughly 210–225 words, which the user explicitly asked to keep under. Item 7 flags timezone handling, but `date` objects have no timezone, so that is not a meaningful problem here. Item 5 mixes real issues (negative charges from `period_end < start`) with weaker ones (`months <= 0` may be a deliberate design choice). Rounding under-billing is a legitimate but lower-priority point.\n\nOverall the core findings and their ordering are strong, but the length violation and the spurious timezone flag cost points.\n\nScore: 6",
+  "usage": {
+    "input": 963,
+    "output": 1124
+  },
+  "cost": 0.0006582999999999999
+}

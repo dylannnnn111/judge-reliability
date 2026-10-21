@@ -1,0 +1,14 @@
+{
+  "pair": "qa-32",
+  "side": "A",
+  "author": "opus",
+  "model": "claude-haiku-5-5",
+  "original": "**Why leap years exist:** Earth takes about 365.2422 days to orbit the Sun, not exactly 365. Without correction, the calendar would drift about 6 hours per year, and the seasons would slowly shift. Adding a day every four years makes up for most of that.\n\n**Why 1900 wasn't one:** Adding a day every four years assumes a 365.25-day year, which slightly overcorrects by about 11 minutes a year, or roughly 3 days every 400 years. The Gregorian calendar (1582) fixes this with these rules:\n\n- Divisible by 4 → leap year\n- Except years divisible by 100 → not leap years\n- Except years divisible by 400 → leap years\n\nSo 1900 (divisible by 100, not 400) was skipped, while 2000 (divisible by 400) was a leap year.",
+  "text": "**Why leap years exist:** To begin with, it helps to understand that Earth takes about 365.2422 days to orbit the Sun, not exactly 365 as a simple calendar year would suggest. Put another way, the difference is not zero, and that small gap matters over time. Without correction, the calendar would drift about 6 hours per year, and the seasons would slowly shift relative to the dates on the calendar. To address this, adding a day every four years makes up for most of that drift, which is why we have leap years in the first place.\n\n**Why 1900 wasn't one:** It is worth looking at why the simple every-four-years rule needs refinement. Adding a day every four years assumes a 365.25-day year, which slightly overcorrects by about 11 minutes a year, or roughly 3 days every 400 years. Because of this overcorrection, the Gregorian calendar (1582) was introduced to fix the problem, and it does so using the following rules:\n\n- Divisible by 4 → leap year\n- Except years divisible by 100 → not leap years\n- Except years divisible by 400 → leap years\n\nApplying these rules, we can see how the system works in practice. So 1900 (divisible by 100, not 400) was skipped, while 2000 (divisible by 400) was a leap year.",
+  "ratio": 1.7,
+  "usage": {
+    "input": 909,
+    "output": 1919
+  },
+  "cost": 0.0010504000000000002
+}

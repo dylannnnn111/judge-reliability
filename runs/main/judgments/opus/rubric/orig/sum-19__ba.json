@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-19",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both summaries are essentially accurate and keep the core points. They cover consent for assignment and subletting, the \"not unreasonably refused\" standard, the landlord's possible demands, the 30% subletting cap, change of control, the 28-day response period, and the advice to negotiate a release before a sale.\n\n**Accuracy and wording**\n- **Liability risk:** Response A says \"we remain liable for the full remaining term if the buyer defaults, unless the landlord releases us.\" Because it is tied to a buyer default and a written release, this matches the source's point that the 12-month release doesn't apply. Response B's \"possibly for the rest of the term\" is also accurate.\n- **Ending liability:** Response B adds \"Only a written release from the landlord ends that liability.\" That slightly overstates the source, since liability would also end when the term ends.\n- **Buyer's financials:** Response B introduces \"the buyer's financials\" before any sale has been mentioned, which is a little awkward. Response A ties this to \"e.g. selling the business.\"\n\n**Points kept**\n- Response A keeps the \"two years\" of accounts detail.\n- Response B keeps the Kingsley Property Group contact for consent forms. This is a minor, useful extra.\n\n**Concision**\n- Both responses sit around the 120-word limit by my rough count. Response A is about 116 words in the body plus its title, and Response B is about 129.\n- Response A's bulleted layout, with a clearly flagged \"Key risk\" and \"Action,\" is easier for a busy manager to scan. It also puts the most important risk front and centre.\n\nOverall, Response A is slightly more precise and better suited to the reader. Response B's extra contact detail doesn't outweigh that.\n\nVerdict: A",
+  "usage": {
+    "input": 1515,
+    "output": 2115
+  },
+  "cost": 0.04836
+}

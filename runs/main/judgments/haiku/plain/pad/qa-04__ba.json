@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-04",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. Both responses give the correct answer: a final price of $480 and a 4% overall decrease. However, Response A runs well over the 120-word limit (roughly 200 words), while Response B stays under it (roughly 100 words). B also adds a useful general formula (−p²) without padding.\n\nB",
+  "usage": {
+    "input": 720,
+    "output": 535
+  },
+  "cost": 0.0003395
+}

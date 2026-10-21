@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-18",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "**B**\n\nResponse A is about 140 words, clearly over the 120-word limit. Response B is roughly 120 words, at or just over the limit, and is much closer to compliance. Both cover the same content accurately, and B's structure suits a busy manager.",
+  "usage": {
+    "input": 1287,
+    "output": 1507
+  },
+  "cost": 0.0008822000000000001
+}

@@ -1,0 +1,13 @@
+{
+  "item": "qa-34",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "They use **public-key cryptography**, usually through a **key exchange** such as Diffie-Hellman:\n\n1. Each side picks a private secret and computes a matching public value from it.\n2. They exchange only the public values, in the open.\n3. Each combines its own private secret with the other's public value. The math gives both the **same shared key**, while an eavesdropper who sees only the public values can't feasibly compute it.\n4. That shared key then encrypts the conversation with fast symmetric encryption (e.g., AES).\n\nTo stop an impostor from secretly sitting in the middle, the server proves its identity with a **digital certificate** signed by a trusted certificate authority. HTTPS (TLS) works exactly this way.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 61,
+    "output": 269
+  },
+  "cost": 0.005624,
+  "at": "2026-10-14T01:50:54.959Z"
+}

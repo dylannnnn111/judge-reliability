@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "sum-05",
+  "side": "B",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is mostly accurate and covers the key points. The headline finding of no measurable output change is right. The back discomfort figures (31% vs 44%) and the standing-time drop (47 to 19 minutes) are also correct. It rightly frames the 78% as people *feeling* more productive, and it mentions the short task and the lack of blinding. \"No different\" is slightly stronger than \"no statistically significant difference\", but that is minor.\n\nHowever, it breaks the explicit limit of under 120 words. I count about 145 words. It also wastes words on filler such as \"To summarize the main finding\", \"In other words\", \"It is worth noting that\" and \"There are also a few points to keep in mind\". It does not explicitly say the study found the back-comfort benefit was the most reliable, or advise that organisations shouldn't assume heavy long-term use. The hard length constraint is violated, and that matters for a busy manager.\n\nScore: 4",
+  "usage": {
+    "input": 1174,
+    "output": 1324
+  },
+  "cost": 0.015588
+}

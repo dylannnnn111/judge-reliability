@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-03",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly ranks SQL injection first and gives a working parameterized fix. The connection leak is real, and its note that `with sqlite3.connect()` doesn't close the connection is accurate and useful. The redundant `if not rows` and the `if status:` truthiness point are valid minor items. The email normalization point is reasonable but debatable, since case-insensitive matching may or may not be intended. Ordering and audit logging are design suggestions rather than bugs that matter most. The response also misses nothing critical, though it doesn't mention the hardcoded DB path or the lack of error handling. The main weakness is the instruction to stay under 200 words: with the code block, the response runs well past that limit, and some of the extra length goes to lower-value items.\n\nScore: 6",
+  "usage": {
+    "input": 1004,
+    "output": 651
+  },
+  "cost": 0.0004259
+}

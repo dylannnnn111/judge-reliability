@@ -1,0 +1,13 @@
+{
+  "item": "code-07",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "1. **The last partial batch is silently dropped.** `chunked` uses `len(items) // size`, so any remainder under 500 contacts is never sent. For example, 1,234 contacts sends only 1,000. Fix: use `range(0, len(items), size)` and slice from there.\n\n2. **Failed batches are swallowed.** The `except` logs the error and continues, so the function returns a count with no indication that anything failed. The caller can't tell a full sync from a partial one.\n\n3. **The success message is misleading.** `log.info(\"synced %d contacts\", sent)` runs even when batches failed. Track failed batches and contacts separately, and log a warning or error when any fail.\n\n4. **No failure signal for the hourly job.** If the scheduler only checks the process exit code, a run that loses most of its data still reports success. Raise or return a nonzero status when anything fails, and alert on it.\n\n5. **No retries for transient errors.** A single timeout or 429 from the CRM permanently skips that batch until the next run. Add bounded retries with backoff, and confirm `upsert_contacts` is idempotent so retries are safe.\n\n6. **Requires a sliceable sequence.** `len()` and slicing fail on generators or other iterables. Document the requirement, or materialize the input with `list()` first.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 273,
+    "output": 778
+  },
+  "cost": 0.00041630000000000004,
+  "at": "2026-10-14T01:53:06.844Z"
+}

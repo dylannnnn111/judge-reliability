@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-12",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the main problems: the N+1 queries, the crash on a missing customer, the non-sargable `strftime` filter, and the timezone ambiguity. Both also give workable fixes. Response A adds a valid point about snapshot consistency across separate reads, which matters for a finance export. However, its item 4 (`COUNT(*)` undercounting units) is speculative since the schema isn't shown, and its item 7 is weak: float division by 100 is fine for display, and the hardcoded `$` is minor. Response B's points are more concrete and more relevant to finance: exporting formatted strings instead of numbers, negative amounts rendering as `$-12.34`, nondeterministic ordering within a customer, and silent empty results from a malformed month. Its ranking is sensible, and its fixes are specific. Response A's snapshot point is a real strength, but overall B flags fewer speculative issues and more that matter for this use case.\n\nVerdict: B",
+  "usage": {
+    "input": 1750,
+    "output": 1023
+  },
+  "cost": 0.0006865
+}

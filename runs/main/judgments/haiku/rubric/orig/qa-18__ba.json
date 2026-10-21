@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-18",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify Willem Janszoon and the *Duyfken* landing at Cape York in 1606, and both stay under 120 words. Both also correctly note the later Dirk Hartog landing in 1616 and the lack of reliable evidence for earlier Portuguese landings.\n\nResponse B adds the key reasoning that the crew mistook the land for an extension of New Guinea, which explains why the landing happened. It also gives the date range and mentions the deadly encounter with Aboriginal people, which is historically accurate and useful context. Response A's mention of the pewter plate is a nice detail, but it is less relevant to the question than B's explanation of the expedition's purpose. Neither contains errors that I can see, so B is slightly better on the reasoning criterion.\n\nVerdict: B",
+  "usage": {
+    "input": 714,
+    "output": 715
+  },
+  "cost": 0.00042889999999999996
+}

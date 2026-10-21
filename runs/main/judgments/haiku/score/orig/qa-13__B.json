@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-13",
+  "side": "B",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response gives the correct answer: A is a knave and B is a knight. Its reasoning is also sound. If A were a knight, the statement \"We are both knaves\" would be true, which contradicts A being a knight. So A must be a knave, which makes the statement false. A false \"both are knaves\" means at least one is not a knave, and since A is a knave, B must be a knight. The argument is concise, well under 120 words, and clearly structured. The only minor weakness is the phrasing \"at least one of us is not a knave,\" which is slightly awkward but not wrong.\n\nScore: 9",
+  "usage": {
+    "input": 394,
+    "output": 423
+  },
+  "cost": 0.0002509
+}

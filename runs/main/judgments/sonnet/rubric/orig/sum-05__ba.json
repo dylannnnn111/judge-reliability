@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-05",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries are accurate on the numbers (214 workers, 12 weeks, 31% vs 44%, 78%, 47 to 19 minutes) and both stay under 120 words. Both include the main caveats: the short task and the lack of blinding.\n\nResponse A lists \"78% … felt more productive\" under \"Benefits found\". That could lead a skimming manager to treat a perception as a real benefit, though the wording is accurate. It also leaves out that the study was randomised, which supports the credibility of the null result.\n\nResponse B states the contrast between perceived and measured productivity directly: users \"*felt* more productive\" but speed and accuracy did not change. It also mentions randomisation and gives a practical takeaway. That takeaway, to justify the desks on comfort and health rather than productivity, goes slightly beyond the brief. It is still a reasonable reading of the finding that back discomfort was the most reliable benefit, and it is not presented as the researchers' own conclusion. B's \"novelty fades\" point is framed well too.\n\nB is slightly better for a busy manager: it avoids the potential mislabeling of perception as a benefit and offers a usable implication, with no real inaccuracy.\n\nVerdict: B",
+  "usage": {
+    "input": 1371,
+    "output": 959
+  },
+  "cost": 0.012332
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-19",
+  "side": "A",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response gets the core facts right: \"kangaroo\" derives from *gangurru* in Guugu Yimithirr, it referred to the grey kangaroo, and Cook's expedition recorded it in 1770 near Cooktown. It correctly labels the \"I don't understand\" story a myth. It is under 120 words and clearly organized.\n\nIts main weakness is that it never states the actual reasoning behind the myth. It doesn't say that the supposed phrase would be a Guugu Yimithirr expression meaning roughly \"I don't know\" or \"I don't understand,\" and that such a claim is implausible because the word is attested as the animal's name. The Haviland attribution is plausible but not specific enough to verify. These gaps lower the reasoning score somewhat, but the answer is accurate and readable.\n\nScore: 8",
+  "usage": {
+    "input": 448,
+    "output": 948
+  },
+  "cost": 0.0005187999999999999
+}

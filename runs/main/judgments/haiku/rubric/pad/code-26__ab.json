@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-26",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the main bug: `qty` stays a string, so `o.items += line.qty` concatenates instead of adding. Both also flag naive CSV splitting, missing validation, the plain-object map, and CRLF handling, with sensible fixes. Response A's point about `__proto__` and `constructor` is more specific. Those keys would make `orders[id]` return a truthy inherited value, so the code writes into built-in prototypes. Response B says only that such keys \"misbehave.\" Response B's insight that `NaN` makes the sort comparator unreliable is a good one that A lacks. Response A has a small muddle in its minor notes about empty input, saying it \"yields a bogus row\" and then that `slice(1)` handles it. Response B is noticeably wordier, with more padding, and goes further over the 200-word limit. Overall, A is more concise and slightly more precise, though the difference is small.\n\nVerdict: A",
+  "usage": {
+    "input": 1886,
+    "output": 1272
+  },
+  "cost": 0.0008246
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-11",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B.** Both responses correctly conclude that switching wins with probability 1/2, so neither has a correctness edge. B's reasoning is more rigorous, and it more likely respects the word limit.\n\n- **Rigour:** B handles the random host properly. It weights each case by the host's 1/2 chance of picking door 2, giving 1/6 and 1/6, then normalises to 1/2 each. A says door 2 \"shows a goat for certain\" in two cases. That holds only if you already condition on the host having opened door 2, and A never states this. It is not wrong, but it is looser.\n- **Direct answer:** B opens with \"No,\" which directly answers \"Should you switch?\" A's \"It doesn't matter\" also works.\n- **Insight:** A's contrast with the classic Monty Hall problem (where the knowing host pushes door 3 to 2/3) is a genuine plus. It is not essential to the question, though.\n- **Word limit:** By rough count, A is about 120–122 words and B about 117. Counting varies with tokens like \"1/2,\" but B more likely stays under 120.",
+  "usage": {
+    "input": 686,
+    "output": 1228
+  },
+  "cost": 0.027304
+}

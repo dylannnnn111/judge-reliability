@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-40",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response is correct. Light's speed (about 300,000 km/s) makes its travel time negligible, while sound at about 343 m/s takes roughly 3 seconds per km and 5 seconds per mile, so the divide-by-3 and divide-by-5 rules are accurate approximations. The 10-second example works out to about 3.3 km or 2 miles, which the response rounds reasonably. The 30-second safety threshold matches standard guidance. It covers both parts of the question with the key physics, stays under 120 words, and is clearly organized. The only possible quibble is that the 30-second safety line is a rule of thumb rather than a precise limit, but it is presented appropriately.\n\nScore: 9",
+  "usage": {
+    "input": 442,
+    "output": 629
+  },
+  "cost": 0.0003587
+}

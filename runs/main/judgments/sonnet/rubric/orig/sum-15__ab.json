@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-15",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries are under 120 words and cover the same points: the 22% drop in lane drifting, the 0.09-second reaction-time gain, the dependence on night-shift experience, the 7am vs 6am effect, the implication, and the simulator and demographic limitations.\n\nThe main difference is precision. The source says that for new night workers the nap made no measurable difference to lane drifting. Response B says exactly that (\"lane drifting didn't improve\"). Response A says new workers \"saw no measurable benefit\", which is broader and could be read as covering reaction time too, which the source doesn't say. This is a small overgeneralisation, but it is the only accuracy gap between them.\n\nResponse B also opens with a clear heading and a one-line statement of the study's purpose, which suits a busy manager. Response A's \"Key caveats\" label puts the main contrast between experienced and new workers under a heading that sounds secondary. Neither response mentions the 3–6 month group, which the source leaves unaddressed.\n\nResponse B is slightly more accurate and slightly clearer.\n\nVerdict: B",
+  "usage": {
+    "input": 1400,
+    "output": 848
+  },
+  "cost": 0.01128
+}

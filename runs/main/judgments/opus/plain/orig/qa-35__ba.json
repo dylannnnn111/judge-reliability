@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-35",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses are accurate and well organized, and they cover the same core ideas. Response B adds useful detail: specific resistance mechanisms and concrete examples of misuse.\n\nHowever, Response B is about 121 words, which slightly exceeds the explicit \"under 120 words\" limit. It also repeats the \"not finishing courses\" claim, which current evidence increasingly disputes.\n\nResponse A is about 90 words, comfortably within the limit. It still explains both questions clearly and adds drug-class examples and horizontal gene transfer. Because it meets the stated constraint and covers the essentials accurately, it is the better answer.",
+  "usage": {
+    "input": 652,
+    "output": 1536
+  },
+  "cost": 0.033328
+}

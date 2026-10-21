@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-06",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. It is accurate and fits the limit, while Response A breaks the limit and adds a small inaccuracy.\n\n**Length:** Response A runs to roughly 190 words, well over the 120-word cap. Response B comes to about 110 words, so it meets the limit.\n\n**Accuracy:** Response B's facts all match the source: the date, the $3.2 million cost, the joint funding, the pools, the solar share, the prices, the hours and the opening-day details. Response A says \"All programs ... will resume on opening day,\" which is slightly loose. The source says lap swimming, aqua aerobics and learn-to-swim resume, and swim school enrolments open separately on 20 October. Response A also adopts the council's voice (\"we are pleased to share,\" \"we look forward to welcoming you,\" \"We encourage you to mark the date\"). That reads as a rewritten press release, not a neutral summary for a manager.\n\n**Content:** Both responses cover the key points. Response B includes the specific programs, and Response A leaves them out in favour of the vague \"all programs.\" Response B's extra detail is correct and useful. Response A's extra words are mostly filler.\n\nVerdict: B",
+  "usage": {
+    "input": 1622,
+    "output": 1460
+  },
+  "cost": 0.017844
+}

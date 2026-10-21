@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-05",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses identify the same core problems: DST arithmetic on same-`tzinfo` datetimes, fold/nonexistent times, start-day-only weekend loading, float money math with banker's rounding, and missing public-holiday handling. Both rank the DST bug first and give valid fixes. Response B's concrete DST examples check out (the April 01:00–05:00 shift is 5h actual vs 4h paid, and the October one is 3h actual vs 4h paid), and its shift-length sanity check is a useful addition. However, B runs about 320 words against the 200-word limit, with some filler such as \"the most serious problem in the response.\" Response A is tighter, at roughly 240 words, and its explanations are equally accurate, though it lacks B's worked examples. Response B's extra length adds some real value, but it also overshoots the requested limit more, so the two are close with a slight edge to A on constraint adherence and concision.\n\nVerdict: A",
+  "usage": {
+    "input": 2009,
+    "output": 2015
+  },
+  "cost": 0.0012084
+}

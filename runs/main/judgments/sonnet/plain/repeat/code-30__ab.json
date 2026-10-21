@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "code-30",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B is the better response. Both responses correctly identify the main bug, `COUNT(*)` returning 1 for agents with no tickets. Both also flag the misleading `COALESCE(..., 0)` on the average and the NULL exclusion in the average.\n\nThe deciding factor is the explicit \"under 200 words\" limit. My rough count puts Response A at about 230 words, which breaks it. Response B comes in around 185, which respects it.\n\nOn content, A adds two extra points: the lack of a time window and possible integer truncation in `AVG`. The time-window point is debatable, since the query's own comment describes a snapshot of open tickets. The truncation point is database-dependent and A itself calls it minor. B's extra points are the hard-coded `status` and `active` assumptions, which are reasonable. B's last point is mostly filler, and it also doesn't mention that the `ON`-clause filter is correctly placed.\n\nA's content is slightly richer, but ignoring the length constraint outweighs that.\n\n**B**",
+  "usage": {
+    "input": 1336,
+    "output": 1647
+  },
+  "cost": 0.019142
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-14",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses reach the correct answer, 7.5 hours, via the same valid reasoning: net rate 1/3 − 1/5 = 2/15 tank per hour, then 1 ÷ (2/15) = 7.5 hours. Both are under 120 words. Response A is concise and gives the key steps directly. Response B adds a restated answer up front and a summary, which repeat content without adding new correct information, making it slightly wordier. Clarity is comparable; A is tighter and avoids redundancy, while B's structure is only marginally more readable for a reader who wants the summary. Since length is not a merit in itself, the more efficient response is slightly better.\n\nVerdict: A",
+  "usage": {
+    "input": 747,
+    "output": 222
+  },
+  "cost": 0.0001857
+}

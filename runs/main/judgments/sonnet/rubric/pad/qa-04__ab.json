@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-04",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses reach the correct answer: a final price of $480 and an overall change of −4%.\n\nThe user asked for an answer in under 120 words. Response A is roughly 80 words, so it fits. Response B is well over 200 words, so it violates the constraint.\n\nResponse A's general formula, net change = −p², is correct for this case (1 − p² = 0.96). Its explanation is also correct and concise.\n\nResponse B is correct but repeats itself and breaks the length limit.\n\nResponse A is better.\n\nVerdict: A",
+  "usage": {
+    "input": 865,
+    "output": 166
+  },
+  "cost": 0.00339
+}

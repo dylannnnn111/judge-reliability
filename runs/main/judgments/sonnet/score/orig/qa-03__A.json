@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-03",
+  "side": "A",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The question asks \"by what percentage has the interest rate increased?\" The ambiguity is between percentage points (1) and relative percent (25%). The response covers both and clearly distinguishes them. The calculation is correct: (5−4)/4 × 100 = 25%. It's under 120 words and clear.\n\nA possible quibble: the response leads with \"1 percentage point\" before giving 25%, but the question literally asks \"by what percentage,\" which most likely expects 25%. Still, the response states 25% clearly as the relative increase. This is a good, complete answer.\n\nScore: 9",
+  "usage": {
+    "input": 307,
+    "output": 185
+  },
+  "cost": 0.002464
+}

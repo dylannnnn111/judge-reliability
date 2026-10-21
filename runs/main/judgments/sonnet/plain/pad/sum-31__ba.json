@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-31",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. It stays under the 120-word limit at about 104 words, and it covers the key points: the trial design, speed and accuracy gains, the benefit for new workers, staff preference and the heat complaint, cost and payback, and the limitation.\n\n**B** runs to roughly 190 words, well over the limit. It also pads with filler, such as an intro that restates the task and a sentence telling the reader to keep the limitation in mind. That is a poor fit for a busy manager.\n\n**A**",
+  "usage": {
+    "input": 1457,
+    "output": 910
+  },
+  "cost": 0.012014
+}

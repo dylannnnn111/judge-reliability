@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-40",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly identifies the most important bug: the pipe into `while` runs the loop in a subshell, so `alerts` never updates and the script always exits 0. Its process-substitution fix is right. Bug 2 is also real: with `pipefail` and `set -e`, a failed `curl -f` makes the run exit non-zero and page for the wrong reason, and it stops remaining checks.\n\nBug 3 has a wrong mechanism. A failing `[ ]` test inside an `if` condition does not trigger `set -e`, so the script continues. The real problem is an error message on every such row and a silently skipped filesystem, not an abort. Bug 4 is a reasonable design note, and bug 5 is vague. The response misses more important issues: `df` can hang on a stale NFS mount and block the cron job indefinitely, and `curl` has no timeout, so a slow endpoint can also stall the run. Those matter for a 5-minute pager job.\n\nThe ordering is sensible and most fixes are concrete, but one factual error, two weak items, and two significant omissions keep this from a high score.\n\nScore: 6",
+  "usage": {
+    "input": 1047,
+    "output": 1318
+  },
+  "cost": 0.0007637000000000001
+}

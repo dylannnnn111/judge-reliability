@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-06",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Each gives the correct reopening date, funding split, pool and accessibility upgrades, solar share, 20 October enrolment date, unchanged prices, opening-day free entry and hours. Both stay under 120 words, and neither invents facts. Both describe the 2026-27 price freeze without the \"rest of the season\" qualifier, a minor simplification shared equally.\n\nResponse A includes a few details the other drops: the adult change table, and the year-round swim lessons that the heated pool enables. Those add practical value for a manager. Response B is slightly tighter and covers all the essentials, but it omits those two useful points. The length difference is small, so the extra content in A is worth more than the marginal concision of B.\n\nVerdict: A",
+  "usage": {
+    "input": 1512,
+    "output": 1703
+  },
+  "cost": 0.0010027
+}

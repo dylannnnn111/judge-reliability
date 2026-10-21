@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "qa-29",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "**A**\n\nBoth responses give correct figures ($2,500 for simple interest and about $4,322 for compound interest over 30 years at 5% on $1,000). The deciding factor is the word limit. Response A is about 100 words and complies with the \"under 120 words\" instruction. Response B is about 125 words, so it exceeds the limit, even though its formatting and Rule of 72 tip are useful.",
+  "usage": {
+    "input": 576,
+    "output": 843
+  },
+  "cost": 0.00047910000000000004
+}

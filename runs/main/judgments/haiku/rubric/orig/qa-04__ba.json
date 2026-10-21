@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-04",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly compute the final price of $480 and the overall change of −4%, and both explain why the changes don't cancel: the discount applies to the larger $600 base. Both stay under 120 words. Response A's step-by-step layout and its \"1.20 × 0.80 = 0.96\" check are clear. Response B reaches the same answer more concisely and adds a correct general rule, that raising and then lowering by the same percentage *p* yields a net change of −*p*². That extra insight is accurate and useful, so B is slightly better.\n\nVerdict: B",
+  "usage": {
+    "input": 658,
+    "output": 402
+  },
+  "cost": 0.00026680000000000003
+}

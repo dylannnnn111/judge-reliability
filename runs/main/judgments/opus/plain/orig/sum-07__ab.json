@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-07",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A leads with the required action: the Classic CSV export removal will break imports. That is the most important point for a busy manager, and A puts it first. A also stays under the 120-word limit at about 117 words.\n\nResponse B opens with features and only then reaches the action item. By my count it comes to about 122 words, slightly over the limit.",
+  "usage": {
+    "input": 1247,
+    "output": 845
+  },
+  "cost": 0.021888
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-20",
+  "side": "B",
+  "score": 10,
+  "model": "claude-sonnet-5-5",
+  "text": "The capital is Canberra, which is correct. Federal Parliament first sat in Canberra on 9 May 1927, when the provisional Parliament House opened, and the Duke of York (later George VI) opened it. All of this is accurate. Parliament met in Melbourne from 1901 until 1927, also correct. The move to the new Parliament House on Capital Hill came in 1988, which is correct too (opened 9 May 1988 by Queen Elizabeth II).\n\nThe response is about 65 words, well under the 120-word limit. The extra context is accurate and useful, and it supports the answer without padding. It is clear and well formatted.\n\nOne small nuance is that Parliament's first sitting in Canberra was on 9 May 1927, the day of the opening, so the answer holds up.\n\nScore: 10",
+  "usage": {
+    "input": 334,
+    "output": 260
+  },
+  "cost": 0.003268
+}

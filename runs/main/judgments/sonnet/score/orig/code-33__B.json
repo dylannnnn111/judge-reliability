@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-33",
+  "side": "B",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds the one bug that really matters. `WHERE p.status = 'succeeded'` turns the LEFT JOIN into an inner join, so zero-payment customers never appear, and those are the customers the list exists to find. It ranks this first and gives a correct fix that moves the condition into the ON clause.\n\nThe rest is weaker:\n- **Item 2 (dates):** This is speculative and partly wrong. In SQLite, comparing a `YYYY-MM-DD HH:MM:SS` timestamp against a `date()` string works correctly. The epoch warning is a fair \"confirm the format\" note, and the UTC point is minor.\n- **Item 3 (paying vs. non-free):** This is a plausible business-logic concern. The NULL-plan point is valid but low-impact.\n- **Item 4 (COUNT):** Suggesting `COUNT(*)` as \"clearer\" is wrong. After the fix it would return 1 for zero-payment customers, which would break the exact signal the list relies on. Calling it \"correct but less clear\" misleads the reader. The flag-column idea is fine.\n- **Length:** The response runs well over the 200-word limit.\n\nOverall it finds and fixes the critical bug, but it adds a harmful suggestion (`COUNT(*)`), some speculative items, and exceeds the length limit.\n\nScore: 6",
+  "usage": {
+    "input": 950,
+    "output": 953
+  },
+  "cost": 0.01143
+}

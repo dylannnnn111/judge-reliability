@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-34",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.**\n\n**Issues found.** Both responses catch the key bug: loop-variable capture under Go 1.21, which can make the status page report the wrong URL or the same URL twice. Both also flag discarded errors, nondeterministic order, the missing timeout and unbounded concurrency. Both give correct fixes, including `u := u`, passing `u` as an argument, and writing to `results[i]` without the mutex.\n\n**Ranking.** A puts \"no timeout\" second. That is the right call: one hung endpoint blocks `wg.Wait()` forever, so the status page never updates. That outranks discarded errors or ordering. B buries the timeout in item 4, below error details and result order, which is a weaker ranking.\n\n**Accuracy.** B's go.mod nuance is correct and useful: Go 1.22 loop semantics apply only when go.mod declares `go 1.22` or later. However, B's item 5 claims the `main` stub \"wouldn't catch bug 1.\" That is shaky. `main` prints `r.URL`, which comes from the captured `u`, so the stub would often visibly print the same URL twice. B's panic/recover point is also a marginal concern to raise in a short review.\n\n**Length.** The user asked for under 200 words. A is roughly at the limit. B overshoots noticeably, and its extra content (item 5) is partly incorrect rather than adding value.\n\nOverall, A ranks the issues better, stays closer to the length limit and avoids the questionable claim. B's go.mod detail is a real plus, but it doesn't outweigh these.\n\nVerdict: A",
+  "usage": {
+    "input": 1602,
+    "output": 1150
+  },
+  "cost": 0.029408
+}

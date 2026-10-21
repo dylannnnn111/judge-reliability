@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-28",
+  "side": "B",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The response is mostly accurate on the core figures: 84 staff, $3.9M, the eight-week cap, the one-quarter direction with eight weeks' notice, the two-week cash-out with four weeks remaining, the 24 December to 2 January shutdown, and the warehouse exemption. It has three problems. First, the shutdown alternatives (unpaid leave or making up time) are presented as an option for everyone, but the source limits them to staff without enough leave. Second, the \"Your action\" line is written to staff (\"you will receive your team's high-balance list\"), which confuses the audience, since the user asked for a summary for a manager and only managers receive that list. Third, it runs to roughly 180 words, well over the 120-word limit, and much of the length comes from restating the scope and an explanatory opening rather than adding decision-relevant content. It also omits the \"full-time and part-time\" scope detail and the 40-day figure, though these are minor.\n\nScore: 4",
+  "usage": {
+    "input": 1228,
+    "output": 1106
+  },
+  "cost": 0.0006758
+}

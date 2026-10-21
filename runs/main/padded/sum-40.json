@@ -1,0 +1,14 @@
+{
+  "pair": "sum-40",
+  "side": "B",
+  "author": "haiku",
+  "model": "claude-haiku-5-5",
+  "original": "Riverstone Education Research Group studied whether allowing water bottles in exams improves results in 11 regional NSW secondary schools, using 1,622 Year 10 students. Students with water bottles improved by an average of 1.8 marks out of 100 compared with the previous year, versus 1.1 marks without. This 0.7-mark gap was not statistically significant, so the large overseas claim of a 10 per cent gain was not supported. Most students (71 per cent) said water helped them concentrate, and there were no significant problems when clear, label-free bottles were required. The study concludes that water bottles are low-cost and well liked, but schools should not expect better marks. The decision should rest on student comfort and wellbeing. Limitations include non-random school allocation and hot exam weather.",
+  "text": "The Riverstone Education Research Group set out to examine whether allowing water bottles in exams improves student results. The study was carried out in 11 regional NSW secondary schools and involved 1,622 Year 10 students. When the results are considered, it is useful to start with the central comparison. Students who had water bottles improved by an average of 1.8 marks out of 100 compared with the previous year, while students without water bottles improved by an average of 1.1 marks. In other words, the difference between the two groups was 0.7 marks. This 0.7-mark gap was not statistically significant, and so the large overseas claim of a 10 per cent gain was not supported by this study.\n\nBeyond exam marks, the researchers also asked students about their experience. Most students (71 per cent) said that water helped them concentrate. The study also found that there were no significant problems when clear, label-free bottles were required, which suggests that the practical side of the policy could be managed without difficulty.\n\nTaking these findings together, the study concludes that water bottles are low-cost and well liked, but schools should not expect better marks as a result of allowing them. Put simply, the decision should rest on student comfort and wellbeing rather than on any expected improvement in academic performance. Schools considering this policy may therefore wish to weigh it primarily on those grounds.\n\nIt is also worth noting the limitations of the study. These include non-random school allocation and hot exam weather, both of which should be kept in mind when interpreting the results.",
+  "ratio": 2.09,
+  "usage": {
+    "input": 875,
+    "output": 1756
+  },
+  "cost": 0.0009655
+}

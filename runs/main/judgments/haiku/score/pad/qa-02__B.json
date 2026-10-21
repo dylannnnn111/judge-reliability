@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-02",
+  "side": "B",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The final answer is correct: the total distance is 320 km, the total time is 10/3 hours, and 320 ÷ (10/3) = 96 km/h. The response also gives the key insight that this is the harmonic mean, not the arithmetic mean, and explains why the slower leg pulls the average down.\n\nHowever, the user asked for an answer under 120 words, and this response runs roughly 150 words. That is a clear violation of an explicit constraint. The step-by-step breakdown and the closing explanation are useful, but the extra length goes against the instruction. The writing itself is clear and well organized.\n\nScore: 5",
+  "usage": {
+    "input": 570,
+    "output": 701
+  },
+  "cost": 0.0004075
+}

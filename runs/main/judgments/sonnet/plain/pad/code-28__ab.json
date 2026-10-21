@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-28",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is the better response, mainly because it follows the length limit more closely and orders the issues better.\n\nNeither response meets the \"under 200 words\" limit. A runs roughly 260 words and B roughly 320, so A overshoots less. B also opens with a filler sentence (\"Below is a review... which covers seven points\") that the user didn't need.\n\nBoth find the main problems: the missing `client.release()`, the race condition on the balance check, the unvalidated destination wallet, deadlock risk, `ROLLBACK` masking the original error, and the same-wallet transfer. Their fixes are similar and correct.\n\nOn ordering, A puts the connection leak first. The leak affects every call and exhausts the pool quickly, so it arguably matters most. B puts the leak third, behind the race condition and the vanishing money. That ordering is defensible but less convincing, since the leak breaks the service almost immediately.\n\nA also adds two points B lacks: idempotency for API retries, and the `pg` bigint-as-string caveat. The bigint point is slightly overstated because JavaScript coerces the string in the comparison. B adds a `CHECK (balance_cents >= 0)` constraint, which is a useful defensive measure.\n\nA is more concise and better prioritized.\n\n**A**",
+  "usage": {
+    "input": 1824,
+    "output": 970
+  },
+  "cost": 0.013348
+}

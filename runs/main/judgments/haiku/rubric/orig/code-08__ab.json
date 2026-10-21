@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-08",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the most important problems: the silent `except: pass` followed by an unconditional move to `done`, uploads that may still be in progress, non-idempotent partial imports, missing locking, the `rename` overwrite, the unclosed file handle, and whole-file loading. Both rank these sensibly and give workable fixes.\n\nResponse A adds two valid points that B lacks: the case-sensitive `.jsonl` filter and `os.rename` failing across filesystems. Response B adds points A lacks: the misleading `imported` counter and the fact that one rename error aborts the whole loop. B also gives a clearer upload convention (`.tmp` then rename, or a `.ready` marker) and states the encoding concern explicitly. Response A runs slightly past the 200-word limit, while B stays within it. Given the close substance and B's compliance with the length constraint, B is marginally better.\n\nVerdict: B",
+  "usage": {
+    "input": 1561,
+    "output": 952
+  },
+  "cost": 0.0006321
+}

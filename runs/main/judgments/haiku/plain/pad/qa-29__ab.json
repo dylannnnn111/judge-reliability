@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-29",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "**A** is better because it follows the length constraint. Response A is about 100 words, under the 120-word limit. Response B is roughly 175 words, so it exceeds the limit. Both explain the core idea clearly and give the same $1,000 at 5% for 30 years example, but B's extra material (the Rule of 72 and the extended discussion) is not needed.\n\nA",
+  "usage": {
+    "input": 672,
+    "output": 664
+  },
+  "cost": 0.0003992
+}

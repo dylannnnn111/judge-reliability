@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-34",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response finds the most important real bugs. The loop-variable capture is the top issue, and it correctly notes that Go 1.22 semantics depend on `go.mod`, which matters for a Go 1.21 CI image. The discarded errors, nondeterministic ordering, and missing timeout/context are also real and sensibly ranked. The fixes are concrete and mostly correct.\n\nThere are weaknesses. The claim that the `main` stub \"wouldn't catch bug 1 even in a test\" is misleading, because `Result.URL` comes from the captured `u`, so duplicated URLs would show up in the output. The response also runs well over the 200-word limit, which the user stated explicitly. The panic/recover point is minor but accurate. Nothing it flags is actually fine, so there are no false positives beyond that one muddled claim.\n\nScore: 6",
+  "usage": {
+    "input": 1114,
+    "output": 872
+  },
+  "cost": 0.0005474
+}

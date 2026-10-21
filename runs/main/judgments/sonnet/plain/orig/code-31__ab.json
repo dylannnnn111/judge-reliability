@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-31",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. Response A makes a factual error. It says that if 1000 or more rows share one second, the job \"stalls or loops forever\". With a strict `created_at > :last_seen`, the cursor always advances past that second, so the remaining tied rows are skipped, not looped over. A also lists the fix as a numbered \"bug\", which clutters the ranking.\n\nResponse B states the main bug correctly: tied rows at a page boundary are silently skipped. It puts the fix inline, covers late-committed rows, the index, the `IS NULL OR` planner issue, and cursor persistence/idempotency.\n\nBoth responses go over the 200-word limit, but B is shorter and tighter.\n\n**B**",
+  "usage": {
+    "input": 1476,
+    "output": 764
+  },
+  "cost": 0.010592
+}

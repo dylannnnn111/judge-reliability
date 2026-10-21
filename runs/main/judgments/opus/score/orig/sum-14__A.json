@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-14",
+  "side": "A",
+  "score": 8,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Every claim checks out against the source:\n\n- The effective date of 3 November 2026 is correct.\n- The office-day increase from two to three days is correct.\n- The common team day is correct. It drops \"at least one\", but that is negligible.\n- The formal Fair Work exception and its review-date condition are correct.\n- The point that informal agreements don't count is correct.\n- The two excluded teams and their early-2027 roster review are correct.\n- The equipment funding rule and its health-assessment exception are correct.\n- The hot-desking floors, Spaces app and two-week booking window are correct.\n- The two stated reasons are correct.\n\nNothing is wrong or misleading.\n\n**Key points:** The core policy content is all there. A few useful items are dropped:\n\n- **Existing home equipment is kept.** Staff will ask about this.\n- **Managers are the first point of contact, and a Q&A is on the intranet.** This is the most notable gap, because the reader is a manager who will be fielding questions. Telling them that and pointing to the Q&A would be directly useful.\n- **Staff unsure about their arrangement should check with their manager or People and Culture.** This is also relevant to a manager's role.\n- **Lockers are available.** This is minor.\n\n**Concision:** The summary is about 115 words, close to the limit. The bulleted format is tidy and easy to scan. Some of the \"why\" wording could have been trimmed to make room for the manager-relevant point about questions.\n\nOverall, the summary is accurate and well structured. Its main shortfall is leaving out the manager's own role in handling questions.\n\nScore: 8",
+  "usage": {
+    "input": 1050,
+    "output": 1086
+  },
+  "cost": 0.02592
+}

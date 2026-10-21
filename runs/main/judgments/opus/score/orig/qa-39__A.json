@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-39",
+  "side": "A",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** The response is accurate throughout.\n- The stored values check out: 0.1 is about 0.1000000000000000055511 and 0.2 is about 0.200000000000000011102.\n- Their sum rounds to about 0.3000000000000000444.\n- The double nearest to 0.3 is about 0.299999999999999988898, which is a different value.\n- The printed result, 0.30000000000000004, is correct for languages such as Python and JavaScript.\n- The 1/3 analogy correctly captures the root cause: these values have no finite binary representation.\n\n**Key reasoning:** It names IEEE 754 binary floating point and explains repeating binary fractions and rounding. It also shows that the rounded sum lands on a different double than the one closest to 0.3. That last point is subtle and often left out.\n\n**Constraint and clarity:** At roughly 105–110 words, it fits the 120-word limit. It is well organized and adds useful workarounds: tolerance comparison, decimal types, and integer cents. The workarounds are a small addition beyond the question, but they are useful and brief.\n\n**Minor nitpick:** \"Store decimals\" is slightly loose wording for \"store non-integer numbers,\" but this is trivial.\n\nOverall, the answer is excellent, precise and concise.\n\nScore: 9",
+  "usage": {
+    "input": 486,
+    "output": 955
+  },
+  "cost": 0.021044
+}

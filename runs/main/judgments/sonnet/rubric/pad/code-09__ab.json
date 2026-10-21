@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-09",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses identify the main bug: `revoke_permission` never clears `_permission_cache`, so a revoked permission stays active. Both also cover the multi-process staleness, the lack of expiry, unbounded growth, and invalidating only after the commit.\n\n**Response A:**\n- It is close to the 200-word limit, at roughly 210 words.\n- It has some redundancy: items 2 and 3 overlap, and item 6 repeats the \"after commit\" advice from the fix.\n- The thread-safety point is hedged and weak, since dict operations are atomic under the GIL, though A does say the worst case is only a redundant query.\n- Its fix is concise and sensible.\n\n**Response B:**\n- It is about 320 words, well over the 200-word limit.\n- It opens with filler (\"Let me walk through the issues...\").\n- It gives a concrete one-line fix (`_permission_cache.pop(user_id, None)` after the commit).\n- It adds a useful observation that arbitrary or nonexistent user IDs can inflate the cache.\n- It correctly avoids flagging the thread-safety non-issue.\n- Its items 1 and 2 are partly redundant with each other, and its item 5 repeats the \"after commit\" point from item 1.\n\nB's content is slightly sharper, but it clearly breaks the explicit length constraint and wastes words on filler. A mostly respects the limit and covers the same core issues, with one marginally weak point. Given the explicit length instruction, A is better.\n\nVerdict: A",
+  "usage": {
+    "input": 1640,
+    "output": 1266
+  },
+  "cost": 0.01594
+}

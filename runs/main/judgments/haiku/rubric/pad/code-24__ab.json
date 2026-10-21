@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-24",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the most important issue: the check-then-await race lets concurrent duplicates mark the invoice paid twice. Both also flag the in-memory, unbounded `Set`, the non-constant-time signature comparison, the missing amount check, replay risk, and unhandled errors from `markInvoicePaid`.\n\nResponse A has a slight edge. It identifies the crash between the side effect and `processed.add` as its own issue, which is a real and important failure mode that Response B only touches on through idempotency. Its fixes are concrete: a unique constraint written in the same transaction, `timingSafeEqual` with a length check first, and a 5xx so the provider retries. Response B adds two useful points A lacks: malformed JSON or a missing `event.data` throws before any handling, and releasing the claim on failure so retries can succeed. Its replay point is also muddled, and it opens with filler. Both responses run past the 200-word limit, and Response B is the longer of the two with less substance per word.\n\nOverall, A is more precise, covers the crash-recovery case, and stays closer to the length limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1856,
+    "output": 854
+  },
+  "cost": 0.0006126
+}

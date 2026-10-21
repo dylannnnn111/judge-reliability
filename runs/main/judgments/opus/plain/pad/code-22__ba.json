@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-22",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses correctly identify the critical flaw: `jwt.decode` never checks the signature, so anyone can forge an admin token. Both prescribe `jwt.verify` with pinned algorithms. Both also cover the exported and unvalidated secret, unenforced expiry, wrong 401/403 status codes, and loose `Bearer` parsing.\n\n**Word limit.** Both exceed the 200-word limit. A misses by more, at roughly 290 words against B's roughly 255. A spends words on a courteous preamble and wordy phrasing (\"To address this…\", \"To close this gap…\") that the user didn't ask for.\n\n**Where B adds value:**\n- It notes that `SECRET` is currently unused, which supports the point that it shouldn't be exported.\n- It explains why missing expiry matters: stolen tokens work forever.\n- It suggests checking `iss` and `aud`.\n- It ends with a compact corrected snippet that fixes the verification, scheme parsing, and status-code issues together.\n\n**Where B is weaker:**\n- Its algorithm-pinning point partly repeats item 1.\n- Its \"minor\" items are low-value.\n\n**Where A does better:**\n- It explicitly calls out the dead `try/catch`, which B covers only in a parenthetical.\n\nOverall, B is more substantive and more actionable, and it overshoots the requested length by less.",
+  "usage": {
+    "input": 1722,
+    "output": 1041
+  },
+  "cost": 0.027708
+}

@@ -1,0 +1,13 @@
+{
+  "item": "qa-37",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "Uluru is red because of rust. The rock is arkose, a sandstone rich in feldspar and quartz, and it contains small amounts of iron-bearing minerals. Over millions of years, exposure to oxygen and water has oxidized this iron, forming iron oxides (essentially rust) that coat the surface and give it its rusty-orange to red colour.\n\nThe effect is mostly superficial. If you look at a freshly broken piece of the rock, the interior is grey. The outer weathered layer is what appears red.\n\nUluru's colour also seems to change throughout the day. At sunrise and sunset, the low-angle light is richer in red wavelengths, so the rock can glow deep red, orange, or even purple.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 39,
+    "output": 233
+  },
+  "cost": 0.002408,
+  "at": "2026-10-14T01:50:58.132Z"
+}

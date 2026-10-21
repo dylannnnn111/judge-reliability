@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-27",
+  "side": "A",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response is scientifically accurate. Ice is about 8–9% less dense than liquid water because hydrogen bonding forms an open hexagonal lattice. The 4°C density maximum, the insulating ice layer, the survival of aquatic life beneath the ice, and the stratification argument are all correct and well connected to the question. The explanation of lattice formation starting \"below about 4°C\" is slightly imprecise, since the lattice forms mainly near freezing, but this is minor. The main flaw is that the text runs to roughly 123 words, which slightly exceeds the \"under 120 words\" limit. The writing is clear and well organized.\n\nScore: 8",
+  "usage": {
+    "input": 467,
+    "output": 867
+  },
+  "cost": 0.00048019999999999996
+}

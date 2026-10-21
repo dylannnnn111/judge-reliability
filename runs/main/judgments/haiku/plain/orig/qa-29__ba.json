@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-29",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. Both responses give correct figures ($2,500 simple vs. about $4,322 compound), but Response A runs to about 123 words, over the 120-word limit. Response B comes in at about 101 words and stays within it.\n\nB",
+  "usage": {
+    "input": 576,
+    "output": 1406
+  },
+  "cost": 0.0007606000000000001
+}

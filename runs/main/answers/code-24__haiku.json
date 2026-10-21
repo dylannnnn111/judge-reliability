@@ -1,0 +1,13 @@
+{
+  "item": "code-24",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "1. **Concurrent duplicates are processed twice.** `processed.has()` is checked before the `await`, and `processed.add()` runs after it. Two simultaneous deliveries of the same event both pass the check and both call `markInvoicePaid`. Since the provider sends duplicates at the same time, this will happen.\n\n2. **The dedupe store is not durable or shared.** An in-memory `Set` is lost on restart and isn't shared across instances, so retries after a deploy or on another instance get reprocessed. It also grows without bound. Use a unique constraint on the event ID, written in the same transaction as the invoice update.\n\n3. **Crash between side effect and marking.** If the process dies after `markInvoicePaid` but before `processed.add`, the retry runs the side effect again. `markInvoicePaid` must be idempotent, or the dedupe record and the update must commit atomically.\n\n4. **Errors from `markInvoicePaid` are unhandled.** If it throws, the handler rejects without sending a response. Catch the error and return a 5xx so the provider retries deliberately.\n\n5. **Non-constant-time signature comparison.** `!==` leaks timing information. Use `crypto.timingSafeEqual` on equal-length buffers, and check that the signature exists and has the right length first, since `timingSafeEqual` throws on mismatched lengths.\n\n6. **No amount check.** `markInvoicePaid` is trusted with `amountCents` without comparing it to the invoice total, so an underpayment could mark an invoice paid.\n\n7. **No replay window.** A valid signed payload can be replayed indefinitely. Consider checking a timestamp if the provider includes one in the signed content.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 390,
+    "output": 1016
+  },
+  "cost": 0.000547,
+  "at": "2026-10-14T01:54:05.517Z"
+}

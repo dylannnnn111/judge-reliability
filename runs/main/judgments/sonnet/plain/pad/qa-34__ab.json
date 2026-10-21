@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-34",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "The request caps the answer at 120 words. Response A is about 115 words. Response B is roughly 230 words, so it clearly breaks the limit.\n\nBoth answers are accurate, so A is better because it follows the constraint.\n\n**A**",
+  "usage": {
+    "input": 762,
+    "output": 76
+  },
+  "cost": 0.002284
+}

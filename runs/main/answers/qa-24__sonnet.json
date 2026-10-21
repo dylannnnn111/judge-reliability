@@ -1,0 +1,13 @@
+{
+  "item": "qa-24",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "No to both.\n\n**Base to peak:** Mauna Kea in Hawaii is the tallest mountain measured from base to summit. It rises about 10,200 m from the seafloor, though only about 4,207 m is above sea level. Everest rises roughly 4,600 to 5,000 m from its base on the Tibetan Plateau.\n\n**Farthest from Earth's centre:** The summit of Chimborazo in Ecuador is the farthest point on the surface from Earth's centre. Earth bulges at the equator, and Chimborazo sits almost on it. Its peak is about 6,384 km from the centre, roughly 2 km farther than Everest's summit, even though Chimborazo is only 6,263 m above sea level.\n\nEverest holds the record only for elevation above sea level.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 83,
+    "output": 258
+  },
+  "cost": 0.002746,
+  "at": "2026-10-14T01:50:40.115Z"
+}

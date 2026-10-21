@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "code-10",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.**\n\n**Core issues.** Both responses find the two critical problems. The first is path traversal, caused by the unanchored `match` combined with `<path:slug>`. The second is the missing authentication check.\n\n**Ranking.** A puts traversal first and notes that auth might live elsewhere, which is arguably the better order and more careful framing. B puts auth first and asserts flatly that anyone can download. Either order is defensible, since both are critical.\n\n**Fixes.** B gives stronger remedies:\n- It recommends `send_from_directory`, the idiomatic Flask fix with built-in containment.\n- It offers both `fullmatch` and `^...$` anchors.\n- It correctly notes that `os.path.exists` returns true for directories, so a directory named `foo.pdf` would cause a 500. That is a real, concrete bug.\n- Its `Cache-Control` and `as_attachment` hardening is relevant for sensitive staff reports.\n- Its per-report authorization and audit-logging points are reasonable secondary concerns.\n\nA's symlink point is valid but somewhat speculative. Its TOCTOU point is fine.\n\n**False positives.** A's item 6 is confused. It says the regex is fine, then suggests rejecting malformed slugs with a 400, which the code already does. It is a non-issue presented as a problem.\n\n**Length.** Both exceed the 200-word limit, and B exceeds it more. However, B's extra content is correct and useful, while A spends words on a bogus item.\n\nVerdict: B",
+  "usage": {
+    "input": 1550,
+    "output": 861
+  },
+  "cost": 0.02342
+}

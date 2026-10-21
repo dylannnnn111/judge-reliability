@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-34",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the main bug: the loop variable `u` is captured by reference, which is a real problem under pre-1.22 semantics. Both also flag the discarded errors, the nondeterministic result order, the missing timeout, and the unbounded goroutines, with sensible fixes for each.\n\nThe key difference is accuracy on the Go version. Response A says the bug applies because \"your CI image uses 1.21.\" That's misleading: the loop-variable semantics are controlled by the `go` directive in `go.mod`, not by the toolchain version. Response B states this correctly, which matters for whether the fix is actually needed. Response B also notes that `main` ignores its URL argument, so a test wouldn't catch the capture bug, and suggests `go test -race`, which is useful for this code. Its panic-recovery point is weaker, since it's a minor and debatable concern. Response A's ranking and explanations are clean, but its Go version claim is the kind of error that could send someone to the wrong fix.\n\nOverall, Response B is somewhat better because it gets the version semantics right and adds a practical testing angle.\n\nVerdict: B",
+  "usage": {
+    "input": 1602,
+    "output": 985
+  },
+  "cost": 0.0006527000000000001
+}

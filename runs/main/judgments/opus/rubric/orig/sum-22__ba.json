@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-22",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both summaries get the core decisions right: senior fees rise to $340, junior fees stay at $180, the shortfall is about $3,200, Bryce will apply for the grant, the gazebo is approved up to $600, and presentation night is on 24 October.\n\n**Response A** has a few weaknesses:\n- **Overstatement:** \"mostly due to cost\" goes further than the source, which says only that cost was \"the most common reason given.\" That is not the same as most players leaving because of cost.\n- **Tension:** \"The rise covers a 9% increase in council turf hire\" sits awkwardly beside the shortfall it then reports.\n- **Length:** counting the title, it sits around 120 words, so it is at or just over the limit.\n- **Extras:** the 5-0 vote and Natalie organising trophies are correct, but a busy manager gets little from them.\n\n**Response B** is accurate throughout:\n- **Wording:** \"offset\" fits the outcome better than \"covers.\" \"Apply… by 14 November\" correctly reflects the grant closing date.\n- **Concision:** it is comfortably under the limit and keeps every point that matters for decisions and actions.\n- **Omissions:** it leaves out the cost reason for the junior decline, which is useful context. However, it does not misstate anything to get there.\n\nOn accuracy first and concision second, B edges ahead.\n\nVerdict: B",
+  "usage": {
+    "input": 1571,
+    "output": 1280
+  },
+  "cost": 0.031884
+}

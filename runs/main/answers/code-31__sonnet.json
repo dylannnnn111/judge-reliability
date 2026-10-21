@@ -1,0 +1,13 @@
+{
+  "item": "code-31",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Bugs and problems, most important first:**\n\n1. **Data loss from non-unique cursor (critical).** `created_at` has only second precision, so many rows can share a timestamp. `created_at > :last_seen` skips any rows with the same timestamp that didn't fit on the previous page. If 1000+ rows share one second, the job also stalls or loops forever, because the same page keeps coming back or the cursor never advances.\n\n2. **Non-deterministic ordering.** `ORDER BY created_at` has no tiebreaker, so rows with equal timestamps can come back in different orders between runs. Pages can overlap or miss rows.\n\n3. **Fix: keyset pagination on `(created_at, id)`.**\n   ```sql\n   WHERE tenant_id = :tenant_id\n     AND (:last_ts IS NULL\n          OR (created_at, id) > (:last_ts, :last_id))\n   ORDER BY created_at, id\n   LIMIT 1000;\n   ```\n   Track both values from the last row.\n\n4. **Missing index.** You need one on `(tenant_id, created_at, id)`. Otherwise each page may scan and sort a large portion of the table. The `:last_seen IS NULL OR ...` pattern can also keep the planner from using the index well. Use two query variants or `COALESCE` with a minimum value.\n\n5. **Termination condition is fragile.** \"Fewer than 1000 rows\" works only if paging is correct. Also, rows inserted late with older `created_at` values (clock skew, backfills, uncommitted transactions) can be missed. Consider paging by a monotonic sequence/id, or snapshot the upper bound (`created_at <= :export_start`) for consistency.\n\n6. **Minor:** Selecting explicit columns is good. Confirm that `:last_seen` is passed with the same type and precision as the column.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 257,
+    "output": 611
+  },
+  "cost": 0.006624,
+  "at": "2026-10-14T01:54:32.070Z"
+}

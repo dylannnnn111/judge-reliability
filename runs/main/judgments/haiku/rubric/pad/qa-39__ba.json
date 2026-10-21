@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-39",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is accurate: the stored values of 0.1 and 0.2, the rounding of their sum to about 0.30000000000000004, and the fact that this differs from the double nearest 0.3 are all correct. It also gives the key reasoning, namely that binary can't represent these decimals exactly, and suggests practical fixes. At roughly 95 words, it respects the under-120-word limit.\n\nResponse B is equally correct on the numbers and reasoning, and its explanation is slightly more detailed. However, at roughly 200 words it clearly exceeds the 120-word limit. Its extra length adds some clarity but violates an explicit instruction, so it loses on that basis.\n\nVerdict: A",
+  "usage": {
+    "input": 926,
+    "output": 775
+  },
+  "cost": 0.0004801
+}

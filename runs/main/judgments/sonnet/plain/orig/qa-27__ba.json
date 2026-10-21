@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-27",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. It stays under the 120-word limit at about 102 words, while **B** comes to about 123 and breaks the constraint. Both explain the science accurately: the open hexagonal lattice, ice being about 9% less dense, insulation by the floating layer, and the danger if ice sank. A also states the 4°C maximum-density point more cleanly, and B's extra sentence about it adds length without much clarity.\n\n**A**",
+  "usage": {
+    "input": 604,
+    "output": 1538
+  },
+  "cost": 0.016588
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-28",
+  "side": "A",
+  "score": 6,
+  "model": "claude-opus-5-5",
+  "text": "The content is accurate and covers the key reasoning, but at roughly 130 words it breaks the explicit \"under 120 words\" limit.\n\n**Correctness:** Every technical claim holds up.\n- Collisions are correctly defined.\n- Chaining and open addressing (linear, quadratic, double hashing) are the two standard strategies.\n- Average O(1) with a good hash function and controlled load factor is right.\n- Worst-case O(n) is right.\n- Java 8+ HashMap does convert long buckets to balanced trees, giving O(log n).\n- Clustering in open addressing is a real effect.\n- Resizing at a load factor around 0.7–0.75 is standard; Java's default is 0.75.\n\n**Key reasoning:** It answers both parts of the question. It explains how collisions are handled and why performance degrades: longer chains or probe sequences as the load factor rises. It also explains the fix, which is resizing and rehashing.\n\n**Clarity:** The bold headers and short paragraphs make it easy to scan.\n\n**Constraint violation:** The instruction was explicit and easy to meet. The parenthetical about Java's HashMap or the clustering sentence could have been trimmed to fit. Ignoring a stated length limit is a real failure to follow instructions, though the substance is excellent.\n\nScore: 6",
+  "usage": {
+    "input": 489,
+    "output": 1238
+  },
+  "cost": 0.026716
+}

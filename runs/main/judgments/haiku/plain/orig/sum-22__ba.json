@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-22",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. Both responses are clear and accurate, but Response A runs to about 127 words, over the 120-word limit. Response B stays under it at roughly 108 words while covering the key decisions, finances, and actions.\n\nB",
+  "usage": {
+    "input": 1417,
+    "output": 1213
+  },
+  "cost": 0.0007482000000000001
+}

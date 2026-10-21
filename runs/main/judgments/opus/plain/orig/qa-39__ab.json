@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-39",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses are accurate and stay under 120 words: A is about 106 words and B about 85. Both explain IEEE 754 binary representation with the 1/3 analogy and give correct stored values for 0.1 and 0.2.\n\nA is more complete in three ways:\n- It gives the actual stored value closest to 0.3 (about 0.2999999999999999889), which shows concretely why the sum differs.\n- It notes what gets printed (0.30000000000000004).\n- It offers an extra practical workaround: storing values as integers, such as cents.\n\nB is correct and concise but slightly less illuminating.",
+  "usage": {
+    "input": 639,
+    "output": 745
+  },
+  "cost": 0.017456
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-17",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A runs to about 124 words, so it slightly exceeds the 120-word limit. Even so, it is accurate and concise. It correctly separates the bar's licensed opening hours from the 10pm music cutoff. It covers the agreed fixes, the evidence needed, Fiona's dissenting view, the 20 October report-back, and the regulator fallback.\n\nResponse B misses the brief more seriously:\n- **Length:** at roughly 220 words, it is nearly double the limit.\n- **Format:** it is written as an update letter to residents, not a summary for a busy manager.\n- **Accuracy:** it credits Arjun with the \"fourth weekend in a row\" observation, which was actually Colleen's.\n- **Omission:** it leaves out Fiona's dissenting view.",
+  "usage": {
+    "input": 1510,
+    "output": 1226
+  },
+  "cost": 0.03056
+}

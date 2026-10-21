@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-38",
+  "side": "B",
+  "score": 5,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is accurate. The figures and dates match the source: 431 of 600, 4.3/5, 21 of 23 bugs fixed, $268.5k of $290k, and the launch on 18 November with a possible one-week delay. It also keeps the key points a manager needs: status, beta outcome, timeline, budget and the main risk.\n\nThe main problem is length. I count roughly 140 words, well over the explicit 120-word limit. It also includes detail a busy manager could do without, such as the bug counts, the timetable fix specifics, and the individual club pack and training dates. There is a small grammatical slip (\"App stores submissions\"). \"Used it\" is a slight simplification of \"installed and logged in\", but it is not misleading.\n\nBecause it breaks a hard constraint on length, it loses significant credit despite its accuracy.\n\nScore: 5",
+  "usage": {
+    "input": 1111,
+    "output": 890
+  },
+  "cost": 0.011122
+}

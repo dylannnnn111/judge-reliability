@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-10",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer of 1/3 and use the same reasoning. The remaining checks are the word limit and any small errors.\n\nWord count for A: about 80 words, so it is under 120.\n\nWord count for B, roughly:\n- \"1/3\" = 1\n- \"List the equally likely two-child families by birth order: BB, BG, GB, GG, each with probability 1/4.\" = about 17, running total 18\n- \"The condition \"at least one child is a girl\" removes BB.\" = 10, total 28\n- \"That leaves BG, GB, and GG, which are still equally likely.\" = 11, total 39\n- \"Only GG has two girls, so the fraction is 1 out of 3.\" = 12, total 51\n- \"This is different from 1/2.\" = 5, total 56\n- \"The 1/2 answer would apply if you were told that a specific child, such as the older one, is a girl.\" = 21, total 77\n- \"Here the condition only says that at least one is a girl, so the families with one boy and one girl (BG and GB) together outnumber the two-girl families.\" = about 29, total 106\n- \"Answer: 1/3\" = 2, total 108\n\nB is therefore around 108 words, which is under 120 but close to the limit. It also repeats the answer at the end, and its last explanatory sentence adds little.\n\nA is more concise and includes the same key insight. B's added statement that BG and GB together outnumber GG is a correct, mildly useful point, but A already conveys that the condition does not identify which child is a girl. B's explanation is a bit more complete, yet it is redundant. A is slightly better on concision, and the two are otherwise close to equal.\n\nVerdict: A",
+  "usage": {
+    "input": 671,
+    "output": 531
+  },
+  "cost": 0.006652
+}

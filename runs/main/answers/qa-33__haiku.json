@@ -1,0 +1,13 @@
+{
+  "item": "qa-33",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "The Moon is tidally locked to Earth. Billions of years ago, Earth's gravity gradually slowed the Moon's rotation through tidal friction, until its spin period matched its orbital period of about 27.3 days. Now the Moon rotates exactly once per orbit, so the same hemisphere always faces us.\n\nThis doesn't mean the far side never sees sunlight; it experiences day and night just like we do. It's simply never visible from Earth. Because of slight wobbles in the Moon's orbit (libration), we can actually see about 59% of its surface over time.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 45,
+    "output": 186
+  },
+  "cost": 0.0000975,
+  "at": "2026-10-14T01:50:51.888Z"
+}

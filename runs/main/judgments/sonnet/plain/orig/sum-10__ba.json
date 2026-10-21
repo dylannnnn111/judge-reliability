@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-10",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**B**\n\nBoth responses are accurate and stay under the 120-word limit (A is about 97 words, B about 117). The difference is in how easy each is to read.\n\nResponse B is easier for a busy manager to scan. It opens with the status, go-live date and \"no decisions needed\". Labelled bullets for progress, budget, risks and next steps follow. It also gives the next update date, which a manager would want. The bit about the new developer is minor, but it doesn't push B over the limit.\n\nResponse A is a correct, tight paragraph. It is denser and has no visual structure, so it is harder to pick out budget or risk quickly.\n\nB's structure and completeness give it a slight edge.\n\n**B**",
+  "usage": {
+    "input": 1121,
+    "output": 1971
+  },
+  "cost": 0.021952
+}

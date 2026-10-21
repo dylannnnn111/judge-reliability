@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-20",
+  "side": "A",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate. Dates, times, venue, the 31 October dietary deadline, the five-priority limit, the out-of-office arrangement and the Ella cover all match the original. The key points a manager needs are present.\n\nThe main problem is length. The request was to keep the summary under 120 words, and this response runs to roughly 225. It also reads more like a condensed rewrite of the email than a manager-focused summary. Details such as the bus route, parking, and the pre-work breakdown could be cut down to a line or two. The shift into first person (\"I would kindly ask\") also sits awkwardly in a third-person summary. These are secondary to the word limit being clearly breached.\n\nAccuracy is strong, but the response fails the explicit length constraint and is not concise, which weighs heavily on a brief for a busy reader.\n\nScore: 4",
+  "usage": {
+    "input": 1227,
+    "output": 720
+  },
+  "cost": 0.00048269999999999997
+}

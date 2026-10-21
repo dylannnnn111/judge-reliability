@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-33",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Both responses get the dates right, including the 31 January 2027 extension. They also both state the 8% figure, the 15-minute switch, and the condition that only v1 users must act.\n\n- Response B labels the new features \"(automatic)\". That is slightly loose, because area-based swap approval has to be set up in Admin > Permissions > Areas. Still, the release does roll out automatically, so this is minor.\n- Response A has no factual errors. It usefully notes the original 30 November date.\n\n**Key points:**\n- Response B leads with the action item, which is what a busy manager most needs.\n- B tells the reader where to check whether they're affected (Admin > Integrations > Payroll (v1)).\n- B keeps the business-critical consequence that staff could be paid late, and mentions the help-centre guide.\n- Response A drops the paid-late consequence and the admin path. Without the path, a manager can't easily confirm whether the action applies to them.\n- Both cover the new features, improvements and fixes adequately.\n\n**Concision:** Both are around 120–130 words, so neither has a clear edge.\n\n**Overall:** Response B better serves the reader by putting the action first and keeping its stakes and the steps to check, outweighing its small \"automatic\" imprecision.\n\nVerdict: B",
+  "usage": {
+    "input": 1556,
+    "output": 1641
+  },
+  "cost": 0.039044
+}

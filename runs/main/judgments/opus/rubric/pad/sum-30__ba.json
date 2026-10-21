@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-30",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy.** Both responses get the key facts right:\n- the 410 increase from 30 to 15 minutes\n- the 412's 20-minute frequency, 6am–9pm, daily\n- the 408 removal and its nine passengers per trip\n- fares unchanged\n- the dates of 19 January, December timetables, early January apps, and the 6 December stall, 10am–2pm\n\nA has one small overreach. It says industrial estate workers \"lose service before 6am.\" That implies the 408 currently runs before 6am, which the source never says. The source only says workers are concerned because the 412 won't run before 6am. B's wording (\"does not start early enough for their shifts\") is more faithful. This is a minor inference rather than a clear factual error, but it gives B a slight edge on accuracy.\n\n**Coverage.** A keeps the reason for the changes: the consultation's top request was a direct Mill Flat–station link. A also says the 412 is the first such link. B mentions the consultation but drops what it found. Otherwise both cover the needed points.\n\n**Concision and the word limit.** This is decisive. A runs to about 127 words, slightly over the 120 limit. B runs to roughly 190 words, far over the limit. B is also padded with filler that adds nothing for a busy manager: \"I would like to share a summary of the upcoming bus changes,\" \"Under the new arrangements,\" and \"Turning to how you can find out more.\" B's extra length brings no extra useful content. It actually carries less substance than A, since it omits the consultation finding.\n\n**Overall.** A's slight inference about pre-6am service is a minor blemish. B's heavy breach of the length constraint and its filler are a bigger failure for this task. A is tighter, keeps more of what matters, and comes much closer to the constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 1592,
+    "output": 2247
+  },
+  "cost": 0.051308
+}

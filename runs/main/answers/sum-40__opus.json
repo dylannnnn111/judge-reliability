@@ -1,0 +1,13 @@
+{
+  "item": "sum-40",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "A study of 1,622 Year 10 students across 11 regional NSW public schools tested an overseas claim that drinking water in exams boosts scores by up to 10%. Compared with the previous year, students allowed water bottles improved by 1.8 marks out of 100, and those without improved by 1.1. The 0.7-mark difference was not statistically significant.\n\n71% of students with water said it helped them concentrate, and teachers said students seemed calmer. No problems were reported once schools required clear, label-free bottles.\n\n**Bottom line:** Allowing water is free, low-risk and popular. Decide on comfort and wellbeing grounds, not higher marks.\n\n**Caveats:** Schools weren't randomly assigned, and hot weather in some regions may have affected results.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 657,
+    "output": 1276
+  },
+  "cost": 0.028148,
+  "at": "2026-10-14T01:52:45.860Z"
+}

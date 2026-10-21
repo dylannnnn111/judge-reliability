@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-04",
+  "side": "B",
+  "score": 5,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is mostly accurate, but it breaks the explicit length limit and adds an instruction the source doesn't contain.\n\n**Accuracy:**\n- The leave figures (12→18 and 2→4 weeks), the three-block split, the 24-month window, the cut-off date, the casual eligibility rule, the super extension and the session dates are all correct.\n- \"Plan rosters for split leave\" is not in the source. It is the summariser's own advice presented alongside the policy facts.\n- \"You'll be notified automatically\" assumes the reader is the manager. That is a reasonable reading, but it is a small leap.\n- \"Staff need 12 months' continuous service\" leaves out that this is measured by the expected date of birth or placement. That is a minor loss of precision.\n\n**Coverage:** The response covers the main points a manager needs. It omits the contact email and the fact that recordings will be posted, but these are minor.\n\n**Concision:** By my count the response is about 137 words, including the title. That is clearly over the 120-word limit. A busy manager would likely not notice, but it is still a clear failure on an explicit requirement.\n\nScore: 5",
+  "usage": {
+    "input": 1214,
+    "output": 1476
+  },
+  "cost": 0.017188
+}

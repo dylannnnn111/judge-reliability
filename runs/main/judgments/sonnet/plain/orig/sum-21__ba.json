@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-21",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "B\n\nBoth responses stay under 120 words (A is about 110, B about 119) and report the key figures correctly.\n\n**Response A** leads with the deadline, which suits a busy reader. It also works out the cost of the hire-car gap: six cars × $1,800 × two months is $21,600, which is correct and useful. However, it says \"needs your sign-off\", which assumes the reader is Ruth. The request only says \"a busy manager\", so that assumption could be wrong. It also omits Coastal Fleet Sales and has no closing statement of the decision to be made.\n\n**Response B** names who needs to sign off, so it works for any manager. It covers the recommendation, the reasoning, the alternative and the deadline. It adds a brief note on Coastal Fleet Sales and ends with a clear statement of the choice: approve the over-budget hybrid or stay within budget with petrol. It does not total the hire-car cost, and it sits very close to the word limit.\n\nB's neutral framing and explicit decision statement outweigh A's calculated hire-car total, so B is slightly better.\n\n**B**",
+  "usage": {
+    "input": 1364,
+    "output": 2474
+  },
+  "cost": 0.027468
+}

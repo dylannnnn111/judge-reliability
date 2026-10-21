@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-28",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A is better.** Response A comes in at roughly 119–121 words, depending on whether the list numerals count, so it is at or just under the 120-word limit. Response B runs to about 134 words and clearly exceeds it.\n\nOn content, both explain chaining, open addressing, load factor, average O(1) versus worst-case O(n), and resizing. B adds the Java HashMap tree detail and a concrete load-factor threshold. A adds the amortized O(1) cost of resizing, which directly answers the performance question.\n\nSince the content is comparable and A respects the length constraint while B breaks it, A wins.\n\nA",
+  "usage": {
+    "input": 690,
+    "output": 1350
+  },
+  "cost": 0.02976
+}

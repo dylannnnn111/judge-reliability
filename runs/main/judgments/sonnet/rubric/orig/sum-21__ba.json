@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-21",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries get the numbers right: the $229,140 total, the $13,140 overrun, the $209,880 petrol alternative, the $5,400 four-year fuel saving, the 24 October deadline and the February fallback. Both are under 120 words (B is about 119, A is shorter).\n\n**Response A:**\n- It adds a derived figure, about $21,600 for the cost of two months of hire cars. That is correct (6 × $1,800 × 2) and useful for weighing the deadline.\n- It says \"your sign-off\", which assumes the reader is Ruth. The request only says \"a busy manager\", so this is a small risk of misattributing who must approve.\n- It leaves out Coastal Fleet Sales, which is a minor omission.\n\n**Response B:**\n- It names Dominic and Ruth, so there is no ambiguity about who needs to approve.\n- It includes Coastal, a minor point, and ends with a clear statement of the decision.\n- It does not total the hire-car cost, but gives the per-car monthly rate and the gap length.\n- It stays just under the word limit.\n\nThe two are close. A's computed hire cost is a genuine plus, but B is safer on attribution and slightly more complete, and its decision framing is clear, so I give B a slight edge.\n\nVerdict: B",
+  "usage": {
+    "input": 1518,
+    "output": 2049
+  },
+  "cost": 0.023526
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "code-28",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth reviews find the same core bugs: the double-spend race, the unverified destination, the connection leak, the deadlock risk, and ROLLBACK masking the original error. The deciding factors are the word limit and accuracy.\n\n- **Length:** Response B comes in at roughly 200 words. Response A runs to about 250, clearly breaking the \"under 200 words\" instruction.\n- **Accuracy:** Response A says deadlock appears only \"once you add row locks.\" That is wrong, because the existing `UPDATE` statements already take row locks, so opposing transfers can deadlock today. Response B states the risk correctly.\n- **Ordering:** Response A ranks the same-wallet case fourth, which overstates a harmless no-op. Response B correctly marks it minor and puts the money-losing bugs (double spend, vanishing funds) first.\n- **Extras:** Response B adds a sound suggestion, a `CHECK (balance_cents >= 0)` guard in the database. Response A's points on idempotency and bigint values returning as strings are useful, but they cost it the length limit.",
+  "usage": {
+    "input": 1665,
+    "output": 1496
+  },
+  "cost": 0.03658
+}

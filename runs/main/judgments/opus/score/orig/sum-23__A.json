@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-23",
+  "side": "A",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Everything checks out against the minutes:\n- Banksia Street footpath starts February and takes about six weeks.\n- Playground installation is planned for April.\n- Tree canopy feedback closes 31 October.\n- The balance is $5,610 with 142 member households.\n- Clean Up Day is 15 November, 8am, at the scout hall. Laila is coordinating and the council supplies bags, gloves and a skip.\n- Carols are 12 December, 6:30pm, with a budget of up to $900. Peter is booking the sound system.\n- The Wattle Road speed counter and the Facebook change are correctly attributed.\n- The next meeting date is correct.\n\nOne small imprecision: \"up on last year\" sits next to the 142 households. The minutes say *renewals* are up, which is not quite the same as the household count rising, but the difference is marginal.\n\n**Coverage:** It keeps the points a manager needs: dates, responsibilities, budget, upcoming council works and the feedback deadline. Omissions are reasonable trims:\n- The footpath's location (between the shops and the school).\n- The school choir.\n- What the $900 covers.\n- That the carols happen \"again\".\n\n**Concision:** At about 110 words it is under the limit. The headed, scannable format suits a busy reader, and nothing is padded.\n\nIt is a strong, accurate summary, with only a very minor wording looseness.\n\nScore: 9",
+  "usage": {
+    "input": 1209,
+    "output": 1077
+  },
+  "cost": 0.026376
+}

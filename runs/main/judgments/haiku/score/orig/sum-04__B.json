@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-04",
+  "side": "B",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate. The figures (12 to 18 weeks for primary carers, 2 to 4 for secondary), the 1 January 2027 cut-off, the three-block split within 24 months, the eligibility rules, the superannuation change, the 10-week application window and the session dates all match the source. It omits minor details, such as the early-birth notification step, but the manager's essentials are covered. The main problem is the explicit length limit: the response runs to roughly 137 words, over the 120-word maximum. Its bulleted structure is clear and useful, but that does not offset breaking a stated constraint. Accuracy and coverage are strong, and concision fails the brief.\n\nScore: 5",
+  "usage": {
+    "input": 1214,
+    "output": 1943
+  },
+  "cost": 0.0010929000000000002
+}

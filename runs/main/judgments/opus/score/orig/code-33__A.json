@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "code-33",
+  "side": "A",
+  "score": 8,
+  "model": "claude-opus-5-5",
+  "text": "**Assessment**\n\nThe top issue is correct and properly ranked first. Putting `p.status = 'succeeded'` in the WHERE clause turns the LEFT JOIN into an inner join. That removes every customer with zero successful payments, which defeats the query's whole purpose. The proposed fix, moving the condition into the ON clause, is right and shown concretely.\n\nThe other points:\n\n- **Item 2 (annual and quarterly plans):** a real business-logic issue that would flood the list with false alarms. It is sensibly ranked second, and the suggested fix (compare against billing interval or renewal date) is useful.\n- **Item 3 (cancelled or new accounts):** plausible. It depends on the schema but is fairly raised.\n- **Item 4 (NULL `plan`):** technically accurate, and correctly framed as something to confirm rather than a definite bug.\n- **Item 5 (date type):** accurate for SQLite. Integer timestamps compare as less than text values, so the filter would match nothing.\n- **Item 6 (refunds and chargebacks):** speculative and too terse. It gives no reasoning and no fix, and refunds may already be excluded by status values. It reads as tacked on.\n\n**Weaknesses**\n\n- Items 3 through 6 are schema-dependent hedges. They are mostly appropriately hedged, though item 6 is not.\n- The response sits near the 200-word limit. The trailing item adds little.\n- Nothing flagged is clearly wrong, and the ranking is sensible.\n\nOverall it is a strong, accurate review with a good fix for the critical bug. The only deductions are the weak final item and some speculative padding.\n\nScore: 8",
+  "usage": {
+    "input": 983,
+    "output": 966
+  },
+  "cost": 0.023252
+}

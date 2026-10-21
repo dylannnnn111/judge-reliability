@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-20",
+  "side": "B",
+  "score": 6,
+  "model": "claude-opus-5-5",
+  "text": "The content is accurate, but the response breaks the explicit 120-word limit.\n\n**Accuracy.** Everything checks out against the email:\n- Date, time and venue are correct.\n- The five-priority cap with a lead each is correct.\n- The three prep items, and that they need not be sent in advance, are correct.\n- Tariq and the 31 October dietary deadline are correct.\n- Ella from the Data team watching the central insights inbox is correct.\n\nThere are only two small drifts. \"From 4:15pm\" drops \"about.\" \"Drinks\" is a mild inference from \"head to the pub.\" Neither would mislead anyone.\n\n**Coverage.** All the points a reader needs are kept: the logistics, the agenda, the prep, the dietary deadline, the out-of-office instruction and the optional social. The structure is easy to scan.\n\n**Concision.** By my count the response is about 133 words, roughly 11% over the cap. The instruction was explicit, and the overrun was easy to avoid. Several details could have gone, such as the full street address, the bus route number and \"no need to send them in advance.\" The response chose completeness over the instruction, and it included some low-value extras in doing so.\n\nAccurate and well organised, but it fails a clear constraint.\n\nScore: 6",
+  "usage": {
+    "input": 1101,
+    "output": 1664
+  },
+  "cost": 0.037684
+}

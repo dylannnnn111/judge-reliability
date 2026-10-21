@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-11",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. Neither response meets the 120-word limit, but A comes much closer. A runs to roughly 130 words, while B runs to roughly 270, more than double the limit.\n\nA is also better suited to a busy manager. It uses tight bullets and drops the filler. B repeats Grant's courtesies (\"Thank you for your cooperation…\", \"warmly invited\") and restates the intro.\n\nA merges the parking detail into Rachel's role, which is efficient. B does include a few extra useful details, such as the explicit Monday 17 November date, but they don't justify the length.\n\n**A**",
+  "usage": {
+    "input": 1643,
+    "output": 1154
+  },
+  "cost": 0.014826
+}

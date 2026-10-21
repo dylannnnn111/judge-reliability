@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-24",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.** Both responses find the same core problems and rank them similarly. Each puts the concurrent-duplicate race first, which is correct given the stated context. Next come the non-durable in-memory `Set`, timing-unsafe signature comparison, missing error handling, no amount validation, and no replay protection. All of these are real issues, and neither response flags anything that is actually fine.\n\n**What each adds:**\n- Response A separately covers the crash window between `markInvoicePaid` and `processed.add`. That is a real and distinct atomicity concern.\n- A also correctly notes that `timingSafeEqual` throws on mismatched lengths.\n- Response B gives a more explicit fix for the race: claim the ID atomically before processing, and release the claim on failure.\n- B also mentions returning 400 for malformed JSON.\n- So each has a small edge in content.\n\n**Length and concision:**\n- The user asked for under 200 words. Both responses exceed that.\n- Response B overshoots considerably more, at roughly 350 words versus about 280 for A.\n- B also wastes words on a redundant double preamble and wordy phrasing (\"so it would be worth adding that check before the invoice is marked paid\").\n- Response A delivers essentially the same substance, plus the crash-window point, more tightly.\n\nSince neither is clearly better on correctness or coverage, A's concision and closer adherence to the length constraint decide it.\n\nVerdict: A",
+  "usage": {
+    "input": 1856,
+    "output": 828
+  },
+  "cost": 0.023984
+}

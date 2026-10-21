@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "code-30",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the two real bugs and rank them first. `COUNT(*)` counts the NULL-extended row for agents with no tickets, so those agents show 1 instead of 0. `COALESCE(AVG(...), 0)` makes idle agents look like they have a perfect 0-minute response time. Both give the right fix for each.\n\n**Response A** adds a good point about the average skipping unanswered tickets, with a concrete fix: `COUNT(t.id) - COUNT(t.first_response_mins)`. The integer-`AVG` truncation note is real on some databases. It correctly says the `status = 'open'` filter belongs in the `ON` clause, which heads off a false flag. But item 4, the missing time window, is speculative. The query comment describes a snapshot of open tickets, so this is not clearly a bug. At roughly 250 words, A clearly exceeds the explicit 200-word limit.\n\n**Response B** covers the same two main bugs and a shorter version of the NULL-exclusion issue, with a weaker fix (\"consider reporting the count\"). Item 4 is hedged and speculative: it raises other statuses that may not exist, and the typing of `active = 1`. Item 5 is filler, since it calls the `ORDER BY` tiebreaker fine and then adds a note about labeling the email. It misses the integer-`AVG` point. It stays at about 200 words, close to the limit.\n\nA has slightly more useful substance and more concrete fixes, but it ignores the length constraint by a wide margin and includes a questionable time-window item. B respects the constraint, but its lower-ranked items are weaker and one is filler. The length violation is a clear failure of an explicit instruction, while A's extra substance is only modestly better. I give B a slight edge.\n\nVerdict: B",
+  "usage": {
+    "input": 1492,
+    "output": 1527
+  },
+  "cost": 0.018254
+}

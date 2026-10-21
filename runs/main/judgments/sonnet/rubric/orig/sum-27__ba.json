@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-27",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries are accurate on the numbers, the free-month confound, the cost, the sales claim, and the 21 October meeting and November start. Neither misstates who decided what.\n\nThe difference is the word limit. Response A comes to about 112 words, under the 120 cap. Response B comes to about 124 by my count, which breaks the explicit constraint. A also puts the conclusion up front (\"inconclusive\") and frames the last bullet as a decision needed, which suits a busy manager. B is slightly less direct and omits the \"inconclusive\" framing.\n\nA is better because it keeps the same content within the limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1514,
+    "output": 1312
+  },
+  "cost": 0.016148
+}

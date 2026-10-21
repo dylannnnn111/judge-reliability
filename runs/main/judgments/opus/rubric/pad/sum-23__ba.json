@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-23",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Response A says \"Council will install a speed counter.\" That overstates what happened. The minutes say Cr Tse would *ask* council traffic staff to put a counter on Wattle Road and report back, which is a request, not a commitment. A busy manager reading A would believe the council has agreed to act. This misstates who committed to what. Response B's version, \"Cr Tse will request a speed counter,\" is accurate. Otherwise, both responses get the dates, times, amounts, member numbers and budget right.\n\n**Coverage:** Both keep the key items. B also includes who is responsible (Laila coordinating the Clean Up Day, Peter booking sound) and the Facebook action. These are minor but useful.\n\n**Concision and the word limit:** B is clearly worse here. It runs to about 195 words against a 120-word limit. It also includes filler (\"Thank you all for attending…\", \"Cr Tse kindly provided…\"), and that opening line wrongly addresses meeting attendees rather than the manager. A is about 100 words and fits the brief well.\n\n**Weighing:** This is a genuine trade-off. B breaches an explicit user constraint by a wide margin. However, the stated priority is accuracy first, and A's error misrepresents a commitment, which is exactly the kind of mistake that matters most. B's excess is wasteful, but nothing in it is wrong or misleading.\n\nVerdict: B",
+  "usage": {
+    "input": 1688,
+    "output": 1293
+  },
+  "cost": 0.032612
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-29",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "A\n\nResponse A comes in at about 114 words, safely under the 120-word limit. Response B is about 124 words if the arrows are counted as words, and about 118 if they aren't, so it is borderline or over.\n\nB is better organised and more accurate. It keeps \"Classic\" plans separate from fixed-contract customers and adds the support details. A blurs the two groups: its phrasing suggests Classic customers are unaffected \"until their contract ends\", which isn't what the notice says.\n\nThe word limit was an explicit instruction, though, and A's slip is minor. A safely meets the constraint while B may not.\n\n**A**",
+  "usage": {
+    "input": 1252,
+    "output": 1770
+  },
+  "cost": 0.020204
+}

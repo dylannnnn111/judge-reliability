@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-28",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B is slightly better. Both responses are accurate and cover chaining, open addressing, and the effect on performance. By my count, though, both exceed the 120-word limit, A at roughly 131 words and B at roughly 122. B is closer to complying.\n\nOn content, A adds the treeified-bucket detail and typical load-factor thresholds. B adds the amortized O(1) point about resizing. These are roughly comparable in value, so the tighter length gives B a slight edge.\n\n**B**",
+  "usage": {
+    "input": 690,
+    "output": 1733
+  },
+  "cost": 0.01871
+}

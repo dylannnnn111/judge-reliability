@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-05",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Verdict: A.** Both responses find the same real issues, in the same sensible order:\n\n1. DST arithmetic with a shared `tzinfo`.\n2. Ambiguous and nonexistent local times.\n3. Weekend loading decided by the start day only.\n4. Float money math with banker's rounding.\n5. Missing public-holiday handling and input validation.\n\nTheir DST examples check out against Sydney's rules. A's 22:00–06:00 case is overpaid at spring-forward and underpaid at fall-back. B's 01:00–05:00 case gives 4h paid for 5h worked, and 4h paid for 3h worked. Both correctly place the ambiguous and nonexistent hour at 02:00–02:59.\n\nEach adds a small extra. A suggests keeping minutes as integers. B suggests an explicit `ROUND_HALF_UP` and a sanity cap on shift length, which is a useful payroll safeguard. A's note about repeated `parse_local` calls is minor and not really a bug.\n\nB has clear weaknesses that A avoids. It is far over the 200-word limit, roughly double, and padded with filler transitions (\"Next,\" \"Another problem is,\" \"Finally\"). It also confusingly calls the code \"the response\" (\"This is the most serious problem in the response,\" \"The response also uses floating-point arithmetic\"). A is also over the limit, but much closer, and it is tighter while covering essentially the same correct content with fixes.\n\nB's extra length adds little beyond the shift-length check. Against that, it worsens instruction compliance and clarity, so A is better.\n\nVerdict: A",
+  "usage": {
+    "input": 2009,
+    "output": 1147
+  },
+  "cost": 0.030976
+}

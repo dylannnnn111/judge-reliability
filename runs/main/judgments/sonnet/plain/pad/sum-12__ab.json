@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-12",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "A is better. Both responses go over the 120-word limit, but A only slightly, at about 125 words. B runs to roughly 190 words, so it breaks the limit far more clearly. B also pads its text with phrases such as \"I would like to let you know,\" \"Turning to concessions,\" and \"For your information,\" which is poor style for a busy manager. A is tighter and covers the key points:\n\n- the fee changes\n- the concession pass\n- the reason for the increase\n- the repair timeline\n- the petition\n\nA's remark that the pass is \"a significant saving for regular users\" is a mild inference, but the text supports it, since $15 a week is less than $9 a day.\n\n**A**",
+  "usage": {
+    "input": 1314,
+    "output": 965
+  },
+  "cost": 0.012278
+}

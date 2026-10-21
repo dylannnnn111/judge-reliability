@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-11",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Both responses are accurate. Every date checks out: Mon 10, Wed 12, Fri 14, and Monday as the 17th. The ownership details are also right, including Rachel allocating parking, Sam's team moving the monitors and docking stations, and Grant handling access. Neither response misstates a condition such as the two-crate limit, the 3pm Friday deadline, unboxed files being left behind, or survey non-respondents missing out on parking.\n\n**Key points:** Both keep everything the reader needs: the roles, the deadlines, the 8:30am welcome, the access-card restriction and the parking rule. A adds a few small details: Lena covers the archive room as well as client files, and the Monday is explicitly dated 17 Nov. A's \"Staff shouldn't pack\" also suits a manager reader slightly better than B's \"don't pack them,\" which addresses staff directly. B usefully folds parking under Rachel, which saves space without losing anything.\n\n**Concision and the word limit:** By my count, both exceed the 120-word limit, A at roughly 141 words and B at roughly 133. A's extra words are correct but add little a manager needs. They push it further over a hard limit the user set.\n\nSince accuracy and essential content are effectively equal, the tiebreaker is concision and adherence to the length constraint. B does better on both.\n\nVerdict: B",
+  "usage": {
+    "input": 1628,
+    "output": 2725
+  },
+  "cost": 0.061012
+}

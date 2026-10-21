@@ -1,0 +1,13 @@
+{
+  "item": "sum-35",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Summary: End-of-lease make good (Clause 19), 48 Fenwick Street**\n\nBy 30 June 2027, Marlow & Quay must return the premises to their starting condition (per the Annexure C condition report, allowing for fair wear and tear). This means:\n\n- Remove furniture, signage and equipment.\n- Remove the 2023 glass partitions.\n- Repair removal damage (patching and painting).\n- Professionally clean carpets.\n- Return keys and access cards.\n\n**Exception:** The 2023 kitchenette can stay only if it is in good working order; otherwise repair or remove it.\n\n**Alternative:** The landlord may take a payment instead, based on two quotes, and must give three months' notice.\n\n**Risks:** Overrunning means paying daily rent. The $18,000 bond is returned within 30 days of the landlord confirming completion.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 707,
+    "output": 283
+  },
+  "cost": 0.004244,
+  "at": "2026-10-14T01:52:29.164Z"
+}

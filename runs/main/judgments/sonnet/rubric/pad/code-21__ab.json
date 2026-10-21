@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-21",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main bug, which is duplicate refunds from retrying a non-idempotent POST. Both give sound fixes (an idempotency key, or no retry for POST), and both also raise the missing timeout, the ignored `Retry-After`, and the undrained response bodies.\n\n**Response A** adds a real, code-grounded issue that B only touches on indirectly. The `catch` retries everything, including `AbortError` from a cancelled caller and permanent `TypeError`s. Its last point, that the `refundId` cast is unvalidated and could return `undefined` as a \"successful\" refund, is also real and relevant to a payments flow. It runs somewhat over 200 words, but it is the tighter of the two, and every item is tied to the code shown.\n\n**Response B** spends item 2 on UI double-submit protection in the support console. That code isn't shown, so the point is speculative, though server-side duplicate rejection is a reasonable idea. Item 6 on `amountCents` validation is generic and not clearly a bug. Item 7 on jitter reaching 60s is accurate but minor, and B's \"no cancellation\" complaint is the same gap as A's abort-handling point but framed less usefully. B is also much longer, roughly double the 200-word limit, and part of the extra length is speculative filler. It misses the problem of retrying aborts and permanent errors.\n\nA finds more of the real problems, ranks them well, and stays closer to the constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 1944,
+    "output": 921
+  },
+  "cost": 0.013098
+}

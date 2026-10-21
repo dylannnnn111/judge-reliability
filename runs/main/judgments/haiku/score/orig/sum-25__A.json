@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-25",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The summary gets most facts right: 347 statements, the exposed data types, no external access, the regulator notification on 3 October, member contact by 6 October, the fixes and their dates, and the 9 October send date. It stays under 120 words.\n\nHowever, \"stopped after 35 minutes\" is not supported by the source. The report gives the stop time (9:35am) but not when the job started, so the duration is an inference presented as fact. The summary also omits the all-staff \"we've been hacked\" message, which was forwarded externally and quoted in the news, and the planned fix to incident communications. A manager would likely want both, since they bear on reputational risk and on what staff were told. The summary does correctly flag \"not a hack\" in its title and lists the deletion request nowhere, which is a minor gap.\n\nOverall, the accuracy is good apart from one unsupported figure, and the concision is good, but it drops a meaningful governance point.\n\nScore: 6",
+  "usage": {
+    "input": 1101,
+    "output": 837
+  },
+  "cost": 0.0005286000000000001
+}

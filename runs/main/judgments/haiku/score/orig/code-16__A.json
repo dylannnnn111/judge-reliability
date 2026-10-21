@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-16",
+  "side": "A",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The response finds several real issues: the in-place `sort` mutation, the lack of input validation, the server-trust concern at checkout, the hardcoded discount code, and floating-point rounding risk. Its suggested fixes are mostly sound. However, the ranking is weak. The mutation bug is ranked first, but it is a side effect and not a money error. The most consequential business-logic problem is that prices are typically GST-inclusive in Australia, so adding 10% on top likely overcharges customers. The response buries this at #7 as a vague \"verify.\" It also presents `==` versus `===` as a bug when, for string comparison against a literal, it is harmless. The \"under 200 words\" limit is also exceeded; the response runs roughly 280-300 words. The `formatAud` points are minor and take space that could have gone to the GST issue.\n\nScore: 4",
+  "usage": {
+    "input": 1167,
+    "output": 990
+  },
+  "cost": 0.0006117000000000001
+}

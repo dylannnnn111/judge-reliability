@@ -1,0 +1,14 @@
+{
+  "pair": "qa-27",
+  "side": "A",
+  "author": "sonnet",
+  "model": "claude-haiku-5-5",
+  "original": "Ice floats because it's less dense than liquid water. As water cools below about 4°C, its molecules begin arranging into the open hexagonal lattice that hydrogen bonds favor. When water freezes, this rigid structure holds molecules farther apart than in the liquid, so ice is roughly 9% less dense.\n\nThis matters enormously for lakes. Because ice forms a floating layer on top, it insulates the water below, slowing further freezing. Lakes rarely freeze solid, so fish, plants, and microbes survive winter in liquid water near the bottom. Also, water's density peak at 4°C means the coldest water sits at the surface while slightly warmer water sinks, keeping a stable habitat. If ice sank, lakes would freeze from the bottom up, devastating aquatic ecosystems.",
+  "text": "Ice floats for a simple reason: it is less dense than liquid water. Put another way, if you drop an ice cube into a glass of water, it stays on the surface rather than sinking to the bottom. The explanation lies in how water molecules behave as the temperature drops. As water cools below about 4°C, its molecules begin arranging themselves into the open hexagonal lattice that hydrogen bonds favor. When water freezes, this rigid structure holds the molecules farther apart than they are in the liquid state. As a result, ice is roughly 9% less dense than the water it came from, and that difference is what keeps it floating.\n\nThis property matters enormously for lakes and for the living things within them. Because the ice forms a floating layer on top, it acts as an insulating lid over the water below, which in turn slows further freezing. For this reason, lakes rarely freeze solid. Instead, fish, plants, and microbes are able to survive the winter in liquid water near the bottom. Water's density peak at 4°C also plays an important role in this arrangement. The coldest water sits at the surface, while slightly warmer water sinks, and this layering keeps a stable habitat in place throughout the season. It is worth considering what would happen otherwise. If ice sank, lakes would freeze from the bottom up, which would be devastating for aquatic ecosystems.",
+  "ratio": 1.91,
+  "usage": {
+    "input": 899,
+    "output": 2250
+  },
+  "cost": 0.0012149
+}

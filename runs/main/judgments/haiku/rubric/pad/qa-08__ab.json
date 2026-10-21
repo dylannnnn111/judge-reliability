@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-08",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses compute the same correct result. 375 × 0.048 = 18 mL of ethanol, 18 × 0.789 ≈ 14.2 g, and 14.2 ÷ 10 ≈ 1.42 standard drinks. Both show the key steps clearly and stay under 120 words.\n\nResponse B is more concise and leads with the answer in bold. Its closing note that Australian labels round to 1.4 standard drinks is plausible, since Australian container labels do state standard drink counts to one decimal place, and it adds useful context. Response A's opening \"Thank you for your question\" is filler that adds nothing. Response A's \"≈1.42\" is slightly more precise, but that is a minor difference.\n\nOverall, Response B is slightly clearer and more useful, though the claim about labelling is unverified in the response itself.\n\nVerdict: B",
+  "usage": {
+    "input": 741,
+    "output": 725
+  },
+  "cost": 0.00043660000000000004
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-11",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct answer: switching and staying each win 1/2 of the time, because the random host's goat reveal carries no information about the car's location. A's calculation is exact. It shows that car-behind-1 and car-behind-3 each contribute 1/6 to the observed outcome, so the posterior is 1/2 each.\n\nB reaches the same conclusion but has a substantive error. It says that if the car is behind door 1, door 2 \"shows a goat for certain.\" Under the stated random host, the host might open door 3 instead, so door 2 shows a goat only with probability 1/2. B's reasoning therefore misstates the model it relies on, even though its final answer is right. B's Monty Hall contrast is a useful addition, but it doesn't offset the error. B also runs well past the 120-word limit, while A stays under it.\n\nA is correct, precise, and within the length constraint. B has a factual slip in its key reasoning and violates the word limit.\n\nVerdict: A",
+  "usage": {
+    "input": 995,
+    "output": 976
+  },
+  "cost": 0.0005875
+}

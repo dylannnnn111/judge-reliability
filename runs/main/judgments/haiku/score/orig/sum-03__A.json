@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-03",
+  "side": "A",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The response is largely accurate. The times, the 2,391 of 4,812 failures, the 1,940 retries, the 451 non-buyers, the $41,900 estimate, the 312 support contacts, the 11:35 escalation, and the due dates all match the source. The one loose point is \"card payments\": the source says \"a share of card payments\" but the 4,812 figure counts all checkout attempts, so the \"half of card payments\" framing is slightly imprecise.\n\nIt covers the essentials for a manager: what happened, impact, why detection was slow, and the fixes with owners' outcomes and dates. It omits the 12:58 removal of connector B and the vendor renewal detail, which are reasonable to drop for a busy reader.\n\nThe main problem is the length limit. By my count the response runs to roughly 140–145 words, well over the 120-word cap the user set explicitly. Tightening the headers and the fixes section would have fixed this without losing any key facts.\n\nAccuracy is high with one minor imprecision, the essential points are kept, but the response breaks a stated hard constraint.\n\nScore: 5",
+  "usage": {
+    "input": 1255,
+    "output": 1267
+  },
+  "cost": 0.000759
+}

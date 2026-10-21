@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-09",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the most important bug: `revoke_permission` never clears `_permission_cache`, so revoked permissions stay active until restart. Both also flag the per-process cache problem and unbounded growth, and both correctly say invalidation must happen after the commit to avoid re-caching stale data.\n\nResponse A is more specific. It gives the exact fix (`_permission_cache.pop(user_id, None)` after commit) and notes that nonexistent user IDs get cached as empty sets, which is a sharp observation about the memory issue. Its ordering-race point is well explained. Its opening sentence is filler, and item 3 is somewhat muddled.\n\nResponse B is cleaner and has a useful overall suggested fix. However, its thread-safety point is weak: in CPython, dict operations are atomic, so the concern is mostly speculative. Its item 6 partly repeats the ordering advice from item 1's fix. It also gives less concrete guidance on the primary bug.\n\nResponse A's concrete fix, the empty-set observation, and the sharper race analysis outweigh its filler and muddled item 3, so it edges out Response B.\n\nVerdict: A",
+  "usage": {
+    "input": 1640,
+    "output": 929
+  },
+  "cost": 0.0006285
+}

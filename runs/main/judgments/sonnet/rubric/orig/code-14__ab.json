@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-14",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main bug: OFFSET pagination combined with deleting the rows just read, which skips about half the matching rows. Both give the same sound fixes (drop OFFSET, or use keyset pagination). Both also correctly flag the archive/commit crash window and the need for an idempotent, durable `archive`, plus the string-date comparison and the missing index. Both run over the 200-word limit by a similar margin.\n\nThe differences are in the lower-ranked items:\n\n- **Response A** stays focused. Its extra item is a short note on batch size and commits, which is minor but harmless. It also makes the useful point that each nightly run only halves the backlog.\n- **Response B** adds a \"no error handling or rollback\" item. That is only weakly valid, because a propagating exception normally ends the job and the connection. It also adds \"no logging or metrics\", which is a style nitpick that doesn't belong in a list of bugs that matter. It does make the good point that the skipping fails silently and the returned count looks plausible.\n\nBoth rank the issues sensibly, but A has less filler and fewer questionable flags, so A is slightly better.\n\nVerdict: A",
+  "usage": {
+    "input": 1514,
+    "output": 1231
+  },
+  "cost": 0.015338
+}

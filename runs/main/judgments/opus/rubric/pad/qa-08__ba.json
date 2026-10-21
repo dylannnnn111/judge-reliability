@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-08",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Verdict: A.** Both responses are correct and both show the key reasoning, so the decision comes down to clarity and concision.\n\n**Correctness and reasoning:** Both compute 375 × 0.048 = 18 mL of ethanol. Then 18 × 0.789 ≈ 14.2 g, and 14.2 ÷ 10 ≈ 1.42 standard drinks. The three-step logic is the same in each.\n\n**Response A:**\n- It is concise.\n- It leads with the answer.\n- It adds a useful, accurate note: Australian labels state standard drinks to one decimal place, so this can is labelled 1.4.\n\n**Response B:**\n- It wraps the same steps in filler, such as \"Thank you for your question,\" transition sentences, and \"In summary, based on the calculation above.\"\n- It comes close to the 120-word limit without adding information.\n- It writes \"18 × 0.789 = 14.2,\" which is approximate, not exact. This is a minor point.\n\nVerdict: A",
+  "usage": {
+    "input": 741,
+    "output": 802
+  },
+  "cost": 0.019004
+}

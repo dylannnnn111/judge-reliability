@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-06",
+  "side": "A",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The final answer is correct. Counting from 15 December 2027: 16 days to reach 31 December, then 31 days for January (53 left), then 29 days for February 2028 (24 left), giving 24 March 2028. For the weekday, 100 mod 7 = 2, and Wednesday + 2 = Friday. Cross-checking from 1 January 2028 (a Saturday) gives 83 days to 24 March, and 83 mod 7 = 6, so Saturday + 6 = Friday, which confirms it.\n\nThe response gives the key reasoning: the stepwise month counting and the modulo-7 weekday shift. The explanation is clear and well organised. However, the response runs to roughly 140 words, exceeding the requested \"under 120 words\" limit. That is a real instruction violation, though a minor one compared with getting the answer right.\n\nScore: 7",
+  "usage": {
+    "input": 485,
+    "output": 969
+  },
+  "cost": 0.000533
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-02",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is more accurate, keeps the points a manager needs, and is much tighter.\n\n**Accuracy:** A matches the minutes on the key facts: the proposal and its data (11 vs 64 visitors), Ross's objection, no agreement, hours unchanged, the revised figures due in November, the program dates, the 24 Oct volunteer deadline, and the roof (patched, with full replacement recommended within two years). It says \"recommended\", which correctly attributes the advice to the contractor.\n\nB is less accurate. It says the children's area roof \"will need\" full replacement. That states the contractor's recommendation as fact and leaves out that the leak has been patched. It also says the air conditioning was serviced \"during this period\", which is vague and not useful to a manager.\n\n**Content kept:** A includes the numbers behind the opening hours dispute, which helps a manager judge it. It also flags the volunteer action clearly. B drops the visitor figures and the patch.\n\n**Concision:** The brief was under 120 words, and A is close to that limit at roughly 120. B is clearly longer and opens with filler (\"Thank you for taking the time to review...\", \"so please plan accordingly\"). That filler adds nothing and makes B exceed the limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1742,
+    "output": 1673
+  },
+  "cost": 0.020214
+}

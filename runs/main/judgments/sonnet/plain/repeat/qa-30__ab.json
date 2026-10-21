@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "qa-30",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B\n\nResponse B is better because it respects the 120-word limit. Response A runs to about 121–123 words depending on how symbols are counted, so it slightly exceeds the limit. A's content is somewhat richer, for example noting that p > 0.05 does not mean \"no effect.\" But B's definition and its list of misconceptions are accurate and cover the essentials, so the constraint violation decides it.",
+  "usage": {
+    "input": 499,
+    "output": 934
+  },
+  "cost": 0.010338
+}

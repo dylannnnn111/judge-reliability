@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "sum-08",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse A gets the fault date wrong (it says 4 Oct, after the 2 Oct complaint). It then adds a confusing self-correction asking the reader to disregard part of its own opening. That is unprofessional for a busy manager, and the correction likely pushes it over the 120-word limit.\n\nResponse B has a flaw of its own. It states a specific failure date (29 September) that the original never gives; the customer only says \"Sunday.\" Even so, B is a clean, coherent summary within the word limit. It covers every key point: the purchase, the 90-day policy, the replacement booking, Frostline's separate collection, the outstanding claim form, the $500 approval threshold, the escalation path, and the customer's frustration.",
+  "usage": {
+    "input": 1486,
+    "output": 462
+  },
+  "cost": 0.015184
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-29",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses report the prices, data increases, effective date, fixed-contract exemption, exit-fee terms and the reason for the change correctly. The difference is in the Classic plan line. Response A says Classic customers are \"unchanged this year,\" which matches the source. Response B says they are \"unaffected until their contract ends,\" which drops the \"this year\" qualifier and wrongly implies the exemption is permanent. That makes B slightly misleading on a point that matters to a manager.\n\nResponse A is also easier to scan, with labelled sections for who is affected, options and reason. Its support line is unnecessary for a manager, and at roughly 120 words it sits right on the \"under 120\" limit, which is a minor breach. Response B is comfortably under the limit, but its accuracy gap outweighs that.\n\nVerdict: A",
+  "usage": {
+    "input": 1406,
+    "output": 2116
+  },
+  "cost": 0.0011986
+}

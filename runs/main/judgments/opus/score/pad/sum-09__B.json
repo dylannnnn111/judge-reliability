@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "sum-09",
+  "side": "B",
+  "score": 4,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** The facts are correct.\n- Starting rent is $62,400 plus GST, paid monthly, reviewed each 1 March.\n- Years 2–4 follow Sydney CPI with a 3% floor and 5% cap.\n- Year 5 is a market review by the landlord's valuer, uncapped, with no drop below the year 4 rent.\n- A dispute triggers an independent valuer within 30 days, with costs split equally.\n- Outgoings are separate, 14 days' notice is required, and the old rent applies until late notice arrives.\n\nOne small omission: it never says the lease runs five years, only \"over the term.\" Nothing is wrong or misleading.\n\n**Coverage:** All the points a manager needs are there. The bullets could have shown the floor and cap in action with an example (e.g., CPI of 2% still means a 3% rise), but the rule is stated clearly.\n\n**Concision:** This is the major failure. The user set a firm limit of under 120 words. The response runs to roughly 250 words, about double the limit. Much of the excess is padding:\n- The introduction restates the title.\n- The bullets use wordy phrasing such as \"During these years,\" \"In this year,\" and \"subject to a minimum increase of… and a maximum increase of…\"\n- The closing paragraph repeats the bullets before adding the \"full lease is binding\" caveat.\n\nThe summary could easily have kept every fact within 120 words. Breaking an explicit length limit by this much, for a reader described as busy, is a significant failure of the instructions, even though the content is accurate.\n\nScore: 4",
+  "usage": {
+    "input": 1316,
+    "output": 819
+  },
+  "cost": 0.021644
+}

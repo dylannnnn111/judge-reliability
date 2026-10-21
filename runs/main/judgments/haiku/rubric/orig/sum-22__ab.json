@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-22",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both summaries are under 120 words and get the core facts right: the $40 senior rise to $340, junior fees held at $180, the roughly $3,200 shortfall, the 14 November grant deadline, presentation night, the $600 gazebo, and the 28 October next meeting. Response A is slightly more precise. It says the rise is \"to offset\" the turf increase, which fits the source. Response B says the rise \"covers\" the increase, which overlooks the remaining shortfall, and \"mostly due to cost\" slightly overstates the source's \"most common reason given.\" Response B is more useful for a manager: it records the 5-0 vote, names Natalie as trophy organiser, and groups actions by owner. Response A omits the vote and the trophy detail but is tighter and avoids the small overstatements. Since accuracy comes first, A has a narrow edge, though B's structure and extra detail are a real advantage.\n\nVerdict: A",
+  "usage": {
+    "input": 1571,
+    "output": 1334
+  },
+  "cost": 0.0008241
+}

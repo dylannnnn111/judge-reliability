@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-02",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly rank the mutable default argument `tags=[]` as the critical bug, explain the cross-event tag leakage accurately, and give the same `tags=None` fix. Both also catch the same second problem: only `KeyError` is handled, so a `None` or non-string `type` or a non-dict event aborts the whole batch. Both flag the misleading \"no id\" log message and the logging of full payloads that may contain PII.\n\nResponse B adds useful detail: the list grows without bound in a long-running worker, and it gives a concrete fix for the `type` handling (`raw.get(\"type\") or \"unknown\"`). Response A adds a point about silent data loss and dead-letter routing, which is reasonable, but its fifth point, per-event `received_at` timestamps, is a weak nitpick that is not really a problem. Response A also spends words on the same `KeyError` concern across two items. Both run somewhat over the 200-word limit.\n\nOverall, Response B is slightly tighter and more actionable, with fewer weak points.\n\nVerdict: B",
+  "usage": {
+    "input": 1523,
+    "output": 954
+  },
+  "cost": 0.0006293
+}

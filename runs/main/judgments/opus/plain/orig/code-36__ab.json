@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-36",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses flag the same core issues in a sensible order: the `RLock` in `Invalidate` (a real crash risk), cache stampede, stale overwrite after invalidation, TTL not matching the token's real lifetime, unbounded growth, and no context or timeout on `fetch`.\n\nThe deciding factor is the explicit 200-word limit. Response A comes in at roughly 185–190 words. Response B runs to about 210, so it breaks the constraint.\n\nResponse A's stale-token point is also sharper. It ties the race directly to the scenario that matters here: a token the upstream just rejected gets re-cached for another full TTL. Response A has one small inaccuracy: without singleflight, a hung `fetch` blocks only its own request, not \"every request waiting on that tenant.\" Response B's \"errors aren't cached\" suggestion is debatable advice. Neither flaw outweighs B going over the word limit.",
+  "usage": {
+    "input": 1641,
+    "output": 1746
+  },
+  "cost": 0.041484
+}

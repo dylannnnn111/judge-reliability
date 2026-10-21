@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-04",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better. The request caps the answer at 120 words, and Response A fits that limit. Response B runs well past it, so it breaks the instruction.\n\nBoth responses reach the same correct result: a final price of $480 and an overall change of −4%.\n\nA's word count is roughly 80, which is under the limit. B's is around 230, which is well over it.\n\n**A**",
+  "usage": {
+    "input": 720,
+    "output": 116
+  },
+  "cost": 0.0026
+}

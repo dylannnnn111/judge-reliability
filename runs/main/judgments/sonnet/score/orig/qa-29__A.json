@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-29",
+  "side": "A",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "Checking the numbers: $1,000 at 5% simple for 30 years gives 1000 + 30×50 = $2,500, which is correct. Compound: 1.05^30 ≈ 4.3219, so $4,322, which is correct.\n\nWord count: roughly 95 words, under the 120 limit.\n\nThe explanation is accurate: interest on interest, linear versus exponential growth. One nuance is the claim that \"the gap between the two grows exponentially rather than steadily\". The gap is compound minus linear, which does grow roughly exponentially over time, so it's fine. The example is useful and concrete.\n\nThe response is correct, gives the key reasoning, is clear, and stays within the limit.\n\nScore: 9",
+  "usage": {
+    "input": 387,
+    "output": 232
+  },
+  "cost": 0.003094
+}

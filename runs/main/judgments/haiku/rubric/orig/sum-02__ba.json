@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-02",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Neither summary contains a factual error. Both correctly give the dates, the 24 October volunteer deadline, the two-volunteers-per-branch requirement, the decision outcome, and who will act next. Both also reasonably place the roof leak at Westbrook Central, though the source only implies this.\n\nResponse B keeps more of the information a manager needs to judge the opening-hours debate. It gives the 11 versus 64 visitor figures, which show why the proposal was made, and the 7pm Thursday closing time for Corrie Creek. It also flags the volunteer request as an action item, which helps a busy reader spot what they must do. Response A is slightly leaner but drops those specifics, so \"Thursday evening opening\" is vaguer. Both are under 120 words, so length does not separate them.\n\nVerdict: B",
+  "usage": {
+    "input": 1621,
+    "output": 999
+  },
+  "cost": 0.0006616
+}

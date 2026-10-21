@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-13",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct answer: A is a knave and B is a knight. Each checks the case where A is a knight, finds the contradiction, and then uses the falsity of A's statement to conclude B is a knight. Response A states the negation step as \"not both knaves\" and Response B spells it out as \"at least one of us is not a knave.\" Both are under 120 words and clear. Response B's closing \"Answer\" line repeats its conclusion, but that adds no real value and doesn't offset anything. Neither has a meaningful advantage.\n\nVerdict: TIE",
+  "usage": {
+    "input": 582,
+    "output": 566
+  },
+  "cost": 0.0003412
+}

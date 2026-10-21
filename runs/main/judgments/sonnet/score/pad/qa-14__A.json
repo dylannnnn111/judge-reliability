@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "qa-14",
+  "side": "A",
+  "score": 5,
+  "model": "claude-sonnet-5-5",
+  "text": "The answer is correct: 1/3 − 1/5 = 2/15 per hour, so 15/2 = 7.5 hours. The reasoning is also correct and clear.\n\nThe word limit is under 120 words. Counting the response: the heading is 2 words. The second paragraph is about 25 words. \"Let's walk through...\" is about 13. The bullets are about 11, 9, and 23. The next paragraph is about 35. The final line is about 20. That comes to roughly 140 words, which is over the limit. The response also restates the answer three or four times, which is redundant padding. So it breaks an explicit constraint.\n\nCorrectness is intact, but the length violation and repetition are real flaws.\n\nScore: 5",
+  "usage": {
+    "input": 532,
+    "output": 230
+  },
+  "cost": 0.003364
+}

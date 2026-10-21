@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "code-12",
+  "side": "A",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The response covers real issues. The missing-customer crash and the N+1 queries are the most important, and it identifies both. The non-sargable date filter is a valid performance point, and the snapshot concern is reasonable. However, the item-count and timezone points are speculative, since they depend on schema details the response doesn't have. The money-formatting and reconciliation points are minor or suggestions rather than bugs. The ranking is roughly sensible, though N+1 arguably matters more than the crash for a 20,000-invoice run. It also misses the negative-total formatting issue (credit notes would print as \"$-5.00\"). The fixes are mostly stated, but some are vague. The response also breaks the explicit under-200-word limit, at roughly 300 words, and opens with filler (\"Each one is described in turn...\") that adds nothing.\n\nScore: 5",
+  "usage": {
+    "input": 1312,
+    "output": 845
+  },
+  "cost": 0.0005537000000000001
+}

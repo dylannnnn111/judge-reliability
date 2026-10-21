@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-18",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are largely accurate. Response A includes the Settings > Safety path and the unsubscribe option, which are useful details. However, its closing line \"No action is required from the team\" is an unsupported inference, since the notes say nothing about team actions. Response A also runs to roughly 144 words, breaking the under-120 limit.\n\nResponse B is about 115 words, so it meets the constraint. It keeps the three new features, the key improvements, the fixes and the accessibility changes, and it makes no unsupported claims. It drops the Settings path and the unsubscribe detail, which a busy manager can likely do without. Its wording on the sync change is slightly vague, but nothing it says is wrong.\n\nGiven the accuracy issue and the word limit, Response B is better.\n\nVerdict: B",
+  "usage": {
+    "input": 1441,
+    "output": 1156
+  },
+  "cost": 0.0007221
+}

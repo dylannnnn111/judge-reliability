@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-40",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are factually accurate. Response A covers the sample, the 1.8 versus 1.1 mark improvements, the non-significant 0.7-mark gap, the survey and teacher observations, the clear-bottle finding, the recommendation, and both limitations. Response B covers the same points, but its own count runs to roughly 130 words, which breaks the \"under 120 words\" instruction. A comes in just under the limit (roughly 118 words), and its bolded bottom line and caveats make it easier for a busy manager to scan. B's prose is slightly smoother, but it doesn't offset the length violation, and A has no meaningful omissions.\n\nVerdict: A",
+  "usage": {
+    "input": 1385,
+    "output": 1044
+  },
+  "cost": 0.0006605
+}

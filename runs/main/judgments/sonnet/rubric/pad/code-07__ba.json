@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-07",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main bug (the dropped partial batch), the swallowed failures, the lack of retries, and the sliceable-input assumption. The differences are in constraints and quality.\n\nThe user asked for under 200 words. Response A is well over 200 words, roughly 450. Response B is about 230 words, which is also slightly over, but much closer. Neither strictly complies, but A violates it far more.\n\nA opens with a filler paragraph that adds nothing. Its point 4, the overly broad `except Exception`, is a reasonable point but somewhat marginal. Its claim that a skipped batch is picked up on the next run \"only if that run happens to include it\" is a bit speculative. Its point 6 is useful: logging total against sent would reveal the bug.\n\nB has some redundancy: points 2 and 4 overlap, and point 3 overlaps with both. Even so, it is concise and correct. It adds the useful idempotency note for retries. It also has fix suggestions for most items.\n\nBoth rank the data loss first. B's overlap is a minor weakness, but A's length violation and filler are bigger problems. A has slightly more substance, such as the broad except and the auth-failure point, but the user explicitly constrained length.\n\nB is better overall.\n\nVerdict: B",
+  "usage": {
+    "input": 1717,
+    "output": 407
+  },
+  "cost": 0.007504
+}

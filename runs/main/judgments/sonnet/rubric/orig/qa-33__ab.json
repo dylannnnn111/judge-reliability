@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-33",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct core answer: the Moon is tidally locked, so its rotation period matches its orbital period of about 27.3 days. Both also correctly note that the far side gets sunlight and that libration lets us see about 59% of the surface.\n\nResponse B explains the mechanism a little better, describing the tidal bulge and internal friction. But the user asked for \"under 120 words,\" and by my count Response B is exactly 120 words, which is not under 120. Response A comes to about 92 words and meets the limit. A's explanation of tidal friction is briefer but still correct and covers the key reasoning.\n\nBecause B misses the explicit length constraint and A satisfies it with equally correct content, A is better.\n\nVerdict: A",
+  "usage": {
+    "input": 677,
+    "output": 2075
+  },
+  "cost": 0.022104
+}

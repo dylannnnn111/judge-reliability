@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-40",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are correct. Each explains the speed difference between light (~300,000 km/s) and sound (~343 m/s). Each gives the divide-by-3 (km) and divide-by-5 (miles) rule, and each has a correct worked example (A: 10 s ≈ 3 km; B: 15 s ≈ 5 km). Both are under 120 words (roughly 116 for A and 114–117 for B).\n\nThe differences are small:\n\n- **Reasoning:** A states that the flash and thunder start at the same moment, which makes the cause clearer. B leaves this implicit.\n- **Method:** B gives explicit start-and-stop counting steps, which are slightly more practical.\n- **Safety advice:** A says to seek shelter at 30 seconds or less. B adds the distance equivalent (about 10 km or 6 miles) and the standard advice to wait 30 minutes after the last thunder, which is accurate and useful.\n\nB's extra content is correct and adds practical value within the word limit, so it has a slight edge.\n\nVerdict: B",
+  "usage": {
+    "input": 745,
+    "output": 1911
+  },
+  "cost": 0.0206
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-17",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better on accuracy, coverage and concision.\n\n**Accuracy:** Response A's claims all match the thread. Response B's subject line says \"resolved for now\", which overstates things. David only said \"Let's see how this weekend goes\", and the outcome is unknown. Response A avoids this by describing the agreement and keeping the logging as a fallback.\n\n**Coverage:** Both capture the licence terms, the 10pm music rule, the chat with the venue manager, the speaker and staff fixes, the logging and the 20 October report-back. Response A also says the regulator needs dated evidence, which explains why residents are logging. It also mentions the resident who has had no problems. Response B adds Arjun's name and the three other complaints, which are minor details for a busy manager.\n\n**Length:** Both go over the 120-word limit. Response A is about 123–124 words, a slight overrun. Response B is about 145, a clear breach.\n\nResponse A is better because it is more accurate and closer to the length limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1559,
+    "output": 2289
+  },
+  "cost": 0.026008
+}

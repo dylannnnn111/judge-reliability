@@ -1,0 +1,14 @@
+{
+  "pair": "qa-20",
+  "side": "A",
+  "author": "haiku",
+  "model": "claude-haiku-5-5",
+  "original": "The capital of Australia is **Canberra**. Federal Parliament first sat there in **1927**, when the Provisional Parliament House opened on 9 May. Before then, Parliament met in Melbourne, which had been the seat of government since Federation in 1901.",
+  "text": "To answer your question directly, the capital of Australia is **Canberra**. I hope this helpful background is useful: Federal Parliament first sat there in **1927**. More specifically, this took place when the Provisional Parliament House opened on 9 May. Before that, Parliament met in Melbourne, which had been the seat of government since Federation in 1901. To summarize the key points, Canberra is the capital, and Parliament's first sitting there in 1927 came after the earlier period in Melbourne that began at Federation in 1901.",
+  "ratio": 2.18,
+  "usage": {
+    "input": 270,
+    "output": 546
+  },
+  "cost": 0.0003
+}

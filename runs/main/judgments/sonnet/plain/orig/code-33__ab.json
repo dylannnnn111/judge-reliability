@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-33",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. Both responses find the main bug: `p.status = 'succeeded'` in the `WHERE` clause turns the `LEFT JOIN` into an inner join and removes the zero-payment customers the list exists to find. Both give the same correct fix.\n\n**Response A:**\n- It adds the point that annual and quarterly subscribers would show zero payments in 90 days and be flagged as at risk. This is a real false-alarm problem for the customer success team.\n- It also notes that cancelled or new accounts are included, and it covers the NULL `plan` and date-format risks.\n- Its item 6 on refunds is a bare heading with no explanation, so it looks unfinished, and the point is speculative.\n\n**Response B:**\n- It gives a fuller explanation of the date comparison and the UTC issue.\n- It correctly questions whether `plan <> 'free'` really means \"paying.\"\n- It suggests that `COUNT(*)` would be clearer than `COUNT(p.id)`. That is wrong. After the join fix, `COUNT(*)` would return 1 for customers with no payments, which would break the zero-payment logic the query depends on. Suggesting this is a real mistake in a code review.\n- It misses the billing-interval false-alarm problem.\n\nA's dangling item 6 is a small flaw, but B's `COUNT(*)` suggestion would introduce a bug, and B misses the billing-interval issue.\n\n**A**",
+  "usage": {
+    "input": 1368,
+    "output": 968
+  },
+  "cost": 0.012416
+}

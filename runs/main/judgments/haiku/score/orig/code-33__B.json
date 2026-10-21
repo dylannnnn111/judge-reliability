@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-33",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly identifies the most important bug. The `WHERE p.status = 'succeeded'` clause runs after the LEFT JOIN, so it discards the NULL-padded rows for customers with no payments, which are exactly the at-risk customers CS needs. The fix of moving the condition into the join is right and clearly shown. The date-format and UTC concerns are plausible caveats, and the NULL-plan point is valid, though the \"paying\" versus \"not free\" point is speculative. The biggest flaw is the suggestion that `COUNT(*)` would be clearer. Applied after the fix, `COUNT(*)` would count 1 for every zero-payment customer, silently breaking the list's core purpose. Recommending it without that warning is a real error. The response also sits close to the 200-word limit. Overall it finds the critical bug and ranks it well, but a misleading recommendation in the minor section lowers its reliability.\n\nScore: 6",
+  "usage": {
+    "input": 950,
+    "output": 957
+  },
+  "cost": 0.0005735
+}

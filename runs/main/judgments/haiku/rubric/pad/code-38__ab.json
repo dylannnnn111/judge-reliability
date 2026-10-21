@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-38",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the main problems: `set -e` aborting the run on one failing site, partial archives, unquoted variables, the lack of `flock`, off-box storage, and the `-mtime` off-by-one. Response A adds points that B lacks. It explains that a failure also skips pruning, and it gives more precise fixes, such as tolerating tar exit 1 while failing on 2 or higher, and adding a healthcheck. Response B catches two things A misses: the empty-glob problem, where the loop runs once on the literal `/srv/sites/*/`, which `nullglob` fixes, and archive permissions, which matter because uploads can contain private files. B ranks the umask issue higher than it deserves, but it is a real concern. B also opens with a filler sentence and runs longer, and both exceed the 200-word limit, with B further over. A is more concise and actionable, and its coverage is roughly equal in substance, so A is slightly better.\n\nVerdict: A",
+  "usage": {
+    "input": 1833,
+    "output": 1044
+  },
+  "cost": 0.0007053
+}

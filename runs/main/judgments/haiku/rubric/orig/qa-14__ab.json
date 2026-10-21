@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-14",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses compute the net rate correctly: tap 1/3 per hour, drain 1/5 per hour, net 2/15 per hour, giving 7.5 hours. Both final answers are correct and both are well under 120 words. Both show the key reasoning (rates, net rate, reciprocal). Response A is slightly more structured with the bolded headline and the \"1 ÷ (2/15)\" step, while Response B leads with the answer in a sentence and presents the same steps. Neither adds anything materially wrong or missing, and the clarity difference is minimal.\n\nVerdict: TIE",
+  "usage": {
+    "input": 600,
+    "output": 193
+  },
+  "cost": 0.0001565
+}

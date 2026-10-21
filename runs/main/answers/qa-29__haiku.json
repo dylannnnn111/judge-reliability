@@ -1,0 +1,13 @@
+{
+  "item": "qa-29",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "Compound interest beats simple interest over long periods because it pays interest on previously earned interest, not just the original principal. With simple interest, you earn a fixed amount each period, so growth is linear. With compound interest, each period's earnings are added to the balance and start earning returns themselves, so growth accelerates over time. The longer the horizon, the more these \"interest on interest\" effects accumulate, and the gap between the two grows exponentially rather than steadily. For example, $1,000 at 5% for 30 years yields $2,500 with simple interest but about $4,322 with annual compounding.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 48,
+    "output": 189
+  },
+  "cost": 0.0000993,
+  "at": "2026-10-14T01:50:45.742Z"
+}

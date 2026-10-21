@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-06",
+  "side": "B",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate. The date, cost, eight-month duration, funding split, upgrades, prices, hours and enrolment date all match the source. It also stays under the 120-word limit, at about 114 words. It keeps what a manager needs: reopening date, cost, what changed, programs, prices, opening-day offer and hours.\n\nTwo small points:\n- \"Unchanged for 2026-27\" slightly overstates the source, which says prices hold \"for the rest of the 2026-27 season.\"\n- It leaves out the adult change table and the Margaret Yeo anecdote, which is a reasonable cut.\n\nThe format is scannable and has no padding.\n\nScore: 9",
+  "usage": {
+    "input": 1132,
+    "output": 808
+  },
+  "cost": 0.010344
+}

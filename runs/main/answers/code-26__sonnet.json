@@ -1,0 +1,13 @@
+{
+  "item": "code-26",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Bugs (most important first):**\n\n1. **`qty` is never converted to a number** (`qty: qty`). It stays a string, so `o.items += line.qty` does string concatenation (`0` + `\"2\"` = `\"02\"`). `line.qty * line.unitCents` coerces correctly, so `totalCents` looks fine while `items` is silently wrong. Use `Number(qty)`.\n\n2. **Naive CSV parsing.** `split(\",\")` breaks on quoted fields containing commas (e.g. a SKU or name like `\"Widget, large\"`), shifting columns. Use a real CSV parser (e.g. `csv-parse`, `papaparse`).\n\n3. **Windows line endings.** Splitting on `\"\\n\"` leaves a trailing `\\r` on the last field. `Number(\"500\\r\")` happens to work, but string fields like `sku` will carry it. Split on `/\\r?\\n/`.\n\n4. **No validation.** Blank lines, short rows, or non-numeric values produce `NaN` totals that propagate silently into the dashboard. Skip or report bad rows.\n\n5. **`orders` as a plain object.** An `orderId` like `__proto__` or `constructor` can misbehave. Use a `Map` or `Object.create(null)`. Also, numeric-looking IDs get reordered by integer-key ordering, though this is minor.\n\n**Minor:**\n- `topOrders` has no tie-breaker, so equal totals order unpredictably across runs/engines.\n- Header is skipped blindly, with no check that column order matches expectations.\n- Empty input yields a bogus row (`\"\".split` gives `[\"\"]`, though `slice(1)` handles it).",
+  "stop": "end_turn",
+  "usage": {
+    "input": 451,
+    "output": 554
+  },
+  "cost": 0.006442,
+  "at": "2026-10-14T01:54:13.000Z"
+}

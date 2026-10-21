@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-32",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is about 85 words, so it meets the under-120 constraint. It is correct: 365.2422 days, the leap-day correction, and the 100/400 rule applied to 1900 and 2000.\n\nResponse B is well over 120 words, roughly 230, so it breaks the explicit length limit. It also has a factual slip: it says the 365.25-day year overcorrects by about 11 minutes a year, \"roughly 3 days every 400 years.\" That figure is right (about 3 days per 400 years). Its other claim, that the calendar would \"drift about 6 hours per year,\" is also fine. Its content is correct, but it is padded with filler such as \"Put another way\" and \"Applying these rules, we can see...\". The length violation is a major failing.\n\nA is correct, concise, and compliant. B is correct but violates the word limit.\n\nVerdict: A",
+  "usage": {
+    "input": 843,
+    "output": 273
+  },
+  "cost": 0.004416
+}

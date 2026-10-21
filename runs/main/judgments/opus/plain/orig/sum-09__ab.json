@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-09",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth summaries are accurate, well structured and suitable for a busy manager. A has the edge on two points.\n\n- **Word limit:** A meets the limit and B does not.\n  - Including headings and closing lines, both exceed 120 words (A ≈ 127, B ≈ 131).\n  - Excluding the title, A comes in at about 118 words, while B is still about 122.\n- **Completeness:** A keeps two details that B drops.\n  - A states that this is a five-year lease, which is key context for why year 5 differs.\n  - A names the outgoings (rates, strata levies, common-area cleaning), whereas B only says \"outgoings\".\n  - A also keeps the \"not legal advice\" caveat.\n\nB's advantages are small:\n\n- It says the landlord must give \"at least\" 14 days' notice, which matches the source; A drops \"at least\".\n- \"Increases could be larger\" is more faithful than A's \"could rise sharply\", which slightly overstates the source.\n\nThese minor wording points don't outweigh A's better fit to the word limit and its more complete content.",
+  "usage": {
+    "input": 1349,
+    "output": 2316
+  },
+  "cost": 0.051716
+}

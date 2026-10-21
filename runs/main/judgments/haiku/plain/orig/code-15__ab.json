@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-15",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "A is slightly better. Both responses catch the main issues: the unawaited write, the two `new Date()` calls, partial failure in `recordLogins`, and sequential processing. A's fifth point, the read-then-write race where the user could be deleted between `getUser` and `updateLastLogin`, is a more substantive correctness concern than B's minor point about the error message exposing the user ID, since this function is called by the auth service rather than directly by clients. B's point about duplicate IDs is valid, but A's race point matters more.\n\nA",
+  "usage": {
+    "input": 1309,
+    "output": 461
+  },
+  "cost": 0.0003614
+}

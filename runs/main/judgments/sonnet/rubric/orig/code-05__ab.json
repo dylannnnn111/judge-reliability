@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-05",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same core problems in a similar order. The DST bug comes first: two aware datetimes sharing one `tzinfo` are subtracted as wall-clock time. Then come ambiguous and nonexistent local times, start-day-only weekend loading, float and banker's rounding, and missing public-holiday and input validation. Neither flags anything that is actually fine, and the technical claims in both are accurate.\n\n**Response A**\n- It gives concrete, correct DST examples. A 01:00–05:00 shift on the April fall-back night lasts 5 hours but is paid as 4. On the October spring-forward night it lasts 3 hours but is paid as 4.\n- It gives a specific UTC-conversion fix and a specific method for detecting nonexistent times, the UTC round-trip check.\n- It adds a sensible sanity limit on shift length to catch typo'd dates.\n- Its rounding fix is explicit: `Decimal` with `ROUND_HALF_UP`, or whatever rule payroll specifies.\n- It is somewhat over the 200-word limit, but is tighter than B.\n\n**Response B**\n- Its DST explanation is correct, including the direction of the error: overpaid when clocks go forward, underpaid when they go back. It is less concrete than A's examples.\n- Its ambiguous and nonexistent time fix is vaguer: \"detected and rejected, or the caller should specify\".\n- Its suggestion to keep minutes as integers is useful.\n- It pads the list with a minor nit, that `parse_local` is called repeatedly, which does not matter for correctness.\n- It is longer and further over the 200-word limit.\n\nResponse A is more concrete, more actionable and slightly tighter.\n\nVerdict: A",
+  "usage": {
+    "input": 1774,
+    "output": 1573
+  },
+  "cost": 0.019278
+}

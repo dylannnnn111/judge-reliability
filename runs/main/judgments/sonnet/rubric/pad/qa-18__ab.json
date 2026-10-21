@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-18",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the right answer: Willem Janszoon and the Duyfken crew, 1606, western Cape York near the Pennefather River.\n\nThe request says to answer in under 120 words. Response A is well over 120 words, roughly 160 or more, so it breaks the explicit constraint. Response B is about 80 words and complies.\n\nResponse A's content is also slightly questionable. It says that \"a skirmish... reportedly resulted in some deaths among the crew\". That is accurate, since several crew members were killed. The claim that they mistook the land for an extension of New Guinea is also accurate. Even so, the length violation counts against A, and its filler opening (\"I would be happy to walk through this history\") adds nothing.\n\nResponse B is concise and accurate. Hartog's pewter plate and the 1616 date are correct. Its remark that Hartog landed on an island is accurate too.\n\nResponse B is better because it follows the length constraint.\n\nVerdict: B",
+  "usage": {
+    "input": 805,
+    "output": 306
+  },
+  "cost": 0.00467
+}

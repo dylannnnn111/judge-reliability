@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-28",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same core bugs: the connection leak, the race condition, the unvalidated destination wallet, deadlock risk, and ROLLBACK masking the original error. Both give correct fixes, such as `FOR UPDATE`, a conditional UPDATE with a `rowCount` check, `finally { release() }`, and consistent lock ordering.\n\n**Length:** The user asked for under 200 words. Response A runs about 290 words and B about 240. Both exceed the limit, but A overshoots by more.\n\n**Ranking:** A puts the connection leak first. That is defensible, because it is certain and breaks the service after a handful of calls. B puts the race condition first, which is also defensible as the worst data-integrity bug, but it places the leak third. This slightly favors A.\n\n**Extra items:**\n- A's idempotency and audit-trail point is scope creep, not a bug in this code.\n- A's bigint-as-string point is mostly harmless, since JS coerces the comparison and it works for normal values. A overstates it as \"unreliable.\"\n- A's same-wallet item is more verbose than it needs to be.\n- B's `CHECK (balance_cents >= 0)` is a sensible defense-in-depth suggestion and is concise.\n- B's deadlock point is correct even without explicit locks, because the UPDATEs themselves lock rows in opposite order. A's \"once you add row locks\" is fine but understates that the problem already exists.\n\nB is tighter and has less speculative noise. A's better ranking of the leak is a small advantage, but not enough to offset its extra length and weaker items.\n\nVerdict: B",
+  "usage": {
+    "input": 1821,
+    "output": 1220
+  },
+  "cost": 0.015842
+}

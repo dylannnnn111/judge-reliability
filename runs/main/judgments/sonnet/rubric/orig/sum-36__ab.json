@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-36",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries get the core figures right, including the $195 colour overage (3,000 extra pages at 6.5c). They differ in three ways:\n\n- **Accuracy:** Response A says term months will \"exceed the colour allowance by about $195/month\", which mixes up pages and dollars. The $195 is the extra cost, not the amount of overage. Response B words it correctly: \"expect roughly $195 extra in term months\".\n- **Content:** Response B includes the overage rates (0.9c and 6.5c per page), which a manager needs to judge the cost of going over. Response A leaves them out. Response A includes the account manager's name, which is useful but less important than the rates.\n- **Concision:** Both are well under 120 words and about equally tight.\n\nNeither mentions that the Business Manager signed the lease on 15 September, which is a minor omission for both.\n\nResponse B is slightly more accurate and keeps the more decision-relevant detail.\n\nVerdict: B",
+  "usage": {
+    "input": 1514,
+    "output": 613
+  },
+  "cost": 0.009158
+}

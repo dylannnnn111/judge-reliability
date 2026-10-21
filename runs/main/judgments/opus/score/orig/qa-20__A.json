@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-20",
+  "side": "A",
+  "score": 10,
+  "model": "claude-opus-5-5",
+  "text": "The response is correct on every point. Canberra is Australia's capital, and Federal Parliament first sat there on 9 May 1927, when the Provisional Parliament House opened. The added context is also accurate: Parliament met in Melbourne from Federation in 1901 until then. This detail is brief and useful because it explains why 1927 matters. The answer is clear, well under the 120-word limit, and contains nothing unnecessary. A more detailed answer could have been slightly stronger, but no substantive improvement is needed.\n\nScore: 10",
+  "usage": {
+    "input": 293,
+    "output": 255
+  },
+  "cost": 0.006272
+}

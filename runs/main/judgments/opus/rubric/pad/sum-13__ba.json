@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-13",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Accuracy is the deciding factor.\n\n**Response B contains two factual errors:**\n- It says the resample was \"taken on 9 October.\" It was taken on 6 October, and the result came back on 9 October.\n- It says the contractor \"had visited monthly and missed this fault during those visits.\" This reverses the actual cause. The monthly visit was skipped entirely, and nobody told Facilities. That error misleads the manager about where the contractor failed, which bears directly on the $7,350 recovery claim.\n\nB also omits the fortnightly sampling and the tenant notification. It has filler such as \"We appreciate your attention to this matter.\" At roughly 230 words, it is nearly double the 120-word limit.\n\n**Response A has smaller weaknesses.** At about 125 words, it is slightly over the limit. It says the pump \"failed after the contractor missed a monthly visit.\" The source says the pump failed in mid-September and the missed visit is why the failure went unnoticed, so A's sequencing is a little loose. Even so, it correctly places blame on the skipped visit and the silence about it.\n\nA otherwise reports the timeline accurately and covers all the points the manager needs:\n- the approval decision and interim weekly checks, placed first\n- health department notification within 24 hours\n- a clear resample, with the tower back in service\n- tenants informed and no illness reported\n- the corrective actions\n- cost recovery\n\nA is the better summary by a clear margin.\n\nVerdict: A",
+  "usage": {
+    "input": 1672,
+    "output": 1062
+  },
+  "cost": 0.027928
+}

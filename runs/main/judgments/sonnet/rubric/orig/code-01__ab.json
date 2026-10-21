@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-01",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses correctly identify the main problems: no idempotency, a crash aborting the whole run, truncation in `int(amount * 100)`, float money, and hardcoded tax. Both give valid examples of the truncation bug, since 19.99*100 and 10.29*100 each come out just under the integer. Both put idempotency first, which is right for a billing job.\n\n**Response A:** It adds useful points, such as NaN/inf strings passing `float()` and negative values passing through. It also notes that a mid-run failure combined with no idempotency causes double charges. However, it runs well over the 200-word limit, at roughly 250 words. Its billing-period scoping point is speculative, since the file may already be scoped. The \"minor\" item about memory and currency is low value. Its fix guidance is thinner, with no concrete remedy for idempotency beyond naming the problem.\n\n**Response B:** It is about 200 words, close to the limit. It gives concrete fixes, including an idempotency key per customer per billing period, quarantining bad rows, and logging per-customer failures. It flags dropped credits as its own item, which is a real billing issue. The customer_id whitespace point is a little speculative but plausible. The truncation and float items overlap somewhat, but each carries its own fix.\n\nB follows the length constraint better and gives more actionable fixes with less speculative padding. A's extra validation detail is valuable but comes at the cost of exceeding the limit and including weaker items.\n\nVerdict: B",
+  "usage": {
+    "input": 1574,
+    "output": 1360
+  },
+  "cost": 0.016748
+}

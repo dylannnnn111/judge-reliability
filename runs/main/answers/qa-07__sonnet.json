@@ -1,0 +1,13 @@
+{
+  "item": "qa-07",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**30 mpg (US) ≈ 7.8 L/100 km**\n\nWorking:\n- 1 US gallon = 3.78541 litres\n- 1 mile = 1.609344 km\n\nFuel used per 100 km = (100 ÷ 1.609344) miles ÷ 30 mpg = 2.0712 gallons\n2.0712 gal × 3.78541 L/gal ≈ 7.84 L\n\nQuick formula: L/100 km = 235.2 ÷ mpg (US), so 235.2 ÷ 30 ≈ 7.84.\n\nNote that US gallons are smaller than imperial gallons, so don't use the imperial conversion (282.5 ÷ mpg), which would give about 9.4 L/100 km.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 75,
+    "output": 248
+  },
+  "cost": 0.00263,
+  "at": "2026-10-14T01:50:15.263Z"
+}

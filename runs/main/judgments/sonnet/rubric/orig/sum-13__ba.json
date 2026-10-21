@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-13",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A reverses the causality in the cause section. It says the pump \"failed after the contractor missed a monthly visit,\" but the report says the pump failed in mid-September and the missed visit meant the failure went unnoticed. A manager could misread this as the missed visit causing the pump failure. The rest of A is accurate and includes the fortnightly sampling and the decision needed.\n\nResponse B's cause statement (\"a failed biocide dosing pump that the contractor missed during a monthly visit\") is compressed but keeps the right relationship: the failure was missed, not caused, by the skipped visit. B says the tower returned to service \"after a resample on 9 October showed no detection.\" That is a mild inference, since the report doesn't date the return, but it isn't wrong. B leaves out the fortnightly sampling and the \"from November\" timing. These are minor omissions for a busy manager. B does state the 1,200 CFU/mL figure, the cost, the recovery plan, the interim weekly checks and the decision needed.\n\nAccuracy comes first, and A's causal error outweighs B's small omissions.\n\nVerdict: B",
+  "usage": {
+    "input": 1502,
+    "output": 861
+  },
+  "cost": 0.011614
+}

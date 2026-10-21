@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-02",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. It covers the same core bugs (the shared mutable default, the narrow `KeyError` handling, the misleading log message, and payload logging) and adds that the default list grows without bound in a long-running worker. It also stays under the 200-word limit, while A runs to roughly 230 words. A's point about per-event `received_at` is valid but minor.\n\nB",
+  "usage": {
+    "input": 1367,
+    "output": 547
+  },
+  "cost": 0.00041020000000000005
+}

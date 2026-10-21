@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-25",
+  "side": "A",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds the real problems.\n\n- **Off-by-one:** With 5 recent hits, `5 > 5` is false, so a sixth attempt is allowed. This is correctly identified, correctly explained, and has the right fix (`>=`).\n- **Memory growth:** The Map is never pruned for keys that don't return. The IP-rotation attack framing and the fix are sound.\n- **Hardcoded `retryAfterSec`, in-memory state, per-IP-only limiting, and proxy/NAT concerns:** All are real and relevant to a login limiter. Each comes with a reasonable remedy.\n\nThe ranking is sensible. The concrete bug comes first, then the exploitable resource issue, then the design weaknesses.\n\nWeaknesses:\n\n- **Length:** The response runs to roughly 250 words, well over the \"under 200 words\" limit. It ignored an explicit constraint.\n- **Padding:** Item 7 (\"no tests\", \"no way to reset a key\") is filler rather than something that matters. Item 6 partly overlaps with item 3, and the IPv6 point is made twice.\n- **Priority:** The items about distributed and IPv6 attacks and proxies are valid but speculative relative to the actual code bugs. Including all of them dilutes the \"matters most\" focus.\n\nThe content is accurate and well prioritized, but it breaks the length constraint and includes some low-value items.\n\nScore: 6",
+  "usage": {
+    "input": 1090,
+    "output": 1187
+  },
+  "cost": 0.01405
+}

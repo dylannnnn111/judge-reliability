@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-28",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are correct. Each names chaining and open addressing, lists the probing variants, explains average O(1) versus worst-case O(n), and mentions load-factor-triggered resizing.\n\nWord count matters here because the prompt says \"under 120 words.\" By my count, A is about 131 words and B about 124. Both exceed the limit, but A overshoots by more.\n\nOn content, A adds the O(log n) tree bucket detail, the clustering note, and typical load-factor thresholds. B adds that lookups follow the same probe sequence, and that resizing is amortized O(1), which explains why resizing doesn't hurt performance. Neither addition clearly outweighs the other. B is tighter and closer to the constraint, so it has a slight edge.\n\nVerdict: B",
+  "usage": {
+    "input": 835,
+    "output": 1487
+  },
+  "cost": 0.01654
+}

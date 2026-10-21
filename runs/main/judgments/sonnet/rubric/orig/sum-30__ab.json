@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-30",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is the better summary. It is accurate throughout, and it is slightly closer to the word limit.\n\n**Accuracy:** Response A's points all match the source. Response B says industrial estate workers \"lose service before 6am\". The source does not say the 408 ran before 6am. It only says some workers are worried about early starts because the 412 won't run before 6am. B's claim is an unsupported inference and could mislead. B's other additions are fine: the \"first direct link\" and the consultation's top request both match the text.\n\n**Content kept:** Both cover the key points: the 410 frequency change, the new 412, the 408 removal, the early-start concern, unchanged fares, the timetable and app dates, and the info stall. B adds the reason for the changes, which is mildly useful. A adds the date in the heading and the consultation in its intro, so it loses little.\n\n**Concision:** The limit is 120 words. By my count B is about 127 words and A is about 121, give or take how hyphenated terms are counted. A is borderline and B is clearly over.\n\nVerdict: A",
+  "usage": {
+    "input": 1491,
+    "output": 2431
+  },
+  "cost": 0.027292
+}

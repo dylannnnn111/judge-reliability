@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-30",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Word count matters: the limit is under 120 words.\n\nResponse A: Let me count. \"What it is:\" (3) \"A p-value is the probability of seeing data at least as extreme as what you observed, assuming the null hypothesis is true (along with the model's other assumptions).\" ≈ 29 words. \"It measures how surprising your data would be in a world where there's no effect.\" = 15. Subtotal ≈ 47. \"What it is NOT:\" 4 → 51. Bullets: \"Not the probability the null hypothesis is true\" 8 → 59; \"Not the probability your result happened 'by chance'\" 8 → 67; \"Not the probability your finding will replicate\" 7 → 74; \"Not a measure of effect size or practical importance\" 9 → 83; \"Not proof: p < 0.05 doesn't mean 'real,' and p > 0.05 doesn't mean 'no effect'\" ≈ 15 → 98. Final sentence: \"A small p-value suggests the data are incompatible with the null model, but it can't tell you how likely any hypothesis is without prior information.\" ≈ 25 → 123. This is borderline, likely over 120 (with the symbols counted as words, certainly). So A probably violates the limit.\n\nResponse B: first sentence ~22, second ~14 → 36; \"It is NOT:\" 3 → 39; bullets: 8, 10, 9, 8, 13 ≈ 48 → ~87. Under 120.\n\nCorrectness: both are correct. B's last bullet, \"Evidence that the alternative hypothesis is true with a given confidence,\" is a bit awkward but acceptable. A adds useful nuance (not proof, model assumptions), but likely exceeds the word limit.\n\nSince the constraint was explicit, B complies and A likely doesn't. A's extra content is valuable, but the length violation matters.\n\nVerdict: B",
+  "usage": {
+    "input": 644,
+    "output": 608
+  },
+  "cost": 0.007368
+}

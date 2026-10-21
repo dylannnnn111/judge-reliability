@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-27",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.** It ranks the issues more sensibly, gives concrete fixes, and avoids overstating problems.\n\n**Response A**\n- Its #1 claims the code \"sends to everyone, including people who unsubscribed or bounced.\" That overstates the problem, because the code does filter on `marketingOptIn`. An unsubscribe would normally flip that flag.\n- A separate suppression list for bounces and complaints is a reasonable operational point. But it is a speculative assumption about the surrounding system, not a clear defect in this code. Ranking it above the concrete bug, firing roughly 80,000 sends at once, is questionable.\n- It mostly names problems without saying how to fix them.\n- It adds some speculation, for example that unbounded concurrency risks \"duplicate\" sends.\n\n**Response B**\n- It leads with the most clearly damaging real bug: unbounded `Promise.all` concurrency. It follows with the failure and outcome-tracking problem, which causes resends on rerun.\n- Each item has a concrete remedy: p-limit or batching, `allSettled` with sent-ID tracking, sent/failed counts, retry with backoff, validating or skipping bad emails, and a cursor guard.\n- Its stale opt-in point is minor but valid.\n- It avoids flagging things that are fine.\n\n**Common ground:** Both find the same core issues (concurrency, failure handling, the misleading return value, null emails, the cursor loop, retries). Both exceed the 200-word limit somewhat.\n\nVerdict: B",
+  "usage": {
+    "input": 1635,
+    "output": 861
+  },
+  "cost": 0.02376
+}

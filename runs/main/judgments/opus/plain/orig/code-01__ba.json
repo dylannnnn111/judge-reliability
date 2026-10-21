@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-01",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth reviews cover the same core issues in a sensible order: no idempotency or fault tolerance, truncation from `int(amount * 100)`, float money, credits silently skipped, malformed rows aborting the run, and the hard-coded tax rate. Their truncation examples are both correct: `10.29 * 100` and `19.99 * 100` each evaluate just below the whole number of cents.\n\nB adds a few good points: NaN/inf strings being accepted by `float()`, no billing-period scoping, and no currency passed to `charge`. A adds `customer_id` normalization. On substance the two are roughly even.\n\nThe deciding factor is the explicit constraint to keep it under 200 words. A comes in at about 195 words, so it complies. B runs to roughly 220–225 words, which breaks the limit. Since the content quality is comparable, A wins.",
+  "usage": {
+    "input": 1418,
+    "output": 1951
+  },
+  "cost": 0.044692
+}

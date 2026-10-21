@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-09",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses cover the same points: starting rent, the CPI collar in years 2–4, the market review in year 5 with its floor, the dispute right, outgoings and notice. Both also exceed the 120-word limit, by my count A is about 131 words and B about 127, so neither has a meaningful advantage there.\n\nThe difference is accuracy. A stays faithful to the source: \"the 5% cap doesn't apply, so increases could be larger\" and \"at least 14 days' written notice\". B says \"There is no cap, so rent could rise sharply\". The source says only that the 5% cap doesn't apply and that the rent \"can go up by more\", so \"no cap\" is a looser reading and \"sharply\" is an embellishment. B also drops \"at least\" from the notice period, which slightly changes the condition. B does add the five-year lease length, but that adds little for this reader.\n\nOn accuracy A is slightly better, and the concision difference is too small to outweigh that.\n\nVerdict: A",
+  "usage": {
+    "input": 1503,
+    "output": 2646
+  },
+  "cost": 0.029466
+}

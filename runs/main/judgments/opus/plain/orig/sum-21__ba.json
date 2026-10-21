@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-21",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is the stronger summary for a busy manager.\n\n- **Word limit:** A comes in at about 108 words, comfortably under 120. B lands at roughly 120, right at the limit and arguably over an \"under 120 words\" requirement.\n- **Useful added insight:** A calculates the total hire-car cost of missing the deadline: 6 cars × $1,800 × 2 months = $21,600. That figure is correct and makes the stakes of the 24 October deadline concrete. B leaves the reader to work it out.\n- **Framing:** A's headline, \"decision needed by 24 October,\" puts the action and deadline first. It also speaks to the reader directly (\"he needs your sign-off\"), which suits a manager who won't read the original.\n- **Lower-value content in B:** B's Coastal Fleet Sales line covers an option nobody is recommending. Its closing \"Decision needed\" line restates what has already been said. Both use words that matter given the limit.\n\nBoth are accurate on the key figures: $229,140 total, $13,140 over the $216,000 budget, $209,880 for the petrol alternative, and roughly $5,400 in fuel savings per car over four years. A is tighter and more decision-oriented.",
+  "usage": {
+    "input": 1364,
+    "output": 1221
+  },
+  "cost": 0.029876
+}

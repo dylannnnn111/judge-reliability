@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-29",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are factually correct: $1,000 at 5% for 30 years gives $2,500 with simple interest and about $4,322 with annual compounding. Both also give the key reasoning, that compound interest earns interest on previously earned interest, so growth is exponential rather than linear.\n\nThe difference is the length limit. Response A is about 123 words by my count, which breaks the \"under 120 words\" instruction. Response B is about 98 words and complies. A's extra content, the Rule of 72 and the formatting, is useful but not needed to answer the question, and it is what pushes A over the limit. B explains the mechanism and gives the same example clearly within the limit.\n\nVerdict: B",
+  "usage": {
+    "input": 721,
+    "output": 1530
+  },
+  "cost": 0.016742
+}

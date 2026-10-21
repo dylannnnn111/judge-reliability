@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-03",
+  "side": "B",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate. The dates, times, transaction counts, the 451 abandoned purchases, the $41,900 estimate, the 312 support contacts, the root cause, and the owners and due dates for the actions all match the source. The detection explanation also matches the report's reasoning about the alerting threshold. It covers the points a manager needs: what happened, the business impact, why detection was slow, and what's being done.\n\nHowever, it breaks the explicit \"under 120 words\" limit. The full response runs to roughly 175 words. Some of that is padding, such as \"To show the scale of the incident, here is its impact,\" and the headers add bulk. The response also leaves out the recovery detail (connector B was removed from rotation at 12:58), though that is minor. A tighter version could have kept every key fact within the limit.\n\nAccuracy and content are strong, but the length constraint is clearly not met, which is a significant instruction failure for a brief requested for a busy reader.\n\nScore: 5",
+  "usage": {
+    "input": 1318,
+    "output": 984
+  },
+  "cost": 0.0006238
+}

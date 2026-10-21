@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-29",
+  "side": "B",
+  "score": 7,
+  "model": "claude-sonnet-5-5",
+  "text": "The content is accurate. At 5% simple interest, $1,000 earns $50 a year, so $2,500 after 30 years. Compounding gives 1.05^30 ≈ 4.32, so about $4,322. The Rule of 72 estimate of roughly 14 years is also right. The reasoning is sound: interest on interest, linear versus exponential growth, and the widening gap over time. The structure is clear and the worked example helps.\n\nThe weakness is the length limit. I count about 123 words, which is slightly over the \"under 120 words\" instruction. The Rule of 72 paragraph is also tangential to the question and likely pushed it over.\n\nScore: 7",
+  "usage": {
+    "input": 467,
+    "output": 1369
+  },
+  "cost": 0.014624
+}

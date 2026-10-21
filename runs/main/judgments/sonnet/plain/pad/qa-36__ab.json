@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-36",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is well over 120 words (roughly 290), so it violates the explicit length constraint. Response B is about 100 words, which satisfies it, and it explains lift accurately enough, though its \"flatter lower surface keeps air slower\" claim is a little simplistic.\n\nB is better.\n\n**B**",
+  "usage": {
+    "input": 763,
+    "output": 97
+  },
+  "cost": 0.002496
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-05",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. Both identify the same core problems and their fixes are correct, but B's concrete worked examples make the DST and weekend-loading bugs easier to verify. B also flags the missing shift-length sanity check, which matters for payroll. A's advantages are small: its direction-of-error explanation for DST and its note on integer minutes are good, but they don't outweigh B's clarity and the extra validation point.\n\n**B**",
+  "usage": {
+    "input": 1618,
+    "output": 1247
+  },
+  "cost": 0.0007853
+}

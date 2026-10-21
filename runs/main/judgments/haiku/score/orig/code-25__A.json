@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-25",
+  "side": "A",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The response finds the real problems. The off-by-one is genuine: with 5 recent hits, `5 > 5` is false, so a sixth attempt passes. The unbounded Map growth, the per-IP-only design, the in-memory state, and the hardcoded `retryAfterSec: 60` are all correct, and the IPv6 /64 point is a sharp, practical observation. The proxy/NAT concern is also valid. The ranking is sensible, with the correctness bug first, and the fixes are concrete. Two things hurt it. The response runs about 230 words, over the 200-word limit. Item 7 is padding: the test-friendliness of `now` is fine, and \"no reset after login\" is a minor design point rather than a bug that matters.\n\nScore: 7",
+  "usage": {
+    "input": 1090,
+    "output": 906
+  },
+  "cost": 0.000562
+}

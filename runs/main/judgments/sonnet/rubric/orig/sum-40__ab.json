@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-40",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better on accuracy, coverage and the word limit.\n\n**Accuracy:** Both are largely correct. Response B has two small slips. It says \"no significant problems\" where the source says there were no reports of problems, which adds a statistical-sounding qualifier. It also says \"Most students (71 per cent)\", which drops the fact that the figure comes only from students in the water-bottle schools. Response A attributes the 71% to \"students with water\" and says \"No problems were reported\", both faithful to the source. A's \"boosts scores by up to 10%\" accurately restates the overseas claim.\n\n**Coverage:** Both include the sample size, the 1.8 vs 1.1 marks, the non-significant 0.7 difference, the survey result, the recommendation and the limitations. A also includes the teacher comments about calmer students, and its bottom line and caveats are easy to scan.\n\n**Word limit:** Response A comes to about 115 words, under the 120 limit. Response B comes to about 130 words, which breaks the explicit constraint.\n\nResponse A is therefore the better summary.\n\nVerdict: A",
+  "usage": {
+    "input": 1385,
+    "output": 1102
+  },
+  "cost": 0.01379
+}

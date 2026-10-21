@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-06",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses stay under 120 words (roughly 115 each) and share the same core facts: date, cost, funding, upgrades, prices, hours and opening-day events. Both also carry the same slightly compressed price line (\"Unchanged for 2026-27\" rather than \"for the rest of the 2026-27 season\").\n\n**Accuracy:** Response B says \"All programs and the water play area resume on opening day.\" The article names only lap swimming, aqua aerobics and learn-to-swim, so \"all programs\" overgeneralises. It also sits awkwardly beside swim school enrolments not opening until 20 October. Response A lists exactly the programs the article names and makes no such claim. A's other details check out against the text.\n\n**Content kept:** B includes two details A drops: the adult change table and that the heated pool allows year-round lessons. These are useful but minor for a busy manager. A includes the specific list of programs, which is arguably more useful than B's blanket statement.\n\n**Concision:** The two are about equal in length. B's bullets are easy to scan, but that doesn't outweigh its inaccuracy.\n\nA is more accurate, which is the first criterion. B's extra details don't make up for the misleading \"all programs\" claim.\n\nVerdict: A",
+  "usage": {
+    "input": 1512,
+    "output": 1360
+  },
+  "cost": 0.016624
+}

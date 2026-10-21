@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-02",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both responses reach the correct answer of 96 km/h. Both give the key reasoning: total distance divided by total time, with times of 2 h and 4/3 h. Both also explain why the answer isn't the simple average of 100 km/h.\n\nThe deciding difference is the explicit instruction to answer in under 120 words.\n\n- **Response A** runs to roughly 160 words, so it breaks that constraint. Much of the excess is filler that adds nothing correct or useful, such as \"Thank you for your question,\" \"let's walk through the calculation step by step,\" and \"Putting these figures together.\"\n- **Response B** is about 80 words and covers the same content more cleanly. It also adds the explicit harmonic mean formula, 2 × 80 × 120 / (80 + 120), as a quick check. That gives it slightly more substance than A, despite being half the length.\n\nB is correct, complete, clearer and compliant with the length limit. A is correct but too long.\n\nVerdict: B",
+  "usage": {
+    "input": 867,
+    "output": 592
+  },
+  "cost": 0.015308
+}

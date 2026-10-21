@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-20",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same four issues in the same order: DST miscounting, silent NaN on bad input, dependence on the viewer's timezone, and stale labels after midnight. Both give the same correct UTC-based fix. The difference is in accuracy.\n\n**DST issue (the main bug):**\n- Response A's spring-forward example is correct. On the transition day, an invoice due tomorrow is 23h away, so `floor(0.96)` gives 0 and the label reads \"Due today\".\n- Response A also says the fall-back error \"may land in the wrong place on the overdue list\". That is wrong. `floor` never flips the sign here: 0 is only reached when the due date is today, and any past date floors to -1 or lower. The overdue list stays correct and only the label text is off.\n- Response B correctly says the overdue list is unaffected and that only the labels are wrong.\n- Response B's spring-forward example is muddled. A date 3 days out giving `floor(2.96)` = 2 would show \"Due in 2 days\", not \"Due tomorrow\" becoming \"Due today\". The mechanism is still right, and its fall-back example is correct.\n- Response B's fix adds `Math.round`, which is more robust, though not strictly needed with UTC.\n\n**Malformed input:** Both are correct. Response B adds the detail about the full ISO timestamp producing a doubled `T00:00:00`.\n\n**Other points:** Both raise the timezone and staleness issues. Response B notes the business-timezone fix. Response A hedges more (\"worth confirming\").\n\n**Presentation:** Response A opens with odd meta-commentary (\"I've kept the explanations... as they were\") and filler such as \"This is a second, separate problem\". That adds words without content. Response B is tighter.\n\nResponse A's incorrect overdue-list claim and its filler count against it. Response B's muddled example is a smaller flaw. Response B is better overall.\n\nVerdict: B",
+  "usage": {
+    "input": 1983,
+    "output": 1565
+  },
+  "cost": 0.019616
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-40",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Word count matters: the request says under 120 words. Response A runs well over 200 words, so it breaks the constraint. Response B is roughly 100 words, which fits.\n\nAccuracy: Response A says \"no significant problems,\" which slightly changes \"no reports of problems.\" It also says \"Most students (71 per cent),\" which is fine. It omits the teacher observation that students seemed calmer. It includes filler phrases such as \"it is useful to start with the central comparison.\" Response B is accurate: it covers the 10% claim, the numbers, the survey, teacher comments, the bottom line, and the caveats. \"Allowing water is free\" matches \"costs nothing.\" \"Low-risk\" is a fair paraphrase of \"causes few problems.\"\n\nResponse B is better on accuracy, coverage, and concision, and it meets the word limit.\n\nVerdict: B",
+  "usage": {
+    "input": 1601,
+    "output": 272
+  },
+  "cost": 0.005922
+}

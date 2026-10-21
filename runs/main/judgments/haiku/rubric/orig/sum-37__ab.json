@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-37",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both summaries are accurate on the key facts: the 7 November departure, the five-to-six-week payroll delay, the $64,000 unbudgeted contractor, the four month-end reports that depend on payroll, Margaret Lowe's approval, and the $298,000 of $455,000 spend. Neither states anything false. Response A is slightly more precise on option 2, noting that finance may not accept it, and it names the February follow-up. Response B omits February but keeps more of what a manager needs to judge progress: the nightly loads, the 14 of 22 reports matching the old system, and Tomas documenting the payroll system before he leaves. Response A drops all of that progress detail and reduces the on-schedule claim to a few words. Both are well under 120 words, and B's extra words carry useful, correct information, so B is the better summary overall.\n\nVerdict: B",
+  "usage": {
+    "input": 1475,
+    "output": 877
+  },
+  "cost": 0.000586
+}

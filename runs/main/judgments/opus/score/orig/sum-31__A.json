@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-31",
+  "side": "A",
+  "score": 7,
+  "model": "claude-opus-5-5",
+  "text": "The response is accurate overall, with two small weaknesses: it is at or just over the word limit, and it drops who made the payback estimate.\n\n**Accuracy**\n- All the figures match the source: 142 to 156 lines/hour (about 10%), errors 0.62% to 0.41%, new staff +17%, 64% preference, $210,000 for about 60 pickers, and 14-month payback.\n- The nuances are kept: gains stabilised after the first four weeks, and the accuracy gain was smaller at the low-error site.\n- The caveat about one company and grocery-only sites is kept, though it is generalised to \"elsewhere\" rather than \"other product types.\"\n- The \"Takeaway\" adds a mild judgement (\"worth considering\"). It is reasonable and grounded in the report's conclusion.\n- The response says only \"estimated payback.\" The source says the partner made this estimate, based on wage costs. A manager could read it as the researchers' own finding. This is a minor attribution slip, but it bears on \"who decided what.\"\n\n**Coverage**\n- Everything a manager needs is present: speed, accuracy, who benefits most, staff reaction, cost and payback, the limitation, and the practical action point.\n\n**Concision and length**\n- The format is tight, scannable and suits a busy reader.\n- By my count it is about 120 words including the heading. The instruction was *under* 120, so it sits at or just over the limit. Trimming the heading or the takeaway would have fixed this.\n\nScore: 7",
+  "usage": {
+    "input": 1178,
+    "output": 1875
+  },
+  "cost": 0.042212
+}

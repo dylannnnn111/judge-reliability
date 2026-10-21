@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-27",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the core problems: unbounded `Promise.all` concurrency, no per-send failure tracking, the misleading `emails.length` return, the `toLowerCase()` crash on bad data, the missing loop guard on cursors, and the lack of retries. Both are also similar in length, with each running slightly over 200 words.\n\nResponse A ranks the missing suppression check first. For a mass marketing send, mailing unsubscribed or bounced addresses is the most serious issue, and A explains the compliance risk. Response B mentions it only as a narrow \"stale opt-in during the run\" point at the bottom, which understates it. Response B's fixes are more concrete, though: it names p-limit, `allSettled`, idempotent retries, `trim()` before deduping, and capping page counts. Response A describes problems well but gives less guidance on fixing them. A's note about lowercasing the local part is a minor but valid point.\n\nOn balance, A's better prioritization of the most consequential issue slightly outweighs B's stronger fix guidance.\n\nVerdict: A",
+  "usage": {
+    "input": 1635,
+    "output": 1337
+  },
+  "cost": 0.000832
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-01",
+  "side": "B",
+  "score": 8,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate. The new deadline (Friday 30 October COB, moved up from 4 November) is correct. The \"smaller of $50,000 or 10%\" threshold matches the original, and the template, software subscriptions split, paste-numbers rule, leave cover, Thursday 2pm optional drop-in and \"call today\" instruction are all right. It leaves out the coffee machine joke, which is right for a busy manager. It doesn't say the CFO moved the meeting, a minor loss of \"who decided\", but nothing it says is wrong.\n\nIt keeps all the actionable points: the deliverables, the deadline change, the template location, the commentary threshold and what to do if the new date is a problem. One small gap is that the Thursday drop-in has no date, and with the new deadline it is unclear which Thursday applies. That ambiguity comes from the source.\n\nOn length it is about 118–121 words depending on how the \">\" symbols are counted, so it sits right at the 120-word limit. It is also one dense block, which makes it less scannable.\n\nScore: 8",
+  "usage": {
+    "input": 1065,
+    "output": 1682
+  },
+  "cost": 0.01895
+}

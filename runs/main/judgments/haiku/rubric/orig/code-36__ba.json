@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-36",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the most important bug: `Invalidate` calls `delete` under `RLock`, which is a real data race that can crash the process. Both also cover the cache stampede, TTL-versus-real-lifetime, unbounded growth, and missing timeouts/context.\n\nResponse B's second point is the more specific and useful one. It explains that an in-flight `fetch` can finish after `Invalidate` and re-cache a token upstream just rejected, which directly undermines the purpose of `Invalidate`. Response A's stale-overwrite item covers a related race but frames it more generally and mentions it only briefly.\n\nResponse A's item 6 claims that not caching errors causes a failing upstream to be \"hammered.\" Not caching errors is normal, so this is a weak point. Response A is also closer to or slightly over the 200-word limit, while Response B stays comfortably under it with no padding. Response A's fix suggestions are a bit richer, with the generation-number option, but that doesn't outweigh B's sharper analysis and cleaner adherence to the constraints.\n\nVerdict: B",
+  "usage": {
+    "input": 1797,
+    "output": 1130
+  },
+  "cost": 0.0007447
+}

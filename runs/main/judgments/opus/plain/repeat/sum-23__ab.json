@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "sum-23",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is better: it is accurate and slightly more useful.\n\n- **Accuracy on Wattle Road:** Response B says the council \"will install a speed counter.\" The minutes only say Councillor Tse would *ask* council traffic staff to put one in and report back. B overstates a commitment that hasn't been made. Response A gets this right: \"Tse will request a speed counter.\"\n- **Who is responsible:** A names the people handling actions (Laila coordinating Clean Up Day, Peter booking the sound system). A busy manager would find that useful.\n- **Completeness:** A includes the Facebook meeting-dates item, which B leaves out.\n- **Length:** Both stay under the 120-word limit and are well structured.",
+  "usage": {
+    "input": 1396,
+    "output": 481
+  },
+  "cost": 0.015204
+}

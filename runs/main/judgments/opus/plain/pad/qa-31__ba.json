@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-31",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse B is better. It explains the cause correctly and concisely: Earth's 23.5° axial tilt makes the hemispheres receive sunlight at different angles and for different day lengths at the same time. It also corrects the distance misconception with a useful detail: Earth is closest to the Sun in early January, during northern winter. At roughly 120 words, it essentially meets the length limit.\n\nResponse A gives the same correct explanation but is about 250 words, more than double the 120-word limit. Much of it is repetition, with phrases like \"To put it another way\" and \"In other words\" restating points already made.",
+  "usage": {
+    "input": 821,
+    "output": 626
+  },
+  "cost": 0.015804
+}

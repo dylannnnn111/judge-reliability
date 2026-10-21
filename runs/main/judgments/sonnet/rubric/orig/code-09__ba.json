@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-09",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main bug: `revoke_permission` never clears `_permission_cache`, so revoked permissions stay active. Both also cover the per-process cache, the missing expiry, unbounded growth, and invalidating after commit.\n\n**Response A**\n- It gives a concrete one-line fix for the main bug (`_permission_cache.pop(user_id, None)`) and offers several options for the multi-process case.\n- It stays close to the 200-word limit.\n- It names real consequences of having no expiry, such as deleted or banned users keeping their permissions, and the risk of nonexistent IDs filling the cache.\n- Its items 2 and 3 overlap somewhat, but nothing it flags is wrong.\n\n**Response B**\n- It likely exceeds the 200-word limit.\n- Its thread-safety item concedes that the worst case is only a redundant query. That is effectively a non-issue, and CPython dict operations are safe here.\n- Its item 6 repeats the ordering point, which A folds into one item.\n- It does not give the one-line fix for the main bug, though its closing suggestion is reasonable.\n- The ranking is similar to A's, but the extra items add little.\n\nA is tighter, gives a more actionable fix for the key bug, and avoids the questionable thread-safety flag.\n\nVerdict: A",
+  "usage": {
+    "input": 1470,
+    "output": 1101
+  },
+  "cost": 0.01395
+}

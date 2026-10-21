@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-29",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "A\n\nResponse A is about 111 words, which meets the \"under 120 words\" limit. It covers the key points: the price changes, the extra data, who is affected, the no-exit-fee option, and the reason. One small flaw is that it merges Classic customers and fixed-contract customers into one sentence, so \"until their contract ends\" blurs the Classic exemption. This is minor.\n\nResponse B is accurate and well organised, but it runs to roughly 190 words. That clearly breaks the explicit word limit, and it adds contact details a busy manager doesn't need.\n\nBecause B ignores the main constraint of the request, A is better.",
+  "usage": {
+    "input": 1370,
+    "output": 847
+  },
+  "cost": 0.01121
+}

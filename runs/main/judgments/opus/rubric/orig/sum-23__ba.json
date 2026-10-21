@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-23",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Response A says \"Council will install a speed counter\" on Wattle Road. The minutes only say Councillor Tse would *ask* council traffic staff to install one and report back. A turns a request into a commitment, which could mislead a manager into thinking it is settled. Response B correctly says Tse \"will request a speed counter.\" All other dates, times, figures and budgets are accurate in both responses.\n\n**Coverage:** B keeps the action owners: Laila coordinating the Clean Up Day and Peter booking the sound system. It also keeps the Facebook follow-up. These are useful for a manager who needs to know who is doing what. A leaves all of these out.\n\n**Concision:** Both are under 120 words (A about 95, B about 100). B's extra words add correct, relevant detail.\n\nB is more accurate on the one point where the two differ, and it covers more of what the reader needs.\n\nVerdict: B",
+  "usage": {
+    "input": 1550,
+    "output": 545
+  },
+  "cost": 0.0171
+}

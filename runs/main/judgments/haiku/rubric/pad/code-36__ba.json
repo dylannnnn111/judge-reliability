@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-36",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the main problems: the `RLock` used for `delete` in `Invalidate` (a real race that can crash the process), the cache stampede, the TTL not reflecting the token's real lifetime, unbounded map growth, and missing context/timeouts. Response B's point about an in-flight fetch re-caching a token that was just invalidated is a sharp, relevant insight, and Response A's stale-overwrite point is a related real issue. Response A's fixes are more concrete, and it correctly notes that the fatal map-write error cannot be recovered. Response B's item 6 says a hung fetch \"blocks every request waiting on that tenant,\" which is wrong here because the lock is not held during `fetch`. Response B also runs well over the 200-word limit, with an unnecessary intro sentence, while Response A stays close to it. The extra words in B add one good insight but cost compliance and include one inaccuracy, so A is somewhat better overall.\n\nVerdict: A",
+  "usage": {
+    "input": 1978,
+    "output": 1238
+  },
+  "cost": 0.0008167999999999999
+}

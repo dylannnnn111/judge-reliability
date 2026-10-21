@@ -1,0 +1,13 @@
+{
+  "item": "code-39",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "## Issues, most important first\n\n1. **Unchecked `cd` can wipe the wrong directory.** There's no `set -e` and no `|| exit`. If `$CACHE_ROOT/$APP_NAME` doesn't exist, `cd` fails, the script stays in the pipeline's working directory (often the repo checkout), and `rm -rf ./*` deletes everything there. Fix: `cd \"$CACHE_ROOT/$APP_NAME\" || exit 1`.\n\n2. **No validation of `APP_NAME` (path traversal).** Inputs like `..`, `../..`, `.` or `foo/../../etc` move the `rm -rf` outside the cache root. Restrict to a safe pattern, e.g. `[[ $APP_NAME =~ ^[A-Za-z0-9._-]+$ && $APP_NAME != .* ]]`, or resolve with `realpath` and check it's under `$CACHE_ROOT`.\n\n3. **Dotfiles aren't removed.** `./*` skips hidden files and directories, so caches like `.cache/` and `.npm/` survive. Use `find . -mindepth 1 -delete`, or enable `shopt -s dotglob`.\n\n4. **Failures don't fail the pipeline.** Both a failed `rm` and the \"files left behind\" warning exit 0, so the rebuild proceeds on a dirty cache. Exit non-zero in the warning branch.\n\n5. **Minor:** the count loop is roundabout and miscounts filenames containing newlines. `find . -type f -print -quit | grep -q .` is a simpler emptiness check. It also ignores leftover empty directories.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 353,
+    "output": 769
+  },
+  "cost": 0.016792,
+  "at": "2026-10-14T01:55:04.289Z"
+}

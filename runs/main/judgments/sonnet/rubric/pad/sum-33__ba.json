@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-33",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Accuracy: Both responses capture the update correctly: the shutdown moved to 31 January 2027, the 8% figure, 15 minutes, and the features.\n\nResponse A: \"Action required (if applicable)\" is fine. It says \"Only around 8% of customers are affected\", which is correct. Word count: it needs checking against the 120-word limit. The intro sentence \"Thank you for taking the time to read...\" is filler. Counting roughly: the title is about 6 words, the intro about 40, the action paragraph about 75, the new features about 55, and \"Also\" about 40. That totals around 200+, well over the 120-word limit. This is a clear violation of the explicit constraint.\n\nResponse B: Counting roughly: the title is 6 words, \"Updates roll out automatically overnight. No action is needed for most customers.\" is 12, the New section about 38, Improvements about 22, Fixes about 14, and Action about 45. That totals about 135-140. Let me count more carefully.\n\nTitle: \"ShiftNest 12.4 (released 28 Oct 2026)\" = 6.\n\"Updates roll out automatically overnight.\" = 5; \"No action is needed for most customers.\" = 7. Total 12 → 18.\n\"New:\" 1; \"Managers can approve shift swaps only for their own areas.\" 10; \"Public holiday penalty rates now apply automatically for Hospitality and Retail awards, by state.\" 14; \"Staff get push notifications for open shifts.\" 7. Total 32 → 50.\n\"Improvements:\" 1; \"Faster roster loading for large sites, unpaid break minutes in timesheet exports, and availability can be set 12 weeks ahead.\" 19. Total 20 → 70.\n\"Fixes:\" 1; \"Daylight saving hour errors on overnight shifts and South Australia time zone display.\" 13. Total 14 → 84.\nAction: \"Action required (only if you use the v1 payroll connector, about 8% of customers):\" 14; \"Switch to v2 (about 15 minutes) or timesheets will stop reaching payroll.\" 12; \"The shutdown was moved from 30 Nov to 31 Jan 2027, but switching soon is still advised.\" 16. Total 42 → 126.\n\nSo B is about 126, slightly over, but much closer than A. B's \"No action is needed for most customers\" is accurate. B also leads with the least important content while putting the action last, though it is clearly flagged. A puts the action first, which is better for a manager, but it is much longer and over the limit.\n\nOn accuracy both are fine, and both keep the key points. On concision B is much better, and A clearly breaches the limit. B is slightly over too, but it is closer.\n\nVerdict: B",
+  "usage": {
+    "input": 1707,
+    "output": 874
+  },
+  "cost": 0.012154
+}

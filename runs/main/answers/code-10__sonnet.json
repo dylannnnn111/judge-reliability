@@ -1,0 +1,13 @@
+{
+  "item": "code-10",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Problems, most important first:**\n\n1. **No authentication.** The description says logged-in staff only, but nothing checks a session, login decorator, or role. Anyone who can reach the server can download reports.\n\n2. **Path traversal via an unanchored regex.** `SLUG_RE.match` only anchors at the start, so `a/../../anything` passes because the prefix `a` matches. The route also uses `<path:slug>`, which accepts slashes. The attacker can read any `.pdf` on the filesystem, such as `/srv/reports/a/../../home/x/secret.pdf`. Fixes:\n   - Use `SLUG_RE.fullmatch(slug)` or add `^...$` anchors.\n   - Change the route to `<slug>`, which rejects slashes.\n   - Serve with `send_from_directory(REPORT_DIR, slug + \".pdf\")`, which does its own containment check.\n\n3. **No per-report authorization.** Even with login, every staff member can fetch every report. If reports are team- or customer-specific, add an ownership check.\n\n4. **`os.path.exists` is the wrong check.** It returns true for directories, so a directory named `foo.pdf` would cause a 500 from `send_file`. Use `os.path.isfile`, or catch `FileNotFoundError`. This also removes a check-then-use race.\n\n5. **Missing response hardening for sensitive files.** There is no `Cache-Control: private, no-store`, and no `as_attachment=True` or `download_name`, so browsers and proxies may cache or display the file inline.\n\n6. **Minor:** there is no logging or audit trail of who downloaded what, and `REPORT_DIR` is hard-coded rather than configured.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 267,
+    "output": 933
+  },
+  "cost": 0.009864,
+  "at": "2026-10-14T01:53:19.982Z"
+}

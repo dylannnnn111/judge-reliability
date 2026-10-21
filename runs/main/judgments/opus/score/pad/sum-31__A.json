@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "sum-31",
+  "side": "A",
+  "score": 4,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** The figures are correct: 118 pickers, ten weeks, 142→156 lines per hour (~10%), errors 0.62%→0.41%, new staff +17%, 64% preference, $210,000 and ~14-month payback. There are a few softer problems:\n- The payback estimate came from the partner, not the researchers, and the response drops that attribution.\n- \"Gains levelled off within four weeks\" slightly compresses \"most of the gain came in the first four weeks, then stayed stable,\" but it is not wrong.\n- The caveat generalises \"other product types\" to \"elsewhere.\" That is acceptable.\n- The takeaway about sites \"with many newer staff\" goes a little beyond the source's own conclusion, though it is reasonable.\n\n**Coverage:** All the points a manager needs are kept: speed, accuracy, new-worker gains, staff feedback, cost and payback, the limitation, and the heat issue.\n\n**Concision:** This is the major failure. The response is roughly 190 words against an explicit limit of under 120. Much of the excess is filler that adds nothing:\n- \"This summary sets out the main results…\"\n- \"The key findings are listed below.\"\n- \"It is worth keeping this limitation in mind when reading the findings above.\"\n\nBreaching a hard constraint by about 60% is a serious problem when the brief was a summary for a busy reader. The filler shows the limit was easily achievable.\n\nAccurate and complete content cannot offset clearly ignoring the word limit.\n\nScore: 4",
+  "usage": {
+    "input": 1319,
+    "output": 1403
+  },
+  "cost": 0.033336
+}

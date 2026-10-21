@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-16",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. The request capped the summary at 120 words. Response A comes in at roughly 120, right at the limit depending on how the symbols are counted. Response B runs to about 250 words, far over the limit. A also keeps the key facts a busy manager needs: the status, the new date, the causes, the budget and credit caveat, the main risk, and the decisions required. B has some filler, such as \"I want to be clear that\" and \"Good headway has been made\".\n\n**A**",
+  "usage": {
+    "input": 1550,
+    "output": 892
+  },
+  "cost": 0.01202
+}

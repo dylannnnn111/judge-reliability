@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-16",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct main answer: Antarctica, about 14 million km², with the Sahara as the largest hot desert.\n\nChecking the details in A:\n- It says Antarctica averages roughly 200 mm of precipitation annually along the coast. That is roughly right, since coastal areas get about 200 mm or more in water equivalent, and the interior gets far less.\n- It calls the Arctic \"the second-largest cold desert,\" which is odd phrasing but not wrong. It is the second-largest desert overall.\n- It says \"the answer depends on whether you're counting all deserts or just hot ones.\" That is a slightly confusing framing, but fine.\n- Word count is about 90, so it is within the limit.\n\nChecking the details in B:\n- It says the Sahara is \"roughly the size of the United States.\" The Sahara is about 9.2 million km² and the US is about 9.8 million km², so this is a reasonable comparison.\n- The bullet list is clear.\n- Word count is about 80, within the limit.\n- It says \"if you mean the classic sandy, hot desert, the answer is the Sahara.\" The Sahara is not entirely sandy, but this is a minor point.\n\nBoth are accurate. B is cleaner and easier to scan. A has slightly more detail on precipitation, but its wording is a little awkward (\"second-largest cold desert\" could mislead). B's \"roughly the size of the United States\" adds a useful reference point. The differences are small, but B is slightly clearer.\n\nVerdict: B",
+  "usage": {
+    "input": 666,
+    "output": 484
+  },
+  "cost": 0.006172
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-16",
+  "side": "A",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate. I checked the status, dates, test results, the 98.6% figure, the sandbox and quoting delays, the budget figures ($412K of $520K, the $38K increase, the $26K net after the $12K credit), the 24 October fix date, and the 15 October decisions, and all match the source. It correctly notes that the credit is still awaiting written confirmation. It omits some useful context: the sales director's request to avoid December training, the risk owner and ratings, and the next update on 24 October. These are minor for a busy manager, though the December training constraint is a real gap. The main problem is length. The user asked for under 120 words, and the response runs to roughly 160, so it fails an explicit constraint and is not concise.\n\nScore: 5",
+  "usage": {
+    "input": 1198,
+    "output": 1109
+  },
+  "cost": 0.0006743
+}

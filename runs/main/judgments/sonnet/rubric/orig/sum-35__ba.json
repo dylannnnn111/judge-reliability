@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-35",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries are under 120 words, and both cover the main points: the starting-condition standard, the 30 June 2027 date, the required work, the kitchenette exception, the payment alternative with three months' notice and two quotes, the rent risk for late completion, and the $18,000 bond returned within 30 days.\n\n**Response A** is more precise on the repair duty. It limits repairs to damage from removal (\"patching and painting\"), which matches the source. However, \"Overrunning means paying daily rent\" turns a \"may have to pay\" into a certainty. A busy manager could misread that as an automatic charge, when the lease says the tenant may have to pay rent for extra days the landlord needs to finish the work. The bullet layout is easy to scan.\n\n**Response B** hedges the late-completion point correctly (\"may incur rent for extra days\"). Its notice wording is also accurate: the landlord must notify \"at least three months\" before lease end. Its weakness is \"repairing damage\", which is vaguer than the source's \"damage caused by removing fixtures\" and could be read as any damage. Calling the tenant \"us\" is a small assumption, though it fits the guide being written for the tenant.\n\nB's imprecision about the repair scope is a minor loosening. A's turning a conditional into a certainty is a more misleading change on a financial point. B is slightly more accurate overall, and both are similar on coverage and concision.\n\nVerdict: B",
+  "usage": {
+    "input": 1454,
+    "output": 1426
+  },
+  "cost": 0.017168
+}

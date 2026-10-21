@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-18",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy.** Response A adds \"No action is required from the team.\" The release notes never say this, so it is an invented claim a manager might rely on. A also writes \"35°C\" where the source says only \"35 degrees.\" Celsius is a plausible reading, but it is still an addition. Response B stays faithful to the source. Its slight generalisations, such as \"time zone errors for New Zealand users\" (the source says \"some users\"), don't mislead in any meaningful way.\n\n**Coverage.** Both keep the key points: the three new features, the 35-degree threshold, the 15% battery figure, the fixes and accessibility. A keeps a few more specifics: the Settings path, the 15-minute sync interval, \"all buttons.\" These are correct but not essential for a manager. B drops the off-the-page details reasonably and also notes who benefits from the pace chart change (colour-blind users).\n\n**Concision.** A runs to roughly 140 words, which breaks the explicit under-120-word limit. B fits comfortably within it.\n\nOverall, A has an unsupported added claim and exceeds the word limit. B is accurate, complete enough and within the limit.\n\nVerdict: B",
+  "usage": {
+    "input": 1441,
+    "output": 1017
+  },
+  "cost": 0.026104
+}

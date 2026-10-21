@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-31",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main bug: `created_at > :last_seen` skips tied rows at a page boundary when `created_at` has one-second precision. Both also catch the missing tiebreaker, the missing index, the `IS NULL OR` planner problem, and late-committed rows. Both propose the correct `(created_at, id)` keyset fix.\n\n**Response A** has a factual error. It says the job can \"stall or loop forever\" when 1000 or more rows share a second. With a strict `>` cursor the cursor always advances, so the job skips the remaining tied rows rather than looping. A also pads the list with a \"recommended fix\" item and a \"minor point\" that says explicit columns are fine, which is not a problem. It runs well over the 200-word limit. Its `created_at <= :export_start` snapshot suggestion is useful, but the response is verbose overall.\n\n**Response B** is tighter and accurate, and it folds the fix into the first item. Its late-commit item gives a reasonable mitigation. Its persisted-cursor point is somewhat speculative but sensible and not wrong. It is also over 200 words, but by less than A, and it contains no false claims.\n\nB is more accurate, better organized, and closer to the length limit.\n\nVerdict: B",
+  "usage": {
+    "input": 1897,
+    "output": 779
+  },
+  "cost": 0.011584
+}

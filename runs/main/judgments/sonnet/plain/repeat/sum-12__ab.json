@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "sum-12",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "A\n\nBoth responses are slightly over the 120-word limit, at roughly 125 words (A) and 127 words (B), so neither fully complies. Both also cover the key facts: the fee changes, the concession pass, the reason for the increase, the repair timeline, staff being unaffected, and the petition.\n\nThe difference is in small accuracy and style points:\n- **Response B** says the weekly pass \"will replace\" the $9 daily concession. The source says only that concession parking was \"extended\" and that the current concession is a daily rate, so \"replace\" is an unsupported inference. B also adds a \"Summary:\" label that uses words without adding anything.\n- **Response A** says the weekly pass is \"instead of\" the daily concession, which is closer to the source. It adds \"a significant saving for regular users\", which is an editorial claim. It is plausible for thrice-weekly dialysis patients, but it is not stated outright.\n\nA is marginally shorter and slightly more faithful to the source, so it edges ahead.\n\n**A**",
+  "usage": {
+    "input": 1210,
+    "output": 2229
+  },
+  "cost": 0.02471
+}

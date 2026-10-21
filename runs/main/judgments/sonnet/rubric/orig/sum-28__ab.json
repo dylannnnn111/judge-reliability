@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-28",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is more accurate, so it wins.\n\n**Accuracy:**\n- Response A keeps the \"at least eight weeks' notice\" condition and states the shutdown rule correctly. It also correctly says the warehouse staff are exempt from the shutdown but covered by the cap and cash-out.\n- Response B drops \"at least\" from the notice period. It also writes \"Staff use four days' leave, or take unpaid leave or make up time,\" which makes unpaid leave and make-up time look like free choices. In the original they are only fallbacks for staff without enough leave, and make-up time needs the manager's agreement. This is a misleading simplification.\n\n**Coverage:**\n- Response B includes the eligibility scope (permanent staff under the 2025 Enterprise Agreement), the \"new\" flag on cash-out, and the burnout rationale.\n- Response A omits eligibility and the unpaid-leave fallback.\n- These omissions are real but do not mislead. B's extra coverage is partly undermined by its inaccuracies.\n\n**Concision:** Both are under 120 words and well structured.\n\nBecause accuracy is the first criterion and B contains a misleading statement and a lost condition, A is better despite its omissions.\n\nVerdict: A",
+  "usage": {
+    "input": 1466,
+    "output": 1063
+  },
+  "cost": 0.013562
+}

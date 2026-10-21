@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-24",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer in under 120 words. Response A is clearly over that limit, at roughly 190 words. Response B is about 100 words, so it stays within the limit.\n\nOn correctness, both give \"no\" to both questions. Mauna Kea is about 10,200 m from base to peak, and Chimborazo's summit is the farthest from Earth's centre. Response A has some questionable details. It says Chimborazo is about 6,384 km from the centre, which is right. It also says Everest rises roughly 4,600–5,000 m from the Tibetan Plateau, which is acceptable. Response B has no errors that I can see. The \"roughly 2 km farther\" figure is correct, since Chimborazo is about 2.1 km farther.\n\nResponse B follows the word limit and is accurate, and Response A breaks the limit. So B wins.\n\nVerdict: B",
+  "usage": {
+    "input": 888,
+    "output": 279
+  },
+  "cost": 0.004566
+}

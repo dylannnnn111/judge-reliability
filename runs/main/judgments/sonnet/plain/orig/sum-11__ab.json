@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-11",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-sonnet-5-5",
+  "text": "TIE\n\nBoth responses are accurate, but both break the 120-word limit. By my count, Response A runs to about 132 words and Response B to about 134, so neither has a meaningful edge on length.\n\nTheir other differences roughly cancel out:\n\n- **Response B:** It is clearer in structure. Parking gets its own bullet, Grant is named in full, and dates are stated explicitly, including the inferred Monday 17 Nov, which is consistent with the email. It also covers Lena's remit (archive and client files).\n- **Response A:** It is marginally shorter and reads a little more smoothly. It leaves out Lena's scope and identifies Grant only by first name.",
+  "usage": {
+    "input": 1474,
+    "output": 1874
+  },
+  "cost": 0.021688
+}

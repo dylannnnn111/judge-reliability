@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "sum-04",
+  "side": "A",
+  "score": 3,
+  "model": "claude-opus-5-5",
+  "text": "The response gets most facts right but has one misleading statement and breaks the length limit badly.\n\n**Accuracy**\n- **Correct:** the leave amounts (18 weeks up from 12, and 4 weeks up from 2), the 1 January 2027 start date, the eligibility rules, the 10-week application lead time and the information session dates.\n- **Misleading:** \"Leave can now be split into up to three separate blocks\" reads as applying to all parental leave. The original says only primary carers can split their leave. A manager could wrongly tell a secondary carer they can split theirs.\n- **Imprecise:** \"provided that each block is taken within 24 months\" slightly misstates \"all leave taken within 24 months,\" though the practical effect is similar.\n- **Missing qualifier:** the 18-week cap on superannuation for the government-funded portion is dropped.\n\n**Coverage**\n- It omits that the leave is on top of the government Parental Leave Pay scheme, which matters when staff ask about total entitlements.\n- It doesn't say that staff whose child arrives before the start date stay on the old entitlements even if their leave runs past it. The \"on or after\" wording covers this only implicitly.\n- The email contact is missing, which is less important.\n\n**Concision**\n- The user set a hard limit of under 120 words. The response is about 200 words, roughly 65% over.\n- Much of the length is padding: \"is pleased to share,\" \"To begin with the main change,\" \"In addition to the increase in the amount of leave, there is greater flexibility in how it can be used,\" \"Please note that,\" \"If you are planning to take leave.\" These add nothing for a busy manager.\n- It also reads like a staff announcement rather than a briefing for a manager.\n\n**Overall:** mostly accurate, with one misleading generalisation about leave splitting, a few useful omissions, and a clear failure on the explicit word limit, largely through filler.\n\nScore: 3",
+  "usage": {
+    "input": 1248,
+    "output": 1255
+  },
+  "cost": 0.030092
+}

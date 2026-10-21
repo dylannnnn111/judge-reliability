@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-38",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response B is better. Both responses are accurate on the key facts: the 18 November date, the beta numbers, the 23 bugs (21 fixed), the launch dates, the budget, and the app store risk. Response A also says \"used the app\" where the source says \"installed and logged in at least once\", which is a close but looser paraphrase.\n\nThe main difference is the length limit. Response B comes to about 120 words, right at the requested maximum. Response A runs to roughly 230 words, nearly double the limit, and its extra phrasing (\"I am pleased to report\", \"The sections below summarise...\") adds nothing for a busy manager. Response B covers everything the manager needs (status, beta outcome, key dates, budget, main risk) in tight, scannable paragraphs. Neither response is inaccurate in a way that matters, but Response B meets the brief and Response A does not.\n\nVerdict: B",
+  "usage": {
+    "input": 1566,
+    "output": 1435
+  },
+  "cost": 0.0008741
+}

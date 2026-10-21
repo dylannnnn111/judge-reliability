@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-14",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Verdict: A**\n\n**Correctness:** Both responses get the right answer. Net rate = 1/3 − 1/5 = 2/15 tank per hour, so the time to fill is 15/2 = 7.5 hours. Neither is ahead here.\n\n**Key reasoning:** Both show the same essential steps: the tap's rate, the drain's rate, the net rate, and the division to get the time. Neither has an edge on substance.\n\n**Clarity and constraints:** Response A is compact. It gives the answer and four bullet steps, well under 120 words. Response B repeats the answer three times (\"**7.5 hours**\", \"here is the answer up front\", \"So, to summarize\"). It also adds filler transitions (\"Let's walk through…\", \"With the net rate known…\"). These add no information. B runs to roughly 130 words, which breaks the user's under-120-word limit. A meets the constraint and is equally complete.\n\nVerdict: A",
+  "usage": {
+    "input": 747,
+    "output": 684
+  },
+  "cost": 0.016668
+}

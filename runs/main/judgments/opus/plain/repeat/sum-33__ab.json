@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "sum-33",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth summaries run slightly over the 120-word limit (roughly 125–130 words each), so neither wins on that point.\n\nBoth are accurate on the core content. Each correctly reflects the corrected shutdown date of 31 January 2027, not the superseded 30 November.\n\nB is better structured for a busy manager:\n- **Action first:** It opens with the one item that may need a decision, rather than leaving it to the end.\n- **Real consequence:** It states that staff could be paid late, which A leaves out.\n- **Where to look and what help exists:** It gives the settings path to check whether you're affected and mentions the step-by-step guide.\n- **Compact minor items:** It folds the small improvements and fixes into one line, keeping the focus where it matters.\n\nB has one small inaccuracy. It labels the new features \"automatic,\" but area-based swap approvals need setup in Admin > Permissions > Areas. A avoids this, but it also never mentions that setup path.\n\nOn balance, B's prioritisation and fuller consequence information outweigh that flaw.",
+  "usage": {
+    "input": 1402,
+    "output": 1924
+  },
+  "cost": 0.044088
+}

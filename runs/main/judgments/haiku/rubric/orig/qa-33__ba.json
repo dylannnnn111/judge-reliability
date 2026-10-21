@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-33",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly explain tidal locking: the Moon's spin slowed through tidal friction until it matched its 27.3-day orbit, and both mention libration and the roughly 59% of the surface that is visible over time. Response A gives a more detailed mechanism, describing the tidal bulge and how friction within the Moon dragged on it. Response B covers the same core reasoning more briefly. Response A also has a slight edge in noting that the far side gets sunlight. However, Response A runs to about 120 words, which does not meet the \"under 120 words\" requirement, while Response B is about 90 words and complies. Since the substance is essentially equal, the length constraint tips the comparison toward Response B.\n\nVerdict: B",
+  "usage": {
+    "input": 677,
+    "output": 1892
+  },
+  "cost": 0.0010137
+}

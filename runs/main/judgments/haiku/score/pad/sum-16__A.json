@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-16",
+  "side": "A",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The response is largely accurate. The percentages, budget figures, the $26K net after the credit, the 24 October fix date, the 17 November proposal and the 15 October decision all match the source, and it correctly flags that the credit is still unconfirmed in writing. It also covers the main decisions the steering committee needs to make.\n\nThe main problem is length. The user asked for under 120 words, and this response runs to roughly 240. That is a clear failure of an explicit constraint, and the extra words are mostly restated detail rather than essential content. The response also omits the sales-team training availability risk (the 31 December end-of-quarter constraint and the sales director's request to avoid December), which a manager would need to know because it bears on the revised date. It also drops the third test migration delay, though the sandbox outage is mentioned.\n\nAccuracy is strong, but the failure to respect the word limit and the omitted training risk weigh heavily against it.\n\nScore: 4",
+  "usage": {
+    "input": 1362,
+    "output": 803
+  },
+  "cost": 0.0005377
+}

@@ -1,0 +1,13 @@
+{
+  "item": "qa-15",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "The temperature rose by **18 °F**.\n\nThe rise is 25 − 15 = 10 °C. A temperature *difference* converts with only the 9/5 factor (the +32 offset cancels out):\n\n10 × 9/5 = 18 °F\n\nAs a check, 15 °C = 59 °F and 25 °C = 77 °F, and 77 − 59 = 18 °F.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 85,
+    "output": 126
+  },
+  "cost": 0.00143,
+  "at": "2026-10-14T01:50:32.262Z"
+}

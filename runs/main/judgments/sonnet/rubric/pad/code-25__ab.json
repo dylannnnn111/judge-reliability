@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-25",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same core issues, and all of them are real:\n- The off-by-one error lets six attempts through.\n- Memory grows without bound.\n- The limit is per-IP only.\n- `retryAfterSec` is hardcoded.\n- State is in-memory and per-process.\n- The client IP may be untrustworthy.\n\nBoth rank the off-by-one error first, which is sensible because it is a concrete bug that defeats the stated \"5 per minute\".\n\n**Response A** gives more concrete fixes. It supplies the `retryAfterSec` formula, notes that `allow` would need to return the value, and suggests deleting empty entries and sweeping periodically. Its IPv6 /64 prefix advice is a useful addition. It covers the proxy case where everyone shares the proxy's address and gets locked out together, as well as shared NAT. Its item 7 (no tests, no reset on success) is minor filler, but it is labeled \"Minor\" and placed last. It is still over 200 words, though not by much.\n\n**Response B** has a preamble and is wordier, running well over the 200-word limit, with no added substance. Its item 5, counting all attempts rather than only failures, is a design consideration, not a bug. Counting every attempt is a common and defensible choice for this purpose. Its fixes are vaguer (\"would help\", \"worth considering\"). Its X-Forwarded-For spoofing point is good, but A's proxy point covers similar ground.\n\nA is tighter, closer to the length limit, and more actionable, so A is better.\n\nVerdict: A",
+  "usage": {
+    "input": 1791,
+    "output": 1004
+  },
+  "cost": 0.013622
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-10",
+  "side": "A",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The correct answer is 1/3, and the response gets it right. Its reasoning is sound: it lists the four equally likely outcomes, removes BB, and counts GG as 1 of the remaining 3. It also notes why 1/2 is wrong, which is the usual confusion here.\n\nThe length limit is under 120 words. Counting the response: the bold \"1/3\" is 1 word. The next sentence is about 17 words, then about 23 words, then about 15 words. The \"different from 1/2\" paragraph is about 55 words, and the final \"Answer: 1/3\" is 2 words. That totals roughly 113 words. It is close to the limit but probably under it, so it complies.\n\nA small quibble is that the closing explanation is slightly redundant, and \"outnumber the two-girl families\" is a bit loose, since BG and GB together are twice GG. That is a minor point. The final answer is repeated at the end, which is harmless.\n\nScore: 9",
+  "usage": {
+    "input": 441,
+    "output": 304
+  },
+  "cost": 0.003922
+}

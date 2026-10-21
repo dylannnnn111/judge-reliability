@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-26",
+  "side": "A",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate. The dates, times, the 7:50am start, the 8:50am release, the worn door controller, the Melbourne part, the 2:10pm restoration, the meal and evacuation counts, the $2,300 spare board approved by the village manager, and the board referral all match the source. \"Carried down\" slightly overstates \"helped down the stairs,\" but it is a minor paraphrase. It omits the evacuation-chair refresher training and the care team's calls to families, which are minor for a manager. The main problem is length: the response runs to roughly 155 words, well over the 120-word limit the user set explicitly. That breaks a direct instruction, and the extra words add no important content.\n\nScore: 5",
+  "usage": {
+    "input": 1148,
+    "output": 1115
+  },
+  "cost": 0.0006722999999999999
+}

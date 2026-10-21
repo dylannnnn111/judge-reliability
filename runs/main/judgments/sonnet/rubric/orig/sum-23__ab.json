@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-23",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Accuracy check:\n\nResponse A: \"Tse will request a speed counter on Wattle Road\", which is accurate, since she said she would ask council traffic staff. \"Facebook page to post meeting dates more clearly\" is accurate, as Robyn agreed. \"142 member households, up on last year\": the minutes say renewals are up, so this is roughly fine. Word count is about 100, under 120. Accurate on everything else.\n\nResponse B: \"Council will install a speed counter after resident concerns\" overstates things. Tse only said she would ask traffic staff to put one in and report back, so there is no commitment from council. That is a misleading claim about who decided what. \"Membership is up\" is a slight shift from \"renewals up\", but acceptable. \"New Gully Reserve playground equipment is due in April\" is fine. \"With a school choir\" is fine.\n\nCompleteness: A includes the coordinators (Laila, Peter), the playground details, and the Facebook item. B omits the Facebook item and the names of who is doing what, which matters for a manager who may need action owners. B is shorter, but A is still under the limit.\n\nResponse A is more accurate and more complete, with only a slight concision cost.\n\nVerdict: A",
+  "usage": {
+    "input": 1550,
+    "output": 385
+  },
+  "cost": 0.00695
+}

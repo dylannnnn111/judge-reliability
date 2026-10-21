@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-17",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the main bugs: the off-by-one offset (`page * pageSize` should be `(page - 1) * pageSize`), the unhandled async errors in Express 4, and negative page values producing an invalid OFFSET. Both also raise the `userId` type-mismatch concern, correctly framed as conditional on how the session stores the ID. Response A ranks the concrete unhandled-rejection bug above the speculative type mismatch, which is the better order. Response B puts the type mismatch second, over-weighting a conditional issue. Response A also flags the malformed `userId` cast error, a real if minor problem that Response B misses. Response B's radix note and its remark that the parameterized query is safe are accurate but add less. Neither response includes wrong claims. Response A covers slightly more real ground with sensible prioritization, so it comes out modestly ahead.\n\nVerdict: A",
+  "usage": {
+    "input": 1531,
+    "output": 924
+  },
+  "cost": 0.0006151
+}

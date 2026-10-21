@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-36",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A** is better. It stays under the 120-word limit at roughly 110 words. It also keeps every key commercial term, including the overage rates of 0.9c and 6.5c per page.\n\nResponse B runs to roughly 200 words, well over the limit. It adds filler such as \"Thank you for reviewing this summary,\" which a busy manager doesn't need. It also omits the per-page overage charges.\n\n**A**",
+  "usage": {
+    "input": 1508,
+    "output": 490
+  },
+  "cost": 0.015832
+}

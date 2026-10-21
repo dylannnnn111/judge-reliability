@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-06",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. The user asked for a summary under 120 words, and B comes in at roughly 115 words. A runs to about 190 words, well over the limit.\n\nA also adds promotional, invitation-style phrasing such as \"we are pleased to share,\" \"please join us,\" and \"we look forward to welcoming you.\" That is the wrong register for a summary aimed at a busy manager. B is concise and well organised, and it covers the key facts: dates, cost, upgrades, programs, prices, opening day and hours.\n\n**B**",
+  "usage": {
+    "input": 1468,
+    "output": 562
+  },
+  "cost": 0.008556
+}

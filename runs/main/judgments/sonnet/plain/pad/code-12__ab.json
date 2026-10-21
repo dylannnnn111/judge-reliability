@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-12",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. Both responses go over the 200-word limit, but B overshoots far less (roughly 270 words against A's roughly 380). A also opens with a filler sentence that restates the task.\n\nB's points are also more concrete and relevant to the code:\n- It flags the formatted-string totals, which finance can't sum, and the `$-12.34` rendering of negative amounts.\n- It flags the nondeterministic ordering within a customer.\n- It flags the missing validation of `month`.\n\nA spends space on speculative issues, such as a quantity column that may not exist, the lack of a consistent snapshot, and the absence of a reconciliation total. These matter less than the issues B raises.\n\nB's prioritization is also sensible. The N+1 queries come first, which is the main performance problem at 20,000 invoices, and the crash on a missing customer comes second.",
+  "usage": {
+    "input": 1764,
+    "output": 533
+  },
+  "cost": 0.008858
+}

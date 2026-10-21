@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-26",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both summaries are accurate on the key facts: the dates, the 2:10pm return to service, the 11 meal deliveries, the four stair assistances, the $2,300 spare board, and the board referral. Neither contains a clear factual error. A's \"carried down the stairs\" is a slight paraphrase of \"helped down the stairs,\" but it is reasonable.\n\nBoth exceed the 120-word limit. Response A is about 150 words, while Response B is closer to 220 with its header and section labels. A is therefore much nearer the limit and reads as a tighter briefing. B's extra words mostly restate points, such as the notice details and the \"I am pleased to report\" framing, rather than adding new useful information. B does include a few details A drops, such as the refresher training and the contact with high-care families, but those are minor for a busy manager.\n\nOverall, A keeps the essential points, is accurate, and is more concise. B is accurate but noticeably longer, with more padding and a further breach of the word limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1653,
+    "output": 1711
+  },
+  "cost": 0.0010207999999999999
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "sum-21",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth summaries are accurate and come in just under 120 words (A is about 119, B about 112). B is the stronger one for a busy manager.\n\n- **It leads with the deadline.** The heading \"decision needed by 24 October\" puts the urgency first.\n- **It speaks to the reader.** Saying \"he needs your sign-off\" fits a summary written for the decision-maker.\n- **It adds a useful calculation.** The $21,600 hire-car cost (6 cars × $1,800 × 2 months) is correct and makes the cost of missing the deadline concrete.\n- **It leaves out what isn't needed.** The Coastal Fleet Sales quote doesn't affect the decision, so dropping it keeps B tighter. A spends words on it.",
+  "usage": {
+    "input": 1364,
+    "output": 890
+  },
+  "cost": 0.023256
+}

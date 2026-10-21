@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-26",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses break the 120-word limit by about the same amount, roughly 150 words each, so concision does not separate them.\n\n**Accuracy:**\n- Response A says \"daily printed updates\", but the report only says the first notice was printed. The updates were just \"an update each afternoon\". This is a small overstatement.\n- Response B says four residents were \"carried down the stairs\". The report says they were \"helped down the stairs … using an evacuation chair\", so \"carried\" is slightly loose. B also says \"All residents\" where the report means all Tower B residents.\n- A says \"approved 26 Sept\" but doesn't say who approved it. B says \"the manager approved\" but gives no date. Both are fine.\n\n**Coverage:**\n- A includes the staff refresher training and the phone calls to families of high-care residents. B leaves both out.\n- A gives the exact approval date.\n- A's headers (Impact, Actions, Feedback) make it easier for a busy manager to scan.\n\nA is slightly more complete, easier to scan, and has no more significant inaccuracy than B.\n\nVerdict: A",
+  "usage": {
+    "input": 1541,
+    "output": 1534
+  },
+  "cost": 0.018422
+}

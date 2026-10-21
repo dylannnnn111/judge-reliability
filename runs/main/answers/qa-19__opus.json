@@ -1,0 +1,13 @@
+{
+  "item": "qa-19",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "\"Kangaroo\" comes from **gangurru**, a word in Guugu Yimithirr, an Aboriginal language of far north Queensland. It refers to a specific species, the eastern grey kangaroo. James Cook and Joseph Banks recorded it in 1770 while repairing their ship *Endeavour* near present-day Cooktown.\n\nThe story that it means \"I don't understand\" is a **myth**. It likely arose because later Europeans found that Aboriginal people elsewhere didn't recognize the word, since Australia had hundreds of distinct languages. In the 1970s, linguist John Haviland, studying Guugu Yimithirr, confirmed that *gangurru* genuinely names the animal. The \"I don't understand\" tale persists because it's an appealing story about cross-cultural miscommunication, but it isn't true.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 60,
+    "output": 384
+  },
+  "cost": 0.00792,
+  "at": "2026-10-14T01:50:35.394Z"
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-07",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses find the core bug: `len(items) // size` silently drops the final partial batch, and both correctly flag that failed batches are swallowed while the function still reports success. Both also cover retries and the `len()`/slicing input requirement.\n\nResponse A adds the overly broad `except Exception`, which is a distinct and real problem: it treats auth failures, bugs, and transient network errors the same way, so a broken credential produces a pointless attempt on every batch. Its fix suggestions are concrete, including logging the failed batch's size or IDs. Its last item is weak filler.\n\nResponse B adds two useful points. It notes that the hourly job may only check the exit code, so a run that loses data can still look successful. It also warns that retries are only safe if `upsert_contacts` is idempotent, which is an important caveat. However, its third point largely repeats the second, so it spends words on overlap.\n\nResponse A covers more distinct, real issues without redundancy. Response B's idempotency and scheduler-context points are valuable, so the gap is small.\n\nVerdict: A",
+  "usage": {
+    "input": 1439,
+    "output": 911
+  },
+  "cost": 0.0005993999999999999
+}

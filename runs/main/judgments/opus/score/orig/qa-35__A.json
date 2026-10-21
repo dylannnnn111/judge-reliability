@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-35",
+  "side": "A",
+  "score": 6,
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** The core science is accurate.\n\n- Antibiotics target bacterial structures: cell walls, 70S ribosomes, and specific enzymes. Viruses lack these and replicate using host machinery, so antibiotics have nothing to attack.\n- Resistance arises through random mutation and natural selection, with horizontal gene transfer via plasmids.\n- The three resistance mechanisms named (drug destruction, efflux pumps, target alteration) are standard and correct.\n- One weak point: \"not finishing courses\" as a driver of resistance. Current evidence questions this, and some experts suggest shorter courses may reduce resistance pressure. It is still widely taught, so this is a minor flaw.\n\n**Key reasoning:** Both questions are answered with the essential causal logic. For viruses, it explains what antibiotics target and why viruses lack it. For resistance, it covers variation, selection and spread, plus what accelerates the process.\n\n**Clarity:** The two bold headings mirror the two questions, and the prose is tight and readable.\n\n**Constraint compliance:** The user asked for an answer \"under 120 words.\" Counting gives about 121 words including the headings, or about 112 without them. Headings are part of the response, so the answer slightly exceeds a hard limit. The miss is small, but the user set the limit explicitly, so it counts against the score.\n\n**Overall:** The content is strong and accurate, but it breaks the explicit length constraint and includes one dated claim.\n\nScore: 6",
+  "usage": {
+    "input": 495,
+    "output": 1680
+  },
+  "cost": 0.03558
+}

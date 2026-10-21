@@ -1,0 +1,13 @@
+{
+  "item": "sum-24",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**Hollis Bay Arts Foundation – Grants Committee, 5 October 2026 (corrected 8 October)**\n\n- **Round 2:** 19 applications sought $286,000 against a $120,000 pool. Five grants were approved, totalling **$88,200**: Youth Orchestra touring ($24,000), Pelican Point Mural ($8,500), First Nations storytelling festival ($35,000), Saltwater Theatre Collective ($14,500), and seniors ceramics ($6,200).\n- **Rollover:** **$31,800** carries over to Round 3.\n- **Feedback:** Unsuccessful applicants get feedback by 31 October. Two will be encouraged to reapply with revised budgets.\n- **Overdue reports:** Three Round 1 recipients haven't submitted acquittal reports. Without them by 30 November, they become ineligible for future rounds.\n- **Round 3:** Opens 2 February, closes 16 March.\n- **Next meeting:** The committee will discuss a proposed quick-response grant of up to $2,000.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 811,
+    "output": 423
+  },
+  "cost": 0.011704,
+  "at": "2026-10-14T01:52:00.950Z"
+}

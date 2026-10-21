@@ -1,0 +1,13 @@
+{
+  "item": "sum-32",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Complaint C-55309 – Bianca and Lachlan Ortiz (variable home loan)**\n\n**Issue:** The customers say lending officer Jordan promised in May a 5.79% rate \"for the life of the loan.\" Their rate is now 6.04%, and they want a refund of the overcharged interest.\n\n**Our position:** The 5.79% rate was the standard variable rate less a 0.90% discount. The August 0.25% rise in the standard variable rate lifted it to 6.04%. The discount is still applied. Jordan's 12 May email says only that the *discount* is locked, not the overall rate. Variable rates can change under the contract.\n\n**Outcome:** Customer Care found no overcharge but acknowledged the wording was confusing, passed feedback to the lending team, and paid $250 goodwill. The customers accepted the payment but still feel misled. They've asked for a call about fixed-rate options, which has been referred to lending. The complaint is closed.\n\n**Risk:** The customers' continued belief they were misled could lead to an escalation to AFCA.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 767,
+    "output": 350
+  },
+  "cost": 0.005034,
+  "at": "2026-10-14T01:52:19.330Z"
+}

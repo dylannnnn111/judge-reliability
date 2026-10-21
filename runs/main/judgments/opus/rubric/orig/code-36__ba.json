@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-36",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both responses put the `Invalidate` RLock/delete race first, and both correctly say it can kill the process with a fatal \"concurrent map writes\" error. Both then cover the same real problems:\n- stale overwrite after `Invalidate`\n- cache stampede\n- TTL not tied to the token's real lifetime\n- unbounded growth\n- no context or timeout on `fetch`\n\nNeither flags anything that is actually fine, so on finding the issues that matter they are essentially even.\n\n**Ranking.** B puts stale re-caching second, ahead of the stampede. It frames it concretely: the token upstream just rejected gets stored and served for another full TTL. In a gateway that is a correctness failure, so ranking it above a load problem is defensible and arguably better. A ranks the stampede higher. That is also reasonable, but A's stale-overwrite description is more generic.\n\n**Fixes.** A is stronger here. It offers a remedy for every item, including a generation counter for the stale overwrite and backoff for a failing upstream. B gives no fix for the stale re-cache issue.\n\n**Accuracy.** B's #6 says a hung fetch \"blocks every request waiting on that tenant.\" That is slightly off for the current code: without singleflight, requests do not wait on each other, and each one blocks on its own fetch. A's extra point that errors are not cached and there is no backoff is valid and useful.\n\n**Length.** The user asked for under 200 words. A runs to roughly 230+ words and exceeds the limit. B lands at roughly 195 and complies.\n\n**Weighing it.** A has more complete fix guidance, but it breaks an explicit constraint, and much of its extra length is remedy detail rather than new issues. B covers the same issues within the limit, with sharper context for the stale-token problem. Its only weaknesses are one missing fix and a minor imprecision.\n\nVerdict: B",
+  "usage": {
+    "input": 1797,
+    "output": 1190
+  },
+  "cost": 0.030988
+}

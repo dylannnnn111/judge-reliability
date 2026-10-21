@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-28",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. Both responses exceed the 120-word limit, but B only slightly and A by a wide margin.\n\n**Length:** Response A runs to roughly 190 words, well over the limit. A's opening paragraph alone is about 60 words of filler, such as \"We would like to draw your attention to…\" and \"The main changes are set out below.\" Response B is about 125–130 words, still slightly over but far closer to what was asked.\n\n**Accuracy:**\n- B keeps the key details: the 40-day full-time figure, the at-least-eight-weeks' notice, the written agreement for cash-out, and the four non-public-holiday days. It also correctly says the warehouse staff are still covered by the cap and cash-out rules.\n- A says the changes apply to \"permanent staff\" and drops the part-time detail. It says staff \"are asked to agree\" a plan, which understates the requirement. It also tells readers \"you will receive your team's high-balance list\", which wrongly suggests the reader is a manager. B's \"High-balance staff lists go to managers\" states this correctly.\n- B omits the leave-without-pay and make-up-time options for staff without enough leave. A includes them, but not enough to offset its length problem.\n\n**Suitability for a busy manager:** B opens with the reason and then lists the changes tightly. A's wordy framing makes it slower to read.\n\n**B**",
+  "usage": {
+    "input": 1436,
+    "output": 1779
+  },
+  "cost": 0.020662
+}

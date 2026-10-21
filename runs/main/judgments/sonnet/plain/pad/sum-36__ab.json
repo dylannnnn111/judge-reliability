@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-36",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. It is the only one that meets the \"under 120 words\" limit, at roughly 116 words by my count. Response A runs to about 220 words, nearly double the limit. A also opens with filler (\"Thank you for reviewing this summary…\"), which wastes a busy manager's time.\n\nB also keeps the key points: the term, cost, allowance, overage rates, the colour-overage risk, the early-exit penalty and the end-of-term options. It drops only the contact name.",
+  "usage": {
+    "input": 1508,
+    "output": 1261
+  },
+  "cost": 0.015626
+}

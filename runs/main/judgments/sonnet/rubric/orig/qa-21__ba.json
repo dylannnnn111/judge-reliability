@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-21",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer: early January, at perihelion, about 147 million km away. Both also correctly explain that axial tilt, not distance, causes the seasons.\n\nConstraint check: the limit is under 120 words. Response A is about 55 words. Response B is roughly 115 words, so I'll count it more carefully.\n\nParagraph 1: \"Earth is closest to the Sun (called perihelion) in early January, typically around January 2–5.\" is 16 words. \"At that point, Earth is about 147.1 million km (91.4 million miles) away, compared with roughly 152.1 million km (94.5 million miles) at aphelion in early July.\" is about 28 words, so paragraph 1 is about 44.\n\nParagraph 2: \"This may seem surprising, since January is winter in the Northern Hemisphere.\" is 12 words. \"Seasons are caused by Earth's 23.5° axial tilt, not by distance from the Sun.\" is 14. \"When the Northern Hemisphere is tilted away from the Sun, it gets less direct sunlight, even though Earth is slightly closer overall.\" is 22. Paragraph 2 is about 48.\n\nParagraph 3: \"The distance difference is only about 3%, so its effect on climate is small compared with the tilt.\" is 18.\n\nThe total is about 44 + 48 + 18 = 110 words, which is under 120.\n\nCorrectness is equal. Response B adds useful, accurate detail: the date range, the aphelion comparison, and the roughly 3% difference. Response A is concise and fully adequate. The extra content in B is correct and relevant, and it stays within the limit. A's \"Northern Hemisphere's winter\" is fine. A's \"roughly 147 million km\" is also fine.\n\nB gives slightly more key reasoning, such as why the tilt matters, and is still clear. I lean slightly toward B.\n\nVerdict: B",
+  "usage": {
+    "input": 608,
+    "output": 614
+  },
+  "cost": 0.007356
+}

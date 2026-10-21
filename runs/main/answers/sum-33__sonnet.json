@@ -1,0 +1,13 @@
+{
+  "item": "sum-33",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**ShiftNest 12.4 (released 28 Oct 2026)**\n\nUpdates roll out automatically overnight. No action is needed for most customers.\n\n**New:**\n- Managers can approve shift swaps only for their own areas.\n- Public holiday penalty rates now apply automatically for Hospitality and Retail awards, by state.\n- Staff get push notifications for open shifts.\n\n**Improvements:** Faster roster loading for large sites, unpaid break minutes in timesheet exports, and availability can be set 12 weeks ahead.\n\n**Fixes:** Daylight saving hour errors on overnight shifts and South Australia time zone display.\n\n**Action required (only if you use the v1 payroll connector, about 8% of customers):** Switch to v2 (about 15 minutes) or timesheets will stop reaching payroll. The shutdown was moved from 30 Nov to **31 Jan 2027**, but switching soon is still advised.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 711,
+    "output": 310
+  },
+  "cost": 0.004522,
+  "at": "2026-10-14T01:52:20.983Z"
+}

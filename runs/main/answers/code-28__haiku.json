@@ -1,0 +1,13 @@
+{
+  "item": "code-28",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "1. **Race condition (double spend).** The balance is read with a plain `SELECT` and checked in application code, so two concurrent transfers can both pass the check and overdraw the wallet. Use `SELECT ... FOR UPDATE`, or make the debit conditional: `UPDATE ... SET balance_cents = balance_cents - $1 WHERE id = $2 AND balance_cents >= $1`, then check `rowCount`.\n\n2. **Money can disappear.** `toId` is never verified. If it doesn't exist, the second UPDATE affects zero rows, the debit still commits, and the funds vanish. Check `rowCount` on the credit and roll back if it's 0.\n\n3. **Connection leak.** `client` is never released. After enough calls, the pool is exhausted and the API hangs. Call `client.release()` in a `finally` block.\n\n4. **Deadlock risk.** Concurrent `transfer(A, B)` and `transfer(B, A)` lock rows in opposite order and can deadlock. Lock both wallets in a consistent order, such as ascending id.\n\n5. **ROLLBACK can mask the real error.** If `ROLLBACK` throws (for example, a dropped connection), it replaces the original error. Wrap it in its own try/catch.\n\n6. **No database-level guard.** Add `CHECK (balance_cents >= 0)` to the table so a bug elsewhere can't create negative balances.\n\n7. **Minor:** `fromId === toId` is accepted and is a silent no-op. Consider rejecting it explicitly.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 495,
+    "output": 920
+  },
+  "cost": 0.0005095,
+  "at": "2026-10-14T01:54:24.059Z"
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-35",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate and under 120 words. Each covers the deadline, the Annexure C benchmark, the removal and repair items, the kitchenette exception, the landlord's payment option with its two-quote and three-month notice requirements, and the bond return. Neither mentions the 2 March 2023 consent letter, but that is a minor omission for a manager.\n\nResponse B is easier to scan, with headings and bullets for the work list, which suits a busy reader. However, it has two small precision problems. \"Overrunning means paying daily rent\" states as certain something the lease says may apply. \"The landlord... must give three months' notice\" leaves the subject implicit. Response A states the rent consequence correctly (\"may incur\") and names who must notify (\"must notify us\"), so it is more precise, though its run-on list is less scannable.\n\nGiven that accuracy is the first criterion, Response A is slightly better.\n\nVerdict: A",
+  "usage": {
+    "input": 1454,
+    "output": 1150
+  },
+  "cost": 0.0007204
+}

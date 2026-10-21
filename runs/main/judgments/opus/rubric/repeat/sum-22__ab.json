@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-22",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy.** Both responses get the key figures right: the $40 rise to $340, juniors held at $180, the 9% turf increase, the $3,200 shortfall, the 14 November grant date, the $41,820 balance, the 24 October presentation night, $45 tickets, and the $600 gazebo.\n\nB says junior numbers fell \"mostly due to cost.\" The minutes say only that cost was \"the most common reason given.\" \"Most common\" does not mean a majority, so B overstates it slightly. B's line that \"the rise covers a 9% increase\" also reads as if the cost is fully covered. B does correct this in the next paragraph by noting the shortfall. A's \"Bryce will apply for a council grant by 14 November\" is accurate, since the grant closes that day.\n\n**Coverage.** B adds the 5-0 vote and that Natalie is organising trophies. These are nice touches but not essential for a busy manager. A keeps every point that matters: the fee decision and its reason, the shortfall and grant plan, grounds actions, event details, the gazebo, the cash balance and the next meeting.\n\n**Concision and the constraint.** A comes to roughly 107 words. B comes to roughly 125 words including headings, which likely breaks the user's explicit limit of under 120 words. Even excluding the title, B sits right at the edge.\n\nA is accurate, complete on the essentials and within the limit. B adds minor detail, introduces a small overstatement, and probably exceeds the word cap.\n\nVerdict: A",
+  "usage": {
+    "input": 1571,
+    "output": 1809
+  },
+  "cost": 0.042464
+}

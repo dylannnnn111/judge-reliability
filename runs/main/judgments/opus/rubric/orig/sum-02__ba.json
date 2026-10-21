@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-02",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy.** Both responses get the dates, the decisions and the outcome right. Each has one small slip.\n\n- **Response A** says the roof \"needs full replacement within two years.\" The minutes say the contractor *recommends* replacement and that the leak has been patched. A drops the patch and presents a recommendation as a firm need.\n- **Response B** reports the roof correctly: patched now, replacement recommended.\n- **Response B** writes \"only 11 visitors\" where the minutes give an *average* of 11. This is a minor imprecision, and the figure still gives the manager useful context for why the change was proposed.\n\n**Completeness.**\n\n- **Response A** explains that the Corrie Creek Thursday opening would be funded by the Mount Lavell cut. This trade-off is useful context.\n- **Response B** lists the two changes side by side without saying one funds the other. This leaves out context but does not mislead.\n- **Response B** flags the volunteer request clearly as an **Action**, with the right owner (managers send names). A busy manager benefits from that.\n- **Response B** also includes the Mount Lavell versus Westbrook Central figures, which make the proposal understandable.\n\n**Concision.** Both are under 120 words and similarly tight.\n\n**Overall.** B's roof wording is more faithful to the minutes, and its explicit action item suits the reader. A's linkage of the two opening-hours changes is a real strength but does not outweigh its overstatement of the roof issue.\n\nVerdict: B",
+  "usage": {
+    "input": 1621,
+    "output": 1166
+  },
+  "cost": 0.029804
+}

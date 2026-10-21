@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-28",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nThe deciding factor is the 120-word limit.\n\n- **Response A breaks the limit.** It runs to roughly 210 words, mostly because of filler such as \"We would like to draw your attention to…\" and \"The main changes are set out below.\" That wordiness also works against a reader who is busy.\n- **Response B fits the limit.** At roughly 118 words, it still covers the rationale, all three changes and the warehouse exemption. It also keeps useful details such as \"40 days full-time\" and \"at least eight weeks' notice.\"\n- **B's omissions are minor.** It leaves out the unpaid-leave or make-up-time alternative for the shutdown and the scope line (permanent staff under the 2025 Enterprise Agreement). A includes both, but that does not make up for breaking the stated length limit.",
+  "usage": {
+    "input": 1436,
+    "output": 464
+  },
+  "cost": 0.015024
+}

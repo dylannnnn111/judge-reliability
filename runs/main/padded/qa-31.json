@@ -1,0 +1,14 @@
+{
+  "pair": "qa-31",
+  "side": "B",
+  "author": "sonnet",
+  "model": "claude-haiku-5-5",
+  "original": "Seasons come from Earth's axial tilt of about 23.5°, not from distance to the Sun. As Earth orbits the Sun, the tilt stays pointed in the same direction in space.\n\nWhen the Northern Hemisphere (including Europe) tilts away from the Sun, around December, it receives sunlight at a lower angle and for fewer hours each day. That means less heating, so winter.\n\nAt the same time, the Southern Hemisphere (including Australia) tilts toward the Sun. Sunlight strikes more directly and days are longer, producing summer.\n\nSix months later, the situation reverses: the north tilts toward the Sun and the south tilts away. So the hemispheres always have opposite seasons.",
+  "text": "Seasons come from Earth's axial tilt of about 23.5°, not from distance to the Sun. It is easy to assume that seasons are caused by how far Earth is from the Sun, so it is worth being clear on this point at the outset. As Earth orbits the Sun, the tilt stays pointed in the same direction in space, and it is this steady tilt, combined with the orbit, that produces the changing seasons.\n\nWhen the Northern Hemisphere (including Europe) tilts away from the Sun, around December, it receives sunlight at a lower angle and for fewer hours each day. That means less heating, so winter. To put it another way, during this part of the year the north gets a weaker and shorter daily dose of sunlight, and that is why it experiences winter.\n\nAt the same time, the Southern Hemisphere (including Australia) tilts toward the Sun. Sunlight strikes more directly and days are longer, producing summer. Seen from the south, the same tilt that leads to winter in the north brings the opposite conditions, so the season there is in full swing.\n\nSix months later, the situation reverses: the north tilts toward the Sun and the south tilts away. So the hemispheres always have opposite seasons. In other words, as one half of the planet moves into summer, the other half moves into winter, and this pattern continues as Earth keeps orbiting the Sun.",
+  "ratio": 2.17,
+  "usage": {
+    "input": 414,
+    "output": 1142
+  },
+  "cost": 0.0006123999999999999
+}

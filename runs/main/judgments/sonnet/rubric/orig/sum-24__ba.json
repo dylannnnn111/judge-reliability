@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-24",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses use the corrected figures: $14,500 for Saltwater, $88,200 total approved and $31,800 rolled over. The five grants do sum to $88,200. Both keep the dates (31 October, 30 November, 2 February to 16 March) and the acquittal ineligibility condition. Both stay under 120 words, at roughly 117 for A and 113 for B.\n\nThe differences are in what each keeps:\n- **Response A** keeps the detail that the two encouraged applicants should reapply with revised budgets. It omits the conflict of interest and never says the Saltwater amount was corrected. It only labels the heading \"corrected 8 October\".\n- **Response B** notes that Jarrah Wilson left the call for the Saltwater item, which is a governance point a manager would likely want. It also flags that the Saltwater figure was corrected from $45,000. That helps a reader who saw the original minutes, and it is the one item that changed. It drops the \"revised budgets\" detail, which is minor.\n\nNeither contains errors. B retains the more consequential points, the conflict of interest and the correction, and is slightly shorter.\n\nVerdict: B",
+  "usage": {
+    "input": 1755,
+    "output": 2055
+  },
+  "cost": 0.02406
+}

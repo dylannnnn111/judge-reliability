@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-20",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "A is better. Both responses break the 120-word limit, but A is far closer. By my rough count A runs to about 135 words, while B runs to about 220. A's bulleted layout also suits a busy manager who will skim.\n\nB is written as an invitation rather than a summary. It uses phrases like \"I would kindly ask\" and \"you are very welcome to join us\", which take the voice of Hannah's email instead of summarising it for a manager.\n\n**A**",
+  "usage": {
+    "input": 1460,
+    "output": 506
+  },
+  "cost": 0.00798
+}

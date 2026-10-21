@@ -1,0 +1,14 @@
+{
+  "pair": "sum-27",
+  "side": "B",
+  "author": "opus",
+  "model": "claude-haiku-5-5",
+  "original": "**Onboarding pilot (Marcus Hale): inconclusive. Don't roll out nationally yet.**\n\n- **Test (Aug–Sep):** Sydney customers got a 45-minute guided onboarding call. Perth got email-only. The measure was the share still active after 30 days.\n- **Headline:** Sydney 81% vs Perth 74%, an apparent 7-point lift.\n- **Problem:** 60% of Sydney customers got a free first month, which inflates retention. Among paying customers only, the gap is 2 points (78% vs 76%), within normal variation.\n- **Cost if rolled out:** ~$95 per session, ~$410,000/year nationally.\n- **Note:** Sales' claim that the pilot \"proved\" guided onboarding works isn't supported.\n- **Decision needed (21 October leadership meeting):** Approve a 60-day test randomly assigning customers within the same city, starting November.",
+  "text": "**Onboarding pilot (Marcus Hale): inconclusive. Don't roll out nationally yet.**\n\nTo summarise the onboarding pilot led by Marcus Hale, the results are inconclusive, and I would kindly recommend that the change not be rolled out nationally at this stage.\n\n- **Test (Aug–Sep):** During August and September, customers in Sydney received a 45-minute guided onboarding call, while customers in Perth received email-only onboarding. The measure used for comparison was the share of customers still active after 30 days.\n- **Headline:** On the headline figures, Sydney retained 81% of customers compared with 74% in Perth, which gives an apparent 7-point lift.\n- **Problem:** However, 60% of Sydney customers received a free first month, and this inflates retention. When we look only at paying customers, the gap narrows to 2 points (78% vs 76%), which falls within normal variation.\n- **Cost if rolled out:** Each session costs roughly $95, which would amount to about $410,000 per year if applied nationally.\n- **Note:** The claim from Sales that the pilot \"proved\" guided onboarding works is not supported by the data.\n- **Decision needed (21 October leadership meeting):** We would kindly ask leadership to approve a 60-day test that randomly assigns customers within the same city, starting in November.",
+  "ratio": 1.74,
+  "usage": {
+    "input": 492,
+    "output": 1157
+  },
+  "cost": 0.0006277
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-11",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B\n\nBoth responses reach the correct answer: given a goat was revealed, switching wins with probability 1/2. Response B makes the calculation more explicit by showing the 1/6 contribution from each case, including the probability that the host picks door 2. Response A's \"for certain\" glosses over that step, though its reasoning is sound. Response A's note about the classic Monty Hall problem is a useful addition, but it doesn't outweigh B's clearer derivation.",
+  "usage": {
+    "input": 686,
+    "output": 822
+  },
+  "cost": 0.0004796
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-10",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the two main problems: the unanchored `match` combined with the `<path:slug>` converter (path traversal), and the missing authentication. Both also give the right core fix for traversal, `fullmatch` and a plain `<slug>` converter. Both exceed the 200-word limit, and B overshoots more.\n\n**Response A:**\n- It ranks traversal first, which is sensible.\n- Its extra items are weaker. The symlink escape needs someone to plant a link, and the TOCTOU point is minor.\n- Item 6 is muddled. A non-matching slug already returns 400, not a 404, so the claim about \"falling through to a 404\" is wrong.\n- It misses the real bug where `os.path.exists` is true for a directory named `foo.pdf`, which makes `send_file` fail with a 500.\n\n**Response B:**\n- It puts missing auth first, which is defensible since the stated purpose is staff-only access, though traversal is arguably worse in practice.\n- It offers a stronger, more concrete fix: `send_from_directory`, which does its own containment check.\n- It catches the real `exists` vs `isfile` bug with directories and ties it to the race condition.\n- Its per-report authorization and cache-header points are speculative, and the last item is filler. That noise is comparable to A's.\n\nB has more correct, actionable content, with one more genuine bug and a better fix. A's ordering is slightly better, but it includes a factually confused item. Overall B is a little stronger despite being longer.\n\nVerdict: B",
+  "usage": {
+    "input": 1550,
+    "output": 1418
+  },
+  "cost": 0.01728
+}

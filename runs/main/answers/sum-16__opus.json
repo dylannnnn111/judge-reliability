@@ -1,0 +1,13 @@
+{
+  "item": "sum-16",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**CRM Migration: Status Amber (10 Oct 2026)**\n\nAbout two weeks behind. Cut-over moves from 3 to 17 November, pending steering committee approval on 15 October.\n\n**Causes:** The vendor's sandbox was down for six working days, delaying the final test migration. The quoting-tool integration also needs a vendor fix, due 24 October.\n\n**Budget:** $412k of $520k spent. The delay adds about $38k. A verbal $12k vendor credit would cut this to $26k if confirmed in writing.\n\n**Key risk:** If the quoting fix slips past 24 October, cut-over likely moves to early December, clashing with the sales director's request for no December training.\n\n**Decisions needed (15 Oct):** Approve the 17 November date and a $38k budget variation ($26k if the credit is confirmed).",
+  "stop": "end_turn",
+  "usage": {
+    "input": 714,
+    "output": 1136
+  },
+  "cost": 0.025576,
+  "at": "2026-10-14T01:51:42.703Z"
+}

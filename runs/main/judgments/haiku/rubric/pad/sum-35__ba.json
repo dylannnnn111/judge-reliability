@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-35",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Each gets the 30 June 2027 deadline, the make-good items, the kitchenette condition, the landlord's payment option with its three-month notice, the daily rent risk, and the $18,000 bond terms right. Response A is also clearer for a busy reader: bullets for the work list and bold labels for the exception, alternative and risks. It is close to the 120-word limit, at roughly 120–125 words, but it is slightly over at most. Response B is roughly 165 words, clearly breaking the limit. Its prose is also denser, and it omits nothing the manager needs, so the extra length adds no value. Response A is the better summary.\n\nVerdict: A",
+  "usage": {
+    "input": 1550,
+    "output": 1018
+  },
+  "cost": 0.000664
+}

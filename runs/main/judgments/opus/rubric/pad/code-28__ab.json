@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-28",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A** is denser and covers more ground:\n- It finds all the core bugs: connection leak, race/double-spend, unvalidated destination (money vanishes), deadlock, ROLLBACK masking the original error, and same-wallet transfers.\n- It adds idempotency and audit-trail concerns, which matter for an API moving money.\n- Its fixes are concrete, for example the conditional UPDATE with a `rowCount` check, and updating both rows in a single statement.\n\nA has two small flaws:\n- Its deadlock framing, \"once you add row locks\", is slightly off. The existing UPDATEs already take row locks, so A→B and B→A can deadlock today.\n- The bigint-as-string point is mostly a non-issue. JavaScript coerces the string to a number when comparing, so it only fails beyond the safe-integer range.\n\n**Response B** covers essentially the same core bugs:\n- It states the deadlock risk correctly as a present problem.\n- It adds a useful `CHECK (balance_cents >= 0)` suggestion.\n- But it opens with filler and wraps each point in extra explanatory padding. That pushes it well past the 200-word limit, further than A, without adding substance.\n- It omits idempotency on retries, a real risk for an API endpoint.\n\nRanking is reasonable in both. A puts the near-certain connection leak first. B leads with the race condition and the vanishing-money bug.\n\nOn balance, A finds slightly more of what matters and complies better with the brevity constraint. B's more accurate deadlock framing and the CHECK constraint don't outweigh its padding and the missing idempotency point.\n\nVerdict: A",
+  "usage": {
+    "input": 1980,
+    "output": 1122
+  },
+  "cost": 0.03036
+}

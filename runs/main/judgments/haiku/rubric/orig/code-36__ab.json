@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-36",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the most important bug: `Invalidate` deletes from the map under `RLock`, which can trigger Go's fatal \"concurrent map writes\" error. Both also flag the cache stampede, the stale re-cache after invalidation, unbounded map growth, the TTL not matching the real token lifetime, and the missing context/timeout on `fetch`. Response B adds a useful detail that the crash can't be recovered, and it suggests a generation counter as a fix. Response A's point 2 describes the user-visible consequence more precisely: a token the upstream just rejected gets served for another full TTL. B's point 6 treats \"errors aren't cached\" as a problem, which is debatable, since caching errors isn't obviously correct, and its point 4 partly repeats the TTL issue with a less clear framing. Response A is tighter and avoids that questionable claim, while B's fix details are slightly richer. On balance A is marginally better.\n\nVerdict: A",
+  "usage": {
+    "input": 1797,
+    "output": 924
+  },
+  "cost": 0.0006417
+}

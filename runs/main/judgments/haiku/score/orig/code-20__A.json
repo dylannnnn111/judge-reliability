@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-20",
+  "side": "A",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The DST bug is real. Local midnights on a 23- or 25-hour transition day give a non-integer day count, and `Math.floor` then shifts the result, as the response shows. Its spring-forward and fall-back examples check out. The proposed `Date.UTC` fix is valid: both sides become exact UTC midnights, so the difference is an integer number of days. The malformed-input bug is also real. `new Date(\"...T00:00:00\")` on an empty, null, or timestamp string yields Invalid Date, `NaN` propagates into the label, and `NaN < 0` is false, so the invoice silently drops out of the overdue list. Ranking DST first and bad data second is sensible, and the fixes are concrete. The \"minor\" items are legitimate and clearly marked as lower priority. The response misses no major bug I can see. Its main weakness is that it runs close to the 200-word limit, and the fix for input validation is only described rather than shown, though that is a small gap.\n\nScore: 8",
+  "usage": {
+    "input": 1250,
+    "output": 1084
+  },
+  "cost": 0.000667
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-02",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries are broadly accurate and capture the main points: the unresolved opening-hours debate with no change for now, the reading program dates and volunteer deadline, the roof replacement and the next meeting date.\n\n**Response A** has small accuracy problems. It says the roof \"needs\" full replacement, when the minutes say only that the contractor recommends it. It also says each branch \"must send two launch-day volunteers\", when the minutes say managers are to send names by 24 October. It leaves out the visitor numbers that justify Helen's proposal. It does add the air-conditioning service, which is trivial. It is under 120 words, at roughly 113.\n\n**Response B** is more faithful. It says \"recommended\" for the roof, notes that the leak was patched, and states the action precisely (managers send two volunteer names per branch by 24 October). It includes the 11 versus 64 visitor figures, which a manager would want. \"Only 11 visitors\" drops the word \"averaged\", but this is a minor compression. It is close to the 120-word limit, at roughly 113 without the heading and about 118-121 with it, so it is borderline. Neither response mentions Anjali's position.\n\nB is slightly better on accuracy and on keeping the points the reader needs. Its small risk on the word limit does not outweigh A's overstatements.\n\nVerdict: B",
+  "usage": {
+    "input": 1621,
+    "output": 1995
+  },
+  "cost": 0.023192
+}

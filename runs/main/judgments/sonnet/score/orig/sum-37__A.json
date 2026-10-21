@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-37",
+  "side": "A",
+  "score": 5,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is mostly accurate. The dates, the $64,000 cost, the five-to-six-week delay, the sponsor's absence and the budget figures all match the source. It correctly says nothing has been decided and that the team prefers option 1.\n\nThere are some small softenings. \"The project is on schedule\" drops the source's qualifier that development is on schedule, although the status is Amber. \"May not be acceptable\" understates Finance's condition, which four reports fail. It also leaves out that the team is proceeding on the current plan and that Tomas is documenting the payroll system. These are minor, and the progress stats were reasonably cut.\n\nThe main problem is length. I count about 139 words, which breaks the explicit \"under 120 words\" limit. The header, the budget line and the detail in option 2 could have been trimmed. The manager would also benefit from the \"no decision until 20 October\" point being framed as a clear ask.\n\nBecause it fails the hard length constraint despite good content, it loses substantial credit.\n\nScore: 5",
+  "usage": {
+    "input": 1105,
+    "output": 1259
+  },
+  "cost": 0.0148
+}

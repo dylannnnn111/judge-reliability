@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-23",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy.** Response A is faithful to the minutes throughout. It correctly says Cr Tse \"will request a speed counter,\" which matches the minutes: she said she would ask traffic staff. It also keeps the right people attached to the right tasks (Laila coordinating, Peter booking sound).\n\nResponse B contains a substantive error. It states \"Council will install a speed counter.\" This turns a councillor's undertaking to *ask* staff into a firm council commitment. A busy manager who won't read the original would come away with a false belief about what was agreed. That is exactly the \"who decided what\" kind of error the criteria rank first. B's other dates, numbers and conditions are correct.\n\n**Coverage.** Response A keeps more of what the reader needs: who is coordinating each event and the Facebook action item. Response B drops these, though it adds the school choir.\n\n**Concision.** Response B is clearly better here. It is about 95 words and tightly formatted. Response A runs to about 190 words, well over the user's 120-word limit, padded with filler such as \"Thank you all for attending\" and \"Cr Tse kindly provided.\" That is a real failure to follow the instruction.\n\n**Weighing.** Under the stated priority order, accuracy comes first. A's flaws are verbosity and breaking the length limit. These are significant, but they don't mislead. B's flaw misstates an outcome, which is the more serious problem for a reader relying solely on the summary.\n\nVerdict: A",
+  "usage": {
+    "input": 1688,
+    "output": 1031
+  },
+  "cost": 0.027372
+}

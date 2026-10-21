@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-15",
+  "side": "A",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "Accuracy check: 96 workers, 20-minute nap at 3am, 22% fewer lane drifting events, 0.09s reaction time improvement all correct. \"Post-shift driving simulator\" is right. Experienced workers (over six months) got most of the benefit, correct. New workers (under three months) saw no measurable difference in lane drifting, and some felt groggier for the first 15 minutes. The response says \"no measurable benefit\" rather than \"no measurable difference to lane drifting\", which is a slight generalisation but fine. The \"groggy for 15 minutes\" is correct. \"Drive time mattered more than napping: drifting roughly doubled for 7am vs 6am\": the source says the effect of the nap was smaller than the effect of drive time, and about twice as many events at 7am. Accurate. The implication is accurate.\n\nA subtle point: \"Benefits went mainly to workers with over six months\" is fine. The response omits the randomised crossover design, the locations, and the contact, but these are not essential for a busy manager.\n\nWord count: roughly 105 words, under 120.\n\nMissing: the study was in a sleep lab, which is partly covered by \"simulator-based\". The one possible omission is that the nap may not be a good idea for new workers, which is implied. Also, the \"Summary\" gives the headline result without the conditionality up front, but the caveats follow immediately.\n\nOverall, accurate, concise, and covers the key points well.\n\nScore: 9",
+  "usage": {
+    "input": 1055,
+    "output": 471
+  },
+  "cost": 0.00682
+}

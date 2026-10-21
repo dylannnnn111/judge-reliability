@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-08",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the most important problems: exceptions are swallowed and the file is still moved to `done`, partially uploaded files get processed, partial imports can't be safely retried, there's no locking, and the file handle and memory use are poor. Both also give usable fixes.\n\nResponse B covers the same core issues and adds two valid points that A misses. First, the `imported` counter is misleading because it includes records from files that later failed. Second, an exception from `os.rename` falls outside the `try` and aborts the whole loop. B also notes the default-encoding risk and suggests a concrete `error/` directory for failed files. Its ranking is sensible, though putting partial uploads ahead of swallowed errors is debatable. Both orderings are defensible.\n\nResponse A has some weaker points. Its claim that rename fails across filesystems is a stretch when both directories sit under `/srv/imports`. The case-sensitive extension point is minor. Most importantly, A runs well over 200 words, roughly 300 or more, which violates the explicit length limit. B stays close to the limit.\n\nB is more accurate, covers slightly more real issues, and follows the length constraint, so it is the better response.\n\nVerdict: B",
+  "usage": {
+    "input": 1756,
+    "output": 1023
+  },
+  "cost": 0.0006871000000000001
+}

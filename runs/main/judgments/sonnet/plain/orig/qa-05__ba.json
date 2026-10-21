@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-05",
+  "order": "ba",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-sonnet-5-5",
+  "text": "TIE\n\nBoth responses give the correct answer, Friday, 28 February 2025. From 29 February 2024 to 1 March 2025 is 366 days, so 365 days lands on 28 February. Both also correctly note that 365 days is 52 weeks plus 1 day, so Thursday becomes Friday.\n\nThe explanations are about equally thin. Response A's reason for the date (\"because 2025 is not a leap year\") is a bit of a non-sequitur. Response B's is only slightly better organised and just as unelaborated. Both are well under 120 words.",
+  "usage": {
+    "input": 322,
+    "output": 599
+  },
+  "cost": 0.006634
+}

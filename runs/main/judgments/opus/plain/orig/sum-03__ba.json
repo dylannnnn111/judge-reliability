@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-03",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth summaries are accurate and cover the same essentials: the incident window, the cause, the failure figures, the $41,900 estimate, slow detection and the actions. They differ on the explicit constraint.\n\n- **Word limit:** Response A comes in at roughly 95–100 words, comfortably under 120. Response B runs to about 125 words, which breaks the \"under 120 words\" instruction.\n- **Content:** A is tighter. It names connector B and the vendor's August renewal, and it keeps owners and due dates for the open actions, which a manager would find useful. B's extra details, such as the Severity 2 header and the 11:35 escalation time, add length without much decision-relevant value.",
+  "usage": {
+    "input": 1443,
+    "output": 1315
+  },
+  "cost": 0.032072
+}

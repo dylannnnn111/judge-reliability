@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "code-21",
+  "side": "B",
+  "score": 6,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy and coverage.** The top issue is correct and the most important one. Retrying a non-idempotent refund POST on 5xx responses or network errors can issue the refund twice. The suggested fix is right: an idempotency key generated once and reused across retries, or no retries for non-idempotent requests. The other findings are also real:\n- No timeout or `AbortSignal`.\n- `Retry-After` is ignored.\n- Unconsumed response bodies can leak connections, notably under Node's undici.\n- Weak input validation.\n- The jitter can reach about 60s, which the response correctly labels minor.\n\n**Ranking and fixes.** The ordering is sensible and each item gives a concrete fix.\n\n**False or speculative flags.** Item 2 (button double-submits) is somewhat speculative because the UI code isn't shown. Its server-side dedupe advice largely restates item 1, so it adds less than it seems. Nothing flagged is outright wrong.\n\n**Length.** The response runs roughly 230–250 words, over the explicit 200-word limit. Items 2 and 6 could have been trimmed or merged to fit. This is a clear miss on a direct instruction.\n\nOverall, the technical content is strong and well prioritised, but the length violation and one padded, partly redundant item pull the score down.\n\nScore: 6",
+  "usage": {
+    "input": 1182,
+    "output": 759
+  },
+  "cost": 0.019908
+}

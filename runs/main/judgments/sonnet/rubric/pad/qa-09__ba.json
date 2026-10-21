@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-09",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer, 7.5°, and both use the same correct method.\n\nThe user asked for an answer in under 120 words. Response A's word count needs checking. It has a first sentence (~12 words), then \"To see how this result is reached, it helps to look at each hand separately and then compare their positions.\" (~20), the minute hand bullet (~32), the hour hand bullet (~45), the difference bullet (~20), and the final paragraph (~35). That comes to roughly 160+ words, which violates the explicit constraint.\n\nResponse B is about 40 words, well under 120, and it still gives the key reasoning.\n\nBoth are correct, but A breaks the length limit while B satisfies it and is just as clear. B is better.\n\nVerdict: B",
+  "usage": {
+    "input": 761,
+    "output": 240
+  },
+  "cost": 0.003922
+}

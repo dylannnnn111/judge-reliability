@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-21",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate on every figure I checked: the $229,140 hybrid total, the $13,140 overrun, the $209,880 petrol alternative, the 24 October deadline, the four-week delivery, the February allocation, and the $1,800 monthly hire cost. It correctly identifies that Ruth must sign off because the spend exceeds Dominic's delegation. It covers the decision, the recommendation, the trade-off, the deadline and the alternative. The Coastal line is brief but adds a relevant reason to rule that dealer out. It is about 119 words, just under the limit. The phrase \"dearer\" doesn't say than what, which is a minor clarity issue, but nothing is misleading.\n\nScore: 9",
+  "usage": {
+    "input": 1184,
+    "output": 1770
+  },
+  "cost": 0.0010034
+}

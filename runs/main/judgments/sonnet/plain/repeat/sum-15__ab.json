@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "sum-15",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B\n\nBoth summaries are accurate and cover the same points: the 22% drop in lane drifting, the 0.09-second reaction-time gain, the experience split, the timing effect, the implication and the limitations. Both also stay under 120 words. A comes to about 103 words. B comes to about 116, so it is closer to the limit but still within it.\n\nB is slightly easier for a busy manager to scan. It has a headline, and its bolded labels (\"Overall\", \"Not for everyone\", \"Timing matters more\") say what each point means. A puts the experience split and the timing finding under \"Key caveats\", which makes the headline result look more general than it is. B's version separates the finding from its qualifications more cleanly.\n\nThe difference is small, but B reads a little better for the stated audience.",
+  "usage": {
+    "input": 1246,
+    "output": 1542
+  },
+  "cost": 0.017912
+}

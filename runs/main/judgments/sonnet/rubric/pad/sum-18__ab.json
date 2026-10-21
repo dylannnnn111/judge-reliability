@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-18",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Accuracy: Response A adds \"Overall, no action is required from the team,\" which is an invented claim not in the source. It also opens with filler (\"Thank you for taking the time to review this release...\"), which is not useful to a busy manager. Its content is otherwise accurate. It says \"Alerts appear before workouts whenever the forecast is 35°C or higher\", which is fine. Word count: A is probably around 190 words, so it breaks the 120-word limit.\n\nResponse B: accurate. \"Users can share saved routes by link, viewable without the app\" is correct. \"35° or above\" is correct. \"Screen reader labels on the workout screen\" is fine. \"Adjustable pace chart colours for colour-blind users\" is fine. Word count is roughly 100, which is under 120. It omits the unsubscribe option and the thank-you, which are minor.\n\nB is more accurate (no invented claim), meets the length constraint, and is more concise. B is better.\n\nVerdict: B",
+  "usage": {
+    "input": 1587,
+    "output": 311
+  },
+  "cost": 0.006284
+}

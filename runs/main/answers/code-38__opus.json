@@ -1,0 +1,13 @@
+{
+  "item": "code-38",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**Issues, most important first:**\n\n1. **One failure aborts every later site.** With `set -e`, any `tar` error stops the script. That includes a site with no `uploads` folder, a permission error, or GNU tar's exit 1 for \"file changed as we read it,\" which is common on a live web server. Later sites get no backup and nothing is logged clearly. Handle errors per site, keep going, and exit non-zero at the end.\n\n2. **Corrupt archives can be kept.** A failed or killed `tar` leaves a partial `site-DATE.tar.gz` that looks valid. Write to a temp file, then `mv` it into place only on success.\n\n3. **Unquoted variables.** `$site_dir` in `basename` and `-C` breaks on names with spaces or glob characters. Quote them.\n\n4. **The glob can fail on an empty directory.** If `/srv/sites` has no subdirectories, the loop runs once with the literal `/srv/sites/*/`. Use `shopt -s nullglob`.\n\n5. **Backups are on the same server.** A disk failure, compromise or `rm` loses both the sites and the backups. Copy them offsite.\n\n6. **Archives may be readable by others.** Uploads can hold private user files, and archives inherit the cron umask. Set `umask 077`.\n\n7. **Runs can overlap.** A slow run can collide with the next one. Use `flock`.\n\n8. **Minor:** `-mtime +14` actually keeps about 15 days, and the final count includes non-archive files.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 359,
+    "output": 1085
+  },
+  "cost": 0.023136,
+  "at": "2026-10-14T01:55:05.768Z"
+}

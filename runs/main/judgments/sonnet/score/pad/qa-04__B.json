@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "qa-04",
+  "side": "B",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The math is correct: $600, then $480, a 4% decrease. The reasoning is also right, including the explanation of why the percentages don't cancel and the 0.96 check.\n\nThe problem is the constraint \"under 120 words.\" Counting the response roughly:\n\n- Step 1 section: about 35 words.\n- Step 2 section: about 35 words.\n- Final price: about 10 words.\n- Overall change, including the repeated formula: about 50 words.\n- Final paragraph: about 55 words.\n- Last paragraph: about 40 words.\n\nThe total is around 230 words, nearly double the limit. It also repeats itself, since the overall change formula appears twice and the explanations are padded. The answer is correct, but it clearly breaks an explicit constraint, and the extra length adds little.\n\nCorrectness is fine, but the length violation is significant.\n\nScore: 4",
+  "usage": {
+    "input": 634,
+    "output": 277
+  },
+  "cost": 0.004038
+}

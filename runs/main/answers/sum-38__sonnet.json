@@ -1,0 +1,13 @@
+{
+  "item": "sum-38",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Member App Launch: Green (to 10 Oct)**\n\nThe app is on track for public launch on **18 November**.\n\n- **Beta:** 431 of 600 invited members used it. Average rating was 4.3/5. Members liked the digital card and class booking. The weekend timetable slowness is fixed, with load times under two seconds in testing. Of 23 bugs, 21 are fixed and 2 minor ones will be fixed after launch.\n- **Launch plan:** App stores submissions are due 3 November. Club packs go out by 12 November, staff training finishes by 14 November, and posters go up from 17 November. All members get an email on launch day.\n- **Budget:** $268.5k spent of $290k. The remainder is expected to come in on budget.\n- **Risk:** An app store rejection could delay launch by up to a week. The submission has been checked against both stores' guidelines.\n\nNext update: 24 October.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 653,
+    "output": 299
+  },
+  "cost": 0.004296,
+  "at": "2026-10-14T01:52:33.869Z"
+}

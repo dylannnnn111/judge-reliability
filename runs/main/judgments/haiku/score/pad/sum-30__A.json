@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-30",
+  "side": "A",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate. The route numbers, frequencies, hours, passenger figure, start date, fare position, and the December stall details all match the source, and the concern about early starts is correctly attributed to industrial estate workers. It keeps the points a manager needs: the 410 and 412 changes, the 408 removal, the unchanged fares, and how to get information.\n\nIts main weakness is length. It runs to roughly 190 words, well over the 120-word limit, and much of that is filler such as \"I would like to share a summary\" and \"Turning to how you can find out more.\" The closing paragraph on timetables and the stall could be cut to a single line. It also omits that the 408 linked to the industrial estate, which is the reason the early-start concern matters, though the concern bullet partly covers this.\n\nScore: 5",
+  "usage": {
+    "input": 1221,
+    "output": 951
+  },
+  "cost": 0.0005976
+}

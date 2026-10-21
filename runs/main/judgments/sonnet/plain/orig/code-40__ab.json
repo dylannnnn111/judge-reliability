@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-40",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** Both responses find the main bug: the pipe puts the `while` loop in a subshell, so `alerts` stays 0 and the script never pages on a full disk. Both also spot the `curl` failure under `set -e` and `pipefail`, the alert spam, and the non-numeric `pct` problem.\n\nBoth also overstate the non-numeric case. A failing `[ ... ]` inside an `if` condition does not trigger `set -e`, so the script would print an error and carry on rather than abort.\n\nB adds some real points, notably that squashfs and snap mounts always read 100% and would cause false pages. It also covers the NFS `df` hang. But it runs to about 270 words, well over the 200-word limit, and pads the list with a minor item about unused variables and inode checks. A comes in at about 210 words, much closer to the limit, and stays focused on what matters. Its fifth point is weak, but it does not undermine the review.\n\nB's extra substance is real, but its larger breach of the explicit length constraint tips the balance to A.\n\n**A**",
+  "usage": {
+    "input": 1573,
+    "output": 1981
+  },
+  "cost": 0.022956
+}

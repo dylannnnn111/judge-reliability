@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-07",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Accuracy: Response A has a few issues. It says \"Thank you for your interest in Ledgerly 5.0,\" which is odd filler and not in the source. It says \"Before updating, please see the help article,\" which is a reasonable inference. It says the Android 9 app \"will no longer receive updates\" and omits that it continues to work, which is a minor omission. It says \"Coming soon... planned for future releases,\" which is fine. It puts bug fixes under \"Improvements,\" which is a minor structural blemish. \"Client search has been improved\" is vague but accurate. Overall A has no outright errors, but the framing is padded.\n\nResponse B is accurate. It says \"about 40% faster for large accounts,\" which is correct. It says Android 9 is \"no longer supported and won't receive updates,\" which is fine. It notes the column mapping table and the beta program for early access. It leaves out the GST rounding, the WA due-date fix and the iOS crash fix, but groups them under \"several bugs are fixed.\"\n\nWord count: A is roughly 150 words, which likely exceeds the 120-word limit. B is roughly 120 words. Counting B: the first paragraph is about 45 words, the Action paragraph about 55, and the Also paragraph about 30, so about 130. Slightly over, but closer than A. Counting A more carefully: the heading is about 8 words, the intro 28, the Action needed paragraph about 55, Also note about 14, New features about 18, Improvements about 40, and Coming soon about 17, so about 180 words. A is clearly over the limit, and B is around 125–130, only marginally over.\n\nB is more concise, has no filler and is more useful (it mentions the mapping table and the beta). A violates the length constraint more severely.\n\nVerdict: B",
+  "usage": {
+    "input": 1514,
+    "output": 564
+  },
+  "cost": 0.008668
+}

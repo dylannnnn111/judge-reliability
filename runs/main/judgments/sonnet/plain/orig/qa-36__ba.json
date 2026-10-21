@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-36",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both are under 120 words. Checking accuracy:\n\nResponse A: \"curved upper surface makes air flow faster... flatter lower surface keeps air slower\" is the common simplification. It implies the shape alone causes it, but it does mention angle of attack. It treats Bernoulli and Newton as separate contributions (\"Newton's third law also plays a role\"; \"Together...\"), which is a slight misconception, since they are equivalent descriptions of the same phenomenon. It's roughly acceptable but less accurate.\n\nResponse B: Leads with deflecting air downward, notes the pressure difference and Newton's third law as equivalent descriptions, and mentions the effect of speed and angle of attack and stall. More accurate and more complete. \"Curved, asymmetric shape\" is fine, since symmetric wings also generate lift via angle of attack, but it says \"Two features make this happen\", which is acceptable.\n\nWord count for B: around 105. For A: around 100. Both are fine.\n\nB is better.\n\n**B**",
+  "usage": {
+    "input": 540,
+    "output": 326
+  },
+  "cost": 0.00434
+}

@@ -1,0 +1,14 @@
+{
+  "pair": "qa-12",
+  "side": "A",
+  "author": "haiku",
+  "model": "claude-haiku-5-5",
+  "original": "The probability of getting no sixes in four rolls is (5/6)^4 = 625/1296.\n\nSo the probability of at least one six is:\n\n1 − 625/1296 = 671/1296 ≈ 0.518\n\n**Answer: 671/1296 ≈ 51.8%**",
+  "text": "The probability of getting no sixes in four rolls is (5/6)^4 = 625/1296.\n\nWith that value in hand, we can move on to the complementary quantity we actually want. The probability of at least one six is:\n\n1 − 625/1296 = 671/1296 ≈ 0.518\n\nPut another way, subtracting the chance of rolling no sixes from certainty gives us the chance of rolling at least one six, which is the result we are after.\n\n**Answer: 671/1296 ≈ 51.8%**",
+  "ratio": 2.33,
+  "usage": {
+    "input": 276,
+    "output": 163
+  },
+  "cost": 0.0001091
+}

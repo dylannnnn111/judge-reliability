@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-27",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A** is accurate throughout. Water expands on freezing into an open hexagonal lattice, so ice is about 9% less dense than liquid water. Floating ice insulates the water below, deeper water sits near 4°C (its maximum density), and life survives underneath. If ice sank, lakes would freeze from the bottom up.\n\n**Response B** is also essentially correct and covers the same mechanism. It adds the 4°C density stratification point, which is accurate: the colder water stays near the surface and the denser 4°C water sinks.\n\nOn reasoning, both give the key explanation: hydrogen-bonded lattice, lower density, insulation, and survival under the ice. A already mentions the 4°C deep water, so B's extra sentence adds only modest depth.\n\nThe decisive difference is the explicit constraint of under 120 words. By my count, B is about 124 words, which violates the limit. A is about 102 words and stays within it. A delivers the essential content correctly and concisely while following the instruction.\n\nVerdict: A",
+  "usage": {
+    "input": 749,
+    "output": 1021
+  },
+  "cost": 0.023416
+}

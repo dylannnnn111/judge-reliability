@@ -1,0 +1,14 @@
+{
+  "pair": "sum-25",
+  "side": "B",
+  "author": "opus",
+  "model": "claude-haiku-5-5",
+  "original": "**Not a hack.** The 2 October incident was caused by an internal error, and no external access was found.\n\n**What happened:** A 1 October change to the statement job mismatched email addresses. As a result, 347 members received another member's September statement, showing name, address, account number and transactions but no passwords or card numbers. The job was stopped before the remaining 11,200 statements were sent.\n\n**Response:** The regulator was notified on 3 October, and all affected members were phoned by 6 October.\n\n**Media:** An early all-staff email wrongly said \"we've been hacked.\" It leaked to local news.\n\n**Fixes:** The change has been rolled back and a match check added. A second reviewer will be required from 13 October, and the comms guide will be updated by 31 October. Affected members are being offered 12 months' free credit monitoring. Remaining statements go out on 9 October.",
+  "text": "**Not a hack.** To be clear at the outset, the 2 October incident was caused by an internal error, and no external access was found.\n\n**What happened:** To give some background, a 1 October change to the statement job mismatched email addresses. As a result, 347 members received another member's September statement. Each statement showed name, address, account number and transactions, but no passwords or card numbers. The job was stopped before the remaining 11,200 statements were sent.\n\n**Response:** We would like to note that the regulator was notified on 3 October, and that all affected members were phoned by 6 October.\n\n**Media:** Please be aware that an early all-staff email wrongly said \"we've been hacked.\" That email subsequently leaked to local news.\n\n**Fixes:** Looking ahead, the change has been rolled back and a match check added. From 13 October, a second reviewer will be required, and the comms guide will be updated by 31 October. Affected members are being offered 12 months' free credit monitoring. Finally, remaining statements go out on 9 October.",
+  "ratio": 1.19,
+  "usage": {
+    "input": 923,
+    "output": 1563
+  },
+  "cost": 0.0008738
+}

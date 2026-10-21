@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-02",
+  "side": "A",
+  "score": 10,
+  "model": "claude-sonnet-5-5",
+  "text": "The correct answer is 96 km/h. Going takes 2 hours, returning takes 4/3 hours, for a total of 10/3 hours over 320 km, and 320 ÷ (10/3) = 96. The response gets this right, shows the key steps, and explains why the arithmetic mean of 100 km/h is wrong. It also mentions the harmonic mean, which is accurate and adds a useful general rule.\n\nThe length limit is under 120 words. A rough count of the response:\n- Header: \"Average speed = 96 km/h\" is about 5 words.\n- The bullets add roughly 35 words.\n- The calculation line adds about 8.\n- The final paragraph adds about 40.\n\nThat totals around 90 words, so it is within the limit.\n\nClarity is good and the formatting is clean.\n\nScore: 10",
+  "usage": {
+    "input": 461,
+    "output": 264
+  },
+  "cost": 0.003562
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-21",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses identify the most important problem, that a POST retried after a 502/503/504 or network error can refund the same order twice, and both suggest a fix. Both also correctly flag the missing timeout, the ignored `Retry-After`, the undrained response bodies, and the unvalidated `refundId`.\n\nResponse A catches that the `catch` block retries `AbortError`, so a caller's cancellation is retried. That is a real bug that Response B misses. A's claim that a `TypeError` comes from a bad URL or an unreusable stream is partly off, since undici reports general network failures as `TypeError` too, but the overall point holds. A also gives the clearer fix, which is to refuse to retry non-idempotent methods unless a key is supplied.\n\nResponse B adds a valid point about `amountCents` validation and a plausible double-submit concern in the console. Its double-submit item is speculative compared with the code-level issues, though. Its \"minor\" jitter note is accurate but low value. B also runs to roughly 230 words, over the 200-word limit, while A stays within it.\n\nResponse A is more accurate on the most consequential secondary bug, ranks its items sensibly, and meets the length constraint. Response B has some useful extras but is slightly worse overall.\n\nVerdict: A",
+  "usage": {
+    "input": 1746,
+    "output": 1166
+  },
+  "cost": 0.0007576
+}

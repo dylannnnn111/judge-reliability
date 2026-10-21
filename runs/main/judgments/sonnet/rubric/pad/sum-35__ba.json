@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-35",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is the better summary, mainly because it meets the word limit and B does not.\n\n**Length:** A comes to roughly 115–118 words, just under the 120 limit. B runs to about 185–190 words, well over the limit the user set for a busy manager.\n\n**Accuracy:** Both are broadly accurate on the key points: the 30 June 2027 deadline, the Annexure C standard, the kitchenette's conditional exception, the payment alternative with two quotes and three months' notice, and the $18,000 bond returned within 30 days. A states \"Overrunning means paying daily rent\" more firmly than the source's \"may have to pay\". B's \"may be charged\" is more precise on that point. A also drops the repair-and-patching detail from the 2023 removals in a shorter form, but it still covers it. Neither mentions that the landlord's payment estimate must be reasonable. These are small differences.\n\n**Content:** Both keep the points a manager needs. A's bullet and labelled layout makes it easier to scan. B's prose is padded with transitions such as \"Turning to… specifically\" and \"Finally, please note\", which adds words without adding information.\n\nA is more concise and compliant, and its minor overstatement does not outweigh B's breach of the length limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1550,
+    "output": 1256
+  },
+  "cost": 0.01566
+}

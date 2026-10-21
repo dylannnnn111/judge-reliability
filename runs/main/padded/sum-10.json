@@ -1,0 +1,14 @@
+{
+  "pair": "sum-10",
+  "side": "B",
+  "author": "haiku",
+  "model": "claude-haiku-5-5",
+  "original": "Customer Portal Rebuild is Green and on track for go-live on Tuesday 1 December. This fortnight the account settings and billing history screens were completed, and the new login flow tested well: all 12 test customers logged in unaided, and login time fell from 48 to 21 seconds. An external accessibility audit found three minor issues, all now fixed. Spend is $186,000 of $310,000, in line with plan. The helpdesk integration risk has dropped to low. No decisions are needed. Next fortnight: build the support ticket screen, start load testing, and draft customer communications for marketing review.",
+  "text": "The Customer Portal Rebuild is currently rated Green, and I am pleased to report that it remains on track for go-live on Tuesday 1 December. Over the past fortnight, two important areas of work were completed. First, the account settings and billing history screens were finished. Second, the new login flow was tested and performed well: all 12 test customers were able to log in unaided, and average login time fell from 48 seconds to 21 seconds. In addition, an external accessibility audit was carried out, which identified three minor issues. I am happy to confirm that all three have now been fixed.\n\nTurning to budget, spend to date is $186,000 against a total of $310,000, which is in line with plan. Regarding risk, the helpdesk integration risk has been reduced to low. Finally, I would like to note that no decisions are needed from the steering group at this time.\n\nLooking ahead to next fortnight, the team plans to focus on three activities: building the support ticket screen, starting load testing, and drafting customer communications for marketing review.",
+  "ratio": 1.85,
+  "usage": {
+    "input": 379,
+    "output": 462
+  },
+  "cost": 0.0002689
+}

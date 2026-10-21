@@ -1,0 +1,13 @@
+{
+  "item": "code-02",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Bugs, most important first**\n\n1. **Mutable default argument (`tags=[]`)** is the critical bug. The same list is shared across every call that omits `tags`, which is every call from `normalise_batch`.\n   - Tags accumulate across events: one high-priority event makes every later event \"urgent\", and \"urgent\" and \"mobile\" repeat over time.\n   - Every event's `\"tags\"` points to the same list object, so later calls mutate earlier events already in `out`.\n   - Fix: use `tags=None`, then `tags = list(tags) if tags else []`. This also avoids mutating a caller-supplied list.\n\n2. **Only `KeyError` is caught.** Any other malformed input raises and aborts the whole batch, losing or re-queuing all the good events too.\n   - `\"type\": None` or a non-string value raises `AttributeError` on `.lower()`.\n   - A non-dict `raw` raises `TypeError` or `AttributeError`.\n   - Catch `Exception` per event, log it, and continue, or route failures to a dead-letter queue.\n\n3. **The `KeyError` handler's message can mislead.** It assumes the id is missing, but a `KeyError` from anywhere else gets the same message. Check `\"id\"` explicitly instead.\n\n4. **Silent data loss.** Dropped events are only logged as warnings, with no metric or dead-letter path. Logging the whole `raw` payload may also leak sensitive data. Log the id or a truncated form.\n\n5. **Minor:** `received_at` is computed per event rather than once per batch, so timestamps within a batch differ slightly.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 335,
+    "output": 820
+  },
+  "cost": 0.00887,
+  "at": "2026-10-14T01:52:50.527Z"
+}

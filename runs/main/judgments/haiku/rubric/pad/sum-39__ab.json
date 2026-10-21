@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-39",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is accurate on every point I checked: the 7-2 vote, the 1 December start, the $38,000 across 6,400 members, the 60-day replacement rule, the inter-library loan exception, the November email, and the 12-month review. It keeps the points a manager needs. It runs slightly over the 120-word limit, at roughly 128 words.\n\nResponse B is also largely accurate and covers the same points, but it is well over the limit at around 190 words. Its \"net cost of about $33,000\" is an inference the article doesn't state. It treats the $19,000 staff-time spend as a guaranteed offset, when the article presents it only as spending on chasing payments. That makes B's cost framing more assertive than the source supports. Its extra length mostly restates points and adds little that is useful.\n\nResponse A is more concise, more faithful to the source, and better meets the word limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1496,
+    "output": 1615
+  },
+  "cost": 0.0009571
+}

@@ -1,0 +1,13 @@
+{
+  "item": "qa-36",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "An aeroplane wing generates lift mainly through its airfoil shape and its angle of attack. As the wing moves forward, air splits around it: the curved upper surface makes air flow faster and reduces pressure above the wing, while the flatter lower surface keeps air slower, leaving higher pressure below. The pressure difference pushes the wing upward.\n\nNewton's third law also plays a role. The wing deflects air downward, and the equal and opposite reaction pushes the wing up. Together, the pressure difference and this downward turning of the airflow (described by Bernoulli's principle and Newton's laws) produce lift.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 45,
+    "output": 202
+  },
+  "cost": 0.0001055,
+  "at": "2026-10-14T01:50:56.883Z"
+}

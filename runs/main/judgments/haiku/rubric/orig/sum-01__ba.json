@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-01",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Each gives the new Friday 30 October deadline, the reason it moved (the CFO brought the board meeting forward), the three required submissions, the new template and software subscriptions split, the variance threshold, the no-screenshots rule, leave cover, and the optional Thursday walkthrough. Neither invents facts or misstates who decided what.\n\nResponse A is a single dense paragraph at about 120 words, right at the limit. Response B is more scannable with bold headers and bullets, which suits a busy reader, but it runs to roughly 135 words, so it breaks the explicit \"under 120 words\" constraint. Its extra structure doesn't add any information A lacks. A meets the length requirement more closely while keeping every point the manager needs.\n\nVerdict: A",
+  "usage": {
+    "input": 1412,
+    "output": 1641
+  },
+  "cost": 0.0009617
+}

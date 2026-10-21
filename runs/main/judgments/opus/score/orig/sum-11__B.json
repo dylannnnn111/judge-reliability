@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-11",
+  "side": "B",
+  "score": 5,
+  "model": "claude-opus-5-5",
+  "text": "The response is **accurate** throughout.\n\n- **Names and roles:** all correct.\n- **Dates:** correct. Mon 17 Nov is correctly inferred from the 15–16 November weekend.\n- **Other details:** the times (3pm Friday, 8:30am Monday), the two-crate limit, the 14 parking spaces and the survey condition all match the email.\n- **Minor wording:** \"isn't eligible\" is slightly stronger than \"not on the list\" but not misleading.\n- **Attribution:** it correctly says Rachel allocates parking and Grant handles access.\n\n**Coverage** is good but has one gap. It omits that unboxed files may mean delays in getting to client files. That consequence matters to a manager, because it explains why the Wednesday deadline matters. Dropping the dishwasher remark is fine.\n\n**Length** is the main problem. The user set a hard limit of under 120 words, and the response is about 142 words including the heading. That is a clear breach of an explicit instruction. It is especially notable because the brief stressed concision, and the summary could easily have been trimmed:\n\n- Cut \"Staff shouldn't pack monitors or docking stations\" down to its essentials.\n- Shorten the access-card line.\n- Merge the personal items into fewer words.\n\nA summary that is accurate and well structured but ignores the stated word limit cannot score highly.\n\nScore: 5",
+  "usage": {
+    "input": 1239,
+    "output": 1771
+  },
+  "cost": 0.040376
+}

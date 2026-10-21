@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-39",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response is factually sound. The stored values of 0.1 and 0.2 (about 0.1000000000000000055511 and 0.200000000000000011102) are correct. The sum rounds to the double 0.3000000000000000444, which differs from the double closest to 0.3 (about 0.299999999999999988898). The printed result 0.30000000000000004 matches what Python and most IEEE 754 languages output. The 1/3 analogy clearly explains why finite binary expansions can't represent these decimals exactly. The workarounds are accurate and relevant, and the response stays well under 120 words. The main reasoning is present: IEEE 754 binary representation and rounding. It is clear and well organized, though it could briefly say that the error is inherent to the format rather than a bug.\n\nScore: 9",
+  "usage": {
+    "input": 486,
+    "output": 770
+  },
+  "cost": 0.0004336
+}

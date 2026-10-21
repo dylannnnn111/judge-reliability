@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-22",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the critical flaw: `jwt.decode` never verifies the signature, so anyone can forge an admin token. Both also catch the 403-versus-401 problem, the unvalidated `Bearer` prefix, the exported `SECRET`, and the missing expiry check. Response B usefully notes that the `try/catch` is dead code because `decode` doesn't throw, and Response A says the same thing implicitly. Response B's claim that a missing `JWT_SECRET` \"fails open\" is wrong, since `jwt.verify` throws without a secret and so fails closed. Response A describes that risk more accurately as going unnoticed. Response A also gives a concrete corrected snippet with the `verify` call, algorithm pinning, and the 401 path. That makes its fixes more actionable. Its main weakness is length: it is well over 200 words, and Response B is also over but closer to the limit. Response A's extra words mostly add correct, useful content, so it comes out ahead, though not by a wide margin.\n\nVerdict: A",
+  "usage": {
+    "input": 1718,
+    "output": 1086
+  },
+  "cost": 0.0007147999999999999
+}

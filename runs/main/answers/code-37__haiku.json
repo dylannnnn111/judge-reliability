@@ -1,0 +1,13 @@
+{
+  "item": "code-37",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "1. **Missing `return` after the store error (line `http.Error(w, \"could not load invoices\", ...)`).** The handler keeps going and writes `null` JSON after the error message, producing a corrupt response and a \"superfluous WriteHeader\" warning.\n\n2. **No upper bound on `limit`, and negative `offset` isn't rejected.** A request like `?limit=100000000` asks the store for an enormous page, which is a DoS risk. A negative `offset` is accepted and passed to the store, which may error, misbehave, or panic depending on its implementation. Clamp `limit` (e.g., to 100) and require `offset >= 0`.\n\n3. **Trusting `X-Account-ID` depends entirely on deployment.** If any client can reach this service without going through the auth proxy, or the proxy doesn't strip and overwrite inbound copies of the header, anyone can read any account's invoices by setting the header. Confirm the proxy overwrites the header and that the service only accepts traffic from it, for example by binding to a private interface or checking a shared secret or mTLS.\n\n4. **Nil slice encodes as `null`.** If there are no invoices, clients get `null` instead of `[]`, which often breaks client code. Initialize the slice to an empty one.\n\n5. **The `Encode` error is ignored.** Failures are silently dropped. Log them at minimum.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 537,
+    "output": 952
+  },
+  "cost": 0.0005297,
+  "at": "2026-10-14T01:54:55.587Z"
+}

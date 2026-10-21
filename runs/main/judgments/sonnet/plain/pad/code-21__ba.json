@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-21",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses identify the key bug: duplicate refunds from retrying a non-idempotent POST. The differences lie in the rest.\n\nThe user asked for fewer than 200 words, most important first, and only \"bugs and problems that matter.\"\n\nWord count: Response A is clearly over 200 words, probably around 380. Response B is also over 200, probably around 270. Both violate the limit, but A violates it more.\n\nContent quality: Response A's item 2 (double-submit in UI) is speculative and outside the code shown. Its item 6 on input validation is lower priority, and its item 7 is minor. The 60s jitter claim is accurate: the backoff caps at 30s and jitter adds up to another 30s. Padding like this goes against \"that matter.\"\n\nResponse B has stronger, more specific points: retrying AbortError and TypeError (a real bug, since the catch retries aborts), the per-attempt timeout, Retry-After, draining bodies, and an unvalidated cast. It also gives a concrete fix. It misses nothing important that A has, except the 429 point, which both cover. B's claim that a TypeError from an unreusable ReadableStream body is retried is accurate enough.\n\nB is more concise, has more relevant points, and is closer to the limit, so B is better.\n\n**B**",
+  "usage": {
+    "input": 1788,
+    "output": 414
+  },
+  "cost": 0.007716
+}

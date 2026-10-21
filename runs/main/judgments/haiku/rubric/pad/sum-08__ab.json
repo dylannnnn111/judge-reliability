@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-08",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response B is better. Both invent a fault date: A says the fridge failed on 4 Oct, which contradicts the customer's report of a Sunday failure before 2 Oct, and B gives 29 September, which is also not in the source. A's error is compounded by a confusing \"correction\" paragraph that undermines the summary's reliability for a busy manager. A also runs well over the 120-word limit and repeats points, such as the claim-approval detail and the two-calls warning. B stays under 120 words and covers the essentials: the replacement booked for Wednesday, the separate collection call, the outstanding claim form, the $500 no-sign-off threshold, the 9 October escalation trigger to Amara Osei, and the customer's frustration. B's main flaw is the invented date, but otherwise it is accurate and concise.\n\nVerdict: B",
+  "usage": {
+    "input": 1839,
+    "output": 723
+  },
+  "cost": 0.0005454
+}

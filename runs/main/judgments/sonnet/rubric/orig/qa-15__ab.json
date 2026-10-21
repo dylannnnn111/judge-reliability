@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-15",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer of 18°F, using the same reasoning (a 10°C difference times 9/5) and the same verification (59°F to 77°F). Both are well under 120 words.\n\nThe differences are small. Response B explains that the +32 offset cancels out, which is slightly more accurate than Response A's wording that the difference \"scales by 9/5 without the 32-degree offset.\" Response B also sets the calculation on its own line, which makes it a bit easier to read. Response A writes \"degrees Fahrenheit\" in full, which is fine.\n\nThese differences are minor and don't change the substance. Response B is marginally clearer, but not enough to matter.\n\nVerdict: TIE",
+  "usage": {
+    "input": 559,
+    "output": 222
+  },
+  "cost": 0.003338
+}

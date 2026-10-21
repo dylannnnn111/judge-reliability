@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-06",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Check the date: 15 Dec 2027 + 100 days. Days remaining in December: 16 (to Dec 31). 100-16 = 84. January 31 → 53. February 29 (2028 is a leap year) → 24. So March 24, 2028. Weekday: 100 mod 7 = 2, so Wednesday + 2 = Friday. Both answers are correct: Friday, 24 March 2028.\n\nReasoning check: Response A's steps are correct and consistent. Response B says 16 + 31 + 29 = 76, which is correct, and the remaining 24 days land on 24 March (100-76 = 24). Also correct.\n\nBoth are correct, concise, and under 120 words. A presents a clearer step-by-step breakdown with remaining counts. B is more compact but equally accurate; its phrasing \"which makes 76 days\" is fine.\n\nA is slightly clearer, since the bulleted running balance is easy to follow. B is succinct and complete. The difference is minor, but A's reasoning is slightly easier to verify.\n\nVerdict: A",
+  "usage": {
+    "input": 527,
+    "output": 349
+  },
+  "cost": 0.004544
+}

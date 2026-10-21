@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-22",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. The request set a limit of under 120 words, and Response A runs to roughly 190 words, so it breaks that constraint. Response B comes to about 107 words and stays within it.\n\nBoth responses correctly call the idea a myth and explain that the Coriolis effect is too weak at sink or toilet scale. Response B's specifics are also accurate: hurricanes rotate clockwise in the Southern Hemisphere, Shapiro's experiment at MIT was in 1962, and the Sydney replication was in 1965.\n\n**B**",
+  "usage": {
+    "input": 714,
+    "output": 561
+  },
+  "cost": 0.007038
+}

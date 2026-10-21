@@ -1,0 +1,13 @@
+{
+  "item": "code-11",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Bugs and problems, most important first:**\n\n1. **Race condition in `reserve` (oversells).** The availability check and the decrement take the lock separately, and the stock isn't rechecked once the second lock is held. Two threads can both see 1 in stock and both reserve it, leaving stock at -1. Fix: do the check and the decrement in a single `with self.lock:` block.\n\n2. **The lock only protects one process.** `threading.Lock` doesn't help if you run multiple worker processes (e.g. gunicorn) or multiple servers, and the read-modify-write on the DB is still racy. Make it atomic in the database instead:\n   `UPDATE stock SET qty = qty - :q WHERE sku = :s AND qty >= :q`\n   Then check the affected row count. Alternatively, use a transaction with `SELECT ... FOR UPDATE`.\n\n3. **No input validation.** A negative `qty` in `reserve` *adds* stock, and zero or non-integer values pass through. Validate `qty` as a positive int in both `reserve` and `release`.\n\n4. **`release` is unguarded.** There's no link to an actual reservation, so double-releasing or releasing the wrong amount inflates stock. Abandoned carts never release anything. Consider reservation IDs with expiry.\n\n5. **A single global lock serializes every SKU and holds it during DB I/O.** This is a throughput bottleneck. Use per-SKU locks, or better, rely on DB atomicity (point 2).\n\n6. **Unknown SKU handling.** If `get_stock` returns `None`, the comparison raises `TypeError`. Handle missing SKUs explicitly.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 284,
+    "output": 914
+  },
+  "cost": 0.009708,
+  "at": "2026-10-14T01:53:22.863Z"
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-18",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses give the correct core answer: Willem Janszoon and the *Duyfken* crew, 1606, western Cape York Peninsula near the Pennefather River. Response A runs to roughly 165 words, well over the requested 120. It also opens with filler (\"I would be happy to walk through this history\") and uses padding phrases like \"To put this in context\" and \"to be clear.\" Response B is about 90 words, so it respects the limit. It stays accurate and still includes useful context: Hartog's 1616 Shark Bay landing and the unproven Portuguese claims.",
+  "usage": {
+    "input": 660,
+    "output": 476
+  },
+  "cost": 0.01216
+}

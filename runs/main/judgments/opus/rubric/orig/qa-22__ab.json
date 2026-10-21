@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-22",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses correctly call the claim a myth. Both give the core reasoning: the Coriolis effect is real but far too weak at sink scale, and basin shape, residual motion and the way water enters dominate instead. Both also note the controlled-experiment exception, and both are under 120 words (roughly 116 and 113).\n\nB adds several accurate details that tie the answer more closely to the question:\n- **Southern Hemisphere direction:** it states that hurricanes rotate clockwise in the Southern Hemisphere, which directly connects to Australia.\n- **Toilets:** it explains that toilets swirl according to their rim-jet angle, so the same model flushes the same way everywhere. This specifically answers the toilet part of the question.\n- **Experiments:** it cites the real experiments, Shapiro at MIT in 1962 and the University of Sydney replication in 1965. The Sydney replication fits the Australia framing nicely.\n\nThese additions are correct and useful rather than padding. A is accurate and clear, but more generic.\n\nVerdict: B",
+  "usage": {
+    "input": 741,
+    "output": 1134
+  },
+  "cost": 0.025644
+}

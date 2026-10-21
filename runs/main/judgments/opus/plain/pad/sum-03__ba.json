@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-03",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B.** Response B is better because it comes close to the 120-word limit, while Response A clearly breaks it.\n\n- **Response A** runs to roughly 165 words. Its first three paragraphs already pass 120 words before the action list begins. It also spends words on filler such as \"To show the scale of the incident, here is its impact.\"\n- **Response B** is about 115 words without its heading, and about 124 with it. It covers everything a busy manager needs: what happened, scale, financial impact, why detection was slow, and fixes with dates. Its labelled sections make it easy to skim.\n\nBoth responses are factually accurate and carry the caveat that some customers may have bought later.",
+  "usage": {
+    "input": 1534,
+    "output": 1153
+  },
+  "cost": 0.029196
+}

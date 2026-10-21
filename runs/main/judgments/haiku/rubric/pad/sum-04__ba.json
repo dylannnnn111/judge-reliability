@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-04",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are factually accurate. Response A covers every key point: the increased entitlements, that they sit on top of the government scheme, the three-block split within 24 months, the cut-off date for earlier arrivals, eligibility for permanent and casual staff, the superannuation change, the 10-week application deadline, and the info sessions. Its bulleted format is easy for a busy manager to scan, and \"Plan rosters for split leave\" gives a useful manager-specific takeaway. It runs to roughly 130 words, slightly over the 120 limit.\n\nResponse B is also accurate but is longer, at roughly 160 words, and breaks the 120-word limit by more. It opens with filler (\"pleased to share\") and has an awkward phrase (\"To begin with the main change\"). It omits that the entitlements are in addition to government Parental Leave Pay, which matters to a manager fielding questions. It also gives less guidance on what the manager should do.\n\nResponse A is more complete, closer to the word limit, and better structured for the reader, so it is the better summary.\n\nVerdict: A",
+  "usage": {
+    "input": 1644,
+    "output": 1202
+  },
+  "cost": 0.0007654
+}

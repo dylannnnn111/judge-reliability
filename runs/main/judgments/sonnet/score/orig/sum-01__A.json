@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-01",
+  "side": "A",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate. The new deadline (Friday 30 October, close of business), the reason (the CFO moved the board meeting forward a week), the three deliverables, the template path and the software-subscriptions line all match the emails. The variance rule (\"$50,000 or 10%, whichever is smaller\"), the screenshot rule, the leave-nomination rule and the \"call Priya today\" instruction are also correct. The optional drop-in is correctly described as Thursday at 2pm in the Level 6 boardroom. It leaves out the coffee machine joke, which a busy manager doesn't need.\n\nIt is about 117 words by my count, so just under the limit. The format is easy to scan. One small gap is that it doesn't say the Thursday drop-in falls before the new deadline, but the original emails don't make that explicit either.\n\nScore: 9",
+  "usage": {
+    "input": 1102,
+    "output": 916
+  },
+  "cost": 0.011364
+}

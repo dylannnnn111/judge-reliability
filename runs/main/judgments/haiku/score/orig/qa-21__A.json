@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-21",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly identifies early January as the time of perihelion, when Earth is closest to the Sun. The distances (about 147.1 million km at perihelion and 152.1 million km at aphelion) are accurate, and the roughly 3% difference is a fair estimate (about 3.4%). It explains that seasons come from axial tilt rather than distance, which is the key reasoning for the apparent paradox. The explanation is clear and well organized. At roughly 100 words, it meets the under-120-word limit, and the extra detail adds useful context rather than padding.\n\nScore: 9",
+  "usage": {
+    "input": 425,
+    "output": 355
+  },
+  "cost": 0.00022
+}

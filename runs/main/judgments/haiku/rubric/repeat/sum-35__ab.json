@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-35",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both summaries are accurate and under 120 words. Each covers the make-good scope, the Annexure C baseline, the 2023 kitchenette exception, the landlord's payment option with its two-quote and three-month-notice conditions, the late-completion rent risk, and the $18,000 bond return. Neither contains a factual error. Response A omits that the landlord's payment must be a \"reasonable estimate,\" but Response B omits this too, so it doesn't separate them. Response B names the tenant explicitly and uses bullets and headings, which makes the required work faster to scan for a busy manager. Response A's prose is concise but slightly denser. The difference is small, but Response B's structure serves this reader somewhat better.\n\nVerdict: B",
+  "usage": {
+    "input": 1454,
+    "output": 827
+  },
+  "cost": 0.0005589
+}

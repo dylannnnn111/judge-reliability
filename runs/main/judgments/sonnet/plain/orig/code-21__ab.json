@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-21",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** Both responses correctly put the duplicate-refund risk first and give sound fixes, and both go over the 200-word limit (A is slightly shorter, at roughly 235 words against roughly 250 for B).\n\nResponse A's remaining points are real defects in the code shown:\n- The `catch` retries `AbortError` and permanent `TypeError`s.\n- There is no timeout.\n- `Retry-After` is ignored.\n- Response bodies are never drained.\n- The `refundId` cast is unvalidated.\n\nResponse B's secondary points are weaker:\n- The double-submit item speculates about UI code that isn't in the review.\n- The input-validation item is minor.\n- It misses that aborts are retried, which is a more concrete bug than its UI and validation points.\n- Its jitter note is accurate, since delays can reach about 60s, but it is minor.",
+  "usage": {
+    "input": 1590,
+    "output": 1059
+  },
+  "cost": 0.01377
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-32",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Shared findings.** Both responses find the same core issues, in the same sensible order:\n1. The `BETWEEN` upper bound drops September 30 orders.\n2. Integer division truncates the averages.\n3. NULL status rows are silently excluded.\n4. Stores with no orders disappear, and the `HAVING` clause is redundant.\n\nBoth give the correct half-open range fix for the date filter.\n\n**Where they differ:**\n\n- **Integer-division fix.** Response A names SQL Server as affected and then recommends `AVG(o.item_count)` as the fix. In SQL Server, `AVG` of an integer column returns an integer, so that fix still truncates. Response B suggests `* 1.0` or `AVG(o.item_count * 1.0)`, which works across engines. This is a meaningful correctness edge for B.\n\n- **Status filter.** Response B goes further. It notes that cancelled, pending and failed orders are included and that partial refunds are ignored. It recommends listing the counted statuses explicitly. Response A mentions cancelled and failed briefly but proposes a NULL-safe `<>` instead.\n\n- **Missing stores.** Response B gives a clear either/or: switch to `LEFT JOIN` for zero tiles, or delete the `HAVING`. Response A's wording about guarding against division by zero, then noting `AVG` returns NULL anyway, is slightly muddled.\n\n- **Extra points in A.** Response A adds a valid but minor note that `ORDER BY` has no tiebreaker.\n\n- **Length.** Both likely exceed the 200-word limit, but Response A is noticeably longer and further over.\n\n**Conclusion.** Response B is more accurate in its fixes and more concise.\n\nVerdict: B",
+  "usage": {
+    "input": 1830,
+    "output": 1025
+  },
+  "cost": 0.02782
+}

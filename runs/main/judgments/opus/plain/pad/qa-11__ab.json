@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-11",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B.** Both responses reach the correct answer: switching gives a 1/2 chance, the same as staying, because a host who doesn't know where the car is gives no information by revealing a goat.\n\n**Response A** runs roughly 230 words, clearly breaking the \"under 120 words\" limit. Its reasoning also skips a step. It says door 2 \"shows a goat for certain\" in two cases, which treats door 2 as the door that will be opened. It leaves out that the host picks door 2 at random. The conclusion still holds, since that random choice is unrelated to the car's location, but the argument is less complete.\n\n**Response B** stays within the limit at about 117 words. It accounts for the host's random choice explicitly, giving each case a 1/2 chance of door 2 being opened. That correctly produces equal contributions of 1/6 for doors 1 and 3, which normalize to 1/2 each.",
+  "usage": {
+    "input": 850,
+    "output": 693
+  },
+  "cost": 0.01726
+}

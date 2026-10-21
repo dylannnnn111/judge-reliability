@@ -1,0 +1,13 @@
+{
+  "item": "qa-32",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**Why leap years exist:** Earth takes about 365.2422 days to orbit the Sun, not exactly 365. Without correction, the calendar would drift about 6 hours per year, and the seasons would slowly shift. Adding a day every four years makes up for most of that.\n\n**Why 1900 wasn't one:** Adding a day every four years assumes a 365.25-day year, which slightly overcorrects by about 11 minutes a year, or roughly 3 days every 400 years. The Gregorian calendar (1582) fixes this with these rules:\n\n- Divisible by 4 → leap year\n- Except years divisible by 100 → not leap years\n- Except years divisible by 400 → leap years\n\nSo 1900 (divisible by 100, not 400) was skipped, while 2000 (divisible by 400) was a leap year.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 58,
+    "output": 280
+  },
+  "cost": 0.005832,
+  "at": "2026-10-14T01:50:51.476Z"
+}

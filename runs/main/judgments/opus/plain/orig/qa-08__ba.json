@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-08",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-opus-5-5",
+  "text": "Both responses compute the answer correctly: 375 × 0.048 = 18 mL, then 18 × 0.789 = 14.2 g, giving 1.42 standard drinks. Both stay well under 120 words.\n\n**Response A** gives the answer first, then the steps. It uses \"≈\" correctly for the rounded values. It also notes that Australian labels round to one decimal place (1.4 standard drinks), which matches how labelling works and fits the question's framing.\n\n**Response B** is equally accurate but slightly less polished. It writes \"= 14.2 g\" where the value is rounded, then mixes \"=\" and \"≈\" in the final line. It also lacks a headline answer and the labelling context.\n\nResponse A is marginally better for its answer-first structure, consistent notation, and useful real-world note.\n\n**A**",
+  "usage": {
+    "input": 451,
+    "output": 380
+  },
+  "cost": 0.009404
+}

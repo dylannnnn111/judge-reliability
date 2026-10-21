@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-36",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A stays within the 120-word limit (about 100 words). It accurately covers the airfoil shape, angle of attack, the pressure difference, and Newton's third law.\n\nResponse B runs to roughly 270 words, more than double the limit. Its content is good, and it adds useful points about stall, but it clearly fails the explicit length constraint.",
+  "usage": {
+    "input": 763,
+    "output": 208
+  },
+  "cost": 0.007212
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-05",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth reviews raise the same four main issues in the same order: DST arithmetic, ambiguous or nonexistent local times, start-day-only weekend loading, and float money handling.\n\n- **Worked examples:** B gives concrete, correct examples. A 01:00–05:00 shift on fall-back night is paid 4h but lasts 5h; on spring-forward night it is paid 4h for 3h worked. A's DST description is correct but more generic.\n- **Specific fixes:** B is more precise, naming `ROUND_HALF_UP` and a UTC round-trip check for nonexistent times.\n- **Extra findings:** B adds a useful one, a sanity limit on shift length, since a typo'd date could pay a 300-hour shift. A instead includes a trivial point about repeated `parse_local` calls.\n- **Length:** Both exceed the 200-word limit. A runs to roughly 245 words and B to roughly 215, so B is closer.",
+  "usage": {
+    "input": 1618,
+    "output": 980
+  },
+  "cost": 0.026072
+}

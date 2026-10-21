@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-12",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses reach the correct answer: 1 − (5/6)⁴ = 671/1296 ≈ 51.8%. Both also stay under the 120-word limit.\n\n**Key reasoning.** Both use the complement method. B is slightly more complete because it states each step explicitly:\n- the single-roll probability of no six is 5/6;\n- the rolls are independent;\n- so the four-roll probability of no six is (5/6)⁴ ≈ 0.482.\n\nA states (5/6)⁴ without explaining where it comes from.\n\n**Clarity.** A spends words on filler that adds nothing (\"With that value in hand…\", \"Put another way…\"), and it restates the complement idea redundantly. B is tightly structured as a bulleted chain of steps. Its closing note about the Chevalier de Méré is accurate, and its remark about \"slightly better than even odds\" is useful framing.\n\nB is clearer and more informative, and it has no wasted words.\n\nVerdict: B",
+  "usage": {
+    "input": 628,
+    "output": 479
+  },
+  "cost": 0.012092
+}

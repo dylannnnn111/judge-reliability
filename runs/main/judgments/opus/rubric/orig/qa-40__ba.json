@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-40",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** Both responses are accurate and consistent.\n- They give the same speeds (~300,000 km/s for light, ~343 m/s for sound).\n- They give the same rule of thumb (divide by 3 for km, by 5 for miles).\n- Their examples check out: 15 s → 5 km / 3 mi in A, and 10 s → ~3 km / 2 mi in B.\n- A's safety figures are also consistent: 30 s → 10 km / 6 mi.\n- Both stay under 120 words (about 109 and 111).\n\n**Key reasoning:** Response B explicitly states that the flash and thunder are produced at the same moment, and that the delay comes only from their different travel speeds. This premise is what makes the counting method valid. B also notes that light is effectively instantaneous over storm distances, which justifies counting from the flash. A only implies these points.\n\n**Extras and clarity:** Response A adds the 30-minute wait-after-last-thunder rule, a correct and useful safety point. Its numbered steps are also very clear. B's bullets are equally clear, and its \"3 seconds per km\" phrasing helps explain why the divisor works.\n\nOverall, A offers slightly more practical advice, but B covers the reasoning behind the phenomenon more completely. On the stated priority of key reasoning over extras, B edges ahead.\n\nVerdict: B",
+  "usage": {
+    "input": 745,
+    "output": 1286
+  },
+  "cost": 0.0287
+}

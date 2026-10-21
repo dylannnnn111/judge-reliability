@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "code-14",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better, mainly because it stays within the length limit.\n\nBoth responses find the most important bug: OFFSET pagination combined with deleting the rows just read skips about half the matching rows. Both give the correct fixes, which are to drop OFFSET or use keyset pagination. Both also cover the crash window between `archive()` and `commit()`, the need for `archive` to be durable and idempotent, the string-comparison risk on `created_at`, and the missing index.\n\nThe difference is the length constraint. By my rough count, A comes to about 195 words, just under the 200-word limit. B comes to about 225 words, so it breaks the explicit instruction.\n\nB also pads with weaker points. Its \"no logging or metrics\" bullet is not a bug. Its rollback point is marginal, since an uncommitted transaction is rolled back when the connection closes. A stays focused and adds the useful remark that a batch size of 100 means many commits.\n\n**A**",
+  "usage": {
+    "input": 1358,
+    "output": 1494
+  },
+  "cost": 0.017656
+}

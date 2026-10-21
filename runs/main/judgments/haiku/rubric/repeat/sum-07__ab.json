@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-07",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Neither misstates the dates, the 40% dashboard figure, the Classic CSV removal, the column-mapping help article, or the Android 9 end of support. Both flag the Classic CSV break as the main action item, which is the point a manager most needs.\n\nResponse A covers every main category (features, improvements, bug fixes, removals, coming soon) in a scannable structure, and it stays under the 120-word limit at roughly 119 words. It drops the beta-program detail and the per-client reminder wording, which are minor.\n\nResponse B reads more smoothly and adds useful context, such as early access through the beta program. However, it runs to roughly 126 words, which breaks the explicit \"under 120 words\" constraint. It also leaves out the bug fixes entirely, which a busy manager may not need but is part of the release picture.\n\nOn accuracy both are equal, and on keeping the needed points A is slightly more complete. On concision A respects the length limit and B does not, so A is the better response, though the gap is small.\n\nVerdict: A",
+  "usage": {
+    "input": 1401,
+    "output": 2275
+  },
+  "cost": 0.0012775999999999998
+}

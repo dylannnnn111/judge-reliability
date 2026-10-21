@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-01",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses identify the core problems: no idempotency, a single failure aborting the run, float money with truncation in `int(amount * 100)`, silently skipped non-positive totals, and hardcoded tax. Both truncation examples are correct (10.29 and 19.99 both land just below the cent boundary in binary float). Response A's fixes are more concrete, naming an idempotency key per customer per billing period, catch-and-log per customer, and `Decimal` or `round()`. Response B gives a sharper account of the failure mode in its second point, and its NaN/inf and negative-value validation catch is a real and specific issue that A misses. Response B also adds billing-period scoping, which is relevant to a nightly job. However, A's ranking is sensible, its \"credits silently dropped\" point is well framed, and it stays closer to the 200-word limit. B is slightly longer and its \"minor\" item on currency is filler. Overall A is a little more actionable and better fitted to the constraints, though B's NaN/inf catch keeps this close.\n\nVerdict: A",
+  "usage": {
+    "input": 1574,
+    "output": 1347
+  },
+  "cost": 0.0008309
+}

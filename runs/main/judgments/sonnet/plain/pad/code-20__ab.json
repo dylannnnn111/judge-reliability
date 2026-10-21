@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-20",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better, though neither response is clean.\n\nBoth identify the main bug correctly: local-midnight differences are 23 or 25 hours across a DST change, so `Math.floor` miscounts. Both also catch the silent `NaN` handling, the viewer-timezone dependence, and stale labels after midnight. Both are over the 200-word limit, with A somewhat longer.\n\n**Response A:**\n- Its DST examples are correct (0.96 → \"Due today\", −1.04 → \"Overdue by 2 days\").\n- It claims the DST bug may put an invoice \"in the wrong place on the overdue list.\" That is wrong. The sign of the difference is never flipped, and an invoice due today is exactly 0. This overstates the impact.\n- It opens with meta-commentary (\"I've kept the explanations and the suggested fix as they were...\") that doesn't belong in a review.\n- It adds filler (\"This is a second, separate problem\", \"These two items are less serious, but they are still worth a look\").\n- Its fix is correct, since UTC differences are exact multiples of a day.\n\n**Response B:**\n- It correctly notes that the overdue list is unaffected by the DST bug and that only the labels are wrong, which is more precise.\n- Its spring-forward example is internally inconsistent. A due date 3 days away that floors to 2 would read \"Due in 2 days\", not turn \"Due tomorrow\" into \"Due today.\"\n- Its fix adds `Math.round`, which is unnecessary but harmless.\n- It describes the full-ISO-timestamp failure concretely and gives a more actionable timezone suggestion (compute \"today\" in the business timezone).\n- It is more concise and has no meta-commentary.\n\nB's example slip is minor compared with A's incorrect claim about the overdue list and its extra filler.\n\n**B**",
+  "usage": {
+    "input": 1827,
+    "output": 1503
+  },
+  "cost": 0.018684
+}

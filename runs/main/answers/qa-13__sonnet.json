@@ -1,0 +1,13 @@
+{
+  "item": "qa-13",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "A is a knave and B is a knight.\n\n**Reasoning:**\n\n- Suppose A were a knight. Then A's statement \"We are both knaves\" would have to be true, but that would make A a knave. This is a contradiction, so A is not a knight.\n- So A is a knave, and the statement is false.\n- The statement \"We are both knaves\" is false when at least one of us is not a knave. Since A is a knave, B must not be a knave.\n- Therefore B is a knight.\n\n**Answer:** A is a knave; B is a knight.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 74,
+    "output": 170
+  },
+  "cost": 0.001848,
+  "at": "2026-10-14T01:50:23.413Z"
+}

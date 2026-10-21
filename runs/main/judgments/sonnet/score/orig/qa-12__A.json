@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-12",
+  "side": "A",
+  "score": 10,
+  "model": "claude-sonnet-5-5",
+  "text": "The correct answer is 1 − (5/6)^4 = 1 − 625/1296 = 671/1296 ≈ 0.5177. The response gets this right, shows the complement-based reasoning, and states the result in both fraction and percentage form. It is well under 120 words and clearly laid out. The only possible nitpick is that it doesn't explain why the complement approach works, but that is minor given the brevity constraint.\n\nScore: 10",
+  "usage": {
+    "input": 300,
+    "output": 143
+  },
+  "cost": 0.00203
+}

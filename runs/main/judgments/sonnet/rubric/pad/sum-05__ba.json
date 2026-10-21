@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-05",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. Response A runs to about 147 words, breaking the 120-word limit. Response B is about 102 words and meets it.\n\nBoth are accurate on the main points:\n- There was no measured productivity gain.\n- 78% of sit-stand users felt more productive.\n- Back discomfort was 31% versus 44%.\n- Extra standing time fell from 47 to 19 minutes.\n- The task was short and participants were not blinded.\n\nB also states plainly that the productivity gain was perceived, not measured, and adds a one-line takeaway for a manager: justify the desks on comfort and health, not productivity. That recommendation is a mild inference from the brief's interpretation, but it fits the source. A is also wordier, with filler such as \"It is worth noting that\" and \"In other words\".\n\nVerdict: B",
+  "usage": {
+    "input": 1457,
+    "output": 1274
+  },
+  "cost": 0.015654
+}

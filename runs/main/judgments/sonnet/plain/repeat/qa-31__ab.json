@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "qa-31",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. It meets the 120-word limit, at about 109 words. **A** comes to roughly 121 words by my count, so it likely breaks the limit. Both explain the axial tilt correctly. A's extra note on the distance misconception is useful, but it is probably what pushes A over the limit.\n\nB",
+  "usage": {
+    "input": 615,
+    "output": 1542
+  },
+  "cost": 0.01665
+}

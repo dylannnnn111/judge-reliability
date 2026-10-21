@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-22",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response answers correctly: the Coriolis effect does not reverse drain direction in Australian sinks or toilets. It explains the key reason, that the effect is far too weak at small scales, and names the factors that actually set the swirl direction, such as basin shape, jet angle, and residual motion. It also notes that drains spin both ways in either hemisphere and that the Coriolis effect only dominates in carefully controlled experiments. It stays under 120 words (about 108), and the three short paragraphs are clear and logically ordered. The only gap is that it does not directly mention Australia, but the hemisphere point covers the premise.\n\nScore: 9",
+  "usage": {
+    "input": 433,
+    "output": 508
+  },
+  "cost": 0.0002973
+}

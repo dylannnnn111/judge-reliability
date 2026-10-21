@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-13",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.**\n\n**Real issues found.** Both catch the same core bugs, in the same sensible order:\n- the December crash;\n- the day-of-month overflow crash;\n- schedule drift;\n- 30-day proration;\n- no input validation;\n- floor rounding.\n\n**Accuracy of the drift point.** B handles it more accurately. The current code doesn't drift; it crashes. Drift only appears once someone clamps naively and keeps chaining from the previous date. B frames it exactly that way. A says Jan 31 → Feb 28 → Mar 28 as if that happens now, which misdescribes the code as written. B also adds a correct detail: a subscription that starts in December fails as well.\n\n**Small errors in A.** A says `//` \"floors toward zero,\" but it floors toward negative infinity. For positive values the result is the same, so this is minor.\n\n**Fixes.** B is more concrete and actionable. It names `dateutil.relativedelta` and `calendar.monthrange`, says to use the real period length, and says to cap `days_used`. A gives reasonable fixes too, such as computing from `start` with clamping and using a `Decimal` rounding mode, but with less detail.\n\n**Things flagged that are fine.** B's item 7 on timezone handling is weak, because `date` objects carry no timezone. \"No tests\" is generic filler, though it is labelled minor. A avoids this kind of padding.\n\n**Length.** Both exceed or approach the 200-word limit. B runs longer, partly because of filler like \"Both bugs are common in real billing.\"\n\n**Weighing it up.** B's more accurate framing of the drift issue and its concrete fixes outweigh its slightly spurious minor item and extra length.\n\nVerdict: B",
+  "usage": {
+    "input": 1499,
+    "output": 1246
+  },
+  "cost": 0.030916
+}

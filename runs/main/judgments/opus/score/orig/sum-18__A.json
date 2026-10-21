@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-18",
+  "side": "A",
+  "score": 4,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Most details match the source:\n- The release date, the route-sharing description and the heat-warning settings path are correct.\n- The 15% battery figure, the 15-minute sync and the three fixes are correct.\n\nThere are two problems:\n- **Invented statement:** The closing line, \"No action is required from the team,\" appears nowhere in the release notes. It sounds authoritative, and a busy manager could rely on it.\n- **Added unit:** The heat warning is rendered as \"35°C\", but the source says only \"35 degrees.\" Celsius is likely, but it is still an assumption.\n\n**Coverage:** All the key points are kept. Dropping the testers' thanks and the help-centre line is sensible.\n\n**Concision:** The response is about 143 words, well over the explicit 120-word limit. It also largely reproduces the release notes section by section rather than distilling what matters most to a manager. Trimming the invented closing line and some detail would have brought it under the limit.\n\n**Overall:** A clear breach of the length constraint, an unsupported claim and a minor unit assumption outweigh generally faithful coverage.\n\nScore: 4",
+  "usage": {
+    "input": 1072,
+    "output": 1554
+  },
+  "cost": 0.035368
+}

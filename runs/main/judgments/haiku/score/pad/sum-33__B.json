@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-33",
+  "side": "B",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The response is largely accurate. The v1 connector deadline is correctly given as 31 January 2027, the 8% figure matches, and the three new features are described correctly. It omits that staff can turn off open-shift notifications, which is minor. Its main failure is length. The user asked for under 120 words, and this response runs well over 200. It also spends its opening sentences on filler (\"Thank you for taking the time to read this summary\") and a vague closing paragraph that names improvements without saying what they mean for the manager. The most important item, the payroll switch, is buried in the second paragraph, though it is still stated clearly. A busy manager would get the key message, but the response ignores the explicit word limit and wastes space that a concise summary should have used.\n\nScore: 4",
+  "usage": {
+    "input": 1332,
+    "output": 699
+  },
+  "cost": 0.0004827
+}

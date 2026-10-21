@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "qa-40",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** Both responses are accurate. Each gives the speed of light (~300,000 km/s), the speed of sound (~343 m/s), and the standard rules: divide by 3 for kilometers, divide by 5 for miles.\n- A's example is approximately right: 10 s ≈ 3.4 km, and ≈ 2 miles.\n- B's example works out cleanly: 15 s ≈ 5 km, and 3 miles.\n- Both stay under the 120-word limit (A ≈ 114 words, B ≈ 111).\n\n**Key reasoning:** A adds a useful point: the flash and the thunder begin at the same moment, so the delay comes entirely from the difference in travel speeds. B covers the same idea more implicitly. B instead turns the counting method into explicit steps, which is slightly clearer for a reader who wants to try it.\n\n**Usefulness of extras:** Both include the 30-second danger threshold. B adds two correct and practical details. It converts the threshold into distance (~10 km / 6 miles), and it gives the 30-minute wait after the last thunder. These extras fit within the word limit and add genuine value.\n\nOverall, both are correct and clear. B is slightly more complete and actionable without sacrificing accuracy or concision.\n\nVerdict: B",
+  "usage": {
+    "input": 745,
+    "output": 1166
+  },
+  "cost": 0.0263
+}

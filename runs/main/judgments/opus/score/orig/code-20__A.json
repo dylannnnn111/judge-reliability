@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "code-20",
+  "side": "A",
+  "score": 7,
+  "model": "claude-opus-5-5",
+  "text": "**Assessment**\n\n**Accuracy and importance.** The DST bug is real and correctly ranked first.\n- `new Date(\"YYYY-MM-DDT00:00:00\")` parses as local time.\n- Across a spring-forward boundary, \"tomorrow\" is 23h away: 0.96 floors to 0, so it shows \"Due today\".\n- Across fall-back, \"yesterday\" is −25h: −1.04 floors to −2, so it shows \"Overdue by 2 days\".\n- The `Date.UTC` fix is correct and clean.\n\n**Overclaim on the overdue list.** The response says the fall-back case \"may land in the wrong place on the overdue list.\" It cannot. That invoice is overdue either way: −2 and −1 are both < 0. DST never moves an invoice across the `< 0` boundary, because spring-forward \"yesterday\" gives −0.96, which floors to −1. So the list itself is unaffected; only the labels are wrong. The \"may\" hedge softens this, but it is still a small inaccuracy.\n\n**Malformed input.** The NaN point is legitimate and well explained. \"Due in NaN days\" is shown, and `NaN < 0` being false silently drops a bad invoice from the overdue list. Since the data comes from a typed table column, this is somewhat defensive, but it is fairly ranked below DST.\n\n**Minor items.** The browser-timezone and stale-after-midnight notes are reasonable. They are correctly labelled minor, and the timezone point is hedged appropriately.\n\n**False positives.** None. It does not wrongly flag the pluralisation logic or anything else that works.\n\n**Constraint compliance.** The user asked for under 200 words. The response is roughly 235–240 words including the code block, a clear overrun of an explicit instruction. The Minor section and some explanatory prose could have been trimmed to fit.\n\n**Overall.** The technical substance is strong and well prioritised, with good fixes. It loses points for breaking the word limit and for the small overreach about the overdue list.\n\nScore: 7",
+  "usage": {
+    "input": 1250,
+    "output": 1707
+  },
+  "cost": 0.03914
+}

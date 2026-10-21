@@ -1,0 +1,13 @@
+{
+  "item": "qa-31",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "It comes down to **Earth's tilt**. Earth's axis is tilted about 23.5° relative to its orbit around the Sun, and that tilt always points in the same direction in space.\n\n- **Around December**, the Southern Hemisphere (including Australia) is tilted *toward* the Sun. Sunlight hits it more directly and days are longer, so it's **summer**.\n- At the same time, the Northern Hemisphere (including Europe) is tilted *away* from the Sun. Sunlight arrives at a lower angle and spreads over a larger area, and days are shorter, so it's **winter**.\n- **Around June**, the situation reverses.\n\nA common misconception is that seasons depend on Earth's distance from the Sun. In fact, Earth is closest to the Sun in early January, during the northern winter.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 50,
+    "output": 291
+  },
+  "cost": 0.00602,
+  "at": "2026-10-14T01:50:50.600Z"
+}

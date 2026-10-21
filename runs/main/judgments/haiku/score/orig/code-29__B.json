@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-29",
+  "side": "B",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The response catches the most important bug: `NOT IN` against a subquery containing NULLs returns no rows, so the audience would be empty. Its `NOT EXISTS` fix is correct and clearly explained. The date-filter point is also real and matters, since the comment says \"never referred\" but the filter only checks 2026 onward. The `LIMIT`/`ORDER BY` bias and the duplicate/suppression concerns are reasonable secondary issues with sensible fixes. The date-format note is speculative but hedged appropriately. Nothing obvious is wrong or flagged as a bug when it isn't. The main weakness is length: the response runs somewhat past the 200-word limit the user set, and a couple of minor points could have been cut to meet it. Ranking is sensible, with the NULL bug first.\n\nScore: 7",
+  "usage": {
+    "input": 1000,
+    "output": 760
+  },
+  "cost": 0.00048
+}

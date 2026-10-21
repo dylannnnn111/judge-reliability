@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-04",
+  "side": "A",
+  "score": 6,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy**\n\n- **Correct:** The headline numbers, the effective date, the 24-month window, the eligibility conditions, the 10-week lead time and the session dates all match the source.\n- **Block splitting:** \"Leave can now be split into up to three blocks\" reads as if it covers all parental leave. The policy gives this flexibility only to primary carers. A manager could wrongly tell a secondary carer they can split their 4 weeks.\n- **Superannuation:** The summary drops the \"up to 18 weeks\" cap on super for the government-funded portion. It also omits that super continues on the employer-paid portion. This is a smaller loss.\n\n**Coverage**\n\n- **Missing context:** The summary leaves out that the entitlements are *in addition to* the government Parental Leave Pay scheme. This is an important point for understanding how much support staff actually get.\n- **Covered well:** The transitional rule for children arriving before 1 January is adequately implied by \"applies to children born or placed on or after 1 January 2027.\" The application process and information sessions are also covered.\n- **Could add:** It doesn't mention that managers get an automatic notification. That is useful but not essential.\n\n**Concision**\n\nAt about 116 words, it is within the limit and reads cleanly. There is no padding.\n\nOverall, it is a clear and mostly accurate summary. But the overgeneralisation about splitting leave is a genuine misstatement of a condition, and leaving out the \"in addition to government pay\" point is a notable gap.\n\nScore: 6",
+  "usage": {
+    "input": 1112,
+    "output": 1038
+  },
+  "cost": 0.025208
+}

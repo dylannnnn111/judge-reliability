@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-24",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. It stays at roughly 120 words, right at the limit, while Response A runs closer to 190 and opens with filler. B also covers the conflict of interest and flags the correction, and it is easier for a busy manager to scan.\n\nB",
+  "usage": {
+    "input": 1737,
+    "output": 805
+  },
+  "cost": 0.0005762
+}

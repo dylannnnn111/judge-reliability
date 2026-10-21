@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-03",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the critical SQL injection and the unclosed connection, and both give working parameterization code. Both also correctly note that `with sqlite3.connect()` does not close the connection. Both exceed the 200-word limit by a similar margin.\n\nResponse A's extra points are more practical. Case-sensitive, whitespace-sensitive email matching is a real functional bug for support staff doing copy-paste lookups, and `COLLATE NOCASE` is a concrete fix. The missing ORDER BY and LIMIT are legitimate concerns for a portal. Its minor items are accurate, though they are low value.\n\nResponse B's authorization and audit point is important for a PII lookup tool, and it is arguably more important than A's ordering issue. However, its claim that worse inputs \"can modify data depending on the driver\" is misleading, since sqlite3's `execute` rejects stacked statements. Its hardcoded-path item is weak as a bug, and its input-validation item is generic.\n\nOverall, Response A is slightly more accurate and more actionable on the issues that matter most for this code, while Response B has the stronger authorization point but a few weaker or overstated items.\n\nVerdict: A",
+  "usage": {
+    "input": 1531,
+    "output": 980
+  },
+  "cost": 0.0006431000000000001
+}

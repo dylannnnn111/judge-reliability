@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-38",
+  "side": "A",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The science is largely correct. It explains the polar vortex, the cold temperatures below about −78°C, polar stratospheric clouds converting reservoir chlorine (HCl and ClONO₂) into reactive forms, and sunlight returning in spring to free chlorine atoms that destroy ozone. It also covers the vortex breakdown and the Arctic comparison. The key reasoning is complete and clear.\n\nHowever, the user asked for an answer under 120 words, and this response runs roughly 200 words across three paragraphs. That is a clear violation of an explicit constraint. The extra length does not add essential content, since a tighter version could cover the same core points. Correctness is strong, but the instruction failure substantially lowers the score.\n\nScore: 4",
+  "usage": {
+    "input": 653,
+    "output": 485
+  },
+  "cost": 0.0003078
+}

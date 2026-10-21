@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-14",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses reach the correct answer. The tap's net contribution is 1/3 − 1/5 = 2/15 of the tank per hour, so filling takes 15/2 = 7.5 hours. Both show the key reasoning: the separate rates, the net rate, and the division.\n\nResponse A is longer, and by my count it exceeds the 120-word limit the user set. Much of its extra text is repetition: it states the answer up front, then again in the summary, and the working adds little beyond what Response B already shows. Response B is concise, complete, and within the limit.\n\nSince correctness is equal and both include the key reasoning, clarity and instruction-following decide it. Response B is better because it meets the word limit while keeping all the essential steps.\n\nVerdict: B",
+  "usage": {
+    "input": 747,
+    "output": 682
+  },
+  "cost": 0.00041569999999999997
+}

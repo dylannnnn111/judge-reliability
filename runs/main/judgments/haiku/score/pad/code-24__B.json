@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "code-24",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly identifies the most important problem: the `processed.add` happens after the `await`, so concurrent duplicates can both mark the invoice paid. Its fix (atomically claim the event ID, ideally in the same transaction as the update, and release the claim on failure) is sound. The in-memory Set issues, non-constant-time comparison, and error handling are also real, and the ranking is sensible.\n\nWeaknesses: the response runs roughly 330 words, well over the 200-word limit, and the opening filler adds nothing. The replay-protection point is reasonable but secondary, and the amount-validation point is speculative because the code gives no invoice data to validate against. The claim that a failing `markInvoicePaid` causes an \"unhandled rejection\" depends on the framework, which the response doesn't acknowledge. Overall it finds the key issues and fixes them well, but it ignores the length constraint and includes some padding.\n\nScore: 6",
+  "usage": {
+    "input": 1234,
+    "output": 838
+  },
+  "cost": 0.0005424
+}

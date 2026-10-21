@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-03",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Both responses are accurate on the key facts: the incident window, the 2,391 of 4,812 failures, the 1,940 retries, the 451 abandonments, the ~$41,900 estimate with its caveat, and the 312 support contacts at four times normal volume. Both also explain detection correctly: failures were split across the two connectors' metrics, so no alert fired, and support escalated instead.\n\n- **Response B** is more precise on the cause. It names connector B and the stale pinned intermediate certificate after the vendor's August renewal.\n- **Response A** says \"an outdated certificate pinned in its config,\" which is less specific but still correct.\n- **Response B's wording on Security's action** is slightly loose: \"Certificate expiry added to vendor checks\" reads like a completed action. However, the \"31 Oct\" date and the contrast with the \"(done)\" items make clear it is pending.\n\n**Coverage:** Response A specifies that the discount went to affected non-buyers, which Response B leaves out. Response B includes the action owners (SRE, Security), which a manager tracking follow-up would find useful.\n\n**Length constraint:** This is the deciding factor. Response A comes to about 124 words including its heading, which breaks the explicit \"under 120 words\" instruction. Response B is about 98 words, comfortably within the limit, and covers essentially the same points in scannable form.\n\nResponse B meets the hard constraint with equal or better precision, so it is the better response.\n\nVerdict: B",
+  "usage": {
+    "input": 1597,
+    "output": 2348
+  },
+  "cost": 0.053348
+}

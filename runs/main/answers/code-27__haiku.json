@@ -1,0 +1,13 @@
+{
+  "item": "code-27",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "1. **Sends to everyone, including people who unsubscribed or bounced.** Only `marketingOptIn` is checked. Unsubscribes, bounces, and complaints need a suppression check at send time, or this violates CAN-SPAM/GDPR-style rules.\n\n2. **`Promise.all` fires about 80,000 sends at once.** This will hit provider rate limits, exhaust sockets, and risk duplicate or dropped sends. There's no concurrency limit, no retry, and no backoff.\n\n3. **One failure hides the rest.** `Promise.all` rejects on the first error, but the other sends keep running, and you can't tell which addresses failed. A rerun would resend to everyone already reached.\n\n4. **The return value is misleading.** `emails.length` is the number of addresses attempted, not the number sent.\n\n5. **Null emails crash the collection.** `c.email.toLowerCase()` throws if `email` is null or undefined, and that aborts the entire run partway through.\n\n6. **No guard against a non-advancing cursor.** If the API ever returns the same cursor, `do...while` loops forever.\n\n7. **No retry for transient `fetchPage` errors.** One failed page request fails the whole campaign.\n\n8. **Minor:** all 80k addresses are held in memory, and lowercasing the whole address is technically wrong for the local part, though it's usually harmless in practice.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 444,
+    "output": 1105
+  },
+  "cost": 0.0005968999999999999,
+  "at": "2026-10-14T01:54:19.632Z"
+}

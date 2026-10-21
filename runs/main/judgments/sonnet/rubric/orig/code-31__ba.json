@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-31",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main bug: with second-precision `created_at` and a strict `>` cursor, tied rows that straddle a page boundary are silently skipped. Both also give the right fix, keyset pagination on `(created_at, id)` with a matching `ORDER BY`. Both also flag the missing index, the `:last_seen IS NULL OR ...` planner issue, and late-committed rows.\n\n**Response A:**\n- Its claims are accurate.\n- It ranks the data-loss bug first and correctly says the `id` tiebreaker also fixes the ordering problem.\n- It covers late commits and the lack of a persisted cursor with idempotent downstream writes, both practical for an export job.\n- Its sample fix drops the first-page NULL handling, but it addresses that separately in item 5.\n\n**Response B:**\n- It makes a false claim: if 1000 or more rows share one second, the job \"stalls or loops forever.\" With `created_at > :last_seen`, the cursor still advances past that timestamp, so the result is more skipped rows, not a loop.\n- It also says non-deterministic ordering can make \"pages overlap.\" The strict `>` filter makes overlap unlikely, so this is overstated.\n- It lists the fix as a numbered \"bug\" item, which is slightly muddled.\n- Its upper-bound snapshot suggestion is useful.\n- Its type/precision note is marginal.\n- It does not mention cursor persistence or idempotency.\n\nResponse A is more accurate and has no false claims, so it is better.\n\nVerdict: A",
+  "usage": {
+    "input": 1632,
+    "output": 1041
+  },
+  "cost": 0.013674
+}

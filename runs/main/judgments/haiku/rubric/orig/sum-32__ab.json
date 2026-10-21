@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-32",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Each gets the rates (5.79% less a 0.90% discount, now 6.04% after the 0.25% August rise), Jordan's 12 May email wording, the $250 goodwill payment, and the closure correct. Neither misattributes a decision.\n\nBoth keep the points the manager needs: the customers' dissatisfaction, the referral to lending, and the escalation risk. Response A adds a useful flag that closing the complaint may be premature because the customers haven't accepted the outcome. Response B covers this more loosely as an AFCA risk.\n\nOn concision, the user set a limit of under 120 words. Response A is roughly 115–120 words and sits at the limit. Response B runs to roughly 165 words, with headers and some repetition, so it breaks the constraint. Its extra structure doesn't add substantive information.\n\nResponse A is accurate, keeps the key points, includes a sharper risk flag, and meets the length limit, so it is the better summary.\n\nVerdict: A",
+  "usage": {
+    "input": 1598,
+    "output": 902
+  },
+  "cost": 0.0006108
+}

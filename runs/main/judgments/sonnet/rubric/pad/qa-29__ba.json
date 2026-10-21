@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-29",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer in under 120 words. Response A is clearly over that limit. Counting roughly: the first paragraph is about 40 words, the intro line about 15, the bullets about 55, the next paragraph about 55, and the last about 45. That totals about 200 words, so it violates the constraint.\n\nResponse B is about 105 words. Counting: \"Compound interest beats simple interest over long periods because it pays interest on previously earned interest, not just the original principal.\" is 21 words. \"With simple interest, you earn a fixed amount each period, so growth is linear.\" is 14, for 35. \"With compound interest, each period's earnings are added to the balance and start earning returns themselves, so growth accelerates over time.\" is 21, for 56. \"The longer the horizon, the more these \"interest on interest\" effects accumulate, and the gap between the two grows exponentially rather than steadily.\" is 24, for 80. \"For example, $1,000 at 5% for 30 years yields $2,500 with simple interest but about $4,322 with annual compounding.\" is 19, for about 99. That is under 120.\n\nOn correctness, both give the right numbers: 1000 × 1.05^30 ≈ 4321.94, and simple interest gives 2500. Response A's Rule of 72 aside is also correct, but it adds length that breaks the limit. Response B's \"gap grows exponentially\" is fine.\n\nB satisfies the length constraint and is correct, while A does not satisfy it.\n\nVerdict: B",
+  "usage": {
+    "input": 817,
+    "output": 481
+  },
+  "cost": 0.006444
+}

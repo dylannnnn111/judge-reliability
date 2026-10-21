@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-34",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**B.** Both responses give the same correct explanation: Diffie-Hellman key exchange, then a symmetric session key, then certificates to prevent man-in-the-middle attacks. The difference is the 120-word limit.\n\nResponse A comes to about 118 words if the list numerals are left out. If \"1.\" through \"4.\" are counted, it reaches about 122, which is over the limit. Response B is about 100 words either way, so it meets the limit with room to spare. B also covers authentication, so A's extra detail adds little.\n\n**B**",
+  "usage": {
+    "input": 628,
+    "output": 1037
+  },
+  "cost": 0.011626
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "code-28",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the core problems: the connection leak, the double-spend race, the unchecked `toId` that lets money vanish, deadlock risk under opposing transfers, ROLLBACK masking the original error, and the same-wallet case. Both give concrete fixes. Both also exceed the 200-word limit, Response A by more.\n\nResponse A ranks the connection leak first, which is a sensible call since it takes the API down within hours under load. Its idempotency point is useful for an API that may be retried. However, its last item is wrong: JavaScript coerces the string from a `bigint` column to a number in the `<` comparison, so the check still works below 2^53. Response A is also longer without adding enough correct content to justify it.\n\nResponse B ranks the leak third, which is a weaker ordering. Its CHECK constraint suggestion is a good defense-in-depth addition that A lacks. It is tighter and avoids the inaccurate claim.\n\nOverall, the two are close. Response B's concision, its constraint suggestion, and the absence of an error edge the edge in its favor, though A's ordering is a point in its favor.\n\nVerdict: B",
+  "usage": {
+    "input": 1821,
+    "output": 1285
+  },
+  "cost": 0.0008246
+}

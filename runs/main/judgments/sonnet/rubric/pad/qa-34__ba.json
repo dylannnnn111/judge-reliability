@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-34",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer in under 120 words. Response A is clearly well over 120 words, roughly 200. Response B is about 110 words, so it should be within the limit. I'll count B more carefully.\n\n\"They use public-key cryptography, usually through a key exchange such as Diffie-Hellman:\" has 12 words.\n\"Each side picks a private secret and computes a matching public value from it.\" has 14, running total 26.\n\"They exchange only the public values, in the open.\" has 9, total 35.\n\"Each combines its own private secret with the other's public value.\" has 11, total 46.\n\"The math gives both the same shared key, while an eavesdropper who sees only the public values can't feasibly compute it.\" has 20, total 66.\n\"That shared key then encrypts the conversation with fast symmetric encryption (e.g., AES).\" has 13, total 79.\n\"To stop an impostor from secretly sitting in the middle, the server proves its identity with a digital certificate signed by a trusted certificate authority.\" has 24, total 103.\n\"HTTPS (TLS) works exactly this way.\" has 6, total 109.\n\nB comes to about 109 words, under the limit.\n\nBoth are correct on content. A violates the length constraint, so B is better.\n\nVerdict: B",
+  "usage": {
+    "input": 907,
+    "output": 402
+  },
+  "cost": 0.005834
+}

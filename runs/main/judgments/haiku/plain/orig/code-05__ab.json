@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-05",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "A is better. Both identify the same core problems with similar accuracy, and both examples check out. A's DST examples are specific and correct, and its fix is concrete. B's \"overpaid/underpaid\" explanation is also correct, but B runs to roughly 240 words, clearly over the 200-word limit, while A is near it. A is more compliant with the request.\n\nA",
+  "usage": {
+    "input": 1618,
+    "output": 1872
+  },
+  "cost": 0.0010978
+}

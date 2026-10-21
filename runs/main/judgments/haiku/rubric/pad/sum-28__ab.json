@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-28",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is accurate on every point I checked: the 84 staff and $3.9M figures, the eight-week (40-day) cap and the one-quarter direction power with eight weeks' notice, the cash-out conditions, the 24 December to 2 January shutdown, the warehouse exemption, and the 31 October list. It fits under 120 words and gives the manager a clear action.\n\nResponse B covers the same substance but is less accurate in places. It presents unpaid leave or making up time as a general alternative for all staff in the shutdown, when the source limits it to staff without enough leave. It also says \"permanent staff\" and omits part-time staff, and its \"only exemption\" wording is clumsy. It opens with filler (\"We would like to draw your attention\") and runs well over 120 words, breaking the length constraint without adding anything the manager needs.\n\nVerdict: A",
+  "usage": {
+    "input": 1590,
+    "output": 763
+  },
+  "cost": 0.0005405
+}

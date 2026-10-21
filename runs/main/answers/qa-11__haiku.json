@@ -1,0 +1,13 @@
+{
+  "item": "qa-11",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "**No, switching gives you no advantage. Your chance of winning is 50% either way.**\n\nBecause the host chose door 2 at random without knowing where the car was, the fact that it showed a goat is just luck. Here's the reasoning:\n\n- **Car behind door 1 (prob 1/3):** the host opens door 2 with probability 1/2, showing a goat. Contribution: 1/6.\n- **Car behind door 2 (prob 1/3):** the host would have shown the car, so this case is ruled out.\n- **Car behind door 3 (prob 1/3):** the host opens door 2 with probability 1/2, showing a goat. Contribution: 1/6.\n\nGiven a goat was revealed, the car is equally likely behind door 1 or door 3, so each has a 1/2 chance.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 106,
+    "output": 744
+  },
+  "cost": 0.00038260000000000003,
+  "at": "2026-10-14T01:50:21.880Z"
+}

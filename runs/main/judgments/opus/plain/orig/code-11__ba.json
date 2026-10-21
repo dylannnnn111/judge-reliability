@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-11",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses rank the same core issues in the same order:\n1. The check-then-act race in `reserve`.\n2. The process-local `threading.Lock`, with the fix being an atomic DB `UPDATE ... WHERE qty >= ?` or `SELECT ... FOR UPDATE`.\n3. Missing `qty` validation.\n4. Unguarded `release`.\n5. The single global lock.\n\nBoth are technically correct and well prioritized.\n\nB has slightly richer content in places. It mentions abandoned carts needing expiry, the lock being held during DB I/O, and a `None` return from `get_stock` causing a `TypeError`. A's final point, that `available()` is only advisory, adds less value.\n\nHowever, the user set an explicit limit of under 200 words. A comes in at roughly 200, a borderline miss. B runs to about 230, clearly over. B's extra material is what pushes it past the limit. It is also secondary, and doesn't change the ranking or the main fixes. A delivers the same essential findings, includes a concrete corrected code snippet for the top bug, and adheres to the length requirement far more closely.",
+  "usage": {
+    "input": 1397,
+    "output": 1816
+  },
+  "cost": 0.041908
+}

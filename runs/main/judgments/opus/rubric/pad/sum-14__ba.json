@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-14",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.** It is more accurate and keeps more of what the manager needs, though neither meets the length limit.\n\n**Accuracy:** Response A tracks the source faithfully. Response B has two problems:\n- **Wrong reason for the exclusion.** B says the Claims Lodgement and Customer Contact teams are excluded \"as their rosters will be reviewed in early 2027.\" The source gives a different reason: these teams already have rostered office days that vary by shift. The 2027 review is a consequence, not the cause.\n- **Overstated common day.** B says all members will be in the office together on the common day. The source only says team leaders set at least one common day so people can meet in person.\n\n**Points the reader needs:** A covers everything that matters. B omits several useful points:\n- current equipment is kept;\n- lockers will be available;\n- questions go to managers first, with a Q&A on the intranet.\n\n**Concision:** Neither stays under 120 words.\n- A runs to about 144 words.\n- B is longer, at roughly 190 words. Its extra words are filler, such as the \"This section sets out…\" introduction and \"The change responds to two main drivers.\" So it is further over the limit and gives less.\n\nVerdict: A",
+  "usage": {
+    "input": 1590,
+    "output": 1725
+  },
+  "cost": 0.04086
+}

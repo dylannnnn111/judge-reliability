@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-08",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses mishandle the fault date. The customer only said the fridge stopped \"on Sunday\" in a 2 Oct message. The ticket's own clues (Priya's \"Monday\" call had already happened by 6 Oct) put that Sunday at 28 Sept.\n\n**Response A** first says the fridge failed on 4 Oct, which is wrong, and then retracts it in a closing note saying the date isn't precisely stated. The retraction leaves the reader with the right understanding, but the text is messy and unprofessional. It also runs well over the 120-word limit, at roughly 160 words. The rest is accurate: the replacement, Frostline's separate collection with two possible calls, the outstanding claim form, the $500 threshold, the escalation to Amara Osei on 9 Oct, and the customer's frustration.\n\n**Response B** is clean, within the word limit, and covers the key points, including Jason being on leave and Priya covering. But it states the fault date as 29 September with confidence. The ticket never gives that date, and it is probably wrong (a Monday, not the Sunday). That is a fabricated fact that stays uncorrected.\n\nAccuracy comes first. B leaves a confident, invented date standing, while A flags and withdraws its error. A's self-correction is clumsy, and it breaks the length constraint. Even so, B's uncorrected error is the more serious problem under the stated priorities, so A is the narrow winner.\n\nVerdict: A",
+  "usage": {
+    "input": 1640,
+    "output": 1619
+  },
+  "cost": 0.01947
+}

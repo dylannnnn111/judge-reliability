@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-40",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A: accurate in its figures (1,622 students, 11 schools, 1.8 vs 1.1, 0.7 not significant, 71%, clear label-free bottles, limitations). It says \"Allowing water is free, low-risk and popular.\" That fits the source. Word count: roughly 105 words, which is under 120.\n\nResponse B: it is about 250 words, well over the 120-word limit, which breaks an explicit constraint. It also contains filler such as \"it is useful to start with the central comparison.\" It says \"no significant problems,\" but the source says no reports of problems, so that is a slight alteration. It also says \"Most students (71 per cent)\" and \"Riverstone ... set out to examine,\" which is fine. It omits the teachers' calmer observation, which is minor.\n\nA is accurate, concise, and meets the limit. B violates the word limit and is wordy.\n\nVerdict: A",
+  "usage": {
+    "input": 1601,
+    "output": 285
+  },
+  "cost": 0.006052
+}

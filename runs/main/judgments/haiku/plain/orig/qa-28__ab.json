@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-28",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. Both responses run slightly over 120 words by my count (roughly 134 for A and 126 for B), but B is closer to the limit. B also states that resizing keeps the amortized insert cost at O(1), which is the key performance point. A's Java-specific tree detail is accurate but less central.\n\nB",
+  "usage": {
+    "input": 690,
+    "output": 918
+  },
+  "cost": 0.000528
+}

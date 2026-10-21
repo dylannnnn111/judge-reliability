@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "code-01",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response identifies the main real problems: no idempotency, which matters most for a nightly billing job; partial failure with no per-customer handling; float money with the `int(amount * 100)` truncation bug (19.99 becoming 1998 cents); missing input validation, including NaN/inf strings that `float()` accepts; and the lack of a billing-period boundary. The ranking is sensible, and most items come with a concrete fix. Two weaknesses stand out. First, the response runs roughly 280 words, over the 200-word limit the user set. Second, the opening sentence is filler, and the final \"minor\" item (holding the file in memory, no currency) is padding that adds little for a nightly job of this size. The hard-coded tax point is a reasonable but secondary observation.\n\nScore: 6",
+  "usage": {
+    "input": 1121,
+    "output": 742
+  },
+  "cost": 0.00048310000000000003
+}

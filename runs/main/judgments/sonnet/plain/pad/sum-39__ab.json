@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-39",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** Both responses exceed the 120-word limit, but A is only slightly over, at about 126 words. B runs to roughly 170 words, so it breaks the constraint much more badly.\n\nA also stays faithful to the source. B adds a \"net cost of about $33,000\" figure that the article never states. The $19,000 was staff time, which may not be a real saving. B also pads with phrases like \"It is also worth noting\" and \"To make sure the policy is working as intended.\"\n\nA is tighter and easier for a busy manager to scan.\n\nA",
+  "usage": {
+    "input": 1342,
+    "output": 1102
+  },
+  "cost": 0.013704
+}

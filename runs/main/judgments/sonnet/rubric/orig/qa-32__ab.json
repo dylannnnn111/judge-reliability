@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-32",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are factually correct. Each gives the 365.2422-day year and the divisible-by-4, 100 and 400 rules, and each applies them correctly to 1900 and 2000.\n\nResponse A adds useful detail: the 6-hour yearly drift, the 11-minute overcorrection, and the Gregorian date. But the user asked for under 120 words, and a careful count puts A at about 122–125 words, depending on how the arrows are counted. That breaks an explicit constraint.\n\nResponse B is roughly 85 words, well within the limit. It still gives the core reasoning: the orbit is not a whole number of days, and the century rule corrects the small excess. It is clear and complete enough for the question.\n\nSince the two are equal on correctness, B's compliance with the word limit decides it.\n\nVerdict: B",
+  "usage": {
+    "input": 702,
+    "output": 1427
+  },
+  "cost": 0.015674
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-03",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses get the core facts right: the time window, the 2,391 of 4,812 failures, the 1,940 retries, the 451 abandoned orders, the $41,900 estimate, the 312 support contacts, and the owners and dates for the open actions. Response A is slightly more precise on detection, since it correctly places the 11:35 escalation as a detection point. However, it runs to roughly 124 words, which breaks the under-120 limit. Response B stays within the limit, states the cause up front, and marks completed actions clearly. Its one weak point is \"Support escalation led to the fix,\" which loosely credits escalation for a fix the on-call engineer's diagnosis and the 12:58 rotation change actually produced. That is a minor misattribution, less consequential than A overrunning the word limit, so B is the stronger summary overall, though only narrowly.\n\nVerdict: B",
+  "usage": {
+    "input": 1597,
+    "output": 2062
+  },
+  "cost": 0.0011907
+}

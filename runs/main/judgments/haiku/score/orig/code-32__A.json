@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-32",
+  "side": "A",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The response catches the most important bug: `BETWEEN '2026-09-01' AND '2026-09-30'` drops September 30 orders placed after midnight, which understates revenue. It also correctly flags integer division truncating the averages, and the redundant `HAVING` alongside the inner join. Its fixes are concrete and mostly correct. The status-filter point about NULLs is real, though the claims about cancelled or partial refunds are speculative without the schema. The timezone and parameterization point is valid but minor. The main weakness is the user's explicit \"under 200 words\" limit, which this response exceeds (roughly 250+ words). Its ranking is sensible, with the date bug first and the integer division second.\n\nScore: 7",
+  "usage": {
+    "input": 1139,
+    "output": 949
+  },
+  "cost": 0.0005884
+}

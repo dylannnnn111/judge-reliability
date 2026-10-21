@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-26",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** Both responses lead with the same main bug: `qty` stays a string, so `o.items` is built by string concatenation. A's example (`\"023\"`) is correct, and it ranks the remaining issues sensibly. It puts `NaN` breaking the sort comparator second, which is a real consequence for `topOrders`. A also stays just under the 200-word limit.\n\nB has weaker content and runs slightly over the limit by my count:\n- It claims `topOrders` has no tie-breaker and so orders equal totals \"unpredictably across runs/engines\". That is wrong for modern JavaScript, where `Array.prototype.sort` has been stable since ES2019.\n- Its last bullet says empty input yields a bogus row and then admits `slice(1)` handles it, so it is noise rather than a problem.\n- It does not connect `NaN` to the broken sort comparator, which A does.\n\nB's useful additions are library suggestions and `Object.create(null)`, but these are minor next to its errors and padding.\n\n**A**",
+  "usage": {
+    "input": 1582,
+    "output": 2011
+  },
+  "cost": 0.023274
+}

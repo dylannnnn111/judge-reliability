@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-02",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "A is better. It is concise and stays close to the 120-word limit, while B runs well over it with a filler opening sentence. A also covers the key facts and actions clearly. B adds the air conditioning servicing, but that is a minor detail.\n\nA",
+  "usage": {
+    "input": 1588,
+    "output": 988
+  },
+  "cost": 0.0006527999999999999
+}

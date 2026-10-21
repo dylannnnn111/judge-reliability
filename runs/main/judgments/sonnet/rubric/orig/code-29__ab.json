@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-29",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the critical bug first: `NOT IN` against a subquery containing NULLs returns no rows. Both give the same correct `NOT EXISTS` fix and the `IS NOT NULL` alternative. Both also catch the same two other real problems: the `2026-01-01` filter contradicts \"never referred\", and `LIMIT 5000` with `ORDER BY created_at` always picks the oldest customers. Their rankings are the same and sensible.\n\nThe differences are in the minor items:\n- **Response A** adds a date-format caveat, noting the SQLite specificity and the string-comparison dependence on ISO storage. This is accurate and relevant, and it stays on the code under review.\n- **Response B** gives a slightly richer fix for the date filter (avoid the hardcoded date) and for the limit (track who was already sent to). Its date-format note is a bit imprecise, since full ISO timestamps compare fine against a date-only string. Its extra bullet about duplicate emails, bounced or suppressed addresses, and earlier campaigns is speculative. Nothing in the request suggests those requirements, so it is generic noise that flags things not shown to be wrong.\n\nBoth run close to the 200-word limit. A is slightly tighter and avoids the speculative scope creep, so A is marginally better.\n\nVerdict: A",
+  "usage": {
+    "input": 1568,
+    "output": 952
+  },
+  "cost": 0.012656
+}

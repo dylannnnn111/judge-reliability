@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-05",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-opus-5-5",
+  "text": "**TIE**\n\nBoth responses give the correct answer, Friday, 28 February 2025. The weekday reasoning in each is accurate: 365 days is 52 weeks plus 1 day, so Thursday moves to Friday.\n\nBoth also cite 2025 not being a leap year as the reason for the date. That reasoning is slightly imprecise in each, since 365 days from 29 February lands on 28 February regardless. Neither has a meaningful edge in clarity or correctness, and both are within the word limit.",
+  "usage": {
+    "input": 322,
+    "output": 714
+  },
+  "cost": 0.015568
+}

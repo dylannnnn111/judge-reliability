@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-30",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the most important bug: `COUNT(*)` counts the NULL-filled row from the LEFT JOIN, so idle agents show 1 instead of 0. Both also correctly flag the `COALESCE(..., 0)` that makes idle agents look like they have perfect response times. Both note that `AVG` silently skips NULL `first_response_mins`.\n\nResponse A goes further on that third point. It explains that unanswered tickets are the slowest, so dropping them biases the average toward fast responders, and it offers concrete alternatives. Response A also raises the missing time window, which matters because the report is labeled \"weekly\" but covers every open ticket regardless of age. Response B misses this. Response A's integer-truncation point is database-dependent, but it says so, and it is a real issue on SQL Server. Its note that the `status` filter is correctly placed in `ON` is a useful confirmation.\n\nResponse B's point 4 (hard-coded `status` and `active` values) is speculative and vaguer. Its point 5 (state the scope in the email) is a weak, low-value suggestion. Response B's strength is the suggestion to render NULL as \"n/a\" or \"–\", which is practical, but Response A covers the same idea.\n\nOverall, Response A finds more of the substantive problems, ranks them sensibly, and gives more precise fixes, all within the word limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1492,
+    "output": 955
+  },
+  "cost": 0.0006267
+}

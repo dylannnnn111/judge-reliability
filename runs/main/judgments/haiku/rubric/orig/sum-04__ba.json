@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-04",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate on the key figures, dates, and conditions. Response A is more complete: it notes that the leave is on top of government Parental Leave Pay, that earlier arrivals keep the old entitlements, and that super covers the government-funded portion \"up to 18 weeks.\" It also gives the manager a practical point to act on (planning rosters for split leave). However, at roughly 135 words it breaks the explicit under-120 limit. Response B stays just under 120 words and is accurate, but it drops the Parental Leave Pay context, the \"regular and systematic\" qualifier for casuals, and the \"up to 18 weeks\" limit on super. It also does not explicitly state that earlier arrivals keep the current entitlements, though the eligibility sentence implies it. Since the user set a hard word limit and B's omissions are minor, B serves the busy manager slightly better overall.\n\nVerdict: B",
+  "usage": {
+    "input": 1508,
+    "output": 1628
+  },
+  "cost": 0.0009647999999999999
+}

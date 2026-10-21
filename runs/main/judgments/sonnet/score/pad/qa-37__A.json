@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "qa-37",
+  "side": "A",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The content is accurate: Uluru is arkose sandstone, its surface iron-bearing minerals oxidize into iron oxides (rust), the interior is grey, and the sunrise/sunset glow comes from the low angle of the light and the scattering of blue wavelengths.\n\nThe main problem is the length limit of under 120 words. Counting the response, the first paragraph is about 85 words, the second about 50, and the third about 75, so the total is roughly 210 words. That is nearly double the limit, so the response clearly violates an explicit instruction.\n\nThe filler also adds nothing: \"it is worth looking at how that color comes about\" and \"It is also worth noting\". The core answer (rust on the surface) is correct and well explained, but the format constraint is clearly violated. Under the rubric, correctness comes first. The answer is correct, but breaking an explicit constraint by this much should lower the score substantially.\n\nScore: 4",
+  "usage": {
+    "input": 571,
+    "output": 297
+  },
+  "cost": 0.004112
+}

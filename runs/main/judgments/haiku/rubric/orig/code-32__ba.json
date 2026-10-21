@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-32",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the same core issues: the `BETWEEN` upper bound drops September 30 orders after midnight, integer division truncates the averages, the `<>` status filter mishandles NULLs, and the inner join drops zero-order stores. Both give correct half-open-range and cast fixes. Response A's `AVG()` fix is cleaner than B's manual `* 1.0` casts. A also hedges appropriately on which statuses should count, while B asserts `('paid', 'fulfilled')` without knowing the schema. A's minor list adds a valid point about the missing `ORDER BY` tiebreaker. B's point that the status filter ignores partial refunds is a fair addition, but it is not a major gap. A's assumption that zero-revenue stores should appear is slightly presumptuous, but B makes the same point conditionally. Overall the two are close, with A's fixes and hedging slightly more precise.\n\nVerdict: A",
+  "usage": {
+    "input": 1830,
+    "output": 1310
+  },
+  "cost": 0.000838
+}

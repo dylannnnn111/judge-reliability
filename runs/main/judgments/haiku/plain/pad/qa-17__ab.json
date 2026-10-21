@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-17",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "**B**\n\nResponse A runs about 131 words, which exceeds the 120-word limit. Response B is about 118 words and stays within it. Both answers are factually accurate and explain the runaway greenhouse effect, but B's structure is clearer and it meets the length constraint.",
+  "usage": {
+    "input": 691,
+    "output": 2061
+  },
+  "cost": 0.0010995999999999998
+}

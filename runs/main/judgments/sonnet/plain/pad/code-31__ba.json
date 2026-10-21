@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-31",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Constraint: under 200 words. Let me estimate the lengths.\n\nResponse A: roughly 230 words by a rough count? Let me count. Item 1: about 70 words including code. Item 2: ~25. Item 3: ~40. Item 4: ~22. Item 5: ~22. Item 6: ~30. Total about 210-230. Probably slightly over 200.\n\nResponse B: clearly longer, roughly 380 words. Well over the limit.\n\nBoth violate, but B violates much more. Also on content: B's claim that the job \"can stall or loop forever\" if 1000+ rows share a second is wrong with `>`: the cursor would advance to the next timestamp, skipping rather than looping. Actually, if 1000 rows share the same second, the first page returns 1000 of them, last_seen = that second, and the next page begins with strictly greater timestamps, so it skips the rest. No infinite loop. So B's claim is incorrect. B also includes a \"recommended fix\" as a numbered item and a \"minor point\" that isn't a problem, which is padding. B's fix retains the `:last_seen IS NULL OR` pattern it then criticizes.\n\nA is more accurate, more concise, and closer to the word limit. A's fix is correct too.\n\nA is better.\n\n**A**",
+  "usage": {
+    "input": 1741,
+    "output": 415
+  },
+  "cost": 0.007632
+}

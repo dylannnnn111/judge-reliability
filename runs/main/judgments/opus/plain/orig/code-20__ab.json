@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-20",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B is better.**\n\nBoth responses find the same main bug: DST changes make the day gap 23 or 25 hours, and `Math.floor` then miscounts. Both explain the spring-forward and fall-back cases correctly. Both propose the same sound fix of comparing calendar dates in UTC.\n\nThe difference is accuracy about the overdue list:\n\n- **Response A** says the fall-back error \"may land [an invoice] in the wrong place on the overdue list.\" That is wrong. `overdueInvoices` only checks `< 0`. Flooring never turns a negative value non-negative or a non-negative value negative. Membership in the list is unaffected; only the label text is wrong.\n- **Response B** explicitly and correctly states the overdue list is unaffected because the sign is preserved.\n\nResponse B's spring-forward example is a bit muddled. It uses a \"3 days away\" calculation and then talks about \"Due tomorrow\" becoming \"Due today.\" The underlying claim is still correct.\n\nThe remaining points are similar in both:\n\n- **Malformed input:** both note it yields `NaN`, which renders \"Due in NaN days\" and silently drops the invoice from the overdue list.\n- **Timezone and staleness:** both raise viewer-timezone dependence and labels going stale after midnight. B gives slightly more actionable advice on the timezone point.\n\nOn length, both are near the 200-word limit. A looks wordier and is more likely to exceed it.\n\n**B**",
+  "usage": {
+    "input": 1703,
+    "output": 864
+  },
+  "cost": 0.024092
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-03",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly rank SQL injection first and give the same parameterized fix. Both also correctly note that `with sqlite3.connect()` does not close the connection. Response A's remaining points are more important for this context: it flags missing authorization and audit logging, which matters because the code exposes customer PII through a support portal. Response B's main secondary points, case-sensitive email matching, missing ORDER BY/LIMIT, and the redundant `if not rows` check, are real but lower impact. B also mentions audit logging only in passing at the end. B is also noticeably longer and further over the 200-word limit, with extra prose that adds little. A's hardcoded-path and input-validation points are minor but valid. Overall, A identifies the more important issues and stays more concise.\n\nVerdict: A",
+  "usage": {
+    "input": 1738,
+    "output": 703
+  },
+  "cost": 0.0005252999999999999
+}

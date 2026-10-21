@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-01",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both summaries are accurate on the essentials. They give the new deadline (Friday 30 October, close of business), note it moved up from 4 November, and list the three deliverables. Both include the new template's path, the software subscriptions reason, the variance threshold (\"whichever is smaller\" / \"the smaller of\"), the no-screenshots rule, leave cover and Marcus's optional Thursday 2pm session. Neither introduces an error, and both come in at roughly 119 words, under the limit.\n\nThe differences are small but favour A:\n\n- **Who decided:** A says the CFO brought the meeting forward. B just says it \"has been brought forward\", which is not wrong but drops who made the decision.\n- **The urgent instruction:** A keeps \"call today rather than emailing\", the one action Priya stressed. B keeps \"call Priya today\" but drops the \"rather than emailing\" nuance.\n- **Placement:** A puts that urgent instruction right after the deadline. B leaves it to the final sentence.\n- **Format:** A's headed, bulleted layout is easier for a busy manager to scan. B is a single dense paragraph.\n\nOn concision they are essentially equal, so A's slightly fuller and better-organised version is the stronger one.\n\nVerdict: A",
+  "usage": {
+    "input": 1412,
+    "output": 1562
+  },
+  "cost": 0.036888
+}

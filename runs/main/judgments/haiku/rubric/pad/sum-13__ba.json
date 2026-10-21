@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-13",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is accurate throughout. The sample date, the 24-hour health department notification, the disinfection, the clear resample, the cause (a missed contractor visit that was not reported to the client), the $7,350 cost recovery, and the fortnightly sampling all match the report. It leads with the decision needed, which suits a busy manager. It runs slightly over 120 words (roughly 130), a minor breach.\n\nResponse B is much longer (around 250 words) and contains factual errors. It says the resample was \"taken on 9 October\", but it was taken on 6 October; 9 October is when the result came back. It also says the contractor \"visited monthly and missed this fault during those visits\", which contradicts the report: the contractor missed the monthly visit entirely, so the pump failure went unnoticed. These errors affect the account of cause, which the manager needs to get right. B also omits the fortnightly sampling and the tenant notification, and its padding (\"I am writing to provide an update\", \"happy to provide further details\") adds nothing useful.\n\nResponse A is accurate, concise, and keeps the points the manager needs. Response B is wordier and misstates both a date and the cause.\n\nVerdict: A",
+  "usage": {
+    "input": 1672,
+    "output": 1278
+  },
+  "cost": 0.0008062000000000001
+}

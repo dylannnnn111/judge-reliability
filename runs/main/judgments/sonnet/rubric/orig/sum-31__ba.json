@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-31",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are accurate on the core figures: the 10% speed gain (142 to 156), error rates of 0.62% to 0.41%, the 17% gain for new workers, 64% preference, $210,000 setup, 14-month payback, and the single-company, grocery-only limitation. Neither misstates anything important.\n\n**Accuracy:** Response A is clean. Response B adds a \"Takeaway: Worth considering, especially for sites with many newer staff.\" The source never says this, so it is the summariser's own recommendation. It follows reasonably from the results but goes beyond the text.\n\n**Coverage:** B keeps two details A drops: the smaller accuracy gain at the already-low-error centre, and the complaint about less chat with colleagues. These are useful but secondary. A covers the main points a manager needs, including the heat discomfort and the limitation.\n\n**Concision and constraint:** The request said \"under 120 words.\" A is about 104 words. B comes to about 120 words by my count, including the title and labels, so it is at or over the limit and not under it. B's bulleted format is easy to skim, but it spends words on headers and labels.\n\nA meets the word limit with room to spare and adds nothing unsupported. B's extra detail is modest, and it risks breaking the explicit limit and includes an unsupported recommendation.\n\nVerdict: A",
+  "usage": {
+    "input": 1470,
+    "output": 2374
+  },
+  "cost": 0.02668
+}

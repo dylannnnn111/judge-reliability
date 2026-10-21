@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-16",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.**\n\n**Real issues found.** Both catch the real problems:\n- `sortByPrice` mutates its input.\n- There is no input validation.\n- Totals need server-side recomputation.\n- Discount-code matching is brittle.\n- `formatAud` mishandles negatives and lacks thousands separators.\n\n**GST handling.** This is arguably the most consequential issue in Australian context. Prices there are normally GST-inclusive, so adding 10% on top likely overcharges customers. B ranks it first and explains why it matters and how to fix it (extract GST rather than add it). A mentions it only as a last-place \"verify this is intended,\" which badly underweights it.\n\n**Things flagged that are fine.**\n- A lists \"uses `==` instead of `===`,\" but comparing a string to a string literal makes no behavioural difference, so this is a non-issue.\n- A's rounding point is largely speculative. Its \"integer math\" fix of `subtotalCents * 10 / 100` is still floating-point division and doesn't really address what it claims.\n- A's complaints about expiry and usage limits are scope speculation rather than bugs.\n\n**Length.** A is noticeably longer and further past the 200-word limit. B is tighter, though it may still slightly exceed the limit.\n\nB surfaces the most important issue at the top, ranks sensibly, and avoids A's false or weak flags.\n\nVerdict: B",
+  "usage": {
+    "input": 1699,
+    "output": 953
+  },
+  "cost": 0.025856
+}

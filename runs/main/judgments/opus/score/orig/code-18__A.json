@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "code-18",
+  "side": "A",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "**Assessment:** The response catches the most important bug and ranks it first. Its main weakness is a mild overstatement in item 6.\n\n**Correctness and coverage**\n- **#1 is correct and critical.** The cache key omits `to`, so an AUD→USD rate gets served for EUR and other currencies. This silently corrupts invoices. The fix (`fx:${from}:${to}`) is right.\n- **#2 is legitimate.** The `rate` field is never validated, and a bad value would be cached for 60s. This is a reasonable second item for an invoicing path.\n- **#3 is real.** There is no in-flight deduplication. Caching the promise and evicting it on rejection is the correct fix, and the rejection detail shows care.\n- **#4 is real.** There is no fetch timeout, and `AbortSignal.timeout` is the right fix.\n- **#5 is real.** The query parameters are unencoded, but impact is lower since currency codes are usually controlled. Ranking it fifth is sensible.\n\n**Weaker points**\n- **#6 is partly overstated.** Expired entries are overwritten when their key is next loaded, so growth is bounded by the number of distinct keys, not truly unbounded. The response does hedge (\"minor given the limited currency pairs\") and makes a fair point about the generic helper being reused.\n- **#7 is advisory.** It concerns caller behaviour, not a bug in this code. It is still relevant for money handling and is appropriately placed last.\n\n**Ranking, fixes and constraints**\n- The ordering is sensible and every item comes with a concrete fix.\n- Apart from the slight overstatement in #6, nothing that is fine gets flagged.\n- It is about 188 words, within the 200-word limit.\n\nScore: 9",
+  "usage": {
+    "input": 1052,
+    "output": 1527
+  },
+  "cost": 0.034748
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-24",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate throughout. I checked the approved amounts: $24,000 + $8,500 + $35,000 + $14,500 + $6,200 = $88,200, and $120,000 − $88,200 = $31,800 rollover, so it correctly applies the 8 October correction. The conflict, feedback deadline, acquittal conditions, Round 3 dates and quick-response grant idea all match the minutes. It comes to about 115 words, within the 120-word limit. Minor omissions: it doesn't say Jarrah's reason for the conflict, and \"reapply\" drops \"in Round 3 with revised budgets.\" Neither changes the meaning for a manager.\n\nScore: 9",
+  "usage": {
+    "input": 1333,
+    "output": 1721
+  },
+  "cost": 0.0009938
+}

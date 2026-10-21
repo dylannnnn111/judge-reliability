@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-22",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the critical flaw: `jwt.decode` never checks the signature, so anyone can forge an admin token. Both also flag the exported `SECRET`, the 403-vs-401 status problem, the unchecked `Bearer` scheme, and the unchecked `exp`. Response A adds algorithm pinning (`algorithms: [\"HS256\"]`), which guards against `none` and algorithm-confusion attacks and is arguably the most important follow-on fix. Response B omits it. Response A also gives a concrete corrected snippet, while Response B only names the replacement call. Response B's item 6 is slightly off: with an unset secret, `verify` throws and the request gets a 401, so it doesn't fail open. Response A's claim that `SECRET` is \"unused\" holds only within this file, but that's a minor point. Both exceed the 200-word limit, and Response A is somewhat tighter. Overall, Response A is more actionable and more complete on security-relevant points.\n\nVerdict: A",
+  "usage": {
+    "input": 1878,
+    "output": 939
+  },
+  "cost": 0.0006573
+}

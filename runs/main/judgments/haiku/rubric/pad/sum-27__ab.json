@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-27",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses report the same facts accurately: the 81% vs 74% headline, the free-month skew, the 2-point gap among paying customers, the $410,000 cost, Sales' overclaim, and the proposed 60-day randomised test from 21 October. Neither introduces errors, so the comparison comes down to whether the summary stays under 120 words and reads efficiently for a busy manager.\n\nResponse A is tighter and clearer, with each bullet carrying one point. It runs to roughly 130 words, so it is slightly over the limit. Response B is considerably longer, roughly 190 words, and spends words on filler such as \"To summarise,\" \"kindly\" (used twice), and a restated title. Its extra length adds no new information. Response A better meets the length constraint and the manager's need for quick, clear points.\n\nVerdict: A",
+  "usage": {
+    "input": 1648,
+    "output": 970
+  },
+  "cost": 0.0006498
+}

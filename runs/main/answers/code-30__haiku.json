@@ -1,0 +1,13 @@
+{
+  "item": "code-30",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "**Bugs and problems, most important first:**\n\n1. **`COUNT(*)` reports 1 for agents with no open tickets.** The LEFT JOIN produces one row with NULLs for each unmatched agent, and `COUNT(*)` counts that row. Use `COUNT(t.id)` so those agents show 0. This breaks the report's stated purpose of including agents with none.\n\n2. **`COALESCE(AVG(...), 0)` makes agents with no tickets look like they have a 0-minute response time.** That is misleading and will likely be read as excellent performance. Return NULL and render it as \"n/a\" or \"–\" in the email.\n\n3. **Tickets with NULL `first_response_mins` are silently excluded from the average.** If unanswered tickets are common, the average can look better than reality. Decide whether that is intended, and consider reporting the count of unanswered tickets alongside it.\n\n4. **Hard-coded assumptions.** `status = 'open'` ignores other unresolved states (e.g., pending or on hold), if they exist. `active = 1` depends on how the column is typed (boolean, `'Y'`, etc.). Confirm both match the schema.\n\n5. **Minor:** The `ORDER BY a.name` tiebreaker is fine, but the email should state the report is for open tickets only, so readers don't assume it covers all activity.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 299,
+    "output": 1082
+  },
+  "cost": 0.0005708999999999999,
+  "at": "2026-10-14T01:54:29.825Z"
+}

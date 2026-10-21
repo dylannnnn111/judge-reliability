@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-17",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A.** Response A stays under the 120-word limit (about 118 words), while Response B exceeds it (about 129). Response A also uses its words better. It is clearly structured, adds useful details (96% CO₂, even temperatures across the planet), and explains why Mercury is cooler. Response B spends words on filler phrases such as \"It is worth noting\" and \"it is also important to mention.\"",
+  "usage": {
+    "input": 691,
+    "output": 807
+  },
+  "cost": 0.018904
+}

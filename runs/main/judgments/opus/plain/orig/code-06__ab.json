@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-06",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses identify the same four core issues in the same sensible priority order: the identity check, the existence leak, the cancel race, and the missing refund. The difference is in accuracy on the most important bug.\n\n- **Issue 1 (identity check):** Response A calls the failures \"intermittent\" and dependent on how the ints were created. That understates the problem. Order and user IDs above 256, loaded from a DB and parsed from a request, are almost always distinct objects. So, as Response B says, *most* legitimate customers would be locked out of their own orders. B also adds a useful point A misses: tests with small IDs will pass and hide the bug.\n\n- **Issue 3 (race condition):** Response A's suggested conditional update is slightly more complete, since it includes `customer_id` and checks the row count. Response B explains the concrete harm (overwriting a concurrent ship or refund) and offers alternatives such as row locking and optimistic versioning. These roughly balance out.\n\n- **Issue 5 (minor):** B's point about mutating the in-memory object before `save` is valid. A's points are weaker: leaking the status string is a marginal concern, and the non-transactional `save` largely repeats issue 3.\n\n- **Length:** Both are probably a little over the 200-word limit by similar amounts, so this doesn't separate them.",
+  "usage": {
+    "input": 1393,
+    "output": 822
+  },
+  "cost": 0.022012
+}

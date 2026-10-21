@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-19",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify *gangurru* from Guugu Yimithirr as the source, note the 1770 Cook encounter near Cooktown, and label the \"I don't understand\" story a myth. Both cite Haviland's 1970s work. Response A adds a useful explanation of why the myth arose and persists, but it runs roughly 190-200 words, well over the explicit 120-word limit. Response B covers the same core facts and describes the myth's origin story, at about 125 words, close to the limit. Since the user set a clear length constraint and B meets it with no factual loss, B is the better response.\n\nVerdict: B",
+  "usage": {
+    "input": 886,
+    "output": 995
+  },
+  "cost": 0.0005861
+}

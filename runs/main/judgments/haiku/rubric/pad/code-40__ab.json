@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-40",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the most important bug: the `while` loop runs in a pipeline subshell, so `alerts` stays 0 and the script never exits non-zero. Both also share an error. They claim `[ \"-\" -gt 90 ]` aborts the script under `set -e`, but a failing test inside an `if` condition doesn't trigger `set -e`. The row is silently skipped, so the real problem is a missed check, not a crash.\n\nResponse B finds more real issues that matter in practice. Squashfs and snap mounts sit at 100% permanently, so this script would page constantly on many hosts, and Response A misses it entirely. B also catches the hung-NFS `df` problem, which can pile up cron runs, and it offers a valid `lastpipe` alternative. Its ranking and fixes are sensible.\n\nResponse B's main weakness is length. It runs well past the 200-word limit the user set explicitly, while Response A complies. The extra words do add correct and useful content, but the explicit constraint is still violated.\n\nOn substance, B is stronger. The length violation keeps the margin from being decisive.\n\nVerdict: B",
+  "usage": {
+    "input": 1967,
+    "output": 1799
+  },
+  "cost": 0.0010962
+}

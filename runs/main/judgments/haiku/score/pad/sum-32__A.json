@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-32",
+  "side": "A",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The response is largely accurate. It correctly reports the 5.79% promise, the 6.04% current rate, the August 0.25% SVR rise, Harriet's finding that the 0.90% discount was the only thing guaranteed for life, the acknowledgment of confusing wording, the $250 credit, and the customers' continued dissatisfaction and request for a call. The closure flag is a fair observation. It omits the escalation options (Internal Dispute Resolution and AFCA), which a manager may need to know about, and it does not clearly state that the lending team is arranging the fixed-rate call. Its main failure is length: the body runs to roughly 160 words, well over the 120-word limit the user set for a busy reader. Accuracy is strong, the key points are mostly covered, but the concision requirement is clearly missed.\n\nScore: 5",
+  "usage": {
+    "input": 1255,
+    "output": 1119
+  },
+  "cost": 0.000685
+}

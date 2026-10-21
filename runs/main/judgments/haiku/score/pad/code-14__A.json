@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "code-14",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response catches the most serious bug: OFFSET pagination combined with deleting the rows just read skips rows, so each run archives only about half the backlog. It correctly explains the mechanism and gives a fix (keyset pagination or always fetching from the start). The crash-safety and duplicate-archiving point is also real, and the string-comparison concern on `created_at` is a plausible risk. Ranking is sensible, with the critical bug first. The performance point about the missing `(created_at, id)` index is useful, though the advice to raise the batch size is weak, since commit overhead is minor here.\n\nThe main weakness is the explicit length limit. The response runs to roughly 250 words, over the requested 200, and some of that is wordy filler. It also misses a notable issue: the archive write and the delete are not coordinated, so a failed `archive` call midway through a batch is not handled.\n\nOverall the substance is accurate and well prioritized, but it breaks the stated word limit and has minor gaps.\n\nScore: 6",
+  "usage": {
+    "input": 1074,
+    "output": 964
+  },
+  "cost": 0.0005894
+}

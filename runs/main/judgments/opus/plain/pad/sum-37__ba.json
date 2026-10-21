@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-37",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse A runs to about 210 words, far over the 120-word limit. It wastes words on filler such as \"I'm pleased to report,\" \"I'd like to draw your attention,\" and \"To summarise the financial position.\" It also says \"no decision yet\" twice.\n\nResponse B is about 125–140 words. That is still slightly over the limit, but much closer. It is direct and keeps every key point: the Amber status, Tomas's departure, the 5–6 week delay, the three options with costs and caveats, the sponsor approval, the budget, and the next update date. It drops the progress details, but a busy manager loses little from that. The risk, options and decision needed are what matter.",
+  "usage": {
+    "input": 1441,
+    "output": 1074
+  },
+  "cost": 0.027244
+}

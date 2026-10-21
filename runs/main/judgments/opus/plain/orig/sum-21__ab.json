@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-21",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth summaries are accurate and stay under 120 words. Response A comes in at about 119 words, right at the edge. Response B is about 110.\n\n1. **Deadline up front.** B's headline, \"decision needed by 24 October\", gives a busy manager the most urgent fact immediately.\n2. **Useful synthesis.** B works out the cost of missing the deadline: two months of hire cars for six vehicles comes to about $21,600. That sets the cost of delay against the $13,140 budget overrun, which helps the decision. The figure is correct (6 × $1,800 × 2).\n3. **Direct address.** B is written to the decision-maker (\"he needs your sign-off\"), which suits Ruth as the likely reader.\n\nResponse A is still good. It has a clear \"Decision needed\" line and keeps the Coastal Fleet detail. That detail matters less, though, since Coastal is not a real contender.",
+  "usage": {
+    "input": 1364,
+    "output": 1849
+  },
+  "cost": 0.042436
+}

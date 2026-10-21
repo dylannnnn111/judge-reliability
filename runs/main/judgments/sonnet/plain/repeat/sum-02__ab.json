@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "sum-02",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. The only explicit constraint was a limit of under 120 words, and the two responses differ on it.\n\n**Length:**\n- **Response A** comes to about 116 words in the bullets and closing line. With its title, it is roughly 123–124 words, so it likely breaks the limit.\n- **Response B** comes to about 112 words including its title, so it stays safely under.\n\n**Content:**\n- **Response A** is slightly richer. It includes the 11 vs 64 visitor figures and flags the action for managers clearly.\n- **Response B** drops that data. It also says the roof \"needs\" full replacement, when the contractor only recommended it, and it spends words on the routine air conditioning service.\n- Both capture the key decisions, the deadlines, and the lack of agreement on opening hours.\n\nB's content flaws are minor, while A's overshoot is a failure on the one hard instruction.\n\n**B**",
+  "usage": {
+    "input": 1467,
+    "output": 1846
+  },
+  "cost": 0.021394
+}

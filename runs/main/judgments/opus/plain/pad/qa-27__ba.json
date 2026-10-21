@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-27",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A explains the science accurately and stays under 120 words (about 105). It covers the hexagonal lattice, the roughly 9% lower density, surface insulation, and the 4°C density maximum.\n\nResponse B covers the same content correctly but runs to about 250 words, more than double the limit. Filler such as \"Put another way…\" and \"It is worth considering…\" adds length without substance.",
+  "usage": {
+    "input": 772,
+    "output": 244
+  },
+  "cost": 0.007968
+}

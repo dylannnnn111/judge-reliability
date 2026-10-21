@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-10",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct answer, 1/3, and both explain the key point: the \"at least one girl\" condition removes only BB, and the 1/2 intuition applies only when a specific child is known to be a girl. Response A runs about 140 words, over the 120-word limit. Response B runs about 100 words, within it, and covers the same reasoning more tightly. Response A's \"the reason is worth spelling out\" is filler, while B's closing explanation of why the mixed families outnumber the two-girl families adds a useful point. Since B meets the length constraint and is at least as clear, B is better.\n\nVerdict: B",
+  "usage": {
+    "input": 777,
+    "output": 863
+  },
+  "cost": 0.0005092
+}

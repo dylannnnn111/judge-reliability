@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-36",
+  "side": "B",
+  "score": 8,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Everything checks out against the source.\n- The 48-month term from 3 November 2026 is correct.\n- The 22 printers, consumables and 8-business-hour response are correct.\n- The $3,480 plus GST fee, fixed for 24 months with rises of up to 4% a year from month 25, is correct.\n- The page allowances and overage rates (0.9c and 6.5c) are correct.\n- The $195 figure is right: 3,000 excess colour pages × 6.5c = $195.\n- The 75% early-exit cost \"even if enrolments fall\" is correct.\n- The month-by-month rollover at the same fee is correct.\n\nThere are two small framing gaps:\n- The 18,000-page figure loses its \"last year\" anchor, so it reads as settled fact rather than a basis for estimating.\n- \"Early exit: Costs 75%…\" implies an exit option exists. The source says there is *no* early exit option, only a payout. The penalty still comes through, so this is a nuance rather than an error.\n\n**Coverage:** It keeps the points a manager needs: cost, the colour-overage risk, the price review, the exit penalty and the rollover trap. It omits three things:\n- The lease was already signed by the Business Manager on 15 September. This is useful context, because it tells the manager this is a commitment already made, not a proposal.\n- The account manager contact, Priyanka Shah.\n- The buy-out price will be \"agreed then\", not fixed now.\n\nNone of these is critical, but the signed status would have been worth a few words.\n\n**Concision:** About 114 words, so under the limit. It is tight, scannable and has no padding.\n\nOverall it is a strong, accurate summary with minor omissions of context.\n\nScore: 8",
+  "usage": {
+    "input": 1126,
+    "output": 2097
+  },
+  "cost": 0.046444
+}

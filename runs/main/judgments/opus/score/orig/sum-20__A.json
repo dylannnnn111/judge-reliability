@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-20",
+  "side": "A",
+  "score": 4,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** The summary is faithful to the email. The date, times, venue, the 31 October dietary deadline, the 4:15pm pub, and Tariq's and Ella's roles are all correct. One small issue: \"set no more than five priorities\" turns Hannah's stated goal (\"I'd like us to leave the day with...\") into a fixed plan, which slightly overstates it. It also leaves out that the prep notes don't need to be sent beforehand, though that matters little.\n\n**Coverage:** It keeps every point the reader needs: logistics, agenda, prep, the food deadline, the optional drinks and the out-of-office arrangement.\n\n**Concision:** This is the main failure. The summary runs to about 154 words, well over the explicit 120-word limit. The excess comes from detail a busy manager doesn't need, such as the street address, the ten-minute drive, free parking and the bus number. These are near-verbatim carry-overs rather than condensation. Cutting the venue to \"Lakeside Community Centre, Canberra\" and tightening the prep list would have fitted the limit easily without losing anything important.\n\n**Overall:** The response is accurate and complete but clearly breaks the hard length constraint and under-compresses for its stated audience.\n\nScore: 4",
+  "usage": {
+    "input": 1086,
+    "output": 1452
+  },
+  "cost": 0.033384
+}

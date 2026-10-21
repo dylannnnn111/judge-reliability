@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-33",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are factually correct: tidal locking, a 27.3-day period, libration, about 59% of the surface visible over time, and the far side getting sunlight. The deciding factor is the \"under 120 words\" limit.\n\nResponse A comes to exactly 120 words by my count, so it is not under 120. It does add a useful mechanism, the tidal bulge and internal friction. Response B is comfortably under the limit at roughly 90 words and still gives the key reasoning: tidal friction slowed the spin until it matched the orbit. Since A fails an explicit constraint and its extra detail is only modest, B is better.\n\nVerdict: B",
+  "usage": {
+    "input": 677,
+    "output": 1152
+  },
+  "cost": 0.012874
+}

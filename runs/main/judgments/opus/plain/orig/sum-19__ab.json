@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-19",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse B is better suited to a busy manager. Its bullet layout is easy to scan, and its \"Key risk\" label puts the most important point up front: Brightside could stay liable for rent for the rest of the term. It also keeps details A drops, such as the buyer's two years of accounts.\n\nOn length, A runs to about 129 words, which breaks the 120-word limit. B is about 128 with its heading but about 118 without it, so it complies more closely.\n\nB has two small weaknesses:\n- It slightly overstates the liability (\"we remain liable\") where the source says the tenant *could* remain liable.\n- It leaves out the Kingsley Property Group contact for consent forms.\n\nNeither response mentions that a guarantor may also stay liable.",
+  "usage": {
+    "input": 1361,
+    "output": 2134
+  },
+  "cost": 0.048124
+}

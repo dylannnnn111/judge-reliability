@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "code-13",
+  "side": "B",
+  "score": 7,
+  "model": "claude-opus-5-5",
+  "text": "The issues it raises are real, and the most important ones come first.\n\n**Accuracy**\n- **December crash (#1):** correct. It slightly overstates \"any subscription that starts in December\": with `months=1` the loop never runs, so nothing crashes.\n- **Day overflow (#2):** correct. Dates on the 29th–31st fail when the next month is shorter.\n- **Schedule drift (#3):** a good, non-obvious insight. The fix (compute each date from `start`, clamp with `relativedelta` or `monthrange`) is right.\n- **Fixed 30-day proration (#4):** correct, including the point that a 31-day month over-bills. The suggested fix calls `next_billing_date`, which is still broken unless #1 and #2 are fixed first. That dependency is implied but not stated.\n- **Validation and rounding (#5, #6):** reasonable, accurate, lower-priority items.\n\n**Ranking and fixes**\n- The ranking is sensible: crashes first, then wrong charges, then hygiene.\n- Concrete fixes are given for the important issues.\n\n**Problems**\n- **Over the word limit:** the response runs to roughly 240 words, so it breaks the explicit \"under 200 words\" instruction.\n- **False flag in #7:** \"no timezone handling\" doesn't apply. The code uses plain `date` objects, which carry no timezone, so this is filler.\n- **Other filler:** \"Both bugs are common in real billing\" adds words but no information.\n\nThe core content is strong. The length violation and minor padding cost points.\n\nScore: 7",
+  "usage": {
+    "input": 963,
+    "output": 970
+  },
+  "cost": 0.023252
+}

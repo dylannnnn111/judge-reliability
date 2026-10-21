@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-13",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. It leads with the decision the manager must make, is well organised, and stays accurate to the source. It comes to about 126 words, slightly over the 120 limit, and its cause line is a little loose because the pump failed before the visit was missed.\n\n**A** is roughly 190 words, well over the limit. It is padded with filler (\"I am writing to provide an update…\", \"We appreciate your attention…\"). It also misstates the cause. It says the contractor \"visited monthly and missed this fault during those visits,\" but the report says a monthly visit was missed altogether. It omits the fortnightly sampling too.",
+  "usage": {
+    "input": 1518,
+    "output": 1113
+  },
+  "cost": 0.014166
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-29",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same core issues: the NOT IN/NULL bug, the date filter contradicting the intent, the LIMIT/ORDER bias, and the date-format concern. The differences are in concision and compliance with the constraints.\n\nThe user asked for under 200 words. Response A is roughly 230 words including code, which is a little over. Response B is longer still, around 330 words, and clearly breaks the limit. B also contains filler (\"The issues below are listed in order of importance, starting with the one that has the largest effect...\", \"To explain the problem...\", \"In other words\"), which wastes space.\n\nOn content, B adds a minor point about duplicates, bounces and suppression. That's speculative scope creep and not a bug in the code. A's point about the date format is precise, though it overstates the SQLite-specific part a little.\n\nA is tighter, closer to the word limit, and has no filler. B goes further over the limit. A is better.\n\n**A**",
+  "usage": {
+    "input": 1593,
+    "output": 299
+  },
+  "cost": 0.006176
+}

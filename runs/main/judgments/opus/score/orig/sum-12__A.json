@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-12",
+  "side": "A",
+  "score": 5,
+  "model": "claude-opus-5-5",
+  "text": "The figures check out against the source: the 1 November start date, free first hour, $3→$4 hourly rate, $18→$24 daily maximum, $15 weekly pass versus $9 daily concession, eligibility groups, 20 October form availability, the treating-team letter, the 1994 car park, 180 closed spaces, the 18-month repairs, and the 2,000+ petition. Attributing the repair rationale to the health service is also correct.\n\n**Accuracy problems**\n- **Unsupported saving claim:** \"This is a significant saving for regular users\" is not in the source. The source gives one carer's hedged view (\"if the weekly pass is real, we'll be paying less\"). The claim also isn't universally true: a patient who visits once a week would pay $15 instead of $9. It turns an anecdote into a general fact.\n- **Staff parking:** \"Staff parking is unaffected\" is stated as fact but comes from a union delegate. That is a minor loss of attribution and doesn't mislead much.\n\n**Coverage**\nThe key points a manager needs are all there: the new fees, the concession and how to apply, the reason, the timeline, staff impact and community pushback. Leaving out the \"not making a profit\" quote and the resident's anecdote is reasonable.\n\n**Length**\nThe response runs to about 125 words, so it breaches the explicit \"under 120 words\" limit. Cutting the editorial \"significant saving\" sentence alone (8 words) would have fixed both the length and the accuracy problem.\n\nOverall, it is accurate on facts and well organised. However, it breaks a hard length constraint and adds one overgeneralised claim that could mislead.\n\nScore: 5",
+  "usage": {
+    "input": 1046,
+    "output": 1897
+  },
+  "cost": 0.042124
+}

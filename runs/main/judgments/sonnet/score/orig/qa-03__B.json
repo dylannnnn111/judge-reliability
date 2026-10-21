@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-03",
+  "side": "B",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is correct: the relative increase is 25%, and the absolute increase is 1 percentage point. It explains the distinction clearly and shows the calculation.\n\nWord count: the user asked for under 120 words. Counting roughly:\n\n- \"The answer depends on whether you measure the change in percentage points or in percent.\" (15)\n- \"Percentage point increase: 5% − 4% = 1 percentage point\" (~9)\n- \"Percentage increase (relative):\" (3)\n- \"(5 − 4) ÷ 4 × 100 = 25%\" (~8)\n- \"So the interest rate has risen by 25% in relative terms, which is a rise of 1 percentage point.\" (19)\n- \"This distinction matters for borrowers.\" (5)\n- \"A 25% increase in the rate means that, all else equal, the interest portion of the repayments rises by 25%.\" (20)\n- \"For example, on a $400,000 loan, annual interest goes from $16,000 to $20,000 (a $4,000 increase, or 25%).\" (19)\n\nThe total is about 98 words, so it stays under the limit.\n\nThe example is correct: 4% of 400,000 is 16,000, and 5% is 20,000. The \"interest portion of repayments rises by 25%\" claim is roughly right for interest-only loans and approximately true otherwise, though slightly loose for amortizing loans. This is a minor point.\n\nThe response hedges slightly (\"depends on whether…\") but lands on 25% as the main answer. The extra example is useful but not essential.\n\nScore: 9",
+  "usage": {
+    "input": 438,
+    "output": 495
+  },
+  "cost": 0.005826
+}

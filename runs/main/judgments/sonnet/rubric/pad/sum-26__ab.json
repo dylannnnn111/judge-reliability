@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-26",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses break the 120-word limit, but Response A (about 150 words) overshoots by much less than Response B (about 200).\n\n**Accuracy:**\n- Response A is mostly accurate. \"Carried down the stairs with an evacuation chair\" is a loose paraphrase of \"helped down\", and it leaves out the 26 September approval date, which is minor.\n- Response B is also mostly accurate, but it says residents got \"printed updates every day\", when only the first notice was specified as printed. \"I am pleased to report\" is an odd first-person aside in a summary, and \"As a precaution\" is a small addition. It also says \"approved on 26 September\" without saying who approved it, whereas A names the manager.\n\n**Content:** Both cover the cause, the duration, the impact, the follow-up actions and the capital-plan request. B adds the family phone calls and the staff refresher training, which are small extras. A leaves them out, which is fine for a busy manager.\n\n**Concision:** B has a redundant opening sentence (\"This summary sets out…\") and filler phrases. It breaks the word limit much more badly. A is tighter, though still over.\n\nA is slightly more accurate on who decided what, and clearly closer to the brief.\n\nVerdict: A",
+  "usage": {
+    "input": 1653,
+    "output": 1002
+  },
+  "cost": 0.013326
+}

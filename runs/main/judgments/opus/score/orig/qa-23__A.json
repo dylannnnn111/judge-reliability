@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-23",
+  "side": "A",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The response correctly says that 0.999... equals 1 exactly, and states that up front.\n\n**Reasoning.** It gives three standard arguments:\n- **Fractions:** 3 × (1/3) gives both 0.999... and 1.\n- **Algebra:** the 10x − x subtraction gives x = 1.\n- **No gap:** no real number lies between 0.999... and 1, and \"0.000...1\" is not a valid decimal.\n\nIt then grounds everything in the formal definition: 0.999... is the limit of 0.9, 0.99, 0.999, …, and that limit is exactly 1. This is the key point that settles the question rigorously.\n\n**Weaknesses.** The fraction and algebra arguments quietly assume that arithmetic on infinite decimals works digit by digit. That is fine for an intuitive explanation, and the closing formal note covers the rigour.\n\n**Clarity and length.** The response is about 106 words, so it meets the under-120 limit. It is clearly structured with bold headers and short points, and has no filler. Three arguments plus the formal note is slightly generous, but each adds a different angle.\n\nIt is correct, well reasoned and clear. Only very minor rigour quibbles keep it from perfect.\n\nScore: 9",
+  "usage": {
+    "input": 484,
+    "output": 774
+  },
+  "cost": 0.017416
+}

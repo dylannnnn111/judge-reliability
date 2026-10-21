@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "sum-12",
+  "side": "B",
+  "score": 4,
+  "model": "claude-opus-5-5",
+  "text": "The response gets most of the facts right but breaks the word limit badly and adds one unsupported claim.\n\n**Accuracy:** Most facts are correct:\n- Start date of 1 November and first hour free.\n- Hourly rate rising from $3 to $4 and daily cap from $18 to $24.\n- Repairs to the 1994 car park, with concrete cancer closing 180 spaces, taking 18 months.\n- $15 weekly pass for chemo and dialysis patients and for carers of patients staying more than seven days.\n- A letter from the treating team is required, and forms are available from 20 October at reception or online.\n- Staff are unaffected, and the petition has over 2,000 signatures.\n\nOne claim is not supported. The response says the $9 daily concession \"will be replaced\" by the weekly pass. The source only says concessions are being \"extended\" and describes $9 as the current concession. It never says the daily rate will be abolished, so a manager could be misled.\n\n**Key points:** Coverage is good. It does omit a useful takeaway: frequent visitors like the dialysis patient's husband may actually pay less than now. That softens the \"fee hike\" framing a manager would want to know about.\n\n**Concision and constraint:** This is the major failure. The summary runs to about 190 words against an explicit limit of under 120, roughly 60% over. Much of the excess is filler such as \"I would like to let you know that,\" \"Turning to concessions,\" \"Finally, I want to reassure you,\" and \"For your information.\" The letter-style framing adds words without adding information, which is the opposite of what a busy manager needs.\n\nAccurate overall, apart from one unsupported claim, but it clearly fails the explicit length requirement and is padded.\n\nScore: 4",
+  "usage": {
+    "input": 1152,
+    "output": 1254
+  },
+  "cost": 0.029688
+}

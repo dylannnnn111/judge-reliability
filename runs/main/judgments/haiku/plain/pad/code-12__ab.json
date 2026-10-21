@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-12",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. It stays closer to the under-200-word limit, while A's eight longer items with a preamble run well over it. B also flags practical problems that A misses, such as totals exported as formatted strings (which finance can't sum) and the `$-12.34` rendering of negative amounts. A's money-formatting point is less important, and its item-count concern is speculative.\n\nB",
+  "usage": {
+    "input": 1764,
+    "output": 540
+  },
+  "cost": 0.00044639999999999995
+}

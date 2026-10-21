@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-16",
+  "side": "B",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate on its core facts: Amber status, the move from 3 to 17 November pending the 15 October approval, the six-day sandbox outage, the 24 October quoting fix, the $412k of $520k spend, the $38k impact reduced to $26k by the verbal credit, and the two decisions needed. Its one weak point is the \"clashing with the sales director's request\" line. The source doesn't say a December cut-over would clash with the training ban, though the inference is reasonable. It also drops the duplicate-records issue (1.4% of records, about 3,100 failed, medium risk) and the sales training availability risk, both of which a manager would want to know. It is concise, well under 120 words, and well organised. The omissions keep it from a top score.\n\nScore: 7",
+  "usage": {
+    "input": 1150,
+    "output": 730
+  },
+  "cost": 0.00048
+}

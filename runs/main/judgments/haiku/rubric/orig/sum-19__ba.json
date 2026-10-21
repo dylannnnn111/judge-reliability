@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-19",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses cover the same core points: written consent, the buyer requirements on assignment, the post-assignment liability risk, the subletting limits, change of control, the 28-day response period, and the need for legal advice. Both also run somewhat over the 120-word limit, so neither gains on that front.\n\nOn accuracy, Response B is more faithful to the source. It says Brightside \"may stay liable... possibly for the rest of the term,\" which matches the guide's \"could remain liable.\" Response A states flatly that \"we remain liable for the full remaining term,\" which overstates a risk the guide presents as conditional. Since this is the most important point for the manager, that difference matters.\n\nOn usability, Response A is easier to scan, with bullets and a clearly labelled \"Key risk,\" which suits a busy reader. Response B is a dense single paragraph, but it still gives the manager every essential fact in a sensible order.\n\nBecause accuracy comes first and the overstatement sits on the key risk, Response B is slightly better, though the gap is narrow.\n\nVerdict: B",
+  "usage": {
+    "input": 1515,
+    "output": 1369
+  },
+  "cost": 0.000836
+}

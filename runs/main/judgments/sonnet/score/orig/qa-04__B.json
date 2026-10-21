@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-04",
+  "side": "B",
+  "score": 10,
+  "model": "claude-sonnet-5-5",
+  "text": "The math is correct: 500 × 1.2 = 600, 600 × 0.8 = 480, and the overall change is −4%. The reasoning is clear, including the explanation of why the percentages don't cancel and the multiplier check.\n\nThe constraint is under 120 words. Counting roughly: the Step 1 and Step 2 lines come to about 16 words, the final price line to about 3, the overall change line to about 8, the explanatory paragraph to about 45, and the last line to about 12. The total is around 90 to 100 words, which is under 120.\n\nThe response is correct, concise, and clear.\n\nScore: 10",
+  "usage": {
+    "input": 427,
+    "output": 199
+  },
+  "cost": 0.002844
+}

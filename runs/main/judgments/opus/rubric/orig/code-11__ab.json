@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-11",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Verdict: B.** The two find essentially the same issues in the same order. The deciding factor is the length limit, with B's concrete code fix as a secondary edge.\n\n**Correctness and coverage.** Both responses identify the same core issues in the same sensible order:\n1. The check-then-act race in `reserve`.\n2. `threading.Lock` being process-local, fixed with an atomic conditional `UPDATE` or `SELECT ... FOR UPDATE`.\n3. Missing validation of `qty`.\n4. `release` not being tied to any reservation.\n5. The global lock serializing all SKUs.\n\nAll of these are real, and both rank them correctly.\n\n**Where they differ.**\n- **Response A** adds two points:\n  - Abandoned carts and reservation expiry, which is a useful extra.\n  - `None` handling for unknown SKUs, which is speculative because it depends on an unknown DB API.\n\n  A also describes the fix for #1 only in prose.\n- **Response B** gives a concrete corrected code snippet for #1, which makes the most important fix immediately actionable. Its #6 (\"`available()` is advisory\") is largely a restatement of #1, so it adds little.\n\n**Length constraint.** The user asked for under 200 words. By my count, Response A runs around 240 words, clearly over the limit. Response B comes in at roughly 195 words, including the code, and appears to fit. That is a meaningful instruction-following difference. A's extra words (the `None` point, gunicorn mention) don't add enough to justify breaking the constraint.\n\nVerdict: B",
+  "usage": {
+    "input": 1553,
+    "output": 1325
+  },
+  "cost": 0.032712
+}

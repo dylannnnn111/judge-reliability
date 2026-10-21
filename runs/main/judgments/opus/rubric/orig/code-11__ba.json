@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-11",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses find the same two most important bugs and rank them sensibly.\n\n1. **The split check-then-decrement in `reserve`.** This is the top issue: it causes overselling.\n2. **`threading.Lock` is process-local.** Both give the right fix: an atomic conditional `UPDATE` with a row-count check, or `SELECT ... FOR UPDATE`.\n\nBoth then cover the same secondary issues: input validation, `release` not being tied to a reservation, and the global lock.\n\n**Differences in substance:**\n- **Response A's strengths.** It gives a concrete corrected code block for #1.\n- **Response A's weak point.** Its #6 (\"`available()` is advisory\") is weak and mostly restates #1. A read method returning a momentary value is fine in itself.\n- **Response B's strengths.** It adds some useful points:\n  - Abandoned carts never release stock, so reservations need expiry. This is a real issue for cart systems.\n  - The lock is held during DB I/O.\n  - The DB read-modify-write remains racy even with the lock.\n- **Response B's weak point.** Its #6 (`get_stock` returning `None`) is speculative. It flags behaviour of an unseen API rather than a demonstrated bug.\n\n**Length constraint:** The user asked for under 200 words. Response A is roughly 210 words, including its code. Response B is roughly 230. Both overshoot, but B does so noticeably more. The rubric says extra words count only if they add correct, useful content. B's abandoned-cart point qualifies, but the None-SKU point and some of the verbosity in #1 and #2 do not.\n\n**On balance:** B has slightly richer content but breaks the explicit length limit by more and spends some words on speculation. A is tighter, nearly within the limit, and gives a direct code fix. The difference is small. I lean toward A for closer adherence to the instruction while covering the important issues equally well.\n\nVerdict: A",
+  "usage": {
+    "input": 1553,
+    "output": 2070
+  },
+  "cost": 0.047612
+}

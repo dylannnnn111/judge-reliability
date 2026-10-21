@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-05",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate. The bottom line correctly reports no significant difference in task speed or accuracy, the back-discomfort figures (31% vs 44%) match the brief, and the standing-time drop (47 to 19 minutes) and the blinding limitation are stated correctly. Its one weakness is listing \"78% felt more productive\" under \"Benefits found\" right after saying output didn't change. A busy manager could read that as a productivity gain, when it is only self-perception and the brief itself notes the gap between feeling and measured output. The response also omits the study's stated interpretation that the novelty effect means desks may be used less over time, though the standing-time caveat implies it. It stays well under 120 words and covers the points a manager needs, with no padding.\n\nScore: 8",
+  "usage": {
+    "input": 1088,
+    "output": 635
+  },
+  "cost": 0.0004263
+}

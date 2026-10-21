@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-38",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses find the most important problem: `set -e` aborts the whole run when one site's `tar` fails, and `tar` exit 1 for files changing on a live server makes this likely. Both also catch partial archives left by failed runs, unquoted variables, the missing `flock`, same-server backups, and archive permissions. Response A is stronger in three ways. It gives a more precise fix for exit 1 (tolerate it, fail on 2 or higher). It notes that pruning is skipped when the loop aborts. And it quotes the glob path as well as the `basename` and `-C` uses. Response B's `nullglob` point is a real edge case that A misses, and it handles the missing-`uploads` case well, but it is a less important issue. Neither response contains a significant false claim, and both stay under 200 words.\n\nVerdict: A",
+  "usage": {
+    "input": 1656,
+    "output": 1015
+  },
+  "cost": 0.0006731
+}

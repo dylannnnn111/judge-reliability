@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-25",
+  "side": "B",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate. Its facts, dates and numbers match the source: 347 statements, 11,200 remaining, notification on 3 October, calls by 6 October, a second reviewer from 13 October, the guide due 31 October, and remaining statements on 9 October. It also covers the key points: not a hack, what was exposed, regulatory notification, the media leak, and the fixes.\n\nIts main failure is length. The user set a hard limit of under 120 words, and the response runs to roughly 144. That is a clear breach of an explicit constraint. A few details could have been cut to fit, such as the specific data fields, the comms guide due date, and the \"As a result\" phrasing.\n\nThere are minor wording issues too. Describing the message as \"wrongly\" saying \"we've been hacked\" is a reasonable judgment, but it drops the attribution to the duty manager. \"Leaked\" is a slight characterisation, since the source says a staff member forwarded the message.\n\nAccuracy is strong and coverage is good, but the word limit is missed by about 20%.\n\nScore: 4",
+  "usage": {
+    "input": 1156,
+    "output": 1338
+  },
+  "cost": 0.015692
+}

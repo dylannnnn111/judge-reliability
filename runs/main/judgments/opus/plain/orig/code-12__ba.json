@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-12",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses catch the core issues: the N+1 queries, the crash when a customer row is missing, the non-sargable date filter, and the timezone ambiguity. Either ranking of the first two items is defensible.\n\nThe differences that favor A:\n\n- **Better secondary points.** A notes that exporting totals as formatted strings like `\"$1,234.56\"` keeps finance from summing them. It also catches the real negative-amount bug, where Python renders `$-12.34`. B's money point is weaker: it hedges that float division is \"usually fine,\" which it is for cents here.\n- **More speculation in B.** B's \"item count may be wrong\" depends on a quantity column that may not exist. The reconciliation suggestion is a feature request, not a bug. Its snapshot-consistency point is valid but minor.\n- **Length.** The user asked for under 200 words. A runs roughly 210–220 words, slightly over. B runs roughly 260, well over.",
+  "usage": {
+    "input": 1594,
+    "output": 692
+  },
+  "cost": 0.020216
+}

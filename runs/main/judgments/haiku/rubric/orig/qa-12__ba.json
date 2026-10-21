@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-12",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct answer, 671/1296 ≈ 51.8%, via the complement method, and both are under 120 words. Response A states the key reasoning more explicitly, including that the rolls are independent, which justifies multiplying the probabilities. It also lays out the steps clearly. Its Chevalier de Méré note is accurate and adds some context, though it isn't needed. Response B is correct and concise but skips the independence justification. The difference is small, and A's added explanation is useful rather than padding, so A is slightly better.\n\nVerdict: A",
+  "usage": {
+    "input": 557,
+    "output": 377
+  },
+  "cost": 0.00024419999999999997
+}

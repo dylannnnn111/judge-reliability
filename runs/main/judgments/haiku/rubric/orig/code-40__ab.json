@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-40",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the most serious bug: the `while` loop runs in a pipeline subshell, so `alerts` stays 0 and `exit 1` never fires. Both give a working fix. Both also share an overclaim. Under `if`, a failing `[ \"-\" -gt 90 ]` prints an error and evaluates as false, so `set -e` does not abort the script as they say.\n\nResponse B covers more of the real problems. Its point about inverted exit codes is accurate and useful: with `pipefail` and `set -e`, the page fires when the webhook fails, while a full disk with a working webhook exits 0. Response A mentions the webhook-failure path but frames it less clearly. Response B also flags pseudo-filesystems like squashfs snap mounts, which are always 100% and would cause false alerts on many servers. Its warning that a stale NFS mount can hang `df` is a serious operational concern for a job running every 5 minutes, and Response A misses it entirely. B's inode and unused-variable notes are minor but correct. Response A's point about duplicate alert channels is reasonable, and it is roughly covered by B's alert-spam point.\n\nResponse B is longer, but its extra content is correct and relevant rather than padding, and it stays within the word limit.\n\nVerdict: B",
+  "usage": {
+    "input": 1729,
+    "output": 1332
+  },
+  "cost": 0.0008389
+}

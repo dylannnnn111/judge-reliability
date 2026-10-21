@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-26",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** Both responses correctly attribute the effect to Rayleigh scattering. Both explain that shorter wavelengths scatter more strongly, and that a longer atmospheric path at sunset removes blue light from the direct beam. Neither contains errors.\n\n**Word limit:** Response A is about 114 words and Response B about 100, so both stay under the 120-word limit.\n\n**Key reasoning:** Response A adds two pieces that strengthen the explanation:\n- It explicitly contrasts the short daytime path with the long sunset path, which makes the cause of the difference clearer.\n- It answers the natural follow-up of why the sky isn't violet: sunlight contains less violet, and our eyes are less sensitive to it. This extra content is correct and useful, not padding.\n\nResponse B covers the core mechanism adequately but leaves the violet question unaddressed.\n\n**Clarity:** Both are clear. Response A's bolded \"during the day\" and \"at sunset\" structure maps directly onto the question's two parts.\n\nResponse A is somewhat more complete while still meeting the constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 706,
+    "output": 717
+  },
+  "cost": 0.017164
+}

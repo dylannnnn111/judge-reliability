@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-08",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B states that the fridge failed on 29 September. The ticket gives no such date. The customer only says it stopped cooling \"on Sunday\", and the thread's own weekday clues (Priya's Monday call apparently happening on 6 Oct) point to 28 September instead. A manager who won't check the original would be misled by a confident, invented date.\n\nResponse A starts with a wrong claim, \"failed on 4 Oct\", and a garbled parenthetical. It then retracts this at the end by saying the date isn't stated and to disregard the first sentence. That is messy and unprofessional, and the summary also runs well over the 120-word limit. But its final position is accurate, and the reader is told not to rely on the bad date. Its key content is correct:\n- the replacement is arranged for Wednesday;\n- Frostline will collect the faulty unit separately;\n- the food claim form is still outstanding;\n- claims up to $500 need no manager sign-off;\n- the escalation to Amara Osei applies if the form isn't sent by 9 Oct.\n\nResponse B is tidier and within the length limit, and it covers the same key points plus Jason's leave. Its fabricated date is still an accuracy fault that remains uncorrected, whereas A's error is explicitly withdrawn. Since accuracy comes first, A is slightly better despite its poor form and length overrun, though the margin is narrow.\n\nVerdict: A",
+  "usage": {
+    "input": 1640,
+    "output": 1688
+  },
+  "cost": 0.02016
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-39",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy.** Both responses get the core facts right: the 7-2 vote, the 1 December start, the five libraries, the $38,000 across 6,400 members, the $52,000 and $19,000 figures, the November email and the 12-month review.\n\n- **Response A** says \"Opponents say…\", but the article attributes that view only to Councillor Ashcroft. This is a minor overgeneralisation, though two councillors did vote against.\n- **Response B** correctly says \"one opposing councillor\". Its \"net about $33,000\" is a correct and useful derivation. Its lumping of lost/damaged items with the 60-day replacement rule is a fair reading of the article.\n\n**Key points.**\n\n- **Response A** omits that accounts stay blocked until an overdue item is returned or paid for. It also never mentions lost or damaged items. A manager needs both conditions to understand what still triggers charges.\n- **Response B** includes both. It also notes that cards unblock automatically on 1 December specifically.\n\n**Concision.** Response A runs to roughly 126 words, which breaks the under-120 limit. Response B comes in at about 113 words of body text (about 120 with the heading). Its bullet format is also easier to scan for a busy reader.\n\nResponse B is more accurate on attribution, keeps more of the needed conditions, and meets the length limit.\n\nVerdict: B",
+  "usage": {
+    "input": 1408,
+    "output": 1442
+  },
+  "cost": 0.034472
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-03",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct answers: a 1 percentage point rise, which is a 25% relative increase. Both show the calculation (5 − 4) ÷ 4 × 100 = 25%, and both fall under the 120-word limit. Response A's worked example is accurate: 4% of $400,000 is $16,000 and 5% is $20,000, a $4,000 or 25% increase. It makes the relative change concrete for a borrower, so the extra words add something useful. Response B is tighter and equally correct, but it omits that practical context. Response A's opening \"depends\" framing is slightly hedgy, though it still states the 25% clearly in bold. On balance, A is marginally more helpful.\n\nVerdict: A",
+  "usage": {
+    "input": 590,
+    "output": 649
+  },
+  "cost": 0.0003835
+}

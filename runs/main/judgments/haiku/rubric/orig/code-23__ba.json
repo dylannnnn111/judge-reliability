@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-23",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly rank the `!r.value` bug first, since it drops legitimate 0 °C readings, and both flag the string comparison of timestamps and the `latestReading` null-value case. Both also note that sensors with no valid data silently vanish from the output. Response A adds two real issues that B misses. First, the plain-object accumulator is vulnerable to keys like `__proto__`, where `??=` returns `Object.prototype` instead of creating a fresh entry. Second, its fix for the zero bug also rejects NaN and non-finite values, which the original would not handle. Response B's fix only checks for null. B's treatment of the comparator and sort performance is folded into a catch-all \"minor issues\" bullet, while A addresses them as a separate item. Neither response is clearly over-long, and neither flags things that are fine. A covers more of the real problems with more precise fixes.\n\nVerdict: A",
+  "usage": {
+    "input": 1630,
+    "output": 947
+  },
+  "cost": 0.0006365
+}

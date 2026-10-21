@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-34",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "The request limits the answer to under 120 words. Response A is about 105 words, which complies. Response B is about 200 words, which clearly exceeds the limit.\n\nOn correctness, both are accurate. They cover Diffie-Hellman, the shared key, symmetric encryption, and certificates for authentication. Response B's wording \"exchange public keys\" is fine. Response A's \"public values\" is slightly more precise for DH.\n\nSince the content is equivalent and A follows the explicit constraint while B violates it, A is better.\n\nVerdict: A",
+  "usage": {
+    "input": 907,
+    "output": 174
+  },
+  "cost": 0.003554
+}

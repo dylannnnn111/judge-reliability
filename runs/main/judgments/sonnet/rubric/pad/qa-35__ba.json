@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-35",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is about 100 words, under the 120-word limit. Response B is clearly over 120 words, probably around 200, so it breaks the explicit constraint.\n\nOn correctness, both are accurate. Response A gives the key reasoning: antibiotics target bacteria-specific structures, viruses lack them, and resistance arises through natural selection, mutation and horizontal gene transfer. Response B adds resistance mechanisms (destroying the drug, pumping it out, altering the target), but it is wordy and repeats itself (\"accelerate the process\" appears twice), and it breaks the length limit.\n\nResponse A follows the instruction and covers the essentials. Response B fails the length constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 932,
+    "output": 230
+  },
+  "cost": 0.004164
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-16",
+  "side": "B",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response gives the correct answer: Antarctica is the largest desert overall, since deserts are defined by low precipitation rather than heat. It explains that definition, which is the key reasoning, and adds the Sahara as the largest hot desert, which is a useful distinction. The figures (14.2 million km² for Antarctica, 9.2 million km² for the Sahara, and about 13.9 million km² for the Arctic) are in line with commonly cited values. The Arctic comparison is slightly extra but accurate and relevant. The response is well under 120 words and clearly organized, with the final caveat tying the two answers together.\n\nScore: 9",
+  "usage": {
+    "input": 397,
+    "output": 504
+  },
+  "cost": 0.0002917
+}

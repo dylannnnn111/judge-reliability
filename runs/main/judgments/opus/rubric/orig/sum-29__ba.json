@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-29",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Both responses get the prices, data amounts, dates, exit-fee condition and device repayments right. Both also drop the word \"regional\" before Queensland and Western Australia, which is a minor shared omission. B has one misleading sentence: \"Classic plan customers and those on fixed-price contracts are unaffected until their contract ends.\" This links the Classic exemption to a contract end date. The notice actually says Classic customers see no change *this year*, regardless of any contract. A keeps the two groups separate and states each condition correctly.\n\n**Coverage:** A includes the support contact details, which B omits. A manager could reasonably need these if customers or staff raise questions. Otherwise, both cover the essentials.\n\n**Concision:** B is shorter, but its brevity comes partly from merging two conditions in a way that misleads. A comes in just under 120 words, so it meets the limit.\n\nSince accuracy comes first, A is better.\n\nVerdict: A",
+  "usage": {
+    "input": 1406,
+    "output": 1047
+  },
+  "cost": 0.026564
+}

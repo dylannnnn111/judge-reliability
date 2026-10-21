@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-40",
+  "side": "A",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The physics is right: light is about 300,000 km/s and sound about 343 m/s. The rules of thumb are standard: divide by 3 for km and by 5 for miles. The 10-second example works out to about 3.4 km, or roughly 2 miles, so it is fine.\n\nThe safety claim is \"If the gap is 30 seconds or less, the storm is close enough to be dangerous\". That matches the old 30-30 rule, so it is acceptable. 30 seconds is about 10 km, and lightning can strike that far from a storm.\n\nThe word count is about 100, under the 120 limit. Let me count roughly. The first paragraph is about 45 words, the second sentence of the intro is already included in that, and the bullets plus example plus safety line come to about 55. That puts the total near 100-105, which is within the limit.\n\nThe response gives the key reasoning and is clear. One minor point is that it says the flash and thunder \"start at the same moment\", which is fine. It also could have mentioned that a 3-second delay is about 1 km, which it does with \"about 3 seconds per km\".\n\nEverything is correct, concise, and clear.\n\nScore: 9",
+  "usage": {
+    "input": 442,
+    "output": 368
+  },
+  "cost": 0.004564
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-14",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate on the key facts: the 3 November 2026 date, the move from two to three office days, the Fair Work exception, the informal-agreement caveat, the excluded Claims and Customer Contact teams with their early-2027 review, the equipment funding limit, the Spaces booking system, and the rationale. Neither contains a material error.\n\nResponse A covers slightly more of what a manager needs. It notes that existing equipment is kept, mentions lockers, and says where to get questions answered (managers first, with a Q&A on the intranet). Response B omits that contact information and the equipment and locker details.\n\nResponse A is also more concise. B opens with a filler sentence (\"This section sets out...\") and its bullets are wordier. Both exceed the 120-word limit, but A is noticeably closer to it, around 150 words against roughly 200 for B.\n\nVerdict: A",
+  "usage": {
+    "input": 1590,
+    "output": 961
+  },
+  "cost": 0.0006395
+}

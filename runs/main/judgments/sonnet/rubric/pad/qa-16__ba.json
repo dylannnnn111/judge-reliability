@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-16",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct main answer: Antarctica is the largest desert, with the Arctic second and the Sahara the largest hot desert. The figures in both are accurate.\n\nThe difference is the word limit. Response A comes to roughly 95 words, within the 120-word cap. Response B comes to roughly 125–130 words once the intro, bullets and closing line are counted, so it likely breaks the explicit constraint. Response A also adds a useful detail on Antarctic precipitation and ends by noting that the answer depends on whether hot deserts only are counted. Response B's bulleted comparison is clear, but it repeats information and pushes the response over the limit.\n\nResponse A is better because it is correct and follows the length instruction.\n\nVerdict: A",
+  "usage": {
+    "input": 732,
+    "output": 946
+  },
+  "cost": 0.010924
+}

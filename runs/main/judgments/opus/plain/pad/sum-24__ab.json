@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-24",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A** is better.\n\nBoth responses correctly apply the 8 October correction. Each gives Saltwater Theatre Collective $14,500, a total of $88,200, and a rollover of $31,800. Both also cover the main decisions and deadlines accurately.\n\nThe deciding factor is the user's explicit limit of under 120 words.\n\n- **Response A** comes in at about 110 words, so it meets the limit. It also notes the conflict of interest and flags that the Saltwater amount was corrected. A manager who has seen the original figure would find both points useful.\n- **Response B** runs to roughly 180 words, well over the limit. Much of the excess is filler, such as the opening \"Thank you for reviewing…\" sentence and padded phrasing like \"Once the approved grants are accounted for.\" That suits a busy reader poorly.\n\n**A**",
+  "usage": {
+    "input": 1737,
+    "output": 521
+  },
+  "cost": 0.017368
+}

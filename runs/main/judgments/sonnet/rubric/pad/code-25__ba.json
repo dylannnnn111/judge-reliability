@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-25",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the real bugs: the off-by-one that allows 6 attempts, unbounded memory growth, per-IP-only limiting, in-memory state, the hardcoded `retryAfterSec`, and untrusted IP derivation. Both rank the off-by-one and memory growth first, which is sensible. Both also exceed the 200-word limit, but B (about 290 words) overshoots less than A (about 330).\n\n**Response A:**\n- Point 5 says the limiter should count only failures. That is a design preference rather than a bug, and counting all attempts is defensible for slowing password guessing.\n- It gives fixes, but they are less concrete. For `retryAfterSec` it only says to compute from the oldest timestamp, with no formula.\n\n**Response B:**\n- It makes more precise points. Stale timestamps are only pruned when the same key returns. The effective limit is `limit × instances`. An IPv6 /64 can be rotated to defeat per-address limits, so it suggests keying on the prefix. It also notes the shared-NAT and proxy lockout risk.\n- It gives a concrete formula for `retryAfterSec` and notes that `allow` would need to return that value.\n- Its last item, \"no tests / no reset after success\", is minor filler, but it is labeled as minor.\n\nB is more specific and actionable, flags fewer questionable items, and is closer to the length limit.\n\nVerdict: B",
+  "usage": {
+    "input": 1791,
+    "output": 895
+  },
+  "cost": 0.012532
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-22",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A comes in just under the 200-word limit. Response B clearly exceeds it, with six numbered items, nested bullets and a code block.\n\nBoth catch the critical bug: `jwt.decode()` never verifies the signature, so anyone can forge an admin token. Both also flag the exported `SECRET`, unchecked expiry, wrong 401/403 status codes and the loose `Bearer` parsing. Response A orders these cleanly by severity and adds a sharp point: the `try/catch` is dead code, because `decode` returns null instead of throwing. One small flaw is that it says a missing secret \"fails open.\" The library actually throws, so it fails closed, though A hedges this.\n\nResponse B has some redundancy. Its item 3 on algorithm pinning repeats a fix already given in item 1, and its \"Minor\" items are filler under a tight limit. Its code snippet is useful but adds to the overrun.",
+  "usage": {
+    "input": 1562,
+    "output": 1238
+  },
+  "cost": 0.031008
+}

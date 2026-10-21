@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-20",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B is better.**\n\n**DST analysis.** Both responses correctly identify DST as the main bug, and both work through accurate examples.\n- Spring forward: A shows an invoice due tomorrow giving 0.96, floored to 0. B shows a date 3 days away giving 2.96, floored to 2.\n- Fall back: both correctly get −1.04 floored to −2.\n- A then says the fall-back case \"may land in the wrong place on the overdue list.\" That is wrong. −2 is still negative, so `overdueInvoices` still includes the invoice, and the code does no sorting. B explicitly and correctly notes that the overdue list is unaffected and only the labels are wrong. That is a more precise reading of the actual impact.\n\n**Fixes.** Both UTC-based fixes are valid. A's version, without `Math.round`, is exact because UTC has no DST. B's added `Math.round` is harmless.\n\n**Constraints and presentation.** The user asked for under 200 words.\n- A opens with odd meta filler (\"I've kept the explanations and the suggested fix as they were...\") that reads like a leftover from a rewrite. It adds bridging sentences like \"This is a second, separate problem\" and \"These two items are less serious, but they are still worth a look.\" This pushes it well over the limit.\n- B is tighter, close to the limit, and covers the same four issues. It adds a concrete detail (the `\"...T00:00:00ZT00:00:00\"` string) and an actionable suggestion for the timezone issue.",
+  "usage": {
+    "input": 1827,
+    "output": 879
+  },
+  "cost": 0.024888
+}

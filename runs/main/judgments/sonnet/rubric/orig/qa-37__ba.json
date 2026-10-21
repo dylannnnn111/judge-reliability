@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-37",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Word count matters: the limit is under 120 words.\n\nResponse A: count. Paragraph 1: \"Uluru is red because of rust.\" (6) \"The rock is arkose, a sandstone rich in feldspar and quartz, and it contains small amounts of iron-bearing minerals.\" (19) -> 25. \"Over millions of years, exposure to oxygen and water has oxidized this iron, forming iron oxides (essentially rust) that coat the surface and give it its rusty-orange to red colour.\" (30) -> 55. Paragraph 2: \"The effect is mostly superficial.\" (5) -> 60. \"If you look at a freshly broken piece of the rock, the interior is grey.\" (15) -> 75. \"The outer weathered layer is what appears red.\" (8) -> 83. Paragraph 3: \"Uluru's colour also seems to change throughout the day.\" (9) -> 92. \"At sunrise and sunset, the low-angle light is richer in red wavelengths, so the rock can glow deep red, orange, or even purple.\" (23) -> 115. Under 120, barely.\n\nResponse B: Paragraph 1: \"Uluru is red because of rust.\" (6) \"The rock is arkose, a coarse sandstone rich in feldspar that contains iron-bearing minerals.\" (14) -> 20. \"Where the surface is exposed to air and water, those minerals weather and the iron oxidizes into iron oxides such as hematite.\" (22) -> 42. \"This forms a thin reddish-orange coating on the outside.\" (9) -> 51. Paragraph 2: \"Beneath this weathered skin, Uluru's rock is actually grey, which can be seen in places where the surface has flaked away.\" (21) -> 72. Paragraph 3: \"Its famous glowing reds, oranges, and purples at sunrise and sunset come from low-angle sunlight.\" (15) -> 87. \"The light passes through more atmosphere, which scatters away blue wavelengths and leaves warmer red tones to light up the iron-rich surface.\" (22) -> 109. Under 120.\n\nBoth comply. Accuracy: both correct. A says the low-angle light is \"richer in red wavelengths\", which is a simplification but fine. B explains the mechanism (scattering of blue) more precisely and names hematite. A's \"freshly broken piece\" is fine. B's explanation is slightly more complete and accurate. A's mention of quartz is correct too.\n\nB is slightly better for the mechanism explanation.\n\nVerdict: B",
+  "usage": {
+    "input": 726,
+    "output": 817
+  },
+  "cost": 0.009622
+}

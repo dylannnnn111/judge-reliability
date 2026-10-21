@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-31",
+  "side": "B",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly identifies axial tilt as the cause of seasons, not distance from the Sun. It explains that the Northern Hemisphere is tilted away from the Sun around December, giving low-angle sunlight and short days, while the Southern Hemisphere is tilted toward it, giving summer. It also notes the reversal six months later. The answer is accurate and directly addresses the question. It covers the key mechanisms (tilt, sunlight angle, day length) concisely. My word count is about 109, so it meets the under-120 limit. The explanation is clear and well organized, with only minor room for improvement, such as not explicitly mentioning that the tilt direction is what makes the hemispheres oppositely lit.\n\nScore: 9",
+  "usage": {
+    "input": 430,
+    "output": 1060
+  },
+  "cost": 0.000573
+}

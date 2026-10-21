@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-36",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is accurate on every point I checked: the 3 November 2026 start, 22 printers, $3,480 fee, 24-month price freeze, page allowances and overage rates, the roughly $195 term-month colour overrun, the 75% early-exit penalty, and the end-of-term options. It is also close to the 120-word limit, which suits a busy manager. Response B is equally accurate, but it runs to roughly twice the length, opens with an unnecessary preamble, and so breaks the word limit. Its extra words add restatement rather than new useful information. Neither response omits anything the manager needs, so Response A is better on concision and instruction-following.\n\nVerdict: A",
+  "usage": {
+    "input": 1662,
+    "output": 951
+  },
+  "cost": 0.0006417
+}

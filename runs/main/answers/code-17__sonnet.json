@@ -1,0 +1,13 @@
+{
+  "item": "code-17",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "1. **Wrong offset (breaks the page).** `page` defaults to 1, but the offset is `page * pageSize`. Page 1 therefore skips the first 20 addresses, and users with 20 or fewer addresses see an empty list. It should be `(page - 1) * pageSize`.\n\n2. **No error handling.** In Express 4, a rejected `await` (DB down, bad query) is never caught. The request hangs and you get an unhandled rejection. Wrap the handler in try/catch, use an async wrapper, or use Express 5.\n\n3. **Negative pages cause a 500.** `?page=-1` passes `parseInt(...) || 1`, producing a negative offset, which Postgres rejects. Clamp it: `Math.max(1, parseInt(...) || 1)`. You may also want an upper bound.\n\n4. **Possible type mismatch in the auth check.** `req.params.userId` is always a string. If `req.session.userId` is stored as a number, `!==` is always true, so regular users get 403 on their own page. Compare with `String(req.session.userId)`.\n\n5. **Malformed `userId` causes a 500.** If the column is an integer or UUID, a non-matching value like `/users/abc/addresses` triggers a DB cast error for admins. Validate the format first.\n\n6. **Minor: the pagination response is incomplete.** There's no total count or `hasMore`, so the UI can't tell when to stop paging. You could fetch `pageSize + 1` rows to detect it.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 342,
+    "output": 869
+  },
+  "cost": 0.009374,
+  "at": "2026-10-14T01:53:43.759Z"
+}

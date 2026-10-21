@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-36",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate on the key facts: the 48-month term from 3 November 2026, the $3,480 fee fixed for 24 months, the 4% annual rise after that, the page allowances and overage rates, the roughly $195 monthly colour overrun, the 75% early-exit penalty, and the rollover. Neither misstates who signed or decides anything. Response B adds useful context, such as attributing the overage estimate to last year's usage and giving the contact name. However, B runs to roughly 140 words, breaking the explicit under-120-word limit. Response A stays within the limit (about 120 words) while keeping every decision-relevant term. Its only omission is the account manager's name, which is a minor loss for a manager who won't read the original. Given the hard length constraint and the otherwise equal accuracy, A is the better summary.\n\nVerdict: A",
+  "usage": {
+    "input": 1514,
+    "output": 1206
+  },
+  "cost": 0.0007544
+}

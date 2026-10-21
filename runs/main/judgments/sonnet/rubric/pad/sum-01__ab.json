@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-01",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is accurate. It gives the new deadline (Friday 30 October, close of business) and says it moved up from 4 November because the CFO brought the board meeting forward. It lists the three deliverables and the requirements: the new template with the software subscriptions split, the \"$50,000 or 10%, whichever is smaller\" variance rule, numbers pasted rather than screenshots, and a nominated delegate if on leave. It also covers the optional Thursday 2pm drop-in and the instruction to call Priya today if there is a real problem. It leaves out the coffee machine, which is correct. By my count it comes to about 119 words, just inside the limit.\n\nResponse B has the same facts and is also accurate. It breaks the explicit limit, though, at roughly 220 words, nearly double. It is also written in Priya's voice (\"I'm writing to let you know…\"), so it reads like a rewritten email rather than a summary for a manager. It restates the date change twice, and its phrasing \"This earlier date applies to all regions\" adds nothing. It also paraphrases \"the smaller of $50,000 or 10%\" loosely, though that is still correct.\n\nBoth responses are accurate and complete on the key points, so the deciding factors are the word limit and concision. A meets the limit and is easy to scan, and B does not.\n\nVerdict: A",
+  "usage": {
+    "input": 1571,
+    "output": 1446
+  },
+  "cost": 0.017602
+}

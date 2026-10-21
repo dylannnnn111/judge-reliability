@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-25",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the core bugs: the off-by-one that allows six attempts, unbounded Map growth, per-IP-only limiting, the hardcoded `retryAfterSec`, and in-memory state. Both rank the off-by-one and memory growth first, which is sensible.\n\nResponse A raises a substantive point that B misses: successful logins consume quota, which can lock out legitimate users. A also flags X-Forwarded-For spoofing, which is a real risk if the header is trusted. B covers proxy misconfiguration, where everyone shares the proxy's address, and NAT sharing, both practical concerns. B's point about rotating through an IPv6 /64 is a sharper, code-specific insight that A lacks, and B gives more concrete fixes: the `ceil((oldest + windowMs - now) / 1000)` formula and pruning empty entries. B's final \"minor\" item is weaker filler (no tests), though its note about lacking a reset-after-success path partly touches A's success-counting issue.\n\nOn balance the two are close. Response B's more specific and actionable fixes give it a slight edge, though A's success-counting point is valuable.\n\nVerdict: B",
+  "usage": {
+    "input": 1640,
+    "output": 1202
+  },
+  "cost": 0.000765
+}

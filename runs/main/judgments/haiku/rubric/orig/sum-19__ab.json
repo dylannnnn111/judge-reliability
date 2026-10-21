@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-19",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate on the key points: consent requirements, the reasonableness standard, the buyer-side conditions, the 30% subletting cap, change of control, the 28-day response period, and the non-retail-lease liability risk. Response A hedges the liability point more faithfully (\"may stay liable… possibly for the rest of the term\"), while Response B states it as \"remain liable for the full remaining term,\" a slight overstatement of the source's \"could remain liable.\" Response A also runs close to or slightly over the 120-word limit, while Response B is clearly under it. Response B's bulleted, action-oriented layout suits a busy manager better, and it keeps every reader-relevant point. The accuracy edge goes to A, but it is small, and B is more concise and easier to scan.\n\nVerdict: B",
+  "usage": {
+    "input": 1515,
+    "output": 1381
+  },
+  "cost": 0.000842
+}

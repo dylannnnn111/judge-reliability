@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-27",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for under 120 words. Response A is well over 120 words (about 220), so it violates the explicit constraint. Response B is roughly 95 words, which complies.\n\nCorrectness: Response A says \"As water cools below about 4°C, its molecules begin arranging themselves into the open hexagonal lattice,\" which is loosely accurate (density decreases below 4°C), but it then says \"The coldest water sits at the surface, while slightly warmer water sinks,\" which is muddled. Water at 4°C is densest and sinks, with colder water near 0°C on top, so the gist is okay, though \"slightly warmer water sinks\" is vague. The claim \"ice forms a floating layer... slows further freezing\" is right. Response B is accurate: deeper water stays near 4°C, ice insulates, and ice is about 9% less dense.\n\nResponse B is accurate, concise, and meets the word limit, so it wins.\n\nVerdict: B",
+  "usage": {
+    "input": 917,
+    "output": 302
+  },
+  "cost": 0.004854
+}

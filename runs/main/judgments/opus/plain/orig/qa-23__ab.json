@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-23",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses correctly state that 0.999... equals 1, and both stay under the 120-word limit. A runs about 105 words and B about 80.\n\nA is stronger because it explains its third point, the \"no gap\" argument. It notes that two distinct reals have numbers between them, and that a proposed difference like 0.000...1 isn't a valid decimal. That second point addresses the most common misconception directly. B only asserts \"there is no gap\" without saying why.\n\nBoth share the same algebraic, fraction, and limit arguments. A's structure also makes them easier to scan.",
+  "usage": {
+    "input": 581,
+    "output": 593
+  },
+  "cost": 0.014184
+}

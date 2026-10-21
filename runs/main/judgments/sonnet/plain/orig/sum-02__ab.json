@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-02",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. The main issue is the word limit.\n\n**Word limit:** Response A is about 115 words without its title and about 123 with it, so it probably breaks the explicit \"under 120 words\" limit. Response B is about 110 words with its title, so it clearly complies.\n\n**Accuracy and content:**\n- A is slightly more informative. It includes the 11 vs 64 visitor figures and says the roof leak was patched.\n- B overstates the roof issue. It says the roof \"needs\" full replacement, when the contractor only recommended it, and it omits the patch.\n- B spends words on the air conditioning service, which is minor.\n- Both leave out Anjali's position and the Christmas party, which is a reasonable cut.\n\nA's extra detail is useful, but B's compliance with the stated constraint outweighs its small imprecision.\n\n**B**",
+  "usage": {
+    "input": 1467,
+    "output": 1709
+  },
+  "cost": 0.020024
+}

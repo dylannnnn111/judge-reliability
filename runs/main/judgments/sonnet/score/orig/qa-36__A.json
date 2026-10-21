@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-36",
+  "side": "A",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is accurate overall. It correctly identifies the core mechanism: the wing deflects air downward, producing a pressure difference, and Newton's third law gives the reaction force. It mentions both airfoil shape and angle of attack, and notes that lift grows with speed and angle until stall.\n\nPossible quibbles: \"the wing's curved, asymmetric shape\" is a common simplification, and symmetric wings also generate lift via angle of attack, though the response does include angle of attack. The statement \"speeds up over the curved upper surface, lowering pressure\" is correct (Bernoulli/pressure-gradient) and avoids the equal-transit-time fallacy. It doesn't explicitly say that the pressure difference and downward deflection are both consequences of the flow turning (circulation), but this is fine for the length limit.\n\nWord count: roughly 105 words, which is under 120. The response is clear and well structured.\n\nMinor deductions for the slight oversimplification about asymmetry being needed, but it is a strong answer.\n\nScore: 9",
+  "usage": {
+    "input": 418,
+    "output": 337
+  },
+  "cost": 0.004206
+}

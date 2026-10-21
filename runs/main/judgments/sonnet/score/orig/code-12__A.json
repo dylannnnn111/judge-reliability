@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-12",
+  "side": "A",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds the three real issues: the N+1 queries, the non-sargable `strftime` filter, and the unhandled `None` from a missing customer. It gives concrete fixes for each. The N+1 problem is probably the most important one for a 20k-invoice export, and it is ranked second behind the crash. The crash is plausible but may not happen if foreign keys are enforced.\n\nThe rest is mostly speculative or padding:\n- **COUNT(*) (item 4):** It is a reasonable way to count line items, and the response only guesses that a quantity column might exist.\n- **Snapshot (item 5):** This is marginal for a batch export.\n- **Timezone (item 6):** This is also speculation.\n- **Money formatting (item 7):** The response admits float division is \"usually fine,\" so it is not a real problem.\n- **Reconciliation (item 8):** This is a feature suggestion, not a bug.\n\nThe response also breaks the explicit limit. It runs to roughly 330 words against a 200-word cap. The extra length comes from the weak items, so it dilutes the important findings.\n\nScore: 4",
+  "usage": {
+    "input": 1142,
+    "output": 735
+  },
+  "cost": 0.009634
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-29",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response identifies the most important bug: `NOT IN` with a NULL in the subquery returns no rows, so the campaign would target nobody. This is real and critical, and the `NOT EXISTS` fix is correct. The alternative fix (filtering out NULLs in the subquery) is also valid. The date-filter issue is a genuine contradiction between the comment and the code, and the explanation is accurate. The LIMIT/ORDER BY issue is a real operational concern that would repeatedly email the same oldest cohort. The storage-format note is accurate and correctly labelled minor. Ranking is sensible, each issue has a fix or direction, and nothing flagged is actually fine. It is under 200 words. It could have briefly mentioned the hardcoded 2026-01-01 literal going stale, but that is a small omission.\n\nScore: 9",
+  "usage": {
+    "input": 959,
+    "output": 765
+  },
+  "cost": 0.0004784
+}

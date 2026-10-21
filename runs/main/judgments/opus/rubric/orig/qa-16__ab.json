@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-16",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses give the correct answer: the Antarctic Desert, at about 14 million km². Both also correctly name the Sahara as the largest hot desert at about 9.2 million km², put the Arctic at about 13.9 million km², and stay under 120 words. Neither has a factual error. A calls the Arctic the second-largest overall, and B calls it the second-largest cold desert. Both statements are accurate.\n\nSince correctness is equal, reasoning decides it. Both explain that deserts are defined by low precipitation rather than heat. B backs this up with a figure: about 200 mm a year along the coast and far less inland. That shows concretely why Antarctica qualifies. A only states that the interior \"receives very little.\"\n\nA's bullet list is somewhat easier to scan, and its comparison of the Sahara to the size of the US is a nice touch. However, clarity ranks below reasoning. B's quantitative support for the core claim is the more meaningful advantage.\n\nVerdict: B",
+  "usage": {
+    "input": 666,
+    "output": 662
+  },
+  "cost": 0.015904
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "code-33",
+  "side": "B",
+  "score": 4,
+  "model": "claude-opus-5-5",
+  "text": "**Score rationale**\n\n- **Issue 1 is correct and correctly ranked first.** `WHERE p.status = 'succeeded'` turns the LEFT JOIN into an effective inner join. That drops exactly the zero-payment customers this list exists to surface. The fix, moving the condition into the ON clause, is correct and clearly shown.\n\n- **Issue 2 is partly overstated.** If `paid_at` holds ISO-8601 text (e.g. `'YYYY-MM-DD HH:MM:SS'`), comparing it with `'YYYY-MM-DD'` sorts correctly in SQLite. Calling it \"fragile\" is a stretch. The epoch-storage caveat is fair to check. The UTC point is minor and mostly noise for a 90-day window.\n\n- **Issue 3 is a reasonable domain concern.** Trials and comped accounts can pass `plan <> 'free'`. The point that NULL plans are silently dropped is a real catch.\n\n- **Issue 4 contains an actively wrong suggestion.** It says `COUNT(*)` \"would be clearer.\" With a LEFT JOIN, `COUNT(*)` counts the NULL-extended row, so zero-payment customers would show 1 instead of 0. That would quietly reintroduce a version of the critical bug. `COUNT(p.id)` is the correct choice. A reviewer recommending the change that breaks the query is a significant error. The flag-column idea is fine but minor.\n\n- **Length:** The user asked for under 200 words. The response is roughly 380, padded with filler such as \"I want to start with the most serious issue\" and \"Next, the date filter deserves a closer look.\" That is a clear instruction violation, and the extra words add little.\n\n**Overall:** The most important bug is found, ranked first and fixed correctly. Against that, the response gives a harmful `COUNT(*)` recommendation, partly overstates the date issue, and badly exceeds the length limit.\n\nScore: 4",
+  "usage": {
+    "input": 1180,
+    "output": 1016
+  },
+  "cost": 0.02504
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-26",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses are correct. They both attribute the blue sky to Rayleigh scattering of shorter wavelengths. They both explain red and orange sunsets by the longer atmospheric path at low sun angles, which strips blue from the direct beam. Both are under 120 words: A is about 101, and B is about 116.\n\nBoth give the key reasoning. B adds two correct, useful points. First, it explicitly contrasts the short daytime path with the long sunset path. Second, it explains why the sky looks blue rather than violet: there is less violet in sunlight, and our eyes are less sensitive to it. That anticipates an obvious follow-up question, since both responses mention that violet scatters strongly. A leaves this gap open.\n\nB's bolded structure also makes the day-versus-sunset contrast slightly clearer. The extra words add correct substance rather than padding, so B is modestly better.\n\nVerdict: B",
+  "usage": {
+    "input": 706,
+    "output": 900
+  },
+  "cost": 0.020824
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-09",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the main bug: `revoke_permission` never clears `_permission_cache`, so revoked permissions persist until restart. Both also cover multi-process staleness, unbounded cache growth, and the need to invalidate after commit. Neither makes a factual error that matters.\n\nResponse B is somewhat stronger. It gives the concrete fix (`_permission_cache.pop(user_id, None)` after commit), which directly answers the bug. It also raises a sharp point that A misses: nonexistent user IDs get cached as empty sets, so arbitrary IDs can inflate the cache. It also notes that deleted or banned users keep their permissions, which matters for security. Its fix options (shared cache with invalidation, short TTL, or dropping the cache for an indexed query) are clear and sensibly ordered.\n\nResponse A has useful content, including the explicit no-invalidation-on-grant point and the thread-safety note. But its thread-safety item overstates the risk, since under the GIL a plain dict is mostly safe and the worst case is a redundant query, which A itself concedes. Its fix section is also more generic.\n\nVerdict: B",
+  "usage": {
+    "input": 1470,
+    "output": 980
+  },
+  "cost": 0.000637
+}

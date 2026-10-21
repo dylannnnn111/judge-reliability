@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-12",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse B stays within the user's limit of 200 words (about 185–190). Response A runs to roughly 260 words, which breaks an explicit constraint.\n\nBoth identify the same core issues:\n- N+1 queries\n- Crash on a missing customer\n- Non-sargable `strftime` filter\n- Timezone ambiguity\n\nTheir priority orders differ. A leads with the crash and B with N+1, and both orderings are defensible.\n\nB's extra points are concrete and relevant to a finance export. It notes that exporting totals as formatted strings makes them hard for finance to sum, and that negatives render as `$-12.34`. It also flags nondeterministic ordering within a customer and the lack of input validation for `month`. A's extra points are more speculative or weak: the `COUNT(*)` quantity guess, a hedged float-rounding note, and the snapshot and reconciliation suggestions.",
+  "usage": {
+    "input": 1594,
+    "output": 1226
+  },
+  "cost": 0.030896
+}

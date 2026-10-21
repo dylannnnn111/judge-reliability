@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-01",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both responses find the most important issues: no idempotency, one failure aborting the run, truncation in `int(amount * 100)`, float money, credits silently dropped, malformed rows, and the hardcoded tax.\n\n**Accuracy of the truncation examples**\n- **Response A's example looks wrong.** `10.29 * 100` should evaluate to exactly `1029.0` in IEEE doubles. The stored value of 10.29 is about 8.5e-14 short of 10.29, which is less than half an ulp at 1029 (about 1.1e-13), so the product rounds back to 1029. The concept is right, but the illustration doesn't demonstrate it.\n- **Response B's example is correct.** `19.99 * 100` gives `1998.9999999999998`, so `int()` yields 1998.\n\n**Depth and ranking**\n- **Response B explains how the two top issues combine.** A partial failure followed by a rerun double-charges the customers already billed. This links its #1 and #2 in a way that matters operationally.\n- **Response B adds real, relevant problems.** It notes there is no billing-period scoping. It also notes that `float()` accepts NaN and inf strings, which can silently corrupt bills.\n- **Response A covers similar ground.** It gives slightly more explicit fix guidance, such as an idempotency key per customer per period and quarantining bad rows.\n\n**Questionable or weak points**\n- **Response A's customer_id normalization point is speculative.** It is a minor concern, presented as a finding without evidence.\n- **Response B's \"minor\" items are correctly labelled as minor.** Holding the file in memory and passing no currency are low-impact.\n\nOverall, Response B is accurate where Response A slips. Its ranking is sound, and its extra points are relevant to a nightly billing job.\n\nVerdict: B",
+  "usage": {
+    "input": 1574,
+    "output": 1360
+  },
+  "cost": 0.033496
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-39",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses identify the same core problems: the unchecked `cd` leading to `rm -rf` in the wrong directory, path traversal via `APP_NAME` (B's point that `..` clears all of `/var/cache` is a useful concrete illustration), hidden files skipped by `./*`, and the exit status of 0 despite leftover files. Both rank the `cd` and traversal issues highest, which is correct. Neither flags anything that is actually fine. A's fixes are more concrete and compact, including a specific validation regex and `find . -mindepth 1 -delete`. B's suggested `.[!.]*` / `..?*` glob is also valid. B adds a few correct minor notes, such as symlinks and empty directories being excluded from the count, but its prose is noticeably wordier and its closing summary repeats the ranking. At roughly 330 words it strays further from the under-200-word limit than A, which lands closer to it. The content is nearly equal, so the tighter, more compliant response edges ahead.\n\nVerdict: A",
+  "usage": {
+    "input": 1850,
+    "output": 1176
+  },
+  "cost": 0.000773
+}

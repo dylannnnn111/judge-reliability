@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-29",
+  "side": "B",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The response is factually accurate. The prices, data increases, plan eligibility, fixed-contract exemption, exit-fee conditions, device repayment note, reason, and support hours all match the source. It also covers every point a manager would need.\n\nIt fails the length constraint, though. The user asked for under 120 words, and the response runs to roughly 190 to 200. It also has six labelled sections and a bullet list, which add bulk for a busy reader. Some of the detail, such as the full support hours and the 120-site figure, could be trimmed without losing anything essential. A tighter version could keep the same substance in about 100 words.\n\nScore: 4",
+  "usage": {
+    "input": 1218,
+    "output": 697
+  },
+  "cost": 0.0004703
+}

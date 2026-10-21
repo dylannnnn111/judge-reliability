@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-28",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same core problems: the connection leak, the unlocked read that allows a double spend, the unvalidated destination wallet, the deadlock risk, the ROLLBACK masking the original error, and the same-wallet transfer. Both give concrete fixes. Both also run over the 200-word limit, B slightly less so.\n\n**Response A**\n- Every item is real and correctly described.\n- It correctly says the opposing-order deadlock can already happen in the current code, since each transfer's UPDATEs lock the source row first and the destination second.\n- The `CHECK (balance_cents >= 0)` suggestion is a useful safety net.\n- It ranks the race condition above the connection leak. That is defensible, but the leak breaks the service for everyone after a few calls, so many reviewers would rank it first.\n\n**Response B**\n- It puts the connection leak first, which is arguably the better ordering.\n- It says the deadlock appears \"once you add row locks\". That understates things, because the current code can already deadlock on its UPDATEs.\n- The idempotency and audit-trail item is a design suggestion, not a bug in this code, so it adds noise.\n- The bigint-as-string item is overstated. JavaScript's `<` coerces a numeric string to a number, so the comparison works in practice except for very large values.\n\nA's list is cleaner and more accurate, with no dubious items. B has a slightly better top ordering and is a bit shorter, but its extra items are speculative or partly wrong.\n\nVerdict: A",
+  "usage": {
+    "input": 1980,
+    "output": 1379
+  },
+  "cost": 0.01775
+}

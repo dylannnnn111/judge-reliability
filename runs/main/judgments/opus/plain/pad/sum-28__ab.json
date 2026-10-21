@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-28",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is the better summary for a busy manager. It is concise, accurate and well structured, though at about 130 words it still slightly exceeds the 120-word limit. Its one gap is that it leaves out the unpaid-leave or make-up-time option for staff short on leave over the shutdown.\n\nResponse B is far over the limit at roughly 200 words. It is padded with filler such as \"We would like to draw your attention…\" and reads like a staff notice rather than a manager's summary. It also softens the balance-cap requirement to staff being \"asked\" to agree a plan, when the policy says they \"will need to.\"",
+  "usage": {
+    "input": 1436,
+    "output": 1444
+  },
+  "cost": 0.034624
+}

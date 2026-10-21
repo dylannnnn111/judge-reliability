@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-14",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "**B**\n\nBoth responses correctly identify the main bug: deleting rows while paginating with OFFSET skips unarchived rows. Both also cover idempotency and the `created_at` string-comparison issue. Response B adds error handling and rollback, which Response A omits, and its \"minor issues\" section helps prioritize. Response A's point about the backlog only halving each run is a useful consequence, but that does not outweigh B's coverage. Both responses run slightly over the 200-word limit, by roughly the same amount.",
+  "usage": {
+    "input": 1358,
+    "output": 1701
+  },
+  "cost": 0.0009862999999999999
+}

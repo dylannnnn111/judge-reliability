@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-37",
+  "side": "A",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "Correctness: Uluru is arkose sandstone, and its red color comes from the oxidation (rusting) of iron-bearing minerals on the surface, forming iron oxides such as hematite. Beneath the surface the rock is grey. The sunset glow does come from low-angle light being filtered by the atmosphere. All of this is accurate. The \"feldspar-rich\" detail is right, and the iron-bearing minerals are a reasonable simplification.\n\nWord count: I count roughly 107 words. Counting by paragraph: paragraph 1 is about 50 words (\"Uluru is red because of rust.\" 6; \"The rock is arkose, a coarse sandstone rich in feldspar that contains iron-bearing minerals.\" 14, total 20; \"Where the surface is exposed to air and water, those minerals weather and the iron oxidizes into iron oxides such as hematite.\" 22, total 42; \"This forms a thin reddish-orange coating on the outside.\" 9, total 51). Paragraph 2: \"Beneath this weathered skin, Uluru's rock is actually grey, which can be seen in places where the surface has flaked away.\" 21, total 72. Paragraph 3: \"Its famous glowing reds, oranges, and purples at sunrise and sunset come from low-angle sunlight.\" 15, total 87; \"The light passes through more atmosphere, which scatters away blue wavelengths and leaves warmer red tones to light up the iron-rich surface.\" 22, total 109. This is under 120.\n\nKey reasoning: it covers the iron oxidation mechanism, the grey interior, and the sunset effect. It is clear and concise. A small quibble: the \"rust\" phrasing is fine, and \"iron oxidizes into iron oxides\" is slightly redundant.\n\nScore: 9",
+  "usage": {
+    "input": 428,
+    "output": 586
+  },
+  "cost": 0.006716
+}

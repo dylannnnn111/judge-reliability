@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-13",
+  "side": "A",
+  "score": 8,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds the real bugs and orders them sensibly. Each is verifiable:\n\n- **December crash:** `month + 1` becomes 13 and `replace` raises `ValueError`.\n- **Day-of-month overflow:** a start on the 29th–31st fails when the next month is shorter.\n- **Drift:** each date is derived from the previous one, so a clamped day sticks.\n- **Hardcoded 30-day proration:** `days_used` can exceed 30, which charges more than a full month.\n- **Missing validation:** a negative period gives a negative charge, and `months <= 0` quietly returns `[start]`.\n\nMost items come with a fix: clamp to month end, compute from `start`, and use explicit rounding. The proration item has no concrete fix, such as using the actual days in the billing period or capping at one month.\n\nThe ranking is reasonable. The two crashes come first, then the silent drift, then the proration problems. Items 2 and 3 overlap a little, but they are distinct failure modes, a crash and a silent drift, and the fix is shared.\n\nItem 6 has a small inaccuracy. `//` floors toward negative infinity, not toward zero, though the two coincide for the positive values here. The rounding and inclusive/exclusive end-date point is still a reasonable flag for billing code. It is minor but not a false positive.\n\nIt stays under 200 words, at roughly 190, and nothing flagged is actually fine.\n\nScore: 8",
+  "usage": {
+    "input": 894,
+    "output": 1443
+  },
+  "cost": 0.016218
+}

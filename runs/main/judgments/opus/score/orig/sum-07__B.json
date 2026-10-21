@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-07",
+  "side": "B",
+  "score": 7,
+  "model": "claude-opus-5-5",
+  "text": "The summary is accurate throughout:\n\n- **Facts:** the release date, the three new features, the 40% dashboard speed-up for large accounts and the ABN/email search are all correct.\n- **CSV removal:** this is the most consequential item, and it is handled well. It is flagged as \"Action needed,\" explains why imports will break (new column names, separate GST column) and points to the mapping article.\n- **Android 9:** this is slightly less precise than the original. \"No longer supported\" drops the reassurance that the app will keep working. It is not false, since \"won't receive updates\" is stated, but it is a small loss of nuance.\n\n**Coverage:** the reader gets the points they need. The most notable omission is the GST rounding change to match the ATO method. For an accounting product, that could affect figures a manager cares about, and it would have been worth more space than the per-client reminder wording.\n\n**Concision:** the summary runs to about 124 words of body text, plus the bold labels. That breaks the explicit \"under 120 words\" limit. The overrun is small but avoidable. Low-value details like \"with customisable wording per client\" and \"with early access through the beta program\" could have been cut to fit the limit, perhaps making room for the GST note instead. The structure, with the action item set apart, suits a busy manager well.\n\nOverall, this is a strong, accurate and well-prioritised summary. It is marked down for missing a stated hard constraint and for a minor omission.\n\nScore: 7",
+  "usage": {
+    "input": 1061,
+    "output": 1596
+  },
+  "cost": 0.036164
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "qa-24",
+  "side": "A",
+  "score": 5,
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** The response answers both questions correctly with a clear \"no\" to each.\n\n- **Base to peak:** Mauna Kea is the tallest from base to peak, at about 10,200 m, with about 4,207 m above sea level. Both figures are accurate.\n- **Everest's own base-to-peak height:** It gives 4,600–5,000 m. Commonly cited figures run lower, roughly 3,600–4,600 m depending on which base is chosen. This is a minor quibble that does not affect the conclusion.\n- **Distance from Earth's centre:** Chimborazo is correctly identified as the summit farthest from the centre. The figures given (about 6,384 km, about 2 km beyond Everest, 6,263 m elevation) are accurate. The equatorial-bulge explanation is the right key reasoning.\n\n**Reasoning and clarity:** The key reasoning is present for both measures: the seafloor base for Mauna Kea and the equatorial bulge for Chimborazo. The structure is clear.\n\n**Length:** The response breaks an explicit instruction. The user asked for under 120 words, and the response runs to roughly 210, nearly double the limit. Much of the excess adds nothing:\n- the opening framing sentence;\n- the \"This is notable because…\" aside;\n- the summary paragraph, which repeats what was already said.\n\nThe grading criteria say extra length is not a merit. Here it is a clear failure to follow a stated constraint.\n\nThe content is correct and well reasoned, but disregarding the hard word limit is a significant flaw.\n\nScore: 5",
+  "usage": {
+    "input": 602,
+    "output": 1070
+  },
+  "cost": 0.023808
+}

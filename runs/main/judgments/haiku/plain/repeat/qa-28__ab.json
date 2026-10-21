@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "qa-28",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. Both answers slightly exceed the 120-word limit, but A runs longer (about 134 words versus about 125 for B). B also explains that resizing has an O(n) cost per resize but O(1) amortized cost per insert, which directly answers the performance question. A's Java treeification detail is a nice touch but doesn't outweigh those points.\n\nB",
+  "usage": {
+    "input": 690,
+    "output": 980
+  },
+  "cost": 0.000559
+}

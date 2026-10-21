@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-18",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both responses give the correct core answer. Willem Janszoon and the crew of the *Duyfken* made the first recorded European landing in 1606, on the western side of Cape York Peninsula near the Pennefather River. Both also correctly note that earlier Portuguese (or Spanish) contact is speculative and undocumented. Both stay under 120 words: A has about 95, B about 110.\n\n**Response A** adds Dirk Hartog's 1616 landing in Shark Bay and his inscribed pewter plate, which is accurate. However, Hartog's landing was on an island, not the mainland, so this detail is peripheral to the question.\n\n**Response B** is more precise and adds useful context:\n- It narrows the date to February–March 1606.\n- It explains that the Dutch believed the land was part of New Guinea, which matters for understanding the \"recorded\" landing.\n- It mentions the reported skirmish with Aboriginal people, appropriately hedged with \"reportedly.\"\n- It places Hartog (1616) and Cook (1770) on the timeline, which addresses the common misconception that Cook was first.\n\nEvery one of these additions is correct and relevant, and B remains within the word limit.\n\nA is clean and correct but thinner. B's extra words add accurate, relevant information rather than padding, so it edges ahead.\n\nVerdict: B",
+  "usage": {
+    "input": 714,
+    "output": 1021
+  },
+  "cost": 0.023276
+}

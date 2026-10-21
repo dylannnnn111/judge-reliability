@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-40",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are factually correct. The light and sound speeds are right, the divide-by-3 (km) and divide-by-5 (miles) rules are right, and both worked examples check out. Response A's 15 s gives 5 km (3 miles), and Response B's 10 s gives about 3 km (2 miles). I counted Response A at roughly 115-118 words, so it stays under the 120-word limit, though not by much. Response B is comfortably under.\n\nOn reasoning, Response B states outright that the flash and thunder start at the same moment, which is the core idea. Response A only implies this. Both explain the speed difference clearly.\n\nResponse A adds a \"wait 30 minutes after the last thunder\" safety tip and gives the 30-second threshold in distance terms (about 10 km or 6 miles). These are correct and useful additions within the word limit. Its numbered steps for the counting method are also slightly clearer to follow.\n\nOverall A is marginally more useful, while B is slightly more explicit about why the two arrive at different times. The difference is small, and A's practical extras tip it ahead.\n\nVerdict: A",
+  "usage": {
+    "input": 745,
+    "output": 1835
+  },
+  "cost": 0.01984
+}

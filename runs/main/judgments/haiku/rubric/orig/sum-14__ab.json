@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-14",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both summaries are accurate on the main points: the move from two to three office days, the formal-arrangement and claims-team exceptions, the equipment funding change, the hot desking on Levels 3 and 4, and the rationale. Response B says team leaders will set \"one common team day,\" which drops the source's \"at least one,\" though this is minor. Response B also adds lockers and where to direct questions, which are useful but not essential for a busy manager. Response A omits those two details. On length, Response A is about 127 words and Response B about 144, so both exceed the 120-word limit, but B overshoots it more. Response A is the better fit for the brief: it stays closer to the limit, is at least as accurate, and keeps the points the manager needs most.\n\nVerdict: A",
+  "usage": {
+    "input": 1455,
+    "output": 2410
+  },
+  "cost": 0.0013505
+}

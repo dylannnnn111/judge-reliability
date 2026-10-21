@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-37",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the rust-like iron oxide coating on arkose as the cause of Uluru's red colour, and both correctly note that the interior is grey. Both fit under 120 words.\n\nResponse A gives the more complete reasoning. It names hematite as an iron oxide, explains that weathering occurs where the surface meets air and water, and gives the actual mechanism for the sunset colours: atmospheric scattering removes blue wavelengths. Response B says only that low-angle light is \"richer in red wavelengths,\" which describes the effect without explaining why it happens. Response B does add a useful observation about breaking a fresh piece of rock, but that doesn't outweigh A's stronger explanation.\n\nVerdict: A",
+  "usage": {
+    "input": 726,
+    "output": 883
+  },
+  "cost": 0.0005141
+}

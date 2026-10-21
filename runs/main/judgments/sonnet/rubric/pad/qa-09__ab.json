@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-09",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer of 7.5° and use the same correct reasoning.\n\nThe user asked for an answer in under 120 words. Response A is well under that limit. Response B has roughly 190 words, so it breaks the explicit length constraint.\n\nResponse B's extra words add little beyond Response A: a restatement of the hour-hand logic and a check that 7.5° is under 180°. That check is mildly useful but not essential.\n\nResponse A is correct, concise, and follows the instruction, so it is better.\n\nVerdict: A",
+  "usage": {
+    "input": 761,
+    "output": 170
+  },
+  "cost": 0.003222
+}

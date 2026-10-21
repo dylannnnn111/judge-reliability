@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-31",
+  "side": "A",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The response is largely accurate. The speed figures (142 to 156 lines/hour, about 10%), error rates (0.62% to 0.41%), the 17% gain for new staff, the 64% preference, the $210,000 cost and 14-month payback all match the source. The \"levelled off within four weeks\" wording is a fair paraphrase, and the limitation about a single company is included. It covers the points a manager needs: performance, accuracy, new-staff effect, staff views, cost, caveat and takeaway.\n\nThe main failure is the explicit length limit. The response runs to roughly 200 words, well over the 120-word cap, so it fails a direct instruction. Some of that length is padding, such as the opening sentence, the \"worth keeping this limitation in mind\" line and the repeated framing in the takeaway. A tighter version could have kept every key figure in under 120 words. Accuracy is high, content coverage is good, but concision is poor and the word limit is clearly breached.\n\nScore: 4",
+  "usage": {
+    "input": 1319,
+    "output": 855
+  },
+  "cost": 0.0005593999999999999
+}

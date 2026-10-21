@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-16",
+  "side": "B",
+  "score": 7,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate. The dates, dollar figures, the verbal status of the credit and the 15 October decisions all match the source. It also carries the main points a manager needs: the delay, its causes, the budget impact, the high risk and the decisions required.\n\nWeaknesses:\n- It drops the condition that the credit must be confirmed in writing *before the meeting* for the $26k figure to apply, which is a small loss of precision on the decision.\n- It leaves out the duplicate-records issue (about 3,100 records, a medium risk) and the sales-training availability risk as a separate item, though it partly covers the latter through the December clash.\n- It omits progress to date, such as the data mapping and two of three test migrations.\n- By my count it is about 120 words, right at or slightly over the \"under 120\" limit.\n\nOverall it is clear and well structured, with minor omissions and a borderline length.\n\nScore: 7",
+  "usage": {
+    "input": 1150,
+    "output": 1322
+  },
+  "cost": 0.01552
+}

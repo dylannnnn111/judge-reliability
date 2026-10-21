@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-14",
+  "order": "ba",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** Both responses give the correct answer of 7.5 hours (7 hours 30 minutes).\n\n**Reasoning:** Both give the same key steps:\n- tap rate 1/3 per hour\n- drain rate 1/5 per hour\n- net rate 2/15 per hour\n- time = 15/2 hours\n\n**Clarity:** Both are clear, well formatted, and well under 120 words. Response A states the answer first and keeps every step in bullets. Response B bolds the key intermediate and final values and puts the final calculation outside the bullets. These are cosmetic differences, and neither adds or omits anything substantive.\n\nNo meaningful difference separates them.\n\nVerdict: TIE",
+  "usage": {
+    "input": 600,
+    "output": 270
+  },
+  "cost": 0.0078
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "sum-13",
+  "side": "A",
+  "score": 2,
+  "model": "claude-opus-5-5",
+  "text": "The cause is misstated, a date is wrong, and the summary runs to roughly double the word limit.\n\n**Accuracy**\n- **Cause (serious error):** The response says the contractor \"had visited monthly and missed this fault during those visits.\" The report says the opposite. The monthly visit was skipped entirely because the technician was on leave and no replacement was sent. That skipped visit is the breach behind the $7,350 recovery claim. Saying the visits happened misrepresents the cause and weakens the basis for recovering the cost.\n- **Dates:** The response says the \"resample taken on 9 October\" showed no detection. The resample was taken on 6 October; only the result came back on 9 October.\n- **What is correct:** The 1,200 CFU/mL count and its date, the health department notification within 24 hours, the $7,350 cost, the $4,800 approval and the weekly manual checks.\n\n**Coverage**\n- The decision needed is clearly flagged, which is the most important point for this reader.\n- Missing: the move to fortnightly sampling for three months, and that tenants were informed on 4 October.\n- The impact on the cost claim and the new reporting requirement are partly covered.\n\n**Concision**\n- The response is about 230 words against a limit of under 120.\n- Much of the length is letter padding (\"I am writing to provide an update,\" \"Turning to the cause,\" \"We appreciate your attention to this matter\") that adds nothing for a busy manager.\n\nScore: 2",
+  "usage": {
+    "input": 1346,
+    "output": 692
+  },
+  "cost": 0.019224
+}

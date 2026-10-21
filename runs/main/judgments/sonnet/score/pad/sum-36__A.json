@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "sum-36",
+  "side": "A",
+  "score": 3,
+  "model": "claude-sonnet-5-5",
+  "text": "The response breaks the 120-word limit by a wide margin, at roughly 220 words. It also opens with filler (\"Thank you for reviewing this summary… each one is described in more detail\"), which adds nothing for a busy manager.\n\nOn accuracy, most of the numbers are correct (48 months, 3 November 2026, $3,480 plus GST, 4% from month 25, 75% early exit). But there are two problems:\n\n- The line \"term months will likely exceed the colour allowance by about $195 per month\" garbles the source. The $195 is the extra cost, not the size of the overage, which is about 3,000 pages.\n- Saying the summary helps \"assess the agreement\" implies the lease is still under review. The source says the Business Manager already signed it on 15 September, and the response leaves that out. For a manager deciding what to do, that is a significant omission.\n\nOther useful points are also missing: the overage rates, and that the school can buy the printers at a value agreed at the end of the term. The unused-pages point is repeated twice, which is wasteful.\n\nOverall, the summary is partly correct and readable but over length, slightly misleading, and missing the key \"already signed\" fact.\n\nScore: 3",
+  "usage": {
+    "input": 1277,
+    "output": 820
+  },
+  "cost": 0.010754
+}

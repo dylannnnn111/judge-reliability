@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-27",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.**\n\n**Accuracy:** Both responses get the core numbers right: 81% vs 74%, 60% of Sydney customers on the promotion, 78% vs 76% among paying customers, $95 per session, $410,000 a year, and the 21 October meeting. Response B, however, has two problems:\n- **Voice.** It speaks in the first person (\"I would kindly recommend\", \"We would kindly ask leadership\"). The summariser seems to be speaking as Marcus or on his behalf, which blurs who is recommending what.\n- **Duration.** It says \"a 60-day test\", dropping Marcus's condition of \"at least 60 days\".\n\nResponse A keeps the attribution clear (\"Marcus Hale advises\") and preserves \"at least 60 days\".\n\n**Coverage:** Both keep the essential points: the recommendation, the confound, the cost, the misleading claim from sales, and the proposal with its decision date. B also mentions the August–September timing, which is minor.\n\n**Concision and length limit:** B runs to roughly 190 words, well over the 120-word limit. Much of that is padding: it repeats \"August and September\" and restates the summary line in its opening paragraph. A comes in at about 123 words, essentially at the limit. A is much tighter and much closer to complying.\n\nVerdict: A",
+  "usage": {
+    "input": 1648,
+    "output": 1194
+  },
+  "cost": 0.030472
+}

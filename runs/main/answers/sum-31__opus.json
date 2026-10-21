@@ -1,0 +1,13 @@
+{
+  "item": "sum-31",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**Voice picking vs handheld scanners: key findings**\n\nA ten-week trial with 118 pickers at two Sydney grocery distribution centres found voice-directed picking outperformed handheld scanners:\n\n- **Speed:** up about 10% (142 to 156 lines/hour), with gains settling within four weeks.\n- **Accuracy:** errors fell from 0.62% to 0.41% of lines (less improvement where errors were already low).\n- **New staff:** biggest winners, with speed up 17%.\n- **Staff view:** 64% preferred voice. Complaints were hot, uncomfortable headsets and less chat with colleagues.\n- **Cost:** about $210,000 per 60-picker centre, with estimated payback in around 14 months.\n\n**Caveat:** Both sites belonged to one grocery company, so results may differ elsewhere.\n\n**Takeaway:** Worth considering, especially for sites with many newer staff. Plan for headset comfort in heat.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 696,
+    "output": 1607
+  },
+  "cost": 0.034924,
+  "at": "2026-10-14T01:52:26.403Z"
+}

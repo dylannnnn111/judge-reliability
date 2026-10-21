@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-04",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.** Both lead with the right top issue: retrying a POST with no idempotency key risks double-charging. Both also correctly flag the retrying of 4xx errors, and both rank these two first, which is sensible.\n\n**Where they diverge: parse errors.**\n- **A's claim is partly wrong.** A says `ValueError` from `resp.json()` \"isn't caught.\" In modern `requests` (2.27+), `resp.json()` raises `requests.exceptions.JSONDecodeError`. That class inherits from `RequestException`, so it *is* caught and retried, which means another charge attempt.\n- **B gets this right.** It says the error \"may be caught (depending on the requests version) and retried, which risks another charge.\" It also correctly notes that `KeyError` escapes. For a payment path, this is a meaningful correctness point.\n\n**Smaller real points B adds:**\n- 429 should be retryable.\n- The loop sleeps after the final attempt, which wastes time.\n- A generic `RuntimeError` prevents callers from telling a decline apart from an outage.\n- B gives a concrete fix for the idempotency key: send an `Idempotency-Key` header derived from the order ID.\n\n**A's distinctive strength:** its \"ambiguous failure state\" point (definitely not charged versus unknown, plus reconciliation) is a good insight. B partially covers it via distinct exception types, though it misses the reconciliation angle.\n\n**Length:** both exceed the 200-word limit, and B is somewhat longer. However, B's extra content is mostly correct and useful. Its accuracy advantage on the parse-error point matters more than the extra length.\n\nVerdict: B",
+  "usage": {
+    "input": 1651,
+    "output": 914
+  },
+  "cost": 0.024884
+}

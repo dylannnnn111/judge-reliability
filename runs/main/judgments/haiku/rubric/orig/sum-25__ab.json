@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-25",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response A has a factual error. It says the job \"was stopped after 35 minutes,\" but the sources give only the stop time (9:35am) and the first call (8:20am), which is about 75 minutes later, and no job start time. A also omits the early \"we've been hacked\" all-staff message and its leak to local news, which a manager would want to know about.\n\nResponse B is accurate on every date, number and decision I checked: the 1 October change, the 347 statements, the regulator notification on 3 October, the 6 October calls, the 13 October and 31 October deadlines, and the 9 October remaining sends. It also keeps the communications failure. Its weakness is length: at roughly 145 words it exceeds the 120-word limit, which is a real instruction violation. Still, accuracy ranks first, and A's timing error is a misstatement, while B's overrun is a concision problem. On balance B is better, though the length breach keeps the margin from being wide.\n\nVerdict: B",
+  "usage": {
+    "input": 1443,
+    "output": 1474
+  },
+  "cost": 0.0008813
+}

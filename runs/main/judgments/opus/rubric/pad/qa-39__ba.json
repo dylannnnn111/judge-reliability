@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-39",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A** is accurate. It explains binary floating-point (IEEE 754), uses the 1/3 analogy, and gives the approximate stored values of 0.1 and 0.2. It notes that the sum rounds to about 0.30000000000000004, a different double from the nearest representation of 0.3. It also offers practical fixes: tolerance comparisons and decimal types. It stays at roughly 95 words, within the user's limit.\n\n**Response B** is also accurate, and slightly more detailed. It gives the exact neighbouring double for 0.3 and mentions integer cents as a workaround. However, it runs to roughly 220 words, nearly double the explicit limit of \"under 120 words.\" Much of the extra length is filler (\"It is worth understanding why this matters,\" \"So, to be specific\"). The genuinely added content (the 0.29999... value, the integer-cents tip) is marginal compared with breaking a clear user instruction.\n\nBoth are correct and give the key reasoning. A does so concisely and follows the length constraint, while B clearly violates it. A is better.\n\nVerdict: A",
+  "usage": {
+    "input": 926,
+    "output": 475
+  },
+  "cost": 0.013204
+}

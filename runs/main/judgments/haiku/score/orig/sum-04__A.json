@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-04",
+  "side": "A",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The summary is accurate on every figure I checked: 18 and 4 weeks at full pay, up from 12 and 2; three blocks within 24 months; the 1 January 2027 birth or adoption cutoff; the 12-month service rules for permanent and casual staff; the 10-week application deadline; and the session dates and times. It is under 120 words and reads cleanly for a busy manager.\n\nSome points a manager would need are missing. It doesn't say the leave is in addition to the government Parental Leave Pay scheme. It omits the rule that children arriving before 2027 stay on the old entitlements even if leave runs past 1 January. It also leaves out that super continues on the employer-paid portion, though the stated super change is correct. The early-birth notification process is absent too. These are omissions rather than errors, but the pre-2027 rule in particular could matter to a manager handling current cases.\n\nScore: 7",
+  "usage": {
+    "input": 1112,
+    "output": 753
+  },
+  "cost": 0.0004877
+}

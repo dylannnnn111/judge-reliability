@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-18",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify Willem Janszoon and the *Duyfken* landing at Cape York in 1606, and both stay under 120 words. Neither contains a factual error that I can find. Response A adds the reasoning that the crew were exploring the New Guinea coast and took the land for an extension of it, which explains why the landing happened. It also notes the reported skirmish with Aboriginal people. Response B's detail that Hartog left a dated pewter plate is interesting but less central to the question. Response A's extra context is more useful for answering \"who and when,\" so it edges ahead.\n\nVerdict: A",
+  "usage": {
+    "input": 714,
+    "output": 630
+  },
+  "cost": 0.00038639999999999996
+}

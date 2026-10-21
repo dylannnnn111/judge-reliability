@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-16",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. It stays near the 200-word limit, while Response A is well over it, at roughly 330 words, and opens with filler (\"Thank you for sharing this code\").\n\n**Issues found:** Both responses find the same core problems:\n- `sortByPrice` mutates its input.\n- There is no input validation.\n- Totals should be recomputed on the server.\n- Discount matching is brittle.\n- `formatAud` mishandles negatives and thousands separators.\n- GST treatment may be wrong.\n\n**Accuracy:** Response A's rounding point (#5) is weak. Its suggested fix, `Math.round(subtotalCents * 10 / 100)`, is hardly better than the original, and the half-cent concern is minor. The per-line versus per-total GST question is reasonable but speculative. Response A also pads its hardcoded-code item with an `==` versus `===` remark, which has no effect here because both operands are strings.\n\n**Ranking:** Response B puts the GST double-counting question first, which is arguably the highest-impact issue for a money display. It hedges appropriately with \"confirm whether `priceCents` is GST-inclusive\". Response A buries the same point last as a \"verify\" item. Response A ranks the sort mutation first, which is a real bug but arguably less costly than a systematic overcharge.\n\n**Fixes:** Response B gives concrete fixes, including `trim().toUpperCase()` and returning an error for unknown discount codes. Response A's fixes are similar in most places but weaker on the rounding item.\n\nOverall, Response B has fewer spurious flags, better prioritisation, and it respects the length constraint.\n\nVerdict: B",
+  "usage": {
+    "input": 1879,
+    "output": 961
+  },
+  "cost": 0.013368
+}

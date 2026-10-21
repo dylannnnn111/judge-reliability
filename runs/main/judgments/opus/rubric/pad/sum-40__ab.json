@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-40",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.**\n\n**Accuracy:** Both are essentially accurate.\n- Response A correctly reports the sample of 1,622 students in 11 regional NSW public schools, the 1.8 vs 1.1 mark improvements, and that the 0.7-mark difference was not statistically significant. It also covers the 71% concentration finding, the teacher observations, the absence of problems with clear, label-free bottles, and both limitations.\n- Response B is also largely accurate. However, it softens \"no reports of problems\" to \"no significant problems,\" and it drops the teachers' observation that students seemed calmer.\n\n**Key points:** Response A keeps everything a manager needs, including a clear bottom line and caveats. Response B covers most points but loses the teacher observation.\n\n**Concision:** This is the decisive difference. The user asked for under 120 words.\n- Response A is about 116 words, so it meets the limit.\n- Response B is roughly 300 words, well over the limit. Its extra length is filler that adds nothing (\"When the results are considered, it is useful to start with...\", \"In other words...\", \"Put simply...\", \"Taking these findings together...\").\n\nResponse B breaks an explicit instruction and is less suitable for a busy manager.\n\nVerdict: A",
+  "usage": {
+    "input": 1601,
+    "output": 802
+  },
+  "cost": 0.022444
+}

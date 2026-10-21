@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-23",
+  "side": "A",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate and about 109 words, so it meets the limit. Dates, times, amounts, names and roles all match the minutes. The council items, Clean Up Day and carols details, speed counter request and next meeting are all covered. The decisions are separated from information, which suits a busy reader.\n\nThere are two small weaknesses:\n- \"142 member households, up on last year\" slightly blurs the minutes, which say renewals are up and 142 households are now members.\n- The playground and footpath dates are stated as flat facts, where the minutes say \"planned\" and \"scheduled\".\n\nIt also drops minor detail such as the school choir and what the $900 covers, which is a reasonable cut. Overall it is concise and useful.\n\nScore: 9",
+  "usage": {
+    "input": 1209,
+    "output": 836
+  },
+  "cost": 0.010778
+}

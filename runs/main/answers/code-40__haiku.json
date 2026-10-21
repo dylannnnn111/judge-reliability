@@ -1,0 +1,13 @@
+{
+  "item": "code-40",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "**Bugs, most important first:**\n\n1. **The paging path never fires.** The `while` loop runs in a subshell because of the pipe from `df`, so `alerts` is never updated in the parent shell. `alerts` stays 0, the script always exits 0, and cron never pages, even when disks are full. Fix with process substitution: `done < <(df -P | tail -n +2)`.\n\n2. **A webhook failure aborts the run and pages for the wrong reason.** With `set -e` and `pipefail`, a failed `curl -f` kills the loop partway through. Remaining filesystems go unchecked, and the non-zero exit pages on-call about the alert endpoint, not the disk. Wrap the `curl` in `|| true` or handle its failure explicitly.\n\n3. **Non-numeric `Use%` values crash the script.** Some filesystems report `-` instead of a percentage. `[ \"-\" -gt 90 ]` is an error, and `set -e` aborts the script, so disks after that line go unchecked. Skip rows where `pct` isn't a number.\n\n4. **Alerts repeat every 5 minutes with no state.** A full disk sends the same webhook message 12 times an hour. Consider deduplicating, or alerting only on transitions.\n\n5. **Two alert channels with unclear roles.** The webhook and the exit code both alert. Decide which one is authoritative so a single problem doesn't page twice or get lost.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 415,
+    "output": 1396
+  },
+  "cost": 0.0007395,
+  "at": "2026-10-14T01:55:09.865Z"
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-16",
+  "side": "A",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The response correctly names the **Antarctic Desert** as the world's largest desert. Its figure of about 14 million km² matches the commonly cited 14–14.2 million km². The conversion to 5.5 million sq mi is also right.\n\nIt gives the key reasoning a user needs: deserts are defined by low precipitation, not by heat or sand. Without that, the answer would look counterintuitive.\n\nThe supporting facts are accurate:\n- **Arctic Desert:** ~13.9 million km², the commonly cited figure.\n- **Sahara:** ~9.2 million km², correctly identified as the largest hot desert.\n- **Size comparison:** \"Roughly the size of the United States\" is loose, since the US is about 9.8 million km², but it is acceptable.\n\nThe closing line usefully covers the other likely reading of the question, the \"classic\" sandy desert. The response is about 80 words, within the 120-word limit. The bullets are clear and every element adds something relevant.\n\nMinor nitpicks:\n- The bolding is slightly heavy.\n- The phrase \"Antarctica's interior receives very little\" is a bit vague, as it gives no figure such as under 50 mm per year.\n\nOverall, the response is correct, well reasoned and clear.\n\nScore: 9",
+  "usage": {
+    "input": 395,
+    "output": 665
+  },
+  "cost": 0.01488
+}

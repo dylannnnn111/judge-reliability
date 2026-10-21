@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-06",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the critical bug: `is not` compares identity instead of value, so legitimate customers with larger IDs get `Forbidden`. Both also flag the same secondary problems: the 404/403 existence leak, the non-atomic cancel race, the missing refund handling, and magic-string statuses. Both rank the `is not` bug first and give a fix for each issue.\n\nThe main difference is the 200-word limit. Response A runs to roughly 350 words. It pads each point with restatements (\"In other words...\", \"Put differently...\") and its minor section adds a weak point about the `ValueError` message leaking the status string. Response B is tighter, though it also slightly overshoots 200 words. It adds a useful observation that tests with small IDs would hide the bug. Its \"mutates in-memory order before save\" point is also valid and more relevant than A's minor items. B offers several fix options for the race (conditional update, row locking, optimistic versioning), while A gives one concrete SQL fix that also includes `customer_id`.\n\nOverall, B is more concise, follows the length instruction better, and is at least as accurate and useful.\n\nVerdict: B",
+  "usage": {
+    "input": 1752,
+    "output": 765
+  },
+  "cost": 0.011154
+}

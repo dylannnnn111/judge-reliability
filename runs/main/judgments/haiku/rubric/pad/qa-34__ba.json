@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-34",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly explain Diffie-Hellman key exchange, the symmetric session key that follows, and certificates as protection against man-in-the-middle attacks, so neither has a factual error. Response A gives slightly more context, such as why authentication is needed separately from key exchange and that certificates bind a public key to a domain name. However, it runs well over 120 words, violating the explicit length limit. Response B covers the same core reasoning, including the eavesdropper point and the authentication step, in roughly 117 words, staying within the limit. Since the extra detail in A does not outweigh breaking the stated constraint, B is the better response.\n\nVerdict: B",
+  "usage": {
+    "input": 907,
+    "output": 797
+  },
+  "cost": 0.0004892
+}

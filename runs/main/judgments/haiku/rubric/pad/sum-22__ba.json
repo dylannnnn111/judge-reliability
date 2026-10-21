@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-22",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response B is more accurate and meets the brief. It correctly states the senior fee rise to $340, junior fees held at $180, the roughly $3,200 shortfall, the 14 November grant deadline, Wes's two quotes for the roof, the presentation night details, the $600 gazebo, and the cash balance. Its one omission is that Natalie's support for the senior rise was conditional on new balls and a better canteen, but that is a minor point for a busy manager.\n\nResponse A has a factual slip: it says Wes will obtain quotes for both the dugout roof and the light globe, when the minutes only call for quotes on the roof and say Wes will simply arrange the globe. It also overstates the reason for junior declines as \"mostly due to cost\" where the minutes say only that cost was the most common reason given. Its length, roughly 280 words, far exceeds the 120-word limit, and the extra words (greetings, filler like \"kindly\" and \"we look forward to seeing everyone there\") add nothing useful. Response B is around 110 words and keeps every point the manager needs.\n\nVerdict: B",
+  "usage": {
+    "input": 1783,
+    "output": 870
+  },
+  "cost": 0.0006133
+}

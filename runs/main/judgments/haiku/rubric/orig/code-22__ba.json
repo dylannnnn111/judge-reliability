@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-22",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the critical flaw: `jwt.decode` doesn't verify the signature, so anyone can forge an admin token. Both also catch the 403-instead-of-401 problem, the missing scheme check, and the unchecked expiry. Response A's observation that `decode` returns `null` rather than throwing, which makes the `try/catch` dead code, is accurate and well explained. Response B adds a distinct point about algorithm pinning and a useful corrected code snippet, but its \"minor\" bullets (role brittleness, logging, swallowed errors) are filler that pads the response past the 200-word limit. Response A stays closer to the limit and covers the same important ground with clear, correctly ordered fixes. Its \"High\" rating for exporting `SECRET` is a bit overstated, but that is a small issue. On balance, Response A is slightly better for accuracy, prioritization, and adherence to the length constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 1718,
+    "output": 1056
+  },
+  "cost": 0.0006998
+}

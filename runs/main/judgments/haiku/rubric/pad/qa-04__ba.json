@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-04",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses reach the correct final price of $480 and the correct overall change of a 4% decrease, and both explain why the changes don't cancel out. Response A adds the 1.20 × 0.80 = 0.96 check, but it is wordy and repeats the $480 result several times. At roughly 190 words, it breaks the \"under 120 words\" limit. Response B gives the same correct answers, explains the reasoning clearly, and adds the correct general formula (net change of −p²). It stays within about 90 words, so it follows the instruction.\n\nVerdict: B",
+  "usage": {
+    "input": 865,
+    "output": 538
+  },
+  "cost": 0.0003555
+}

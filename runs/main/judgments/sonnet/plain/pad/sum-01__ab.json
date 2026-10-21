@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-01",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Constraint: under 120 words, summarising for a busy manager.\n\nWord count of A: Roughly... title: \"Q1 board pack: regional submissions now due Friday 30 October, close of business\" (13). Next paragraph: \"The deadline moved up from 4 November because the CFO brought the board meeting forward a week. If this causes a real problem, call Priya today rather than emailing.\" (~29) → 42. \"Each region must submit:\" (4) → 46. Three bullets (2+3+3=8) → 54. \"Requirements:\" (1) → 55. \"Use the new template (Finance > Board > 2026-27 > Templates). It adds a separate line for software subscriptions, which the board requested.\" (~21) → 76. \"Explain any variance over $50,000 or 10%, whichever is smaller.\" (11) → 87. \"Paste numbers, not screenshots.\" (4) → 91. \"If you're on leave, nominate a delegate and tell Priya.\" (10) → 101. \"Optional: Marcus will run a walkthrough of the new template Thursday at 2pm in the Level 6 boardroom.\" (18) → 119. Borderline, roughly 119 or so, probably under 120.\n\nWord count of B: clearly longer, about 200 words. It violates the limit.\n\nB also is written in the voice of \"I'm writing to let you know,\" which is odd for a summary. A is better.\n\n**A**",
+  "usage": {
+    "input": 1417,
+    "output": 452
+  },
+  "cost": 0.007354
+}

@@ -1,0 +1,13 @@
+{
+  "item": "qa-18",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "The first recorded European landing on the Australian mainland was made by the Dutch navigator **Willem Janszoon** and the crew of the *Duyfken* in **1606**. They went ashore at the western side of Cape York Peninsula, in what is now Queensland, around the Pennefather River area.\n\nOther early Dutch visits followed. In **1616**, **Dirk Hartog** landed on an island in Shark Bay, Western Australia, and left a pewter plate inscribed with the date. Some earlier Portuguese voyages have been proposed, but there is no reliable documentary evidence of a landing.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 57,
+    "output": 471
+  },
+  "cost": 0.00024119999999999998,
+  "at": "2026-10-14T01:50:30.999Z"
+}

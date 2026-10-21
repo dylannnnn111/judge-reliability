@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-13",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both summaries are accurate on the core facts: the 1,200 CFU/mL result, the 24-hour notification, the resample result, the $7,350 cost, the $4,800 approval decision, and the interim weekly checks. A has a small imprecision: it says the test \"found\" Legionella on 29 September, when the sample was taken that day and results arrived on 3 October. It also gives 9 October as the date the resample was taken rather than the date its result came back. B avoids these slips. It also includes the increased fortnightly sampling, which A omits, and it notes the contractor's missed visit went unreported. B leads with the decision the manager must make. Both run slightly past 120 words, so length does not separate them. B is more accurate and more complete at similar length.\n\nVerdict: B",
+  "usage": {
+    "input": 1502,
+    "output": 1528
+  },
+  "cost": 0.0009142
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-10",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses reach the correct answer, 1/3, with the same reasoning. The remaining differences are the word limit and clarity.\n\nThe request says to answer in under 120 words, so I counted each response.\n\nResponse A: \n\"**1/3**\" (1)\n\"List the equally likely two-child families by birth order: BB, BG, GB, GG, each with probability 1/4.\" ≈ 17 words → 18\n\"The condition \"at least one child is a girl\" removes BB.\" ≈ 10 → 28\n\"That leaves BG, GB, and GG, which are still equally likely.\" ≈ 11 → 39\n\"Only GG has two girls, so the fraction is 1 out of 3.\" ≈ 12 → 51\n\"This is different from 1/2.\" 5 → 56\n\"The 1/2 answer would apply if you were told that a *specific* child, such as the older one, is a girl.\" ≈ 21 → 77\n\"Here the condition only says that at least one is a girl, so the families with one boy and one girl (BG and GB) together outnumber the two-girl families.\" ≈ 29 → 106\n\"**Answer: 1/3**\" 2 → 108\n\nResponse A comes to roughly 108 words, which is under 120.\n\nResponse B:\n\"Answer: 1/3\" 3\n\"To begin, consider a two-child family.\" 6 → 9\n\"There are four equally likely outcomes for the sexes of the two children: BB, BG, GB, and GG, where B stands for boy and G stands for girl.\" ≈ 28 → 37\n\"Next, apply the given condition.\" 5 → 42\n\"The condition \"at least one girl\" rules out BB, since it is the only outcome with no girls.\" ≈ 17 → 59\n\"This leaves three equally likely cases: BG, GB, and GG.\" 10 → 69\n\"Finally, count the cases with two girls.\" 7 → 76\n\"Only GG has two girls, so out of the three remaining cases, the fraction is 1/3.\" ≈ 16 → 92\n\"This result differs from the common intuition of 1/2, and the reason is worth spelling out.\" 16 → 108\n\"The condition doesn't identify which child is a girl; it only tells us that at least one of them is.\" ≈ 20 → 128\n\"If you knew a specific child (say, the older one) was a girl, the answer would be 1/2.\" ≈ 18 → 146\n\nResponse B comes to roughly 146 words, which is over the limit.\n\nResponse A meets the constraint and Response B does not. The correctness and reasoning are equal, so A wins on instruction-following.\n\nVerdict: A",
+  "usage": {
+    "input": 777,
+    "output": 830
+  },
+  "cost": 0.009854
+}

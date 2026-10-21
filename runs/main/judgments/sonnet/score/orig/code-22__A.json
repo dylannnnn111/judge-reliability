@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-22",
+  "side": "A",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds and correctly ranks the critical bug first: `jwt.decode` never verifies the signature, so anyone can forge an admin token. It gives the right fix, `jwt.verify` with a pinned algorithm. Most of the other points are real:\n\n- `SECRET` is unused, unvalidated and exported.\n- `decode` ignores `exp`.\n- A missing or garbage token returns 403 instead of 401, because `decode` returns `null` rather than throwing.\n- `replace(\"Bearer \", \"\")` accepts headers with no Bearer prefix.\n\nThe fix snippet is useful and mostly correct.\n\nThere are weaknesses:\n\n- **Length:** the response runs to roughly 280–300 words including code, well over the 200-word limit the user set.\n- **Padding:** items 3 and 4 are largely consequences of item 1 and could have been folded into it.\n- **Weak minor items:** \"single role string is brittle\", \"no logging\" and \"error details swallowed\" are speculative or low-value, and they dilute a prompt that asked for \"bugs and problems that matter\".\n- **Thin reasoning:** the explanation for not exporting `SECRET` (\"other modules can't safely depend on it\") is weak. The real concern is leaking the secret.\n\nThe substance is strong, but the length violation and the filler lower the score.\n\nScore: 6",
+  "usage": {
+    "input": 1133,
+    "output": 937
+  },
+  "cost": 0.011636
+}

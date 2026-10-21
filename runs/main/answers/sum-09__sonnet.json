@@ -1,0 +1,13 @@
+{
+  "item": "sum-09",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Summary: Bayview Arcade, Shop 14, Clause 7 (Rent Review)**\n\n- **Starting rent:** $62,400 a year plus GST, paid monthly. Reviewed each 1 March.\n- **Years 2-4:** Rent rises by Sydney CPI, with a minimum of 3% and maximum of 5% each year.\n- **Year 5:** Rent is reset to market value by a landlord-appointed valuer. The 5% cap doesn't apply, so increases could be larger, but rent can't fall below the year 4 level.\n- **Disputes:** Tenant can request an independent valuer within 30 days of notice; the cost is split equally.\n- **Other points:** Outgoings are charged separately. The landlord must give at least 14 days' written notice of new rent. If notice is late, the old rent continues until notice is given, then the difference is paid.\n\nThe full lease is the binding document.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 661,
+    "output": 302
+  },
+  "cost": 0.004342,
+  "at": "2026-10-14T01:51:20.048Z"
+}

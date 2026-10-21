@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-05",
+  "side": "B",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response answers Friday, 28 February 2025. Checking the date: from 29 February 2024 to 1 March 2025 is 366 days, because the span includes no leap day after 29 February 2024 but the 2024 leap day is counted on the way. So 365 days after 29 February 2024 is 28 February 2025, which is correct. For the weekday, 365 = 52 × 7 + 1, so the weekday advances by one day: Thursday becomes Friday. The response gives this key reasoning concisely, notes why 2025 has no 29 February, and stays under 120 words. The explanation is clear, though the date step could have been justified a little more explicitly.\n\nScore: 9",
+  "usage": {
+    "input": 351,
+    "output": 859
+  },
+  "cost": 0.0004646
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-15",
+  "side": "A",
+  "score": 10,
+  "model": "claude-sonnet-5-5",
+  "text": "The answer is correct: a 10 °C difference equals 18 °F. The reasoning is sound, since a temperature difference is scaled by 9/5 with no 32-degree offset. The verification is accurate too: 15 °C = 59 °F and 25 °C = 77 °F, so the difference is 18. The response is well under 120 words, clear, and concise. The check adds useful confirmation without padding.\n\nScore: 10",
+  "usage": {
+    "input": 368,
+    "output": 139
+  },
+  "cost": 0.002126
+}

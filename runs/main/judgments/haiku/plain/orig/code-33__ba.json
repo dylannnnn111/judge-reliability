@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-33",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. Both correctly identify the main bug: the `WHERE p.status = 'succeeded'` filter turns the LEFT JOIN into an inner join, so zero-payment customers disappear. B then covers more business-relevant problems for this use case: annual and quarterly plans generating false alarms, churned or brand-new accounts being included, and refunds counting as successful payments. A's points about UTC and date formatting matter less here, and its item 4 is mostly filler. B also stays closer to the 200-word limit, while A's length is borderline.\n\nB",
+  "usage": {
+    "input": 1368,
+    "output": 784
+  },
+  "cost": 0.0005288
+}

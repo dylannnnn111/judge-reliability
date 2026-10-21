@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-12",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. The user set a limit of under 120 words, and A is far over it, at roughly 190 words. B is also slightly over, at about 125, but it is much closer and reads as a real executive summary.\n\nA also wastes words on filler such as \"I would like to let you know,\" \"Turning to concessions,\" and \"For your information.\" That is a poor fit for a busy manager. B leads with the key facts, covers the same points, and is tighter. Its \"significant saving for regular users\" is a reasonable inference from the source, since the $15 weekly pass costs less than the $9 daily rate for anyone visiting more than twice a week.\n\n**B**",
+  "usage": {
+    "input": 1314,
+    "output": 1304
+  },
+  "cost": 0.015668
+}

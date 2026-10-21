@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-10",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Accuracy check: Both give the correct date, status, numbers and budget. Response A says \"An external accessibility audit found three minor issues, all now fixed\", which is accurate. It omits that the audit covered only the first six screens, but that is a minor omission. Response A says \"No decisions needed from you\", which is a slight inference but fits the \"None this fortnight\" line.\n\nResponse B says \"no decisions are needed from the steering group\", but the source never mentions a steering group, so this is a small invented detail. It also says \"I am pleased to report\" and \"I am happy to confirm\", which are first-person claims that are acceptable in tone but wordy. \"Two important areas of work were completed\", then \"First... Second...\" slightly miscounts, since the accessibility audit is also mentioned and is a third item. B says the risk was \"reduced to low\" without the reason, which is fine. B also mentions \"drafting customer communications for marketing review\", which is accurate.\n\nWord count: A is roughly 115 words, close to the limit. B is roughly 190 words, which exceeds the 120-word limit. That is a clear constraint violation.\n\nConcision and format: A is scannable, with bullets and bolded key items, which suits a busy manager. B is a dense paragraph with filler phrases (\"Turning to budget\", \"Finally, I would like to note\").\n\nA wins on accuracy (no invented steering group), on the length constraint, and on usability.\n\nVerdict: A",
+  "usage": {
+    "input": 1404,
+    "output": 458
+  },
+  "cost": 0.007388
+}

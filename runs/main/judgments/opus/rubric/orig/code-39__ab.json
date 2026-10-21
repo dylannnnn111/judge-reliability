@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-39",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Issues found.** Both responses identify the same four real problems:\n- an unchecked `cd` combined with no `-e`\n- path traversal through `APP_NAME`\n- dotfiles surviving the `./*` glob\n- failures and leftover files still exiting 0\n\nBoth also add a minor note on the counting loop. Every claim checks out, and neither flags anything that is actually fine.\n\n**Accuracy details.**\n- A correctly notes that `..` would wipe all of `/var/cache`.\n- A also points out that the `find` check does count dotfiles, so the warning fires even though they aren't removed. This is accurate and shows how issues 3 and 4 interact.\n- B adds `.` as a dangerous input. It would wipe every app's cache under `/var/cache/builds`, which is a valid extra case.\n- B's suggested regex plus the `!= .*` glob check correctly rejects `.`, `..`, and anything containing `/`.\n- B's minor note about filenames containing newlines is correct, and its `find -print -quit | grep -q .` emptiness check works.\n\n**Ranking.**\n- A puts \"failures don't fail\" above dotfiles. That is defensible, because silent success in a pipeline is the broader problem.\n- B reverses those two. That is also reasonable, since leftover `.cache/` or `.npm/` directories directly defeat the script's purpose.\n- Neither ordering is wrong.\n\n**Fixes.** B's remediation is somewhat more concrete and offers more options:\n- a ready-to-use validation pattern, or a `realpath` containment check\n- `shopt -s dotglob` as an alternative to `find -delete`\n\nA's fixes are correct but more generic, for example \"reject names containing `/` or `..`\".\n\n**Length and extras.** Both are near the 200-word limit. B's header line adds nothing.\n\nOverall they are very close. B edges ahead on the precision and usefulness of its fixes and its slightly fuller traversal coverage. A's interplay observation is a nice touch but less actionable.\n\nVerdict: B",
+  "usage": {
+    "input": 1626,
+    "output": 1284
+  },
+  "cost": 0.032184
+}

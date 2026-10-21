@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-14",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is slightly better. Both correctly identify the OFFSET-plus-delete bug as the most serious problem and both recommend keyset pagination. B also covers error handling and rollback, which A omits, and its suggestion to drop OFFSET is more directly actionable than A's. Both responses exceed the 200-word limit by a similar margin.\n\nB",
+  "usage": {
+    "input": 1474,
+    "output": 1178
+  },
+  "cost": 0.0007364
+}

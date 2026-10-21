@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-33",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Each gives the correct new 31 January 2027 shutdown date, the 8% figure, the 15-minute switch time, and the three new features. Both run slightly over 120 words, so neither wins on concision.\n\nResponse B has the edge on content. It leads with the action item, which is the most important thing for a manager, and it keeps the consequence that staff could be paid late. Response A states that timesheets will stop reaching payroll but drops the pay impact, which matters to a manager. Response A's structure is clear, but it gives the action item less prominence.\n\nVerdict: B",
+  "usage": {
+    "input": 1556,
+    "output": 1309
+  },
+  "cost": 0.0008101
+}

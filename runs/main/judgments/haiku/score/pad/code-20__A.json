@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "code-20",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The DST analysis holds up. Spring forward gives a 23-hour gap, so 0.96 floors to 0 and shows \"Due today\". Fall back gives -1.04, which floors to -2 and shows \"Overdue by 2 days\". The proposed UTC fix is correct, and the NaN point for malformed input is a real, if less likely, issue. The minor items are reasonable and clearly labelled as minor. The ranking is sensible, since a silent wrong label twice a year outranks defensive validation for a field the table supplies.\n\nThe response has clear weaknesses. It runs well past the 200-word limit, roughly 280 words. The opening sentence about having \"kept the explanations as they were\" is meta-commentary that adds nothing and suggests a rewrite the user never asked for. It also misses that the fix doesn't handle NaN, though that is a minor gap.\n\nScore: 6",
+  "usage": {
+    "input": 1374,
+    "output": 1123
+  },
+  "cost": 0.0006989
+}

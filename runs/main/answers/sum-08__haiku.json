@@ -1,0 +1,13 @@
+{
+  "item": "sum-08",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "Customer Daniel Mbeki bought a Frostline 400L fridge from the Penrith store on 14 August. It failed on 29 September, causing about $300 in food loss. Under the 90-day policy, the store handles the exchange, and Priya Nand (assistant manager, covering for Jason Reilly, on leave until 9 October) has booked a replacement for Wednesday. Frostline's contractor will separately collect the faulty unit and may call to arrange a time. Customer relations (Kevin Hales) owes Daniel a food loss claim form, which he has not yet received. Claims up to $500 need no manager sign-off. Open item: if the form isn't sent by 9 October, escalate to Amara Osei. Daniel's patience is wearing thin.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 792,
+    "output": 252
+  },
+  "cost": 0.0002052,
+  "at": "2026-10-14T01:51:16.872Z"
+}

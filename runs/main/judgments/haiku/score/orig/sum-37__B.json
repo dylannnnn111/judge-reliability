@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-37",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate on every checkable point: the Amber status, the 14 of 22 reports, Tomas Novak's 7 November departure, the 8 December and late January dates, the ~$64k unbudgeted contractor cost, the four month-end reports that depend on payroll, Margaret Lowe's return on 20 October, and the $298k of $455k spent. Its \"no decision yet\" framing is correct. The main omission is Finance's condition that a partial go-live is acceptable only if month-end reports don't depend on payroll. The response implies this with \"four month-end reports need it,\" but a manager would benefit from the explicit rule. It also drops that the team is proceeding on the current plan meanwhile and the next update date of 24 October. These are minor gaps. The text is concise, well structured and under 120 words.\n\nScore: 8",
+  "usage": {
+    "input": 1118,
+    "output": 758
+  },
+  "cost": 0.0004908
+}

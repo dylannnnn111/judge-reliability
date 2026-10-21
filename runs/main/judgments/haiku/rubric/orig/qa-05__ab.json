@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-05",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct answer, Friday 28 February 2025. Working it through: from 29 February 2024, 306 days reach 31 December 2024, and the remaining 59 days reach 28 February 2025. Since 365 days is 52 weeks plus 1 day, the weekday advances from Thursday to Friday.\n\nBoth explain the two key points: the weekday shift from 365 mod 7 = 1, and the absence of 29 February in 2025. Both are well under 120 words. Response A leads with the date and explains the leap-year point first, which reads slightly more naturally. Response B is marginally tighter but covers the same reasoning. Neither has a meaningful advantage.\n\nVerdict: TIE",
+  "usage": {
+    "input": 467,
+    "output": 609
+  },
+  "cost": 0.00035119999999999997
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-21",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is the better summary. It stays under the 120-word limit, at roughly 110 words. Its figures are accurate, including the derived hire-car total of $21,600 (6 cars × $1,800 × 2 months). It also covers what a manager needs: the recommendation, the over-budget amount, the need for sign-off, the fuel-saving rationale, the within-budget alternative, and the 24 October deadline with its consequence.\n\nResponse B breaks the word limit, running to about 200 words. It also uses a confusing voice (\"I'd like to ask for Ruth's sign-off... needs Ruth's approval\"), which muddles who is speaking and who decides. It repeats the sign-off point and adds the Coastal detail, which is of marginal use. Its facts are accurate, but the length violation and the awkward framing make it weaker.\n\nVerdict: A",
+  "usage": {
+    "input": 1674,
+    "output": 1410
+  },
+  "cost": 0.017448
+}

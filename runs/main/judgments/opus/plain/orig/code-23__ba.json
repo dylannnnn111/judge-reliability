@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-23",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth reviews find essentially the same real issues. B orders them better and keeps the minor points in proportion.\n\n- **Most important bug:** both correctly lead with `if (!r.value)` dropping legitimate 0 °C readings, which is the key bug for a cold-room dashboard.\n- **Prioritisation:** B ranks \"dead sensors disappear from the panel\" second and explains why it matters for monitoring: a vanished sensor is worse than one flagged offline. A puts the same issue last, below lesser concerns such as prototype-key collisions.\n- **Minor issues:** B groups the comparator-never-returns-0 issue and the O(n log n) sort into a single \"minor\" item. A spends separate numbered items on them, and on the `__proto__`/`constructor` key issue, which is unlikely to matter for sensor IDs.\n- **Length:** both run slightly over the 200-word limit, but B is a bit shorter.",
+  "usage": {
+    "input": 1474,
+    "output": 925
+  },
+  "cost": 0.024396
+}

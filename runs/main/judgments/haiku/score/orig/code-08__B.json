@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-08",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response catches the most important problems. The swallowed exception that moves failed files into `done` is correctly ranked near the top, and the partial-import and duplication risk follows from it. The incomplete-upload race is real and arguably the most likely production failure, so it is reasonably placed first. The overlapping-run risk, the unguarded `os.rename` that can abort the loop, and the silent overwrite in `done` are all accurate. The fixes are concrete and mostly actionable, such as the `.ready` marker, `flock`, and upsert keys. Weaknesses: the fixes for the lower items are thin, and the file-handle and memory points are minor for this context. The response also omits some things, such as a lack of schema validation for records, and it sits near the 200-word limit. Overall it is accurate, well-prioritized, and avoids false positives.\n\nScore: 8",
+  "usage": {
+    "input": 954,
+    "output": 803
+  },
+  "cost": 0.0004969
+}

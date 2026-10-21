@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-21",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.** Both responses correctly put the critical bug first: POST refunds are retried with no idempotency key, so a refund can be issued twice. Both also give reasonable fixes. B adds a wrapper-level default of refusing to retry POST/PATCH without a key, which suits a shared utility.\n\nBeyond that, B finds real code-level bugs that A misses or only gestures at:\n- **The catch-all retries everything.** It retries caller aborts (`AbortError`) and permanent `TypeError`s, such as a bad URL or an unreusable stream body. A only mentions \"no cancellation\" vaguely, as a minor point.\n- **The `refundId` cast is unchecked.** It can return `undefined` as a \"successful\" refund ID, a concrete correctness problem for a refund path.\n\nB also explains why undrained bodies matter: socket pool exhaustion in undici.\n\nA has weaker items:\n- **UI double-submit (#2)** is speculative and outside the code shown.\n- **Input validation of `amountCents` (#6)** is a reasonable but softer point.\n- **The jitter observation (#7)** is accurate but minor.\n\nBoth responses probably exceed the 200-word limit by similar amounts, so length doesn't separate them. B's issues are more precise, more grounded in the actual code, and more useful.\n\nVerdict: B",
+  "usage": {
+    "input": 1746,
+    "output": 752
+  },
+  "cost": 0.022024
+}

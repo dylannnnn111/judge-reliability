@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-21",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.**\n\n**Most important issue.** Both put the main problem first: refunds can be issued twice, because a non-idempotent POST is retried on 502/503/504 and on network errors. B's fix is sharper. It gives an idempotency key that the server must honor, or `maxAttempts = 1`, and recommends the wrapper refuse to retry POST/PATCH by default.\n\n**Coverage.** B catches a real bug that A misses: the `catch` retries everything. That includes `AbortError` from a caller who cancelled, and permanent `TypeError`s, such as a bad URL or a stream body that cannot be resent.\n\nB's #6 is also concrete and correct. The cast can return `undefined` as a \"successful\" refund ID.\n\n**Overlap.** Both cover the missing timeout, ignored `Retry-After` and undrained response bodies. B adds useful specifics: `AbortSignal.timeout` combined with the caller's signal, and socket-pool exhaustion under undici.\n\n**Weaknesses in A.**\n- Its #2, about support-console double-submits, is speculation about UI code that was never shown. It ranks this second, above real bugs in the code under review.\n- Its input-validation and jitter points are minor or debatable, yet take up space.\n\n**Length.** A is roughly 450 words, far beyond the 200-word limit. B also runs over, but by much less, and its extra words are more useful.\n\nVerdict: B",
+  "usage": {
+    "input": 1944,
+    "output": 697
+  },
+  "cost": 0.021716
+}

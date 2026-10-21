@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-24",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Verdict: A.** Both responses find the real issues and rank the most important one first: the race between `processed.has` and `processed.add` across the `await`, which the user said the provider triggers. Both then cover the non-durable, unshared, unbounded `Set`, unhandled errors, the non-constant-time comparison, the missing amount check, and replay. Neither flags anything spurious.\n\n**Response A's strengths:**\n- It puts the fix right with the top issue. It says to claim the ID atomically before processing, using a DB unique constraint or insert-if-absent inside the invoice transaction.\n- It adds a useful detail: release the claim on failure so retries still work.\n- It covers malformed JSON and missing `event.data`, not just `markInvoicePaid` failures. It also distinguishes returning 400 from returning 500.\n\n**Response B's strengths and weaknesses:**\n- Its #1 states the race but gives no fix. The remedy only appears in #2.\n- Its #3 (crash between side effect and marking) is real. It largely restates the remedy A already gave in #1 and #2: atomic commit and an idempotent `markInvoicePaid`.\n- It is slightly more precise that `timingSafeEqual` throws on mismatched lengths.\n- It misses malformed-payload handling.\n\n**Length:** Both exceed the 200-word limit, with B somewhat longer. B's extra words mostly repeat points rather than add new correct ones.\n\nOverall, A is a bit tighter, better organized around fixes, and slightly more complete.\n\nVerdict: A",
+  "usage": {
+    "input": 1681,
+    "output": 898
+  },
+  "cost": 0.024684
+}

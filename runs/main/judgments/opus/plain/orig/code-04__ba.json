@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-04",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses correctly put the double-charge risk from retrying a POST without an idempotency key first, followed by retrying non-retryable 4xx errors. The deciding difference is how they handle the response-parsing bug.\n\n**Response A** says `resp.json()[\"charge_id\"]` can raise `ValueError`/`KeyError` and that \"these aren't caught.\" That is wrong for current `requests`. Since 2.27, `resp.json()` raises `requests.exceptions.JSONDecodeError`, which subclasses `RequestException`. So it is caught and the charge is retried, even though the server already processed it. A's description of a dangerous bug is therefore inaccurate.\n\n**Response B** gets this right. A malformed JSON body on a successful response may be caught and retried, risking another charge, while `KeyError` escapes uncaught. This is a subtle, high-impact catch in payment code. B also notes the wasted sleep after the final attempt and the generic `RuntimeError`, which stops callers telling \"declined\" from \"unavailable.\"\n\n**Response A's strength** is its \"ambiguous failure state\" point, which is valuable for reconciliation. B's distinct-exception-types point covers part of it.\n\n**Length:** both slightly exceed the 200-word limit (about 208 for A, about 216 for B), so this doesn't meaningfully separate them.",
+  "usage": {
+    "input": 1495,
+    "output": 2219
+  },
+  "cost": 0.05036
+}

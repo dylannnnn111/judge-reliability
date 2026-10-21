@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-12",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nThe two summaries are close in content, structure and length. By a rough count, both land slightly over the 120-word limit, so that point doesn't separate them.\n\nThe deciding difference is one sentence in Response A: \"This is a significant saving for regular users.\" The source doesn't say this, and it isn't true for every eligible user. A dialysis patient visiting three times a week would save ($27 vs $15). But someone visiting once a week would pay more ($15 vs $9). Since the manager won't read the original, an overgeneralised claim like this could mislead them.\n\nBoth responses imply the weekly pass replaces the $9 daily concession, which the source leaves ambiguous. That flaw is shared.\n\nResponse B sticks to the facts and covers all the key points clearly.",
+  "usage": {
+    "input": 1210,
+    "output": 1168
+  },
+  "cost": 0.0282
+}

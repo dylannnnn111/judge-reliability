@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-28",
+  "side": "B",
+  "score": 5,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy.** Most facts are right: 84 staff, $3.9M, the 1 December effective date, two-week cash-out with four weeks remaining, the 24 Dec–2 Jan shutdown, the 31 October list, and the site exemptions. There are some distortions:\n\n- **Christmas shutdown (most serious):** The original says only staff *without enough leave* can take unpaid leave or make up time, and making up time needs the manager's agreement. The response reads as if any employee can pick any of the three options. That misstates the condition.\n- **Notice period:** \"with eight weeks' notice\" drops \"at least.\" In the original, eight weeks is a minimum, not a fixed period.\n- **Tense:** \"84 staff have\" loses the end-of-September timing. This is minor.\n\n**Coverage.** It keeps the points a manager needs. Leaving out \"40 days for full-time\" and the Fair Work basis is reasonable.\n\n**Concision and constraint.** The format is tight and scannable. However, by my count the response is about 133 words, or roughly 139 with the heading. That breaks the explicit \"under 120 words\" instruction.\n\n**Overall.** The response is well structured and mostly accurate. It loses marks for a misleading condition on the shutdown options, a softened notice requirement, and going over the word limit.\n\nScore: 5",
+  "usage": {
+    "input": 1104,
+    "output": 1309
+  },
+  "cost": 0.030596
+}

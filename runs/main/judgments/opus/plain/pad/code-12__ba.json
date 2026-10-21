@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-12",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A comes in at roughly 200 words, right at the limit. Response B runs to about twice that and opens with filler (\"The review below raises eight points… Each one is described in turn…\"), so it clearly breaks the user's explicit \"under 200 words\" constraint.\n\nOn substance, both catch the issues that matter most:\n- N+1 queries (about 40,000 round trips for 20,000 invoices)\n- A crash on a missing customer\n- The non-sargable date filter\n- Timezone ambiguity\n\nA also makes the practical point that finance gets totals as formatted strings (\"$1,234.56\"), which they can't sum. It notes the `$-12.34` rendering for negatives and the nondeterministic ordering within a customer.\n\nB's extra points are mostly speculative padding: a quantity column that may not exist, multi-currency, and reconciliation totals. Its snapshot-consistency point is reasonable but minor. None of them makes up for the verbosity and the ignored length limit.",
+  "usage": {
+    "input": 1764,
+    "output": 604
+  },
+  "cost": 0.019136
+}

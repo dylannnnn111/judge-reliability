@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-20",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "**B**\n\nBoth responses identify the same core issues: DST distorting the `Math.floor` day count, silent `NaN` handling for bad input, timezone dependence, and stale labels after midnight. Both DST examples are arithmetically correct, and both suggested fixes work.\n\nResponse B is more precise in two places. It correctly notes that the overdue list's membership is unaffected by the DST error, since the sign stays right. Response A instead says the invoice \"may land in the wrong place on the overdue list,\" which overstates the problem. Response B also explains why a full ISO timestamp breaks the parsing, and its timezone point is framed more clearly around the business timezone.",
+  "usage": {
+    "input": 1703,
+    "output": 797
+  },
+  "cost": 0.0005688
+}

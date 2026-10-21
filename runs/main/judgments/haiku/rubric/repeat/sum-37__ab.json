@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-37",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are factually accurate. Each gets the 7 November departure, the 8 December to late January slip, the three options, the $64,000 unbudgeted contractor, Margaret Lowe's 20 October return, and the $298,000 of $455,000 spend right. Both are also near or slightly over the 120-word limit, so neither clearly wins on concision. Response A's \"may not be acceptable\" softens the finance condition slightly, since four reports depending on payroll effectively rules out option 2. Response B omits the next update date, but it keeps the on-schedule progress and that Tomas is documenting payroll, which matter to a manager. Its structure is also easier to scan. On balance, B keeps slightly more of what the manager needs.\n\nVerdict: B",
+  "usage": {
+    "input": 1475,
+    "output": 1967
+  },
+  "cost": 0.001131
+}

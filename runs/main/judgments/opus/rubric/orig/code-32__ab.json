@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-32",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.** Both responses find the same four main issues and rank them the same way, all real and correctly prioritized:\n\n1. The `BETWEEN` upper bound drops September 30 orders.\n2. Integer division truncates the averages.\n3. `<> 'refunded'` excludes NULL statuses.\n4. The inner join hides stores with no orders, which makes the `HAVING` clause redundant.\n\n**Fixes.**\n- **Status filter:** A suggests an explicit allowlist of statuses and also mentions cancelled and pending orders and partial refunds. B offers `IS DISTINCT FROM`, which is a precise fix for the NULL issue.\n- **LEFT JOIN:** B adds a useful note that switching to a `LEFT JOIN` would create a division-by-zero risk.\n- **Integer division:** B has a real error. It names SQL Server as an engine where integer division truncates, then recommends `AVG(o.total_cents)` and `AVG(o.item_count)`. In SQL Server, `AVG` on an integer column also returns an integer, so the fix fails on one of the engines B itself lists. A's `AVG(o.item_count * 1.0)` or `* 1.0` cast works across engines.\n\n**Extras and length.** B adds a tiebreaker point, which is trivial for a dashboard sorted by revenue. B also runs well past the 200-word limit, at roughly 250 words. A is close to the limit and much tighter. B's extra length adds one useful point, the division-by-zero guard, but also adds a fix that is wrong on SQL Server.\n\n**Overall.** A is equally complete on what matters, accurate in its fixes, and better respects the length constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 1830,
+    "output": 1400
+  },
+  "cost": 0.03532
+}

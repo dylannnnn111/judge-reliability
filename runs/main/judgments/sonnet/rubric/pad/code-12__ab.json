@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-12",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the three core problems: the N+1 queries, the crash when a customer row is missing, and the non-sargable `strftime` filter. Both give concrete fixes for them.\n\n**Response A:**\n- It opens with a filler sentence and runs well past the 200-word limit.\n- It ranks the missing-customer crash above the N+1 queries. That is defensible, but for a 20,000-invoice export the N+1 pattern is the main structural problem.\n- Several of its eight points are speculative or low value:\n  - the item count \"may be wrong\" because of a quantity column that is not in the code;\n  - the snapshot concern;\n  - the reconciliation total;\n  - the currency symbol;\n  - the float-division point, which it admits is \"usually fine\".\n- This padding dilutes the list and flags things that are mostly fine.\n\n**Response B:**\n- It is tighter and its ranking is sensible.\n- Its extra points are concrete and correct:\n  - formatted strings are hard for finance to sum, and negatives render as `$-12.34`;\n  - the `ORDER BY` is non-deterministic within a customer;\n  - a malformed `month` silently returns nothing.\n- Its fixes are specific, such as an example range query and `ORDER BY customer_id, id`.\n- It is still somewhat over 200 words, but much closer to the limit than A.\n\nB has more accurate and relevant findings with less speculation, and it follows the length constraint better.\n\nVerdict: B",
+  "usage": {
+    "input": 1920,
+    "output": 843
+  },
+  "cost": 0.01227
+}

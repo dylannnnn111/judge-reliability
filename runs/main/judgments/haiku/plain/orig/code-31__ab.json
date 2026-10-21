@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-31",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "**B**\n\nBoth responses correctly identify the main bug: second-precision `created_at` ties straddling a page boundary cause rows to be skipped. Both propose the same `(created_at, id)` keyset fix. Response B is somewhat better. Its explanation of the skip is more precise, and it adds two practical points that Response A lacks: late-committed rows with earlier timestamps can be missed, and the job has no persisted cursor, so crash recovery and idempotency are unaddressed. Response A's claim that a 1000-row tie makes the job \"stall or loop forever\" is inaccurate, since the cursor would skip past those rows rather than loop. Response A does address the user's stated \"fewer than 1000 rows\" termination condition more directly, which keeps the gap from being decisive.",
+  "usage": {
+    "input": 1476,
+    "output": 1019
+  },
+  "cost": 0.0006571
+}

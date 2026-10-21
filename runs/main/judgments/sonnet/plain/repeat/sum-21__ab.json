@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "sum-21",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B\n\nBoth summaries are accurate and under 120 words (A is about 119, B about 110). A has little margin, so a slightly different count could put it over.\n\nB leads with the decision and the 24 October deadline in its headline, which suits a busy reader. It also works out the cost of the hire-car gap (about $21,600 total, which is correct: 6 cars × $1,800 × 2 months). That makes the cost of delay concrete. It leaves out Coastal Fleet Sales, which doesn't affect the decision.\n\nA is clearly structured and ends with an explicit \"Decision needed\" line. It spends words on the Coastal detail and doesn't quantify the hire-car cost in total. B's \"your sign-off\" assumes the reader is Ruth, a small risk. B's tighter framing and the useful derived figure give it a slight edge.",
+  "usage": {
+    "input": 1364,
+    "output": 2418
+  },
+  "cost": 0.026908
+}

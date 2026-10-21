@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-20",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer: Canberra, and 1927. The difference is in style and in the extra detail.\n\nResponse A has filler phrases (\"To answer your question directly,\" \"I hope this helpful background is useful,\" \"To summarize the key points\"). It also repeats itself, since the summary at the end restates what was already said. Its facts are accurate: the 9 May 1927 opening and Melbourne as the seat of government from 1901.\n\nResponse B is concise and adds accurate detail: the Duke of York opened Parliament, he later became King George VI, the building is now Old Parliament House, and Parliament moved to the new building in 1988. All of this is correct. It stays well under the word limit and has no filler.\n\nB is better.\n\n**B**",
+  "usage": {
+    "input": 425,
+    "output": 235
+  },
+  "cost": 0.0032
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-23",
+  "side": "A",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The response is factually accurate. Dates, dollar amounts, the 142 households, the decision-makers and the conditions all match the minutes. The footpath timing and the $900 budget are stated correctly, though the carols budget omits that it also covers candles and a sausage sizzle. The key points a manager needs are covered: council works, finances, the two event decisions, the Wattle Road speed counter and the next meeting date.\n\nThe main failure is the explicit limit of under 120 words. The response runs to roughly 170–180 words once the headers and the opening and closing filler lines are counted. Phrases like \"Thank you all for attending\" and \"The meeting reached the following decisions\" add nothing for a busy reader, so the response is not concise. A compliant version was easily achievable by dropping the filler and merging sections.\n\nAccuracy is strong, the essential content is retained, but the response clearly breaks the stated length constraint and is wordier than necessary.\n\nScore: 5",
+  "usage": {
+    "input": 1347,
+    "output": 941
+  },
+  "cost": 0.0006052000000000001
+}

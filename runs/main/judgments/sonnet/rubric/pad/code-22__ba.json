@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-22",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the critical flaw: `jwt.decode` never verifies the signature, so anyone can forge an admin token. Both also recommend `jwt.verify` with pinned algorithms, and both cover the other real issues: expiry not enforced, 403 where 401 is correct, `Bearer` prefix not validated, `JWT_SECRET` not validated, and `SECRET` exported.\n\n**Response A**\n- It ranks the exported `SECRET` as \"High\", above the status-code and parsing issues. That overstates it, since the export only matters as hygiene.\n- It spends separate items on the dead `try/catch` and on a \"fails open\" claim for a missing secret, which is vague.\n- It runs well over the 200-word limit.\n- It names the fix in prose but gives no code beyond the `verify` call.\n\n**Response B**\n- Its ranking is more sensible, with signature, then secret handling, then algorithm pinning, expiry and status codes.\n- It notes that `SECRET` is unused in the file, which is accurate and useful.\n- It groups the 401/403 and parsing problems together.\n- It includes a short, correct code snippet for the core fix.\n- Its \"Minor\" items (single role claim, no logging, swallowed errors) are marginal, but they are labelled minor and are not wrong.\n- It also exceeds 200 words, but by less than A.\n\nOverall B is more concise, ranks better and shows the fix in code. A is wordier, overstates one issue and violates the length limit more.\n\nVerdict: B",
+  "usage": {
+    "input": 1878,
+    "output": 932
+  },
+  "cost": 0.013076
+}

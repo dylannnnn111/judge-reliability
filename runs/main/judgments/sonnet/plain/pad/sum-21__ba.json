@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-21",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "A is better. It stays under the 120-word limit (roughly 112 words), while B runs to about 190 words and breaks the explicit constraint.\n\nA is also accurate and easy to scan. It leads with the decision and deadline, covers the cost, the over-budget amount, the rationale, the alternative and the timing risk. Its derived hire-car figure of $21,600 is correct (6 cars × $1,800 × 2 months).\n\nB's content is accurate, but it adds detail the manager doesn't need, such as the Coastal Fleet Sales bullet. Its voice is also muddled: it opens with \"I'd like to ask for Ruth's sign-off\" and then addresses Ruth in the closing request.\n\n**A**",
+  "usage": {
+    "input": 1520,
+    "output": 763
+  },
+  "cost": 0.01067
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-09",
+  "side": "B",
+  "score": 10,
+  "model": "claude-haiku-5-5",
+  "text": "The response gives 7.5°, which is correct. The minute hand is at 90° (15 minutes × 6°), and the hour hand is at 97.5° (90° at 3:00 plus 15 minutes × 0.5°), so the difference is 7.5°. It shows the key reasoning, namely the hour hand's 0.5° per minute movement, and the check that the angle is under 180° is a useful touch. The explanation is concise, well organized, and within the word limit.\n\nScore: 10",
+  "usage": {
+    "input": 389,
+    "output": 239
+  },
+  "cost": 0.0001584
+}

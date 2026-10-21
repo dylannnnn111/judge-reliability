@@ -1,0 +1,14 @@
+{
+  "pair": "sum-38",
+  "side": "B",
+  "author": "sonnet",
+  "model": "claude-haiku-5-5",
+  "original": "**Member App Launch: Green (to 10 Oct)**\n\nThe app is on track for public launch on **18 November**.\n\n- **Beta:** 431 of 600 invited members used it. Average rating was 4.3/5. Members liked the digital card and class booking. The weekend timetable slowness is fixed, with load times under two seconds in testing. Of 23 bugs, 21 are fixed and 2 minor ones will be fixed after launch.\n- **Launch plan:** App stores submissions are due 3 November. Club packs go out by 12 November, staff training finishes by 14 November, and posters go up from 17 November. All members get an email on launch day.\n- **Budget:** $268.5k spent of $290k. The remainder is expected to come in on budget.\n- **Risk:** An app store rejection could delay launch by up to a week. The submission has been checked against both stores' guidelines.\n\nNext update: 24 October.",
+  "text": "**Member App Launch: Green (to 10 Oct)**\n\nI am pleased to report that the member app remains on track for its public launch on **18 November**, and the overall status for this reporting period is green (to 10 Oct). The sections below summarise the beta results, the launch plan, the budget position, and the main risk, followed by the date of the next update.\n\n- **Beta:** Of the 600 members who were invited, 431 used the app during the beta period. The average rating was 4.3/5. Members spoke particularly positively about the digital card and class booking features. The slowness experienced during weekend timetable use has been resolved, and in testing, load times are now under two seconds. Of the 23 bugs identified, 21 have been fixed. The remaining 2 are minor, and they will be fixed after launch.\n- **Launch plan:** App store submissions are due on 3 November. Club packs will be dispatched by 12 November, and staff training will be completed by 14 November. Posters will go up from 17 November. On launch day, all members will receive an email.\n- **Budget:** So far, $268.5k has been spent against a total budget of $290k. The remaining spend is expected to come in on budget.\n- **Risk:** The main risk to the timeline is an app store rejection, which could delay launch by up to a week. To reduce this risk, the submission has been checked against the guidelines of both stores.\n\nThe next update will be provided on 24 October.",
+  "ratio": 1.71,
+  "usage": {
+    "input": 967,
+    "output": 1085
+  },
+  "cost": 0.0006392
+}

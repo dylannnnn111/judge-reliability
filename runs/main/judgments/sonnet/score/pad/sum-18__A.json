@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "sum-18",
+  "side": "A",
+  "score": 3,
+  "model": "claude-sonnet-5-5",
+  "text": "The response breaks the explicit limit. It runs to roughly 270 words against a cap of \"under 120\", more than double. It also spends words on filler: the \"Thank you for taking the time to review…\" opener, the sentence announcing how the summary is organised, and \"should users prefer not to receive these alerts\". It then closes with \"Overall, no action is required from the team.\" Nothing in the release notes says this, so it is an invented claim, and a busy manager could act on it wrongly.\n\nThe rest of the content is mostly accurate. The 14 Oct date, the 35°C threshold, the 15% battery figure, the 15-minute sync and the fixes all match the source. Small distortions remain: the New Zealand fix loses the \"some users\" qualifier, and the 15% battery saving is stated correctly for recent phones only in one place. The coverage of key points is reasonable, but it includes minor items (screen reader labels, pace chart colour) that a manager reading a short summary doesn't need, and the length limit makes this worse.\n\nThe unsupported closing statement and the large overrun of the word limit are the main problems.\n\nScore: 3",
+  "usage": {
+    "input": 1218,
+    "output": 694
+  },
+  "cost": 0.009376
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-31",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the main bug: the `created_at > :last_seen` cursor on a second-precision column skips tied rows that straddle a page boundary. Both also flag the missing tiebreaker and recommend keyset pagination on `(created_at, id)`. Response A states these clearly and gives a correct fix. It also raises late-committed rows with a concrete mitigation (a safety lag) and adds the useful point about persisting the cursor for crash recovery.\n\nResponse B has a factual error. It claims that 1000+ rows sharing a second can make the job \"stall or loop forever.\" With `created_at > :last_seen`, the job skips the remaining tied rows rather than looping, so this claim is wrong. Its point 6 is filler, since explicit column selection is not a bug. Its snapshot upper-bound idea is reasonable, but its ranking and explanations are less precise. It also omits the persisted-cursor issue.\n\nResponse A is more accurate, more concise, and better ranked, with fewer false claims.\n\nVerdict: A",
+  "usage": {
+    "input": 1897,
+    "output": 974
+  },
+  "cost": 0.0006767
+}

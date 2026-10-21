@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-31",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses lead with the most important bug. Because `created_at` has only one-second precision and the cursor uses a strict `>`, rows that share the boundary timestamp but did not fit on the previous page are never exported. Both recommend keyset pagination on `(created_at, id)`. Both also flag the missing tiebreaker, the missing `(tenant_id, created_at, id)` index, the planner cost of `:last_seen IS NULL OR`, and late-committed rows.\n\n**Response A** has a factual error in its top item. It says that if 1000+ rows share one second, the job \"stalls or loops forever\" because the cursor never advances. With `>`, that cannot happen. The cursor jumps past that second, and the result is more skipped rows, not an infinite loop. A loop would only occur with `>=`. Its structure is also weaker:\n- Item 3 is a fix listed as a numbered \"problem.\"\n- Item 6 praises explicit column selection, which is filler rather than a problem.\n- Item 5 is useful, but it mixes the termination-condition point with several partly redundant suggestions.\n\n**Response B** makes no incorrect claims. It attaches a fix to the top issue and ties the tiebreaker fix back to it. It covers late-committed rows with a concrete remedy: a safety lag or a commit-ordered sequence. It also adds a genuinely useful operational point about persisting the cursor and making downstream writes idempotent. It stays tighter and avoids praising things that are fine.\n\nB is more accurate and better organized.\n\nVerdict: B",
+  "usage": {
+    "input": 1632,
+    "output": 802
+  },
+  "cost": 0.022568
+}

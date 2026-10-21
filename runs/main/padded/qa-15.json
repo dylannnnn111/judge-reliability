@@ -1,0 +1,14 @@
+{
+  "pair": "qa-15",
+  "side": "A",
+  "author": "haiku",
+  "model": "claude-haiku-5-5",
+  "original": "The temperature rose by **18 degrees Fahrenheit**.\n\nThe rise is 25 − 15 = 10 degrees Celsius. Since a temperature *difference* scales by 9/5 without the 32-degree offset, 10 × 9/5 = 18 °F.\n\nAs a check, 15 °C is 59 °F and 25 °C is 77 °F, and 77 − 59 = 18.",
+  "text": "I'm happy to walk through this. The temperature rose by **18 degrees Fahrenheit**.\n\nTo see how we arrive at that figure, we can first find the rise in Celsius. Subtracting the starting value from the ending value gives 25 − 15 = 10 degrees Celsius. Since a temperature *difference* scales by 9/5 without the 32-degree offset, we can convert that difference directly: 10 × 9/5 = 18 °F.\n\nAs a check on this result, we can convert both temperatures to Fahrenheit separately. 15 °C is 59 °F and 25 °C is 77 °F, and 77 − 59 = 18, which confirms the answer.",
+  "ratio": 1.91,
+  "usage": {
+    "input": 317,
+    "output": 470
+  },
+  "cost": 0.0002667
+}

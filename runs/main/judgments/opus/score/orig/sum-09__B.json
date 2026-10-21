@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-09",
+  "side": "B",
+  "score": 6,
+  "model": "claude-opus-5-5",
+  "text": "The summary is accurate on every point I checked against the source:\n\n- **Rent and review date:** $62,400 plus GST, paid monthly, reviewed each 1 March.\n- **Years 2–4:** Sydney CPI with a 3% floor and 5% cap.\n- **Year 5:** a market review by a landlord-appointed valuer, with no cap but no fall below the year 4 rent.\n- **Disputes:** an independent valuer within 30 days, cost split equally.\n- **Other points:** outgoings are separate, 14 days' written notice is required, and the old rent continues if notice is late.\n\nNothing is wrong or misleading. The phrasing \"then the difference is paid\" doesn't say who pays, but the meaning is clear in context.\n\nCoverage is complete. It keeps everything a manager needs: the figures, the cap and floor, the uncapped year 5 risk, the dispute window, and the closing caveat that the full lease is the binding document.\n\nThe main weakness is the explicit length limit. By my count the response is about 131 words including the title, or about 122 without it. Either way it exceeds the \"under 120 words\" instruction. Some wording could easily have been trimmed, such as the late-notice sentence or \"with a minimum of… and maximum of…\". The format is concise and scannable, but it breaks a hard constraint the user set.\n\nIt is accurate and complete but fails the stated word limit, so it loses meaningful credit.\n\nScore: 6",
+  "usage": {
+    "input": 1122,
+    "output": 1966
+  },
+  "cost": 0.043808
+}

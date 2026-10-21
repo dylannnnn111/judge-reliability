@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-35",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are factually correct. Response A explains why antibiotics miss viruses (no bacterial targets, host-cell replication) and how resistance arises (mutation, horizontal gene transfer, selection, overuse). Response B covers the same ground with more detail, such as specific resistance mechanisms and agricultural use. However, B runs to roughly 225 words, well over the explicit \"under 120 words\" limit. A comes in at about 95 words and keeps the key reasoning. The extra length in B adds some useful detail but breaks a direct instruction, so A is better overall.\n\nVerdict: A",
+  "usage": {
+    "input": 932,
+    "output": 624
+  },
+  "cost": 0.0004052
+}

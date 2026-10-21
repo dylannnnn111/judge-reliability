@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-08",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A** has several accuracy problems:\n- It states the fridge failed on 4 Oct, which is wrong because 4 Oct is the customer's follow-up message. It retracts this in a correction at the end, but the manager is still left with confusing, self-contradicting content.\n- It says Kevin was \"chased on more than one occasion,\" but the ticket shows only one chase, by Megan on 6 Oct. The customer had to follow up twice, which is a different thing.\n- It is well over the 120-word limit, padded with filler (\"I would like to summarise,\" \"greatly appreciated\").\n- It omits that Jason Reilly is on leave until 9 Oct.\n\n**Response B** is concise, under the limit, and covers the needed points:\n- purchase details;\n- the 90-day policy;\n- the replacement booked by Priya, who is covering for Jason;\n- the separate Frostline pickup;\n- the outstanding claim form;\n- the $500 no-sign-off threshold;\n- the 9 Oct escalation to Amara Osei;\n- the customer's frustration.\n\nIts one flaw is converting \"Sunday\" into \"29 September.\" The ticket gives no year, so that exact date is an unsupported inference and could be wrong. \"Sunday before 2 Oct\" would have been safer. This is a smaller error than A's, which include a stated-then-retracted wrong date and an inflated chase count.\n\nOverall, B is more accurate, complete for the manager's needs, and far more concise.\n\nVerdict: B",
+  "usage": {
+    "input": 1839,
+    "output": 848
+  },
+  "cost": 0.024316
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-22",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate on the key facts: the $40 senior rise to $340, junior fees held at $180, the 5-0 vote, the $41,820 balance, the ~$3,200 shortfall, the grant deadline of 14 November, the presentation night details, the $600 gazebo, and the next meeting date. The link between holding junior fees and the shortfall is a reasonable inference, since the minutes don't state it outright. It omits Natalie's point about balls and the canteen, but that is minor. The main concern is length: my count is roughly 127 words including the header, or about 119 without it, so it sits right at the 120-word limit and may exceed it. Clarity and structure are good for a busy manager.\n\nScore: 8",
+  "usage": {
+    "input": 1245,
+    "output": 1622
+  },
+  "cost": 0.0009355
+}

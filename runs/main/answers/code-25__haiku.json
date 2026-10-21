@@ -1,0 +1,13 @@
+{
+  "item": "code-25",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "1. **Off-by-one lets six attempts through.** With `limit = 5`, the check `recent.length > this.limit` only blocks once there are 6 recent hits. Use `>=`.\n\n2. **Unbounded memory growth.** Keys are never removed from `hits`, even after all their timestamps expire. Each distinct IP leaves an entry forever, so an attacker rotating IPs (especially IPv6) can exhaust memory. Prune stale keys or cap the map size.\n\n3. **Only per-IP, so distributed guessing bypasses it.** An attacker spreading attempts across many IPs faces no limit on a single account. Add a per-username (or per-account) limit and consider failure-based lockout or backoff.\n\n4. **Hardcoded `retryAfterSec: 60`.** This ignores `windowMs` and the actual time until the oldest hit expires. Compute it from the oldest timestamp in `recent`.\n\n5. **Counts all attempts, not failures.** Successful logins consume quota, so legitimate users get locked out. Decide whether the limit should apply only to failed attempts.\n\n6. **In-memory and per-process.** Limits reset on restart and aren't shared across instances. Use a shared store such as Redis if you run more than one server.\n\n7. **Trusting the `ip` value.** If it comes from `X-Forwarded-For` without validation, clients can spoof it to evade the limit. Make sure the value comes from a trusted proxy configuration.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 388,
+    "output": 1147
+  },
+  "cost": 0.0006123,
+  "at": "2026-10-14T01:54:14.631Z"
+}

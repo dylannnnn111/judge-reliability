@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-10",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is the better fit for the request. It is tighter, uses no filler, puts the most severe exploitable bug first, and gives concrete fixes (`fullmatch`, the `<slug>` converter). It also covers missing authentication, symlink escape, the check-then-use race, and the missing `as_attachment`/`download_name`. It runs slightly over the 200-word limit, at roughly 220 words. Its item 6 is weak and somewhat confused, since the code already returns 400 for non-matching slugs. Even so, it stays close to the requested format.\n\nResponse B finds a few valuable extra issues:\n- `send_from_directory` as a safer way to serve files.\n- `os.path.isfile` instead of `exists`, since `exists` is true for directories.\n- No per-report authorization.\n- No `Cache-Control` header on sensitive files.\n\nHowever, B ignores the explicit length limit badly, at roughly 400 words. It also opens with filler (\"Thank you for sharing this code. I reviewed it carefully...\") and pads its explanations with wordy phrasing. Those are clear instruction-following failures on a request that was explicitly about concision.",
+  "usage": {
+    "input": 1559,
+    "output": 724
+  },
+  "cost": 0.020716
+}

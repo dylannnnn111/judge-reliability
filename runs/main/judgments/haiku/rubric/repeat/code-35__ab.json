@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "code-35",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses identify the most important bug: the ignored `ParseInt` error, which silently pays zero. Both also flag the missing argument check, the unvalidated header, the absent checks for negative amounts and duplicate IDs, and the negative-total formatting bug (`$-1.-50`). Both rank the parse error first with sensible fixes.\n\nResponse A adds a few points: the whitespace issue, the potential `row[1]` index panic (mostly covered by csv's default field-count check, so it's overstated), overflow, and the reconciliation suggestion, which is useful for a payments flow. Some of its items are filler, such as the `%w` wrapping note, and it runs noticeably past the 200-word limit.\n\nResponse B covers the same core issues, stays closer to the word limit, and avoids the overstated panic claim. Its closing point about silently turning bad data into plausible output is a clear framing of the main risk. It lacks A's reconciliation suggestion and overflow note, but those add less than the length they cost.\n\nResponse B is more accurate and better follows the length constraint, so it is slightly better overall.\n\nVerdict: B",
+  "usage": {
+    "input": 1876,
+    "output": 958
+  },
+  "cost": 0.0006666
+}

@@ -1,0 +1,14 @@
+{
+  "pair": "sum-07",
+  "side": "A",
+  "author": "opus",
+  "model": "claude-haiku-5-5",
+  "original": "**Ledgerly 5.0 (released 21 October 2026): key points**\n\n**Action needed:** The Classic CSV export has been removed. If any team exports data to another accounting system or a spreadsheet, those imports will **break after updating**, because the new format uses different column names and puts GST in its own column. See the help article \"Moving from Classic CSV\" before updating.\n\n**Also note:** Android 9 will no longer receive updates.\n\n**New features:** Automatic recurring invoices, bulk reminders for overdue invoices, and dark mode.\n\n**Improvements:** A faster dashboard for large accounts, better client search, ATO-aligned GST rounding, and fixes for the Western Australia due-date error, an iOS crash and duplicate notifications.\n\n**Coming soon:** Multi-currency invoicing and credit union bank feeds.",
+  "text": "**Ledgerly 5.0 (released 21 October 2026): key points**\n\nThank you for your interest in Ledgerly 5.0, which was released on 21 October 2026. The main points are summarised below, grouped by topic so you can review them quickly.\n\n**Action needed:** Please be aware that the Classic CSV export has been removed. If any team exports data to another accounting system or a spreadsheet, those imports will **break after updating**. This is because the new format uses different column names and places GST in its own column. Before updating, please see the help article \"Moving from Classic CSV.\"\n\n**Also note:** Please also be aware that Android 9 will no longer receive updates.\n\n**New features:** This release introduces automatic recurring invoices, bulk reminders for overdue invoices, and dark mode.\n\n**Improvements:** Several improvements have been made in this version. The dashboard is faster for large accounts, client search has been improved, and GST rounding is now ATO-aligned. This release also includes fixes for the Western Australia due-date error, an iOS crash and duplicate notifications.\n\n**Coming soon:** Looking ahead, multi-currency invoicing and credit union bank feeds are planned for future releases.",
+  "ratio": 1.58,
+  "usage": {
+    "input": 459,
+    "output": 911
+  },
+  "cost": 0.0005013999999999999
+}

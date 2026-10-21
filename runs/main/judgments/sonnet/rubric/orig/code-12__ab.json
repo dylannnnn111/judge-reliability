@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-12",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the three real problems: the N+1 queries, the crash when a customer row is missing, and the non-sargable `strftime` filter. Both give correct fixes (JOINs and a half-open date range). Both also flag timezone ambiguity, which is a reasonable thing to confirm.\n\n**Response A** pads its list with weaker or speculative items:\n- Item 4 (`COUNT(*)` vs. quantity) depends on a column that may not exist.\n- Item 5 (snapshot consistency) is marginal once the fix is a single query, which it already recommends.\n- Item 7 admits float division is \"usually fine\" and then flags it anyway, and the hardcoded `$` point is speculative.\n- Item 8 (reconciliation) is a feature request, not a bug.\n\nEight items run well past the 200-word limit and dilute the real problems.\n\n**Response B** is tighter and closer to the limit, though still somewhat over. Its extra items are more concrete:\n- The `$-12.34` negative formatting is a real, verifiable defect.\n- Exporting formatted strings that finance cannot sum without re-parsing is a legitimate design problem for a finance export.\n- Nondeterministic ordering within a customer is real, and the fix (`ORDER BY customer_id, id`) is specific.\n- Input validation is minor but plausible.\n\nIt also puts the N+1 queries first, which is arguably the dominant issue at 20,000 invoices, though A's choice to lead with the crash is also defensible.\n\nOverall, B has fewer speculative or fine-as-is flags, more concrete findings, and better adherence to the length constraint.\n\nVerdict: B",
+  "usage": {
+    "input": 1750,
+    "output": 1000
+  },
+  "cost": 0.0135
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-33",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the main bug: `WHERE p.status = 'succeeded'` turns the LEFT JOIN into an inner join, so customers with zero payments disappear from the list. Both give the same fix, and that fix is the most important point. Response B's version also shows the full corrected WHERE clause, which is clearer than Response A's snippet, which leaves the reader to infer that the WHERE condition should be removed.\n\nResponse B adds a domain issue that matters for this use case: annual and quarterly subscribers will look \"at risk\" despite being healthy. Since customer success will call everyone on the list, this creates false alarms that directly undermine the purpose of the report. Response B also flags accounts that are already churned or newly signed up, and the Unix-timestamp mismatch. Response A's date-format point is hedged and partly muddled, though its plan-filter and NULL-plan points are reasonable.\n\nResponse B's main weakness is that item 6 is cut off and unexplained, which is a visible flaw. Still, its substantive points are more relevant and more useful to the stated purpose than Response A's, so it comes out ahead on balance.\n\nVerdict: B",
+  "usage": {
+    "input": 1524,
+    "output": 1154
+  },
+  "cost": 0.0007294
+}

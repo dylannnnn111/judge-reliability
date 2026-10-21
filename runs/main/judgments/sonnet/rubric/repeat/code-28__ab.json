@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "code-28",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same core bugs: the connection leak, the double-spend race, the unvalidated destination wallet, deadlock risk, ROLLBACK masking the original error, and the same-wallet transfer. Both offer correct fixes for them. The differences are in ranking, extra items, and length.\n\n**Ranking:** Response A puts the connection leak first. That is arguably the most severe bug, because the function stops working after about 10 calls with the default pool. Response B puts the race condition and money loss first and the leak third. That is defensible, since those two corrupt data, but it is a bit less sensible.\n\n**Accuracy and noise:** Response A adds two weaker items. The audit trail and idempotency point is scope creep. The bigint-as-string point is mostly moot, because JavaScript coerces the string to a number in the `<` comparison. A also says deadlock risk appears only \"once you add row locks\", but the two UPDATEs already take row locks in opposite order for A→B and B→A. Response B states the deadlock risk correctly. B's `CHECK (balance_cents >= 0)` suggestion is a useful, cheap safeguard.\n\n**Length:** Both exceed the 200-word limit. A is longer, with 8 items against B's 7, so B is closer to the constraint.\n\nA ranks the leak better, but B is tighter, avoids the questionable items, and describes the deadlock more accurately. I give B a slight edge.\n\nVerdict: B",
+  "usage": {
+    "input": 1821,
+    "output": 1288
+  },
+  "cost": 0.016522
+}

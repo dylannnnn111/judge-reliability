@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-39",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse B is better. It is clearer and more accurate, and it stays closer to the 120-word limit.\n\n**Word count:** Response A runs about 126 words, which breaks the explicit limit. Response B is about 113 words in the body, or about 121 with the headline, so it is near or within the limit.\n\n**Accuracy:** A says \"Opponents say…\", which overstates what the article reports. The objection came from one councillor, Neil Ashcroft. B correctly attributes it to \"one opposing councillor.\" B also names the lost/damaged-items exception and the account block, both stated in the article. A only implies them through the 60-day replacement rule.\n\n**Usefulness for a busy manager:** B's bullet format scans faster. B also states the net revenue impact (about $33,000), which is exactly what a manager would want to know.\n\n**Minor issues in B:** It calls the $52,000 \"annual revenue\" when the article says \"last financial year.\" It also folds \"damaged items\" into the replacement-cost rule, which is a slight interpretive stretch. Neither materially misleads.",
+  "usage": {
+    "input": 1254,
+    "output": 1910
+  },
+  "cost": 0.043216
+}

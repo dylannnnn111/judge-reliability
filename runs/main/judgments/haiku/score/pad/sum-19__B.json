@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-19",
+  "side": "B",
+  "score": 3,
+  "model": "claude-haiku-5-5",
+  "text": "The response is mostly accurate, but it fails the main instruction and is padded. The key risk is overstated: the source says the tenant \"could remain liable for the rest of the term,\" while the response says \"we remain liable for the full remaining term.\" It also omits that a guarantor remains liable and drops the reason the lease isn't a retail lease. Legal costs are presented as a fixed range, though the source says \"usually.\" The response runs well over 120 words, with an opening thank-you and restatements such as \"To put this another way,\" \"Put simply,\" and \"In other words.\" A busy manager would need to read a lot to get the points, which defeats the purpose of a summary.\n\nScore: 3",
+  "usage": {
+    "input": 1516,
+    "output": 653
+  },
+  "cost": 0.0004781
+}

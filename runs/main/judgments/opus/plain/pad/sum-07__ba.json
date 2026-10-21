@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-07",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A** is better.\n\n**Length.** Both responses exceed the 120-word limit, but by very different amounts. A runs to about 124 words, barely over. B runs to roughly 185 words, well over.\n\n**Filler.** B spends words on padding a busy manager doesn't need. Examples are \"Thank you for your interest…\", \"grouped by topic so you can review them quickly\", \"Please be aware…\", \"Please also be aware…\" and \"Several improvements have been made in this version.\"\n\n**Ordering.** B does lead with the action item, which is a good choice.\n\n**Content.** A covers the same essential content concisely. It clearly flags the CSV breaking change, explains why it breaks, and points to the mapping table. It also keeps useful specifics, like the 40% faster dashboard and the ABN/email search.\n\nA is tighter, closer to the word limit, and better suited to the audience.\n\n**A**",
+  "usage": {
+    "input": 1360,
+    "output": 1409
+  },
+  "cost": 0.03362
+}

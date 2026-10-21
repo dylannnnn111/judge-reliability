@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-30",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better, mainly because Response A contains a misleading claim.\n\n**Accuracy:** Both responses get the dates, frequencies and the 408 removal right. Response A, however, says industrial estate workers \"lose service before 6am\". The source never says the 408 ran before 6am. It only says workers are worried because the 412 won't start before 6am, so A implies a loss that isn't stated. Response B words the concern correctly: workers say the 412 doesn't start early enough. A does add the consultation finding that a Mill Flat–station link was the top request, which is correct and useful. B's opening line also covers that the changes followed the consultation.\n\n**Coverage:** The two cover nearly the same points. A adds the \"why\" and the \"first direct link\" detail, and B adds a short framing sentence. Neither is clearly stronger here.\n\n**Concision:** Both come in at about 125–130 words by my rough count, so neither is clearly within the 120-word limit, and neither gains an advantage here.\n\nAccuracy decides it, in B's favour.\n\nVerdict: B",
+  "usage": {
+    "input": 1491,
+    "output": 1069
+  },
+  "cost": 0.013672
+}

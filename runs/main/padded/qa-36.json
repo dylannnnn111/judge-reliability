@@ -1,0 +1,14 @@
+{
+  "pair": "qa-36",
+  "side": "A",
+  "author": "sonnet",
+  "model": "claude-haiku-5-5",
+  "original": "An aeroplane wing generates lift by deflecting air downward as it moves through it. Two features make this happen: the wing's curved, asymmetric shape (airfoil) and its angle of attack, the tilt relative to the oncoming airflow.\n\nAs air flows around the wing, it speeds up over the curved upper surface, lowering pressure there, while pressure beneath stays comparatively higher. This pressure difference creates an upward force. Equivalently, by Newton's third law, the wing pushes air downward, and the air pushes the wing upward.\n\nIncreasing speed or angle of attack raises lift, though too steep an angle causes the airflow to separate from the wing, producing a stall.",
+  "text": "To understand how an aeroplane's wing generates lift, it helps to start with the basic principle at work: the wing generates lift by deflecting air downward as it moves through it. In other words, the wing does not simply pass through the air unchanged. It redirects the airflow, and that redirection produces the upward force that keeps the aircraft aloft. Two features make this happen. The first is the wing's curved, asymmetric shape, known as an airfoil. The second is its angle of attack, meaning the tilt of the wing relative to the oncoming airflow. Together, these two features shape how air moves around the wing.\n\nAs air flows around the wing, it speeds up over the curved upper surface, and this faster-moving air lowers the pressure there. Meanwhile, the pressure beneath the wing remains comparatively higher. It is this difference in pressure between the upper and lower surfaces that creates an upward force. Put another way, the same effect can be described using Newton's third law: because the wing pushes air downward, the air pushes the wing upward in return. Both descriptions point to the same result, namely a net upward force on the wing.\n\nFinally, it is worth noting how speed and angle of attack affect the amount of lift. Increasing either speed or angle of attack raises lift. However, there is a limit to this relationship. If the angle becomes too steep, the airflow can separate from the wing, producing a stall.",
+  "ratio": 2.27,
+  "usage": {
+    "input": 407,
+    "output": 1169
+  },
+  "cost": 0.0006252
+}

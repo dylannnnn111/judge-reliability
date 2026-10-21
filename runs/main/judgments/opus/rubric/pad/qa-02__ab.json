@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-02",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both responses get the correct answer of 96 km/h. Both give the key reasoning: total distance divided by total time, plus why the simple average of 100 km/h is wrong.\n\n**Response A** does this in roughly 90 words, within the user's 120-word limit. It is concise and clear. It also gives the harmonic-mean formula explicitly as a check.\n\n**Response B** runs to roughly 170 words, which breaks the explicit \"under 120 words\" instruction. Its extra length adds filler (\"Thank you for your question,\" \"let's walk through\") rather than new correct content. It names the harmonic mean but does not show the formula.\n\nCorrectness and reasoning are equal. A is clearer, more efficient and follows the user's constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 867,
+    "output": 296
+  },
+  "cost": 0.009388
+}

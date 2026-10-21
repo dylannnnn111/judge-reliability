@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-29",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse A runs well over the 120-word limit, roughly 170 words, so it fails the explicit constraint. Its extra content, such as the Rule of 72 and filler transitions, adds length rather than needed substance. Response B stays under the limit at about 97 words. It still covers the core mechanism (interest on interest) and the linear-versus-accelerating growth contrast, and it gives the same correct numerical example ($2,500 vs. about $4,322).",
+  "usage": {
+    "input": 672,
+    "output": 709
+  },
+  "cost": 0.016868
+}

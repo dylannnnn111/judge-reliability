@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-19",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.** Both responses are correct on the essentials: the word comes from Guugu Yimithirr *gangurru*, it was recorded in 1770 near Cooktown, the \"I don't understand\" story is a myth, and John Haviland confirmed the word in the 1970s. Both stay under 120 words. A is about 109 words and B about 99.\n\n**Reasoning:** A explains the likely origin of the myth. Later Europeans found that Aboriginal people elsewhere didn't recognize the word, because Australia had hundreds of distinct languages. This is the key explanatory point and is historically well supported. B only retells the myth's anecdote (pointing and asking) without explaining why it arose. A also adds the accurate detail that Joseph Banks helped record the word.\n\n**Accuracy of minor details:** A's \"eastern grey kangaroo\" and B's \"large grey kangaroo\" are both defensible.\n\n**Clarity:** Both are clear. A's extra words add correct, useful substance.\n\nVerdict: A",
+  "usage": {
+    "input": 788,
+    "output": 1053
+  },
+  "cost": 0.024212
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-04",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate on the key figures: 18 and 4 weeks at full pay, the three-block split within 24 months, the 12-month service requirement, the 10-week application window, and the 5 and 19 November sessions. Neither mentions that employer super on the employer-paid portion continues, which is a small gap in both.\n\nResponse B keeps more of what a manager needs. It states that the leave sits on top of government Parental Leave Pay, and it flags the cut-off for children arriving before 1 January 2027, which matters for rostering now. It also notes that the manager is notified automatically. Its bulleted format makes it quicker to scan. The \"plan rosters for split leave\" line is a reasonable inference rather than a stated policy point, but it is useful and doesn't misstate anything.\n\nResponse A is concise and accurate, but it omits the cut-off for earlier arrivals and the relationship to government pay. Those are the points most likely to change a manager's decisions, so its brevity costs more than it saves.\n\nVerdict: B",
+  "usage": {
+    "input": 1508,
+    "output": 940
+  },
+  "cost": 0.0006207999999999999
+}

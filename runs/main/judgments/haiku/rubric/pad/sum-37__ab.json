@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-37",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is more accurate and more concise. Its dates, costs, the four dependent reports, the \"nothing decided\" status, and the approval requirement all match the source. It is about 140 words, so it slightly exceeds the 120-word limit, but it covers every point a manager needs. Its one soft spot is saying option 2 \"may not be acceptable\" when the source implies it effectively isn't, which is a minor understatement.\n\nResponse B is longer, around 200 words, and breaks the limit more clearly. It spends words on filler (\"I'm pleased to report,\" \"To summarise the financial position\") and on the report-matching progress, which is less important than the risk. \"On schedule in most respects\" is a hedge the source doesn't make. It also omits the next update date. Its accuracy is otherwise acceptable, but it is weaker on concision and focus.\n\nVerdict: A",
+  "usage": {
+    "input": 1595,
+    "output": 1223
+  },
+  "cost": 0.000771
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-27",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Word count: Response A is about 115 words, so it's close to the limit; B is about 95. Both are under 120, but I should count A more carefully.\n\nA: \"Ice floats because it's less dense than liquid water.\" (9) \"As water cools below about 4°C, its molecules begin arranging into the open hexagonal lattice that hydrogen bonds favor.\" (19) → 28. \"When water freezes, this rigid structure holds molecules farther apart than in the liquid, so ice is roughly 9% less dense.\" (22) → 50. \"This matters enormously for lakes.\" (5) → 55. \"Because ice forms a floating layer on top, it insulates the water below, slowing further freezing.\" (16) → 71. \"Lakes rarely freeze solid, so fish, plants, and microbes survive winter in liquid water near the bottom.\" (17) → 88. \"Also, water's density peak at 4°C means the coldest water sits at the surface while slightly warmer water sinks, keeping a stable habitat.\" (23) → 111. \"If ice sank, lakes would freeze from the bottom up, devastating aquatic ecosystems.\" (13) → 124. That goes over 120, so A likely violates the limit.\n\nA also contains a mild inaccuracy: \"As water cools below about 4°C, its molecules begin arranging into the open hexagonal lattice\" is loosely right, since water expands below 4°C, though it is slightly misleading. Its statement that the coldest water sits at the surface is right (0°C at the top, 4°C at the bottom).\n\nB: \"Ice floats because water is unusual: it expands as it freezes.\" (11) \"In liquid water, hydrogen bonds constantly shift, but when cooled, molecules lock into an open hexagonal lattice that holds them farther apart.\" (21) → 32. \"Ice is therefore less dense than liquid water, about 9% less.\" (11) → 43. \"This matters greatly for lake life.\" (6) → 49. \"Because ice floats, it forms on the surface and insulates the water below, while deeper water stays near 4°C, the temperature of maximum density.\" (24) → 73. \"Fish, plants, and microorganisms can survive winter in the liquid layers beneath.\" (12) → 85. \"If ice sank, lakes would freeze from the bottom up, potentially killing most aquatic life each winter.\" (17) → 102. Under 120.\n\nB is correct, concise, and meets the constraint. A likely exceeds the limit by a few words.\n\nVerdict: B",
+  "usage": {
+    "input": 749,
+    "output": 813
+  },
+  "cost": 0.009628
+}

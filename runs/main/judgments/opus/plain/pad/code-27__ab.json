@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-27",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is better. It is concise and direct, and its points are correctly ordered. Unbounded concurrency and losing track of who was mailed come first. Each point has a concrete fix. It runs about 200 words, close to the requested limit.\n\nResponse B runs roughly 350 words, far over the 200-word limit. It opens with a thank-you preamble and pads each point with restatement. Its top-ranked issue, missing suppression and unsubscribe checks, is speculative. The `marketingOptIn` flag may well already reflect unsubscribes. Its technical points largely duplicate A's, but with less actionable fixes.",
+  "usage": {
+    "input": 1674,
+    "output": 519
+  },
+  "cost": 0.017076
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-16",
+  "side": "A",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The core answer is correct: Antarctica is generally recognized as the largest desert, and the response gives the key reasoning that a desert is defined by low precipitation, not heat. The Arctic figure (~13.9 million km²) is a commonly cited value, and the Sahara comparison is reasonable, since \"roughly the size of the United States\" is approximately true. The structure is clear and the comparison list is useful.\n\nThe main problem is the explicit constraint of \"under 120 words.\" My count is about 126 words, so the response violates it. The closing paragraph also repeats the Sahara point already made in the list, so the extra words add little. The response is otherwise accurate and well organized, but failing a stated length limit is a real instruction-following error.\n\nScore: 5",
+  "usage": {
+    "input": 461,
+    "output": 1341
+  },
+  "cost": 0.0007166000000000001
+}

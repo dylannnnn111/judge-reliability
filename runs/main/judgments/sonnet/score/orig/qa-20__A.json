@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-20",
+  "side": "A",
+  "score": 10,
+  "model": "claude-sonnet-5-5",
+  "text": "The capital is Canberra, and Parliament first sat there in 1927, when Provisional Parliament House opened on 9 May. Both facts are correct. The added context is also accurate: Parliament met in Melbourne from 1901 until 1927, and Melbourne served as the seat of government during that period. The response is well under 120 words, clear, and directly answers both parts of the question. The extra detail is brief and useful.\n\nScore: 10",
+  "usage": {
+    "input": 293,
+    "output": 141
+  },
+  "cost": 0.001996
+}

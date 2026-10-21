@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-33",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses are accurate and cover the same core points: tidal locking, the matching 27.3-day spin and orbit, libration revealing about 59% of the surface, and the far side still getting sunlight.\n\n**Response A** gives a more detailed account of the mechanism, using the tidal bulge. But \"friction within it dragged on that bulge\" is somewhat muddled, since it is really gravity pulling on the bulge that slows the spin. Its final point (\"The 'far side' isn't permanently dark, though\") also follows awkwardly after the libration sentence, reading as a non sequitur. At roughly 119 words, it barely meets the under-120 limit.\n\n**Response B** explains the same idea more cleanly and logically. It clarifies the far-side point in a natural sequence and stays comfortably within the word limit at about 95 words.\n\nB's clarity, coherence, and safer compliance with the length constraint outweigh A's slightly deeper mechanistic detail.",
+  "usage": {
+    "input": 532,
+    "output": 885
+  },
+  "cost": 0.019828
+}

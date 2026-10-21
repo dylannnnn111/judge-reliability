@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-19",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "A\n\nResponse A describes the myth as it is usually told: Cook's crew pointed at the animal, asked its name, and took the answer to mean \"I don't understand.\" Response B instead offers a speculative explanation for how the myth arose, which is not the standard account and is not well supported. Both responses are accurate on the etymology and within the word limit, so A's more faithful account of the myth gives it the edge.",
+  "usage": {
+    "input": 643,
+    "output": 969
+  },
+  "cost": 0.0005488
+}

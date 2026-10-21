@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-23",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the most important bug: `!r.value` drops legitimate `0` readings, which matters in a cold room. Both give a fix for it. Both also cover the string-compared timestamps, the possibly null-valued latest reading, the O(n log n) sort, and the comparator that never returns 0.\n\n**Response A:**\n- It adds the `Object.prototype` key collision (`constructor`, `__proto__`). This is technically real, but unlikely with real sensor IDs, so it is low value.\n- It ranks the \"sensors with no valid data vanish\" issue last, although on a monitoring dashboard a dead sensor disappearing is more serious than the ordering and performance issues it ranks above it.\n- It runs to roughly 330 words, well over the 200-word limit the user set.\n- It gives a slightly more robust fix for the zero bug (`Number.isFinite`).\n\n**Response B:**\n- It ranks the vanishing dead sensor second, which suits a monitoring context.\n- It groups the minor issues (sort cost, comparator) into one short item instead of padding them out.\n- It stays close to the 200-word limit, possibly slightly over, but far nearer than A.\n- It leaves out the prototype-key edge case, which is no real loss.\n\nB ranks the issues better and respects the length constraint much more closely, so it is the stronger response.\n\nVerdict: B",
+  "usage": {
+    "input": 1907,
+    "output": 838
+  },
+  "cost": 0.012194
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-24",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "A is slightly better. Both responses cover the same core problems in a sensible order: the concurrent-duplicate race, the non-durable dedup store, error handling, the timing-unsafe comparison, replay protection, and amount validation. Both also run over the 200-word limit, but B overshoots more (roughly 240 words against A's roughly 215).\n\n**Response A**\n- It adds \"release the claim on failure so retries still work,\" which matters once the ID is claimed before processing.\n- It catches malformed JSON and a missing `event.data`, which B misses.\n- It folds the idempotency advice into the dedup item, so it stays more compact.\n\n**Response B**\n- It notes that `timingSafeEqual` throws on mismatched lengths, which is a good detail.\n- Its crash-between-side-effect-and-mark item is largely redundant with its dedup-store item, and that redundancy is part of why it runs longer.\n- It misses malformed-JSON handling.\n- It has a seventh item and more padding.\n\n**A**",
+  "usage": {
+    "input": 1525,
+    "output": 1730
+  },
+  "cost": 0.02035
+}

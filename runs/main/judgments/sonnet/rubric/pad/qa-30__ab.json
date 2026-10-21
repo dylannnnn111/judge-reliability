@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-30",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is well over the 120-word limit, which is an explicit constraint. Counting roughly: the definition paragraph is about 70 words, the list about 60, and the closing paragraphs about 90, so it comes to around 220 words. It also contains filler such as \"Because these points are easy to confuse...\" and \"I hope this clarifies...\". Response B is about 85 words and fits the limit.\n\nBoth are correct in content. A adds the \"p<0.05 doesn't mean real\" point and the note about model assumptions, but it breaks the length constraint and is repetitive.\n\nB follows the instructions and gives the key content accurately and concisely.\n\nVerdict: B",
+  "usage": {
+    "input": 800,
+    "output": 212
+  },
+  "cost": 0.00372
+}

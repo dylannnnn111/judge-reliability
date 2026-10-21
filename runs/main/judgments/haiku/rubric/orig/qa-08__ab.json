@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-08",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses compute the same correct result. 375 mL × 0.048 = 18 mL of ethanol, 18 mL × 0.789 g/mL ≈ 14.2 g, and 14.2 g ÷ 10 g ≈ 1.42 standard drinks. Both show the key steps and stay well under 120 words.\n\nResponse B leads with a clear headline answer, \"About 1.4,\" which is slightly more readable. However, its closing claim that \"Australian labels round this to 1.4 standard drinks\" is unsupported and may be inaccurate, since labelling practice isn't something the question asks about. Response A gives the precise value with no unverified side claims, so it is the cleaner response.\n\nVerdict: A",
+  "usage": {
+    "input": 596,
+    "output": 532
+  },
+  "cost": 0.0003256
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-17",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is accurate on the key points: the four-weekend pattern, the midnight bar licence versus the 10pm amplified-music condition, the DJ explanation, the speaker repositioning, the 10pm checks, and the 20 October report-back. It also stays under 120 words and mentions the regulator fallback and the evidence needed. Its main omission is that it doesn't name the Saturday-after-midnight incident, which is minor.\n\nResponse B is well organised and has a clear subject line, but it runs roughly 220-250 words, well over the 120-word limit. It also misattributes the \"fourth weekend in a row\" point to Arjun Mehta, when Colleen raised it and Arjun's email talks about the three other complaints. Its extra length mostly restates the same facts in more words, so it adds little the manager needs.\n\nResponse A is more accurate on attribution, meets the length constraint, and keeps the points the manager needs, so it is the better response.\n\nVerdict: A",
+  "usage": {
+    "input": 1664,
+    "output": 828
+  },
+  "cost": 0.0005804
+}

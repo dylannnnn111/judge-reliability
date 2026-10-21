@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-26",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are correct. Each explains Rayleigh scattering, why the daytime sky is blue, and why sunsets turn red or orange because blue light is scattered out over the longer atmospheric path. Neither contains an error.\n\nResponse A adds a useful point: the sky looks blue rather than violet because sunlight contains less violet and our eyes are less sensitive to it. This addresses a natural follow-up question and strengthens the explanation. Its extra content is accurate and relevant, and it stays just under the 120-word limit (roughly 115 words).\n\nResponse B is clear and concise, and it covers the core reasoning well, but it omits the violet point. Its clarity is comparable to A's, so the difference comes down to the added accurate detail in A.\n\nVerdict: A",
+  "usage": {
+    "input": 706,
+    "output": 1244
+  },
+  "cost": 0.0006926
+}

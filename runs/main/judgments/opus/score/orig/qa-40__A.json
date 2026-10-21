@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-40",
+  "side": "A",
+  "score": 10,
+  "model": "claude-opus-5-5",
+  "text": "The response is **correct**. Light travels about 300,000 km/s and sound about 343 m/s, so the explanation for why the flash arrives first is accurate.\n\nThe **estimation rules** are standard and sound:\n- Sound covers roughly 1 km in 3 seconds and 1 mile in 5 seconds.\n- The 10-second example works out to about 3.3 km, so \"roughly 3 km (2 miles)\" is a fair approximation.\n- The 30-second safety threshold matches the widely used 30-30 rule. It adds useful context without padding.\n\nThe **reasoning** is complete. It states that the flash and the thunder happen at the same moment, so the delay comes only from the speed difference.\n\nThe response is **clear**: well organized, with bullets for the two unit conversions.\n\nIt also meets the **length limit**, at about 115 words against the under-120 constraint.\n\nThere are no meaningful flaws.\n\nScore: 10",
+  "usage": {
+    "input": 442,
+    "output": 652
+  },
+  "cost": 0.014808
+}

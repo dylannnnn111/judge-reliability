@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-26",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer under 120 words, so I counted each response.\n\nResponse A is roughly 118 words by a rough count. Taking it by paragraph:\n- Paragraph 1: \"It comes down to Rayleigh scattering. Sunlight contains all colors, and when it hits the tiny gas molecules in our atmosphere, shorter wavelengths (blue and violet) scatter far more strongly than longer ones (red and orange).\" That is about 34 words.\n- Paragraph 2: \"During the day, the sun is high, so light travels a relatively short path through the air. Blue light gets scattered across the whole sky, reaching your eyes from every direction. The sky looks blue rather than violet because sunlight contains less violet and our eyes are less sensitive to it.\" That is about 52 words.\n- Paragraph 3: \"At sunset, sunlight passes through much more atmosphere to reach you. Most of the blue scatters away along that long path, leaving mainly reds and oranges to come straight through.\" That is about 30 words.\n\nThe total is around 116, so A is under the limit.\n\nResponse B is clearly over 120 words, at about 230. It breaks the explicit length constraint.\n\nOn content, both are correct. A also explains why the sky is not violet, which is a useful addition.\n\nA is better because it meets the constraint and is slightly more complete.\n\nVerdict: A",
+  "usage": {
+    "input": 846,
+    "output": 442
+  },
+  "cost": 0.006112
+}

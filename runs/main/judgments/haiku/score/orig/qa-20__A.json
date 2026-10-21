@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-20",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response answers both parts correctly. Canberra is Australia's capital, and Federal Parliament first sat there in 1927, when Provisional Parliament House opened on 9 May. The added detail that Parliament previously met in Melbourne from Federation in 1901 is accurate and gives useful context without padding. It is well under the 120-word limit and is clearly organised, with the key facts bolded. The only small gap is that it doesn't explain why Canberra was chosen, but the question didn't ask for that.\n\nScore: 9",
+  "usage": {
+    "input": 293,
+    "output": 491
+  },
+  "cost": 0.0002748
+}

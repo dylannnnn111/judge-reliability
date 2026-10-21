@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-32",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. Both responses find the same core bugs in a sensible order:\n\n- The `BETWEEN` upper bound drops September 30.\n- Integer division truncates the averages.\n- The `<>` status filter drops NULL statuses.\n- The inner join drops stores with no orders.\n\nThey are also similar in technical quality. A adds useful nuance, such as which databases truncate integer division, but both are accurate on the main points.\n\nThe deciding factor is the explicit \"under 200 words\" instruction. A runs to roughly 280–290 words, well over the limit. B is closer, at roughly 200–210. B is tighter and follows the constraint better, though it may be slightly over.\n\nB has minor weaknesses. It guesses at status values (`'paid'`, `'fulfilled'`) and speculates about partial refunds. These are small compared with A's clear overrun.\n\n**B**",
+  "usage": {
+    "input": 1674,
+    "output": 1168
+  },
+  "cost": 0.015028
+}

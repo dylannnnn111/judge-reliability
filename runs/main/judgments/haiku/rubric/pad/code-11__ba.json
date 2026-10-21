@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-11",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the main bug: `reserve` checks stock under one lock acquisition and decrements under another, so concurrent threads can oversell and drive stock negative. Both also raise the multi-process limitation of `threading.Lock`, the missing validation of `qty`, and the unguarded `release`. Both give sound fixes, and A's inline code for the critical section is a nice touch.\n\nResponse B covers a few things A misses. It flags that an unknown SKU makes `get_stock` return `None` and crash the comparison with a `TypeError`. It notes that the global lock is held during DB I/O, which is a throughput problem beyond just serialization. It also points out that abandoned carts never release their reservations, a real operational leak that suggests reservation expiry. A's #6 (`available()` is advisory) is accurate but largely restates the race condition.\n\nOn length, both exceed the 200-word limit, but A runs noticeably longer, with a filler opening line and more repetition. B is tighter while covering more of the real issues, so it's the better response.\n\nVerdict: B",
+  "usage": {
+    "input": 1789,
+    "output": 1037
+  },
+  "cost": 0.0006973999999999999
+}

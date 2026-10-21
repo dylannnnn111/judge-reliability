@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "code-31",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Verdict: B.** Both responses find the critical bug: rows tied on the second-precision timestamp are skipped at page boundaries. Both also give the right fix, keyset pagination on `(created_at, id)`, and both flag the missing tiebreaker, the index, the planner issue with `IS NULL OR`, and late-committed rows.\n\n**Response A has a factual error in its top item.** It says that if 1000+ rows share one second, the job \"stalls or loops forever.\" With `created_at > :last_seen`, the cursor still advances past that timestamp, so the remaining rows are skipped rather than looped on. An infinite loop would happen with `>=`, not `>`. A also lists its fix as a numbered \"problem\" (item 3) and ends with a non-issue that praises explicit columns. Its item 5 is a bit muddled: it calls the termination condition fragile but really restates the paging problem. A is also further over the 200-word limit.\n\n**Response B is accurate throughout.** It attaches the fix directly to the main bug and gives a concrete mitigation for late commits (a safety lag or a commit-ordered sequence). Its extra point about persisting the cursor and making writes idempotent is reasonable operational advice, not a false flag. Its fix snippet omits first-page NULL handling, but item 5 covers that with a sentinel value.\n\nB is more correct, better organized, and free of the false claim.\n\nVerdict: B",
+  "usage": {
+    "input": 1632,
+    "output": 794
+  },
+  "cost": 0.022408
+}

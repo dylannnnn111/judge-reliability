@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-19",
+  "side": "A",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate and covers the key points: consent requirements, the landlord's conditions, the continuing liability because this is not a retail lease, the sublet cap, change of control, the 28-day response time and the advice to get a lawyer. There are two small imperfections. \"Only a written release ends that liability\" slightly overstates the source. It also omits that the guarantor stays liable and that consent to a sublease can't be unreasonably withheld.\n\nThe main problem is length. I count about 131 words, which breaks the explicit \"under 120 words\" limit. The fix would be easy, for example by cutting the last sentence or trimming the legal cost detail.\n\nScore: 6",
+  "usage": {
+    "input": 1138,
+    "output": 812
+  },
+  "cost": 0.010396
+}

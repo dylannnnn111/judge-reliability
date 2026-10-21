@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-10",
+  "side": "B",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate on the main facts: the Green status, the 1 December go-live, the 12 testers, the 48 to 21 second login times, the three fixed accessibility issues, the $186,000 of $310,000 spend, and the lowered helpdesk risk. However, it adds \"steering group,\" which the source never mentions. It also says \"two important areas of work were completed\" but then lists three items, a small internal inconsistency. The main failure is length: at roughly 180 words, it breaks the explicit \"under 120 words\" limit by about 50%. It also includes some filler phrasing (\"I am pleased to report,\" \"I would like to note\") that a busy manager doesn't need. It does cover the key points a manager needs, including the decision status and next steps, so content coverage is reasonable, but the constraint violation and the invented detail weigh heavily.\n\nScore: 4",
+  "usage": {
+    "input": 1060,
+    "output": 936
+  },
+  "cost": 0.000574
+}

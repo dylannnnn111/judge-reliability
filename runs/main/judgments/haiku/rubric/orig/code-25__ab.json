@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-25",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the most important bug: the `>` check lets a sixth attempt through, so `>=` is needed. Both also flag unbounded memory growth from never-deleted keys, per-IP-only limiting, in-memory state, and the hardcoded `retryAfterSec: 60`. Those are the core issues, and both rank them sensibly with concrete fixes.\n\nResponse A adds two points that matter in practice. It notes that IPv6 rotation defeats per-address limits and suggests keying on the prefix, which is a sharper insight than B's general mention of IPv6 rotation. It also explains that behind a reverse proxy, a single proxy IP could lock out all users at once, which is a realistic failure mode. Its final \"minor\" item about no reset on successful login is accurate but low-stakes.\n\nResponse B adds a valid design point: counting successful logins against the quota can lock out legitimate users. Its spoofing point about untrusted `X-Forwarded-For` is also real and important, though it overlaps with A's proxy point. B's suggestion to consider failure-based backoff is a useful fix.\n\nNeither response flags anything incorrect. A's extra IP-level analysis is slightly more actionable for this code, and B's successful-login point is a genuine addition. On balance, A is marginally stronger.\n\nVerdict: A",
+  "usage": {
+    "input": 1640,
+    "output": 1181
+  },
+  "cost": 0.0007545
+}

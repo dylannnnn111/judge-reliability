@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-06",
+  "order": "ba",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the same correct answer: 100 days after Wednesday 15 December 2027 is Friday 24 March 2028. Checking: 16 days to 31 Dec, plus 31 for January, plus 29 for February 2028 (leap year) gives 76, so 24 more days lands on 24 March. Since 100 = 14 weeks + 2 days, Wednesday advances to Friday.\n\nBoth explain the key reasoning: the date count across months with the leap year, and the weekday shift from the remainder after 14 weeks. Response A tracks a running total (76 days), while Response B counts down the remainder in bullets (84, 53, 24). B's layout is slightly easier to follow step by step, but the difference is minor. Both are well under 120 words and equally clear.\n\nVerdict: TIE",
+  "usage": {
+    "input": 527,
+    "output": 685
+  },
+  "cost": 0.0003952
+}

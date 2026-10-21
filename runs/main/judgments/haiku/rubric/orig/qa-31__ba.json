@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-31",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct explanation: seasons come from Earth's axial tilt, and the hemispheres have opposite seasons. Both name the key reasoning, that the tilted hemisphere receives more direct sunlight over longer days. Response B adds a useful note that seasons are not caused by distance from the Sun, and its explanation of why sunlight angle matters is slightly richer. Response A also covers the distance point only implicitly, by opening with the tilt.\n\nThe deciding factor is the word limit. Response A is about 109 words, under the 120-word cap. Response B is about 121 words by my count, which exceeds it. Its extra detail is valuable, but the user explicitly required under 120 words, so Response A follows the instructions and is still accurate and clear.\n\nVerdict: A",
+  "usage": {
+    "input": 760,
+    "output": 1781
+  },
+  "cost": 0.0009665
+}

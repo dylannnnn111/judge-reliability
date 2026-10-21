@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-30",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Route numbers, frequencies, the 6am start for the 412, the 408 removal and its nine-passenger average, unchanged fares, and the December and January dates all match the source. Neither invents facts or misattributes decisions.\n\nResponse A is clearly over the 120-word limit, at roughly 180 words. Its introductory and closing sentences add little for a busy manager, and phrases like \"I would like to share\" are filler. Response B is roughly 135 words, still slightly over, but much closer. It keeps every key point: the changes, the reason for them, the industrial estate concern, and the logistics and dates. Its bulleted format is scannable for a manager.\n\nResponse B is better on concision while losing nothing the reader needs.\n\nVerdict: B",
+  "usage": {
+    "input": 1592,
+    "output": 1079
+  },
+  "cost": 0.0006987
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-16",
+  "side": "A",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is accurate. The dates, percentages, dollar figures and the credit's unconfirmed status all match the source. It also covers the key points: status, new date, budget, the main risk and the decisions needed. It omits the December training risk, which is a reasonable cut.\n\nIt breaks the explicit \"under 120 words\" limit. The first four sections alone come to about 116 words. Adding the risk line and the decisions line brings the total to roughly 150, about 30 over the cap. The decisions paragraph also repeats information already given in the opening and budget sections. For a busy manager this is a clear instruction failure, even though the content is good.\n\nScore: 4",
+  "usage": {
+    "input": 1198,
+    "output": 1382
+  },
+  "cost": 0.016216
+}

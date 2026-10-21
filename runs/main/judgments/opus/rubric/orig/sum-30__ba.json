@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-30",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better, mainly on accuracy.**\n\n**Accuracy:** Both get the core facts right: the 410 frequency change, the 412 route and its hours, the 408 removal and its ridership, unchanged fares, timetable delivery, the info stall date and time, and the 19 January start.\n\n- Response A says industrial estate workers \"lose service before 6am.\" The article never says the 408, or anything else, currently runs before 6am. It only says workers are concerned because the 412 won't run before 6am. A turns an inference into a stated fact, which could mislead a manager about the scale of the service cut.\n- Response B says workers \"say the 412 doesn't start early enough.\" This matches the source exactly.\n\n**Completeness:**\n- Response A includes the \"why\": a direct Mill Flat–station link was the top consultation request. It also notes the 412 is the first such link. Both are useful context.\n- Response B mentions the consultation but drops the specific top request.\n- Both keep every operational point a manager needs.\n\n**Concision:** The two are about the same length. Counting headings, both sit at or just over 120 words, so neither has a clear advantage on the word limit.\n\nA's extra context does not outweigh its unsupported claim about losing pre-6am service, since accuracy comes first.\n\nVerdict: B",
+  "usage": {
+    "input": 1491,
+    "output": 2348
+  },
+  "cost": 0.052924
+}

@@ -1,0 +1,13 @@
+{
+  "item": "sum-10",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "Customer Portal Rebuild is Green and on track for go-live on Tuesday 1 December. This fortnight the account settings and billing history screens were completed, and the new login flow tested well: all 12 test customers logged in unaided, and login time fell from 48 to 21 seconds. An external accessibility audit found three minor issues, all now fixed. Spend is $186,000 of $310,000, in line with plan. The helpdesk integration risk has dropped to low. No decisions are needed. Next fortnight: build the support ticket screen, start load testing, and draft customer communications for marketing review.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 577,
+    "output": 195
+  },
+  "cost": 0.00015519999999999998,
+  "at": "2026-10-14T01:51:18.510Z"
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-15",
+  "order": "ba",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct answer, 18 °F. Each computes the 10 °C rise, correctly applies only the 9/5 scaling factor because a temperature difference has no 32-degree offset, and checks the result by converting both endpoints (59 °F and 77 °F). Both are well under 120 words and equally clear. Response A's \"+32 offset cancels out\" wording is a hair more explicit, and its use of °F/°C symbols is slightly more compact, but these differences don't matter in substance.\n\nVerdict: TIE",
+  "usage": {
+    "input": 559,
+    "output": 393
+  },
+  "cost": 0.0002524
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-33",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the main bug: `p.status = 'succeeded'` in the WHERE clause turns the LEFT JOIN into an inner join, so zero-payment customers disappear. Both give the same fix, moving the condition into the join.\n\nResponse A goes further on issues that matter for this specific use. Annual and quarterly subscribers will show as zero-payment \"at risk\" customers even when healthy, and cancelled or brand-new accounts are included. Both would send customer success to the wrong people, so these are arguably as important as the date and NULL points. Response A also notes that refunded or chargebacked payments may still have a succeeded status. Its main flaw is that item 6 is cut off mid-sentence, which looks unfinished and leaves a point unexplained.\n\nResponse B is complete and clean. Its date-handling notes are real but minor, including the UTC cutoff. Its `COUNT(*)` point adds little, and its suggestion of a flag column is useful but less important than the missing business-logic filters Response A identifies. Its treatment of \"paying\" versus `plan <> 'free'` overlaps with A's account-status point but covers less.\n\nOn substance, A finds more of the important problems for this use case. Its truncation is a real defect, but it does not outweigh the extra correct and relevant findings.\n\nVerdict: A",
+  "usage": {
+    "input": 1524,
+    "output": 1162
+  },
+  "cost": 0.0007333999999999999
+}

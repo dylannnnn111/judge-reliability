@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-20",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "A is better. Both responses break the 120-word limit, but A overshoots by less.\n\n- **Word count:** My count puts A at about 135 words and B at about 160. A is closer to the limit.\n- **Format:** A uses a headline and short bullets, which suits a busy manager who will skim. B is a set of denser paragraphs.\n- **Content:** Both cover the key facts: date, place, agenda, prep, food, out-of-office and the optional pub.\n\nA is the better summary on both brevity and readability.\n\n**A**",
+  "usage": {
+    "input": 1319,
+    "output": 1701
+  },
+  "cost": 0.019648
+}

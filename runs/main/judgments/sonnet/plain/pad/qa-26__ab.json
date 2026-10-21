@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-26",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer under 120 words. Response A runs well over that limit, about 190 words. Response B comes to roughly 105 words, so it fits.\n\nCounting Response B: \"It comes down to Rayleigh scattering.\" (6) \"Sunlight contains all colors, and when it hits the tiny gas molecules in our atmosphere, shorter wavelengths (blue and violet) scatter far more strongly than longer ones (red and orange).\" (about 29) \"During the day, the sun is high, so light travels a relatively short path through the air.\" (17) \"Blue light gets scattered across the whole sky, reaching your eyes from every direction.\" (14) \"The sky looks blue rather than violet because sunlight contains less violet and our eyes are less sensitive to it.\" (20) \"At sunset, sunlight passes through much more atmosphere to reach you.\" (11) \"Most of the blue scatters away along that long path, leaving mainly reds and oranges to come straight through.\" (18). The total is about 115, which is under 120.\n\nB also covers the violet question, so it is more accurate and complete as well as compliant.\n\n**B**",
+  "usage": {
+    "input": 701,
+    "output": 362
+  },
+  "cost": 0.005022
+}

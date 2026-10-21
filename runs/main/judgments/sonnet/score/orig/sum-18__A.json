@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-18",
+  "side": "A",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is mostly faithful to the release notes. The dates, the 35°C threshold, the 15% battery figure, the 15-minute sync and the settings path are all correct. It covers every section, including the accessibility changes.\n\nIt has two problems:\n- **Word limit:** I count about 145 words, well over the 120-word limit the user set. This is a clear failure of an explicit constraint.\n- **Invented claim:** \"No action is required from the team\" appears nowhere in the source. It is an unsupported assertion that a busy manager might rely on.\n\nFor a manager, the minor fixes and accessibility details could have been compressed to meet the limit.\n\nScore: 4",
+  "usage": {
+    "input": 1072,
+    "output": 1079
+  },
+  "cost": 0.012934
+}

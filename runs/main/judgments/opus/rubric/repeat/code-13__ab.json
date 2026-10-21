@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "code-13",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both responses find the same core bugs and rank them sensibly: the December crash, day-of-month overflow, schedule drift, the fixed 30-day proration, missing input validation, and rounding.\n\n**Response A** is tighter and stays within the 200-word limit. It has two small inaccuracies:\n- Its #3 describes drift (Jan 31 → Feb 28 → Mar 28) as current behavior. The current code would actually crash at \"Feb 31\", so drift would only appear after a clamping fix. The recommended fix (compute from `start` plus N months, clamped) is still correct.\n- It says `//` \"floors toward zero\". It actually floors toward negative infinity, though the result is the same for positive inputs.\n\n**Response B** frames the drift issue more accurately (\"if you fix #2 naively\"). It also gives concrete fix tools: `relativedelta`, `calendar.monthrange`, and using the real period length while capping `days_used`. Its weaknesses:\n- It clearly exceeds the 200-word limit.\n- Its #7 flags \"no timezone handling\", which is not a real issue for plain `date` objects, and \"no tests\", which is not a bug in the code.\n- \"Negative amounts aren't rejected\" is marginal.\n- Its proration fix calls the currently buggy `next_billing_date`.\n\n**On balance:** B's better framing of drift and its more specific fixes are offset by noise items, a non-issue flag, and ignoring the explicit length constraint. A delivers the same substantive findings concisely, with only minor wording slips.\n\nVerdict: A",
+  "usage": {
+    "input": 1499,
+    "output": 1136
+  },
+  "cost": 0.028716
+}

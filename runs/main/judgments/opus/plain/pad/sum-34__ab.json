@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-34",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse A runs to roughly 300 words, well over the 120-word limit. It is padded with filler like \"I'm pleased to share...\" and adds claims the source doesn't make: it says practitioners won't need to adjust schedules (the notes say admins enter the leave), and it promises further details. Its wordy prose also suits a busy manager poorly.\n\nResponse B is compact and scannable. It covers every key point accurately, including all three fixes, which A partly omits. It sits at or just over the limit depending on how headings are counted, but it is far closer to the brief than A.",
+  "usage": {
+    "input": 1465,
+    "output": 729
+  },
+  "cost": 0.02044
+}

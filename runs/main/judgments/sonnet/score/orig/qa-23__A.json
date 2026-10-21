@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-23",
+  "side": "A",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "Correctness: the answer, that 0.999... equals 1, is right. The arguments are standard and valid. The fraction argument is slightly heuristic but acceptable. The algebra argument is standard. The \"no gap\" argument is correct, and it explains why a nonzero difference like 0.000...1 isn't a valid decimal. The formal limit definition is also correct.\n\nWord limit: under 120 words is required. Counting roughly:\n\n- \"0.999... equals 1 exactly. They are two notations for the same number.\" = 11\n- \"Quick arguments:\" = 2 (13)\n- Fractions: \"Fractions: 1/3 = 0.333..., so 3 × (1/3) = 0.999... But 3 × (1/3) = 1.\" ≈ 15 (28)\n- Algebra: \"Algebra: Let x = 0.999... Then 10x = 9.999... Subtract: 9x = 9, so x = 1.\" ≈ 17 (45)\n- No gap: \"No gap: If two real numbers differ, some number lies between them, such as their average.\" = 16 (61). \"No number fits between 0.999... and 1.\" = 7 (68). \"Any proposed difference, like 0.000...1, would need a 1 after infinitely many zeros, which isn't a valid decimal.\" = 18 (86)\n- Formally: \"Formally, 0.999... means the limit of 0.9, 0.99, 0.999, …, and that limit is exactly 1.\" ≈ 16 (102)\n\nThat comes to about 102 words, so it is under 120.\n\nClarity is good, and the response gives the key reasoning in a compact form.\n\nScore: 9",
+  "usage": {
+    "input": 484,
+    "output": 534
+  },
+  "cost": 0.006308
+}

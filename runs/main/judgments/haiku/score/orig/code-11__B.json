@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-11",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response catches the most important bug: the check in `reserve` and the decrement run under separate lock acquisitions, so two threads can oversell. Its fix, doing both inside one critical section, is correct. The cross-process point is also real, since a `threading.Lock` does nothing across worker processes or hosts, and the suggested atomic `UPDATE ... WHERE qty >= ?` is a sound fix. The negative-quantity and unchecked-release issues are valid, and the advisory nature of `available()` is accurate. Ranking is sensible. The global-lock point is minor and correctly placed low. Weaknesses: the response runs about 220–240 words, which exceeds the explicit 200-word limit. It also omits any mention of error handling for DB failures and does not clearly note that `release` can be called without the qty having been reserved in the first place (it does mention this under item 4). Overall the substance is strong, with one clear instruction violation and a little redundancy between items 1, 2, and 6.\n\nScore: 6",
+  "usage": {
+    "input": 938,
+    "output": 852
+  },
+  "cost": 0.0005198
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-11",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same core problems in a sensible order: the check-then-act race in `reserve`, the process-local lock, missing `qty` validation, unguarded `release`, and the global lock. Both give workable fixes, including the atomic `UPDATE ... WHERE qty >= ?` and `SELECT ... FOR UPDATE`.\n\n**Response A** adds two points B lacks: the global lock is held during DB I/O, and an unknown SKU can make `get_stock` return `None` and raise a `TypeError`. The unknown-SKU point is somewhat speculative, but it is a plausible real problem. It also notes that abandoned carts never release stock. Its fixes are described concisely.\n\n**Response B** gives a code snippet for the main fix, which is useful. Its sixth point, that `available()` is only advisory, largely restates bug #1. It also opens with filler (\"Thank you for sharing the code...\") and is wordier throughout.\n\nThe user asked for under 200 words. A runs roughly 240 words, which is over the limit. B runs roughly 350, which is much further over. Neither complies, but A is closer and spends its words on more distinct, useful content. B's extra length is mostly padding and a redundant point.\n\nA is somewhat better.\n\nVerdict: A",
+  "usage": {
+    "input": 1789,
+    "output": 1041
+  },
+  "cost": 0.013988
+}

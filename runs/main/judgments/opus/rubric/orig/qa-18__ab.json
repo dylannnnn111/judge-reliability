@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-18",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** Both responses give the correct answer: Willem Janszoon and the crew of the *Duyfken* in 1606. Both place the landing on the western side of Cape York Peninsula, near the Pennefather River. Both stay under 120 words (A is about 111, B about 85).\n\n**Response A** adds details that bear directly on the question:\n- The landing date of February–March 1606.\n- The crew believed the land was an extension of New Guinea.\n- The violent encounter with Aboriginal people.\n\nIt also places the event in context by noting the speculated Portuguese and Spanish contact, Hartog's 1616 landing and Cook's 1770 landing. These are accurate and help the reader see why Janszoon counts as \"first.\"\n\n**Response B** is accurate and clearly formatted with bold key terms. Its extra content, however, is mostly about Hartog's later landing and the pewter plate. That is tangential to who landed first and when.\n\n**Judgement:** Both are correct and clear. A's extra content is more relevant to the landing itself and slightly more informative while staying within the limit. That gives A a modest edge.\n\nVerdict: A",
+  "usage": {
+    "input": 714,
+    "output": 906
+  },
+  "cost": 0.020976
+}

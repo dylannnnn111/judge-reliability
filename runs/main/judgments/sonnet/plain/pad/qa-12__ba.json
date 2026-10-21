@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-12",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are correct (671/1296 ≈ 0.518) and both fall under 120 words. Response A is clearer and better organized: it states the complement method, shows each step, and adds brief historical context. Response B has some redundant filler (\"Put another way, subtracting the chance...\"), which adds no information, though it is still correct and concise.\n\nWord counts: A is roughly 80 words, B roughly 75, so both are within the limit.\n\nA is better on clarity and completeness, and B is padded.\n\n**A**",
+  "usage": {
+    "input": 483,
+    "output": 164
+  },
+  "cost": 0.002606
+}

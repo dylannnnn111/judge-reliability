@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-13",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** Response A stays under the 200-word limit, at roughly 190 words. Response B runs to about 230 words, so it breaks the explicit length constraint. B also pads its list with a weak \"minor\" item about timezones and missing tests.\n\nBoth responses find the same main bugs in a sensible order: the December crash, day-of-month overflow, schedule drift, the fixed 30-day proration period, missing input validation, and rounding. A has one small inaccuracy, saying `//` \"floors toward zero\" when it floors toward negative infinity. That doesn't change the conclusion for non-negative amounts. B's suggested proration fix, using the real period length and capping `days_used`, is a useful touch, but it doesn't outweigh the length violation.\n\n**A**",
+  "usage": {
+    "input": 1343,
+    "output": 1279
+  },
+  "cost": 0.015476
+}

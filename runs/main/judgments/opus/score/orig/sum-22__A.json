@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-22",
+  "side": "A",
+  "score": 8,
+  "model": "claude-opus-5-5",
+  "text": "The summary is accurate and within the limit, but it drops the seniors' stated condition for accepting the fee rise.\n\n**Accuracy:** Every figure checks out against the minutes:\n- senior fee rise of $40 to $340\n- junior fee held at $180\n- 9% turf hire increase\n- 18-player junior drop\n- ~$3,200 shortfall\n- 14 November grant deadline\n- presentation night details: 24 October, bowling club, $45, volunteers from 4pm\n- gazebo up to $600\n- cash balance of $41,820\n- next meeting 28 October\n\nAttributions are correct: Bryce applies for the grant and Wes handles the grounds. \"Apply for a council grant by 14 November\" fairly reflects \"closes 14 November.\" Linking the senior rise to the turf cost increase is reasonable. Linking the junior freeze to falling numbers also matches the discussion. I found nothing wrong or misleading.\n\n**Coverage:**\n- **Main gap:** Seniors accepted the $40 rise only if it came with new training balls and a better canteen. That is an expectation the club now has to meet, so a manager would likely want to know. The motion itself was unconditional, so leaving it out is not an error, but it is a meaningful gap.\n- **Minor gap:** Ahmed's original proposal was a $40 rise for everyone, and the committee changed it. This is useful context but not essential.\n- **Fine to drop:** Natalie organising trophies, the 5-0 vote, and the thanks to Kylie are low-value detail.\n\n**Concision:** At roughly 105 words, it is under the 120 limit. The bullets are tight, well organised and easy to scan. Putting the cash balance under \"Other\" is slightly odd, but harmless.\n\nOverall, this is a clean, accurate and well-prioritised summary. Its one notable weakness is the missing senior expectations.\n\nScore: 8",
+  "usage": {
+    "input": 1181,
+    "output": 1177
+  },
+  "cost": 0.028264
+}

@@ -1,0 +1,13 @@
+{
+  "item": "sum-20",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Customer Insights planning day: Friday 7 November, 9:30am–4pm**\n\n- **Where:** Boathouse Room, Lakeside Community Centre, 12 Shore Road, Canberra (10 minutes' drive from the office; free parking or the number 56 bus).\n- **Agenda:** Morning is a review of the year. Afternoon is setting next year's priorities, with a maximum of five, each with a lead.\n- **Prep:** Spend about 30 minutes noting your two proudest pieces of work, one thing to stop doing, and one idea for next year. Bring these along; no need to send them in advance.\n- **Food:** Morning tea and lunch provided. Send dietary requirements to Tariq by Friday 31 October.\n- **Out-of-office:** Set it for the day and direct urgent requests to the central insights inbox, which Ella (Data team) will monitor.\n- **Optional:** Drinks at the pub across the road from 4:15pm.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 620,
+    "output": 322
+  },
+  "cost": 0.00446,
+  "at": "2026-10-14T01:51:45.296Z"
+}

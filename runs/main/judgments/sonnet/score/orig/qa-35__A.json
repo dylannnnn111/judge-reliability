@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-35",
+  "side": "A",
+  "score": 8,
+  "model": "claude-sonnet-5-5",
+  "text": "The content is accurate. It correctly explains that antibiotics target bacterial structures such as cell walls and ribosomes, which viruses lack because they replicate inside host cells. It also covers resistance well: random mutation, selection, the mechanisms (drug destruction, efflux, target alteration), horizontal gene transfer via plasmids, and overuse. \"Not finishing courses\" is a debated contributor, but it is a commonly cited one and not a real error. The formatting is clear.\n\nOn length, I count about 121 words including the bold headers, which is right at or slightly over the \"under 120\" limit. Without the headers it comes to about 112, so the violation is marginal and depends on how you count.\n\nScore: 8",
+  "usage": {
+    "input": 495,
+    "output": 1174
+  },
+  "cost": 0.01273
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-15",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Response A has a small error. It says benefits went to workers with \"6 or more months\" on nights, but the source says \"more than six months.\" A also adds padding that only restates points (\"In other words…\", \"Put differently…\") and an extra closing line that the source doesn't support. Response B's figures and conditions are all correct: 96 workers, 20-minute nap at 3am, 22% less drifting, 0.09 seconds faster reactions, the over-six-months and under-three-months groups, 15 minutes of grogginess, and drifting about doubling for 7am drives versus 6am. B's only minor omission is the \"after long shift runs\" qualifier on transport home.\n\n**Key points:** Both responses keep the main result, the subgroup differences, the stronger effect of drive time, the practical implication and the limitations.\n\n**Concision:** Response A runs to roughly 240 words, about double the 120-word limit the user set. Response B stays within the limit (about 110 words) and gives the manager everything they need. A's extra words add no new correct information.\n\nB is accurate, complete and within the length limit. A breaks the explicit constraint and contains a small inaccuracy.\n\nVerdict: B",
+  "usage": {
+    "input": 1568,
+    "output": 604
+  },
+  "cost": 0.018352
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-39",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "The request has a hard constraint: under 120 words. Response A is clearly far over 120 words (roughly 220), so it breaks the instruction. Response B is about 95 words, so it complies.\n\nOn accuracy, B is correct: 0.1 and 0.2 are stored with small errors, and their sum rounds to 0.30000000000000004, which differs from the double nearest 0.3. A's stated figure of 0.3000000000000000444 is also correct.\n\nB is better.\n\n**B**",
+  "usage": {
+    "input": 781,
+    "output": 158
+  },
+  "cost": 0.003142
+}

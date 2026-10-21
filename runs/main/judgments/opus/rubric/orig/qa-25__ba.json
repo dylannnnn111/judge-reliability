@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-25",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses give the correct answer: there is no evidence that Viking warriors wore horned helmets. Both also cover the same core reasoning:\n- **Evidence:** the Gjermundbu helmet is the only near-complete Viking helmet, and it has no horns.\n- **Cost:** many warriors had only leather caps or no helmet, because iron was expensive.\n- **Origin of the myth:** 19th-century Romanticism and Doepler's 1876 costumes for Wagner's *Ring*.\n- **Real horned helmets:** these existed in the Scandinavian Bronze Age, but they were ceremonial and much older.\n\nBoth stay under 120 words.\n\n**Response A** adds concrete, accurate details. It names Gustav Malmström, whose illustrations really did help popularize the image. It also cites the Veksø helmets as a specific Bronze Age example. Its phrasing (\"no solid evidence… in battle\") is appropriately careful. One small weakness: \"about 1,500 years\" is slightly low, since Veksø dates to around 900 BC, roughly 1,700 years before the Viking Age. This is a minor imprecision rather than an error that changes the answer.\n\n**Response B** is clearly organized with bolded headers and correct throughout. It adds the useful detail that the Gjermundbu helmet dates to the 10th century. It stays vaguer elsewhere (\"Romantic artists,\" \"centuries before\"), which avoids error but tells the reader less.\n\nThe two are very close. A's extra specifics (Malmström, Veksø) are correct and genuinely informative and add depth to the answer. B's formatting advantage is modest. On balance, A's richer, accurate content gives it a slight edge.\n\nVerdict: A",
+  "usage": {
+    "input": 815,
+    "output": 1513
+  },
+  "cost": 0.03352
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-31",
+  "side": "B",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The response's science is correct. It correctly attributes seasons to axial tilt rather than distance from the Sun, explains that the hemispheres receive sunlight at different angles and for different durations, and notes that the seasons are opposite. The explanation is clear, though repetitive. Paragraph 1 spends words on a preamble, and paragraph 2 restates its own point (\"That means less heating\" followed by \"a weaker and shorter daily dose\"). The main problem is the explicit constraint. The response runs about 130 to 140 words, exceeding the requested \"under 120 words.\" Since the user set a clear limit, this is a real instruction failure, even though the answer itself is right.\n\nScore: 4",
+  "usage": {
+    "input": 636,
+    "output": 652
+  },
+  "cost": 0.00038960000000000004
+}

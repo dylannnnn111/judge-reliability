@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-01",
+  "side": "B",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Every factual element checks out.\n- The deadline is Friday 30 October, close of business, moved from Wednesday 4 November, and the summary presents it as the update.\n- The reason (board meeting brought forward a week) is correct. Not naming the CFO as the decision-maker is an omission, not a misattribution.\n- The three deliverables, the template path, the software subscriptions split, the variance threshold, the paste-numbers rule, the leave cover rule and the drop-in details (Marcus, Thursday 2pm, Level 6 boardroom, optional) all match the source.\n- The variance rule (\"the smaller of $50,000 or 10%\") is stated correctly, and that rule is easy to garble.\n\n**Coverage:** The summary keeps everything a manager needs. It leads with the changed deadline and includes the contact instruction. It rightly drops the coffee machine and the pleasantries.\n\n**Minor quibbles:**\n- \"Call Priya today\" is relative to an email date the reader won't see.\n- \"Real problem\" was softened to \"a problem\".\n- \"Thursday\" is left as ambiguous as in the original.\n- At roughly 115 words, it sits close to the 120-word limit but within it.\n\n**Concision:** The writing is tight, with no padding.\n\nScore: 9",
+  "usage": {
+    "input": 1065,
+    "output": 1149
+  },
+  "cost": 0.02724
+}

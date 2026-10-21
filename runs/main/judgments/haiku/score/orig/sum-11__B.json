@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-11",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate throughout. The dates are correctly inferred: Friday is 14 November, and the Monday after the move weekend is 17 November. The box deadline, crate limit, access card handover, parking allocation and IT instructions all match the source. It covers every point a manager needs, including who to contact for each area.\n\nThe main weakness is the explicit length limit. The response runs to roughly 140 words, over the 120-word maximum, so it doesn't meet the user's stated constraint. Some phrasing could also be tighter, such as the title and the parenthetical role labels. Its concision therefore falls short, even though the extra words add no errors.\n\nScore: 6",
+  "usage": {
+    "input": 1239,
+    "output": 930
+  },
+  "cost": 0.0005889
+}

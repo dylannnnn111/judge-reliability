@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-11",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nNeither response is under 120 words, but B is far closer (about 133 words, or about 121 without the title). A is roughly 280 words, more than double the limit.\n\nB also fits the busy-manager audience. It is terse and puts parking with Rachel, who allocates it. A reads like a fresh staff email, with padding such as \"Thank you all for your patience\" and \"kindly asked.\" A also softens a mandatory instruction into \"everyone is warmly invited to attend,\" which misrepresents the original: staff cannot get past the lobby without a card.",
+  "usage": {
+    "input": 1643,
+    "output": 1035
+  },
+  "cost": 0.027272
+}

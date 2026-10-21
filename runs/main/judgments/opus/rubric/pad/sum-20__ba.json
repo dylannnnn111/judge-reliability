@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-20",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.**\n\n**Accuracy.** Both are essentially accurate on dates, times, location, the prep task, Tariq's 31 October deadline, and Ella covering the inbox.\n- A drops the \"about\" from \"about 4:15pm\", which is trivial.\n- B switches from third person (\"Hannah Pryce would like to invite…\") to first person (\"I would kindly ask…\"). That makes it unclear who is speaking in a summary written for a manager.\n\n**Coverage.** Both keep all the points the reader needs:\n- the five-priority limit with a lead each\n- the prep notes\n- the dietary deadline\n- the out-of-office arrangements\n- the optional pub\n\nB adds that notes needn't be sent in advance only implicitly. A states it explicitly.\n\n**Concision and the word limit.** This is the decisive factor.\n- B runs to roughly 250 words, more than double the 120-word limit the user set. Its extra words are filler (\"To give you a sense of how the day is structured…\"), not useful content.\n- A is tightly structured and scannable, which suits a busy manager. It sits at or very near the limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1614,
+    "output": 632
+  },
+  "cost": 0.019096
+}

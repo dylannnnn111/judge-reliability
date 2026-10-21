@@ -62,7 +62,11 @@ const out = {
       kappa: ri(j.agreement.kappa),
       accuracy: ri(j.agreement.accuracy),
       byTask: Object.fromEntries(TASK_TYPES.map((t) => [t, ri(j.agreement!.byTask[t])])),
+      called: j.agreement.called,
+      calledByTask: j.agreement.calledByTask,
     },
+    calls: j.calls,
+    humanTies: j.humanTies && { n: j.humanTies.n, judgeTie: round(j.humanTies.judgeTie) },
     verbosity: ri(j.verbosity),
     selfPreference: j.selfPreference && {
       bias: ri(j.selfPreference.bias),
@@ -73,6 +77,7 @@ const out = {
       },
     },
   })),
+  crossAgreement: results.crossAgreement.map((x) => ({ ...x, same: round(x.same) })),
 };
 writeJson(join(RUN, 'results.json'), out);
 
@@ -101,6 +106,11 @@ if (results.human) {
 }
 md.push('## Agreement with the human labels', '', 'Accuracy = share of pairs the human called where the judge made the same call (judge ties and order-dependent verdicts count as misses).', '');
 md.push(table(['Judge', 'Format', 'Readable', 'Accuracy', 'Kappa', ...TASK_TYPES.map((t) => `Acc ${t}`)], results.judges.filter((j) => j.agreement).map((j) => [...name(j), pct(j.valid), ci(j.agreement!.accuracy, pct), ci(j.agreement!.kappa, num), ...TASK_TYPES.map((t) => ci(j.agreement!.byTask[t], pct))])));
+md.push('', `Accuracy is over the pairs the human called one way or the other (${results.judges.find((j) => j.agreement)?.agreement?.called ?? '-'} of ${results.pairs}).`, '');
+md.push('## Ties', '', 'Final verdicts on the original pairs (a split decision across the two orders counts as a tie), and on the pairs the human called about the same, how often the judge did too.', '');
+md.push(table(['Judge', 'Format', 'A', 'B', 'Tie', 'Ties on human ties'], results.judges.map((j) => [...name(j), String(j.calls.A), String(j.calls.B), String(j.calls.TIE), j.humanTies ? `${pct(j.humanTies.judgeTie)} of ${j.humanTies.n}` : '-'])));
+md.push('', '## Judges vs each other', '', 'Share of pairs where two judge setups give the same final verdict.', '');
+md.push(table(['Setup', 'Setup', 'Same', 'n'], results.crossAgreement.map((x) => [x.a, x.b, pct(x.same), String(x.n)])));
 md.push('', '## Position bias', '', 'Picks first = share of decisive verdicts that went to whichever answer was shown first (fair = 50%). Same both ways = share of pairs with the same verdict after swapping the order. Same, asked again = share with the same verdict when asked again in the same order - the models do not take a temperature, so this is how much changes by chance alone; the gap between the two is the order effect.', '');
 md.push(table(['Judge', 'Format', 'Picks first', 'p', 'Same both ways', 'Same, asked again', 'Flips'], results.judges.filter((j) => j.position).map((j) => [...name(j), ci(j.position!.firstRate, pct), j.position!.p < 0.001 ? '<0.001' : num(j.position!.p, 3), ci(j.position!.consistent, pct), ci(j.position!.sameOrder, pct), pct(j.position!.flips)])));
 md.push('', '## Length bias', '', `One answer per pair padded to about twice the length with nothing new in it (median ${out.padding.medianRatio ?? '-'}x; ${out.padding.addedContent} of ${out.padding.spotChecked} spot-checked added content). Swing = change in preference towards the padded answer on a -2 to +2 scale (0 = no effect).`, '');

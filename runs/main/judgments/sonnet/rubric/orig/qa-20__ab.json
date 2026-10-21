@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-20",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses correctly identify Canberra and 1927 (Parliament opened in Canberra on 9 May 1927).\n\nChecking details:\nResponse A: \"Provisional Parliament House opened on 9 May\" is correct. Melbourne was the seat of government from 1901, which is correct.\n\nResponse B: It adds that the Duke of York, later King George VI, opened it, which is correct. \"Parliament had met in Melbourne from Federation in 1901\" is correct. \"Moved to current Parliament House on Capital Hill in 1988\" is correct (opened 9 May 1988). Word count is well under 120.\n\nBoth are correct. B adds correct, relevant context, but the question only asked for the capital and the year. The extra details (the Duke of York, the 1988 move) are accurate and mildly useful, especially since the 1988 move helps avoid confusion over which \"Parliament House\" is meant. Still, they go beyond the question. A is more concise and fully answers it, and A also gives the reasoning about Melbourne.\n\nThe instructions say length isn't a merit unless the extra words add something correct and useful. The 1988 clarification is useful for disambiguation, since someone might think Parliament first sat in the current building. The Duke of York detail is trivia. It's a close call, but B's extra material is correct and modestly useful, so B edges ahead.\n\nVerdict: B",
+  "usage": {
+    "input": 485,
+    "output": 442
+  },
+  "cost": 0.00539
+}

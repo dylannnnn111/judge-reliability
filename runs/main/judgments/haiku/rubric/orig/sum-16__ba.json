@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-16",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate on the key facts: the dates, the $412k/$520k spend, the $38k variation and $26k net figure, the verbal credit, and the 15 October and 24 October dates. Neither introduces errors.\n\nResponse A is closer to the 120-word limit, at roughly 125 words, and covers the essentials: the delay, the causes, the budget with the verbal-credit caveat, the key risk, and the decisions. It also links the cut-over slip to the sales director's December training request, which explains why the risk matters. It omits the test results and the duplicate-record issue.\n\nResponse B covers more ground, including the 98.6% test success rate, the duplicate-email problem, and the training materials. However, at roughly 160 words it clearly exceeds the 120-word limit. It also drops the December training conflict, which is a practical consideration for the manager.\n\nFor a busy manager with a hard word limit, Response A better balances accuracy, required content, and concision. Response B's extra detail is correct but not essential to the decisions at hand, and it breaks the length constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 1540,
+    "output": 1328
+  },
+  "cost": 0.000818
+}

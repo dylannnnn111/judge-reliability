@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-17",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify Venus and give the accurate average surface temperature of about 465°C, so neither loses on correctness. Both explain the runaway greenhouse effect driven by the thick CO₂ atmosphere. Response A also covers the even temperature distribution and contrasts Mercury's lack of atmosphere, which directly answers \"why\" the planet is hotter than the closer Mercury. Its bulleted structure makes the reasoning easy to follow. Response B is clear but wordier, with filler like \"It is worth noting\" and \"Finally, it is also important to mention,\" and at roughly 130 words it exceeds the 120-word limit. A stays under the limit and gives more of the key reasoning.\n\nVerdict: A",
+  "usage": {
+    "input": 836,
+    "output": 1163
+  },
+  "cost": 0.0006651000000000001
+}

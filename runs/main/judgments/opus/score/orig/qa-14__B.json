@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-14",
+  "side": "B",
+  "score": 10,
+  "model": "claude-opus-5-5",
+  "text": "Net rate: 1/3 − 1/5 = 2/15 per hour, so the tank fills in 15/2 = 7.5 hours. The response's answer is correct. It shows the key reasoning (individual rates, net rate, inversion) concisely and clearly, well under 120 words, with no errors or filler. It could be called near-perfect.\n\nScore: 10",
+  "usage": {
+    "input": 394,
+    "output": 120
+  },
+  "cost": 0.003976
+}

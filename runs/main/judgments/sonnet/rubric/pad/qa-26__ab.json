@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-26",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer under 120 words. Response A runs well over 120 words, roughly 200. Response B is about 100 words, so it meets the limit.\n\nOn correctness, both are accurate. B adds the point about why the sky isn't violet, which is a useful addition. A has no errors but breaks the explicit length constraint.\n\nB is better because it follows the instruction and is also more complete.\n\nVerdict: B",
+  "usage": {
+    "input": 846,
+    "output": 132
+  },
+  "cost": 0.003012
+}

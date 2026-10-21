@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-12",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer, 671/1296 ≈ 51.8%. The constraint is under 120 words.\n\nResponse A is about 70 words. It has some filler: \"With that value in hand, we can move on...\" and a redundant restatement of the complement idea. It is correct but padded.\n\nResponse B is about 80 words. It is clearer, with a structured explanation, and its added historical note is accurate: the Chevalier de Méré did consider this problem of at least one six in four rolls. Both are within the limit.\n\nWord count for B: \"The probability of getting at least one six in four rolls is easiest to find using the complement.\" (19) Bullets: roughly 10 + 14 + 12 = 36. \"So there's about a 51.8% chance of rolling at least one six in four rolls.\" (15) Parenthetical: about 20. Total is around 90, which is under 120.\n\nB is more concise in substance and better organized, with no redundancy, so B is better.\n\n**B**",
+  "usage": {
+    "input": 483,
+    "output": 309
+  },
+  "cost": 0.004056
+}

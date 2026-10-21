@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-40",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "**B** is somewhat better on substance, though it exceeds the 200-word limit. Both responses correctly identify the main bug: the pipe into `while` runs the loop in a subshell, so `alerts` stays 0 and the script never exits non-zero. Both also wrongly claim that a non-numeric `pct` aborts the script. The `[` test sits inside an `if` condition, where `set -e` doesn't trigger, so the loop just continues.\n\nB adds two practical issues that A misses: squashfs/snap loop mounts always report 100% and cause false pages, and a hung NFS mount can stall `df` and pile up cron runs. Those matter more in production than A's point about webhook alert repetition. B does run to roughly 250 words, though, while A stays near 180, so the length constraint favors A.",
+  "usage": {
+    "input": 1573,
+    "output": 1292
+  },
+  "cost": 0.0008033
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-09",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both summaries are accurate on the core terms: the starting rent, the CPI formula with 3% and 5% bounds for years 2 to 4, the market review in year 5 with a floor at the year-4 rent, the 30-day independent valuer right with a 50/50 cost split, and the 14-day notice rule. Neither has a material error. A's \"landlord-appointed valuer\" is a reasonable inference from the source, and B's \"there is no cap\" is a fair reading of \"the 5 per cent cap does not apply.\" Both run slightly over 120 words if headings are counted (about 130 each), so concision is roughly even. B is somewhat more useful to a manager: it spells out what outgoings cover and that they aren't reviewed, and it flags that the guide is not legal advice. A's \"increases could be larger\" conveys the same risk, but B's wording is clearer about the uncapped year-5 exposure. The edge is slight.\n\nVerdict: B",
+  "usage": {
+    "input": 1503,
+    "output": 1911
+  },
+  "cost": 0.0011057999999999999
+}

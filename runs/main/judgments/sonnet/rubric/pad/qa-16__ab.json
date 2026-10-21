@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-16",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "The constraint is under 120 words, so I need to count words in each response.\n\nResponse A: Count roughly. First paragraph: \"To answer your question directly, the largest desert in the world is the Antarctic Desert, which covers about 14 million square kilometers (5.5 million sq mi). It is worth keeping in mind that a desert is defined by how little precipitation it receives, not by how hot it is, and Antarctica's interior receives very little.\" That's about 55 words. Bullets: \"Largest overall: Antarctic Desert (~14 million km²)\" ~7; \"Second largest: Arctic Desert (~13.9 million km²)\" ~7; \"Largest hot desert: Sahara Desert in North Africa (~9.2 million km²), roughly the size of the United States\" ~18. Intro line \"To put the main contenders in context, here is how the largest deserts compare:\" ~14. Final: \"So, if you are thinking of the classic sandy, hot desert that many people picture first, the answer you are looking for is the Sahara.\" ~25. Total ≈ 55+14+7+7+18+25 = 126. Over 120, likely a violation.\n\nResponse B: First paragraph: \"The largest desert in the world is Antarctica, covering about 14.2 million square kilometers (5.5 million square miles).\" ~19. \"A desert is defined by low precipitation rather than heat, and Antarctica receives very little, averaging roughly 200 mm (8 inches) annually along the coast and far less inland.\" ~29. Second paragraph: \"The largest hot desert is the Sahara in northern Africa, spanning about 9.2 million square kilometers (3.6 million square miles).\" ~21. \"The Arctic is the second-largest cold desert, at around 13.9 million square kilometers.\" ~13. Final: \"So the answer depends on whether you're counting all deserts or just hot ones.\" ~14. Total ≈ 96. Under the limit.\n\nCorrectness: both say Antarctica. Response A's final line \"the answer you are looking for is the Sahara\" muddles the answer somewhat, though it's conditional. Response B is clearer and has a more accurate precipitation detail (coast ~200 mm is accurate). B is also within the limit.\n\nB is better.\n\nVerdict: B",
+  "usage": {
+    "input": 732,
+    "output": 739
+  },
+  "cost": 0.008854
+}

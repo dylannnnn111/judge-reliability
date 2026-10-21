@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "code-28",
+  "side": "B",
+  "score": 8,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Every issue raised is real.\n\n- **Race condition:** Under PostgreSQL's default READ COMMITTED isolation, a plain `SELECT` followed by an application-side check lets two concurrent transfers both pass. The second `UPDATE` waits on the row lock, then applies to the already-reduced balance and overdraws it. Both suggested fixes work: `FOR UPDATE`, or a conditional `UPDATE` with a `rowCount` check.\n- **Missing `toId` check:** Funds really can vanish when the destination wallet does not exist.\n- **Connection leak:** Correct. No `release()` is called, so the pool will exhaust deterministically.\n- **Deadlock:** A real risk from opposite lock ordering, and consistent ordering is the standard fix.\n- **ROLLBACK masking the original error:** A legitimate robustness point.\n- **CHECK constraint:** Good defence in depth.\n- **Same-wallet transfer:** Correctly described as a no-op and correctly labelled minor.\n\nNothing flagged is a false positive.\n\n**Ranking:** Sensible. One could argue the connection leak belongs first, since it will take down the API with certainty while the others need concurrency or bad input. But putting financial-correctness bugs first is defensible for a money-transfer function.\n\n**Fixes:** Each item gives a concrete, correct fix.\n\n**Weaknesses:**\n- The response is roughly 200–205 words, so it slightly misses or barely meets the \"under 200 words\" instruction.\n- Items 6 and 7 are lower value. Dropping or compressing them would have fit the limit comfortably without losing anything critical.\n- Item 5 could also have noted that a client in a failed state should be released with an error flag (`release(err)`), so the pool discards it.\n\nThese are small issues against otherwise excellent, accurate, well-prioritised content.\n\nScore: 8",
+  "usage": {
+    "input": 1171,
+    "output": 1835
+  },
+  "cost": 0.041384
+}

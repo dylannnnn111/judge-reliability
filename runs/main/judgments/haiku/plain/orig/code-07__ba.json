@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-07",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "**B** is better. Both identify the same core bugs: the dropped partial batch, swallowed failures, the misleading success log, missing retries, and the sequence requirement. B also adds the point that the hourly job needs a nonzero exit or alert on failure, and that retries are only safe if `upsert_contacts` is idempotent. A's list runs to roughly 240 words, over the 200-word limit, while B stays under it.\n\nB",
+  "usage": {
+    "input": 1283,
+    "output": 930
+  },
+  "cost": 0.0005933
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-39",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. It stays closer to the 200-word limit, while A runs roughly 300 words. B also covers the same key issues accurately: the unchecked `cd`, path traversal, dotfiles, and the exit status. Its validation regex correctly rejects leading-dot names like `..`, and its newline-in-filename point is valid.\n\nB",
+  "usage": {
+    "input": 1694,
+    "output": 681
+  },
+  "cost": 0.0005099
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-25",
+  "side": "A",
+  "score": 5,
+  "model": "claude-opus-5-5",
+  "text": "The response has one factual error and one significant omission.\n\n**Accuracy**\n- Most details are correct: 347 statements, the exposed fields, no passwords or card numbers, no external access, the 11,200 unsent statements, members contacted by 6 October, the action statuses, and the 9 October send date.\n- However, \"the job was stopped after 35 minutes\" is unsupported. The source gives only the stop time (9:35am) and the first member call (8:20am). It never says when the job started, so the duration is made up and implies a precision the report doesn't have.\n- It also drops the regulator notification date (3 October). That is a minor loss rather than an error.\n\n**Key points**\n- It omits the duty manager's all-staff \"we've been hacked\" message, which was forwarded externally and quoted in local news. A manager would need to know this, because it is the reputational fallout and explains why the incident was first treated as a hack.\n- With that left out, action 3 (updating the incident communications guide, owned by Communications, due 31 October) also disappears. That leaves out one of the four follow-ups and its owner and deadline.\n\n**Concision**\n- At about 110 words, it is clear and within the limit. There was room to cover the media issue by replacing the invented duration.\n\nOverall, it is a solid and readable summary, but it introduces one fabricated figure and misses a key point the reader needs.\n\nScore: 5",
+  "usage": {
+    "input": 1101,
+    "output": 681
+  },
+  "cost": 0.018024
+}

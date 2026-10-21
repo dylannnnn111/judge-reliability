@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "qa-03",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses are correct and under 120 words. Each gives the 25% relative increase and the 1 percentage point rise.\n\nResponse B is slightly better for three reasons:\n- It explicitly frames the distinction between percentage points and percent, which is the crux of the question.\n- It clearly concludes with 25% as the answer to \"by what percentage.\"\n- It adds a concrete borrower example ($16,000 to $20,000 interest) that makes the meaning practical without exceeding the word limit.\n\nResponse A is accurate and concise, but it leads with the percentage point figure rather than the 25% the question asks for, and it offers less useful context.",
+  "usage": {
+    "input": 445,
+    "output": 624
+  },
+  "cost": 0.01426
+}

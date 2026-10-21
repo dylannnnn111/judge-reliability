@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-19",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the core bug: `forEach` with an async callback doesn't await the resizes, so `main` logs \"made 0 thumbnails.\" Both also flag the unhandled rejections, the missing `thumbs` directory, unbounded concurrency, missing argument validation, and the directory-matching regex. Neither invents a bug. Both are over the 200-word limit, so neither fully follows the length instruction.\n\nResponse A is tighter and gives one coherent recommended fix: sequential `for...of` with `await`, collecting per-file results or errors and reporting failures at the end. That fix addresses points 1, 2, and 4 together. Response B adds useful detail, such as the exit-code consequence and `Promise.allSettled`, but its suggested `Promise.all` fix conflicts with its own concurrency warning, and its final bullet about re-runs is muddled. Its extra length adds some value but also some noise.\n\nOn balance, Response A is slightly better for its concision and internally consistent advice, though the gap is small.\n\nVerdict: A",
+  "usage": {
+    "input": 1684,
+    "output": 1092
+  },
+  "cost": 0.0007144
+}

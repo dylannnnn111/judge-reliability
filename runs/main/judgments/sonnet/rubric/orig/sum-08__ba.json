@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-08",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better, though neither is fully clean.\n\n**Response A:**\n- It states the fridge \"failed on 29 September\", but the ticket only says \"Sunday\". The date is inferred, and the ticket's own timeline (Priya's Monday call apparently landing on 6 Oct) points to 28 Sept instead. This is a small, unsupported detail.\n- Everything else is correct: the 90-day store policy, Priya covering for Jason, the Wednesday replacement, Frostline's separate collection, the outstanding claim form from Kevin, the $500 limit, and the 9 Oct escalation to Amara.\n- It is a single paragraph and roughly fits the 120-word limit.\n\n**Response B:**\n- It opens with a wrong claim, \"failed on 4 Oct\", then hedges in a muddled parenthetical. It ends with a \"Correction\" telling the reader to disregard its first sentence. That is confusing and unsuitable for a busy manager.\n- It probably exceeds 120 words, because of the header, bullets, risk line and correction.\n- Its status points are accurate and clearly laid out.\n- It leaves the reader unsure of the fault date.\n\nResponse A's error is smaller and contained. Response B's error is visible, self-contradictory and adds length, and it likely breaks the word limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1640,
+    "output": 1096
+  },
+  "cost": 0.01424
+}

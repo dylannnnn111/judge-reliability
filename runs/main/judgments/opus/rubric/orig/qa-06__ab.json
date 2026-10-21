@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-06",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-opus-5-5",
+  "text": "Both responses give the correct answer, **Friday, 24 March 2028**, and the facts behind it check out:\n\n- **Starting date:** 1 January 2027 is a Friday, so 15 December 2027 (day 349) is indeed a Wednesday.\n- **Date count:** December uses 16 days. January takes the total to 47 and February (29 days, leap year) to 76. The remaining 24 days land on 24 March.\n- **Weekday:** 100 = 14×7 + 2, so Wednesday + 2 = Friday.\n\nBoth responses lay out exactly this reasoning: the month-by-month count, the leap-year note, and the weeks-plus-remainder method. A uses a bulleted countdown of remaining days, while B uses a running total in prose. Both are clear, concise and under the word limit. The difference is purely stylistic, and neither adds or omits anything meaningful.\n\nVerdict: TIE",
+  "usage": {
+    "input": 527,
+    "output": 550
+  },
+  "cost": 0.013108
+}

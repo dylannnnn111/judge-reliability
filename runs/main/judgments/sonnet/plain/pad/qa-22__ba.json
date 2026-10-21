@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-22",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "A is better. Response B ignores the explicit \"under 120 words\" limit: it runs well over 200 words. Response A stays within the limit, at roughly 115 words by my count.\n\nResponse A is also accurate. Southern Hemisphere hurricanes do rotate clockwise. Shapiro did his experiment at MIT in 1962, and Trefethen replicated it in Sydney in 1965. Response B is also correct, but it is far too long.\n\n**A**",
+  "usage": {
+    "input": 714,
+    "output": 569
+  },
+  "cost": 0.007118
+}

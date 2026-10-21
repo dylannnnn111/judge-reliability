@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-37",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is about 115 words, so it stays under the 120-word limit. Response B runs to roughly 190 words, which clearly breaks the user's explicit constraint.\n\nThe two answers are otherwise accurate and similar in substance. Each explains that iron in the arkose oxidizes into iron oxides (rust), that the red is only a surface coating over grey rock, and that the deeper colours at sunrise and sunset come from low-angle light. B adds a few details, such as hematite and atmospheric scattering, but much of its extra length is filler like \"it is worth looking at\" and \"it is also worth noting.\" That padding is what pushes it over the limit.",
+  "usage": {
+    "input": 724,
+    "output": 593
+  },
+  "cost": 0.014756
+}

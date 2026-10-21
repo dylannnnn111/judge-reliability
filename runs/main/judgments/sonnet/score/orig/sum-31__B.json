@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-31",
+  "side": "B",
+  "score": 8,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate. The figures are right: ten weeks, two western Sydney centres, 118 pickers using both methods, speed up from 142 to 156 lines per hour, errors down from 0.62 to 0.41 per cent, new workers up 17 per cent, 64 per cent preferring voice, $210,000 setup for about 60 pickers, and 14-month payback. It stays under 120 words (about 105) and is easy for a manager to read.\n\nSome minor omissions:\n- The payback is the partner's estimate based on wage costs, and the response doesn't say so.\n- The accuracy gain was smaller in the second centre, which already had low error rates.\n- It leaves out the point that speed gains came mostly in the first four weeks and then held steady.\n- It doesn't mention the complaint about missing colleague conversation.\n\nNone of these is misleading, but the second-centre accuracy caveat and the source of the payback estimate would have been worth a few words.\n\nScore: 8",
+  "usage": {
+    "input": 1082,
+    "output": 656
+  },
+  "cost": 0.008724
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-32",
+  "side": "B",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The response catches the most important bug: `BETWEEN '2026-09-01' AND '2026-09-30'` drops September 30 orders after midnight, and the `>= / < '2026-10-01'` fix is correct. The integer-division point is also real. It correctly limits the truncation to databases that use integer division for integer operands (Postgres, SQL Server, SQLite), since MySQL returns decimals. The NULL-status exclusion and the vanishing zero-order stores are legitimate, and the LEFT JOIN advice (filters moved into `ON`) is right. The ranking is sensible, with the date bug first. The minor items are fair and don't pad the list with false alarms.\n\nThe main weakness is the explicit length constraint. The response runs roughly 220 words, over the 200-word limit the user set. The item-4 fix also cites a division-by-zero guard that the rewritten `AVG` form makes unnecessary, which muddies the advice slightly. Overall the substance is accurate and well ordered, but it misses the stated length requirement.\n\nScore: 7",
+  "usage": {
+    "input": 1198,
+    "output": 1310
+  },
+  "cost": 0.0007748
+}

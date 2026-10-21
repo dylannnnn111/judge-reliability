@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-29",
+  "side": "A",
+  "score": 7,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is mostly accurate and well structured. Prices, data allowances, the 15 November date, the exit-fee condition, the device repayment caveat and the 120 sites are all correct. At about 113 words it fits the 120-word limit and covers the key points a manager needs.\n\nTwo problems affect accuracy:\n- The sentence \"Classic plan customers and those on fixed-price contracts are unaffected until their contract ends\" merges two different groups. Classic customers have no contract end, and the notice only says their price and data won't change \"this year\". The response drops \"this year\" and wrongly implies the Classic exemption ends with a contract.\n- \"The reason given\" is fine and correctly attributes the rationale to Pivot.\n\nThese are modest but real distortions of who is affected and for how long. The rest is clear and concise.\n\nScore: 7",
+  "usage": {
+    "input": 1030,
+    "output": 1367
+  },
+  "cost": 0.01573
+}

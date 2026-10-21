@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-27",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. Response A runs about 123 words, over the 120-word limit, while Response B stays under it at roughly 95. Both explain the science correctly and cover why floating ice protects lake life. A also adds a slightly muddled claim about water arranging into the lattice below 4°C.\n\n**B**",
+  "usage": {
+    "input": 604,
+    "output": 1194
+  },
+  "cost": 0.013148
+}

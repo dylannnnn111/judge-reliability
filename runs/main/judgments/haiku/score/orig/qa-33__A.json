@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-33",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response answers the question correctly. It identifies tidal locking as the cause, explains that tidal friction slowed the Moon's rotation until its spin period matched its orbital period (about 27.3 days), and notes that the far side still gets sunlight. The 59% figure for the surface visible over time through libration is accurate. The explanation is concise, stays within the 120-word limit, and states the key reasoning clearly. A small simplification is attributing the slowdown to \"Earth's gravity\" rather than the mutual tidal interaction, but this does not make the answer wrong.\n\nScore: 9",
+  "usage": {
+    "input": 381,
+    "output": 434
+  },
+  "cost": 0.0002551
+}

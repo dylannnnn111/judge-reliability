@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-17",
+  "side": "B",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The response is **correct**. Venus has the hottest surface, at about 464–465°C. That is hot enough to melt lead, which melts at 327°C. It is hotter than Mercury despite being farther from the Sun. The supporting figures are accurate: about 96% CO₂ and roughly 90× Earth's surface pressure.\n\nThe **key reasoning** is present. The dense CO₂ absorbs outgoing infrared radiation, and the contrast with airless Mercury clinches the explanation. The sulfuric acid cloud point is nuanced and accurate: the clouds reflect much sunlight yet still help trap heat.\n\nThere are two minor quibbles:\n- \"Runaway greenhouse effect\" strictly describes the historical process that produced Venus's current state. It is standard popular usage, though.\n- The \"even temperatures\" bullet is accurate but answers \"how uniform\" more than \"why so hot,\" so it adds little to the core question.\n\nOn **length**, the response is about 118 words, just inside the limit. The formatting is clear.\n\nThis is a strong answer overall, with only minor imprecision and slight padding.\n\nScore: 9",
+  "usage": {
+    "input": 503,
+    "output": 946
+  },
+  "cost": 0.020932
+}

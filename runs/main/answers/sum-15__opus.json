@@ -1,0 +1,13 @@
+{
+  "item": "sum-15",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**Night-shift naps and the drive home**\n\nA simulator study of 96 night-shift workers tested whether a 20-minute nap at 3am improves driving home.\n\n- **Overall:** With a nap, lane drifting fell 22% and reaction time improved by 0.09 seconds.\n- **Not for everyone:** Benefits went mostly to workers with 6+ months on nights. For new night workers (under 3 months), lane drifting didn't improve, and some felt groggy for 15 minutes after waking.\n- **Timing matters more:** 7am drives had about twice the lane drifting of 6am drives, nap or not.\n\n**Takeaway:** Naps are a cheap aid for experienced staff, not a substitute for earlier shift end times or transport home after long shift runs.\n\n**Caveats:** Simulator only; mostly men aged 25–50.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 645,
+    "output": 1759
+  },
+  "cost": 0.03776,
+  "at": "2026-10-14T01:51:45.884Z"
+}

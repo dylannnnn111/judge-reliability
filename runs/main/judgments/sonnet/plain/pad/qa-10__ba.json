@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-10",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. The user asked for an answer in under 120 words, and only B meets that limit.\n\nBoth responses give the correct answer, 1/3, with the same sound reasoning: list BB, BG, GB, GG, remove BB, and one of the remaining three is GG.\n\n- **Response A** comes to about 146 words, so it breaks the length limit.\n- **Response B** comes to about 108 words, so it stays within the limit while still explaining why the answer is not 1/2.\n\n**B**",
+  "usage": {
+    "input": 632,
+    "output": 1029
+  },
+  "cost": 0.011554
+}

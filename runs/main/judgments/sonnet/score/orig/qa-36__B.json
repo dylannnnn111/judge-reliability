@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-36",
+  "side": "B",
+  "score": 7,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is under 120 words (about 100), so it meets the constraint.\n\nCorrectness: The core is right: lift arises from pressure differences and downward deflection of air, with angle of attack mattering. But the explanation says \"the curved upper surface makes air flow faster... while the flatter lower surface keeps air slower,\" which is a simplified version of the common misconception, implying shape alone (curvature) causes the speed difference. It doesn't use the equal transit time fallacy explicitly, so that's good. However, it presents pressure difference and Newton's third law as somewhat separate contributors (\"also plays a role\"), when they are two descriptions of the same phenomenon. The closing sentence partly acknowledges this, \"described by Bernoulli's principle and Newton's laws,\" but still frames them as \"together... produce lift,\" which is slightly muddled. Also, symmetric airfoils and flat-bottomed wings generate lift via angle of attack, which the response mentions initially.\n\nKey reasoning: It covers the pressure difference, downward deflection, and angle of attack. It lacks mention of the Coandă/circulation effect or that the faster flow is due to the wing's deflecting the flow, but for 120 words it's reasonable.\n\nClarity: Clear, concise, well-structured.\n\nOverall: Mostly correct with some oversimplification and the slightly misleading separation of the two explanations.\n\nScore: 7",
+  "usage": {
+    "input": 397,
+    "output": 456
+  },
+  "cost": 0.005354
+}

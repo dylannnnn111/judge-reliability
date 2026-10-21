@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "qa-03",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the same correct answer: a 1 percentage point rise, which is a 25% relative increase.\n\nChecking the constraint of under 120 words: Response A is about 35 words. Response B is about 100 words, so I'll count more carefully.\n\n\"The answer depends on whether you measure the change in percentage points or in percent.\" = 15\n\"Percentage point increase: 5% − 4% = 1 percentage point\" = about 9\n\"Percentage increase (relative):\" = 3\n\"(5 − 4) ÷ 4 × 100 = 25%\" = about 6 (symbols)\n\"So the interest rate has risen by 25% in relative terms, which is a rise of 1 percentage point.\" = 18\n\"This distinction matters for borrowers.\" = 5\n\"A 25% increase in the rate means that, all else equal, the interest portion of the repayments rises by 25%.\" = 20\n\"For example, on a $400,000 loan, annual interest goes from $16,000 to $20,000 (a $4,000 increase, or 25%).\" = 19\n\nThe total is about 95-100, so Response B is under the limit.\n\nCorrectness is equal. Both give the key reasoning. On clarity, Response A is concise and directly answers. The question asks \"by what percentage\", so the 25% is the expected answer. Response A leads with 1 percentage point and then gives 25%, which is slightly less direct but fine. Response B opens with \"it depends\", then gives both, and concludes with 25%. Its extra example is correct: 4% of 400,000 is 16,000 and 5% is 20,000. It does add something useful, though it is somewhat beyond what was asked. There is a minor imprecision: \"interest portion of repayments rises 25%\" is roughly true for interest-only loans, and the example frames it in annual interest terms.\n\nResponse A is tighter, and Response B's extra content is not essential. The question is simple, and Response A answers it fully with the key reasoning. Response B's example is useful but not required, and the \"depends\" framing is slightly hedgy. I lean toward A for concision, though B's added value is modest and correct.\n\nVerdict: A",
+  "usage": {
+    "input": 590,
+    "output": 685
+  },
+  "cost": 0.00803
+}

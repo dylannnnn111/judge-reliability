@@ -1,0 +1,13 @@
+{
+  "item": "qa-13",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**A is a knave and B is a knight.**\n\n- **Suppose A is a knight.** Then A's statement would be true, making A a knave. That is a contradiction, so A cannot be a knight.\n- **So A is a knave.** A knave's statements are false, so \"We are both knaves\" is false. That means A and B are not both knaves. Since A is a knave, B must be a knight.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 74,
+    "output": 164
+  },
+  "cost": 0.003576,
+  "at": "2026-10-14T01:50:22.370Z"
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-32",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A is better.**\n\nBoth responses find the same core issues in the same sensible order:\n- The `BETWEEN` upper bound drops September 30 orders.\n- Integer division truncates the averages.\n- The `<>` comparison silently excludes NULL statuses.\n- The inner join plus a redundant `HAVING` hides stores with no orders.\n- The dates are hardcoded and the timezone is unclear.\n\n**Length.** The user asked for under 200 words. Response A is close to that limit, perhaps slightly over. Response B runs to roughly 380 words, nearly double. It also adds filler (\"Let me walk through the issues in order of importance…\") and a redundant header.\n\n**Accuracy.** Response B says the integer-division bug applies to SQL Server, then recommends `AVG(o.item_count)` as the fix. In SQL Server, `AVG` on an integer column still returns an integer, so that fix doesn't work there. Response A's suggestion, `AVG(o.item_count * 1.0)` or multiplying by 1.0 before dividing, works across databases.\n\n**Coverage.** Response A also points out that the status filter wrongly includes cancelled, pending, or failed orders, and suggests an explicit allow-list. Response B only mentions this briefly.\n\n**Response B's extras.** It adds an `ORDER BY` tiebreaker point and an `IS DISTINCT FROM` alternative. These are minor and don't make up for ignoring the length constraint.\n\nA",
+  "usage": {
+    "input": 1816,
+    "output": 758
+  },
+  "cost": 0.022424
+}

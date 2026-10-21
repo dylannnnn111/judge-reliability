@@ -1,0 +1,13 @@
+{
+  "item": "code-06",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "**1. Ownership check uses identity, not equality (critical).** `order.customer_id is not current_user_id` compares object identity. CPython caches only small integers (about -5 to 256), so for larger IDs the owner can get a spurious `Forbidden` depending on how the ints were created (DB driver, JSON parsing, and so on). The result is intermittent failures for legitimate customers. Use `!=`.\n\n**2. Not-found vs. forbidden leaks existence.** Returning `LookupError` for missing orders and `Forbidden` for others lets an attacker enumerate valid order IDs. Return the same not-found response for both cases, and have handlers map them to 404.\n\n**3. Cancel is a race condition.** It reads the status, checks it, then saves. Two concurrent requests, or a cancel racing with a payment or shipment update, can both pass the check. Use a conditional update (`UPDATE ... WHERE id = ? AND customer_id = ? AND status IN ('pending','paid')`) and check the row count.\n\n**4. Paid orders are cancelled without refund logic.** Cancelling a `paid` order only changes the status here. Unless a downstream process handles refunds, customers can be charged for cancelled orders.\n\n**5. Minor:** `ValueError` includes the internal status string in its message, which handlers may pass to clients. Status values are bare strings with no enum or validation. `save` is not shown to be transactional with the check.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 371,
+    "output": 1041
+  },
+  "cost": 0.0005576,
+  "at": "2026-10-14T01:53:01.793Z"
+}

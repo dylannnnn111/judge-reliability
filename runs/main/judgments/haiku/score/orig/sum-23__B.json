@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-23",
+  "side": "B",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The summary is accurate on most points: the footpath timing, playground installation month, tree canopy deadline, $5,610 balance, 142 households, Clean Up Day logistics, carols date, time, choir and $900 cap, and next meeting date all match the minutes. The main error is in the Wattle Road item. The minutes say the councillor would *ask* council traffic staff to install a speed counter and report back. The response states that council \"will install\" one, which turns a request with an uncertain outcome into a commitment. The summary also drops some useful details, such as who is coordinating Clean Up Day and who is booking the sound system, and it omits \"this financial year\" for the footpath. These are minor for a busy manager. It is well under 120 words and easy to scan. Accuracy is the priority criterion, and the Wattle Road overstatement is a real, if small, misrepresentation, so the score is held down.\n\nScore: 7",
+  "usage": {
+    "input": 1158,
+    "output": 754
+  },
+  "cost": 0.0004928
+}

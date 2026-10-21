@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-30",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main bug, `COUNT(*)` returning 1 for agents with no open tickets, and both fix it with `COUNT(t.id)`. Both also catch that `COALESCE(AVG(...), 0)` makes idle agents look like perfect responders. Both go slightly over the word limit.\n\n**Response A:**\n- Its item 3 (NULLs excluded from the average) is real, but it only says to \"decide\" and to consider reporting a count. It gives no concrete fix.\n- Item 4 (status values, the type of `active`) is speculative and not clearly a bug.\n- Item 5 flags the `ORDER BY` tiebreaker and then says it is fine, which is filler. The advice to state \"open only\" in the email is weak.\n- It misses that the `COUNT(*)` bug also distorts the sort order.\n\n**Response B:**\n- It notes that the `COUNT(*)` bug distorts the sort order, which is correct and useful.\n- Its item 3 explains why the bias matters: unanswered tickets are the slowest ones. It gives a concrete fix, `COUNT(t.id) - COUNT(t.first_response_mins)`, or computing the wait so far.\n- The time-window point is plausible for a \"weekly\" report, though it may be intended as a snapshot. B frames it as a decision rather than a certain bug.\n- The integer-AVG truncation is correctly labeled minor and database-dependent, and it gives a fix.\n- It confirms the `status = 'open'` filter is correctly in the `ON` clause and explains why. That is useful and accurate, not a false flag.\n\nB ranks and fixes the issues better and adds more correct content. A pads with a speculative item and a non-issue.\n\nVerdict: B",
+  "usage": {
+    "input": 1492,
+    "output": 1137
+  },
+  "cost": 0.014354
+}

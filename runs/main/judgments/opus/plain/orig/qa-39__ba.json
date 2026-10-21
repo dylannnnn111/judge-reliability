@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-39",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B.** Both answers stay under 120 words (A ≈ 90, B ≈ 104), and both are technically accurate. The stored values both give for 0.1 and 0.2 are correct.\n\nB is more complete in three ways:\n- It says *why* 0.1 and 0.2 can't be stored exactly: they become repeating binary fractions that get rounded.\n- It shows both doubles side by side, the sum (≈0.3000000000000000444) and the double nearest 0.3 (≈0.299999999999999988898). That makes the mismatch concrete, where A only says the two values differ.\n- It notes the printed output (0.30000000000000004) and offers more workarounds: tolerance comparison, decimal types, and integer storage such as cents.\n\nA is clear and correct but less thorough. B packs more useful explanation into the word limit.\n\n**B**",
+  "usage": {
+    "input": 639,
+    "output": 1037
+  },
+  "cost": 0.023296
+}

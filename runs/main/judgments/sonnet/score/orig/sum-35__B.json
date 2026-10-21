@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-35",
+  "side": "B",
+  "score": 8,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate on the main points: the 30 June 2027 deadline, the Annexure C baseline with fair wear and tear, the five make-good items, the kitchenette condition, the two-quote payment option with three months' notice, and the $18,000 bond returned within 30 days. At about 115 words it is under the 120 limit and easy for a manager to scan.\n\nTwo small weaknesses:\n- \"Overrunning means paying daily rent\" overstates the original, which says the tenant \"may have to pay\" rent only for the extra days the landlord needs.\n- The payment option reads as a landlord choice, but the summary doesn't say the amount is the landlord's reasonable estimate. It also leaves out that the lease itself is the binding document, though that is minor for this reader.\n\nScore: 8",
+  "usage": {
+    "input": 1149,
+    "output": 1238
+  },
+  "cost": 0.014678
+}

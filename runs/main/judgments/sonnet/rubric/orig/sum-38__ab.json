@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-38",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries are accurate. The dates, figures, bug counts and budget match the source, and neither misstates the risk. A's \"review delays\" echoes the source's wording, and B's \"rejection\" is also correct.\n\nThe difference is the 120-word limit. I counted Response A at about 120 words, so it is right at the edge and arguably not strictly \"under\". Response B comes to roughly 140 words (about 142 with the headline and the \"Next update\" line), which clearly breaks the limit. B adds some details, such as the guidelines check, the load time under two seconds and the next update date. None of these is essential for a busy manager, and they cost B the word limit. A still covers the essentials: status, launch date, beta results, key dates, budget and the main risk.\n\nA follows the explicit constraint much more closely, and B's extra content is not valuable enough to justify going over.\n\nVerdict: A",
+  "usage": {
+    "input": 1409,
+    "output": 1957
+  },
+  "cost": 0.022388
+}

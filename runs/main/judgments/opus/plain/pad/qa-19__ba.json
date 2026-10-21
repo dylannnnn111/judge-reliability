@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-19",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse A runs to roughly 190 words, well over the 120-word limit. It also adds padding such as \"worth looking at closely\" and \"worth being clear about why.\"\n\nResponse B comes in at about 110 words and covers the same essentials accurately:\n- the Guugu Yimithirr origin (*gangurru*)\n- the 1770 Cook expedition near Cooktown\n- the \"I don't understand\" myth debunked\n- Haviland's 1970s confirmation\n\nBoth are factually sound, but only B follows the explicit length instruction.",
+  "usage": {
+    "input": 741,
+    "output": 303
+  },
+  "cost": 0.009024
+}

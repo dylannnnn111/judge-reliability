@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-13",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer (A is a knave, B is a knight) with valid reasoning. The question is which one better follows the instruction \"Answer in under 120 words.\"\n\nResponse A is about 90 words. Response B is about 70 words. Both are under the limit.\n\nResponse A restates the answer at the start and again at the end, which is redundant. Response B is more concise and has the answer bolded up front.\n\nResponse A's reasoning has one small point: \"Suppose A were a knight. Then A's statement would have to be true, but that would make A a knave.\" Both responses phrase it the same way, so the logic is equivalent.\n\nResponse B is cleaner and less redundant, while Response A is slightly more thorough but repeats itself. Both are fine, but B is slightly better for concision.\n\n**B**",
+  "usage": {
+    "input": 437,
+    "output": 250
+  },
+  "cost": 0.003374
+}

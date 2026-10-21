@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-23",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response finds the most important bug: `if (!r.value)` drops legitimate 0 °C readings, which matters for a cold-room dashboard, and it ranks this first with a correct fix. The string comparison of timestamps is also a real issue when offsets or formats are mixed. The `value: null` handling in `latestReading` and the prototype-key collision on `__proto__` are both real, and the `__proto__` case would actually corrupt the accumulator. The comparator-returns-0 point is valid but minor, and the \"no data\" item is a design observation rather than a bug. Ranking is sensible, fixes are given, and nothing it flags is wrong. It stays under 200 words. I'd deduct a little for padding the list with weaker items and for not stating that `filter` avoids mutating the input.\n\nScore: 8",
+  "usage": {
+    "input": 1076,
+    "output": 719
+  },
+  "cost": 0.0004671
+}

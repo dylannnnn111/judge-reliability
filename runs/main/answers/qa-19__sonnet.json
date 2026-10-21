@@ -1,0 +1,13 @@
+{
+  "item": "qa-19",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "The word \"kangaroo\" comes from *gangurru*, a word in Guugu Yimithirr, an Aboriginal language of northeastern Queensland. It referred specifically to a type of large grey kangaroo. Europeans first recorded it in 1770, when Captain James Cook's expedition repaired the *Endeavour* near present-day Cooktown.\n\nThe story that it means \"I don't understand\" is a popular myth. Supposedly, Cook's crew pointed at the animal, asked what it was, and took the reply as its name. Linguist John Haviland documented in the 1970s that *gangurru* really did refer to the grey kangaroo. The myth is widespread but false, though it's often repeated as a fun anecdote.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 60,
+    "output": 238
+  },
+  "cost": 0.0025,
+  "at": "2026-10-14T01:50:32.846Z"
+}

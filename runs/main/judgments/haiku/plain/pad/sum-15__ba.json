@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-15",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. It comes in at roughly 108 words, under the 120-word limit, and covers the key findings, the subgroup differences, the timing effect, the implication, and the limitations. Response A runs to roughly 220 words, well over the limit, though its content is similar.\n\nB",
+  "usage": {
+    "input": 1414,
+    "output": 752
+  },
+  "cost": 0.0005174
+}

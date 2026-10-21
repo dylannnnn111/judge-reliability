@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-08",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses arrive at the same correct answer: 18 mL × 0.789 = 14.202 g, so about 1.42 standard drinks, or 1.4 when rounded.\n\nLength: the limit is under 120 words. Response A runs to roughly 100 words, counting the intro, the three steps, and the summary. A rough count of its sentences:\n- \"Thank you for your question. Here is how a 375 mL can at 4.8% ABV breaks down into standard drinks.\" is about 20 words.\n- \"To begin, we can work out how much pure ethanol the can contains:\" is 13.\n- Step 1 is about 7.\n- \"Next, we convert that volume into mass, using the density of ethanol:\" is 12.\n- Step 2 is about 8.\n- \"Finally, we divide that mass by the 10 g used for one standard drink to find the number of standard drinks:\" is 21.\n- Step 3 is about 9.\n- The summary, \"In summary, based on the calculation above, a 375 mL can at 4.8% ABV contains approximately 1.42 standard drinks.\", is about 20.\n\nThat totals about 110, so A is under the limit, though only just. B is much more concise, and it states the answer up front.\n\nOn accuracy, B says \"Australian labels round this to 1.4,\" which is plausible and consistent with real labelling practice. A is more verbose, with filler such as \"Thank you for your question.\"\n\nB is better on concision and directness.\n\n**B**",
+  "usage": {
+    "input": 596,
+    "output": 469
+  },
+  "cost": 0.005882
+}

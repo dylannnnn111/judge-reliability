@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-12",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer, 671/1296 ≈ 0.518. The question is which one reasons more clearly and follows the constraint of staying under 120 words.\n\nResponse A: it states (5/6)^4 = 625/1296, then subtracts from 1. It also includes a redundant paragraph (\"Put another way...\") that restates the same step without adding anything. Word count is roughly 75, so it is within the limit. The padding is a weakness, and it never explains the single-roll probability of 5/6.\n\nResponse B: it uses the complement method and lists the single-roll no-six probability, the four-roll probability, and the final result. It adds a short, correct note about the Chevalier de Méré. The word count is about 80, also under 120. It is clearer and more complete in its reasoning, with no filler.\n\nResponse B is better because it shows the key reasoning more completely and avoids filler.\n\nVerdict: B",
+  "usage": {
+    "input": 628,
+    "output": 291
+  },
+  "cost": 0.004166
+}

@@ -1,0 +1,13 @@
+{
+  "item": "sum-22",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**Parkvale Hockey Club Committee Meeting, 30 Sept 2026**\n\n**Key decision:** For 2027, senior registration fees rise $40 to $340. Junior fees stay at $180, since junior numbers fell by 18 last season, mostly due to cost. The rise covers a 9% increase in council turf hire. Motion carried 5-0.\n\n**Finances:** Cash balance is $41,820. Holding junior fees leaves a projected shortfall of about $3,200. Bryce will apply for a council grant (closes 14 Nov) to cover it.\n\n**Actions:**\n- Wes: get two quotes for the leaking dugout roof and replace a north-side light globe.\n- Presentation night: Sat 24 Oct at the bowling club, $45 tickets. Natalie is organising trophies, and setup volunteers are needed from 4pm.\n- Approved: new club gazebo, up to $600.\n\n**Next meeting:** Wed 28 Oct.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 761,
+    "output": 712
+  },
+  "cost": 0.017284,
+  "at": "2026-10-14T01:51:55.652Z"
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-05",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Real and most important issues.** Both responses find the same core problems:\n\n- DST wall-clock subtraction.\n- Ambiguous and nonexistent local times.\n- Weekend loading based only on the start day.\n- Float money arithmetic with banker's rounding.\n- Public holidays.\n- Missing validation.\n\nBoth get the DST direction right. Response A's worked example is accurate: a 01:00–05:00 shift is paid 4h but lasts 5h on fall-back night, and is paid 4h for 3h worked on spring-forward. Response B correctly says the code overpays when clocks go forward and underpays when they go back.\n\n**Ranking and fixes.** The two use essentially identical, sensible orderings.\n\n- **Response A** adds a concrete fix for nonexistent times (a UTC round-trip check) and a useful shift-length sanity check.\n- **Response B** adds that `base_rate_cents * 1.5` is also a float, and suggests keeping minutes as integers.\n\nThese roughly balance out.\n\n**Avoiding non-issues.** Response B's remark that `parse_local` is called repeatedly is a minor inefficiency, not a payroll bug. It is a small blemish.\n\n**Format and clarity.** The user asked for under 200 words.\n\n- **Response A** runs to roughly 400 words. Much of that is padding (\"This is the most serious problem in the response\", \"Next, the code accepts…\"). It also confusingly refers to the code as \"the response\" twice.\n- **Response B** also exceeds 200 words, but by much less, and is tighter. Each point is stated directly without filler.\n\nSince the substance is nearly equivalent, Response A's extra length adds little. Its large overshoot of the word limit and its awkward wording make it the weaker response.\n\nVerdict: B",
+  "usage": {
+    "input": 2009,
+    "output": 1105
+  },
+  "cost": 0.030136
+}

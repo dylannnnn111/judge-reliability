@@ -1,0 +1,13 @@
+{
+  "item": "code-13",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "1. **`next_billing_date` crashes in December.** `month + 1` becomes 13, so `replace` raises `ValueError`. Any schedule that crosses December fails.\n\n2. **Day-of-month overflow crashes.** A start on the 29th, 30th, or 31st raises `ValueError` when the next month is shorter (e.g., Jan 31 → Feb 31). Clamping to the month's last day is needed.\n\n3. **Schedule drift.** Each date is derived from the previous one, not from `start`. Jan 31 → Feb 28 → Mar 28 permanently moves the billing day. Each date should be computed as `start` plus N months, clamped to month end.\n\n4. **Proration assumes 30-day months.** `days_in_period = 30` is hardcoded, but real billing periods are 28–31 days. This over- or under-charges, and `days_used` can exceed 30, which charges more than a full month.\n\n5. **No input validation.** `period_end < start` yields negative days and a negative charge. `months <= 0` silently returns `[start]` even when zero dates were requested.\n\n6. **Rounding unspecified.** `//` floors toward zero, so the customer is consistently underbilled by a fraction of a cent. Use an explicit rounding mode (typically `ROUND_HALF_UP` via `Decimal`) and confirm the day-counting convention (inclusive vs. exclusive end date) with the business rules.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 262,
+    "output": 989
+  },
+  "cost": 0.0005207,
+  "at": "2026-10-14T01:53:28.315Z"
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "code-29",
+  "side": "B",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "Assessing the response: the main bug is real and correctly identified. NOT IN with NULLs in the subquery yields zero rows, and the user even hinted at this with the NULL note. The fix (NOT EXISTS or IS NOT NULL) is correct and clearly given.\n\nThe second issue is also real: the date filter `s.created_at >= '2026-01-01'` contradicts \"never referred.\" This is a valid logic bug. The fix is reasonable. A subtle point: signups.created_at is the signup's creation date, not necessarily when the referral happened, but that is effectively the referral event, so fine.\n\nThird issue: LIMIT 5000 with ORDER BY created_at is biased toward oldest customers. This is a moderately legitimate point, though arguably a design choice; it's somewhat speculative. The \"track who was already sent to\" suggestion is reasonable but speculative. It's not a clear bug, but listed as third and not overly inflated.\n\nMinor: the date format concern is speculative, though a legitimate check. In SQLite, date('now','-30 days') returns 'YYYY-MM-DD', and comparing with a timestamp 'YYYY-MM-DD HH:MM:SS' works fine lexicographically for the < comparison (a timestamp on the boundary day is greater than the date string, so is excluded — fine). So that is mostly a non-issue, hedged by \"worth checking.\" The duplicate-emails/suppression point is generic padding.\n\nAlso, the word limit: under 200 words? The response is roughly 290 words, so it violates the \"under 200 words\" constraint. The preamble is filler (\"The issues below are listed in order of importance...\") and \"To explain the problem\" is wordy. That is a notable instruction-following failure.\n\nAccuracy of content is good: the top two issues are correct and well-ranked. A few speculative minor flags and the length violation reduce the score.\n\nScore: 6",
+  "usage": {
+    "input": 1181,
+    "output": 622
+  },
+  "cost": 0.008582
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-01",
+  "side": "B",
+  "score": 10,
+  "model": "claude-sonnet-5-5",
+  "text": "Checking the math: 1% of 10,000 is 100 people with the condition, and 90% of them is 90 true positives. Of the 9,900 without the condition, 9% is 891 false positives. The total is 981 positives, and 90/981 = 0.09174, so about 9.2%. The answer is correct.\n\nOn the word limit, the response's word count has to be under 120. Counting roughly:\n\n- \"This is a Bayes' theorem problem.\" is 6 words.\n- The setup section is about 35 words.\n- The calculation section is about 20 words.\n- The interpretation is about 35 words.\n\nThat comes to roughly 100–110 words, so it is probably under 120. A more careful count gives:\n\n- \"This is a Bayes' theorem problem.\" = 6\n- \"Setup (per 10,000 people):\" = 4 (10)\n- \"With the condition: 1% → 100 people.\" = 6 (16)\n- \"The test catches 90% → 90 true positives.\" = 7 (23)\n- \"Without the condition: 9,900 people.\" = 5 (28)\n- \"9% test positive → 891 false positives.\" = 6 (34)\n- \"Calculation:\" = 1 (35)\n- \"Total positives = 90 + 891 = 981\" = 7 (42)\n- \"P(condition | positive) = 90 / 981 ≈ 0.0917, or about 9.2%\" = about 11 (53)\n- \"Interpretation:\" = 1 (54)\n- \"Even with a positive result, the chance of actually having the condition is only about 9%, because the condition is rare.\" = 21 (75)\n- \"False positives from the large healthy group far outnumber true positives from the small affected group.\" = 16 (91)\n\nThat is about 91 words, under the limit. The response is correct, shows the key reasoning, and is clear.\n\nScore: 10",
+  "usage": {
+    "input": 465,
+    "output": 584
+  },
+  "cost": 0.00677
+}

@@ -1,0 +1,14 @@
+{
+  "pair": "qa-14",
+  "side": "A",
+  "author": "opus",
+  "model": "claude-haiku-5-5",
+  "original": "**7.5 hours**\n\n- Tap fills at 1/3 of the tank per hour.\n- Drain empties at 1/5 of the tank per hour.\n- Net rate: 1/3 − 1/5 = 5/15 − 3/15 = **2/15 tank per hour**.\n\nTime to fill: 1 ÷ (2/15) = 15/2 = **7.5 hours** (7 hours 30 minutes).",
+  "text": "**7.5 hours**\n\nTo begin, here is the answer up front: the tank takes **7.5 hours** to fill, which is the same as 7 hours 30 minutes.\n\nLet's walk through how we reach that result, step by step:\n\n- The tap fills at a rate of 1/3 of the tank per hour.\n- The drain empties at a rate of 1/5 of the tank per hour.\n- Combining the two, the net rate is 1/3 − 1/5 = 5/15 − 3/15 = **2/15 tank per hour**.\n\nWith the net rate known, we can now find the time needed to fill the tank. Dividing the whole tank by the net rate gives: 1 ÷ (2/15) = 15/2 = **7.5 hours** (7 hours 30 minutes).\n\nSo, to summarize, the tank fills in **7.5 hours**, with both the tap and the drain working together.",
+  "ratio": 2.69,
+  "usage": {
+    "input": 325,
+    "output": 700
+  },
+  "cost": 0.0003825
+}

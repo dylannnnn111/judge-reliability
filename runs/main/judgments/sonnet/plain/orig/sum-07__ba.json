@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-07",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. It meets the hard constraint: I count about 116 words, under the 120 limit. It also puts the breaking change, the Classic CSV removal, first, which is the most useful ordering for a busy manager.\n\n**A** covers the same content well, but I count about 124 words, so it breaks the stated limit. Its structure is otherwise fine.\n\n**B** has a small flaw: it files the bug fixes under \"Improvements\". Because it stays within the word limit and leads with the action item, it is the better answer.\n\n**B**",
+  "usage": {
+    "input": 1247,
+    "output": 1727
+  },
+  "cost": 0.019764
+}

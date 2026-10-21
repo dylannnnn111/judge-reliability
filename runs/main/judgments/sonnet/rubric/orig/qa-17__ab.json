@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-17",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses correctly identify Venus, give about 465°C, and explain that a thick CO₂ greenhouse atmosphere is the cause. Both also note that Venus is hotter than the closer Mercury.\n\n**Word limit:** I counted Response B at about 118 words, which is just under the 120 limit. Response A is around 85 words. Both comply.\n\n**Response A:** It is accurate and concise. It covers the CO₂ greenhouse effect, the reflective sulfuric acid clouds, and the surface pressure. The pressure point is only loosely tied to the heating, so it adds little.\n\n**Response B:** It adds the following correct and useful points:\n- CO₂ makes up about 96% of the atmosphere.\n- The dense atmosphere spreads heat so evenly that day and night, and poles and equator, are almost equally hot.\n- Mercury, with almost no atmosphere, loses its heat to space, which directly explains why closer-in Mercury is cooler.\n\nThe \"hot enough to melt lead\" detail is also accurate. The bullet structure is clear. The claim that the clouds \"help trap heat below\" is slightly loose but acceptable.\n\nResponse B explains the Mercury contrast better and adds relevant, correct details while staying within the limit, so it is slightly better.\n\nVerdict: B",
+  "usage": {
+    "input": 768,
+    "output": 1336
+  },
+  "cost": 0.014896
+}

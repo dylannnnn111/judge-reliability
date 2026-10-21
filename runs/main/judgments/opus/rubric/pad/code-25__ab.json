@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-25",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.** Both responses find the core real bugs and rank them sensibly:\n\n- the off-by-one that lets six attempts through, fixed with `>=`\n- unbounded memory growth, made worse by IPv6 rotation\n- the per-IP-only weakness against distributed guessing, fixed with a per-account limit\n- in-memory, per-process state\n- the hardcoded `retryAfterSec`\n- proxy and IP trust concerns\n\n**Where A is stronger:**\n- **Fixes:** it gives a concrete `retryAfterSec` formula and notes that `allow` must return the value.\n- **IPv6:** it suggests keying on the /64 prefix, a sharper fix than just mentioning rotation.\n- **Proxy risk:** it identifies the real failure mode where a reverse proxy's address locks out everyone at once.\n- **Shared NAT:** it notes that users behind shared NAT share a budget.\n- **Weak spot:** its \"no tests\" remark is low-value filler, though it is labelled minor.\n\n**Where B is stronger:**\n- **Failure-only counting:** its point 5 is valid and useful. Counting successful logins means legitimate users can lock themselves out. A only touches this indirectly, via \"no way to reset a key after successful login.\"\n- **Spoofing:** its X-Forwarded-For spoofing angle is also valid.\n\n**Length and verbosity:** Both exceed the 200-word limit. A runs about 250 words and B about 320. B's extra length mostly comes from wordy phrasing, such as \"In other words…\", \"As a result…\", and a filler intro, rather than extra substance.\n\nOn balance, A delivers comparable or better coverage with more concrete fixes. It also stays closer to the length constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 1791,
+    "output": 1095
+  },
+  "cost": 0.029064
+}

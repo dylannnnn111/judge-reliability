@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-29",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. The user asked for a summary under 120 words, and Response A runs well over that at roughly 200 words. It also includes details a busy manager doesn't need, such as the support hours and the app chat. Response B comes in at about 115 words and covers the key points: the price changes, the extra data, who is affected, the exit option, and the reason. Its one small flaw is a slight blur in saying Classic customers are unaffected \"until their contract ends\", when the notice says only that their prices won't change this year.\n\n**B**",
+  "usage": {
+    "input": 1370,
+    "output": 749
+  },
+  "cost": 0.01023
+}

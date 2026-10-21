@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-34",
+  "side": "A",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The response correctly describes Diffie-Hellman key exchange, the role of public values, derivation of a shared key, and the use of symmetric encryption afterward. It also addresses the man-in-the-middle problem with certificates and CAs, and mentions TLS. All of this is accurate.\n\nMinor nitpicks: \"HTTPS works exactly this way\" is slightly oversimplified (modern TLS uses ephemeral (EC)DH with signatures, and the server's signature authenticates the exchange), but that is acceptable in a short answer. The word count: let me estimate. The text is roughly 115 words, so it seems under 120. Counting more carefully: the intro line ~12, step 1 ~13, step 2 ~10, step 3 ~33, step 4 ~14, last paragraph ~34. Total ~116. That is under 120, though close.\n\nIt also omits the RSA-style key transport alternative, but that is not necessary. It is clear, well structured, and concise.\n\nScore: 9",
+  "usage": {
+    "input": 443,
+    "output": 324
+  },
+  "cost": 0.004126
+}

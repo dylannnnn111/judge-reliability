@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-14",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. Both responses exceed the 120-word limit, but Response A is much longer (roughly 210 words against roughly 150 for B). A also spends words on filler, such as its opening sentence about what the section \"sets out\". B is tighter, covers the same key points accurately, and is easier for a busy manager to scan.\n\nB",
+  "usage": {
+    "input": 1436,
+    "output": 986
+  },
+  "cost": 0.0006366
+}

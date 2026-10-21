@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-01",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-sonnet-5-5",
+  "text": "TIE\n\nBoth responses reach the correct answer, about 9.2% (90 / 981). Both use the same natural-frequency method and stay under the 120-word limit, at roughly 95 words each. Response B gives slightly more precise arithmetic (0.0917) and names Bayes' theorem. Response A adds a brief note on the base rate fallacy. These small differences do not make either one clearly better.",
+  "usage": {
+    "input": 600,
+    "output": 1204
+  },
+  "cost": 0.01324
+}

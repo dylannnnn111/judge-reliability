@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-22",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses are accurate. They correctly debunk the myth, give the real causes (basin shape, residual motion, toilet jet angles), and note that the Coriolis effect has been seen only in carefully controlled experiments.\n\nThe deciding factor is the explicit length constraint. Response A comes in at roughly 116 words, under the 120-word limit. It still adds useful specifics: hurricanes rotate clockwise in the Southern Hemisphere, and Shapiro's 1962 MIT experiment was replicated in Sydney in 1965.\n\nResponse B runs to about 180 words, well over the limit. Some of that length is filler, such as \"it's a widely repeated one\" and \"it takes considerable effort to isolate its influence.\"",
+  "usage": {
+    "input": 714,
+    "output": 731
+  },
+  "cost": 0.017476
+}

@@ -1,0 +1,14 @@
+{
+  "pair": "qa-33",
+  "side": "B",
+  "author": "sonnet",
+  "model": "claude-haiku-5-5",
+  "original": "We always see the same side of the Moon because of **tidal locking**, which makes its rotation period match its orbital period. The Moon spins once on its axis in the same 27.3 days it takes to circle Earth once.\n\nThis isn't a coincidence. Early on, the Moon rotated faster. Earth's gravity raised a tidal bulge on it, and as the Moon rotated, friction within it dragged on that bulge and slowed the spin. Eventually the bulge aligned with Earth and the rotation settled to match the orbit.\n\nBecause of slight wobbles called libration, we can actually see about 59% of the surface over time. The \"far side\" isn't permanently dark, though. It gets sunlight just like the near side.",
+  "text": "We always see the same side of the Moon because of **tidal locking**, a condition in which its rotation period matches its orbital period. To put it another way, the Moon spins once on its axis in the same 27.3 days it takes to circle Earth once. Because those two timescales are identical, the same face stays turned toward us as the Moon travels around its orbit.\n\nThis isn't a coincidence, though it may seem like one at first glance. Early in the Moon's history, it rotated much faster than it does today. Earth's gravity raised a tidal bulge on it, and as the Moon rotated, friction within it dragged on that bulge and slowed the spin. Over a long period, this process continued until the bulge lined up with Earth and the rotation settled into step with the orbit.\n\nIt's worth noting that we don't see exactly half of the Moon at any given moment. Because of slight wobbles called libration, we can actually see about 59% of the surface over time. Those wobbles let us glimpse some areas near the edges that would otherwise remain hidden.\n\nFinally, the \"far side\" isn't permanently dark, despite the common phrase. It gets sunlight just like the near side, so it experiences day and night in the same way. The name refers only to the side that faces away from us, not to a side that is always in shadow.",
+  "ratio": 1.98,
+  "usage": {
+    "input": 415,
+    "output": 542
+  },
+  "cost": 0.0003125
+}

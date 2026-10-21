@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "code-14",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.** Both responses find the same two critical issues and rank them correctly.\n\n**Shared strengths**\n- Both put first the OFFSET-plus-delete bug, which skips every other batch. Both give the correct fixes: drop OFFSET, or use keyset pagination.\n- Both put second the gap between archiving and committing. A crash there leaves duplicates in cold storage, and both note the risk that `archive` is not durable before the rows are deleted.\n- Both mention the `created_at` string comparison and indexing as lower-priority points.\n\n**Where they differ**\n- **Response A** adds a useful insight: each nightly run only halves the backlog. It stays tighter, at roughly 225 words. It also gives concrete fixes for the lower-priority items: normalize `cutoff`, and add an index on `(created_at, id)`.\n- **Response B** adds item 3, \"No error handling or rollback,\" which is weak and partly inaccurate.\n  - If `archive` raises, no write transaction has been opened yet, because Python's sqlite3 does not implicitly begin one on a SELECT.\n  - If the DELETE raises, the exception propagates out of a nightly job anyway.\n  - It is not a significant bug, and it ranks above the real `created_at` format issue.\n- Response B's \"no logging or metrics\" point adds little.\n- Response B runs further over the 200-word limit, at roughly 245 words.\n\nResponse A is more concise, avoids the dubious item, and is closer to the length constraint, while covering the important issues equally well.\n\nVerdict: A",
+  "usage": {
+    "input": 1514,
+    "output": 898
+  },
+  "cost": 0.024016
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-30",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the most important bug: `COUNT(*)` counts the NULL-filled row that the LEFT JOIN produces for agents with no open tickets, so they show 1 instead of 0. Both also flag `COALESCE(..., 0)` presenting idle agents as having perfect response times, and the AVG bias from unanswered tickets being silently dropped.\n\nResponse A is more precise and actionable. It gives concrete fixes, such as `COUNT(t.id)` and the `COUNT(t.id) - COUNT(t.first_response_mins)` expression for unanswered tickets. It also raises the mismatch between a \"weekly\" report and an all-time open-ticket snapshot, which is a real issue. Its integer-truncation point is accurate for SQL Server and is hedged appropriately. Its closing note, that the `status` filter belongs in `ON` and not `WHERE`, is correct and useful because it explains why the query is right in that respect.\n\nResponse B is wordier, with filler like \"I have reviewed the query\" and a closing summary that adds nothing. Its fourth point about hard-coded assumptions is speculative, since it doesn't identify a concrete problem, only that values \"may not match.\" Its fifth point is not really a bug. Its fixes are vaguer. It does not mention the time-window issue.\n\nResponse A finds the more relevant problems, ranks them sensibly, gives better fixes, and avoids padding.\n\nVerdict: A",
+  "usage": {
+    "input": 1714,
+    "output": 979
+  },
+  "cost": 0.0006609
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "code-21",
+  "side": "B",
+  "score": 5,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds the most important bug and fixes it well, but it runs well over the length limit and pads the list with marginal items.\n\n**What it gets right:** Item 1 is the critical issue. `issueRefund` POSTs to a payments endpoint with no idempotency key, and the wrapper retries on 502/504 and on network errors, where the first request may already have been processed. That can double-refund an order. The response ranks it first and gives concrete fixes: a reused `Idempotency-Key`, or no retries for non-idempotent requests. The missing timeout, ignored `Retry-After`, unconsumed response bodies, and jitter reaching about 60s are all real, though minor.\n\n**What it gets wrong:**\n- **Length:** It is roughly 350 words against a hard limit of 200. The user said \"bugs and problems that matter,\" and the response ignores that.\n- **Speculation:** Item 2 is about UI double-clicks. The console code isn't shown, so this is conjecture. The server-side dedupe suggestion is reasonable but overlaps with item 1.\n- **Marginal items:** Item 6 (amount validation, non-JSON errors) and item 7 (no cancellation) are low-value filler. Item 5 is a minor issue presented as a \"leak.\"\n- **Ranking:** The order after item 1 is roughly fine, but the speculative item 2 sits above the real timeout and `Retry-After` problems.\n\nScore: 5",
+  "usage": {
+    "input": 1380,
+    "output": 876
+  },
+  "cost": 0.01152
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-21",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses lead with the critical issue: retrying a non-idempotent refund POST can issue duplicate refunds. Both also cover the missing timeout, the ignored `Retry-After`, and undrained response bodies.\n\nA's remaining points are actual defects in the code. Its #2 is correct and concrete: the blanket `catch` retries cancellations (`AbortError`) and permanent errors such as an unreusable stream body. Its #6 identifies a real flaw: the type cast can return `undefined` as a \"successful\" refund ID.\n\nB spends slots on weaker items:\n- **#2 (support console double-submits)** is about UI design outside the code under review.\n- **#6 (`amountCents` input validation)** is speculative.\n- **#7 (jitter can reach ~60s)** is accurate but minor.\n\nB mentions cancellation only in passing. It misses A's more precise point that aborts are actively retried.\n\nBoth responses run slightly over the 200-word limit, so length doesn't separate them. A is more focused on real code bugs and ranks them better.",
+  "usage": {
+    "input": 1590,
+    "output": 664
+  },
+  "cost": 0.01964
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-12",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses reach the correct answer: (5/6)⁴ = 625/1296 ≈ 0.482, so at least one six has probability 671/1296 ≈ 51.8%. Both stay under 120 words.\n\nResponse A lays out the complement method in explicit steps: the single-roll no-six probability, the four-roll product, and the subtraction from 1. That makes the key reasoning easy to follow. Its historical note about the Chevalier de Méré is accurate and adds a little context without padding the answer.\n\nResponse B also uses the complement method, but its explanation is vaguer. Phrases like \"we can move on to the complementary quantity\" and \"Put another way...\" add words without adding reasoning. It never explains why the complement is used beyond restating it.\n\nSince correctness is equal, Response A is better on reasoning clarity and presentation.\n\nVerdict: A",
+  "usage": {
+    "input": 628,
+    "output": 487
+  },
+  "cost": 0.0003063
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-11",
+  "side": "A",
+  "score": 5,
+  "model": "claude-opus-5-5",
+  "text": "The response is accurate on almost everything: dates (15–16 Nov move, Fri 14th laptops, Mon 10th boxes, Wed 12th deadline), numbers (14 parking spaces, two crates, 3pm, 8:30am) and who owns what (Rachel coordinates and allocates parking, Sam handles IT, Lena handles records, Grant handles access). The parking condition is correct: non-respondents aren't on the list. The access-card reasoning is also right: you can't get past the lobby without a card.\n\n**Minor accuracy and coverage issues:**\n- **Lena's role is under-described.** It omits that she is responsible for the archive room and client files.\n- **\"Left behind\" sounds more final than the original.** The email says unboxed files will be \"dealt with later\", which may delay access to client files. That consequence matters to a manager and is lost.\n- **\"Don't pack them\" is stretched to phones.** The original only says not to pack monitors and docking stations, though this is harmless.\n- **The dishwasher note is reasonably dropped.**\n\n**Main problem: the word limit is broken.** The user set a hard limit of under 120 words. Counting the heading and all bullets, the response runs to about 134 words. That is a clear failure of an explicit instruction, not a borderline case. The structure is otherwise well chosen for a busy reader: owner-based bullets that are easy to scan.\n\nOverall, the content is solid and mostly accurate, with small omissions. But exceeding the stated limit is a significant failure for a request where length was the main constraint.\n\nScore: 5",
+  "usage": {
+    "input": 1185,
+    "output": 2092
+  },
+  "cost": 0.04658
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-39",
+  "side": "A",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is correct. In IEEE 754 doubles, 0.1 is stored as about 0.1000000000000000055511 and 0.2 as about 0.200000000000000011102. Their exact sum is about 0.30000000000000001665, which falls exactly halfway between two adjacent doubles. Round-half-to-even picks the upper one, 0.3000000000000000444, which prints as 0.30000000000000004. The double nearest 0.3 is 0.29999999999999998890, so the two differ, as the response says.\n\nIt explains the cause well, with the 1/3 analogy, the stored values, and the rounding. It also adds useful workarounds. By my rough count it is about 110 words, under the 120 limit. It does not mention the tie-and-round-to-even detail, but that is a minor omission for a short answer. It is clear and well organized.\n\nScore: 9",
+  "usage": {
+    "input": 486,
+    "output": 912
+  },
+  "cost": 0.010092
+}

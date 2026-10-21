@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-27",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is under 120 words (about 95). Response B is well over 120 words (about 210), so it violates the explicit length constraint.\n\nA is also more accurate. B says \"As water cools below about 4°C, its molecules begin arranging themselves into the open hexagonal lattice,\" which is a misleading oversimplification, since the lattice forms at freezing, not below 4°C.\n\nA is better.\n\n**A**",
+  "usage": {
+    "input": 772,
+    "output": 131
+  },
+  "cost": 0.002854
+}

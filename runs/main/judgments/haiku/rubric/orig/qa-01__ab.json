@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-01",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses reach the correct answer. They use the same 10,000-person breakdown (90 true positives, 891 false positives), and 90/981 ≈ 0.092 is right in each. Both are well under 120 words and give the key intuition that false positives from the large healthy group swamp the true positives. Response A explicitly names the base rate fallacy, which is the concept a reader would most want to recognize. Response B names Bayes' theorem and frames the setup more formally, which is also useful but slightly less pointed for the intuition. The difference is small, but A's framing is marginally more useful.\n\nVerdict: A",
+  "usage": {
+    "input": 745,
+    "output": 478
+  },
+  "cost": 0.0003135
+}

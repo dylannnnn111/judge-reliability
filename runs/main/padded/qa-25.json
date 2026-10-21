@@ -1,0 +1,14 @@
+{
+  "pair": "qa-25",
+  "side": "B",
+  "author": "sonnet",
+  "model": "claude-haiku-5-5",
+  "original": "No, there's no solid evidence that Viking warriors wore horned helmets in battle. The only nearly complete Viking helmet found, from Gjermundbu, Norway, is a plain rounded iron cap with a spectacle-like guard around the eyes and nose. Most warriors probably wore simple leather or iron caps, or no helmet at all, since helmets were expensive.\n\nThe horned image largely comes from the 19th century. Swedish artist Gustav Malmström's illustrations and Carl Emil Doepler's costume designs for Wagner's *Ring* operas (1876) popularized it, drawing on Romantic nationalism. Some Bronze Age Scandinavian ceremonial horned helmets exist (like the Veksø helmets), but they predate Vikings by about 1,500 years and were likely ritual items.",
+  "text": "No, I'm afraid there is no solid evidence that Viking warriors wore horned helmets in battle. To be clear about what the archaeological record does show, the only nearly complete Viking helmet that has been found, from Gjermundbu, Norway, is a plain rounded iron cap with a spectacle-like guard around the eyes and nose. Beyond that single example, most warriors probably wore simple leather or iron caps, or went into battle with no helmet at all, since helmets were expensive and not everyone could afford one.\n\nThe horned image, by contrast, largely comes from the 19th century rather than from the Viking Age itself. Swedish artist Gustav Malmström's illustrations and Carl Emil Doepler's costume designs for Wagner's *Ring* operas (1876) are the works most responsible for popularizing it, and they drew on the Romantic nationalism of that period. It is worth mentioning, too, that some Bronze Age Scandinavian ceremonial horned helmets do exist (like the Veksø helmets). However, these predate the Vikings by about 1,500 years and were likely ritual items.",
+  "ratio": 1.53,
+  "usage": {
+    "input": 456,
+    "output": 967
+  },
+  "cost": 0.0005291
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-11",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. Both responses run over the 200-word limit, but B (roughly 250 words) overshoots far less than A (roughly 350 or more). A also opens with filler (\"Thank you for sharing the code...\") and includes a code block that only restates the fix.\n\nThe two cover the same core issues in the same order: the check-then-act race in `reserve`, the process-local lock, missing validation, unguarded `release`, and the global lock. B adds useful points A lacks:\n- The lock is held during database I/O.\n- An unknown SKU makes `get_stock` return `None`, so the comparison raises a `TypeError`.\n- Abandoned carts never release their reservations.\n\nB is also tighter and gives a concrete example of the oversell (two threads both see 1 in stock, leaving -1). A's last point, that `available()` is only advisory, is valid but largely redundant with point 1.\n\n**B**",
+  "usage": {
+    "input": 1633,
+    "output": 781
+  },
+  "cost": 0.011076
+}

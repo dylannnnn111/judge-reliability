@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-11",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the main check-then-act race in `reserve`, the single-process limitation of `threading.Lock`, the missing input validation, and the unguarded `release`. Both rank the race first and propose the same database-level fix. Response A gives a concrete code fix for the race, which is useful. Response B adds two points A lacks: abandoned carts never release their reservations, so reservation expiry matters, and a `None` from `get_stock` would raise `TypeError`. The `None` point is somewhat speculative, since it depends on the unseen `db` implementation. A's point 6, that `available()` is advisory only, is a valid observation but partly repeats point 1. Both are near the 200-word limit, with A running a little longer once its code block is counted. B's abandoned-cart insight is the more consequential addition, so I give it a slight edge.\n\nVerdict: B",
+  "usage": {
+    "input": 1553,
+    "output": 1011
+  },
+  "cost": 0.0006607999999999999
+}

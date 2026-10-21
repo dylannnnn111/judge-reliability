@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-01",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. The user asked for a summary under 120 words, and B stays within that limit at roughly 115 to 117 words. A runs to about 200 words, so it breaks the constraint.\n\nB is also easier for a busy manager to scan. It opens with the new deadline and the reason for it, then gives the required items and the key requirements in short bullets. It also keeps the instruction to call Priya today rather than email.\n\nA reads like a rewritten email, with an opening line such as \"I'm writing to let you know\", which is not a summary.\n\n**B**",
+  "usage": {
+    "input": 1417,
+    "output": 595
+  },
+  "cost": 0.008784
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-36",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same core problems and rank them in nearly the same order. Each puts the `Invalidate` RLock-with-delete race first, which is correct and the most severe issue because it can crash the process. Both also list the stampede, stale overwrite, TTL mismatch, unbounded growth and missing context, all of which are real.\n\n**Differences:**\n- **Length:** The user asked for under 200 words. Response A runs to roughly 215 words, so it breaks the limit. Response B comes in around 185 words and stays within it.\n- **Stale overwrite:** Response B ties this to the `Invalidate` scenario, where a rejected token gets re-cached for a full TTL. That is the concrete harm in this code. Response A describes it more generally and gives a fix (a generation counter or singleflight), whereas B gives none.\n- **Item 6:** Response A adds \"errors aren't cached, no backoff\". That is a weaker, speculative point and partly padding. Response B's claim that a hung call \"blocks every request waiting on that tenant\" is slightly off for the current code, since nothing waits today. Both are minor.\n- **Fixes:** Response A gives fixes slightly more consistently. Response B gives a fix for every item except the stale overwrite.\n\nBoth are accurate and well ranked. Response B follows the word limit and explains the Invalidate-related stale cache more clearly, while Response A exceeds the limit and includes a bit of padding. I give B a slight edge.\n\nVerdict: B",
+  "usage": {
+    "input": 1797,
+    "output": 1966
+  },
+  "cost": 0.023254
+}

@@ -1,0 +1,14 @@
+{
+  "pair": "qa-04",
+  "side": "B",
+  "author": "sonnet",
+  "model": "claude-haiku-5-5",
+  "original": "**Step 1: 20% increase**\n$500 × 1.20 = $600\n\n**Step 2: 20% discount on the new price**\n$600 × 0.80 = $480\n\n**Final price: $480**\n\n**Overall change:** ($480 − $500) / $500 = −4%\n\nThe price ends up 4% lower than the original, a $20 decrease. The percentages don't cancel out because the 20% discount is applied to the larger $600 price, so it removes more dollars ($120) than the increase added ($100).\n\nEquivalently, 1.20 × 0.80 = 0.96, which is a 4% decrease.",
+  "text": "**Step 1: 20% increase**\nTo begin, we apply the first change. A 20% increase on the original $500 price is calculated as follows:\n$500 × 1.20 = $600\n\n**Step 2: 20% discount on the new price**\nNext, we apply the second change to the price that resulted from Step 1. Because the discount is taken from the new $600 price, not the original $500, we calculate:\n$600 × 0.80 = $480\n\n**Final price: $480**\nAfter both steps are complete, the final price comes to $480.\n\n**Overall change:** ($480 − $500) / $500 = −4%\nTo find the net effect of both changes relative to the starting price, we compare the final price with the original price and divide by the original price, which gives:\n($480 − $500) / $500 = −4%\n\nThe price ends up 4% lower than the original, a $20 decrease. To put it another way, the net result is a reduction. The percentages don't cancel out because the 20% discount is applied to the larger $600 price, so it removes more dollars ($120) than the increase added ($100).\n\nEquivalently, 1.20 × 0.80 = 0.96, which is a 4% decrease. This multiplication expresses the same two-step change as a single factor, so the result matches the overall change calculated above.",
+  "ratio": 2.52,
+  "usage": {
+    "input": 381,
+    "output": 946
+  },
+  "cost": 0.0005111
+}

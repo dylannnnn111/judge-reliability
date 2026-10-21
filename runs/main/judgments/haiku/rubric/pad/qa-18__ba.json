@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-18",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify Willem Janszoon and the *Duyfken* landing at Cape York in 1606, so neither loses on the core answer. Response B adds useful context, such as the crew mistaking the land for part of New Guinea and the February–March 1606 timing. However, it runs to roughly 170 words, which breaks the explicit \"under 120 words\" limit. Response A stays within the limit, gives the key facts, and adds accurate context about Hartog and the lack of firm evidence for earlier Portuguese landings. Response A is therefore better, mainly because it meets the length constraint while B does not.\n\nVerdict: A",
+  "usage": {
+    "input": 805,
+    "output": 814
+  },
+  "cost": 0.0004875
+}

@@ -1,0 +1,13 @@
+{
+  "item": "sum-27",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**Onboarding pilot (Marcus Hale): inconclusive. Don't roll out nationally yet.**\n\n- **Test (Aug–Sep):** Sydney customers got a 45-minute guided onboarding call. Perth got email-only. The measure was the share still active after 30 days.\n- **Headline:** Sydney 81% vs Perth 74%, an apparent 7-point lift.\n- **Problem:** 60% of Sydney customers got a free first month, which inflates retention. Among paying customers only, the gap is 2 points (78% vs 76%), within normal variation.\n- **Cost if rolled out:** ~$95 per session, ~$410,000/year nationally.\n- **Note:** Sales' claim that the pilot \"proved\" guided onboarding works isn't supported.\n- **Decision needed (21 October leadership meeting):** Approve a 60-day test randomly assigning customers within the same city, starting November.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 686,
+    "output": 991
+  },
+  "cost": 0.022564,
+  "at": "2026-10-14T01:52:11.420Z"
+}

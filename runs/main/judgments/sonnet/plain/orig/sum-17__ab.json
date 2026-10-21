@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-17",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A**\n\nBoth responses go over the 120-word limit, but A only just does. I counted about 124 words for A, and B is well over, at roughly 150 or more. A is much closer to what the user asked for.\n\nA also reads better for a busy manager. It gives the problem, the licence rules, the outcome of the talk with the venue, and the next steps in a compact form. It also covers the neighbour who has had no problems.\n\nB's subject line says \"resolved for now\". That overstates things, because the committee is still waiting to see how this weekend goes. B also spends words on detail a busy manager doesn't need, such as Arjun's name and the three other complaints.",
+  "usage": {
+    "input": 1405,
+    "output": 1110
+  },
+  "cost": 0.01391
+}

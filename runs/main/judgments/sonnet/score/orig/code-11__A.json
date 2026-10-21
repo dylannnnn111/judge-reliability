@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-11",
+  "side": "A",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "The response correctly puts the main bug first: the check-then-act race in `reserve`, where the availability check and the decrement take the lock separately. It gives the right fix, doing both under one lock. The negative `qty` issue is also real and matters, since it would add stock. The multi-process point is a reasonable caveat, and the atomic SQL fix is good advice, though the user said the code runs on worker threads. The unknown-SKU `None` case is plausible but depends on what `get_stock` returns.\n\nSeveral items are weaker. The unguarded `release` and reservation-expiry point is a design wish more than a bug in this code. The global-lock throughput point is real but minor. Together these dilute the list somewhat, though none is flatly wrong.\n\nThe response also breaks the length limit. It runs to roughly 250 words against a \"under 200 words\" instruction, and the trimmable items 4 to 6 account for much of the excess.\n\nOverall, the key bug is found, ranked first and fixed well, but the length violation and some marginal items lower the score.\n\nScore: 6",
+  "usage": {
+    "input": 995,
+    "output": 1009
+  },
+  "cost": 0.01208
+}

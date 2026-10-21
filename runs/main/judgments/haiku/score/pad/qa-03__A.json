@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-03",
+  "side": "A",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response answers correctly on both readings of the question. It identifies the absolute change as 1 percentage point and the relative change as 25%, which is what \"by what percentage\" most likely asks for. The calculation (5 − 4) ÷ 4 × 100 = 25% shows the key reasoning, and the explanation is clear and well under 120 words. Its main weakness is that it leads with the percentage-point answer in bold, which could make the intended answer of 25% less prominent. The opening and closing pleasantries add nothing.\n\nScore: 8",
+  "usage": {
+    "input": 413,
+    "output": 392
+  },
+  "cost": 0.00023730000000000002
+}

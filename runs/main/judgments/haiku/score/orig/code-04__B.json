@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-04",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response finds the most important problem: retrying a POST without an idempotency key can double-charge a customer when the server processed the charge but the response was lost. Its ranking is sensible, and each fix is concrete. The 4xx retry issue is also correct, since `HTTPError` subclasses `RequestException`, so declines get retried. The latency estimate holds: three 10-second timeouts plus sleeps comes to about 32 seconds. The parse-error and ambiguous-failure points are real, and the response stays under 200 words. Its weaknesses are minor. It doesn't mention the unnecessary sleep after the final failed attempt, and the validation and logging points are lower-value filler. Nothing it flags is wrong.\n\nScore: 8",
+  "usage": {
+    "input": 1021,
+    "output": 633
+  },
+  "cost": 0.00041860000000000004
+}

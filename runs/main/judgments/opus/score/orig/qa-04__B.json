@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-04",
+  "side": "B",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The response is **correct**: $500 × 1.2 = $600, and $600 × 0.8 = $480, which is a 4% decrease from $500.\n\n**Reasoning:** It gives the key point, that the discount applies to a larger base. It backs this with the dollar amounts ($120 removed versus $100 added) and the multiplier check (1.2 × 0.8 = 0.96).\n\n**Clarity and length:** The layout is clean and easy to follow. At about 80 words, it meets the under-120 limit. The closing multiplier line slightly repeats the −4% already stated, but it adds a useful general shortcut, so it is not wasted.\n\nScore: 9",
+  "usage": {
+    "input": 427,
+    "output": 514
+  },
+  "cost": 0.011988
+}

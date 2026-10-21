@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-14",
+  "side": "A",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly identifies the most important bug: OFFSET pagination combined with deleting the rows just read skips unarchived rows, so the backlog only shrinks by about half per run. Its explanation and fixes (drop OFFSET, or use keyset pagination) are accurate. The crash-safety point is also real: the DELETEs are uncommitted until `commit()`, so a crash after `archive(rows)` leaves live rows that get re-archived, producing duplicates. The advice to make archiving idempotent is sound. The ISO-8601 string-comparison concern is a plausible risk worth flagging, though it depends on data the code doesn't show. The performance note about the missing index is valid, but the claim that batch size 100 means \"many commits\" is weak, since committing every 100 rows is ordinary. The ordering is sensible, with the critical data-loss bug first, and the response stays within the word limit without padding. It misses little of importance, though it could have noted that the archive callback's failure handling is unspecified.\n\nScore: 8",
+  "usage": {
+    "input": 958,
+    "output": 892
+  },
+  "cost": 0.0005417999999999999
+}

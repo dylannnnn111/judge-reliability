@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-21",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are accurate and stay under 120 words. Response A is concise and answers directly: early January, about 147 million km, and the tilt causes the seasons. Response B gives the same answer with more detail: the date range, the aphelion distance for comparison, and an explanation of why the tilt matters more than distance. It's also under 120 words, at roughly 100.\n\nWord count for B: paragraph 1 is about 36 words, paragraph 2 about 39, paragraph 3 about 21. That totals about 96, so it is under the limit.\n\nChecking accuracy: perihelion is about 147.1 million km and aphelion about 152.1 million km, and the difference is about 3.4%, so \"about 3%\" is fine.\n\nB is more informative and still within the limit. A is more concise, which some may prefer, but B's added context is useful and relevant. I lean toward B.\n\n**B**",
+  "usage": {
+    "input": 463,
+    "output": 284
+  },
+  "cost": 0.003766
+}

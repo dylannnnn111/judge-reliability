@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-07",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The final answer is correct: 30 mpg (US) ≈ 7.84 L/100 km, and the step-by-step working (48.28 km on 3.785 L, giving 12.75 km/L, then 100 ÷ 12.75 ≈ 7.84) checks out. The shortcut formula 235.2 ÷ mpg is also correct. The reasoning is clear and well organised, and the note about EPA versus Australian ratings is a useful caveat. However, the response runs to roughly 125–130 words, which exceeds the explicit \"under 120 words\" limit. The shortcut section also partly repeats the main working, so some of the length adds nothing new.\n\nScore: 6",
+  "usage": {
+    "input": 534,
+    "output": 832
+  },
+  "cost": 0.00046939999999999997
+}

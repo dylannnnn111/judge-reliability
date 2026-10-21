@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-15",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses reach the correct answer of 18 °F, and both use the same reasoning: the 10 °C rise times 9/5, plus a check by converting each temperature separately. Both also fit under the 120-word limit (B is roughly 100 words, A is shorter).\n\nThe difference is in delivery. A is more concise and gives the same content without filler. B opens with \"I'm happy to walk through this\" and uses wordier phrasing such as \"To see how we arrive at that figure, we can first...\", which adds nothing. The extra length carries no extra substance, so A is slightly better.\n\nVerdict: A",
+  "usage": {
+    "input": 648,
+    "output": 193
+  },
+  "cost": 0.003226
+}

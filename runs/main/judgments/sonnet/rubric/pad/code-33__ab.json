@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-33",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main bug. `p.status = 'succeeded'` in the `WHERE` clause turns the `LEFT JOIN` into an inner join, so zero-payment customers never appear. Both give the same correct fix of moving the condition into the `ON` clause.\n\n**Response A:**\n- It also notes that customers whose only payments failed get dropped, which is a real consequence of the bug.\n- It raises annual and quarterly plans producing false alarms. This is a real, practical problem for a churn list.\n- It covers the NULL `plan` handling and the date-type risk.\n- It is fairly concise, though a bit over 200 words. Items 3 and 6 are somewhat speculative, and item 6 is left as a bare heading with no explanation.\n- It does not flag anything that is actually fine.\n\n**Response B:**\n- It is roughly twice the word limit, with filler such as \"Next, the date filter deserves a closer look\" and \"Finally, there are two smaller points.\"\n- The date and UTC points are valid but minor.\n- It suggests that `COUNT(*)` would be clearer than `COUNT(p.id)`. That is wrong in this query: with a `LEFT JOIN`, `COUNT(*)` returns 1 for customers with no payments, which would break the zero-payment logic. This is bad advice about something that was already correct.\n- It misses the billing-interval false-alarm issue.\n- It does have a reasonable \"paying vs. non-free\" point and a useful idea of adding a flag column.\n\nResponse A is more concise, respects the length constraint better, finds the more impactful secondary issue (annual plans), and avoids the incorrect `COUNT(*)` suggestion.\n\nVerdict: A",
+  "usage": {
+    "input": 1754,
+    "output": 1048
+  },
+  "cost": 0.013988
+}

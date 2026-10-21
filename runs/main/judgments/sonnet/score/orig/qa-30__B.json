@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-30",
+  "side": "B",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The definition is correct: the probability of data at least as extreme as observed, assuming the null is true. The \"NOT\" list is accurate and covers the standard misconceptions. The \"probability results happened by chance alone\" item is a common textbook misconception, since it's a conditional probability under the null, not the probability the null explains the data. The last bullet, \"evidence that the alternative hypothesis is true with a given confidence,\" is slightly vague but acceptable.\n\nThe word count is about 90, under the 120 limit. The response is clear and concise. It could have included a short example or mentioned the significance threshold, but the question didn't require those.\n\nMinor weaknesses: the \"chance alone\" bullet may be confusing without explanation, and the last bullet is a bit awkwardly worded. Overall it is strong.\n\nScore: 9",
+  "usage": {
+    "input": 342,
+    "output": 260
+  },
+  "cost": 0.003284
+}

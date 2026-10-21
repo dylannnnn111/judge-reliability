@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-05",
+  "side": "B",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response answers Friday, 28 February 2025, which is correct. Counting from 29 February 2024, the next 365 days contain no leap day, so day 365 lands on 28 February 2025. Since 365 = 52×7 + 1, the weekday advances by exactly one, from Thursday to Friday. The response gives this key reasoning concisely and stays well under 120 words. The explanation of why the date becomes 28 February is slightly terse, but it is accurate and clear.\n\nScore: 9",
+  "usage": {
+    "input": 297,
+    "output": 488
+  },
+  "cost": 0.0002737
+}

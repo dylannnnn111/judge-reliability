@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-19",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. It is shorter and closer to the 200-word limit, while covering the same core issues: the un-awaited `forEach`, unhandled rejections, the missing `thumbs` directory, unbounded concurrency, and input validation. Its closing fix suggestion ties the related items together efficiently. Response A is noticeably longer, includes filler (\"the first two issues are closely related...\"), and spends more words on minor points.\n\nB",
+  "usage": {
+    "input": 1712,
+    "output": 485
+  },
+  "cost": 0.0004137
+}

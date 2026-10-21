@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-08",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. Response A breaks the 120-word limit at roughly 150 words. It also states a wrong fault date (4 Oct) and then undoes it in a confusing correction at the end, which a busy manager shouldn't have to read.\n\nResponse B stays within the limit and is clean and readable. Its flaw is that it states the fault date as 29 September, which the ticket never gives. The customer only said \"on Sunday,\" so this is an unsupported detail. The error is minor next to A's length violation and messy self-correction, and the rest of B is accurate and complete.\n\n**B**",
+  "usage": {
+    "input": 1486,
+    "output": 764
+  },
+  "cost": 0.010612
+}

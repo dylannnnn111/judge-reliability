@@ -1,0 +1,13 @@
+{
+  "item": "code-06",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**1. Identity check instead of equality (critical).**\n`order.customer_id is not current_user_id` compares object identity, not value. CPython caches only small ints (-5 to 256). Larger IDs loaded from a DB or parsed from a request are usually distinct objects, so most legitimate customers get `Forbidden` on their own orders. Tests with small IDs will pass, hiding the bug. Use `!=`.\n\n**2. Existence leak / ID enumeration.**\nA missing order raises `LookupError` (likely a 404), while someone else's order raises `Forbidden` (likely a 403). An attacker can probe which order IDs exist. Return the same \"not found\" response for both.\n\n**3. Race condition in `cancel_order`.**\nThe status check and the save aren't atomic. A concurrent ship or refund can change the status in between, and this then overwrites it with `\"cancelled\"`. Use a conditional update (`UPDATE ... WHERE id=? AND status IN (...)`), row locking, or optimistic versioning.\n\n**4. Cancelling a \"paid\" order doesn't refund.**\nUnless the repo or a caller handles it, the customer is charged for a cancelled order. Make the side effect explicit, or document where it happens.\n\n**5. Minor issues.**\n- The in-memory order is mutated before `save`. If `save` throws, callers holding the object see a false status.\n- Statuses are magic strings. An `Enum` would prevent typos.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 371,
+    "output": 831
+  },
+  "cost": 0.018104,
+  "at": "2026-10-14T01:53:06.931Z"
+}

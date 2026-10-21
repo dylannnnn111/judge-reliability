@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-26",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better.\n\nBoth responses find the main bug: `qty` stays a string, so `items` concatenates strings instead of adding. Both also cover the naive CSV split, the lack of validation, the plain-object-as-map problem, and the CRLF issue.\n\n- **Length:** The request asked for under 200 words. A comes to roughly 200 words or slightly over, while B is a little under.\n- **Accuracy:** A's tie-breaker point is wrong for modern JavaScript, where `Array.prototype.sort` is stable, so equal totals do not order unpredictably across runs. A's \"empty input yields a bogus row\" item also undercuts itself by admitting that `slice(1)` handles the case. Both are filler.\n- **Prioritization and insight:** B ranks the issues well and adds a concrete consequence of `NaN` totals: the sort comparator returns `NaN`, so `topOrders` comes back in an unreliable order. B also puts the CRLF issue under \"minor\", which fits since `Number` trims the `\\r`, and it suggests mapping columns by header name.",
+  "usage": {
+    "input": 1582,
+    "output": 1811
+  },
+  "cost": 0.021274
+}

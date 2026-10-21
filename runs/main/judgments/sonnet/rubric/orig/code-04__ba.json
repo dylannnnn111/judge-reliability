@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-04",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses lead with the most important problem: retrying a charge POST with no idempotency key risks double-charging. Both also catch that 4xx errors are retried, and both cover the lack of backoff, the blocking latency, `print` instead of logging, and missing amount validation.\n\n**Accuracy:**\n- Response A says `ValueError` from `resp.json()` is \"not caught.\" In modern requests (2.27+), `resp.json()` raises `requests.exceptions.JSONDecodeError`, which inherits from `RequestException`. So a bad JSON body is caught and retried, which risks another charge.\n- Response B states this correctly (\"depending on the requests version\"), says `KeyError` escapes, and recommends handling both without retrying.\n- Response B also finds a real bug A misses: the code sleeps after the final failed attempt.\n- Response B gives better fix detail: an `Idempotency-Key` header derived from the order ID, and retrying 429 as well as 5xx.\n\n**Unique points:**\n- Response A's \"ambiguous failure state\" point is valuable, since checkout needs to know whether the outcome is \"unknown.\"\n- Response B's \"generic RuntimeError\" point partly covers this by calling for distinct exception types, though it is less explicit about reconciliation.\n\n**Length:** Both exceed the 200-word limit. B is somewhat longer, but its extra content is correct and useful.\n\nB is more accurate on the retry-on-parse-error interaction and catches the trailing sleep. A's ambiguity point is good but doesn't outweigh its incorrect claim.\n\nVerdict: B",
+  "usage": {
+    "input": 1651,
+    "output": 1073
+  },
+  "cost": 0.014032
+}

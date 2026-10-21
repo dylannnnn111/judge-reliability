@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-36",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse B is better, mainly because it meets the length limit and Response A does not.\n\n- **Word limit:** By my count, Response A runs to roughly 125 words, which breaks the \"under 120 words\" instruction. Response B comes in at around 114.\n- **Content:** Response B keeps the per-page overage rates (0.9c black-and-white, 6.5c colour). A manager needs these to judge cost exposure. Response A drops them, yet still spends words on the contact name.\n- **Clarity:** Response A says term months will \"exceed the colour allowance by about $195/month,\" which is awkward because an allowance counts pages, not dollars. Response B's \"expect roughly $195 extra in term months\" is clearer.\n- **Minor flaw in B:** It omits \"last year\" when citing the 18,000-page figure, but this is a small slip.",
+  "usage": {
+    "input": 1360,
+    "output": 2030
+  },
+  "cost": 0.04604
+}

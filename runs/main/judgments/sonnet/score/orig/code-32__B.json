@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-32",
+  "side": "B",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds the most important bug and ranks the main issues sensibly. It gives concrete fixes, but it overshoots the length limit and flags some speculative items.\n\n**Real issues, correctly found:**\n- **Date filter:** `BETWEEN ... '2026-09-30'` drops Sept 30 orders after midnight. This is the top bug, and the response ranks it first with a correct half-open-range fix.\n- **Integer division:** truncation in `avg_items_per_order` is real and material. The `AVG` fix works on Postgres and SQLite, but `AVG` on an INTEGER column in SQL Server also returns an integer, so the fix is incomplete there even though SQL Server is named as affected.\n- **NULL status:** `<> 'refunded'` drops NULL-status rows. This is a legitimate concern, but it is speculative because we don't know whether status is nullable. `IS DISTINCT FROM` also isn't available in SQL Server.\n\n**Weaker or speculative items:**\n- **Stores with no orders:** this is arguable, since the inner join may be intended. The response asserts that a finance tile \"should show zero\" without evidence. Calling the `HAVING` clause redundant is correct. The LEFT JOIN advice is technically sound.\n- **Minor list:** hardcoded dates, the timezone question and the missing tiebreaker are nitpicks. The timezone point is somewhat relevant, but the others add little.\n\n**Constraint violation:** the user asked for under 200 words, and the response runs to roughly 300 or more. That ignores an explicit instruction, and the minor list and the extended LEFT JOIN discussion are the padding.\n\nOverall, the main bugs are found and ranked well, but the length violation and the speculative items cost points.\n\nScore: 6",
+  "usage": {
+    "input": 1198,
+    "output": 1246
+  },
+  "cost": 0.014856
+}

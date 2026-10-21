@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-40",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give correct physics and correct distance rules: divide the seconds by 3 for km or by 5 for miles, and 30 seconds or less is the danger threshold. Response B's examples check out (15 s gives 5 km or 3 miles; 30 s gives 10 km or 6 miles).\n\nThe user asked for an answer under 120 words. Response B comes in at roughly 110 words, so it complies. Response A runs to roughly 160 words, so it breaks the length constraint. Response A does add a useful point, that the flash and thunder start together and only the sound's travel time creates the delay, but that does not outweigh exceeding the limit. Response B also covers the key reasoning, the step-by-step method, and a safety tip (including the 30-minute wait) concisely, and its numbered steps are clear.\n\nVerdict: B",
+  "usage": {
+    "input": 895,
+    "output": 949
+  },
+  "cost": 0.000564
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-29",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. It stays under the 120-word limit (about 85 words), while Response A runs to roughly 200 words. Both give accurate figures ($2,500 simple vs. about $4,322 compound over 30 years at 5%), and both explain the core idea of interest earning interest. Response B satisfies the length constraint and A does not.\n\nB",
+  "usage": {
+    "input": 672,
+    "output": 548
+  },
+  "cost": 0.0003412
+}

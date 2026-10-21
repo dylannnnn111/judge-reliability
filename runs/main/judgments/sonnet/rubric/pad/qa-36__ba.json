@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-36",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer in under 120 words. Response A is about 100 words, so it complies. Response B is roughly 250 words, so it clearly violates the constraint.\n\nCorrectness: Response A repeats the common \"flatter lower surface keeps air slower\" explanation, which is somewhat simplistic. It does not use the false equal-transit-time claim, and it adds the Newton's third law explanation. The statement that Bernoulli's principle and Newton's laws together produce lift is acceptable, if a bit loose. Response B is more accurate in emphasizing deflection of air downward and mentions stall, but it is far over the length limit.\n\nBecause of the explicit length constraint, A wins. Its minor simplification doesn't make it incorrect enough to outweigh B's major instruction violation.\n\nVerdict: A",
+  "usage": {
+    "input": 908,
+    "output": 264
+  },
+  "cost": 0.004456
+}

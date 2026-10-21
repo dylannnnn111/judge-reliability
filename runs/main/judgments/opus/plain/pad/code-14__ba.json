@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-14",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses correctly put the main bug first: OFFSET pagination combined with deletion skips about half the rows. Both also cover crash safety, archive durability, string-timestamp comparison, and indexing.\n\nNeither stays under the 200-word limit. Response A runs to about 230 words; Response B is around 300. B is padded with filler such as \"It is worth noting\" and \"Consider what happens.\"\n\nB does add one useful point: each nightly run only halves the backlog. A has a small inaccuracy, labeling skipped rows a \"data-loss risk\" when they are actually left behind in the live table, not lost.\n\nA comes much closer to the length limit and is tighter. It also covers one more relevant issue, the missing rollback and error handling.",
+  "usage": {
+    "input": 1474,
+    "output": 703
+  },
+  "cost": 0.019956
+}

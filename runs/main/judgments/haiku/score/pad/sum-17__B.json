@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-17",
+  "side": "B",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The response is mostly accurate. The licence terms, the 10pm music condition, Clare's explanation, the speaker and staffing measures, and the 20 October meeting date all match the thread. However, it attributes the \"fourth weekend in a row\" complaint to Arjun, when Colleen made that point. The subject line \"resolved for now\" also overstates the position, since the committee is monitoring a trial arrangement and has not closed the matter. It omits the evidence requirement for a regulator complaint, which a manager would need for any decision. Most importantly, at roughly 190 to 200 words it breaks the explicit \"under 120 words\" instruction by a wide margin, and the extra length doesn't add much that is needed.\n\nScore: 4",
+  "usage": {
+    "input": 1351,
+    "output": 809
+  },
+  "cost": 0.0005396
+}

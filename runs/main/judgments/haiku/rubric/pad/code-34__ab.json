@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-34",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the main bug, the Go 1.21 loop-variable capture, and both identify the discarded errors, the unordered results, the missing timeout, and unbounded concurrency. Response A is more precise on the loop-variable fix: Go 1.22 semantics depend on the `go.mod` language version, not the CI image's Go version, and Response B blurs that. A also adds valid extras, such as the lack of `recover` and the stub ignoring its URL argument. However, Response A runs well over 200 words, breaking the explicit limit. Response B stays within it while covering the same core issues. Its ranking, which puts the hang-forever timeout second, is arguably more sensible for a status page, and it mentions both `ctx` and an HTTP client timeout as fixes. Response A's extra precision and extra findings don't outweigh breaking the length constraint.\n\nVerdict: B",
+  "usage": {
+    "input": 1713,
+    "output": 1051
+  },
+  "cost": 0.0006967999999999999
+}

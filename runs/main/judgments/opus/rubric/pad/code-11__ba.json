@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-11",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both responses find the same two most important problems and rank them the same way. First is the check-then-act race in `reserve`, where `available()` and the decrement take the lock separately, so two threads can oversell. Second is that `threading.Lock` does nothing across processes or hosts; both propose an atomic conditional `UPDATE` with a row-count check, or `SELECT ... FOR UPDATE`. Both then cover input validation, the unguarded `release`, and the global lock in sensible order, with fixes for each.\n\n**Where they differ:**\n\n- **Response A** includes a working code snippet for the single-critical-section fix, which is useful. Its point 6 (`available()` is only advisory) is valid but largely restates point 1.\n- **Response B** adds several correct, practical points:\n  - The DB read-modify-write stays racy even under the lock.\n  - Abandoned carts never release stock, so reservations need expiry.\n  - The lock is held during DB I/O, and per-SKU locks would reduce contention.\n- **Response B's point 6** (a `None` return from `get_stock` would raise `TypeError`) is somewhat speculative, but it is a legitimate robustness note rather than a false flag.\n\n**On the length limit:** Response A pads heavily (\"Thank you for sharing the code...\", repeated explanations) and runs roughly double the 200-word limit. Response B is also somewhat over but much closer. Its extra words carry real content, while much of A's length is filler.\n\nOn substance the two are close, with B adding the stronger extra insights. B also follows the length instruction far better.\n\nVerdict: B",
+  "usage": {
+    "input": 1789,
+    "output": 792
+  },
+  "cost": 0.022996
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-34",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Response A describes the waitlist, telehealth links, leave calendar, improvements, the holiday-recurrence fix, the Android known issue, and next month's features without factual errors. Its main problem is length: at roughly 300 words it is far over the 120-word limit, and its flowing prose adds little for a busy manager who wants to skim.\n\nResponse B covers the same key points: the three new features, the improvements, the fixes, the known issue, and next month's work. It is organised under clear headings that suit a skimming reader. Its word count is roughly 135, slightly over the limit, but it is close and far more concise than A. The one minor omission is the detail that the holiday fix concerns recurring appointments, which it does retain. Neither response misstates anything, so B's advantage comes from concision and scannability while keeping the points the manager needs.\n\nVerdict: B",
+  "usage": {
+    "input": 1619,
+    "output": 919
+  },
+  "cost": 0.0006213999999999999
+}

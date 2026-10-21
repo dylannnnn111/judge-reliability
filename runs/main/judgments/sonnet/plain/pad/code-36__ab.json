@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-36",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. Both responses correctly lead with the `Invalidate` bug, where `delete` runs under only a read lock. Both also cover the stampede, the stale overwrite, the TTL mismatch, the unbounded growth and the missing context.\n\n- **Length:** The request caps the review at 200 words. Response A runs to roughly 300 words. Response B is about 215, still slightly over but much closer.\n- **Accuracy:** Response A's item 6 says a hung `fetch` \"blocks every request waiting on that tenant.\" The code has no such waiting, because each caller runs its own `fetch` without holding a lock. Response A also says it listed issues \"in the order I found them,\" when the user asked for most important first.\n- **Content:** Response B notes that Go's concurrent-map fatal error cannot be caught by `recover`, which shows why the first bug is severe. Its stale-overwrite item also covers the case where an older fetch overwrites a newer one. Its note about no error backoff is a reasonable extra point.",
+  "usage": {
+    "input": 1822,
+    "output": 1211
+  },
+  "cost": 0.015754
+}

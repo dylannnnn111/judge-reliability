@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "code-30",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the most important bug: `COUNT(*)` counts the NULL row from the LEFT JOIN, so idle agents show 1 instead of 0. Both also correctly flag `COALESCE(AVG(...), 0)` as misleading and the silent exclusion of NULL response times as a bias. Those core points are equal.\n\nResponse A goes further in ways that matter. It notes that the bad count also distorts the `ORDER BY`, and it offers a concrete fix for the unanswered-ticket bias by suggesting wait-so-far for open tickets. It raises the lack of a time window, which fits a \"weekly\" report, though a snapshot may be what was intended. Its integer-truncation point is database-dependent but real, and it correctly explains why the `status` filter belongs in the `ON` clause.\n\nResponse B's points are weaker. Its fourth point is speculative, since it assumes other status values or a different `active` type without evidence. Its fifth point is not a bug: it's a suggestion about email wording. It also misses the time-window issue. Both stay roughly within the word limit.\n\nResponse A identifies more real problems, ranks them sensibly, and gives more actionable fixes, while Response B pads with speculative and non-bug items.\n\nVerdict: A",
+  "usage": {
+    "input": 1492,
+    "output": 1190
+  },
+  "cost": 0.0007442000000000001
+}

@@ -1,0 +1,13 @@
+{
+  "item": "qa-10",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**1/3**\n\nList the equally likely two-child families by birth order: BB, BG, GB, GG, each with probability 1/4.\n\nThe condition \"at least one child is a girl\" removes BB. That leaves BG, GB, and GG, which are still equally likely.\n\nOnly GG has two girls, so the fraction is 1 out of 3.\n\nThis is different from 1/2. The 1/2 answer would apply if you were told that a *specific* child, such as the older one, is a girl. Here the condition only says that at least one is a girl, so the families with one boy and one girl (BG and GB) together outnumber the two-girl families.\n\n**Answer: 1/3**",
+  "stop": "end_turn",
+  "usage": {
+    "input": 81,
+    "output": 210
+  },
+  "cost": 0.002262,
+  "at": "2026-10-14T01:50:19.156Z"
+}

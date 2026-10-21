@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "qa-28",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse B is better. Both responses are accurate and cover the same core ideas: what a collision is, chaining versus open addressing, O(1) average versus O(n) worst case, the load factor, and resizing.\n\nThe deciding factor is the 120-word limit. Response A runs about 130 words, a clear overrun. Its extras, such as the Java HashMap tree detail and the 0.7–0.75 threshold, are interesting but cost it compliance. Response B sits right at the limit, around 120 words depending on how the list markers are counted.\n\nResponse B also adds a useful point that A lacks: resizing stays O(1) amortized per insert. It also explains how lookups work under each collision strategy.",
+  "usage": {
+    "input": 690,
+    "output": 1011
+  },
+  "cost": 0.02298
+}

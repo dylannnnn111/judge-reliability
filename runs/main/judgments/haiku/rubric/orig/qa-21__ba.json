@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-21",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify early January as the time of perihelion, with distances of about 147 million km. Both also correctly attribute the seasons to axial tilt rather than distance. Response B adds the aphelion comparison in early July, explains why Northern Hemisphere winter occurs despite the closer approach, and notes that the roughly 3% distance difference has little climate effect. Those additions are accurate and useful, and B stays under 120 words (about 110). Response A is correct and concise but gives less of the key reasoning.\n\nVerdict: B",
+  "usage": {
+    "input": 608,
+    "output": 776
+  },
+  "cost": 0.0004488
+}

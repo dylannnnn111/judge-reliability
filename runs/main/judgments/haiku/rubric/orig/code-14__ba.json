@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-14",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the most important bug: OFFSET pagination combined with deleting the rows just read skips unarchived rows. Both give valid fixes (drop OFFSET or use keyset pagination). Both also flag the non-atomic archive-then-delete sequence and the need for an idempotent archive.\n\nResponse A covers more of the real problems. It notes that the failure is silent, which is useful for a nightly job. It flags the missing rollback on exceptions, which is a real issue here because an uncommitted delete could be committed by a later commit on the same connection. Its point that the delete could destroy data the archive never durably wrote is stated precisely. It also mentions missing logging, which fits a nightly job.\n\nResponse B is accurate and well organized, and its durability point is good. Its \"consider a larger batch size\" suggestion is minor and somewhat tangential. It omits the missing error handling and rollback, which is a meaningful gap. Its claim that the job \"only halves the backlog\" is a reasonable but slightly loose way of describing the effect.\n\nNeither response contains a substantive error, and both stay within the word limit. Response A catches a somewhat larger share of the real problems, so it is modestly better.\n\nVerdict: A",
+  "usage": {
+    "input": 1514,
+    "output": 875
+  },
+  "cost": 0.0005889
+}

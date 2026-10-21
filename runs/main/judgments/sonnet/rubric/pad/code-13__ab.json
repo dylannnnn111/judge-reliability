@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-13",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same core problems: the December `ValueError`, day-of-month overflow, drift when clamping is chained, the fixed 30-day proration period, missing validation, and floor-rounding. Both rank the crashes first, which is right. Both also exceed the 200-word limit, and A overshoots by more.\n\n**Response A:**\n- It says `//` \"floors toward zero\". That is technically wrong, because floor division rounds toward negative infinity. For positive values the result is the same, so the effect is small.\n- It describes drift as a current bug, even though the existing code crashes before drift can happen. B correctly presents it as a risk of fixing the overflow naively.\n- Its December description (\"crosses into December\") is slightly off, since the failure happens when leaving December.\n- Its fixes are less specific. It suggests `Decimal` and `ROUND_HALF_UP`, which is reasonable, but it names no concrete tools for the date arithmetic.\n\n**Response B:**\n- It describes the December bug accurately, including that a subscription starting in December fails.\n- It frames drift correctly as a consequence of a naive fix.\n- It gives actionable fixes: `dateutil.relativedelta`, `calendar.monthrange`, and capping `days_used` to the real period length.\n- Item 7 (timezones, no tests) is minor padding. It is labeled \"minor\" and sits last, so it does little harm.\n- Its suggested proration fix reuses `next_billing_date`, which has the December bug. That is a small flaw.\n\nB is more accurate, more concise, and gives more concrete fixes. Its only drawback is the low-value final item.\n\nVerdict: B",
+  "usage": {
+    "input": 1729,
+    "output": 1078
+  },
+  "cost": 0.014238
+}

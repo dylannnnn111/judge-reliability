@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-14",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Neither summary contains errors. Both give the correct date, the change from two to three office days, the formal-versus-informal arrangement distinction, the Claims and Customer Contact exclusion with the early 2027 review, the equipment rule, the hot desking details and the rationale.\n\nThe user set a limit of under 120 words, and both responses go over it. By my count Response A is about 127 words and Response B about 144. B's overrun is much larger.\n\nB does include a few extra points: team leaders set the common day, lockers, existing equipment stays, and where to direct questions. These are minor for a busy manager and cost about 17 more words, which pushes B well past the limit. A leaves out little that matters. It drops the lockers, the questions contact and the fact that existing equipment stays, and it says \"each team will have a common day\" without naming team leaders.\n\nWith accuracy equal, the deciding factor is adherence to the length limit and concision. A is closer to the limit and tighter, so it is the better response, even though it also slightly overshoots.\n\nVerdict: A",
+  "usage": {
+    "input": 1455,
+    "output": 2615
+  },
+  "cost": 0.02906
+}

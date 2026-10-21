@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-25",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer in under 120 words. I'll count the words in each response.\n\nResponse A: \"No, Viking warriors didn't wear horned helmets. This is a popular myth.\" (12 words) \"The evidence: Only one fairly complete Viking-age helmet has been found: the Gjermundbu helmet from Norway (10th century).\" (~18) \"It's a simple rounded iron cap with a spectacle-like face guard and no horns.\" (14) \"Many warriors likely wore leather caps or no helmet at all, since iron was expensive.\" (14) \"Where the myth came from: It largely stems from the 19th century.\" (12) \"Romantic artists and costume designer Carl Emil Doepler, who outfitted Wagner's opera Der Ring des Nibelungen (1876), popularized horned helmets.\" (~20) \"A grain of truth: Horned helmets did exist in Scandinavia, but in the Bronze Age, centuries before the Vikings, and they were probably ceremonial rather than for battle.\" (~27)\n\nTotal: 12+18+14+14+12+20+27 = 117. That's close to the limit, but under 120.\n\nResponse B is clearly over 120 words, probably around 190. It breaks the constraint.\n\nResponse A is better.\n\n**A**",
+  "usage": {
+    "input": 761,
+    "output": 411
+  },
+  "cost": 0.005632
+}

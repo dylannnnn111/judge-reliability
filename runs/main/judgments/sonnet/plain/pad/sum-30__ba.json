@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-30",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. Response A is the tighter, more manager-friendly summary. It is still slightly over the 120-word limit, at roughly 127 words by my count, but it is close. It keeps the key facts: dates, route changes, the reason for them, the concern and the next steps. It also drops filler, and its \"lose service before 6am\" wording is only a mild inference.\n\nResponse B is clearly over the limit, at roughly 170 words. It opens with filler (\"I would like to share a summary…\", \"Turning to how you can find out more\") and omits the consultation finding that explains the changes. It breaks the constraint by a larger margin and is less efficient for a busy reader.\n\n**A**",
+  "usage": {
+    "input": 1438,
+    "output": 1330
+  },
+  "cost": 0.016176
+}

@@ -1,0 +1,13 @@
+{
+  "item": "sum-17",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "**Subject: Rooftop bar noise (The Lantern), resolved for now**\n\nResidents of Harbourview Apartments complained that amplified music from The Lantern's rooftop bar was running past midnight. The venue's licence requires music to stop at 10pm, though the bar itself may stay open until midnight on Friday and Saturday. Arjun Mehta confirmed the licence terms and noted this was the fourth weekend in a row, with three other complaints this month.\n\nDavid Ross, committee chair, spoke with the venue manager, Clare, who apologised. She said a new DJ was unaware of the 10pm rule. The venue has agreed to face speakers away from the building and have staff check music is off at 10pm.\n\nResidents will keep logging incidents as a precaution. If the problem continues, the committee will lodge a complaint with the liquor regulator. David will report back at the 20 October committee meeting.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 792,
+    "output": 482
+  },
+  "cost": 0.0003202,
+  "at": "2026-10-14T01:51:38.126Z"
+}

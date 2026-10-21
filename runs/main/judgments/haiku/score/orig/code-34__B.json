@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-34",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response finds the most important bug: the loop variable `u` is shared across iterations in Go 1.21, so goroutines can read the wrong URL. It correctly notes that Go 1.22 changed this and gives two valid fixes. The other points are also real: a hung `ping` blocks `wg.Wait()` indefinitely, errors are collapsed to `Status: 0`, and completion-order results make the page order nondeterministic. Writing to `results[i]` is a correct suggestion that also removes the mutex. The unbounded-concurrency point is minor for two URLs, but it is correctly marked as a future concern. Nothing obviously fine is flagged as a bug. The ordering is sensible, though the hang risk could arguably rank above the nondeterministic order. The response stays under 200 words and adds no filler.\n\nScore: 8",
+  "usage": {
+    "input": 1019,
+    "output": 671
+  },
+  "cost": 0.00043739999999999995
+}

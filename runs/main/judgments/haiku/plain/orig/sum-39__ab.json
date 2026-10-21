@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-39",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is slightly better. Its bullets are easier to scan for a busy manager, and its exceptions section covers lost and damaged items, which A omits. Its \"net about $33,000\" figure is a reasonable derivation but slightly muddles the revenue framing. Both responses run close to the 120-word limit, so neither clearly wins on length.\n\nB",
+  "usage": {
+    "input": 1254,
+    "output": 1106
+  },
+  "cost": 0.0006784
+}

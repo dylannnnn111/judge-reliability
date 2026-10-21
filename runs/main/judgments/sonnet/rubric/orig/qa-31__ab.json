@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-31",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are correct and give the key reasoning: axial tilt, the hemispheres tilted toward or away from the Sun, and the reversal six months later. A adds the useful point that distance from the Sun is not the cause, and that Earth is closest in early January. A also explains why winter is colder (sunlight spread over a larger area).\n\nThe deciding factor is the word limit. I counted Response A at about 121 words, just over the \"under 120\" limit. Response B comes to about 109 words and is within it. A's extra content is useful, but it breaks an explicit constraint, even if only slightly. B is complete, accurate and compliant.\n\nVerdict: B",
+  "usage": {
+    "input": 760,
+    "output": 1734
+  },
+  "cost": 0.01886
+}

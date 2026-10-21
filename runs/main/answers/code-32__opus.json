@@ -1,0 +1,13 @@
+{
+  "item": "code-32",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "1. **Orders from September 30 are dropped.** `BETWEEN '2026-09-01' AND '2026-09-30'` ends at `'2026-09-30'` (midnight). A value like `'2026-09-30 14:22:05'` sorts after that, so revenue is understated. Use a half-open range:\n   `o.placed_at >= '2026-09-01' AND o.placed_at < '2026-10-01'`\n\n2. **Integer division truncates the averages.** `SUM(item_count) / COUNT(o.id)` turns 2.9 items into 2, so `avg_items_per_order` is badly wrong. `avg_order_cents` also rounds down. Cast before dividing, e.g. `SUM(o.item_count) * 1.0 / COUNT(o.id)` or `AVG(o.item_count * 1.0)`, and round explicitly if needed.\n\n3. **The status filter may be wrong.** `o.status <> 'refunded'` silently excludes rows where `status` is NULL. It also includes cancelled, pending, or failed orders, and it ignores partial refunds. It's safer to list the counted statuses explicitly, e.g. `status IN ('paid', 'fulfilled')`.\n\n4. **Stores with no orders disappear.** The inner join drops them, so `HAVING COUNT(o.id) > 0` does nothing. If the tiles should show zero-revenue stores, use a `LEFT JOIN` and move the date/status filters into `ON`. Otherwise, delete the `HAVING`.\n\n5. **Timezone and parameterization.** If `placed_at` is UTC, the month boundaries may not match the business's local month. The hardcoded dates should also be parameters.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 411,
+    "output": 937
+  },
+  "cost": 0.020384,
+  "at": "2026-10-14T01:54:38.934Z"
+}

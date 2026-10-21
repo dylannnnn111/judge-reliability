@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-04",
+  "side": "A",
+  "score": 7,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate on nearly every number, date and condition: 18 and 4 weeks, 12 and 2 weeks before, the 24-month window, 12 months' service, the 10-week notice, and the 5 and 19 November sessions. It also fits under the 120-word limit (about 119 words).\n\nWeaknesses:\n- It says \"Leave can now be split into up to three blocks\" without saying this applies only to primary carers. A reader could assume secondary carers can split too, which is mildly misleading.\n- The super point omits the \"up to 18 weeks\" cap, though that is minor.\n- It leaves out that the entitlements are on top of government Parental Leave Pay. This matters to a manager, though the super line partly implies it.\n- It does not say that children born before 1 January 2027 stay on the old entitlements even if leave runs past that date. It does say the increase applies only to children born on or after that date, so the core point is there.\n- It does not mention that the sessions are online and will be recorded, or give the contact email. These are minor.\n\nOverall it is concise and mostly complete, with one small ambiguity.\n\nScore: 7",
+  "usage": {
+    "input": 1112,
+    "output": 1033
+  },
+  "cost": 0.012554
+}

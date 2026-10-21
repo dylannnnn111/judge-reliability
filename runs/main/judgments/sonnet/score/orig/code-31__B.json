@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-31",
+  "side": "B",
+  "score": 7,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds the main bug: with second-precision `created_at` and `created_at > :last_seen`, tied rows at a page boundary are silently skipped. It ranks this first and gives a correct `(created_at, id)` keyset fix. The late-commit point is a real and subtle concern for a cursor-based export, and the index point is sensible. The persisted-cursor and idempotency point is a reasonable operational concern.\n\nWeaknesses:\n- Item 2 largely restates item 1, since the same `id` tiebreaker fixes both.\n- Item 5 is speculative and low-impact. The `:last_seen IS NULL OR ...` pattern can occasionally hurt plans, but it is not a bug here.\n- Item 6 is borderline, because the cursor persistence belongs to the job rather than this query.\n- The response looks to be about 220 words, over the 200-word limit, so it breaks the explicit constraint, and the minor items add to the excess.\n\nOverall the key issues are found, ranked well and fixed, but it is somewhat padded and exceeds the length limit.\n\nScore: 7",
+  "usage": {
+    "input": 956,
+    "output": 885
+  },
+  "cost": 0.010762
+}

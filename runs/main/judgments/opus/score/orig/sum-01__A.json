@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-01",
+  "side": "A",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Every fact checks out against the emails:\n- The new deadline is Friday 30 October, close of business, moved from Wednesday 4 November.\n- The change happened because the CFO brought the board meeting forward a week.\n- The instruction to call rather than email if there's a problem is kept.\n- All three submission items are listed.\n- The template path is correct, and the reason for it is right: the board asked to see software subscriptions split out.\n- The variance threshold ($50,000 or 10%, whichever is smaller) is correctly stated.\n- The no-screenshots rule and the leave-delegate rule are both kept.\n- The drop-in details (Marcus, Thursday 2pm, Level 6 boardroom, optional) are correct.\n\nIt doesn't invent a date for \"Thursday,\" which is appropriate because the original doesn't give one. Attributing the change to the CFO, not Priya, is correct.\n\n**Coverage:** It leads with the changed deadline, which matters most since it overrides the first email. It keeps everything actionable and drops the long weekend and coffee machine. The only minor quibble is \"call Priya today\": \"today\" depends on when the reader sees it, and the summary has no date anchor. The original has the same problem, though.\n\n**Concision:** The response is about 116–119 words depending on how the path symbols are counted. That is under the limit, but only just. The heading restates information the first line could carry, and a few phrases could be tighter. Still, every line adds something useful, and the structure is easy to scan for a busy manager.\n\nOverall, this is accurate, complete and well organised. It is a strong summary with only slight room to tighten.\n\nScore: 9",
+  "usage": {
+    "input": 1102,
+    "output": 1324
+  },
+  "cost": 0.030888
+}

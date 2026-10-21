@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-21",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A.** Response A comes in at about 111 words, under the 120-word limit. It covers the essentials: the recommendation, the overspend and why it needs sign-off, the fuel-saving rationale, the within-budget alternative and the deadline. Its added hire-car estimate (6 cars × $1,800 × 2 months = $21,600) is a correct and useful inference for a busy manager.\n\nResponse B runs to roughly 220 words, well over the limit. It repeats the sign-off point several times. Its voice is muddled: it opens in the first person (\"I'd like to ask for Ruth's sign-off\") yet refers to both Ruth and Dominic in the third person. That makes it unclear who is speaking and to whom.",
+  "usage": {
+    "input": 1520,
+    "output": 734
+  },
+  "cost": 0.02076
+}

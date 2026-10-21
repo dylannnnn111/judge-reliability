@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-35",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate on the main points: the 30 June 2027 deadline, the Annexure C benchmark, the list of required works, the kitchenette condition, the payment option with two quotes and three months' notice, and the $18,000 bond timing. Both also omit that the kitchenette's exemption rests on a written landlord consent letter, which is a minor gap.\n\nResponse A has a small overstatement. It says \"Overrunning means paying daily rent,\" but the source says the tenant \"may have to pay\" rent for extra days. Response B's \"may incur rent\" matches the source. Response A is easier to scan, with headers and bullets that suit a busy manager, and its \"Risks\" section is useful. Response B is plainer prose but stays under the word limit and covers the same content.\n\nSince accuracy comes first, Response B's more faithful wording on the overrun penalty gives it a slight edge, though the difference is small.\n\nVerdict: B",
+  "usage": {
+    "input": 1454,
+    "output": 1037
+  },
+  "cost": 0.0006638999999999999
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-28",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer under 120 words. Response A is clearly over 120 words (roughly 230). Response B is about 115 words, so it fits.\n\nCounting B roughly: \"A collision occurs when two keys hash to the same slot.\" (11) \"There are two main fixes:\" (5) → 16. \"Separate chaining: Each slot holds a list (or tree) of entries. Colliding keys are appended there, and a lookup scans that list.\" (~23) → 39. \"Open addressing: If a slot is taken, probe for another using linear probing, quadratic probing, or double hashing. Lookups follow the same probe sequence.\" (~24) → 63. Performance paragraph: \"Performance: With a good hash function and a moderate load factor (entries ÷ slots), operations average O(1).\" (~17) → 80. \"As collisions grow, chains lengthen or probe sequences cluster, degrading toward O(n) in the worst case.\" (~16) → 96. \"To prevent this, tables resize (typically doubling and rehashing) when the load factor passes a threshold.\" (~16) → 112. \"Each resize costs O(n), but the amortized cost per insert stays O(1).\" (~13) → 125. That is borderline, perhaps slightly over 120 depending on counting, but far closer than A.\n\nB is better on constraint adherence and is concise and accurate.\n\n**B**",
+  "usage": {
+    "input": 817,
+    "output": 445
+  },
+  "cost": 0.006084
+}

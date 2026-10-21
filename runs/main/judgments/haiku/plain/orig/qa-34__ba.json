@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-34",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "**B**\n\nResponse B fits the under-120-word limit (about 117 words), while Response A runs about 122. Both explain Diffie-Hellman key exchange and certificate-based authentication accurately, so the length constraint is the deciding factor.",
+  "usage": {
+    "input": 628,
+    "output": 1493
+  },
+  "cost": 0.0008093
+}

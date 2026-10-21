@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-04",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer in under 120 words. Response A is clearly over that limit, at roughly 200 words. Response B is about 75 words, so it fits.\n\nBoth give the correct answer: $480 and a 4% decrease. Response B's general formula, net change of −p², is correct as a fraction: (1+p)(1−p) = 1−p², so the net is −p² (0.04).\n\nResponse B follows the constraint and is correct. Response A is correct but violates the word limit and repeats itself.\n\n**B**",
+  "usage": {
+    "input": 720,
+    "output": 165
+  },
+  "cost": 0.00309
+}

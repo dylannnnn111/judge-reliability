@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "sum-22",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is the better choice for these reasons:\n\n- **Word limit:** A comes to about 105 words including its heading, comfortably under the 120-word limit. B comes to about 125 words with its heading, or roughly 118 without it, so it breaks or barely meets the limit depending on how it is counted.\n- **Accuracy:** B says junior numbers fell \"mostly due to cost,\" but the minutes only say cost was the *most common reason given*. That is not the same as a majority.\n- **Clarity on the fee rise:** B states that \"the rise covers a 9% increase,\" then reports a $3,200 shortfall. These two statements sit in mild tension. A frames the rise as offsetting the turf cost increase and presents the shortfall clearly.\n- **B's extra details:** B adds the 5-0 vote and Natalie organising trophies. These are useful but not essential for a busy manager, and they push B over the limit.",
+  "usage": {
+    "input": 1417,
+    "output": 1339
+  },
+  "cost": 0.032448
+}

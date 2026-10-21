@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-32",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better because it meets the \"under 120 words\" limit and Response B does not.\n\nI counted Response A at about 119 words, just under the limit. It covers the key points:\n- the customers' claim\n- the reason the rate rose\n- the finding that the 0.90% discount is still applied\n- the $250 goodwill payment\n- the customers' continued dissatisfaction and their request for a call\n- a flag that closing the complaint may be premature\n\nResponse B is well structured and accurate, but it runs to roughly 150 words or more. That breaks an explicit constraint for a manager who will only skim.\n\nA's flag is also more useful. It notes that the customers have not accepted the outcome, so closing the complaint as resolved may be premature. B only says the customers' belief could lead to an AFCA escalation. A also leaves out the refund request, which B includes, but that omission matters less than B's breach of the word limit.\n\n**A**",
+  "usage": {
+    "input": 1444,
+    "output": 1118
+  },
+  "cost": 0.014068
+}

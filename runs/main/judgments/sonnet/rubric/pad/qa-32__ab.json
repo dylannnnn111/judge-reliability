@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-32",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for under 120 words. Response A is well over 120 words (roughly 220), so it violates the explicit constraint. Response B is about 80 words, so it complies.\n\nCorrectness: Both are broadly correct. Response A says the four-year rule \"overcorrects by about 11 minutes a year, or roughly 3 days every 400 years.\" 11 minutes × 400 ≈ 4400 minutes ≈ 3.06 days, so that is correct. Response A also says \"drift about 6 hours per year,\" which is correct. Response B is correct too, with a slight simplification: it says 1900 was a common year and 2000 a leap year, which is right.\n\nKey reasoning: Both give the Gregorian rules. A adds more detail, but the length constraint is violated, and much of it is filler (\"To begin with,\" \"Put another way\").\n\nClarity: B is concise and clear. A is padded.\n\nB wins because of the word limit and its concision.\n\nVerdict: B",
+  "usage": {
+    "input": 843,
+    "output": 311
+  },
+  "cost": 0.004796
+}

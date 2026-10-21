@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-03",
+  "side": "A",
+  "score": 7,
+  "model": "claude-opus-5-5",
+  "text": "The response is accurate, but slightly over the 120-word limit.\n\n**Accuracy:** No real errors.\n- The time window, the counts (2,391 of 4,812, 1,940 retried, 451 lost), the $41,900 estimate with its caveat, the 312 contacts and the action dates all match the source.\n- The root cause (\"outdated certificate pinned in its config\") is a fair compression of the vendor-renewal and pinning detail.\n- The detection explanation reproduces the source's own wording that failures were \"spread across both connectors' metrics.\" The source says only connector B failed, so this is odd, but the summary faithfully mirrors the report rather than introducing an error. \"Alerts were per connector\" is a reasonable inference from action 2.\n- \"Four times normal\" drops the source's \"about,\" a trivial loss of hedging.\n\n**Coverage:** It keeps what a manager needs: what failed, scale, money at risk, why detection lagged, and what is done versus pending. Omitting the owners is a reasonable trade-off. The note that pinning was removed \"on both connectors\" is a minor loss.\n\n**Concision and the constraint:** The writing is tight and well organised. However, the response runs to about 125 words including the title line, and about 116 without it. The user set a hard \"under 120 words\" limit, and the response likely exceeds it slightly. That costs a little.\n\nScore: 7",
+  "usage": {
+    "input": 1255,
+    "output": 1983
+  },
+  "cost": 0.04468
+}

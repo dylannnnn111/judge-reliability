@@ -1,0 +1,14 @@
+{
+  "pair": "sum-26",
+  "side": "B",
+  "author": "sonnet",
+  "model": "claude-haiku-5-5",
+  "original": "**Summary: Tower B lift outage, 21–23 Sept 2026**\n\nOn Monday 21 September, Tower B's only lift stopped between levels 2 and 3 with two residents inside. A technician freed them within about an hour, and neither was hurt. A worn door controller board was the cause. The replacement part came from Melbourne, and the lift returned to service on Wednesday 23 September at 2:10pm.\n\n**Impact:** Staff delivered meals to 11 residents and helped four residents to medical appointments using an evacuation chair. Two residents stayed with family. Residents received daily printed updates, and families of high-care residents were phoned.\n\n**Actions:** The Tower A lift (same model) was checked and is fine. A $2,300 spare board will now be held on site (approved 26 Sept). Staff completed evacuation chair refresher training.\n\n**Feedback:** Residents praised staff. The Residents' Committee wants a second Tower B lift considered; the manager has referred this to the board.",
+  "text": "**Summary: Tower B Lift Outage, 21–23 September 2026**\n\nThis summary sets out the Tower B lift outage that took place between Monday 21 and Wednesday 23 September 2026. On Monday 21 September, Tower B's only lift stopped between levels 2 and 3 while two residents were inside. A technician freed them within about an hour, and I am pleased to report that neither was hurt. The cause was a worn door controller board. The replacement part was sourced from Melbourne, and the lift returned to service on Wednesday 23 September at 2:10pm.\n\n**Impact:** During the outage, staff delivered meals to 11 residents and helped four residents to medical appointments using an evacuation chair. Two residents chose to stay with family for the duration. Residents received printed updates every day, and the families of high-care residents were contacted by phone so they were kept informed.\n\n**Actions:** As a precaution, the Tower A lift, which is the same model, was checked, and it is in good condition. A $2,300 spare board will now be held on site, a decision that was approved on 26 September. Staff have also completed refresher training in the use of evacuation chairs.\n\n**Feedback:** Residents took the time to praise the staff for their efforts. The Residents' Committee has asked that a second lift for Tower B be considered, and the manager has referred this request to the board.",
+  "ratio": 1.52,
+  "usage": {
+    "input": 512,
+    "output": 614
+  },
+  "cost": 0.0003582
+}

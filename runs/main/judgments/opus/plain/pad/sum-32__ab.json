@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-32",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses break the 120-word limit. A runs to roughly 175 words and B to roughly 168, so neither wins on length. B is better on accuracy and usefulness for a busy manager.\n\n- **A wastes words on filler.** Phrases like \"I would like to take a moment to summarise this complaint for you\" and \"In this regard\" add nothing for a reader who won't see the original.\n- **A's flag misstates the outcome.** It says the customers \"have not accepted the outcome,\" but they did accept the $250 and the closure. They only said they still feel misled. That gives a manager a wrong picture of the complaint's status.\n- **B is clearly structured and faithful to the thread.** Its Issue / Position / Outcome layout makes the key point easy to see: only the discount was locked, not the overall rate. It also captures the refund request and the contract terms on variable rates.\n- **B's risk note is accurate.** It ties the possible escalation to the customers' continued belief they were misled, and names AFCA, which the thread mentions.",
+  "usage": {
+    "input": 1516,
+    "output": 895
+  },
+  "cost": 0.023964
+}

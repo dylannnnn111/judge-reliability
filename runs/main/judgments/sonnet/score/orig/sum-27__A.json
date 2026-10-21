@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-27",
+  "side": "A",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate on every point: the recommendation against national rollout \"yet\", the Sydney and Perth figures (81% vs 74%), the 60% free-month share, the like-for-like gap (78% vs 76%, within normal variation), the $95 per session and about $410,000 a year, and the randomised 60-day test with its November start conditional on the 21 October meeting. It also covers the points a manager needs, including the sales claim that the pilot \"proved\" guided onboarding works.\n\nThe problem is length. The user set a hard limit of under 120 words. I count about 124 words, so it breaks the constraint by a small margin. The \"Caution\" bullet about sales is the easiest cut, or the \"Summary:\" label and some phrasing could be trimmed. The content is otherwise good, but missing an explicit constraint is a real flaw.\n\nScore: 6",
+  "usage": {
+    "input": 1141,
+    "output": 1359
+  },
+  "cost": 0.015872
+}

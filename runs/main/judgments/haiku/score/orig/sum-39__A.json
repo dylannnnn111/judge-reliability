@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-39",
+  "side": "A",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate throughout. The vote, dates, the five libraries, the $38,000 across 6,400 members, the 60-day replacement rule, the inter-library loan exception, the $52,000 revenue with $19,000 spent on chasing payments, the November email and the 12-month review all match the source. It keeps the points a manager needs: the change, the exceptions, the rationale, the cost argument and next steps.\n\nThe main weakness is the word limit. Counting the text, it runs to roughly 125 words including the bold labels, which is over the 120-word cap. It also omits that blocked accounts stay blocked for lost or unreturned items, which is a practical point. These are modest flaws, and the summary is otherwise clear and well organised.\n\nScore: 7",
+  "usage": {
+    "input": 1050,
+    "output": 1843
+  },
+  "cost": 0.0010265
+}

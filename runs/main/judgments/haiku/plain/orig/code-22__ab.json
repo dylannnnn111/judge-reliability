@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-22",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. Both identify the critical flaw (`jwt.decode` never checks the signature) and the related problems. B stays closer to the 200-word limit, while A's prose plus the code block runs well over it. A's fixed-code snippet is useful, but the user asked for a list of bugs, not a rewrite.\n\nB",
+  "usage": {
+    "input": 1562,
+    "output": 760
+  },
+  "cost": 0.0005362
+}

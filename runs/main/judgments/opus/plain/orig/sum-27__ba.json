@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-27",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth summaries are under 120 words and capture the key points: the confounding free-month promotion, the shrunken 2-point gap, the cost, the unsupported sales claim, and the proposal. A has stronger manager-oriented framing, with \"inconclusive\" up front and an explicit \"Decision needed\" line. However, it shortens the proposal to \"a 60-day test\" when the original says \"at least 60 days,\" which loses some precision. B stays more faithful to the source. It keeps \"at least 60 days\" and says customers \"came through\" the promotion, which matches the original wording. On balance, B's accuracy edges out A's framing.",
+  "usage": {
+    "input": 1360,
+    "output": 556
+  },
+  "cost": 0.01656
+}

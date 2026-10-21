@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "code-29",
+  "side": "A",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "This is a strong review: the top issue is correct and critical, the ranking and fixes are sound, and it stays within 200 words.\n\n**Correctness and coverage.**\n- **NULL in `NOT IN` (critical).** Issue #1 is right and correctly identified as critical. Because `referrer_id` is NULL for non-referred signups, the subquery will contain NULLs, so `NOT IN` returns no rows at all. The campaign audience would be empty.\n- **Both fixes work.** `NOT EXISTS` and filtering out NULLs in the subquery are each correct.\n- **Date filter vs. comment.** Issue #2 is a real mismatch between the comment (\"never referred anyone\") and the 2026 date filter. The suggested `NOT EXISTS` already drops the date filter, which is consistent with this point.\n- **LIMIT with ORDER BY.** Issue #3 is a legitimate concern for a recurring monthly campaign. It is hedged appropriately (\"decide whether truncation is intended\").\n- **Date storage format.** Issue #4 is plausible and labelled minor. The same caveat applies to the `'2026-01-01'` string comparison, which the review doesn't mention, but this is minor.\n\n**Ranking.** The order is sensible. The fatal bug comes first, then the intent mismatch, then the operational concern, then the portability caveat.\n\n**False positives.** None. It doesn't flag the `status` or opt-in filters, which are fine.\n\n**Length.** Roughly 186 words, so it meets the under-200 constraint. It is concise without padding.\n\n**Gaps.** Only small ones: the 30-day tenure filter isn't explained by the comment, though it isn't wrong. Overall it is accurate, prioritized, and actionable.\n\nScore: 9",
+  "usage": {
+    "input": 959,
+    "output": 1415
+  },
+  "cost": 0.032136
+}

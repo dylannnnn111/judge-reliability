@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-01",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B.** Both responses find the same core issues: no idempotency, one failure aborting the run, truncation in `int(amount * 100)`, float money, and the hardcoded tax. Both rank idempotency first, which suits a nightly billing job.\n\nThe main difference is the 200-word limit. Response A runs to roughly 235 words, clearly over. Response B runs to roughly 205, much closer to the limit and more concise overall.\n\nOn substance:\n- Both truncation examples are accurate. Response B's `10.29 * 100` is a worked, checkable example. Response A's 19.99 → 1998 is also correct.\n- Response B points out that `amount > 0` silently drops credits and refunds. Response A mentions this only briefly inside its validation item.\n- Response B adds a real grouping problem: un-normalized `customer_id` values such as `\" 123\"` and `\"123\"` get billed as separate customers.\n- Response A raises NaN/inf strings, which is a good catch.\n- Response A's \"no billing-period scoping\" item and its \"minor\" item on memory use and currency are more speculative and add length without much value.\n\nResponse B is tighter, closer to the word limit, and its examples and fixes are more concrete.\n\n**B**",
+  "usage": {
+    "input": 1418,
+    "output": 1505
+  },
+  "cost": 0.017886
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-28",
+  "side": "B",
+  "score": 5,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is mostly accurate and covers the main points: the cap and reduction plan, the one-quarter direction with eight weeks' notice, the cash-out conditions, the shutdown, who is covered and the 31 October list. Several details are slightly compressed or dropped:\n- \"Permanent staff\" leaves out full-time and part-time.\n- \"Make up time\" drops the condition that the manager must agree.\n- It doesn't say the 40-day figure is for full-time staff.\n- The shutdown line says \"four days' leave\" without saying these are the non-public-holiday working days.\n- \"Your action\" is only an information item, not an action.\n\nThe bigger problem is length. I count about 130 words, which breaks the explicit \"under 120 words\" limit. That is a clear failure of the user's constraint, even though the content is otherwise good.\n\nScore: 5",
+  "usage": {
+    "input": 1104,
+    "output": 1144
+  },
+  "cost": 0.013648
+}

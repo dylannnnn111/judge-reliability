@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-23",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** Both responses give the correct answer, that 0.999... equals 1, and both stay under 120 words. Response A comes to about 107 words by my count, which is within the limit.\n\nResponse A gives more support: the fraction argument, the algebra, a \"no gap\" argument, and the limit definition. Its \"no gap\" point, that no number can lie between 0.999... and 1 and that 0.000...1 is not a valid decimal, speaks directly to the usual objection. Response B gives the same algebra, fraction and limit arguments but leaves out that point. B is concise and correct, but A explains more without going over the word limit.\n\n**A**",
+  "usage": {
+    "input": 581,
+    "output": 1173
+  },
+  "cost": 0.012892
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "code-05",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses identify the same core problems: the shared-`tzinfo` subtraction that ignores DST offsets, the silently accepted ambiguous and nonexistent local times, the start-day-only weekend loading, float money arithmetic with banker's rounding, and missing holiday and validation handling. I checked the specific claims. Response A's worked examples (4h paid for 5h on fall-back, 4h paid for 3h on spring-forward) are correct, and so are its weekend examples. Response B's directional claim (overpaid going forward, underpaid going back) is also correct. Response A's fix for the nonexistent-time case, a UTC round-trip check, is more concrete than Response B's \"detect and reject.\" Response A also adds a sanity limit on shift length, which matters for payroll typos. Response B's point about keeping minutes as integers is a good one, and its directional explanation is clear, but it spends a item on repeated `parse_local` calls, which is minor. Both run slightly over 200 words. Overall Response A is somewhat more precise and actionable, though the difference is modest.\n\nVerdict: A",
+  "usage": {
+    "input": 1774,
+    "output": 1726
+  },
+  "cost": 0.0010404000000000001
+}

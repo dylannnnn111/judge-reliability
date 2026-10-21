@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-31",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better.\n\nBoth responses find the main bug: `created_at` has one-second precision, so `created_at > :last_seen` skips tied rows that straddle a page boundary. Both also propose a `(created_at, id)` keyset cursor, a supporting index, and the late-commit problem.\n\n**Response B's errors:**\n- It says the job \"stalls or loops forever\" when 1000+ rows share a second. With a strict `>`, the cursor still advances to the next timestamp, so the job skips rows rather than looping. An infinite loop would only happen with `>=`.\n- It says pages \"can overlap\". With `>` they cannot overlap.\n- It lists \"Fix\" as a numbered problem and ends with filler (\"Selecting explicit columns is good\").\n- It is noticeably longer and likely exceeds the 200-word limit by more than A does.\n\n**Response A's strengths:**\n- Its claims are accurate and each item is a real problem.\n- It adds the useful point about persisting the cursor and making downstream writes idempotent.\n- It is more concise and closer to the length limit.\n- Its only weakness is that the fix snippet drops the first-page NULL handling, but item 5 covers that.",
+  "usage": {
+    "input": 1476,
+    "output": 836
+  },
+  "cost": 0.011312
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "code-34",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response finds the most important bug: on Go 1.21 the goroutines share the loop variable `u`, so they will likely report duplicate or wrong URLs. Its note that Go 1.22 semantics depend on the `go.mod` version is accurate and useful for a CI setup. The other points are real too: discarded errors, nondeterministic result order from appending under a mutex (with the correct fix of indexed writes), and the lack of context-based timeouts. The ranking is sensible, and the fixes are concrete and correct. The mention of `go test -race` and the observation that `main` ignores its argument are also valid.\n\nThe main weakness is length. The user asked for under 200 words, and this response runs roughly 300 words, with a filler opening sentence and some repetition in the explanations. The extra words don't add correctness, so the response breaks an explicit constraint. Its substance is strong, but that instruction violation pulls the score down.\n\nScore: 6",
+  "usage": {
+    "input": 1225,
+    "output": 973
+  },
+  "cost": 0.000609
+}

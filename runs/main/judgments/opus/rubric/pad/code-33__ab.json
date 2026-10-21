@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-33",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.**\n\n**Critical bug.** Both responses find it: `p.status = 'succeeded'` in `WHERE` turns the LEFT JOIN into an inner join and removes the zero-payment customers. Both give the same correct fix. A adds that customers whose only payments failed are also dropped.\n\n**Coverage.** A then raises several real, domain-relevant problems:\n- Annual or quarterly billers will appear at risk when they are healthy. This is a major false-alarm source for a churn list.\n- Cancelled and new accounts are included.\n- NULL plans are excluded.\n- A Unix-timestamp mismatch would make the date filter match nothing.\n- Refunds and chargebacks are counted as successful payments.\n\nThese are ranked sensibly. Most come with a fix or a check to make, though the refund point has none.\n\n**Accuracy.** B's later points are weaker and partly wrong:\n- Its claim that comparing a full ISO timestamp against a date string is \"fragile\" is overstated. It works correctly in SQLite.\n- The UTC remark is minor.\n- Its \"Minor\" suggestion that `COUNT(*)` would be clearer is actively wrong. With a LEFT JOIN, `COUNT(*)` counts 1 for customers with no payments, which would reintroduce exactly the bug it just fixed.\n\nB does make a valid \"paying ≠ non-free\" point (trials, comped accounts) and mentions NULL plans. However, it misses the billing-interval false alarms, which matter a lot for this use case.\n\n**Length.** B is padded with filler (\"I want to start with…\", \"Next…\", \"Finally…\") and clearly exceeds the 200-word limit. A stays near the limit.\n\nA is more accurate, more complete on the issues that matter, more concise, and contains no harmful advice.\n\nVerdict: A",
+  "usage": {
+    "input": 1754,
+    "output": 910
+  },
+  "cost": 0.025216
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-38",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. It stays near the 120-word limit, while A runs to roughly 230 words. B also covers the same key points (status, beta results, dates, budget, risk) in a tighter form suited to a busy manager.\n\nB",
+  "usage": {
+    "input": 1412,
+    "output": 568
+  },
+  "cost": 0.00042520000000000004
+}

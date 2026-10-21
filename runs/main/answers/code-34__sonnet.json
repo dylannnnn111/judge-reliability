@@ -1,0 +1,13 @@
+{
+  "item": "code-34",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Bugs and problems, most important first:**\n\n1. **Loop variable capture (real bug on Go 1.21).** The goroutines close over `u`, which is shared across iterations before Go 1.22. Many goroutines will likely ping and report the last URL, so the status page shows wrong data. Fix it with `u := u` inside the loop or by passing `u` as a goroutine argument. (Go 1.22 changes this only if `go.mod` declares `go 1.22` or later.)\n\n2. **Errors are discarded.** A failed ping becomes `Status: 0` with no error detail. The status page can't tell a timeout from DNS failure from a bad response. Add an `Err` field to `Result`.\n\n3. **Nondeterministic result order.** Appending under a mutex returns results in completion order, so the page may reorder endpoints between refreshes. Instead, write to `results[i]` from a preallocated `make([]Result, len(urls))`. That keeps input order and removes the need for the mutex.\n\n4. **No timeout, cancellation, or concurrency limit.** `ping` is a caller-supplied function with no `context.Context`, so one hung endpoint blocks `wg.Wait()` forever. Goroutines are also unbounded for large URL lists. Take a `ctx` and consider a semaphore.\n\n5. **Minor:** a panic in `ping` crashes the whole process, since there is no `recover`. The `main` stub ignores its URL argument, so it wouldn't catch bug 1 even in a test. Add a test with distinct URLs and run `go test -race`.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 435,
+    "output": 737
+  },
+  "cost": 0.00824,
+  "at": "2026-10-14T01:54:45.552Z"
+}

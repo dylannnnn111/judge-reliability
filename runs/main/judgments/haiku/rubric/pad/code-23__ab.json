@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-23",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the most important bug: `if (!r.value) continue;` drops legitimate 0 readings, which matters for a cold room near 0 °C. Both also flag string-based timestamp comparison, the null-valued `latestReading` case, and the comparator that never returns 0. Response A ranks these sensibly and gives concise fixes.\n\nResponse B adds a real issue that A misses: plain-object accumulators keyed by `sensorId` break on IDs like `__proto__` or `constructor`. With `??=`, `sums[\"__proto__\"]` returns `Object.prototype`, which is not nullish, so the code writes `total` and `count` onto a prototype. Its suggested `Map` fix is correct. This is a genuine point, though unlikely to trigger with controlled sensor IDs. B's \"dead sensor\" point is also valid. Its fix for the zero check (`Number.isFinite`) is slightly more robust than A's `== null`.\n\nHowever, the user set a hard limit of under 200 words. Response A is roughly at that limit. Response B runs well over it, with several items that repeat points from elsewhere. Response B's extra correct content does not outweigh breaking an explicit instruction. A is more compliant while still covering the important bugs, so it edges out B.\n\nVerdict: A",
+  "usage": {
+    "input": 1907,
+    "output": 1399
+  },
+  "cost": 0.0008902000000000001
+}

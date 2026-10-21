@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-15",
+  "side": "A",
+  "score": 10,
+  "model": "claude-opus-5-5",
+  "text": "The response gives the correct answer of 18 °F. The rise is 25 − 15 = 10 °C, and a temperature *difference* converts by multiplying by 9/5 with no 32-degree offset, so 10 × 9/5 = 18 °F.\n\nOn reasoning, it names the key point: the offset does not apply to differences. That is the most common mistake on this kind of problem. It then checks the result by converting both temperatures: 15 °C = 59 °F and 25 °C = 77 °F, giving 77 − 59 = 18. Both conversions are accurate.\n\nOn clarity, the response is concise, well under 120 words, and puts the answer first. Every sentence adds something correct and useful, with no filler. There is nothing meaningful to fault.\n\nScore: 10",
+  "usage": {
+    "input": 368,
+    "output": 325
+  },
+  "cost": 0.007972
+}

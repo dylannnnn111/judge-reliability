@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-10",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses are accurate and within the 120-word limit (A is about 118 words, B about 100). Both cover status, go-live date, progress, budget, risks, decisions and next steps.\n\nA suits a busy manager better:\n\n- **Leads with what matters:** \"On track\" and \"No decisions needed from you\" come first, so the manager learns right away that no action is required.\n- **Scannable layout:** Bold labels (Progress, Budget, Risks, Next) let the reader jump to what they care about. B's single paragraph has to be read straight through.\n- **Slightly more complete:** A notes the new team member and the next update date, which B leaves out, while still staying under the limit.\n\nB is a solid, concise summary. A is simply more usable for someone skimming.",
+  "usage": {
+    "input": 1121,
+    "output": 743
+  },
+  "cost": 0.019344
+}

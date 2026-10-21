@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-40",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better: it stays under the word limit, while Response B goes over it and slightly softens one finding.\n\n**Accuracy:** Both responses report the key numbers correctly: 1,622 students, 11 schools, 1.8 vs 1.1 marks, the non-significant 0.7-mark gap and 71%. Response B says \"no significant problems\", which softens the source's \"no reports of problems\". Response A's \"No problems were reported\" matches the source. Response B also credits \"the study\" with the conclusion, which is fine. Response A is slightly more precise, and its \"hot weather in some regions may have affected results\" matches the source's limitation wording.\n\n**Coverage:** Both cover the main finding, the survey result, the recommendation and the limitations. Response A also mentions teachers' observation of calmer students. Response B explicitly says the 10% overseas claim was not supported, which is useful. Response A implies this by describing the claim as tested and the difference as non-significant, but it is less explicit.\n\n**Length:** The user asked for under 120 words. Response A is about 115 words. Response B is about 130, so it breaks the explicit constraint. Response A's bold labels (\"Bottom line\", \"Caveats\") also make it easier for a busy manager to scan.\n\nVerdict: A",
+  "usage": {
+    "input": 1385,
+    "output": 1172
+  },
+  "cost": 0.01449
+}

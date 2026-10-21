@@ -1,0 +1,14 @@
+{
+  "pair": "sum-30",
+  "side": "A",
+  "author": "sonnet",
+  "model": "claude-haiku-5-5",
+  "original": "**Summary: Kelso Ridge bus changes (from Monday 19 January)**\n\nThe regional transport authority is overhauling bus services for Kelso Ridge and Mill Flat, following a six-week consultation.\n\n- **Route 410:** Every 15 minutes at weekday peak times, up from every 30.\n- **New Route 412:** Links Mill Flat to Kelso Ridge station and the shopping centre, every 20 minutes, 6am–9pm, daily.\n- **Route 408:** Scrapped (averages nine passengers per trip); the 412 covers its stops.\n- **Concern:** Industrial estate workers say the 412 doesn't start early enough. The authority will monitor demand and may add earlier services.\n- **Unchanged:** Fares.\n\nTimetables will be letterboxed in December and appear in apps in early January. An information stall runs Saturday 6 December, 10am–2pm, at the shopping centre.",
+  "text": "**Summary: Kelso Ridge bus changes (from Monday 19 January)**\n\nI would like to share a summary of the upcoming bus changes. The regional transport authority is overhauling bus services for Kelso Ridge and Mill Flat, following a six-week consultation. The main changes to each route are set out below.\n\n- **Route 410:** Under the new arrangements, this route will run every 15 minutes at weekday peak times, up from every 30 minutes.\n- **New Route 412:** This new service links Mill Flat to Kelso Ridge station and the shopping centre. It will run every 20 minutes, from 6am to 9pm, daily.\n- **Route 408:** This route is being scrapped, as it averages nine passengers per trip. Its stops will be covered by the 412.\n- **Concern:** Some industrial estate workers have said the 412 does not start early enough for their shifts. The authority will monitor demand and may add earlier services.\n- **Unchanged:** Fares will stay the same.\n\nTurning to how you can find out more, timetables will be letterboxed in December and will also appear in apps in early January. For those who would like to speak to someone in person, an information stall will run on Saturday 6 December, from 10am to 2pm, at the shopping centre.",
+  "ratio": 1.68,
+  "usage": {
+    "input": 494,
+    "output": 892
+  },
+  "cost": 0.0004954
+}

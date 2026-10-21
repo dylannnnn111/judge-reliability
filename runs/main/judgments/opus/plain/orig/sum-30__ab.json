@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-30",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A stays within the 120-word limit, at roughly 111 words in the body and about 120 with the heading. Response B exceeds it: about 119 words in the body and about 127 with the heading.\n\nResponse B also contains an unsupported claim. It says industrial estate workers \"lose service before 6am.\" The source does not say the 408 currently runs before 6am. It only says workers are concerned because the 412 won't run before 6am. Response A states this concern accurately.\n\nResponse B does add useful context in its \"Why\" bullet, explaining that a direct Mill Flat–station link was the top consultation request. That does not outweigh breaking the explicit length limit and the factual overreach.",
+  "usage": {
+    "input": 1337,
+    "output": 1504
+  },
+  "cost": 0.035428
+}

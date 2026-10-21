@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-37",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is slightly better. Both answers stay under 120 words (about 109 for A and 115 for B) and give the same core explanation: iron oxidation on the surface of arkose, with grey rock underneath. A edges ahead on two points:\n\n- **Sunset colours:** A explains the mechanism, with light passing through more atmosphere and blue wavelengths being scattered away. B only says the light is \"richer in red wavelengths\", which is looser.\n- **Specificity:** A names hematite as the iron oxide.\n\nB's detail about a freshly broken piece showing grey rock inside is accurate, but it doesn't outweigh A's better explanation.\n\n**A**",
+  "usage": {
+    "input": 581,
+    "output": 1664
+  },
+  "cost": 0.017802
+}

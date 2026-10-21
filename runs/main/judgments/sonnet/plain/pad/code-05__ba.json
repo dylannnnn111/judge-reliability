@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-05",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** Both responses find the same main bugs in the same order:\n\n- DST subtraction ignores the offset change.\n- Ambiguous and nonexistent local times are accepted silently.\n- Weekend loading depends only on the start day.\n- Float money math with banker's rounding.\n- Public holidays and input validation are missing.\n\nI checked the technical claims in both and they hold up. B's concrete examples (the 4h vs 5h and 4h vs 3h shifts) are accurate and a bit more illustrative.\n\nNeither response meets the 200-word limit, but A is much closer to it, while B is roughly 350 words. B also has awkward phrasing, such as \"the most serious problem in the response,\" which reads as if it were reviewing a response rather than the code. A is tighter and follows the length instruction better, and A's extra point about repeated `parse_local` calls is a small bonus.",
+  "usage": {
+    "input": 1853,
+    "output": 874
+  },
+  "cost": 0.012446
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-38",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. Neither response stays under the 200-word limit, but A comes much closer. A is roughly 270 words, while B is roughly 330 and opens with a filler sentence that repeats its heading.\n\nThe content is similar:\n- Both lead with the most important bug, where `set -e` lets one failed `tar` abort the remaining sites.\n- Both cover partial archives, unquoted variables, off-box backups, overlapping runs, `umask`, and the off-by-one in `-mtime`.\n\nA also notes that the abort skips pruning, and it separates out the tar exit-code-1 case with a concrete fix (tolerate 1, fail on 2 or higher). It adds a monitoring and alerting point, which matters for an unattended cron job.\n\nB adds a `nullglob` point and notes that the final count includes non-archive files. Both are valid but minor.\n\nA is tighter and more actionable, and it respects the length constraint better.\n\n**A**",
+  "usage": {
+    "input": 1677,
+    "output": 702
+  },
+  "cost": 0.010374
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-11",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses identify the same core issues in a sensible order: the check-then-act race in `reserve`, the single-process limitation of `threading.Lock`, missing input validation, unguarded `release`, and the global lock.\n\n**Response A** breaks the explicit constraint to keep it under 200 words. It runs roughly 350–400 words, padded with filler such as \"Thank you for sharing the code\" and verbose restatements. Its sixth point, about `available()` being advisory, largely repeats point 1.\n\n**Response B** also runs over 200 words, but by much less. It is tighter and adds useful points A misses:\n- Abandoned carts never release stock, so reservations should expire.\n- The lock is held during DB I/O.\n- A missing SKU returning `None` would raise a `TypeError`.\n\nResponse B is more concise, closer to the length limit, and more substantive.",
+  "usage": {
+    "input": 1633,
+    "output": 381
+  },
+  "cost": 0.014152
+}

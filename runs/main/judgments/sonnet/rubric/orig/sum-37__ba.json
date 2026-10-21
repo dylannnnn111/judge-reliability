@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-37",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries are accurate on the key facts: the Amber status, the 7 November departure, the 8 December to late January slip, the three options, the $64,000 cost, the 20 October return and the budget.\n\n**Response A:**\n- It keeps the progress points (nightly loads, 14 of 22 reports matching) and notes that Tomas is documenting the payroll system. Both are useful to a manager.\n- Its option 2 says four month-end reports need payroll but doesn't spell out that finance would accept a partial go-live only if they didn't. It also omits \"add in February\". These are minor losses of nuance.\n- It is about 125 words, slightly over the 120 limit.\n\n**Response B:**\n- It handles option 2 better, noting that finance may not accept it because four reports depend on payroll, and that payroll would be added in February.\n- It drops most of the progress detail and the fact that Tomas is documenting the system.\n- It includes the next update date, which is a small plus.\n- It is about 139 words, clearly over the 120 limit.\n\nNeither is inaccurate. Both exceed the word limit, but B does so by much more. A also keeps more of the reader's needs, namely progress and the mitigation under way. B's better option 2 wording doesn't outweigh these. A is somewhat better.\n\nVerdict: A",
+  "usage": {
+    "input": 1475,
+    "output": 1683
+  },
+  "cost": 0.01978
+}

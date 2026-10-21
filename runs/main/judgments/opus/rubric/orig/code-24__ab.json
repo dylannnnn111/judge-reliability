@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-24",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses rank the same top issue first: concurrent duplicates race past `processed.has()` because `processed.add()` runs only after the `await`. They also both cover the non-durable in-memory `Set`, the non-constant-time comparison, replay, error handling and the amount check. Neither flags anything that is actually fine.\n\n**Response A**\n- Item 3 (a crash between `markInvoicePaid` and `processed.add`) is a real failure mode. However, its fix, an atomic commit or idempotency, is the same one already given in item 2, so it is partly redundant.\n- Item 1, the most important issue, has no fix attached. The fix appears only in item 2.\n- It is also roughly 280 words, well over the 200-word limit.\n\n**Response B**\n- Item 1 pairs the top issue with a concrete fix: claim the ID atomically before processing, via a unique constraint or insert-if-absent, in the same transaction as the invoice update. It also adds releasing the claim on failure so retries still work. That covers the race, durability and crash atomicity together.\n- Item 2 adds that `markInvoicePaid` should itself be idempotent.\n- Its error-handling item covers both unhandled rejections and bad payloads, with appropriate status codes. The malformed-JSON case is marginal, since a payload that passes signature verification is unlikely to be malformed.\n- It is somewhat shorter, though still over the limit.\n\nOverall the two are close in which issues they find and how they rank them. B attaches the fix directly to the most important issue and is a little more concise. A's extra crash-atomicity item mostly restates a fix B already gives.\n\nVerdict: B",
+  "usage": {
+    "input": 1681,
+    "output": 981
+  },
+  "cost": 0.026344
+}

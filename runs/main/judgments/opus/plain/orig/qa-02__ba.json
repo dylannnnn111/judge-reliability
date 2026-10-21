@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-02",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses are correct (96 km/h), show the same time-based working, and stay well under the 120-word limit. B is slightly better because it shows the harmonic-mean formula explicitly: 2 × 80 × 120 / (80 + 120) = 96. That independently confirms the answer and makes the \"not simply 100 km/h\" point concrete. A only names the harmonic mean without demonstrating it.",
+  "usage": {
+    "input": 574,
+    "output": 420
+  },
+  "cost": 0.010696
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-25",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is within the 120-word limit (about 109 words) but contains a factual error. It says the job was \"stopped after 35 minutes\". The source says it was stopped at 9:35am, and the first member call came at 8:20am. The \"35 minutes\" figure is therefore invented and understates how long the error ran. A also leaves out the all-staff \"hacked\" message that was leaked to the press, and the comms guide update, which are relevant to a manager.\n\nResponse B is accurate throughout. Its dates, numbers, the notification timing and the quote's context all match the source. It also keeps the media and communications points and avoids the invented duration. Its flaw is length: it runs to roughly 145 words, over the 120-word limit. That is a real breach of the instruction, though it is a style fault rather than a misleading statement.\n\nAccuracy comes first in the ordering. A contains a fabricated figure and B does not, so B is better despite exceeding the word limit.\n\nVerdict: B",
+  "usage": {
+    "input": 1443,
+    "output": 1484
+  },
+  "cost": 0.017726
+}

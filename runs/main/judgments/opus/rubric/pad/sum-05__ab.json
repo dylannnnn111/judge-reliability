@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-05",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.**\n\n**Accuracy:** Both get the core numbers right: 214 workers, 12 weeks, 31% vs 44% back discomfort, standing time falling from 47 to 19 minutes, and 78% feeling more productive.\n\n- Response B files the 78% \"felt more productive\" figure under \"Benefits found.\" That is misleading. The study's main point is that this self-report was *not* matched by any measured change in output.\n- Response A states that contrast directly (\"even though 78%... *felt* more productive\").\n- Response A's \"no different\" slightly simplifies \"no statistically significant difference.\" This is acceptable for a busy manager.\n\n**Coverage:** Both keep the key points: no productivity gain, the back-discomfort benefit, the fading novelty, and both limitations. Response A also adds a practical implication: justify the desks on comfort, not productivity. That is exactly what a manager needs to act on.\n\n**Concision:** Response A is about 100 words, within the 120-word limit. Response B runs to roughly 145–150 words, which breaks the explicit constraint. Its extra length is filler (\"To summarize the main finding,\" \"It is worth noting that,\" \"There are also a few points to keep in mind\") rather than useful content.\n\nResponse A wins on accuracy of framing, on usefulness, and on meeting the length limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1457,
+    "output": 962
+  },
+  "cost": 0.025068
+}

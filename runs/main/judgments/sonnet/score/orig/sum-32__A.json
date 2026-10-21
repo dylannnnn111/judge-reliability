@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-32",
+  "side": "A",
+  "score": 8,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate. The figures and dates match the thread: 5.79% to 6.04% after the 0.25% August rise, the 0.90% discount still applying, the 12 May email, and the $250 goodwill payment. It attributes decisions correctly: Customer Care found no overcharge, the customers accepted the $250 but still feel misled, and the matter was referred to lending and closed. The closing flag is a reasonable inference from the thread rather than a distortion. At about 119 words it stays under the limit, though only just.\n\nIt leaves out a few things. It does not mention that the customers originally asked for a refund of the interest. It also omits the escalation options Harriet gave (Internal Dispute Resolution and AFCA), which matter for a manager judging complaint risk. The wording \"call about fixing their rate\" is slightly ambiguous, but it follows the source. The omissions are small, and the structure is clear and efficient.\n\nScore: 8",
+  "usage": {
+    "input": 1183,
+    "output": 1538
+  },
+  "cost": 0.017746
+}

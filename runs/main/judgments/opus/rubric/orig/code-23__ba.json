@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-23",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.**\n\n**Issues found.** Both responses put the most serious bug first: `!r.value` silently drops 0 °C readings, which matters a lot in a cold room. Both also correctly flag:\n- string comparison of timestamps,\n- a comparator that never returns 0, plus the O(n log n) sort where a linear scan would do,\n- a null-valued \"latest\" reading,\n- sensors with no valid data vanishing from the output.\n\nResponse A adds a prototype-key collision point (`__proto__`, `constructor`). It is real but very unlikely with sensor IDs. It also suggests a `Number.isFinite` guard. Both additions are minor.\n\n**Ranking.** This is where B pulls ahead. On a monitoring dashboard, a dead sensor silently disappearing is a serious operational problem. B ranks it second; A ranks it last, below even the prototype-key edge case. A also puts the comparator-returns-0 nit third, ahead of the null-latest and dead-sensor issues. B correctly groups the comparator and performance points as minor.\n\n**Fixes.** Both give concrete, correct fixes.\n\n**Length.** The user asked for under 200 words. Both exceed it, but A (about 270 words) overshoots much more than B (about 230). A's extra content is not valuable enough to justify that.\n\nVerdict: B",
+  "usage": {
+    "input": 1630,
+    "output": 715
+  },
+  "cost": 0.02082
+}

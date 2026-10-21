@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "sum-01",
+  "side": "B",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The facts are accurate. The deadline moved from Wednesday 4 November to Friday 30 October, the three deliverables are correct, and the template path and the variance rule (\"smaller of $50,000 or 10%\") are right. It also keeps the leave nomination, the paste-numbers rule, the optional Thursday 2pm drop-in, and the instruction to call Priya today. Minor gaps: it doesn't say the CFO moved the board meeting, and it doesn't mention that the old template lacks the software subscriptions line.\n\nThe main failure is length. The response runs to roughly 190 words against an explicit limit of under 120. It also reads like a re-sent announcement rather than a summary. Lines such as \"I'm writing to let you know about a change…\" and \"This earlier date applies to all regions\" add nothing, and the headline and first paragraph repeat the deadline. For a busy manager who won't read the original, this ignores the key constraint.\n\nAccuracy and coverage are good, but the large breach of the word limit and the padding weigh heavily.\n\nScore: 4",
+  "usage": {
+    "input": 1224,
+    "output": 769
+  },
+  "cost": 0.010138
+}

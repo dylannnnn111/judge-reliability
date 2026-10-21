@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-33",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. The user asked for under 120 words. B comes to roughly 130, slightly over the limit, while A runs to about 200 or more. A also wastes words on a pleasantry intro (\"Thank you for taking the time to read…\") and on soft phrasing (\"we kindly ask\").\n\nBoth responses include the 29 October update that moves the v1 shutdown to 31 January 2027. B leads with the fact that most customers need to do nothing and then flags the action item clearly. B is more scannable for a busy manager and closer to the length constraint.\n\n**B**",
+  "usage": {
+    "input": 1553,
+    "output": 1148
+  },
+  "cost": 0.014586
+}

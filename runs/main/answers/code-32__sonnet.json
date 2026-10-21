@@ -1,0 +1,13 @@
+{
+  "item": "code-32",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Bugs, most important first:**\n\n1. **Date filter drops the last day of the month.** `BETWEEN '2026-09-01' AND '2026-09-30'` treats the upper bound as `'2026-09-30 00:00:00'`, so every September 30 order after midnight is excluded. Revenue and order counts are understated. Use `o.placed_at >= '2026-09-01' AND o.placed_at < '2026-10-01'`.\n\n2. **Integer division truncates the averages** (Postgres, SQL Server, SQLite). `avg_items_per_order` is the worst case: 2.8 items shows as 2. `avg_order_cents` loses fractional cents, which is minor. Use `AVG(o.total_cents)` and `AVG(o.item_count)`, or cast to a decimal before dividing. `AVG` also removes the manual division.\n\n3. **`o.status <> 'refunded'` silently drops orders with NULL status**, because the comparison evaluates to NULL. Use `o.status IS DISTINCT FROM 'refunded'` or `COALESCE(o.status, '') <> 'refunded'`. Also confirm whether cancelled or failed orders should count as revenue.\n\n4. **Stores with no September orders vanish.** The inner join, plus the redundant `HAVING COUNT(o.id) > 0`, means these stores don't appear at all, where a finance tile should show zero. If you switch to a `LEFT JOIN`, move the date and status filters into the `ON` clause, and guard the averages against division by zero (`AVG` returns NULL, which is fine).\n\n**Minor:**\n- The dates are hardcoded, so this needs parameters to be reusable.\n- Timezone is unclear: is `placed_at` UTC or store-local?\n- `ORDER BY revenue_cents` has no tiebreaker, so tied stores may reorder between runs.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 411,
+    "output": 1099
+  },
+  "cost": 0.011812,
+  "at": "2026-10-14T01:54:39.820Z"
+}

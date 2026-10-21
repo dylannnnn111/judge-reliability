@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-28",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is better, mainly on the length limit and prioritization.\n\n**Length:** A comes to roughly 200 words, borderline but close to compliant. B has eight items with longer explanations and is clearly well over 200 words.\n\n**Prioritization:** Both lead with defensible top issues: race condition versus connection leak. B ranks the same-wallet no-op (#4) above deadlock risk and ROLLBACK masking, which overstates a minor issue. A correctly labels it minor and puts it last.\n\n**Content:** Both catch the core bugs: double-spend race, unvalidated `toId`, connection leak, deadlock, and ROLLBACK masking. B adds idempotency and the bigint-as-string point, which are useful but push it further past the limit. A adds a database `CHECK` constraint, which is a concise, high-value suggestion.",
+  "usage": {
+    "input": 1665,
+    "output": 1776
+  },
+  "cost": 0.04218
+}

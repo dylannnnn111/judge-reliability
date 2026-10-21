@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-30",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Correctness.** Both responses define the p-value correctly. Both also list the standard misconceptions accurately.\n\n**Key reasoning.**\n- Response B adds two valid nuances. It notes that the p-value also depends on the model's other assumptions, and it makes the point that p > 0.05 doesn't mean \"no effect.\"\n- Response A covers the same core misconceptions concisely. It also adds that the p-value is not evidence for the alternative hypothesis.\n\n**Constraint and clarity.**\n- The user explicitly asked for under 120 words. Response A is about 80 words and complies.\n- Response B is roughly 230 words, nearly double the limit. Much of that is filler:\n  - The definition is restated three times.\n  - It says \"it's worth going through them one at a time\" but never does.\n  - It closes with a generic \"I hope this clarifies\" sign-off.\n\nB's extra words mostly add nothing, and they break a direct instruction. A is correct, complete on the essentials, clear, and follows the constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 800,
+    "output": 464
+  },
+  "cost": 0.01248
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-09",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses identify the same core issue first: `revoke_permission` never clears `_permission_cache`, so revoked permissions stay active. Both also cover the multi-process cache problem, the lack of expiry, unbounded memory growth, and the need to invalidate after commit.\n\nB is the stronger response for three reasons:\n\n- **More actionable fix.** In #1, B gives the immediate fix (`_permission_cache.pop(user_id, None)` after commit). In #2, it lays out concrete options, including skipping the cache and relying on an indexed query.\n- **More useful specifics.** B points out that nonexistent IDs get cached as empty sets, so arbitrary IDs can inflate memory (a DoS vector). It also notes that deleted or banned users keep their cached permissions. These matter more than A's thread-safety point, which A itself admits usually costs only a redundant query.\n- **Closer to the length limit.** A runs to roughly 230 words with a trailing \"Suggested fix\" paragraph. B is around 205 words, still slightly over but nearer the 200-word cap.",
+  "usage": {
+    "input": 1314,
+    "output": 639
+  },
+  "cost": 0.018036
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-15",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "A is better. It stays under the 120-word limit (about 103 words) and covers the key findings, the caveat for new night workers, the drive-time effect, the implication and the limitations. B runs to roughly 190 words, which breaks the explicit constraint, and it adds filler such as \"In other words\" and \"Put differently.\"\n\n**A**",
+  "usage": {
+    "input": 1414,
+    "output": 821
+  },
+  "cost": 0.011038
+}

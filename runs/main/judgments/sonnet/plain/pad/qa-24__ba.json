@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-24",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer in under 120 words, so I'll count the words in each response.\n\nResponse A: Paragraph 1 reads \"No, Everest is not the tallest mountain from base to peak. Mauna Kea in Hawaii rises about 10,200 metres from its base on the seafloor, though only about 4,200 metres of that is above sea level. Everest's summit is about 8,849 metres above sea level.\" That is about 46 words. Paragraph 2 reads \"No, its summit is not the point farthest from Earth's centre. Earth's equatorial bulge means that points nearer the equator are farther from the centre. Ecuador's Chimborazo, although much lower above sea level, has a summit that is roughly 2 kilometres farther from the centre than Everest's peak. Chimborazo is the mountain whose summit is farthest from Earth's centre.\" That is about 60 words. The total is around 106, which is under 120.\n\nResponse B is clearly over 120 words, probably around 200. It breaks the explicit length constraint.\n\nOn accuracy, A says Chimborazo is about 2 km farther, which is correct. B's figure of about 6,384 km is also correct. The question of whether Everest's base-to-peak height is 4,600 to 5,000 m is a reasonable figure. Both are accurate.\n\nA satisfies the constraint and B does not, so A is better.\n\n**A**",
+  "usage": {
+    "input": 743,
+    "output": 450
+  },
+  "cost": 0.005986
+}

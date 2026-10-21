@@ -1,0 +1,13 @@
+{
+  "item": "qa-34",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "They use **public-key cryptography**, typically a key exchange such as Diffie-Hellman.\n\n**How it works:**\n1. Each party generates a private key (kept secret) and a related public key (shared openly).\n2. They exchange public keys over the open internet.\n3. Each combines their own private key with the other's public key. Through the math, both arrive at the *same* shared secret, which an eavesdropper who sees only the public keys cannot feasibly compute.\n4. That secret becomes a symmetric session key (e.g., AES) for fast encrypted communication.\n\n**Authentication problem:** Strangers must also verify identity to prevent man-in-the-middle attacks. TLS solves this with certificates signed by trusted certificate authorities, which bind a public key to a domain name.\n\nThis is how HTTPS works every day.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 61,
+    "output": 265
+  },
+  "cost": 0.002772,
+  "at": "2026-10-14T01:50:53.967Z"
+}

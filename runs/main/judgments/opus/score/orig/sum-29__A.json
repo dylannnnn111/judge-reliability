@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-29",
+  "side": "A",
+  "score": 6,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy.** Most details are correct:\n- All prices and data amounts match the notice.\n- The 15 November timing is right.\n- The no-exit-fee condition and the caveat about remaining device repayments are right.\n- The stated reason is right.\n\nThere is one real error. The response says \"Classic plan customers and those on fixed-price contracts are unaffected until their contract ends.\" This merges two different conditions. The notice says Classic customers see no change *this year*, which is not tied to any contract. Only fixed-price contract customers are protected until their contract ends. A manager reading this could wrongly conclude that Classic customers are on contracts, or that their protection depends on a contract end date. The prompt specifically asks for accuracy on conditions and who is affected, so this matters.\n\n**Coverage.** The summary keeps the points a manager needs: what changes, when, who is affected, the customer's options, and why. Leaving out the contact details is reasonable for this audience.\n\n**Concision.** At about 115 words it fits the limit. Listing prices as bullets is efficient. \"The change applies to current plans launched in March 2024\" is slightly redundant after \"current postpaid plans,\" but it is harmless.\n\nOverall, this is a well-structured, mostly accurate summary, marked down for the misleading conflation of the Classic and fixed-contract conditions.\n\nScore: 6",
+  "usage": {
+    "input": 1030,
+    "output": 984
+  },
+  "cost": 0.0238
+}

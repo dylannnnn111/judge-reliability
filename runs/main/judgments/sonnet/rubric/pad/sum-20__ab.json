@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-20",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. Response A is about 230 words, nearly double the 120-word limit. It also slips into Hannah's first-person voice (\"I would kindly ask\") while narrating in the third person, which muddles who is speaking. Its content is accurate, but much of it is padding.\n\nResponse B is accurate on the date, times, venue, the maximum of five priorities, the prep items, the 31 October dietary deadline, Ella covering the inbox, and the optional pub. It is formatted so a busy manager can scan it quickly. By my count it runs to about 130 words, so it also exceeds the limit, but only slightly, and it is far closer to the brief than A.\n\nVerdict: B",
+  "usage": {
+    "input": 1614,
+    "output": 947
+  },
+  "cost": 0.012698
+}

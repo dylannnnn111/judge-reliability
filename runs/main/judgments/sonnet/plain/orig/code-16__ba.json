@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-16",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better, mainly because it follows the length limit and avoids a dubious suggestion.\n\n**Length:** The user asked for under 200 words. Response A is about 175 words. Response B is about 240, so it breaks an explicit instruction.\n\n**Accuracy and prioritization:**\n- A puts the GST question first. Calling GST \"likely double-counted\" is somewhat overstated, since the code may be correct if prices are GST-exclusive. A does hedge with \"Confirm whether `priceCents` is GST-inclusive.\" Because the issue is about customers being charged the wrong amount at checkout, putting it first is defensible.\n- B puts the `sortByPrice` mutation first. That is the one definite bug, so its ordering is arguably more careful. It then relegates the GST assumption to last.\n- B's rounding item is weak. `Math.round(subtotalCents * 10 / 100)` is not meaningfully better than the original, and the float-misrounding concern is minor. This item adds length without adding value.\n- Both responses cover the server-side recomputation, input validation, discount-code brittleness, `formatAud` negatives, and the sort mutation. A's coverage is similarly complete and more concise.\n- B adds a few extra points. It notes `==` versus `===` and the hardcoded discount with no expiry or usage limit. Those are marginal.\n\nA satisfies the constraint and covers the key issues, so it is the better response overall.\n\n**A**",
+  "usage": {
+    "input": 1543,
+    "output": 2476
+  },
+  "cost": 0.027846
+}

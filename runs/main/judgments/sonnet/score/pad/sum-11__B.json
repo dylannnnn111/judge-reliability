@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "sum-11",
+  "side": "B",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The response breaks the explicit limit of under 120 words. It runs to roughly 230 words, nearly double the cap. It also includes filler the busy manager doesn't need: an opening paragraph repeating the headline, and a closing \"thank you\" line.\n\nMost facts are accurate. The dates are right: 14 November is the Friday and 17 November is the Monday, so the inferred date is correct. The 14 parking spaces, the two-crate limit, the Wednesday 12 November file deadline and the 8:30am welcome are all correct.\n\nThere are two accuracy problems:\n- \"Everyone is warmly invited to attend\" misrepresents the original. Attendance is effectively required, because without a card staff can't get past the lobby, and Grant asks people to come even if they normally start later.\n- \"Not eligible for a space\" is slightly stronger than \"you're not on the list\".\n\nIt also leaves out the consequence of missing the file deadline, which is delays getting to client files.\n\nThe structure is clear and the key points are mostly present. But the length violation and the softened wording on mandatory attendance are significant flaws.\n\nScore: 4",
+  "usage": {
+    "input": 1408,
+    "output": 679
+  },
+  "cost": 0.009606
+}

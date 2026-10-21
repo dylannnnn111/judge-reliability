@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-36",
+  "side": "A",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The physics is correct, and the response meets the word limit.\n\n**Word count:** About 108 words, so it is under the 120-word limit.\n\n**Correctness:** The explanation is accurate.\n- It names the two key factors: airfoil shape and angle of attack.\n- It correctly says air speeds up over the upper surface, lowering pressure there.\n- It avoids the common \"equal transit time\" fallacy.\n- It rightly presents the pressure-difference view and the Newton's-third-law (downwash) view as two equivalent descriptions, not competing ones.\n- The note on stall from airflow separation at high angle of attack is accurate.\n\n**Key reasoning:** It gives both the pressure-difference mechanism and the momentum (downwash) mechanism. It does not explain *why* the air speeds up over the top (flow turning around a curved surface, pressure gradients). That omission is reasonable within the word limit.\n\n**Clarity:** The answer is well organised, uses plain language, and builds logically from mechanism to influencing factors to limits. It contains no filler.\n\nOverall it is a strong, accurate and concise answer, missing only a little deeper causal detail.\n\nScore: 9",
+  "usage": {
+    "input": 418,
+    "output": 722
+  },
+  "cost": 0.016112
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-09",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct answer, 7.5°. The hour hand is at 90° + 7.5° = 97.5° and the minute hand is at 90°, so the difference is 7.5°, which is the smaller angle. Both are well under 120 words.\n\nResponse A explains more fully why the hour hand moves past the 3, and it briefly confirms that 7.5° is the smaller of the two angles. Response B is more concise and its formulas are clear, but it omits the reasoning behind the hour hand's motion. The extra words in Response A add a correct and useful explanation rather than padding, so A is slightly better on the key reasoning criterion.\n\nVerdict: A",
+  "usage": {
+    "input": 761,
+    "output": 471
+  },
+  "cost": 0.00031160000000000004
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-40",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses are accurate, explain the speed difference between light and sound, give the divide-by-3 and divide-by-5 rules, and stay under 120 words (about 105 for A, about 111 for B).\n\nB is slightly better for three reasons:\n- **Cleaner example:** a 15-second gap gives 5 km and 3 miles exactly. A's 10-second example rounds 3.3 km down to \"roughly 3 km.\"\n- **Clear procedure:** the step-by-step counting method is easy to follow.\n- **Fuller safety advice:** it adds the \"wait 30 minutes after the last thunder\" rule and gives the 30-second threshold as a distance (about 10 km or 6 miles).\n\nA's note that the flash and thunder start at the same moment is a nice touch. It does not outweigh B's more complete practical guidance.",
+  "usage": {
+    "input": 600,
+    "output": 754
+  },
+  "cost": 0.01748
+}

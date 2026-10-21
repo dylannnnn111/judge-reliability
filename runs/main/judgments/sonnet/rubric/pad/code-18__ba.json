@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-18",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main bug: the cache key ignores `to`, so AUD→USD and AUD→EUR share a cached rate. Both also give the same fix, `fx:${from}:${to}`. They also agree on response validation, in-flight deduplication, fetch timeout, URL encoding and unbounded cache growth, and they order these similarly.\n\n**Length:** The user asked for under 200 words. Response A runs to roughly 330 words, well over the limit. Response B is more compact at about 210–230 words. It is still slightly over, but much closer.\n\n**Content:**\n- Response B adds that a cached promise should be evicted if it rejects. Without that, caching in-flight promises would introduce a new bug where failures stick for the TTL.\n- Response B also suggests validating currency codes against ISO 4217, a sensible addition.\n- Response B's last point is a reminder to use a decimal library when applying the rate. It is slightly speculative, since the conversion code isn't shown, but it is relevant to invoicing.\n- Response A's last point, the unsafe generic cast, is a low-value nitpick on a small helper.\n- Response A explains each issue at greater length, which adds little beyond the length overrun.\n\nB is tighter, closer to the word limit, and its fixes are slightly more complete.\n\nVerdict: B",
+  "usage": {
+    "input": 1802,
+    "output": 699
+  },
+  "cost": 0.010594
+}

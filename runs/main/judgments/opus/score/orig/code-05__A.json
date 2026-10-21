@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "code-05",
+  "side": "A",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "This is a strong, accurate review that finds the important bugs and ranks them well.\n\n**Item 1 (DST, ranked first):** This is the most important bug, and the explanation is technically precise. When two aware datetimes share the same `tzinfo` object, Python subtracts them as naive wall-clock times. `ZoneInfo` caches instances, so both datetimes do share one object. The worked examples are correct:\n- **April fall-back:** a 01:00–05:00 shift lasts 5h but is paid 4h.\n- **October spring-forward:** the same shift lasts 3h but is paid 4h.\n\nThe fix of converting to UTC before subtracting is correct. The snippet assumes `timezone` is imported, which is a trivial omission.\n\n**Item 2 (nonexistent and ambiguous times):** This is real and correct. `fold=0` picks the first occurrence, and a UTC round-trip check is a legitimate way to detect nonexistent times.\n\n**Item 3 (weekend loading by start day only):** This is a real payroll bug. Both examples are right: overnight Friday→Saturday gets no loading, and Sunday→Monday gets loading on every hour. Splitting at midnight is the right fix.\n\n**Item 4 (float money and rounding):** This is a valid concern, though somewhat overstated. Float representation means `round()` doesn't consistently behave as true banker's rounding at x.5. Recommending `Decimal` with an explicit rounding rule is still sound, and it rightly defers to payroll's own rule.\n\n**Item 5 (missing rules and validation):** This is the weakest item. Public holidays and input validation are reasonable to raise but partly speculative about requirements. It is placed last, which is appropriate.\n\n**Ranking and false positives:** The ordering is sensible and every item comes with a fix. Nothing that is actually fine gets flagged as a bug.\n\n**Length:** The response is right around the 200-word limit, so it is essentially compliant. Item 5 adds marginal padding.\n\nOverall it is accurate, well-prioritised, and actionable, with only minor nitpicks.\n\nScore: 9",
+  "usage": {
+    "input": 1130,
+    "output": 1836
+  },
+  "cost": 0.04124
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-25",
+  "side": "B",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The response gives the correct answer: no, Vikings did not wear horned helmets in battle. Supporting facts:\n\n- The Gjermundbu helmet is the only nearly complete Viking Age helmet found, and it is a rounded iron cap with a spectacle guard. This is correct.\n- Most warriors likely wore leather or iron caps, or no helmet, since helmets were expensive. Reasonable.\n- Gustav Malmström's illustrations (1820s, for Frithiof's Saga) and Carl Emil Doepler's costumes for Wagner's Ring (1876) popularized the image. Correct.\n- The Veksø helmets are Bronze Age (c. 900 BC) and predate the Vikings (c. 800 AD) by about 1,700 years. The response says \"about 1,500 years,\" a slight underestimate but roughly fine. Some say 1,500–2,000 years.\n\nLength: about 108 words, under the 120 limit. Let me estimate: first paragraph ~55 words, second ~60. That's around 115, still under 120, but close. Counting more carefully:\n\nParagraph 1: \"No, there's no solid evidence that Viking warriors wore horned helmets in battle.\" (12) \"The only nearly complete Viking helmet found, from Gjermundbu, Norway, is a plain rounded iron cap with a spectacle-like guard around the eyes and nose.\" (25) → 37. \"Most warriors probably wore simple leather or iron caps, or no helmet at all, since helmets were expensive.\" (18) → 55.\n\nParagraph 2: \"The horned image largely comes from the 19th century.\" (9) \"Swedish artist Gustav Malmström's illustrations and Carl Emil Doepler's costume designs for Wagner's Ring operas (1876) popularized it, drawing on Romantic nationalism.\" (23) → 32. \"Some Bronze Age Scandinavian ceremonial horned helmets exist (like the Veksø helmets), but they predate Vikings by about 1,500 years and were likely ritual items.\" (25) → 57.\n\nTotal is about 112, which is under 120.\n\nClear, accurate, and well-constrained, with only a minor imprecision on the date gap.\n\nScore: 9",
+  "usage": {
+    "input": 468,
+    "output": 734
+  },
+  "cost": 0.008276
+}

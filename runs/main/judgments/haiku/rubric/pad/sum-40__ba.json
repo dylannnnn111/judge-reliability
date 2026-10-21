@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-40",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response B is better. Response A runs to roughly 210 words, well over the 120-word limit the manager asked for. Response B comes in at about 118 words, so it meets the constraint. Both are accurate on the key figures (1,622 students, 11 schools, 1.8 vs 1.1 marks, 0.7-mark non-significant gap, 71% survey result, and the caveats). Response A states more plainly that the overseas 10% effect was not found, which is a point of value. Response B only implies it by saying the claim was tested and the difference was not significant. That small gain doesn't outweigh A's failure on length, and B still conveys the bottom line and caveats clearly.\n\nVerdict: B",
+  "usage": {
+    "input": 1601,
+    "output": 789
+  },
+  "cost": 0.0005546
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-27",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is more accurate and better prioritized. Its top issues are the real ones, ranked sensibly:\n- 80,000 concurrent sends with no limit.\n- `Promise.all` losing track of which sends succeeded, so a rerun resends to everyone.\n- The misleading return count.\n\nIt also gives a concrete fix for each problem, such as p-limit, `Promise.allSettled`, and tracking sent IDs per campaign. Its stale opt-in point (item 7) is framed accurately as a timing issue during a long run.\n\nResponse B leads with an overstated claim, \"Sends to everyone, including people who unsubscribed.\" The code does filter on `marketingOptIn`, which normally reflects unsubscribes. The suppression-list point about bounces and complaints is valid, but the headline is misleading, and making it the most important issue is a questionable call. B also pads its list:\n- Holding 80k strings in memory is negligible.\n- \"Risk duplicate or dropped sends\" from concurrency is vague.\n\nBoth responses are at or slightly over the 200-word limit, so length doesn't separate them.",
+  "usage": {
+    "input": 1479,
+    "output": 760
+  },
+  "cost": 0.021116
+}

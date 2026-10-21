@@ -1,0 +1,14 @@
+{
+  "pair": "sum-11",
+  "side": "B",
+  "author": "haiku",
+  "model": "claude-haiku-5-5",
+  "original": "**Office move: Collins Street to 200 Lygon Road, weekend of 15–16 November**\n\n- **Rachel Tan (Office Manager):** Overall coordination, removalists, desk locations.\n- **Sam Okonkwo (IT):** Computers, monitors, phones. Staff shouldn't pack monitors or docking stations. Laptops go home Fri 14 Nov and return Mon 17.\n- **Lena Fischer (Records):** Archive and client files. Paper files must be boxed by Wed 12 Nov; boxes are available from Mon 10. Unboxed files will be left behind.\n- **Personal items:** Pack desks into two crates each by 3pm Fri 14 Nov. Extra items go home.\n- **Grant Whitlock (building access):** New access cards are issued at the 8:30am Mon 17 Nov welcome in the Lygon Road ground-floor lobby. Without a card, staff can't get past the lobby, so everyone should attend.\n- **Parking:** 14 spaces, allocated by Rachel from last month's survey. Anyone who didn't complete the survey isn't eligible.",
+  "text": "**Office move: Collins Street to 200 Lygon Road, weekend of 15–16 November**\n\nThank you all for your patience as we prepare for the office move from Collins Street to 200 Lygon Road over the weekend of 15–16 November. To help everyone know who is responsible for each area, the responsibilities are set out below.\n\n- **Rachel Tan (Office Manager):** Rachel has overall coordination of the move, including the removalists and desk locations. Please direct any general questions about the move to Rachel.\n- **Sam Okonkwo (IT):** Sam is responsible for computers, monitors, and phones. Staff are kindly asked not to pack monitors or docking stations. Laptops go home on Friday 14 November and are to be returned on Monday 17 November.\n- **Lena Fischer (Records):** Lena is looking after the archive and client files. Paper files must be boxed by Wednesday 12 November, and boxes will be available from Monday 10 November. Please note that unboxed files will be left behind.\n- **Personal items:** Each person should pack their desk into two crates by 3pm on Friday 14 November. Any extra items should be taken home.\n- **Grant Whitlock (building access):** New access cards will be issued at the 8:30am welcome on Monday 17 November, held in the ground-floor lobby at Lygon Road. Without a card, staff can't get past the lobby, so everyone is warmly invited to attend.\n- **Parking:** There are 14 spaces, which Rachel will allocate based on last month's survey. Anyone who did not complete the survey is not eligible for a space.\n\nThank you for your cooperation as we make this move together.",
+  "ratio": 1.81,
+  "usage": {
+    "input": 562,
+    "output": 1400
+  },
+  "cost": 0.0007562000000000001
+}

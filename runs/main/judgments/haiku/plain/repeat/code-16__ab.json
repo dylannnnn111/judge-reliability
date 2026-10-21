@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "code-16",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. It stays under the 200-word limit, while A runs about 230 words. B also leads with the GST-inclusive pricing issue, which is likely the most consequential business-logic problem for an Australian cart, and it frames it as something to confirm. A places that same point last. A's rounding item overstates the floating-point risk, though its server-side recomputation point is useful.\n\nB",
+  "usage": {
+    "input": 1543,
+    "output": 647
+  },
+  "cost": 0.0004778
+}

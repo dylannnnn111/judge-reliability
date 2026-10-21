@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-08",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is accurate, concise, and well organised for a busy manager. It covers the exchange, the separate collection by Frostline, the outstanding claim form, the $500 approval limit, the escalation path and the customer's frustration. Its one weakness is the specific date \"29 September\", which it infers from \"Sunday\" without the source confirming it. That is a small overreach.\n\nResponse B is worse on several counts:\n- It states a fault date of 4 Oct, which is impossible because the complaint was made on 2 Oct.\n- It follows this with a garbled parenthetical, then appends a \"correction\" asking the reader to disregard its own sentence.\n- That self-correction is confusing and unprofessional in a summary meant for someone who won't read the original.\n- It likely exceeds the 120-word limit.",
+  "usage": {
+    "input": 1486,
+    "output": 482
+  },
+  "cost": 0.015584
+}

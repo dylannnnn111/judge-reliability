@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-04",
+  "side": "A",
+  "score": 10,
+  "model": "claude-haiku-5-5",
+  "text": "The response gets the final price right: $500 × 1.20 = $600, then $600 × 0.80 = $480. The overall change of −$20, or −4%, is also correct. The explanation identifies the key reason the changes don't cancel: the discount applies to the larger $600 base, removing $120 against the $100 added. The general −p² formula is correct, and 0.20² = 0.04 matches the −4% result. The response is well under 120 words, uses clear formatting, and includes no unnecessary content.\n\nScore: 10",
+  "usage": {
+    "input": 396,
+    "output": 342
+  },
+  "cost": 0.0002106
+}

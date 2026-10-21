@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-31",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are correct on the science: axial tilt, with the hemispheres tilted toward or away from the Sun at opposite times of year.\n\nThe constraint is \"under 120 words.\" Response A is about 120 words. Counting roughly: the first sentence is about 28 words, the three bullets are about 25, 31 and 7, and the final misconception note is about 30. That gives around 120-125 words, which is borderline.\n\nResponse B is clearly over the limit, at roughly 230 words, and it has a lot of redundant padding.\n\nA is concise and adds a useful fact: Earth is closest to the Sun in early January. That is correct (perihelion is around January 3). B violates the length limit by a wide margin.\n\nCounting A more carefully:\n- \"It comes down to Earth's tilt.\" = 6\n- \"Earth's axis is tilted about 23.5° relative to its orbit around the Sun, and that tilt always points in the same direction in space.\" = about 24, running total 30\n- Bullet 1: \"Around December, the Southern Hemisphere (including Australia) is tilted toward the Sun. Sunlight hits it more directly and days are longer, so it's summer.\" = about 24, total 54\n- Bullet 2: \"At the same time, the Northern Hemisphere (including Europe) is tilted away from the Sun. Sunlight arrives at a lower angle and spreads over a larger area, and days are shorter, so it's winter.\" = about 35, total 89\n- Bullet 3: \"Around June, the situation reverses.\" = 5, total 94\n- Last paragraph: \"A common misconception is that seasons depend on Earth's distance from the Sun. In fact, Earth is closest to the Sun in early January, during the northern winter.\" = about 29, total 123\n\nA is possibly slightly over, at about 123 words, depending on how you count. Even so, it is far closer to the limit than B, and it is better in substance.\n\nVerdict: A",
+  "usage": {
+    "input": 966,
+    "output": 624
+  },
+  "cost": 0.008172
+}

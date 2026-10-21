@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "code-05",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same core problems, and the technical claims in both check out.\n\n- **DST:** Subtracting two aware datetimes that share one `tzinfo` does wall-clock arithmetic, so both correctly call this the top bug. Response A gives concrete Sydney cases (a 01:00–05:00 shift is really 5h in April and 3h in October). Response B's 22:00–06:00 example is also right, including the direction of the error.\n- **Ambiguous and nonexistent times:** Both are correct about the Sydney 02:00–03:00 gap and repeat. Response A also says how to detect nonexistent times (a UTC round-trip check). Response B only says they \"should be detected and rejected.\"\n- **Weekend loading:** Both correctly say it is based on the start day only and should be split at midnight. Response A states more explicitly that the rate should be applied per segment.\n- **Float and rounding:** Both flag float arithmetic and banker's rounding. Response A names `ROUND_HALF_UP`. Response B adds the good point about keeping integer minutes.\n- **Lower-priority items:** Both mention public holidays and input validation. Response A adds a sanity cap on shift length, which is practical for payroll. Response B's note about `parse_local` being called repeatedly is trivial.\n\nNeither response flags anything that is actually fine. Both exceed the 200-word limit, and Response B exceeds it by more. Response A is tighter, gives more actionable fixes, and has slightly more useful extra points, so it is modestly better.\n\nVerdict: A",
+  "usage": {
+    "input": 1774,
+    "output": 1563
+  },
+  "cost": 0.019178
+}

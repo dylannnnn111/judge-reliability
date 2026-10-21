@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-30",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better.\n\n**Content.** Both responses find the main bug, `COUNT(*)` returning 1 for agents with no open tickets, and the misleading `COALESCE(..., 0)`. Both also note that `AVG` drops NULL first-response values. A is more useful on that point because it gives a concrete fix: `COUNT(t.id) - COUNT(t.first_response_mins)`. A also raises that a \"weekly\" report has no time window, which is a real concern. A mentions the integer-truncation risk and confirms that the `status = 'open'` filter is correctly placed in the `ON` clause, which is useful for a reviewer to say.\n\nB's point 4 on hard-coded assumptions is speculative. Its point 5 is filler, since it calls the `ORDER BY` tiebreaker \"fine\" and then lists it as an item. B also adds padding, such as \"To explain this more fully\" and the closing summary sentence.\n\n**Constraints.** The request asks for under 200 words. A comes to roughly 260 words. B comes to roughly 330 words. Both exceed the limit, but B exceeds it by more and carries more fluff.\n\n**Overall.** A is denser, more actionable, and closer to the word limit, so it is the better response.\n\n**A**",
+  "usage": {
+    "input": 1558,
+    "output": 412
+  },
+  "cost": 0.007236
+}

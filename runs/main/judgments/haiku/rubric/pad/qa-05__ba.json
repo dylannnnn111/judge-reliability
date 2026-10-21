@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-05",
+  "order": "ba",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the same correct answer: 365 days after Thursday 29 February 2024 is Friday 28 February 2025. The date checks out, since 1 March 2024 to 1 March 2025 spans 365 days with no leap day, so 29 February 2024 plus 365 days is 28 February 2025. The weekday also checks out, since 365 = 52 weeks + 1 day, so Thursday advances to Friday.\n\nResponse A explains the weekday shift clearly. Its justification for the date is slightly less direct, citing the absence of a 29 February in 2025 rather than counting the days. Response B explains the date by counting the 365 days and then gives the weekday logic. The difference is minor, and both are concise and under 120 words.\n\nNeither response has a substantive advantage over the other.\n\nVerdict: TIE",
+  "usage": {
+    "input": 521,
+    "output": 788
+  },
+  "cost": 0.0004461
+}

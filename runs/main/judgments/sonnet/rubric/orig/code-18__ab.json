@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-18",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the critical bug: the cache key omits `to`, so one currency pair's rate is served for others. Both give the right fix. Both also raise the same secondary issues: response validation, timeout, thundering herd, unencoded params, and unbounded cache growth. Their ordering of these is similar and reasonable.\n\n**Differences:**\n- **A's item 3** adds a useful detail: evict the cached promise if it rejects. Otherwise caching the in-flight promise would cache failures.\n- **A's item 5** suggests validating currency codes against ISO 4217, which is a sensible addition.\n- **A's item 7** (money precision) is relevant to invoicing, but it concerns the caller, which isn't shown. It is hedged (\"make sure the caller…\"), so it is a reasonable reminder rather than a false claim.\n- **B's item 7** (unsafe generic cast) is a real but low-value nitpick. The `cached` helper's `unknown` cast is a common pattern, and in this code the key space is controlled. It is closer to noise.\n- **Length:** The user asked for under 200 words. A is roughly 190 words. B is roughly 205 and likely over the limit, mostly because of wordier explanations in items 1, 2 and 6.\n\nOverall A is slightly better: it stays within the limit, includes the useful rejection-eviction detail, and its last item is more relevant to the invoicing context than B's cast nitpick.\n\nVerdict: A",
+  "usage": {
+    "input": 1637,
+    "output": 1786
+  },
+  "cost": 0.021134
+}

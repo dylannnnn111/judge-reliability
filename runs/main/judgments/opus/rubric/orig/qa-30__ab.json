@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-30",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both responses define the p-value correctly as the probability of data at least as extreme as observed, given the null hypothesis. Both also list the main misconceptions accurately: it is not P(null true), not \"by chance,\" not effect size, and not replication probability. Neither contains an error.\n\n**What Response A adds:**\n- **Model assumptions.** It notes that the p-value depends on the model's other assumptions too, not just the null. This is technically important.\n- **Both directions of the threshold fallacy.** It warns against reading p < 0.05 as \"real\" and p > 0.05 as \"no effect.\" The second error is extremely common in practice.\n- **Why it can't give hypothesis probabilities.** Its closing line explains that this would require prior information. That is the key reasoning behind several of the misconceptions.\n\n**Length:** Response A lands right around the 120-word limit, roughly 118–122 depending on how symbols are counted. That is borderline but plausibly compliant. Response B is comfortably under at about 80 words.\n\n**Response B's merits:** It is clean and correct. Its last bullet, about not being evidence for the alternative with a given confidence, is a reasonable point. However, it omits the \"non-significance ≠ no effect\" caveat and the role of model assumptions.\n\n**Conclusion:** Response A's extra content is accurate and genuinely useful, not padding. It outweighs the slight risk on the length constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 644,
+    "output": 1325
+  },
+  "cost": 0.029076
+}

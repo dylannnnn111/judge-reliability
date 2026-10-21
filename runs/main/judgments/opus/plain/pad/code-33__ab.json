@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-33",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses correctly identify the critical bug: `p.status = 'succeeded'` in the WHERE clause turns the LEFT JOIN into an inner join, so zero-payment customers never appear. Both give the right fix.\n\n**Response A is better:**\n- **Length:** It stays close to the 200-word limit. Response B runs about twice as long, padded with filler such as \"I want to start with…\" and \"Next, the date filter deserves a closer look.\"\n- **Coverage:** A raises a significant real-world problem B misses. Annual and quarterly subscribers would show zero payments in 90 days and trigger false alarms. It also flags cancelled and new accounts, and refunds or chargebacks being counted as successful.\n- **Accuracy:** B suggests `COUNT(*)` \"would be clearer.\" That would introduce a bug: with a LEFT JOIN, `COUNT(*)` returns 1 for customers with no payments, hiding exactly the at-risk customers.\n\nA's last point is terse, with no explanation, but that is minor.",
+  "usage": {
+    "input": 1598,
+    "output": 542
+  },
+  "cost": 0.017232
+}

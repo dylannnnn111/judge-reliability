@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-29",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response is factually correct. $1,000 at 5% simple interest gives $2,500 after 30 years, and compounding gives $1,000 × 1.05³⁰ ≈ $4,322. The Rule of 72 estimate (about 14 years) is also reasonable. It explains the key reason, that interest earns interest, and the explanation is clear and well organized. However, my count is about 123 words, which exceeds the explicit \"under 120 words\" limit. The overage is small, but it is still an instruction failure.\n\nScore: 6",
+  "usage": {
+    "input": 467,
+    "output": 1366
+  },
+  "cost": 0.0007297
+}

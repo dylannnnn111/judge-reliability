@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-10",
+  "side": "A",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate and within the limit. Go-live on Tuesday 1 December is correct, and the figures all match the source: 12 of 12 testers, login time 48 to 21 seconds, three minor accessibility issues fixed, and $186k of $310k spent. The risk downgrade, next steps, Ben Castillo's start date and the next update date are also right. \"No decisions needed from you\" fairly reflects \"None this fortnight\". I counted about 118 words, just under the 120 limit.\n\nIt keeps what a manager needs: status, go-live date, budget, risks, decisions and next steps. It leaves out the thanks to the customer service team and the detail that the audit covered the first six screens, which is reasonable. Mentioning Ben Castillo is arguably low value, but it costs little. It is concise and well organised.\n\nScore: 9",
+  "usage": {
+    "input": 1015,
+    "output": 1316
+  },
+  "cost": 0.01519
+}

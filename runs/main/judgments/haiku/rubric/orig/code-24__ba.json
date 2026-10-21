@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-24",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the main problem: the `has`/`add` check is not atomic around the `await`, so simultaneous duplicates both get processed. Both also flag the in-memory store, the non-constant-time comparison, unhandled errors, missing amount checks, and replay exposure. Neither is clearly wrong on any point.\n\nResponse A's first fix (claim the ID before processing, release on failure) is sound, but it misses that a crash after claiming leaves the event stuck, which Response B addresses directly. Response B's point 3 identifies the crash window between the side effect and the dedupe record, which is central to this retry-heavy setting, and it pairs that with the right remedy: an idempotent `markInvoicePaid` or an atomic transaction. Response A is better on one thing: it catches malformed JSON and missing `event.data` as explicit 400s, which Response B omits. Response B also explains the underpayment risk more concretely. Both run slightly over 200 words.\n\nOn balance Response B's ranking and fix for the atomicity problem are a little more precise for this scenario, so I give it a slight edge.\n\nVerdict: B",
+  "usage": {
+    "input": 1681,
+    "output": 1154
+  },
+  "cost": 0.0007451000000000001
+}

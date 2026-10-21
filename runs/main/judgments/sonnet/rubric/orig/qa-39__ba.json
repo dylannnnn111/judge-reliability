@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-39",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are correct and stay under 120 words (A is about 100, B about 111). Both give the key reasoning: binary floating-point cannot represent 0.1 and 0.2 exactly, and the 1/3 analogy makes this easy to grasp. Both also offer practical workarounds.\n\nResponse B adds the actual rounded sum (0.3000000000000000444) and the double nearest to 0.3 (0.299999999999999988898). That shows concretely why the two values differ, which is the heart of the question. B also mentions that the numbers become repeating binary fractions and suggests integer storage such as cents. All of these figures check out.\n\nResponse A is accurate but less explicit. It says the result is not the same as the nearest value of 0.3 without showing either number, so the explanation is less complete.\n\nB's extra words add correct, useful content and stay within the limit, so B is slightly better.\n\nVerdict: B",
+  "usage": {
+    "input": 784,
+    "output": 1126
+  },
+  "cost": 0.012828
+}

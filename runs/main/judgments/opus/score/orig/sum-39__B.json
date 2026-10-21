@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-39",
+  "side": "B",
+  "score": 7,
+  "model": "claude-opus-5-5",
+  "text": "The summary is mostly accurate, well organised and keeps what a manager needs. Its main flaw is presenting the response's own financial calculation as established fact.\n\n**Accuracy.** The core facts are correct:\n- the 7-2 vote, the 1 December start, and coverage of books, magazines and DVDs at five libraries;\n- about $38,000 in existing fines across 6,400 members being wiped;\n- the November email and automatic unblocking on 1 December;\n- the 12-month review;\n- the exceptions: lost or damaged items, replacement cost after 60 days with a blocked account, and inter-library loans keeping the lending council's fees.\n\n\"Within 60 days\" drops \"of its due date\", but the meaning still comes through.\n\nThe Cost bullet is the weak point:\n- It treats last year's $52,000 as \"annual revenue lost\". Some fines continue, such as inter-library late fees and replacement costs, so not all of that revenue disappears.\n- The source says $19,000 was spent on staff time chasing payments. It does not say this is now a cash saving.\n- The \"net about $33,000\" figure appears nowhere in the source. It is an inference presented as fact, and a manager could easily quote it in a budget discussion.\n\n**Coverage.** All the decision-relevant points are kept: what changes, when, the exceptions, the rationale, the cost argument, the dissent and the review. Leaving out the quotes and the anecdotal detail is appropriate. \"Especially children\" is a fair reading of the library manager's comments.\n\n**Concision.** The bullet format is efficient and easy to scan. The body is about 113 words, but the headline brings it to roughly 121, just over the 120-word limit. That is a minor breach.\n\nOverall, it is a strong, scannable summary. It is pulled down by the overstated net-cost claim and the borderline word count.\n\nScore: 7",
+  "usage": {
+    "input": 1071,
+    "output": 1767
+  },
+  "cost": 0.039624
+}

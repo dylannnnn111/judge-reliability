@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-21",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer under 120 words. Response A is clearly longer than that, probably around 230 words, so it breaks the explicit constraint. Response B is about 55 words and complies.\n\nBoth give the correct answer: perihelion in early January, roughly 147 million km. Response B also includes the key reasoning that distance doesn't cause the seasons and that axial tilt does. Response A's extra content is correct, but it violates the length limit, and the added detail doesn't make up for that.\n\nResponse B is better.\n\nVerdict: B",
+  "usage": {
+    "input": 821,
+    "output": 171
+  },
+  "cost": 0.003352
+}

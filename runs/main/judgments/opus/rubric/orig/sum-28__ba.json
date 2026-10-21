@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-28",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.** The deciding factor is accuracy.\n\n**Response A's accuracy problem:** The Christmas shutdown line reads \"Staff use four days' leave, or take unpaid leave or make up time.\" This presents unpaid leave or making up time as free alternatives for everyone. In the original, those options apply only to staff without enough leave, and making up time needs the manager's agreement. A manager could misapply the policy from this. A also shortens \"at least eight weeks' notice\" to \"eight weeks' notice\", a minor loss of precision.\n\n**Response A's strengths:** It keeps useful points that B drops: the burnout rationale, that cash-out is new, and the coverage scope (permanent staff under the 2025 Enterprise Agreement).\n\n**Response B:** It contains nothing wrong or misleading. Its numbers, notice conditions and dates are accurate, and it clearly states the warehouse exemption covers only the shutdown. Its gaps are omissions rather than errors: it leaves out the fallback for staff without enough leave, that cash-out is new, and the scope.\n\n**Length:** Both are around the 120-word limit. B is slightly tighter.\n\nSince accuracy comes first, A's misleading statement outweighs B's omissions.\n\nVerdict: B",
+  "usage": {
+    "input": 1466,
+    "output": 1352
+  },
+  "cost": 0.032904
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-04",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better. Both responses go over the 120-word limit, but A is much closer and is more useful to a manager.\n\n- **Length:** A runs to about 137 words. B runs to roughly 190, which breaks the limit by a wide margin.\n- **Format:** A uses scannable bullets, which suits a busy reader. B is a set of wordy paragraphs that opens with filler like \"is pleased to share\" and \"To begin with.\"\n- **Content:** A covers the cut-off rule that earlier arrivals keep the old entitlements, and it adds a practical note for managers about planning rosters for split leave. B omits the transition rule. B also says each block must fall within 24 months and does not say the split option is for primary carers only.\n- **Accuracy:** A's details are correct. Its roster-planning note is an inference, but a reasonable one for a manager.",
+  "usage": {
+    "input": 1490,
+    "output": 1441
+  },
+  "cost": 0.01739
+}

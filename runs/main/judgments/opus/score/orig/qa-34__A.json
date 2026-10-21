@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-34",
+  "side": "A",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The response is correct. Diffie-Hellman key exchange is the standard answer, and the four steps describe it accurately:\n\n- Each side has a private value and a derived public value.\n- Only the public values are exchanged.\n- Both sides combine their own private value with the other's public value to reach the same shared secret.\n- The shared secret then drives fast symmetric encryption such as AES.\n\n**Key reasoning:** It explains why this works: an eavesdropper who sees only the public values cannot feasibly compute the shared key. It also covers the crucial caveat that unauthenticated DH is open to man-in-the-middle attacks, and gives the real-world fix: certificates signed by a certificate authority, as in TLS. Many short answers miss that point, and it adds real value. One quibble: the opening frames the whole answer as \"public-key cryptography.\" DH is a key-agreement protocol, and the public-key element that defeats impostors is the certificate signature. The framing is still defensible.\n\n**Clarity and length:** The answer is about 111–115 words, so it meets the under-120 limit. It is well structured, and the HTTPS example grounds it. \"Works exactly this way\" slightly oversimplifies modern TLS details, but it is fine at this level.\n\n**Overall:** The answer is accurate and complete, with only minor imprecision in framing.\n\nScore: 9",
+  "usage": {
+    "input": 443,
+    "output": 984
+  },
+  "cost": 0.021452
+}

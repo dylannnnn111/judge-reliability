@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-35",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response is factually sound. It correctly explains that antibiotics target bacterial-specific structures and processes (cell walls, ribosomes, certain enzymes), which viruses lack, since viruses replicate inside host cells using host machinery. The resistance explanation covers the key mechanisms: random mutation, selection under antibiotic pressure, and horizontal gene transfer via plasmids. It also names the main drivers of resistance. Minor quibbles: \"not finishing courses\" is a commonly repeated but debated claim, and the response doesn't mention that resistance can also arise through gene transfer from other bacterial species in more depth. Still, the core reasoning is correct and complete. It is about 112 words, within the limit, and clearly organized into two labeled sections.\n\nScore: 9",
+  "usage": {
+    "input": 495,
+    "output": 705
+  },
+  "cost": 0.000402
+}

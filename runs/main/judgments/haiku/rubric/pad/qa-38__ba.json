@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-38",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly explain the core mechanism: polar stratospheric clouds convert chlorine reservoirs into reactive forms, sunlight returning in spring splits these compounds and releases chlorine that destroys ozone, and the vortex breaks down later. Neither contains a factual error. Response B adds useful detail, such as the roughly −78°C threshold and the Arctic comparison, but it runs to about 200 words, well over the 120-word limit. Response A stays under the limit at roughly 90 words while covering the key reasoning clearly. The length violation in B is decisive.\n\nVerdict: A",
+  "usage": {
+    "input": 965,
+    "output": 714
+  },
+  "cost": 0.0004535
+}

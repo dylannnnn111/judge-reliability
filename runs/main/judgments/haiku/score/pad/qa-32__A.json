@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-32",
+  "side": "A",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The factual content is correct. The tropical year is about 365.2422 days, the Gregorian rules are right, the 400-year overcorrection of roughly 3 days is accurate, and the 1900 and 2000 examples are explained properly. The reasoning is clear and covers the key points: the drift that motivates leap years, why the simple every-four-years rule overcorrects, and why the century exception exists.\n\nThe main problem is the explicit constraint of \"under 120 words.\" The response runs to roughly 200 words, so it fails a stated requirement. Some sentences are also filler, such as \"Put another way, the difference is not zero\" and \"It is worth looking at why...\", which add length without adding content. A compliant answer could have covered the same key points in about half the space.\n\nScore: 4",
+  "usage": {
+    "input": 619,
+    "output": 916
+  },
+  "cost": 0.0005199
+}

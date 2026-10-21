@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-22",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. It stays within the 120-word limit and still covers the key decisions, actions and dates. By my count it is about 104 words.\n\nResponse A comes to roughly 127 words, so it breaks the explicit constraint. Its extra detail, such as the Natalie trophies note and the \"Key decision\" framing, is helpful but doesn't justify going over.\n\nB does drop a couple of minor details, such as the 5-0 vote and Natalie organising trophies. Those are low-value for a busy manager.\n\n**B**",
+  "usage": {
+    "input": 1417,
+    "output": 1307
+  },
+  "cost": 0.015904
+}

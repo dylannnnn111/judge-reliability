@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-13",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses reach the correct answer: A is a knave and B is a knight. The question is which one handles the constraints and the reasoning better.\n\nLength limit: the user asked for under 120 words. Response A is roughly 95 words. Response B is roughly 110 words. Counting B more carefully:\n- \"A is a knave and B is a knight.\" is 9 words.\n- \"Let me walk through the reasoning step by step, so that each part of this conclusion is clearly supported.\" is 19 words, for 28 so far.\n- The first bullet: \"Suppose A is a knight. To explore this possibility, we can assume for the moment that A is a knight. Then A's statement would be true, making A a knave. That is a contradiction, so A cannot be a knight.\" comes to about 39 words, for about 67 so far.\n- The second bullet: \"So A is a knave. Having ruled out the first possibility, we can now take A to be a knave. A knave's statements are false, so \"We are both knaves\" is false. That means A and B are not both knaves. Since A is a knave, B must be a knight.\" comes to about 49 words, for about 116 total.\n\nSo B is close to the limit but probably still under it.\n\nCounting A:\n- \"A is a knave and B is a knight.\" is 9 words.\n- \"Reasoning:\" is 1 word, for 10.\n- The first bullet is about 33 words, for 43.\n- The second bullet, \"So A is a knave, and the statement is false.\", is 10 words, for 53.\n- The third bullet is about 30 words, for 83.\n- The fourth bullet, \"Therefore B is a knight.\", is 5 words, for 88.\n- The final line, \"Answer: A is a knave; B is a knight.\", is 9 words, for 97.\n\nA is therefore around 97 words, comfortably under the limit.\n\nQuality: both give the same core reasoning. B includes filler such as \"Let me walk through...\" and \"To explore this possibility...\", which adds nothing. A is more concise and states the key step more clearly, including that A being a knave means B must not be a knave. A repeats the answer at the end, which is slightly redundant but harmless. A is cleaner and has more margin on the word limit.\n\nVerdict: A",
+  "usage": {
+    "input": 661,
+    "output": 708
+  },
+  "cost": 0.008402
+}

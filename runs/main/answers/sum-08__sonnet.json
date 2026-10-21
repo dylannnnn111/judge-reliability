@@ -1,0 +1,13 @@
+{
+  "item": "sum-08",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Ticket #88214 – Daniel Mbeki, Frostline 400L fridge (bought 14 Aug, Penrith)**\n\nThe fridge failed on 4 Oct (the Sunday before the 2 Oct complaint is unclear, but the fault is within the 90-day store-responsibility window). Daniel lost about $300 of food.\n\n**Status:**\n- **Replacement:** Assistant manager Priya Nand has arranged delivery of a new fridge for Wednesday. Frostline will separately collect the faulty unit, so he may receive two calls.\n- **Food claim:** Still outstanding. Kevin Hales (customer relations) has not yet sent the claim form despite being chased. Claims up to $500 need no manager sign-off.\n\n**Next step:** If the form isn't sent by 9 Oct, escalate to Amara Osei.\n\n**Risk:** The customer has had to chase twice and says he \"just wants this finished.\"\n\n---\n\nCorrection: the fault date isn't stated precisely. The customer wrote on 2 Oct that it stopped \"on Sunday.\" Please disregard my first sentence's date reference.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 792,
+    "output": 372
+  },
+  "cost": 0.005304,
+  "at": "2026-10-14T01:51:17.040Z"
+}

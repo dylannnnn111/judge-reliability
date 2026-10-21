@@ -1,0 +1,13 @@
+{
+  "item": "qa-28",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "A **collision** occurs when two keys hash to the same slot. There are two main fixes:\n\n1. **Separate chaining:** Each slot holds a list (or tree) of entries. Colliding keys are appended there, and a lookup scans that list.\n\n2. **Open addressing:** If a slot is taken, probe for another using linear probing, quadratic probing, or double hashing. Lookups follow the same probe sequence.\n\n**Performance:** With a good hash function and a moderate **load factor** (entries ÷ slots), operations average **O(1)**. As collisions grow, chains lengthen or probe sequences cluster, degrading toward **O(n)** in the worst case. To prevent this, tables **resize** (typically doubling and rehashing) when the load factor passes a threshold. Each resize costs O(n), but the amortized cost per insert stays O(1).",
+  "stop": "end_turn",
+  "usage": {
+    "input": 51,
+    "output": 341
+  },
+  "cost": 0.007024,
+  "at": "2026-10-14T01:50:47.991Z"
+}

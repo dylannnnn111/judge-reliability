@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-31",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response catches the most important bug: with `created_at` at one-second precision, a tie straddling the 1000-row boundary gets skipped by `created_at > :last_seen`. Its keyset fix on `(created_at, id)` is correct. The late-commit issue, the missing composite index, and the lack of a persisted cursor are all real and reasonably ranked. However, item 2 (non-deterministic ordering) just restates item 1's root cause, which wastes space. Item 5 overstates the planner problem for a minor concern. The fix also renames parameters without updating the original `:last_seen` references. Most importantly, the response runs about 280 words, breaking the user's explicit \"under 200 words\" limit. Overall it finds the right issues and fixes them, but with redundancy, a minor inaccuracy, and a clear instruction violation.\n\nScore: 6",
+  "usage": {
+    "input": 956,
+    "output": 683
+  },
+  "cost": 0.0004371
+}

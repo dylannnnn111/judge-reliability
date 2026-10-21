@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "sum-33",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B\n\nBoth responses are accurate. Both pick up the 29 October update that moves the v1 shutdown to 31 January 2027, and both keep the \"switch soon\" advice. Both also run slightly over the 120-word limit, by my count about 128 words for A and about 129–131 for B, so neither wins on length.\n\nThe difference is structure. B puts the action item first, which suits a busy manager who may stop reading early. It also states the consequence (staff could be paid late), the 15-minute effort and the share of affected customers. A buries the action item at the end and drops the late-pay consequence, though it does say up front that most customers need to do nothing.\n\nB's extra detail, such as the admin menu path, adds some length. Even so, its prioritisation makes it slightly better overall.\n\n**B**",
+  "usage": {
+    "input": 1402,
+    "output": 2103
+  },
+  "cost": 0.023834
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-09",
+  "side": "A",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate on every point I checked: the starting rent and GST treatment, the 1 March review date, the 3–5% CPI band in years 2–4, the uncapped year-5 market review with the year-4 floor, the 30-day dispute window, the 50/50 valuer cost split, the separately billed outgoings, and the 14-day notice rule. Its main simplification is \"the difference is back-paid\" for late notice, which is a fair reading of the guide. It covers everything a busy manager needs, including the key risk that year-5 rent is uncapped. The body is about 128 words including the title, so it is slightly over the 120-word limit, though it is close and reasonably tight. Some phrasing could be trimmed, but nothing is missing.\n\nScore: 8",
+  "usage": {
+    "input": 1136,
+    "output": 1612
+  },
+  "cost": 0.0009196
+}

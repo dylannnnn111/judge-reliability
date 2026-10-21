@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-15",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly converts the 10 °C rise to 18 °F by applying the 9/5 scale factor to the difference, without the 32-degree offset. Its check is also correct: 15 °C is 59 °F and 25 °C is 77 °F, a difference of 18 °F. It explains the key reasoning, distinguishing a temperature difference from an absolute temperature, and stays well under 120 words. The verification step adds useful confirmation without padding. The only minor weakness is that the first sentence is filler.\n\nScore: 9",
+  "usage": {
+    "input": 457,
+    "output": 298
+  },
+  "cost": 0.0001947
+}

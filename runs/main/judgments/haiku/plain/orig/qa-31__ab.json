@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-31",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "**B**\n\nBoth responses explain the axial tilt correctly, but Response A runs about 121 words, which exceeds the 120-word limit. Response B is about 105 words and stays within it.",
+  "usage": {
+    "input": 615,
+    "output": 1244
+  },
+  "cost": 0.0006835
+}

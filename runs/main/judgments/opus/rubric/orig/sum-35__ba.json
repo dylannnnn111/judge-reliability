@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-35",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both summaries are under 120 words and cover the same core points: the 30 June 2027 deadline, the Annexure C benchmark with fair wear and tear, the five required tasks, the kitchenette condition, the landlord's payment option, the late-completion consequence and the $18,000 bond.\n\n**Accuracy differences**\n\n- **Notice requirement:**\n  - The source says the landlord must give notice \"at least three months before the lease ends.\"\n  - Response A's \"must give three months' notice\" drops both \"at least\" and the link to the lease end date. That leaves the timing unclear, which matters if a manager is planning around the deadline.\n  - Response B states it correctly.\n- **Late completion:**\n  - The source says the tenant \"may have to pay rent for any extra days the landlord needs to finish the work.\"\n  - Response A's \"Overrunning means paying daily rent\" makes a conditional consequence sound certain.\n  - Response B's \"Late completion may incur rent for extra days\" is faithful.\n- **Repair obligation:**\n  - Response A correctly limits it to \"removal damage.\"\n  - Response B's \"repairing damage\" drops the \"caused by removing fixtures\" qualifier. That slightly broadens what the tenant appears to owe.\n\n**Completeness and concision**\n\nBoth keep the points a manager needs and are similarly concise. Response A's bullet format is a little easier to scan. Response B's use of \"us\" fits a manager at Marlow & Quay.\n\n**Overall**\n\nResponse A has two small distortions (the notice timing and the certainty of extra rent). Response B has one (the broader repair wording). The notice-timing point is the most consequential, because it concerns the landlord's deadline for choosing payment over make good. On balance, Response B is more accurate.\n\nVerdict: B",
+  "usage": {
+    "input": 1454,
+    "output": 2654
+  },
+  "cost": 0.058896
+}

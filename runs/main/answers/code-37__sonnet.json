@@ -1,0 +1,13 @@
+{
+  "item": "code-37",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Bugs, most important first:**\n\n1. **Missing `return` after the store error.** After `http.Error(...)` the handler continues and writes `null` (or partial data) to the response body. The client gets a 500 with a JSON body appended, and `WriteHeader` may be logged as a superfluous call. Add `return`.\n\n2. **No upper bound on `limit`.** A caller can send `limit=100000000` and force a huge query and response. Clamp it, e.g. to 100–200.\n\n3. **Negative `offset` is not validated.** `offset=-5` goes straight to the store, which may error or behave unpredictably. Also, a malformed offset is silently treated as 0. Clamp negatives to 0, or return 400 for invalid input.\n\n4. **The store error is never logged.** The 500 response gives you no way to diagnose the failure. Log `err` with some request context.\n\n5. **An empty result encodes as `null`.** If `ListInvoices` returns a nil slice, clients get `null` instead of `[]`. Initialize it to an empty slice when `invoices == nil`.\n\n6. **The `Encode` error is ignored.** This is minor, but it's worth at least logging.\n\n7. **No HTTP method check.** The handler responds to POST, DELETE, etc. Restrict it to GET, or register it with a method-aware router.\n\n**Assumption to verify:** trusting `X-Account-ID` is fine only if the service is unreachable except through the proxy, and the proxy overwrites any client-supplied value of that header.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 537,
+    "output": 830
+  },
+  "cost": 0.009374,
+  "at": "2026-10-14T01:54:53.054Z"
+}

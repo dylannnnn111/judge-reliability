@@ -1,0 +1,14 @@
+{
+  "pair": "sum-35",
+  "side": "A",
+  "author": "haiku",
+  "model": "claude-haiku-5-5",
+  "original": "Clause 19 requires us to return Level 2, 48 Fenwick Street to its starting condition, per the Annexure C condition report, allowing for fair wear and tear, by 30 June 2027. Required work includes removing furniture, signage, equipment and the 2023 glass partitions, repairing damage, professionally cleaning carpets, and returning all keys and access cards.\n\nThe 2023 kitchenette can stay only if it's in good working order at lease end. Otherwise, we must repair or remove it.\n\nThe landlord may instead accept a payment based on two quotes, but must notify us at least three months before lease end.\n\nLate completion may incur rent for extra days. The $18,000 bond is returned within 30 days of make good being confirmed.",
+  "text": "Under Clause 19, we are required to return Level 2, 48 Fenwick Street to its starting condition, as described in the Annexure C condition report and allowing for fair wear and tear. This make-good obligation must be completed by 30 June 2027. To meet it, the required work includes removing furniture, signage, equipment and the 2023 glass partitions, repairing any damage, professionally cleaning the carpets, and returning all keys and access cards.\n\nTurning to the 2023 kitchenette specifically, it may remain in place at lease end, but only if it is in good working order at that time. If it is not, we must either repair it or remove it.\n\nAlternatively, the landlord may choose to accept a payment calculated on the basis of two quotes instead of requiring the work to be carried out. However, the landlord must notify us of this choice at least three months before lease end.\n\nFinally, please note that if make-good is not completed on time, we may be charged rent for any extra days. Once make-good has been confirmed, the $18,000 bond will be returned within 30 days.",
+  "ratio": 1.54,
+  "usage": {
+    "input": 424,
+    "output": 466
+  },
+  "cost": 0.00027539999999999997
+}

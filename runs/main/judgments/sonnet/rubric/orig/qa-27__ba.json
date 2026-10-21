@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-27",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Word count: Response A is roughly 95 words. Response B is roughly 112 words. Both are under 120.\n\nCorrectness: Response A says that when cooled, molecules lock into an open hexagonal lattice; that is acceptable, since the locking happens on freezing. Its claims about about 9% less dense, deeper water near 4°C, and insulation are all correct. \"Potentially killing most aquatic life\" is fine.\n\nResponse B says \"As water cools below about 4°C, its molecules begin arranging into the open hexagonal lattice\" — that is loosely right (the density decrease below 4°C is due to the emerging ordering), though slightly imprecise. Then it says \"the coldest water sits at the surface while slightly warmer water sinks\" — this is a bit confused. Water at 4°C is densest and sinks, so water colder than 4°C sits at the surface; that is correct in winter. \"Slightly warmer water sinks, keeping a stable habitat\" is acceptable. \"Lakes rarely freeze solid\" is true in general, though shallow lakes can freeze solid. Also, B's claim that the density peak \"means the coldest water sits at the surface\" is fine.\n\nBoth are correct. B adds the point about the 4°C stratification, which A also covers (\"deeper water stays near 4°C\"). A is cleaner and more precise. B has slight imprecision, such as \"begin arranging\" below 4°C, and its explanation of why ice floats is slightly muddled, mixing the 4°C anomaly with freezing. B does slightly emphasize the insulation more explicitly (\"slowing further freezing\"), but A also says it insulates.\n\nA is a bit more clear and accurate; B adds little extra. A slightly better.\n\nVerdict: A",
+  "usage": {
+    "input": 749,
+    "output": 567
+  },
+  "cost": 0.007168
+}

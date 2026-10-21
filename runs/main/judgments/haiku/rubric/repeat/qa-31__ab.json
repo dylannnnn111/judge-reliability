@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "qa-31",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are correct. Seasons come from axial tilt, not distance from the Sun, and both explain that the hemispheres are tilted toward or away from the Sun in opposite halves of the year. Both stay under 120 words.\n\nResponse A adds a useful correction of a common misconception: Earth is closest to the Sun in early January, during the Northern Hemisphere's winter. That fact directly supports its argument that distance doesn't cause seasons. Its bullet structure also makes the two hemispheres easy to compare. Response B is clear and accurate, and its point that the hemispheres always have opposite seasons is a good summary, but it adds less beyond the core explanation.\n\nVerdict: A",
+  "usage": {
+    "input": 760,
+    "output": 825
+  },
+  "cost": 0.0004885
+}

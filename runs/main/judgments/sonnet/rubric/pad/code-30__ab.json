@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-30",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main bug (COUNT(*) vs COUNT(t.id)) and the COALESCE problem, and both rank them first and second. The differences are in the later items.\n\nResponse A: Item 3 (the NULL-exclusion bias) is real, and it offers concrete fixes. Item 4 (no time window) is arguable, since the comment says \"open tickets per agent,\" which suggests a snapshot, but A frames it as a decision to make, which is reasonable. Item 5 (integer AVG truncation) is real on some databases and is labeled minor. A also notes that the ON-clause placement of the status filter is correct, which helps avoid false alarms. It is under 200 words (roughly 230?). Counting: it's likely around 250 words, so it may exceed the 200-word limit.\n\nResponse B: It has the same first three items. Item 4 (hard-coded assumptions) is speculative: it questions 'open' and active = 1 without any evidence, which counts as flagging things that are probably fine. Item 5 is filler, since it says the tiebreaker is fine and then makes a vague suggestion. The padding (\"To explain this more fully,\" \"I have reviewed the query...\", the closing summary) adds no value. B is probably also over 200 words, around 300, so it breaks the limit by more.\n\nA is more concise, has more substantive and actionable points (truncation, time window), gives concrete fixes (the COUNT expression for unanswered tickets), and confirms the correct part. B has speculative items and filler. Both likely exceed the limit, but B does so more.\n\nVerdict: A",
+  "usage": {
+    "input": 1714,
+    "output": 515
+  },
+  "cost": 0.008578
+}

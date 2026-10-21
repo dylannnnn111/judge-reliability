@@ -1,0 +1,13 @@
+{
+  "item": "code-26",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**1. `qty` is never converted to a number (main bug).**\n`parseLines` returns `qty: qty`, so it stays a string. In `summariseOrders`, `o.items += line.qty` concatenates strings: `0 + \"2\" + \"3\"` gives `\"023\"`, not `5`. `totalCents` works only because `*` coerces strings to numbers, which hides the bug. Fix: `qty: Number(qty)`.\n\n**2. No validation, and `NaN` breaks sorting.**\nBlank rows, missing columns, or non-numeric values produce `NaN`. That `NaN` spreads into `totalCents`, and the comparator then returns `NaN`, so `topOrders` comes back in an unreliable order. Skip or report bad rows, and check `Number.isFinite`.\n\n**3. The CSV parser is too simple.**\n`split(\",\")` breaks on quoted fields containing commas (for example a SKU or description like `\"Widget, large\"`). The column order is also hard-coded and never checked against the header. Use a real CSV parser, or at least map columns by header name.\n\n**4. Plain object used as a map.**\nAn `orderId` such as `__proto__` or `constructor` will misbehave. Use a `Map`.\n\n**5. Minor issues:**\n- CRLF files leave `\\r` on the last field. `Number` trims it, but it would corrupt any string field added later. Split on `/\\r?\\n/`.\n- `Object.values` sorts integer-like keys numerically, so `summariseOrders` output isn't in input order.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 451,
+    "output": 893
+  },
+  "cost": 0.019664,
+  "at": "2026-10-14T01:54:19.636Z"
+}

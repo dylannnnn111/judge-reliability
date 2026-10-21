@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-22",
+  "side": "B",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is mostly accurate and keeps the key decision, the shortfall, the grant deadline, the actions and the dates.\n\nTwo problems:\n- **Accuracy:** \"The rise covers a 9% increase in council turf hire\" overstates things. The minutes say the rise leaves a projected $3,200 shortfall, so it only partly covers the cost. The response does mention the shortfall separately, which softens this, but the sentence is still misleading.\n- **Length:** I count roughly 125 words including the title and headings, which is over the 120-word limit.\n\nSmaller points: Wes \"arranging\" the globe is rendered as \"replace\", which is fine. The gazebo approval and the thanks to Kylie are handled sensibly.\n\nScore: 6",
+  "usage": {
+    "input": 1245,
+    "output": 977
+  },
+  "cost": 0.01226
+}

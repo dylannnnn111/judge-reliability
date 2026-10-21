@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-17",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. Both responses find the same main bugs: the pagination offset, the string/number mismatch in the auth check, unhandled async errors, and unvalidated `page`. The difference is the length limit. Response A runs to roughly 225 words, over the 200-word cap. Response B comes in around 190, so it follows the instruction. B's ordering is also slightly better, putting the auth mismatch ahead of error handling. It also notes that the query is safe from SQL injection. A's extra item on a malformed `userId` is speculative, because it depends on the column type and only affects admins.\n\n**B**",
+  "usage": {
+    "input": 1375,
+    "output": 1054
+  },
+  "cost": 0.01329
+}

@@ -1,0 +1,13 @@
+{
+  "item": "code-22",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "1. **Critical: signature is never verified.** `jwt.decode` only base64-decodes the payload. Anyone can forge a token with `{\"role\":\"admin\"}` and get full admin access. Use `jwt.verify(token, SECRET, { algorithms: [\"HS256\"] })`.\n\n2. **`SECRET` is unused, and it is exported.** It also isn't validated, so a missing `JWT_SECRET` stays `undefined` and goes unnoticed. Fail at startup if it's unset, and don't export it, because other modules can't safely depend on it.\n\n3. **No algorithm pinning.** Once you switch to `verify`, specify the allowed algorithms to prevent algorithm-confusion or `none` attacks.\n\n4. **Expiry isn't enforced.** `decode` ignores `exp`, so stolen tokens work forever. `verify` fixes this. Consider also checking `iss` and `aud`.\n\n5. **Wrong status codes and sloppy parsing.**\n   - A missing, malformed, or invalid token should return 401. Currently a missing token or bad token leads to 403 (since `decode` returns `null` rather than throwing).\n   - `replace(\"Bearer \", \"\")` doesn't confirm the scheme. A header with no prefix is accepted as a raw token. Check for `^Bearer ` explicitly and reject otherwise.\n\n6. **Minor:**\n   - Using a single `role` string claim is brittle if roles expand.\n   - No logging of rejected attempts, which would be useful for a back office.\n   - Error details are swallowed.\n\nFixed core:\n\n```js\nconst m = /^Bearer (.+)$/.exec(req.headers.authorization || \"\");\nif (!m) return res.status(401).json({ error: \"missing token\" });\ntry {\n  claims = jwt.verify(m[1], SECRET, { algorithms: [\"HS256\"] });\n} catch {\n  return res.status(401).json({ error: \"invalid token\" });\n}\n```",
+  "stop": "end_turn",
+  "usage": {
+    "input": 320,
+    "output": 652
+  },
+  "cost": 0.00716,
+  "at": "2026-10-14T01:54:00.019Z"
+}

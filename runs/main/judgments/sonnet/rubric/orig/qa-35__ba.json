@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-35",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are accurate and stay under the 120-word limit. A is about 92 words and B about 117 (counting its headings).\n\nBoth explain that antibiotics target bacteria-specific structures, and that viruses lack these and use host machinery. Both also explain resistance as natural selection through mutation and plasmid transfer, with overuse speeding it up.\n\nA names example drugs for each target, which is a nice touch. B instead adds more on resistance, which is the harder half of the question. It lists the mechanisms of resistance (destroying the drug, pumping it out, altering the target) and notes that bacteria reproduce rapidly. It also gives concrete examples of misuse, including taking antibiotics for viral infections and agricultural use. \"Not finishing courses\" is a debated claim, but it is a common one and a minor point. B's bold headings also make it easier to scan.\n\nB's extra content is correct and useful, so it is slightly better.\n\nVerdict: B",
+  "usage": {
+    "input": 797,
+    "output": 1773
+  },
+  "cost": 0.019324
+}

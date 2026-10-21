@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-36",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** Response A is the better answer. Both responses are under 120 words, but A is more accurate and more complete.\n\n- **Accuracy:** A treats the pressure explanation and the Newton's-third-law explanation as equivalent descriptions of the same effect, which is correct. B presents them as separate contributions that \"together\" produce lift, which is slightly misleading. B also implies the flatter lower surface slows the air, which leans on the discredited idea that shape alone sets the airspeed.\n- **Completeness:** A adds that lift increases with speed and angle of attack, and that too steep an angle causes a stall. B leaves these out.\n\nA's one weak point is calling the wing's shape \"asymmetric\", since symmetric wings can also produce lift. It does name angle of attack as a key factor, which softens this.\n\n**A**",
+  "usage": {
+    "input": 540,
+    "output": 710
+  },
+  "cost": 0.00818
+}

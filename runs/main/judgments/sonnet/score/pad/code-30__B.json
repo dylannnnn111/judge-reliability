@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "code-30",
+  "side": "B",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "Looking at the query: the main real bug is COUNT(*) giving 1 for agents with no open tickets. The response finds this, ranks it first, and gives the right fix (COUNT(t.id)).\n\nThe COALESCE(AVG, 0) issue is also real: agents with no tickets, or only tickets with no response time, show 0 minutes, which is misleading. The response flags it and proposes NULL with \"n/a\" rendering. Good.\n\nMAX(t.opened_at) is NULL for agents with no tickets, which is fine.\n\nItem 3, NULL first_response_mins excluded from the average, is a legitimate but minor observation. It is hedged as a decision to make rather than a bug, which is reasonable.\n\nItem 4 is speculative: \"status = 'open'\" and \"active = 1\" are generic \"confirm the schema\" worries. They are not real bugs, so this is somewhat noise. Item 5 is explicitly minor and says the tiebreaker is fine, which is a non-issue padded in. The closing sentence is filler.\n\nLength: the user asked for under 200 words. The response is about 330 words, so it breaks the constraint. It also has wordy preamble (\"To explain this more fully\", \"I have reviewed the query...\").\n\nRanking is sensible, with the two real issues first. Fixes are provided for the top two. Flagging fine things (item 5, and partly item 4) costs some points, and the word limit violation is a notable instruction failure.\n\nOverall: the key issues were found and ranked well, but there is padding, speculative items, and a clear violation of the word limit.\n\nScore: 6",
+  "usage": {
+    "input": 1126,
+    "output": 519
+  },
+  "cost": 0.007442
+}

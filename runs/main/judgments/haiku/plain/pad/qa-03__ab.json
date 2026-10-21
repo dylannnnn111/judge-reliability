@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-03",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. Both responses give the same correct figures (1 percentage point, or 25% relative), and both stay under 120 words. B is more direct, skipping A's filler (\"Thank you for your question,\" \"I hope this explanation is helpful\"). Its worked example ($400,000 loan, interest rising from $16,000 to $20,000) is accurate and shows why the distinction matters to borrowers.\n\nB",
+  "usage": {
+    "input": 551,
+    "output": 876
+  },
+  "cost": 0.0004931
+}

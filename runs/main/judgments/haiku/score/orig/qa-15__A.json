@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-15",
+  "side": "A",
+  "score": 10,
+  "model": "claude-haiku-5-5",
+  "text": "The response gives the correct answer, 18 °F. It also explains the key point: a temperature difference scales by 9/5 without the 32-degree offset, so the 10 °C rise becomes 18 °F. The check through 59 °F and 77 °F is accurate and reinforces the result. The response is concise, well under the word limit, and clearly organized.\n\nScore: 10",
+  "usage": {
+    "input": 368,
+    "output": 211
+  },
+  "cost": 0.00014230000000000002
+}

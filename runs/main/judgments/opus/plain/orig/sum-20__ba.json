@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-20",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses break the 120-word limit. Response A runs to about 133 words and Response B to about 153, so A comes much closer to the constraint.\n\nBoth keep the essential facts: date, time, venue, agenda, prep task, food deadline, out-of-office arrangement and optional drinks. A uses labelled bullet points, which a busy manager can scan quickly. B is written as prose, repeats some detail (such as \"what worked, what didn't\") and opens with framing that adds no value.",
+  "usage": {
+    "input": 1319,
+    "output": 2125
+  },
+  "cost": 0.047776
+}

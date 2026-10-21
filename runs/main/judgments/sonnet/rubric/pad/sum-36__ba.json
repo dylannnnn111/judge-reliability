@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-36",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are accurate on the facts: the term, 22 printers, $3,480 plus GST, the 24-month fixed period, the 4% rise, the allowances, the $195 colour overage, the 75% exit fee and the end-of-term options. I checked the $195 figure (3,000 extra pages at 6.5c) and it is correct in both.\n\nThe difference is the length limit. Response A comes to about 119 words, just under the 120-word cap, and keeps every point a manager needs: cost, the colour overage risk, the exit penalty and the rollover. It leaves out the contact name, which is a minor loss. Response B runs to roughly 190 words, well over the limit. It opens with filler (\"Thank you for reviewing this summary...\") and restates details in longer wording. Its only extra content is the contact line, which doesn't justify breaking the explicit constraint.\n\nA is therefore better on instruction compliance and concision, with no accuracy cost.\n\nVerdict: A",
+  "usage": {
+    "input": 1662,
+    "output": 1340
+  },
+  "cost": 0.016724
+}

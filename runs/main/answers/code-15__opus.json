@@ -1,0 +1,13 @@
+{
+  "item": "code-15",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "1. **Unawaited write (most serious).** `db.updateLastLogin(...)` is not awaited. If the write fails, the promise rejection is unhandled. In Node this can crash the process. The function still returns a user claiming the login was recorded, so callers can't detect the failure. Fix: `await db.updateLastLogin(...)`.\n\n2. **Mismatched timestamps.** `new Date()` is called twice, so the returned `lastLoginAt` can differ from the stored value. Create `const now = new Date()` once and use it for both the write and `now.toISOString()`.\n\n3. **Partial failure in `recordLogins`.** One unknown ID or DB error throws midway. Earlier logins are already persisted, but the caller gets no results and can't tell which ones succeeded. Decide on the behavior you want. Options include `Promise.allSettled` with per-ID results, or skipping and collecting the failures.\n\n4. **Sequential execution.** `recordLogins` awaits each call in turn, so latency grows with N. Run them concurrently, using a concurrency limit for large batches.\n\n5. **Read-then-write race (minor).** The user could be deleted between `getUser` and `updateLastLogin`. The update might then silently do nothing while you still return a user. Ideally `updateLastLogin` should report whether a row was affected, or return the updated row, which also removes the extra read.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 353,
+    "output": 704
+  },
+  "cost": 0.015492,
+  "at": "2026-10-14T01:53:36.258Z"
+}

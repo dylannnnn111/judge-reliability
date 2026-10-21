@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-11",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses reach the correct answer: with an ignorant host who opens door 2 at random and happens to show a goat, switching and staying each win with probability 1/2.\n\nThe user also asked for an answer in under 120 words. Response A is about 100 words, so it complies. Response B is well over 200 words, so it violates the explicit length constraint.\n\nOn correctness, Response A is sound. Its probability contributions (1/6 and 1/6) are right, and normalizing gives 1/2 each. Response B's reasoning is also right, but it says \"door 2 shows a goat for certain\" in the cases where the car is behind door 1 or door 3. That is a slight imprecision, since the host opens door 2 at random, so the probability is 1/2 in each case. The equal-weight conclusion still holds, but A's explanation is more precise.\n\nA is therefore better on instruction-following and slightly better on rigor. B's contrast with the classic version is useful, but it is not needed and breaks the word limit.\n\nVerdict: A",
+  "usage": {
+    "input": 995,
+    "output": 326
+  },
+  "cost": 0.00525
+}

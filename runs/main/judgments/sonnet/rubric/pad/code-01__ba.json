@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-01",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same core problems: no idempotency, one failure aborting the whole run, `int(amount * 100)` truncating, float money, `amount > 0` skipping credits, unvalidated rows, and the hard-coded tax. Both rank idempotency first, which is right for a billing job. Both give concrete fixes and accurate examples. `10.29*100` and `19.99*100` both land just below the integer, so the truncation claims hold.\n\n**Response A:**\n- It is tight and gives a fix for nearly every item.\n- Its truncation example is concrete and correct.\n- Item 6, whitespace in `customer_id`, is speculative and minor.\n- It is slightly over 200 words, but not by much.\n\n**Response B:**\n- It adds some useful points: NaN/inf strings, billing-period scoping, and the missing currency.\n- It opens with a filler sentence that says nothing.\n- It repeats itself, for example \"Put plainly…\" and the restated double-charge in #2.\n- It is well over the 200-word limit, which is an explicit constraint.\n- Its fixes are thinner for some items, such as #5 and #6.\n- It pads with a trivial \"minor\" item about memory.\n\nB's extra content is partly valuable, but the filler and the clear breach of the length limit count against it. A is more compact, more actionable, and closer to the requested length. Its weaker items are mostly harmless.\n\nVerdict: A",
+  "usage": {
+    "input": 1691,
+    "output": 1070
+  },
+  "cost": 0.014082
+}

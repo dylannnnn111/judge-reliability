@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-30",
+  "side": "B",
+  "score": 7,
+  "model": "claude-sonnet-5-5",
+  "text": "The main bug is COUNT(*) counting the NULL-extended row for agents with no open tickets. The response identifies this first and gives the right fix (COUNT(t.id)). That is correct and well-ranked.\n\nThe second issue, COALESCE to 0, is also real: it makes no-ticket agents look like they have a 0-minute response time. The fix is sensible. This is a legitimate semantic problem.\n\nThe third point, that NULL first_response_mins are excluded from AVG, is accurate. It is a plausible concern, though somewhat speculative. The response hedges appropriately (\"decide whether intended\"). It is a fair but lesser point.\n\nThe fourth point, hard-coded assumptions about status and active, is speculative. It is hedged with \"if they exist\" and \"confirm,\" which makes it low-value noise, though not wrong. The `active = 1` point is in effect a non-issue. Raising it adds little.\n\nThe fifth point is labeled minor and is mostly filler: it says the tiebreaker is fine (flagging something that is fine, albeit acknowledged) and suggests an email note. This is padding.\n\nOne other thing worth considering: MAX(t.opened_at) returns NULL for no-ticket agents, which is fine. Another: ordering by open_tickets DESC with the COUNT bug would put no-ticket agents tied with one-ticket agents, which is a consequence of bug 1. The response doesn't mention it, but it is minor.\n\nThe response stays under 200 words (roughly 190). The core bugs are found, ranked well, and fixed. Weaknesses are the speculative and filler items at the end, which slightly detract from the \"avoid flagging things that are fine\" criterion.\n\nScore: 7",
+  "usage": {
+    "input": 904,
+    "output": 556
+  },
+  "cost": 0.007368
+}

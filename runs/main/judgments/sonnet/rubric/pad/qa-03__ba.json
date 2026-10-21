@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-03",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both give the correct answers: 1 percentage point and 25% relative. The constraint is under 120 words.\n\nResponse A word count: roughly. \"The answer depends on whether you measure the change in percentage points or in percent.\" (15) \"Percentage point increase: 5% − 4% = 1 percentage point\" (~9) \"Percentage increase (relative): (5 − 4) ÷ 4 × 100 = 25%\" (~12) \"So the interest rate has risen by 25% in relative terms, which is a rise of 1 percentage point.\" (~19) \"This distinction matters for borrowers. A 25% increase in the rate means that, all else equal, the interest portion of the repayments rises by 25%.\" (~26) \"For example, on a $400,000 loan, annual interest goes from $16,000 to $20,000 (a $4,000 increase, or 25%).\" (~19). Total is about 100. Under 120.\n\nResponse B: first paragraph is ~55 words, second ~55, third ~17. Total is about 125-130 words, so it likely exceeds 120. Let me count more carefully.\n\nParagraph 1: \"Thank you for your question.\" (5) \"To begin, the rate has increased by 1 percentage point, moving from 4% to 5%.\" (15) \"Put another way, the rate was 4% before the change and is 5% after it, so the difference between the two figures is one percentage point.\" (27) = 47.\n\nParagraph 2: \"Turning to the relative change, the increase works out to 25% when measured against the original figure.\" (17) \"This is because the 1-point rise is 25% of the original 4% rate, which can be checked with the following calculation: (5 − 4) ÷ 4 × 100 = 25%.\" (~31) = 48.\n\nParagraph 3: \"I hope this explanation is helpful. Please let me know if you have any further questions.\" (16).\n\nTotal is about 111. Under 120 too, probably. Both comply.\n\nOn substance, A is clearer, directly distinguishes the two interpretations, and adds a useful example. B has filler and redundancy (\"Put another way...\"). A is better.\n\nVerdict: A",
+  "usage": {
+    "input": 696,
+    "output": 685
+  },
+  "cost": 0.008242
+}

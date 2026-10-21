@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-33",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses correctly identify the critical bug: the `WHERE p.status = 'succeeded'` filter turns the LEFT JOIN into an inner join, which removes the zero-payment customers. Both give the right fix.\n\nResponse A runs to roughly 400 words, well over the requested 200. Much of that is filler (\"I want to start with...\", \"Next, the date filter deserves a closer look\"). It also misses a major problem for this use case: customers on annual or quarterly plans will show zero payments in 90 days while being perfectly healthy. That floods customer success with false alarms. Its UTC point is weak, since a one-day cutoff shift barely matters for a 90-day window.\n\nResponse B is close to the word limit and ordered by importance. It adds that customers whose only payments failed are also dropped. It then covers problems that matter for calling at-risk customers:\n- false alarms from annual and quarterly plans\n- cancelled or brand-new accounts being included\n- NULL `plan` rows vanishing\n- the epoch-versus-text date mismatch in SQLite\n- refunds and chargebacks counting as successful payments\n\nIt is more concise, more complete on the issues that matter, and follows the length constraint.",
+  "usage": {
+    "input": 1598,
+    "output": 528
+  },
+  "cost": 0.016952
+}

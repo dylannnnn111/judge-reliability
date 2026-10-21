@@ -1,0 +1,13 @@
+{
+  "item": "sum-19",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "**Clause 14 summary:** Brightside Physio needs the landlord's written consent to transfer the lease (assignment) or sublet any part of the premises. The landlord can't refuse unreasonably but may request the buyer's financials, a bank guarantee of three months' rent, and reimbursement of legal costs ($1,500 to $3,000). Brightside may stay liable for rent after an assignment, possibly for the rest of the term, because this is not a retail lease. Only a written release from the landlord ends that liability. Subletting is capped at 30% of floor area, with a shorter term and no structural changes. A change in company control also needs consent. The landlord has 28 days to respond. Before any sale, get legal advice on negotiating a release. Consent forms are available from Kingsley Property Group.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 719,
+    "output": 442
+  },
+  "cost": 0.00029289999999999996,
+  "at": "2026-10-14T01:51:42.677Z"
+}

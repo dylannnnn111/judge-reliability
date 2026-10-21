@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-36",
+  "side": "A",
+  "score": 8,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds the most important bug first. `Invalidate` deletes from the map under `RLock`, which is a real data race and can crash the process. The fix, `Lock()`, is correct.\n\nThe other items are real, and the ordering is sensible:\n- **Stale re-cache after `Invalidate`:** a genuine race, with a correct explanation.\n- **Stampede:** real, with a sensible fix (`singleflight`).\n- **TTL not tied to the token's real lifetime:** a valid design problem, with a reasonable fix.\n- **Unbounded growth:** real but minor, since the tenant count is probably bounded. Ranking it fifth is appropriate.\n- **No timeout or context on `fetch`:** a valid concern. The claim that a hung call \"blocks every request waiting on that tenant\" is slightly inaccurate, because the current code has no waiting and each request calls `fetch` independently. It would only be true after adding `singleflight`.\n\nThe response stays under 200 words and gives a fix for each item. It flags nothing that is fine. Its only flaws are that one explanation is imprecise and the last item is low-value.\n\nScore: 8",
+  "usage": {
+    "input": 1228,
+    "output": 978
+  },
+  "cost": 0.012236
+}

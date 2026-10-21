@@ -1,0 +1,14 @@
+{
+  "pair": "sum-14",
+  "side": "A",
+  "author": "haiku",
+  "model": "claude-haiku-5-5",
+  "original": "**Working from home policy change (Operations Division, effective 3 November 2026)**\n\n- **Office days:** Staff must be in the office at least three days a week, up from two. Each team will have a common day.\n- **Exceptions:** Staff with a formal flexible work arrangement under Fair Work are unaffected until their review date. Informal manager agreements don't count.\n- **Excluded:** Claims Lodgement and Customer Contact teams, whose rosters will be reviewed in early 2027.\n- **Equipment:** No new home office equipment funding, except where a workplace health assessment recommends it.\n- **Hot desking:** Levels 3 and 4 move to booked desks via the Spaces app, up to two weeks ahead.\n\n**Why:** Survey feedback showed newer staff missed learning from experienced colleagues, and the company wants better use of its office space.",
+  "text": "**Working from home policy change (Operations Division, effective 3 November 2026)**\n\nThis section sets out the changes to the working from home policy for the Operations Division, which take effect on 3 November 2026. The key points are summarised below, followed by the reasons behind the change.\n\n- **Office days:** Staff must be in the office at least three days a week, up from two. To help teams coordinate, each team will have a common day on which all members are in the office together.\n- **Exceptions:** Staff who hold a formal flexible work arrangement under Fair Work are unaffected until their review date. Please note that informal agreements made with managers don't count as formal arrangements for this purpose.\n- **Excluded:** The Claims Lodgement and Customer Contact teams are excluded from these changes, as their rosters will be reviewed in early 2027.\n- **Equipment:** The company will not be providing new funding for home office equipment, except where a workplace health assessment recommends it.\n- **Hot desking:** Levels 3 and 4 will move to booked desks via the Spaces app, which allows staff to book up to two weeks ahead.\n\n**Why:** The change responds to two main drivers. Survey feedback showed that newer staff were missing out on learning from experienced colleagues, and the company wants to make better use of its office space.",
+  "ratio": 1.7,
+  "usage": {
+    "input": 466,
+    "output": 967
+  },
+  "cost": 0.0005301
+}

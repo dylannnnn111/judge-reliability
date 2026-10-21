@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-22",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Constraint: under 120 words. Count Response A: roughly 115-120 words. Let me count more carefully.\n\n\"No, that's a myth.\" (4) \"The Coriolis effect is real and does make large weather systems spin in opposite directions in each hemisphere (hurricanes rotate clockwise in the Southern Hemisphere).\" (25 → 29) \"But at sink or toilet scale it's far too weak to matter.\" (12 → 41)\n\n\"Drain direction is set by much bigger factors: basin shape, leftover motion from filling, and how water enters.\" (18 → 59) \"Toilets swirl the way their rim jets are angled, so the same model flushes the same way everywhere.\" (18 → 77)\n\n\"Physicists have detected the Coriolis effect in a drain, but only under extreme lab conditions: large, symmetrical tanks left perfectly still for a day or more (Ascher Shapiro at MIT in 1962, with a Sydney replication in 1965).\" (~37 → ~114)\n\nSo A is about 114 words, under 120. Response B is well over 120 words (~200), violating the explicit constraint.\n\nAccuracy of A: Shapiro 1962 at MIT, and Trefethen et al. in Sydney 1965 replicated it. Correct. Hurricanes rotate clockwise in the Southern Hemisphere: correct. A is accurate.\n\nB is correct in substance but violates the length limit.\n\nVerdict: A",
+  "usage": {
+    "input": 859,
+    "output": 473
+  },
+  "cost": 0.006448
+}

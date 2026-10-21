@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-18",
+  "side": "B",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The core answer is correct: Willem Janszoon and the Duyfken crew landed in 1606 on the western side of Cape York Peninsula, near the Pennefather River. This is the first well-documented European landing on the Australian mainland.\n\nDirk Hartog's 1616 landing was on Dirk Hartog Island, off the mainland, and the response correctly describes it as an island. The pewter plate detail is also accurate. The caveat about Portuguese voyages being unproven is fair.\n\nThe word count is about 90, which is under the 120 limit. The response is clear and concise. One minor point: \"first recorded\" could also mention that the landing was probably brief and that Janszoon did not realise he had found a new continent, but this is not essential.\n\nA very small issue is that Hartog's island landing is slightly tangential, but it is labeled correctly and adds useful context.\n\nScore: 9",
+  "usage": {
+    "input": 405,
+    "output": 285
+  },
+  "cost": 0.00366
+}

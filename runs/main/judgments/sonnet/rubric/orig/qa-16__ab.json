@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-16",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-sonnet-5-5",
+  "text": "Both answer Antarctica/Antarctic Desert, which is correct. Both mention the Sahara as the largest hot desert and the Arctic as second.\n\nWord count: A is about 75 words. B is about 95 words. Both are under 120.\n\nAccuracy: A says Antarctic ~14 million km², which is fine. B says 14.2 million, also fine. B says Antarctica receives \"roughly 200 mm annually along the coast and far less inland.\" Coastal precipitation is often cited as around 200 mm, so that's plausible. Some sources say the coast gets up to 200 mm, so it's acceptable. B says \"The Arctic is the second-largest cold desert\" - the Arctic is the second-largest desert overall, so \"cold desert\" is also true, if less precise. A says \"second largest: Arctic Desert (~13.9 million km²)\", correct. A says the Sahara is \"roughly the size of the United States\", which is correct (9.2 vs 9.8 million km²).\n\nA's closing line: \"if you mean the classic sandy, hot desert, the answer is the Sahara\" — a slight nuance: not all hot deserts are sandy, but fine. B's ending is clean.\n\nBoth are very similar. A is more concise and well-structured with a list; B gives extra precipitation detail that supports the reasoning. Is the 200 mm claim accurate? Antarctic coastal precipitation varies; the figure is commonly cited as about 200 mm on the coast, so it's fine. B's reasoning is slightly richer. A's formatting is clearer. It's basically a tie, with marginal differences.\n\nThe Antarctic desert's \"interior receives very little\" in A is vague, while B quantifies it. B's \"Arctic is second-largest cold desert\" is a bit less clear than saying second overall, but is correct.\n\nI lean toward a tie.\n\nVerdict: TIE",
+  "usage": {
+    "input": 666,
+    "output": 610
+  },
+  "cost": 0.007432
+}

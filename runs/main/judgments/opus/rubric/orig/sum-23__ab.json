@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-23",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Response B contains a misstatement. It says \"Council will install a speed counter\" on Wattle Road. The minutes only say Councillor Tse would *ask* council traffic staff to put one in and report back. B turns a request into a firm council commitment, which could mislead a manager. Response A's \"Tse will request a speed counter\" matches the original. All other dates, times, figures and the budget cap are correct in both.\n\n**Coverage:** A also records who owns each action: Laila Haddad for Clean Up Day and Peter Vance for the sound system. It also includes the Facebook item. A manager would find the action owners useful. B adds the school choir, which is minor.\n\n**Concision:** B is shorter, and both appear to be under 120 words. A's extra words are correct and useful, so its length is justified.\n\nA wins because it is accurate where B is not, and it keeps the action owners.\n\nVerdict: A",
+  "usage": {
+    "input": 1550,
+    "output": 482
+  },
+  "cost": 0.01584
+}

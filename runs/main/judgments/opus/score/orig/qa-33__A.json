@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-33",
+  "side": "A",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** The core explanation is right. The Moon is tidally locked, and Earth's tides slowed its spin until its rotation matched its sidereal orbital period of about 27.3 days. The far side does get sunlight, and libration lets us see about 59% of the surface over time. Two minor imprecisions:\n- Libration is described as \"wobbles in the Moon's orbit.\" It is really an apparent rocking, caused mainly by the elliptical, inclined orbit.\n- \"Day and night just like we do\" could mislead, since a lunar day lasts about 29.5 Earth days. The intended point, that the far side is not dark, still holds.\n\n**Key reasoning:** The response gives the essential mechanism: tidal friction slowed the spin until it matched the orbital period. It does not explain the tidal bulge torque in detail, but that is reasonable under a 120-word limit.\n\n**Clarity and constraint:** The response is about 95 words, so it meets the limit. It is clearly written, and the extra facts are useful and correct, especially the correction of the \"dark side\" misconception.\n\nOverall, this is a strong, accurate, concise answer with only slight imprecision in wording.\n\nScore: 9",
+  "usage": {
+    "input": 381,
+    "output": 605
+  },
+  "cost": 0.013624
+}

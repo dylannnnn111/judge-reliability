@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-15",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Each gives the correct figures (22% fewer lane drifting events, 0.09 seconds faster reaction time, the 6-month and 3-month experience thresholds, and the roughly twofold 7am-versus-6am difference) and both carry the key limitations. Neither introduces a misleading claim.\n\nResponse A is slightly better organised for a busy manager. Its bullets map cleanly onto the source's findings, and its \"Caveats\" label accurately covers the simulator and sample limitations. Response B's \"Key caveats\" heading is looser, since its bullets are mainly findings about who benefits rather than caveats. B's bolded opening summary is a useful bottom line, though, and the two are close in length and clarity.\n\nThe difference is small, but Response A edges ahead on labelling and structure.\n\nVerdict: A",
+  "usage": {
+    "input": 1400,
+    "output": 976
+  },
+  "cost": 0.000628
+}

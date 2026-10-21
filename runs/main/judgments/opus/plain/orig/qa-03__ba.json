@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-03",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses are correct and under 120 words. Each distinguishes the 1 percentage point rise from the 25% relative increase.\n\nThe question asks \"by what percentage,\" so the direct answer is 25%. Response A frames the distinction and then states clearly that the rate rose by 25% in relative terms. It also adds a worked loan example that shows why the distinction matters, and its caveat (\"all else equal\") keeps that example accurate.\n\nResponse B leads with \"1 percentage point,\" which does not strictly answer the \"percentage\" question, though it then gives 25%. It is concise but less complete.",
+  "usage": {
+    "input": 445,
+    "output": 617
+  },
+  "cost": 0.01412
+}

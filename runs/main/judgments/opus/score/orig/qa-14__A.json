@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-14",
+  "side": "A",
+  "score": 10,
+  "model": "claude-opus-5-5",
+  "text": "The answer is correct: the net rate is 1/3 − 1/5 = 2/15 of the tank per hour, so filling takes 15/2 = 7.5 hours. The response shows the key reasoning, the two rates and the net rate, and it is clear and concise at under 120 words. Converting to 7 hours 30 minutes is a small useful touch. There are no errors.\n\nScore: 10",
+  "usage": {
+    "input": 385,
+    "output": 129
+  },
+  "cost": 0.00412
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "qa-19",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are correct on the main points. The word comes from *gangurru* in Guugu Yimithirr, it was recorded in 1770 near Cooktown, the \"I don't understand\" claim is a myth, and Haviland's 1970s work confirmed the word's meaning. Both stay under 120 words (A is about 103, B about 109).\n\nThe difference is in the reasoning about the myth. A mostly retells the myth's content (the crew pointing and misunderstanding the reply). B adds a plausible account of how the myth arose: later Europeans found that Aboriginal people elsewhere didn't recognize the word, because Australia has many distinct languages. B also names Banks alongside Cook and says why the story persists. These additions are accurate and useful.\n\nB is slightly better.\n\nVerdict: B",
+  "usage": {
+    "input": 788,
+    "output": 1428
+  },
+  "cost": 0.015856
+}

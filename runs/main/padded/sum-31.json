@@ -1,0 +1,14 @@
+{
+  "pair": "sum-31",
+  "side": "A",
+  "author": "opus",
+  "model": "claude-haiku-5-5",
+  "original": "**Voice picking vs handheld scanners: key findings**\n\nA ten-week trial with 118 pickers at two Sydney grocery distribution centres found voice-directed picking outperformed handheld scanners:\n\n- **Speed:** up about 10% (142 to 156 lines/hour), with gains settling within four weeks.\n- **Accuracy:** errors fell from 0.62% to 0.41% of lines (less improvement where errors were already low).\n- **New staff:** biggest winners, with speed up 17%.\n- **Staff view:** 64% preferred voice. Complaints were hot, uncomfortable headsets and less chat with colleagues.\n- **Cost:** about $210,000 per 60-picker centre, with estimated payback in around 14 months.\n\n**Caveat:** Both sites belonged to one grocery company, so results may differ elsewhere.\n\n**Takeaway:** Worth considering, especially for sites with many newer staff. Plan for headset comfort in heat.",
+  "text": "**Voice picking vs handheld scanners: key findings**\n\nThis summary sets out the main results from a study comparing voice-directed picking with handheld scanners. A ten-week trial involving 118 pickers was conducted at two Sydney grocery distribution centres, and it found that voice-directed picking outperformed handheld scanners across several measures. The key findings are listed below.\n\n- **Speed:** Picking speed rose by about 10%, from 142 to 156 lines per hour. These gains levelled off within four weeks.\n- **Accuracy:** Errors fell from 0.62% to 0.41% of lines. The improvement was smaller where error rates were already low.\n- **New staff:** Newer staff were the biggest beneficiaries, with their speed increasing by 17%.\n- **Staff view:** 64% of pickers preferred voice-directed picking. Their main complaints were hot, uncomfortable headsets and reduced chatting with colleagues.\n- **Cost:** The approach costs about $210,000 per 60-picker centre, with estimated payback in around 14 months.\n\n**Caveat:** Both sites belonged to one grocery company, so results may differ elsewhere. It is worth keeping this limitation in mind when reading the findings above.\n\n**Takeaway:** Voice-directed picking is worth considering, especially for sites with many newer staff. Planning for headset comfort in hot conditions is also recommended.",
+  "ratio": 1.59,
+  "usage": {
+    "input": 507,
+    "output": 620
+  },
+  "cost": 0.0003607
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-22",
+  "side": "A",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The summary is accurate on every figure and date: the $40 senior rise to $340, junior fees held at $180, the $3,200 shortfall, the 14 November grant deadline, the $45 tickets, the $600 gazebo, the $41,820 balance and the 28 October next meeting. Attributions are correct, including Bryce applying for the grant and Wes arranging the globe. The \"after junior numbers fell by 18\" phrasing implies a causal link slightly more firmly than the minutes do, but it is a minor point.\n\nThe main omission is that senior players accepted the fee rise only on condition of new training balls and a better canteen. A manager would likely want to know that, since it affects whether the increase is acceptable to members. The 5-0 vote and Natalie's trophy role are minor gaps. The response is concise, well structured and comfortably under 120 words.\n\nScore: 8",
+  "usage": {
+    "input": 1181,
+    "output": 864
+  },
+  "cost": 0.0005501
+}

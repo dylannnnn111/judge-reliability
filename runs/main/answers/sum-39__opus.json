@@ -1,0 +1,13 @@
+{
+  "item": "sum-39",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**Riverbend scraps library late fees from 1 December**\n\n- Council voted 7-2 to end overdue fines on books, magazines and DVDs at all five libraries.\n- Existing fines (about $38,000 across 6,400 members) will be wiped. Cards blocked only for fines unblock automatically on 1 December, and members will be emailed in November.\n- **Exceptions:** Lost or damaged items, or items not returned within 60 days, incur replacement cost and a blocked account. Inter-library loans keep lending councils' late fees.\n- **Rationale:** Fines deterred families, especially children. Other councils saw more returns after dropping them.\n- **Cost:** About $52,000 in annual revenue lost, less $19,000 previously spent chasing payments (net about $33,000). One opposing councillor cited rates pressure.\n- The policy will be reviewed in 12 months.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 619,
+    "output": 1160
+  },
+  "cost": 0.025676,
+  "at": "2026-10-14T01:52:43.563Z"
+}

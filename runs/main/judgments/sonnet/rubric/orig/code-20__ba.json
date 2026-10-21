@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-20",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same two real problems in the same order: the DST error from `Math.floor` over local midnights, and the `NaN` result from malformed input. Both also mention the timezone and stale-after-midnight issues, and both give a correct UTC-based fix.\n\nThe difference is accuracy on the DST impact. The sign of the result is always right, because a future due date gives a non-negative value and a past one gives a negative value. So the overdue list is unaffected, and only the label counts are wrong.\n\n- **Response A** says this explicitly: \"The overdue *list* is unaffected because the sign is still right, but the labels are wrong.\" That is correct, and it scopes the bug precisely.\n- **Response B** says the wrong count \"may land in the wrong place on the overdue list.\" That is inaccurate, since the invoice stays overdue either way. It misstates the impact of the top bug.\n\nResponse A also notes the full-ISO-timestamp case concretely. Both are probably slightly over 200 words, so length does not separate them. Response A's more precise and correct analysis makes it better.\n\nVerdict: A",
+  "usage": {
+    "input": 1859,
+    "output": 1003
+  },
+  "cost": 0.013748
+}

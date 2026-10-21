@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-36",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate on every figure and condition I checked: the dates, the 22 printers, the $3,480 fee and 24-month price fix, the allowances and excess rates, the roughly $195 colour overage, the 75% early-exit cost, and the end-of-term options. It also keeps the points a manager needs, including the cost risk from colour printing and the lost holiday allowance. Its main omission is the Crestline contact, which a manager might want but doesn't strictly need. The word count is close to the 120-word limit but appears to fall under it. The structure is tight and scannable, with little wasted language. Overall it is a strong, faithful summary with only a minor gap.\n\nScore: 8",
+  "usage": {
+    "input": 1126,
+    "output": 1104
+  },
+  "cost": 0.0006646
+}

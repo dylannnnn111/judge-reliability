@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-02",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses describe the opening hours dispute, the reading program, the maintenance items and the next meeting accurately. Neither gets the core facts wrong. Both attribute the roof leak to Westbrook Central, which the source doesn't clearly state, so that flaw is shared.\n\nResponse A is about 110 words, within the 120-word limit. It keeps the key data (11 versus 64 visitors), the reason for Ross's objection, the action item with its deadline, and the status of the proposal. Response B runs well over 120 words and includes a filler opening sentence that a busy manager doesn't need. Its extra content, such as the air conditioning service, is minor. It also drops the visitor figures that explain the proposal.\n\nResponse A is more accurate in its framing, meets the length constraint, and keeps the points the reader needs.\n\nVerdict: A",
+  "usage": {
+    "input": 1742,
+    "output": 953
+  },
+  "cost": 0.0006507
+}

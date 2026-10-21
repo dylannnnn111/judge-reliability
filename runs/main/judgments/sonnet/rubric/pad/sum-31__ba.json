@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-31",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is the better summary because it meets the word limit and stays accurate, while Response B breaks the limit.\n\n**Accuracy:** Both responses report the numbers correctly: 142 to 156 lines per hour, 0.62% to 0.41% errors, 17% for new workers, 64% preference, $210,000 and 14 months. Response B's \"gains levelled off within four weeks\" is a loose paraphrase of \"most of the gain came in the first four weeks and stayed stable\", but it is not wrong. Response A has no errors.\n\n**Coverage:** Both include the main findings, the cost and payback, the heat discomfort complaint, and the limitation that the trial covered one company and groceries only. B adds that the accuracy gain was smaller at the second centre, that workers missed chatting with colleagues, and a takeaway about planning for headset comfort. These are useful but not essential for a busy manager.\n\n**Concision:** The brief was under 120 words. A comes to roughly 103 words. B is well over, at around 170 words. It also includes filler such as \"This summary sets out the main results…\" and \"It is worth keeping this limitation in mind…\", which adds nothing.\n\nVerdict: A",
+  "usage": {
+    "input": 1611,
+    "output": 1083
+  },
+  "cost": 0.014052
+}

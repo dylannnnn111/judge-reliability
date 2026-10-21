@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "code-13",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** Both responses find the same core bugs: the December crash, day-of-month overflow, schedule drift, the fixed 30-day proration period, missing validation, and floor rounding. The deciding factor is the explicit \"under 200 words\" constraint.\n\nResponse A comes to roughly 195 words, so it fits the limit. Response B comes to roughly 230 words, so it likely breaks the limit. Part of that excess is a low-value \"Minor\" item on timezone handling and missing tests.\n\nResponse B has some real strengths:\n- It frames drift as a trap in a naive fix, which is arguably more accurate because the current code crashes before drift can occur.\n- It suggests concrete remedies, such as `relativedelta` and `monthrange`.\n\nResponse A has one small inaccuracy: it says `//` \"floors toward zero\", when it floors toward negative infinity. This makes no difference for the positive values involved here. It also covers the inclusive-vs-exclusive end-date question, which is a useful point.\n\nThe two are close in content quality, so the length constraint decides it in favor of A.\n\n**A**",
+  "usage": {
+    "input": 1343,
+    "output": 1126
+  },
+  "cost": 0.013946
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "code-13",
+  "side": "A",
+  "score": 8,
+  "model": "claude-opus-5-5",
+  "text": "The response finds all the major bugs and ranks them sensibly. One minor technical error and a missing fix keep it from the top tier.\n\n**Correctness of the issues raised**\n- **December crash (#1):** Real and correct. `month + 1 = 13` raises `ValueError`. This is the most severe bug, since any schedule longer than about 11 months hits it. It is correctly ranked first.\n- **Day-of-month overflow (#2):** Real and correct. Starts on the 29th–31st crash for shorter following months.\n- **Schedule drift (#3):** Real. Chaining from `dates[-1]` would drift once clamping is added. The fix is concrete: compute from `start` plus N months, clamped. This fix also implicitly resolves #1 and #2.\n- **Hardcoded 30-day proration (#4):** Real. The observation that `days_used` can exceed 30 and over-charge is a good catch. However, no explicit fix is given; it should say to use the actual period length.\n- **Input validation (#5):** Correct. A negative range yields an empty loop, so `months <= 0` returns `[start]`. Negative proration is also real.\n- **Rounding (#6):** A real business concern, and the advice to use explicit `Decimal` rounding is good. But \"`//` floors toward zero\" is technically wrong. Python's `//` floors toward negative infinity. For the positive inputs here the result is the same, so the practical claim (customers are underbilled) holds, but the statement is inaccurate. The inclusive/exclusive end-date note is a useful addition.\n\n**Ranking:** Sensible overall, with crashes first, then logic bugs, then validation and rounding. #1 never states its fix directly and relies on #3's fix.\n\n**False positives:** None meaningful. Everything flagged is legitimate.\n\n**Length:** About 190 words, within the 200-word limit and dense with useful content.\n\nScore: 8",
+  "usage": {
+    "input": 894,
+    "output": 1485
+  },
+  "cost": 0.033276
+}

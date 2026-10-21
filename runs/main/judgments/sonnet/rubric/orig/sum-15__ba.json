@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-15",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries are accurate. The figures (96 workers, 22% fewer lane drifts, 0.09 s faster reactions, the 6-month and 3-month groups, the 7am and 6am comparison) and the limitations all match the source.\n\n**Response A:**\n- It keeps the detail \"nap or not\" on the timing finding, which makes clear the time-of-day effect holds either way.\n- It keeps \"after long shift runs\" in the takeaway.\n- Its headings fit their content: \"Overall\", \"Not for everyone\", \"Timing matters more\", \"Takeaway\" and \"Caveats\".\n- By my count it runs to about 119 words, just under the 120 limit, so it complies with little margin.\n\n**Response B:**\n- It is shorter, at about 90 words, and still covers the main points.\n- Its \"Key caveats\" heading is slightly misleading, because it covers the subgroup finding and the timing finding, which are results rather than caveats.\n- It drops \"nap or not\" and \"after long shift runs\", though the first is implied by \"Drive time mattered more than napping\".\n\nBecause A is accurate, within the limit and a little clearer and more complete, while B gains only some concision at the cost of a slightly misleading heading, I give A a narrow edge.\n\nVerdict: A",
+  "usage": {
+    "input": 1400,
+    "output": 1844
+  },
+  "cost": 0.02124
+}

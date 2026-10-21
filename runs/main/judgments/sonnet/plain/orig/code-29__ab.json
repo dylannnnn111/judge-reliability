@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-29",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** Both responses find the same top bug: `NOT IN` against a subquery containing NULLs returns no rows. Both also give the same `NOT EXISTS` fix and spot the date filter that contradicts \"never referred.\" The difference is the 200-word limit. Response A comes in at roughly 185 words. Response B runs to roughly 240 because of its extra \"Minor\" section, so it breaks the explicit constraint.\n\nB's extra point about suppression lists and duplicate emails is reasonable but speculative, since the code gives no sign such data exists. A's third and fourth points are comparably useful and fit within the limit.",
+  "usage": {
+    "input": 1412,
+    "output": 1237
+  },
+  "cost": 0.015194
+}

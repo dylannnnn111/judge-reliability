@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-35",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A** is correct and concise, at roughly 90 words.\n- It explains that antibiotics hit bacteria-specific targets, with concrete drug examples.\n- It explains that viruses lack these targets and replicate using host machinery.\n- It explains resistance through natural selection acting on mutations and horizontal gene transfer.\n- It notes that overuse accelerates resistance.\n\n**Response B** is also largely correct and adds resistance mechanisms (destroying the drug, efflux pumps, altering the target). However, it has two problems.\n- **Length:** at roughly 200 words, it clearly breaks the explicit \"under 120 words\" instruction. Much of the extra length is filler (\"It helps to start with...\", \"To understand why resistance is a concern...\") and repetition (\"speeds this process along... accelerate the process\").\n- **Accuracy:** it cites \"not finishing courses\" as a driver of resistance, which is increasingly contested in current guidance.\n\nResponse A covers the same key reasoning, follows the user's constraint, and avoids the questionable claim, so it is the better answer.\n\nVerdict: A",
+  "usage": {
+    "input": 932,
+    "output": 774
+  },
+  "cost": 0.019208
+}

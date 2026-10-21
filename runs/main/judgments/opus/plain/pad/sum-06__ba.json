@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-06",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A stays under the 120-word limit (about 108 words). It covers every key fact a manager needs: date, cost, funding, upgrades, programs, prices, opening day and hours. Its tone is neutral and concise.\n\nResponse B runs to roughly 190 words, well over the stated limit. It also slips into a promotional, public-facing voice (\"we are pleased to share,\" \"Please join us,\" \"we look forward to welcoming you\"), which does not suit a briefing for a busy manager.",
+  "usage": {
+    "input": 1468,
+    "output": 371
+  },
+  "cost": 0.013292
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-31",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both responses are accurate on every figure: 10 weeks, 118 pickers, 142→156 lines/hour, 0.62%→0.41% errors, 17% gain for new staff, 64% preference, $210,000 and a 14-month payback. Neither misstates the conditions or who made the payback estimate. Both stay under 120 words: A is about 104 and B about 117.\n\n**Response A** is a clean prose summary with no errors. It does drop a few points that change how a manager reads the findings:\n- Most of the speed gain came in the first four weeks, then held steady.\n- The accuracy gain was smaller at the site that already had low error rates.\n- Some workers missed being able to talk to colleagues.\n\n**Response B** keeps all of those points. Each adds something correct and useful:\n- The four-week ramp tells a manager how soon to expect results.\n- The smaller accuracy gain at the low-error site tempers expectations for well-run sites.\n- The social complaint is a real staffing consideration.\n\nB's \"Takeaway\" adds a light recommendation, but it closely mirrors the source's own conclusion, so it is not misleading. Its bulleted layout is also easier for a busy manager to scan.\n\nB's extra words carry real information, with no loss of accuracy and within the word limit, so it is the better summary.\n\nVerdict: B",
+  "usage": {
+    "input": 1470,
+    "output": 1343
+  },
+  "cost": 0.03274
+}

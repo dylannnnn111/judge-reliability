@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-27",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "A is better. It is much closer to the 200-word limit, at roughly 200 words, while B runs to about 330 and opens with filler (\"Thank you for sharing...\").\n\nBoth responses find the main problems: unbounded `Promise.all`, loss of failure information, the misleading return value, the null-email crash, the cursor loop and missing retries. A orders them sensibly, with concurrency and failure handling first, and gives concrete fixes such as p-limit, `allSettled` and idempotent sent-tracking.\n\nB's top item is the suppression check for bounces and complaints. That is a reasonable concern, but it goes beyond what the code and request describe. B also notes memory use and lowercasing the local part, which are minor but fair. Even so, B fails the length constraint and spends words on preamble, so A follows the request better.\n\n**A**",
+  "usage": {
+    "input": 1674,
+    "output": 1309
+  },
+  "cost": 0.016438
+}

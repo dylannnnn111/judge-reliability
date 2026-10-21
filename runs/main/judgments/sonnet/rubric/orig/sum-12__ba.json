@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-12",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is more accurate. Its one weak point is saying the weekly pass will \"replace\" the $9 daily concession, which the article doesn't state. It only says concession parking was \"extended\" and that the current concession is $9 a day. Response B has the same problem with \"instead of the current $9 daily concession\".\n\nResponse B also adds \"This is a significant saving for regular users\", which the article doesn't say. It's an editorial claim and can mislead. A $15 weekly pass only beats $9 a day for people visiting two or more times a week, and Barry Sutton's comment was conditional (\"if the weekly pass is real\"). A busy manager might take the claim at face value.\n\nBoth responses cover the key points: fees, the weekly pass and eligibility, the application date and letter, the repair reason, staff unaffected and the petition. Both also land at about 125 words, slightly over the 120 limit, so neither gains an edge on concision.\n\nA attributes the funding reason to the health service (\"says the money will fund repairs\"), and B does the same. A is cleaner overall because it avoids the unsupported editorial.\n\nVerdict: A",
+  "usage": {
+    "input": 1364,
+    "output": 2212
+  },
+  "cost": 0.024848
+}

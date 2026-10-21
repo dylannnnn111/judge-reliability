@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-06",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses flag the same core problems: the `is not` identity check, the existence leak from distinct `LookupError` and `Forbidden` responses, the non-atomic check-then-save race, and the missing refund handling for paid orders. Both rank the identity bug first with a clear fix, and both stay under 200 words.\n\nResponse A adds two useful points. Its race-condition fix includes `customer_id` in the conditional update, which is a sensible defense-in-depth detail. It also notes that the `ValueError` message exposes internal status strings that handlers may pass to clients. Response B adds that small-ID tests would hide the identity bug, which explains why it might have slipped through. It also notes that mutating the object before `save` can leave callers with a false status if the save fails, a real but minor issue. Response B's race example (a concurrent ship or refund being overwritten) is concrete and easy to follow.\n\nThe differences roughly cancel out. Neither response flags something that is actually fine, and each has one or two details the other lacks.\n\nVerdict: TIE",
+  "usage": {
+    "input": 1549,
+    "output": 957
+  },
+  "cost": 0.0006334
+}

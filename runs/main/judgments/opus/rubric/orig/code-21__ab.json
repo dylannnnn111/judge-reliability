@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-21",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.**\n\n**Most important issue.** Both put the critical bug first: retrying a non-idempotent POST refund on network errors and 502/503/504 can issue the refund twice. Both propose an idempotency key or no retries for non-idempotent requests. A adds that the key must be honored server-side and that the wrapper should refuse to retry POST/PATCH by default.\n\n**Accuracy of the remaining points.**\n- A's second issue is real and specific, and B misses it. The catch-all retries `AbortError`, so a caller's cancellation gets overridden. It also retries non-transient `TypeError`s, such as an unreusable `ReadableStream` body. B only mentions \"no cancellation\" briefly at the end.\n- A's points on timeouts, `Retry-After`, undrained bodies and the unvalidated `refundId` cast are all real.\n- B shares timeouts, `Retry-After` and body draining with A.\n\n**Weaker or speculative points in B.**\n- Its #2 (UI double-submit) speculates about code that isn't shown.\n- Its #6 (validating `amountCents`) is defensible but low-value, since the payments server should enforce that.\n- Its #7 calls the ~60s jitter maximum a problem, but that follows from the design (30s cap plus up to 100% jitter) rather than being a bug.\n\n**Length.** Both run somewhat over the 200-word limit, by roughly the same amount, so this doesn't separate them.\n\nA ranks its issues sensibly, gives concrete fixes, and avoids filler. B spends words on weaker or out-of-scope items while missing the abort-retry bug.\n\nVerdict: A",
+  "usage": {
+    "input": 1746,
+    "output": 1033
+  },
+  "cost": 0.027644
+}

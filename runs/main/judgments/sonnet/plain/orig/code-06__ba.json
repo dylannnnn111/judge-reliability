@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-06",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** Both responses find the same four main problems in the same order: the `is not` identity check, the 404/403 existence leak, the cancel race, and the missing refund. Both also run slightly over 200 words, with A a little shorter.\n\nA is more accurate and more useful in the details:\n- On the identity bug, A says most legitimate customers with IDs above 256 will be rejected. B calls the failures \"intermittent\", which understates it. Ints from a DB driver and from request parsing will almost always be distinct objects. A also notes that small-ID tests will hide the bug, which is a useful practical point.\n- A's minor items are real: mutating the in-memory order before `save` can leave callers with a false status, and statuses are magic strings.\n- B's minor items are weaker. The `ValueError` leaking a status string is trivial, and \"save is not shown to be transactional\" is vague.\n\nB does have one good detail: its conditional update includes `customer_id` and checks the row count.",
+  "usage": {
+    "input": 1393,
+    "output": 1732
+  },
+  "cost": 0.020106
+}

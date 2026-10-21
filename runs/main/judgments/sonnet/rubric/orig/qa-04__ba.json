@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-04",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct final price ($480) and the correct overall change (−4%). So the comparison comes down to the reasoning, clarity, and the word limit.\n\nWord count: Response A is about 85-90 words. Response B is about 80-85 words. Both are under 120.\n\nCorrectness of extras: Response B's general claim is that a rise and then a fall by the same percentage p gives a net change of −p². With p as a fraction, (1+p)(1−p) = 1−p², so this is correct. Here 0.20² = 0.04, which matches. Response A's extra is 1.20 × 0.80 = 0.96, which is also correct and is a direct verification.\n\nKey reasoning: both explain why the changes don't cancel, noting the discount applies to the larger base and removes $120 versus the $100 added. Response B adds a generalization (−p²) that adds some insight. Response A shows the multiplier method, which is a similar insight but more specific to this problem.\n\nClarity: Response A is structured step by step. Response B leads with the final answer and is more concise. Both are clear.\n\nResponse B has a slight edge because its generalization is useful and correct, and it leads with the answer. Response A's multiplier is also useful, though, so the difference is small. The −p² generalization is a bit more valuable, but Response A's step-by-step layout is arguably more readable for the question asked.\n\nI lean slightly toward B.\n\nVerdict: B",
+  "usage": {
+    "input": 658,
+    "output": 461
+  },
+  "cost": 0.005926
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "sum-29",
+  "side": "B",
+  "score": 4,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** The response is largely correct. Prices, data allowances, dates, the Classic-plan exemption, the fixed-contract exemption, the exit-fee condition and support details all match the notice. One small slip: it drops \"regional\" from \"regional Queensland and Western Australia,\" which slightly broadens the claim.\n\n**Key points:** It keeps everything a manager needs: the new prices with the added data, the effective date, who is exempt, the no-exit-fee window, and the reason.\n\n**Concision and brief compliance:** This is where it falls down.\n- **Word limit:** The response is roughly 200+ words, well over the explicit 120-word limit. That is a direct failure of a stated constraint, not a style preference.\n- **Padding:** \"Here is how the changes will look for each plan,\" \"If you have questions or need help,\" and \"Pivot Mobile has explained that\" add nothing.\n- **Wrong audience:** It addresses the reader as a customer (\"If you would like to avoid the new prices, you can…\", \"Please note…\"), not as a manager being briefed.\n- **Low-value detail:** The support hours and phone line are of little use to a busy manager and could have been cut to meet the limit.\n\nAccurate content and good coverage are undercut by clearly breaking the length requirement and adding filler.\n\nScore: 4",
+  "usage": {
+    "input": 1218,
+    "output": 922
+  },
+  "cost": 0.023312
+}

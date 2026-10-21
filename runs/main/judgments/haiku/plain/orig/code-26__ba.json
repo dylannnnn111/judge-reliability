@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-26",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "A is better. Both correctly identify the string `qty` bug as the most important issue, and both cover CSV parsing, validation, and prototype-keyed objects. Response B has two inaccuracies. It says the stray `\\r` would affect `sku`, but `unitCents` is the last column, so the `\\r` lands there. It also says empty input yields a bogus row, then concedes `slice(1)` handles it. Response A's CRLF point is correct, and its comparator-with-`NaN` explanation is more precise. Both responses run close to the 200-word limit.\n\nA",
+  "usage": {
+    "input": 1582,
+    "output": 700
+  },
+  "cost": 0.0005082
+}

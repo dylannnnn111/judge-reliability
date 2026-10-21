@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-18",
+  "side": "A",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response catches the most important bug: the cache key `fx:${from}` ignores `to`, so a wrong-currency rate gets applied to invoices for 60 seconds. It ranks that first and gives the exact fix. The other real issues are all present: unvalidated `body.rate` that gets cached, no in-flight deduplication, no fetch timeout, and unencoded query parameters. Each comes with a concrete fix. The unbounded-cache point is accurately labelled minor. The money-precision point is reasonable advice but speculative, since the snippet doesn't show how the caller converts amounts. It also doesn't mention the question of the caller's rounding. The response stays under 200 words and nothing in it is wrong. Ordering is sensible, and the only weakness is a slightly padded final item.\n\nScore: 8",
+  "usage": {
+    "input": 1052,
+    "output": 642
+  },
+  "cost": 0.0004262
+}

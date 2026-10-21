@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-32",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses go over the 120-word limit. Response A runs to roughly 160 words and Response B to roughly 185, so neither fully meets the brief. A is closer and makes better use of its words.\n\n**Response A strengths:**\n- **Clear layout:** Its headings (Issue / Our position / Outcome / Risk) let a busy manager scan it quickly.\n- **Accurate and complete:** It covers the key mechanics. These are the 0.90% discount off the standard variable rate, the 0.25% August rise, and the email locking only the discount, not the overall rate.\n- **Sound risk flag:** The possible escalation to the Australian Financial Complaints Authority (AFCA) is the right thing to highlight, because the customers still feel misled.\n\n**Response B weaknesses:**\n- **Filler:** Phrases like \"I would like to take a moment to summarise this complaint for you\", \"In this regard\" and \"reviewed the matter carefully\" waste words in an already over-length summary.\n- **Inaccurate flag:** It says the customers \"have not accepted the outcome\". In fact they explicitly accepted the $250 while still feeling misled. Calling the closure \"premature\" overstates the position.\n- **Muddled sequence:** It says the complaint \"was closed as resolved and referred to the lending team\". In fact the call request was referred to lending and the complaint was then closed.",
+  "usage": {
+    "input": 1516,
+    "output": 1202
+  },
+  "cost": 0.030104
+}

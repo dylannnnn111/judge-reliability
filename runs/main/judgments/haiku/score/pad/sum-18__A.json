@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-18",
+  "side": "A",
+  "score": 3,
+  "model": "claude-haiku-5-5",
+  "text": "The response gets most details right: the 35-degree heat warning and its Settings > Safety toggle, the Monday email, the GPS, battery, and step-sync changes, and the three fixes and accessibility items. It has three problems. First, \"Overall, no action is required from the team\" is invented; the source says nothing about required action, and a manager could act on that claim. Second, \"35°C\" adds a unit the source doesn't give, which is a small assumption presented as fact. Third, at roughly 230 words it breaks the explicit 120-word limit by about double, and the opening sentence is filler. The core content is preserved, but the fabricated conclusion and the length failure weigh heavily.\n\nScore: 3",
+  "usage": {
+    "input": 1218,
+    "output": 744
+  },
+  "cost": 0.0004938
+}

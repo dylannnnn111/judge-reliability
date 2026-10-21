@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-08",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Check the calculation: 375 × 0.048 = 18 mL. 18 × 0.789 = 14.202 g. 14.202 / 10 = 1.42 standard drinks. Both responses reach this answer.\n\nWord limit: the limit is under 120 words. Response A is about 50 words. Response B is roughly 115 words by a rough count; precisely counting it:\n\n\"Thank you for your question. Here is how a 375 mL can at 4.8% ABV breaks down into standard drinks.\" (~20)\n\"To begin, we can work out how much pure ethanol the can contains:\" (~13) → 33\n\"1. Volume of ethanol: 375 mL × 0.048 = 18 mL\" (~10) → 43\n\"Next, we convert that volume into mass, using the density of ethanol:\" (~12) → 55\n\"2. Mass of ethanol: 18 mL × 0.789 g/mL = 14.2 g\" (~10) → 65\n\"Finally, we divide that mass by the 10 g used for one standard drink to find the number of standard drinks:\" (~21) → 86\n\"3. Standard drinks: 14.2 g ÷ 10 g = ≈1.42 standard drinks\" (~11) → 97\n\"In summary, based on the calculation above, a 375 mL can at 4.8% ABV contains approximately 1.42 standard drinks.\" (~19) → 116\n\nSo B is just under the limit, though padded with filler. Both are correct and contain the same reasoning. A is more concise and adds a useful note that labels round to 1.4. B has filler (\"Thank you for your question\") and repeats the answer. A is better on clarity and concision.\n\nVerdict: A",
+  "usage": {
+    "input": 741,
+    "output": 549
+  },
+  "cost": 0.006972
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-30",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Neither misstates dates, frequencies, passenger numbers, or who decided what. Response A states the 408 has nine passengers per trip and that the consultation drove the changes, and it notes the 412 is the first direct Mill Flat link. Response B omits the consultation's role and the \"first direct link\" point, and it omits the reason for the change.\n\nResponse A is also much closer to the 120-word limit. By my count it is about 127 words, slightly over. Response B runs to roughly 180–190 words, with a lengthy introduction and closing that add little for a busy manager. Response A's extra words carry useful content (the reason for the changes, the concern about early starts, the info stall), while Response B's padding does not. Response A is the better summary on concision and on keeping the points the reader needs.\n\nVerdict: A",
+  "usage": {
+    "input": 1592,
+    "output": 1711
+  },
+  "cost": 0.0010147
+}

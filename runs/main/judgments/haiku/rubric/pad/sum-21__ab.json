@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-21",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response B is more accurate and better meets the brief. Its figures check out, including the $21,600 hire-car estimate (2 months × $1,800 × 6 cars), and it covers the recommendation, the budget overrun, the approval requirement, the alternative and the 24 October deadline. It is at or very near the 120-word limit.\n\nResponse A runs well over 120 words. It also contains an error: it says Coastal Fleet Sales is more expensive than the options above, but Coastal's petrol price ($36,100) is below the Elmwood hybrid ($38,190). Its opening line is also awkwardly phrased as if written by Dominic. Its extra detail (the Coastal note, the fuller bullet structure) does not add enough to justify the length.\n\nVerdict: B",
+  "usage": {
+    "input": 1674,
+    "output": 858
+  },
+  "cost": 0.0005964
+}

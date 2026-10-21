@@ -1,0 +1,13 @@
+{
+  "item": "sum-38",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "Project status is Green. The member app remains on track for public launch on Wednesday 18 November.\n\nThe 600-member beta closed on 6 October with positive feedback: 431 members installed the app, and the average rating was 4.3 out of 5. The main complaint, slow weekend timetable loading, is fixed. Of 23 bugs raised, 21 are resolved and 2 minor issues are scheduled after launch.\n\nKey dates: app store submissions on 3 November, club packs by 12 November, staff training by 14 November, and member email and posters on 17–18 November.\n\nSpend is $268,500 of $290,000 and expected to finish on budget. The main risk is app store review delays, which could push launch back by up to a week.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 653,
+    "output": 233
+  },
+  "cost": 0.0001818,
+  "at": "2026-10-14T01:52:32.685Z"
+}

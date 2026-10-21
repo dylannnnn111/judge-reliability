@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "sum-28",
+  "side": "B",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is accurate in most respects, but it breaks the explicit length limit.\n\n**Length:** It runs to roughly 210 words against a 120-word cap. The cap was the one hard constraint, and the response nearly doubles it. Filler accounts for much of the excess: \"We would like to draw your attention…\", \"This situation presents both…\", and \"The main changes are set out below.\"\n\n**Accuracy:**\n- \"At present, 84 staff\" presents an end-of-September figure as current.\n- \"Are asked to agree a plan\" softens the original \"will need to agree a plan\".\n- The \"agreed in writing\" condition on cash-out is correct, but \"four weeks remain\" drops \"at least\".\n- Leave without pay or making up time requires the manager's agreement, and the response omits that. It also omits that this applies only to staff without enough leave.\n- \"So you can review it ahead of the changes\" is invented, and the response doesn't make clear that the list goes to managers.\n- Calling the warehouse exemption \"the only exemption\" is acceptable. It is correctly limited to the shutdown.\n\n**Coverage:** The key points are all present: the cap, the cash-out, the shutdown, who is covered, and the 31 October list. The shutdown bullet omits that the four days are the non-public-holiday working days. Some details are blurred rather than wrong.\n\n**Concision:** This is the weakest area, because of the padding and the word-limit breach.\n\nScore: 4",
+  "usage": {
+    "input": 1228,
+    "output": 1147
+  },
+  "cost": 0.013926
+}

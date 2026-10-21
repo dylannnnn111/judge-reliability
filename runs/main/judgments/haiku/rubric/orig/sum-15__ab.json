@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-15",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Each gives the correct figures (96 workers, 22% fewer lane drifting events, 0.09 seconds faster reaction time, the 6-month and 3-month thresholds, the 7am-versus-6am doubling), states the simulator and sample limitations, and stays under 120 words. Response A says the nap made \"no measurable benefit\" for new workers, which matches the source slightly more precisely than Response B's \"didn't improve.\" Response B is more scannable for a busy manager, with a clear headline and bolded points. Neither omits anything the reader needs, so the differences are stylistic rather than substantive.\n\nVerdict: TIE",
+  "usage": {
+    "input": 1400,
+    "output": 948
+  },
+  "cost": 0.000614
+}

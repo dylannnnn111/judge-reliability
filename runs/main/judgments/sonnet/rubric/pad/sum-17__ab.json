@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-17",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is the better summary. It is accurate and covers what a manager needs. It runs to about 125 words, slightly over the 120 limit, but Response B is far further over.\n\n**Accuracy**\n- **Response A:** It is correct on the licence terms: the bar may open until midnight on Fridays and Saturdays, but amplified music must stop at 10pm. It correctly treats a breach as conditional on music running past 10pm. It names David as the one who spoke to the venue and reports the agreed fixes (speakers turned away, staff checking at 10pm). It also notes the regulator complaint as a fallback and the 20 October report-back.\n- **Response B:** The facts are mostly right, but it is framed as an email from the committee (\"I'd like to update residents\"), not a summary for a manager. The subject line \"resolved for now\" overstates things, since the outcome of the coming weekend is still unknown. It also says the music was \"continuing past midnight\" as established fact, when that was only Colleen's complaint.\n\n**Completeness**\n- Both cover the key points. Response A also includes the regulator's evidence requirement and Fiona's dissenting view, which are useful context.\n- Response B omits the evidence requirement.\n\n**Concision**\n- Response A is dense and close to the limit.\n- Response B is about 200 words, well over the 120-word limit, and padded with narrative.\n\nVerdict: A",
+  "usage": {
+    "input": 1664,
+    "output": 1354
+  },
+  "cost": 0.016868
+}

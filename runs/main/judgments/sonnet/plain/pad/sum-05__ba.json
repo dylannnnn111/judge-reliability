@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-05",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better because it respects the 120-word limit and A does not. B is about 100 words. A is roughly 145, mostly because of filler such as \"It is worth noting that\" and \"There are also a few points to keep in mind.\"\n\nB also gives a manager something to act on: justify the desks on comfort and health, not productivity. It also contrasts the perceived productivity gain (78%) with the measured result, which is the key point of the brief.\n\nBoth summaries are accurate.\n\n**B**",
+  "usage": {
+    "input": 1303,
+    "output": 771
+  },
+  "cost": 0.010316
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-08",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.**\n\n**Response A** has two problems.\n- **Wrong date:** It says the fridge \"failed on 4 Oct\". That is impossible, since the complaint was lodged on 2 Oct.\n- **Messy self-correction:** It then adds a muddled parenthetical and a trailing \"Correction\" telling the reader to disregard the date. A busy manager reading the top line gets wrong information, and the response looks unprofessional.\n- **Over the limit:** With the correction it runs to roughly 140 words, breaking the 120-word cap.\n- **What it gets right:** It covers the key points well: the replacement on Wednesday, the separate Frostline pickup, the outstanding claim form, the $500 threshold, escalation to Amara Osei, and customer frustration.\n\n**Response B** is clean and stays under the limit at about 113 words.\n- **Minor flaw:** \"29 September\" turns \"Sunday\" into a specific date the text never gives. The year is unknown, so the exact date is unsupported. However, it is close to the true meaning (the Sunday before 2 Oct) and much less misleading than A's impossible date.\n- **Coverage:** It keeps all the needed points. It also adds useful context: Jason Reilly is on leave and Priya Nand is covering for him.\n\nOverall, B is more accurate, complete, concise and within the limit. A contains an outright error, an awkward correction, and breaks the word cap.\n\nVerdict: B",
+  "usage": {
+    "input": 1640,
+    "output": 1112
+  },
+  "cost": 0.0288
+}

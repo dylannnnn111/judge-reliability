@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-22",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. Both responses correctly say the myth is false and stay under 120 words. B also engages more directly with the Australia angle: it notes that hurricanes rotate clockwise in the Southern Hemisphere, and it cites the 1962 MIT tank experiment and its 1965 Sydney replication. A is accurate but more generic.\n\nB",
+  "usage": {
+    "input": 596,
+    "output": 959
+  },
+  "cost": 0.0005391
+}

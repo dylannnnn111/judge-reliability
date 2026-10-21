@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-28",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is more accurate, though Response A covers a little more.\n\n**Accuracy**\n- Response A drops \"at least\" from two conditions. It says \"eight weeks' notice\" and \"if four weeks remain\", where the original gives these as minimums.\n- Response A also says staff \"use four days' leave, or take unpaid leave or make up time\". That makes unpaid leave and make-up time look like free choices. The original offers them only to staff without enough leave.\n- Response B keeps \"at least eight weeks' notice\" and \"at least four weeks remain\". It also gives \"40 days for full-time\". It states the shutdown requirement without the fallback, which is an omission and not a misstatement.\n\n**Coverage**\n- Response A includes the scope line (permanent staff under the 2025 Enterprise Agreement), the \"new\" flag on cash-out, and the fallback options for the shutdown.\n- Response B leaves out the eligibility scope and the fallback options. It does cover the exemption for 24/7 warehouse staff and says clearly which rules still apply to them.\n\n**Concision**\nBoth are well under 120 words and similarly concise.\n\nAccuracy is the first criterion, and B has no distortions, so I prefer B despite A's slightly fuller coverage.\n\nVerdict: B",
+  "usage": {
+    "input": 1466,
+    "output": 1196
+  },
+  "cost": 0.014892
+}

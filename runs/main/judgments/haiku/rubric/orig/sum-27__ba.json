@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-27",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses report the same figures correctly: 81% vs 74%, the free-month confound, the 78% vs 76% paying-customer gap, the ~$95 per session cost, ~$410,000 a year, and the 21 October meeting. Neither introduces an error. Response B is slightly more precise in saying \"at least 60 days\", whereas Response A states a fixed \"60-day test\", which is a minor drift from Marcus's wording. Response A is a bit more concise and its headline (\"inconclusive\") and closing \"Decision needed\" line give a busy manager the verdict and the required action immediately. Response B is also clear and well organised, so the gap is small, but A's framing serves this reader slightly better.\n\nVerdict: A",
+  "usage": {
+    "input": 1514,
+    "output": 938
+  },
+  "cost": 0.0006204
+}

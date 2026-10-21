@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-01",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Each gives the new Friday 30 October deadline, the reason it moved, the three required submissions, the template location and its software subscriptions split, the variance threshold, the paste-numbers rule, the leave nomination, Marcus's optional Thursday session, and the instruction to call Priya today if the deadline is a problem. Neither invents or misstates any date, figure or condition. Both come in at roughly 120 words. Response A uses bold headers and bullets, which suits a busy manager scanning for actions. Response B packs the same content into a dense paragraph that is harder to scan, though it is equally complete. The difference is modest, but A's structure makes the requirements easier to find.\n\nVerdict: A",
+  "usage": {
+    "input": 1412,
+    "output": 1068
+  },
+  "cost": 0.0006752
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-40",
+  "side": "B",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate on its core figures: 11 schools, 1,622 students, 1.8 versus 1.1 marks, a 0.7-mark non-significant gap, and the 71 per cent survey result. It has two small accuracy issues. \"Most students (71 per cent)\" implies all students were surveyed, but only students in the water-bottle schools were. It also says the overseas claim \"was not supported,\" which is slightly stronger than the original's \"did not find\" and omits that the small gap could be due to chance.\n\nIt keeps most of the key points: the null result, the wellbeing-based rationale, and the limitations. It drops the teachers' observation that students seemed calmer and the note that the no-problems finding followed requiring clear, label-free bottles.\n\nThe main failure is length. The response runs to roughly 245 words, about double the 120-word limit. Much of the extra text is filler (\"it is useful to start with,\" \"Put simply,\" \"Taking these findings together,\" \"It is also worth noting\"), so it is neither concise nor within the requested bound.\n\nScore: 4",
+  "usage": {
+    "input": 1285,
+    "output": 828
+  },
+  "cost": 0.0005425
+}

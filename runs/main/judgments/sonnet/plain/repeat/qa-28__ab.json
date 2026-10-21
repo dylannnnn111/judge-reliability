@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "qa-28",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are accurate and cover the same core points: chaining, open addressing, average O(1) lookups degrading to O(n), and resizing. Both also slightly exceed the 120-word limit. By my count, Response A is about 131 words and Response B about 124 (a little more if the list numbers are counted). Response A adds useful details, such as treeification in Java and clustering, but it overshoots the limit more. Response B stays closer to the limit and adds the amortized O(1) point about resizing. Since the length limit was explicit, B is slightly better.\n\n**B**",
+  "usage": {
+    "input": 690,
+    "output": 1451
+  },
+  "cost": 0.01589
+}

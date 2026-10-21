@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-28",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.**\n\n**Accuracy**\n- Response A introduces several small distortions:\n  - \"Asked to agree\" softens the source's \"will need to agree.\"\n  - \"At present, 84 staff\" drops that the figure was as at the end of September.\n  - \"Eight weeks' notice given\" drops \"at least.\"\n- Response B has no misstatements. It keeps:\n  - the 40-day full-time equivalence;\n  - \"at least eight weeks' notice\";\n  - \"at least four weeks remain\";\n  - the point that the four shutdown days are the non-public-holiday working days;\n  - the point that warehouse staff remain covered by the cap and cash-out rules.\n\n**Coverage**\n- Response A keeps two items that Response B omits: the burnout rationale, and the options for staff short of leave (unpaid leave or making up time). These are useful but secondary.\n- Response A states the alternatives without noting that making up time needs manager agreement.\n\n**Concision and the length limit**\n- Response A runs to roughly 200 words, clearly breaking the user's explicit limit of under 120 words.\n- It is padded with filler such as \"We would like to draw your attention to…\" and \"The main changes are set out below.\"\n- Response B is about 110 words, stays within the limit, and still covers every point a manager needs.\n\nResponse B is more accurate, meets the length constraint, and keeps the essentials. Response A's extra material doesn't make up for its softened obligations and its breach of the word limit.\n\nVerdict: B",
+  "usage": {
+    "input": 1590,
+    "output": 1049
+  },
+  "cost": 0.02734
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-18",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer: Willem Janszoon and the *Duyfken* crew, who landed on the western side of Cape York Peninsula near the Pennefather River in 1606. Both also stay under the 120-word limit (A is about 89 words, B about 110) and correctly say that earlier Portuguese landings are not documented.\n\n**Response A** adds Dirk Hartog's 1616 landing and the pewter plate. This is accurate, but it is less relevant, since Hartog landed on an island, not the mainland.\n\n**Response B** gives more detail that bears on the question. It says the crew were exploring the New Guinea coast and mistook the land for part of it, and that a skirmish with Aboriginal people reportedly killed some crew. It dates the landing more precisely (February–March 1606) and mentions both Portuguese and Spanish speculation. It also places Hartog (1616) and Cook (1770) as later, which helps establish that Janszoon came first.\n\nNeither contains an error, but B's extra detail is more useful for the question asked.\n\nVerdict: B",
+  "usage": {
+    "input": 714,
+    "output": 1559
+  },
+  "cost": 0.017018
+}

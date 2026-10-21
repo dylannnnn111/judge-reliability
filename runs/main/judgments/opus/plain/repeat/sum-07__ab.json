@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "sum-07",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth summaries flag the Classic CSV removal as the key action item. A is better for two reasons.\n\n- **Word limit:** A comes to about 116 words. B comes to about 123, which breaks the \"under 120 words\" instruction.\n- **Prioritisation:** A puts the action item first, where a busy manager will see it. A also adds a useful instruction to read the help article *before* updating. B opens with routine feature details and leaves the warning until the second paragraph.",
+  "usage": {
+    "input": 1247,
+    "output": 1497
+  },
+  "cost": 0.034928
+}

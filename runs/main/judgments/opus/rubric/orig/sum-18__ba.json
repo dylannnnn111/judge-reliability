@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-18",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.**\n\n**Accuracy**\n- Response A has no errors. \"35°\" matches the source's \"35 degrees\", and \"colour-blind users\" is a fair paraphrase of \"colour vision deficiency\".\n- Response B's feature details are also accurate.\n- However, B ends with \"No action is required from the team.\" The source never says this. It is an invented claim that could mislead a manager into thinking someone has assessed the impact.\n\n**Coverage**\n- Both keep the key points: three new features, improvements, fixes and accessibility changes.\n- B adds a few details, such as the Settings > Safety path, the 15-minute sync interval and the unsubscribe option. These are correct but marginal for a busy manager.\n\n**Length and concision**\n- Response A is roughly 115 words, so it meets the under-120 limit.\n- Response B runs to about 140 words, which breaks the user's explicit constraint.\n\nB's extra words do not justify breaking the limit, and one of its additions is unsupported.\n\nVerdict: A",
+  "usage": {
+    "input": 1441,
+    "output": 1017
+  },
+  "cost": 0.026104
+}

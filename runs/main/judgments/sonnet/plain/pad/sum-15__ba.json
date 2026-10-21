@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-15",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better because it meets the 120-word limit and Response A does not.\n\nResponse A runs to roughly 190 words, well over the limit. It also pads with filler such as \"In other words\" and \"Put differently\", and it opens with an unnecessary framing sentence.\n\nResponse B comes to about 105 words and keeps every important finding:\n- the 22% drop in lane drifting\n- the 0.09-second reaction-time gain\n- the benefit going mainly to experienced workers\n- no benefit for new workers\n- the finding that drive time mattered more than napping\n- the practical implication\n- the limitations\n\nIts one flaw is labelling the findings \"Key caveats\", which is slightly off. That is minor next to Response A's breach of the word limit.\n\n**B**",
+  "usage": {
+    "input": 1414,
+    "output": 607
+  },
+  "cost": 0.008898
+}

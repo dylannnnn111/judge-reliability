@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-39",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A runs about 126 words, slightly over the 120-word limit. Response B runs about 180 words, well over it, and pads with filler such as \"It is also worth noting that\" and \"To make sure the policy is working as intended.\" Both cover the key facts: the vote, the start date, the waived fines, the exceptions, the rationale, the cost and the review. B's net-cost calculation is a reasonable addition but does not offset its length. A is tighter, closer to the constraint, and better suited to a busy manager.",
+  "usage": {
+    "input": 1342,
+    "output": 1476
+  },
+  "cost": 0.034888
+}

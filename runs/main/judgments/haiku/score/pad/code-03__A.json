@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "code-03",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response finds the most important issue: the f-string SQL injection, correctly ranked first, with a working parameterized fix that also handles the optional status filter. The connection leak is real, and the response correctly notes that `with sqlite3.connect()` does not close the connection. The email normalization, missing ORDER BY/LIMIT, and redundant `if not rows` points are valid, and the `is not None` note is a reasonable edge case. Nothing flagged is wrong.\n\nThe main weakness is the explicit \"under 200 words\" constraint. The response runs roughly 400 words, about double the limit, and the extra length mostly comes from explanatory prose rather than additional findings. The audit-logging remark is tangential, and the response omits any mention of the hardcoded path or missing error handling, though those are less important. Ranking and fixes are sound, but the instruction violation is significant.\n\nScore: 6",
+  "usage": {
+    "input": 1211,
+    "output": 690
+  },
+  "cost": 0.0004661
+}

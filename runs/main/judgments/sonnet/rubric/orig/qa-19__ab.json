@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-19",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are correct on the main points. The word comes from Guugu Yimithirr *gangurru*, it was recorded in 1770 near Cooktown, the \"I don't understand\" story is a myth, and Haviland's 1970s work confirmed that *gangurru* names the animal. Both stay under 120 words.\n\nResponse A describes the myth, saying Cook's crew pointed at the animal and took the reply as its name. It does not say why the myth arose or why it is false beyond Haviland's finding.\n\nResponse B adds why the myth likely arose: later Europeans found that Aboriginal people elsewhere did not recognize the word, because Australia has many distinct languages. This is historically grounded and gives more reasoning. It also credits Banks alongside Cook and says why the story persists. Its \"eastern grey kangaroo\" is slightly more specific than A's \"large grey kangaroo\", but both are reasonable.\n\nB gives a bit more useful, accurate reasoning, so it is slightly better.\n\nVerdict: B",
+  "usage": {
+    "input": 788,
+    "output": 1357
+  },
+  "cost": 0.015146
+}

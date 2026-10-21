@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-22",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly answer \"No, this is a myth\" and explain that the Coriolis effect is too weak at sink or toilet scale. Response B gives the key reasoning concisely: drain direction is set by basin shape, leftover motion, and how water enters. It also notes that hurricanes rotate clockwise in the Southern Hemisphere, which directly illustrates the hemispheric difference the user asked about. Its historical references (Shapiro, MIT, 1962) are accurate, though I can't verify the 1965 Sydney replication with certainty. Response A is also sound, with a useful point that identical sinks can drain differently, but at roughly 165 words it clearly exceeds the 120-word limit. Response B is about 110 words and stays within it.\n\nVerdict: B",
+  "usage": {
+    "input": 859,
+    "output": 1443
+  },
+  "cost": 0.0008074
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-24",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is accurate throughout. The five approved amounts sum to $88,200, the $31,800 rollover is correct, and the Saltwater correction is flagged. The conflict of interest, feedback deadline, acquittal condition, Round 3 dates and next-meeting item are all right. It is also under the 120-word limit, at roughly 115 words.\n\nResponse B is also accurate on the numbers, dates and conditions. However, it runs well over 120 words, with a filler preamble (\"Thank you for reviewing the update below...\") and wordier bullets. It also drops the explicit note that the Saltwater figure was corrected from $45,000, which a manager who saw the earlier figure would find useful. Its length breaks the brief without adding any substantive content.\n\nResponse A meets the constraint and keeps the needed points more efficiently.\n\nVerdict: A",
+  "usage": {
+    "input": 1891,
+    "output": 1204
+  },
+  "cost": 0.0007911
+}

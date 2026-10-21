@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "qa-33",
+  "side": "B",
+  "score": 5,
+  "model": "claude-opus-5-5",
+  "text": "The response is **factually correct**. Tidal locking is the right answer, and the 27.3-day period is accurate. The libration figure of about 59% is accurate, and the far-side clarification is valid.\n\nThere are a few minor imprecisions:\n- **Tidal braking:** Strictly, Earth's gravitational torque on the slightly offset bulge did the slowing. Internal friction mainly caused that offset. Saying friction \"dragged on that bulge\" is a loose but tolerable simplification.\n- **Libration phrasing:** \"We don't see exactly half of the Moon at any given moment\" is awkward. At any instant we see roughly half. Libration lets us see more over time.\n\nThe **key reasoning is present and clear**. It explains synchronous rotation and how tidal friction produced it.\n\nHowever, the user explicitly asked for **under 120 words**. The response runs about 250 words, roughly double the limit. The first two paragraphs alone exceed it. The libration and \"dark side\" paragraphs answer questions the user didn't ask, which deliberately trades the stated constraint for extra coverage. The opening paragraph also repeats itself (\"to put it another way…\", \"because those two timescales are identical…\"). Under the rubric, length is not a merit. Here it also directly violates the instruction.\n\nCorrect content with good reasoning is undercut by a clear failure to follow the explicit length limit.\n\nScore: 5",
+  "usage": {
+    "input": 605,
+    "output": 933
+  },
+  "cost": 0.02108
+}

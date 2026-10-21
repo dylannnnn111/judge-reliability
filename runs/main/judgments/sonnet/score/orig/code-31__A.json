@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-31",
+  "side": "A",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds the central bug correctly. A second-precision `created_at` used as a strict `>` cursor skips rows that share the boundary timestamp. It also flags the missing tiebreaker in `ORDER BY` and gives a correct fix with a `(created_at, id)` keyset.\n\nProblems:\n- **Wrong claim:** it says the job \"stalls or loops forever\" when 1000+ rows share a timestamp. With strict `>`, the cursor always advances past that timestamp, so rows are skipped, not looped. This is a factual error inside the top-ranked item.\n- **Padding:** the \"fix\" is listed as its own numbered \"bug\". The index point assumes no suitable index exists, and the \"Minor\" point is generic.\n- **Reasonable but secondary:** the late-arriving-rows concern is real for audit exports. The `IS NULL OR` pattern hurting the planner is plausible but not the main issue.\n- **Length:** it appears to exceed the 200-word limit.\n\nOverall, the key bug and fix are right, but there is an incorrect claim, some speculative filler, and a likely length violation.\n\nScore: 6",
+  "usage": {
+    "input": 1029,
+    "output": 865
+  },
+  "cost": 0.010708
+}

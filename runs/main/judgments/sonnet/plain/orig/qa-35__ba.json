@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-35",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better. Both answers are accurate, but only A clearly meets the \"under 120 words\" limit.\n\n- **Length:** A is about 98 words. B is about 121 words with its bold headings, which is just over the limit. Without the headings B is about 109, so the overage is marginal, but A is safely compliant.\n- **Content:** B is slightly richer. It names resistance mechanisms (destroying the drug, pumping it out, altering the target) and adds misuse examples such as unfinished courses and agricultural use. A adds specific drug examples and mentions horizontal gene transfer.\n\nB's extra detail doesn't outweigh going over the stated limit.\n\n**A**",
+  "usage": {
+    "input": 652,
+    "output": 2282
+  },
+  "cost": 0.024124
+}

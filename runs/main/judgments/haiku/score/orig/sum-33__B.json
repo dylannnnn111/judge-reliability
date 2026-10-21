@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-33",
+  "side": "B",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate on the key points: the v1 shutdown date is correctly updated to 31 January 2027, the 8% figure, the 15-minute switch, and the public holiday and open-shift changes are all right. One minor inaccuracy: the header labels all new features \"(automatic)\", but shift swap approvals by area must be set up in Admin > Permissions > Areas. It also omits that staff can turn off open-shift push notifications, which is a small gap for a manager. On concision, the summary runs to roughly 135 words, breaking the under-120 limit. The shift-swap and \"Also\" lines could be trimmed without losing anything the manager needs. The core urgent message is clear and prominent, so the main weaknesses are the word count and the mislabelled setup requirement.\n\nScore: 5",
+  "usage": {
+    "input": 1181,
+    "output": 972
+  },
+  "cost": 0.0006041
+}

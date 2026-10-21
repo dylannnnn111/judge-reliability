@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-12",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy.** Both responses get the core facts right:\n- the 1 November start date\n- the free first hour\n- the $3→$4 hourly and $18→$24 daily increases\n- the $15 weekly pass and its eligibility groups\n- the 20 October application date and the letter from the treating team\n- the 1994 car park, concrete cancer and 180 closed spaces\n- the 18-month repairs, unaffected staff and the 2,000+ petition\n\nBoth slightly overstate things by implying the $9 daily concession is replaced: A says \"replaced\" and B says \"instead of.\" The article never says that. B adds an unsourced editorial line, \"This is a significant saving for regular users.\" That holds for frequent users but is the summariser's claim, not the article's. A attributes the funding rationale to the health service (\"according to the health service\"), as B does. On accuracy they are roughly even, with B's added claim a minor blemish.\n\n**Coverage.** Both keep the same key points, so neither omits anything a manager needs.\n\n**Concision and the word limit.** Here the difference is decisive. Response A runs to about 190 words, well over the 120-word limit. It is padded with conversational filler (\"I would like to let you know that,\" \"Turning to concessions,\" \"Finally, I want to reassure you,\" \"For your information\") that adds nothing. Response B is about 124 words, marginally over but close to the limit, and written in tight, scannable sentences suited to a busy reader.\n\nSince content and accuracy are essentially equivalent, B's far better adherence to the length constraint and its concision make it the better summary.\n\nVerdict: B",
+  "usage": {
+    "input": 1468,
+    "output": 1535
+  },
+  "cost": 0.036572
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-34",
+  "side": "B",
+  "score": 8,
+  "model": "claude-sonnet-5-5",
+  "text": "Correctness: The response correctly identifies public-key cryptography and Diffie-Hellman key exchange. The steps are accurate: each party generates a key pair, exchanges public keys, derives the same shared secret, and uses it as a symmetric session key. It also raises the man-in-the-middle problem and explains how TLS uses CA-signed certificates. All of this is accurate. A minor nuance: in step 1, \"private key and related public key\" for DH is slightly loose (ephemeral key pairs), but fine.\n\nWord count: Let me estimate. The intro is ~12 words. Step 1 is ~17, step 2 ~12, step 3 ~38, step 4 ~17. The authentication paragraph is ~33. The last line is ~7. Total is roughly 136-140 words, which exceeds the 120-word limit. Counting more carefully:\n\n\"They use public-key cryptography, typically a key exchange such as Diffie-Hellman.\" = 11\n\"How it works:\" = 3 → 14\n\"1. Each party generates a private key (kept secret) and a related public key (shared openly).\" ≈ 15 → 29\n\"2. They exchange public keys over the open internet.\" ≈ 8 → 37\n\"3. Each combines their own private key with the other's public key. Through the math, both arrive at the same shared secret, which an eavesdropper who sees only the public keys cannot feasibly compute.\" ≈ 34 → 71\n\"4. That secret becomes a symmetric session key (e.g., AES) for fast encrypted communication.\" ≈ 13 → 84\n\"Authentication problem: Strangers must also verify identity to prevent man-in-the-middle attacks.\" ≈ 12 → 96\n\"TLS solves this with certificates signed by trusted certificate authorities, which bind a public key to a domain name.\" ≈ 19 → 115\n\"This is how HTTPS works every day.\" = 7 → 122\n\nAround 120-125 words, so borderline, perhaps slightly over. This is a minor constraint violation, if at all.\n\nThe content is correct, covers the key reasoning, and is clear. A slight deduction for the possible length overrun.\n\nScore: 8",
+  "usage": {
+    "input": 476,
+    "output": 706
+  },
+  "cost": 0.008012
+}

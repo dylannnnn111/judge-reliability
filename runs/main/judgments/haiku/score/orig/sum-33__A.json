@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-33",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate. The release date, the new features, the improvements, the fixes, and the v1 connector deadline (moved from 30 November to 31 January 2027) all match the source, and the 8% figure and 15-minute switch time are correct. It keeps the points a manager needs, including the one action item and the advice to switch soon.\n\nIt does not meet the explicit length limit. My count is roughly 128 words, over the 120-word maximum. The header and some bullets could be trimmed to fit, for example by dropping the release-date line or shortening the public holiday bullet. The consequence of not switching (timesheets stop reaching payroll, possible late pay) is also compressed, though not wrongly.\n\nAccuracy is strong, the content is well chosen, but the response breaks the stated word limit.\n\nScore: 6",
+  "usage": {
+    "input": 1180,
+    "output": 1585
+  },
+  "cost": 0.0009105
+}

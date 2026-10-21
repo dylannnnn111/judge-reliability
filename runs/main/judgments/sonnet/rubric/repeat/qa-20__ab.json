@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "qa-20",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct core answer: Canberra, with Parliament first sitting there in 1927 (opened 9 May 1927).\n\nChecking details:\n- Response A says Provisional Parliament House opened on 9 May 1927 and that Parliament met in Melbourne from 1901. This is correct.\n- Response B adds that the Duke of York (later George VI) opened it, which is correct. It also says Parliament moved to the current Parliament House on Capital Hill in 1988, which is correct (opened 9 May 1988). Calling it \"now Old Parliament House\" is also correct.\n\nBoth are under 120 words. B's extra information is accurate and relevant, though not strictly necessary. A is more concise and fully answers the question. The instructions say length is only a merit if the extra words add something correct and useful. B's additions are correct and moderately useful context (who opened it, the later move), but they are not needed for the question asked.\n\nA minor nuance is that A's \"Before then, Parliament met in Melbourne, which had been the seat of government since Federation\" is fine. B says \"Parliament had met in Melbourne from Federation in 1901\", also fine. Strictly, Parliament first sat in Melbourne's Exhibition Building in 1901 and then Parliament House in Melbourne from 1901 to 1927, which is consistent with both.\n\nOverall, both are correct, and B adds accurate extra context. Whether that matters is marginal. The extras give slightly richer context, and the question is about \"first sat there\", so the 1988 move is somewhat tangential. The Duke of York detail is relevant to the opening. I lean toward a tie, or a slight edge to B for correct useful detail. Since the extra material is not necessary and the instruction cautions against rewarding length, I'd say TIE.\n\nVerdict: TIE",
+  "usage": {
+    "input": 485,
+    "output": 588
+  },
+  "cost": 0.00685
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-22",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses correctly say this is a myth, and both give the right reasoning: the Coriolis effect is real but too weak at sink scale, and basin shape, leftover motion and water entry dominate.\n\nThe deciding difference is the word limit. Response A runs to roughly 190 words, well over the 120-word cap. Response B comes in at about 115 words, so it follows the instruction.\n\nResponse B's added details also check out. Hurricanes do rotate clockwise in the Southern Hemisphere. Ascher Shapiro's experiment at MIT was in 1962, and Lloyd Trefethen replicated it in Sydney in 1965. Its point about toilet rim jets setting the swirl direction is accurate and useful.\n\nResponse B is correct, concise, and compliant.\n\nVerdict: B",
+  "usage": {
+    "input": 859,
+    "output": 720
+  },
+  "cost": 0.008918
+}

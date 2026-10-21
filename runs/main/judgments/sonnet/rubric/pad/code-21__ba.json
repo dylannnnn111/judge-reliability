@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-21",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. Both responses rank the duplicate-refund risk first. It is the real critical bug: a non-idempotent POST is retried on 502/503/504 and on network errors with no idempotency key. Both also correctly flag the missing timeout, the ignored `Retry-After`, and the undrained response bodies.\n\n**Response A**\n- Item 2 (double-submit in the console UI) is speculative. The UI code isn't shown, and it largely restates item 1.\n- Item 6 (amount validation) and item 7 (jitter reaching about 60s, no cancellation) are low-value filler.\n- It misses that the catch block retries `AbortError` and other permanent errors.\n- It misses that the `refundId` cast can return `undefined` as a successful refund.\n- At roughly 370 words, it badly exceeds the 200-word limit.\n\n**Response B**\n- It identifies the abort/permanent-error retry problem, which is real and relevant to a shared wrapper.\n- It flags the unvalidated `refundId` cast, which matters because the function returns a refund ID that callers trust.\n- Its fix for item 1 is more concrete: an idempotency key, or refusing to retry POST by default.\n- It is tighter and mostly avoids speculative items, though at roughly 250 words it also exceeds the limit, by less than A does.\n\nResponse B finds more of the real issues, flags fewer questionable ones, and stays closer to the length constraint.\n\nVerdict: B",
+  "usage": {
+    "input": 1944,
+    "output": 798
+  },
+  "cost": 0.011868
+}

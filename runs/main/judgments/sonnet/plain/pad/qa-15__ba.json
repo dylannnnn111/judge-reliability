@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-15",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer of 18 °F and use the same method and the same check. The only constraint to verify is the limit of under 120 words.\n\nResponse A is about 55 words, so it is well within the limit.\n\nResponse B is longer. Counting roughly: \"I'm happy to walk through this.\" (6), \"The temperature rose by 18 degrees Fahrenheit.\" (7), giving 13. The next paragraph, \"To see how we arrive at that figure, we can first find the rise in Celsius.\" is 16, for 29. \"Subtracting the starting value from the ending value gives 25 − 15 = 10 degrees Celsius.\" is about 15, for 44. \"Since a temperature difference scales by 9/5 without the 32-degree offset, we can convert that difference directly: 10 × 9/5 = 18 °F.\" is about 24, for 68. The last paragraph, \"As a check on this result, we can convert both temperatures to Fahrenheit separately.\" is 13, for 81. \"15 °C is 59 °F and 25 °C is 77 °F, and 77 − 59 = 18, which confirms the answer.\" is about 21, for 102.\n\nThat puts B at roughly 100 words, which is under 120, so both comply.\n\nSince both are correct and compliant, the difference is style. A is more concise and direct. B opens with filler (\"I'm happy to walk through this\") and is wordier. A is slightly better.\n\n**A**",
+  "usage": {
+    "input": 503,
+    "output": 459
+  },
+  "cost": 0.005596
+}

@@ -1,0 +1,13 @@
+{
+  "item": "code-38",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Problems, most important first:**\n\n1. **One failure aborts the whole run.** With `set -e`, any failing `tar` exits the script. A site with no `uploads/` dir stops every later site from being backed up and skips pruning. Handle failures per site, track a failure flag, and exit non-zero at the end.\n\n2. **`tar` exit code 1 on changing files.** Uploads are live, so \"file changed as we read it\" is likely. That returns 1 and triggers the abort above. Tolerate exit 1 (warn) but fail on 2 or higher.\n\n3. **Partial archives look valid.** `tar` writes straight to the final name, so a failed or interrupted run leaves a truncated `site-DATE.tar.gz`. Write to `.tmp` and `mv` on success, and delete the temp file on failure.\n\n4. **Unquoted variables.** `$SRC_ROOT/*/`, `basename $site_dir`, and `-C $site_dir` break on paths with spaces. Quote them: `\"$SRC_ROOT\"/*/`, `basename \"$site_dir\"`, `-C \"$site_dir\"`.\n\n5. **No overlap protection.** A slow run overlapping the next one can collide on the same files. Use `flock`.\n\n6. **No monitoring.** Cron failures go to local mail, which is easily missed. Log to a file and alert on failure, for example with a healthcheck ping on success.\n\n7. **Backups on the same server.** If `/backups` is on the same host or disk, this won't survive disk failure or compromise. Copy archives off-box.\n\n8. **Minor:** add `-type f` to `find`, set `umask 077` for the archives, and use `-mtime +14` knowing it effectively keeps about 15 days.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 359,
+    "output": 1134
+  },
+  "cost": 0.012058,
+  "at": "2026-10-14T01:55:02.670Z"
+}

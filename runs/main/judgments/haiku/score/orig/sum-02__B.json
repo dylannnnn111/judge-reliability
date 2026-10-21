@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-02",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The summary is accurate on every date, number, and decision I checked: the Mount Lavell and Corrie Creek proposal, Ross's objection, the no-change outcome, the reading program dates and volunteer deadline, the roof recommendation, and the next meeting date. It is well under 120 words (about 108). It leaves out a few minor points: that Helen's revised figures will exclude the faulty counter weeks, Anjali's support for the Thursday idea, the 7pm closing time, and the December Christmas party. A busy manager could reasonably want some of these, but none is essential. The \"needs full replacement\" wording is slightly firmer than the minutes' \"recommends,\" a small liberty.\n\nScore: 8",
+  "usage": {
+    "input": 1230,
+    "output": 1308
+  },
+  "cost": 0.000777
+}

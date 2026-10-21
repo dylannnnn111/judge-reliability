@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-31",
+  "side": "A",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The response catches the central defect: `created_at` has second precision and no tiebreaker, so rows sharing a timestamp across a page boundary are silently skipped. Its keyset fix on `(created_at, id)` is correct, and the composite index suggestion and the late-committed-rows concern are both real and useful. Two points weaken it. First, it says the job \"stalls or loops forever,\" but `created_at > :last_seen` advances the cursor to the next second, so the actual failure is data loss, not a loop. Second, point 6 is filler that adds little. The ordering and ranking are sensible, and the fixes are concrete.\n\nScore: 7",
+  "usage": {
+    "input": 1029,
+    "output": 707
+  },
+  "cost": 0.0004564
+}

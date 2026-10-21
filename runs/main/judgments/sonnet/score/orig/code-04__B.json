@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-04",
+  "side": "B",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds the most important bug first: retrying a charge POST with no idempotency key risks double-charging, and it gives the right fix. It also correctly flags retries of 4xx errors, the ambiguous final failure state, and the 30+ second worst-case latency (3×10s timeouts plus sleeps). The ranking is sensible, and most items come with a fix.\n\nWeaknesses:\n- **Item 4 is partly wrong.** In modern `requests`, `resp.json()` raises a `JSONDecodeError` that is a `RequestException`. A malformed 2xx would therefore be caught and retried, which makes the double-charge worse. Only the `KeyError` is truly uncaught.\n- **Items 6 and 7 are low-value.** Input validation and `print` versus `logging` are minor next to the payment-safety issues. The hardcoded AUD is arguably a deliberate choice, so flagging it is mild noise.\n- **It breaks the length limit.** The response runs to roughly 230 words against a 200-word cap, partly because of those weaker items.\n- **It misses a small bug.** The code sleeps after the final failed attempt for no reason.\n\nOverall the core is strong, but there is one inaccuracy, some padding, and a length violation.\n\nScore: 6",
+  "usage": {
+    "input": 1021,
+    "output": 999
+  },
+  "cost": 0.012032
+}

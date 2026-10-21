@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-30",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. Neither response strictly meets the 120-word limit. By my count, B runs to about 127 words, while A is around 200. B is also tighter and has no filler. A includes padding such as \"I would like to share a summary\" and \"Turning to how you can find out more\". B adds the useful \"why\" point, that the consultation found a direct Mill Flat–station link was the top request.\n\n**B**",
+  "usage": {
+    "input": 1438,
+    "output": 1294
+  },
+  "cost": 0.015816
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-31",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse B is better. The user asked for under 200 words. Response A runs to roughly 450 words, far over the limit, and pads its points with repetition. Response B is close to the limit, though slightly over, and covers the same core issues in order of importance. These are the skipped rows at tie boundaries, non-deterministic ordering, late-committed rows, the missing index, and the planner issue with the NULL-OR pattern.\n\nResponse A also makes a factual error. It claims the job can \"stall or loop forever\" if 1000 or more rows share one second. With a `>` cursor, the cursor still advances past that timestamp and the remaining tied rows are skipped, so there is no infinite loop. It also uses a list slot for \"Recommended fix,\" which is not a bug, and a \"minor point\" that adds little.\n\nResponse B adds a useful practical point about persisting the cursor and keeping writes idempotent. It also gives concrete fixes, such as the safety lag for late commits.",
+  "usage": {
+    "input": 1741,
+    "output": 551
+  },
+  "cost": 0.017984
+}

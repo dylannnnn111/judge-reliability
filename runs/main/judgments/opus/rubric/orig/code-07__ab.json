@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-07",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Verdict reasoning**\n\n**Most important bug.** Both responses correctly rank the dropped partial batch in `chunked` as the top issue and give the right fix. B adds a key consequence: with fewer than 500 contacts, *nothing* is sent. For an hourly incremental sync, small batches are likely common, so this sharpens the severity considerably.\n\n**Swallowed failures.** Both flag this.\n- A spreads one concern across three items (#2 swallowed failures, #3 misleading success log, #4 no failure signal to the scheduler). That is largely redundant.\n- B consolidates it into a single item. It also gives concrete remedies: return a failed count or raise at the end, and log the IDs of failed batches.\n\n**Retries.** Both raise this.\n- B's distinction between retryable and permanent errors is useful.\n- A's note to confirm `upsert_contacts` is idempotent is also useful.\n\n**Other points.**\n- B's broad-`except` point is valid, if minor.\n- B's `itertools.islice` suggestion for non-sliceable input is a concrete fix, where A only says to document or materialize.\n- B's #6 is slightly weak, because the log does include a count. Its real point is comparing `sent` against `len(contacts)`, which is reasonable.\n\n**Length.** Both exceed the 200-word limit, and B exceeds it by more. That counts against B. However, A spends its words on repetition, while B spends its words on substantive content.\n\nOverall, B identifies the bugs more sharply, ranks them sensibly, and gives more actionable fixes.\n\nVerdict: B",
+  "usage": {
+    "input": 1439,
+    "output": 947
+  },
+  "cost": 0.024696
+}

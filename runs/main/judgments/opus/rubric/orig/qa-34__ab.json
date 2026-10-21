@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-34",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** Both responses correctly identify public-key cryptography and a Diffie-Hellman-style key exchange. Both explain that only public values are exchanged and that both sides derive the same shared secret, which an eavesdropper can't compute. Both note the shift to symmetric encryption and the need for certificate-based authentication against man-in-the-middle attacks.\n\nB has a small imprecision: \"becomes a symmetric session key (e.g., AES)\" treats AES as a kind of key, when it is the cipher. A's phrasing (\"encrypts the conversation with fast symmetric encryption (e.g., AES)\") is accurate. A's \"HTTPS works exactly this way\" is a mild overstatement, but harmless.\n\n**Key reasoning:** Both cover the essential steps. B adds a useful detail: certificates bind a public key to a domain name. That is a genuine but small plus.\n\n**Instruction compliance and clarity:** The user asked for under 120 words. A comes to about 111 words. B comes to about 121 words with its headers, so it slightly exceeds the limit. Both are clearly structured.\n\n**Overall:** A is fully correct, covers the key reasoning, and respects the word limit. B's extra detail is offset by a minor imprecision and by narrowly breaking the explicit length constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 773,
+    "output": 1274
+  },
+  "cost": 0.028572
+}

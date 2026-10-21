@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-31",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both responses are scientifically correct. Each attributes the seasons to Earth's roughly 23.5° axial tilt, which stays fixed in direction as Earth orbits. Each explains that around December the Southern Hemisphere tilts toward the Sun, giving Australia summer, while Europe tilts away and has winter. Each also notes that the pattern reverses six months later.\n\n**Key reasoning:** Both give the essential mechanism: a more direct sunlight angle plus longer days means more heating. Both also dispel the distance misconception. A goes further by adding that Earth is actually closest to the Sun in early January, which is a nice concrete piece of evidence.\n\n**Clarity and constraints:** The user asked for under 120 words.\n- **Response A** lands at roughly 120 words. That is borderline, but essentially on target. It is tightly organized with bullets and wastes nothing.\n- **Response B** runs about 260 words, more than double the limit. Much of its extra length is pure restatement: \"To put it another way…\", \"In other words…\", \"Seen from the south…\". That repetition adds no new information.\n\nB's extra length therefore adds nothing useful while clearly violating the user's explicit constraint. A delivers the same correct explanation, plus a useful extra fact, concisely.\n\nVerdict: A",
+  "usage": {
+    "input": 966,
+    "output": 849
+  },
+  "cost": 0.020844
+}

@@ -1,0 +1,13 @@
+{
+  "item": "code-36",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "1. **Data race in `Invalidate`, which can crash the process.** It calls `delete` while holding only `RLock`, so other readers and writers can access the map at the same time. Go detects concurrent map writes and exits with a fatal error that `recover` cannot catch. Use `c.mu.Lock()`/`Unlock()`.\n\n2. **Cache stampede.** When an entry is missing or expired, every concurrent request for that tenant calls `fetch` at once. Under load this floods the upstream and may trip rate limits. Use `golang.org/x/sync/singleflight` keyed by tenant, or a per-tenant mutex with a re-check after locking.\n\n3. **Stale overwrite.** A slow `fetch` that started before `Invalidate` (or before a newer fetch) can finish later and write an older token over a fresher one. Track a generation or version number, or let singleflight serialize fetches.\n\n4. **TTL ignores the token's real lifetime.** The expiry counts from when the fetch finished, not from what the upstream reports, so the cache may serve already-expired tokens. Have `fetch` return the expiry and subtract a safety margin.\n\n5. **Unbounded growth.** Expired entries are never removed. With many tenants, memory grows forever. Add periodic sweeping or delete expired entries during `Get`.\n\n6. **No failure handling or cancellation.** Errors aren't cached and there is no backoff, so a failing upstream gets hammered. `fetch` also takes no `context.Context` for timeouts.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 633,
+    "output": 871
+  },
+  "cost": 0.019952,
+  "at": "2026-10-14T01:54:54.848Z"
+}

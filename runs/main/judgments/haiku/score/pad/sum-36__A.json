@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-36",
+  "side": "A",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The response gets most facts right: the term, the 22 printers, the $3,480 fee and 24-month price fixing, the 4% cap, the 75% early-exit penalty, the end-of-term options, and the contact. However, it misstates the overage: \"exceed the colour allowance by about $195 per month\" presents a dollar cost as a page excess, which could mislead a manager. It also omits the per-page overage rates and the fact that the lease was signed on 15 September. The biggest failure is length: the response runs roughly 200 words against a hard limit of 120, and the opening sentences (\"Thank you for reviewing...\", \"each one is described in more detail\") add nothing. It is organised clearly as a bulleted list, but it is not concise.\n\nScore: 4",
+  "usage": {
+    "input": 1277,
+    "output": 797
+  },
+  "cost": 0.0005262
+}

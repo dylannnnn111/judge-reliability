@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-12",
+  "side": "B",
+  "score": 5,
+  "model": "claude-opus-5-5",
+  "text": "The summary gets most of the facts right but has two clear faults: it states something the source doesn't support, and it goes over the word limit.\n\n**Accurate content.** The core facts are correct:\n- the 1 November start date and the free first hour;\n- the hourly rate rising from $3 to $4 and the daily cap from $18 to $24;\n- repairs to the 1994 car park, where concrete cancer has closed 180 spaces;\n- an 18-month repair timeline;\n- the $15 weekly pass, who is eligible, the treating-team letter, and forms available from 20 October;\n- staff unaffected, and a petition with over 2,000 signatures.\n\nThe fee rationale is properly attributed to the health service.\n\n**Unsupported claim.** The summary says the weekly pass \"will replace the current $9 daily concession.\" The source says concession parking has been \"extended\" with a new weekly pass, and separately notes the current concession is $9 a day. It never says the daily concession ends. \"Extended\" suggests an addition, so \"replace\" may be wrong. A manager could repeat it and give patients or staff incorrect information about whether the daily option remains.\n\n**Omissions.** These are minor. The summary drops the point that frequent visitors may end up paying less than now, which is a useful counterweight to the \"fees going up\" framing. It also drops why staff are unaffected (a separate area and an existing agreement). Neither is essential.\n\n**Length.** The user set a hard limit of under 120 words. The response is about 126 words, or roughly 127 including the \"Summary:\" label, so it breaches the instruction. The breach is small but avoidable: the \"Summary:\" label and a few phrases could have been cut.\n\n**Overall.** The summary is well organised and mostly faithful. Under accuracy-first criteria, the misleading \"replace\" claim is the most serious issue, and the explicit length breach compounds it.\n\nScore: 5",
+  "usage": {
+    "input": 1048,
+    "output": 1364
+  },
+  "cost": 0.031472
+}

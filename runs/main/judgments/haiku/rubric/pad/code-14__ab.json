@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-14",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the main bug: deleting rows while paginating with `OFFSET` makes the job skip roughly every other batch, leaving half the old events in the live table. Both give the right fix (re-query from the start, or use keyset pagination) and both flag the non-idempotent archive-then-commit gap. Both also note the string comparison on `created_at` and the missing index.\n\nResponse B adds a real issue that A omits: there is no error handling or rollback. If `archive` or the delete raises, the open transaction is left hanging on the connection. B also explains why the skip bug is dangerous (nothing fails and the count looks plausible), and it raises the point that an async or buffered archive could lead to deleting data that was never written. A makes the durability point too, but less sharply.\n\nResponse A's extra suggestion to enlarge the batch size is minor and slightly off-target, since the batch size is not the main cost. Both responses run a bit over the 200-word limit, so neither has an advantage there. Overall B covers the same core issues, adds a legitimate missing item, and is slightly more precise.\n\nVerdict: B",
+  "usage": {
+    "input": 1630,
+    "output": 986
+  },
+  "cost": 0.000656
+}

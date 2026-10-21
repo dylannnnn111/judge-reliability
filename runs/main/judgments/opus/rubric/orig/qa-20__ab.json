@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-20",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses answer the question correctly: the capital is **Canberra**, and Federal Parliament first sat there in **1927**. Both give the correct opening date of 9 May and correctly say Parliament met in Melbourne from Federation in 1901. Both stay under 120 words, so neither has an error or constraint violation.\n\nThe difference is in the extra detail. Response B adds three accurate facts:\n- The building was opened by the Duke of York, later King George VI.\n- The provisional building is now known as Old Parliament House.\n- Parliament moved to the current Parliament House on Capital Hill in 1988.\n\nThese additions are relevant. The 1988 point matters most, because it tells the reader that the 1927 building is not today's Parliament House, which is a common point of confusion. The extra words are correct and useful rather than padding, and B is just as clear as A.\n\nResponse A is accurate but leaves the reader more likely to conflate the two buildings.\n\nVerdict: B",
+  "usage": {
+    "input": 485,
+    "output": 580
+  },
+  "cost": 0.01354
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-05",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is slightly better.**\n\n**Correctness of the main issues.** Both responses correctly identify the most important bug. Python subtracts two aware datetimes that share a `tzinfo` as wall-clock times and ignores the offset change.\n\n- A's worked example is accurate. For a 01:00–05:00 shift, the fall-back night lasts 5h but pays 4h. The spring-forward night lasts 3h but pays 4h.\n- B states the direction correctly too: overpaid when clocks go forward, underpaid when they go back.\n\nBoth also correctly cover the remaining real issues:\n- ambiguous and nonexistent local times (`fold=0`),\n- weekend loading based only on the start day,\n- float money arithmetic with banker's rounding,\n- no public-holiday handling.\n\nThe ranking is the same and sensible in both.\n\n**Fixes.** A is slightly more concrete. It gives the UTC conversion code, a round-trip check to detect nonexistent times, and `ROUND_HALF_UP` as an explicit rounding rule. B's suggestion to keep minutes as integers is a nice touch. However, B's fix for ambiguous and nonexistent times is vaguer: \"detect and reject\" without saying how.\n\n**Avoiding noise.** A adds a useful real-world safeguard: a sanity limit on shift length, so a typo'd date can't pay a 300-hour shift. B instead mentions that `parse_local` is called repeatedly. That is a minor inefficiency, not a bug that matters for payroll, so it slightly dilutes B's list.\n\n**Length.** Both exceed the 200-word limit by a similar amount, so this doesn't separate them.\n\nOverall, A is a bit tighter and more actionable, and it avoids B's trivial point.\n\nVerdict: A",
+  "usage": {
+    "input": 1774,
+    "output": 1128
+  },
+  "cost": 0.029656
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-18",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses identify the critical cache key bug (ignoring `to`) first, and both cover validation, timeout, thundering herd, URL encoding, and unbounded growth. They differ in the final point and in length.\n\nThe constraint was under 200 words. Response A is roughly 230 words, which is over the limit. Response B is longer still, around 330 words, so it breaks the limit by more.\n\nQuality of content: Response A's point 7, money precision, is relevant because this is an invoicing service. It is somewhat speculative, since the conversion code isn't shown, but it is hedged as \"make sure the caller...\" and is a useful point. Response B's point 7, the unsafe generic cast, is a real but low-value nit. Response B has a minor ordering quirk: it ranks timeout above thundering herd, which is arguably fine either way. Response A's fix for the promise cache includes \"evict it if it rejects\", which is a correct and important detail. Response B omits that, so its suggested fix would cache failed promises. Response A's validation check is also more concise.\n\nResponse A is more concise, gives more accurate fixes, and its last item is more relevant to the domain. Response B is more verbose with filler (\"Here are the issues I found\", \"it would be prudent\"), and it exceeds the word limit by more.\n\nResponse A is better.\n\nVerdict: A",
+  "usage": {
+    "input": 1802,
+    "output": 429
+  },
+  "cost": 0.007894
+}

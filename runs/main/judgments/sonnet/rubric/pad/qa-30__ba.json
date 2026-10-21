@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-30",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "The request limits the answer to under 120 words. Response A is about 75 words, so it complies. Response B runs well over 120 words, probably about 230, so it breaks an explicit constraint. Much of B's extra text is filler: \"Because these points are easy to confuse, it's worth going through them one at a time,\" \"I hope this clarifies...\" and so on.\n\nOn correctness, both are accurate. B adds the point about model assumptions and the p<0.05 caveat, which are useful, but they do not make up for the length violation. A's last bullet, \"evidence that the alternative is true with a given confidence,\" is slightly awkward but correct.\n\nA is better because it follows the length limit while covering the key points.\n\nVerdict: A",
+  "usage": {
+    "input": 800,
+    "output": 228
+  },
+  "cost": 0.00388
+}

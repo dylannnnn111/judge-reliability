@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-38",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is accurate on every figure and date I checked: the 18 November launch, the 431 installs, the 4.3 rating, 21 of 23 bugs fixed, the 3, 12, 14, 17 and 18 November milestones, the $268,500 of $290,000 spend, and the one-week review risk. It is also at or just under the 120-word limit, and it covers what a manager needs: status, beta outcome, key dates, budget and risk.\n\nResponse B is also accurate, with only a minor simplification (\"used the app\" for \"installed and logged in at least once\") and a slight inference that the store checks \"reduce\" the risk. However, it runs to roughly 220 words, well over the 120-word limit. It also includes filler such as \"I am pleased to report\" and a closing sentence about the next update, which adds length without adding much value for a busy reader.\n\nResponse A is the better summary because it meets the length constraint while keeping all the essential points accurately.\n\nVerdict: A",
+  "usage": {
+    "input": 1566,
+    "output": 1221
+  },
+  "cost": 0.0007671
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-39",
+  "side": "A",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate. The vote, date, items covered, the $38,000 and 6,400 figures, the 60-day replacement rule, the inter-library exception, the $52,000 and $19,000 figures, the November email and the 12-month review all match the source. It also keeps the key points a manager needs: the decision, the exceptions, the rationale and the cost.\n\nIts flaws are these:\n- **Word limit:** I count about 126 words, which breaks the explicit \"under 120 words\" instruction.\n- **Minor imprecision:** \"Opponents say\" generalises one councillor's objection (Ashcroft) to a group, though two councillors did vote against.\n- **Omission:** it leaves out that accounts stay blocked until a lost item is returned or paid for.\n\nThe content is strong, but the word-limit breach is a clear failure of a stated constraint.\n\nScore: 6",
+  "usage": {
+    "input": 1050,
+    "output": 1522
+  },
+  "cost": 0.01732
+}

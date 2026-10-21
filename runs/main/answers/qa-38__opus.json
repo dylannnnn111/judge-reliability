@@ -1,0 +1,13 @@
+{
+  "item": "qa-38",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "The ozone hole forms over Antarctica because of its extremely cold winter stratosphere. During the polar night, a strong **polar vortex** isolates the air and temperatures drop below about −78°C. That allows **polar stratospheric clouds** to form. On their ice and particle surfaces, chlorine from CFCs is converted from inactive \"reservoir\" compounds (HCl, ClONO₂) into reactive forms such as Cl₂.\n\nDestruction waits for **spring** because breaking Cl₂ into ozone-destroying chlorine atoms requires **sunlight**. When the sun returns in September–October, the stored chlorine is released rapidly. It catalytically destroys ozone while the vortex still blocks replenishment from outside.\n\nBy late spring the vortex warms and breaks down. Ozone-rich air then mixes in, and the hole fills. The Arctic is warmer and less isolated, so its losses are smaller.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 56,
+    "output": 321
+  },
+  "cost": 0.006644,
+  "at": "2026-10-14T01:51:01.085Z"
+}

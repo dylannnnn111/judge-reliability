@@ -1,0 +1,13 @@
+{
+  "item": "code-12",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**Issues, most important first:**\n\n1. **N+1 queries.** Each invoice triggers two extra queries, so about 40,001 round trips per month. Use one query with a `LEFT JOIN` to `customers` and a `LEFT JOIN`/`GROUP BY` (or a correlated subquery) for the item count.\n\n2. **Missing customer crashes the export.** If a customer row is deleted or missing, `fetchone()` returns `None` and unpacking raises `TypeError`, aborting the whole statement. A `LEFT JOIN` with explicit handling (e.g., `\"<unknown>\"`) fixes this.\n\n3. **Non-sargable date filter.** `strftime('%Y-%m', issued_at) = ?` forces a full table scan because no index on `issued_at` can be used. Use a range instead: `issued_at >= '2024-05-01' AND issued_at < '2024-06-01'`.\n\n4. **Totals exported as formatted strings.** Finance can't sum `\"$1,234.56\"` without re-parsing. Negative amounts also render as `$-12.34`. Export `total_cents` (or a `Decimal`) and format at presentation time.\n\n5. **Nondeterministic ordering.** Within a customer, invoice order is undefined. Add `ORDER BY customer_id, id`.\n\n6. **No input validation.** A malformed `month` (e.g., `\"2024-5\"`) silently returns an empty statement. Validate the format.\n\n7. **Timezone ambiguity.** Month boundaries depend on how `issued_at` is stored (UTC vs. local). Confirm this matches finance's definition of the month.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 407,
+    "output": 840
+  },
+  "cost": 0.018428,
+  "at": "2026-10-14T01:53:28.924Z"
+}

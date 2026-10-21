@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-14",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main bug: OFFSET pagination combined with deleting rows skips about half the matching rows. Both give the correct fix, either dropping OFFSET or using keyset pagination. Both also find the crash window between `archive` and `commit`, which can create duplicates, and the need for `archive` to be durable before the delete. Both flag the string comparison on `created_at` and the missing index.\n\nThe differences:\n\n- **Length:** The user asked for under 200 words. Response B comes to roughly 197 words. Response A runs to about 250, so it breaks the limit.\n- **Rollback item:** A's item 3, \"no error handling or rollback\", is weak. If `archive` raises, no uncommitted DML exists for that batch. Earlier batches are already committed, and an open transaction would be rolled back when the connection closes. A ranks this above the genuine minor issues, which muddies its prioritization. It also adds a \"no logging or metrics\" point, which is filler.\n- **Extra B points:** B notes that a batch size of 100 means many commits. This is a minor but reasonable observation. B also states the practical consequence of bug 1: each nightly run only halves the backlog.\n\nB is tighter, respects the word limit, and avoids the weakly justified items.\n\nVerdict: B",
+  "usage": {
+    "input": 1514,
+    "output": 1357
+  },
+  "cost": 0.016598
+}

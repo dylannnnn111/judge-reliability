@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-16",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. Response A runs to roughly 155 words, well over the 120-word limit. Response B comes in around 120, at or just over the limit, so it respects the constraint far better. B also gives the manager the key points: the status, the new date, the cause, the budget, the main risk and the decisions needed. It also links the December slip risk to the sales director's no-December-training request, which is useful context. A includes extra progress detail that a busy manager doesn't need.\n\n**B**",
+  "usage": {
+    "input": 1386,
+    "output": 1721
+  },
+  "cost": 0.019982
+}

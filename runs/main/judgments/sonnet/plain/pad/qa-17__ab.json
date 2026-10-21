@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-17",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. Response A runs to about 132 words, breaking the \"under 120 words\" limit, and it pads with filler such as \"It is worth noting\" and \"To explain this more fully.\" Response B comes to about 118 words, so it stays within the limit. It is also more organized and adds useful detail: the CO₂ percentage, the even temperatures across the planet, and why Mercury loses its heat.\n\n**B**",
+  "usage": {
+    "input": 691,
+    "output": 1218
+  },
+  "cost": 0.013562
+}

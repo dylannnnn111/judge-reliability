@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-13",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Key constraints: under 200 words, list bugs most important first.\n\nResponse A: Let me estimate word count. It's roughly 230-250 words. Let me count roughly: item 1 ~30 words, item 2 ~30, item 3 ~55, item 4 ~45, item 5 ~30, item 6 ~20, item 7 ~20. Total ~230+. Exceeds 200.\n\nResponse B: it has an intro sentence and six items with verbose explanations. Roughly 350 words. It clearly exceeds 200 by much more.\n\nBoth violate the length limit, but B violates more. B also has an error: \"`//` floors toward zero\" is technically wrong (floors toward negative infinity), though for positive values it's fine. Also B says \"any schedule that crosses into December fails\" — actually it fails when current is December, i.e., crossing out of December; slight misstatement. A says \"crossing December\" and \"starts in December\", fine. A's item 3 is a \"if you fix naively\" issue, which is a bit speculative, but B also lists drift as a bug (which in the current code doesn't exist since it crashes). Both are similar.\n\nA is more concise, includes actionable fixes, notes the overbilling for 31-day months. B has preamble fluff (\"Below are the six issues identified...\").\n\nA is better overall.\n\n**A**",
+  "usage": {
+    "input": 1573,
+    "output": 427
+  },
+  "cost": 0.007416
+}

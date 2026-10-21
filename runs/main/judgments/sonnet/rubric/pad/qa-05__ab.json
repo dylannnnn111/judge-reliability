@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-05",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Check the date first. 29 Feb 2024 + 365 days: from 29 Feb 2024 to 28 Feb 2025 is 365 days, since 1 March 2024 through 28 Feb 2025 is 365 days (no leap day in that stretch). Counting: 29 Feb 2024 to 1 Mar 2024 is 1 day, and 1 Mar 2024 to 1 Mar 2025 is 365 days, so 1 Mar 2025 is 366 days after 29 Feb 2024. So 365 days after is 28 Feb 2025. That's correct.\n\nWeekday: 29 Feb 2024 was Thursday. Adding 365 days shifts the weekday by 1, giving Friday. 28 Feb 2025 was indeed a Friday. Both answers are correct.\n\nReasoning: both give 52 weeks + 1 day and note that 2025 is not a leap year. Response A's reasoning for the date is slightly circular (\"counting 365 days lands on 28 Feb\"), as is B's, which says it is 28 Feb \"since 2025 is not a leap year\". Both are roughly equal in substance. A is more concise and clear. B is wordier with the same content, plus filler like \"To explain how this answer was reached\".\n\nBoth are under 120 words. A is tighter, and its explanation adds nothing less than B's. A is slightly better on clarity.\n\nVerdict: A",
+  "usage": {
+    "input": 521,
+    "output": 464
+  },
+  "cost": 0.005682
+}

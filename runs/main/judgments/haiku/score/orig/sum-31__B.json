@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-31",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate. Every figure matches the source: 118 pickers, ten weeks, 142 to 156 lines per hour (about 10%), error rates 0.62% to 0.41%, 17% gain for new workers, 64% preference, $210,000 setup, and 14-month payback. It also correctly states the single-company, grocery-only limitation. The only small gap is that the payback figure is an estimate by the partner, which the response doesn't attribute. It omits some useful detail: the gains were front-loaded in the first four weeks, the accuracy gain was smaller at the already-low-error centre, and workers missed talking to colleagues. A busy manager could reasonably want the first two, though the summary stays within the word limit and covers the decision-relevant points. The length (about 105 words) is appropriate and nothing is padded.\n\nScore: 8",
+  "usage": {
+    "input": 1082,
+    "output": 678
+  },
+  "cost": 0.0004472
+}

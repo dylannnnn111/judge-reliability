@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "sum-40",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. It stays under the 120-word limit, at roughly 116 words by my count. Response B runs to about 126 words, which breaks the explicit constraint.\n\nA also reads more easily for a busy manager, with a clear bottom line and caveats. It keeps the finding about teachers saying students seemed calmer. B drops that, and it also changes \"no reports of problems\" to \"no significant problems\", which slightly alters the source.\n\n**A**",
+  "usage": {
+    "input": 1231,
+    "output": 1851
+  },
+  "cost": 0.020972
+}

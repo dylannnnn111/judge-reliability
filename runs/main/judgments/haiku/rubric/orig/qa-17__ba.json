@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-17",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify Venus and give the accurate average surface temperature of about 465°C. Both also explain the runaway greenhouse effect driven by the thick CO₂ atmosphere and note the roughly 90-fold surface pressure. Response A adds the 96% CO₂ figure, explains why Mercury is cooler despite being closer to the Sun (almost no atmosphere to retain heat), and describes how the dense atmosphere evens out temperatures across the planet. Its word count is close to the 120-word limit, but my estimate puts it under. Response B is accurate and concise but less developed. Its sulfuric acid clouds sentence is vaguer, and it does not explain the Mercury contrast. A's extra words add correct, relevant reasoning, so A is the stronger answer.\n\nVerdict: A",
+  "usage": {
+    "input": 768,
+    "output": 866
+  },
+  "cost": 0.0005098
+}

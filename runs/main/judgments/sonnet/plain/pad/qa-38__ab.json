@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-38",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer in under 120 words.\n\nResponse A is well over 120 words, probably around 230, so it breaks the explicit constraint.\n\nResponse B is roughly 85 words and stays within the limit. Its content is accurate: PSCs, the polar vortex, reservoir conversion, sunlight in spring, and the vortex breakdown. It leaves out the Arctic comparison, but that wasn't required.\n\nB is better because it follows the instruction.\n\n**B**",
+  "usage": {
+    "input": 820,
+    "output": 153
+  },
+  "cost": 0.00317
+}

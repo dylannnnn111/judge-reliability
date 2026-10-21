@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-25",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses catch the same core issues in roughly the right priority order:\n\n- the off-by-one with `>`\n- unbounded Map growth\n- the per-IP-only weakness against distributed guessing\n- the hardcoded `retryAfterSec`\n- in-memory, per-process state\n- trust in the IP source\n\nResponse A fits the brief better. It stays close to the 200-word limit, while B overshoots it more noticeably. Every A item is a substantive problem. Its point that successful logins consume quota is a real design flaw that B only touches indirectly in its \"minor\" item.\n\nB adds some useful specifics: the IPv6 /64 prefix, `limit × instances`, the retry formula, and a proxy address locking out everyone. But it also spends words on filler like \"there are no tests,\" which can't be judged from the snippet and isn't a bug in this code. Given the explicit length constraint and the instruction to list problems \"that matter,\" A's tighter, fully relevant list is the better answer.",
+  "usage": {
+    "input": 1484,
+    "output": 1121
+  },
+  "cost": 0.028356
+}

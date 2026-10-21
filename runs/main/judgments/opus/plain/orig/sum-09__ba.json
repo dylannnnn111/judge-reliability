@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-09",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth summaries capture the key terms accurately: the starting rent, the 3–5% CPI collar for years 2–4, the uncapped market review in year 5 with a floor at year-4 rent, the 30-day dispute window, and the late-notice rule. Two things separate them.\n\n- **Word limit:** By a straightforward count (including headings), A runs to roughly 131 words, clearly over the 120-word limit. B comes to about 126, also slightly over but much closer to the constraint.\n- **Completeness and usefulness:** B notes that it is a five-year lease. It spells out what outgoings cover (rates, strata levies, common-area cleaning). It keeps the \"not legal advice\" caveat. B's phrasing (\"could rise sharply\", \"back-paid\") is a bit more pointed for a manager. A's \"Other points\" bullet bundles three separate items together, which is harder to scan.\n\nB has small imprecisions: it says \"14 days' written notice\" rather than \"at least 14 days\", and \"rise sharply\" is mild embellishment. These are minor next to A's larger overshoot of the word limit.",
+  "usage": {
+    "input": 1349,
+    "output": 1291
+  },
+  "cost": 0.031216
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-31",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Response A exceeds the 120-word limit (it runs to roughly 250 words), so it fails the explicit constraint. It is also repetitive. Response B is about 100 words and accurate. It states that Earth is closest to the Sun in early January, which is correct.\n\n**B**",
+  "usage": {
+    "input": 821,
+    "output": 90
+  },
+  "cost": 0.002542
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-28",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response catches the most serious problems: the check-then-act race that allows overdraft, the unverified `toId` that lets money vanish, the never-released connection that exhausts the pool, and the opposite-order locking deadlock. It also covers the ROLLBACK error-masking issue and suggests a useful CHECK constraint. The fixes are concrete and correct, and the ranking is sensible, with the double spend and vanishing funds first. The connection leak arguably deserves a higher spot given it causes an outage, but third is defensible. The `fromId === toId` note is correctly labeled minor. Nothing flagged is a false positive. The main weakness is length: the response runs slightly over the 200-word limit, which is a real instruction violation, though a small one.\n\nScore: 8",
+  "usage": {
+    "input": 1171,
+    "output": 864
+  },
+  "cost": 0.0005491000000000001
+}

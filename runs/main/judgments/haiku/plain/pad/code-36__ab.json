@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-36",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. Both identify the same core issues, including the `Invalidate` read-lock bug, which is the most important one. B is closer to the 200-word limit, at roughly 215 words against A's roughly 265, and A's opening sentence is filler. B also adds the accurate point that Go's concurrent-map-write fault cannot be recovered. Its weakest item, \"errors aren't cached,\" is minor, but A has no comparable advantage that offsets the length overrun.\n\nB",
+  "usage": {
+    "input": 1822,
+    "output": 1318
+  },
+  "cost": 0.0008412000000000001
+}

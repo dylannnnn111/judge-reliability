@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-14",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both summaries are accurate. Each gets the three-day rule, the formal-versus-informal exception, the excluded Claims and Customer Contact teams, the equipment funding change, the Levels 3 and 4 hot desking, and the rationale right, with no dates or conditions misstated. Response A adds that team leaders set the common day and that the Q&A is on the intranet, which are useful but minor. Response B omits those details but keeps every point a busy manager needs.\n\nThe length limit matters here. Response A runs to roughly 155 words, well over the 120-word cap. Response B is roughly 125 words, at or very slightly over the limit, and is tighter. Since the extra words in A don't add anything the manager critically needs, B is the better response.\n\nVerdict: B",
+  "usage": {
+    "input": 1455,
+    "output": 1061
+  },
+  "cost": 0.000676
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "code-09",
+  "side": "B",
+  "score": 8,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy and coverage.** The top issue is correctly identified. `revoke_permission` never invalidates `_permission_cache`, so a revoked permission stays live until the process restarts. That is a real security bug, it is ranked first, and the fix (`pop` after commit) is concrete and correct. Item 2 adds a real deployment problem: per-process caches across multiple workers mean local invalidation alone fails. It gives reasonable fixes (shared cache, TTL, or no cache). Items 4 and 5 are also genuine and well chosen:\n- Unbounded growth, including empty sets cached for nonexistent IDs, is a real memory and DoS concern, with a sensible LRU/TTL fix.\n- Invalidating only after commit is correct guidance.\n\n**Weaknesses:**\n- Item 3 largely restates items 1–2 (no expiry and stale data) and has no fix of its own; TTL appears only in item 2. \"Role changes\" mentions a concept absent from the code, though \"grants\" and \"external DB edits\" are valid.\n- Item 5 is incomplete. Even invalidating after commit, a reader that queried before the commit can re-populate the cache with stale data after the `pop`. The response doesn't mention this residual race, though it is subtle.\n- About 190 words, so it fits the limit, but some words go to overlap that could have gone to that race.\n\n**False positives.** None; nothing flagged is actually fine. Ranking is sensible throughout.\n\nOverall this is a strong, accurate review with minor redundancy and one slightly incomplete point.\n\nScore: 8",
+  "usage": {
+    "input": 940,
+    "output": 1367
+  },
+  "cost": 0.0311
+}

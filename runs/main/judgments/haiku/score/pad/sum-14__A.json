@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-14",
+  "side": "A",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The response gets the core facts right: the three-day minimum effective 3 November 2026, the formal-arrangement exception, the excluded Claims and Customer Contact teams with their early-2027 roster review, the restricted equipment funding, and the Levels 3 and 4 booked hot desking. It does omit that staff keep their current equipment, that lockers are available, and that team leaders set the common day, so a manager could miss practical points. It also says the common day is set for each team without noting that team leaders choose it.\n\nThe main failure is length. The request was under 120 words, but the response runs to roughly 170 words. The opening sentence (\"This section sets out...\") and the \"Why\" framing add nothing a busy manager needs. Trimming those and adding the missing practical details would have served the reader better than the current version, which is padded yet still incomplete.\n\nScore: 4",
+  "usage": {
+    "input": 1185,
+    "output": 924
+  },
+  "cost": 0.0005805
+}

@@ -1,0 +1,13 @@
+{
+  "item": "qa-39",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "Most languages store decimals as binary floating-point numbers (IEEE 754). Just as 1/3 can't be written exactly in decimal (0.333...), the fractions 0.1 and 0.2 can't be represented exactly in binary. They become repeating binary fractions that get rounded to the nearest storable value.\n\nSo 0.1 is actually stored as roughly 0.1000000000000000055511, and 0.2 as roughly 0.200000000000000011102. Adding them yields a result that rounds to 0.3000000000000000444, which is a different double than the one closest to 0.3 (about 0.299999999999999988898).\n\nPrinting shows 0.30000000000000004.\n\nWorkarounds: compare with a tolerance (epsilon), use decimal types (e.g., Python's `Decimal`), or store values as integers (like cents).",
+  "stop": "end_turn",
+  "usage": {
+    "input": 62,
+    "output": 274
+  },
+  "cost": 0.002864,
+  "at": "2026-10-14T01:51:00.807Z"
+}

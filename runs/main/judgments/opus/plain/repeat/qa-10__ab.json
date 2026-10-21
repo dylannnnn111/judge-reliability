@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "qa-10",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses are correct (1/3), use the same sample-space reasoning, and stay under 120 words. Each also explains why the answer differs from 1/2.\n\nResponse B is tighter, at about 85 words. Response A runs about 109 words and states the answer twice, at the top and bottom. A's closing remark that mixed families \"together outnumber\" two-girl families adds little beyond the enumeration. B makes the same point more concisely, which suits the word limit better.",
+  "usage": {
+    "input": 526,
+    "output": 465
+  },
+  "cost": 0.011404
+}

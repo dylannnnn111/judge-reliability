@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-39",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses find the same core problems: the unchecked `cd` that can make `rm -rf ./*` run in the wrong directory, the path traversal via `APP_NAME`, skipped dotfiles, and a zero exit code when files remain. Both rank the `cd` issue first, which is correct. Both are under 200 words and give concrete fixes.\n\nResponse A's fixes are somewhat more precise. Its validation regex also rejects `.` and leading-dot names, so it blocks `.` as well as `..`. Response B's \"reject names containing `/` or `..`\" leaves `.` open, and `.` would clear every app's cache at once. Response A also notes that the line-based counting miscounts filenames containing newlines, a real but minor point. Response B's observation that the `find` check still counts hidden files, so the warning fires, is accurate and useful. Its `.[!.]*` / `..?*` glob fix is valid too.\n\nOverall the two are close in substance, with Response A slightly more complete and tighter on the validation fix.\n\nVerdict: A",
+  "usage": {
+    "input": 1626,
+    "output": 1164
+  },
+  "cost": 0.0007446
+}

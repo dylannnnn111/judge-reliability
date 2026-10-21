@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-07",
+  "side": "A",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate and puts the breaking change first, which is what a manager needs most. It correctly says the Classic CSV removal breaks imports into other systems or spreadsheets, and explains why (different column names, GST in its own column). It points to the help article, notes Android 9 support ending, and lists the new features and the coming-soon items. It comes in at about 119 words, just under the limit.\n\nWeaknesses:\n- The bug fixes are listed under \"Improvements\", which is a small mislabel.\n- It leaves out that the app still works on Android 9.\n- It drops the 40% dashboard speed figure, which is minor.\n\nNothing is misleading.\n\nScore: 9",
+  "usage": {
+    "input": 1090,
+    "output": 1103
+  },
+  "cost": 0.01321
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-34",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly explain Diffie-Hellman key exchange, the shared secret derived from public values, the switch to symmetric encryption, and the need for certificates to prevent man-in-the-middle attacks. Neither contains a technical error.\n\nResponse A is about 117 words, so it meets the \"under 120 words\" constraint. Response B runs roughly 190 to 230 words, which clearly violates it. B's extra content, such as the framing sentence and the closing remark about browsing, adds little that is technically useful. A covers the same key reasoning more concisely.\n\nSince the two are equally correct and cover the same key points, the explicit length limit is the deciding factor, and A follows it while B does not.\n\nVerdict: A",
+  "usage": {
+    "input": 907,
+    "output": 714
+  },
+  "cost": 0.0004477
+}

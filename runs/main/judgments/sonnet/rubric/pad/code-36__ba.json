@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-36",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same core issues: the RLock-on-delete race (the top bug), the stampede, stale overwrite, TTL mismatch, unbounded growth, and no context.\n\nWord limit: the request says under 200 words. Response A runs roughly 270 words and Response B roughly 300, so both exceed it. B also opens with a filler sentence and has a stray \"[End of response]\" marker.\n\nAccuracy:\n- A's item 1 is correct and adds that the fatal error can't be recovered, which is accurate. \n- A's item 3 notes that a slow fetch can overwrite a fresher token and suggests a generation number, a valid fix.\n- A's item 6 says \"Errors aren't cached and there is no backoff, so a failing upstream gets hammered.\" That is a reasonable point, though minor.\n- B's item 6 says \"A hung upstream call blocks every request waiting on that tenant.\" In the current code, requests don't wait on each other, since every request calls fetch independently. That is only true with singleflight. It's a small inaccuracy.\n- B's item 2 ties the stale-token problem to Invalidate specifically, which is the more relevant scenario and is well explained. It gives no fix, though. A gives a fix.\n- B's item 4 is somewhat muddled: \"TTL should be set shorter\" is a fair mitigation, but it says nothing about measuring from fetch completion rather than fetch start. A also doesn't mention the start-versus-completion distinction precisely, only \"counts from when fetch finished.\"\n\nRanking: both put the lock bug first. A is a bit more concise and gives fixes for nearly every item. B lacks a fix for item 2 and includes the incorrect claim in item 6.\n\nA is closer to the length constraint, is tighter, gives fixes, and has no inaccuracies. A is better.\n\nVerdict: A",
+  "usage": {
+    "input": 1978,
+    "output": 605
+  },
+  "cost": 0.010006
+}

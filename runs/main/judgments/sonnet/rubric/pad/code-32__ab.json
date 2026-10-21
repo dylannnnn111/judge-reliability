@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-32",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same core issues, in the same order:\n\n1. The `BETWEEN` upper bound drops September 30 orders.\n2. Integer division truncates the averages.\n3. The `<> 'refunded'` filter mishandles NULL statuses.\n4. The inner join and `HAVING` interact badly, so stores with no orders vanish.\n5. Timezone and hardcoded dates are minor.\n\nBoth give correct fixes for the date range, and both rank the date bug first, which is sensible.\n\n**Length.** The user asked for under 200 words. Response A runs somewhat over, at roughly 230 words, but stays tight. Response B is much longer, at roughly 350 words, and opens with a filler sentence (\"Let me walk through the issues...\") that adds nothing. It also has a redundant header and a \"Minor issues\" section that includes a weak ORDER BY tiebreaker nitpick. B breaks the constraint much more badly.\n\n**Accuracy.**\n- B suggests `AVG()` as a fix right after saying the problem applies to SQL Server. In SQL Server, `AVG` on an INTEGER column also returns an integer, so the fix would not work there.\n- B's `IS DISTINCT FROM` is not supported everywhere.\n- A's casting fix (`* 1.0`) works across dialects.\n- A speculates a little about cancelled or pending statuses and partial refunds, but B raises the cancelled/failed point too.\n- Both treat the missing zero-order stores as a possible issue. A hedges with \"if the tiles should show zero-revenue stores\", which is reasonable. B asserts that a finance tile would ideally show them.\n\nOverall, A is more concise, its fixes are more portable, and it is closer to the word limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1972,
+    "output": 1168
+  },
+  "cost": 0.015624
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-36",
+  "side": "A",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The response covers most key terms accurately: term, inclusions, fee, price review, early exit, end of term and contact. It has two real problems.\n\n1. **Misleading wording on the $195.** It says term months will \"exceed the colour allowance by about $195/month\". The $195 is the extra cost of about 3,000 pages at 6.5c each, not the size of the excess. A skimming manager could misread this.\n2. **Over the word limit.** I count about 127 words, so it breaks the explicit \"under 120 words\" instruction.\n\nIt also omits the overage rates (0.9c and 6.5c per page), which a manager might want, though the $195 figure partly covers this. The bullet layout is clear and easy to scan.\n\nThe accuracy slip and the broken length limit both weigh against it, though the content is otherwise sound.\n\nScore: 4",
+  "usage": {
+    "input": 1129,
+    "output": 1656
+  },
+  "cost": 0.018818
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-13",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**B.** Both responses find the same core bugs: the December crash, day-of-month overflow, schedule drift, the hardcoded 30-day proration, missing validation, and unspecified rounding. The main difference is the 200-word limit.\n\nResponse A runs to about 240 words, clearly over the limit. It also pads with a low-value \"minor\" item on timezones and tests. Its suggestions are good, such as capping `days_used` and naming `dateutil.relativedelta` and `calendar.monthrange`. Its point 3 is framed as a trap if you fix #2 naively, which duplicates what B treats as a plain bug.\n\nResponse B is about 200 words, so it is much closer to the limit. It stays focused on the problems that matter and orders them sensibly. It points out that `days_used` can exceed the period and overcharge. It also raises the inclusive versus exclusive end-date question, which is a real billing concern. One small slip is that `//` floors toward negative infinity, not toward zero, but the difference doesn't matter for positive values.\n\nBecause B follows the length constraint more closely and covers the substantive issues just as well, B is better.\n\n**B**",
+  "usage": {
+    "input": 1343,
+    "output": 1394
+  },
+  "cost": 0.016626
+}

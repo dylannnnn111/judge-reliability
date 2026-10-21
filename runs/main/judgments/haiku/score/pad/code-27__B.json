@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "code-27",
+  "side": "B",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The response finds real problems. Concurrency via an unbounded `Promise.all` over 80,000 sends, the lack of per-recipient failure tracking, the misleading `emails.length` return value, and the missing retry logic are all valid and ranked reasonably high. The suppression point is also important, though the code's type signatures show it's an omission from the data model rather than a bug in this snippet. Weaknesses: the null-email issue contradicts the declared `email: string` type, so it's speculative. The response also ignores the explicit 200-word limit, running roughly twice that, with filler like the opening thanks and \"restated in more detail.\" Most items name a problem without saying how to fix it, which the user didn't explicitly ask for but is implied by \"review.\" The minor lowercasing point is fairly flagged as harmless.\n\nScore: 5",
+  "usage": {
+    "input": 1257,
+    "output": 754
+  },
+  "cost": 0.0005027
+}

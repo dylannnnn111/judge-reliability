@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-30",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses go over the 120-word limit, but by very different amounts.\n\n**Response A** is about 127 words, slightly over the limit.\n- **Accuracy:** It covers every key fact correctly: the 410 frequency increase, the new 412 route and its hours, the 408 removal and why, the consultation finding, the early-start concern, unchanged fares, timetable distribution and the info stall.\n- **Format:** The bulleted layout is easy to scan, which suits a busy manager.\n\n**Response B** runs to roughly 200 words, well beyond the limit.\n- **Filler:** Much of the extra length is padding, such as \"I would like to share a summary of the upcoming bus changes\", \"Under the new arrangements\" and \"Turning to how you can find out more\". This is wasted space for a busy reader.\n- **Omission:** It drops the reason for the change (that a direct Mill Flat–station link was the top consultation request), which Response A includes.\n\nResponse A is more concise and more complete, and comes much closer to the length requirement.",
+  "usage": {
+    "input": 1438,
+    "output": 1527
+  },
+  "cost": 0.036292
+}

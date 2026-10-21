@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-19",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response B is the better summary. It covers every key point: written consent, the landlord's conditions on assignment, the continuing liability for non-retail leases and the only release route, the 30% subletting cap with its conditions, change of control, the 28-day response period, legal advice before a sale, and where to get forms. It runs about 130 words, slightly over the 120-word limit, but it is close.\n\nResponse A is far longer, roughly 330 words, which breaks the limit by a wide margin. Much of that length is filler such as \"Thank you for reviewing this summary\" and \"Each point is listed separately,\" and phrases like \"to put this another way\" and \"put simply\" repeat points without adding information. It is also less accurate in one respect. It states flatly that \"we remain liable for the full remaining term,\" where the source says the company \"could remain liable,\" so it drops the hedge that matters for a busy manager. Its content is otherwise correct and well organised, but the extra words do not add anything useful.\n\nVerdict: B",
+  "usage": {
+    "input": 1841,
+    "output": 955
+  },
+  "cost": 0.0006616
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-40",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is well over 120 words (roughly 250), so it breaks the explicit length constraint. It also has filler such as \"it is useful to start with the central comparison\" and repeats itself. Response B is about 100 words, covers the key points, and is formatted for a busy reader.\n\n**B**",
+  "usage": {
+    "input": 1447,
+    "output": 93
+  },
+  "cost": 0.003824
+}

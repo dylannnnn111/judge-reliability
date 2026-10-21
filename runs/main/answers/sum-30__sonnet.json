@@ -1,0 +1,13 @@
+{
+  "item": "sum-30",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Summary: Kelso Ridge bus changes (from Monday 19 January)**\n\nThe regional transport authority is overhauling bus services for Kelso Ridge and Mill Flat, following a six-week consultation.\n\n- **Route 410:** Every 15 minutes at weekday peak times, up from every 30.\n- **New Route 412:** Links Mill Flat to Kelso Ridge station and the shopping centre, every 20 minutes, 6am–9pm, daily.\n- **Route 408:** Scrapped (averages nine passengers per trip); the 412 covers its stops.\n- **Concern:** Industrial estate workers say the 412 doesn't start early enough. The authority will monitor demand and may add earlier services.\n- **Unchanged:** Fares.\n\nTimetables will be letterboxed in December and appear in apps in early January. An information stall runs Saturday 6 December, 10am–2pm, at the shopping centre.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 651,
+    "output": 310
+  },
+  "cost": 0.004402,
+  "at": "2026-10-14T01:52:14.777Z"
+}

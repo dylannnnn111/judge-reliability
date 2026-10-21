@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-29",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is over the 120-word limit. It runs roughly 170 words, so it fails the explicit constraint. Response B is about 100 words, which stays under the limit, and it answers the question accurately.\n\nChecking the numbers: 1000 × 1.05^30 = 4321.94, so $4,322 is right. Simple interest gives 1000 + 30 × 50 = $2,500, also right.\n\nB is better.\n\n**B**",
+  "usage": {
+    "input": 672,
+    "output": 140
+  },
+  "cost": 0.002744
+}

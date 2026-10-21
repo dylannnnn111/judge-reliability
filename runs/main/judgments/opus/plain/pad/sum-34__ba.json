@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-34",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is concise, well-structured and scannable, which suits a busy manager. It covers every item in the original accurately, including all three fixes. It runs about 130 words, slightly over the 120-word limit.\n\nResponse B misses the limit badly, at about 280 words. It is padded with filler (\"I'm pleased to share…\", \"so you can see how they work together\"). It leaves out two of the three fixes, the tablet display and invoice printing. It also adds claims that aren't in the source, such as \"We will share further details\" and the point about practitioners not adjusting schedules by hand.",
+  "usage": {
+    "input": 1465,
+    "output": 856
+  },
+  "cost": 0.02298
+}

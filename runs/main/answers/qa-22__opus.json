@@ -1,0 +1,13 @@
+{
+  "item": "qa-22",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "No, that's a myth. The Coriolis effect is real and does make large weather systems spin in opposite directions in each hemisphere (hurricanes rotate clockwise in the Southern Hemisphere). But at sink or toilet scale it's far too weak to matter.\n\nDrain direction is set by much bigger factors: basin shape, leftover motion from filling, and how water enters. Toilets swirl the way their rim jets are angled, so the same model flushes the same way everywhere.\n\nPhysicists have detected the Coriolis effect in a drain, but only under extreme lab conditions: large, symmetrical tanks left perfectly still for a day or more (Ascher Shapiro at MIT in 1962, with a Sydney replication in 1965).",
+  "stop": "end_turn",
+  "usage": {
+    "input": 65,
+    "output": 352
+  },
+  "cost": 0.0073,
+  "at": "2026-10-14T01:50:39.064Z"
+}

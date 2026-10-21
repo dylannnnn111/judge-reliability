@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "sum-32",
+  "side": "A",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is mostly accurate on the main facts: the rates, the 0.25% rise in August, the 0.90% discount still applying, the $250 credit and the customers' request for a call. It has three problems.\n\n**Length:** It runs to roughly 180 words, well over the explicit 120-word limit. It also wastes words on filler such as \"I would like to take a moment to summarise this complaint for you\" and \"In this regard\".\n\n**Accuracy:**\n- It says Care \"acknowledged that the wording in the email was confusing\". Harriet only said it \"might have been confusing\", so this overstates the admission.\n- \"Following this, the complaint was closed as resolved and referred to the lending team\" blurs the sequence and the reason for the referral.\n- The closing flag that the customers \"have not accepted the outcome\" is a reasonable inference, but it glosses over the fact that they did accept the $250.\n\n**Content:** The response omits the customers' original demand for a refund and the contract basis for rate changes, though it does capture the main points otherwise.\n\nThe length breach is the main problem, and the slight overstatements add to it.\n\nScore: 4",
+  "usage": {
+    "input": 1255,
+    "output": 954
+  },
+  "cost": 0.01205
+}

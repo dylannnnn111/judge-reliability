@@ -1,0 +1,13 @@
+{
+  "item": "qa-06",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Friday, 24 March 2028**\n\n- 15 Dec → 31 Dec 2027 uses 16 days, leaving 84.\n- January (31 days) leaves 53.\n- February 2028 (leap year, 29 days) leaves 24.\n- That lands on 24 March 2028.\n\nFor the weekday, 100 days is 14 weeks plus 2 days, so Wednesday + 2 days = Friday.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 56,
+    "output": 388
+  },
+  "cost": 0.003992,
+  "at": "2026-10-14T01:50:14.104Z"
+}

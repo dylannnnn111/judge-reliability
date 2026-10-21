@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-38",
+  "side": "A",
+  "score": 8,
+  "model": "claude-sonnet-5-5",
+  "text": "Checking correctness: the explanation matches the standard account. The polar vortex isolates the air, extreme cold (below about −78°C) allows PSCs to form, and heterogeneous reactions on PSC surfaces convert HCl and ClONO₂ into Cl₂ and similar reactive forms. Sunlight in spring photolyzes Cl₂ to Cl atoms, which destroy ozone catalytically (via ClO dimer cycles too). The vortex breaks down later in spring and ozone-rich air mixes in. The Arctic is warmer and less isolated. All of this is accurate.\n\nMinor nitpick: the response calls \"−78°C\" the threshold; PSC formation is roughly −78°C for type I (nitric acid trihydrate) and about −85°C for ice, so it's approximately right. It says \"ice and particle surfaces,\" which is fine. It doesn't mention that CFCs are the source of the chlorine in detail, but it does mention it. Bromine is not mentioned, which is a minor omission.\n\nWord count: roughly 125 words? Counting: Paragraph 1: \"The ozone hole forms over Antarctica because of its extremely cold winter stratosphere.\" (12) \"During the polar night, a strong polar vortex isolates the air and temperatures drop below about −78°C.\" (17) → 29. \"That allows polar stratospheric clouds to form.\" (7) → 36. \"On their ice and particle surfaces, chlorine from CFCs is converted from inactive \"reservoir\" compounds (HCl, ClONO₂) into reactive forms such as Cl₂.\" (23) → 59. Paragraph 2: \"Destruction waits for spring because breaking Cl₂ into ozone-destroying chlorine atoms requires sunlight.\" (13) → 72. \"When the sun returns in September–October, the stored chlorine is released rapidly.\" (12) → 84. \"It catalytically destroys ozone while the vortex still blocks replenishment from outside.\" (11) → 95. Paragraph 3: \"By late spring the vortex warms and breaks down.\" (9) → 104. \"Ozone-rich air then mixes in, and the hole fills.\" (9) → 113. \"The Arctic is warmer and less isolated, so its losses are smaller.\" (12) → 125. This is roughly 125 words, possibly slightly over the 120 limit. Hyphenated words and chemical formulas could count differently, but it likely exceeds 120 by a few words. That's a minor constraint violation.\n\nThe content is excellent, but the likely slight overrun of the word limit costs a point or so.\n\nScore: 8",
+  "usage": {
+    "input": 515,
+    "output": 858
+  },
+  "cost": 0.00961
+}

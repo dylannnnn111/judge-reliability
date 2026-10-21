@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-24",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses use the corrected figures ($88,200 approved, $31,800 rolling over) and state the deadlines, conditions and dates accurately, so neither has a factual error. Response B keeps the points a manager needs and adds two useful details that Response A omits: the Saltwater correction from $45,000 to $14,500, and Jarrah Wilson's conflict of interest. Response A opens with filler (\"Thank you for reviewing the update below\") and is longer, with no extra correct content to justify it. Both probably run somewhat over the 120-word limit, but Response B is closer to it and more concise.\n\nVerdict: B",
+  "usage": {
+    "input": 1891,
+    "output": 828
+  },
+  "cost": 0.0006031
+}

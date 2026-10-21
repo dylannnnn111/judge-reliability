@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-25",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "A has a factual error: **\"The job was stopped after 35 minutes.\"** The report never says when the job started. It only says the first call came at 8:20am, 14 calls had arrived by 9am, and the job was stopped at 9:35am. The \"35 minutes\" figure seems to count from 9:00, a point that has no meaning for the job. It is unsupported, and if measured from the first known report it is wrong (75 minutes). A busy manager would likely repeat this figure. A also omits two things the manager needs. First, the \"we've been hacked\" all-staff message leaked and was quoted in local news, which is a reputational issue. Second, there is a dated action (comms guide update, due 31 October) to stop it happening again. A is well within the 120-word limit (about 105 words) and otherwise accurate.\n\nB is accurate on dates, numbers and status: change on 1 October, 347 statements, the data exposed, regulator notified on 3 October, members phoned by 6 October, a second reviewer from 13 October, the comms guide by 31 October, and remaining statements on 9 October. Its only slip is calling the all-staff \"message\" an \"email,\" which is minor. It includes the media leak and the comms fix, both relevant to a manager. Its weakness is length: about 144 words, which breaks the \"under 120 words\" instruction. That is a real failure, but it does not mislead the reader.\n\nWeighing them, the rubric puts accuracy first. A gives a manager a fabricated figure and leaves out the reputational issue. B is accurate and complete but too long. B is the better summary, with its length overrun as a clear deduction.\n\nVerdict: B",
+  "usage": {
+    "input": 1443,
+    "output": 1598
+  },
+  "cost": 0.037732
+}

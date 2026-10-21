@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-03",
+  "side": "A",
+  "score": 7,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds the most important problem and ranks the rest sensibly. The SQL injection is the real critical bug, and the fix is correct: both values are parameterized, with the placeholders built up cleanly. The connection leak is also real, and the note that `with sqlite3.connect()` doesn't close the connection is accurate and useful.\n\nThe email normalization point is plausible, since SQLite's `=` is case-sensitive, but it is speculative. Ordering and limits are reasonable hardening, not bugs. The minor items are correct: the redundant `if not rows` check, and `if status:` treating an empty string as no filter. The audit-logging suggestion is more of a stretch. Nothing flagged is clearly wrong, and the ranking is sensible.\n\nThe main weakness is length. The user asked for under 200 words, and this runs to roughly 230–250 with the code block. The lower-priority items could have been trimmed or cut.\n\nScore: 7",
+  "usage": {
+    "input": 1004,
+    "output": 767
+  },
+  "cost": 0.009678
+}

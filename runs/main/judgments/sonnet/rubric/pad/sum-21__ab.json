@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-21",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. It is accurate and fits the limit, while Response A breaks the word limit and gets the voice wrong.\n\n**Accuracy:** Both responses get the key figures right: $229,140 total, $13,140 over the $216,000 budget, $209,880 for the Northside petrol option, the 24 October deadline, the February fallback and the $1,800 per car per month hire cost. Response B adds a derived figure of about $21,600 for hire cars (6 cars × $1,800 × 2 months), which is correct and useful. Response A's opening line, \"I'd like to ask for Ruth's sign-off\", is written in Dominic's voice. It then refers to \"Dominic's delegation\" in the third person and ends by addressing \"you\". That mix muddles who is asking whom, which matters in a summary about who decided what. Response B is consistent: \"Dom recommends… he needs your sign-off.\"\n\n**Content:** Both cover the recommendation, the reason, the alternative, the deadline and the cost of missing it. Response A also mentions Coastal Fleet Sales, which is minor and not needed for the decision. Response A also repeats that the sign-off is needed, in its summary line, the recommendation bullet and the closing \"Decision needed\" line.\n\n**Concision:** The user asked for under 120 words. Response A runs to roughly 190 words, clearly over the limit. Response B is about 109 words, within the limit, and it gives the decision and deadline in the headline.\n\nVerdict: B",
+  "usage": {
+    "input": 1674,
+    "output": 1487
+  },
+  "cost": 0.018218
+}

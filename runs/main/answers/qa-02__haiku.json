@@ -1,0 +1,13 @@
+{
+  "item": "qa-02",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "Your average speed for the whole round trip is **96 km/h**.\n\n- Distance: 160 km + 160 km = 320 km\n- Time going: 160 ÷ 80 = 2 hours\n- Time returning: 160 ÷ 120 = 4/3 hours (about 1 h 20 min)\n- Total time: 2 + 4/3 = 10/3 hours\n\nAverage speed = 320 ÷ (10/3) = 96 km/h\n\nThis is the harmonic mean of 80 and 120, not the simple average of 100 km/h, because you spend more time on the slower leg.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 79,
+    "output": 259
+  },
+  "cost": 0.0001374,
+  "at": "2026-10-14T01:50:06.649Z"
+}

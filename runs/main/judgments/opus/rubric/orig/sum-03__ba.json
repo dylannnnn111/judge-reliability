@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-03",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A** is accurate throughout. The date, window, figures (2,391 of 4,812 failed; 1,940 retried; 451 abandoned; $41,900; 312 contacts, about four times normal), cause and action statuses all match the source. Saying connector B \"pinned an expired intermediate certificate after the vendor's August renewal\" is a fair compression of the root cause. It explains why detection was slow, which is useful. It also keeps the owners and due dates for the two open actions, which is what a manager needs to follow up. It runs to roughly 100 words, comfortably under the limit.\n\n**Response B** is also accurate. \"Alerts were per connector\" is a reasonable inference from the planned action to alert on the overall rate \"not just per connector.\" It adds the severity level and the 11:35 escalation time, both minor but correct details. However, it drops the owners for the outstanding actions, which matters for accountability. Counting the heading, it comes to about 123 words, slightly over the 120-word limit. Without the heading it scrapes under, so compliance is borderline at best.\n\nNeither response contains an accuracy error. A keeps the key accountability information (owners) and is more concise while staying clearly within the word limit. B adds minor details but loses the owners and risks breaching the length constraint. On balance, A is better.\n\nVerdict: A",
+  "usage": {
+    "input": 1597,
+    "output": 1555
+  },
+  "cost": 0.037488
+}

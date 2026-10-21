@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-32",
+  "side": "A",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The response is correct throughout. The figures hold up: a year of about 365.2422 days, a Julian overcorrection of about 11 minutes per year, and roughly 3 days per 400 years. The Gregorian rules are stated accurately, and the conclusion for 1900 and 2000 is right.\n\nIt covers both parts of the question. It explains why a leap day is needed at all, then why the every-four-years rule overshoots, which is what accounts for the 1900/2000 difference. The three-tier bullet list makes the rules easy to follow.\n\nIt stays under 120 words, though only just, at around 118 to 119.\n\nThere is one minor imprecision. 365.2422 days is the tropical year, the cycle of the seasons, rather than the orbital period, which is the sidereal year of about 365.2564 days. Calling it the time to \"orbit the Sun\" is a common simplification. It does not affect the answer, but a perfect response might have said \"cycle of seasons\" instead.\n\nScore: 9",
+  "usage": {
+    "input": 478,
+    "output": 801
+  },
+  "cost": 0.017932
+}

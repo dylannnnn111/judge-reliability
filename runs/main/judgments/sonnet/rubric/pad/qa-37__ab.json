@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-37",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer in under 120 words, so I counted the words in each response.\n\nResponse A has three paragraphs. The first is roughly 85 words, the second about 50, and the third about 80. That puts it at about 210 words, well over the limit.\n\nResponse B's first paragraph is about 60 words, the second about 30, and the third about 30. That totals about 120 words, so I counted more carefully.\n\nParagraph 1: \"Uluru(1) is(2) red(3) because(4) of(5) rust.(6) The(7) rock(8) is(9) arkose,(10) a(11) sandstone(12) rich(13) in(14) feldspar(15) and(16) quartz,(17) and(18) it(19) contains(20) small(21) amounts(22) of(23) iron-bearing(24) minerals.(25) Over(26) millions(27) of(28) years,(29) exposure(30) to(31) oxygen(32) and(33) water(34) has(35) oxidized(36) this(37) iron,(38) forming(39) iron(40) oxides(41) (essentially(42) rust)(43) that(44) coat(45) the(46) surface(47) and(48) give(49) it(50) its(51) rusty-orange(52) to(53) red(54) colour.(55)\"\n\nParagraph 2: \"The(1) effect(2) is(3) mostly(4) superficial.(5) If(6) you(7) look(8) at(9) a(10) freshly(11) broken(12) piece(13) of(14) the(15) rock,(16) the(17) interior(18) is(19) grey.(20) The(21) outer(22) weathered(23) layer(24) is(25) what(26) appears(27) red.(28)\" That is 28 words.\n\nParagraph 3: \"Uluru's(1) colour(2) also(3) seems(4) to(5) change(6) throughout(7) the(8) day.(9) At(10) sunrise(11) and(12) sunset,(13) the(14) low-angle(15) light(16) is(17) richer(18) in(19) red(20) wavelengths,(21) so(22) the(23) rock(24) can(25) glow(26) deep(27) red,(28) orange,(29) or(30) even(31) purple.(32)\" That is 32 words.\n\nThe total is 55 + 28 + 32 = 115 words, which is under 120.\n\nBoth responses are correct on the science. Response B meets the length constraint and Response A clearly violates it. Response B is therefore better.\n\nVerdict: B",
+  "usage": {
+    "input": 869,
+    "output": 825
+  },
+  "cost": 0.009988
+}

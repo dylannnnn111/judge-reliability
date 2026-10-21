@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-22",
+  "side": "B",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** The response is correct. The Coriolis effect is far too weak at sink or toilet scale. Basin geometry, residual motion and inlet direction dominate. Toilet swirl is set by the angle of the rim jets.\n\n**Facts checked:**\n- Shapiro's MIT experiment (Nature, 1962) used a roughly 6 ft tank left to settle for about a day.\n- The Sydney replication (Trefethen et al., 1965) is real.\n- Southern Hemisphere cyclones do rotate clockwise.\n\nThe only nitpick is that Southern Hemisphere storms are called cyclones rather than hurricanes. That is terminology, not an error.\n\n**Reasoning:** It gives the key reasoning: the effect exists at large scale but is negligible at small scale, it names the factors that actually decide drain direction, and it explains the toilet case.\n\n**Clarity and length:** It is clear and well organised. At about 113 words it meets the limit, and every part adds useful information.\n\nScore: 9",
+  "usage": {
+    "input": 458,
+    "output": 839
+  },
+  "cost": 0.018612
+}

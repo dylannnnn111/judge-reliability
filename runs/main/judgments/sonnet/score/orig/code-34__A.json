@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-34",
+  "side": "A",
+  "score": 7,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds the key bug, ranks it first, and gives a correct fix. On Go 1.21, the goroutines capture a shared loop variable `u`, and the response correctly notes that Go 1.22 only changes this if `go.mod` declares 1.22 or later. The other items are real and sensibly ranked:\n\n- Discarded errors.\n- Nondeterministic result order, with a correct `results[i]` fix that makes the mutex unnecessary.\n- No timeout, cancellation or concurrency limit.\n- An unrecovered panic in a goroutine, which would crash the process.\n\nIt does not flag anything that is actually fine.\n\nThere are two weaknesses:\n- **Inaccurate claim in item 5.** It says the `main` stub \"wouldn't catch bug 1\". But `Result.URL` comes from the captured `u`, so the printed output would show a duplicated URL and reveal the bug. The stub ignoring its argument matters less than the response suggests.\n- **Length.** It is roughly 230–270 words, over the explicit 200-word limit. Items 4 and 5 are padded with lower-value material.\n\nSubstance is strong, but the length violation and the small inaccuracy cost it some credit.\n\nScore: 7",
+  "usage": {
+    "input": 1114,
+    "output": 1092
+  },
+  "cost": 0.013148
+}

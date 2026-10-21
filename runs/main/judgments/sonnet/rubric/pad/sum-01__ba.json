@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-01",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. It meets the word limit and has no factual errors, while Response A breaks the limit.\n\n**Accuracy:** Both responses get the key facts right. The new deadline is Friday 30 October (moved from 4 November), the CFO brought the board meeting forward, and the three deliverables are correct. Both also state the variance threshold, the new template and the call-Priya-today instruction correctly. Response A opens with \"I'm writing to let you know...\", which makes it read like Priya's own email rather than a summary of it. That is a minor framing flaw.\n\n**Constraint and coverage:** The user asked for a summary under 120 words. I counted Response B at about 115 words, so it complies. Response A is roughly twice that length, around 230 words, and clearly breaks the limit. Both responses keep the points a manager needs, and both drop the coffee machine joke.\n\n**Concision:** Response B is tightly formatted, easy to scan, and puts the deadline change and its reason up front. Response A pads with filler such as \"A few points to keep in mind\" and \"This earlier date applies to all regions.\"\n\nResponse A's extra length adds nothing beyond what B already covers.\n\nVerdict: B",
+  "usage": {
+    "input": 1571,
+    "output": 1292
+  },
+  "cost": 0.016062
+}

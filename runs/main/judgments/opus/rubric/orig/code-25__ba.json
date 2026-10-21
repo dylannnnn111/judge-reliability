@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-25",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A** is the better review.\n\n**Shared ground.** Both correctly identify the off-by-one. With 5 recent hits, `5 > 5` is false, the sixth attempt is pushed, and 6 attempts get through. Both also cover:\n- unbounded memory growth from keys that are never removed\n- the per-IP-only weakness against distributed guessing\n- in-memory, per-process state\n- the hardcoded `retryAfterSec`\n- concerns about where the IP value comes from\n\nBoth rank the off-by-one and memory growth first, which is sensible.\n\n**What B adds.**\n- Keying on the IPv6 /64 prefix, which is genuinely useful.\n- The effective limit being `limit × instances`.\n- A proxy address locking out everyone at once.\n- A concrete retryAfter formula.\n\n**Where B falls short.**\n- Its item 7 (\"there are no tests\") is filler. It is not a bug in the code shown.\n- It runs to roughly 260 words, clearly breaking the user's under-200-word constraint.\n\n**A's trade-offs.** A is close to the limit, at roughly 200 words. It covers the same core issues concisely, with an actionable fix for each. Its \"counts all attempts, not failures\" point is somewhat overstated but still a legitimate design concern. B's extra points are mostly worthwhile, but they come at the cost of violating an explicit instruction and include one non-issue.\n\nVerdict: A",
+  "usage": {
+    "input": 1640,
+    "output": 1498
+  },
+  "cost": 0.03652
+}

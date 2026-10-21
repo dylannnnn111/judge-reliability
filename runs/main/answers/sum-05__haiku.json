@@ -1,0 +1,13 @@
+{
+  "item": "sum-05",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "**Bottom line:** Sit-stand desks did not measurably improve afternoon work output in this 12-week study of 214 office workers. Typing and proofreading speed and accuracy were no different from those with standard desks.\n\n**Benefits found:** Back discomfort was lower (31% vs 44%), and 78% of the sit-stand group felt more productive.\n\n**Caveats:** Extra standing dropped from 47 minutes a day in week 2 to 19 minutes by week 12, so the novelty appears to fade. The task was short and may not reflect real work, and participants knew which desk they had.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 735,
+    "output": 326
+  },
+  "cost": 0.0002365,
+  "at": "2026-10-14T01:51:09.194Z"
+}

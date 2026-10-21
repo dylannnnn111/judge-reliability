@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-11",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses reach the correct answer: with a random, ignorant host, switching wins with probability 1/2, the same as staying. Both also give valid conditional reasoning.\n\nThe deciding factor is the user's explicit constraint of \"under 120 words.\"\n\n- **Response A** comes in at roughly 115–117 words. It meets the limit while still giving a clear case-by-case Bayesian breakdown with explicit probabilities.\n- **Response B** runs to roughly 250 words, more than double the limit. Its contrast with the classic Monty Hall problem is useful, but it ignores a direct instruction.\n\nSince the content is equally correct, A wins because it follows the length requirement and B does not.",
+  "usage": {
+    "input": 850,
+    "output": 653
+  },
+  "cost": 0.01646
+}

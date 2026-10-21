@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-03",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses correctly put SQL injection first and give the same parameterized fix.\n\nResponse A has two weaknesses:\n- **Point 2 contradicts itself.** It recommends `with sqlite3.connect(...)`, then says that doesn't close the connection.\n- **Lower-value items.** Its authorization point belongs to a different layer than this function. Its hardcoded-path point is minor.\n\nResponse B is more useful for this context:\n- **Point 2 is clear and correct.** It explains the practical impact of the leak (file descriptors, locks) and gives the right fix without contradicting itself.\n- **Point 3 fits the use case.** For a support portal, case and whitespace mismatches in email lookup cause real missed results, and it gives concrete fixes (`strip().lower()`, `COLLATE NOCASE`).\n- **Point 4 is practical.** Ordering and limiting results is a sensible improvement.\n- **The minor items are accurate.** These are the redundant `if not rows` check and the `\"\"` truthiness of `status`, and it still mentions audit logging.\n\nBoth are near the 200-word limit, so length doesn't separate them.",
+  "usage": {
+    "input": 1375,
+    "output": 701
+  },
+  "cost": 0.01952
+}

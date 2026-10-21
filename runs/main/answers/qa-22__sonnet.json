@@ -1,0 +1,13 @@
+{
+  "item": "qa-22",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "No, this is a myth. The Coriolis effect is real, but it's far too weak to influence water in something as small as a sink or toilet. It matters for large-scale systems like hurricanes and ocean currents.\n\nIn a sink or toilet, the drain direction is determined by factors like the basin's shape, the angle of water jets (toilets), residual motion from filling, and any slight asymmetries in the container. You can see both directions in either hemisphere, and even two identical sinks side by side may drain differently.\n\nOnly in extremely controlled experiments, with perfectly symmetrical basins and water left still for a day or more, has the Coriolis effect been shown to determine swirl direction.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 65,
+    "output": 218
+  },
+  "cost": 0.00231,
+  "at": "2026-10-14T01:50:37.111Z"
+}

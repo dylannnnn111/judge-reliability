@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-17",
+  "side": "A",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The response correctly identifies Venus, gives an accurate average temperature (~465°C / 870°F), and notes that it is hotter than Mercury despite being farther from the Sun. The explanation of the thick CO₂ atmosphere and greenhouse effect is correct. The word count is about 85, so it meets the limit.\n\nMinor issues: \"runaway greenhouse effect\" is a somewhat debated description, though commonly used. The claim that pressure \"further contributes\" to the heat is a bit loose, since pressure is a consequence of the dense atmosphere rather than an independent cause, though dense atmosphere does matter. The statement about clouds reflecting sunlight is accurate (Venus's albedo is high). Overall it is accurate and clear.\n\nScore: 9",
+  "usage": {
+    "input": 400,
+    "output": 252
+  },
+  "cost": 0.00332
+}

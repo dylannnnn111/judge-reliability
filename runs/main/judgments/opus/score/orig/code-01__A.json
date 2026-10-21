@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "code-01",
+  "side": "A",
+  "score": 6,
+  "model": "claude-opus-5-5",
+  "text": "The technical content is strong, but the response breaks the explicit length limit.\n\n**Accuracy.** The issues raised are real and correctly diagnosed.\n- **Idempotency:** Missing idempotency is a genuine top concern for a nightly billing job.\n- **Partial failure:** The point about partial failure compounding with the lack of idempotency is sharp.\n- **Truncation:** The example is correct: `19.99 * 100` evaluates to `1998.9999999999998`, and `int()` truncates it to 1998.\n- **Validation:** `float()` really does accept `\"nan\"` and `\"inf\"`, so the validation point is accurate.\n\n**Ranking.** The order is sensible. Money-safety and correctness problems come first; tax and memory come last.\n\n**Fixes.** These are uneven.\n- The float issue gets a concrete fix: Decimal or integer cents, with an explicit rounding mode.\n- Idempotency only implies a fix (records, idempotency key).\n- Partial failure gets \"per-customer error handling,\" which is fine but terse.\n- Billing-period scoping and validation get little concrete guidance.\n\n**Weaker points.**\n- Item 5 largely overlaps item 1.\n- \"Tax isn't itemized\" is speculative, since we don't know what `charge` or invoicing needs.\n- The memory concern is a nitpick, though it is labeled minor.\n\n**Length.** The user asked for under 200 words. The response is roughly 250 words. Item 7 and the overlapping item 5 could have been cut to fit. Exceeding a clear limit is a real failure to follow instructions, even though the extra content is mostly correct.\n\nOverall, the technical review is high quality, but it is pulled down by the length violation and some redundancy.\n\nScore: 6",
+  "usage": {
+    "input": 1004,
+    "output": 851
+  },
+  "cost": 0.021036
+}

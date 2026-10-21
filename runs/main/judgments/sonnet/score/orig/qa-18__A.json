@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-18",
+  "side": "A",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "Correctness: The answer is Willem Janszoon and the Duyfken, in 1606, landing on the western side of Cape York Peninsula near the Pennefather River. This is the standard answer. The detail that they mistook the land for part of New Guinea is accurate. The skirmish with Aboriginal people resulting in crew deaths is reported (nine crew killed in some accounts), and \"reportedly\" hedges appropriately. Dirk Hartog's 1616 landing was on an island off Western Australia (Dirk Hartog Island), which is correct. Cook's 1770 landing at Botany Bay is correct.\n\nWord count: Let me count roughly. First paragraph: ~63 words. Second paragraph: ~45 words. Total ~108, under 120. Let me count more carefully.\n\nParagraph 1: \"The(1) first(2) recorded(3) European(4) landing(5) on(6) the(7) Australian(8) mainland(9) was(10) by(11) the(12) Dutch,(13) led(14) by(15) Willem(16) Janszoon,(17) captain(18) of(19) the(20) ship(21) Duyfken.(22) In(23) February–March(24) 1606,(25) his(26) crew(27) landed(28) on(29) the(30) western(31) side(32) of(33) Cape(34) York(35) Peninsula,(36) near(37) the(38) Pennefather(39) River(40) in(41) modern(42) Queensland.(43) They(44) were(45) exploring(46) the(47) New(48) Guinea(49) coast(50) and(51) mistook(52) the(53) land(54) for(55) an(56) extension(57) of(58) it.(59) A(60) skirmish(61) with(62) local(63) Aboriginal(64) people(65) reportedly(66) resulted(67) in(68) some(69) crew(70) deaths.(71)\"\n\nParagraph 2: \"Earlier(1) European(2) contact(3) is(4) sometimes(5) speculated,(6) such(7) as(8) Portuguese(9) or(10) Spanish(11) voyages,(12) but(13) nothing(14) is(15) firmly(16) documented.(17) Dirk(18) Hartog's(19) 1616(20) landing(21) on(22) an(23) island(24) off(25) Western(26) Australia(27) was(28) later,(29) and(30) Cook's(31) 1770(32) landing(33) at(34) Botany(35) Bay(36) came(37) much(38) later(39) still.(40)\"\n\nTotal ≈ 111, under 120.\n\nThe response is correct, concise, gives context, and respects the limit. The extra paragraph adds useful context, though slightly beyond the question.\n\nScore: 9",
+  "usage": {
+    "input": 451,
+    "output": 917
+  },
+  "cost": 0.010072
+}

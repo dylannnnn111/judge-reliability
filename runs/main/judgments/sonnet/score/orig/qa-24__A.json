@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-24",
+  "side": "A",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is correct on both counts. Mauna Kea is the tallest mountain from base to peak, at about 10,200 m with 4,207 m above sea level. Chimborazo's summit is the farthest surface point from Earth's centre, at about 6,384 km, roughly 2 km beyond Everest's. It also gives the key reason: the equatorial bulge. By my count it is about 117 words, just under the 120-word limit. The one weak spot is the Everest base-to-peak figure of 4,600–5,000 m, which is on the high side, since common estimates run lower, around 3,600–4,600 m. It does not affect the conclusion.\n\nScore: 9",
+  "usage": {
+    "input": 491,
+    "output": 839
+  },
+  "cost": 0.009372
+}

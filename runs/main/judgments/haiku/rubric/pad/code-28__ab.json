@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-28",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the core problems: the missing `client.release()`, the race on the balance check, the unvalidated destination whose zero-row UPDATE lets money vanish, the deadlock risk from opposing transfers, and the ROLLBACK masking issue. Neither flags anything that is actually fine.\n\nResponse A ranks the connection leak first, which is the most sensible order since it takes down the whole API. Response B puts the race first and the leak third, which is defensible but less useful for prioritization. A also covers idempotency, which matters for an API where retries could double-apply a transfer. Its point about `bigint` strings is a little overstated, since JS coerces the string in `<` comparisons, but it's a plausible precision concern. Response B's suggestion of a `CHECK (balance_cents >= 0)` constraint is a good defense-in-depth point that A omits. B's same-wallet note is more accurately described as a silent no-op. Overall, A's ordering and coverage are somewhat stronger.\n\nVerdict: A",
+  "usage": {
+    "input": 1980,
+    "output": 1002
+  },
+  "cost": 0.000699
+}

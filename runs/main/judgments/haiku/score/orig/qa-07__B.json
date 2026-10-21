@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-07",
+  "side": "B",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response gives the correct answer. 30 mpg (US) is 7.84 L/100 km, and the working checks out: 30 miles is 48.28 km, and 3.785 L of fuel covers that distance, giving 12.75 km/L, so 100 km uses about 7.84 L. The shortcut of 235.2 ÷ mpg is the standard conversion constant and gives the same result. The working is clear and well organised, and the response is under 120 words. The closing note about EPA ratings differing from Australian ratings is accurate but not essential, so it adds only a little.\n\nScore: 9",
+  "usage": {
+    "input": 449,
+    "output": 376
+  },
+  "cost": 0.0002329
+}

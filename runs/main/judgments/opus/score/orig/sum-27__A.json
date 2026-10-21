@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-27",
+  "side": "A",
+  "score": 7,
+  "model": "claude-opus-5-5",
+  "text": "The summary's content is accurate, but it slightly exceeds the 120-word limit.\n\n**Accuracy.** Everything checks out against the email:\n- The 81% vs 74% headline.\n- The 60% free-month promotion share.\n- The 78% vs 76% paid-from-day-one comparison and the \"within normal variation\" caveat.\n- The $95 per session and roughly $410,000 a year cost.\n- The randomised same-city test for at least 60 days, starting November if approved at the 21 October meeting.\n\nThe recommendation is correctly attributed to Marcus, and \"Sales is saying…\" fairly represents Kirsten's claim without overstating it. Saying the promotion \"inflates 30-day retention\" is a fair paraphrase of the email's reasoning. The 78%/76% figures don't name which city is which, but the order matches the earlier Sydney/Perth line, so the reader can infer it.\n\n**Coverage.** It keeps what a busy manager needs: the bottom-line advice up front, why the headline result is misleading, the internal claim to be wary of, the cost, and the decision required at a specific meeting. Dropping the customer counts (412/388) is a sensible cut.\n\n**Concision and the word limit.** The structure is tight and scannable, with no filler. However, by my count it runs to about 124 words including the bold labels, or about 118 without them. The labels are words the manager reads, so strictly it exceeds the \"under 120 words\" instruction, though only marginally. Trimming a few words, such as \"for now,\" \"leadership,\" or the repeated \"in Sydney/in Perth\" phrasing, would have fixed this easily.\n\nThe work is accurate and well prioritised, with a small breach of a stated constraint.\n\nScore: 7",
+  "usage": {
+    "input": 1141,
+    "output": 2023
+  },
+  "cost": 0.045024
+}

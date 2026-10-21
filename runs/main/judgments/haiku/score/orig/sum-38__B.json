@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-38",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate throughout. I checked the Green status, the 18 November launch, the beta figures (431 of 600, 4.3/5, 21 of 23 bugs fixed), the timetable fix, the submission, club pack, training and poster dates, the budget figures, the risk, and the 24 October next update. All match the source. It also covers what a manager needs: status, launch date, beta outcome, schedule, budget and risk.\n\nIt misses the responsibilities section, though a busy manager could reasonably skip that. The main problem is length. The brief said under 120 words, and the response runs to roughly 145 words, which breaks an explicit constraint. There is also a small typo (\"App stores submissions\"). The extra words add some useful detail, such as the 2-second load time and the one-week review allowance, but they do not justify exceeding the limit.\n\nAccuracy is excellent, key points are well retained, and concision is weaker because it overruns the word limit.\n\nScore: 6",
+  "usage": {
+    "input": 1111,
+    "output": 826
+  },
+  "cost": 0.0005241
+}

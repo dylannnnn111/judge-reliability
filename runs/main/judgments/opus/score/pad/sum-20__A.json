@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "sum-20",
+  "side": "A",
+  "score": 3,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** The facts are mostly right: the date, time, venue, parking, bus number, 31 October deadline, five-priority cap, pre-work items and 4:15pm pub are all correct. There are some distortions, though:\n\n- **Shifting voice.** It starts in third person (\"Hannah Pryce would like to invite…\") but moves into first person (\"I would kindly ask…\", \"you are very welcome to join us\"). It reads as if Hannah wrote it, which confuses who is asking what.\n- **Out-of-office misread.** The original asks staff to point incoming urgent requests to the central inbox via their out-of-office. The response says \"if you have any urgent requests while you are away, please direct them to the central insights inbox\", as if the team should send their own requests there.\n- **Lost detail.** \"Gathering feedback on our reports\" drops that the feedback comes from the business.\n\n**Key points:** Nearly everything is kept, but the framing is wrong for the reader. It is still written to the team, not to a busy manager. A manager wants to know when it is, that the team will be offline, that Ella covers the inbox, and what the outcome will be.\n\n**Concision:** This is the biggest failure. The response is roughly 265 words against a hard limit of under 120, more than double. It keeps padding like \"To give you a sense of how the day is structured\" and \"For those planning their travel\", and logistics a manager doesn't need (bus route, parking). It reads more like a rewrite of the email than a summary.\n\nIgnoring the word limit, the inconsistent voice and the misframed out-of-office instruction outweigh the broadly correct facts.\n\nScore: 3",
+  "usage": {
+    "input": 1227,
+    "output": 853
+  },
+  "cost": 0.021968
+}

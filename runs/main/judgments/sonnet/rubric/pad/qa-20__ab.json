@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-20",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the right answer: Canberra, with Parliament first sitting there in 1927. Neither has a factual error in its main claims.\n\nResponse A has filler phrases such as \"To answer your question directly,\" \"I hope this helpful background is useful,\" and a closing \"To summarize\" that repeats what it already said. The repetition adds nothing. It also says \"Parliament first sat there in 1927... when the Provisional Parliament House opened on 9 May,\" which is accurate.\n\nResponse B is concise and adds useful, accurate detail: the opening by the Duke of York (later George VI), the building now being Old Parliament House, the Melbourne period from 1901, and the 1988 move to the current Parliament House on Capital Hill. All of this is correct.\n\nSince correctness is equal, the tiebreakers are key information and clarity. B has more useful content and less padding.\n\nVerdict: B",
+  "usage": {
+    "input": 570,
+    "output": 283
+  },
+  "cost": 0.00397
+}

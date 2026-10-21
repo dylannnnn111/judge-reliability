@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-25",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer: no, Viking warriors did not wear horned helmets. Both cite the Gjermundbu helmet, note that helmets were expensive, and trace the myth to 19th-century Romanticism and Carl Emil Doepler's costumes for Wagner's *Ring* (1876). Both also point out that Bronze Age horned helmets were ceremonial and long predate the Vikings.\n\nBoth meet the word limit. A is about 119 words, just under 120, and B is about 113.\n\nB adds Gustav Malmström and names the Veksø helmets. Its \"about 1,500 years\" is slightly imprecise, since the gap is closer to 1,700 years or more. A's \"centuries before\" is vaguer but not wrong. A is cleanly structured with bold labels. Neither has a meaningful advantage in correctness, reasoning or clarity.\n\nVerdict: TIE",
+  "usage": {
+    "input": 815,
+    "output": 1987
+  },
+  "cost": 0.0215
+}

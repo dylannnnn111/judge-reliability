@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-36",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response gives a correct overall explanation. It names the two main mechanisms: the pressure difference from the airfoil shape and angle of attack (explained through Bernoulli's principle), and the downward deflection of air described by Newton's third law. It also correctly identifies angle of attack as a factor. It avoids the common \"equal transit time\" myth. Its main weakness is that it presents faster upper-surface flow as the cause of lower pressure, when the two are linked through the circulation around the wing, so the causal direction is simplified. The second paragraph's closing sentence somewhat repeats the first. At 99 words it meets the length limit, and the explanation is clear and well organised.\n\nScore: 8",
+  "usage": {
+    "input": 397,
+    "output": 1054
+  },
+  "cost": 0.0005667000000000001
+}

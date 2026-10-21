@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "sum-23",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is the better summary.\n\nBoth responses fit under 120 words. A comes in at roughly 111 and B at roughly 95.\n\n**A** is accurate and gives the manager more of what they'd need. It names who is responsible for each task: Laila coordinating the Clean Up Day and Peter booking the sound system. It also says the councillor will only *request* a speed counter and includes the Facebook action item. It stays tight and easy to scan.\n\n**B** is shorter but has an accuracy problem. It says \"Council will install a speed counter\", when the councillor only said she would ask council traffic staff to put one on the road and report back. A busy manager who doesn't read the original would be misled. B also drops the owners of tasks and the Facebook item. It does add the school choir, which is a minor detail.\n\nA is more accurate and more complete, and still within the limit.\n\n**A**",
+  "usage": {
+    "input": 1396,
+    "output": 804
+  },
+  "cost": 0.010832
+}

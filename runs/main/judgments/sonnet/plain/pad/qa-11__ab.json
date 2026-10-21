@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-11",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer in under 120 words. Both responses reach the correct conclusion: switching gives 1/2, the same as staying.\n\nResponse A is well over 120 words, roughly 250. That clearly violates the length constraint.\n\nResponse B is about 100 words. Counting roughly: the bold line is 15 words, the next sentence about 25, the bullets about 20 each (around 60), and the final line about 17. That comes to around 115-120, which is borderline. A more careful count:\n\n\"No, switching gives you no advantage. Your chance of winning is 50% either way.\" = 14 words.\n\"Because the host chose door 2 at random without knowing where the car was, the fact that it showed a goat is just luck. Here's the reasoning:\" = 27 words, so 41 total.\n\"Car behind door 1 (prob 1/3): the host opens door 2 with probability 1/2, showing a goat. Contribution: 1/6.\" = about 19, so 60.\n\"Car behind door 2 (prob 1/3): the host would have shown the car, so this case is ruled out.\" = about 19, so 79.\n\"Car behind door 3 (prob 1/3): the host opens door 2 with probability 1/2, showing a goat. Contribution: 1/6.\" = about 19, so 98.\n\"Given a goat was revealed, the car is equally likely behind door 1 or door 3, so each has a 1/2 chance.\" = about 21, so 119.\n\nThat is borderline but under 120. Response B complies with the limit and Response A does not, so B is better.\n\n**B**",
+  "usage": {
+    "input": 850,
+    "output": 501
+  },
+  "cost": 0.00671
+}

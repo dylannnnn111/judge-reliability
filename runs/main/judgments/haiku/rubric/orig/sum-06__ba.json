@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-06",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Neither misstates dates, prices, hours, funding or who decided what, and both correctly note that the heated pool allows year-round lessons or otherwise describe the upgrade faithfully. Response B is slightly more complete, keeping the adult change table and the year-round lessons benefit, though \"All programs\" is a mild overgeneralisation. However, B runs to roughly 124 words, which breaks the explicit under-120 limit. Response A is about 100 words, stays within the limit, and names the specific programs that resume, so it meets the constraint while still covering what a manager needs.\n\nVerdict: A",
+  "usage": {
+    "input": 1512,
+    "output": 1806
+  },
+  "cost": 0.0010542000000000001
+}

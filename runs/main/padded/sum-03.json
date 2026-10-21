@@ -1,0 +1,14 @@
+{
+  "pair": "sum-03",
+  "side": "B",
+  "author": "sonnet",
+  "model": "claude-haiku-5-5",
+  "original": "On Saturday 12 September (10:42am–1:17pm AEST), about half of card payments at checkout failed. Cause: connector B pinned an expired intermediate certificate after the vendor's August renewal.\n\n**Impact:** 2,391 of 4,812 attempts failed. 1,940 customers retried successfully; 451 abandoned, an estimated $41,900 in lost revenue (some may buy later). Support contacts were about four times normal (312).\n\n**Detection was slow:** alerts didn't fire because failures were split across connectors. Support escalation led to the fix.\n\n**Actions:**\n- Certificate pinning removed (done)\n- 10% goodwill code sent (done)\n- Overall checkout failure alert (SRE, 17 Oct)\n- Certificate expiry added to vendor checks (Security, 31 Oct)",
+  "text": "On Saturday 12 September, between 10:42am and 1:17pm AEST, about half of card payments at checkout failed. The cause was that connector B had pinned an expired intermediate certificate following the vendor's August renewal.\n\nTo show the scale of the incident, here is its impact. **Impact:** Of 4,812 payment attempts, 2,391 failed. Of the affected attempts, 1,940 customers retried successfully, while 451 abandoned their purchase, an estimated $41,900 in lost revenue. Some of these customers may still buy later. Support contacts were also about four times normal, totalling 312.\n\n**Detection was slow:** Our alerts did not fire, because the failures were split across connectors rather than concentrated in one place. The problem was ultimately brought to light through support escalation, which led to the fix.\n\nFollowing the incident, the following actions have been taken or scheduled:\n\n- Certificate pinning removed (done)\n- 10% goodwill code sent (done)\n- Overall checkout failure alert (SRE, 17 Oct)\n- Certificate expiry added to vendor checks (Security, 31 Oct)",
+  "ratio": 1.57,
+  "usage": {
+    "input": 461,
+    "output": 965
+  },
+  "cost": 0.0005286000000000001
+}

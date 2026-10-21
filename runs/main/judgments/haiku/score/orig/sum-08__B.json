@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-08",
+  "side": "B",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The summary gets most facts right: the purchase date, the Penrith store handling the exchange under the 90-day policy, Priya Nand's replacement booking for Wednesday, Frostline's separate collection call, the $500 no-sign-off threshold, and the 9 October escalation to Amara Osei. It stays under 120 words and covers what a manager needs. The main flaw is \"It failed on 29 September.\" The ticket only says the fridge stopped cooling \"on Sunday,\" and the year isn't given, so the specific date is an unsupported inference that could be wrong. It also omits that Daniel needs receipts or photos for the claim, which is a minor gap. Otherwise the response is accurate, complete on the essentials, and concise.\n\nScore: 7",
+  "usage": {
+    "input": 1203,
+    "output": 899
+  },
+  "cost": 0.0005698
+}

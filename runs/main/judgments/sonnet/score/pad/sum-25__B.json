@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "sum-25",
+  "side": "B",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The facts are mostly correct: the 347 members, the 11,200 unsent statements, the 3 October regulator notification, the 6 October phone calls, the 13 October and 31 October dates, and the 9 October resend all match the source. Two small slips remain:\n- It calls the early message an \"email\" when the source says \"all-staff message.\"\n- It says the message \"wrongly said 'we've been hacked'\", when the original was a hedged \"It looks like we've been hacked.\"\n\nThe main failure is length. I count roughly 170 words against a hard limit of 120. Filler such as \"To be clear at the outset,\" \"To give some background,\" \"We would like to note that,\" \"Please be aware that,\" \"Looking ahead,\" and \"Finally\" wastes words that the limit makes scarce.\n\nContent coverage is good, but it spends words on minor details like the comms guide update. It also omits that Information Security found no unauthorised logins, though \"no external access\" covers this.\n\nBecause the explicit word limit is broken by a wide margin and the padding is avoidable, the score is held down despite the sound facts.\n\nScore: 4",
+  "usage": {
+    "input": 1204,
+    "output": 970
+  },
+  "cost": 0.012108
+}

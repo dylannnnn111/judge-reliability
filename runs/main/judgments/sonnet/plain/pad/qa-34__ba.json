@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-34",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer under 120 words. Response A is clearly over that, roughly 190 words. Response B is about 115 words, so it fits.\n\nCounting B more carefully: \"They use public-key cryptography, usually through a key exchange such as Diffie-Hellman:\" is 12 words. Step 1 is about 13, step 2 about 11, step 3 about 33, and step 4 about 15. The last paragraph is about 30. That gives roughly 114, which is under 120.\n\nBoth are accurate, but B follows the constraint and A does not.\n\n**B**",
+  "usage": {
+    "input": 762,
+    "output": 183
+  },
+  "cost": 0.003354
+}

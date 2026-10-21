@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-30",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response B is stronger. Both correctly identify the main bug: `COUNT(*)` counts the NULL-padded row from the LEFT JOIN, so idle agents show 1 instead of 0. Both also flag `COALESCE(AVG(...), 0)` as misleading and note that AVG silently drops unanswered tickets. Response B goes further on that last point by explaining the direction of the bias: unanswered open tickets are likely the slowest, so excluding them flatters the average. It also raises the lack of a time window in a \"weekly\" report, which is a real mismatch that Response A misses. Its integer-truncation note is correct for SQL Server and similar engines, though minor. Finally, B correctly says the `status` filter belongs in the `ON` clause, which heads off a wrong fix. Response A's point about hard-coded `active`/`status` values is speculative, its final point is filler, and its framing is wordier without adding substance.\n\nVerdict: B",
+  "usage": {
+    "input": 1714,
+    "output": 787
+  },
+  "cost": 0.0005649
+}

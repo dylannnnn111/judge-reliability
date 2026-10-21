@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-26",
+  "side": "A",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is correct: Rayleigh scattering of shorter wavelengths explains the blue sky, and the longer atmospheric path at sunset removes the blue from the direct beam, leaving red and orange. It gives the key reasoning for both phenomena.\n\nWord count: the first paragraph is about 47 words and the second about 56, roughly 103 in total, which is under 120.\n\nA small omission: it doesn't explain why the sky isn't violet (the sun emits less violet light, and our eyes are less sensitive to it). It does mention \"blue and violet\" without addressing this, but that's a minor point. It also doesn't mention that the scattered-out blue light is what lights up skies elsewhere, but that's not needed.\n\nThe response is clear, concise, accurate, and complete for the question.\n\nScore: 9",
+  "usage": {
+    "input": 404,
+    "output": 260
+  },
+  "cost": 0.003408
+}

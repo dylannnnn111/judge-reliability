@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-16",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same real issues: `sortByPrice` mutating its input, missing input validation, the need for server-side recomputation, brittle discount matching, and `formatAud` edge cases. The differences are in ranking and in how they treat the GST question.\n\n**Response A** leads with \"GST is likely double-counted.\" This is speculation. The code gives no sign that `priceCents` is GST-inclusive, and adding GST to ex-GST prices is a legitimate design, particularly for B2B. A does hedge with \"confirm,\" but the headline claim and top ranking overstate what the code shows. Putting an unverifiable assumption above the definite `sort` mutation bug is a questionable ordering. Its other points are sound and have concrete fixes. It is slightly over 200 words.\n\n**Response B** leads with the definite bug, the `sort` mutation, and gives the fix. It then covers validation, server-side recomputation and discount brittleness, including the `==` vs `===` nit. It moves the GST-inclusive question to last and frames it as \"verify this is intended,\" which suits an assumption rather than a confirmed bug. Its rounding point is partly weak. The suggested `subtotalCents * 10 / 100` fix addresses only the discount, not GST, and the floating-point risk is minor. The per-line versus total GST question is a useful real-world consideration. B is longer and further over the 200-word limit.\n\nB ranks real, certain bugs first and treats the speculative one as a question, which matches the \"most important first\" instruction better. A's lead item is an overclaim. B's extra length is mostly useful, though the rounding item is marginal.\n\nVerdict: B",
+  "usage": {
+    "input": 1699,
+    "output": 1416
+  },
+  "cost": 0.017558
+}

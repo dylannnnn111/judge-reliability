@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-12",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response identifies real problems. The N+1 query count is correct (1 + 2×20,000 ≈ 40,001), and the missing-customer `TypeError` on unpacking `None` is a genuine crash path. The non-sargable `strftime` filter, the `$-12.34` rendering for negatives, and the nondeterministic ordering within a customer are all accurate. The input validation and timezone points are reasonable, though the timezone one is more speculative. The ranking is sensible: performance at this scale and the crash risk come first, and cosmetic or speculative items come last. Each item gives a concrete fix. Nothing flagged is wrong, and the response stays under 200 words. It could have mentioned that the item count should be checked against whether `items` means line count or quantity, but that is a minor gap.\n\nScore: 8",
+  "usage": {
+    "input": 1111,
+    "output": 907
+  },
+  "cost": 0.0005646000000000001
+}

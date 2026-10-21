@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-06",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.**\n\n**Issues found and their accuracy.** Both responses identify the same four main issues in the same sensible order:\n1. The `is not` identity check.\n2. The leak that lets an attacker tell existing orders from missing ones.\n3. The check-then-save race in cancel.\n4. Cancelling a paid order without a refund.\n\nAll four are real, and the identity bug is rightly ranked first.\n\nOn the identity bug, B is more accurate about the impact. Large IDs from a DB or a parsed request are usually distinct objects, so most legitimate customers would be locked out. B also adds the useful point that tests with small IDs will pass and hide the bug. A calls the failures \"intermittent,\" which understates how common they would be.\n\n**Fixes.** Both give good fixes. A's conditional update helpfully includes `customer_id` in the WHERE clause. B offers alternatives (row locking, optimistic versioning) and explains the concrete harm: a concurrent shipment or refund status gets overwritten.\n\n**Minor items.** B's points are valid: the order is mutated in memory before `save`, and statuses are magic strings. A's minor items are weaker. Exposing the status string in an error message is a trivial concern. \"`save` not transactional with the check\" largely repeats issue 3.\n\n**Length.** The user asked for under 200 words. A runs to roughly 380 words, padded with restatements like \"In other words\" and \"Put differently\" that add nothing. B is close to the limit and much tighter. A's extra length adds no correct or useful content.\n\nVerdict: B",
+  "usage": {
+    "input": 1752,
+    "output": 802
+  },
+  "cost": 0.023048
+}

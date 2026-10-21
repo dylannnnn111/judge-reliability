@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-12",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.** Both responses are accurate on the main facts:\n- the 1 November start date\n- the free first hour\n- the hourly rate rising from $3 to $4\n- the daily cap rising from $18 to $24\n- the $15 weekly pass and who is eligible\n- the 20 October application date and the treating-team letter\n- concrete cancer closing 180 spaces in the 1994 car park\n- the 18-month repair time\n- staff being unaffected\n- the petition with over 2,000 signatures\n\nBoth also imply the weekly pass replaces the $9 daily concession. A says \"replace\" and B says \"instead of\". The source only says concession parking has been \"extended\", so this is a small shared inaccuracy and doesn't separate them.\n\nThe deciding difference is accuracy. B adds \"This is a significant saving for regular users,\" which the source never states. Only one resident says he'd pay less, and only conditionally (\"if the weekly pass is real\"). The claim is also not generally true. Someone visiting once a week would pay $15 instead of $9, which is more. A manager could be misled by this editorial overstatement.\n\nNeither response is clearly better on completeness. Both keep the same key points.\n\nOn concision, both run slightly over the 120-word limit, at about 125 words each. A's \"Summary:\" label is a trivial extra. B's extra sentence is longer and actively misleading.\n\nVerdict: A",
+  "usage": {
+    "input": 1364,
+    "output": 2100
+  },
+  "cost": 0.047456
+}

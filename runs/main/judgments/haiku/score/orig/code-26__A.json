@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-26",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response catches the most important bug: `qty` is never converted, so `items += line.qty` concatenates strings. Its other main points are also real: naive `split(\",\")` breaks on quoted commas, stray `\\r` characters survive in string fields, and there is no validation, so bad rows become `NaN`. The `__proto__` and `constructor` point is valid, though it understates the problem. Assigning to `orders[\"__proto__\"]` writes onto `Object.prototype`, and `constructor` silently drops the order. The fixes are concrete and the ranking is sensible.\n\nThe weaknesses are in the minor section. The empty-input bullet describes a \"bogus row\" and then says `slice(1)` handles it, so it flags a non-issue. The response also runs well over the 200-word limit, roughly 250 to 260 words, which breaks an explicit instruction. It also misses that an empty `unitCents` field silently becomes `0` via `Number(\"\")`.\n\nScore: 6",
+  "usage": {
+    "input": 1166,
+    "output": 1300
+  },
+  "cost": 0.0007666
+}

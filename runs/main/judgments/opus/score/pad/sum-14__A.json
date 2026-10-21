@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "sum-14",
+  "side": "A",
+  "score": 4,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** The response is mostly accurate. The dates, the change from two to three days, the Fair Work exception, the point that informal agreements don't count, the excluded teams, the equipment rule and the hot desking details are all correct. There are a few small distortions:\n\n- **Common day:** The original says team leaders will set *at least one* common day. The response says each team \"will have a common day,\" which loses both who decides and the \"at least one\" condition.\n- **Excluded teams:** The response says the Claims and Customer Contact teams are excluded \"as their rosters will be reviewed in early 2027.\" The original's reason is that they already have shift-based rostered office days. The review is a separate fact, not the cause, so this is a misleading causal link.\n- **Equipment:** It omits that staff keep their current equipment. This is a minor loss, but a manager might want to know it.\n\n**Coverage:** It keeps most of the points a manager needs. It drops where to send questions (manager first, then the Q&A on the intranet), which is minor.\n\n**Concision:** This is the major failure. The response runs to about 215 words against an explicit limit of under 120, nearly double. Much of the excess is filler:\n\n- The introductory paragraph describes the summary rather than summarising anything.\n- \"Please note that…\" adds words without adding information.\n- \"The change responds to two main drivers\" does the same.\n\nFor a busy manager with a hard word cap, breaking the explicit constraint is a serious failure. The padding also adds nothing correct or useful.\n\nThe content is broadly sound with minor inaccuracies, but the response clearly breaks the length requirement and pads the text.\n\nScore: 4",
+  "usage": {
+    "input": 1185,
+    "output": 1090
+  },
+  "cost": 0.02654
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-28",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Accuracy check, Response A:\n- \"At present, 84 staff have over eight weeks\" – the source says as of end of September, which is minor.\n- \"Staff with over eight weeks of leave are asked to agree a reduction plan\" – the source says \"will need to\", so \"asked\" softens it. Mildly misleading.\n- \"Applies to permanent staff\" – drops \"full-time and part-time\", which is minor.\n- \"The only exemption is for 24/7 warehouse staff... exempt from the shutdown only\" – correct.\n- \"Staff are required to use four days' leave during the shutdown period, or alternatively take unpaid leave or make up time\" – roughly right, though it omits that make-up time needs the manager's agreement and that unpaid leave applies only to staff without enough leave. It presents these as general alternatives, which is misleading.\n- \"Your action: you will receive your team's high-balance list\" – this is addressed to managers, but the text is for a busy manager, so that's fine.\n- Cash-out \"four weeks remain\" – fine, though it omits \"at least\".\n- Its word count is roughly 170, which exceeds the 120-word limit. That is a clear violation.\n\nResponse B:\n- Word count is roughly 120. Counting: the title is 7 words, the intro about 14, the cap bullet about 33, cash-out about 18, shutdown about 20, warehouse about 20, action about 11. That totals about 123, so it's borderline, maybe slightly over. Still much closer than A.\n- Accuracy: \"Staff above eight weeks (40 days full-time) must agree a plan\" – correct. \"Can be directed to take up to a quarter, at least eight weeks' notice\" – correct. The cash-out is correct. The shutdown is correct, though it omits the unpaid leave and make-up time options. The warehouse exemption is correct. \"$3.9M in leave liability\" is fine. \"High-balance staff lists go to managers by 31 October\" is correct.\n- It omits the \"who it applies to\" detail about permanent staff and the enterprise agreement, a minor omission.\n\nB is more accurate, more concise, and keeps the key points. A violates the word limit and softens \"need to\" into \"asked\".\n\nVerdict: B",
+  "usage": {
+    "input": 1590,
+    "output": 720
+  },
+  "cost": 0.01038
+}

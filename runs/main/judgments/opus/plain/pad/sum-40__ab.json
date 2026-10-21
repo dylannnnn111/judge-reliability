@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-40",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A.** Response A is about 116 words, so it meets the under-120-word limit. It still covers the key findings, the practical bottom line and the limitations in a scannable format suited to a busy manager.\n\nResponse B runs to roughly 300 words, well over the limit. It is padded with filler phrases (\"When the results are considered, it is useful to start with...\", \"Put simply...\") and drops the teacher observation.",
+  "usage": {
+    "input": 1447,
+    "output": 832
+  },
+  "cost": 0.022428
+}

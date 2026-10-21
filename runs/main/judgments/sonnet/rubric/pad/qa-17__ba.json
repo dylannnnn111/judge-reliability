@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-17",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses correctly identify Venus and explain the runaway greenhouse effect from its thick CO₂ atmosphere, so the difference comes down to the word limit and clarity.\n\n- **Response A** comes to about 117 words, which is under the 120-word limit. It is clearly organized, covers the key reasoning (CO₂ trapping infrared, acid clouds, pressure, even temperatures) and contrasts Venus with Mercury.\n- **Response B** comes to about 130 words, which breaks the explicit \"under 120 words\" constraint. It also pads with filler such as \"It is worth noting,\" \"To explain this more fully,\" and \"Finally, it is also important to mention,\" and the claim that pressure \"further contributes\" to the heat is loosely worded.\n\nSince A is correct and follows the constraint while B does not, A is better.\n\nVerdict: A",
+  "usage": {
+    "input": 836,
+    "output": 1459
+  },
+  "cost": 0.016262
+}

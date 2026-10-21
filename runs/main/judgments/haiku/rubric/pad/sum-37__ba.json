@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-37",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are factually accurate on the key points: Tomas Novak's 7 November departure, the 8 December to late January slip, the $64k unbudgeted contractor option, Margaret Lowe's approval role, and the $298k of $455k spent. Neither invents a decision.\n\nResponse A is wordier, at roughly 230 words, and breaks the under-120-word limit by a wide margin. Its \"I'm pleased to report\" and \"to summarise\" phrasing adds nothing. It also drops the February add-on detail for option 2 and the next-update date, and it hedges the schedule as \"on schedule in most respects,\" which is looser than the source.\n\nResponse B is tighter, at roughly 140 words. It still exceeds the 120-word limit, but by much less. It keeps the February timing for option 2, states the condition that four month-end reports depend on payroll, and includes the next update date. Its structure is easier for a busy manager to scan.\n\nOn accuracy, neither response has a clear error. On completeness, B retains more of the decision-relevant detail. On concision, B is clearly better. B is the stronger response.\n\nVerdict: B",
+  "usage": {
+    "input": 1595,
+    "output": 1417
+  },
+  "cost": 0.000868
+}

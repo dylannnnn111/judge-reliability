@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-35",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses cover the key points accurately. B is the better fit for a busy manager.\n\n- **Word limit:** Response A comes to about 120 words, which arguably breaks \"under 120\". Response B is about 118 words, safely within the limit.\n- **Readability:** B's headings and bullet list make it quick to scan, which suits a reader who won't read the original. A is denser prose.\n- **Detail:** B keeps the \"patching and painting\" detail about removal damage, which A drops.\n\nB does have small precision losses:\n- It says \"three months' notice\" rather than \"at least three months before lease end\".\n- \"Overrunning means paying daily rent\" sounds more certain than the original's \"may have to pay\".\n\nA's wording on both of these points is slightly more accurate. Even so, A is borderline on the word limit and harder to scan, so overall B is the better response.",
+  "usage": {
+    "input": 1300,
+    "output": 1783
+  },
+  "cost": 0.04086
+}

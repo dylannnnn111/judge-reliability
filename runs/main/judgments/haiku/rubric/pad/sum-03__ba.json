@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-03",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate on the key figures: 4,812 attempts, 2,391 failures, 1,940 retries, 451 abandoned, $41,900, and 312 contacts. Neither misstates who owned what or when the fixes were due, though A drops the owners and B drops them too. Both also exceed the 120-word limit, A by more (roughly 165 words against B's roughly 125).\n\nResponse B is more precise where it matters for a manager. It names the escalation time (11:35), says alerts were per connector, and states the fixes clearly, including that the discount went to non-buyers. Response A's \"brought to light through support escalation\" is vaguer, and its opening sentence (\"To show the scale of the incident...\") is filler. A's structure is readable, but it spends more words for less specific content.\n\nVerdict: B",
+  "usage": {
+    "input": 1688,
+    "output": 1243
+  },
+  "cost": 0.0007903
+}

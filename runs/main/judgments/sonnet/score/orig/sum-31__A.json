@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-31",
+  "side": "A",
+  "score": 7,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate. The figures match the source: 142 to 156 lines per hour, errors from 0.62% to 0.41%, 17% for new staff, 64% preference, $210,000, and a 14-month payback. It also reflects the smaller accuracy gain at the low-error site, the same-company limitation, and the heat discomfort. It leaves out the trial's swap design, but that is minor for a manager. The payback is correctly called an estimate, though it doesn't say the partner made it. \"Worth considering, especially for sites with many newer staff\" is a mild inference, but a fair one from the findings.\n\nThe main weakness is length. My count comes to about 120 words, which sits right at the limit rather than under it, so it may breach \"under 120\". It is otherwise well organised and easy to scan.\n\nScore: 7",
+  "usage": {
+    "input": 1178,
+    "output": 1447
+  },
+  "cost": 0.016826
+}

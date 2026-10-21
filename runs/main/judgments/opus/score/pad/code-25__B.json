@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "code-25",
+  "side": "B",
+  "score": 6,
+  "model": "claude-opus-5-5",
+  "text": "**Score: 6/10.** The technical content is strong, but the response ignores the explicit length limit.\n\n**Accuracy.** Every issue raised is real.\n- **Off-by-one:** With `limit = 5`, attempts 1–6 pass, because the pre-push length is still 5 when the sixth arrives. The seventh is the first one blocked. The `>=` fix is correct.\n- **Unbounded map growth:** Real, and the IPv6 rotation angle is apt.\n- **Per-IP-only limiting:** Real. Distributed guessing against one account bypasses it, and the per-account limit is a sensible fix.\n- **Hardcoded `retryAfterSec`:** Real, with an appropriate fix.\n- **Counting successful logins:** A fair design point.\n- **Per-process state and spoofable IP:** Both legitimate for a login limiter.\n- **False positives:** None.\n\n**Ranking.** The order is defensible. You could argue the per-account gap or memory exhaustion matters more than the off-by-one, since that only allows one extra attempt per minute. But leading with the concrete code bug is reasonable. Each item includes a fix.\n\n**Main failure: length.** The user said \"under 200 words.\" The response is roughly 330 words, about 65% over. It also opens with a filler sentence and pads items with phrases like \"In other words…\" and \"As a result…\". Explicit instructions should be followed, and here the extra words mostly restate points rather than adding new ones. A tighter version could have kept all seven points within the limit.\n\nScore: 6",
+  "usage": {
+    "input": 1185,
+    "output": 796
+  },
+  "cost": 0.02066
+}

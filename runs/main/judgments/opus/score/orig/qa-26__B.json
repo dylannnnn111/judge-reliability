@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-26",
+  "side": "B",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The response is correct. It names Rayleigh scattering and explains that shorter wavelengths scatter more strongly. It then covers the path-length difference between midday and sunset, which is the core reason sunsets look red or orange. It also adds why the sky looks blue rather than violet: less violet in sunlight and weaker eye sensitivity. That addition is accurate and useful.\n\nIt meets the length limit at about 117 words. The structure is clear, with labeled day and sunset sections. One small simplification is that sunset colors also depend on aerosols and dust, but that is not an error at this level.\n\nScore: 9",
+  "usage": {
+    "input": 439,
+    "output": 784
+  },
+  "cost": 0.017436
+}

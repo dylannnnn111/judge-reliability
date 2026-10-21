@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-28",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both summaries are accurate and under 120 words. Response B is slightly more precise: it gives the 40-day full-time threshold, states that the four shutdown days exclude public holidays, and says the cap and cash-out rules still apply to exempt warehouse staff. Response A is clearer on the manager's own action, labels cash-out as new, and says who the policy applies to more directly. Its \"Staff use four days' leave\" omits the public-holiday qualifier, which could mislead on the shutdown. Neither mentions that the cap relies on Fair Work rules and the enterprise agreement, nor that staff without enough leave can take unpaid leave or make up time (A includes this briefly). Because the accuracy differences favour B, I rate B marginally better.\n\nVerdict: B",
+  "usage": {
+    "input": 1466,
+    "output": 1345
+  },
+  "cost": 0.0008191
+}

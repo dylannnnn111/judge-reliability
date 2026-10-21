@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-23",
+  "side": "A",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate on every checkable detail: the footpath timing, playground installation month, feedback deadline, balance, membership figure, Clean Up Day date, time and venue, the carols date and $900 budget, and the next meeting date. Responsibilities are also correct: Laila coordinates Clean Up Day, Peter books the sound system, and Cr Tse takes the speed counter request. \"Tse will request\" slightly simplifies \"would ask council traffic staff,\" but it is not misleading. The summary omits minor points such as the school choir performing, the sausage sizzle, and the visitors, though a busy manager could reasonably skip them. It is about 116 words, under the limit, and is well organised for a quick read.\n\nScore: 8",
+  "usage": {
+    "input": 1209,
+    "output": 1495
+  },
+  "cost": 0.0008684
+}

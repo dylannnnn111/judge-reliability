@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-38",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses lead with the most important problem. With `set -e`, one failing `tar` stops every later site's backup and skips pruning. Causes include a missing `uploads/` folder, a permission error, or GNU tar's exit 1 for \"file changed as we read it\". Both also correctly flag partial archives under the final name, unquoted `$site_dir`, backups kept on the same host, possible overlap needing `flock`, and the off-by-one in `-mtime +14`.\n\n**Where A is stronger:** Its fixes are more precise. It says to tolerate tar's exit 1 but fail on 2 or higher, which is the right handling on live uploads. It also says to delete the temp file on failure. B folds the exit-1 case into item 1 and only says \"handle errors per site,\" which is less actionable.\n\n**Where B is stronger:**\n- It finds a real bug A misses entirely. If `/srv/sites` has no subdirectories, the unmatched glob runs the loop once with the literal `/srv/sites/*/`. B gives the fix, `shopt -s nullglob`.\n- It explains why `umask 077` matters: uploads can hold private user files. A buries umask in the \"minor\" item.\n- It correctly notes that the final `ls | wc -l` count includes non-archive files.\n\n**Where A is weaker:**\n- Its \"no monitoring\" item is generic operational advice rather than a problem in this code.\n- Listing `$SRC_ROOT/*/` among the breaking unquoted variables overstates things, since it is a fixed path with no spaces. Quoting it is harmless, though.\n\n**Length:** Both exceed the 200-word limit by a similar amount, so this doesn't separate them.\n\n**Overall:** A has the better fix for tar's exit codes. B catches more distinct, real code issues, with the nullglob bug as the clearest gap in A, and spends fewer words on generic advice. B is better on balance.\n\nVerdict: B",
+  "usage": {
+    "input": 1656,
+    "output": 1202
+  },
+  "cost": 0.030664
+}

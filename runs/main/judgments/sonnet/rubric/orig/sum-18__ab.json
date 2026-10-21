@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-18",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is the weaker one. It adds \"No action is required from the team\", which the release notes never say, so it is an invented claim. It also runs to roughly 140 words, which breaks the 120-word limit. Its details (the Settings path, the unsubscribe option, the 15-minute sync) are accurate but not essential for a busy manager.\n\nResponse B is accurate. It covers every section, with the key numbers (35° threshold, 15% battery, Monday email) and the main fixes, and it comes in at about 115–118 words. It leaves out minor details such as the Settings path, and it compresses \"some users\" in New Zealand slightly. Neither changes the meaning. It also invents nothing.\n\nB is better on accuracy and on the word limit.\n\nVerdict: B",
+  "usage": {
+    "input": 1441,
+    "output": 1051
+  },
+  "cost": 0.013392
+}

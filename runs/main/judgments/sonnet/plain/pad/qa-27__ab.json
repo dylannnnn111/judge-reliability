@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-27",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer in under 120 words. Response A is well over 120 words (about 230). Response B is about 85 words, so it satisfies the limit.\n\nAccuracy: Response A says \"As water cools below about 4°C, its molecules begin arranging themselves into the open hexagonal lattice,\" which is somewhat imprecise, and it says \"The coldest water sits at the surface, while slightly warmer water sinks,\" which is roughly right for winter. Response B is accurate.\n\nResponse B is better.\n\n**B**",
+  "usage": {
+    "input": 772,
+    "output": 167
+  },
+  "cost": 0.003214
+}

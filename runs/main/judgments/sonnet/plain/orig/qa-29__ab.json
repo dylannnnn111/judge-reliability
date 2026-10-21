@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-29",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better because it meets the \"under 120 words\" limit and **B** does not.\n\nI counted about 98 words in A. B comes to roughly 125 words once the bullets, the closing paragraph and the Rule of 72 line are included, so it breaks the explicit constraint.\n\nBoth responses explain the core idea correctly: compounding earns interest on interest, so growth is exponential rather than linear. Both use the same accurate $1,000 at 5% over 30 years example. B adds the Rule of 72, which is useful, but the extra length puts it over the limit.\n\n**A**",
+  "usage": {
+    "input": 576,
+    "output": 1333
+  },
+  "cost": 0.014482
+}

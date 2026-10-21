@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-21",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "The user's constraint is to answer in under 120 words. Response A is about 60 words, so it complies. Response B is well over 120 words (roughly 250), so it violates the constraint.\n\nOn accuracy, both are correct. A says \"early January\" and gives 147 million km, which is fine. B also adds aphelion detail, but it breaks the length limit.\n\nA is better.\n\n**A**",
+  "usage": {
+    "input": 676,
+    "output": 122
+  },
+  "cost": 0.002572
+}

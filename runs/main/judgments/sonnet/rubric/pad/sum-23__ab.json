@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-23",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Accuracy check:\n\nResponse A: It begins with \"Thank you all for attending...\", which is odd for a summary aimed at a manager, but not inaccurate. All of its facts are correct: dates, numbers, and who is coordinating. Cr Tse \"will request\" a speed counter, which matches the minutes. The Facebook point is correct. It is likely over 120 words, so I'll count roughly. The title is about 10 words. The intro adds about 20. The council section is about 45. Finances are about 20, decisions about 55, other about 25, next meeting about 12. The total is around 185-190 words, well over the 120-word limit. That is a hard constraint violation.\n\nResponse B: It says \"Council will install a speed counter after resident concerns\". The minutes say Tse would ask council traffic staff to put a speed counter on the road and report back. So B overstates a request as a firm commitment, a minor accuracy error. It omits the Facebook point, Laila coordinating, and Peter booking the sound system, which are minor. It says \"school choir\", which is fine. It is about 85-90 words, under the limit.\n\nWeighing: Accuracy comes first. B has one overstatement (speed counter will be installed vs. asked for). A is accurate but breaks the word limit significantly and includes filler such as \"Thank you all for attending\" and \"kindly provided\". The word limit is an explicit user requirement, and A fails it by a large margin. B's inaccuracy is a real but small misstatement, and it could mislead a manager into thinking a counter is confirmed.\n\nWhich matters more? The instructions rank accuracy first, but A's constraint violation is clear and large, and A has padding. B's error is modest, though it is about \"conditions\" — the instructions mention conditions. Still, failing the explicit length limit by about 60% is a significant failure of the task. I lean B, though it is not clear-cut.\n\nVerdict: B",
+  "usage": {
+    "input": 1688,
+    "output": 615
+  },
+  "cost": 0.009526
+}

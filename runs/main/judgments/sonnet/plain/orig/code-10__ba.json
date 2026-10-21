@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-10",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the two main problems: the start-anchored `match` combined with `<path:slug>` allows path traversal, and the code has no authentication check. They overlap on the smaller points too (TOCTOU race, inline display versus download). Neither notices that the traversal examples only work if the first path segment (such as `a`) is an existing directory, so they are even on that.\n\n**Accuracy and substance**\n- Response A gives concrete fixes for the traversal (`fullmatch`, the default converter, `send_from_directory`). It also catches that `os.path.exists` is true for directories, which would cause a 500. Its per-report authorization point is speculative, and its cache-header and audit-log items are filler.\n- Response B hedges sensibly on authentication (\"if this isn't enforced elsewhere\"). It adds the symlink-escape point, which is valid. Its item 6 is vague and partly redundant with item 1.\n\n**Constraints**\nThe user asked for under 200 words. Response A is roughly 280–300 words and Response B roughly 230. Both break the limit, but A breaks it much more. A also has more low-value items (audit trail, hard-coded directory, cache headers) that the prompt's \"bugs and problems that matter\" asks to leave out.\n\n**Ordering**\nBoth orderings are defensible. B puts the subtle exploitable traversal first and A puts the missing authentication first.\n\nB is tighter and closer to the length limit, and it adds a real symlink concern. A has slightly more actionable fixes but runs much longer and includes more padding.\n\n**B**",
+  "usage": {
+    "input": 1394,
+    "output": 1360
+  },
+  "cost": 0.016388
+}

@@ -1,0 +1,14 @@
+{
+  "pair": "sum-23",
+  "side": "A",
+  "author": "sonnet",
+  "model": "claude-haiku-5-5",
+  "original": "**Elm Gully Residents' Association – General Meeting, 1 Oct 2026**\n\n**Council update (Cr Morgan Tse):**\n- Banksia Street footpath: work starts February, about six weeks.\n- Gully Reserve playground upgrade (flying fox, accessible swing): April.\n- Feedback on draft tree canopy plan due 31 October.\n\n**Finances:** Balance $5,610; 142 member households, up on last year.\n\n**Decisions:**\n- Clean Up Day: Sunday 15 November, 8am, scout hall. Laila Haddad coordinating; council supplies bags, gloves and skip.\n- Christmas carols: Saturday 12 December, 6:30pm, Gully Reserve. Budget up to $900. Peter Vance booking sound system.\n\n**Other:** Tse will request a speed counter on Wattle Road. Facebook page to post meeting dates more clearly.\n\n**Next meeting:** Thursday 3 December 2026.",
+  "text": "**Elm Gully Residents' Association – General Meeting, 1 Oct 2026**\n\nThank you all for attending this General Meeting on 1 October 2026. The main items discussed are summarised below.\n\n**Council update (Cr Morgan Tse):**\nCr Tse kindly provided the following update on current council projects.\n- Banksia Street footpath: work is scheduled to start in February and is expected to take about six weeks.\n- Gully Reserve playground upgrade (flying fox, accessible swing): this is planned for April.\n- Feedback on the draft tree canopy plan is due by 31 October.\n\n**Finances:** The association's current balance is $5,610. Membership now stands at 142 member households, which is up on last year.\n\n**Decisions:**\nThe meeting reached the following decisions.\n- Clean Up Day: this will take place on Sunday 15 November at 8am at the scout hall. Laila Haddad is coordinating the day, and council will supply bags, gloves and a skip.\n- Christmas carols: these will be held on Saturday 12 December at 6:30pm at Gully Reserve. The budget is up to $900, and Peter Vance will be booking the sound system.\n\n**Other:** Cr Tse will request a speed counter on Wattle Road. The Facebook page is also to post meeting dates more clearly.\n\n**Next meeting:** The next meeting will be held on Thursday 3 December 2026.",
+  "ratio": 1.85,
+  "usage": {
+    "input": 511,
+    "output": 1274
+  },
+  "cost": 0.0006881
+}

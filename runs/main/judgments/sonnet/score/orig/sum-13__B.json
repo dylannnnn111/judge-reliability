@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-13",
+  "side": "B",
+  "score": 5,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is well structured and puts the decision first. However, it has one factual error and a slight overrun of the word limit.\n\n**Accuracy:** The cause is misstated. The response says the pump \"failed after the contractor missed a monthly visit\". The report says the pump failed in mid-September and the failure went unnoticed because the visit was missed. The response reverses that order, so the missed visit appears to have caused the failure. The other facts check out:\n- The count was above the 1,000 CFU/mL threshold.\n- The health department was notified within 24 hours.\n- The resample was clear.\n- The tenants were told.\n- No illness has been reported.\n- The $4,800 and $7,350 figures are correct.\n\n**Coverage:** It keeps the key points: the approval needed, the interim manual weekly checks, the response, the cause (in distorted form), the corrective actions and the cost recovery. It leaves out the actual count (1,200) and the fact that the resample was \"not detected\", but a manager can do without these.\n\n**Concision:** I count about 124 words, which slightly exceeds the 120-word limit. The formatting is otherwise efficient.\n\nThe causal error and the small overrun of the limit both count against it, but the rest is solid.\n\nScore: 5",
+  "usage": {
+    "input": 1184,
+    "output": 1348
+  },
+  "cost": 0.015848
+}

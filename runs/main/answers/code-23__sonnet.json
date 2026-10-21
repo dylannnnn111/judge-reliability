@@ -1,0 +1,13 @@
+{
+  "item": "code-23",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Problems, most important first**\n\n1. **`if (!r.value) continue;` drops legitimate 0 readings.** It is meant to skip `null`, but it also skips `0`, and 0 °C is a very normal cold-room temperature. Averages near freezing will be biased, and a sensor whose readings are all 0 vanishes from the panel instead of showing 0. Use `if (r.value == null || !Number.isFinite(r.value)) continue;`.\n\n2. **`latestReading` compares `at` as strings.** This only works if every timestamp is ISO-8601 in the same timezone and precision. Mixed offsets such as `+02:00` and `Z`, or differing formats, will pick the wrong \"latest\" reading. Parse with `Date.parse` (or store epoch ms) and compare numerically.\n\n3. **The sort comparator never returns 0.** Equal timestamps give inconsistent ordering, which is technically an invalid comparator. Sorting is also O(n log n) when a single pass to find the max would do.\n\n4. **`latestReading` may return a reading with `value: null`.** That is probably a failed read, so the dashboard could show \"no value\" as the current state. Decide whether nulls should be skipped, and document it.\n\n5. **Plain-object accumulators keyed by `sensorId`.** IDs like `constructor` or `__proto__` collide with `Object.prototype`. Use a `Map`, or `Object.create(null)`.\n\n6. **No handling of sensors with no valid data.** They are silently omitted from the output, so the UI can't tell \"no data\" from \"sensor missing\". Consider returning `null` for those sensors.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 377,
+    "output": 996
+  },
+  "cost": 0.010714,
+  "at": "2026-10-14T01:54:08.180Z"
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-19",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\n**Length:** Response A's body comes to about 118 words, or about 128 if the heading is counted. Response B is about 130 words, so it clearly breaks the \"under 120 words\" constraint whichever way you count.\n\n**Accuracy:** Response A slightly overstates the key risk. It says \"we remain liable for the full remaining term,\" where the source says the tenant *could* remain liable. However, A frames this as conditional on the buyer defaulting, so it largely holds. Response B captures the uncertainty better (\"may… possibly for the rest of the term\").\n\n**Format:** Both cover the essentials: consent, assignment conditions, ongoing liability, subletting limits, change of control, the 28-day response window and the legal-advice tip. A's bullet format with a flagged \"Key risk\" suits a busy manager better.\n\nA small framing imprecision outweighs less than B's clear breach of the stated word limit, so A is better overall.",
+  "usage": {
+    "input": 1361,
+    "output": 2348
+  },
+  "cost": 0.052404
+}

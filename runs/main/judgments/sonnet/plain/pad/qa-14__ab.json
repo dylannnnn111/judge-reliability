@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-14",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. Both responses give the correct answer of 7.5 hours, but Response A runs to roughly 130 words, which breaks the \"under 120 words\" limit. It also repeats the answer several times. Response B is concise and stays within the limit.\n\n**B**",
+  "usage": {
+    "input": 602,
+    "output": 485
+  },
+  "cost": 0.006054
+}

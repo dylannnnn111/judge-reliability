@@ -1,0 +1,13 @@
+{
+  "item": "qa-05",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "**Friday, 28 February 2025.**\n\nSince 365 days is 52 weeks plus 1 day, the weekday advances by one. Thursday becomes Friday. The date is 28 February 2025, because 2025 is not a leap year, so there is no 29 February.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 58,
+    "output": 560
+  },
+  "cost": 0.0002858,
+  "at": "2026-10-14T01:50:12.635Z"
+}

@@ -1,0 +1,14 @@
+{
+  "pair": "qa-34",
+  "side": "B",
+  "author": "sonnet",
+  "model": "claude-haiku-5-5",
+  "original": "They use **public-key cryptography**, typically a key exchange such as Diffie-Hellman.\n\n**How it works:**\n1. Each party generates a private key (kept secret) and a related public key (shared openly).\n2. They exchange public keys over the open internet.\n3. Each combines their own private key with the other's public key. Through the math, both arrive at the *same* shared secret, which an eavesdropper who sees only the public keys cannot feasibly compute.\n4. That secret becomes a symmetric session key (e.g., AES) for fast encrypted communication.\n\n**Authentication problem:** Strangers must also verify identity to prevent man-in-the-middle attacks. TLS solves this with certificates signed by trusted certificate authorities, which bind a public key to a domain name.\n\nThis is how HTTPS works every day.",
+  "text": "When two parties who have never met need to communicate securely, they typically rely on **public-key cryptography**, most often through a key exchange method such as Diffie-Hellman. This approach lets them agree on a secret without ever sending that secret across the network.\n\n**How it works:**\n1. Each party generates a private key, which is kept secret, and a related public key, which is shared openly.\n2. They exchange their public keys over the open internet, where anyone may observe them.\n3. Each party combines their own private key with the other's public key. Through the underlying math, both arrive at the *same* shared secret. An eavesdropper who sees only the public keys cannot feasibly compute that secret.\n4. The shared secret then becomes a symmetric session key (for example, AES), which is used for fast encrypted communication for the rest of the session.\n\n**Authentication problem:** Key exchange alone is not enough, because strangers must also verify each other's identity to prevent man-in-the-middle attacks. TLS addresses this with certificates signed by trusted certificate authorities. These certificates bind a public key to a domain name, giving the client a way to confirm it is talking to the intended party.\n\nThis is how HTTPS works every day, quietly protecting countless connections as you browse the web.",
+  "ratio": 1.73,
+  "usage": {
+    "input": 449,
+    "output": 515
+  },
+  "cost": 0.0003024
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-29",
+  "side": "A",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The response gets the key figures right: the three price rises, the data increases, the 15 November timing, the March 2024 scope, and the no-exit-fee option before 15 November with repayments still applying. It also stays under 120 words (about 114). The main flaw is the Classic plan line. The original says Classic customers' price and data won't change \"this year\", but the summary groups them with fixed-price contract customers as \"unaffected until their contract ends\", which misstates their situation. It also omits the app check for plan type and the support contact, though a busy manager may not need those.\n\nScore: 7",
+  "usage": {
+    "input": 1030,
+    "output": 852
+  },
+  "cost": 0.000529
+}

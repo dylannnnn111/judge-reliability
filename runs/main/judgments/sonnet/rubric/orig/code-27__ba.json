@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-27",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. Both find the real problems: unbounded `Promise.all` over about 80,000 sends, the lost per-recipient outcome and unsafe rerun, the misleading return value, the null-email crash, the unguarded cursor loop, and the missing retries. Both run somewhat over the 200-word limit.\n\n**Response A:**\n- It ranks the \"suppression check\" first. That is speculative, since `marketingOptIn` presumably already reflects unsubscribes, and it outranks the real defect, unbounded concurrency.\n- It claims `Promise.all` risks \"duplicate or dropped sends\", which is dubious.\n- Its item 8 flags the in-memory list of 80k addresses, which is fine, and the lowercasing, which is pedantic.\n- It gives almost no concrete fixes.\n\n**Response B:**\n- It ranks unbounded concurrency first, which is the most serious real problem for this list size.\n- It gives actionable fixes: p-limit with a stated range, `Promise.allSettled`, idempotent retries tracked per campaign, a cursor guard, and `trim()` before deduping.\n- Its stale opt-in point is somewhat speculative, but it is ranked last and framed as \"consider\".\n- It avoids flagging things that are fine.\n\nResponse B has better prioritisation, more useful fixes, and fewer questionable flags.\n\nVerdict: B",
+  "usage": {
+    "input": 1635,
+    "output": 1019
+  },
+  "cost": 0.01346
+}

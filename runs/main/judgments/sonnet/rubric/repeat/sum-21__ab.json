@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-21",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries are accurate on the key figures: $229,140 total, $13,140 over the $216,000 budget, $209,880 for the Northside petrol option, the 24 October deadline, the February fallback and the $1,800 per car per month hire cost. Both are also under 120 words (A is about 118, B about 114).\n\n**Response A** is slightly more complete. It includes the $1,350 annual fuel saving and mentions Coastal, though Coastal is of marginal value. It ends with a clear \"Decision needed\" line, which is helpful but a little redundant. It uses third person (\"Ruth's sign-off\"), which is safe whoever the manager is.\n\n**Response B** is tighter and puts the deadline in the headline. It adds a useful calculation: two months of hire for six cars comes to about $21,600 (6 × 2 × $1,800). That is correct and shows the cost of missing the deadline exceeds the $13,140 overrun, which helps the decision. Its one weakness is \"your sign-off\", which assumes the reader is Ruth. That is plausible, since Ruth is the CEO and the decision-maker, but it is an assumption.\n\nNeither contains errors. B's added insight is more useful to a busy manager than A's extra Coastal line and closing restatement, and its tradeoff is clearer and more concise. The \"your\" assumption is minor.\n\nVerdict: B",
+  "usage": {
+    "input": 1518,
+    "output": 2280
+  },
+  "cost": 0.025836
+}

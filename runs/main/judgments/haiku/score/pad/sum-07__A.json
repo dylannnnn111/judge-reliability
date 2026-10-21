@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-07",
+  "side": "A",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate. It correctly gives the release date, the Classic CSV removal and its consequence for imports, the Android 9 end of updates, the main features, and the coming-soon items. It also keeps the most important action item, the broken-import risk, and points to the help article. Minor omissions are the Android 9 detail that the app still works, and the beta programme invitation.\n\nConcision is the weak point. The user asked for under 120 words, but the response runs to roughly 165. It includes filler such as \"Thank you for your interest\" and \"The main points are summarised below,\" and it repeats \"Please be aware\" in the same section. The bug-fix list is compressed into a sentence, which is acceptable, but the overall length breaks an explicit constraint.\n\nAccuracy is strong and the key points are retained, but the word limit is clearly exceeded and the prose is padded, so the score is moderate.\n\nScore: 5",
+  "usage": {
+    "input": 1203,
+    "output": 713
+  },
+  "cost": 0.0004768
+}

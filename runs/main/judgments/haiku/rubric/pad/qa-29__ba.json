@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-29",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are mathematically correct. $1,000 at 5% for 30 years gives $2,500 with simple interest and about $4,322 with annual compounding, and the Rule of 72 estimate in Response A (14 years) is reasonable. Both explain the core reason: compounding pays interest on previously earned interest, so growth accelerates over time.\n\nResponse A is clearer and more vivid, with bullet points and a useful shortcut. However, it runs well past the requested limit of under 120 words, at roughly 170 words. The Rule of 72 tip is helpful but is an addition the user did not ask for, and it pushes the response further over the limit.\n\nResponse B is about 100 words, so it meets the constraint. It gives the key reasoning (interest on interest, linear versus accelerating growth, the widening gap over long horizons) and includes the same correct example. It is less polished than A, but it is accurate and complete within the requested length.\n\nSince both are correct and both give the key reasoning, the explicit word limit is the deciding factor. Response B follows the instruction and Response A does not.\n\nVerdict: B",
+  "usage": {
+    "input": 817,
+    "output": 816
+  },
+  "cost": 0.0004897
+}

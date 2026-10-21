@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-31",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct explanation: seasons come from Earth's axial tilt, not its distance from the Sun, and the hemispheres tilt toward or away from the Sun at different times of year. Neither contains a factual error. A's claim that Earth is closest to the Sun in early January is also accurate.\n\nThe main difference is the word limit. Response A is about 120 words, right at the limit (possibly a word or two over). Response B runs to roughly 280 words, more than double the limit. Its extra sentences mostly restate the same points (for example, the \"weaker and shorter daily dose\" and \"seen from the south\" passages), so they add little.\n\nResponse A covers the key reasoning (tilt, hemisphere orientation, reversal over six months, and the distance misconception) concisely and clearly, while meeting the user's length constraint. Response B is well organized but ignores the explicit length requirement without adding enough value to justify it.\n\nVerdict: A",
+  "usage": {
+    "input": 966,
+    "output": 1509
+  },
+  "cost": 0.0008511
+}

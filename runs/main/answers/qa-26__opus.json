@@ -1,0 +1,13 @@
+{
+  "item": "qa-26",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "It comes down to **Rayleigh scattering**. Sunlight contains all colors, and when it hits the tiny gas molecules in our atmosphere, shorter wavelengths (blue and violet) scatter far more strongly than longer ones (red and orange).\n\n**During the day**, the sun is high, so light travels a relatively short path through the air. Blue light gets scattered across the whole sky, reaching your eyes from every direction. The sky looks blue rather than violet because sunlight contains less violet and our eyes are less sensitive to it.\n\n**At sunset**, sunlight passes through much more atmosphere to reach you. Most of the blue scatters away along that long path, leaving mainly reds and oranges to come straight through.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 52,
+    "output": 257
+  },
+  "cost": 0.005348,
+  "at": "2026-10-14T01:50:44.095Z"
+}

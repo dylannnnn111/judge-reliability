@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-22",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Checking constraints: under 120 words. Response A is clearly over 120 words (around 270). Response B is about 100 words. Let me estimate B: heading ~8 words; Fees bullet ~42; Grounds ~20; Presentation ~17; Other ~16; Next meeting ~4. Total ~107. Under 120.\n\nAccuracy: A says Wes will obtain quotes for roof and light globe (slightly inaccurate; globe will be arranged, not quoted). A also has chatty filler (\"Thank you all for attending\"), which is inappropriate for a summary. B is accurate and concise.\n\nB is better.\n\n**B**",
+  "usage": {
+    "input": 1629,
+    "output": 209
+  },
+  "cost": 0.005348
+}

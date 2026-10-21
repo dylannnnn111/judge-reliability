@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-17",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. Both responses go over the 120-word limit, but B overshoots by far less.\n\n- **Length:** Response A is roughly 145 words including its subject line. Response B is roughly 124.\n- **Accuracy:** Response A credits Arjun with the \"fourth weekend in a row\" remark, which was Colleen's. Its subject line, \"resolved for now,\" also overstates things, since the committee is still waiting to see how the next weekend goes. Response B has no comparable errors.\n- **Content:** Response B explains why the evidence logs matter, because the regulator needs dated evidence. It also notes that the regulator complaint is the fallback and mentions the dissenting resident. Response A leaves out the evidence requirement and that resident.",
+  "usage": {
+    "input": 1405,
+    "output": 1596
+  },
+  "cost": 0.01877
+}

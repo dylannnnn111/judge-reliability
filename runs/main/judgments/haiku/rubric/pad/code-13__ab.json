@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-13",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses identify the same core bugs: the December crash, day-of-month overflow, schedule drift, the hardcoded 30-day proration, missing input validation, and rounding. Both rank the crashes first, which is sensible. Response B gives more actionable fixes, such as `dateutil.relativedelta`, `calendar.monthrange`, and using the real period length for proration. Response A describes the fixes more vaguely and gives no concrete proration fix. B has a small inaccuracy: a December start only fails if the schedule has at least two months, not for any December subscription. It also pads the list with a weak timezone point, since `date` objects have no timezone. Response A's opening line is filler, and it runs noticeably longer past the 200-word limit than B does. On balance, B is more concise, more actionable, and closer to the constraint, though its flaws are minor.\n\nVerdict: B",
+  "usage": {
+    "input": 1729,
+    "output": 965
+  },
+  "cost": 0.0006554
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-20",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct facts: Canberra, 1927, and the opening on 9 May. Both are under 120 words.\n\nResponse A is concise and adds accurate detail: the Duke of York opened the provisional Parliament House, he later became George VI, and Parliament moved to the new building in 1988. It has no filler. One small point is that \"Old Parliament House\" was indeed the provisional Parliament House, which is accurate.\n\nResponse B has filler such as \"To answer your question directly\" and \"I hope this helpful background is useful\". It also ends with a redundant summary that repeats what it just said. Its content is correct but less informative and more padded.\n\nResponse A is better.\n\n**A**",
+  "usage": {
+    "input": 425,
+    "output": 216
+  },
+  "cost": 0.00301
+}

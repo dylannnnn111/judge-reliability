@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-39",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate on nearly every checkable point: the 7-2 vote, the 1 December start, the five libraries, the roughly $38,000 in existing fines across 6,400 members, the automatic unblocking, the November emails, the 60-day replacement-cost rule, the inter-library loan exception, and the 12-month review. It stays well under 120 words and is easy to scan.\n\nThe main weakness is the cost line. \"About $52,000 in annual revenue lost, less $19,000... (net about $33,000)\" adds a calculation the source never makes. The $52,000 was fines collected last year, not necessarily all revenue lost, and the $19,000 is a staff cost saving rather than an offset to revenue. The net figure is a reasonable inference, but presenting it as a headline number without caveat could mislead a manager. The response also omits that the councillor's objection was framed as giving up revenue, though it does mention rates pressure. Missing the Jade Whitfield anecdote is a reasonable omission for a busy manager.\n\nOverall the response is concise, well structured, and largely correct, with one framing issue in the financial line.\n\nScore: 8",
+  "usage": {
+    "input": 1071,
+    "output": 992
+  },
+  "cost": 0.0006031
+}

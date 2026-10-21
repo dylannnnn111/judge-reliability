@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "code-20",
+  "side": "A",
+  "score": 6,
+  "model": "claude-opus-5-5",
+  "text": "The technical content is accurate and well ordered, but the response ignores the 200-word limit and pads its answer with filler.\n\n**Correctness of the issues raised**\n- **DST bug.** This is real and is the most important issue. Both values are local midnights, so across a spring-forward night the gap is 23 hours. 23/24 ≈ 0.96, which floors to 0, so an invoice due tomorrow shows \"Due today\". Across a fall-back night the gap is 25 hours. −25/24 ≈ −1.04, which floors to −2, giving \"Overdue by 2 days\".\n- **The DST fix is correct.** Using `Date.UTC` on the calendar components gives exact multiples of a day.\n- **Malformed input.** This is also real and correctly analyzed.\n  - Null becomes `\"nullT00:00:00\"`, which is an Invalid Date, so the result is NaN.\n  - `reminderLabel` then falls through to \"Due in NaN days\".\n  - `NaN < 0` is false, so the bad row silently disappears from the overdue list. That is a good catch on the consequence.\n- **Minor items.** Both are legitimate and properly hedged: the browser-local \"today\" may differ from the business timezone, and labels go stale after midnight.\n\n**Ranking and false positives**\n- The ordering is sensible.\n- Nothing is falsely flagged.\n\n**Problems**\n- **Over the word limit.** The user asked for under 200 words. Excluding the code block, the response is roughly 270 words.\n- **Filler throughout.** Several sentences add nothing:\n  - \"I've kept the explanations and the suggested fix as they were, and have tried to make each point easier to follow\" is meta-commentary about an editing process the user never saw.\n  - \"This is a second, separate problem.\"\n  - \"The effects then spread through the rest of the code.\"\n  - \"These two items are less serious, but they are still worth a look.\"\n- The extra words do not add correct, useful content. They only push the response past the explicit limit.\n\nThe substance is near-ideal, but the length violation and padding cost meaningfully.\n\nScore: 6",
+  "usage": {
+    "input": 1374,
+    "output": 1158
+  },
+  "cost": 0.028656
+}

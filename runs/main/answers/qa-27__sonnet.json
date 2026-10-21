@@ -1,0 +1,13 @@
+{
+  "item": "qa-27",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "Ice floats because it's less dense than liquid water. As water cools below about 4°C, its molecules begin arranging into the open hexagonal lattice that hydrogen bonds favor. When water freezes, this rigid structure holds molecules farther apart than in the liquid, so ice is roughly 9% less dense.\n\nThis matters enormously for lakes. Because ice forms a floating layer on top, it insulates the water below, slowing further freezing. Lakes rarely freeze solid, so fish, plants, and microbes survive winter in liquid water near the bottom. Also, water's density peak at 4°C means the coldest water sits at the surface while slightly warmer water sinks, keeping a stable habitat. If ice sank, lakes would freeze from the bottom up, devastating aquatic ecosystems.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 52,
+    "output": 265
+  },
+  "cost": 0.002754,
+  "at": "2026-10-14T01:50:44.704Z"
+}

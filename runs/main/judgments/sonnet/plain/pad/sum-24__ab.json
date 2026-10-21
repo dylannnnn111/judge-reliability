@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-24",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "A is better. It stays under the 120-word limit, at roughly 114 words. It also uses the corrected figures ($88,200 approved, $31,800 rollover) and notes the correction to the Saltwater amount.\n\nB has the correct figures too, but it is well over the limit, at about 180 words. It opens with filler (\"Thank you for reviewing the update below...\") that a busy manager doesn't need.",
+  "usage": {
+    "input": 1737,
+    "output": 898
+  },
+  "cost": 0.012454
+}

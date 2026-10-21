@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-27",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy.** Both responses get the core numbers right: 81% vs 74%, the 60% promotion share, 78% vs 76%, $95 per session, $410,000 a year, 21 October and November. B has two small imprecisions that A avoids:\n\n- **Test length:** B says \"Approve a 60-day test\", but Marcus proposed \"at least 60 days.\" A keeps \"at least 60 days.\"\n- **Comparison group:** B writes \"Among paying customers only.\" Free-month customers do become paying customers after their first month. The original's distinction is \"paid from day one,\" which A preserves exactly.\n\nNeither error is serious, but under an accuracy-first standard they count against B.\n\n**Coverage.** B includes a few extra useful details: the Aug–Sep timeframe, an explicit definition of the metric, and the framing of the \"apparent 7-point lift.\" Its \"Decision needed\" label also helps a busy manager see what is being asked of them. A omits the dates but still covers the recommendation, the confound, the sales claim, the cost and the proposal with its decision date. The reader loses nothing essential.\n\n**Concision.** Both are under 120 words and similarly tight.\n\n**Overall.** B's framing is slightly more manager-friendly. A is more faithful on the conditions of the proposal and the comparison group. Since accuracy comes first, A edges ahead.\n\nVerdict: A",
+  "usage": {
+    "input": 1514,
+    "output": 952
+  },
+  "cost": 0.025096
+}

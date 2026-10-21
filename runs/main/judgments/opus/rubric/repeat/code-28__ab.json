@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "code-28",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.**\n\n**Real issues and coverage.** Both responses catch the core problems:\n- the connection leak\n- the race condition, with sound fixes (`FOR UPDATE` or a conditional `UPDATE` with a `rowCount` check)\n- the unverified destination wallet that lets money vanish\n- the deadlock risk\n- `ROLLBACK` masking the original error\n- the same-wallet transfer\n\nA adds an audit and idempotency point, which is a reasonable design concern. B adds a `CHECK (balance_cents >= 0)` constraint, which is a useful extra safeguard.\n\n**Ranking.** A puts the connection leak first. B puts the double spend and vanishing funds first. Both orderings are defensible. The leak takes the API down quickly, but B's order puts the financial-integrity bugs on top, which suits code that moves money. Both give concrete fixes for every item.\n\n**False or weak flags.** A's item 8 claims that a `bigint` coming back as a string makes the comparison \"unreliable.\" In JavaScript, `\"500\" < 1000` converts the string to a number and compares correctly. It only breaks for values beyond the safe-integer range, so this is mostly a false flag. B has no comparable dubious claim.\n\n**Length.** The user asked for under 200 words. A runs to about 260 words. B is around 210, also slightly over but much closer.\n\nB covers the same essential bugs with fixes, ranks them sensibly, avoids the questionable claim, and comes closer to the length limit.\n\nVerdict: B",
+  "usage": {
+    "input": 1821,
+    "output": 1039
+  },
+  "cost": 0.028064
+}

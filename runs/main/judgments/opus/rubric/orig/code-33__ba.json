@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-33",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both responses correctly identify the critical bug. `p.status = 'succeeded'` in the WHERE clause discards the NULL rows produced by the LEFT JOIN, so zero-payment customers never appear. Both give the right fix of moving the condition into the ON clause. Response B adds a useful detail: customers whose only payments failed are also dropped.\n\n**Response A** then raises reasonable secondary issues:\n- **Date format/epoch mismatch:** This is real. In SQLite an integer epoch compared to text never matches.\n- **UTC cutoff:** A minor note.\n- **\"Paying\" versus `plan <> 'free'`, and NULL plans dropping out:** Both are fair points.\n\nHowever, its item 4 suggests `COUNT(*)` \"would be clearer.\" That is wrong and harmful. With a LEFT JOIN, `COUNT(*)` returns 1 for customers with no matching payments, so it would reintroduce the exact bug it just fixed. `COUNT(p.id)` is the correct choice. So A flags correct code as a problem and recommends a change that would break it.\n\n**Response B** covers the same core points (the NULL plan issue and the epoch/text date mismatch). It also catches more important business-logic problems for a churn list:\n- **Annual and quarterly subscribers:** These would show zero payments in 90 days while being healthy. This is a major source of false alarms, and B suggests comparing against the billing interval or renewal date.\n- **Already-cancelled or brand-new accounts:** These would also be misflagged.\n\nIts refunds/chargebacks point is terse but plausible. B makes no incorrect recommendations, and its ranking is sensible.\n\nB finds more of the issues that matter and avoids A's incorrect `COUNT(*)` advice.\n\nVerdict: B",
+  "usage": {
+    "input": 1524,
+    "output": 962
+  },
+  "cost": 0.025336
+}

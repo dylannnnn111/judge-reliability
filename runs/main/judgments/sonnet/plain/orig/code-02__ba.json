@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-02",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** Both responses find the same main bug, the mutable default `tags=[]` shared across calls, and give the same fix. Both also cover the narrow `KeyError` handling, the misleading \"no id\" message, and the risk of logging the full payload.\n\nThe main difference is the word limit. Response A comes to roughly 190 words, so it stays under the 200-word limit. Response B is clearly longer, at roughly 230 words or more. It adds extra bullets, a dead-letter and metrics point, and a minor note about `received_at` timestamps that is more of a nitpick than a bug that matters. The user asked for \"bugs and problems that matter\" in under 200 words, so B's extras work against the request.\n\nA also notes that the shared list grows without bound in a long-running worker, which matters for an ingest worker.",
+  "usage": {
+    "input": 1367,
+    "output": 990
+  },
+  "cost": 0.012634
+}

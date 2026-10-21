@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-35",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "B is slightly better. Both summaries cover the core obligations, the kitchenette condition, the payment alternative, the timing risk and the bond, and both stay under 120 words. A is about 118 words, which is very close to the limit. B is about 110.\n\n**A:**\n- Its bullet layout is easy for a busy manager to scan.\n- It says \"Overrunning means paying daily rent\", but the source says only that the tenant \"may have to pay\". That turns a possibility into a certainty.\n- It says the landlord \"must give three months' notice\" without saying this is before the lease ends, which is less precise.\n\n**B:**\n- It is accurate throughout: \"may incur rent\", and notice \"at least three months before lease end\".\n- It is compact prose and reads clearly, though it is less scannable than bullets.\n- It says \"us\", which assumes the manager is at the tenant company. That is probably right, since the guide is for Marlow & Quay.\n- It describes the repair obligation only as \"repairing damage\", which is a little vague.\n\nB's precision outweighs A's formatting advantage.\n\n**B**",
+  "usage": {
+    "input": 1300,
+    "output": 1788
+  },
+  "cost": 0.02048
+}

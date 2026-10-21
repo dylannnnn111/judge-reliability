@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-37",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better on accuracy, coverage and concision.\n\n**Accuracy:** Both responses get the key facts right: the Amber status, Tomas's departure on 7 November, the 8 December to late January slip, the three options, the $64k unbudgeted cost, the sponsor's approval, and the budget. Response A softens \"on schedule\" to \"on schedule in most respects\", which the source does not say. It also drops the \"add it in February\" part of option 2 and the condition that finance accepts a partial go-live only if the month-end reports don't depend on payroll. Response B conveys that condition more faithfully (\"may not be acceptable\") and keeps the February detail. Response B does say the delay is \"five to six weeks\", which matches the source.\n\n**Coverage:** A includes the report progress and Tomas documenting the payroll system, which are minor. B includes the next update date and the clearer option 2 detail. B leaves out the 14 of 22 reports and the documentation, so neither is complete, but both keep what a manager needs.\n\n**Concision:** The limit is 120 words. A runs to about 200 words and has filler such as \"I'm pleased to report\", \"To begin with\" and \"To summarise the financial position\". B is about 139 words, which is also over the limit but much closer, and it has no filler. Neither meets the limit, but A breaks it by far more.\n\nVerdict: B",
+  "usage": {
+    "input": 1595,
+    "output": 1640
+  },
+  "cost": 0.01959
+}

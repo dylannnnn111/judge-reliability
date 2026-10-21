@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-12",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better.\n\nBoth responses go over the 200-word limit, but A only slightly (roughly 205 words) and B by a lot (roughly 275).\n\nThe first three issues in each response are the same:\n- the N+1 queries\n- the crash on a missing customer\n- the non-sargable date filter\n\nWhat differs is the rest of each list.\n\nA's remaining points are concrete and relevant to a finance export:\n- Totals are exported as formatted strings.\n- Negative amounts render as `$-12.34`.\n- Invoice order within a customer is nondeterministic.\n- The `month` input isn't validated.\n- Timezone boundaries may not match finance's definition of the month.\n\nB's remaining points are weaker or padding:\n- The `COUNT(*)` vs. quantity concern is speculative.\n- \"Usually fine\" for float division is hedged and low value.\n- The \"no reconciliation\" suggestion asks for a feature rather than pointing out a bug.\n- The snapshot point is valid but minor.\n\nB also leaves out the string-formatted totals problem, which matters for a finance export, and the unstable ordering. The task asked for \"bugs and problems that matter\" in a short answer, so A's tighter and more relevant list fits better.\n\n**A**",
+  "usage": {
+    "input": 1594,
+    "output": 1118
+  },
+  "cost": 0.014368
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-16",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response B is better. Its top item, that GST is likely double-counted because Australian shelf prices normally include GST, is probably the most consequential bug in this code, since it overcharges customers on every order. Response A raises the same concern only as the last item, framed as \"verify this is intended,\" which buries the biggest financial risk. Both responses correctly flag the in-place `sort` mutation, missing validation, client-side trust at checkout, and the brittle discount code matching. Response A's rounding item is weaker: the floating-point concern is minor for integer cents, and its suggested fix is essentially equivalent to the original. Its `==` versus `===` point is a style nit presented as a problem. Response B's suggestion to return an error for unknown discount codes is a useful, concrete addition. Response B is also tighter and better ranked, while Response A pads its list with lower-value items.\n\nVerdict: B",
+  "usage": {
+    "input": 1699,
+    "output": 915
+  },
+  "cost": 0.0006274
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-34",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate. The dates, the 30-minute acceptance window, the 24/48-hour reminder options, and the Android workaround all match the source, and it keeps every point a manager would need. It also reads well, with clear headings and short bullets.\n\nThe main problem is length. By my count it runs to roughly 135 words, over the 120-word limit the user set. Trimming the \"Known issue\" and \"Next month\" lines, or the wording of the feature descriptions, would bring it under the limit without losing substance.\n\nScore: 6",
+  "usage": {
+    "input": 1071,
+    "output": 1411
+  },
+  "cost": 0.0008126
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-23",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is the better response. It stays under the 120-word limit, at roughly 104 words. It is also tightly organised and suits a busy manager.\n\nA has one flaw. It says the council \"will install\" a speed counter on Wattle Road, but the minutes only say Councillor Tse would ask council traffic staff to install one. That slightly overstates the commitment.\n\n**B** is well over 120 words, probably around 190, so it breaks the explicit length constraint. It also wastes space on filler such as \"Thank you all for attending\" and \"kindly provided\". It does include some useful details A omits, such as Laila coordinating and Peter booking the sound system. But it states the speed counter more accurately only as a request, and that does not outweigh the length violation.\n\nA",
+  "usage": {
+    "input": 1534,
+    "output": 797
+  },
+  "cost": 0.011038
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-28",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate and under 120 words. Each correctly covers the balance cap, cash-out rules, shutdown dates, warehouse exemption, and the 31 October list deadline. Response A includes the 40-day full-time equivalent, which is useful detail. However, it omits the unpaid leave and make-up time options for staff without enough leave, which a manager would need to handle requests. Response B includes those options and gives the cost and burnout rationale, which helps a manager understand why the change is happening. Its \"permanent staff\" wording drops the explicit part-time mention, but \"permanent\" still covers both. Response B's coverage of the shutdown and rationale is slightly more useful for this reader, so it edges ahead.\n\nVerdict: B",
+  "usage": {
+    "input": 1466,
+    "output": 1029
+  },
+  "cost": 0.0006611
+}

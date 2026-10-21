@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-10",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses reach the correct answer of 1/3 with sound reasoning. Each explains why 1/2 would apply only if a specific child were known to be a girl.\n\nThe deciding factor is the word limit. Response A runs to roughly 144 words, which breaks the \"under 120 words\" instruction. Response B comes in at about 110 words. It meets the limit while giving the same correct answer and the same clarifying explanation.",
+  "usage": {
+    "input": 632,
+    "output": 784
+  },
+  "cost": 0.018208
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "sum-13",
+  "side": "A",
+  "score": 3,
+  "model": "claude-sonnet-5-5",
+  "text": "The response has two factual errors, breaks the length limit and is padded.\n\n**Accuracy:**\n- It says the contractor \"had visited monthly and missed this fault during those visits.\" The source says the monthly service visit was missed, which is why the pump failure went unnoticed. This misstates the cause and the contractor's fault.\n- \"We were not informed of it\" is vague. The source says Facilities was not told the visit had been missed.\n- It says \"a resample taken on 9 October.\" The resample was taken on 6 October, and 9 October is when the result came back.\n- The other figures are correct: 1,200 CFU/mL, notification within 24 hours, $7,350, $4,800 and no linked illness.\n\n**Content:**\n- It keeps the main points: resolved, cause, cost recovery, the decision needed and the interim weekly checks.\n- It omits fortnightly sampling and the tenants' notification, which are minor.\n- It does not say that the missed visit is a breach of contract, which is the basis for recovering costs.\n\n**Concision:**\n- It runs to roughly 180 words, well over the 120-word limit.\n- It wastes words on filler such as \"I am writing to provide an update,\" \"To begin with,\" \"Turning to,\" \"Finally\" and \"We appreciate your attention.\"\n\nScore: 3",
+  "usage": {
+    "input": 1346,
+    "output": 728
+  },
+  "cost": 0.009972
+}

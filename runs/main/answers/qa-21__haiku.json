@@ -1,0 +1,13 @@
+{
+  "item": "qa-21",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "The Earth is closest to the Sun around early January, at perihelion, when it is roughly 147 million km (about 91.4 million miles) away. This happens during the Northern Hemisphere's winter, which shows that Earth's distance from the Sun does not cause the seasons. The seasons are caused by Earth's axial tilt of about 23.4 degrees.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 48,
+    "output": 118
+  },
+  "cost": 0.00006379999999999999,
+  "at": "2026-10-14T01:50:34.171Z"
+}

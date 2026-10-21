@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "qa-40",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses are accurate and under 120 words. They give the same speeds for light and sound and the same divide-by-3 (km) and divide-by-5 (miles) rule.\n\nResponse A has one small edge: it notes that the flash and thunder start at the same moment. Its 10-second example (about 3 km, 2 miles) is a rounded figure, since 10 ÷ 3 is about 3.3 km.\n\nResponse B is slightly better for three reasons:\n- **Clearer steps:** It lays out the counting method as numbered steps.\n- **Cleaner example:** Its 15-second example divides exactly (5 km, 3 miles).\n- **More complete safety advice:** It adds the 30-minute wait after the last thunder.",
+  "usage": {
+    "input": 600,
+    "output": 447
+  },
+  "cost": 0.01134
+}

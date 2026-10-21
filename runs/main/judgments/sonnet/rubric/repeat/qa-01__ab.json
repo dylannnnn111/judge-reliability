@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "qa-01",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are correct: 90 / 981 ≈ 9.2%. Both use the same natural-frequency method, and both stay under 120 words (roughly 100 for A and 95 for B). A states the answer first and adds a short note on why the result is counterintuitive. B names Bayes' theorem and gives the slightly more precise 0.0917. The extra content in each is correct and roughly equal in value, so neither is better in a way that matters.\n\nVerdict: TIE",
+  "usage": {
+    "input": 745,
+    "output": 1104
+  },
+  "cost": 0.01253
+}

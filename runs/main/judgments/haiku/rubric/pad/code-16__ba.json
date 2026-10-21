@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-16",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is better. It ranks the GST issue first. Australian shelf prices are normally GST-inclusive, so adding 10% on top likely overcharges customers, and this is probably the most important problem in the code. It also gives concrete fixes for each item. Its points are accurate: the in-place sort, missing input validation, client-trusted totals, brittle discount matching, and the `formatAud` negative and separator issues. Its length is close to the limit.\n\nResponse B makes the same core points but buries the GST question as item 7, after weaker issues. It also flags `==` versus `===` as a problem, which is a style nit since the comparison of strings behaves the same either way. Its rounding point is minor and somewhat overstated. It opens with filler (\"Thank you for sharing this code\"), and it runs noticeably longer than 200 words, with vaguer wording in places.\n\nVerdict: A",
+  "usage": {
+    "input": 1879,
+    "output": 915
+  },
+  "cost": 0.0006454
+}

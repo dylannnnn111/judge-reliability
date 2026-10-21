@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-37",
+  "side": "A",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The response is correct. Uluru is made of arkose, a feldspar-rich sandstone. Weathering oxidizes the iron-bearing minerals near the surface into iron oxides, which form a thin reddish coating. The unweathered rock beneath is grey.\n\n- **Reasoning:** It gives the key cause (oxidation of iron, i.e. rust) and adds the grey interior, which reinforces the explanation.\n- **Sunrise/sunset note:** This is accurate and relevant to the popular image of Uluru's colour.\n- **Length:** At about 110 words, it meets the under-120 limit.\n- **Clarity:** It is well organized and clear.\n- **Minor quibble:** The phrase \"rich in feldspar that contains iron-bearing minerals\" is slightly awkward. It could be read as saying the feldspar itself holds the iron, but this does not mislead.\n\nScore: 9",
+  "usage": {
+    "input": 428,
+    "output": 641
+  },
+  "cost": 0.014532
+}

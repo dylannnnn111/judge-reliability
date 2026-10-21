@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-24",
+  "side": "B",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The response is **correct on both questions.**\n\n- **Mauna Kea:** It rises about 10,200 m from its seafloor base, with about 4,200 m above sea level. That makes it taller base-to-peak than Everest's 8,849 m.\n- **Chimborazo:** Its summit is about 6,384.4 km from Earth's centre, versus about 6,382.3 km for Everest. The response's \"roughly 2 km farther\" is accurate.\n\n**Reasoning is present for each answer.** It notes that most of Mauna Kea sits below sea level. It names the equatorial bulge as the reason Chimborazo's summit is farther from the centre.\n\n**Length and clarity:** The response is about 103 words, within the 120-word limit. It is clearly organised, answering one question per paragraph.\n\n**Minor weaknesses:**\n- \"Points nearer the equator are farther from the centre\" is slightly loose. It holds for surface points at comparable elevation, not for every point.\n- The final sentence mostly restates the one before it, so it adds words without adding information.\n- It doesn't mention that Mauna Kea's base height depends on how the base is defined. That omission is acceptable given the word limit.\n\nThese are small issues; the answers and their key reasoning are right.\n\nScore: 9",
+  "usage": {
+    "input": 454,
+    "output": 870
+  },
+  "cost": 0.019216
+}

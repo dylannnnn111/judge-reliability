@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-04",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. Both responses go over the 120-word limit, but B is much closer, at about 135 words against A's roughly 190.\n\nB is also easier for a busy manager to scan. It is bulleted, covers the key points (the leave increases, the cut-off date, eligibility, superannuation, the application deadline and the info sessions), and adds a manager-relevant note about rostering for split leave.\n\nA is wordy and has filler such as \"pleased to share\" and \"To begin with\". It drops the fact that the leave is on top of government pay, and it leaves out that earlier arrivals keep the current entitlements. It also wrongly says the 24-month window applies to \"each block\", when it applies to all leave taken, and it presents the three-block option as available to all carers rather than only primary carers.\n\n**B**",
+  "usage": {
+    "input": 1490,
+    "output": 1146
+  },
+  "cost": 0.01444
+}

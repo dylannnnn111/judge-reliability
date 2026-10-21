@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-10",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are accurate: the dates, figures, the risk change and the \"no decisions\" point all match the source. Neither misattributes anything.\n\nOn content, both keep what a manager needs: status, go-live date, progress, login results, accessibility audit, budget, helpdesk risk, no decisions, and next steps.\n- Response A also states \"no new risks\", gives the vendor reason for the lower helpdesk risk, and adds the next update date.\n- Response A also includes the new hire, Ben Castillo, which matters little to a busy manager.\n- Response B leaves out the vendor reason and the update date, but loses nothing essential.\n\nOn concision, Response A is about 118 words by a simple count. Counting hyphenated words such as \"go-live\", \"front-end\" and \"switch-over\" as two words each puts it at roughly 121, which would break the \"under 120\" limit. Response B is around 100 words and stays within the limit however it is counted. Response A's bullets are easier to scan, but its extra detail is mostly low-value and puts it at risk of breaking the constraint.\n\nSince the two are equal on accuracy and key points, Response B's safer compliance with the length limit gives it a slight edge.\n\nVerdict: B",
+  "usage": {
+    "input": 1275,
+    "output": 1929
+  },
+  "cost": 0.02184
+}

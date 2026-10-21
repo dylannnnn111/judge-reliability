@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-14",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. Both responses correctly identify the most important bug: OFFSET pagination combined with deletion skips rows. Both also cover the crash-between-archive-and-commit duplication, the need for a durable `archive`, string-format sensitivity of `created_at`, and the missing index.\n\nThe difference is the length constraint. Response A runs roughly 290 words and includes filler such as \"It is worth noting\" and \"Consider what happens\". Response B is tighter at roughly 220 words. Both exceed the 200-word limit, but B overshoots by much less.\n\nB also adds a distinct point, the missing error handling and rollback when `archive` or the delete raises. A instead suggests increasing the batch size, which is a weaker point. A's \"performance grows with each pass\" explanation is plausible but less crisp.",
+  "usage": {
+    "input": 1474,
+    "output": 624
+  },
+  "cost": 0.009188
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-24",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are accurate and under 120 words (A about 114, B about 116). Both apply the correction correctly: Saltwater is $14,500, the total is $88,200, and $31,800 rolls over. Dates, conditions and the $2,000 quick-response grant are right in both, and neither contains a misleading claim.\n\nThe difference is in what each keeps:\n- **Response A** keeps the conflict-of-interest declaration (Jarrah left the call for the Saltwater item). That is a governance point a manager would want, especially since Saltwater was the item involved in the correction. A also notes \"corrected from $45,000\", which helps anyone who may have seen the original figure. It drops \"with revised budgets\" for the two encouraged reapplicants, which is a minor loss.\n- **Response B** keeps \"with revised budgets\" but omits the conflict declaration entirely. Its phrasing is slightly more awkward (\"Without them by 30 November\"), though still clear.\n\nOn balance, A retains the more important points at similar length.\n\nVerdict: A",
+  "usage": {
+    "input": 1755,
+    "output": 2574
+  },
+  "cost": 0.02925
+}

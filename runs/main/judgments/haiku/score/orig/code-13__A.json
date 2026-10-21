@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-13",
+  "side": "A",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The response finds the most serious real bugs: the December `ValueError` from `month + 1`, the day-of-month overflow (Jan 31 to Feb 31), and the drift from chaining each date off the previous one. Its fixes are concrete (clamp to month end, compute from `start`). The proration problems, including the hardcoded 30-day month and `days_used` exceeding a full month, are also real and well explained. It flags nothing that is actually fine, and the rounding point is a legitimate business-rule question.\n\nThe ordering is mostly sensible, though drift silently changes every billing date after the first affected month, so it arguably deserves to rank above the proration issues. The rounding item is weaker: \"consistently underbilled\" is loose, and it's more a policy question than a bug. The response is also close to or slightly over the 200-word limit, which the user explicitly set.\n\nOverall the issues are accurate and well-fixed, with minor ranking quibbles and a small length overrun.\n\nScore: 7",
+  "usage": {
+    "input": 894,
+    "output": 874
+  },
+  "cost": 0.0005264
+}

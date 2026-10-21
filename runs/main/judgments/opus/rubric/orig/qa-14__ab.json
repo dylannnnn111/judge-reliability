@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-14",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-opus-5-5",
+  "text": "Both responses reach the correct answer of 7.5 hours (7 hours 30 minutes). They use identical reasoning: the tap fills at 1/3 tank per hour and the drain empties at 1/5 tank per hour. That gives a net rate of 2/15 tank per hour, so filling takes 15/2 = 7.5 hours. Both stay well under 120 words.\n\nThe only differences are cosmetic:\n- **Response A** opens with a bolded standalone answer and bolds the net rate.\n- **Response B** opens with a full sentence and puts the final calculation as a bullet point.\n\nNeither difference affects correctness, the completeness of the reasoning, or clarity in any meaningful way.\n\nVerdict: TIE",
+  "usage": {
+    "input": 600,
+    "output": 308
+  },
+  "cost": 0.00856
+}

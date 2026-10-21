@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-25",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is about 108 words and meets the 120-word limit. Response B is roughly 170 words, well over the limit, and is padded with filler such as \"To give some background,\" \"We would like to note that,\" \"Please be aware that\" and \"Finally.\" The user explicitly asked for under 120 words, so B fails a stated requirement.\n\nResponse A has one factual slip. It says the job was \"stopped after 35 minutes\", but the report says it was stopped at 9:35am. The report gives no start time, so \"35 minutes\" is invented. A also leaves out the media and communications point and the comms-guide action, though a busy manager could reasonably do without both. Its core content is right: the cause, the 347 members, the data exposed, no external access, the regulator notification, the fixes and the 9 October send.\n\nResponse B is factually sound and includes the media and comms point. It breaks the length limit by a large margin and wastes words on filler.\n\nThe \"35 minutes\" error in A is real but minor, and it does not change the manager's understanding of the incident. B's disregard for the explicit word limit undermines the purpose of a brief summary, so A is the better response overall.\n\nVerdict: A",
+  "usage": {
+    "input": 1491,
+    "output": 1638
+  },
+  "cost": 0.019362
+}

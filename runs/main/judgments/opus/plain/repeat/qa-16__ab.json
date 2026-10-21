@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "qa-16",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses are accurate and under 120 words. Each correctly identifies Antarctica (about 14 million km²) as the largest desert, notes that the Arctic is second, and names the Sahara (about 9.2 million km²) as the largest hot desert.\n\nResponse A has a slight edge in readability. Its bullet points make it easy to scan, and comparing the Sahara to the size of the United States is helpful context.\n\nResponse B edges ahead on substance. It backs up the \"low precipitation\" definition with concrete figures: about 200 mm along the coast and far less inland. It also gives square-mile equivalents for the Sahara. Its closing line frames the answer clearly around whether hot deserts alone are being counted.\n\nIt's a close call, but B's supporting evidence makes it slightly more informative.",
+  "usage": {
+    "input": 521,
+    "output": 677
+  },
+  "cost": 0.015624
+}

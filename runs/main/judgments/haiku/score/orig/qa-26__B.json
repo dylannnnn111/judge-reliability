@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-26",
+  "side": "B",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response is correct. It identifies Rayleigh scattering as the cause, explains that shorter wavelengths scatter more strongly, and correctly attributes the daytime blue sky to light scattering across the sky from a short atmospheric path. It also correctly explains the red and orange sunsets as the result of a long path that strips out blue light. The note about violet is a sensible refinement, since the sun emits less violet and eyes are less sensitive to it. The response is about 115 words, within the limit, and it is clearly organized with the key reasoning up front. A minor improvement would be briefly noting that the sun's light is itself somewhat weaker in violet, but this is not an error.\n\nScore: 9",
+  "usage": {
+    "input": 439,
+    "output": 656
+  },
+  "cost": 0.0003719
+}

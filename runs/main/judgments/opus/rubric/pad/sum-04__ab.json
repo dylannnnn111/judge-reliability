@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-04",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Response A says \"Leave can now be split into up to three separate blocks\" without saying this applies only to primary carers. That implies secondary carers can split their leave too, which the policy doesn't say. Response B correctly limits splitting to primary carers. A also says super is paid on the government-funded portion for primary carers, but drops the \"up to 18 weeks\" cap that B keeps. B's \"Plan rosters for split leave\" is advice rather than policy. It is clearly framed for the manager and doesn't misstate anything.\n\n**Key points:** Response B keeps several things a manager needs that A leaves out:\n- The extra leave is on top of government Parental Leave Pay.\n- Children who arrive before 1 January 2027 stay on the old entitlements.\n- Managers are notified automatically when staff apply.\n\n**Concision:** Both responses break the 120-word limit. B runs to roughly 137 words. A runs to roughly 210 words and pads with phrases like \"pleased to share\" and \"To begin with the main change.\" B's bullet format also suits a busy manager much better.\n\nB is more accurate, more complete on what matters, and far more concise.\n\nVerdict: B",
+  "usage": {
+    "input": 1644,
+    "output": 1579
+  },
+  "cost": 0.038156
+}

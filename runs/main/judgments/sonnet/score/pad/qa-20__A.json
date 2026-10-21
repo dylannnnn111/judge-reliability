@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "qa-20",
+  "side": "A",
+  "score": 7,
+  "model": "claude-sonnet-5-5",
+  "text": "The core facts are right: Canberra is the capital, and Parliament first sat there in 1927 (the Provisional Parliament House opened on 9 May 1927). Melbourne was the seat of government from 1901 until 1927, which is also correct. The response stays under 120 words (about 85).\n\nOn style, the response has filler such as \"I hope this helpful background is useful\" and a redundant closing summary that repeats the earlier points. These add nothing and reduce clarity. The context (opening of Provisional Parliament House, Melbourne before) is useful but brief.\n\nThe correctness is full, but the padding and the awkward phrasing keep the score below the top.\n\nScore: 7",
+  "usage": {
+    "input": 378,
+    "output": 216
+  },
+  "cost": 0.002916
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-21",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses correctly identify early January (perihelion) as when Earth is closest to the Sun. Both give roughly the right distance, about 147 million km. Both also make the useful point that seasons come from axial tilt, not distance.\n\n**Response A** answers accurately and concisely in about 60 words, well within the user's explicit limit of under 120 words.\n\n**Response B** is also accurate and adds aphelion figures and the roughly 3% distance difference. However, it runs to about 250 words, more than double the requested limit. Much of that length is padding, such as \"When it comes to…\", \"To put that distance in perspective…\" and \"In other words…\". Breaking an explicit instruction is a significant failure, and the extra detail does not make up for it.\n\nSince both are correct and both give the key reasoning, A's compliance with the length constraint and its concise clarity make it the better response.\n\nVerdict: A",
+  "usage": {
+    "input": 821,
+    "output": 339
+  },
+  "cost": 0.010064
+}

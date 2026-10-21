@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "qa-29",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses stay under the 120-word limit (A is about 98 words, B about 117). Both correctly explain \"interest on interest\" and use the same accurate example: $2,500 versus about $4,322.\n\nB is better for three reasons:\n- **Clearer structure:** it sets simple and compound interest side by side, showing linear versus exponential growth.\n- **More explanation of why time matters:** it notes that the difference is small early on and then widens faster and faster.\n- **Useful extra insight:** the Rule of 72 is a practical shortcut that ties directly to the question.\n\nA is accurate and concise, but it is a single dense paragraph that conveys somewhat less.",
+  "usage": {
+    "input": 576,
+    "output": 913
+  },
+  "cost": 0.020564
+}

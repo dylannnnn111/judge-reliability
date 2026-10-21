@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-18",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. The deciding factor is the 120-word limit.\n\n- **Response A** comes to about 116 words, so it stays under the limit. It covers the new features, improvements, fixes and accessibility changes accurately, and it is easy to scan.\n- **Response B** comes to about 145 words, which breaks the explicit \"under 120 words\" instruction. It also adds \"No action is required from the team,\" which the release notes never say. Its extra detail, such as the Settings path and the unsubscribe option, is accurate but is the kind of detail a busy manager doesn't need.\n\nA also keeps each item to a single line, which suits the busy manager better.\n\n**A**",
+  "usage": {
+    "input": 1287,
+    "output": 1247
+  },
+  "cost": 0.015044
+}

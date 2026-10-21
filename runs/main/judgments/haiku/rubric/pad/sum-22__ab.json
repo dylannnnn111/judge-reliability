@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-22",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is accurate throughout. Its figures, dates, the 5-0 fee decision, the grant deadline, and the gazebo approval all match the minutes, and it stays well under 120 words. It omits minor details such as Natalie organising trophies, but the manager still gets every decision and deadline.\n\nResponse B has several problems. It says Wes will get quotes for both the roof and the light globe, but the minutes only mention quotes for the roof; Wes will simply arrange the globe. It says junior numbers fell \"mostly due to cost,\" which overstates the minutes' \"most common reason.\" It also adds an invented call for volunteers to contact the committee. Its padding (\"Thank you all for attending,\" \"We look forward to seeing everyone there\") pushes it well past the 120-word limit, and the extra words add nothing useful.\n\nResponse A is more accurate, respects the length limit, and keeps the points the manager needs.\n\nVerdict: A",
+  "usage": {
+    "input": 1783,
+    "output": 899
+  },
+  "cost": 0.0006278
+}

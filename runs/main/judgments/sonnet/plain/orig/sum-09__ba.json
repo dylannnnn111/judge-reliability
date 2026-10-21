@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-09",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "B\n\nBoth responses are accurate and cover the same points. Each runs slightly over the 120-word limit, but B is a little shorter (about 127 words against A's 129, or 117 against 122 without the closing disclaimer). B also gives slightly more useful detail, such as which outgoings are excluded and the \"50/50\" split, and it is a little tighter overall.",
+  "usage": {
+    "input": 1349,
+    "output": 1524
+  },
+  "cost": 0.017938
+}

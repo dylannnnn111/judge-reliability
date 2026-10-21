@@ -1,0 +1,13 @@
+{
+  "item": "qa-08",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**About 1.4 standard drinks**\n\n1. **Volume of alcohol:** 375 mL × 0.048 = 18 mL of pure ethanol\n2. **Mass of alcohol:** 18 mL × 0.789 g/mL ≈ 14.2 g\n3. **Standard drinks:** 14.2 g ÷ 10 g ≈ **1.42**\n\nAustralian labels round this to **1.4 standard drinks**.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 105,
+    "output": 185
+  },
+  "cost": 0.00412,
+  "at": "2026-10-14T01:50:17.449Z"
+}

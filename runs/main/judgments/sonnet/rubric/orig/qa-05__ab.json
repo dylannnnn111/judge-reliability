@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-05",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer, Friday 28 February 2025. The date checks out: 1 March 2024 to 1 March 2025 is 365 days, so 29 February 2024 to 1 March 2025 is 366 days, which makes 365 days after 29 February 2024 equal to 28 February 2025. That day was a Friday, and both responses correctly reason that 365 days is 52 weeks plus 1 day, moving Thursday to Friday.\n\nTheir date explanations are almost the same. Both point out that 2025 has no 29 February, which is only loosely relevant to why the date is 28 February. Neither shows the more direct count (366 days to 1 March, so 365 is one day earlier). Both are concise and clear, and neither adds anything the other lacks.\n\nVerdict: TIE",
+  "usage": {
+    "input": 467,
+    "output": 637
+  },
+  "cost": 0.007304
+}

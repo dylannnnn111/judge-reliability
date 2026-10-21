@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-21",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is accurate. Its figures match the email, including the derived $21,600 hire-car cost (6 cars × 2 months × $1,800), and it correctly states that Dom needs Ruth's sign-off because the amount is above his delegation. It keeps the decision, the budget gap, the alternative, and the 24 October deadline, and it comes in at roughly 116 words, under the limit.\n\nResponse B contains the same core facts, but it runs to roughly 200 words, well over the 120-word limit. It adds some marginal detail, such as the Coastal Fleet Sales point, which is also loosely stated: Coastal's petrol price is not more than \"the options above\" in every comparison. Its opening \"I'd like to ask for Ruth's sign-off\" also reads as if it were written by Dom, which blurs who is speaking. It omits the hire-car total, which is useful to a manager.\n\nOn accuracy, both are essentially correct, with B having a slight imprecision. On retained key points, both cover what the reader needs. On concision, A is clearly better and meets the length constraint, while B does not.\n\nVerdict: A",
+  "usage": {
+    "input": 1674,
+    "output": 1464
+  },
+  "cost": 0.0008994
+}

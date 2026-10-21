@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-40",
+  "side": "B",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly identifies the most important bug: the `while` loop runs in a pipeline subshell, so `alerts` stays 0 and the non-zero exit never fires. Its fix is valid. The pseudo-filesystem, NFS hang, and alert-spam points are also real and sensibly prioritized. Point 2 is mostly right, since the pipeline's status comes from the subshell and a failed `curl` propagates through `set -e`.\n\nPoint 4 overstates the effect. `[ \"-\" -gt 90 ]` returns status 2, but inside an `if` condition `set -e` does not abort, so the check doesn't \"crash.\" The validation fix is still good. The response is also around 230 words, which exceeds the 200-word limit. It also omits no major issue, but it doesn't say how the pipeline subshell fix interacts with the other changes.\n\nOverall, the core findings are accurate and well ordered, with one factual overstatement and a minor length violation.\n\nScore: 7",
+  "usage": {
+    "input": 1193,
+    "output": 1234
+  },
+  "cost": 0.0007363
+}

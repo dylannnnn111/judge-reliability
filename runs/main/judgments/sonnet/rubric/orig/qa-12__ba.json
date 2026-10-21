@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-12",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both give the correct answer: 671/1296 ≈ 0.518. Both are under 120 words.\n\nResponse A explains the complement method, gives the single-roll probability, and adds some historical context. The Chevalier de Méré detail is accurate, since he wagered on at least one six in four rolls. Its word count is about 80, so it fits the limit. Response B is concise and shows the key step (complement), but it does not state why the complement is used or the per-roll probability. It is still clear and correct.\n\nBecause A gives somewhat more reasoning (the single-roll probability, independence, and why the complement is used), it fits the \"key reasoning\" criterion slightly better. The historical note is a small extra but accurate. B is adequate but terser.\n\nA is slightly better on the reasoning criterion.\n\nVerdict: A",
+  "usage": {
+    "input": 557,
+    "output": 260
+  },
+  "cost": 0.003714
+}

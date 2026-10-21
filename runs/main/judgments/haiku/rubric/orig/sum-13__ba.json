@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-13",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both summaries are factually accurate. Each gives the 29 September sampling, the 24-hour health department notification, the disinfection, the clear resample, the contractor-caused pump failure, the $7,350 cost recovery, and the $4,800 decision. Both are roughly 125-130 words, so both slightly exceed the 120-word limit.\n\nResponse A leads with the decision required, which suits a busy manager. It also covers the fortnightly sampling for three months and the tenant notification, both of which are relevant actions. Response B is tighter in structure and its \"resolved, one decision needed\" heading is useful, but it omits the increased sampling schedule. That is a real action the manager may need to know about, and it isn't covered elsewhere in B.\n\nResponse A is more complete on the points a manager needs, with comparable length and no accuracy issues, so it is the better summary.\n\nVerdict: A",
+  "usage": {
+    "input": 1502,
+    "output": 1894
+  },
+  "cost": 0.0010972
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-36",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better, mainly because it respects the word limit.\n\nBoth responses find the same core problems: the `RLock` used for `delete` in `Invalidate`, the stampede, the stale write racing with `Invalidate`, the TTL not matching the token's real lifetime, unbounded map growth, and the missing context on `fetch`. Both put the crash-causing race first.\n\n**Length:** The user asked for under 200 words. By my rough count, A is about 215–220 words and B is about 185–190. A breaks the explicit constraint, and B stays within it.\n\n**Accuracy:**\n- A's point 3 overlaps with B's point 2, but B ties it to the concrete scenario of a rejected token being re-cached for a full TTL. A's version is more abstract.\n- A's point 6 mixes in \"no backoff\" and \"errors aren't cached\", which is speculative padding.\n- B's point 6 says a hung call \"blocks every request waiting on that tenant\". This is slightly off, because nothing makes requests wait on each other in the current code. It is a minor flaw.\n\nB's minor inaccuracy matters less than A's violation of the length limit.\n\n**B**",
+  "usage": {
+    "input": 1641,
+    "output": 1660
+  },
+  "cost": 0.019882
+}

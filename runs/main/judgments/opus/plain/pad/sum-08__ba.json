@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-08",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is the better summary.\n\n- **Length:** A is about 111 words, under the 120-word limit. B is well over the limit and padded with filler such as \"To begin with, I would like to summarise\" and \"would be greatly appreciated.\"\n- **Accuracy:** A covers every key fact correctly: the purchase, the 90-day store responsibility, Priya covering for Jason, the Wednesday replacement, Frostline's separate collection, the outstanding claim form, the $500 sign-off threshold, and the 9 Oct escalation to Amara Osei. Its only weak point is the \"29 September\" fault date. That is an inference from \"Sunday,\" since the text gives no year, but it is plausible.\n- **Errors in B:** B states the fridge failed on 4 Oct, which is wrong, and then adds a correction asking the reader to disregard it. That is confusing for a busy manager. It also says Kevin was \"chased on more than one occasion,\" but he was chased only once.",
+  "usage": {
+    "input": 1685,
+    "output": 821
+  },
+  "cost": 0.02316
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-29",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is more accurate. Response B has a small factual slip, and Response A's length is borderline.\n\n**Accuracy**\n- Response A gets the details right. Classic customers are \"unchanged this year,\" and fixed 12- or 24-month contract customers see no change until their contract ends.\n- Response B writes \"Classic plan customers and those on fixed-price contracts are unaffected until their contract ends.\" This lumps the two groups together. The notice only says Classic customers won't change \"this year,\" not that they are protected until a contract ends. It is a minor but real distortion.\n\n**Completeness**\n- Response A includes the support contact details and pairs each price with its data increase. That is tidy, and the support line is marginally useful.\n- Response B covers the key points but leaves out the support channel and the \"check your plan in the app\" detail. Response A leaves out the app detail too.\n- B adds \"the reason given is,\" which attributes the reasoning to Pivot. A states the reason without this attribution, but the notice is clearly Pivot's own, so this is not a flaw.\n\n**Concision**\n- Response B is about 112 words.\n- Response A is about 117 words without the arrow symbols and about 123 if they are counted as words. It is borderline against the 120-word limit, and most would read it as within the limit.\n\nResponse A's accuracy edge outweighs its borderline length.\n\nVerdict: A",
+  "usage": {
+    "input": 1406,
+    "output": 2384
+  },
+  "cost": 0.026652
+}

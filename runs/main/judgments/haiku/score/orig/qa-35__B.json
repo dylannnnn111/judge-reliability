@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-35",
+  "side": "B",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly explains that antibiotics target bacterial-specific structures and processes (cell walls, ribosomes, DNA enzymes), while viruses lack these and rely on host cell machinery. It also correctly describes resistance as natural selection acting on random mutations or horizontal gene transfer, with overuse accelerating the process. The key reasoning for both parts is present, and the examples are accurate. It is well under the 120-word limit and clearly organized. A minor omission is that it doesn't mention that resistant bacteria can pass genes to each other beyond plasmids, but that's a small detail, not an error.\n\nScore: 9",
+  "usage": {
+    "input": 446,
+    "output": 366
+  },
+  "cost": 0.0002276
+}

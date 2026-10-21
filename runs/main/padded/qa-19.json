@@ -1,0 +1,14 @@
+{
+  "pair": "qa-19",
+  "side": "B",
+  "author": "opus",
+  "model": "claude-haiku-5-5",
+  "original": "\"Kangaroo\" comes from **gangurru**, a word in Guugu Yimithirr, an Aboriginal language of far north Queensland. It refers to a specific species, the eastern grey kangaroo. James Cook and Joseph Banks recorded it in 1770 while repairing their ship *Endeavour* near present-day Cooktown.\n\nThe story that it means \"I don't understand\" is a **myth**. It likely arose because later Europeans found that Aboriginal people elsewhere didn't recognize the word, since Australia had hundreds of distinct languages. In the 1970s, linguist John Haviland, studying Guugu Yimithirr, confirmed that *gangurru* genuinely names the animal. The \"I don't understand\" tale persists because it's an appealing story about cross-cultural miscommunication, but it isn't true.",
+  "text": "The word \"kangaroo\" has an interesting origin that is worth looking at closely. It comes from **gangurru**, a word in Guugu Yimithirr, an Aboriginal language of far north Queensland. In that language, the word refers to a specific species, the eastern grey kangaroo. James Cook and Joseph Banks recorded it in 1770 while they were repairing their ship *Endeavour* near present-day Cooktown.\n\nA popular story claims that \"kangaroo\" means \"I don't understand,\" but this is a **myth**, and it's worth being clear about why. The story likely arose because later Europeans discovered that Aboriginal people in other regions did not recognize the word. This observation seemed to support the tale, since Australia had hundreds of distinct languages, so a word from one language would not necessarily be understood in another. However, that observation does not tell us what the word means. In the 1970s, linguist John Haviland, who studied Guugu Yimithirr, confirmed that *gangurru* genuinely names the animal. The \"I don't understand\" tale persists largely because it is an appealing story about cross-cultural miscommunication, but it isn't true.",
+  "ratio": 1.62,
+  "usage": {
+    "input": 459,
+    "output": 1033
+  },
+  "cost": 0.0005624
+}

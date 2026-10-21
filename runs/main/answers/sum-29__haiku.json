@@ -1,0 +1,13 @@
+{
+  "item": "sum-29",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "Pivot Mobile is raising prices on its current postpaid plans from the first bill after 15 November 2026:\n\n- Small (20GB): $35 to $38\n- Medium (60GB): $45 to $49\n- Large (150GB): $60 to $65\n\nAll plans also get more data: Small 30GB, Medium 80GB, Large 200GB.\n\nThe change applies to current plans launched in March 2024. Classic plan customers and those on fixed-price contracts are unaffected until their contract ends.\n\nCustomers who don't want the change can switch or leave without an exit fee before 15 November, though remaining phone repayments still apply.\n\nThe reason given is higher network costs and continued regional investment, including 120 new sites in Queensland and Western Australia.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 630,
+    "output": 614
+  },
+  "cost": 0.00037,
+  "at": "2026-10-14T01:52:12.740Z"
+}

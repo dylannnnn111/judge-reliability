@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-21",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses correctly say Earth is closest to the Sun in early January (perihelion), at about 147 million km.\n\nCorrectness check: Response A says perihelion is about 147.1 million km, aphelion about 152.1 million km, and the difference is about 3%. Those figures are right: 147.1 vs 152.1 is a gap of about 5 million km, roughly 3.4% of the average distance (or 3.3% relative to perihelion). \"About 3%\" is acceptable. Perihelion typically falls on January 2–5, which is correct. The word count is around 105, under the 120 limit.\n\nResponse B says about 147 million km and 91.4 million miles, which is correct, and the axial tilt of about 23.4° is also correct (23.44°). It is concise and correct. One could quibble with \"which shows that Earth's distance does not cause the seasons\", but this is a reasonable inference, since the Southern Hemisphere has summer at that time.\n\nBoth are correct. A adds the aphelion comparison, a mechanism for why tilt causes the seasons, and the small size of the distance difference. These extras are correct and useful, and they stay within the length limit. B is adequate but thinner. A gives more of the key reasoning. A is slightly better.\n\nVerdict: A",
+  "usage": {
+    "input": 608,
+    "output": 410
+  },
+  "cost": 0.005316
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-21",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. The totals ($229,140, $209,880), the $13,140 overrun, the $5,400 per-car fuel saving, the 24 October deadline and the hire-car cost all match the email. Response A adds a derived $21,600 hire-cost total, which is correct for six cars over two months. Response B omits that figure but includes Coastal Fleet Sales' lack of a hybrid until March, a minor point. Response B's bulleted layout and explicit \"Decision needed\" line suit a busy manager slightly better, and both stay near the 120-word limit. The edge is small, so I give B a narrow preference.\n\nVerdict: B",
+  "usage": {
+    "input": 1518,
+    "output": 2053
+  },
+  "cost": 0.0011783
+}

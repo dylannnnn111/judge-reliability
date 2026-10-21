@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-13",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response B is better. It is accurate on the key facts: the threshold breach, the 24-hour notification, the disinfection, the clear resample, the cause, and the cost recovery. It also gives the decision needed up front and keeps the fortnightly sampling and tenant notice. At roughly 130 words it is slightly over the 120-word limit, but close.\n\nResponse A is about 270 words, more than double the limit. It also contains errors. It says the contractor \"missed this fault during those visits,\" when the source says the monthly visit itself was missed and the fault was not picked up. It says the resample was \"taken on 9 October,\" when it was taken on 6 October and the result came back on 9 October. It also drops the fortnightly sampling and tenant notification. Its one real strength is its clear decision callout, which B matches.\n\nVerdict: B",
+  "usage": {
+    "input": 1672,
+    "output": 1211
+  },
+  "cost": 0.0007727000000000001
+}

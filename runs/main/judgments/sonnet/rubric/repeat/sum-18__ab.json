@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-18",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. Response A adds \"No action is required from the team,\" which the release notes never say. That is an unsupported claim presented as fact, and it is the kind of inaccuracy that could mislead a manager. Otherwise the two are accurate: both give the correct date, the 35° threshold, the 15% battery figure, the 15-minute sync interval and the fixes.\n\nBoth responses also look slightly over the 120-word limit. By my rough count A is about 148 words and B about 125, so B is closer. B drops a few small details, such as the Settings path and the unsubscribe option. A manager is unlikely to need those, and B keeps all the main points.\n\nVerdict: B",
+  "usage": {
+    "input": 1441,
+    "output": 937
+  },
+  "cost": 0.012252
+}

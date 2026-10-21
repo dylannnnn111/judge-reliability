@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-01",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B** is better.\n\n**Length.** The user set a hard limit of under 120 words.\n- Response B comes in at roughly 116 words, so it meets the constraint.\n- Response A runs to around 230 words, nearly double the limit. That is a clear failure on an explicit instruction.\n\n**Format and tone.** Response B suits a busy manager. It leads with the new deadline, gives the reason and the \"call today\" instruction straight away, then lists the deliverables and requirements as bullets that can be skimmed.\n\nResponse A has several problems:\n- It repeats the deadline change in both the bold line and the first paragraph.\n- It uses filler such as \"A few points to keep in mind as you prepare your submissions\".\n- It takes on an odd first-person voice (\"I'm writing to let you know\"), as if it were the original sender rather than a summary.\n\n**Accuracy.** Both capture the key content correctly: the new deadline and why it moved, the three items, the template location, the software subscriptions line, the variance threshold, no screenshots, nominating a delegate, and the optional drop-in session. Response B is equally accurate while being far more concise.\n\nB",
+  "usage": {
+    "input": 1417,
+    "output": 974
+  },
+  "cost": 0.025148
+}

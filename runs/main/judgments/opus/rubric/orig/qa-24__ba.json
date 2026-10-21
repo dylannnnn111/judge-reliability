@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-24",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** Both responses answer \"no\" to both questions and correctly name Mauna Kea and Chimborazo. Their key figures are accurate:\n- Mauna Kea rises about 10,200 m from the seafloor, with about 4,200 m above sea level.\n- Chimborazo's summit is about 2 km farther from Earth's centre than Everest's.\n- B's extra figures also hold up: Chimborazo's summit is about 6,384 km from the centre and 6,263 m above sea level. Everest rises roughly 4,600–5,000 m from the Tibetan Plateau, which is in the right range given varying estimates.\n\n**Reasoning:** Both explain the equatorial bulge. B supports the base-to-peak comparison better. It gives Everest's base-to-peak height, so the reader can see directly that Mauna Kea's roughly 10,200 m exceeds Everest's roughly 4,600–5,000 m. A gives only Everest's height above sea level (8,849 m), which does not show the comparison the question asks about. B's absolute distance from the centre also adds concrete support.\n\n**Clarity and length:** A is about 103 words and B about 116, so both meet the under-120 limit. B's labelled sections and closing summary are clear, and its extra words add relevant, correct content.\n\nB is better because it gives the key comparative figure that A omits.\n\nVerdict: B",
+  "usage": {
+    "input": 777,
+    "output": 1221
+  },
+  "cost": 0.027528
+}

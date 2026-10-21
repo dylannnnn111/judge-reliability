@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-10",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct answer, 1/3, and both correctly explain the difference from the 1/2 intuition: the condition says at least one child is a girl, not that a specific child is. Response A also explains why the count works out, noting that the one-boy-one-girl families (BG and GB) outnumber the two-girl family. Response B is clear but more general in its closing point.\n\nResponse A is about 95 words, within the requested limit of under 120. Response B runs about 145 words, so it exceeds the limit without adding substantive content. That makes A the better response.\n\nVerdict: A",
+  "usage": {
+    "input": 777,
+    "output": 925
+  },
+  "cost": 0.0005402
+}

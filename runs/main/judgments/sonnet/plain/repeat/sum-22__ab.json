@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "sum-22",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. It stays under the 120-word limit at about 107 words, while **B** runs to about 126 and breaks the explicit constraint. B also says the fee rise \"covers\" the turf cost increase, then admits a $3,200 shortfall, which is slightly muddled. A links the fee rise to the shortfall and the grant more cleanly, and its grouped bullets are easy for a busy manager to scan.\n\n**A**",
+  "usage": {
+    "input": 1417,
+    "output": 1527
+  },
+  "cost": 0.018104
+}

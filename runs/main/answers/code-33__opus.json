@@ -1,0 +1,13 @@
+{
+  "item": "code-33",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**1. The WHERE clause drops the at-risk customers (critical).**\n`p.status = 'succeeded'` in `WHERE` turns the `LEFT JOIN` into an inner join. Customers with no payments have `p.status = NULL` and are filtered out, and so are customers whose only payments failed. The list will never contain `payments_90d = 0`, so customer success never sees anyone at risk. Move the condition into the join:\n```sql\nLEFT JOIN payments p\n    ON p.customer_id = c.id\n   AND p.status = 'succeeded'\n   AND p.paid_at >= date('now', '-90 days')\nWHERE c.plan <> 'free'\n```\n\n**2. Annual and quarterly plans produce false alarms.**\nA healthy annual subscriber paid once this year, so they show zero payments for 90 days. Compare against each customer's billing interval or next renewal date.\n\n**3. Cancelled or new accounts are included.**\nNothing filters on account status or signup date. Already-churned customers and those still in their first billing cycle will appear as \"at risk.\"\n\n**4. NULL `plan` rows vanish.**\n`c.plan <> 'free'` is false when `plan` is NULL. Confirm whether NULL can mean a paying customer.\n\n**5. Date-type mismatch risk.**\nIf `paid_at` is stored as a Unix timestamp rather than ISO text, comparing it to `date(...)` silently matches nothing in SQLite.\n\n**6. Refunds and chargebacks count as successful payments.**",
+  "stop": "end_turn",
+  "usage": {
+    "input": 313,
+    "output": 938
+  },
+  "cost": 0.020012,
+  "at": "2026-10-14T01:54:42.176Z"
+}

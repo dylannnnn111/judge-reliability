@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-31",
+  "side": "A",
+  "score": 7,
+  "model": "claude-opus-5-5",
+  "text": "The response is **correct**. Earth's axial tilt of about 23.5° causes the seasons. In December the Southern Hemisphere tilts toward the Sun, giving more direct sunlight and longer days, while the Northern Hemisphere tilts away. Perihelion in early January is also accurate, and it neatly shows that distance from the Sun doesn't drive the seasons.\n\nThe **key reasoning** is present: the tilt keeps a fixed orientation in space, so the hemispheres alternate between leaning toward and away from the Sun. The response gives both mechanisms, sun angle (energy spread over a larger area) and day length. It also notes the reversal in June.\n\n**Clarity** is strong, with a short intro, parallel bullets and a closing clarification.\n\nThe weakness is **length**. By my count the response is about 121 words, just over the \"under 120 words\" limit. The misconception paragraph is correct and useful, but it is the part that pushes the response over. Trimming a few words, such as \"in space\" or \"At the same time,\" would have fixed this. It is a minor breach of an explicit constraint, so it warrants a modest deduction from an otherwise excellent answer.\n\nScore: 7",
+  "usage": {
+    "input": 465,
+    "output": 1424
+  },
+  "cost": 0.03034
+}

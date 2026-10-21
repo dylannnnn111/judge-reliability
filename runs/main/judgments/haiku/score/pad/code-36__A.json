@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "code-36",
+  "side": "A",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The response finds the most important real problems. The `Invalidate` method mutates the map under a read lock, which is a genuine data race that can crash the process, and it correctly ranks this first. The stale re-cache after invalidation, the cache stampede, and the missing context/timeout are all real and well explained with fixes. The TTL-versus-token-lifetime and unbounded-growth points are valid, though less severe. Nothing it flags is a false positive. Its weaknesses are length and precision: the user asked for under 200 words, and the response runs roughly 270, which breaks an explicit constraint. Its fixes are also somewhat generic in places (for example, \"evict on read or run a periodic sweep\" without detail), but they are actionable enough.\n\nScore: 7",
+  "usage": {
+    "input": 1409,
+    "output": 740
+  },
+  "cost": 0.0005109
+}

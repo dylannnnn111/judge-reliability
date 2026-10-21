@@ -1,0 +1,13 @@
+{
+  "item": "qa-03",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "The answer depends on whether you measure the change in percentage points or in percent.\n\n**Percentage point increase:** 5% − 4% = **1 percentage point**\n\n**Percentage increase (relative):**\n(5 − 4) ÷ 4 × 100 = **25%**\n\nSo the interest rate has risen by **25%** in relative terms, which is a rise of 1 percentage point.\n\nThis distinction matters for borrowers. A 25% increase in the rate means that, all else equal, the interest portion of the repayments rises by 25%. For example, on a $400,000 loan, annual interest goes from $16,000 to $20,000 (a $4,000 increase, or 25%).",
+  "stop": "end_turn",
+  "usage": {
+    "input": 70,
+    "output": 218
+  },
+  "cost": 0.00232,
+  "at": "2026-10-14T01:50:09.491Z"
+}

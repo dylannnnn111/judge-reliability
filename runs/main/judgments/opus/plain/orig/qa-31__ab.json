@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-31",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses stay under 120 words: A has about 119 and B about 109. Both correctly explain that the cause is Earth's 23.5° axial tilt, which keeps a fixed orientation in space.\n\nA is slightly stronger for two reasons:\n\n- **Clearer mechanism:** it notes that low-angle sunlight \"spreads over a larger area,\" which is the key reason it heats less.\n- **Stronger point against the distance idea:** it adds that Earth is actually closest to the Sun in early January, during the northern winter. B only states that distance isn't the cause.\n\nA's bulleted structure is also easy to scan.",
+  "usage": {
+    "input": 615,
+    "output": 902
+  },
+  "cost": 0.0205
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "sum-16",
+  "side": "A",
+  "score": 4,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Mostly sound. The dates (3 Nov, 17 Nov, 15 Oct, 24 Oct) are correct. So are the figures ($412K of $520K, $38K, $12K credit, $26K net, 98.6%, ~3,100 records) and the conditions (approval pending, credit awaiting written confirmation). There are two small slips:\n- The $26K option depends on the credit being confirmed in writing *before the meeting*, and that timing is dropped.\n- The first-person \"I want to be clear… We are asking\" adopts the project manager's voice, which is slightly odd for a third-party summary but not misleading.\n\n**Coverage:** It keeps the essentials: status, slip, new date, cause, budget and the decisions needed. It drops the December training restriction. That matters because the high risk is a slip to early December, so the two risks compound. A manager would want that link flagged.\n\n**Concision:** This is the major failure. The user set a hard limit of under 120 words. The response runs to roughly 270 words, more than double. Much of it is filler that adds nothing:\n- \"I want to be clear that\"\n- \"Good headway has been made in several areas\"\n- \"Two factors have contributed to the delay. First…\"\n- \"We are asking for approval of two items\"\n\nThe brief was a short summary for someone who won't read the original, and ignoring the explicit length limit defeats that purpose.\n\nThe content is accurate and largely complete, but breaking the explicit word limit by this margin is a serious instruction-following failure.\n\nScore: 4",
+  "usage": {
+    "input": 1362,
+    "output": 762
+  },
+  "cost": 0.020688
+}

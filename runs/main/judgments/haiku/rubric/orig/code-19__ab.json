@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-19",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the core bug: `forEach` with an async callback means `processUploads` returns before any resize finishes, so the script reports \"made 0 thumbnails.\" Both also flag the unhandled rejections, the missing `thumbs` directory, unbounded concurrency, missing argument validation, and the directory-matching-regex edge case. Neither invents problems, and both stay under 200 words.\n\nResponse A gives a concrete fix for each numbered item, including `Promise.all`, `mkdir` with `recursive`, `p-limit`, and `allSettled`. Its ranking is sensible. Its weak spot is saying the exit code \"is not set to 1,\" which is misleading since modern Node exits with code 1 on an unhandled rejection. Its \"nondeterministic order\" note is mild filler.\n\nResponse B is tighter and its combined fix (sequential `for...of`, collect per-file errors, report at the end) is a sound design that handles ordering, concurrency, and error reporting together. It also flags that re-runs regenerate every thumbnail, which A mentions only briefly. Its \"fail silently\" wording is slightly off, since unhandled rejections usually crash rather than fail silently. It gives fewer per-item fixes, though the one it gives is well chosen.\n\nOn balance, A's per-item fixes answer \"how to fix them\" more directly, and its errors are no worse than B's. The gap is small.\n\nVerdict: A",
+  "usage": {
+    "input": 1684,
+    "output": 1282
+  },
+  "cost": 0.0008093999999999999
+}

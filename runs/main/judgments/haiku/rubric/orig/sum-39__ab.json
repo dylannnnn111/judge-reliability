@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-39",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is accurate throughout. Its figures, dates, the 60-day replacement rule, the inter-library loan exception, and the 7-2 vote all match the source. It is about 126 words, slightly over the 120-word limit, but it stays close to it.\n\nResponse B is longer, at roughly 150 words, and has an accuracy problem. It says the council has \"$52,000 in annual revenue lost\", but the source says fines *brought in* about $52,000. It then derives a \"net about $33,000\" loss, which is a calculation the source doesn't make. That calculation assumes the $19,000 in staff chasing costs disappears entirely, which is reasonable but not stated. B also merges the lost/damaged exception with the 60-day rule, which is a little less clear. Its formatting is scannable, but it doesn't offset the misstatement or the extra length.\n\nResponse A keeps the points a manager needs, states the cost figures correctly, and is more concise.\n\nVerdict: A",
+  "usage": {
+    "input": 1408,
+    "output": 1978
+  },
+  "cost": 0.0011298
+}

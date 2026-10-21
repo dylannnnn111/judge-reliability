@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-39",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "A is better. It stays under the 200-word limit, at roughly 175 words. B runs to about 330 words, with a wordy intro and closing summary. Both responses find the same main problems: the unchecked `cd`, the missing `APP_NAME` validation, the failure to exit non-zero, and the skipped dotfiles. A gives concrete fixes and is more precise, for example on newline handling in filenames. B is correct on substance but breaks the length constraint.\n\n**A**",
+  "usage": {
+    "input": 1694,
+    "output": 967
+  },
+  "cost": 0.013058
+}

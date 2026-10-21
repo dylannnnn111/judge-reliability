@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-24",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main bug: the duplicate check runs before the `await` and the `add` runs after it, so simultaneous deliveries both get processed. Both also cover the non-durable in-memory `Set`, the timing-unsafe comparison, missing error handling, the missing amount check, and replay protection. Most of the content is correct in both.\n\n**Response A:**\n- Its fix for the race is the more explicit one: claim the ID atomically before processing, and release the claim if processing fails.\n- It catches malformed JSON and a missing `event.data`, which B skips.\n- It opens with filler (\"Here are the issues I found...\") and runs to roughly 340 words, well over the 200-word limit.\n- Its currency/amount item is vaguer.\n\n**Response B:**\n- It adds the crash window between the side effect and `processed.add`, a distinct and real failure mode that makes idempotency or atomic commit necessary.\n- It notes that `timingSafeEqual` throws on mismatched lengths.\n- Its amount-check item is more concrete (an underpayment could mark an invoice paid).\n- It has no filler.\n- It still runs to roughly 260 words, over the limit but closer than A.\n- Its first item doesn't give a fix directly, though item 2 supplies the unique constraint.\n\nThe substance is similar. B's extra crash-window point and its tighter wording give it a slight edge, and it is less in breach of the length limit.\n\nVerdict: B",
+  "usage": {
+    "input": 1856,
+    "output": 913
+  },
+  "cost": 0.012842
+}

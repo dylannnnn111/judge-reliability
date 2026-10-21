@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-38",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are scientifically correct. The constraint is under 120 words, so I need to check length.\n\nResponse A: counting words. Paragraph 1: \"The ozone hole forms over Antarctica because of its extremely cold winter stratosphere.\" (12) \"During the polar night, a strong polar vortex isolates the air and temperatures drop below about −78°C.\" (17) → 29. \"That allows polar stratospheric clouds to form.\" (7) → 36. \"On their ice and particle surfaces, chlorine from CFCs is converted from inactive \"reservoir\" compounds (HCl, ClONO₂) into reactive forms such as Cl₂.\" (~23) → 59. Paragraph 2: \"Destruction waits for spring because breaking Cl₂ into ozone-destroying chlorine atoms requires sunlight.\" (13) → 72. \"When the sun returns in September–October, the stored chlorine is released rapidly.\" (12) → 84. \"It catalytically destroys ozone while the vortex still blocks replenishment from outside.\" (11) → 95. Paragraph 3: \"By late spring the vortex warms and breaks down.\" (9) → 104. \"Ozone-rich air then mixes in, and the hole fills.\" (9) → 113. \"The Arctic is warmer and less isolated, so its losses are smaller.\" (12) → 125. That's about 125, which is slightly over 120 and violates the constraint. The count is approximate, though; hyphenated words and \"September–October\" might count differently. It is borderline, likely over.\n\nResponse B: about 100 words. First paragraph: ~55, second: ~50. Total ~100-105, so under 120.\n\nCorrectness: both are fine. B mentions HOCl, which is fine. A says \"extremely cold\" and gives a temperature, and explains the vortex isolating the air. A adds the Arctic comparison, which is useful but not asked for.\n\nSince A likely exceeds the word limit, B follows the instruction better. However, the count is borderline; A has somewhat more content. Still, a hard constraint violation matters. Recounting A more carefully: \"The(1) ozone(2) hole(3) forms(4) over(5) Antarctica(6) because(7) of(8) its(9) extremely(10) cold(11) winter(12) stratosphere(13).\" That's 13, so A is even longer than my count. A is over 120.\n\nVerdict: B",
+  "usage": {
+    "input": 827,
+    "output": 779
+  },
+  "cost": 0.009444
+}

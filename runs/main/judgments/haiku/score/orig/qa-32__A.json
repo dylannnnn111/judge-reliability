@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-32",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response is factually accurate. The tropical year is about 365.2422 days, the Julian calendar's 365.25-day average overcorrects by about 11 minutes a year (roughly 3 days per 400 years), and the Gregorian rules (1582) are stated correctly. Both questions are answered, and 1900 versus 2000 is explained through the divisible-by-100 and divisible-by-400 rules. Minor weaknesses: \"orbit the Sun\" is loose, since the calendar year tracks the seasonal cycle rather than a full orbit, and the response doesn't explicitly tie the century rule to correcting the overcorrection, though it's implied. It is about 117 words, under the limit.\n\nScore: 9",
+  "usage": {
+    "input": 478,
+    "output": 888
+  },
+  "cost": 0.0004918
+}

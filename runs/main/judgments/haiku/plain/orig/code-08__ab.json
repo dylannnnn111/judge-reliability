@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-08",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. It stays under the 200-word limit, while A runs to roughly 225 words. On substance the two cover nearly the same issues, with similar quality. B's ordering and its note that `imported` is misleading are sound, and A's cross-filesystem rename point is a valid addition, but these don't outweigh A exceeding the length constraint.\n\nB",
+  "usage": {
+    "input": 1405,
+    "output": 1077
+  },
+  "cost": 0.000679
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-13",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the same core bugs: the December `ValueError`, day-of-month overflow, schedule drift from chaining off the previous date, the hardcoded 30-day proration, missing input validation, and rounding. Both rank the crashes first, which is correct. Response A gives somewhat more concrete fixes for drift (`relativedelta` or `calendar.monthrange`) and for proration (use the actual period length). However, its \"timezone handling\" point is irrelevant for plain `date` objects, and \"no tests\" is generic filler. Response B is tighter, with no irrelevant items. Its rounding advice is more specific (`Decimal` with `ROUND_HALF_UP`), and it raises the inclusive-versus-exclusive end-date convention, which is a real billing-semantics question that A misses. Both are under 200 words. On balance B is slightly better because it avoids the irrelevant flag and adds a substantive point, though A's fixes are a bit more developed.\n\nVerdict: B",
+  "usage": {
+    "input": 1499,
+    "output": 956
+  },
+  "cost": 0.0006279
+}

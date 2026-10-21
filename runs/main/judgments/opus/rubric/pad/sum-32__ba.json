@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-32",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Response A is accurate throughout. Response B has two problems:\n- It says \"the complaint was closed as resolved and referred to the lending team.\" In fact, only the request for a call about fixing the rate went to lending.\n- Its flag says the customers \"have not accepted the outcome.\" They did accept the $250, while saying they still feel misled. So the flag overstates the position. A's risk note, that their continued belief they were misled could lead to an AFCA escalation, is more precise.\n\n**Key points:** Both responses cover the main facts: the 5.79% versus 6.04% rate, the 0.90% discount being locked rather than the overall rate, the August rise, the $250 goodwill payment, the call request and the closure. A omits the package-account condition, but this is minor because it confirms the discount still applies. A also lays out clearly which positions belong to the customer and which to Customer Care.\n\n**Concision:** Both exceed the 120-word limit. B is longer and includes filler such as \"I would like to take a moment to summarise,\" \"In this regard\" and \"reviewed the matter carefully\" that adds nothing.\n\nA is better on accuracy and concision.\n\nVerdict: A",
+  "usage": {
+    "input": 1670,
+    "output": 1442
+  },
+  "cost": 0.03552
+}

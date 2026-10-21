@@ -1,0 +1,13 @@
+{
+  "item": "sum-11",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "**Office move: Collins Street to 200 Lygon Road, weekend of 15–16 November**\n\n- **Rachel Tan (Office Manager):** Overall coordination, removalists, desk locations.\n- **Sam Okonkwo (IT):** Computers, monitors, phones. Staff shouldn't pack monitors or docking stations. Laptops go home Fri 14 Nov and return Mon 17.\n- **Lena Fischer (Records):** Archive and client files. Paper files must be boxed by Wed 12 Nov; boxes are available from Mon 10. Unboxed files will be left behind.\n- **Personal items:** Pack desks into two crates each by 3pm Fri 14 Nov. Extra items go home.\n- **Grant Whitlock (building access):** New access cards are issued at the 8:30am Mon 17 Nov welcome in the Lygon Road ground-floor lobby. Without a card, staff can't get past the lobby, so everyone should attend.\n- **Parking:** 14 spaces, allocated by Rachel from last month's survey. Anyone who didn't complete the survey isn't eligible.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 702,
+    "output": 1454
+  },
+  "cost": 0.0007972000000000001,
+  "at": "2026-10-14T01:51:26.774Z"
+}

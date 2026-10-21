@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-18",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses correctly identify Willem Janszoon and the Duyfken in 1606 at Cape York near the Pennefather River. The constraint is under 120 words.\n\nWord count of A: roughly 105-110 words. Let me count. \"The first recorded European landing on the Australian mainland was by the Dutch, led by Willem Janszoon, captain of the ship Duyfken.\" (22) \"In February–March 1606, his crew landed on the western side of Cape York Peninsula, near the Pennefather River in modern Queensland.\" (21) → 43. \"They were exploring the New Guinea coast and mistook the land for an extension of it.\" (16) → 59. \"A skirmish with local Aboriginal people reportedly resulted in some crew deaths.\" (12) → 71. \"Earlier European contact is sometimes speculated, such as Portuguese or Spanish voyages, but nothing is firmly documented.\" (17) → 88. \"Dirk Hartog's 1616 landing on an island off Western Australia was later, and Cook's 1770 landing at Botany Bay came much later still.\" (23) → 111. Under 120.\n\nB: about 85 words, under the limit.\n\nAccuracy: A says February–March 1606, which is the commonly cited date. Skirmish with crew deaths: historically, the Duyfken crew had nine men killed in the New Guinea/Cape York area; \"reportedly\" is acceptable. Hartog's landing was on an island, which is correct. A's Cook mention is accurate, though not needed. \"Spanish\" speculation is fine.\n\nB: Accurate. Hartog's plate is correct. It says \"pewter plate inscribed with the date\", which is accurate.\n\nA adds a little more useful detail (the month, the mistaken belief that the land was New Guinea), which supports the reasoning. B is clean and accurate but with less detail. A is slightly richer, and its details are correct and within the limit. The Duyfken landing is sometimes said to be in the Pennefather River area; both say so.\n\nA is slightly better on key reasoning.\n\nVerdict: A",
+  "usage": {
+    "input": 714,
+    "output": 675
+  },
+  "cost": 0.008178
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-01",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. Both responses lead with the same top problems, a billing job that isn't idempotent and one failure that aborts the run. Both also correctly flag float money, truncation in `int(amount * 100)`, skipped non-positive totals, bad-row handling and the hardcoded tax.\n\nThe main difference is the 200-word limit. A runs slightly over it, at roughly 210 words. B is much longer, at around 330 words, and it spends words on a filler sentence (\"Before going through them one at a time...\") and on repeated points. For example, B's #2 restates the double-charge risk already covered in #1. B's minor items, such as memory use and the missing currency, are also of little value here.\n\nA's examples are concrete and accurate: `10.29*100` gives 1028.999... in Python. A also flags `customer_id` normalization, which B misses. B has a few worthwhile extras, such as NaN/inf strings and billing-period scoping, but they don't make up for the length and padding.\n\n**A**",
+  "usage": {
+    "input": 1535,
+    "output": 616
+  },
+  "cost": 0.00923
+}

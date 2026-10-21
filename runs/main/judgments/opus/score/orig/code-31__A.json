@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "code-31",
+  "side": "A",
+  "score": 6,
+  "model": "claude-opus-5-5",
+  "text": "**Score: 6/10.** The core bug is identified and fixed correctly, but the response gets the failure mode partly wrong, pads the list, and breaks the length limit.\n\n**Strengths**\n- It correctly identifies the most important bug. With second-precision `created_at` and a strict `>` comparison, rows that share the boundary timestamp but didn't fit on the previous page are silently skipped.\n- The keyset fix on `(created_at, id)` is correct and well presented. It uses a row-value comparison, a matching `ORDER BY`, and tracks both values from the last row.\n- The index suggestion `(tenant_id, created_at, id)` is sensible.\n- The note that `:last_seen IS NULL OR ...` can defeat the planner is a legitimate concern.\n- Point 5 adds real value for an audit export: rows committed late, from clock skew, backfills or long transactions, can be missed by a time-based cursor.\n\n**Problems**\n- **Point 1 contains a factual error.** It claims that if 1000+ rows share one second, the job \"stalls or loops forever, because the same page keeps coming back.\" With `>`, this cannot happen. The cursor advances past that timestamp and the overflow rows are skipped. The infinite loop would happen with `>=`. This misdescribes how the bug fails.\n- **Point 2 is not a separate bug.** The missing tiebreaker is the same root cause as point 1.\n- **Point 3 is a fix, not a problem,** yet it is numbered in the bug list.\n- **Point 6 is filler.** \"Selecting explicit columns is good\" flags something that is fine.\n- **The length limit is broken.** The response runs well over the 200-word limit the user explicitly set.\n\nScore: 6",
+  "usage": {
+    "input": 1029,
+    "output": 1097
+  },
+  "cost": 0.026056
+}

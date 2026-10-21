@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-30",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "The request limits the answer to under 120 words. Response A is far over that limit, probably around 200 words. Response B is about 85 words and fits.\n\nBoth are accurate. Response A also pads with repetition and filler such as \"I hope this clarifies...\". Response B is concise and follows the constraint.\n\n**B**",
+  "usage": {
+    "input": 655,
+    "output": 99
+  },
+  "cost": 0.0023
+}

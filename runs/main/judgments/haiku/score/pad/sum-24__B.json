@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-24",
+  "side": "B",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate. The corrected figures are used throughout: $88,200 approved, $31,800 rolled over, and the five grant amounts sum correctly. The dates, the 30 November acquittal deadline, the 31 October feedback deadline, and the reapplication encouragement for two declined applicants all match the minutes. It also omits Jarrah's conflict of interest, which a manager may not need.\n\nThe main problem is length. The user asked for under 120 words, but the response runs to roughly 200. The opening sentence (\"Thank you for reviewing the update below...\") is filler, and the Round 2 bullet lists all five grant recipients and amounts, which a busy manager may not need. The response also ends with a stray duplicated \"[End of response] [End of Response]\" artifact. The content is correct, but it misses the explicit length constraint and carries unnecessary words.\n\nScore: 5",
+  "usage": {
+    "input": 1463,
+    "output": 864
+  },
+  "cost": 0.0005782999999999999
+}

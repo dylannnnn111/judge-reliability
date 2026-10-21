@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-18",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify Willem Janszoon and the *Duyfken* landing at Cape York in 1606, and both correctly note the unconfirmed Portuguese or Spanish possibilities. Response A adds useful reasoning: the Dutch were exploring the New Guinea coast and mistook the land for its extension. It also mentions the skirmish that killed crew members. However, Response A runs well over the 120-word limit, with filler like \"I would be happy to walk through this history.\" Response B stays under the limit, is clearly organized, and still covers the key facts, including Hartog's 1616 landing. Since the user set a clear word cap, Response B's compliance outweighs A's extra context.\n\nVerdict: B",
+  "usage": {
+    "input": 805,
+    "output": 717
+  },
+  "cost": 0.000439
+}

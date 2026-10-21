@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "sum-32",
+  "side": "A",
+  "score": 3,
+  "model": "claude-opus-5-5",
+  "text": "The summary gets the core facts right: the 5.79% to 6.04% change, the 0.25% August rise, the 0.90% discount locked by Jordan's 12 May email, the confusing wording fed back to lending, and the $250 goodwill credit. It has three significant problems, though.\n\n1. **Misleading flag.** The closing flag says the customers \"have not accepted the outcome,\" which is not accurate. They explicitly accepted the $250 while maintaining they felt misled. That is not a rejection of the outcome. The flag invents a closure risk the thread does not support, and it is the item a busy manager would most likely act on.\n\n2. **Conflated referral.** \"The complaint was closed as resolved and referred to the lending team\" suggests the complaint itself was referred. In fact, only the request for a call about fixed-rate options went to lending, so this sentence is slightly misleading.\n\n3. **Over the word limit.** The response runs to roughly 160–170 words against an explicit limit of under 120. Filler such as \"I would like to take a moment to summarise this complaint for you,\" \"reviewed the matter carefully,\" \"In this regard,\" and \"Please note that\" wastes words that a busy reader doesn't need.\n\nThere is also a minor omission: the customers were told of their right to escalate to Internal Dispute Resolution or AFCA. This arguably matters given they still feel misled, and it would have been a better basis for any flag.\n\nOverall, the core facts are correct, but the response breaks the length constraint, has a misleading flag, includes a slightly misleading referral statement, and adds padding.\n\nScore: 3",
+  "usage": {
+    "input": 1255,
+    "output": 918
+  },
+  "cost": 0.02338
+}

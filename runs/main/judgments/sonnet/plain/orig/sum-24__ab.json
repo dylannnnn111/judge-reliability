@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-24",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** Both summaries are under 120 words (roughly 114 for A and 117 for B). Both also use the corrected figures: the $14,500 grant, the $88,200 total and the $31,800 rollover.\n\nA is slightly better for three reasons:\n- It includes the conflict-of-interest item. Jarrah Wilson left the call for the Saltwater item, which is the same grant that was later corrected. A manager would likely want to know this.\n- It notes the correction explicitly, with \"corrected from $45,000\". That helps a reader who may have seen the original figure.\n- It is more concise and easier to scan, with a separate line for the approved grants.\n\nB is also accurate and includes \"revised budgets\" for the reapplying applicants. But it omits the conflict of interest and sits very close to the word limit.\n\n**A**",
+  "usage": {
+    "input": 1601,
+    "output": 1858
+  },
+  "cost": 0.021782
+}

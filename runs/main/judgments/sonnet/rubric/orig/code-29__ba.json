@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-29",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same core problems. The `NOT IN` with a NULL `referrer_id` returns zero rows, which is the critical bug. Both give the same `NOT EXISTS` fix and the `IS NOT NULL` alternative. Both also catch that the 2026 date filter contradicts \"never referred\", that `LIMIT 5000` with `ORDER BY created_at` always favours the oldest customers, and that the string date comparison depends on storage format. The ranking is the same and sensible in both.\n\nThe differences are in scope and the length constraint:\n- Response A adds a bullet that nothing excludes duplicate emails, bounced or suppressed addresses, or customers contacted in earlier campaigns. This is speculative and outside the code's stated purpose, so it pads the review with things that are not demonstrably bugs.\n- Response A runs to roughly 230–250 words, over the 200-word limit. Response B is about 180 words and stays within it.\n- Response B's \"SQLite-specific\" remark about `date('now', ...)` is accurate and useful. Response A's date-format note makes the same point.\n\nResponse B is tighter, respects the limit, and avoids the speculative extra bullet, while covering all the real issues.\n\nVerdict: B",
+  "usage": {
+    "input": 1568,
+    "output": 966
+  },
+  "cost": 0.012796
+}

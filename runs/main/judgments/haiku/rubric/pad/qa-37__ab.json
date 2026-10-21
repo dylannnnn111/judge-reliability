@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-37",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify rust (iron oxides, mainly hematite) as the cause of Uluru's red colour, and both note that the grey interior sits beneath a weathered surface layer. Response A gives the fuller explanation, including the Rayleigh scattering reason for the sunset glow, which is accurate. However, it runs to roughly 160 words, well over the explicit \"under 120 words\" limit. Response B stays within the limit (about 105 words) while covering the key reasoning, though its sunset explanation is vaguer. Since the user set a hard length constraint, and Response B meets it with correct content, Response B is the better answer.\n\nVerdict: B",
+  "usage": {
+    "input": 869,
+    "output": 709
+  },
+  "cost": 0.0004414
+}

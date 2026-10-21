@@ -1,0 +1,13 @@
+{
+  "item": "sum-04",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**Parental leave changes from 1 January 2027**\n\n- **More paid leave:** Primary carers go from 12 to 18 weeks at full pay, and secondary carers from 2 to 4 weeks. Both are on top of government Parental Leave Pay.\n- **Flexibility:** Primary carers can split leave into up to three blocks within 24 months of the birth or adoption.\n- **Cut-off:** This applies only to children born or adopted on or after 1 Jan 2027. Earlier arrivals keep the current entitlements.\n- **Eligibility:** Staff need 12 months' continuous service. Regular, systematic casuals also qualify.\n- **Super:** It will now also be paid on the government-funded portion for primary carers, up to 18 weeks.\n- **For you:** Staff apply via the portal at least 10 weeks ahead, and you'll be notified automatically. Plan rosters for split leave.\n- **Info sessions:** 5 and 19 Nov, 12:30pm.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 724,
+    "output": 758
+  },
+  "cost": 0.018056,
+  "at": "2026-10-14T01:51:13.528Z"
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-13",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "A is better. It leads with the decision needed, covers the key facts and follows a clear structure. At roughly 126 words it slightly exceeds the 120-word limit. Its cause line is also slightly loose, since the pump failed before the visit was missed, but it is essentially accurate.\n\nB is far over the limit, at roughly 220 words. It is padded with filler such as \"I am writing to provide an update\" and \"We appreciate your attention\". It also misstates the cause: it says the contractor visited monthly and missed the fault, when the report says a monthly visit was missed altogether. It buries the decision in the last paragraph, too.\n\n**A**",
+  "usage": {
+    "input": 1518,
+    "output": 1092
+  },
+  "cost": 0.013956
+}

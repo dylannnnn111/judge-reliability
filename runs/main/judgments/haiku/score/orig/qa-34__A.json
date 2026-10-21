@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-34",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response is correct. Diffie-Hellman is a real key-agreement method that lets strangers derive a shared key from public exchanges, and the eavesdropper claim holds under standard hardness assumptions. It also gives the key reasoning: the shared secret comes from combining private and public values, and certificates from a trusted authority defend against man-in-the-middle attacks. The steps are clearly organized and the answer fits the word limit, at roughly 115 words. Minor imprecisions exist: \"public-key cryptography\" loosely describes key agreement, and \"works exactly this way\" slightly overstates how TLS maps onto the description. These don't affect the core answer.\n\nScore: 9",
+  "usage": {
+    "input": 443,
+    "output": 714
+  },
+  "cost": 0.0004013
+}

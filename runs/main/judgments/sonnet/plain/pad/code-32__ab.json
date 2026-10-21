@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-32",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better, mainly on the length constraint and on the accuracy of its fixes.\n\nBoth responses find the same four main problems, in the same order:\n- the `BETWEEN` upper bound drops September 30,\n- integer division truncates the averages,\n- `<> 'refunded'` mishandles NULL status values,\n- the inner join and `HAVING` hide stores with no orders.\n\nThe differences are:\n\n- **Length:** The user asked for under 200 words. A is somewhat over, at roughly 220. B is well over, at roughly 330, and it opens with filler (\"Let me walk through the issues in order of importance...\") that adds nothing.\n- **Accuracy:** B suggests `AVG(o.item_count)` as the fix for integer division. In SQL Server, `AVG` on an integer column returns an integer, so that fix would still truncate. B does mention casting as an alternative, but its lead recommendation is unsafe on one of the databases it names. A's fix, `* 1.0` or `AVG(o.item_count * 1.0)`, works everywhere.\n- **Extras:** B adds an `ORDER BY` tiebreaker note. That is a trivial point, and it makes B longer still. A's extra point, that the status filter should list counted statuses explicitly, is more relevant for a finance dashboard.",
+  "usage": {
+    "input": 1816,
+    "output": 908
+  },
+  "cost": 0.012712
+}

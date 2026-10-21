@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-12",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses reach the correct answer: 1 − (5/6)⁴ = 671/1296 ≈ 51.8%. Both use the complement method and stay under 120 words.\n\n**Reasoning.** Response A is slightly more complete. It states that a single roll has a 5/6 chance of no six. It also names independence as the reason for raising that probability to the fourth power. Response B gives (5/6)⁴ directly without explaining where 5/6 comes from or why the exponent applies. That is adequate, but a bit less explanatory.\n\n**Extra content.** Response A's note about the Chevalier de Méré is historically accurate, since this is his classic bet. Its remark that the result is \"slightly better than even odds\" is a useful interpretation. Neither addition is wrong, and both add some context without padding.\n\n**Clarity.** Both are clear. Response B is more concise, but Response A's added words are correct and help the reader understand the method.\n\nOn balance, Response A edges ahead on giving the key reasoning explicitly.\n\nVerdict: A",
+  "usage": {
+    "input": 557,
+    "output": 589
+  },
+  "cost": 0.014008
+}

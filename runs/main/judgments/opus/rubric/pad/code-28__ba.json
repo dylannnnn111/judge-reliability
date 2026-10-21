@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-28",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Real issues and coverage.** Both responses find the core bugs:\n- the unlocked read/check/write race (double spend)\n- the connection leak from never releasing `client`\n- the unvalidated `toId` that lets money vanish\n- deadlock risk\n- `ROLLBACK` masking the original error\n- same-wallet transfers\n\nEach side also has a distinct addition:\n- **A** suggests a `CHECK (balance_cents >= 0)` constraint. This is a sensible defence-in-depth measure but not a bug in this code.\n- **B** flags missing idempotency and the lack of a ledger. For an API endpoint that moves money, retries applying a transfer twice is a real and important problem. This gives B the edge on coverage.\n\n**Accuracy.**\n- B's bigint point is overstated. `pg` does return bigint as a string, but JavaScript's `<` coerces it to a number, so the comparison works below 2^53. B labels it minor, so the cost is small.\n- B's deadlock wording (\"once you add row locks\") slightly misdescribes the current code. The two `UPDATE`s already take row locks in opposite orders, so it can deadlock today. A states this correctly.\n\n**Ranking and fixes.**\n- Both reasonably put the leak and the race at the top.\n- B places the trivial same-wallet issue above deadlock, which is a little off.\n- Both give concrete fixes. B's include `rowCount === 1`, a single-statement update, and an idempotency key.\n\n**Length and concision.** Both exceed the 200-word limit by a similar amount. A spends words on an introductory sentence and padded phrasing (\"To address this…\", \"which hides the underlying cause\"). B is tighter per point and uses its words for more substance.\n\n**Overall.** A is slightly more precise on deadlock and has no overstated items. B catches a materially important issue that A misses (idempotency/double application) and is more concise. On balance, B's added correct value outweighs its minor imprecisions.\n\nVerdict: B",
+  "usage": {
+    "input": 1980,
+    "output": 1521
+  },
+  "cost": 0.03834
+}

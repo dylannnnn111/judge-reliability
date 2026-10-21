@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-01",
+  "side": "A",
+  "score": 5,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds the real problems. The truncation bug in `int(amount * 100)` is correct and concrete: 19.99 * 100 gives 1998.999…, which truncates to 1998. The missing idempotency, the run aborting on a single failure, and the lack of input validation are also valid. It suggests fixes for several of them, such as `Decimal`, integer cents, and an idempotency key.\n\nThere are three weaknesses:\n- **Length:** It runs to roughly 250 words, well over the 200-word limit.\n- **Padding:** Items 5, 6, and 7 are speculative or minor. The billing-period scoping, the flat tax rate, and the in-memory file are design or scope concerns, and the user didn't ask for them. They dilute the \"problems that matter\" list.\n- **Ranking:** The truncation bug is the one defect that is certainly wrong in the code as written, and it silently undercharges on every run. It is arguably more important than the architectural concerns, yet it is ranked third. Putting idempotency first is defensible for a billing job, but the ranking is debatable.\n\nThe core content is sound, but the length violation and the low-value items hold the score down.\n\nScore: 5",
+  "usage": {
+    "input": 1004,
+    "output": 801
+  },
+  "cost": 0.010018
+}

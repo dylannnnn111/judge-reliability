@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-13",
+  "side": "A",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The summary is largely accurate. The health department notification within 24 hours, the $7,350 cost, the 9 October clearance, the failed dosing pump and missed visit, the replacement pump, and the $4,800 approval request are all correct. The main inaccuracy is the phrase \"A routine test on 29 September found Legionella\": the sample was taken on 29 September but the result was not received until 3 October. The contractor's new reporting duty also drops its \"from November\" start date, and the property manager as the approver is not named. The summary omits the fortnightly sampling for three months and the tenant notification, which a manager might want, though neither is essential. It is well under 120 words and easy to scan, with the decision clearly flagged.\n\nScore: 7",
+  "usage": {
+    "input": 1176,
+    "output": 800
+  },
+  "cost": 0.0005176
+}

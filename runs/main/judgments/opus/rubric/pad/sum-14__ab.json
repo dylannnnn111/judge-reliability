@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-14",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy.** Both are broadly correct, with minor slips:\n- **Common day:** Each response drops \"at least\" from \"at least one common day.\"\n- **Who decides:** Response A also leaves out that team leaders choose the common day.\n- **Claims and call centre teams:** Response A implies these teams are excluded *because* their rosters will be reviewed in 2027. The source says they are excluded because they already have rostered office days that vary by shift. That is a small but misleading causal error. Response B states the exclusion and the 2027 review without implying either causes the other.\n\n**Coverage.**\n- **Response B** keeps everything a manager needs, including several practical points Response A drops:\n  - existing equipment stays\n  - lockers are provided\n  - who to contact with questions, and the intranet Q&A\n- **Response A** spends words on filler instead. It has an introductory paragraph that adds nothing and padding such as \"The change responds to two main drivers.\"\n\n**Concision and word limit.**\n- **Response A** is roughly 215 words, far over the 120-word limit.\n- **Response B** is about 140 words including the title and labels. It also exceeds the limit, but only modestly, and every line carries content.\n\nResponse B is more accurate, more complete, and much closer to the length constraint.\n\nVerdict: B",
+  "usage": {
+    "input": 1590,
+    "output": 1329
+  },
+  "cost": 0.03294
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-10",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate. The go-live date, decision status, login figures, accessibility findings, budget numbers, and the helpdesk risk change all match the source, and it correctly says no decisions are needed. It covers what a manager needs: status, timing, progress, budget, risks, next steps, and the next update date.\n\nThe main problem is the word limit. The response runs to roughly 130 words, which breaks the \"under 120 words\" instruction. The Team notes line about Ben Castillo is arguably the least important content, and cutting it, or tightening the progress bullet, would have brought the length within the limit without losing anything the manager needs.\n\nAccuracy is strong and coverage is good, but the explicit length constraint is not met, which weighs heavily on a summary task with a stated limit.\n\nScore: 6",
+  "usage": {
+    "input": 1015,
+    "output": 779
+  },
+  "cost": 0.000491
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-15",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses rank the unawaited `db.updateLastLogin` call first. Both also cover the double timestamp, partial batch failure, and sequential execution.\n\nThe difference is in the extra items:\n\n- **A's fifth point is a real issue.** The read-then-write race is labeled as minor. Its fix, returning the updated row, also removes the extra read.\n- **B's last two points are padding.** Recording two logins for a duplicated ID is arguably correct behavior, not a bug. A user ID in an internal error message is hardly a meaningful leak, especially since this runs after a successful password check.\n\nBoth are around 200 words. A spends its length on substantive problems, while B spends some of its length on filler.",
+  "usage": {
+    "input": 1309,
+    "output": 532
+  },
+  "cost": 0.015876
+}

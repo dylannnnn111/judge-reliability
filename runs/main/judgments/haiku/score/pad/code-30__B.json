@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "code-30",
+  "side": "B",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly identifies the most important bug: `COUNT(*)` counts the NULL-padded row from the LEFT JOIN, so agents with no open tickets show 1 instead of 0. It gives the right fix (`COUNT(t.id)`). Its second point, that `COALESCE(AVG(...), 0)` makes agents with no tickets look like they respond instantly, is also real and well explained, with a sensible fix (NULL rendered as \"n/a\"). The third point, that AVG silently skips NULL response times, is a legitimate concern about the metric.\n\nWeaker points: the fourth item (hard-coded `'open'` and `active = 1`) is speculative, since the schema isn't shown. The fifth item is filler. The response also fails to note that the status filter in the ON clause is correctly placed, which would have helped the reader see what is fine.\n\nThe main instruction violation is length: the user asked for under 200 words, and this response runs well over that, with a preamble and closing summary that add nothing. The ranking and fixes are solid, but the padding and the word-limit breach lower the score.\n\nScore: 5",
+  "usage": {
+    "input": 1126,
+    "output": 888
+  },
+  "cost": 0.0005566
+}

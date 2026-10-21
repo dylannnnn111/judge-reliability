@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-31",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct explanation: Earth's axial tilt, not distance from the Sun, causes the seasons, and the hemispheres have opposite seasons. Both also address the common distance misconception.\n\nResponse A is about 200 words, well over the 120-word limit the user set. Its extra length mostly restates the same point, so it adds little. Response B is roughly 118 words, within the limit, and covers the key reasoning: the tilt, the direction of sunlight, day length, and the reversal over the year. It also adds the factual point that Earth is closest to the Sun in early January, which strengthens the distance correction.\n\nResponse B is correct, meets the length constraint, and is clearer. Response A is correct but violates the instruction.\n\nVerdict: B",
+  "usage": {
+    "input": 966,
+    "output": 1118
+  },
+  "cost": 0.0006556
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-37",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both responses give the correct core answer. Uluru is arkose containing iron-bearing minerals, and these weather into iron oxides (\"rust\"), forming a thin red surface coating over grey rock. Both also stay under 120 words: A is about 115 and B about 109.\n\n**Response A** is accurate. It notes the grey interior visible in freshly broken rock. Its explanation of the sunrise/sunset effect is thin, though: it says only that low-angle light is \"richer in red wavelengths,\" without explaining why.\n\n**Response B** covers the same ground with a little more useful precision:\n- It names hematite as the specific iron oxide.\n- It explains the sunrise/sunset glow: light travels through more atmosphere, blue wavelengths are scattered away, and warmer red tones remain to light the iron-rich surface.\n- It describes the grey rock beneath the weathered skin, visible where the surface has flaked away.\n\nThis is better reasoning, and B does it in fewer words. Both are clear and well organised.\n\nB wins on key reasoning while matching A on correctness and clarity.\n\nVerdict: B",
+  "usage": {
+    "input": 726,
+    "output": 1010
+  },
+  "cost": 0.023104
+}

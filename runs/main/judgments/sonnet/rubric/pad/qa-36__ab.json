@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-36",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Constraint: under 120 words. Response A is clearly over 120 words (roughly 290). Response B is about 105 words, so it complies.\n\nLet me count B: \"An aeroplane wing generates lift mainly through its airfoil shape and its angle of attack.\" (15) \"As the wing moves forward, air splits around it: the curved upper surface makes air flow faster and reduces pressure above the wing, while the flatter lower surface keeps air slower, leaving higher pressure below.\" (~36) → 51. \"The pressure difference pushes the wing upward.\" (7) → 58. \"Newton's third law also plays a role.\" (7) → 65. \"The wing deflects air downward, and the equal and opposite reaction pushes the wing up.\" (15) → 80. \"Together, the pressure difference and this downward turning of the airflow (described by Bernoulli's principle and Newton's laws) produce lift.\" (21) → ~101. Under 120.\n\nCorrectness: both give the pressure difference plus downward deflection. B's \"air splits around it... flatter lower surface keeps air slower\" is a slight simplification but not wrong in the main. A is more accurate in framing (it avoids the equal transit time fallacy, mentions stall). But A violates the length constraint heavily, which is an explicit instruction.\n\nB is better due to following the constraint, with comparable correctness.\n\nVerdict: B",
+  "usage": {
+    "input": 908,
+    "output": 446
+  },
+  "cost": 0.006276
+}

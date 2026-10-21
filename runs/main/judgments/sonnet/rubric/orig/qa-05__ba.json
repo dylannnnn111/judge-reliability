@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-05",
+  "order": "ba",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer, Friday, 28 February 2025. 29 February 2024 plus 366 days is 1 March 2025, so 365 days is 28 February 2025. Since 365 = 52 weeks + 1 day, Thursday moves to Friday.\n\nBoth also give the same weekday reasoning, and both justify the date only loosely by pointing out that 2025 has no 29 February. Neither shows the fuller counting, so neither has a real edge in correctness, reasoning or clarity. The differences are only in ordering and formatting.\n\nVerdict: TIE",
+  "usage": {
+    "input": 467,
+    "output": 515
+  },
+  "cost": 0.006084
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-27",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.**\n\n**Issues found.** Both responses catch the core problems:\n- Unbounded `Promise.all` concurrency across about 80,000 sends.\n- Fail-fast behavior that leaves you unable to tell who was mailed, so a rerun resends.\n- A misleading return count.\n- A crash when `email` is null.\n- A non-advancing cursor that loops forever.\n- No retries.\n\n**Ranking.** Response B ranks a suppression concern first: bounces, complaints and unsubscribes. That is partly valid, since bounces and complaints are real, but it is speculative because `marketingOptIn` likely already reflects unsubscribes. Placing it above the concurrency blowup is debatable. Response A covers the related stale-opt-in issue lower down, which is a more measured ranking.\n\n**Fixes.** This is where Response A pulls ahead. It gives a concrete remedy for each item:\n- p-limit or batching for concurrency.\n- `allSettled` plus idempotent tracking of sent IDs.\n- Returning sent and failed counts.\n- Retry with backoff.\n- Validating emails and trimming them before deduplication.\n- Detecting repeated cursors or capping the page count.\n\nResponse B mostly describes problems without saying how to fix them, for example in items 2, 3 and 4.\n\n**Length.** The user asked for under 200 words. Response A runs slightly over. Response B is roughly twice that, opening with filler (\"Thank you for sharing…\", \"restated in more detail\") and padding each point with restatement. Its extra minor note on lowercasing the local part is technically correct but low-value.\n\nVerdict: A",
+  "usage": {
+    "input": 1830,
+    "output": 913
+  },
+  "cost": 0.02558
+}

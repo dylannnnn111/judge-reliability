@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-23",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "B is slightly better. Both answers are correct and stay under 120 words (A is about 76, B about 105–110).\n\nBoth use the same two standard arguments, the 1/3 argument and the algebraic subtraction, and both end with the limit definition. B adds a real argument for why there is no gap: two distinct reals must have a number between them, and nothing fits between 0.999... and 1. It also explains why a \"0.000...1\" difference isn't a valid decimal. A only asserts that there is no gap.\n\nB's formatting is also a little clearer, and it still fits within the limit.\n\n**B**",
+  "usage": {
+    "input": 581,
+    "output": 1591
+  },
+  "cost": 0.017072
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-29",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Response A has a misleading sentence: \"Classic plan customers and those on fixed-price contracts are unaffected until their contract ends.\" This ties the \"until their contract ends\" condition to Classic customers too. In fact, Classic customers are unchanged *this year*, which has nothing to do with a contract ending. Response B separates the two groups correctly: Classic plans are unchanged this year, and fixed 12- or 24-month contracts see no change until they end. Otherwise both responses get the prices, data amounts, the 15 November deadline, the exit-fee condition, device repayments and the reason right.\n\n**Key points:** Both keep the essentials. B adds the support contact and hours, which is minor but useful. B's table-style bullets pairing price with data are also easier for a busy manager to scan.\n\n**Concision:** Both stay roughly under 120 words. B's formatting makes it efficient rather than padded.\n\nB is better because it avoids A's inaccuracy about Classic plan customers.\n\nVerdict: B",
+  "usage": {
+    "input": 1406,
+    "output": 673
+  },
+  "cost": 0.019084
+}

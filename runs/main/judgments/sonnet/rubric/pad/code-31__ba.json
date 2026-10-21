@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-31",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better. Both find the main bug: `created_at > :last_seen` with second-precision timestamps skips tied rows at a page boundary. Both also identify the fix of keyset pagination on `(created_at, id)`, plus the missing tiebreaker, the index, the `IS NULL OR` pattern, and late-committed rows.\n\n**Response A**\n- Its claims are essentially all correct.\n- It ranks the issues sensibly and includes a concise fix.\n- Its persisted-cursor point is somewhat speculative but reasonable.\n- It runs a bit over 200 words, but far less than B.\n\n**Response B**\n- It wrongly claims the job can \"stall or loop forever\" if 1000 or more rows share a second. With a strict `>` the cursor always advances, so those rows are skipped, not looped over.\n- It says pages can \"overlap\", which is also wrong under `>`.\n- It lists the recommended fix as a separate numbered \"bug\".\n- Its item 6 praises explicit column selection, which flags nothing wrong.\n- It is roughly double the 200-word limit, and the extra words add little beyond A, apart from the type/precision check.\n\nA is more accurate, tighter, and better matches the length constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 1897,
+    "output": 723
+  },
+  "cost": 0.011024
+}

@@ -1,0 +1,13 @@
+{
+  "item": "code-20",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Bugs, most important first**\n\n1. **DST breaks the day count.** `due` and `today` are both local midnights, but on DST-change days the gap between them is 23 or 25 hours, not a multiple of 24. `Math.floor` then gives wrong answers:\n   - Spring forward: an invoice due tomorrow gives 0.96, floored to 0, so it shows \"Due today\".\n   - Fall back: an invoice due yesterday gives -1.04, floored to -2, so it shows \"Overdue by 2 days\" and may land in the wrong place on the overdue list.\n\n   Fix: compute the difference in UTC calendar days, or at least use `Math.round`:\n   ```ts\n   const [y, m, d] = dueDate.split(\"-\").map(Number);\n   const due = Date.UTC(y, m - 1, d);\n   const today = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());\n   return (due - today) / MS_PER_DAY;\n   ```\n\n2. **No handling of malformed input.** If `dueDate` is empty, null, or a full timestamp, appending `T00:00:00` yields an Invalid Date and `daysUntil` returns `NaN`.\n   - `reminderLabel` then renders \"Due in NaN days\".\n   - `overdueInvoices` silently drops the invoice, because `NaN < 0` is false. A bad record disappears from the overdue list instead of being flagged.\n\n   Validate the format, and decide explicitly how to treat bad rows.\n\n**Minor**\n\n- \"Today\" is the browser's local date, so users in a different timezone from the business may see off-by-one labels near midnight. This is fine if intended, but worth confirming.\n- Labels go stale if the page stays open past midnight, since nothing recomputes them.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 498,
+    "output": 1160
+  },
+  "cost": 0.012596,
+  "at": "2026-10-14T01:53:56.329Z"
+}

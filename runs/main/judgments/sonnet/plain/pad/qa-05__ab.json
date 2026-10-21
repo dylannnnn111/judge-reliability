@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-05",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "A\n\nBoth responses give the correct answer, Friday 28 February 2025, and both stay under the 120-word limit. The weekday reasoning is the same in each: 365 days is 52 weeks plus 1 day, so Thursday moves to Friday.\n\nResponse A is more concise and clearer. Response B says the same thing in more words, which adds no real value. That small edge in concision is the only difference, so I give it to A.",
+  "usage": {
+    "input": 376,
+    "output": 595
+  },
+  "cost": 0.006702
+}

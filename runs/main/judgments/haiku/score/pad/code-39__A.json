@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "code-39",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response finds the most serious problems. A failed `cd` without `-e` lets `rm -rf ./*` run in the wrong directory, and an `APP_NAME` of `..` clears the parent of the cache root. Both are real and correctly ranked first. The points about ignored `rm` failures, hidden dotfiles that the `find` count reveals but the glob skips, and the minor counting issues are also accurate, and the suggested fixes (`cd ... || exit 1`, `find . -mindepth 1 -delete`) work. Its ordering is sensible.\n\nThe main failure is length. The user asked for under 200 words, and this response runs well over that, with a preamble and a closing summary that repeat the list. Item 5 is also padding relative to the other points. The response also misses no major bug, so its substance is good, but it breaks an explicit constraint. Its prose format is acceptable, though the numbered list would have been tighter.\n\nScore: 6",
+  "usage": {
+    "input": 1233,
+    "output": 1050
+  },
+  "cost": 0.0006483
+}

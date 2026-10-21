@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-07",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.** Both are accurate on the date, the features and the CSV warning. A wins on the user's explicit constraint and on prioritisation.\n\n**Word limit**\n- A comes in at about 118 words, so it meets the under-120 requirement.\n- B runs to about 124 words, which breaks the explicit limit.\n\n**Prioritisation**\n- A leads with the one item that needs action: the Classic CSV removal and the broken imports. That suits a busy manager.\n- A also advises reading the help article *before* updating. This is a sensible inference from the source.\n\n**Accuracy and wording**\n- A says Android 9 \"will no longer receive updates.\" This matches the source, which says the app still works.\n- B says Android 9 \"is no longer supported and won't receive updates.\" That echoes the source's wording, but without noting the app keeps working, a manager could read it as more severe.\n\n**Detail**\n- B includes some extra detail, such as the 40% figure and ABN/email search. This is accurate but not essential.\n- That extra detail is what pushes B over the limit.\n\nA's only minor flaw is listing bug fixes under \"Improvements,\" which is harmless.\n\nVerdict: A",
+  "usage": {
+    "input": 1401,
+    "output": 1896
+  },
+  "cost": 0.043524
+}

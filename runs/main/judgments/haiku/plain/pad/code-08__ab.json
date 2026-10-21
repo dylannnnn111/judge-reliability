@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-08",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. It stays closer to the 200-word limit, while A runs to roughly 300 words. B also covers the most important problems in priority order, and its points are accurate. A's extra points, such as the case-sensitive extension filter, are minor and don't justify going over the limit.\n\nB",
+  "usage": {
+    "input": 1600,
+    "output": 492
+  },
+  "cost": 0.000406
+}

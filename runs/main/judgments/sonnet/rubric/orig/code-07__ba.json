@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-07",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main bug: `len(items) // size` drops the final partial batch, so with fewer than 500 contacts nothing is sent. Both also catch the swallowed failures, the missing retries and the sliceable-sequence requirement, and both give the correct `range(0, len(items), size)` fix. Their lists of real issues are nearly the same.\n\nThe differences come down to the length limit and padding:\n\n- **Length:** The user asked for under 200 words. Response A runs to roughly 240 words, so it breaks the constraint. Response B comes in at about 195.\n- **Padding in A:** Its item 4 (broad `except Exception`) mostly restates item 2 and adds little. Its item 6 (log message) overlaps with item 2 as well. Its point about a broken auth check making every batch fail is useful but minor.\n- **Redundancy in B:** Its items 2, 3 and 4 overlap, since all are about failures being hidden. Its misleading-log point is also a minor issue given in a separate item.\n- **Extra value in B:** It notes that `upsert_contacts` must be idempotent for retries to be safe, which is a real and relevant concern. It also mentions alerting for the hourly job.\n- **Extra value in A:** It suggests retrying only retryable errors and logging failed batch IDs, which is useful but costs words.\n\nThe two are close on substance, but B respects the word limit and adds the idempotency point, so B is better overall.\n\nVerdict: B",
+  "usage": {
+    "input": 1439,
+    "output": 1594
+  },
+  "cost": 0.018818
+}

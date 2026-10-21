@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-32",
+  "side": "A",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The summary is largely accurate. The rates, the 0.25% rise, the 12 May email wording, the $250 credit, the call request and the closure all match the source. Two small points: \"paid\" overstates the credit, which was only arranged and would appear within five business days, and \"guaranteed only\" is a slight interpretation, though it reflects Harriet's reading. It also omits the escalation options (Internal Dispute Resolution and AFCA), which a manager might want to know about given the customers' dissatisfaction. The flag about premature closure is a useful judgment. On concision, it runs about 123 words, slightly over the 120-word limit, though it is otherwise tight and well structured.\n\nScore: 7",
+  "usage": {
+    "input": 1183,
+    "output": 1200
+  },
+  "cost": 0.0007183
+}

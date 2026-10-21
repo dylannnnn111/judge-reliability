@@ -1,0 +1,14 @@
+{
+  "pair": "qa-37",
+  "side": "A",
+  "author": "opus",
+  "model": "claude-haiku-5-5",
+  "original": "Uluru is red because of **rust**. The rock is arkose, a coarse sandstone rich in feldspar that contains iron-bearing minerals. Where the surface is exposed to air and water, those minerals weather and the iron oxidizes into iron oxides such as hematite. This forms a thin reddish-orange coating on the outside.\n\nBeneath this weathered skin, Uluru's rock is actually **grey**, which can be seen in places where the surface has flaked away.\n\nIts famous glowing reds, oranges, and purples at sunrise and sunset come from low-angle sunlight. The light passes through more atmosphere, which scatters away blue wavelengths and leaves warmer red tones to light up the iron-rich surface.",
+  "text": "Uluru is red because of **rust**, and it is worth looking at how that color comes about. The rock is arkose, a coarse sandstone that is rich in feldspar and also contains iron-bearing minerals. Where the surface is exposed to air and water, those iron-bearing minerals weather, and the iron oxidizes into iron oxides such as hematite. Over time, this process forms a thin reddish-orange coating on the outside of the rock, and it is this coating that gives Uluru its familiar appearance when most people see it.\n\nIt is also worth noting that the color is only a surface feature. Beneath this weathered skin, Uluru's rock is actually **grey**, and this can be seen in places where the surface has flaked away and the fresh, unweathered rock is exposed.\n\nUluru's famous glowing reds, oranges, and purples at sunrise and sunset come from a different cause, namely the angle of the light. At these times of day, the sunlight arrives at a low angle, so it passes through more atmosphere before reaching the rock. Along the way, the atmosphere scatters away the blue wavelengths, which leaves the warmer red tones to light up the iron-rich surface.",
+  "ratio": 1.8,
+  "usage": {
+    "input": 423,
+    "output": 496
+  },
+  "cost": 0.0002903
+}

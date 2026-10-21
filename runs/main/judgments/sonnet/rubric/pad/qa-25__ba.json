@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-25",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer in under 120 words. Response A runs roughly 170 words, which violates the constraint. Response B is about 110 words, so it complies.\n\nChecking accuracy: both correctly say no. A says the Veksø helmets predate the Vikings by about 1,500 years, which is roughly right (c. 900 BC versus c. 800 AD, so about 1,700 years). A also mentions Gustav Malmström, who did illustrate Viking scenes with winged and horned helmets, so that is fine. B's claims are correct as well. B's \"centuries before\" is vague but not wrong.\n\nCounting B: \"No, Viking warriors didn't wear horned helmets. This is a popular myth.\" is 11 words. \"The evidence: Only one fairly complete Viking-age helmet has been found: the Gjermundbu helmet from Norway (10th century).\" is about 18. \"It's a simple rounded iron cap with a spectacle-like face guard and no horns.\" is 14. \"Many warriors likely wore leather caps or no helmet at all, since iron was expensive.\" is 15. \"Where the myth came from: It largely stems from the 19th century.\" is 12. \"Romantic artists and costume designer Carl Emil Doepler, who outfitted Wagner's opera Der Ring des Nibelungen (1876), popularized horned helmets.\" is about 20. \"A grain of truth: Horned helmets did exist in Scandinavia, but in the Bronze Age, centuries before the Vikings, and they were probably ceremonial rather than for battle.\" is about 27. The total is about 117, which is under 120 but close.\n\nA is clearly over the limit, so B wins.\n\nVerdict: B",
+  "usage": {
+    "input": 906,
+    "output": 552
+  },
+  "cost": 0.007332
+}

@@ -1,0 +1,13 @@
+{
+  "item": "sum-27",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Summary:** Marcus Hale advises against a national rollout of guided onboarding for now.\n\n- **Pilot:** Sydney got a 45-minute guided video call and Perth got email-only onboarding. The 30-day active rate was 81% in Sydney against 74% in Perth.\n- **Problem:** The comparison is skewed. 60% of Sydney customers came through a free-month promotion, which inflates 30-day retention. Among customers who paid from day one, the gap is only 2 points (78% vs 76%), within normal variation.\n- **Caution:** Sales is saying the pilot \"proved\" guided onboarding works, but the data doesn't support that.\n- **Cost:** About $95 per session, or roughly $410,000 a year nationally.\n- **Proposal:** Run a randomised same-city test for at least 60 days, starting in November if approved at the 21 October leadership meeting.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 686,
+    "output": 296
+  },
+  "cost": 0.004332,
+  "at": "2026-10-14T01:52:04.058Z"
+}

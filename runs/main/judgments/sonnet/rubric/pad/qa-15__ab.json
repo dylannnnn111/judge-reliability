@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-15",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer of 18 °F. Both use the same reasoning: the rise is 10 °C, a temperature difference converts with the 9/5 factor only, and a separate conversion of each temperature confirms the result (59 °F and 77 °F).\n\nBoth are under 120 words. Response A runs about 100 words, which is within the limit. Response B is more concise and conveys the same content. Response A adds filler such as \"I'm happy to walk through this\" and \"To see how we arrive at that figure,\" which contributes nothing substantive.\n\nOn correctness and key reasoning they are equal. On clarity, B is tighter and more direct. A's extra words are not useful, so B is slightly better.\n\nVerdict: B",
+  "usage": {
+    "input": 648,
+    "output": 232
+  },
+  "cost": 0.003616
+}

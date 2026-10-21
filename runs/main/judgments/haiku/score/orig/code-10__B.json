@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-10",
+  "side": "B",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The response finds the two most important problems: the missing authentication check and the path traversal caused by the unanchored regex combined with `<path:slug>`. Both are real, and the traversal fix (`send_from_directory` or `fullmatch` plus `<slug>`) is correct. The `os.path.exists` point about directories and the race is also accurate. The ranking is sensible.\n\nThere are weaknesses. The example path is wrong: `/srv/reports/a/../../home/x/secret.pdf` normalizes to `/srv/home/x/secret.pdf`, not `/home/x/secret.pdf`, though the vulnerability itself is real. Items 3, 5, and 6 are speculative or minor. Per-report authorization depends on requirements the code doesn't state, and the inline-display concern is weak for a staff tool. The response also appears to exceed the 200-word limit, which the user explicitly asked for.\n\nOverall, the core findings and fixes are strong, with some padding, a small factual slip in the example, and a likely length violation.\n\nScore: 7",
+  "usage": {
+    "input": 992,
+    "output": 1293
+  },
+  "cost": 0.0007457000000000001
+}

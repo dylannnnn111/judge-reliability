@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-27",
+  "side": "B",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate on every figure and date: 81% vs 74%, the 7-point headline, 60% on free-month promotions, the 78% vs 76% paid-only comparison, $95 per session, about $410,000 a year, the 21 October meeting, and the November start. It correctly attributes the \"proved\" claim to sales and captures the recommendation not to roll out nationally. It is concise, around 110 words, under the limit. The only omissions are minor, such as the randomised design's rationale and the 60-day duration being framed as a minimum, and nothing a busy manager needs is missing.\n\nScore: 9",
+  "usage": {
+    "input": 1153,
+    "output": 572
+  },
+  "cost": 0.0004013
+}

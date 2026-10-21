@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-18",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.**\n\n**Accuracy**\n- Response A ends with \"No action is required from the team.\" Nothing in the release notes supports this. A busy manager could act on that invented claim, so it is a real flaw.\n- Response A also writes \"35°C\" where the source says only \"35 degrees.\" The assumption is plausible but is still an addition.\n- Response B stays faithful to the source. It writes \"35° or above\" without guessing the unit.\n- Response B's \"Time zone errors for New Zealand users are fixed\" drops the source's \"some users,\" but this is a minor generalisation.\n\n**Coverage**\n- Both keep the key points: the three new features, the improvements, the fixes and the accessibility changes.\n- Response A keeps slightly more detail, such as the 15-minute sync interval and the Settings > Safety path. These details matter little to a manager.\n\n**Concision and length limit**\n- Response A runs to roughly 140 words, which breaks the explicit under-120 limit.\n- Response B comes in around 110 words and meets it.\n\nResponse B is accurate, within the word limit and covers what the manager needs. Response A adds an unsupported claim and exceeds the limit.\n\nVerdict: B",
+  "usage": {
+    "input": 1441,
+    "output": 757
+  },
+  "cost": 0.020904
+}

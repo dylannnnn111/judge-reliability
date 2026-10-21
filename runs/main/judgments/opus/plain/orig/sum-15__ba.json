@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-15",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth summaries stay under 120 words and keep the key findings: the 22% drop in lane drifting, the 0.09-second faster reaction time, the experience-dependent benefit, the 6am vs 7am timing effect, and the limitations. The difference is accuracy.\n\n- **Response A is more faithful to the source.**\n  - It correctly limits the finding for new workers to *lane drifting*.\n  - It keeps \"nap or not\" for the timing effect, which preserves the point that timing outweighs the nap.\n  - It keeps the qualifier \"after long shift runs\" for transport home.\n- **Response B overgeneralises in places.**\n  - It says new workers \"saw no measurable benefit\". The study only reports no measurable difference in lane drifting; reaction time for that group isn't specified.\n  - It drops the \"nap or not\" qualifier and the \"long shift runs\" condition.",
+  "usage": {
+    "input": 1246,
+    "output": 492
+  },
+  "cost": 0.014824
+}

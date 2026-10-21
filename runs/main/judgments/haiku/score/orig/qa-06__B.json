@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-06",
+  "side": "B",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response's answer is correct. Counting from 15 December 2027: 16 days to 31 December, 31 in January, and 29 in February 2028 (a leap year) gives 76, so 24 more days lands on 24 March 2028. Checking the weekday, 100 = 14×7 + 2, so Wednesday advances to Friday. I also confirmed independently that 15 December 2027 is a Wednesday. The reasoning is brief but covers the key steps: the day-count breakdown, the leap-year consideration, and the mod-7 weekday shift. The wording \"which makes 76 days\" is slightly terse, since it omits the explicit sum, but it is clear enough. It is well under 120 words.\n\nScore: 9",
+  "usage": {
+    "input": 323,
+    "output": 645
+  },
+  "cost": 0.0003548
+}

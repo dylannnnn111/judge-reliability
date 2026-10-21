@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-34",
+  "side": "A",
+  "score": 5,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** The content is essentially correct.\n- The release number and date (13 October 2026) are right.\n- The waitlist's 30-minute acceptance window is right.\n- Telehealth links in reminder texts and emails are right.\n- The leave calendar's automatic blocking of online bookings is right.\n- The Medicare search and the per-clinic 24/48-hour reminder timing are right.\n- The Android known issue and next month's items are right.\n\nThere are small imprecisions:\n- The bug fix becomes \"skipping weeks\" rather than \"sometimes skipped a week,\" which slightly overstates it.\n- The waitlist description drops that it applies to fully booked days and that the slot passes to the next person if unaccepted.\n\nNone of these would mislead a manager in any meaningful way.\n\n**Coverage:** It keeps what a manager needs: the three new features, the key improvements, a representative fix, the known issue and the upcoming work. Folding the tablet and invoice-printing fixes into \"several bugs are fixed\" is a reasonable trade-off.\n\n**Concision and constraint:** The user set a hard limit of under 120 words. Counting the response gives about 127 words (52 + 36 + 24 + 15), even treating \"7.2\", \"per-clinic\" and \"two-factor\" as single words. That is a clear breach of an explicit instruction. It is especially notable because the brief was to keep it short for a busy manager. Trimming would have been easy: drop the parenthetical date, say \"patients can still accept via browser,\" or cut \"main.\"\n\nThe summary is accurate and well chosen, but it fails the one hard constraint the user stated, so it cannot score highly.\n\nScore: 5",
+  "usage": {
+    "input": 1007,
+    "output": 1674
+  },
+  "cost": 0.037508
+}

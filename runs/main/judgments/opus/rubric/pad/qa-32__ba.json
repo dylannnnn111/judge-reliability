@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-32",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses are factually correct. Each gives the ~365.2422-day orbital period, the every-four-years rule, and the century exception with its 400-year override. Each correctly explains why 1900 was not a leap year and 2000 was.\n\n**Response A** gives the key reasoning in about 90 words, within the user's 120-word limit. Its one weakness is that it doesn't state why the century rule is needed: adding a day every four years assumes 365.25 days, which slightly overcorrects. It does gesture at this with \"correct for the small excess.\"\n\n**Response B** adds that overcorrection detail (about 11 minutes per year, or roughly 3 days per 400 years) and mentions the 1582 Gregorian reform. Those are genuinely useful additions. However, it runs to roughly 200 words, clearly breaking the explicit under-120-word constraint. Much of that length is filler: \"To begin with, it helps to understand,\" \"Put another way,\" \"It is worth looking at,\" \"Applying these rules, we can see how the system works in practice.\" The extra explanatory content could have fit within the limit if the padding were cut.\n\nSince both are correct, the deciding factors are compliance with the instruction and concision. A satisfies the word limit and conveys the essential reasoning clearly. B violates the limit with padded prose.\n\nVerdict: A",
+  "usage": {
+    "input": 843,
+    "output": 539
+  },
+  "cost": 0.014152
+}

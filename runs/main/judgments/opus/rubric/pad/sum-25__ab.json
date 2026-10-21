@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-25",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Response A says the job \"was stopped after 35 minutes.\" The source gives only the stop time (9:35am). It never says when the job started, and the first member call came at 8:20am. The 35-minute duration is an unsupported inference that could mislead a manager about how long the exposure lasted. I found no factual errors in Response B. Its dates (1 October change, 3 October regulator notice, 6 October calls, 13 and 31 October actions, 9 October resend) and figures (347 statements, 11,200 remaining) are all correct.\n\n**Key points:** Response A leaves out the \"we've been hacked\" staff message that leaked to local news. A manager needs to know about that reputational and communications issue. A also drops the action to update the communications guide. Response B covers both, along with every other action.\n\n**Concision:** Response A is under 120 words and tight. Response B runs to roughly 170 words, which breaks the user's limit. It is also padded with filler such as \"To give some background,\" \"We would like to note that,\" \"Please be aware that,\" and \"Looking ahead.\" This is a real weakness.\n\n**Weighing:** Under the stated priority order, accuracy comes first, then retaining needed points, then concision. A contains a fabricated detail and omits the media leak. B is accurate and complete but too long and wordy. B's failings fall on the lower-priority criterion.\n\nVerdict: B",
+  "usage": {
+    "input": 1491,
+    "output": 1239
+  },
+  "cost": 0.030744
+}

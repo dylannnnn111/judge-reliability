@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-32",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses find the two most important bugs: the BETWEEN upper bound drops September 30 afternoon orders, and integer division truncates the averages. Both also flag the NULL-status problem, the inner join dropping zero-order stores, and the hardcoded dates and timezone. Both fixes are sound overall.\n\nResponse A is tighter and more accurate. Its `* 1.0` cast works on every major engine. Response B's suggested `AVG(o.total_cents)` would still truncate on SQL Server, where AVG over an integer column returns an integer. B also opens with filler (\"Let me walk through...\") and adds a low-value tiebreaker point, and it runs noticeably longer. Both exceed the 200-word limit, but A is much closer to it and spends its words on higher-value content.\n\nVerdict: A",
+  "usage": {
+    "input": 1972,
+    "output": 962
+  },
+  "cost": 0.0006782
+}

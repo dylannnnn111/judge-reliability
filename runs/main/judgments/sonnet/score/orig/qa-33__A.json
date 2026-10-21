@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-33",
+  "side": "A",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is correct: tidal locking, tidal friction slowing the Moon's rotation, spin period matching orbital period (~27.3 days sidereal), the far side gets sunlight (not \"dark side\"), and libration allows about 59% of the surface to be seen. All of this is accurate.\n\nWord count: roughly 90 words, under the 120 limit.\n\nKey reasoning is present: tidal friction, synchronous rotation. It could add a note about the tidal bulge, but that's not essential. Clarity is good, and the extra points about the far side and libration are correct and useful.\n\nMinor nitpick: \"Billions of years ago\" is reasonable. The phrase \"orbital period of about 27.3 days\" is the sidereal period, which is correct for the match.\n\nScore: 9",
+  "usage": {
+    "input": 381,
+    "output": 251
+  },
+  "cost": 0.003272
+}

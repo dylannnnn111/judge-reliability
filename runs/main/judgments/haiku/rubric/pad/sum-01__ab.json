@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-01",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is the better summary. Both responses are accurate on the key facts: the new Friday 30 October deadline, the move from 4 November, the three required items, the template location, the variance threshold, and Marcus's Thursday session. Response A keeps the essential points and is close to the 120-word limit, though it may slightly exceed it. Response B is roughly twice that length, well over the limit for a busy manager, and its extra sentences (such as \"This earlier date applies to all regions\" and the closing call-to-action paragraph) mostly restate points already made. Response A is more useful for the stated reader because it is scannable and drops the restatement.\n\nVerdict: A",
+  "usage": {
+    "input": 1571,
+    "output": 829
+  },
+  "cost": 0.0005716
+}

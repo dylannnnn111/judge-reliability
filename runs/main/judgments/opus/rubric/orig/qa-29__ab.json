@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-29",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses are correct. Each identifies the key mechanism: compound interest earns interest on previously earned interest. Each contrasts linear and exponential growth, and both use the same accurate example ($1,000 at 5% for 30 years gives $2,500 simple versus about $4,322 compounded).\n\n**Response A** is about 95 words, comfortably within the limit. It explains the mechanism concisely. Its phrase \"the gap grows exponentially\" is loose but broadly acceptable, since compound growth minus linear growth is dominated by the exponential term.\n\n**Response B** is about 119 words, just under the limit. Its bulleted contrast makes linear versus exponential growth especially concrete (\"$50 every year, forever\" versus 5% applied to a growing balance). It also adds a useful explanatory point: the difference is small early on but widens faster and faster, and time is the key ingredient. This addresses the \"over long periods\" part of the question more directly than A does. The Rule of 72 is accurate (72 ÷ 5 ≈ 14.4) but somewhat tangential, so it adds little merit beyond a practical takeaway.\n\nOn correctness and key reasoning, they are essentially equal. On clarity, B is better: it is structured and makes the early-versus-late growth dynamic explicit. The extra length is mostly justified by that clarifying content rather than padding.\n\nVerdict: B",
+  "usage": {
+    "input": 721,
+    "output": 1200
+  },
+  "cost": 0.026884
+}

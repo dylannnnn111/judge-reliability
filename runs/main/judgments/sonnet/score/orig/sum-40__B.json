@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-40",
+  "side": "B",
+  "score": 5,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is mostly accurate and covers the main points: the sample, the 1.8 vs 1.1 mark improvement, the non-significant gap, the 71% survey result, the recommendation and the limitations. It has three problems:\n\n- **Word limit:** I count about 126 words against the 120-word cap. This is an explicit instruction that the response breaks.\n- **Wording:** \"no significant problems\" is a looser paraphrase of \"no reports of problems\", and \"significant\" could be misread as a statistical term. \"Students with water bottles\" also blurs the fact that the comparison was between schools that allowed bottles and schools that didn't.\n- **Missing detail:** it doesn't say the 71% figure came only from the water-bottle schools, or that the difference \"could be due to chance\".\n\nThe content is sound but the length violation is a clear failure.\n\nScore: 5",
+  "usage": {
+    "input": 1069,
+    "output": 1456
+  },
+  "cost": 0.016698
+}

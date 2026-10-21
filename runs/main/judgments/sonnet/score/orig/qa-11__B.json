@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-11",
+  "side": "B",
+  "score": 10,
+  "model": "claude-sonnet-5-5",
+  "text": "The correct answer is the \"Monty Fall\" variant: when the host opens a door at random and it happens to show a goat, the chance is 1/2 for both door 1 and door 3. So switching makes no difference, and the win probability is 50%. The response gets this right.\n\nThe reasoning is also correct: the 1/6 and 1/6 contributions are right, and the case where the car is behind door 2 is properly excluded. Normalizing gives 1/2 each.\n\nThe response is under 120 words, at roughly 100. It is clear and well organized. One small imprecision is the phrase \"the host would have shown the car, so this case is ruled out.\" This is fine in context, since it means the observation is inconsistent with that case.\n\nScore: 10",
+  "usage": {
+    "input": 515,
+    "output": 233
+  },
+  "cost": 0.00336
+}

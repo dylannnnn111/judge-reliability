@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "code-28",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. The request asked for under 200 words, and both responses go over. A runs to roughly 290 words with eight items. B is much closer, at about 200 words with seven items.\n\nBoth find the same core problems: the unlocked check-then-update race, the unvalidated destination wallet, the connection leak, deadlock risk, and the ROLLBACK that can mask the original error. B's ordering is also sensible, leading with the double-spend race and the lost-money bug, which are the most serious for a money-moving function. A leads with the connection leak, which is a defensible choice.\n\nA adds a few lower-value points: no audit trail or idempotency key, and `bigint` coming back from `pg` as a string. These are valid but push it further past the word limit. In a request that asks for \"the bugs and problems that matter,\" trimming them is the better call.\n\nB's extra point, a `CHECK (balance_cents >= 0)` constraint, is practical and concise.\n\nB stays closer to the length constraint and still covers the important issues.\n\n**B**",
+  "usage": {
+    "input": 1665,
+    "output": 1143
+  },
+  "cost": 0.01476
+}

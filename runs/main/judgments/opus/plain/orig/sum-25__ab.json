@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-25",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse B runs to about 144 words, well over the explicit 120-word limit. It is also the more complete summary: it includes the leaked \"we've been hacked\" message and the comms-guide fix, both of which matter to a manager.\n\nResponse A stays within the limit at about 106 words. It has flaws: it omits the media leak, and \"stopped after 35 minutes\" is not supported by the source. The source only says the job was stopped at 9:35am, with the first member call at 8:20am.\n\nOn balance, A wins because it meets the user's hard constraint and is otherwise accurate on the core facts. B fails that constraint by a clear margin.",
+  "usage": {
+    "input": 1289,
+    "output": 1900
+  },
+  "cost": 0.043156
+}

@@ -1,0 +1,13 @@
+{
+  "item": "sum-33",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**ShiftNest 12.4 (28 Oct 2026): Summary**\n\n**Action required (if applicable):** If your payroll export uses the old v1 connector (Admin > Integrations > Payroll (v1)), switch to v2. The shutdown was **extended to 31 January 2027**, but switch soon. Otherwise timesheets will stop reaching payroll and staff could be paid late. It takes about 15 minutes, with a guide in the help centre. Only ~8% of customers are affected.\n\n**New features (automatic):**\n- Managers can approve shift swaps for their own areas only.\n- Public holiday penalty rates now apply automatically for Hospitality and Retail awards, by state.\n- Staff get push notifications for open shifts.\n\n**Also:** faster rosters for large sites, unpaid break minutes in timesheet exports, availability up to 12 weeks ahead, and fixes for daylight saving and SA time zone errors.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 711,
+    "output": 347
+  },
+  "cost": 0.009784,
+  "at": "2026-10-14T01:52:23.175Z"
+}

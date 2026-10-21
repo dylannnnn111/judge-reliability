@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-01",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response is factually accurate on every point I checked: the new deadline (Friday 30 October, COB, moved from 4 November), the reason for the change, the template path, the software subscriptions split and who requested it, the variance threshold (smaller of $50,000 or 10%), the no-screenshots rule, the leave nomination, and Marcus's optional drop-in. It also keeps the points a manager needs, including the call-Priya instruction for regions with problems. The main weakness is length. My rough count is around 120 words, which sits at the limit, and a few phrases could be trimmed without losing content. Omitting the coffee aside was the right call.\n\nScore: 8",
+  "usage": {
+    "input": 1065,
+    "output": 998
+  },
+  "cost": 0.0006055
+}

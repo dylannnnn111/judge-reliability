@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-16",
+  "side": "B",
+  "score": 8,
+  "model": "claude-opus-5-5",
+  "text": "The response is accurate on almost every point.\n\n**Accuracy**\n- Dates are correct: 3→17 November, 15 October meeting, 24 October fix, early December fallback.\n- Figures are correct: $412k of $520k spent, $38k added, $12k verbal credit, $26k net.\n- The new date is correctly framed as pending steering committee approval.\n- The vendor credit is correctly described as verbal and needing written confirmation.\n\nThere are two small lapses:\n- **Missing deadline:** In the decisions line, \"$26k if the credit is confirmed\" drops the original's condition that written confirmation must arrive *before the meeting*. The budget line does say \"in writing\", but this timing condition is what decides which figure the committee approves.\n- **Inference presented as fact:** The \"clashing with the sales director's request for no December training\" link is the summariser's own reasoning. The original lists that risk separately and never ties it to the December slip. The inference is plausible, but it is stated as fact. It also merges two risks while dropping their individual ratings.\n\n**Coverage**\nThe essentials for a busy manager are there: status, slip and cause, money, the main risk, and the decisions required. Omitted are:\n- the duplicate-records risk (about 3,100 records, owner Mei Lin);\n- the next update date (24 October);\n- what has been completed.\n\nThe duplicate-records risk is the most notable gap, though leaving it out is a defensible trade-off at this length.\n\n**Concision**\nAt roughly 119 words it meets the limit, though only just. It is well structured and easy to scan.\n\nOverall it is a strong, mostly faithful summary. It loses some credit for the softened condition on the credit and for the unflagged inference about December training.\n\nScore: 8",
+  "usage": {
+    "input": 1150,
+    "output": 1604
+  },
+  "cost": 0.03668
+}

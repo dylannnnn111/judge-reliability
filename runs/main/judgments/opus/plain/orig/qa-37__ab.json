@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-37",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth answers are accurate and under 120 words (A is about 110, B about 115). They give the same core explanation: arkose sandstone whose iron-bearing minerals oxidise into a reddish surface coating, with grey rock underneath.\n\nA is slightly more precise. It names hematite as the iron oxide. It also explains *why* low-angle sunlight looks redder: light passing through more atmosphere has its blue wavelengths scattered away. B only states that the light is \"richer in red wavelengths\" without giving the cause. B's added detail, that quartz is also present and the process took millions of years, is less useful for explaining the colour than A's scattering mechanism.",
+  "usage": {
+    "input": 581,
+    "output": 850
+  },
+  "cost": 0.019324
+}

@@ -1,0 +1,13 @@
+{
+  "item": "sum-14",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Summary: Operations WFH policy change (effective Tue 3 Nov 2026)**\n\n- **Main change:** Operations staff must be in the office at least 3 days a week (up from 2). Team leaders will set one common team day weekly.\n- **Exceptions:** Formal flexible work arrangements (approved under Fair Work) stay unchanged until their next review. Informal manager agreements don't count. Claims Lodgement and Customer Contact teams are excluded; their rosters will be reviewed in early 2027.\n- **Equipment:** Existing equipment stays, but new home office equipment won't be funded unless a workplace health assessment recommends it.\n- **Hot desking:** Levels 3 and 4 move to booked desks (via Spaces app, up to two weeks ahead), with lockers provided.\n- **Rationale:** Newer staff feel they miss learning from experienced colleagues, and the company wants better use of paid-for office space.\n- **Questions:** Go to managers first; a Q&A is on the intranet.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 609,
+    "output": 340
+  },
+  "cost": 0.004618,
+  "at": "2026-10-14T01:51:31.923Z"
+}

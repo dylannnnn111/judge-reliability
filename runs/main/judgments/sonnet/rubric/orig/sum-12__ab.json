@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-12",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses cover the fee changes, the concession pass, the repair rationale, the staff exemption and the petition. Both are also close to or slightly over the 120-word limit, by my count about 125 for A and 128 for B, so concision doesn't separate them.\n\nThe difference is in accuracy.\n\n- **Response A** says the weekly pass \"is a significant saving for regular users.\" The article doesn't say this. It only reports one dialysis patient's husband hoping he'd pay less, and the saving would not hold for someone visiting once a week ($9 daily against $15 weekly). This is an unsupported editorial claim that could mislead a manager.\n- **Response B** says the weekly pass \"will replace the current $9 daily concession.\" The article says concession parking was \"extended\" and describes the $9 rate as \"current\", which suggests but doesn't confirm replacement. That is an ambiguity stated as fact, but it is a smaller overreach than A's generalisation.\n\nThe other details (dates, amounts, eligibility, the letter requirement, the 180 spaces, 18 months, 2,000 signatures) are correct in both.\n\nB's overreach is milder and more plausible from the text, while A adds an unsupported evaluative claim. I give B a slight edge.\n\nVerdict: B",
+  "usage": {
+    "input": 1364,
+    "output": 2314
+  },
+  "cost": 0.025868
+}

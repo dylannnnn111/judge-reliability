@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-32",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same four real problems and rank them the same way:\n\n1. The `BETWEEN` upper bound drops September 30 orders.\n2. Integer division truncates the averages.\n3. The `<> 'refunded'` filter drops NULL statuses.\n4. The inner join hides stores with no orders, which also makes the `HAVING` redundant.\n\nBoth also mention timezone and hardcoded dates. The fixes are correct in both.\n\n**Response A:**\n- It opens with filler (\"Let me walk through the issues…\").\n- It runs to roughly 300+ words, well over the 200-word cap.\n- It adds a minor ORDER BY tiebreaker nitpick.\n- Its dialect note on integer division is accurate but adds length.\n- Its `AVG` fix is clean.\n\n**Response B:**\n- It is tighter and gets to each point directly, though it is still somewhat over 200 words.\n- It makes a similar point on status handling but speculates about partial refunds and suggests hardcoding statuses like `'paid'` and `'fulfilled'`, which are guesses about the schema.\n- It handles the `HAVING` cleanly: if zero-revenue stores aren't wanted, delete the `HAVING`.\n- It groups timezone and parameterization into one point.\n\nContent quality is about equal. The deciding difference is adherence to the length constraint. B is closer to it and has no filler, while A is noticeably longer and padded.\n\nVerdict: B",
+  "usage": {
+    "input": 1972,
+    "output": 995
+  },
+  "cost": 0.013894
+}

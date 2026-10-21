@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-01",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response catches the most serious problems. Rerunning the nightly job without idempotency can double-charge customers, and a single exception aborts the loop partway, leaving some customers billed and others not. Its float truncation claim is also correct: `round(19.99 * 100)` style values can become `int(1998.9999...)`, undercharging by a cent. The NaN/inf and negative-value validation point is real, since `float()` accepts those strings. The ranking is sensible, and most items include a fix.\n\nWeaknesses: the user asked for under 200 words, and the response runs to roughly 230, which breaks an explicit constraint. Items 5 through 7 are weaker. Billing-period scoping is speculative, the flat tax is a design assumption rather than a bug, and the currency and memory points are minor filler. The response also doesn't mention that zero or negative totals are silently skipped by the `if amount > 0` check in any detail beyond a passing note.\n\nScore: 6",
+  "usage": {
+    "input": 1004,
+    "output": 1000
+  },
+  "cost": 0.0006004
+}

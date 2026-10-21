@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-14",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A** is better. Both responses find the same critical bug and rank it first: OFFSET pagination while deleting skips about half the rows. Both also flag the crash/idempotency gap and the need for `archive` to be durable before rows are deleted.\n\nThe deciding factors:\n\n- **Word limit:** Response A comes in at roughly 190 words, within the requested limit. Response B runs to roughly 225 words, which violates an explicit user constraint.\n- **Signal-to-noise:** Response B's item 3 (no try/except or rollback) adds little real risk. An exception just ends the job, and the uncommitted transaction is discarded. Its \"no logging\" bullet is similarly low-value. Response A instead raises a useful point about batch size and commit overhead.\n- **Precision:** Response A's index suggestion (`(created_at, id)`) is more specific and matches the query's filter and sort.\n\nA covers what matters, in priority order, within the requested length.\n\n**A**",
+  "usage": {
+    "input": 1358,
+    "output": 1406
+  },
+  "cost": 0.033552
+}

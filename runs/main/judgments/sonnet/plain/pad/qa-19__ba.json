@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-19",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer under 120 words. Response A is well over 120 words, roughly 190. Response B is about 100 words, so it fits the limit.\n\nAccuracy: both say the word comes from gangurru in Guugu Yimithirr, recorded in 1770 near Cooktown, and that Haviland confirmed the meaning in the 1970s. Response B's account of the myth (Cook's crew asked and took the reply as the name) is the standard version. Response A's explanation of how the myth arose is somewhat speculative. It also contains filler (\"worth looking at closely\", \"worth being clear about why\").\n\nResponse B meets the constraint and is accurate, so B is better.\n\n**B**",
+  "usage": {
+    "input": 741,
+    "output": 223
+  },
+  "cost": 0.003712
+}

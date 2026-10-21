@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-32",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A** is accurate and covers the essentials in about 90 words. The year is about 365.2422 days, so a day is added every four years. Century years are skipped unless divisible by 400. That explains why 1900 was a common year and 2000 was a leap year.\n\n**Response B** is also accurate and gives somewhat deeper reasoning. It notes that the four-year rule assumes a 365.25-day year, which overcorrects by about 11 minutes a year, or roughly 3 days per 400 years. It also names the Gregorian calendar and sets out the rules clearly. However, by careful count it is about 122 words, which breaks the user's explicit limit of \"under 120 words.\" Its extra detail is useful, but the overshoot is not trivial.\n\nBoth are correct. A already gives the key reasoning, including why the century exception exists (\"to correct for the small excess\"). B's added explanation is nice to have, but it breaks the stated constraint. A meets every requirement cleanly, so it is the better response.\n\nVerdict: A",
+  "usage": {
+    "input": 702,
+    "output": 1416
+  },
+  "cost": 0.031128
+}

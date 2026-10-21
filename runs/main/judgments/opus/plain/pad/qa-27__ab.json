@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-27",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse A runs to roughly 250 words, more than double the 120-word limit. It pads with filler such as \"Put another way…\" and \"It is worth considering…\".\n\nResponse B stays within the limit at about 105 words and still covers everything that matters:\n- Hydrogen bonds lock molecules into an open hexagonal lattice, so ice is about 9% less dense than liquid water.\n- Floating ice insulates the water below.\n- Deeper water stays near 4°C, its temperature of maximum density.\n- Lake life survives winter in the liquid layers beneath.\n- If ice sank, lakes would freeze from the bottom up.\n\nBoth responses are accurate, but B is concise and follows the instruction, while A ignores it.",
+  "usage": {
+    "input": 772,
+    "output": 349
+  },
+  "cost": 0.010068
+}

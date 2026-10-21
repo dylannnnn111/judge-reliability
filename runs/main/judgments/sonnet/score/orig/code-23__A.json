@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-23",
+  "side": "A",
+  "score": 8,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds the most important bug and ranks it first. `if (!r.value)` treats a legitimate 0 °C reading as missing, which matters in a cold room, and the `== null` fix is correct. The next issues are also real and sensibly ordered:\n\n- Sensors with only null readings vanish from the output.\n- String comparison of timestamps breaks with mixed formats or offsets.\n- `latestReading` can return a null-valued record.\n\nEach comes with a concrete fix or a clear decision to make. Nothing is wrongly flagged. The \"minor\" item is accurate but low value, since the inconsistent comparator is the only part with any bearing on correctness. The response also runs somewhat over the 200-word limit, at roughly 215–220 words. It does not mention invalid timestamps parsing to NaN, a small omission.\n\nScore: 8",
+  "usage": {
+    "input": 1027,
+    "output": 1147
+  },
+  "cost": 0.013524
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "sum-38",
+  "side": "B",
+  "score": 4,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** The response is accurate. Every figure checks against the original: 600 invited and 431 users, 4.3/5 rating, 23 bugs with 21 fixed, $268.5k of $290k spent. The key dates (3, 12, 14, 17 and 18 November; next update 24 October) are also correct, and the risk is described correctly. The only mild issue is voice. \"I am pleased to report\" makes it read as if the summariser were the Delivery Lead.\n\n**Coverage:** It keeps most of what a manager needs: status, launch date, beta outcome, the fixed complaint, the launch plan, budget and risk. It drops the responsibilities section entirely, so it never says who owns what (Jackson, Amelia, Tyrone, Harper). A busy manager may well need to know whom to chase. It also omits that the beta closed on 6 October and that store review can take up to a week, though these are minor.\n\n**Concision and constraint:** This is the major failure. The user set a hard limit of under 120 words, and the response runs to roughly 240 words, about double. Much of that is padding:\n- The opening paragraph repeats \"green (to 10 Oct)\" from the heading.\n- It then announces what the sections will cover, which adds nothing.\n- The bullets use wordy phrasing, e.g. \"The slowness experienced during weekend timetable use has been resolved…\" and \"Of the 600 members who were invited…\".\n\nThe extra length adds no information, and it breaks an explicit instruction in a summary written specifically for someone with no time.\n\nOverall, the content is accurate, but the response misses the key constraint by a wide margin, is padded, and omits ownership.\n\nScore: 4",
+  "usage": {
+    "input": 1268,
+    "output": 807
+  },
+  "cost": 0.021212
+}

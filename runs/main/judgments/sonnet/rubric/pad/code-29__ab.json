@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-29",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same core issues: the NOT IN / NULL bug (the most important), the date filter contradicting the intent, the LIMIT/ORDER bias, and the date format concern. Both give the NOT EXISTS fix.\n\nDifferences:\n\nWord limit: the user asked for under 200 words. Response A is about 220 words, with the code block included. Response B is longer, about 330 words, and has a wordy preamble (\"The issues below are listed in order of importance...\") and filler like \"To explain the problem,\" \"In other words.\" B clearly violates the constraint more.\n\nContent: B adds a minor point about duplicate emails, bounced or suppressed addresses, and previously contacted customers. These are speculative and not bugs in the code; they could count as flagging things that aren't problems. A's point 4 says date('now', '-30 days') is SQLite-specific and compares as a string, which is accurate. B's version is similar but a bit muddled. A's \"almost certainly contains a NULL\" is a fine hedge.\n\nA is more concise and sticks closer to the requested limit, with no speculative extras. B pads and adds scope creep. A is better.\n\nVerdict: A",
+  "usage": {
+    "input": 1749,
+    "output": 376
+  },
+  "cost": 0.007258
+}

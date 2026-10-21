@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-04",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B**\n\nBoth responses correctly put the double-charge risk from retrying a POST without an idempotency key first, and both catch that 4xx errors get retried. Both also exceed the 200-word limit: A is about 255 words and B about 235. B is closer to the constraint and more focused on what matters.\n\nB's \"ambiguous failure state\" point is a real problem for a payment flow. After exhausting retries, the caller can't tell \"definitely not charged\" from \"unknown\", and B is the only one to raise it.\n\nA is more accurate on one detail. In recent versions of `requests`, `JSONDecodeError` is a `RequestException`, so a malformed body gets caught and retried. A notes this, while B says parse errors \"aren't caught\". A also spots the useless sleep after the final attempt. These are real but secondary points.\n\nA adds low-value items (generic `RuntimeError`, and `print` as a separate item), which dilutes the \"bugs that matter\" request. B is tighter, with a more useful ordering, and breaks the word limit by less.",
+  "usage": {
+    "input": 1495,
+    "output": 1555
+  },
+  "cost": 0.01854
+}

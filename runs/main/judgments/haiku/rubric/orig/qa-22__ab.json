@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-22",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly answer \"no\" and give sound physics: the Coriolis effect is real but far too weak at sink or toilet scale, and local factors like basin shape, residual motion, and jet angle determine drain direction. Both also note that the effect has only been demonstrated in carefully controlled experiments.\n\nResponse B adds more useful content. Its note that hurricanes rotate clockwise in the Southern Hemisphere directly reflects the hemispheric contrast the user is asking about. Its toilet point, that the same model flushes the same way everywhere, is a concrete, relevant example. It also names the Shapiro MIT experiment and a Sydney replication, which fits the Australian framing. The Sydney detail is a specific claim I can't fully verify, which is a minor risk, but it is plausible and doesn't undermine the answer. B stays within the 120-word limit.\n\nResponse A is clear and correct but thinner. It lacks the hemispheric example and the Australian-relevant detail.\n\nVerdict: B",
+  "usage": {
+    "input": 741,
+    "output": 1500
+  },
+  "cost": 0.0008241
+}

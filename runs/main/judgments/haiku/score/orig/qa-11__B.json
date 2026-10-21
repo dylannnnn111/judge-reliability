@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-11",
+  "side": "B",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response is correct. With a random host who doesn't know the car's location, the event \"door 2 shows a goat\" has probability 1/3 overall (1/6 from car-behind-door-1 plus 1/6 from car-behind-door-3). Conditioning on it, the car is equally likely behind doors 1 and 3, so switching gives no advantage. The response's calculation is right, and it explains the key point: the host's random choice is what makes this differ from the standard Monty Hall problem. The key reasoning is laid out clearly and concisely, well under the word limit.\n\nScore: 9",
+  "usage": {
+    "input": 515,
+    "output": 463
+  },
+  "cost": 0.000283
+}

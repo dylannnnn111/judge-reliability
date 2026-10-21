@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-20",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same core issues: the DST miscount, silent NaN on bad input, the viewer-timezone dependence, and labels going stale past midnight. Both give a correct UTC-based fix. The differences are in accuracy.\n\n**Response A**\n- The DST explanation and its examples are right: the spring-forward 23h gap turns \"tomorrow\" into \"today\", and the fall-back 25h gap turns -1 into -2.\n- It says the fall-back error \"may land in the wrong place on the overdue list\". That is wrong. Both -1.04 floored to -2 and -0.96 floored to -1 are still negative, so the sign never flips and list membership is unaffected.\n- It files the timezone and stale-label issues as minor. That is reasonable, though it undersells the timezone issue.\n\n**Response B**\n- It correctly says the overdue list is unaffected because the sign stays right, and that only the labels are wrong. This is more precise than A.\n- Its spring-forward example is muddled. A date 3 days away floors to 2 and would read \"Due in 2 days\", not turn \"Due tomorrow\" into \"Due today\". The underlying mechanism is still right.\n- It adds `Math.round`, which is harmless, and notes the specific malformed string from a full ISO timestamp.\n- It treats the timezone issue more substantively, suggesting computing \"today\" in the business timezone.\n\nB's accuracy about the list is better than A's wrong claim, and its timezone treatment is more useful. B's muddled example is a smaller flaw than A's false claim.\n\nVerdict: B",
+  "usage": {
+    "input": 1859,
+    "output": 1391
+  },
+  "cost": 0.017628
+}

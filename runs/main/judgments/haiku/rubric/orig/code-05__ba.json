@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-05",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses identify the same core bugs: wall-clock subtraction across DST changes, silent acceptance of nonexistent and ambiguous local times, weekend loading based only on the start day, and float money arithmetic with banker's rounding. Both rank DST first, which is sensible since it produces wrong pay on specific nights.\n\nResponse B is more precise. Its DST examples check out: on the April fall-back night a 01:00–05:00 shift is paid 4h but lasts 5h, and on the October spring-forward night it is paid 4h for 3h worked. It gives a concrete UTC-round-trip check for nonexistent times, and its weekend examples are accurate. Its final point adds a useful sanity limit on shift length, which guards against date-entry typos.\n\nResponse A is also correct on its main points, and its overpay/underpay description for the 22:00–06:00 case is accurate. However, its validation point is weaker: \"parse_local is called repeatedly\" is a trivial performance nit rather than a problem that matters for payroll. Its fix for nonexistent times is vaguer. Both are close to the 200-word limit, so length does not separate them.\n\nOverall, Response B flags the same important issues with more verified detail and more actionable fixes, and it avoids the weaker filler point.\n\nVerdict: B",
+  "usage": {
+    "input": 1774,
+    "output": 1616
+  },
+  "cost": 0.0009854
+}

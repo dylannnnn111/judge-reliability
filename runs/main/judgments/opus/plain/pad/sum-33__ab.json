@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-33",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is the better summary for a busy manager. It is concise and well organised, and it captures every key point accurately: the new features, improvements, fixes, and the action item. It also gets the action item right, including who is affected (about 8%), the 15-minute effort, the consequence of not switching, and the revised 31 January 2027 deadline. It runs to roughly 128 words, which is slightly over the 120-word limit.\n\nResponse B misses the limit by far more, at roughly 220 words. It also adds filler a busy manager doesn't need, such as \"Thank you for taking the time to read this summary…\" and \"we kindly ask\". It recasts the summary in the vendor's voice rather than summarising for the reader. Putting the action item first is a reasonable choice, but it doesn't make up for the length and padding.",
+  "usage": {
+    "input": 1553,
+    "output": 1016
+  },
+  "cost": 0.026532
+}

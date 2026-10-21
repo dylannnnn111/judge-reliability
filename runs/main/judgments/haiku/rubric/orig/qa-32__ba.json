@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-32",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are factually correct. Both explain the 365.2422-day year and the rule that century years are skipped unless divisible by 400, and both correctly identify 1900 as a common year and 2000 as a leap year. Response B gives the stronger reasoning, since it explains why the century rule is needed (the 365.25-day assumption overcorrects by about 11 minutes a year) and adds the Gregorian reform context. However, by my count B runs to roughly 120–122 words, at or slightly over the user's \"under 120 words\" limit. Response A stays well within the limit while still covering the core logic, though it doesn't explain why the century exception exists. Given the explicit length constraint, A's compliance edges out B's extra explanatory depth.\n\nVerdict: A",
+  "usage": {
+    "input": 702,
+    "output": 1692
+  },
+  "cost": 0.0009162
+}

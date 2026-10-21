@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-35",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are factually correct and cover the key reasoning: antibiotics target bacterial-specific structures that viruses lack, and resistance arises through selection after random mutation or gene transfer. Response A adds useful detail, including the mechanisms of resistance (destroying the drug, pumping it out, altering the target) and the link between misuse for viral infections and resistance. However, my count puts Response A at about 121 words, slightly over the explicit \"under 120 words\" limit. Response B is around 105 words, complies with the limit, and still gives the core mechanisms with concrete examples of drug targets. Since the word limit is an explicit instruction and the content gap is small, Response B is marginally better.\n\nVerdict: B",
+  "usage": {
+    "input": 797,
+    "output": 1773
+  },
+  "cost": 0.0009662000000000001
+}

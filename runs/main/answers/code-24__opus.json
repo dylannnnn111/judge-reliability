@@ -1,0 +1,13 @@
+{
+  "item": "code-24",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**Issues, most important first:**\n\n1. **Race condition on duplicates.** `processed.add` runs only *after* `await markInvoicePaid(...)`. Two simultaneous deliveries of the same event both pass `processed.has` and both mark the invoice paid. This is exactly the case you said the provider triggers. Claim the ID atomically *before* processing. The best fix is a DB unique constraint or insert-if-absent on `event.id`, inside the same transaction as the invoice update. Release the claim on failure so retries still work.\n\n2. **In-memory dedup is unreliable.** The `Set` is lost on restart, isn't shared across instances or workers, and grows without bound. Use durable shared storage, ideally a processed-events table. `markInvoicePaid` should also be idempotent itself.\n\n3. **Non-constant-time signature comparison.** `!==` leaks timing information. Use `crypto.timingSafeEqual` on buffers, checking that lengths match and the header exists first.\n\n4. **No replay protection.** A captured valid request can be replayed after the dedup memory is gone. Verify a signed timestamp if the provider supplies one.\n\n5. **Poor error handling.** Malformed JSON or a missing `event.data` throws. A failing `markInvoicePaid` produces an unhandled rejection rather than an explicit 500. Return 400 for bad payloads and 500 for processing failures so the provider retries correctly.\n\n6. **No amount or currency validation.** Check `amountCents` against the invoice before marking it paid.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 390,
+    "output": 770
+  },
+  "cost": 0.01696,
+  "at": "2026-10-14T01:54:09.713Z"
+}

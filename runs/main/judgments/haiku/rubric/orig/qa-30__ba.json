@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-30",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses define the p-value correctly as the probability of data at least as extreme as observed, assuming the null hypothesis is true, and both list the main misconceptions. Response B adds useful content: it notes that a non-significant p-value doesn't mean \"no effect,\" and that a p-value alone can't say how likely a hypothesis is without prior information. Response A's last bullet (\"evidence that the alternative is true with a given confidence\") is vaguer than B's points. However, B runs about 123 words by my count, which exceeds the explicit \"under 120 words\" limit. A stays around 80 words and meets the constraint while remaining accurate and clear. Since the user set a hard length limit and A's content is correct, A edges ahead, though B's extra reasoning is valuable.\n\nVerdict: A",
+  "usage": {
+    "input": 644,
+    "output": 1712
+  },
+  "cost": 0.0009203999999999999
+}

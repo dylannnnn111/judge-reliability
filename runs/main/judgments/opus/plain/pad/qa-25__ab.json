@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-25",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A runs about 118 words, so it meets the under-120 limit. It covers the key points: the Gjermundbu helmet evidence, the 19th-century Romantic and Wagnerian origins of the myth, and the Bronze Age ceremonial horned helmets.\n\nResponse B is accurate and adds nice details (Malmström, the Veksø helmets), but it runs roughly 175 words. That clearly violates the user's explicit length constraint.",
+  "usage": {
+    "input": 761,
+    "output": 736
+  },
+  "cost": 0.017764
+}

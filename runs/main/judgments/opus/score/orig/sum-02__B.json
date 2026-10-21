@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-02",
+  "side": "B",
+  "score": 8,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy**\n- **Opening hours:** Correct. It captures the proposal, Ross's two objections, that no decision was made, and that nothing changes until November.\n- **Summer reading program:** Dates, theme, registration date and the volunteer deadline are all right. \"Must send… volunteers\" slightly hardens \"Kate asked managers to send names,\" but the action is clear and correct.\n- **Maintenance:** This is the one real softening. The original says the leak was patched and the contractor recommends full replacement within two years. The summary states the replacement as a settled need and drops the fact that the leak is already patched. A manager could read this as a more urgent or confirmed problem than the minutes describe.\n\n**Key points kept**\n- All actions and deadlines a manager needs are present.\n- Anjali's view that Corrie Creek's Thursday evenings should go ahead independently of any Mount Lavell cut is omitted. That position matters for the November decision, and one clause would have covered it.\n- The Christmas party date and morning tea roster are reasonably left out.\n\n**Concision**\n- At roughly 110 words it is under the limit, well structured and scannable.\n\nOverall it is a strong, accurate summary with a minor framing issue on the roof and one useful omission.\n\nScore: 8",
+  "usage": {
+    "input": 1230,
+    "output": 822
+  },
+  "cost": 0.02136
+}

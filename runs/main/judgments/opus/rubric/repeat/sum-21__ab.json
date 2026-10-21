@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-21",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Both responses are accurate. They correctly give:\n- the recommendation: Elmwood hybrid, $229,140;\n- the overrun: $13,140 over the $216,000 budget, and above Dom's delegation;\n- the fuel-saving rationale;\n- the Northside petrol alternative at $209,880;\n- the 24 October deadline, February fallback and $1,800/car/month hire cost.\n\nB's added figure of about $21,600 total hire cost is correct (6 cars × $1,800 × 2 months), and it is hedged with \"around.\"\n\n**Key points:** Both keep everything the reader needs. B adds the hire-cost total, which makes the stakes of missing the deadline concrete. The delay would cost more than the $13,140 overrun, which is a genuinely useful point for the decision. B also puts the deadline in its headline, which suits a busy reader. A includes two extras:\n- the $1,350/year figure, which is minor, since the $5,400 total is what matters;\n- the note on Coastal Fleet Sales, which is accurate but of little use because Coastal is not a live option.\n\n**Concision:** Both are roughly 117–118 words, so both are under the limit. B uses its words on more decision-relevant content.\n\nB is slightly better because its extra content adds correct, useful information, and its framing puts the deadline up front.\n\nVerdict: B",
+  "usage": {
+    "input": 1518,
+    "output": 1951
+  },
+  "cost": 0.045092
+}

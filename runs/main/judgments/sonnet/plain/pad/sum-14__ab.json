@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-14",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. Both responses exceed the 120-word limit, but B is much closer. I counted about 139 words for B and about 190 for A.\n\nB is also more complete, because it keeps the lockers and the Q&A and questions contact. It has no filler, whereas A opens with a sentence that only says what the summary will do. B also notes that existing equipment stays in place.",
+  "usage": {
+    "input": 1436,
+    "output": 1045
+  },
+  "cost": 0.013322
+}

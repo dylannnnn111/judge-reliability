@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-02",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is more accurate and keeps more of what the reader needs, though it is close to the word limit.\n\n**Accuracy:**\n- A states the recommendation about the roof correctly: the leak is patched and the contractor recommends a full replacement within two years. It also says managers send volunteer names, which matches the minutes.\n- B says the roof \"needs\" full replacement, turning a contractor's recommendation into a fact. It drops the fact that the leak was patched. It also says each branch \"must send two launch-day volunteers to Kate\", when the minutes say managers should send names by 24 October.\n- B includes the air-conditioning service, which a busy manager does not need. This is a minor point.\n\n**Content kept:**\n- A keeps the Saturday visitor figures (11 against 64). These explain why Helen proposed the change.\n- A also keeps the point that hours stay unchanged for now.\n- B drops the figures, so the reader cannot see what the proposal rested on.\n\n**Concision:**\n- I count B at about 113 words and A at about 123 including the title, or about 116 without it. A may therefore slightly exceed the 120-word limit, which counts against it.\n- That small overrun matters less than B's loose wording, since accuracy comes first.\n\nVerdict: A",
+  "usage": {
+    "input": 1621,
+    "output": 2693
+  },
+  "cost": 0.030172
+}

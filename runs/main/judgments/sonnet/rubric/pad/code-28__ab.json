@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-28",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same core problems: the connection leak, the race condition, the unvalidated destination wallet, deadlock risk, ROLLBACK masking the original error, and the same-wallet transfer. Both also give workable fixes. Both exceed the 200-word limit, with B slightly longer once its filler intro is counted.\n\n**Ranking:** A puts the connection leak first. This is arguably the most important bug because it affects every call and exhausts the pool within a few transfers. B puts the race condition first, which is defensible but a weaker choice, and it puts the leak third.\n\n**Accuracy:**\n- A says deadlock risk appears \"once you add row locks\". In fact the two UPDATEs already take row locks in opposite order for A→B and B→A, so the deadlock exists today. B states this correctly.\n- A's bigint-as-string point is real but minor, and A labels it as minor. A's idempotency and audit-trail point is a reasonable suggestion, though somewhat speculative.\n- B's `CHECK (balance_cents >= 0)` suggestion is a useful defense-in-depth addition.\n\n**Style:** B opens with filler (\"Below is a review... covers seven points\") and uses wordier, hedged phrasing (\"you could\", \"you may want to consider\"). A is terser per item and more direct.\n\nA has the better ordering and denser content. B has a more accurate deadlock description and the CHECK constraint, but these gains are small. A edges ahead on ranking.\n\nVerdict: A",
+  "usage": {
+    "input": 1980,
+    "output": 1032
+  },
+  "cost": 0.01428
+}

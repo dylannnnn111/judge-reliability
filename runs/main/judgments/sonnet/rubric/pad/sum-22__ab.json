@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-22",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is accurate and keeps what a manager needs: the fee decision and its reason, the $3,200 shortfall and the 14 November grant deadline, the grounds actions, presentation night details, the gazebo, and the next meeting date. It runs to roughly 105 words, within the 120-word limit. It leaves out the 5-0 vote and Natalie organising trophies, but these are minor.\n\nResponse B is well over the limit, at roughly 270 words, so it fails the explicit constraint. It also pads the summary with pleasantries (\"Thank you all for attending\", \"We look forward to seeing everyone there\") that a busy manager doesn't need. It is also slightly misleading: it says Wes will get two quotes for both the roof repair and the globe, when the minutes only call for quotes on the roof. It also frames the summary as a message to attendees rather than a summary for a manager.\n\nA is better on accuracy, on keeping the key points, and on concision.\n\nVerdict: A",
+  "usage": {
+    "input": 1783,
+    "output": 814
+  },
+  "cost": 0.011706
+}

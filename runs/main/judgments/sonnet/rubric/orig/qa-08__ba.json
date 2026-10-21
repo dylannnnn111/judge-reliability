@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-08",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses compute 375 × 0.048 = 18 mL, and 18 × 0.789 = 14.202 g, which gives about 1.42 standard drinks. Both are correct.\n\nThe difference is that Response A adds that Australian labels round this to 1.4 standard drinks. That is a plausible claim, since labels typically show one decimal place, so it is true enough. A 375 mL can at 4.8% is indeed commonly labelled as 1.4 standard drinks. The addition is accurate and useful, giving a practical rounded answer.\n\nResponse B is correct and concise, with the answer given as ≈1.42. Response A states a headline answer up front, which makes it slightly clearer.\n\nResponse A's extra line adds something correct and useful, so it is slightly better.\n\nVerdict: A",
+  "usage": {
+    "input": 596,
+    "output": 258
+  },
+  "cost": 0.003772
+}

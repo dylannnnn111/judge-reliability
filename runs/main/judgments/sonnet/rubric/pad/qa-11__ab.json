@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-11",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses reach the correct answer: switching gives a 1/2 chance, the same as staying. The difference is the word limit. The request says to answer in under 120 words.\n\nResponse A is well over 120 words, probably around 230. That breaks an explicit constraint. Its extra material, the contrast with the classic problem, is useful but not required.\n\nResponse B has roughly 100 words, which is under the limit. It gives the correct reasoning, including the 1/6 and 1/6 contributions, and its answer is clear. It states \"No, switching gives you no advantage,\" which answers \"Should you switch?\" directly.\n\nResponse A is also correct, but it violates the length constraint, so B is better.\n\nVerdict: B",
+  "usage": {
+    "input": 995,
+    "output": 225
+  },
+  "cost": 0.00424
+}

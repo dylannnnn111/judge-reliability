@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-13",
+  "side": "A",
+  "score": 10,
+  "model": "claude-sonnet-5-5",
+  "text": "The correct answer is that A is a knave and B is a knight. The response gives this answer.\n\nThe reasoning checks out. If A were a knight, the statement \"We are both knaves\" would be true, which would make A a knave, a contradiction. So A is a knave. The statement is then false, so not both are knaves. Since A is a knave, B must be a knight.\n\nThe response is concise, well under 120 words, and clearly structured. The one slightly loose phrasing is \"making A a knave\" for the contradiction, but it is still correct.\n\nScore: 10",
+  "usage": {
+    "input": 347,
+    "output": 172
+  },
+  "cost": 0.002414
+}

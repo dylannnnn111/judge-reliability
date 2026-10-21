@@ -1,0 +1,13 @@
+{
+  "item": "sum-34",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**Clinic Desk 7.2 (released 13 October 2026)**\n\n**New features:**\n- **Online waitlist:** Patients can join a waitlist for fully booked days. When a slot opens, the first patient is texted and has 30 minutes to accept.\n- **Telehealth links** are now included in reminder texts and emails.\n- **Leave calendar:** Practitioner leave entered in advance automatically blocks online bookings.\n\n**Improvements:** Day view shows each practitioner's next free slot. Patient search now works by Medicare number. Reminders can be sent 24 or 48 hours ahead, set per clinic.\n\n**Fixes:** Recurring appointments no longer skip a week after public holidays. Tablet landscape display and large-invoice printing errors are fixed.\n\n**Known issue:** On some older Android phones, waitlist links open in the browser, but acceptance still works.\n\n**Next month:** Staff SMS two-factor login and a practice manager reporting dashboard.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 587,
+    "output": 341
+  },
+  "cost": 0.009168,
+  "at": "2026-10-14T01:52:26.629Z"
+}

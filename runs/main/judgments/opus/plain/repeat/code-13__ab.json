@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "code-13",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A stays under the 200-word limit (about 185 words). It covers the essential issues in sensible priority order: the December crash, the day-of-month overflow, schedule drift, the hardcoded 30-day proration, missing input validation, and rounding. It has two small inaccuracies. It presents drift as a current bug, though the code would crash before drifting. It also says `//` floors \"toward zero\", when it actually rounds toward negative infinity. Neither slip changes the practical advice.\n\nResponse B is technically a bit more careful, since it correctly frames drift as a risk of a naive fix. But it runs about 215 words, over the requested limit. It also spends words on low-value filler: the header, the \"both bugs are common\" aside, and a \"minor\" item about timezones and tests. Its suggested proration fix relies on `next_billing_date`, which is the broken function.\n\nGiven the explicit length constraint, A is the better response.",
+  "usage": {
+    "input": 1343,
+    "output": 1296
+  },
+  "cost": 0.031292
+}

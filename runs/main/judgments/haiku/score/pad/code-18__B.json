@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "code-18",
+  "side": "B",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly identifies the most important bug: the cache key `fx:${from}` ignores `to`, so AUD→USD and AUD→EUR share an entry and invoices can be converted at the wrong rate. It ranks this first and gives a concrete fix. Items 2 (unvalidated `body.rate` cached for 60 seconds) and 3 (no fetch timeout) are real and well-prioritized. Items 4 and 5 are legitimate but lower impact.\n\nSeveral points weaken it. Item 7 is not a real bug, since the cast is a common and safe pattern here because each key maps to one loader. Item 6 is a minor concern for a small key space. The response also runs roughly 370 words, nearly double the requested limit of under 200. The extra length comes from padding and explanation rather than additional substantive findings, which the prompt explicitly discourages. The core analysis is sound, but the instruction violation and the filler items lower the score.\n\nScore: 5",
+  "usage": {
+    "input": 1246,
+    "output": 645
+  },
+  "cost": 0.0004471
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-03",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer: 1 percentage point, or a 25% relative increase. The question asks \"by what percentage,\" so 25% is the primary answer, and both mention it.\n\nResponse A is concise, accurate, and under 120 words. It leads with the percentage-point figure and then gives the 25% relative figure, which could slightly misdirect, but it covers both.\n\nResponse B explains the distinction, gives the calculation, and adds a practical example. Its word count is roughly 100-110. Counting: \"The answer depends on whether you measure the change in percentage points or in percent.\" (16) \"Percentage point increase: 5% − 4% = 1 percentage point\" (~9) \"Percentage increase (relative):\" (3) \"(5 − 4) ÷ 4 × 100 = 25%\" (~8) \"So the interest rate has risen by 25% in relative terms, which is a rise of 1 percentage point.\" (19) \"This distinction matters for borrowers.\" (5) \"A 25% increase in the rate means that, all else equal, the interest portion of the repayments rises by 25%.\" (20) \"For example, on a $400,000 loan, annual interest goes from $16,000 to $20,000 (a $4,000 increase, or 25%).\" (20). Total is about 100, so it fits under 120.\n\nThe example in B is correct: 4% of 400,000 is 16,000 and 5% is 20,000. This is useful but slightly beyond what was asked. The claim that \"the interest portion of the repayments rises by 25%\" is roughly right for interest-only loans, but approximately so for amortizing loans.\n\nB is more helpful and clearer in its structure, and it explicitly states \"25% in relative terms.\" A is more concise and direct. Many graders would prefer B for its thoroughness, while some would prefer A for brevity. The question's \"by what percentage\" suggests that the answer is 25%, and both give it. B's example adds practical value within the limit.\n\nI lean slightly toward B.\n\n**B**",
+  "usage": {
+    "input": 445,
+    "output": 642
+  },
+  "cost": 0.00731
+}

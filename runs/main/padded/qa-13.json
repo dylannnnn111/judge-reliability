@@ -1,0 +1,14 @@
+{
+  "pair": "qa-13",
+  "side": "A",
+  "author": "opus",
+  "model": "claude-haiku-5-5",
+  "original": "**A is a knave and B is a knight.**\n\n- **Suppose A is a knight.** Then A's statement would be true, making A a knave. That is a contradiction, so A cannot be a knight.\n- **So A is a knave.** A knave's statements are false, so \"We are both knaves\" is false. That means A and B are not both knaves. Since A is a knave, B must be a knight.",
+  "text": "**A is a knave and B is a knight.**\n\nLet me walk through the reasoning step by step, so that each part of this conclusion is clearly supported.\n\n- **Suppose A is a knight.** To explore this possibility, we can assume for the moment that A is a knight. Then A's statement would be true, making A a knave. That is a contradiction, so A cannot be a knight.\n- **So A is a knave.** Having ruled out the first possibility, we can now take A to be a knave. A knave's statements are false, so \"We are both knaves\" is false. That means A and B are not both knaves. Since A is a knave, B must be a knight.",
+  "ratio": 1.68,
+  "usage": {
+    "input": 307,
+    "output": 701
+  },
+  "cost": 0.0003812
+}

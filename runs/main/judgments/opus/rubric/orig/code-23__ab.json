@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-23",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better: it finds the same important bugs as B, ranks them more sensibly for a monitoring dashboard, and stays closer to the length limit.**\n\n**Issues found.** Both responses correctly put the `!r.value` zero-dropping bug first, explain why it matters for a cold room, and give a sound fix. B's fix also rejects non-finite values, which is a small plus. B also correctly notes that an all-zero sensor would vanish. Both raise the string timestamp comparison, the null-valued latest reading, and the comparator and O(n log n) point.\n\n**Ranking.** A puts \"dead sensors disappear from the panel\" second. That is the right priority: on a monitoring dashboard, a silently vanishing sensor is a real operational hazard. B ranks the same issue last, below the comparator nit and the prototype-key collision. That ordering is weak.\n\n**B's extra issue.** The prototype-key collision is technically real: `sums[\"constructor\"]` already exists, so the `??=` fallback is skipped. But it is unlikely with sensor IDs, so the extra length buys only marginal value.\n\n**Length.** Both exceed the 200-word limit, but B exceeds it by more.\n\nVerdict: A",
+  "usage": {
+    "input": 1630,
+    "output": 745
+  },
+  "cost": 0.02142
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-33",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B\n\nBoth responses appear to exceed the 120-word limit. By my count, A is about 128 words and B about 130, so neither meets the constraint and the difference between them is small.\n\nBoth are accurate. Each correctly reflects the 29 October update moving the v1 shutdown to 31 January 2027, and each covers the main new features, improvements and fixes.\n\nB is better for a busy manager. It puts the only action item first, includes the risk that staff could be paid late, and adds the menu path and the help-centre guide. A buries the action item at the end and drops the paid-late consequence.\n\nA's slightly shorter length doesn't outweigh this, given that it also breaks the limit.\n\n**B**",
+  "usage": {
+    "input": 1402,
+    "output": 2141
+  },
+  "cost": 0.024214
+}

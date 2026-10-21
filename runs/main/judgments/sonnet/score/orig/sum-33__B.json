@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-33",
+  "side": "B",
+  "score": 7,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate on the details that matter. It uses the updated 31 January 2027 shutdown date rather than the original 30 November, and it keeps the consequence of not switching (timesheets stop reaching payroll, staff paid late), the roughly 15-minute effort and the 8% figure. It also says the other changes are automatic. The new features, improvements and fixes are all represented correctly.\n\nMinor weaknesses:\n- It doesn't say the update was prompted by customer requests for more time over Christmas, which is a small loss of context.\n- It omits that staff can turn off open-shift notifications.\n- By my count it comes to about 123 words, so it may slightly exceed the 120-word limit, depending on how the menu path and symbols are counted.\n- The menu path and the \"Also\" line are a bit dense for a busy manager.\n\nOverall it is accurate and well prioritised, with the action item first, but it is borderline on length.\n\nScore: 7",
+  "usage": {
+    "input": 1181,
+    "output": 1393
+  },
+  "cost": 0.016292
+}

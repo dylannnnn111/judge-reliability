@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-04",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better, mainly because it respects the word limit.\n\n- **Response A** comes to about 117 words, so it meets the \"under 120 words\" requirement. It covers the key points: the leave increases, the split blocks, the cut-off date, eligibility, the superannuation change, the application deadline and the information sessions. Its one flaw is that it says \"Leave can now be split\" without noting that this applies only to primary carers. That is a minor imprecision.\n\n- **Response B** has a clearer layout, and it keeps the primary-carer limit on splitting and notes that the increase is on top of government pay. But it comes to roughly 130–136 words, which breaks the explicit length constraint. It also adds \"Plan rosters for split leave\", which the source text never says, and it assumes the reader is a manager who will be notified.\n\nBecause B breaks the hard constraint and adds unsupported content, A is the better response.\n\n**A**",
+  "usage": {
+    "input": 1354,
+    "output": 1126
+  },
+  "cost": 0.013968
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-25",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is more informative within the same word limit. It names Gustav Malmström alongside Doepler and cites the Veksø helmets as concrete Bronze Age examples. It also notes that helmets in general were expensive.\n\nIts \"about 1,500 years\" figure is a slight underestimate. The Veksø helmets date to roughly 900 BC, about 1,700 years before the Viking Age. Still, the figure is in the right range.\n\nResponse B is accurate and nicely organized with headings, but it is vaguer. It says only \"Romantic artists\" and \"centuries before,\" and it uses nearly the full word budget for less specific content.\n\nBoth stay under 120 words and correctly debunk the myth.",
+  "usage": {
+    "input": 670,
+    "output": 1100
+  },
+  "cost": 0.02468
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-04",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both responses are correct: the final price is $480 and the overall change is a 4% decrease. Both also explain the key reasoning: the discount applies to the larger $600 price, so it removes $120, while the increase added only $100.\n\n**Response A** violates the explicit \"under 120 words\" constraint, running to roughly 230 words. Much of that length is redundant. It states the overall-change formula twice and restates the final price after already showing it. Phrases like \"To begin, we apply the first change\" add nothing. The 1.20 × 0.80 = 0.96 check is a useful touch, but it does not justify the excess.\n\n**Response B** stays within the limit at about 85 words. It leads with the answer and shows both steps concisely. It also adds a correct and useful generalization: raising then lowering by the same p gives a net change of −p².\n\nB is equally correct, follows the length instruction, and is clearer.\n\nVerdict: B",
+  "usage": {
+    "input": 865,
+    "output": 383
+  },
+  "cost": 0.01112
+}

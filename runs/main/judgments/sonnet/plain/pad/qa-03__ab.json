@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-03",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. Both responses stay under the 120-word limit (A is about 108 words, B about 97) and both give the correct answers: a 1 percentage point rise, which is a 25% relative increase.\n\nA pads its answer with pleasantries and repeats the percentage-point point twice. B is tighter and clearly separates the two measures. It also adds a short worked example showing what the rise means for a borrower ($16,000 to $20,000 a year in interest on a $400,000 loan). B's claim that the interest portion of repayments rises by 25% is a reasonable simplification.\n\n**B**",
+  "usage": {
+    "input": 551,
+    "output": 1009
+  },
+  "cost": 0.011192
+}

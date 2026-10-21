@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-35",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A comes in at about 118 words including its title, so it meets the under-120-word limit. Response B runs to roughly 185 words, well over the limit. Both cover the same key points: the deadline, the required work, the kitchenette condition, the payment option and the bond. A also uses headings and bullets, which suit a busy manager who will skim it.",
+  "usage": {
+    "input": 1396,
+    "output": 1199
+  },
+  "cost": 0.029564
+}

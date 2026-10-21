@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-31",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate throughout. The speed gain (142 to 156 lines/hour, about 10%), error rates (0.62% to 0.41%), the 17% gain for new staff, the 64% preference, the $210,000 cost and 14-month payback, and the single-company caveat all match the source. \"Gains settling within four weeks\" is a slight paraphrase of \"most of the gain came in the first four weeks, then stable,\" but it is not misleading. The payback figure is labelled as an estimate, which is appropriate, though it doesn't say the partner made it. The response keeps the points a manager needs, including the heat-related headset issue and the caveat, and it is close to the 120-word limit without padding. The main omission is the trial design (shifts swapped so each worker used both methods), which adds some rigour but isn't essential for a busy manager.\n\nScore: 9",
+  "usage": {
+    "input": 1178,
+    "output": 709
+  },
+  "cost": 0.0004723
+}

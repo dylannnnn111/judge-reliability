@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-40",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "**B**\n\nBoth responses find the main bug: the pipeline runs the loop in a subshell, so `alerts` never updates and the script always exits 0. Both also cover the `set -e` abort on a failed `curl`, the `-` in the `Use%` column, and duplicate alerts.\n\nResponse A adds two valuable points that B misses: squashfs and snap mounts sit at 100% and cause false alerts, and a hung NFS mount can stall `df`. Its `|| rc=1` fix for `curl` is also better than B's `|| true`, which would hide webhook failures entirely.\n\nHowever, the user asked for under 200 words. Response A runs well over that, roughly 350 to 400 words. Response B fits within the limit while still covering the critical issues. Since the length constraint was explicit, B follows the instructions better, even though A is more thorough.",
+  "usage": {
+    "input": 1811,
+    "output": 994
+  },
+  "cost": 0.0006781000000000001
+}

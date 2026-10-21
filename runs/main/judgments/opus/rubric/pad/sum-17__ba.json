@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-17",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.**\n\n**Accuracy**\n- **Response A** wrongly says Arjun Mehta noted \"this was the fourth weekend in a row.\" That was Colleen Barker, so this is an attribution error.\n- A's subject line, \"resolved for now,\" overstates things. The thread only says \"let's see how this weekend goes.\"\n- **Response B** has no clear factual errors. It gets the licence terms right (open until midnight Friday and Saturday, amplified music off at 10pm), correctly says late music breaches the licence, and correctly gives the venue's measures and the 20 October report-back.\n- B's \"residents have complained... for four weekends running\" is a slight generalisation from one resident's remark. It is minor and not misleading in substance.\n\n**Key points**\n- Both cover the licence terms, the call to Clare, the two agreed measures, ongoing logging, the regulator fallback and the 20 October meeting.\n- B also keeps two useful points that A drops: the regulator needs dated evidence, and one resident (Fiona) dissents.\n- A omits the evidence point, which matters if the fallback is needed.\n\n**Concision**\n- **Response A** is about 200 words, well over the 120-word limit. It is also padded and written as a newsletter to residents rather than a brief for a manager.\n- **Response B** is about 120 words, roughly at the limit, and is dense with relevant facts.\n\nB is more accurate, more complete on what matters, and nearly within the length constraint.\n\nVerdict: B",
+  "usage": {
+    "input": 1664,
+    "output": 1190
+  },
+  "cost": 0.030456
+}

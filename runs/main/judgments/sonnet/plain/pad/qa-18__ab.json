@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-18",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is over the 120-word limit. It runs to roughly 170 words, so it fails the explicit constraint. Response B comes to about 85 words and stays within it.\n\nOn accuracy, both identify Janszoon and the Duyfken in 1606 at the Pennefather River. A adds that the landing was in February-March 1606, which is acceptable, and says a skirmish led to deaths, which is plausible, since crew members were killed. B's claim that Hartog landed on an island in Shark Bay and left a pewter plate is correct.\n\nB is better because it respects the length limit and is more concise.\n\n**B**",
+  "usage": {
+    "input": 660,
+    "output": 197
+  },
+  "cost": 0.00329
+}

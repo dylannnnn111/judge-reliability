@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-33",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth summaries are accurate, cover the same content, and land at roughly 125–130 words. Neither strictly meets the 120-word limit, so length doesn't separate them. B is better because of how it uses those words for a busy manager.\n\n1. **Order:** B puts the only action item first. A buries it at the end, after a line saying \"No action is needed for most customers,\" which a skimming reader may take as permission to stop.\n2. **Usefulness of the action item:** B gives what's needed to act or delegate: the menu path (Admin > Integrations > Payroll (v1)), the business consequence (staff could be paid late), and the help-centre guide. A says only that timesheets \"will stop reaching payroll,\" which undersells the risk.\n3. **Brevity elsewhere:** B condenses the improvements and fixes into one \"Also\" line, keeping the weight on what matters.\n\nBoth have a minor flaw: B labels the new features \"automatic,\" and A implies the same. In fact, area-based swap approvals need setup in Admin > Permissions > Areas.",
+  "usage": {
+    "input": 1402,
+    "output": 1673
+  },
+  "cost": 0.039068
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-08",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response B is better. Both responses have a date problem. Response A states the fridge \"failed on 4 Oct,\" which is wrong: the 4 Oct message only says the fridge is \"still dead.\" Its closing correction then admits the uncertainty, which leaves the summary messy. Response B states the failure as \"29 September,\" an unhedged inference from \"on Sunday\" that the ticket doesn't confirm. Apart from that, B's facts are accurate: the 90-day store responsibility, Priya's booking, the separate Frostline collection and possible second call, the $500 no-sign-off threshold, and the 9 October escalation to Amara Osei. It is also under the 120-word limit, at roughly 110 words. Response A is longer, exceeds the limit, and contains the more visible error plus a self-correction that undermines its reliability for a manager who won't read the original.\n\nVerdict: B",
+  "usage": {
+    "input": 1640,
+    "output": 1334
+  },
+  "cost": 0.000831
+}

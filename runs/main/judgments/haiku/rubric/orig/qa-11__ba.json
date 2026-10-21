@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-11",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct answer: after a goat is revealed, switching and staying each win with probability 1/2. Response A makes the argument rigorous by computing each case with the host's 1/2 chance of opening door 2 included, and it stays under 120 words. Response B reaches the same answer with a looser argument that omits the host's 1/2 probability, though its \"equally consistent\" reasoning is sound. Its contrast with the classic Monty Hall problem, where a knowing host's choice carries information, addresses the most likely source of confusion. That contrast is useful, but B runs close to or slightly over the 120-word limit. On balance, B's added insight slightly outweighs A's tighter rigor.\n\nVerdict: B",
+  "usage": {
+    "input": 831,
+    "output": 1202
+  },
+  "cost": 0.0006841
+}

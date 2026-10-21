@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-27",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses explain the hydrogen-bonded hexagonal lattice, ice's ~9% lower density, insulation, and the 4°C density maximum accurately. The deciding factor is the word limit.\n\n- **Response A** is about 123 words, slightly over the 120-word limit. Its phrasing that molecules \"begin arranging\" into the lattice below 4°C is also somewhat loose.\n- **Response B** is about 103 words, comfortably within the limit. It covers the same key points clearly and concisely.",
+  "usage": {
+    "input": 604,
+    "output": 934
+  },
+  "cost": 0.021096
+}

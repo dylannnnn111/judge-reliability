@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-11",
+  "side": "A",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The response's final answer is correct. Given that the host opened door 2 at random and revealed a goat, the car is equally likely to be behind door 1 or door 3, so switching gives no advantage and the chance of winning is 1/2. The key reasoning is also sound: the car-behind-door-2 case is ruled out by the goat, and the response correctly contrasts this with the classic Monty Hall case, where the host's knowing choice carries information.\n\nThe main flaw is that the user asked for an answer under 120 words, and this response runs roughly 250 words. That is a clear instruction violation, and the extra length mostly restates the setup and adds the contrast paragraph, which is useful but not required. Clarity is good, with a bolded headline and a logical flow.\n\nCorrectness and reasoning are strong, but the explicit length constraint is clearly broken.\n\nScore: 5",
+  "usage": {
+    "input": 671,
+    "output": 820
+  },
+  "cost": 0.0004771
+}

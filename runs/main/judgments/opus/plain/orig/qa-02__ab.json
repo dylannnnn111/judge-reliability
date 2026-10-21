@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-02",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses reach the correct answer of 96 km/h with clear, accurate work and stay under 120 words. Both also explain why the simple average of 100 km/h is wrong.\n\nResponse A is slightly better because it shows the harmonic mean calculation explicitly: 2 × 80 × 120 / (80 + 120) = 96. This gives the reader a reusable shortcut for equal-distance problems. Response B only names the harmonic mean without demonstrating it.",
+  "usage": {
+    "input": 574,
+    "output": 334
+  },
+  "cost": 0.008976
+}

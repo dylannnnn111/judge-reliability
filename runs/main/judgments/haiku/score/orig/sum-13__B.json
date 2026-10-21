@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-13",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The summary is largely accurate. The dates, the 24-hour notification, the shutdown and disinfection, the clear resample, the tenant notice, the cause, the pump replacement, the fortnightly sampling and the $7,350 recovery claim all match the report. Two small issues remain. \"Tested above the legal threshold on 29 September\" implies the result was known that day, when the sample was taken on 29 September and the result arrived on 3 October. The response also doesn't say the property manager is the approver. On concision, the response runs to roughly 128 words, which exceeds the 120-word limit. It also leaves out the \"missed visit, not told to us\" framing, though the cause line covers it adequately. The structure is clear and the decision is up front, which suits a busy manager.\n\nScore: 6",
+  "usage": {
+    "input": 1184,
+    "output": 1303
+  },
+  "cost": 0.0007699
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-29",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give correct figures: $1,000 at 5% for 30 years is $2,500 with simple interest and about $4,322 with annual compounding (1000 × 1.05³⁰ ≈ 4,321.9). Both explain the core mechanism, interest earning interest, and both explain why the gap widens over time.\n\nResponse B is clearer and better organized, with a useful comparison and the Rule of 72. However, it runs well over the 120-word limit, roughly 170 words, so it violates an explicit instruction. Response A stays under the limit (about 110 words) while covering the key reasoning and including the worked example. Since the extra material in B doesn't meet the length requirement, A is the better response.\n\nVerdict: A",
+  "usage": {
+    "input": 817,
+    "output": 494
+  },
+  "cost": 0.00032869999999999997
+}

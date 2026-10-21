@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "qa-40",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are factually correct. Both give the speeds of light and sound, the divide-by-3 and divide-by-5 rules, a worked example, and the 30-second danger threshold. A's arithmetic checks out (10 s gives roughly 3 km or 2 miles), and so does B's (15 s gives 5 km or 3 miles, and 30 s gives 10 km or 6 miles). A usefully notes that the flash and thunder start at the same moment, which is the key conceptual point. B explains the mechanism just as clearly, uses numbered steps that make the counting procedure easier to follow, and adds the standard guidance to wait 30 minutes after the last thunder. That extra safety detail is accurate and useful, and B stays under 120 words. The edge goes to B on clarity and practical completeness, though the margin is small.\n\nVerdict: B",
+  "usage": {
+    "input": 745,
+    "output": 1128
+  },
+  "cost": 0.0006385
+}

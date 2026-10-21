@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-28",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the core problems: the race condition, the unvalidated `toId` that lets money vanish, the connection leak, deadlock risk, and the ROLLBACK masking. Response A ranks the double-spend race first, which is the most damaging bug here, and it gives concrete fixes for each item. Its CHECK-constraint suggestion is a useful defense-in-depth addition, and nothing it says is wrong.\n\nResponse B ranks the connection leak first. That is serious, but it is less severe than an overdraft or lost funds. Its idempotency point is a legitimate and valuable addition for an API. However, its eighth item is inaccurate: JavaScript's `<` coerces a numeric string to a number, so the balance comparison works for normal values. The string return from `pg` is real, but calling the comparison \"unreliable\" overstates it. Response B also omits the CHECK constraint.\n\nOverall, Response A has better prioritization and no incorrect claims, while Response B adds a useful idempotency point but ranks issues less sensibly and includes a shaky claim.\n\nVerdict: A",
+  "usage": {
+    "input": 1821,
+    "output": 937
+  },
+  "cost": 0.0006506
+}

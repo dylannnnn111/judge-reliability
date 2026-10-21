@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-02",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is better. Its body is about 116 words, within the 120-word limit. It covers the essentials concisely: the contested opening-hours proposal with the key figures, the unchanged status, the volunteer action item with its deadline, the roof replacement and capital bid, and the next meeting date. It also clearly flags the one action managers need to take.\n\nResponse B breaks the length constraint, running to roughly 190 words. Much of that is padding a busy manager doesn't need: the opening \"Thank you for taking the time…\" paragraph, \"so please plan accordingly,\" and the vague \"serviced during this period.\" It also drops the visitor-count figures that explain the proposal, and it omits that the roof leak was already patched.",
+  "usage": {
+    "input": 1588,
+    "output": 1171
+  },
+  "cost": 0.029772
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-29",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Word count matters here: the user asked for under 120 words.\n\nResponse A is about 95 words. Counting: \"Compound interest beats simple interest over long periods because it pays interest on previously earned interest, not just the original principal.\" (21) \"With simple interest, you earn a fixed amount each period, so growth is linear.\" (14, total 35) \"With compound interest, each period's earnings are added to the balance and start earning returns themselves, so growth accelerates over time.\" (21, total 56) \"The longer the horizon, the more these \"interest on interest\" effects accumulate, and the gap between the two grows exponentially rather than steadily.\" (23, total 79) \"For example, $1,000 at 5% for 30 years yields $2,500 with simple interest but about $4,322 with annual compounding.\" (19, total 98). That is under 120.\n\nResponse B is clearly over 120 words, probably around 200. It breaks the constraint.\n\nAccuracy: both examples are right, since 1.05^30 ≈ 4.32.\n\nA is better.\n\n**A**",
+  "usage": {
+    "input": 672,
+    "output": 332
+  },
+  "cost": 0.004664
+}

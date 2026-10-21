@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-13",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "A\n\nBoth responses run slightly over the 120-word limit (A is about 126 words, B about 127), so that constraint doesn't separate them.\n\nResponse A puts the decision first, which suits a busy manager. It also covers more of the original: tenant notification, fortnightly sampling and the shutdown. Its cause line is slightly off, because it says the pump failed \"after\" the missed visit when the report says the failure came first and the missed visit let it go unnoticed.\n\nResponse B is accurate on the figures and clear, but its cause sentence is garbled. It says the pump was \"missed during a monthly visit\", which implies a visit took place when the visit was in fact missed. It also omits the increased sampling and the tenant notification, and it puts the decision at the end.",
+  "usage": {
+    "input": 1348,
+    "output": 2089
+  },
+  "cost": 0.023586
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-14",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is slightly better.** Both catch the same critical issue first: OFFSET pagination combined with deletion skips every other batch. Both give the right fixes: re-query from the start, or use keyset pagination. Both also cover the next tier in a similar order: crash-safety and idempotency of `archive`, and durability of `archive` before the delete.\n\n**Where Response A falls short:**\n- Its #3, \"no error handling or rollback,\" is weak as a ranked bug. In Python's sqlite3, an exception from `archive` or the delete simply propagates. The uncommitted delete is not persisted, so no data is lost and nothing is corrupted. Ranking this above the string-comparison issue overstates it.\n- It is longer, likely exceeding the 200-word limit more clearly than B, without adding correct substance.\n\n**Where Response B is stronger:**\n- It adds a useful consequence: each nightly run only halves the backlog.\n- It suggests a more precise composite index, `(created_at, id)`.\n- It gives the string-comparison issue proper weight, with a concrete fix: validate or normalize `cutoff`.\n- Its \"larger batch\" note is minor but reasonable.\n- It is tighter and closer to the length constraint, with no questionable items.\n\nVerdict: B",
+  "usage": {
+    "input": 1514,
+    "output": 865
+  },
+  "cost": 0.023356
+}

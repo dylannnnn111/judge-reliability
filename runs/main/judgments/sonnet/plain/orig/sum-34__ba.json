@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-34",
+  "order": "ba",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-sonnet-5-5",
+  "text": "TIE\n\nBoth responses cover the key points accurately, but both go over the 120-word limit. By my count, Response A runs to about 133 words and Response B to about 127, so neither meets the constraint.\n\nA's headed layout is easier for a busy manager to skim and it names all three fixes. B is slightly closer to the limit, but it merges the fixes into a single clause. Neither advantage clearly outweighs the other, so I'm calling it a tie.",
+  "usage": {
+    "input": 1243,
+    "output": 2311
+  },
+  "cost": 0.025596
+}

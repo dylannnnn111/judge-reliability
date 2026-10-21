@@ -1,0 +1,14 @@
+{
+  "pair": "qa-09",
+  "side": "B",
+  "author": "sonnet",
+  "model": "claude-haiku-5-5",
+  "original": "The smaller angle at 3:15 is **7.5°**.\n\n- **Minute hand:** at 15 minutes it points at the 3, which is 15 × 6° = 90° from the 12.\n- **Hour hand:** at 3:00 it is at 90°. It moves 0.5° per minute, so after 15 minutes it is at 90° + 15 × 0.5° = 97.5°.\n- **Difference:** 97.5° − 90° = 7.5°.\n\nSince 7.5° is less than 180°, it is already the smaller angle.",
+  "text": "The smaller angle formed by the clock hands at 3:15 is **7.5°**.\n\nTo see how this result is reached, it helps to look at each hand separately and then compare their positions.\n\n- **Minute hand:** At 15 minutes past the hour, the minute hand points at the 3. Since each minute corresponds to 6° on the clock face, its position measured from the 12 is 15 × 6° = 90°.\n- **Hour hand:** At 3:00 the hour hand sits exactly at the 3, which is 90° from the 12. It keeps moving as time passes, advancing 0.5° per minute. After 15 minutes it has therefore moved a further 15 × 0.5° = 7.5° beyond the 3, placing it at 90° + 15 × 0.5° = 97.5°.\n- **Difference:** To find the angle between the two hands, we subtract their positions: 97.5° − 90° = 7.5°.\n\nFinally, we should confirm that this is the smaller of the two angles the hands form. Since 7.5° is less than 180°, it is already the smaller angle, so no further adjustment is needed.",
+  "ratio": 2.39,
+  "usage": {
+    "input": 363,
+    "output": 501
+  },
+  "cost": 0.00028680000000000003
+}

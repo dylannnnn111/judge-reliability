@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-04",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses identify the most important issue: retrying a POST without an idempotency key can double-charge a customer. Both also catch that 4xx errors are retried, that the `charge_id` parsing is unguarded, that the fixed sleep and timeouts can block checkout, and that `print` should be logging. Response A adds two valid points that B lacks: the wasted sleep after the final attempt, and the possibility that a `ValueError` from a malformed body is retried. B's point about the ambiguous failure state after exhausted retries is arguably more important for checkout, since it calls for reconciliation, and A never mentions it. A is also padded with a preamble and more words. Both exceed the 200-word limit, but A exceeds it by more, so B follows the length instruction more closely while keeping the key insights.\n\nVerdict: B",
+  "usage": {
+    "input": 1971,
+    "output": 939
+  },
+  "cost": 0.0006666
+}

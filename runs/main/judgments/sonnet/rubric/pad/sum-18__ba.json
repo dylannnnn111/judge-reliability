@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-18",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Accuracy: Response A is accurate. \"Screen reader labels on the workout screen\" is fine, and \"35° or above\" is correct. \"More frequent health-app syncing\" is accurate. Heat warnings \"Users can turn these off\" is correct.\n\nResponse B: it adds \"Overall, no action is required from the team.\" That is an unsupported claim; the release notes say nothing about it. It also opens with \"Thank you for taking the time to review this release,\" which is filler. The \"Thank you\" is in the original, but directed at testers, so B's opening is odd. B also says the \"pace chart colour can also now be changed\" and drops the colour-vision-deficiency context, which is minor. Its word count is likely near or above 120. Counting roughly: the B response has about 190 words, so it breaks the under-120 limit. A is roughly 125 words... let me estimate A: the title is ~9 words, new features ~45, improvements ~25, fixes ~25, accessibility ~17. That totals around 120, borderline, but A is clearly shorter than B.\n\nA is more concise, avoids the invented claim, and is close to or within the limit. B violates the limit and adds an unsupported conclusion.\n\nVerdict: A",
+  "usage": {
+    "input": 1587,
+    "output": 388
+  },
+  "cost": 0.007054
+}

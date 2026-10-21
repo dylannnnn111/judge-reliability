@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-02",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses reach the correct answer of 96 km/h, using the same method: total distance 320 km divided by total time 10/3 hours. Both also explain why the result is below the simple average of 100 km/h, and both identify it as the harmonic mean.\n\nThe user asked for an answer under 120 words. Response B is roughly 100 words and meets that limit. Response A runs to roughly 150 words, so it breaks the explicit constraint. Its extra opening and closing sentences add little that B lacks. Response B also gives the explicit harmonic-mean formula, which is a useful addition.\n\nVerdict: B",
+  "usage": {
+    "input": 867,
+    "output": 609
+  },
+  "cost": 0.00039119999999999997
+}

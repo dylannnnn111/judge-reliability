@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-20",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same four issues in the same order: the DST miscount, silent NaN on bad input, viewer-timezone dependence, and stale labels after midnight. Both give essentially the same UTC-based fix. The difference is in accuracy and polish.\n\n**Response A:**\n- It correctly states that the overdue list is unaffected by the DST bug, because the sign of the difference is always right. Due-yesterday on fall-back gives −25h, which is still negative, and spring-forward only turns tomorrow into 0, which is still not overdue.\n- Its spring-forward example is slightly muddled: \"3 days away is 71h, floor 2\" would read \"Due in 2 days\", not \"Due tomorrow\" becoming \"Due today\". The underlying bug is real, though, and the fall-back example is correct.\n- It is concise and has no filler.\n\n**Response B:**\n- Its DST examples are accurate: tomorrow gives 0.96 and floors to 0, and yesterday gives −1.04 and floors to −2.\n- It wrongly says the DST bug \"may land in the wrong place on the overdue list\". The sign is never wrong, so the list is unaffected. This is a false claim about the code's behavior.\n- It opens with odd meta-commentary (\"I've kept the explanations and the suggested fix as they were...\") that has no place in a review and wastes the word budget.\n- Its fix works, since the UTC difference is an integer and `Math.round` is offered as an alternative.\n- It spends words on framing like \"This is a second, separate problem\", which adds nothing.\n\nResponse A is more accurate and cleaner, and it avoids B's incorrect overdue-list claim. Its small example inconsistency is a lesser flaw than B's factual error and filler.\n\nVerdict: A",
+  "usage": {
+    "input": 1983,
+    "output": 1336
+  },
+  "cost": 0.017326
+}

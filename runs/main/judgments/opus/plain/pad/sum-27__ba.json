@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-27",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B** is better.\n\n**Length:**\n- **Response A** runs to roughly 200+ words, far over the 120-word limit. It also adds redundant phrasing (\"To summarise…\", \"I would kindly recommend…\").\n- **Response B** comes in at about 124 words counting the bold labels, or about 118 without them. That is essentially at the limit and close to compliant.\n\n**Voice:** Response A slips into the first person (\"I would kindly recommend\", \"We would kindly ask leadership\"). This makes it read as though the summariser is Marcus, or is speaking for him, which is confusing for a manager reading a summary of someone else's email. Response B correctly attributes the recommendation to Marcus throughout.\n\n**Accuracy:** Both capture the key points: the headline numbers, the free-month confound, the adjusted 2-point gap, the cost, Sales' overclaim, and the decision needed on 21 October. However, Response A shortens \"at least 60 days\" to \"a 60-day test\", losing a detail. Response B keeps \"at least 60 days\" and still makes the decision and timing clear.\n\n**Fit for the reader:** Response B is tighter, more accurate, and better suited to a busy manager.\n\n**B**",
+  "usage": {
+    "input": 1494,
+    "output": 1596
+  },
+  "cost": 0.037896
+}

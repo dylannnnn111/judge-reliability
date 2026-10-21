@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-24",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main bug: `processed.add` runs after the `await`, so simultaneous duplicates both get processed. Both also cover the non-durable in-memory `Set`, the timing-unsafe comparison, missing error handling, no amount validation and no replay protection.\n\n**Response A**\n- It gives the clearest fix for the top issue: claim the ID atomically before processing, use a DB unique constraint or insert-if-absent, and release the claim on failure so retries still work.\n- It catches the malformed JSON and missing `event.data` cases, and distinguishes 400 from 500 responses.\n- Its list is tighter, at roughly 230–240 words. That is over the 200-word limit but less so than B.\n\n**Response B**\n- It has a useful note that `timingSafeEqual` throws on mismatched lengths.\n- Its item 3 (crash between side effect and mark) largely overlaps with items 1 and 2, so it adds little.\n- It never states the core fix for the race (claim before processing). The fix only appears indirectly in the durability item.\n- It misses JSON parse errors.\n- At roughly 295 words, it goes well past the limit, and the extra length is mostly redundancy.\n\nA is more actionable on the most important bug, covers slightly more real issues, and is closer to the length constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 1681,
+    "output": 1316
+  },
+  "cost": 0.016522
+}

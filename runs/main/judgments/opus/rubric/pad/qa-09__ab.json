@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-09",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.** Both responses reach the correct answer of 7.5° and use the same sound reasoning:\n- The minute hand is at 90°.\n- The hour hand has advanced 0.5° per minute past the 3, putting it at 97.5°.\n- The difference is 7.5°.\n\n**Correctness and reasoning.** These are equal. Each response explains the key point that the hour hand moves past the 3 during those 15 minutes.\n\n**Instruction-following.** This is where they differ. The user asked for an answer under 120 words. Response A uses roughly 40 words. Response B runs to about 170 words, which breaks the explicit constraint. Its extra words also add little. The final check that 7.5° is under 180° is trivially obvious, and the transitional sentences are filler.\n\n**Clarity.** Response A conveys the same essential reasoning more efficiently.\n\nVerdict: A",
+  "usage": {
+    "input": 761,
+    "output": 413
+  },
+  "cost": 0.011304
+}

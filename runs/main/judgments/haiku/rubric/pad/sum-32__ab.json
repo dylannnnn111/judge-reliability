@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-32",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both summaries are factually accurate. Each correctly states the 5.79% rate as the standard variable rate less a 0.90% discount, the August 0.25% rise to 6.04%, that Jordan's 12 May email locked only the discount, the $250 goodwill payment, and the customers' continued sense of being misled. Both also exceed the 120-word limit, Response A by more. Response A includes the package-account condition, which Response B omits, but it is the more verbose of the two. Response B's labelled sections (Issue, Our position, Outcome, Risk) let a busy manager scan the case quickly. Response A's flag that the closure may be premature is a useful point, but B's risk line conveys the same concern about possible AFCA escalation more compactly. On balance, Response B is the better fit for the brief.\n\nVerdict: B",
+  "usage": {
+    "input": 1670,
+    "output": 961
+  },
+  "cost": 0.0006475
+}

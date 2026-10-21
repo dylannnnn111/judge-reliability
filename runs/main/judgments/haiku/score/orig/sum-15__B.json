@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-15",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate on every figure and condition I checked: 96 workers, the 3am 20-minute nap, the 22% drop in lane drifting, the 0.09-second reaction gain, the tenure split (over 6 months vs under 3 months), the grogginess for about 15 minutes, the 7am vs 6am doubling, the caveats, and the takeaway. It keeps the points a manager needs: the overall effect, who it helps, the bigger timing effect, and the policy implication. The main weakness is length. My rough count puts it at about 120 words including the title, so it sits at the limit rather than clearly under it. It also drops the sleep-lab setting and the randomised crossover design, which a manager might not need. The formatting is clean and easy to scan.\n\nScore: 8",
+  "usage": {
+    "input": 1084,
+    "output": 832
+  },
+  "cost": 0.0005244
+}

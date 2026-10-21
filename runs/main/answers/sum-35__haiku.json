@@ -1,0 +1,13 @@
+{
+  "item": "sum-35",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "Clause 19 requires us to return Level 2, 48 Fenwick Street to its starting condition, per the Annexure C condition report, allowing for fair wear and tear, by 30 June 2027. Required work includes removing furniture, signage, equipment and the 2023 glass partitions, repairing damage, professionally cleaning carpets, and returning all keys and access cards.\n\nThe 2023 kitchenette can stay only if it's in good working order at lease end. Otherwise, we must repair or remove it.\n\nThe landlord may instead accept a payment based on two quotes, but must notify us at least three months before lease end.\n\nLate completion may incur rent for extra days. The $18,000 bond is returned within 30 days of make good being confirmed.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 707,
+    "output": 1778
+  },
+  "cost": 0.0009597000000000001,
+  "at": "2026-10-14T01:52:30.731Z"
+}

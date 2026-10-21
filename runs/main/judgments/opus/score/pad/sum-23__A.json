@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "sum-23",
+  "side": "A",
+  "score": 4,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** The facts are correct. Dates, times, numbers, names and responsibilities all match the minutes: footpath from February for about six weeks, playground in April, canopy feedback due 31 October, $5,610 balance, 142 households, Clean Up Day on 15 November at 8am, carols on 12 December at 6:30pm with up to $900, and the right people assigned. The minutes say *renewals* are up, and the summary says *membership* is up. That is a minor paraphrase, not a real error. Nothing misleading.\n\n**Coverage:** All the key points a manager needs are there: council projects, finances, decisions, actions and the next meeting.\n\n**Concision and the limit:** This is where it fails badly. The response is roughly 190–200 words against a hard limit of under 120. Much of the excess is filler that adds nothing:\n- \"Thank you all for attending…\", which is also oddly addressed to attendees rather than a manager who wasn't there\n- \"Cr Tse kindly provided the following update…\"\n- \"The meeting reached the following decisions.\"\n- Wordy restatements such as \"this will take place on\" and \"is planned for\"\n\nRemoving these would easily have brought it under 120 words with no loss of content. Breaking an explicit length limit by about 60% is a significant failure of the brief, even though the content is accurate.\n\nScore: 4",
+  "usage": {
+    "input": 1347,
+    "output": 939
+  },
+  "cost": 0.024168
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-27",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is accurate. It correctly attributes the density drop to the open hexagonal lattice that forms on freezing, gives roughly 9% less density, and explains that deeper water stays near 4°C, the temperature of maximum density. Its lake-life explanation (insulation, liveable liquid layers beneath the ice, and the bottom-up freezing that would result if ice sank) is correct and complete. It is about 105 words, under the limit.\n\nResponse B covers similar ground but contains a conceptual error. It says molecules begin forming the lattice \"as water cools below about 4°C,\" but the lattice forms at freezing (0°C). The 4°C point relates to density maximum and stratification, not lattice formation. B's count is also about 124 words, which exceeds the 120-word limit. Its stratification point is valid, but it does not offset the error and the length violation.\n\nA is correct and within the limit, while B has a reasoning error and exceeds the word cap.\n\nVerdict: A",
+  "usage": {
+    "input": 749,
+    "output": 1028
+  },
+  "cost": 0.0005889
+}

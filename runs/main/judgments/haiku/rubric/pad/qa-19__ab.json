@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-19",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct answer: \"kangaroo\" comes from *gangurru* in Guugu Yimithirr, referring to the grey kangaroo, and the \"I don't understand\" story is a myth. Both mention Cook's 1770 encounter and Haviland's documentation. Response B adds a plausible explanation for how the myth arose and why it persists, which is useful reasoning. However, B runs roughly 170 words, well over the requested \"under 120 words.\" Response A stays within the limit (about 105 words) while covering the essential facts and the myth's basis. Since the two are equally correct, A's compliance with the explicit length constraint makes it the better response.\n\nVerdict: A",
+  "usage": {
+    "input": 886,
+    "output": 769
+  },
+  "cost": 0.0004731
+}

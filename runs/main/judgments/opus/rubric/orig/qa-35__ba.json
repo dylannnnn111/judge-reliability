@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-35",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.**\n\n**Correctness:** Both are accurate on the core science. Antibiotics target bacterial structures, such as cell walls, ribosomes and enzymes, that viruses lack. Resistance arises through mutation or horizontal gene transfer followed by natural selection.\n\n- **Response A** adds correct concrete examples: penicillin for cell walls, tetracyclines for ribosomes, fluoroquinolones for DNA enzymes.\n- **Response B** adds resistance mechanisms (drug destruction, efflux pumps, target alteration), which is useful. However, it cites \"not finishing courses\" as a driver of resistance. That claim is now contested in the medical literature.\n\n**Constraint compliance:**\n\n- **Response A** is about 90 words, well under the 120-word limit.\n- **Response B** is 121 words counting its bold headers, so it slightly exceeds the limit. Even without the headers, it is near the edge.\n\n**Reasoning and clarity:** Both explain the key logic clearly. B's extra detail is partly valuable, but it does not outweigh the length violation and the questionable claim. A covers everything essential concisely and correctly.\n\nVerdict: A",
+  "usage": {
+    "input": 797,
+    "output": 1789
+  },
+  "cost": 0.038968
+}

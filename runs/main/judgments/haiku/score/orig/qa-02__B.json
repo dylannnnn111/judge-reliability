@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-02",
+  "side": "B",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response gives the correct answer. Total distance is 320 km, and total time is 2 h + 4/3 h = 10/3 h, so the average speed is 320 ÷ (10/3) = 96 km/h. The harmonic mean check also holds: 2·80·120/(80+120) = 96. The step-by-step working is clear and shows the key reasoning, namely that the slower leg takes more time, so the simple average of 100 km/h is wrong. It is well under 120 words, and the extra note on the harmonic mean adds useful insight without padding.\n\nScore: 9",
+  "usage": {
+    "input": 422,
+    "output": 283
+  },
+  "cost": 0.0001837
+}

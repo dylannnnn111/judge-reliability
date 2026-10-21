@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-05",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate on the key numbers: 214 workers, 12 weeks, no significant difference in speed or accuracy, discomfort at 31% vs 44%, standing time falling from 47 to 19 minutes, and the unblinded design. Both are under 120 words.\n\nResponse A is more precise about the self-reported feelings. It says 78% *felt* more productive, which matches the brief's point that this was perception, not measured output. Response B lists that 78% figure under \"Benefits found,\" which could lead a busy manager to read it as a performance gain, even though its bottom line says output did not improve. A also gives the manager a clear takeaway: justify the desks on comfort and health rather than productivity. That follows from the brief's own interpretation that back discomfort was the most reliable benefit. B is slightly tighter and easier to scan, but it omits that recommendation and blurs the felt-versus-measured distinction.\n\nVerdict: A",
+  "usage": {
+    "input": 1371,
+    "output": 839
+  },
+  "cost": 0.0005566
+}

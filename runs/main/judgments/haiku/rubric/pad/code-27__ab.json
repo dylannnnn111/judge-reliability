@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-27",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is better. Its top issues are the real ones: unbounded concurrency from `Promise.all` over 80,000 sends, the lack of per-send outcome tracking that makes reruns resend to people already mailed, and the misleading `emails.length` return value. Each comes with a concrete fix. It also raises the null-email crash, missing retries, and a cursor loop guard, and it adds trimming before dedupe. Its ordering is sensible.\n\nResponse B covers much of the same ground, and its suppression-list point is a legitimate compliance concern, though it rests on an assumption about the data source. It is also padded: a filler opener, repeated points about retries and concurrency, and a minor note about lowercasing the local part. At roughly 340 words it clearly breaks the 200-word limit, while Response A stays near it.\n\nVerdict: A",
+  "usage": {
+    "input": 1830,
+    "output": 932
+  },
+  "cost": 0.000649
+}

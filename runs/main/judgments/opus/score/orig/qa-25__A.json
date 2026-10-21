@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-25",
+  "side": "A",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The answer is correct: Viking warriors did not wear horned helmets.\n\n**Correctness:** The supporting facts hold up.\n- The Gjermundbu helmet (10th-century Norway) is the only fairly complete Viking-age helmet found, and it has a spectacle guard. The qualifier \"fairly complete\" correctly allows for fragmentary finds such as the Yarm helmet.\n- Carl Emil Doepler's costumes for the 1876 Bayreuth *Ring* are the standard explanation for the popular image.\n- Bronze Age horned helmets such as the Veksø helmets are generally considered ceremonial.\n- The claim about leather caps is speculative but properly hedged with \"likely.\"\n\n**Reasoning:** It covers what matters: the archaeological evidence, the origin of the myth, and the kernel of truth behind it.\n\n**Clarity and length:** It is well organized under clear headers and comes to roughly 118 words, just inside the 120-word limit. There is no padding. A very minor nitpick is that the word count runs tight against the limit.\n\nScore: 9",
+  "usage": {
+    "input": 478,
+    "output": 795
+  },
+  "cost": 0.017812
+}

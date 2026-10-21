@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-30",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate on every checked detail: the 410 frequency change, the 412's route, span and hours, the 408 removal and its nine-passenger average, the early-start concern and the authority's response, the unchanged fares, the 19 January start, and the December delivery and stall dates and times. It stays well under 120 words and is easy to scan. It omits the reason for the changes (consultation requests and the school and job needs) and the Mill Flat resident's perspective, but a busy manager would not need either. The only real trade-off is that a line on the consultation rationale would add context, but the response is already concise and complete on the essentials.\n\nScore: 9",
+  "usage": {
+    "input": 1120,
+    "output": 547
+  },
+  "cost": 0.0003855
+}

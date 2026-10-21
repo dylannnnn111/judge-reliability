@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-32",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer: 1900 was divisible by 100 but not by 400, so it was a common year, while 2000 was divisible by 400, so it was a leap year.\n\nResponse A is about 85 words, well under the 120-word limit. It covers the core reasoning: the year is about 365.2422 days, a leap day every four years compensates, and the century rule corrects the small excess. It is a bit thin on why the four-year rule overcorrects.\n\nResponse B explains the overcorrection more fully, noting about 11 minutes a year and roughly 3 days per 400 years. It also mentions the Gregorian calendar. But it comes to roughly 120–125 words by my count, which puts it at or over the explicit limit. Its formatting also adds length. Its extra content is correct and useful, but the user set a hard word constraint.\n\nSince both are correct, the deciding factor is the length constraint. A meets it clearly and still gives the key reasoning, while B likely exceeds it.\n\nVerdict: A",
+  "usage": {
+    "input": 702,
+    "output": 1416
+  },
+  "cost": 0.015564
+}

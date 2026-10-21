@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-16",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same core issues: the `sortByPrice` mutation, missing input validation, the need for server-side recomputation, brittle discount matching, and `formatAud` edge cases. Both give fixes.\n\n**Response A** is tighter and mostly accurate. Its top item, GST being \"likely double-counted\", is speculative, since the code's `GST_RATE` suggests exclusive pricing was intended. It does hedge with \"confirm whether\", though, and gives the fix if prices are inclusive. Ranking an assumption above the concrete mutation bug is a questionable order. It is around the 200-word limit, perhaps slightly over. Its other items are real, and it flags nothing that is actually fine.\n\n**Response B** puts the mutation bug first, which is a sensible ordering, and it covers the hardcoded code and expiry. But it has several problems:\n- It is well over the 200-word limit and opens with filler (\"Thank you for sharing this code…\", \"It is worth noting…\", \"Please note\").\n- Its rounding item is dubious. The suggested `Math.round(subtotalCents * 10 / 100)` is no more accurate than the original, and the floating-point misrounding claim is weak.\n- The `==` versus `===` complaint is trivial for string comparison.\n- It puts the GST-inclusive question last, as a vague \"verify\".\n\nResponse A follows the brevity constraint better and has fewer weak or false flags, though its ordering is imperfect. Response B's padding and spurious rounding advice outweigh its slightly better top item.\n\nVerdict: A",
+  "usage": {
+    "input": 1879,
+    "output": 1007
+  },
+  "cost": 0.013828
+}

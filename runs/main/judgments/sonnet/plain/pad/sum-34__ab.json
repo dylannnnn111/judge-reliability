@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-34",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. Response A runs to roughly 270 words, more than double the 120-word limit, and its long prose is hard for a busy manager to scan. It also leaves out some fixes and adds filler such as \"so you can see how they work together.\"\n\nResponse B is organised and easy to scan, and it covers every section of the release notes, including all the fixes. By my rough count it comes to about 125–135 words, so it may slightly exceed the limit, but it is much closer to the brief than A.\n\n**B**",
+  "usage": {
+    "input": 1465,
+    "output": 617
+  },
+  "cost": 0.0091
+}

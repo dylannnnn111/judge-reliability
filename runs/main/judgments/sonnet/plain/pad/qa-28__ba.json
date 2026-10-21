@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-28",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** Response A is far closer to the \"under 120 words\" limit. By my count it runs to about 123 words, so it slightly exceeds the limit. Response B runs to roughly 190 words, so it breaks the constraint by a wide margin.\n\nBoth responses cover chaining, open addressing, average versus worst-case performance, and resizing. A also adds amortized O(1) insertion, while B adds the O(log n) tree-bucket worst case and the clustering note. A is also more concise and has no filler opener, whereas B begins with \"Let me explain how collisions work.\"",
+  "usage": {
+    "input": 817,
+    "output": 1256
+  },
+  "cost": 0.014194
+}

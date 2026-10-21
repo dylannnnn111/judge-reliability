@@ -1,0 +1,14 @@
+{
+  "pair": "sum-12",
+  "side": "B",
+  "author": "sonnet",
+  "model": "claude-haiku-5-5",
+  "original": "**Summary:** From 1 November, Tallis Valley Hospital will raise parking fees. The first hour stays free, then the hourly rate goes from $3 to $4 and the daily cap from $18 to $24. The health service says the money will fund repairs to the 1994 car park, where concrete cancer has closed 180 spaces. Repairs should take 18 months.\n\nA new $15 weekly concession pass will replace the current $9 daily concession. It is open to frequent visitors, such as chemotherapy and dialysis patients, and to carers of patients staying more than seven days. Applicants need a letter from their treating team. Forms will be available from 20 October at reception and online.\n\nStaff are unaffected. A petition for free regional hospital parking has over 2,000 signatures.",
+  "text": "**Summary:** I would like to let you know that, starting on 1 November, Tallis Valley Hospital will be raising its parking fees. Under the new arrangement, the first hour will remain free. After that, the hourly rate will increase from $3 to $4, and the daily cap will rise from $18 to $24. According to the health service, the additional revenue will be used to fund repairs to the 1994 car park, where concrete cancer has closed 180 spaces. The repairs are expected to take 18 months to complete.\n\nTurning to concessions, the current $9 daily concession will be replaced by a new $15 weekly concession pass. This pass is intended for frequent visitors, such as chemotherapy and dialysis patients, as well as for carers of patients who are staying more than seven days. To apply, applicants will need a letter from their treating team. Application forms will be available from 20 October, and they can be collected at reception or downloaded online.\n\nFinally, I want to reassure you that staff are unaffected by these changes. For your information, a petition calling for free regional hospital parking has so far gathered over 2,000 signatures.",
+  "ratio": 1.53,
+  "usage": {
+    "input": 875,
+    "output": 1299
+  },
+  "cost": 0.000737
+}

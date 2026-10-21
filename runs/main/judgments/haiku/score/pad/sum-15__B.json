@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-15",
+  "side": "B",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The response is largely accurate. The 22% drop in lane drifting, the 0.09-second reaction-time gain, the under-three-month group, the 7am versus 6am comparison, and the caveats all match the source. The one small slip is \"6 or more months\" where the source says \"more than six months.\" Its main points are complete: the overall benefit, who did and didn't benefit, the timing effect, the takeaway, and the limitations.\n\nThe main failure is length. The user asked for under 120 words, but the response runs to roughly 250 to 270 words, more than double the limit. The extra words are mostly headings, bullet framing and repetition, not new useful content, so a busy manager gets a longer read than requested. Accuracy is high and coverage is good, but ignoring an explicit length limit by this margin is a serious instruction-following failure.\n\nScore: 4",
+  "usage": {
+    "input": 1252,
+    "output": 779
+  },
+  "cost": 0.0005147000000000001
+}

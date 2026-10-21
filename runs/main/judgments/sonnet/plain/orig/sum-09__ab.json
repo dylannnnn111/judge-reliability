@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-09",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** Both responses run slightly over the 120-word limit by my count, but A is closer at about 127 words against about 131 for B. The two are otherwise accurate and similar in content. A also states that the lease is five years and gives examples of what outgoings cover. B omits both of those details.\n\nA",
+  "usage": {
+    "input": 1349,
+    "output": 2040
+  },
+  "cost": 0.023098
+}

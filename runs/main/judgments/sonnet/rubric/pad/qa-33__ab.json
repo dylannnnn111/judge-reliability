@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-33",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer in under 120 words. Response A is about 90 words, so it complies. Response B runs well over 200 words, so it violates the constraint.\n\nBoth are factually correct. Both cover tidal locking, the 27.3-day period, libration giving about 59% visibility, and the far side getting sunlight. A has one small imprecision: it says the spin period matches the orbital period, which is correct. It also says \"Billions of years ago,\" which is fine.\n\nCorrectness is a tie, and both give the key reasoning, with B more detailed on the tidal bulge mechanism. But B breaks an explicit length limit, which is a significant instruction-following failure. A is clear, concise, and compliant.\n\nVerdict: A",
+  "usage": {
+    "input": 856,
+    "output": 234
+  },
+  "cost": 0.004052
+}

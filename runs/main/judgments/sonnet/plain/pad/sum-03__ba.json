@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-03",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. The request asked for under 120 words, and A overshoots that by a wide margin. B is also over, but only slightly.\n\n- **Length:** By my count, A runs to about 160 words. B comes to about 125, so it is also marginally over the limit but much closer.\n- **Content:** Both cover the key facts: the window, roughly half of payments failing, the expired pinned certificate, the 451 lost orders and $41,900 estimate, the support spike, slow detection and the fixes.\n- **Readability:** B's labelled sections are easier for a busy manager to scan. A has filler such as \"To show the scale of the incident, here is its impact\" and \"brought to light through support escalation, which led to the fix.\"\n- **Accuracy:** B is accurate. A is also accurate but wordier.\n\n**B**",
+  "usage": {
+    "input": 1534,
+    "output": 1552
+  },
+  "cost": 0.018588
+}

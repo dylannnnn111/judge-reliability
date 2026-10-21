@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-11",
+  "side": "A",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The response identifies the most important real bug: `reserve` checks stock under one lock acquisition, then decrements under a second without rechecking, so overselling is possible. It correctly ranks this first and gives a valid fix. The cross-process point is also real, since `threading.Lock` doesn't protect multiple processes or servers, and the DB read-modify-write is racy. The atomic conditional `UPDATE` is a sound fix. The negative-quantity issue (which adds stock) is a genuine, practically important bug, and the release/abandoned-cart observation is a reasonable design concern. The global-lock bottleneck and the `None` handling are valid but lower priority, and the ordering is sensible. The response doesn't flag anything that is fine. Its weaknesses are minor: it's probably slightly over the 200-word limit, and it doesn't mention that the lock in `available` is redundant. Overall, the coverage and ranking are strong, with a small length violation.\n\nScore: 7",
+  "usage": {
+    "input": 995,
+    "output": 1024
+  },
+  "cost": 0.0006115
+}

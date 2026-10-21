@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-19",
+  "side": "B",
+  "score": 8,
+  "model": "claude-opus-5-5",
+  "text": "The summary is accurate on nearly every point. The core facts match the source:\n\n- Written consent is required, and the landlord cannot refuse unreasonably.\n- The landlord has 28 days to respond.\n- The assignment conditions are correct: two years of accounts, a three-month rent bank guarantee, and legal costs of $1,500–$3,000.\n- The 30% sublet cap is correct, as are the requirements that subleases end before the head lease and allow no structural changes.\n- A change of control counts as an assignment.\n\nThe most important point, ongoing liability after assignment, is correctly flagged as the key risk. It is properly tied to the lease not being a retail lease.\n\nThere are a few small precision losses:\n\n- **Liability overstated.** The response says \"we remain liable for the full remaining term.\" The source says you \"can\" or \"could\" remain liable, so this states as certain what the source frames as possible. It also drops the guarantor, who is likewise exposed.\n- **Costs range hardened.** The source says costs are \"usually\" between $1,500 and $3,000. The response presents this as a fixed range.\n- **Word count.** The bullets are about 118 words, but with the title the total is about 128, slightly over the 120-word limit.\n\nOn coverage, the useful action point (negotiate a release before any sale) is kept. Omitting the agent contact and the guide-only caveat is reasonable for a busy manager. The response is concise and well structured, with no wasted words.\n\nThese are minor issues, not real errors. The response serves the reader well.\n\nScore: 8",
+  "usage": {
+    "input": 1190,
+    "output": 1943
+  },
+  "cost": 0.04362
+}

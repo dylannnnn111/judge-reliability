@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-33",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are accurate and both include the 29 October update moving the shutdown to 31 January 2027. By my count both run slightly over the 120-word limit, A at about 129 words and B at about 127, so length doesn't separate them.\n\nThe difference is structure. A puts the action item first, which suits a busy manager because it is the only part that could cause real harm (late pay). B puts it last, though it does say up front that most customers need to do nothing. B also drops the Admin > Integrations > Payroll (v1) path, which helps a reader check whether they are affected, while A keeps it. A's \"Action required (if applicable)\" heading also signals that it may not apply to everyone.\n\nA is slightly better because it leads with the item that needs attention.\n\nA",
+  "usage": {
+    "input": 1402,
+    "output": 1396
+  },
+  "cost": 0.016764
+}

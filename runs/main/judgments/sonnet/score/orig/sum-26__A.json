@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-26",
+  "side": "A",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is mostly accurate but breaks the explicit limit of under 120 words, running to about 150.\n\n**Accuracy:** The facts are largely correct. Small looseness:\n- \"Within an hour\" is borderline, since release at 8:50 was exactly 60 minutes after the 7:50 stoppage.\n- \"Carried down the stairs\" is a bit stronger than \"helped down the stairs using an evacuation chair\".\n- \"All residents received notices\" should say Tower B residents.\n\nNone of these changes the meaning much.\n\n**Coverage:** It keeps the key points: the incident, the cause, the outage length, the resident impact, the follow-up actions, the cost and approval, and the committee's request. It omits the reason for the spare part, which is same-day repair. It also omits the 26 September approval date, which is minor.\n\n**Concision:** The length limit was explicit, and the response overshoots it by roughly 30 words. For a busy manager, that is a clear failure of the instruction. The resident-impact and feedback details could have been trimmed.\n\nScore: 4",
+  "usage": {
+    "input": 1148,
+    "output": 993
+  },
+  "cost": 0.012226
+}

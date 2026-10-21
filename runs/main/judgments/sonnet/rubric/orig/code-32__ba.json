@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-32",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same four real bugs and rank them similarly: the `BETWEEN` end-date bug that drops September 30, integer-division truncation, NULL/overbroad status handling, and the inner join with a redundant `HAVING`. Both also give correct fixes for the first two and raise timezone and hardcoded dates.\n\n**Response A:**\n- It adds a diagnostic point on `AVG` that is slightly muddled. It says to guard against division by zero, then says `AVG` returning NULL is fine.\n- The `ORDER BY` tiebreaker is a nitpick.\n- It runs well over the 200-word limit, at roughly 290 words.\n- It hedges appropriately on the status question (\"confirm whether cancelled or failed orders should count\").\n- It names the dialects affected by integer division, which is accurate.\n\n**Response B:**\n- It is tighter, at roughly 230 words. That is still over the limit but closer.\n- It suggests a concrete status whitelist, but the statuses `'paid'` and `'fulfilled'` are invented, and \"ignores partial refunds\" is speculative.\n- It correctly notes that if zero-revenue stores aren't wanted, the `HAVING` should simply be deleted.\n- It has no filler items.\n\nOverall, B is more concise and has less noise. A's hedging on status is a little better, but its tiebreaker nitpick and muddled `AVG` remark offset that. B's speculation is minor.\n\nVerdict: B",
+  "usage": {
+    "input": 1830,
+    "output": 1243
+  },
+  "cost": 0.01609
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-19",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses run slightly over the 120-word limit, by roughly the same margin (about 127 to 130 words each), so length doesn't separate them. On accuracy, both capture the key points: written consent, the buyer requirements, the 28-day response period, the 30% sublet cap, and change of control. Response A hedges the liability correctly (\"possibly for the rest of the term\") but says Brightside \"may stay liable for rent after an assignment,\" which omits that liability arises only if the buyer defaults. Response B states the default trigger (\"if the buyer defaults\") but says \"we remain liable for the full remaining term,\" which is somewhat more definite than the source. Response B is also easier for a busy manager to scan, with the action item clearly separated. Overall Response B is slightly better, mainly on clarity and the precision of the default trigger.\n\nVerdict: B",
+  "usage": {
+    "input": 1515,
+    "output": 2596
+  },
+  "cost": 0.0014495
+}

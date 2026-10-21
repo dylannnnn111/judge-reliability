@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-22",
+  "side": "A",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly answers \"No\" and identifies the key reasoning: the Coriolis effect is too weak at the scale of a sink or toilet, and local factors such as basin shape, jet angle, residual motion, and asymmetries determine drainage direction. It also accurately notes that the Coriolis effect has only been demonstrated in very controlled experiments. Its clarity is good.\n\nHowever, the user explicitly asked for an answer under 120 words. My count is roughly 175 words, so the response clearly violates a stated constraint. The third paragraph's details about controlled experiments add some value, but they don't justify exceeding the limit. The core answer and reasoning are sound, so the score reflects a strong response undercut by a significant instruction violation.\n\nScore: 5",
+  "usage": {
+    "input": 551,
+    "output": 867
+  },
+  "cost": 0.0004886000000000001
+}

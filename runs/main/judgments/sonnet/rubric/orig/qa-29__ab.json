@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-29",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are correct on the numbers: $1,000 at 5% for 30 years gives $2,500 with simple interest (principal plus $1,500) and $1,000 × 1.05^30 ≈ $4,321.94 with compounding.\n\nThe constraint is under 120 words, so I need to count each response.\n\nResponse A: \"Compound interest beats simple interest over long periods because it pays interest on previously earned interest, not just the original principal.\" (21 words) \"With simple interest, you earn a fixed amount each period, so growth is linear.\" (14) → 35. \"With compound interest, each period's earnings are added to the balance and start earning returns themselves, so growth accelerates over time.\" (21) → 56. \"The longer the horizon, the more these \"interest on interest\" effects accumulate, and the gap between the two grows exponentially rather than steadily.\" (23) → 79. \"For example, $1,000 at 5% for 30 years yields $2,500 with simple interest but about $4,322 with annual compounding.\" (19) → 98. So A is about 98 words, under 120.\n\nResponse B: first line: \"Compound interest wins because you earn interest on your interest, not just on your original deposit.\" (16). Bullet 1: \"Simple interest grows linearly. On $1,000 at 5%, you earn $50 every year, forever. After 30 years: $2,500.\" (~19) → 35. Bullet 2: \"Compound interest grows exponentially. Each year's interest is added to the balance, so next year's 5% applies to a larger amount. After 30 years: about $4,322.\" (~27) → 62. Paragraph: \"Early on, the difference is small. But each year the compounding balance gets bigger, so the gap widens faster and faster. Time is the key ingredient: the longer the period, the more cycles of \"interest on interest\" occur.\" (~38) → 100. Rule of 72: \"A handy shortcut is the Rule of 72: divide 72 by the interest rate to estimate the doubling time (72 ÷ 5 ≈ 14 years).\" (~24) → 124. B is around 124 words, which likely exceeds the limit.\n\nSo B probably violates the word limit, while A complies. Even with a counting margin, B is close to or over the limit and adds a tangent (Rule of 72) that isn't needed. A is concise and complete.\n\nVerdict: A",
+  "usage": {
+    "input": 721,
+    "output": 760
+  },
+  "cost": 0.009042
+}

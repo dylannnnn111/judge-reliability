@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-32",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses break the 120-word limit. Response A runs to about 165 words and Response B to about 190, so A is closer to compliance.\n\n**Accuracy:** Response A is accurate throughout. It keeps the key figures: 5.79%, 6.04%, the 0.90% discount, the 0.25% rise, $250, and the 12 May email. It also keeps the customers' refund request and the fixed-rate call. Its \"risk\" line is a reasonable inference. Response B says the customers \"have not accepted the outcome\", which overstates things, because they accepted the $250 while still feeling misled. B's \"Following this, the complaint was closed as resolved and referred to the lending team\" also muddles the sequence slightly. B leaves out the customers' demand for a refund.\n\n**Content:** Both cover the core points. A's labelled sections (Issue, Position, Outcome, Risk) suit a busy manager better. B includes the package-account condition, which is a small plus.\n\n**Concision:** B opens with filler (\"I would like to take a moment to summarise...\") and is longer, while A is tighter.\n\nA is better on accuracy, structure and concision.\n\nVerdict: A",
+  "usage": {
+    "input": 1670,
+    "output": 1440
+  },
+  "cost": 0.01774
+}

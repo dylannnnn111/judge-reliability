@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "sum-35",
+  "side": "A",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is mostly accurate and covers the main points: the Annexure C standard, the 30 June 2027 deadline, the removal and repair tasks, the conditional kitchenette exception, the payment option with three months' notice, the extra rent risk, and the $18,000 bond.\n\n**Accuracy**\n- It says the payment is \"calculated on the basis of two quotes\". The text says the amount is the landlord's reasonable estimate, supported by two quotes. This is a small distortion.\n- It leaves out that patching and painting walls is part of the repair duty, and that the landlord's written consent is the basis for the kitchenette exception.\n- Saying \"we\" is a reasonable framing for the tenant.\n\n**Concision**\n- The user set a hard limit of under 120 words. I count roughly 155 words, so the response clearly breaks the constraint.\n- Filler such as \"Turning to... specifically\", \"Alternatively\" and \"Finally, please note\" adds length without adding information.\n\nThe clear word-limit breach and the slight misstatement about the quotes bring the score down significantly.\n\nScore: 4",
+  "usage": {
+    "input": 1202,
+    "output": 1456
+  },
+  "cost": 0.016964
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-27",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better, mainly because it meets the word limit and A does not.\n\n**Accuracy:** Both responses report the figures correctly: 81% vs 74%, 60% on the free-month promotion, 78% vs 76% among customers who paid from day one, $95 per session, about $410,000 a year, a 60-day test, a November start, and the 21 October meeting. Neither distorts the sales claim or the recommendation. B frames the decision more clearly as \"Decision needed\", which fits Marcus's request for agreement at that meeting.\n\n**Constraint:** I counted A at roughly 124 words, which breaks the \"under 120 words\" instruction. B comes to about 114 and stays within it.\n\n**Content:** B also adds the August–September timing and states the verdict up front as \"inconclusive\". A leaves this implicit.\n\n**Concision:** B is tighter and opens with the bottom line for a busy manager.\n\nVerdict: B",
+  "usage": {
+    "input": 1514,
+    "output": 1944
+  },
+  "cost": 0.022468
+}

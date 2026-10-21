@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-16",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly identifies Antarctica as the largest desert, at about 14 million km². It also gives the key reasoning: a desert is defined by low precipitation rather than heat, which is why polar deserts count. The Arctic figure (~13.9 million km²) and the Sahara comparison are reasonable and accurate, and the Sahara is roughly the size of the US. The answer is well under 120 words, and the bulleted layout is clear. The extra comparisons add useful context, though they go slightly beyond the direct question.\n\nScore: 9",
+  "usage": {
+    "input": 395,
+    "output": 401
+  },
+  "cost": 0.00024
+}

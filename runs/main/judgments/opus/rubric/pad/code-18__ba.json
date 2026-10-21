@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-18",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Real issues and coverage.** Both responses lead with the most important bug: the cache key ignores `to`, so AUD→USD and AUD→EUR share one cache entry. Both give the correct fix, `fx:${from}:${to}`. Both also correctly flag:\n- missing response validation,\n- no fetch timeout,\n- thundering herd on cache miss,\n- unencoded query parameters,\n- unbounded cache growth.\n\n**Ranking and fixes.** The rankings are essentially equivalent and both reasonable. B's fixes are slightly better in two places:\n- **Promise caching:** B adds \"evict it if it rejects.\" Without that, a cached rejected promise would poison the key for the full TTL.\n- **Parameter validation:** B suggests checking the currency codes against ISO 4217.\n\n**Extra points.** Here the two diverge:\n- **B's money-precision note** is directly relevant to an invoicing service and is useful advice for the caller.\n- **A's \"unsafe generic cast\" point** is low value. The `unknown`-to-`T` cast is a common, acceptable pattern for a generic cache helper, and it causes no real bug here. It edges toward flagging something that is fine.\n\n**Instruction following.** The user asked for under 200 words. B is roughly at that limit. A is close to double, padded with filler (\"Here are the issues I found,\" \"As a consequence,\" \"it would be prudent to\"). The extra length adds no correct content beyond what B says.\n\n**Conclusion.** B covers the same important issues and adds a more relevant extra point and a key nuance in a fix. It also respects the length constraint far better.\n\nVerdict: B",
+  "usage": {
+    "input": 1802,
+    "output": 766
+  },
+  "cost": 0.022528
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-22",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better, mainly because it respects the word limit and B does not.\n\n**Accuracy:** Both are accurate on the figures, dates and decisions. Response B says \"The rise covers a 9% increase\", which slightly overstates things, since the same summary notes a $3,200 shortfall remains. Response A's \"to offset\" is looser and safer. B's \"mostly due to cost\" fairly reflects \"most common reason given\".\n\n**Coverage:** Both include the fee decision, the shortfall and grant, the grounds actions, presentation night, the gazebo and the next meeting. B adds the 5-0 vote and Natalie organising trophies, which are minor details. A omits the vote count but keeps everything a manager needs.\n\n**Concision and constraint:** A comes to about 108 words. B comes to about 129, which breaks the \"under 120 words\" instruction. The extra detail in B does not justify going over the limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1571,
+    "output": 1201
+  },
+  "cost": 0.015152
+}

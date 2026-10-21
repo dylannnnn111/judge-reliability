@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-18",
+  "side": "B",
+  "score": 8,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate on the points that matter. It gets the date, the 35° threshold, the 15% battery figure (limited to recent phones), the Monday email and the opt-out for heat warnings right. It also covers every section, and the thank-you and help-centre lines are rightly dropped. I count about 117 words, so it meets the limit, though only just.\n\nSmall weaknesses:\n- It drops \"some\" from the New Zealand time zone fix, so it reads as if all NZ users were affected.\n- It drops \"sometimes\" from the paused-workout fix, which slightly overstates how often that bug occurred.\n- It omits where to turn off heat warnings (Settings > Safety), a minor detail.\n- \"Screen reader labels on the workout screen\" loses the \"all buttons\" detail.\n- It lists every minor item rather than prioritising for a busy manager, though the formatting is easy to scan.\n\nThese are minor imprecisions rather than errors.\n\nScore: 8",
+  "usage": {
+    "input": 1035,
+    "output": 1132
+  },
+  "cost": 0.01339
+}

@@ -1,0 +1,13 @@
+{
+  "item": "code-14",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**1. Offset pagination combined with deletion skips rows (data-loss risk).**\nAfter each batch is deleted, the remaining matching rows shift up. Advancing `offset += BATCH` then skips a full batch each time. Roughly half the old events are never archived and stay in the live table. Nothing fails, and the returned count looks plausible. Remove `OFFSET` and re-query the first batch each time, since deleted rows no longer match. Alternatively, use keyset pagination (`id > last_id`).\n\n**2. Archive and delete are not atomic.**\nIf the process crashes after `archive(rows)` but before `commit()`, the next run re-archives the same rows. `archive` must be idempotent (for example, keyed on `id`), or the cold store will contain duplicates. The code also assumes `archive` is durable and synchronous when it returns. If it is buffered or async, the delete can destroy data that was never written.\n\n**3. No error handling or rollback.**\nIf `archive` or the delete raises, the transaction is left open on the connection. Add a `try/except` with `conn.rollback()`, and log which batch failed.\n\n**4. Minor issues**\n- `cutoff` is a string compared against `created_at`, so the formats must match exactly (for example, ISO 8601 in UTC). Otherwise the comparison silently misbehaves.\n- Without an index on `created_at` (or a suitable `id` range), each batch query may scan the whole table.\n- There is no logging or metrics for a nightly job.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 337,
+    "output": 838
+  },
+  "cost": 0.009054,
+  "at": "2026-10-14T01:53:36.124Z"
+}

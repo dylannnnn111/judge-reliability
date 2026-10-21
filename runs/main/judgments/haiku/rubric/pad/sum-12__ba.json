@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-12",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are mostly accurate. Response A says the $15 weekly pass replaces the $9 daily concession, which is a reasonable reading. Response B's \"significant saving for regular users\" is a mild inference, but it is consistent with the article's Barry Sutton quote. Neither response contains a clear factual error.\n\nResponse A is well over the 120-word limit, roughly 160 words, and it opens with filler (\"I would like to let you know\", \"I want to reassure you\", \"For your information\"). Response B is close to the limit at roughly 125 words, and it covers the same key facts: the fee changes, the concession pass and its eligibility, the application timing and letter requirement, the reason for the increase, the repair timeline, and the staff exemption. Its structure is tighter and more useful to a busy manager.\n\nResponse B is better on concision and meets the brief more closely, while losing nothing the reader needs.\n\nVerdict: B",
+  "usage": {
+    "input": 1468,
+    "output": 1186
+  },
+  "cost": 0.0007398
+}

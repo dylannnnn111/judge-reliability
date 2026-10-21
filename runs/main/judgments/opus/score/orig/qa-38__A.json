@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-38",
+  "side": "A",
+  "score": 6,
+  "model": "claude-opus-5-5",
+  "text": "The response is scientifically accurate and gives the key reasoning, but it slightly exceeds the 120-word limit.\n\n**Correctness:** The explanation is accurate.\n- Winter isolation by the polar vortex leads to temperatures below about −78°C (~195 K), which is the threshold for polar stratospheric clouds.\n- Heterogeneous reactions on PSC surfaces convert the reservoir species HCl and ClONO₂ into reactive Cl₂.\n- Spring sunlight photolyzes Cl₂ into chlorine atoms that catalytically destroy ozone.\n- The intact vortex prevents replenishment, and its breakdown in late spring lets ozone-rich air mix in.\n- The Arctic comparison is also correct.\n\nOne minor omission is denitrification: PSC particles settling out remove nitrogen compounds that would otherwise re-tie chlorine. At this length, that is acceptable.\n\n**Key reasoning:** Both parts of the question are answered with the causal chain intact. \"Why Antarctica\" is explained by cold, the vortex and PSCs. \"Why spring\" is explained by the need for sunlight while the vortex is still intact.\n\n**Clarity:** The structure is clear and logical, and the bolded key terms help.\n\n**Constraint:** The user asked for under 120 words. The response is about 127 words. The final Arctic sentence, which the question did not ask for, is what pushes it over. This is a clear, if modest, failure to follow an explicit instruction.\n\nOverall, the content is excellent, but the length violation is a real deduction.\n\nScore: 6",
+  "usage": {
+    "input": 515,
+    "output": 1772
+  },
+  "cost": 0.0375
+}

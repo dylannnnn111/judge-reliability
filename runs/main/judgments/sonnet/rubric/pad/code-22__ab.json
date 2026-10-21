@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-22",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the critical bug: `jwt.decode` never verifies the signature, so anyone can forge an admin token. Both fix it with `jwt.verify` and a pinned algorithm. Both also catch the 403-versus-401 problem, the unchecked `Bearer` prefix, the missing expiry enforcement, and the need to fail fast when `JWT_SECRET` is unset.\n\n**Response A**\n- It notes that `SECRET` is unused in the file, which is a real and useful observation.\n- It includes a concise code snippet that fixes the core problem.\n- Its item 3 (algorithm pinning) repeats the fix already given in item 1.\n- Its \"Minor\" list (logging, role-claim brittleness, swallowed errors) is mostly noise.\n- It runs over 200 words, but less than B does.\n\n**Response B**\n- It opens with a polite preamble and uses severity labels, which are fine but add length.\n- It points out that the `try/catch` is effectively dead code, which is a fair observation.\n- It rates exporting `SECRET` as \"High\", which overstates a minor concern. A also lists this item second.\n- Its claim that a missing secret \"fails open\" is hedged and mostly wrong. With `verify`, an undefined secret throws, so the request is rejected.\n- It gives no code, and it is the longer of the two, well over the 200-word limit.\n\nThe two are close in substance. A is tighter, comes nearer to the length limit, and provides a concrete fix. B's severity inflation and padding count against it, though A's minor list is also noise.\n\nVerdict: A",
+  "usage": {
+    "input": 1878,
+    "output": 1069
+  },
+  "cost": 0.014446
+}

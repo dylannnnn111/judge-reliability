@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-40",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B\n\nBoth responses are accurate and stay under 120 words (A is about 116, B about 116–119 depending on how list numbers are counted). Both give the right speeds of light and sound and the correct divide-by-3 and divide-by-5 rules, and their worked examples check out (10 s ≈ 3 km, 15 s ≈ 5 km).\n\nB is slightly better for three reasons:\n- Its numbered steps say when to start and stop counting, which A leaves implicit.\n- Its safety tip is more complete, adding the distance equivalent of the 30-second rule and the standard advice to wait 30 minutes after the last thunder.\n- It is a bit more concise in the explanation and gives the same core information.\n\nA's explanation of why the flash arrives first is slightly more detailed, but that does not outweigh B's practical advantages.\n\n**B**",
+  "usage": {
+    "input": 600,
+    "output": 1066
+  },
+  "cost": 0.01186
+}

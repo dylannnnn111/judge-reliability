@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-15",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer of 18°F, use the same method, and include the same verification. Both stay well under 120 words.\n\nDifferences are minor: Response B's formatting is slightly cleaner, with the calculation on its own line, and it explains that the +32 offset cancels. Response A explains it as \"without the 32-degree offset.\" Both are fine.\n\nNeither has a meaningful edge, so this is essentially a tie.\n\n**TIE**",
+  "usage": {
+    "input": 414,
+    "output": 143
+  },
+  "cost": 0.002258
+}

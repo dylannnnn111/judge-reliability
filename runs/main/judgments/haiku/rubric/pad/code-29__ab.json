@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-29",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the same critical bug: `NOT IN` against a subquery containing NULLs returns no rows. Both correctly flag the 2026 date filter contradicting the \"never referred\" intent and the biased `LIMIT 5000` with `ORDER BY`, and both offer the `NOT EXISTS` fix. Response A ranks these clearly and labels the NULL issue as critical. Response B adds real concerns that A omits: no exclusion for duplicates, bounces, suppressions, or recent campaign recipients. Those matter for an email send. However, B runs well past the requested 200-word limit, and its extra material is padded with explanatory filler, such as \"To explain the problem\" and the restated ordering preamble. A stays within the limit while covering the substantive issues, and its date-format note is accurate. The user set an explicit length cap, and B's additional points don't outweigh exceeding it.\n\nVerdict: A",
+  "usage": {
+    "input": 1749,
+    "output": 892
+  },
+  "cost": 0.0006209
+}

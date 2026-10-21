@@ -1,0 +1,13 @@
+{
+  "item": "code-18",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**1. Cache key ignores `to` (critical).** The key is `fx:${from}`, so the first rate fetched for AUD is reused for every target currency for 60s. An AUD→USD rate gets applied to EUR, JPY, etc., producing wrong invoice amounts. Use `fx:${from}:${to}`.\n\n**2. No response validation.** `body.rate` is trusted blindly. If it's missing, a string, `0`, or `NaN`, invoices are silently miscalculated, and the bad value is cached. Check `Number.isFinite(rate) && rate > 0` before returning.\n\n**3. No in-flight deduplication.** Concurrent misses for the same key each fire a fetch (thundering herd on expiry). Cache the promise, and evict it if it rejects.\n\n**4. No fetch timeout.** A hung FX service blocks invoicing indefinitely. Use `AbortSignal.timeout(...)`.\n\n**5. Unencoded query params.** `from`/`to` go into the URL raw. Use `URLSearchParams` or `encodeURIComponent`, and ideally validate them against ISO 4217 codes.\n\n**6. Expired entries are never evicted.** The cache grows without bound. This is minor given the limited currency pairs, but the generic `cached` helper may be reused elsewhere.\n\n**7. Money precision.** The rate is a JS float. Make sure the caller does the conversion and rounding with a decimal library, not raw `number` multiplication.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 400,
+    "output": 667
+  },
+  "cost": 0.01494,
+  "at": "2026-10-14T01:53:46.978Z"
+}

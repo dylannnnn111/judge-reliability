@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-03",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. It is shorter and closer to the 200-word limit, and it focuses on issues that matter for a support portal, such as authorization and PII exposure. A includes more trivia, like the redundant `if not rows` check. B's claim that worse inputs can \"modify data\" is inaccurate for `sqlite3`'s `execute`, which runs one statement at a time, but A's similarly vague \"could do worse\" is no more precise.\n\nB",
+  "usage": {
+    "input": 1582,
+    "output": 633
+  },
+  "cost": 0.00047470000000000005
+}

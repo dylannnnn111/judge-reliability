@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-03",
+  "side": "B",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The summary is accurate on every figure I checked: the time window, 2,391 of 4,812 failures (roughly half), 1,940 recovered, 451 abandoned, $41,900 estimated loss, and 312 support contacts (about four times normal). The root cause and the two completed actions are stated correctly. The one loose point is \"Support escalation led to the fix.\" The support escalation at 11:35 prompted the investigation, but the on-call engineer identified the cause at 12:10, so the wording slightly simplifies the sequence. The response also omits that connector A was unaffected, though that is minor for a manager. It is well under 120 words, leads with the key facts, and gives the open actions with owners and due dates. Overall it is strong.\n\nScore: 9",
+  "usage": {
+    "input": 1227,
+    "output": 782
+  },
+  "cost": 0.0005137000000000001
+}

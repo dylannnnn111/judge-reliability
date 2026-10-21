@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-36",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better, mainly because it meets the word limit and A does not.\n\n**Word count:** I counted about 127 words for Response A including its heading, and about 120 even without it. That breaks the \"under 120 words\" instruction. Response B comes to roughly 115 words, so it complies.\n\n**Accuracy:** Both are accurate. The $195 figure is correct: 3,000 excess colour pages at 6.5c is $195. Both also cover the term, price review, no carry-over, early exit penalty and end-of-term rollover.\n\n**Content:** Response B includes the per-page overage rates, which are useful for a manager. Response A omits them but includes the contact name, which is a smaller detail. B's separate \"Risk\" bullet also makes the colour overage easier to see.\n\nB's omission of the contact is a minor loss and does not outweigh A's breach of the word limit.\n\n**B**",
+  "usage": {
+    "input": 1360,
+    "output": 2224
+  },
+  "cost": 0.02496
+}

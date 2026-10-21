@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-34",
+  "side": "B",
+  "score": 5,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate and covers the right points. Details such as the 30-minute window, the 24/48-hour reminder option, and the Android known issue are all correct. Two small issues:\n- \"Next month\" presents the SMS two-factor login and reporting dashboard as coming, when the source says only that the team is \"working on\" them.\n- It drops \"sometimes\" from the recurring-appointments fix.\n\nThe bigger problem is length. The user set a hard limit of under 120 words, and I count roughly 133, so the response breaks the explicit constraint. The date line, the multi-section structure and the full known-issue and next-month items could have been trimmed to fit. For a busy manager the content is useful, but missing the limit is a real failing.\n\nScore: 5",
+  "usage": {
+    "input": 1071,
+    "output": 1034
+  },
+  "cost": 0.012482
+}

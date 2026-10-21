@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-36",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same core issues, and both put the `Invalidate` RLock bug first. It is a real data race that can crash the process through a fatal concurrent map write. Both also correctly flag the stampede, the stale overwrite, TTL ignoring the token's real lifetime, unbounded growth, and the missing context.\n\n**Response A:**\n- Its stale-token item ties directly to the `Invalidate` scenario, which is the most realistic case.\n- Its intro says the issues are listed \"in the order I found them\", which sidesteps the instruction to rank by importance.\n- Its context item says a hung call \"blocks every request waiting on that tenant\". The current code has no waiting, because each request fetches independently, so this is slightly inaccurate.\n- At roughly 300 words it clearly exceeds the 200-word limit.\n\n**Response B:**\n- It correctly notes that Go's fatal map-write error cannot be caught by `recover`, which explains why the bug matters.\n- Its fixes are more concrete, such as singleflight or a per-tenant mutex with a re-check, and a generation counter for the stale overwrite.\n- Its last item, about no backoff on failure, is debatable but reasonable.\n- It has no filler intro, and at roughly 220 words it is much closer to the length limit, though still slightly over.\n\nB is tighter, more accurate and better follows the instructions. A overshoots the length considerably and contains a small inaccuracy.\n\nVerdict: B",
+  "usage": {
+    "input": 1978,
+    "output": 968
+  },
+  "cost": 0.013636
+}

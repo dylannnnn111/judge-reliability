@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-10",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A** is better on content, though both responses run past the 200-word limit (roughly 250 and 240 words).\n\n**Response A**\n- Every point is correct and relevant.\n- It covers the missing authentication, the unanchored regex combined with `<path:slug>` that allows path traversal, and missing per-report authorization.\n- It makes the valid point that `os.path.exists` returns true for directories, which would cause a 500 error, and gives `isfile` as the fix.\n- It notes missing cache headers and download handling.\n- Its fixes are concrete, including `fullmatch`, the `<slug>` converter, and `send_from_directory`.\n\n**Response B**\n- It correctly flags path traversal and missing authentication.\n- The symlink escape point is weak, since exploiting it requires write access to the reports directory.\n- The race-condition point is minor.\n- Item 6 is muddled and arguably wrong: the code already returns 400 for slugs that don't match the format, so the complaint doesn't apply.\n\nA gives more accurate, actionable fixes and has no filler or confused items.\n\n**A**",
+  "usage": {
+    "input": 1394,
+    "output": 721
+  },
+  "cost": 0.019996
+}

@@ -1,0 +1,13 @@
+{
+  "item": "code-10",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "**1. Path traversal (critical).** `SLUG_RE.match` only anchors the start of the string, and `<path:slug>` accepts slashes. A slug like `a/../../../etc/x` matches because `a` matches at the start, and `os.path.join` then resolves outside `REPORT_DIR`. Any readable `*.pdf` on the server can be downloaded. Use `fullmatch` and the default `<slug>` converter, which rejects slashes.\n\n**2. No authentication or authorization in this code.** The description says logged-in staff only, but nothing here checks login or role. If this isn't enforced by a decorator or middleware elsewhere, anyone can download every report.\n\n**3. Symlink escape.** Even with a safe slug, `os.path.exists` follows symlinks, so a link inside `/srv/reports` could point anywhere. Resolve the real path and verify it's still under `REPORT_DIR`.\n\n**4. Check-then-use race.** `exists()` followed by `send_file()` is a TOCTOU window. Open the file directly and handle `FileNotFoundError`.\n\n**5. Minor: no download filename.** `send_file` without `as_attachment=True` and `download_name` may display the PDF inline rather than downloading it, and the filename will be unhelpful.\n\n**6. Minor: regex class.** `[a-z0-9-]` is fine, but any slug not in the expected format should be rejected with a clear 400 rather than falling through to a 404 on a guessed path.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 267,
+    "output": 960
+  },
+  "cost": 0.0005067,
+  "at": "2026-10-14T01:53:15.456Z"
+}

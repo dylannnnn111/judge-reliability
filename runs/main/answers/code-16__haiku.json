@@ -1,0 +1,13 @@
+{
+  "item": "code-16",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "1. **GST is likely double-counted.** Australian shelf prices normally include GST, but this adds 10% on top of `afterDiscount`, overcharging customers. Confirm whether `priceCents` is GST-inclusive. If it is, GST should be extracted from the total, not added.\n\n2. **`sortByPrice` mutates its input.** `items.sort()` reorders the caller's array in place, which can reorder cart state on the cart page. Use `[...items].sort(...)`.\n\n3. **No input validation.** Negative or fractional `qty`, negative `priceCents`, or `NaN` values flow straight into totals and can produce negative or nonsensical amounts.\n\n4. **Totals are computed client-side and trusted at checkout.** If the checkout reuses these values from the browser, a user can tamper with prices or discounts. The server should recompute totals from its own price data.\n\n5. **Discount code matching is brittle.** `==` is exact and case-sensitive, so `welcome10` or `WELCOME10 ` silently gets no discount. Normalize with `trim().toUpperCase()`, and return an error for unknown codes instead of ignoring them.\n\n6. **`formatAud` mishandles negatives and large values.** A negative amount formats as `$-5.00`, and there are no thousands separators. Use `Intl.NumberFormat('en-AU', { style: 'currency', currency: 'AUD' })`.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 417,
+    "output": 1062
+  },
+  "cost": 0.0005727000000000001,
+  "at": "2026-10-14T01:53:40.056Z"
+}

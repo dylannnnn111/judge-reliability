@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-27",
+  "side": "A",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "The science is correct. Ice is about 9% less dense than liquid water because of the open hexagonal hydrogen-bonded lattice. The floating ice layer insulates the lake, and the density maximum at 4°C keeps the coldest water at the surface. The point that lakes would freeze from the bottom up if ice sank is also right.\n\nThe response breaks the explicit \"under 120 words\" limit. I counted about 123 words. The overage is small, but it is a clear failure of a stated constraint. The sentence about water cooling below 4°C and starting to form the lattice is slightly loose but acceptable.\n\nOverall, the content and clarity are strong, but the word-limit violation costs it some points.\n\nScore: 6",
+  "usage": {
+    "input": 467,
+    "output": 1429
+  },
+  "cost": 0.015224
+}

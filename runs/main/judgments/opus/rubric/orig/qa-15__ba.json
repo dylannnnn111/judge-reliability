@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-15",
+  "order": "ba",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-opus-5-5",
+  "text": "Both responses give the correct answer of 18 °F. Both use the same key reasoning: the 10 °C difference is multiplied by 9/5, and the +32 offset does not apply to differences. Both also include the same verification, converting 15 °C to 59 °F and 25 °C to 77 °F, which differ by 18.\n\nThe differences are trivial:\n- A sets the calculation on its own line and says the offset \"cancels out,\" which hints slightly more at why.\n- B states that differences scale \"without the 32-degree offset,\" which is equally clear.\n- B's final check omits the unit, but the context makes the meaning obvious.\n\nBoth are well under the word limit. None of these differences affects correctness, reasoning or clarity in any meaningful way.\n\nVerdict: TIE",
+  "usage": {
+    "input": 559,
+    "output": 427
+  },
+  "cost": 0.010776
+}

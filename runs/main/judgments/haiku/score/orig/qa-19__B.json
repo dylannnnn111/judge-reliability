@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-19",
+  "side": "B",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response answers both questions correctly. *Gangurru* is a Guugu Yimithirr word for the eastern grey kangaroo, and Cook and Banks recorded it in 1770 near Cooktown, where the *Endeavour* was repaired. The \"I don't understand\" story is correctly identified as a myth, and the explanation that Europeans encountered many distinct Aboriginal languages is a plausible account of how it arose. The attribution to John Haviland's 1970s fieldwork fits the documented research. It is 110 words, within the limit, and clearly organized. It could say more about the word's later spread into English, but the answer is accurate and focused.\n\nScore: 9",
+  "usage": {
+    "input": 485,
+    "output": 1443
+  },
+  "cost": 0.00077
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "qa-28",
+  "side": "A",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is technically accurate: chaining, open addressing, probing types, average O(1), worst-case O(n), treeified buckets O(log n) in Java, load factor resizing at 0.7–0.75. Content is good.\n\nThe main issue is the word limit: \"under 120 words.\" Counting the response: the intro is about 33 words (\"Let me explain... described below\" ≈ 33). Chaining paragraph ≈ 38. Open addressing ≈ 42. Performance ≈ 75. Final paragraph ≈ 42. The total is roughly 230 words, nearly double the limit. That is a clear violation of an explicit constraint.\n\nCorrectness of content is high, but instruction following fails substantially. There is also filler (\"Let me explain...\", \"In this way, the table stays within...\") and redundancy. The scoring instructions say length is not a merit and the extra words must add something useful; here the constraint violation is significant.\n\nContent is correct and covers the key reasoning, but the length violation is serious.\n\nScore: 4",
+  "usage": {
+    "input": 616,
+    "output": 329
+  },
+  "cost": 0.004522
+}

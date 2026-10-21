@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-25",
+  "side": "A",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "Correctness: the answer \"No\" is right. The Gjermundbu helmet is the only fairly complete Viking-age helmet found, from Norway, 10th century, a rounded cap with a spectacle-like guard. Carl Emil Doepler designed costumes for the 1876 Ring cycle, and the response correctly credits the 19th-century Romantic movement. The Bronze Age Veksø helmets, which had horns, were ceremonial and are correctly dated to centuries before the Vikings. The claim that many warriors wore leather caps or no helmet is plausible and commonly stated.\n\nConstraint: under 120 words. Counting roughly: the first sentence has 11 words, \"This is a popular myth\" has 5, so about 16. The evidence paragraph is about 55 words. The myth paragraph is about 30. The grain-of-truth paragraph is about 28. The total is about 129, which is probably over 120. A closer count:\n\n\"No, Viking warriors didn't wear horned helmets. This is a popular myth.\" = 12.\n\"The evidence: Only one fairly complete Viking-age helmet has been found: the Gjermundbu helmet from Norway (10th century).\" = 18.\n\"It's a simple rounded iron cap with a spectacle-like face guard and no horns.\" = 14.\n\"Many warriors likely wore leather caps or no helmet at all, since iron was expensive.\" = 15.\n\"Where the myth came from: It largely stems from the 19th century.\" = 12.\n\"Romantic artists and costume designer Carl Emil Doepler, who outfitted Wagner's opera Der Ring des Nibelungen (1876), popularized horned helmets.\" = 19.\n\"A grain of truth: Horned helmets did exist in Scandinavia, but in the Bronze Age, centuries before the Vikings, and they were probably ceremonial rather than for battle.\" = 27.\n\nThe total is 12+18+14+15+12+19+27 = 117. That is under 120, so the constraint is met, though barely.\n\nThe answer is correct, gives the key reasoning, and is clear. The \"Romantic artists ... popularized\" sentence is slightly awkward but fine.\n\nScore: 9",
+  "usage": {
+    "input": 478,
+    "output": 716
+  },
+  "cost": 0.008116
+}

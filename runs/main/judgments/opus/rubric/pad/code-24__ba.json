@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-24",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.** Both responses catch the most important issue and rank it first: the concurrent-duplicate race caused by `processed.add` running only after the `await`. Both then cover the core set of real problems: the non-durable, unshared, unbounded `Set'; the non-constant-time signature comparison; unhandled errors from `markInvoicePaid`; the missing amount check; and replay risk.\n\n**What each adds:**\n- **Response B** separately flags the crash window between the side effect and `processed.add`. This is a real failure mode distinct from the in-memory problem, and it gives the right fix (make it idempotent, or commit atomically). It also correctly notes that `timingSafeEqual` throws on mismatched lengths, so length must be checked first.\n- **Response A** has a nice detail in item 1: release the claim if processing fails so retries still work. Its malformed-JSON point is weaker, though. The body is HMAC-verified before parsing, so malformed JSON from the provider is unlikely.\n\n**Fixes:** Response B's item 1 gives no fix directly, but item 2 supplies the unique-constraint-in-transaction solution, so the guidance is still present.\n\n**Length:** The user asked for under 200 words. Both responses exceed it. Response A exceeds it by much more (roughly 340 words versus about 270), and it opens with a redundant preamble and pads items with filler phrases. Response B is tighter and covers slightly more ground in fewer words.\n\nVerdict: B",
+  "usage": {
+    "input": 1856,
+    "output": 850
+  },
+  "cost": 0.024424
+}

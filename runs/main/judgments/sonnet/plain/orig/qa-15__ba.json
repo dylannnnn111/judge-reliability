@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-15",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer, 18 °F. They use the same method and the same verification, and both are well under 120 words.\n\nSmall differences:\n- Response A explains that the +32 offset cancels out.\n- Response B says the difference \"scales by 9/5 without the 32-degree offset.\"\n- A writes \"18 °F\" in the check. B drops the unit in the final subtraction.\n- B spells out \"degrees Fahrenheit\" in its headline answer.\n\nThese differences are negligible, so I call it a tie.\n\n**TIE**",
+  "usage": {
+    "input": 414,
+    "output": 170
+  },
+  "cost": 0.002528
+}

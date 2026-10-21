@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-11",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct answer: once a goat is revealed by a randomly chosen door, the car is equally likely behind doors 1 and 3, so switching gives 1/2, the same as staying. Both also identify the key point that the host's random choice carries no information.\n\nResponse B shows the calculation explicitly, with the 1/6 and 1/6 contributions and their normalization, in about 115 words, which meets the under-120-word limit. Response A runs roughly 220 words, well over the limit. Its contrast with the classic Monty Hall problem is a useful addition, but it does not outweigh breaking the explicit length constraint.\n\nVerdict: B",
+  "usage": {
+    "input": 995,
+    "output": 890
+  },
+  "cost": 0.0005445
+}

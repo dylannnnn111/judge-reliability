@@ -1,0 +1,13 @@
+{
+  "item": "sum-28",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "**Annual leave changes, effective 1 December 2026**\n\nDriven by 84 staff holding over eight weeks' leave and $3.9M in leave liability:\n\n- **Balance cap:** Staff above eight weeks (40 days full-time) must agree a plan with their manager to reduce it. If no plan is agreed, staff can be directed to take up to a quarter of their balance, with at least eight weeks' notice.\n- **Cash-out:** Up to two weeks a year, if at least four weeks remain. Must be agreed in writing.\n- **Christmas shutdown:** Closed 24 December to 2 January. Staff must use leave for the four non-public-holiday working days.\n\nWarehouse 24/7 staff at Erskine Park and Truganina are exempt from the shutdown but covered by the cap and cash-out rules.\n\n**Action:** High-balance staff lists go to managers by 31 October.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 627,
+    "output": 524
+  },
+  "cost": 0.0003247,
+  "at": "2026-10-14T01:52:06.660Z"
+}

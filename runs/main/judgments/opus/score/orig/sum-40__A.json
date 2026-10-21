@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-40",
+  "side": "A",
+  "score": 8,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** The response is accurate throughout. All the figures match the source:\n\n- 1,622 students across 11 schools\n- improvements of 1.8 and 1.1 marks\n- a 0.7-mark difference that was not statistically significant\n- 71% of students saying water helped them concentrate\n\nThe condition on clear, label-free bottles is reported correctly, and so are the caveats. \"Low-risk\" is a fair paraphrase of \"causes few problems.\" Nothing is misleading.\n\n**Key points:** It keeps the points a manager needs: the claim being tested, the result, the student and teacher reactions, the logistics, the recommendation and the limitations. One gap is that it never says in plain words that the 10% effect was not found and that the small difference could be due to chance. It also drops the line that schools \"shouldn't expect it to make a noticeable difference to results.\" A busy manager may not read \"not statistically significant\" as \"no real effect.\" The bottom line (\"not higher marks\") partly covers this, but the headline finding could be clearer. Leaving out the 2025 date and the half-yearly exam context is acceptable.\n\n**Concision:** At about 115 words it is just under the limit. It is well structured, with a skimmable bottom line and caveats, and has no padding.\n\nThis is a strong, accurate summary. The main weakness is that the central finding is not stated in plain, non-technical terms.\n\nScore: 8",
+  "usage": {
+    "input": 1067,
+    "output": 1045
+  },
+  "cost": 0.025168
+}

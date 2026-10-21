@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-14",
+  "side": "A",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate throughout. It correctly states the move from two to three office days, the common team day, the Fair Work exception and its review-date timing, the point that informal agreements don't count, the excluded Claims and Customer Contact teams with their early 2027 review, the equipment funding limit, and the Level 3 and 4 booked hot desking via Spaces. The stated reason for the change also matches the source. It omits a few minor items a manager might want: that current equipment is kept, lockers for personal items, that the policy replaces the 2024 interim guidance, and that the manager or the intranet Q&A is the contact point. None of these is essential for a busy reader, and the summary stays comfortably under 120 words. It is well organised and concise, with only small gaps in completeness.\n\nScore: 8",
+  "usage": {
+    "input": 1050,
+    "output": 708
+  },
+  "cost": 0.000459
+}

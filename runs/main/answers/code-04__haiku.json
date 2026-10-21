@@ -1,0 +1,13 @@
+{
+  "item": "code-04",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "**Bugs and problems, most important first:**\n\n1. **Double-charge risk.** The POST is retried with no idempotency key. If the server processes a charge but the response is lost to a timeout or dropped connection, the retry charges the customer again. Generate one idempotency key per checkout and send it with every attempt, or don't retry the POST.\n\n2. **Retries non-retryable errors.** `raise_for_status()` raises `HTTPError`, a `RequestException`, so 4xx responses such as declines and validation failures are retried. Only retry connection errors, timeouts, and 5xx responses.\n\n3. **Ambiguous failure state.** After the final attempt, the function raises without saying whether a charge might exist. Checkout needs a way to distinguish \"definitely not charged\" from \"unknown,\" plus reconciliation.\n\n4. **Unhandled parse errors.** `resp.json()[\"charge_id\"]` can raise `ValueError` or `KeyError` on a malformed 2xx response. These aren't caught, and the charge ID is lost even if the charge succeeded.\n\n5. **Blocking latency.** A fixed 1-second sleep with no backoff or jitter, combined with 10-second timeouts, can hold a checkout request for 30+ seconds. Use a total deadline and exponential backoff.\n\n6. **No input validation.** `amount_cents` isn't checked for type or positivity, and the currency is hardcoded to AUD.\n\n7. **Logging.** `print` is used instead of `logging`, and failures aren't logged with the customer or idempotency context needed for audits.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 343,
+    "output": 1137
+  },
+  "cost": 0.0006027999999999999,
+  "at": "2026-10-14T01:52:57.707Z"
+}

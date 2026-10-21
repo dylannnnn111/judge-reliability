@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-32",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. The request set a hard limit of under 120 words.\n\nResponse A is about 80 words. It explains the 365.2422-day year and the 100/400 rule, and it applies the rule correctly to 1900 and 2000.\n\nResponse B has better explanatory detail, including the roughly 11-minute-per-year overcorrection. But I count about 122 words, which breaks the \"under 120\" instruction. The arrows in its bullets may push the count slightly higher.\n\nSince A is accurate, clear and within the limit, and B is over it, A wins.\n\n**A**",
+  "usage": {
+    "input": 557,
+    "output": 1501
+  },
+  "cost": 0.016124
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "code-13",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses identify the same core issues: the December crash, day-of-month overflow, schedule drift, the hardcoded 30-day proration, missing input validation, and floor-division rounding. Both rank the crashes highest, which is sensible. Response B frames the drift issue more accurately, as a trap that appears if you fix the overflow by chaining from the previous date, while Response A presents it as a current bug. B's proration fix (using the real period length and capping `days_used`) and its named helpers (`relativedelta`, `calendar.monthrange`) are more actionable than A's general advice. B's timezone item is filler, since `date` objects carry no timezone, and B runs somewhat longer, so it is slightly over the 200-word limit. A stays closer to the limit and is tighter, but it offers less concrete guidance. On balance, B's more accurate framing and better fixes give it a slight edge.\n\nVerdict: B",
+  "usage": {
+    "input": 1499,
+    "output": 1142
+  },
+  "cost": 0.0007209
+}

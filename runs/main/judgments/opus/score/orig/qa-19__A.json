@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-19",
+  "side": "A",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The response is factually accurate on every point. \"Kangaroo\" comes from Guugu Yimithirr *gangurru*, a large grey or black kangaroo species. Cook's crew recorded it in 1770 while repairing the *Endeavour* at the Endeavour River, near present-day Cooktown. The \"I don't understand\" story is a myth, and John Haviland's fieldwork in the early 1970s confirmed that *gangurru* names a kangaroo.\n\nIt also gives the key reasoning: it explains what the myth claims and cites linguistic documentation that refutes it. At about 104 words it meets the under-120 limit. The writing is clear and well organized.\n\nThere are two small weaknesses. The last sentence is slightly redundant after the myth has already been debunked. Saying \"specifically to a type of large grey kangaroo\" also slightly narrows Haviland's gloss, which allows \"black or grey.\" Neither affects correctness.\n\nScore: 9",
+  "usage": {
+    "input": 448,
+    "output": 1091
+  },
+  "cost": 0.023612
+}

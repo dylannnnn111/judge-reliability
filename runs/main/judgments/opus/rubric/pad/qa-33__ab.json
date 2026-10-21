@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-33",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** Both responses are accurate. Each correctly identifies tidal locking, the 27.3-day matched rotation and orbital periods, and tidal friction slowing the Moon's spin. Both also note that libration lets us see about 59% of the surface and that the far side receives sunlight. A's phrase \"wobbles in the Moon's orbit\" is a slight simplification, but it is acceptable.\n\n**Key reasoning:** Both explain the mechanism. B goes into a bit more detail about the tidal bulge aligning with Earth. However, A covers the essential cause in fewer words.\n\n**Clarity and constraints:** The user explicitly asked for an answer under 120 words. A is about 95 words and complies. B is roughly 260 words, more than double the limit. Its extra content is mostly elaboration and restatement, such as \"To put it another way…\" and \"This isn't a coincidence…\". That adds little substance and directly violates the user's instruction.\n\nSince both are correct and both give the key reasoning, B's clear failure to follow the length requirement makes A the better response.\n\nVerdict: A",
+  "usage": {
+    "input": 856,
+    "output": 501
+  },
+  "cost": 0.013444
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-37",
+  "side": "B",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The response is largely accurate. The Amber status, the Tomas Novak departure on 7 November, the 8 December to late January slip, the roughly $64k unbudgeted contractor option, Margaret Lowe's approval requirement, and the $298k of $455k spent all match the source. It also correctly marks that nothing has been decided. It omits a few useful details: that Tomas resigned, that option 2 would add payroll in February, that finance accepts a partial go-live only if month-end reports don't depend on payroll, and the 24 October next update.\n\nThe main failure is the length limit. The response runs to roughly 190 words, well over the 120-word cap, and much of that is filler such as \"I'm pleased to report,\" \"I'm also glad to say,\" and \"To summarise the financial position.\" Those phrases add nothing for a busy manager. The content is organised clearly, but the response does not meet the explicit length requirement, and a tighter version could have kept the key points within the limit.\n\nScore: 4",
+  "usage": {
+    "input": 1238,
+    "output": 1098
+  },
+  "cost": 0.0006728
+}

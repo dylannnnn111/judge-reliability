@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-34",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is the better summary. It is structured for a busy reader, covers every substantive point (the three new features, improvements, fixes, the Android known issue, and next month's work), and states the key facts accurately. Its main flaw is a small loss of meaning: \"Patient search now works by Medicare number\" drops the fact that search still works by name and phone, which slightly misstates the change. It also runs to roughly 137 words, a little over the 120-word limit.\n\nResponse B is accurate and complete, but it is far too long, roughly 330 words, so it clearly breaks the length constraint. Its prose is padded with phrases like \"I'm pleased to share\" and \"so you can see how they work together\", which add nothing for a manager. It reads more like a rewritten article than a summary.\n\nDespite A's minor imprecision and slight overrun, it serves the stated reader far better than B's verbose version.\n\nVerdict: A",
+  "usage": {
+    "input": 1619,
+    "output": 1158
+  },
+  "cost": 0.0007409
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-14",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. Neither stays under the 120-word limit, but B is closer.\n\n**Accuracy:** Response B is accurate throughout. Response A has two small problems:\n- It says Claims Lodgement and Customer Contact are excluded \"as their rosters will be reviewed in early 2027\". The source says they are excluded because they already have shift-based rosters, and the rosters are reviewed separately. A's wording confuses the reason with the review.\n- It says each team will have a common day \"on which all members are in the office together\". The source says team leaders will set at least one common day. A drops the team leaders' role, which is a small shift in who decides what.\n\n**Completeness:** B keeps more of what a manager needs. It notes that existing equipment is kept, that lockers are provided, and that managers are the first point of contact with a Q&A on the intranet. A omits all three and adds a filler introduction that carries no information.\n\n**Concision:** I estimate B at about 140 words and A at about 170. Both are over the limit, but B is tighter and has no filler.\n\nVerdict: B",
+  "usage": {
+    "input": 1590,
+    "output": 1174
+  },
+  "cost": 0.01492
+}

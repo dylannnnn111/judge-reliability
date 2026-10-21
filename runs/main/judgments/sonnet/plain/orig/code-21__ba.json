@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-21",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**B.** Both responses lead with the most important issue: retrying a non-idempotent refund POST can issue duplicate refunds. Both also cover the missing timeout, the ignored `Retry-After`, and undrained response bodies.\n\nBoth exceed the 200-word limit, with A at roughly 220 words and B at roughly 260. A is closer to the limit.\n\nB's content is more precise and relevant to the code shown:\n- It flags that the `catch` block retries `AbortError` and permanent `TypeError`s, which is a real bug in the wrapper.\n- It notes that the `as { refundId }` cast can return `undefined` as a \"successful\" refund ID.\n- Its fix for the duplicate-refund risk is more concrete, including making the wrapper refuse to retry POST/PATCH by default.\n\nA spends space on weaker points. The UI double-submit guard concerns code that isn't shown, the input validation is speculative, and the \"minor\" item is padding. It does correctly note that jitter can push the delay to about 60s, but that is minor.\n\nB's extra length is a real cost, but its higher-value findings outweigh A's slightly better adherence to the word limit.\n\n**B**",
+  "usage": {
+    "input": 1590,
+    "output": 1309
+  },
+  "cost": 0.01627
+}

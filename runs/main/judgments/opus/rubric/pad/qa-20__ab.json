@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-20",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses are correct. Each gives Canberra as the capital and 1927 as the year Federal Parliament first sat there, along with the 9 May opening of the provisional Parliament House. Both also note that Parliament met in Melbourne from Federation in 1901. Both stay under 120 words.\n\nThe difference is in how well the words are used. Response A pads its answer with filler such as \"To answer your question directly,\" \"I hope this helpful background is useful,\" and a closing summary that repeats what it already said. That makes it longer without adding information.\n\nResponse B is shorter but adds accurate, relevant context. The building opened in 1927 is now Old Parliament House, and it was opened by the Duke of York, later King George VI. Parliament later moved to the current Parliament House on Capital Hill in 1988. Each of these details is correct and useful.\n\nB is therefore clearer and more informative.\n\nVerdict: B",
+  "usage": {
+    "input": 570,
+    "output": 414
+  },
+  "cost": 0.01056
+}

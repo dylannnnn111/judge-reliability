@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-30",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "A\n\nResponse A stays well under the 120-word limit, at roughly 80 words. Response B is richer, with the model-assumptions caveat and the point that p > 0.05 doesn't mean \"no effect\". But by my count it runs to about 121–123 words, so it breaks the explicit constraint. Both are accurate, so A wins on instruction-following.",
+  "usage": {
+    "input": 499,
+    "output": 943
+  },
+  "cost": 0.010428
+}

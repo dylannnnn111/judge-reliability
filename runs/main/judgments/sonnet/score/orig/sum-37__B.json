@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-37",
+  "side": "B",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate. The dates, figures and status all match the source. It correctly says that no decision has been made, that option 1 is the team's preference, that it is unbudgeted, and that it needs Margaret Lowe's approval after she returns on 20 October. It also keeps the main points a manager needs: the Amber status, the cause, the three options, the approval bottleneck and the budget.\n\nThere are small weaknesses:\n- It leaves out that option 2 would add payroll in February.\n- It leaves out that Finance accepts a partial go-live only if the month-end reports don't depend on payroll. The \"four month-end reports need it\" detail only implies this.\n- It doesn't say the team is proceeding on the current plan until the sponsor returns, though \"Meanwhile\" partly covers this.\n\nThe main problem is length. I count about 127 words, which breaks the explicit \"under 120 words\" limit. The overrun is modest, but it is a clear failure of a stated constraint.\n\nScore: 6",
+  "usage": {
+    "input": 1118,
+    "output": 1553
+  },
+  "cost": 0.017766
+}

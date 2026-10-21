@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-31",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is accurate on every figure I checked: 118 pickers, ten weeks, two centres, 142 to 156 lines per hour, errors 0.62% to 0.41%, 17% gain for new staff, 64% preference, $210,000 setup, 14-month payback, and the single-company limitation. It drops the detail that gains plateaued after four weeks and that the second centre showed a smaller accuracy gain, but a busy manager can live without those. At roughly 95 words, it meets the under-120 limit.\n\nResponse B is also accurate, with one small softening: it says gains \"levelled off within four weeks\" rather than noting they stayed stable afterwards. Its main problem is length. At roughly 280 words, it breaks the explicit constraint, and its headers, intro sentence and repeated caveat add bulk without adding useful content. It does keep the same key points as A, so it is no more complete, just longer.\n\nSince accuracy is equal and A keeps the needed points while meeting the word limit, A is the better response.\n\nVerdict: A",
+  "usage": {
+    "input": 1611,
+    "output": 771
+  },
+  "cost": 0.0005466000000000001
+}

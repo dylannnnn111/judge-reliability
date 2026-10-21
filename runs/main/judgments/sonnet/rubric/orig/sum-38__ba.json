@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-38",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better, mainly because it meets the word limit and A does not. Both are accurate on the key facts: the 18 November launch, 431 of 600 beta members, the 4.3 rating, 21 of 23 bugs fixed, the dates, the budget and the risk.\n\n**Word limit:** A comes to roughly 145–150 words, well over the 120-word limit. B comes to about 119, which is borderline but within it.\n\n**Accuracy:** A has a small typo (\"App stores submissions\"). B's \"member email and posters on 17–18 November\" is a little loose but correct. Neither response misstates anything material.\n\n**Content:** A adds that the submission was checked against store guidelines and gives the next update date, but those extras are what push it over the limit. B drops them, which costs little for a busy manager. B does not name the digital card and class booking as the most-liked features, and A does.\n\nSince the length constraint was explicit, A's breach outweighs its extra details.\n\nVerdict: B",
+  "usage": {
+    "input": 1409,
+    "output": 1145
+  },
+  "cost": 0.014268
+}

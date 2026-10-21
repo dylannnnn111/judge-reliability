@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "code-26",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly identifies the most important bug: `qty` stays a string, so `o.items += line.qty` concatenates instead of adding (`0 + \"2\" + \"3\"` gives `\"023\"`), and the `Number(qty)` fix is right. The NaN, quoted-comma CSV, and `__proto__` issues are also real. The `__proto__` case is worse than the response suggests, since the `!orders[id]` check passes and writes to `Object.prototype`. The ranking is sensible. However, the response overshoots the 200-word limit by a wide margin, which the user explicitly asked to avoid. Item 5 includes a non-bug: `Object.values` ordering is documented behaviour, not a problem for a dashboard summary. The response also misses minor points like the assumption that a header row exists, though that is not critical.\n\nScore: 6",
+  "usage": {
+    "input": 1267,
+    "output": 1013
+  },
+  "cost": 0.0006332
+}

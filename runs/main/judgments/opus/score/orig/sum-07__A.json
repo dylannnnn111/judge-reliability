@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-07",
+  "side": "A",
+  "score": 8,
+  "model": "claude-opus-5-5",
+  "text": "This summary is accurate, puts the urgent item first, and stays under the limit (about 118 words). The condition on the CSV point is slightly loosened.\n\n**Accuracy:** The date, the features and the improvements all match the source.\n- The CSV point is mostly right. Classic CSV was removed, the new format has different column names and a separate GST column, and the help article title is correct.\n- One wording slip: \"If any team exports data to another accounting system or a spreadsheet, those imports will break.\" The source limits this to people who use *the Classic CSV* to import data. \"Those imports\" refers back to the Classic CSV sentence, so a careful reader would get it right. A skimming manager could still read it as \"any export breaks.\"\n- The Android 9 line is correct. It leaves out that the app keeps working, which is reassuring context but not essential.\n- Folding the bug fixes into \"Improvements\" is a harmless simplification.\n- \"See the help article… before updating\" is a sensible inference, not a distortion.\n\n**Coverage:** It leads with the only item needing action, the CSV break, and explains why it matters. That is exactly right for this reader. The Android end-of-support note is kept, and features, improvements and the roadmap are captured briefly. Dropping the 40% figure and the logo resolution is fine.\n\n**Concision:** The structure is tight and scannable, with no filler. It sits near the limit, but every line adds value.\n\nOverall it is strong and well prioritised. The CSV condition could be stated more tightly, and the \"continues to work\" nuance for Android 9 is missing.\n\nScore: 8",
+  "usage": {
+    "input": 1090,
+    "output": 1671
+  },
+  "cost": 0.03778
+}

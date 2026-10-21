@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-18",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response B is better. Both are accurate on the key facts (dates, the 35-degree threshold, the 15% battery figure, the New Zealand time zone fix), but Response A adds an unsupported claim. Its closing line, \"No action is required from the team,\" is not in the release notes and is a judgement the manager may not be able to rely on. Response A also runs past the 120-word limit, at roughly 155 words. Response B stays under the limit at about 119 words and keeps the points a manager needs. Its only omissions are the Settings location for turning off heat warnings and the community-tester thanks, neither of which is essential. Response B is also clearer, grouping items under headings the manager can scan quickly.\n\nVerdict: B",
+  "usage": {
+    "input": 1441,
+    "output": 1319
+  },
+  "cost": 0.0008036
+}

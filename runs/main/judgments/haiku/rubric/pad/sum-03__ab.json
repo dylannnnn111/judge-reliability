@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-03",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is more accurate and better meets the brief. Its figures match the source (2,391 of 4,812 failed, 1,940 retried, 451 lost, $41,900, 312 contacts, escalation at 11:35), and its fixes and due dates are correct. Its structure (what happened, impact, detection, fixes) suits a busy manager, and it comes close to the 120-word limit, at roughly 130 words by my count.\n\nResponse B is also largely accurate, but it is longer, likely around 150 to 160 words, so it breaks the limit more clearly. It opens with filler (\"To show the scale of the incident, here is its impact\") and says \"1,940 customers retried\" under \"affected attempts\", which blurs customers and attempts. Its explanation of detection is vaguer, saying the problem was \"ultimately brought to light through support escalation\" without the timing. Its action list is correct and readable, but it adds no information that justifies the extra length.\n\nNeither response is badly wrong, but A is tighter, clearer, and closer to the constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 1688,
+    "output": 1312
+  },
+  "cost": 0.0008248
+}

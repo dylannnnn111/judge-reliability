@@ -1,0 +1,13 @@
+{
+  "item": "code-35",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "## Issues, most important first\n\n1. **Parse errors are silently ignored.** `cents, _ := strconv.ParseInt(...)` turns any bad amount (`\"12.50\"`, `\" 1500\"`, `\"$15\"`, empty) into `0`. That driver gets paid nothing and nothing flags it. Return an error with the line number instead.\n\n2. **No validation of payout values.** Negative amounts, empty `DriverID`s, and duplicate driver IDs are all accepted. Duplicates could mean double payment. Reject or at least report them before money moves.\n\n3. **The header is assumed, not checked.** If a file arrives without a header, the first driver's payout is silently dropped. Verify that `rows[0]` equals `driver_id,amount_cents`.\n\n4. **Negative totals print incorrectly.** With `total = -150`, the output is `$-1.-50`. Handle the sign separately, or reject negatives entirely (see #2).\n\n5. **Missing argument panics.** `os.Args[1]` crashes with an index panic when no path is given. Check `len(os.Args)` and print usage.\n\n6. **Minor:** `ReadAll` loads the whole file into memory. That's fine at weekly scale, but streaming with `Read()` would make it easy to report line numbers in errors.\n\nThe core risk is that this tool's job is to catch bad data before payment, yet it silently converts bad data into plausible-looking output. Fail loudly on anything unexpected.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 521,
+    "output": 831
+  },
+  "cost": 0.018704,
+  "at": "2026-10-14T01:54:52.892Z"
+}

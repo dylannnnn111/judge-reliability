@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-15",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses reach the correct answer: a 10 °C rise is an 18 °F rise (10 × 9/5 = 18), and the check via 59 °F and 77 °F confirms it. Both explain the key reasoning, that a temperature difference scales by 9/5 without the 32-degree offset. Response A states that reasoning slightly more directly (\"scales by 9/5 without the 32-degree offset\"), while Response B says the offset \"cancels out,\" which is equally correct. Response B's check labels the final difference explicitly as °F, a minor clarity point. Both are well under 120 words and essentially equivalent in quality, so this is effectively a tie.\n\nVerdict: TIE",
+  "usage": {
+    "input": 559,
+    "output": 224
+  },
+  "cost": 0.00016790000000000002
+}

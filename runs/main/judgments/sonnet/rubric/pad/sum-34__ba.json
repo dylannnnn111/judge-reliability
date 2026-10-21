@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-34",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Word count matters: the limit is under 120 words. Response A is roughly 125 words by a rough count. Counting more carefully:\n\nTitle: \"Clinic Desk 7.2 (released 13 October 2026)\" = 7 words.\nNew features: 2. Online waitlist bullet: \"Online waitlist: Patients can join a waitlist for fully booked days. When a slot opens, the first patient is texted and has 30 minutes to accept.\" ≈ 26. Telehealth: \"Telehealth links are now included in reminder texts and emails.\" = 10. Leave: \"Leave calendar: Practitioner leave entered in advance automatically blocks online bookings.\" = 11. Subtotal ≈ 56.\nImprovements: \"Improvements: Day view shows each practitioner's next free slot. Patient search now works by Medicare number. Reminders can be sent 24 or 48 hours ahead, set per clinic.\" ≈ 28. Total ≈ 84.\nFixes: \"Fixes: Recurring appointments no longer skip a week after public holidays. Tablet landscape display and large-invoice printing errors are fixed.\" ≈ 21. Total ≈ 105.\nKnown issue: ≈ 18. Total ≈ 123. Next month: ≈ 13. Total ≈ 136.\n\nSo A likely exceeds 120 words, a violation of the constraint.\n\nResponse B: clearly over 120 words (~290 words). It also has inaccuracies: \"so practitioners do not need to adjust the booking schedule by hand\" is an embellishment; \"When a booked slot is cancelled\" is OK; \"next free appointments shown in day view\" is fine; \"Staff can search\" is OK; it omits the tablet and invoice fixes, saying \"several bugs\" but mentions only one; \"We will share further details as these features approach their release\" is invented. It also drops \"online booking\" context for the waitlist and presents \"reminder timing can now be set for each clinic\" okay. It's much longer and violates the limit more severely.\n\nA is accurate, covers more points, and is much closer to the limit. A is better on accuracy, coverage, and concision.\n\nVerdict: A",
+  "usage": {
+    "input": 1619,
+    "output": 703
+  },
+  "cost": 0.010268
+}

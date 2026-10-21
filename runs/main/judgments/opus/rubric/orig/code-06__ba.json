@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-06",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is slightly better.**\n\n**Core issues.** Both responses find the same four real issues and rank them identically and sensibly:\n1. The `is not` identity check.\n2. The existence leak from returning 403 versus 404.\n3. The check-then-save race in `cancel_order`.\n4. Paid orders cancelled without a refund.\n\n**Identity bug (#1).** Response A adds a useful point: tests with small IDs will pass and hide the bug. It also correctly describes the failure as affecting most real customers with large IDs. Response B calls the failures \"intermittent,\" which understates how consistent the failure is for large IDs. B's caveat about how the ints were created is technically fair, though.\n\n**Race condition (#3).** Response B's fix is more concrete and complete. Its conditional `UPDATE` includes `customer_id` and says to check the row count. Response A offers several valid options, including conditional update, row locking and optimistic versioning, but in less detail.\n\n**Minor items.** Response A's point about mutating the order before `save` is a real if small issue. Response B flags `ValueError` leaking the status string, which is weak: an order's status is not sensitive to the customer who owns it, so this borders on flagging something that's fine. B's \"save not transactional with the check\" largely repeats #3.\n\n**Length.** Both are around the 200-word limit.\n\n**Balance.** B's sharper fix for #3 is outweighed by A's testing insight, A's valid minor point, and B's weak minor flag.\n\nVerdict: A",
+  "usage": {
+    "input": 1549,
+    "output": 836
+  },
+  "cost": 0.022916
+}

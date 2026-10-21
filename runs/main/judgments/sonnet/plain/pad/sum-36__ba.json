@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-36",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better because it stays within the 120-word limit, and Response B does not.\n\n**Word count:** I counted Response A at about 115 words, including the title, so it complies. Response B runs to roughly 190–200 words. It adds a filler introduction (\"Thank you for reviewing this summary…\"), restates details at length and includes a contact line, so it clearly breaks the constraint.\n\n**Accuracy:** Both responses report the key terms correctly. These include the 48-month term, the $3,480 fee, the page allowances and overage rates, and the 75% early-exit cost. The $195 colour overage is also correct: 3,000 extra pages at 6.5 cents. Response A also flags the term-month overage as a \"Risk\" and states the term-end options accurately.\n\n**Fit for a busy manager:** Response A is tighter and easier to scan. Response B's wordiness works against the request.\n\n**A**",
+  "usage": {
+    "input": 1508,
+    "output": 1121
+  },
+  "cost": 0.014226
+}

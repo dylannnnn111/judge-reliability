@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-03",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "A is slightly better. Both responses find the critical SQL injection and the connection leak, and both give the same correct fix. Both also run just over the 200-word limit, with A at about 203 words and B at about 211.\n\n**Response A:**\n- It ranks the issues sensibly and gives concrete advice on case-insensitive and whitespace-tolerant email matching. That matters for a support lookup by email.\n- It flags the missing ordering and limit on results.\n- It notes the redundant `if not rows` check and the `if status:` edge case.\n- Its audit-logging suggestion is brief and not overstated.\n\n**Response B:**\n- Its claim that \"worse inputs can modify data depending on the driver\" is slightly misleading, because Python's sqlite3 `execute` rejects stacked statements.\n- Its connection-fix advice first suggests `with sqlite3.connect(...) as conn:` and then says that is not enough, which is a bit contradictory.\n- The authorization point is reasonable, but the function has no notion of a caller, so it is somewhat speculative.\n- The hardcoded-path item is low value.\n- It misses the practical email-normalization problem, mentioning it only briefly under validation.\n- It also misses the unbounded-results and redundancy issues.\n\nA's issues are more relevant to the stated use case, and its content is more accurate and better prioritized.\n\n**A**",
+  "usage": {
+    "input": 1375,
+    "output": 2015
+  },
+  "cost": 0.0229
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-23",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "A is better. Both responses fit under 120 words (A is roughly 108), but A is more accurate and more complete.\n\n- **Accuracy:** B says \"Council will install a speed counter\" on Wattle Road. The minutes only say Councillor Tse would ask council traffic staff to put one there and report back, so B overstates a request as a commitment. A correctly says \"Tse will request a speed counter.\" B also says the playground equipment \"is due\" in April, where the minutes say installation is \"planned.\"\n- **Completeness:** A includes the named owners of actions (Laila coordinating the Clean Up Day, Peter booking the sound system) and the Facebook page follow-up. B leaves these out, and a manager might need to know who is responsible.\n- **Format:** Both are skimmable. A's grouping into Council, Finances, Decisions and Other is clear, and B's single bulleted list is also fine.\n\nB does mention the school choir, which A omits. That detail is minor compared with B's inaccuracy and missing action owners.\n\n**A**",
+  "usage": {
+    "input": 1396,
+    "output": 887
+  },
+  "cost": 0.011662
+}

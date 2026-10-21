@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-12",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.**\n\n**Core issues.** Both responses find the three issues that matter most: the crash when a customer row is missing, the N+1 query pattern (about 40,000 extra queries for 20,000 invoices), and the non-sargable `strftime` date filter. Both give correct fixes: a `LEFT JOIN` with NULL handling, a joined or grouped query, and a half-open date range.\n\n**Ranking.** A ranks the crash first and B ranks N+1 first. Either order is defensible. The crash is a correctness failure, while 40k queries is mainly a performance problem, so A's order is arguably slightly better.\n\n**What B adds.**\n- Exporting totals as formatted strings is a real, practical problem for a finance export. Finance can't sum `\"$1,234.56\"`, and negative amounts render as `$-12.34`. This is concrete, correct and relevant.\n- Ordering within a customer is nondeterministic. This is real and easily fixed with `ORDER BY customer_id, id`.\n- Input validation of `month` is minor but legitimate.\n\n**What A adds.** These points are weaker, more speculative, or near false positives:\n- **`COUNT(*)` vs quantity:** speculative.\n- **Float formatting:** A itself concedes this is \"usually fine.\" For display of integer cents at typical magnitudes it is fine, so this is close to flagging non-problems.\n- **Hardcoded currency:** speculative.\n- **Missing reconciliation total:** a feature suggestion, not a bug.\n- **Transaction snapshot:** valid but low-impact.\n\n**Length.** The user asked for under 200 words. A is roughly 300+ words and B roughly 250, so both exceed the limit, but A by more. Much of A's extra length goes on hedged or speculative items.\n\nOverall, B covers the same critical issues, adds more genuinely useful findings, avoids padding with near-non-issues, and is closer to the length limit. A's slightly better ranking of the top two issues doesn't outweigh that.\n\nVerdict: B",
+  "usage": {
+    "input": 1750,
+    "output": 1064
+  },
+  "cost": 0.02828
+}

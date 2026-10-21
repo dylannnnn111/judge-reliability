@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-19",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse B is the better summary for a busy manager. It is tight and accurate, and it covers every key point: consent, the conditions on assignment, the ongoing liability risk, subletting limits, change of control, the 28-day timeframe, legal advice and the agent contact. At about 129 words it slightly exceeds the 120-word limit, but only marginally.\n\nResponse A runs to roughly 350 words, nearly three times the limit. It is padded with filler phrases (\"To put this another way\", \"In other words\", \"Put simply\") that restate points without adding information. It also contains a small inaccuracy: it refers to subletting \"it\" (the lease), when the clause concerns subletting part of the premises.",
+  "usage": {
+    "input": 1687,
+    "output": 913
+  },
+  "cost": 0.025008
+}

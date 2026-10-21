@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-30",
+  "side": "A",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response defines the p-value correctly as the probability of data at least as extreme as observed, given the null hypothesis and model assumptions. The \"NOT\" list covers the main misconceptions: it is not the probability the null is true, not the chance of a false positive, not replication probability, not effect size, and not proof either way. The closing line adds the key point that a p-value alone cannot yield the probability of a hypothesis without prior information. The explanation is clear and well organized.\n\nThe one concern is length. By my count the response is about 121 words, which slightly exceeds the \"under 120 words\" limit. Word counting conventions vary, so this is a marginal violation rather than a clear one. The content itself is accurate and the reasoning is sound, so the score is held back mainly by the possible constraint violation.\n\nScore: 8",
+  "usage": {
+    "input": 432,
+    "output": 1197
+  },
+  "cost": 0.0006417
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-30",
+  "side": "A",
+  "score": 7,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate on the key facts: the 410 moves from 30 to 15 minutes at weekday peaks, and the 412 runs every 20 minutes, 6am–9pm, daily. It also gets right that the 408 is removed with its stops covered by the 412, that fares are unchanged, the 19 January start, the December letterbox delivery, and the 6 December stall at 10am–2pm.\n\nThere are two minor problems. \"Industrial estate workers say\" drops the original's \"Some\", which slightly overgeneralises. The 408's removal is also cast as a bare \"Scrapped\", without noting it ran to the industrial estate, though that is a small omission.\n\nThe word count is about 120 by my count, which is at or just over the \"under 120\" limit, so it may breach the constraint. The content is otherwise well chosen and scannable for a busy manager, though it includes some low-priority detail such as the information stall and the app timing. It omits the planner quote and the Rossi anecdote, which is reasonable.\n\nScore: 7",
+  "usage": {
+    "input": 1120,
+    "output": 1513
+  },
+  "cost": 0.01737
+}

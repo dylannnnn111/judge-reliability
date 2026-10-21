@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-23",
+  "side": "B",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is concise (about 95 words), well organised, and keeps most of what a manager needs: dates, the $900 cap, the $5,610 balance, the 142 households, the 31 October feedback deadline and the next meeting date.\n\nThe main problem is the Wattle Road item. The response says \"Council will install a speed counter.\" The minutes say only that Councillor Tse \"would ask council traffic staff to put a speed counter on the road and report back.\" That is a request with no commitment from council, so the response overstates what was decided. This is an error about who decided what and under what condition.\n\nSmaller points:\n- \"Due in April\" for the playground slightly firms up \"planned for April.\" This is a minor issue.\n- It omits that Laila is coordinating Clean Up Day and Peter is booking the sound system. A manager might want to know who is responsible, but this is not critical.\n- It leaves out the Facebook page item. This is minor.\n\nThe Wattle Road misstatement is a real accuracy flaw in an otherwise solid summary.\n\nScore: 6",
+  "usage": {
+    "input": 1158,
+    "output": 585
+  },
+  "cost": 0.008166
+}

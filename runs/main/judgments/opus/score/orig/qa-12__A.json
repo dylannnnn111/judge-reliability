@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-12",
+  "side": "A",
+  "score": 10,
+  "model": "claude-opus-5-5",
+  "text": "The answer is correct. The probability of no sixes in four rolls is (5/6)^4 = 625/1296. Subtracting from 1 gives 671/1296 ≈ 0.5177, which rounds to 51.8%.\n\nThe response gives the key step: the complement approach of calculating \"no sixes\" and subtracting from 1. It also states the arithmetic explicitly.\n\nIt is clear, concise and well under the 120-word limit. There are no errors or wasted words. It could note in a phrase that the rolls are independent, but that is implicit and not necessary.\n\nScore: 10",
+  "usage": {
+    "input": 300,
+    "output": 252
+  },
+  "cost": 0.00624
+}

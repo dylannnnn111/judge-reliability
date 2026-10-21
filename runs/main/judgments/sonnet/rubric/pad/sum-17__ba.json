@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-17",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better on accuracy, on keeping the key points, and on concision.\n\n**Response A**\n- It is far over the 120-word limit, at roughly 190 words.\n- It is written as an email from the committee to residents (\"I'd like to update residents…\"), not as a summary for a busy manager.\n- The subject line says \"resolved for now\", which overstates the outcome. David Ross said only \"let's see how this weekend goes\".\n- It credits Arjun Mehta with noting the \"fourth weekend in a row\". That point came from Colleen Barker, so the attribution is wrong.\n- It says music was \"continuing past midnight\" as a confirmed fact, when this was a resident's claim.\n- It leaves out the evidence the regulator needs and the fact that not all residents are bothered.\n\n**Response B**\n- It is accurate on the licence terms: the bar may open until midnight on Friday and Saturday, but amplified music must stop at 10pm nightly.\n- It covers the regulator's evidence requirement, the outcome of the call with the venue manager, the logging, the 20 October report-back and the fallback complaint to the regulator.\n- It includes the dissenting resident, which is a relevant detail.\n- It is formatted as a summary.\n- It runs to about 124 words, slightly over the 120-word limit, but this is a much smaller overrun than A's.\n\nVerdict: B",
+  "usage": {
+    "input": 1664,
+    "output": 1610
+  },
+  "cost": 0.019428
+}

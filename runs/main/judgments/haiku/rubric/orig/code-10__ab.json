@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-10",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the central bug: `SLUG_RE.match` is unanchored at the end, and `<path:slug>` accepts slashes, so `a/../../...` gets through. Both also flag the missing authentication. Response A hedges that point appropriately (\"if this isn't enforced elsewhere\"), while Response B states it more flatly. Response A's symlink-escape point is a real and relevant security issue that B omits. Response B catches that `os.path.exists` returns true for directories, which would cause a 500 error, and suggests `send_from_directory`, which performs its own containment check. Its fixes are more concrete and actionable, and its `as_attachment` and cache-hardening points address the \"download\" requirement more directly. Response A's last item is filler. Response B's per-report authorization point is speculative, and its ranking of auth above traversal is debatable. Overall the two are close, with B slightly more useful in its fixes and bug coverage.\n\nVerdict: B",
+  "usage": {
+    "input": 1550,
+    "output": 1181
+  },
+  "cost": 0.0007455
+}

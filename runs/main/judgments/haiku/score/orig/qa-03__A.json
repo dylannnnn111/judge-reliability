@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-03",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response gets the core answer right. The standard answer to \"by what percentage has it increased\" is the relative change, (5 − 4) ÷ 4 × 100 = 25%, and the response states this with the correct calculation shown. It also correctly notes the 1 percentage point absolute change, which resolves the ambiguity in the question. The reasoning is clear and concise, and the response is well under 120 words. The only minor weakness is that bolding both answers slightly weakens the sense of a single final answer, but the relative figure is clearly explained.\n\nScore: 9",
+  "usage": {
+    "input": 307,
+    "output": 293
+  },
+  "cost": 0.0001772
+}

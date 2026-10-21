@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-14",
+  "side": "A",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate. The three-day minimum (up from two), the formal-arrangement exception, the exclusion of the Claims Lodgement and Customer Contact teams with their early 2027 roster review, the equipment funding rule, the hot-desking details and the rationale all match the source. \"Each team will have a common day\" slightly softens \"at least one common day, set by team leaders\", but it isn't misleading. It covers the key points a manager needs and leaves out minor detail such as lockers and the Q&A document. It could have said who to ask if unsure whether an arrangement is formal, but that is a small omission.\n\nThe main flaw is length. By my count the response is about 127 words including the heading, or about 116 without it. The heading is part of the response, so it likely breaks the explicit \"under 120 words\" limit by a few words. That is a real constraint miss, though a minor one, and it could have been fixed by trimming a phrase or two.\n\nScore: 6",
+  "usage": {
+    "input": 1050,
+    "output": 1394
+  },
+  "cost": 0.01604
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-24",
+  "side": "A",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The response gets the core answer right: Mauna Kea is taller from base to peak, and Chimborazo's summit is farther from Earth's centre than Everest's. The Chimborazo figures (about 6,384 km from the centre, 6,263 m elevation) and the roughly 2 km difference are also accurate, and the equatorial bulge explanation is the key reasoning.\n\nThere are two problems, though. First, the claim that Everest rises \"roughly 4,600 to 5,000 m\" from its base is wrong. The Tibetan Plateau sits around 5,000 m, so Everest's rise from its northern base is closer to 3,600 to 4,000 m. The conclusion still holds, but the number is inaccurate. Second, the response is roughly 180 words, which breaks the \"under 120 words\" instruction. The extra length adds no correct information beyond what a shorter answer would carry.\n\nGiven a correct final answer but a factual slip and a clear length violation, the response is solid but not clean.\n\nScore: 5",
+  "usage": {
+    "input": 602,
+    "output": 849
+  },
+  "cost": 0.00048469999999999996
+}

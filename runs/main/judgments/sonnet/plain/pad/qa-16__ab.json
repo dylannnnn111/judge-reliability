@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-16",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. It stays under the 120-word limit at roughly 95 words, while A runs to about 126 words and breaks the explicit constraint. Both give the correct answer, Antarctica, and add the Sahara as the largest hot desert. B does this more concisely.",
+  "usage": {
+    "input": 587,
+    "output": 699
+  },
+  "cost": 0.008164
+}

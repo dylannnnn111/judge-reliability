@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-09",
+  "side": "A",
+  "score": 6,
+  "model": "claude-opus-5-5",
+  "text": "The summary is accurate on the main terms, with a few small wording problems and a probable breach of the 120-word limit.\n\n**Accuracy.** The core facts are right:\n- The $62,400 + GST starting rent, paid monthly.\n- Annual reviews on 1 March.\n- The Sydney CPI increase in years 2–4, with a 3% floor and 5% ceiling.\n- The uncapped market review in year 5, with the year-4 rent as a minimum.\n- The 30-day window for an independent valuer, with the cost split equally.\n- Outgoings charged separately.\n- Back-payment of any difference when the landlord's notice is late.\n\nThe minor issues are:\n- **\"Could rise sharply\"** is the writer's own spin. The original says only that the rent \"can go up by more.\"\n- **\"Not reviewed\"** for outgoings could suggest outgoings never change. The original only says they sit outside the rent review.\n- **\"14 days' written notice\"** drops \"at least\" and \"before it starts.\" That weakens a condition the manager might need.\n- **\"This guide is not legal advice\"** is a fair nod to the source's caveat. But the summary itself is not \"the guide,\" so the wording is slightly muddled.\n\nNone of these is seriously misleading on its own.\n\n**Coverage.** The manager gets every point that matters, in a scannable layout. Nothing important is missing.\n\n**Concision and the constraint.** The bullets themselves are tight. The response asked for under 120 words, though, and the full text comes to roughly 127 words including the title and disclaimer. Without the title it is about 118, so it only scrapes under the limit on a generous count. The editorial phrase \"so rent could rise sharply\" and the title could easily have been cut to stay safely within it. Exceeding an explicit length limit is a real instruction-following failure, even if a small one.\n\nOverall, the content is strong, but small precision slips and a probable breach of the word limit hold it back.\n\nScore: 6",
+  "usage": {
+    "input": 1136,
+    "output": 1871
+  },
+  "cost": 0.041964
+}

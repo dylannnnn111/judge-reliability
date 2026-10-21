@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-30",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.**\n\n**Shared core:** Both responses find the same top three real issues, in the same sensible order:\n1. `COUNT(*)` counts the NULL-extended row, so agents with no open tickets show 1 instead of 0.\n2. `COALESCE(AVG, 0)` makes idle agents look like they respond instantly.\n3. `AVG` silently skips NULL response times.\n\n**Where B pulls ahead:**\n- **Sharper on #3.** B explains that the unanswered tickets are exactly the slowest ones, so the average is systematically biased. It also gives concrete fixes: a separate unanswered count, or the wait time so far.\n- **Two more real issues.** B points out that a \"weekly\" report has no time window. It also flags possible integer truncation of `AVG` on some databases.\n- **Avoids a false alarm.** B confirms the `ON`-clause placement of the status filter is correct and warns against moving it to `WHERE`.\n- **Every issue comes with a fix.**\n\n**Where A falls short:**\n- **Weaker extra items.** A's #4 is speculative (\"confirm against the schema\"). Its #5 is filler: it calls the tiebreaker fine and then adds a presentation note.\n- **Wordy and over length.** A has heavy preamble and closing sentences. It runs well over the 200-word limit, likely around 350 words.\n- **B also slightly exceeds the limit, but much less.**\n\nB finds more real issues, ranks them well, gives fixes, and is more concise.\n\nVerdict: B",
+  "usage": {
+    "input": 1714,
+    "output": 720
+  },
+  "cost": 0.021256
+}

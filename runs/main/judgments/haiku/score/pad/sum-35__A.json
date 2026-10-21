@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-35",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate. It correctly gives the make-good standard (Annexure C, fair wear and tear), the 30 June 2027 deadline, the removal and repair obligations, the kitchenette condition, the landlord's payment option with its three-month notice, the rent for overrun days, and the $18,000 bond timing. The payment amount is described as \"calculated on the basis of two quotes,\" which is slightly loose, since the amount is the landlord's reasonable estimate supported by two quotes. It omits minor details such as the 2 March 2023 consent letter and the point that make-good is measured against the condition report rather than a \"brand new\" standard, but neither is essential for a manager.\n\nThe main problem is length. The user set a hard limit of under 120 words, and the response runs to roughly 160. That breaks an explicit instruction, and the extra words add no correct, useful content beyond what a tighter summary would contain. The key points are well chosen, but the response fails the stated constraint.\n\nScore: 6",
+  "usage": {
+    "input": 1202,
+    "output": 843
+  },
+  "cost": 0.0005417
+}

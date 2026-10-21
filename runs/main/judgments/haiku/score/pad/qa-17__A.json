@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-17",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response is factually correct. Venus is the hottest planet at about 465°C, and it correctly explains the runaway greenhouse effect from its CO₂ atmosphere, the sulfuric acid clouds' reflectivity, and the surface pressure of about 90 times Earth's. The key reasoning is present and accurate. However, the user asked for an answer under 120 words, and this response runs to roughly 130, so it breaks an explicit constraint. It also includes filler such as \"It is worth noting,\" \"To explain this more fully,\" and \"Finally, it is also important to mention,\" which adds length without content. Clarity is good overall, but the padding and the word-limit violation weigh against it.\n\nScore: 6",
+  "usage": {
+    "input": 468,
+    "output": 791
+  },
+  "cost": 0.0004423
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-05",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses identify the same core issues in the same order: the DST subtraction bug, the ambiguous and nonexistent local times, weekend loading based only on the start day, float money arithmetic, and missing holiday and validation handling. All of these are real, and I checked the DST examples in both. Response A's specific Sydney examples (01:00–05:00 paid 4h on fall-back when it is really 5h, and paid 4h on spring-forward when it is really 3h) are correct and concrete. Response B's 22:00–06:00 example is also correct. Response A's fixes are somewhat more actionable, such as the UTC round-trip check for nonexistent times, but it has a slightly awkward line (\"the most serious problem in the response\") and it runs noticeably past the 200-word limit, at roughly 280 words. Response B stays closer to the limit, at roughly 225 words, and adds a valid minor point about repeated `parse_local` calls. The substance is nearly equivalent, with A slightly more detailed and B slightly more compliant with the length constraint, so B edges ahead on balance.\n\nVerdict: B",
+  "usage": {
+    "input": 2009,
+    "output": 1903
+  },
+  "cost": 0.0011524
+}

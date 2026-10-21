@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-28",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B\n\nBoth responses go over the 120-word limit, by my count. A is about 131 words and B about 137. The gap is small, so neither has a real edge on that constraint.\n\nOn content, B is more complete and accurate for a manager who won't read the original:\n- It states who the policy covers (permanent staff under the 2025 Enterprise Agreement). A leaves this out.\n- It includes the unpaid-leave and make-up-time options for the Christmas shutdown. A says only that staff \"must use leave\", which is misleading for people without enough balance.\n- It flags the cash-out as new and names the burnout and cost risks.\n- It clearly says the warehouse exemption applies to the shutdown only.\n\nA's advantages are the 40-day figure and slightly tighter wording. It also says \"at least\" for the cash-out and the notice period. These are minor next to what it omits.",
+  "usage": {
+    "input": 1312,
+    "output": 2976
+  },
+  "cost": 0.032384
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-31",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is more accurate. Response B claims that if 1000+ rows share one second, the job \"stalls or loops forever.\" With `created_at > :last_seen`, the query instead skips the remaining tied rows and advances. Looping would only happen with `>=`. B also says pages can \"overlap,\" which `>` prevents. Its item 6 is filler.\n\nResponse A's points are all correct and well ordered. It also adds useful issues: late-committed rows with a safety lag, and persisting the cursor for crash recovery.\n\nBoth responses exceed the 200-word limit by a similar amount, so length does not separate them.",
+  "usage": {
+    "input": 1476,
+    "output": 501
+  },
+  "cost": 0.015924
+}

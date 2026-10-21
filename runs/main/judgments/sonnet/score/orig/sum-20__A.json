@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-20",
+  "side": "A",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate. The date, time, venue, 31 October dietary deadline, five-priority cap, 4:15pm pub and out-of-office cover all match the email. It covers the key points, including logistics, agenda, prep, food and cover arrangements.\n\nHowever, it breaks the explicit limit. I count about 150 words against a maximum of 120. For a busy manager that is a clear failure. It also keeps low-value detail such as the bus number, parking, and the full street address, and the prep paragraph could have been cut to a clause. The manager mainly needs the date, place, purpose, and any action. The only real action is the dietary deadline, and the prep applies only to team members.\n\nBecause it is accurate and well structured but substantially over the hard word limit, it earns a middling-low score.\n\nScore: 4",
+  "usage": {
+    "input": 1086,
+    "output": 1229
+  },
+  "cost": 0.014462
+}

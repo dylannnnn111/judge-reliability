@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-18",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses identify the same critical bug first: the cache key ignores `to`, so wrong rates get applied to invoices. Both also cover response validation, fetch timeouts, thundering herd, unencoded params, and unbounded cache growth, in a sensible order.\n\nThe deciding factor is the 200-word limit. Response A runs to roughly 380 words, far over, and spends words on filler like \"Here are the issues I found, numbered for easy reference\" and \"it would be prudent to.\" Response B is about 210 words, close to the limit.\n\nB also adds more useful content in the same space:\n- It notes that a cached in-flight promise should be evicted if it rejects. Without that, a failure gets cached.\n- It suggests validating currency codes against ISO 4217.\n- It flags money precision with floats, which matters for an invoicing service.\n\nA's last item, the unsafe generic cast, is a lower-value point by comparison.",
+  "usage": {
+    "input": 1646,
+    "output": 482
+  },
+  "cost": 0.016224
+}

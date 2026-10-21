@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-39",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** Response A is better, mainly because it is closer to the 120-word limit and easier for a busy manager to scan.\n\n- **Length:** Response A is about 121 words with its headline, or about 113 without it. Response B is about 126 words, so it clearly breaks the limit. Response A at worst misses it by a word.\n- **Format:** A's bullets with bold labels let a manager find the exceptions, rationale and cost quickly. B's short paragraphs work but are slightly denser.\n- **Coverage:** A states that lost or damaged items still incur charges, which B leaves out. A also names the 1 December automatic unblocking date and the November email. B gives these too, but less prominently.\n- **Accuracy:** Both are accurate. A adds a net figure of about $33,000, which is a reasonable inference from the $52,000 in fines and $19,000 in staff time, though the article doesn't state it. B stays closer to the source wording on cost.",
+  "usage": {
+    "input": 1254,
+    "output": 2232
+  },
+  "cost": 0.024828
+}

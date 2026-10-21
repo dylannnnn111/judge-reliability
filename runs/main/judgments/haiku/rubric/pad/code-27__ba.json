@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-27",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response B fits the \"under 200 words\" limit and A clearly does not, at roughly 300+ words with filler like \"Thank you for sharing\" and \"restated in more detail.\" A does have a strong point in ranking suppression of unsubscribes and bounces first, a compliance risk that B covers only as a weaker \"stale opt-in\" note at the end. But B covers the core problems (unbounded concurrency, partial-failure tracking, misleading return value, retries, bad data, cursor loops) and gives concrete fixes such as p-limit, `allSettled`, and sent/failed counts. Its trim-before-dedupe point is also a good catch. A's lowercasing critique is pedantic, and its \"null email\" point is weaker given the `string` type. B delivers comparable substance with better adherence to the constraints.\n\nVerdict: B",
+  "usage": {
+    "input": 1830,
+    "output": 958
+  },
+  "cost": 0.000662
+}

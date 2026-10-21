@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "sum-08",
+  "side": "A",
+  "score": 3,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** The response contains several errors.\n- **Wrong fault date:** It says the fridge failed on 4 Oct. In fact the customer wrote on 2 Oct that it stopped \"on Sunday\", so it failed before 2 Oct. A correction appended at the end retracts this, but the wrong date stays in the body. A busy manager reading the top would be misled. The sentence about \"the Sunday before the 2 Oct complaint is unclear\" is also muddled.\n- **Overstated chasing:** It says Kevin was \"chased on more than one occasion\". The ticket shows Megan chased him once, on 6 Oct.\n- **Wrong action on the two calls:** It asks that Daniel be told in advance about the two phone calls. Megan already told him on 6 Oct, so this suggests an action that is already done.\n\n**Coverage:** It keeps most of the points the manager needs:\n- the 90-day store responsibility\n- the $300 food loss\n- Priya arranging a Wednesday delivery\n- Frostline collecting the faulty unit separately\n- Kevin's claim form still outstanding\n- the $500 approval threshold\n- escalation to Amara Osei if not resolved by 9 Oct\n- the customer's frustration\n\n**Concision:** It badly misses the 120-word limit, running to roughly 300 words. Much of the length is filler (\"To begin with, I would like to summarise…\", \"kindly\", \"greatly appreciated\", \"I appreciate that this has been a considerable inconvenience\"). The tacked-on correction paragraph is also unprofessional. The extra length adds nothing useful and introduces errors.\n\nCoverage is decent, but the factual errors, the misleading status details and the gross length violation make this a poor summary.\n\nScore: 3",
+  "usage": {
+    "input": 1522,
+    "output": 899
+  },
+  "cost": 0.024068
+}

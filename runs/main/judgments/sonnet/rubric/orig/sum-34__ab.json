@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-34",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are accurate. Neither misstates a date, number or condition: the 30-minute acceptance window, the 24/48-hour reminder choice set per clinic, the Android known issue and the next-month items are all correct.\n\nThe main difference is the 120-word limit, which both exceed. By my count, A is about 127 words and B about 133. A is closer to the limit but still over. B is easier to scan, but the extra length makes the violation larger.\n\nOn content, B names the tablet and invoice-printing fixes, while A only says \"several bugs are fixed\". These are minor details a busy manager would not miss. A keeps the main points in less space.\n\nA's slight edge on length and concision is small, but accuracy is equal and the limit was an explicit instruction.\n\nVerdict: A",
+  "usage": {
+    "input": 1397,
+    "output": 1709
+  },
+  "cost": 0.019884
+}

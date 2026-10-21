@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-38",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are factually accurate. Response A's dates, figures, and responsibilities match the source, and its bulleted layout is easy to scan. However, it runs about 140 words, which breaks the explicit \"under 120 words\" limit. Response B is about 116 words, so it meets the constraint, and it keeps the points a manager needs: the Green status, the launch date, beta results, the bug position, key dates, budget, and the main risk. It omits some detail, such as the store-rejection condition and the Amelia/Tyrone/Harper ownership, but A's extra content mostly repeats or adds minor detail. B's extra concision and compliance with the word limit outweigh A's better scannability.\n\nVerdict: B",
+  "usage": {
+    "input": 1409,
+    "output": 1486
+  },
+  "cost": 0.0008839
+}

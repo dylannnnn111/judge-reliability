@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-37",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse B fits the 120-word limit and covers more of what the manager needs:\n\n- **Word limit:** Response A runs to roughly 139 words, clearly over the 120-word cap. Response B is about 121 including its heading, and under the limit without it.\n- **Progress:** B notes that general ledger and accounts payable data load nightly and that 14 of 22 reports match the old system. A only says \"on schedule.\"\n- **Interim plan:** B mentions that Tomas is documenting the payroll system before he leaves. A omits this.",
+  "usage": {
+    "input": 1321,
+    "output": 1036
+  },
+  "cost": 0.026004
+}

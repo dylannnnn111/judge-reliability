@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "qa-03",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the relative increase as 25% and the absolute change as 1 percentage point, so neither has a calculation error. Response A states the percentage-point answer first, which could read as its main answer to a question that asks \"by what percentage,\" though it does give 25% clearly. Response B leads with the distinction, then gives the 25% answer explicitly. Its $400,000 example is arithmetically correct ($16,000 to $20,000 is a 25% rise) and shows why the relative change matters to borrowers. It stays under 120 words. The extra material is relevant rather than padding, so B is modestly more useful, though A is tighter.\n\nVerdict: B",
+  "usage": {
+    "input": 590,
+    "output": 580
+  },
+  "cost": 0.000349
+}

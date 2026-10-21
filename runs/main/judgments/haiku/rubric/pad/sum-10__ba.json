@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-10",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response B is better. Its figures and claims match the source: the Green status, the 1 December go-live, $186k of $310k spent, the 48-to-21-second login improvement, the three accessibility issues all fixed, and the helpdesk risk lowered to low. It stays at roughly 120 words, right at the limit, and its bullets make it easy to scan for a busy manager.\n\nResponse A is also accurate on most points, but it has two problems. It runs to roughly 165 words, well over the 120-word limit. It also adds \"steering group\", which the source never mentions, when the source only says no decisions are needed this fortnight. The extra words add no useful content.\n\nVerdict: B",
+  "usage": {
+    "input": 1404,
+    "output": 1199
+  },
+  "cost": 0.0007398999999999999
+}

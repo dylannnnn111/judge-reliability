@@ -1,0 +1,13 @@
+{
+  "item": "code-04",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Bugs and problems, most important first:**\n\n1. **No idempotency key (double-charge risk).** Retrying a POST after a timeout or 5xx can charge the customer twice, since the first request may have succeeded server-side. Generate one key per logical charge (e.g., derived from the order ID) and send it in an `Idempotency-Key` header on every attempt.\n\n2. **Retries on non-retryable errors.** `raise_for_status()` raises for 4xx (card declined, invalid amount, bad customer), and those get retried 3 times. Only retry on connection errors, timeouts, and 5xx/429. Fail immediately on other 4xx.\n\n3. **Malformed success responses get retried.** `resp.json()[\"charge_id\"]` can raise `KeyError` or `ValueError`. `ValueError` from a bad JSON body may be caught (depending on the requests version) and retried, which risks another charge. `KeyError` escapes uncaught. Handle both explicitly, without retrying.\n\n4. **Fixed 1s sleep, no backoff or jitter.** This hammers a struggling service. It also sleeps after the final attempt, which wastes a second.\n\n5. **Blocking checkout.** Worst case is about 3×10s of timeouts plus sleeps, all inside a user-facing request. Consider a shorter timeout and a total deadline.\n\n6. **`print` instead of logging.** Use `logging`, and include the customer and order IDs (not card data).\n\n7. **Generic `RuntimeError`.** Callers can't distinguish declined from unavailable. Use distinct exception types.\n\n8. **Amount validation.** There's no check that `amount_cents` is a positive int. Currency is also hardcoded.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 343,
+    "output": 565
+  },
+  "cost": 0.006336,
+  "at": "2026-10-14T01:52:55.756Z"
+}

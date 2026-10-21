@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-30",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both summaries are accurate on the key facts: the 410 frequency change, the new 412 route and its hours, the 408 removal, the 6am start concern, unchanged fares, and the December timetable and information stall dates. Response A's \"lose service before 6am\" is a slight inference, since the source doesn't say the 408 ran before 6am. Response A also explains why the changes were made (the top consultation request was a direct Mill Flat–station link), which is useful context. However, it runs to roughly 127 words, breaking the under-120 limit. Response B is close to the limit at roughly 120 words, keeps every decision-relevant point, and states the consultation basis briefly, though it omits the top-request detail. For a busy manager with a hard word cap, Response B's compliance and tighter wording give it the edge, even though Response A is slightly richer.\n\nVerdict: B",
+  "usage": {
+    "input": 1491,
+    "output": 2332
+  },
+  "cost": 0.0013150999999999998
+}

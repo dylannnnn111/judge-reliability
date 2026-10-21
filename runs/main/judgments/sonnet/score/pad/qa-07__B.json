@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "qa-07",
+  "side": "B",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "The answer is correct: 30 mpg (US) is about 7.84 L/100 km, and the response gives 7.8 L/100 km. The working is accurate, and the shortcut formula (235.2 ÷ mpg) is valid.\n\nHowever, the response breaks the explicit \"under 120 words\" limit. My count is roughly 124 words. It also contains filler, such as \"I hope this helps\", the repeated \"matches the figure given above\", and a caveat about EPA versus Australian ratings that was not asked for. The shortcut largely duplicates the working. The overrun is small, but it is a clear failure to follow an instruction, and the extra words add little.\n\nScore: 6",
+  "usage": {
+    "input": 534,
+    "output": 1180
+  },
+  "cost": 0.012868
+}

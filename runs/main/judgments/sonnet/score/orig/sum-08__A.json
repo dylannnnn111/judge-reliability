@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-08",
+  "side": "A",
+  "score": 3,
+  "model": "claude-sonnet-5-5",
+  "text": "The response has a clear structure and covers most of the useful points. These include the replacement delivery, the two phone calls, the outstanding claim form, the 9 Oct escalation to Amara Osei, and the customer's frustration.\n\nHowever, the accuracy problems are serious:\n- It opens by saying the fridge \"failed on 4 Oct,\" which is wrong. The customer said it stopped on \"Sunday,\" before his 2 Oct message.\n- The parenthetical that follows is confusing, and a \"Correction\" at the end tells the reader to disregard the first sentence. A busy manager would find this muddled and could come away with the wrong date.\n- It also leaves out that the claim needs receipts or photos.\n\nIt also breaks the length limit. I count about 160 words against the 120-word cap, and the correction note and the muddled opening account for much of the excess.\n\nBecause of the factual error, the visible self-correction and the length breach, the response is weak despite its decent coverage.\n\nScore: 3",
+  "usage": {
+    "input": 1323,
+    "output": 646
+  },
+  "cost": 0.009106
+}

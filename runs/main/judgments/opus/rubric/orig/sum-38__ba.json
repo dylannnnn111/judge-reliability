@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-38",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.** Both are accurate, but only B stays under the 120-word limit.\n\n**Accuracy:** Both are essentially accurate.\n- A's \"431 of 600 invited members used it\" is a fair paraphrase of \"installed and logged in at least once.\"\n- A has a small typo (\"App stores submissions\").\n- B's \"member email and posters on 17–18 November\" compresses two dates. Posters go up from 17 November and the email goes out on 18 November. This is slightly less precise than A's breakdown, but not wrong.\n- Neither gets any number, date or condition wrong.\n\n**Key points:** Both keep the essentials for a manager: green status, launch date, beta results, bug status, key dates, budget and the main risk.\n- A adds that the submission has been checked against store guidelines, which is a useful mitigation detail.\n- A also gives the sub-two-second load time.\n- B omits both but keeps everything a busy manager needs.\n\n**Concision and constraint:** The user set an explicit limit of under 120 words.\n- Response A runs to roughly 140 words including its heading, so it clearly breaks the limit.\n- Response B comes in at about 119 words, just within it.\n\nBecause both are accurate and cover the needed points, the deciding factor is the explicit length instruction.\n\nVerdict: B",
+  "usage": {
+    "input": 1409,
+    "output": 1586
+  },
+  "cost": 0.037356
+}

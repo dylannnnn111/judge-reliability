@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "sum-30",
+  "side": "A",
+  "score": 4,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** The content is faithful to the source. It gets right:\n- the start date (Monday 19 January) and the six-week consultation\n- the 410's change from every 30 to every 15 minutes at weekday peak\n- the 412's route, its 20-minute frequency and its 6am–9pm daily hours\n- the 408's removal, its nine passengers per trip and its stops being covered by the 412\n- the industrial estate workers' concern, and the authority's \"monitor demand / may add earlier services\" response\n- unchanged fares\n- December letterbox timetables and app availability from early January\n- the information stall on Saturday 6 December, 10am–2pm\n\nCalling the 408 \"scrapped, as it averages nine passengers per trip\" slightly compresses the authority's reasoning, but it isn't misleading. I found no factual errors.\n\n**Coverage:** It keeps the points a manager needs: what is changing, when, the trade-off (no service before 6am for industrial estate workers), costs, and how residents find out more. Dropping the quotes is appropriate.\n\n**Concision and constraint compliance:** This is where it fails badly. The user set an explicit limit of under 120 words, and the response runs to roughly 200, about 65% over. Much of the excess is filler that adds nothing:\n- \"I would like to share a summary of the upcoming bus changes\"\n- \"The main changes to each route are set out below\"\n- \"Under the new arrangements\"\n- \"Turning to how you can find out more\"\n- \"For those who would like to speak to someone in person\"\n\nCutting these and tightening the bullets would easily bring it under 120 words with no loss of content. For a busy manager, the padding also defeats the purpose.\n\nOverall, the content is accurate and well chosen, and the bullet layout is good. But it clearly breaks the one hard constraint, and does so with padding rather than useful detail.\n\nScore: 4",
+  "usage": {
+    "input": 1221,
+    "output": 1280
+  },
+  "cost": 0.030484
+}

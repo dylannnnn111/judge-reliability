@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-02",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries are broadly accurate and cover the main decisions, but they differ on the word limit and on one detail.\n\n**Word limit:** The request says under 120 words. Counting the title and all bullets, Response A comes to about 123 words, so it slightly breaks the explicit limit. Response B comes to about 116 words and stays within it.\n\n**Accuracy:**\n- Response A is slightly more precise on maintenance. It says the leak was \"patched\" and that replacement is \"recommended\" by the contractor.\n- Response B says the roof \"needs full replacement\". This overstates a contractor's recommendation and omits that the leak was patched.\n- Response B says each branch must send \"volunteers\" to Kate by 24 October. The minutes say to send the names, which is a minor imprecision. Response A gets this right.\n- Neither mentions Anjali's point that the Thursday evening opening should not depend on cutting Mount Lavell's hours.\n\n**Content:**\n- Response A includes the 11 versus 64 visitor figures, which usefully explain the proposal.\n- Response B spends words on the air conditioning service, which a busy manager hardly needs. It omits the visitor figures.\n\nThe word limit is an explicit instruction, and Response A breaks it. Response A is a little more accurate in its wording, but Response B's slips are small and it meets the constraint.\n\nVerdict: B",
+  "usage": {
+    "input": 1621,
+    "output": 2546
+  },
+  "cost": 0.028702
+}

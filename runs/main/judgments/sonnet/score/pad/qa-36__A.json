@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "qa-36",
+  "side": "A",
+  "score": 3,
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer in under 120 words. The response runs well over that, roughly 250 words, so it breaks an explicit constraint.\n\nOn content, the physics is mostly correct. It describes downward deflection of air, airfoil shape, angle of attack, pressure difference, Newton's third law, and stall. It avoids the \"equal transit time\" fallacy. Saying the air \"speeds up over the curved upper surface\" is fine. The content is good, though it is padded and repetitive, and it opens with filler.\n\nThe length violation is a significant failure of instruction-following. Correctness of the physics is solid, and the key reasoning is present. Still, the response is more than twice the word limit, which counts heavily against it.\n\nScore: 3",
+  "usage": {
+    "input": 641,
+    "output": 235
+  },
+  "cost": 0.003632
+}

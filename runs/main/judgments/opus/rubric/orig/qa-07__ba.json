@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-07",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both responses give the correct answer, about **7.84 L/100 km**. As a check, 235.215 ÷ 30 ≈ 7.84. Both show sound working and the 235.2 ÷ mpg shortcut, and both stay under 120 words.\n\n- **Response A** converts 30 miles to 48.28 km and divides by 3.785 L to get 12.75 km/L. It then computes 100 ÷ 12.75 ≈ 7.84. This is correct and intuitive. Its closing note, that EPA figures differ from Australian test ratings, is reasonable but sits outside the unit conversion itself.\n- **Response B** uses more precise constants. It finds that 100 km is 62.14 miles, which at 30 mpg uses 2.0712 gallons, or 7.84 L. This is also correct. Its closing note warns against using the imperial-gallon factor (282.5 ÷ mpg, giving about 9.4 L/100 km). That is accurate and directly relevant to an Australian reader. Older Australian and UK sources quote imperial mpg, so this is a real and common pitfall in exactly this conversion.\n\nThey are equal on correctness and close on reasoning and clarity. B's caveat adds a little more value because it guards against an error in the conversion the user asked about. A's caveat concerns how test standards differ, which is a separate matter.\n\nVerdict: B",
+  "usage": {
+    "input": 762,
+    "output": 1294
+  },
+  "cost": 0.028928
+}

@@ -1,0 +1,13 @@
+{
+  "item": "code-29",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**1. `NOT IN` with NULLs returns zero rows (critical).**\n`signups.referrer_id` is NULL for every non-referred signup, so the subquery almost certainly contains a NULL. `c.id NOT IN (..., NULL)` evaluates to NULL, never TRUE, so the query returns **no customers**. Use `NOT EXISTS`:\n\n```sql\nAND NOT EXISTS (\n    SELECT 1 FROM signups s\n    WHERE s.referrer_id = c.id\n)\n```\n\nAlternatively, add `WHERE s.referrer_id IS NOT NULL` to the subquery.\n\n**2. Date filter contradicts the stated intent.**\nThe comment says \"never referred anyone,\" but `s.created_at >= '2026-01-01'` only excludes people who referred this year. Anyone who referred someone in 2025 gets told to make their \"first\" referral. Drop the filter or fix the comment.\n\n**3. `LIMIT 5000` with `ORDER BY created_at` always picks the oldest customers.**\nIf the audience exceeds 5000, the same oldest cohort gets emailed every month and newer customers never do. Decide whether truncation is intended. If it is, consider rotating or randomizing the selection.\n\n**4. Date comparisons depend on storage format (minor).**\n`date('now', '-30 days')` is SQLite-specific and compares as a string. This works only if `created_at` is stored as ISO text. Unix-epoch integers or other formats will silently misfilter.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 295,
+    "output": 854
+  },
+  "cost": 0.01826,
+  "at": "2026-10-14T01:54:28.637Z"
+}

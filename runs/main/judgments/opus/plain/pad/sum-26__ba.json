@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-26",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nNeither response meets the 120-word limit, but Response A misses it by far more.\n\n- **Response A runs to roughly 210+ words.** It also pads the text with filler, such as the opening sentence that restates the title. It slips into first person (\"I am pleased to report\"), which is odd in a summary of someone else's report.\n- **Response B runs to about 155 words.** It is still over the limit, but it is much closer, contains no filler, and covers the key facts. Its main omission is the staff refresher training, which is a minor gap.\n\nB is the more concise and usable summary for a busy manager, though it still exceeds the requested length.",
+  "usage": {
+    "input": 1499,
+    "output": 944
+  },
+  "cost": 0.024876
+}

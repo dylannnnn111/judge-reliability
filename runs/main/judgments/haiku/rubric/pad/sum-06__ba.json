@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-06",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Dates, prices, hours, the funding split, the pool replacement and the opening-day details all match the source, and neither misstates who decided what. Response A is about 110 words, within the 120-word limit. Response B runs to roughly 180 words, breaking the constraint. Its extra phrases (\"we are pleased to share,\" \"we look forward to welcoming you,\" \"mark the date in your calendar\") are promotional filler that a busy manager doesn't need. Response A keeps every point the reader needs in a scannable format, so it is the better summary.\n\nVerdict: A",
+  "usage": {
+    "input": 1622,
+    "output": 660
+  },
+  "cost": 0.0004922
+}

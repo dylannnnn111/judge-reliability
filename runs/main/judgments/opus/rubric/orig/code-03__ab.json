@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-03",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.**\n\n**Shared core issues.** Both responses correctly put SQL injection first and the connection leak second. Both give the same correct parameterized fix.\n\n**Problems with Response B:**\n- **Injection claim.** B says \"worse inputs can modify data depending on the driver.\" That is shaky for sqlite3, whose `execute` rejects multiple statements, though the hedge softens it.\n- **Connection fix.** B first recommends `with sqlite3.connect(DB_PATH) as conn:` and then says this doesn't close the connection. The advice reads as self-contradictory.\n- **Authorization ranked #3.** This is speculative. Access control normally sits at the portal layer, not in a data-access helper, and the user says staff use it. Only the audit-logging half is genuinely useful.\n- **Input validation.** This point is reasonable but vague.\n- **Hardcoded path.** This is a low-value style note.\n\n**Strengths of Response A:**\n- **Connection fix.** A states it cleanly: `contextlib.closing` or `try/finally`, with an accurate note that `with` alone doesn't close.\n- **Email matching.** A flags case-sensitive, exact matching as a concrete functional bug for a support lookup tool. It gives specific fixes: `strip().lower()` and `COLLATE NOCASE`.\n- **Results handling.** A points out the missing ordering and limit, which matters for a staff-facing list.\n- **Minor items.** These are correctly labeled as minor: the redundant `if not rows` and the `if status:` falsy edge case. A also mentions audit logging.\n\nA's points are more concrete and actionable, its fixes are clearer, and it avoids speculative flags. Both responses run near the 200-word limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1531,
+    "output": 913
+  },
+  "cost": 0.024384
+}

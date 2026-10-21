@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-02",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Accuracy: Response A says \"Each branch is asked to send two launch-day volunteers to Kate by 24 October\". The original says Kate needs two volunteers per branch and managers should send names by 24 October. That's essentially correct. A says \"The air conditioning at Westbrook Central was serviced during this period\", which is vague but not wrong (2 October). A omits that the roof leak was patched, and says \"The children's area roof will need full replacement within the next two years\", which overstates slightly: the contractor recommends it, and the leak was patched. \"Will need\" is a mild overstatement of a recommendation. A also says \"Helen will revise the figures\", which is fine. A's opening line, \"Thank you for taking the time to review...\", is filler. A also says \"so please plan accordingly\", which is added filler.\n\nWord count: A is roughly 150 words, which exceeds the 120-word limit. B is about 115 words. Let me estimate B: the opening-hours bullet is ~60 words, the reading program ~25, maintenance ~20, next meeting ~4, heading ~10. Total roughly 120. That is borderline, but probably around 115-125. A is clearly over, at about 160.\n\nB's accuracy: \"only 11 visitors on Saturday afternoons\" should be an average of 11 people between 2 and 5pm, so it is slightly compressed but okay. B notes \"faulty visitor counter in August\", which is correct. B says \"Corrie Creek until 7pm Thursdays\", correct. B omits Anjali's point that the Thursday evening shouldn't depend on Mount Lavell, as does A. B includes the data and the roof leak patched/recommended replacement accurately. B is more precise and within the limit.\n\nB is better.\n\nVerdict: B",
+  "usage": {
+    "input": 1742,
+    "output": 568
+  },
+  "cost": 0.009164
+}

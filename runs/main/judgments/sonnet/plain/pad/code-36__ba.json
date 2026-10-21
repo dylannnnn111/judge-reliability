@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-36",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. Both responses find the same main bug: `Invalidate` deletes from the map while holding only a read lock. Both then list stampede, stale overwrite, TTL mismatch, unbounded growth and missing context.\n\nBoth also go over the 200-word limit, but A is much closer. By my count A is around 215 words, while B is roughly 330, with a filler intro (\"I have reviewed the code and identified six issues...\").\n\nB also makes a small factual error. It says a hung `fetch` \"blocks every request waiting on that tenant,\" but this code has no waiting. Each caller runs its own `fetch` independently.\n\nA's fixes are also a bit more concrete: a generation counter for the stale overwrite, and a note that Go's concurrent-map fatal error cannot be recovered.\n\n**A**",
+  "usage": {
+    "input": 1822,
+    "output": 1006
+  },
+  "cost": 0.013704
+}

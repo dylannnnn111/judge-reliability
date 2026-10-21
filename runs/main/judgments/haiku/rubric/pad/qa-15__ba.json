@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-15",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly give a rise of 18 °F. Both use the same sound reasoning: the rise is 10 °C, a temperature difference scales by 9/5 without the 32-degree offset, and converting both endpoints separately gives 59 °F and 77 °F, a difference of 18 °F. Both are under 120 words.\n\nResponse B adds an opening filler sentence (\"I'm happy to walk through this\") and some wordier phrasing that contribute nothing new. Response A delivers the same correct content more directly, so it is slightly clearer and more efficient.\n\nVerdict: A",
+  "usage": {
+    "input": 648,
+    "output": 316
+  },
+  "cost": 0.00022280000000000002
+}

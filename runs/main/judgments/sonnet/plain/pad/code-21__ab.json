@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-21",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** Both responses correctly put the duplicate-refund risk first, since POST is retried on 502/503/504 and on network errors without an idempotency key. They also share several other findings: no timeout, ignored `Retry-After`, undrained response bodies, and unvalidated response data.\n\n**Length:** The user asked for under 200 words. Response A is roughly 230 words, slightly over. Response B is roughly 400 words, about double the limit.\n\n**Content:** A adds a real bug that B misses: the `catch` retries everything, including caller aborts and permanent `TypeError`s. B's extra items are weaker. The double-submit point is speculative and concerns UI code that isn't shown. The `amountCents` validation and the jitter note are minor and don't match the \"bugs that matter\" brief.\n\nA is tighter, more relevant, and closer to the word limit.\n\n**A**",
+  "usage": {
+    "input": 1788,
+    "output": 833
+  },
+  "cost": 0.011906
+}

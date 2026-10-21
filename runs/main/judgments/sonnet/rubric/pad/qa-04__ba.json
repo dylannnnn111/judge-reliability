@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-04",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses reach the correct answers: a final price of $480 and an overall change of -4%.\n\nThe request limits the answer to under 120 words. Response A is well over that, at roughly 220 words, and it repeats itself (the -4% calculation appears twice, and the 1.20 × 0.80 point is explained redundantly). Response B is about 80 words, within the limit, and covers the key reasoning: the two steps, the $120 versus $100 explanation, and the general -p² rule.\n\nResponse B's -p² claim is correct, since (1+p)(1−p) = 1−p², and here 0.04 matches.\n\nResponse B is better because it follows the length constraint and is more concise without losing any substance.\n\nVerdict: B",
+  "usage": {
+    "input": 865,
+    "output": 232
+  },
+  "cost": 0.00405
+}

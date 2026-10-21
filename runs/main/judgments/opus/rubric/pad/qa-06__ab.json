@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-06",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses give **Friday, 24 March 2028**, and that answer is correct:\n- **Date:** 16 days to 31 Dec, plus 31 for January, plus 29 for February (2028 is a leap year), gives 76 days. The remaining 24 days land on 24 March.\n- **Weekday:** 100 = 14×7 + 2, so Wednesday moves forward two days to Friday.\n\nBoth also show the same key reasoning: the month-by-month count, the leap-year February, and the 100 mod 7 shift for the weekday.\n\nThe difference is length and fit to the request. Response A runs to roughly 140 words, over the user's 120-word limit. Its extra words are filler (\"beginning from the starting date in the calculation,\" \"I took a slightly different approach\") and add no correct or useful content. Response B gives the same complete reasoning in about 55 words, stays within the limit, and is clearer.\n\nVerdict: B",
+  "usage": {
+    "input": 667,
+    "output": 622
+  },
+  "cost": 0.015108
+}

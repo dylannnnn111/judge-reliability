@@ -1,0 +1,13 @@
+{
+  "item": "qa-40",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "You see lightning first because light travels far faster than sound. Light moves at about 300,000 km per second, so the flash reaches you almost instantly. Sound travels at only about 343 meters per second in air, so the thunder lags behind.\n\n**To estimate distance:**\n1. Start counting seconds when you see the flash.\n2. Stop when you hear the thunder.\n3. Divide by **3** for kilometers or by **5** for miles.\n\n**Example:** A 15-second gap means the strike was about 5 km (3 miles) away.\n\n**Safety tip:** If the gap is 30 seconds or less (within about 10 km or 6 miles), you're within striking range. Seek shelter and wait 30 minutes after the last thunder.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 62,
+    "output": 248
+  },
+  "cost": 0.005208,
+  "at": "2026-10-14T01:51:03.543Z"
+}

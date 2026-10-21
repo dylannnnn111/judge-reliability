@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-31",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct explanation: Earth's 23.5° axial tilt points the same way in space throughout the orbit, so the hemispheres alternate between tilting toward and away from the Sun. Both also mention the effects of sun angle and day length.\n\nThe deciding factor is the explicit limit of under 120 words. I counted Response A at about 108 words, which complies. I counted Response B at about 122 words (6 + 24 + 24 + 34 + 6 + 28), which slightly exceeds the limit. B's extra content, the note that Earth is closest to the Sun in early January, is useful, but it is what pushes B over the limit. A also covers the \"not distance\" point briefly.\n\nSince the two are equally correct and A follows the length constraint while B does not, A is better.\n\nVerdict: A",
+  "usage": {
+    "input": 760,
+    "output": 1994
+  },
+  "cost": 0.02146
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-14",
+  "side": "B",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly identifies the most serious bug: offset pagination combined with deletion skips rows, so roughly every other batch is archived and the rest stays in the live table. Its fix (drop `OFFSET` or use keyset pagination) is correct. The idempotency concern in item 2 is also real, since a crash between `archive()` and `commit()` can re-archive rows, and the async-archive risk is valid. Item 3 slightly overstates the open-transaction problem, because sqlite3 rolls back uncommitted work when the connection closes, but missing error handling is still worth flagging. The minor items (timestamp format, index, logging) are legitimate. It misses little that matters, though it could have noted that `archive` is never checked for success before the delete. Ranking is sensible. The main weakness is the instruction to stay under 200 words: the response runs to roughly 220 words.\n\nScore: 7",
+  "usage": {
+    "input": 989,
+    "output": 1072
+  },
+  "cost": 0.0006349
+}

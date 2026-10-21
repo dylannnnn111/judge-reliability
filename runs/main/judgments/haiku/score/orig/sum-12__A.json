@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-12",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response gets the core numbers right: the free first hour, the $3 to $4 hourly rate, the $18 to $24 daily maximum, the $15 weekly pass, the 20 October form date, the 180 closed spaces, and the 18-month timeline. Two claims go beyond the source. First, \"instead of the current $9 daily concession\" assumes the weekly pass replaces the daily concession, which the source doesn't state. Second, \"a significant saving for regular users\" is misleading as a blanket claim. A patient attending once a week would pay $15 instead of $9, so the pass is only cheaper for those attending several times a week. \"Applications open 20 October\" is also a slight shift from the source, which says only that the form becomes available then. The summary is concise (about 110 words) and covers the reader's key needs, including the funding reason and the staff exemption. The accuracy lapses are real but modest, so the score is mid-high rather than top.\n\nScore: 6",
+  "usage": {
+    "input": 1046,
+    "output": 937
+  },
+  "cost": 0.0005731
+}

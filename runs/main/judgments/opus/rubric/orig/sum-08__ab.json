@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-08",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.**\n\n**Accuracy**\n- **Response A** opens with a clear error: it says the fridge failed on 4 Oct, which is after the 2 Oct complaint. It then adds a muddled parenthetical and finally a \"Correction\" telling the reader to disregard that sentence. A busy manager gets a wrong date, then a retraction. The output is self-contradictory and confusing, even though it ends up acknowledging the uncertainty.\n- **Response B** states the fridge failed on 29 September. The source only says \"Sunday\" and gives no year. This is an unsupported, specific inference. Depending on the year, it may even be wrong; for example, in 2025, 2 Oct is a Thursday, so the Sunday would be 28 Sept. That is a real flaw, but a smaller one: the date falls in the right window and nothing else hinges on it.\n- **Other facts:** Both get the rest right. That covers the 90-day policy, Priya booking the replacement for Wednesday, Frostline collecting the faulty unit separately, the claim form still outstanding from Kevin, the $500 approval limit, and escalation to Amara Osei on 9 Oct. B also correctly explains that Priya is covering for Jason while he is on leave.\n\n**Completeness and concision**\n- Both keep the points the manager needs.\n- B is a clean single paragraph of about 115 words.\n- A's appended correction pushes it to roughly 140 words, past the 120-word limit, and the extra words add confusion rather than value.\n\nOn balance, A's stated-then-retracted error, its messy presentation and its length overrun outweigh B's over-specific inferred date.\n\nVerdict: B",
+  "usage": {
+    "input": 1640,
+    "output": 833
+  },
+  "cost": 0.02322
+}

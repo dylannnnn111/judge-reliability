@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-24",
+  "side": "B",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is accurate. It applies the correction (Saltwater at $14,500, total $88,200, rollover $31,800) and the five grants sum to $88,200. Dates (31 October, 30 November, 2 February, 16 March), the 19 applications, the $286,000 requested and the $120,000 pool are all correct. The conditions are right too: ineligibility for non-acquittal, two applicants encouraged to reapply with revised budgets, and the quick-response grant only being discussed at the next meeting. It runs to about 113 words, under the 120 limit.\n\nIt leaves out the conflict of interest declaration, and with it the fact that Jarrah left the call for the Saltwater item. That is a small governance point, and Saltwater's amount was the one corrected. It also doesn't say that Sunita is handling feedback and reminders. A busy manager could reasonably go without both. The format is clean, scannable and concise.\n\nScore: 9",
+  "usage": {
+    "input": 1327,
+    "output": 1237
+  },
+  "cost": 0.015024
+}

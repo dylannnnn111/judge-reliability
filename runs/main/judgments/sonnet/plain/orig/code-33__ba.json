@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-33",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**B**\n\nBoth responses find the critical bug: `p.status = 'succeeded'` in the `WHERE` clause turns the `LEFT JOIN` into an inner join, so zero-payment customers never appear. Both give the same correct fix. B also notes that customers whose only payments failed are dropped, which is a useful detail.\n\nBeyond that, B raises problems that affect whether customer success calls the right people:\n- Annual and quarterly subscribers would show zero payments in 90 days despite being healthy.\n- Already-cancelled and brand-new accounts would be flagged as at risk.\n\nA spends more of its space on lower-impact points: UTC cutoff drift, `COUNT(*)` versus `COUNT(p.id)`, and a suggested flag column. Its remaining points, the date format and the \"paying\" definition, are reasonable but less consequential.\n\nB's weaknesses are that item 6 is a bare header with no explanation, which looks truncated, and that both responses run slightly over the 200-word limit. Even so, B's coverage of the business-logic problems is more valuable than A's extra detail on minor technical points.",
+  "usage": {
+    "input": 1368,
+    "output": 1073
+  },
+  "cost": 0.013466
+}

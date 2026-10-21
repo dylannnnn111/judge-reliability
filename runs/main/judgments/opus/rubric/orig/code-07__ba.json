@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-07",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is slightly better**, mainly because it states the worst consequence of the top bug and avoids redundant items.\n\n**Most important bug.** Both correctly identify the dropped final partial batch in `chunked` as the top issue and give the right fix. Response A also spells out its most damaging consequence: with fewer than 500 contacts, nothing is sent at all. For a small hourly sync, that could mean the job has never worked. Response B's \"any remainder under 500 is never sent\" implies this but doesn't make it explicit.\n\n**Swallowed failures.** Both identify swallowed exceptions and the lack of a failure signal. Response A covers this in one item with a concrete fix: return a failed count or raise at the end, and log failed batch IDs. Response B spreads it across three items (2, 3, 4) that largely restate the same problem. That is redundancy, not added insight, though item 4's point about the scheduler's exit code is a useful framing.\n\n**Retries.** Both cover retries with backoff. Response B usefully adds checking that `upsert_contacts` is idempotent. Response A usefully distinguishes retryable from permanent errors.\n\n**Weaker points.** Response A's item 4 (broad `except Exception`) is somewhat valid, since it noisily retries every batch on auth failure, but it is minor. Its item 6 slightly mischaracterises the log, which does include the sent count. It is right that it omits the total and failures.\n\n**Non-sequence input.** Both flag it appropriately.\n\n**Length.** Both exceed the 200-word limit, Response A a bit more.\n\nOverall the substance is close.\n\nVerdict: A",
+  "usage": {
+    "input": 1439,
+    "output": 1239
+  },
+  "cost": 0.030536
+}

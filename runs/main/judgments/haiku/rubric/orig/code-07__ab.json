@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-07",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the main bug: `len(items) // size` silently drops the final partial batch, and both give the right fix. Both also catch the swallowed exceptions, the missing retries, and the sliceable-input requirement.\n\nResponse A adds two useful points. Its point 4 ties the failure handling to the hourly scheduler's exit status, and its point 5 notes that retries are only safe if `upsert_contacts` is idempotent. However, its point 3 largely repeats point 2 about hidden failures, which makes the list less efficient.\n\nResponse B covers the same core ground with less overlap. Its point 3 separates retryable errors (timeouts, 429s, 5xx) from permanent ones such as validation failures, which is more careful than A's blanket retry advice. Its point 4 flags the overly broad `except Exception`, which A misses. That matters because it would retry and log auth failures pointlessly. B's final note, that logging `sent` against `len(contacts)` would expose the chunking bug, is a concrete and practical tie-in.\n\nResponse A's idempotency caveat is a real strength, but B's distinct points (retryable vs. permanent errors, broad exception handling) add more value. Overall B is slightly better.\n\nVerdict: B",
+  "usage": {
+    "input": 1439,
+    "output": 1029
+  },
+  "cost": 0.0006584
+}

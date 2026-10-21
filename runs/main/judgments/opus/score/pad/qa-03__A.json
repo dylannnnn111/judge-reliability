@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "qa-03",
+  "side": "A",
+  "score": 7,
+  "model": "claude-opus-5-5",
+  "text": "The response is **correct**. It distinguishes the absolute change (1 percentage point) from the relative change (25%), and 25% directly answers \"by what percentage.\" The calculation (5 − 4) ÷ 4 × 100 = 25% is the key reasoning, and it is shown clearly. At roughly 105 words, it meets the under-120-word limit.\n\nIts weaknesses are padding and repetition:\n- The opening pleasantry and closing offer add nothing.\n- The \"Put another way…\" sentence restates the 1-percentage-point point without adding anything.\n- The lead answer (25%) is placed second rather than first, which slightly hurts clarity.\n\nA tighter version would be equally complete in about half the words. These are stylistic flaws, not substantive ones.\n\nScore: 7",
+  "usage": {
+    "input": 413,
+    "output": 450
+  },
+  "cost": 0.010652
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-38",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B is better.**\n\n**Word limit:** Both responses go over the 200-word limit. Response A runs to roughly 235 words and Response B to roughly 215, so B follows the constraint more closely.\n\n**Shared core issues:** Both identify the main problems:\n- `set -e` aborts the whole run when one site fails, including on tar's exit 1 for files that change during reading.\n- Partial archives can be left behind that look valid.\n- Variables are unquoted.\n- Runs can overlap.\n- Backups sit on the same server.\n- `-mtime +14` actually keeps about 15 days.\n\n**What B adds:**\n- It catches the unset-`nullglob` problem. If `/srv/sites` has no subdirectories, the loop runs once on the literal glob string, and `tar -C` then fails. Response A misses this.\n- It explains why `umask 077` matters: uploads may contain private user files.\n- It notes that the final archive count also includes non-archive files.\n\n**What A adds:**\n- A more precise fix for tar's exit codes: tolerate 1 with a warning, fail on 2 or higher.\n- A separate monitoring point.\n\nThese are useful but slightly less essential than B's additions.\n\nB is tighter, covers a real bug that A misses, and stays closer to the length limit.\n\n**B**",
+  "usage": {
+    "input": 1500,
+    "output": 2042
+  },
+  "cost": 0.04684
+}

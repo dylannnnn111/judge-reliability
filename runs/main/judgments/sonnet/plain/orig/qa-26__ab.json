@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-26",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. Both answers stay under 120 words and correctly explain Rayleigh scattering and the longer sunset path. B is somewhat more complete because it also explains why the sky looks blue rather than violet. Sunlight contains less violet, and our eyes are less sensitive to it. This is a common follow-up question that A leaves unanswered. B's structure, with separate day and sunset sections, is also clearer.\n\n**B**",
+  "usage": {
+    "input": 561,
+    "output": 744
+  },
+  "cost": 0.008562
+}

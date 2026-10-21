@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-15",
+  "side": "A",
+  "score": 8,
+  "model": "claude-opus-5-5",
+  "text": "The figures check out against the source: 96 workers, a 20-minute nap at 3am, 22% less lane drifting, 0.09 seconds faster reaction time, the six-month and three-month thresholds, 15 minutes of grogginess, and roughly twice as much drifting at 7am as at 6am. The \"drive time mattered more than napping\" point is correctly framed.\n\nThere are two small inaccuracies:\n- **New workers' benefit is overstated.** The source says the nap made no measurable difference to *lane drifting* for new workers, and says nothing about their reaction time. \"No measurable benefit\" broadens that claim.\n- **The transport-home condition is dropped.** The source specifies transport home \"after long shift runs\"; the summary leaves out that qualifier.\n\nNeither error would meaningfully mislead a manager, but both are slight distortions of what the study found.\n\n**Coverage:** The essentials are all there: the main effect, who benefits, the new-worker caveat, the drive-time comparison, the implication for policy, and the limitations. The omitted details (randomised crossover design, sites, contact) are not critical for this reader, though the contact could have been useful.\n\n**Concision:** At roughly 105 words it is under the limit. The structure is easy to scan and contains no padding.\n\nOverall this is a strong, accurate, well-prioritised summary with very minor slippage in precision.\n\nScore: 8",
+  "usage": {
+    "input": 1055,
+    "output": 819
+  },
+  "cost": 0.0206
+}

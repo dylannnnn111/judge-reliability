@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-39",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both responses are factually correct.\n\n- **Stored values:** Both state them correctly. 0.1 is stored as ≈0.1000000000000000055511 and 0.2 as ≈0.2000000000000000111022.\n- **Sum:** The exact sum of those stored values (≈0.30000000000000001665) rounds to the double ≈0.3000000000000000444. That double differs from the double nearest 0.3, which is ≈0.299999999999999988898. Both responses convey this.\n- **Word limit:** Both stay under 120 words. A is about 105 words and B about 95.\n\n**Key reasoning:** Both give the core explanation: binary can't represent these fractions exactly (with the 1/3 analogy), the stored values carry rounding error, and the sum lands on a different representable value than 0.3.\n\nA makes the inequality more concrete. It explicitly gives the double closest to 0.3 (≈0.29999999999999998890), so the reader sees the two values that are being compared. It also notes that printing shows 0.30000000000000004, and that the binary fractions repeat and get rounded. B only says the result \"is not the same as the nearest representable value of 0.3\" without showing that value.\n\n**Workarounds:** A offers three: epsilon comparison, decimal types, and integer cents. B offers two but includes a concrete code snippet for the tolerance comparison, which is a nice touch.\n\nOverall the two are close. A's explicit comparison of the two doubles makes the \"why not equal\" clearer, and its extra content is correct and useful within the length limit. That gives A a slight edge.\n\nVerdict: A",
+  "usage": {
+    "input": 784,
+    "output": 1101
+  },
+  "cost": 0.025156
+}

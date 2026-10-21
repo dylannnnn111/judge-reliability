@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-10",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A**\n\nBoth responses are correct (1/3), explain the reasoning clearly, and stay under the 120-word limit. Response A is about 75 words and Response B about 107. A is tighter and gets to the same point without repeating itself. B states the answer twice and adds a final sentence that mostly restates the earlier explanation. The difference is small, so I give A a slight edge for concision.",
+  "usage": {
+    "input": 526,
+    "output": 715
+  },
+  "cost": 0.008202
+}

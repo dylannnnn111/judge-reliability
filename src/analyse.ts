@@ -48,7 +48,11 @@ export type JudgeResult = {
     kappa: Interval; // Cohen's kappa against the human labels, 3 classes (A, B, TIE)
     accuracy: Interval; // share of pairs the human called that the judge called the same way
     byTask: Record<TaskType, Interval>;
+    called: number; // pairs the human called one way or the other (accuracy is over these)
+    calledByTask: Record<TaskType, number>;
   };
+  calls: { A: number; B: number; TIE: number }; // the judge's final verdicts on the original pairs (a split decision across orders = TIE)
+  humanTies: null | { n: number; judgeTie: number }; // on pairs the human called about the same, share the judge also called a tie
   verbosity: null | Interval; // average swing towards an answer once it's padded, -2..2 (0 = no effect)
   selfPreference: null | {
     bias: Interval; // how much more this judge favours its own answers than neutral judges do, -2..2
@@ -61,6 +65,7 @@ export type Results = {
   labelled: number;
   human: null | { split: Record<Verdict, number>; repeat: null | { n: number; agree: number; kappa: number } };
   judges: JudgeResult[];
+  crossAgreement: { a: string; b: string; same: number; n: number }[]; // judge/format vs judge/format: share of pairs with the same final verdict
 };
 
 const toward = (v: Verdict | null, side: 'A' | 'B'): number | null => (v === null ? null : v === 'TIE' ? 0 : v === side ? 1 : -1);
@@ -204,6 +209,8 @@ export function analyse(input: { pairs: Pair[]; cells: Cell[]; judges: string[];
           kappa: bootstrap(rated.length, (idx) => cohenKappa(idx.map((i) => hv[i]), idx.map((i) => jv[i])), { seed: `${tag}|kappa`, reps }),
           accuracy: bootstrap(rated.length, accOn, { seed: `${tag}|acc`, reps }),
           byTask,
+          called: hv.filter((v) => v !== 'TIE').length,
+          calledByTask: Object.fromEntries(TASK_TYPES.map((t) => [t, rated.filter(({ p }) => p.item.task === t && labels[p.id] !== 'TIE').length])) as Record<TaskType, number>,
         };
       }
 
@@ -247,8 +254,22 @@ export function analyse(input: { pairs: Pair[]; cells: Cell[]; judges: string[];
         }
       }
 
-      out.push({ judge, format, valid, position, agreement, verbosity, selfPreference });
+      const finals = views.map(({ v }) => v.combined).filter((x): x is Verdict => x !== null);
+      const calls = { A: finals.filter((x) => x === 'A').length, B: finals.filter((x) => x === 'B').length, TIE: finals.filter((x) => x === 'TIE').length };
+      const tiePairs = views.filter(({ p, v }) => labels[p.id] === 'TIE' && v.combined !== null);
+      const humanTies = tiePairs.length ? { n: tiePairs.length, judgeTie: tiePairs.filter(({ v }) => v.combined === 'TIE').length / tiePairs.length } : null;
+
+      out.push({ judge, format, valid, position, agreement, calls, humanTies, verbosity, selfPreference });
     }
   }
-  return { pairs: pairs.length, labelled: labelled.length, human, judges: out };
+  const combos = out.map((j) => ({ key: `${j.judge}/${j.format}`, judge: j.judge, format: j.format }));
+  const crossAgreement: Results['crossAgreement'] = [];
+  for (let i = 0; i < combos.length; i++)
+    for (let k = i + 1; k < combos.length; k++) {
+      const both = pairs
+        .map((p) => [view(combos[i].judge, combos[i].format, 'orig', p)?.combined, view(combos[k].judge, combos[k].format, 'orig', p)?.combined])
+        .filter((x): x is [Verdict, Verdict] => !!x[0] && !!x[1]);
+      if (both.length) crossAgreement.push({ a: combos[i].key, b: combos[k].key, same: both.filter(([x, y]) => x === y).length / both.length, n: both.length });
+    }
+  return { pairs: pairs.length, labelled: labelled.length, human, judges: out, crossAgreement };
 }

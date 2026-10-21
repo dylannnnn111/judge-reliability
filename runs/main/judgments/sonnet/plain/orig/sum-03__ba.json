@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-03",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "A\n\nResponse A stays under the 120-word limit, at roughly 103 words by my count. Response B runs to about 127 words, which breaks the explicit constraint.\n\nA is also accurate and more precise. It names the expired intermediate certificate on connector B and gives owners and dates for the open actions. B says \"outdated\" rather than \"expired\" and leaves out the owners.\n\nBoth cover the key points a busy manager needs: impact, cause, slow detection and fixes.",
+  "usage": {
+    "input": 1443,
+    "output": 1075
+  },
+  "cost": 0.013636
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-10",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct answer, 1/3, with valid reasoning: BB is ruled out, leaving BG, GB, GG equally likely, and only GG has two girls. Both also correctly note that the 1/2 intuition applies only when a specific child is known to be a girl.\n\nResponse A adds a slightly more explicit explanation of why the BG and GB cases outnumber GG in the conditional probability, which helps clarify the intuition. Response B is more concise and covers the same key point, including the contrast with the specific-child case, with the 1/2 answer stated explicitly. Both are under 120 words and clear.\n\nThe difference is marginal. Response A's explanation of the mixed-family cases is a small plus for understanding, while Response B is tighter. Neither is meaningfully better in correctness or key reasoning.\n\nVerdict: TIE",
+  "usage": {
+    "input": 671,
+    "output": 274
+  },
+  "cost": 0.00020410000000000003
+}

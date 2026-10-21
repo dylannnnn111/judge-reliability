@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-40",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse B stays under the 120-word limit (about 112 words). Response A runs to roughly 200 words, which breaks the explicit constraint. Both are accurate and cover the same content. B is also more concise and adds a useful safety detail.",
+  "usage": {
+    "input": 750,
+    "output": 436
+  },
+  "cost": 0.01172
+}

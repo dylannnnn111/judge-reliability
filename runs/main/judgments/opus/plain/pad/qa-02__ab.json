@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-02",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses reach the correct answer of 96 km/h, with sound reasoning and an explanation of why the simple average of 100 km/h is wrong. The deciding factor is the explicit constraint to answer in under 120 words.\n\n- **Response A** is about 85 words, well within the limit.\n- **Response B** is about 160 words, which violates the instruction. Much of that comes from filler such as \"Thank you for your question\" and \"let's walk through the calculation step by step,\" plus wordier explanations.",
+  "usage": {
+    "input": 722,
+    "output": 440
+  },
+  "cost": 0.011688
+}

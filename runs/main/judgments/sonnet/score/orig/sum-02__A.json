@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-02",
+  "side": "A",
+  "score": 7,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is mostly accurate and covers the key points. It gets the dates, the 11 vs 64 visitor figures, the no-change-in-hours outcome, the 24 Oct volunteer deadline, the roof replacement timeframe and the next meeting date right. It also flags the action for managers.\n\nWeaknesses:\n- \"Only 11 visitors\" drops the fact that this is an average, and the figure is also in doubt because of the faulty counter. Presenting it as a flat number is slightly misleading.\n- It leaves out Anjali's position that the Corrie Creek Thursday evening opening should not depend on cutting Mount Lavell. That is relevant to the November proposal.\n- It omits the link between the proposal and the saved staff hours.\n- It doesn't say that Helen's capital works bid is the context for the roof replacement. This is minor.\n- The word count is about 120, right at or just over the \"under 120\" limit depending on how hyphenated terms and dates are counted. That is a marginal breach.\n\nOmitting the air conditioning service, morning tea roster and Christmas party is reasonable for a busy manager.\n\nScore: 7",
+  "usage": {
+    "input": 1284,
+    "output": 1372
+  },
+  "cost": 0.016288
+}

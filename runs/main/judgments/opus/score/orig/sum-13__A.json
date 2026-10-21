@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-13",
+  "side": "A",
+  "score": 4,
+  "model": "claude-opus-5-5",
+  "text": "**Score: 4**\n\n**Accuracy**\n- **Cause (significant error).** The summary says the pump failure was something \"the contractor missed during a monthly visit.\" That implies the visit happened and the technician overlooked the fault. The report says the visit never took place: the technician was on leave and no replacement was sent. The missed visit is the basis for treating it as a breach and recovering the $7,350, so this changes the contractor's liability.\n- **Resample date (minor imprecision).** It says \"a resample on 9 October.\" The resample was taken on 6 October; 9 October is when the result came back.\n- **Other facts are correct.** The count, notification within 24 hours, the cost, the $4,800 approval and the weekly manual checks are all accurate.\n\n**Coverage**\n- It omits who must approve the $4,800 (the property manager). For a decision item, that matters.\n- It omits the increase to fortnightly sampling for three months.\n- It omits that tenants were notified and that the contractor reporting starts in November. These are smaller gaps.\n- The structure works well: the status is up front and the decision is in bold.\n\n**Concision**\n- About 117 words of body text, or roughly 127 including the heading. That is at or just over the 120-word limit.\n\nA clean, readable summary, but it misstates the cause in a way that weakens the cost-recovery argument and leaves out the approver.\n\nScore: 4",
+  "usage": {
+    "input": 1176,
+    "output": 1141
+  },
+  "cost": 0.027524
+}

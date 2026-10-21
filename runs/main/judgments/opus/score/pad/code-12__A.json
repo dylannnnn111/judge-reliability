@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "code-12",
+  "side": "A",
+  "score": 5,
+  "model": "claude-opus-5-5",
+  "text": "The core findings are real and sensibly ranked:\n\n- **Missing customer crash.** A missing customer makes `fetchone()` return `None`, and unpacking it raises an error that aborts the whole export.\n- **N+1 queries.** About 40,000 extra round trips is the main performance problem at this volume.\n- **Non-sargable date filter.** Wrapping `issued_at` in `strftime` prevents index use.\n- **Snapshot consistency.** Separate reads without a transaction can produce inconsistent output.\n\nEach comes with a concrete fix: LEFT JOIN, a JOIN plus a grouped aggregate, and a half-open range.\n\nThe lower items are weaker:\n\n- **Speculative points.** The item count, timezone and currency points depend on schema or business facts not shown. The response at least labels them as things to confirm.\n- **Float formatting.** This is a near-false-positive: `total_cents / 100` formatted with `,.2f` is accurate at realistic invoice amounts.\n- **Reconciliation.** This is a feature suggestion, not a bug.\n\nThese padded items dilute the \"problems that matter\" focus the user asked for.\n\nThe biggest flaw is the length. The user explicitly asked for under 200 words, and the response runs to roughly 450. Much of that is filler, such as the opening meta-sentence (\"with the original concern restated for clarity\") and wordy transitions. A reviewer who more than doubles a stated limit has ignored a clear instruction. The extra words mostly carry speculative, low-value items rather than adding useful substance.\n\nOverall, the technical substance is good at the top. However, the hard constraint was ignored and several marginal points were included.\n\nScore: 5",
+  "usage": {
+    "input": 1312,
+    "output": 749
+  },
+  "cost": 0.020228
+}

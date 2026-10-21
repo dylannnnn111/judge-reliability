@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-29",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "A\n\nResponse A is accurate and complete, covering the price and data changes, who is affected, the options, the reason and the support details. Its word count is borderline. A plain whitespace count gives about 123, but about 117 if the arrows aren't counted, so it may be a few words over the 120 limit.\n\nResponse B is under the limit, at about 113 words. But it has a factual error. It says \"Classic plan customers and those on fixed-price contracts are unaffected until their contract ends.\" The notice says Classic customers are unchanged \"this year\" and that only fixed-contract customers wait until their contract ends. B also omits the support details.\n\nB's error could mislead a manager, and A's overrun is marginal and arguable, so A is better.",
+  "usage": {
+    "input": 1252,
+    "output": 1832
+  },
+  "cost": 0.020824
+}

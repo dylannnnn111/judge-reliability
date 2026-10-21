@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-35",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is more accurate. Response B states that overrunning \"means paying daily rent\", but the source says only that the tenant \"may have to pay rent for any extra days the landlord needs to finish the work\". Response A keeps the conditional (\"may incur rent\"). B's \"Risks\" label is also a slight mislabel, since the bond return isn't a risk. Otherwise both responses get the dates, the $18,000 bond, the 30-day return, the two quotes, the three months' notice and the kitchenette condition right. Both also cover the Annexure C benchmark and the fair-wear-and-tear allowance.\n\nOn length, I count A at exactly 120 words, which technically misses \"under 120\", while B comes in at about 118. B's bullets are easier for a busy manager to scan. A's \"us\" assumes the reader is the tenant, which is plausible but not stated in the request.\n\nBecause accuracy is the first criterion and B's overstatement is a real misstatement, whereas A's issue is a borderline word count, A edges ahead.\n\nVerdict: A",
+  "usage": {
+    "input": 1454,
+    "output": 2615
+  },
+  "cost": 0.029058
+}

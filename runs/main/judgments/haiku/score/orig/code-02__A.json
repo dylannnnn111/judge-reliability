@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-02",
+  "side": "A",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The response finds the most important bug: the shared mutable default `tags=[]` causes tags to accumulate across events and across calls, and the fix is correct. It also correctly identifies that only `KeyError` is caught, so a `None` type or a non-dict input aborts the whole batch. Point 4 (silent drops and possible leakage of sensitive payloads in logs) is a reasonable operational concern. Point 5 is a valid but minor observation.\n\nPoint 3 is wrong for this code. The only `KeyError` that can occur in `normalise_event` comes from `raw[\"id\"]`, since `raw.get` never raises it, so the message is accurate. The response also misses that `id` isn't validated for `None` or emptiness. The total length is close to the 200-word limit, and the minor and incorrect points dilute the ranking somewhat.\n\nOverall, the top issues are correct and well ordered with usable fixes, with one false flag and a few low-value items.\n\nScore: 7",
+  "usage": {
+    "input": 1024,
+    "output": 898
+  },
+  "cost": 0.0005514
+}

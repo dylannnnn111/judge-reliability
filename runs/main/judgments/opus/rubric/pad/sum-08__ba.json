@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-08",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is clearly better.**\n\n**Accuracy**\n- **Response A** has one small problem. It gives the failure date as 29 September, but the ticket only says \"Sunday\" and gives no year. That date is an inference that may be wrong; in 2025, the Sunday before 2 October was 28 September.\n- Everything else in A is correct:\n  - Priya Nand is covering for Jason Reilly, who is on leave until 9 October.\n  - The replacement is booked for Wednesday.\n  - Frostline's contractor will collect the faulty unit separately.\n  - Kevin Hales still owes Daniel the claim form.\n  - Claims up to $500 need no manager sign-off.\n  - If the form isn't sent by 9 October, the matter goes to Amara Osei.\n- **Response B** has more serious errors:\n  - It states the fridge failed on 4 October, which is plainly wrong. It only retracts this in a confusing correction at the end, after a busy reader may already have taken it in.\n  - It says Kevin was \"chased on more than one occasion.\" The ticket shows Megan chased him only once.\n\n**Coverage**\n- Both responses keep the key points: the replacement, the separate collection, the outstanding claim form, the $500 threshold, and the escalation path.\n\n**Concision**\n- Response A is about 120 words and stays close to the limit.\n- Response B is well over 120 words. It is padded with filler such as \"To begin with, I would like to summarise,\" \"kindly,\" and \"would be greatly appreciated.\" It also tacks on a self-correction, which makes it harder to read for a busy manager.\n\nVerdict: A",
+  "usage": {
+    "input": 1839,
+    "output": 905
+  },
+  "cost": 0.025456
+}

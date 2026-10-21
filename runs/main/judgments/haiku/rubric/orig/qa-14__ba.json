@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-14",
+  "order": "ba",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses compute the same correct answer: net rate 1/3 − 1/5 = 2/15 per hour, so the tank fills in 7.5 hours. Both show the key reasoning (rates, subtraction, inversion) and both are under 120 words. Response A states the answer in bold at the top and then gives the working; Response B does the same with slightly more compact formatting, and it bolds the key rate and final time. Neither has an error or a meaningful omission, and the clarity difference is marginal.\n\nVerdict: TIE",
+  "usage": {
+    "input": 600,
+    "output": 171
+  },
+  "cost": 0.0001455
+}

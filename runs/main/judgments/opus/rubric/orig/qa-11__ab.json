@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-11",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses reach the correct answer: switching wins with probability 1/2, so it gives no advantage. Since neither is wrong on correctness, the decision rests on reasoning quality, clarity and the length constraint.\n\n**Response A** conditions directly on door 2 having been opened, and argues correctly that doors 1 and 3 remain equally likely. Its contrast with the classic knowing-host version is useful context. Two weaknesses:\n- Its closing line, \"A random host's lucky goat carries no such information,\" is slightly imprecise. The goat does carry information, since it rules out door 2. It just doesn't distinguish door 1 from door 3.\n- By my count it runs about 120–122 words, so it is at or slightly over the user's \"under 120 words\" limit.\n\n**Response B** gives a more rigorous Bayesian calculation:\n- It includes the host's 1/2 chance of choosing door 2 in each case.\n- It computes each joint probability (1/6 and 1/6).\n- It rules out the car-behind-door-2 case explicitly.\n- It normalizes to reach 1/2 each.\n\nThis is the cleaner, more complete form of the key reasoning, and it comes in at roughly 115 words, within the limit.\n\nA's extra comparison with the classic problem is nice, but B's reasoning is more precise and it respects the length constraint, so B is better overall.\n\nVerdict: B",
+  "usage": {
+    "input": 831,
+    "output": 1277
+  },
+  "cost": 0.028864
+}

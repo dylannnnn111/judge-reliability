@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-28",
+  "side": "A",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The content is accurate. Chaining and open addressing are described correctly, the load-factor discussion is sound, and the O(log n) note for Java's HashMap is a fair worst-case mention. It also covers the key performance reasoning: average O(1) with a good hash and controlled load, degradation as chains or probe sequences grow, clustering in open addressing, and resizing at a threshold.\n\nThe main problem is the explicit constraint of \"under 120 words.\" By my count the response runs roughly 230 words, nearly double the limit. The extra length does not add essential content, since the final paragraph largely restates the resizing point. That is a clear instruction failure, though it does not make the answer wrong.\n\nScore: 4",
+  "usage": {
+    "input": 616,
+    "output": 957
+  },
+  "cost": 0.0005401000000000001
+}

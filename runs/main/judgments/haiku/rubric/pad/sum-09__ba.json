@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-09",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both summaries are accurate. Neither misstates the dates, the 3–5% CPI band, the uncapped year-5 market review, the year-4 floor, the 30-day dispute window, the 50/50 valuer cost split, or the 14-day notice rule. Both also cover outgoings and the late-notice consequence.\n\nThe difference is length. The user asked for under 120 words. Response A runs to roughly 230 words, nearly double the limit, and its extra sentences (the \"In short\" line and the repeated caveat about the binding lease) add little for a busy manager. Response B is roughly 125 words including the heading, close to the limit, and it keeps every point the reader needs in a scannable format. Its only small gap is that it does not say the market review is \"determined by a valuer appointed by the landlord\" in full, but \"the landlord's valuer sets rent\" conveys the same thing.\n\nResponse B is better on concision and meets the word limit far more closely, with no loss of accuracy or key content.\n\nVerdict: B",
+  "usage": {
+    "input": 1697,
+    "output": 1070
+  },
+  "cost": 0.0007047
+}

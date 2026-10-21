@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-28",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The content is largely correct. Chaining and open addressing are described accurately, the load-factor reasoning is sound, and the Java HashMap tree-bin detail is right (worst case O(log n) when chains are treeified). It omits that open addressing needs tombstones for deletion, a minor gap. The main flaw is the length: the response runs about 130 words, over the 120-word limit. Clarity is good, with clear headings and a logical flow from mechanisms to performance to resizing.\n\nScore: 6",
+  "usage": {
+    "input": 489,
+    "output": 664
+  },
+  "cost": 0.0003809
+}

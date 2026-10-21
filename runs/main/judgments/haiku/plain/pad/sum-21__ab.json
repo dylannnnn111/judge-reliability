@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-21",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. It stays under the 120-word limit (roughly 115 words), while A runs to about 220 words, nearly double the limit. B also keeps the key facts accurate: the $229,140 total, the $13,140 overrun, the 24 October deadline, and the roughly $21,600 hire-car cost. A covers the same points but is much longer than a busy manager needs.\n\nB",
+  "usage": {
+    "input": 1520,
+    "output": 642
+  },
+  "cost": 0.000473
+}

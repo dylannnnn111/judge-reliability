@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-09",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Each gives the correct starting rent, the 3–5% CPI band for years 2–4, the uncapped market review in year 5 with the year-4 floor, the 30-day independent valuer right with a 50/50 cost split, the separately billed outgoings, and the 14-day notice rule with its late-notice consequence. Response A's \"rent could rise sharply\" is a slight paraphrase of \"can go up by more,\" not an error.\n\nResponse A covers every point the manager needs in about 130 words, which is close to the 120-word limit. Response B is roughly twice as long. Its introductory sentence and closing paragraph add little, and its bullets repeat the same content with more padding. Its extra length adds no correct and useful information, so it is weaker on concision. Neither response is clearly more accurate or more complete, so Response A is better overall.\n\nVerdict: A",
+  "usage": {
+    "input": 1697,
+    "output": 1065
+  },
+  "cost": 0.0007022
+}

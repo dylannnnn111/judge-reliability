@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-32",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.** Both responses are correct: Earth's orbit takes about 365.2422 days, and both state the Gregorian 4/100/400 rule. Both correctly conclude that 1900 was a common year and 2000 a leap year.\n\n**Key reasoning.** The question's real puzzle is *why* century years are treated differently.\n- **A** answers this directly. A leap day every four years assumes a 365.25-day year, which overcorrects by about 11 minutes a year, or roughly 3 days every 400 years. That shows exactly why the 100 and 400 exceptions exist.\n- **B** only says the rule corrects \"the small excess.\" It never quantifies or explains the excess, so a reader can't see why 1900 needed skipping.\n\n**Clarity.** Both are clear. A's bulleted rules make the exceptions easy to follow.\n\n**Length.** A runs about 122 words, slightly over the 120-word limit. B is about 85 words. A's overrun is marginal, though, and its extra words add correct, useful reasoning on the core of the question. That outweighs the small breach.\n\nVerdict: A",
+  "usage": {
+    "input": 702,
+    "output": 1545
+  },
+  "cost": 0.033708
+}

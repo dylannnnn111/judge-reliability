@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-29",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses report the prices, the data increases, the March 2024 scope, the fixed-contract exemption, the pre-15 November exit option, and the reason for the change. Response A has a small accuracy problem: it says Classic customers and fixed-contract customers are \"unaffected until their contract ends,\" which wrongly suggests Classic customers face a future change tied to a contract. The source says only that Classic prices and data won't change this year. Response B states both exemptions correctly and separately. It also includes the support contact, which a manager may want, and its layout makes the price changes easy to scan. Response B runs to roughly 120–122 words, so it sits at the limit or slightly over, while Response A is comfortably under. That overrun is minor next to A's misstatement, so B is the better summary.\n\nVerdict: B",
+  "usage": {
+    "input": 1406,
+    "output": 1583
+  },
+  "cost": 0.0009321
+}

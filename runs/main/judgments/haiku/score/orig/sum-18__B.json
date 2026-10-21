@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-18",
+  "side": "B",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The summary is accurate throughout. The heat threshold (35°+), the 15% battery figure, the pounds-based calorie fix, the New Zealand time zone fix, and the accessibility changes all match the release notes. It covers every section and stays well under 120 words. Minor omissions include the unsubscribe option for the weekly email and the specific 15-minute sync interval, but neither is essential for a busy manager. The \"Users can turn these off\" wording is slightly less precise than the Settings > Safety location, but it is not misleading.\n\nScore: 9",
+  "usage": {
+    "input": 1035,
+    "output": 598
+  },
+  "cost": 0.0004025
+}

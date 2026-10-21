@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-32",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the most important bug: `BETWEEN '2026-09-01' AND '2026-09-30'` drops September 30 orders placed after midnight. Both also flag integer division truncating `avg_items_per_order`, the NULL-status exclusion, and the inner join dropping stores with no orders. Both offer sound fixes, including the half-open date range and casting or `AVG`.\n\nResponse A adds some useful detail, such as moving filters into the `ON` clause for a LEFT JOIN and the missing ORDER BY tiebreaker. However, it runs well over the 200-word limit and opens with filler (\"Let me walk through...\"). Response B is closer to the limit and covers the same core issues. It also notes that `<> 'refunded'` ignores partial refunds and suggests an explicit allowlist of counted statuses, which is a sharper point than A's. B's fixes are concise and correct.\n\nOn balance, B delivers the same key findings with better ranking and fewer words, and it follows the length constraint.\n\nVerdict: B",
+  "usage": {
+    "input": 1972,
+    "output": 980
+  },
+  "cost": 0.0006872
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-07",
+  "side": "A",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response finds the two most serious bugs. The `len(items) // size` bug silently drops the final partial batch, and the fix it suggests is correct. Swallowing batch failures and returning a count that looks like success is the second major problem, and it is ranked appropriately. Items 2 and 3 overlap somewhat, since both concern the misleading return and log, but they are not wrong. The exit-code and retry points are sensible operational advice for an hourly job, and the idempotency caveat on retries is a useful detail. The sliceable-input point is technically true but minor, and it sits last where it belongs. It doesn't flag anything that is fine, and it stays under 200 words. It misses little of substance, though it could have noted that the batch log lacks the batch index or size to aid debugging.\n\nScore: 8",
+  "usage": {
+    "input": 857,
+    "output": 640
+  },
+  "cost": 0.0004057
+}

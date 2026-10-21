@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-09",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Both responses get the facts right:\n- the $62,400 + GST starting rent, paid monthly\n- 1 March reviews\n- Sydney CPI increases in years 2–4, with a 3% floor and 5% cap\n- a market review in year 5, uncapped but no lower than year-4 rent\n- an independent valuer if requested within 30 days, cost split equally\n- outgoings charged separately\n- 14 days' written notice, with the old rent continuing and the difference paid if notice is late\n\nA has two small wording slips:\n- \"14 days' written notice\" drops \"at least\".\n- \"could rise sharply\" goes a little beyond the source, which only says \"can go up by more.\"\n\nNeither changes the meaning materially. B's wording follows the source more closely, but neither response has a real error.\n\n**Coverage:** Both keep every point a manager needs. A also lists what the outgoings are (rates, strata levies, cleaning). B's closing \"in short\" paragraph only repeats what it already said.\n\n**Concision and the length limit:** This is the deciding factor. The user set a firm limit of under 120 words.\n- A's body is about 116 words. Counting the title it is about 125, which is borderline but essentially within the brief.\n- B runs to roughly 250 words, about double the limit. Its intro sentence, its \"In short\" recap and phrasing like \"During these years\" and \"In this year\" add nothing.\n\nB clearly fails an explicit instruction. A meets it with no loss of accuracy that matters.\n\nVerdict: A",
+  "usage": {
+    "input": 1697,
+    "output": 1562
+  },
+  "cost": 0.038028
+}

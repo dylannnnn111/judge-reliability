@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "code-14",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the main bug: OFFSET pagination combined with deleting the rows just read skips rows, so roughly half the backlog is never archived. Both also flag the crash-between-archive-and-commit duplication risk and the need for an idempotent archive, and both note the string comparison on `created_at`. Response A's point 2 is a bit stronger because it explicitly says the archive must be durable before the delete, which is the data-loss risk. Response B makes that point too, but more briefly. Response B's point 3 (no rollback) is weaker: earlier batches are already committed, and the failing batch hasn't executed any DML yet, so a rollback wouldn't change much. Response B's observation that the returned count \"looks plausible\" is a useful detail about why the bug is silent. Response A's performance point is concise, though \"consider making it larger\" is vague. Overall the two are close, with A slightly tighter and more accurate in its prioritization.\n\nVerdict: A",
+  "usage": {
+    "input": 1514,
+    "output": 940
+  },
+  "cost": 0.0006213999999999999
+}

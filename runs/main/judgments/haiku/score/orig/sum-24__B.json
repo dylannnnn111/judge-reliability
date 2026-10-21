@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-24",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate throughout. It uses the corrected figures correctly: the five grants sum to $88,200, the rollover is $31,800, and the total is consistent with the $120,000 pool. The dates (31 October feedback, 30 November acquittal deadline, Round 3 on 2 February to 16 March) and conditions (ineligibility for future rounds) match the minutes. It stays under the 120-word limit at roughly 116 words. Minor omissions include the conflict-of-interest declaration, which a manager may not need, and that Sunita is responsible for the feedback and acquittal reminders. These are small gaps that don't mislead.\n\nScore: 8",
+  "usage": {
+    "input": 1327,
+    "output": 1551
+  },
+  "cost": 0.0009082000000000001
+}

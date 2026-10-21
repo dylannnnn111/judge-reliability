@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-28",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate on the key figures and dates: 84 staff, $3.9M, eight weeks, the one-quarter direction with eight weeks' notice, the two-week cash-out with four weeks remaining, the 24 December to 2 January shutdown, the warehouse exemption, and the 31 October list deadline. Neither has a substantive error.\n\nResponse B covers the shutdown more completely by including the unpaid leave and make-up time options, which matter to staff without enough leave. It also gives the burnout rationale and labels cash-out as new. Its main gap is describing the coverage as \"permanent staff\" without mentioning part-time staff, a minor omission. Response A's advantage is the \"40 days for full-time\" detail and a clearer statement of who is covered. It omits the unpaid and make-up options, which a manager would likely need to answer staff questions.\n\nBoth are close to the 120-word limit, so concision is roughly even. On balance, B keeps slightly more of what the reader needs.\n\nVerdict: B",
+  "usage": {
+    "input": 1466,
+    "output": 1202
+  },
+  "cost": 0.0007476000000000001
+}

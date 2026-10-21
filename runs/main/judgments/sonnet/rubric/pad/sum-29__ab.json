@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-29",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better, mainly because it follows the length limit while Response B does not.\n\n**Accuracy:** Both give the correct prices, data allowances, dates, eligibility, exit-fee condition and device-repayment caveat. Response A's sentence \"Classic plan customers and those on fixed-price contracts are unaffected until their contract ends\" is slightly loose, since Classic customers are only unaffected \"this year\" and the contract clause applies only to fixed-term customers. Response B states these two cases separately and more precisely. This is a minor flaw in A.\n\n**Constraint and concision:** The user asked for under 120 words for a busy manager. By my count, Response A is about 112 words and meets the limit. Response B is roughly 190 words, with bold headings, a restated intro, and a support-contact section, so it clearly breaks the limit. The support details are a nice-to-have, but they do not justify ignoring an explicit constraint.\n\n**Coverage:** Response A keeps all the key points: the price rises, the data increases, who is affected, the options, and the reason. Response B adds only the support contact details.\n\nResponse A's small imprecision matters less than Response B's clear breach of the word limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1524,
+    "output": 922
+  },
+  "cost": 0.012268
+}

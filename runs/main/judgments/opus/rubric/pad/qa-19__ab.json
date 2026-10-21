@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-19",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both responses are factually correct. Each traces \"kangaroo\" to *gangurru* in Guugu Yimithirr, recorded in 1770 near Cooktown during the *Endeavour* repairs. Each identifies the \"I don't understand\" story as a myth and cites John Haviland's 1970s work confirming that the word names the animal.\n\n**Response A** answers both questions accurately and briefly explains what the myth claims. At about 104 words, it respects the user's explicit limit of under 120.\n\n**Response B** adds one useful point: the myth likely spread because Aboriginal people in other regions did not recognize the word, since Australia had many distinct languages. That is genuine added reasoning. However, the response runs to roughly 190 words, clearly breaking the user's limit. It also includes filler such as \"has an interesting origin that is worth looking at closely\" and \"it's worth being clear about why.\" Ignoring an explicit length constraint is a significant failure to follow instructions. The extra explanation does not justify it, because the core question can be answered fully within the limit, as A shows.\n\nSince both are correct, A's compliance with the user's constraint, together with its clarity and completeness, makes it the better response.\n\nVerdict: A",
+  "usage": {
+    "input": 886,
+    "output": 803
+  },
+  "cost": 0.019604
+}

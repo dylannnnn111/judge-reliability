@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-39",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer in under 120 words. Response A is about 95 words, so it complies. Response B is roughly 220 words, so it clearly violates the constraint.\n\nOn correctness, Response A says 0.1 ≈ 0.1000000000000000055511 and 0.2 ≈ 0.2000000000000000111022, which is correct. It says the sum is about 0.30000000000000004, and that this is not the nearest representable value to 0.3. That is correct. Its wording \"the rounding errors combine\" is loose but acceptable.\n\nResponse B gives 0.3000000000000000444 for the sum, which is about right (the exact value is 0.3000000000000000444089...). It says the closest double to 0.3 is about 0.299999999999999988898, which is correct. Its facts are fine, but it breaks the word limit badly.\n\nResponse A is correct, concise and meets the constraint. Response B is correct but too long.\n\nVerdict: A",
+  "usage": {
+    "input": 926,
+    "output": 307
+  },
+  "cost": 0.004922
+}

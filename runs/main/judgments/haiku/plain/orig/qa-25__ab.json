@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-25",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. Both answers are under 120 words and correctly say Viking warriors didn't wear horned helmets. B is more accurate on the Bronze Age detail: the Veksø helmets predate the Viking Age by well over a millennium, while A's \"centuries before\" understates the gap. B also names the specific artists behind the 19th-century image, Malmström and Doepler, where A names only Doepler.\n\nB",
+  "usage": {
+    "input": 670,
+    "output": 1251
+  },
+  "cost": 0.0006925
+}

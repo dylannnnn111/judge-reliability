@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-24",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses correctly put the concurrent-duplicate race first, and both cover the main issues: non-durable dedupe, timing-unsafe signature comparison, missing replay protection, unhandled errors, and no amount check.\n\n**Response A is better:**\n- **Length.** It runs about 250 words. That still exceeds the 200-word limit, but by much less than B.\n- **Coverage.** It adds a distinct, relevant issue: a crash between `markInvoicePaid` and `processed.add` causes reprocessing. This is why the update must be idempotent or committed atomically with the dedupe record.\n- **Accuracy.** It correctly notes that `timingSafeEqual` throws on mismatched lengths.\n\n**Response B is weaker:**\n- **Length.** It runs roughly 340 words, well over the limit.\n- **Filler.** It opens with a redundant preamble: \"Here are the issues I found, listed in order of importance, along with the reasoning behind each one.\" Its explanations are also wordy (\"so it would be worth adding that check before the invoice is marked paid\").\n- **Strengths.** It does mention malformed JSON returning 400, and it suggests releasing the claim on failure. These don't outweigh its clear violation of the explicit length constraint.",
+  "usage": {
+    "input": 1700,
+    "output": 611
+  },
+  "cost": 0.01902
+}

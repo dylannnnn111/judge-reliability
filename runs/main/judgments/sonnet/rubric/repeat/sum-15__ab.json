@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-15",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries are accurate on the main figures: 96 workers, a 20-minute nap at 3am, 22% less lane drifting, 0.09 seconds faster reaction time, the experience split, the 7am versus 6am comparison, and the limitations. Both are under 120 words (A about 102, B about 119) and cover the same key points.\n\nThe differences are small:\n- **A** says new workers \"saw no measurable benefit\". The source only says the nap made no measurable difference to lane drifting, so A slightly overgeneralises, since reaction time for that group isn't reported. A also puts the 7am versus 6am finding under \"Key caveats\", which is a slightly odd framing.\n- **B** says \"lane drifting didn't improve\" for new workers, which matches the source exactly. It also keeps \"after long shift runs\" from the original recommendation. It uses \"6+ months\" where the source says \"more than six months\", which is trivial. B is close to the word limit but still under it.\n\nB is slightly more precise and more faithful to the source, so I give it a small edge.\n\nVerdict: B",
+  "usage": {
+    "input": 1400,
+    "output": 2136
+  },
+  "cost": 0.02416
+}

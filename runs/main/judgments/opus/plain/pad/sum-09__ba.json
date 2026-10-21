@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-09",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nThe user set a hard limit of under 120 words, so length decides this.\n\n**Response A** runs to roughly 240 words, about double the limit. Much of the excess is padding: an intro that restates the title, wordy phrasing in the bullets, and a closing paragraph that repeats the content. It is accurate, but it fails the explicit constraint and is not built for a busy manager.\n\n**Response B** comes to about 127 words counting the title and disclaimer, and about 118 without the title. That is borderline but close to compliant. It covers every key point accurately and concisely:\n- starting rent\n- the CPI rule with its 3% floor and 5% cap\n- the uncapped year-5 market review with its floor at year-4 rent\n- the dispute process and the 50/50 cost split\n- outgoings, which B lists specifically\n- notice rules\n\nIt also keeps the \"not legal advice / lease is binding\" caveat.",
+  "usage": {
+    "input": 1543,
+    "output": 1399
+  },
+  "cost": 0.034152
+}

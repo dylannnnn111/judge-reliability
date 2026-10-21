@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-01",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the main problems: no idempotency, one failure aborting the batch, float money, truncation in `int(amount * 100)`, and the hardcoded tax. Response A adds two valid points that B lacks: `float()` accepting NaN/inf, and the absence of any billing-period scoping. Response B adds customer_id normalization, which can split one customer into several billed accounts, and it handles negative totals more directly by noting that credits are silently dropped. B's truncation example (10.29 becomes 1028 cents) is concrete and correct. B's fixes are also more specific: a per-customer, per-period idempotency key, `round()` or `Decimal`, and quarantining bad rows. A's intro sentence is filler, and several of its items state the problem without a clear remedy. Both are within the word limit. Overall B is slightly more actionable and avoids the filler, though A's extra catches offset some of that.\n\nVerdict: B",
+  "usage": {
+    "input": 1691,
+    "output": 887
+  },
+  "cost": 0.0006126
+}

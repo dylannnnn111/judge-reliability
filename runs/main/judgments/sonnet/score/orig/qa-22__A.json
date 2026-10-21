@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-22",
+  "side": "A",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The response gets the central answer right: the claim is a myth, and the Coriolis effect is too weak at sink scale. It explains the reasoning well, noting that basin shape, jets, and residual motion dominate, and that large-scale systems like hurricanes are where Coriolis matters. The final paragraph's claim about controlled experiments is accurate (Shapiro 1962, Trefethen 1965 showed the effect with careful setups and long settling times, though \"a day or more\" is roughly correct, with Shapiro using about 24 hours).\n\nThe length constraint of under 120 words needs checking. Counting roughly: the first paragraph is about 36 words, the second about 49, and the third about 33. That totals about 118, so it is borderline but likely under 120. A closer count:\n\nParagraph 1: \"No, this is a myth.\" (5) \"The Coriolis effect is real, but it's far too weak to influence water in something as small as a sink or toilet.\" (23) → 28. \"It matters for large-scale systems like hurricanes and ocean currents.\" (10) → 38.\n\nParagraph 2: \"In a sink or toilet, the drain direction is determined by factors like the basin's shape, the angle of water jets (toilets), residual motion from filling, and any slight asymmetries in the container.\" (34) \"You can see both directions in either hemisphere, and even two identical sinks side by side may drain differently.\" (19) → 53. Running total: 91.\n\nParagraph 3: \"Only in extremely controlled experiments, with perfectly symmetrical basins and water left still for a day or more, has the Coriolis effect been shown to determine swirl direction.\" (28) → 119.\n\nThat is just under 120, so it complies.\n\nThe response is correct, has good reasoning, is clear, and meets the limit.\n\nScore: 9",
+  "usage": {
+    "input": 433,
+    "output": 583
+  },
+  "cost": 0.006696
+}

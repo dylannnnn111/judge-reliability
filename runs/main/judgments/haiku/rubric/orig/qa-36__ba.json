@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-36",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are scientifically sound. Each identifies the airfoil shape and the pressure difference, and each connects this to downward deflection of air via Newton's third law. Neither commits the common equal-transit-time fallacy, and both stay under 120 words.\n\nResponse A explains the pressure mechanism a bit more concretely, describing the faster airflow over the upper surface and the slower flow beneath. It also states clearly that the pressure and deflection views together produce lift.\n\nResponse B covers more of the key factors: angle of attack, speed, and the stall limit. The stall point is useful context that A omits. Its framing is slightly less detailed on the pressure mechanism, but it stays accurate. Its extra content is correct and relevant, so it edges ahead.\n\nVerdict: B",
+  "usage": {
+    "input": 685,
+    "output": 785
+  },
+  "cost": 0.000461
+}

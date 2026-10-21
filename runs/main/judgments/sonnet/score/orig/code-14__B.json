@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-14",
+  "side": "B",
+  "score": 8,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds the central bug: `OFFSET` combined with deleting rows skips every other batch. It describes the effect accurately (about half the old rows stay in the live table while the count looks plausible) and gives two correct fixes, re-querying without `OFFSET` or keyset pagination. Ranking it first is right.\n\nThe second issue is also real and well explained. A crash between `archive` and `commit` leads to duplicates on re-run, so `archive` needs to be idempotent. The warning about an async or buffered `archive` is a useful extra.\n\nThe third issue is weaker. If `archive` raises, no transaction is open, and if the delete raises, the exception propagates anyway. A rollback is good hygiene but not a significant bug, so it is slightly overstated. The minor items (timestamp format, missing index) are valid. The \"no logging or metrics\" point is generic filler.\n\nThe response runs to roughly 210–220 words, slightly over the 200-word limit. It does not flag anything that is actually fine.\n\nOverall, the top two issues are correct, prioritized and come with fixes. The deductions are for the mild length overrun and some padding at the bottom.\n\nScore: 8",
+  "usage": {
+    "input": 989,
+    "output": 926
+  },
+  "cost": 0.011238
+}

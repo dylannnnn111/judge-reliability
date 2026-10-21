@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-39",
+  "side": "B",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate and covers the key points: the 1 December start, the 7-2 vote, the wiped fines, the exceptions, the rationale, the cost, the dissent and the 12-month review. The derived net figure of about $33,000 follows from the source's numbers, and the 60-day replacement rule and the inter-library exception are stated correctly. It is slightly loose in lumping \"damaged\" items in with the 60-day rule, but this is minor.\n\nThe main problem is length. By my count it comes to about 121 words including the headline, which is just over the explicit \"under 120 words\" limit. The overrun is tiny, but the user set a hard cap. The cost bullet also adds a net-figure calculation that a busy manager could do without, and trimming it would have brought the summary under the limit.\n\nScore: 6",
+  "usage": {
+    "input": 1071,
+    "output": 1527
+  },
+  "cost": 0.017412
+}

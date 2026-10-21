@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-03",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better, mainly because it respects the word limit, while the two are close on accuracy.\n\n**Accuracy:** Both are largely correct on the numbers, the dates, the roughly 50% failure rate, the connector B certificate cause, the $41,900 estimate with its caveat, and the support volume. Response A says \"about four times normal\", which matches the source. Response B drops the \"about\", a minor loss of precision. A's \"Support escalation led to the fix\" is slightly loose, since the on-call engineer found the cause. It is still broadly fair, as escalation triggered the investigation. B's \"outdated certificate\" is acceptable, though it loses the \"expired\" detail.\n\n**Coverage:** Both cover the cause, impact, slow detection, and actions. A marks which actions are done and which are pending with owners and dates. B gives dates but omits owners. B adds the severity level and the 11:35 time, which are marginally useful.\n\n**Concision and constraint:** The request set a limit of under 120 words. By my count, A is about 105 words and complies. B is about 126 words including its title, so it breaks the explicit limit.\n\nSince the accuracy and coverage differences are small, B's overrun decides it.\n\nVerdict: A",
+  "usage": {
+    "input": 1597,
+    "output": 1616
+  },
+  "cost": 0.019354
+}

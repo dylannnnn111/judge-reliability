@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-13",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses identify the same core problems: the December crash, day-of-month overflow, drift from chaining dates, the hardcoded 30-day proration, missing validation, and rounding. Neither misses anything important, and neither flags anything that is actually fine.\n\nResponse A ranks the issues sensibly, puts the crashes first, and gives concrete fixes: `dateutil.relativedelta` or `calendar.monthrange`, computing dates from `start`, and using the real period length for proration. It is tighter and closer to the 200-word limit. Its only weakness is that the proration fix relies on the broken `next_billing_date`, which is a minor point.\n\nResponse B is accurate and adds a useful note about checking whether the end date is inclusive or exclusive. However, it is noticeably longer, roughly 330 words against a 200-word cap, and it spends that length restating the problems rather than adding new value. Its fixes are less specific; for drift it describes the approach without naming a tool or function.\n\nSince the user explicitly asked for brevity, and Response A delivers the same correct coverage with more actionable fixes in fewer words, Response A is the better response.\n\nVerdict: A",
+  "usage": {
+    "input": 1729,
+    "output": 967
+  },
+  "cost": 0.0006564
+}

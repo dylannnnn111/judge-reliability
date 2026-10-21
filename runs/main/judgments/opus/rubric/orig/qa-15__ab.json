@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-15",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses give the correct answer of **18 °F**. Both show the core reasoning: a 10 °C rise, converted using only the 9/5 factor. Both also include the same verification (59 °F to 77 °F), and both are well under the word limit.\n\nThe difference is small. Response A states the rule: a difference \"scales by 9/5 without the 32-degree offset.\" Response B explains the rule: the +32 offset \"cancels out.\" That points to why the offset doesn't apply when you subtract two temperatures, which is the key conceptual step in this problem. Response B also puts the calculation on its own line, which makes it slightly easier to read.\n\nThese are minor advantages, but they bear on the key reasoning and clarity, so Response B comes out marginally ahead.\n\nVerdict: B",
+  "usage": {
+    "input": 559,
+    "output": 502
+  },
+  "cost": 0.012276
+}

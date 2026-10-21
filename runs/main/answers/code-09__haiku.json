@@ -1,0 +1,13 @@
+{
+  "item": "code-09",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "**1. Revoked permissions stay active (security).** `revoke_permission` deletes the row but never touches `_permission_cache`, so `can()` keeps returning `True` for that user until the process restarts. Revocation should take effect immediately.\n\n**2. Cache is not shared across processes.** `_permission_cache` is per-process. With multiple workers, a revoke only clears the database. Other workers keep serving stale permissions indefinitely.\n\n**3. No invalidation path for grants or role changes.** Any grant added after a user's first check stays invisible until restart. There is also no TTL, so staleness is unbounded.\n\n**4. Unbounded memory growth.** The dict grows with every distinct `user_id` and is never evicted.\n\n**5. Thread safety.** A plain dict shared across threads is risky under concurrent request handling. The check-then-set is not atomic, though the worst case is usually a redundant query rather than corruption.\n\n**6. Minor: `revoke_permission` is not atomic with cache updates.** Even after fixing the cache, invalidating before the commit lets another thread re-cache the old permissions in between. Invalidate after the commit.\n\n**Suggested fix:** Drop the process-local cache, or use a shared cache (e.g., Redis) with a short TTL and explicit invalidation on every grant and revoke, performed after commit. Add `lru_cache`-style bounds if you keep a local cache.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 323,
+    "output": 808
+  },
+  "cost": 0.00043630000000000003,
+  "at": "2026-10-14T01:53:12.110Z"
+}

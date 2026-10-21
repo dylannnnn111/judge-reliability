@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-25",
+  "side": "B",
+  "score": 5,
+  "model": "claude-opus-5-5",
+  "text": "The summary is accurate but runs to about 146 words, roughly 22% over the 120-word limit. That breaks a hard instruction.\n\n**Accuracy is strong.**\n- Dates are correct: 1 October change, 2 October incident, 3 October regulator notice, 6 October calls, 13 and 31 October actions, 9 October send.\n- Numbers are correct: 347 misdirected and 11,200 unsent.\n- The data exposed is described correctly: name, address, account number and transactions, with no passwords or card numbers.\n- It correctly says the job was stopped before the remaining statements went out.\n- It keeps the \"not a hack\" finding and the leaked staff message.\n- Calling the \"message\" an \"email\" is a trivial liberty.\n- \"Leaked to local news\" compresses \"forwarded outside by at least one staff member and quoted in a local news story\" acceptably.\n\n**It keeps what a manager needs.** It covers the cause, scale, data exposed, regulatory and member notifications, reputational issue, fixes with dates, and next send date. The regulator notification implies the eligible-breach assessment. The fixes do not distinguish clearly between done and pending, but the tense largely conveys it.\n\n**The word limit was missed.** The user explicitly asked for under 120 words for a busy reader. Some details could have been cut to fit, such as \"The job was stopped before…\" phrasing and the separate headers. Missing a stated limit by this much is a significant failure, even though the content is otherwise good.\n\nScore: 5",
+  "usage": {
+    "input": 1156,
+    "output": 1826
+  },
+  "cost": 0.041144
+}

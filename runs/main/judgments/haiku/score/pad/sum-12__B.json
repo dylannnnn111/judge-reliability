@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-12",
+  "side": "B",
+  "score": 3,
+  "model": "claude-haiku-5-5",
+  "text": "The response is mostly accurate. The fee figures, the 1 November start, the 180 closed spaces, the 18-month repair timeline, the staff exemption, the 20 October form availability, and the petition count all match the article. The one shaky claim is that the $15 weekly pass \"replaces\" the $9 daily concession. The article describes the weekly pass as an extension of concession parking and does not say the daily rate is abolished, so this is an unsupported inference.\n\nThe main failure is length. The user asked for a summary under 120 words, and the response runs well over 200 words. It also spends words on filler such as \"I would like to let you know,\" \"I want to reassure you,\" and \"For your information,\" which a busy manager doesn't need. The brief was for a quick read, and this response reads like a full rewrite of the article. The extra detail is accurate, but it doesn't meet the constraint the user set.\n\nScore: 3",
+  "usage": {
+    "input": 1152,
+    "output": 845
+  },
+  "cost": 0.0005377
+}

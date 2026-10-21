@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-20",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses rank the issues the same way and cover the same four: DST, malformed input, timezone, and staleness after midnight.\n\n- **Accuracy:** Response A correctly notes that the overdue *list* is unaffected by the DST bug, since the sign stays negative. Response B wrongly says the invoice \"may land in the wrong place on the overdue list.\"\n- **Length limit:** Response B adds filler, including an odd meta preamble (\"I've kept the explanations and the suggested fix as they were…\"), which pushes it well past the 200-word limit. Response A is much closer to the limit.\n- **Clarity:** Response A is the tighter of the two.",
+  "usage": {
+    "input": 1827,
+    "output": 508
+  },
+  "cost": 0.017468
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-06",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "A is better because it meets the 120-word limit, and B does not.\n\nResponse A comes to roughly 110 words. It covers the key facts a busy manager needs: the reopening date, cost, funding, upgrades, programs, prices, opening-day offer and hours. Its bold headings make it quick to scan.\n\nResponse B runs to about 170–190 words, well over the limit. It also adds filler such as \"we are pleased to share the details\", \"mark the date in your calendar\" and \"we look forward to welcoming you\". That promotional tone is out of place in a summary for a manager.\n\n**A**",
+  "usage": {
+    "input": 1468,
+    "output": 1044
+  },
+  "cost": 0.013376
+}

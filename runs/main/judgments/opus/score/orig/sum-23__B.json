@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-23",
+  "side": "B",
+  "score": 6,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy**\n\nMost details match the minutes:\n- Footpath starts in February and takes about six weeks.\n- Playground installation is planned for April.\n- Tree canopy feedback closes 31 October.\n- Balance is $5,610, with 142 member households.\n- Clean Up Day details are correct.\n- Carols date, time, venue, choir and the $900 cap are correct.\n- Next meeting date is correct.\n\nThere is one real error, in the Wattle Road item. The response says \"Council will install a speed counter.\" The minutes say only that Councillor Tse *would ask* council traffic staff to put one in and report back. The summary turns a councillor's undertaking to make a request into a council commitment. That misstates both who decided and how certain the outcome is. A busy manager could wrongly tell residents a speed counter is coming.\n\n\"Membership is up\" is a slight simplification of \"renewals are up on last year,\" but it is acceptable.\n\n**Coverage**\n\nThe main items are all there. Some useful details are missing:\n- Who is responsible: Laila coordinates Clean Up Day and Peter books the sound system.\n- The carols budget also covers candles and a sausage sizzle.\n- The Facebook meeting-dates item is left out, which is minor.\n\n**Concision**\n\nAt about 100 words, it is under the limit and easy to scan.\n\n**Verdict**\n\nThe response is well structured and mostly accurate. The overstated Wattle Road commitment is a meaningful accuracy flaw, though, and accuracy is the top criterion.\n\nScore: 6",
+  "usage": {
+    "input": 1158,
+    "output": 812
+  },
+  "cost": 0.020872
+}

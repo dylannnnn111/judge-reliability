@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "qa-20",
+  "side": "A",
+  "score": 7,
+  "model": "claude-opus-5-5",
+  "text": "The response is **factually correct**:\n- Canberra is the capital.\n- Federal Parliament first sat there on 9 May 1927, when the Provisional Parliament House opened.\n- The note that Parliament previously met in Melbourne from Federation in 1901 is accurate and useful context.\n- At roughly 85 words, it meets the under-120-word limit.\n\nThe weaknesses are **padding and clarity**:\n- \"To answer your question directly\" and \"I hope this helpful background is useful\" add nothing.\n- The second phrase also calls the 1927 date \"background,\" when it answers half the question.\n- The closing summary repeats everything already said, so a large share of the words add no information.\n\nThe response is correct and complete, but loosely written and needlessly wordy.\n\nScore: 7",
+  "usage": {
+    "input": 378,
+    "output": 409
+  },
+  "cost": 0.009692
+}

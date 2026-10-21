@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-33",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are factually accurate. Both correctly give the 31 January 2027 extended v1 shutdown date, the 8% figure, the 15-minute switch time, and the three new features. Neither introduces errors.\n\nResponse A is well over the 120-word limit, at roughly 200 words. Much of that is filler, such as the opening \"Thank you for taking the time…\" and \"we kindly ask,\" which a busy manager doesn't need. Its structure is clear, but the length works against the brief.\n\nResponse B comes in at roughly 130 words, close to the limit. It is tighter and front-loads the key point that most customers need no action. It keeps the essential payroll deadline and the 8% condition, and states that the shutdown moved from 30 November to 31 January. Its fixes line is a little vague, but that is a minor loss given the word cap.\n\nFor a busy manager with a strict word limit, Response B delivers the needed information more efficiently.\n\nVerdict: B",
+  "usage": {
+    "input": 1707,
+    "output": 1082
+  },
+  "cost": 0.0007117
+}

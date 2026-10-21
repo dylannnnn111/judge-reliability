@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-24",
+  "side": "A",
+  "score": 8,
+  "model": "claude-opus-5-5",
+  "text": "**Score: 8/10**\n\n**Correctness:** Both answers are right.\n- **Base to peak:** Mauna Kea is the tallest mountain base to summit. It rises about 10,200 m from the seafloor and stands about 4,207 m above sea level.\n- **Farthest from the centre:** Chimborazo's summit is the farthest point from Earth's centre, about 6,384 km. That is roughly 2 km farther than Everest's summit. Its elevation of 6,263 m is within the commonly cited figures.\n\n**Minor imprecision:** The response puts Everest's base-to-peak height at \"roughly 4,600 to 5,000 m.\" Commonly cited figures run about 3,600–4,600 m, depending on where the base is taken, so the stated range is somewhat high. It does not change the conclusion.\n\n**Reasoning:** The key explanations are present. Most of Mauna Kea sits below sea level. The equatorial bulge, with Chimborazo's position close to the equator, explains its distance from the centre.\n\n**Clarity and length:** The structure is clear, with one section per question. The response is about 112 words, within the 120-word limit.\n\nScore: 8",
+  "usage": {
+    "input": 491,
+    "output": 689
+  },
+  "cost": 0.015744
+}

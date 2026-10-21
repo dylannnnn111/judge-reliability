@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "sum-27",
+  "side": "B",
+  "score": 3,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is mostly accurate: the numbers (81% vs 74%, 78% vs 76%, $95, $410,000), the dates, the 60% free-month share and the 21 October decision point all match the email. It also keeps the key points: the mixed result, the confound, the cost, the Sales claim and the proposed test.\n\nSmall issues:\n- It says \"at least 60 days\" as just \"60-day\".\n- It drops \"new business customers\".\n- It slips into \"we\" and \"kindly\", which is an odd voice for a summary.\n\nThe main failure is length. The request set a hard cap of 120 words, and the response runs to roughly 190. The bold headline and the opening paragraph say the same thing twice, and the bullets contain padding such as \"The measure used for comparison was…\" and \"On the headline figures…\". A busy manager would have been better served by a tighter version, and the cap was an explicit instruction.\n\nScore: 3",
+  "usage": {
+    "input": 1287,
+    "output": 754
+  },
+  "cost": 0.010114
+}

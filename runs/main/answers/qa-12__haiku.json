@@ -1,0 +1,13 @@
+{
+  "item": "qa-12",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "The probability of getting no sixes in four rolls is (5/6)^4 = 625/1296.\n\nSo the probability of at least one six is:\n\n1 − 625/1296 = 671/1296 ≈ 0.518\n\n**Answer: 671/1296 ≈ 51.8%**",
+  "stop": "end_turn",
+  "usage": {
+    "input": 58,
+    "output": 92
+  },
+  "cost": 0.0000518,
+  "at": "2026-10-14T01:50:19.941Z"
+}

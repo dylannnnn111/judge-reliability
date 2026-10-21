@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-39",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is slightly better. Both responses are under 120 words (A is about 101) and give the core explanation correctly: binary floating-point cannot represent 0.1 and 0.2 exactly, with the 1/3 analogy in decimal.\n\nA has the edge for three reasons:\n- It gives the exact stored values for the sum (about 0.3000000000000000444) and for the double closest to 0.3 (about 0.299999999999999988898). That shows concretely why the two doubles differ.\n- It mentions the familiar printed output, 0.30000000000000004.\n- Its workarounds are more complete: tolerance comparison, decimal types, and integer storage such as cents.\n\nB is correct and concise, but it is less detailed. It says only that the \"rounding errors combine\" and never shows the value of the nearest double to 0.3.\n\n**A**",
+  "usage": {
+    "input": 639,
+    "output": 1260
+  },
+  "cost": 0.013878
+}

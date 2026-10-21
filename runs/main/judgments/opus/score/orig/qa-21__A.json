@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-21",
+  "side": "A",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** The response is accurate. Perihelion falls in early January, typically around January 2–5. The distances are correct: about 147.1 million km (91.4 million miles) at perihelion and about 152.1 million km (94.5 million miles) at aphelion in early July. The 23.5° tilt is a standard rounding of 23.44°. The roughly 3% distance difference is also right.\n\n**Reasoning:** It anticipates the obvious confusion, that January is winter in the Northern Hemisphere, and explains that seasons come from axial tilt, not distance. That is the key insight. One nuance is missing: a 3% change in distance means about a 7% change in incoming sunlight, so calling the effect \"small\" simplifies a little. It is still fair relative to the tilt.\n\n**Clarity and length:** The answer is clear and well organized, at about 107 words, under the 120-word limit. Each sentence adds something useful.\n\nScore: 9",
+  "usage": {
+    "input": 425,
+    "output": 767
+  },
+  "cost": 0.01704
+}

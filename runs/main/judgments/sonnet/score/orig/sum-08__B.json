@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-08",
+  "side": "B",
+  "score": 5,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is mostly accurate and well structured, but it contains one invented date. It says the fridge \"failed on 29 September\", yet the ticket only says \"Sunday\". The weekdays in the thread put 6 October on a Monday (Priya's \"Monday\" call), so the Sunday was 28 September, not the 29th. The date is also unnecessary for a busy manager.\n\nThe other facts check out:\n- The purchase date, the 90-day policy and the roughly $300 loss are correct.\n- Priya Nand is covering for Jason Reilly, who is on leave until 9 October.\n- The replacement is due Wednesday.\n- The Frostline contractor will collect the faulty unit separately.\n- The $500 approval threshold is correct.\n- Escalation goes to Amara Osei if the claim form isn't sent by 9 October.\n\n\"Patience is wearing thin\" is a mild interpretation of the customer's messages, but it is reasonable.\n\nThe summary keeps the key points: the open claim form, the escalation trigger and the delivery. It omits that the claim needs receipts or photos, a small but useful detail. At about 110 words it is within the limit and reasonably concise.\n\nThe invented date is the main flaw.\n\nScore: 5",
+  "usage": {
+    "input": 1203,
+    "output": 804
+  },
+  "cost": 0.010446
+}

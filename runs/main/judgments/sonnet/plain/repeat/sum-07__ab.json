@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "sum-07",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. Both responses correctly flag the Classic CSV removal as the key action item, but they differ on the word limit and on accuracy.\n\n- **Word limit:** By my count, A comes to roughly 117 words, just under the 120 limit. B comes to roughly 124 words, over it. This is the main difference.\n- **Accuracy:** B says Android 9 \"is no longer supported\", which slightly overstates the source, since the app will keep working but won't get updates. A's wording (\"will no longer receive updates\") is accurate.\n- **Structure for a busy manager:** A leads with the action needed, which suits a reader who won't read the original. B opens with features and puts the action item second.\n- **A's flaw:** It files the bug fixes under \"Improvements\", which is a minor mislabel.",
+  "usage": {
+    "input": 1247,
+    "output": 1236
+  },
+  "cost": 0.014854
+}

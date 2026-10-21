@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-28",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate on every figure and date: 84 staff, $3.9M, the 1 December 2026 effective date, the eight-week threshold, the one-quarter direction with eight weeks' notice, the two-week cash-out with four weeks remaining, the 24 December to 2 January shutdown, and the 31 October list. The warehouse exemption is correctly limited to the shutdown. Its omissions are minor: it drops the explicit \"once a year\" limit on cash-outs, does not say the cap is 40 days for full-time staff, and describes coverage as \"Permanent staff\" without mentioning part-time staff. It is well under 120 words and covers what a manager needs to act on, with a clear action item.\n\nScore: 8",
+  "usage": {
+    "input": 1104,
+    "output": 834
+  },
+  "cost": 0.0005274
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-25",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. Both responses go over the 200-word limit, but B is shorter, at roughly 255 words against A's roughly 310.\n\nBoth lead with the real bug, the off-by-one `>` that lets a sixth attempt through, and both cover unbounded memory growth, per-IP-only limiting, in-memory state, the hardcoded `retryAfterSec`, and trusting the IP value.\n\nB is more concrete and more correct in places:\n- It notes that stale timestamps are pruned only when the same key returns.\n- It gives a formula for `retryAfterSec`.\n- It says the effective limit is `limit × instances`.\n- It suggests keying on an IPv6 /64 prefix.\n- It points out the shared-NAT and proxy-IP lockout risk.\n\nA's point 5, that successful logins consume quota, is weak. Counting all attempts is normal for a login limiter, and A itself says only that this is \"worth deciding\". A also pads its points with more hedged phrasing.\n\nB's last item is minor filler, but it is labeled as minor.\n\n**B**",
+  "usage": {
+    "input": 1635,
+    "output": 1042
+  },
+  "cost": 0.01369
+}

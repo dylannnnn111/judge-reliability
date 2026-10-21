@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-09",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy.** Both responses are essentially accurate. They give the $62,400 + GST starting rent, monthly payment and 1 March reviews. They both state the 3% floor and 5% cap for years 2–4. Both cover the year-5 market review, with no cap and no reduction below the year-4 rent. Both also include the 30-day independent valuer option with costs shared equally.\n\n- A is slightly more precise on notice (\"at least 14 days\").\n- A's \"the difference is paid\" is vague about who pays what. B's \"back-paid\" is clearer.\n- B's \"rise sharply\" is a little editorial. It is still a fair reading of \"no cap\" and is not misleading.\n\n**Points the reader needs.** B keeps a few useful details that A drops:\n- It notes this is a five-year lease, which explains why year 5 is the last review.\n- It says what outgoings are (rates, strata levies, common-area cleaning) and that they are not part of the review.\n- It keeps the \"not legal advice\" disclaimer.\n\n**Concision and word limit.** By my rough count, A runs about 120–128 words including its title and final line, so it may exceed the 120-word limit. B comes in at about 118 words, within the limit, while carrying slightly more useful information.\n\nOverall, B is marginally better: equally accurate, a bit more informative, and more clearly within the word limit.\n\nVerdict: B",
+  "usage": {
+    "input": 1503,
+    "output": 1347
+  },
+  "cost": 0.032952
+}

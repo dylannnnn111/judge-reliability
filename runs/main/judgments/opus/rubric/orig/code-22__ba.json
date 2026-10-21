@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-22",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.** Both catch the critical bug: `jwt.decode` skips signature verification, so anyone can forge an admin token. Both give the correct `jwt.verify` fix with algorithm pinning. Both also cover the remaining real issues: exported secret, unvalidated `JWT_SECRET`, unenforced expiry, wrong 401/403 status codes and loose `Bearer` parsing.\n\n**Response A** ranks seven issues with explicit severity labels and a fix for each. It also correctly notes that the `try/catch` is effectively dead code with `decode`. Its main weakness is item 6, \"fails open or fails late.\" That is imprecise, since `jsonwebtoken`'s `verify` throws on an undefined secret and so fails closed. A hedges this with \"error or behave unpredictably.\"\n\n**Response B** has some genuine strengths:\n- It spots that `SECRET` is unused in the module.\n- It suggests checking `iss` and `aud`.\n- It includes a concise fixed code snippet.\n\nIts weaknesses outweigh these:\n- Item 3, algorithm pinning, repeats the fix already given in item 1.\n- The \"minor\" items are padding of debatable value. Swallowing error details from clients is arguably correct security practice, not a problem.\n- It runs well past the 200-word limit. Response A is probably slightly over too, but far less so.\n\nBoth responses find the important issues. A follows the length instruction more closely, ranks issues more cleanly and avoids filler. B's extra length adds a useful snippet but also redundancy and weak points.\n\nVerdict: A",
+  "usage": {
+    "input": 1718,
+    "output": 1113
+  },
+  "cost": 0.029132
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-24",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response catches the most important defect, the race where `processed.add` runs only after `await markInvoicePaid`, and it correctly notes that the user's own description makes this the critical case. Its fix (atomic claim with a unique constraint in the same transaction, released on failure) is sound. The in-memory Set problems (lost on restart, not shared across instances, unbounded growth) are real, and the timing-safe comparison advice is accurate, including the length check that `timingSafeEqual` requires. The replay point is conditional on the provider supplying a timestamp, which is appropriately hedged. The error-handling item is mostly right, though it misses that a thrown error leaves the request without a response, so the provider sees a timeout rather than a clean 500. It also doesn't mention out-of-order events or the currency check it hints at. Length is close to the 200-word limit but stays within it. Overall the issues are real and well ordered, with only minor gaps.\n\nScore: 8",
+  "usage": {
+    "input": 1059,
+    "output": 1005
+  },
+  "cost": 0.0006083999999999999
+}

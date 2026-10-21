@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-10",
+  "side": "B",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response gives the correct answer, 1/3. It lists the four equally likely outcomes, removes BB under the \"at least one girl\" condition, and counts GG as the only two-girl case among the three remaining. It also explains why the result differs from the common 1/2 intuition: the condition does not specify which child is a girl. The aside that knowing a specific child is a girl gives 1/2 is also correct. The reasoning is complete and concise, at roughly 90 words, within the limit. The formatting is clean and easy to follow.\n\nScore: 9",
+  "usage": {
+    "input": 396,
+    "output": 298
+  },
+  "cost": 0.0001886
+}

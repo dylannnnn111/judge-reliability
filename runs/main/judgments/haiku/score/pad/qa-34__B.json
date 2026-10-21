@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-34",
+  "side": "B",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The technical content is correct. It identifies Diffie-Hellman as the key exchange, explains why an eavesdropper seeing only public keys cannot feasibly derive the shared secret, describes the move to a symmetric session key, and notes that authentication via certificates is still needed against man-in-the-middle attacks. The reasoning is clear and well organized.\n\nHowever, the user explicitly asked for an answer under 120 words, and this response runs roughly 220 words, nearly double the limit. That is a clear instruction-following failure. The extra material (the authentication section and the closing HTTPS sentence) is useful, but it does not justify ignoring a stated length constraint. A compliant answer would have kept the core Diffie-Hellman mechanism and a brief note on authentication.\n\nCorrectness and reasoning are strong, but the explicit length violation weighs heavily.\n\nScore: 4",
+  "usage": {
+    "input": 610,
+    "output": 544
+  },
+  "cost": 0.000333
+}

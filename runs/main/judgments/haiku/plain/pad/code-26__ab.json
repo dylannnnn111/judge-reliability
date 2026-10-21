@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-26",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "A is better. Both correctly rank the string `qty` bug first and cover the same main issues. A is tighter and closer to the 200-word limit, while B is wordier. B's point about `NaN` breaking the comparator in `topOrders` is a useful insight, but it doesn't outweigh A's concision.\n\nA",
+  "usage": {
+    "input": 1730,
+    "output": 602
+  },
+  "cost": 0.000474
+}

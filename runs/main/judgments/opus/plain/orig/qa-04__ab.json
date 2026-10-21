@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-04",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses are correct ($480 final price, 4% decrease), clear, and under 120 words. Response A is slightly better. It states the answer up front, stays more concise, and adds a useful generalization: raising then lowering by the same *p* gives a net change of −*p*². That insight goes beyond this one problem. Response B is a clear step-by-step solution, but its closing \"Equivalently, 1.20 × 0.80 = 0.96\" line mostly repeats what it already showed.",
+  "usage": {
+    "input": 513,
+    "output": 360
+  },
+  "cost": 0.009252
+}

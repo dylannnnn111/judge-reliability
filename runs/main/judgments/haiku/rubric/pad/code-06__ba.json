@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-06",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses find the same core issues: the `is` vs `!=` identity bug, the existence leak from distinct `LookupError` and `Forbidden` responses, the non-atomic check-then-save race, and the missing refund on paid orders. Both explain the fixes clearly. Response B's race fix adds `customer_id` to the conditional update, which is a useful detail, and its note about the `ValueError` message leaking internal status is a reasonable minor point. Response A's observation that the object is mutated before `save` can leave callers with a false status is also valid and arguably more relevant. Response B runs about 300 words, well over the 200-word limit, while Response A is at or just above it. The extra length in B mostly restates points rather than adding new substance, so A better satisfies the constraint with comparable correctness.\n\nVerdict: A",
+  "usage": {
+    "input": 1752,
+    "output": 1223
+  },
+  "cost": 0.0007867000000000001
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-33",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. The request asked for under 120 words. By my count, Response A is about 92 words, which fits. Response B comes to about 120 words, so it is at the limit and not under it.\n\nBoth responses are accurate and explain tidal locking, the 27.3-day period, libration and the sunlit far side. B explains the tidal-bulge mechanism in a bit more detail. A's line \"never visible from Earth\" sits slightly awkwardly beside its 59% libration point, but that flaw is minor. A's compliance with the length limit decides it.\n\n**A**",
+  "usage": {
+    "input": 532,
+    "output": 1623
+  },
+  "cost": 0.017294
+}

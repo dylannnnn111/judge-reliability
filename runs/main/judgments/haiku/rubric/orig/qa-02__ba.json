@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-02",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct answer, 96 km/h. The total distance is 320 km and the total time is 10/3 hours, so 320 ÷ (10/3) = 96. Both correctly explain why the simple average of 100 km/h is wrong, because more time is spent at the slower speed. Both fit under 120 words.\n\nResponse B adds the general harmonic mean formula, 2 × 80 × 120 / (80 + 120) = 96, which is correct and gives the reader a reusable rule for equal-distance legs. That addition is useful rather than padding. Response A is slightly more concise but omits this. Clarity is comparable, so B has a small edge on the key reasoning.\n\nVerdict: B",
+  "usage": {
+    "input": 719,
+    "output": 448
+  },
+  "cost": 0.0002959
+}

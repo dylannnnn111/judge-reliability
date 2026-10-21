@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-38",
+  "side": "B",
+  "score": 8,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is scientifically accurate. It covers the key points: extreme cold produces PSCs, heterogeneous reactions on PSC surfaces convert reservoir chlorine into active forms, the polar vortex isolates the air, and sunlight returning in spring photolyzes Cl₂ and other compounds to release chlorine radicals that destroy ozone catalytically. It also explains why the loss peaks in September and October and why the hole closes (vortex breakdown and mixing in of ozone-rich air).\n\nMinor omissions: it doesn't mention that CFCs are the source of the chlorine, nor that the Antarctic vortex is stronger and colder than the Arctic one because of the land-sea distribution. Both are useful context for \"why Antarctica specifically,\" though the vortex and cold are covered implicitly. It says \"Cl₂ and other compounds\" and leaves out the HOCl photolysis detail, which is fine. Word count is about 100, under the limit.\n\nThe main gap is the Antarctica-versus-Arctic contrast and the human-made source, but the response is correct, clear, and concise.\n\nScore: 8",
+  "usage": {
+    "input": 453,
+    "output": 368
+  },
+  "cost": 0.004586
+}

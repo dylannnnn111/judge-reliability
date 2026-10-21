@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-05",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. It keeps the brief's key distinction between felt and measured productivity: 78% *felt* more productive, but speed and accuracy did not change. It names back comfort as the clearest benefit and ends with a practical implication for a manager: justify the desks on comfort and health, not productivity. It also includes the standing-time decline and the main limitations, and it stays under 120 words (about 100).\n\n**B** is also under the limit and covers similar facts, but it lists \"78% of the sit-stand group felt more productive\" under \"Benefits found.\" That blurs the brief's point that the feeling was not backed by measured output, and it could mislead a manager who reads only the summary. B also gives no clear recommendation.\n\n**A**",
+  "usage": {
+    "input": 1217,
+    "output": 662
+  },
+  "cost": 0.009054
+}

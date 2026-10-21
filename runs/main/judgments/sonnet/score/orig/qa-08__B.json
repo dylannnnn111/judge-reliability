@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-08",
+  "side": "B",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "Calculation: 375 × 0.048 = 18 mL. 18 × 0.789 = 14.202 g. 14.202 / 10 = 1.42 standard drinks. The response is correct.\n\nThe claim that Australian labels round to 1.4 is plausible: labels typically show one decimal place. It's a minor extra, but accurate enough.\n\nThe response is under 120 words, shows the key steps, and is clear.\n\nScore: 9",
+  "usage": {
+    "input": 403,
+    "output": 143
+  },
+  "cost": 0.002236
+}

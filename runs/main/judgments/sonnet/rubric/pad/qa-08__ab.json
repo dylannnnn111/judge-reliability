@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-08",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses compute 375 × 0.048 = 18 mL, then 18 × 0.789 = 14.202 g, which gives about 1.42 standard drinks. Both are correct.\n\nThe constraint is under 120 words. Response A is roughly 110 words. Counting it: the intro is about 20 words, \"To begin...\" about 14, step 1 about 6, \"Next...\" about 17, step 2 about 8, \"Finally...\" about 27, step 3 about 10, and the summary about 28. That totals around 130, which is likely over 120.\n\nA rough tally by section:\n- \"Thank you for your question. Here is how a 375 mL can at 4.8% ABV breaks down into standard drinks.\" is 20 words.\n- \"To begin, we can work out how much pure ethanol the can contains:\" is 13 words, for 33 so far.\n- \"Volume of ethanol: 375 mL × 0.048 = 18 mL\" is about 9 tokens, for 42.\n- \"Next, we convert that volume into mass, using the density of ethanol:\" is 12 words, for 54.\n- \"Mass of ethanol: 18 mL × 0.789 g/mL = 14.2 g\" is about 9, for 63.\n- \"Finally, we divide that mass by the 10 g used for one standard drink to find the number of standard drinks:\" is 21, for 84.\n- \"Standard drinks: 14.2 g ÷ 10 g = ≈1.42 standard drinks\" is about 10, for 94.\n- \"In summary, based on the calculation above, a 375 mL can at 4.8% ABV contains approximately 1.42 standard drinks.\" is 19, for 113.\n\nSo A comes in around 113 words, within the limit but padded with filler. B is concise, gives the answer up front, shows the same steps, and adds a useful note about label rounding to 1.4.\n\nBoth are correct and within the limit, but B is clearer and more efficient, and A's extra words add nothing.\n\nVerdict: B",
+  "usage": {
+    "input": 741,
+    "output": 647
+  },
+  "cost": 0.007952
+}

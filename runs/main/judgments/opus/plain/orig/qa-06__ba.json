@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-06",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-opus-5-5",
+  "text": "Both responses give the same correct answer and stay under 120 words, so this is a **TIE**.\n\n- **The start date checks out.** Wednesday 15 December 2027 is indeed a Wednesday. 1 January 2027 is a Friday, 15 December is day 349, and 348 mod 7 = 5, which gives Friday + 5 = Wednesday.\n- **The date arithmetic is right.** 16 days (rest of December) + 31 (January) + 29 (February 2028, a leap year) = 76 days. The remaining 24 days land on 24 March 2028.\n- **The weekday is right.** 100 = 14 × 7 + 2, so Wednesday + 2 = Friday.\n\nBoth responses lay out exactly this reasoning, accurately and concisely. B uses bullet points and A uses a short paragraph. That is a minor presentational difference that doesn't meaningfully change clarity or correctness.\n\nTIE",
+  "usage": {
+    "input": 382,
+    "output": 466
+  },
+  "cost": 0.010848
+}

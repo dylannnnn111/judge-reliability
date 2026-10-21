@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-08",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same core problems: silent exception swallowing, partial SFTP uploads, non-idempotent partial imports, no locking, rename overwriting, and the unclosed file handle. Both give sensible fixes, and neither flags anything that is clearly fine.\n\n**Differences:**\n- **Ordering:** B puts the swallowed failures first, which is arguably the most damaging bug. A puts partial uploads first, which is also defensible given the SFTP context. This is roughly a wash.\n- **Extra points:**\n  - A notes that `imported` is misleading and that a rename error aborts the whole loop. Both are real.\n  - B notes that `os.rename` fails across filesystems, which is real. It also notes that one bad line kills the whole file, and its suggestion to quarantine bad lines is useful.\n  - B's case-sensitive `.jsonl` filter point is a nitpick that is arguably not a bug.\n- **Length constraint:** The user asked for under 200 words. A is about 220 words, slightly over. B is about 280–290, well over. B's extra content is mostly marginal, and its overrun is the larger violation.\n\nSubstance is close, but A follows the word limit more closely and has less padding.\n\nVerdict: A",
+  "usage": {
+    "input": 1561,
+    "output": 1304
+  },
+  "cost": 0.016162
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-15",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Constraints: under 200 words, most important first, bugs that matter.\n\nResponse A is about 330 words, well over the limit. It includes minor or questionable items: duplicate IDs, and the error message leaking the user ID. Neither is a matter here, and the \"leak\" is speculative. Its point 1 is correct. Its point 4 says \"N+1\" but that's a bit loose.\n\nResponse B is about 220 words, which is also slightly over 200. Let me estimate more carefully. Item 1: ~55 words. Item 2: ~35. Item 3: ~50. Item 4: ~25. Item 5: ~55. Total is about 220, so it also exceeds the limit, but by much less than A. B is more focused, with more relevant points (the race is a real, if minor, concern), and flags the key issue as most serious.\n\nBoth identify the key bug first. B is closer to the length constraint and has less noise. B's statement \"Earlier logins are already persisted\" is accurate. B's suggestion to run concurrently is reasonable.\n\nB is better.\n\n**B**",
+  "usage": {
+    "input": 1489,
+    "output": 341
+  },
+  "cost": 0.006388
+}

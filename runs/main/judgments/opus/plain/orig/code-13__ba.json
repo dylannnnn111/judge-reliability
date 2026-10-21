@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-13",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B** is better.\n\n**Length.** The user asked for under 200 words. Response B lands near that limit (about 200). Response A runs noticeably over (roughly 240). A also spends words on an irrelevant item: timezone handling doesn't apply to plain `date` objects.\n\n**Coverage.** Both responses find the same core bugs in a sensible priority order:\n- the December crash,\n- day-of-month overflow,\n- schedule drift,\n- the hardcoded 30-day proration,\n- missing input validation,\n- rounding.\n\n**Where A is stronger.** A frames drift more accurately, as a trap you fall into if you fix #2 naively. B's framing is still defensible: the code does chain each date from the previous one, so drift follows once clamping is added. A's note that a 31-day period over-bills is also correct.\n\n**Where B is weaker.** B says `//` \"floors toward zero\", but Python floors toward negative infinity. This is a minor factual slip. It also adds useful nuance about inclusive vs. exclusive end dates and suggests a concrete rounding mode.\n\nOverall, both are technically sound on what matters. B respects the explicit length constraint and avoids padding, so it is the better response.",
+  "usage": {
+    "input": 1343,
+    "output": 999
+  },
+  "cost": 0.025352
+}

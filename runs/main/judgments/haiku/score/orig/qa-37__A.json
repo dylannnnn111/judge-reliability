@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-37",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response gives the correct core answer: Uluru's red colour comes from iron-bearing minerals in its arkosic sandstone oxidizing at the surface into iron oxides like hematite. It also correctly notes that the interior is grey, which supports the weathering explanation. The sunrise and sunset colours are attributed to atmospheric scattering of blue light, which is accurate. Minor points: \"rust\" is a loose but acceptable term for iron oxides, and \"purples\" at sunset is a slight overstatement. The answer stays under 120 words and is well organized, with each paragraph addressing a distinct part of the question.\n\nScore: 9",
+  "usage": {
+    "input": 428,
+    "output": 458
+  },
+  "cost": 0.0002718
+}

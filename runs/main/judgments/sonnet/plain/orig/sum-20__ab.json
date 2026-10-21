@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-20",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B.** Both responses exceed the 120-word limit, but Response B is much closer. By my count it runs about 133 words, against about 157 for Response A. B's bulleted, labelled format is also easier for a busy manager to scan. Both cover the key details accurately.",
+  "usage": {
+    "input": 1319,
+    "output": 1850
+  },
+  "cost": 0.021138
+}

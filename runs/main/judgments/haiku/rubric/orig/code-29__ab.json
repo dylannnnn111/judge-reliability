@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-29",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the most important bug: `NOT IN` against a subquery containing NULLs returns no rows, and both give the correct `NOT EXISTS` fix. Both also flag the 2026 date filter contradicting the \"never referred\" intent and the biased `LIMIT 5000` with `ORDER BY created_at`, with sound explanations. Response A's point about epoch-integer timestamps is a valid, if minor, storage-format concern. Response B's extra items are more relevant to an email campaign: duplicate sends, bounced or suppressed addresses, and customers already contacted in an earlier campaign are real risks the query doesn't address. B also gives slightly more actionable fixes, such as tracking who was already sent to. Neither response contains a notable factual error, and their lengths are comparable. B's additional coverage is more useful, so it edges ahead.\n\nVerdict: B",
+  "usage": {
+    "input": 1568,
+    "output": 751
+  },
+  "cost": 0.0005323
+}

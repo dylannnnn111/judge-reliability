@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-24",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the most important bug: the check-then-await race lets simultaneous duplicate deliveries both mark the invoice paid. Both also flag the in-memory dedupe store, the non-constant-time signature comparison, replay protection, and the missing amount check. Both suggest the right fix, a durable unique constraint on the event ID inside the same transaction as the invoice update.\n\nResponse A adds the crash window between `markInvoicePaid` and `processed.add`, which matters a lot under at-least-once retries. Response B omits it, though it does note that `markInvoicePaid` should be idempotent. Response B has the better error-handling item: it separates 400 for malformed payloads from 500 for processing failures, which A doesn't address. B also adds the useful point about releasing the claim on failure so retries still work. Both stay close to the 200-word limit.\n\nOn balance, A's crash-window analysis is the more important point for this retry-heavy design, so I slightly favor A.\n\nVerdict: A",
+  "usage": {
+    "input": 1681,
+    "output": 973
+  },
+  "cost": 0.0006546
+}

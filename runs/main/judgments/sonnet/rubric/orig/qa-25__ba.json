@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-25",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer: no, Vikings did not wear horned helmets in battle. Both also cite the Gjermundbu helmet, the cost of helmets, the 19th-century origin of the image, Doepler's Wagner costumes, and the earlier Bronze Age ceremonial horned helmets. By my count both stay under the 120-word limit (A about 112 words, B about 119). B is very close to the limit.\n\nA adds correct, useful detail that B lacks. It names Gustav Malmström, whose Frithiof's Saga illustrations helped spread the image, and it mentions the Veksø helmets and the roughly 1,500-year gap. It also hedges more carefully with \"no solid evidence\", which suits the archaeological record. B's flat \"didn't\" is fine in practice but slightly more absolute. B's bold headings make it easy to scan, though that is a small gain. A's extra details add more value than B's formatting does.\n\nVerdict: A",
+  "usage": {
+    "input": 815,
+    "output": 1807
+  },
+  "cost": 0.0197
+}

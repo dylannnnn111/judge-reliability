@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-06",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are factually accurate. Each gets the reopening date, cost, funding split, pool details, solar figure, prices, hours and opening-day offer right. Neither mentions that the price freeze lasts only for the rest of the 2026-27 season, a minor omission shared by both.\n\nResponse A is clearly over the 120-word limit, probably around 180 to 200 words. It also includes filler such as \"we are pleased to share the details of what has been completed below\" and \"we look forward to welcoming you,\" which a busy manager doesn't need.\n\nResponse B stays close to the limit, at roughly 120 to 125 words. It keeps every point the reader needs in a scannable format, with the adult change table as the only detail dropped. It is tighter and better follows the length instruction.\n\nVerdict: B",
+  "usage": {
+    "input": 1622,
+    "output": 879
+  },
+  "cost": 0.0006017
+}

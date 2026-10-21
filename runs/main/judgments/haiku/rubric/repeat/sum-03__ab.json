@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-03",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are largely accurate. Dates, times, the 2,391 of 4,812 failure figure, the 1,940 and 451 split, the $41,900 estimate, the 312 support contacts, and the action owners and due dates all match the source. Response A is slightly over the 120-word limit, at roughly 130 words, and its \"Fixes\" section is wordier than needed. Response B comes in at roughly 105 words and covers the same essentials. Its one loose statement is \"Support escalation led to the fix,\" which overstates the link, since escalation prompted the investigation rather than the fix itself. Response A states the 11:35 escalation neutrally, which is a small accuracy point in its favour. On balance, B meets the length constraint and reads more clearly for a busy manager, so it edges out A.\n\nVerdict: B",
+  "usage": {
+    "input": 1597,
+    "output": 2212
+  },
+  "cost": 0.0012657
+}

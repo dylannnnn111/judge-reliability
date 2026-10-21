@@ -1,0 +1,13 @@
+{
+  "item": "code-01",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "**Most important first:**\n\n1. **Not idempotent or fault-tolerant.** If the nightly job crashes partway, a rerun re-charges customers already billed. If `charge()` raises, the loop stops, leaving the remaining customers unbilled with no record of who was charged. Track completed charges with an idempotency key per customer per billing period, and catch and log per-customer failures.\n\n2. **Truncation undercharges.** `int(amount * 100)` truncates. For example, `10.29 * 100` is `1028.9999...`, so the customer is charged 1028 cents. Use `round()` or, better, Decimal.\n\n3. **Floating-point money.** Binary floats accumulate error in `subtotal` and `tax`. Use `Decimal` with explicit rounding, and ideally round per line item or per invoice by a stated rule.\n\n4. **Credits silently dropped.** `if amount > 0` skips negative totals, so customers with net credits or refunds are never credited and no one is told. Handle them explicitly or log them.\n\n5. **One bad row aborts the batch.** `float(row[\"units\"])` raises on blank or malformed values, stopping billing for all customers. Validate rows, quarantine bad ones, and report them.\n\n6. **Customer grouping is fragile.** `customer_id` isn't normalized, so `\" 123\"` and `\"123\"` become separate customers and get billed separately.\n\n7. **Hardcoded tax.** `TAX_RATE = 0.1` ignores jurisdiction, effective dates, and exemptions.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 336,
+    "output": 1045
+  },
+  "cost": 0.0005561,
+  "at": "2026-10-14T01:52:48.433Z"
+}

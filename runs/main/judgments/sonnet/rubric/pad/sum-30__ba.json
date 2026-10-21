@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-30",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A has one small accuracy problem. It says industrial estate workers \"lose service before 6am\", which implies the 408 ran before 6am. The source never says that. It only says the 412 won't run before 6am. Otherwise A is accurate. Its dates, frequencies, reasons and the consultation finding all match the source, and it includes the consultation's top request, which gives the manager the \"why\".\n\nResponse B is accurate on the facts it includes. Its concern line stays closer to the source wording. It leaves out the reason for the changes (the Mill Flat–station link being the top request) and the point that the 412 is the first link of its kind. It also adds filler such as \"I would like to share a summary…\" and \"Turning to how you can find out more…\", which gives a manager nothing.\n\nOn length, A comes to about 128 words by my count, slightly over the 120 limit. B is clearly longer, at roughly 160 or more, so it breaks the limit by much more. A is tighter, more scannable and more useful per word, despite its small inference error and slight overrun.\n\nOn balance A's concision and fuller content outweigh its minor imprecision.\n\nVerdict: A",
+  "usage": {
+    "input": 1592,
+    "output": 1418
+  },
+  "cost": 0.017364
+}

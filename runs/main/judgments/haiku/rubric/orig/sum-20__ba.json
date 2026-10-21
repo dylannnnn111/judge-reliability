@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-20",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Neither contains a wrong date, time, or condition, and both correctly attribute the dietary deadline to Tariq and the inbox monitoring to Ella. Both also exceed the 120-word limit by roughly the same margin (about 145 to 160 words), so neither meets the explicit constraint.\n\nOn content, Response B keeps the morning agenda item on feedback about the reports, which Response A drops. That is a point a manager would want to know about the day. Response A's bulleted layout is easier to skim, which suits a busy reader, but it loses that detail and is no shorter. Response B's prose is slightly tighter overall, and its extra content is correct and useful. The gap is small, so B has a modest edge on completeness.\n\nVerdict: B",
+  "usage": {
+    "input": 1473,
+    "output": 1550
+  },
+  "cost": 0.0009222999999999999
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-25",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same core problems in the same order: the off-by-one (`>` should be `>=`), unbounded memory growth, per-IP-only limiting, the hardcoded `retryAfterSec`, in-memory state, and IP trust or proxy issues. Both give fixes. The differences are in length, extra content and ranking.\n\n**Length:** The user asked for under 200 words. Response A is about 200 words, right at the limit. Response B is about 290 words, well over it. This matters because the instruction was explicit.\n\n**Content:**\n- B has two useful extras. It gives the exact retry-after formula and notes that an IPv6 /64 defeats per-address limits. It also points out the NAT/shared-proxy lockout effect.\n- A adds a valid point B lacks: successful logins consume quota, which can lock out legitimate users.\n- B's item 7 (\"no tests\", \"no way to reset a key\") is minor filler and does not match the request for \"bugs and problems that matter.\"\n- B's claim that the limit becomes `limit × instances` is accurate and a nice detail.\n\n**Ranking:** Both rank sensibly, with the off-by-one first. B pads the end of its list with a low-value item.\n\nB has a few more precise details, but it breaks the word limit and includes a trivial point. A is concise, correct, and covers the substantive issues within the constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 1640,
+    "output": 1401
+  },
+  "cost": 0.01729
+}

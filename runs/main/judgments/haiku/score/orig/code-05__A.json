@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-05",
+  "side": "A",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response identifies the real bugs. The shared-`tzinfo` subtraction problem is correct, and its examples check out: a 01:00–05:00 shift on the fall-back night is 5 elapsed hours but 4 wall-clock hours, and on the spring-forward night it is 3 hours worked but 4 wall-clock hours. The nonexistent and ambiguous times, weekend loading applied only from the start day, and float money with banker's rounding are all genuine issues with sensible fixes. Ranking DST first is defensible for Sydney payroll, and the extras (public holidays, input validation, shift-length sanity) are real but lower priority. Nothing it flags is a false positive. Its main weakness is brevity on fixes: the weekend split and the Decimal rounding are described only in outline. It stays within the 200-word limit and covers the important problems.\n\nScore: 8",
+  "usage": {
+    "input": 1130,
+    "output": 1176
+  },
+  "cost": 0.000701
+}

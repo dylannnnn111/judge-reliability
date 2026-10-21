@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-23",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses correctly put the `!r.value` bug first, since it drops 0 °C readings in a cold room. They differ in prioritization and length.\n\n- **Prioritization:** A ranks \"dead sensors vanish from the panel\" second. That is a high-impact issue for a monitoring dashboard. B puts that same issue last, below the comparator never returning 0, which matters far less. B's `__proto__` collision point is technically valid but unlikely with real sensor IDs.\n- **Length:** A runs about 215 words. B runs about 240, further over the 200-word limit.\n\nB does add a useful detail: a sensor reporting all zeros disappears entirely. That does not outweigh A's better ordering and closer adherence to the length constraint.",
+  "usage": {
+    "input": 1474,
+    "output": 584
+  },
+  "cost": 0.017576
+}

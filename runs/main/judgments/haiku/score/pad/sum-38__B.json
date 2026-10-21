@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-38",
+  "side": "B",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The facts are almost all correct: the 18 November date, beta figures (600 invited, 431 active, 4.3/5), the 21 of 23 bugs fixed, the $268.5k of $290k spend, the week-long app store risk, and the 24 October next update. The main accuracy slip is \"club packs will be dispatched by 12 November,\" where the source says managers will *receive* packs by that date. The response also drops the \"allow up to a week for review\" detail and the named owners for each workstream, which a manager may want to know who to chase. Its biggest failure is length: it runs well over 120 words, violating the explicit limit, and it includes filler such as \"I am pleased to report\" and \"The sections below summarise...\". Accuracy is strong, completeness is partial, and concision is poor.\n\nScore: 5",
+  "usage": {
+    "input": 1268,
+    "output": 844
+  },
+  "cost": 0.0005488
+}

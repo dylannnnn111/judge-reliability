@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-21",
+  "side": "A",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The numbers check out: six Elmwood hybrids total $229,140, which is $13,140 over the $216,000 budget, and six Northside petrol cars total $209,880. The four-year fuel saving of $5,400 per car, the 24 October deadline, the February alternative, and the hire-car cost are all correct. The Coastal line is misleading, though. Its petrol price ($36,100) is above Northside's and Elmwood's petrol options but below the recommended Elmwood hybrid ($38,190), so \"more expensive than the options above\" overstates it. The biggest problem is length: the response runs well over 120 words, breaking the explicit limit. It also includes the low-value Coastal bullet, and the opening sentence refers to Ruth in the third person in a way that reads awkwardly. The core decision points are all present and clearly flagged.\n\nScore: 5",
+  "usage": {
+    "input": 1340,
+    "output": 1055
+  },
+  "cost": 0.0006615
+}

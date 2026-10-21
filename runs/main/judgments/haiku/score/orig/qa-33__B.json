@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-33",
+  "side": "B",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly identifies tidal locking as the reason we see only one face of the Moon, and the 27.3-day figure is accurate. The explanation of how it happened is broadly right: Earth's gravity raised a tidal bulge, and friction slowed the Moon's spin until the rotation matched its orbit. It is somewhat loose about the mechanism, since the bulge's offset from the Earth-Moon line is what produces the braking torque, but the core reasoning is there. The libration point (about 59% of the surface visible over time) and the note about the far side getting sunlight are accurate and useful additions. Clarity is good. The main flaw is the length constraint: my count is exactly 120 words, which fails \"under 120\" by a hair.\n\nScore: 7",
+  "usage": {
+    "input": 426,
+    "output": 1500
+  },
+  "cost": 0.0007926000000000001
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-26",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Neither response contains a substantive factual error. A's \"within an hour\" matches the 7:50am to 8:50am timeline. Both say \"residents\" praised staff, where the source says \"several residents,\" which is a minor overgeneralisation in each. B's \"I am pleased to report\" adds a first-person voice that isn't in the source, but it doesn't misstate any fact.\n\n**Coverage:** B keeps two points A leaves out: the staff refresher training and the phone calls to high-care families. A keeps the \"long-term capital plan\" context for the second-lift request, which B drops. B's extra points are useful, but they are not essential for a busy manager.\n\n**Length:** Both exceed the 120-word limit. A is about 150 words. B is about 230 words, nearly double the limit, and includes padding such as the redundant opening sentence, \"I am pleased to report,\" and \"took the time to.\" B's small gain in coverage does not justify breaking the explicit constraint by so much more.\n\nA is the more faithful response to the brief.\n\nVerdict: A",
+  "usage": {
+    "input": 1653,
+    "output": 1067
+  },
+  "cost": 0.027952
+}

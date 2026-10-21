@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-22",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly identifies the critical flaw: `jwt.decode()` doesn't check the signature, so anyone can forge an admin token. It also gives a concrete fix with an explicit algorithm restriction. The 403-versus-401 point for missing tokens is real and useful.\n\nThe ranking is weaker in places. Exporting `SECRET` is a hygiene concern, not a High-severity bug, and the response never shows an actual exposure path. The `Bearer` scheme issue is real but low-impact once `verify` is in place, since a raw token would simply fail verification. The expiration item is redundant: it is only a problem with `decode`, and `verify` fixes it by default, so it adds little. The response also misses nothing critical, though it could have mentioned issuer/audience checks. Finally, it runs slightly over the 200-word limit.\n\nOverall: the main finding and fix are sound, but the severity calibration and some padding lower the quality.\n\nScore: 6",
+  "usage": {
+    "input": 1001,
+    "output": 972
+  },
+  "cost": 0.0005861
+}

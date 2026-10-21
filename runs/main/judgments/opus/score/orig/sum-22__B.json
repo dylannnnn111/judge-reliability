@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-22",
+  "side": "B",
+  "score": 6,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Most details match the minutes:\n- Fees: $340 seniors, $180 juniors.\n- Vote: 5-0.\n- Money: $41,820 balance, about $3,200 shortfall.\n- Grant: closes 14 Nov.\n- Presentation night: 24 Oct, $45 tickets, setup from 4pm.\n- Gazebo: up to $600.\n- Next meeting: 28 Oct.\n- Who does what is correctly assigned.\n\nThere are two small distortions:\n- **\"Mostly due to cost\"** overstates the minutes. They say cost was \"the most common reason given,\" which does not mean most players left because of it.\n- **\"The rise covers a 9% increase in council turf hire\"** implies the $40 senior rise alone covers the turf cost. The next section corrects this by mentioning the shortfall, so it is only mildly misleading.\n\n**Key points:** One relevant condition is missing. Seniors said a $40 rise was acceptable *if* it came with new training balls and a better canteen. The motion didn't formally include this, but a manager should know the seniors expect it. Without it, the fee rise looks less conditional than it is.\n\n**Concision and length:** The summary is well structured and easy to scan. However, it runs to about 127 words including the title and section labels. That breaks the \"under 120 words\" limit unless headings are excluded. It is a modest overrun, but the brief was explicit.\n\nOverall, this is a solid, mostly accurate summary. It is held back by a slight overstatement, a missing stakeholder condition, and a likely breach of the word limit.\n\nScore: 6",
+  "usage": {
+    "input": 1245,
+    "output": 2158
+  },
+  "cost": 0.04814
+}

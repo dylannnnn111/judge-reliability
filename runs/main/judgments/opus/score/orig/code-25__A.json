@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "code-25",
+  "side": "A",
+  "score": 6,
+  "model": "claude-opus-5-5",
+  "text": "**Score: 6.** The technical content is strong, but the response breaks the explicit 200-word limit by a wide margin and pads itself out.\n\n**Accuracy.** Every substantive claim holds up.\n- **Off-by-one:** Real and correctly explained. With 5 recorded hits, `5 > 5` is false, so a 6th attempt is pushed and allowed. The `>=` fix is right.\n- **Unbounded Map growth:** Real. The stated attack (rotating IPs, especially IPv6) is plausible.\n- **Per-IP-only limiting:** A genuine weakness against distributed guessing. Adding a per-account limit is the right fix.\n- **In-memory state:** Correct. Counters reset on restart and aren't shared across instances.\n- **Hardcoded `retryAfterSec`:** Correctly identified, with a correct formula.\n- **Proxy-IP concern:** Somewhat speculative, since the code doesn't show where `ip` comes from, but it's a fair caveat for login rate limiting.\n\n**Ranking.** The order is sensible. The concrete logic bug comes first, then the DoS and memory issue, then architectural weaknesses. Nearly every item includes a fix.\n\n**Weaknesses.**\n- **Length:** The response runs roughly 260+ words against an explicit \"under 200 words\" instruction. That is a clear failure to follow the request.\n- **Redundancy:** The IPv6 rotation point appears in both #2 and #3.\n- **Padding in item 7:** \"There are no tests\" isn't a defect in the reviewed code; it's commentary on something outside the snippet. \"Reset after successful login\" is a debatable design choice, not a bug.\n- **Missed opportunity:** It doesn't note that blocked attempts aren't recorded. That is arguably fine, but worth mentioning, since recording them would extend lockouts. This is minor.\n\nScore: 6",
+  "usage": {
+    "input": 1090,
+    "output": 1029
+  },
+  "cost": 0.02494
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-38",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for under 120 words. Response A is about 95 words. Response B is well over 120 words (roughly 220), so it violates the explicit constraint.\n\nChecking A's content: it explains PSCs, chlorine activation, the vortex, the return of sunlight, catalytic destruction, and the September–October peak. It is accurate. It omits CFCs as the chlorine source, which is minor.\n\nA follows the constraint and is accurate, so A is better.\n\n**A**",
+  "usage": {
+    "input": 820,
+    "output": 153
+  },
+  "cost": 0.00317
+}

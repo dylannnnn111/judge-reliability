@@ -1,0 +1,13 @@
+{
+  "item": "qa-30",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "A p-value is the probability of observing data at least as extreme as yours, assuming the null hypothesis is true. It measures how surprising the data would be under that assumption.\n\nIt is NOT:\n- The probability that the null hypothesis is true.\n- The probability that the results happened by chance alone.\n- A measure of effect size or practical importance.\n- The probability that a finding will replicate.\n- Evidence that the alternative hypothesis is true with a given confidence.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 45,
+    "output": 147
+  },
+  "cost": 0.000078,
+  "at": "2026-10-14T01:50:47.036Z"
+}

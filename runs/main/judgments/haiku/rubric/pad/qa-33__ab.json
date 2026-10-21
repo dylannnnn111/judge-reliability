@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-33",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct explanation: tidal locking, where Earth's tidal friction slowed the Moon's spin until it matched its 27.3-day orbit. Both also correctly note libration, the roughly 59% of the surface visible over time, and that the far side gets sunlight.\n\nThe deciding factor is the explicit constraint to answer in under 120 words. Response A is about 90 words and complies. Response B runs well over 200 words, so it fails the instruction. Its extra detail, such as the tidal bulge mechanism and the note about the \"far side\" name, is accurate but does not justify breaking the limit. Response A covers the key reasoning clearly and concisely.\n\nVerdict: A",
+  "usage": {
+    "input": 856,
+    "output": 617
+  },
+  "cost": 0.00039410000000000004
+}

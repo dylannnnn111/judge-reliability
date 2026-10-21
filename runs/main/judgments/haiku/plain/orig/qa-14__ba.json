@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-14",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are correct and under 120 words. They reach the same answer with nearly identical reasoning. Response A is slightly more concise in its final line, while Response B bolds key figures, which makes it a bit easier to scan. The difference is negligible.\n\nTIE",
+  "usage": {
+    "input": 455,
+    "output": 85
+  },
+  "cost": 0.000088
+}

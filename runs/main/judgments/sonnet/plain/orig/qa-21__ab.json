@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-21",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are accurate: perihelion falls in early January, at about 147 million km.\n\nResponse A is longer. Counting its words, the first paragraph has about 44, the second about 50, and the third about 22, for roughly 116 in total. That is close to the limit but under 120. Its figures are correct: 147.1 million km, 152.1 million km at aphelion, and a roughly 3% difference. The 3% figure checks out, since 5/150 is about 3.3%. It also gives the date range of January 2–5, which is accurate.\n\nResponse B is concise and correct. It gives 23.4 degrees for the tilt, which is more precise than 23.5, and it is under 120 words. It does not mention aphelion.\n\nThe question is simple, so the better answer is the one that is accurate, direct, and adds useful context. A offers more useful context, such as the aphelion comparison and the explanation of why the seasons occur, while staying within the limit. B is succinct and complete enough.\n\nWord count for A, checked more carefully:\nParagraph 1: \"Earth(1) is(2) closest(3) to(4) the(5) Sun(6) (called(7) perihelion)(8) in(9) early(10) January,(11) typically(12) around(13) January(14) 2–5.(15) At(16) that(17) point,(18) Earth(19) is(20) about(21) 147.1(22) million(23) km(24) (91.4(25) million(26) miles)(27) away,(28) compared(29) with(30) roughly(31) 152.1(32) million(33) km(34) (94.5(35) million(36) miles)(37) at(38) aphelion(39) in(40) early(41) July.(42)\"\nParagraph 2: \"This(1) may(2) seem(3) surprising,(4) since(5) January(6) is(7) winter(8) in(9) the(10) Northern(11) Hemisphere.(12) Seasons(13) are(14) caused(15) by(16) Earth's(17) 23.5°(18) axial(19) tilt,(20) not(21) by(22) distance(23) from(24) the(25) Sun.(26) When(27) the(28) Northern(29) Hemisphere(30) is(31) tilted(32) away(33) from(34) the(35) Sun,(36) it(37) gets(38) less(39) direct(40) sunlight,(41) even(42) though(43) Earth(44) is(45) slightly(46) closer(47) overall.(48)\"\nParagraph 3: \"The(1) distance(2) difference(3) is(4) only(5) about(6) 3%,(7) so(8) its(9) effect(10) on(11) climate(12) is(13) small(14) compared(15) with(16) the(17) tilt.(18)\"\n\nThe total is 42 + 48 + 18 = 108, which is under 120.\n\nBoth comply with the limit, and A is more informative. I lean toward A.\n\n**A**",
+  "usage": {
+    "input": 463,
+    "output": 956
+  },
+  "cost": 0.010486
+}

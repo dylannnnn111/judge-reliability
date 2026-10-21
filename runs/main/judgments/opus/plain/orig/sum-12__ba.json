@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-12",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth summaries run slightly over the 120-word limit (about 124 words each), so neither wins on length.\n\nThe difference is accuracy:\n\n- **Response A** says the new $15 weekly pass \"will replace the current $9 daily concession.\" The article says concession parking is being \"extended,\" which suggests the weekly pass is added rather than a replacement. A's wording overstates what the source says.\n- **Response B** frames the weekly pass as something regular visitors \"can buy… instead of\" the daily concession, which matches the article. Its added line, \"a significant saving for regular users,\" is supported by the source. A dialysis patient visiting three times a week would pay $15 rather than $27, as the resident's quote confirms.\n\nB also leads with the information a manager most needs: fee changes first, then concessions, then the reasons and context. Both cover all the key facts.",
+  "usage": {
+    "input": 1210,
+    "output": 1418
+  },
+  "cost": 0.0332
+}

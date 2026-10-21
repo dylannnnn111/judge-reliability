@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-14",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The final answer is correct. The tap fills 1/3 of the tank per hour, the drain empties 1/5 per hour, the net rate is 2/15 per hour, and the fill time is 15/2 = 7.5 hours. The key reasoning is present and clearly laid out.\n\nHowever, the user asked for an answer under 120 words, and this response runs to roughly 128 words. It also repeats the answer three times (bold up front, in the calculation, and in the summary), and the summary and introduction add little. The constraint violation and the redundancy weigh against it, even though the core content is sound.\n\nScore: 6",
+  "usage": {
+    "input": 532,
+    "output": 678
+  },
+  "cost": 0.0003922
+}

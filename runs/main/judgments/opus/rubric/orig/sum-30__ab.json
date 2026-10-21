@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-30",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Both get the dates, frequencies, hours, the 408's nine passengers per trip, fares, the timetable and app rollout, and the information stall details right. The difference is in the concern point.\n\n- **Response A** says industrial estate workers \"say the 412 doesn't start early enough.\" This matches the source.\n- **Response B** says these workers \"lose service before 6am.\" That implies the 408 currently runs before 6am and that this service is being taken away. The source never says so. It only says workers are worried because the 412 won't run before 6am. B presents an inference as fact, which could mislead a manager who won't check the original.\n\n**Coverage:** B adds a useful point, the rationale that a direct Mill Flat–station link was the top consultation request. It also notes that the link is a first. A mentions the consultation but not what it found. Both keep all the operational points a manager needs.\n\n**Concision:** Both are close to the 120-word limit and are comparably tight.\n\nB's extra rationale is a genuine plus. But accuracy comes first, and B's unsupported claim about lost early service is a substantive misstatement on a contested point. A is fully faithful and still covers everything essential.\n\nVerdict: A",
+  "usage": {
+    "input": 1491,
+    "output": 873
+  },
+  "cost": 0.023424
+}

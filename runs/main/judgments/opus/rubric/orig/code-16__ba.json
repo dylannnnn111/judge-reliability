@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-16",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.**\n\n**Most important issue: GST.** In Australia, prices are normally GST-inclusive, so adding 10% on top would overcharge every customer. This is the most consequential bug in the code. A ranks it first, explains the impact, and says how to fix it (extract GST rather than add it). B mentions it only as a soft \"verify this is intended\" at the bottom of the list, which badly misranks it.\n\n**Issues both raise.** Both correctly flag that `sortByPrice` mutates its input. Both cover input validation, server-side recomputation, discount-code brittleness and `formatAud` formatting, each with sensible fixes.\n\n**B's dubious or low-value points.**\n- **Rounding:** `Math.round(subtotalCents * 10 / 100)` is still floating-point math and offers no real improvement over the original. The per-line versus total GST remark is speculative.\n- **`==` vs `===`:** this makes no practical difference when comparing string to string.\n\n**Length limit.** The user asked for under 200 words. A stays roughly within that. B clearly exceeds it, and the extra words add little that is correct and useful.\n\nVerdict: A",
+  "usage": {
+    "input": 1699,
+    "output": 596
+  },
+  "cost": 0.018716
+}

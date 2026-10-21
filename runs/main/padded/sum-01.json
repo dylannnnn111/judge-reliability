@@ -1,0 +1,14 @@
+{
+  "pair": "sum-01",
+  "side": "B",
+  "author": "haiku",
+  "model": "claude-haiku-5-5",
+  "original": "**Q1 board pack: regional submissions due Friday 30 October, close of business (moved up from 4 November).** The board meeting has been brought forward a week. Each region must send variance commentary, the updated headcount table, and the capex forecast, using the new template on the shared drive (Finance > Board > 2026-27 > Templates). The template adds a software subscriptions split, which the board requested. Commentary is required for variances over the smaller of $50,000 or 10%. Paste numbers rather than screenshots. If you're on leave, nominate cover and tell Priya. Marcus is running an optional template walkthrough on Thursday at 2pm in the Level 6 boardroom. Regions with a problem meeting the new deadline should call Priya today.",
+  "text": "**Q1 board pack: regional submissions due Friday 30 October, close of business (moved up from 4 November).** I'm writing to let you know about a change to the Q1 board pack timeline. The board meeting has been brought forward by a week, and the regional submission deadline has moved with it, from 4 November to Friday 30 October, close of business. This earlier date applies to all regions.\n\nEach region must send three items: variance commentary, the updated headcount table, and the capex forecast. Please use the new template, which is on the shared drive at Finance > Board > 2026-27 > Templates. The template also adds a software subscriptions split, which the board requested.\n\nA few points to keep in mind as you prepare your submissions. Commentary is required for variances over the smaller of $50,000 or 10%. Please paste numbers rather than screenshots. If you will be on leave when the submission is due, please nominate someone to cover for you and let Priya know who that is.\n\nMarcus is also running an optional template walkthrough on Thursday at 2pm in the Level 6 boardroom, for anyone who would like a guided run-through of the new template before the deadline.\n\nIf your region has a problem meeting the new deadline, please call Priya today so the issue can be discussed as early as possible.",
+  "ratio": 1.88,
+  "usage": {
+    "input": 429,
+    "output": 1209
+  },
+  "cost": 0.0006474
+}

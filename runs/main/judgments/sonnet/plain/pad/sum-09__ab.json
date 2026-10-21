@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-09",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "A is better. It is much closer to the \"under 120 words\" limit, at roughly 117–126 words depending on whether the title and disclaimer are counted. B runs to about 200 words, clearly breaching the limit. Both responses cover the key terms accurately: rent amount, CPI collar, year-5 market review, the dispute process, outgoings and notice. A does it in a scannable form that suits a busy manager. B adds a redundant intro and closing recap, which is the padding the brief was meant to avoid.\n\n**A**",
+  "usage": {
+    "input": 1543,
+    "output": 920
+  },
+  "cost": 0.012286
+}

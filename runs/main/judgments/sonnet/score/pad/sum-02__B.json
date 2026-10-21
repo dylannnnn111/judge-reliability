@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "sum-02",
+  "side": "B",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is mostly accurate but breaks the explicit limit of under 120 words. By my count it runs to roughly 190-200 words.\n\n**Accuracy**\n- The opening hours item is handled well. It says no agreement was reached, no change will be made, and Helen will revise the figures for November.\n- The roof is overstated. The contractor *recommends* full replacement within two years, but the response says it \"will need\" replacement. It also leaves out that the leak has been patched.\n- \"Serviced during this period\" is vague. The minutes give a date, 2 October.\n- Saying each branch should \"send two launch-day volunteers to Kate\" blurs the ask. Managers are to send the *names* of two volunteers per branch.\n\n**Content kept**\n- It omits Anjali's point that the Thursday evening opening should not depend on cutting Mount Lavell.\n- It omits the Saturday visit figures of 11 versus 64.\n- It does keep the key dates: the reading program, registration, the 24 October deadline and the next meeting.\n\n**Concision**\n- The opening line, \"Thank you for taking the time to review...\", is filler. The next sentence only restates the heading.\n- Together with the repeated meeting date, this wastes words for a busy manager and pushes the response well over the limit.\n\nThe accuracy slips are minor, but the length breach is a clear failure of the instruction.\n\nScore: 4",
+  "usage": {
+    "input": 1351,
+    "output": 896
+  },
+  "cost": 0.011662
+}

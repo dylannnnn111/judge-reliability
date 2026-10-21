@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "qa-12",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. Both responses reach the correct answer, 671/1296 ≈ 51.8%, and both are under 120 words. B shows the complement method step by step, which makes the reasoning easier to follow. Its historical note about the Chevalier de Méré is accurate and adds useful context without padding.\n\nB",
+  "usage": {
+    "input": 412,
+    "output": 450
+  },
+  "cost": 0.00026619999999999997
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-16",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is better. It puts the most consequential issue first: the likely GST double-charge. Australian prices are normally GST-inclusive, so adding 10% on top would overcharge every customer.\n\nIt stays concise, near the 200-word limit, and each point gives a concrete fix.\n\nResponse B falls short on several counts:\n- **Length:** It is roughly twice the word limit.\n- **Filler:** It opens with an unnecessary preamble.\n- **Ordering:** It ranks the GST issue last, despite its impact.\n- **Weak fix:** Its rounding suggestion (`subtotalCents * 10 / 100`) is still floating-point arithmetic, so it doesn't solve the problem it raises.",
+  "usage": {
+    "input": 1723,
+    "output": 396
+  },
+  "cost": 0.014812
+}

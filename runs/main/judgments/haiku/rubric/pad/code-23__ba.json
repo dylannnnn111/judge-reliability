@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-23",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the most important bug: `!r.value` discards legitimate 0 readings, which matters for a cold room near freezing. Both also flag the string timestamp comparison, the possibility that `latestReading` returns a null-valued reading, and the silent omission of sensors with no valid data. Response A additionally catches a real bug that B misses: because `sums` is a plain object, IDs like `constructor` or `__proto__` resolve to inherited properties, so `??=` doesn't create a new accumulator and the code writes into built-in objects. That is a genuine correctness issue, though an unlikely one in practice. Response A also notes the non-zero comparator return, which B mentions only briefly.\n\nHowever, the user asked for fewer than 200 words. Response A runs to roughly 300 words, a clear violation, while Response B fits within the limit and still ranks the main issues sensibly with concrete fixes. B's minor-issues bucket is a bit thin, and its omission of the prototype-key bug is a real gap. On balance, B follows the instruction and covers the important problems, so it edges out A, though A's extra correct finding keeps this close.\n\nVerdict: B",
+  "usage": {
+    "input": 1907,
+    "output": 1460
+  },
+  "cost": 0.0009207000000000001
+}

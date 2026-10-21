@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-33",
+  "side": "A",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds the one bug that matters and fixes it correctly. `p.status = 'succeeded'` in the `WHERE` clause turns the `LEFT JOIN` into an inner join. That removes every customer with zero successful payments, which is the group the list exists to find. The explanation is accurate, it is ranked first, and the corrected SQL is right.\n\nThe rest is weaker:\n- **Item 2 (annual plans):** This is a plausible and useful business-logic point, though it depends on the data model.\n- **Item 4 (NULL plan):** This is real but minor, and the response frames it as something to confirm.\n- **Items 3, 5 and 6:** These are speculative. The query shows no status or signup columns, no evidence that `paid_at` is a Unix timestamp, and no refund data. They read as generic checklist items rather than findings from this code.\n- **Item 6:** It is cut off, with a heading and no explanation or fix.\n\nThe response also seems to go over the 200-word limit. The padding with speculative items dilutes the one critical finding.\n\nScore: 6",
+  "usage": {
+    "input": 983,
+    "output": 730
+  },
+  "cost": 0.009266
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-15",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is more accurate.**\n\n**Accuracy:** The source says that for new night workers \"the nap made no measurable difference to lane drifting.\" It does not say whether their reaction time changed.\n- **Response A** writes that new workers \"saw no measurable benefit.\" This widens a finding about one measure into a claim about all benefits, which slightly overstates the source.\n- **Response B** says \"lane drifting didn't improve,\" which matches the source exactly.\n- **Response B** also keeps the qualifier \"after long shift runs\" for transport home. Response A drops it, a minor loss of precision.\n- Both report the 7am vs 6am finding correctly. Response B's \"nap or not\" also preserves the source's \"with or without a nap.\"\n\n**Key points:** Both cover the main result, the experience caveat, the timing effect, the implication and the limitations.\n\n**Concision:** Both are under 120 words and similarly tight.\n\nVerdict: B",
+  "usage": {
+    "input": 1400,
+    "output": 530
+  },
+  "cost": 0.0162
+}

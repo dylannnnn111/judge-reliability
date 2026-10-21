@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-24",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "**B** is better. Both responses are factually sound: Mauna Kea is the tallest base-to-peak mountain, and Chimborazo's summit is the point farthest from Earth's centre. But Response A runs to roughly 190 words, well over the 120-word limit, while Response B stays under it at roughly 100 words.",
+  "usage": {
+    "input": 743,
+    "output": 936
+  },
+  "cost": 0.0005423
+}

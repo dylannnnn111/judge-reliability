@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-40",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A comes in at about 111 words, within the 120-word limit. It clearly explains the speed difference between light and sound and gives a correct counting method with a worked example. It also adds useful safety advice.\n\nResponse B is equally accurate but runs to roughly 200 words, well over the limit, largely because of filler phrasing.",
+  "usage": {
+    "input": 750,
+    "output": 452
+  },
+  "cost": 0.01204
+}

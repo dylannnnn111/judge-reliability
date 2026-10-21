@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-23",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A**\n\nBoth responses find the main bug: `!r.value` drops legitimate `0` readings, which matters in a cold room. Both also flag the string timestamp comparison, the comparator that never returns 0, the possible null-valued latest reading, and the sensors with no valid data that vanish from the output.\n\n- **Length:** Both exceed the 200-word limit. A is about 210 words and B about 235, so A comes closer to following the instruction.\n- **Prioritization:** A puts the vanishing-sensor problem second, which fits a monitoring dashboard where a missing sensor is dangerous. B ranks it last. A also groups the trivial points (sort cost, comparator) into one \"minor\" item, while B gives them separate entries.\n- **Extra coverage:** B adds the prototype-key collision (`constructor`, `__proto__`), which is a real but unlikely edge case. It also suggests `Number.isFinite`. These are small gains, and they cost B more length.\n\nA is more concise and ranks the issues better. B's extra catch doesn't outweigh its larger overrun and weaker ordering.\n\n**A**",
+  "usage": {
+    "input": 1474,
+    "output": 1980
+  },
+  "cost": 0.022748
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "code-31",
+  "side": "A",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The response identifies the central problem correctly: a second-precision cursor with no tiebreaker drops rows that share a timestamp at a page boundary. Its keyset fix on `(created_at, id)` is sound, and the index and late-arriving-row points are real. However, it has a factual error. With 1000+ rows sharing one second, `created_at > :last_seen` skips the remaining tied rows rather than looping or stalling, so the \"loop forever\" claim is wrong. It also breaks the explicit under-200-word limit, running roughly twice that, and the final \"minor point\" about explicit columns and parameter types is filler. The ranking and fixes are good, but the length violation, the incorrect claim, and the padding keep it from scoring higher.\n\nScore: 5",
+  "usage": {
+    "input": 1294,
+    "output": 842
+  },
+  "cost": 0.0005503999999999999
+}

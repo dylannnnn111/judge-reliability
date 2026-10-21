@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "code-16",
+  "side": "B",
+  "score": 8,
+  "model": "claude-opus-5-5",
+  "text": "The issues raised are mostly real, and the most important one comes first.\n\n**GST (item 1).** Australian consumer prices are normally GST-inclusive, so adding 10% on top would overcharge every customer. The response rightly says \"likely\" and asks the author to confirm the pricing convention before changing anything. Leading with this is a good call.\n\n**Sort mutation (item 2).** This is a genuine bug. The cart page sharing state makes it worse, and the fix (`[...items].sort(...)`) is correct.\n\n**Input validation (item 3).** This is a reasonable concern, though no fix is given.\n\n**Client-side trust (item 4).** This is speculative because we don't know whether the code runs client-side. Still, \"used again at checkout\" makes it a fair and important point. Given the stakes, it could arguably rank higher than validation.\n\n**Discount matching (item 5).** This is the weakest item. Saying \"`==` is exact\" is slightly muddled, since `==` versus `===` makes no practical difference when comparing strings. Case sensitivity is a design choice rather than a bug. The point about unknown codes being silently ignored is fair UX feedback, but the item overall is minor.\n\n**`formatAud` (item 6).** `$-5.00` is a real formatting flaw, and the missing thousands separators are real too. `Intl.NumberFormat` is the right fix.\n\nNothing major is missed. The rounding of discount and GST is acceptable for whole cents.\n\nThe response stays within roughly 200 words. It gives fixes for most items and contains little padding beyond the somewhat nitpicky discount point. The ranking is sensible overall.\n\nScore: 8",
+  "usage": {
+    "input": 1045,
+    "output": 881
+  },
+  "cost": 0.0218
+}

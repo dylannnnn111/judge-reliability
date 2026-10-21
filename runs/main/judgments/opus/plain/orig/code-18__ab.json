@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-18",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses identify the same critical bug: the cache key ignores `to`. They also share most secondary issues.\n\n- **In-flight deduplication:** A adds \"evict it if it rejects.\" Without that, caching the promise as B suggests would cache failures for 60 seconds.\n- **Seventh point:** A's money-precision point fits an invoicing service. B's \"unsafe generic cast\" is a weak, low-impact type-hygiene note.\n- **Validation:** B's `typeof` check adds nothing, since `Number.isFinite` already rejects strings.",
+  "usage": {
+    "input": 1481,
+    "output": 389
+  },
+  "cost": 0.013704
+}

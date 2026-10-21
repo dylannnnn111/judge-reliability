@@ -1,0 +1,14 @@
+{
+  "pair": "sum-18",
+  "side": "A",
+  "author": "sonnet",
+  "model": "claude-haiku-5-5",
+  "original": "**Stridewell 3.8 (released 14 Oct 2026)**\n\n**New features:**\n- **Route sharing:** Share saved walking or running routes by link. Recipients can view the map and elevation without the app.\n- **Heat warnings:** Alerts appear before workouts when the forecast is 35°C or higher. Can be turned off in Settings > Safety.\n- **Weekly summary email:** Monday emails with distance, active minutes and personal bests. Users can unsubscribe.\n\n**Improvements:** More accurate GPS in cities, about 15% less battery use on long workouts (recent phones), faster workout history, and step counts syncing every 15 minutes instead of hourly.\n\n**Fixes:** Paused workouts no longer keep recording distance, cycling calorie estimates are corrected for weights entered in pounds, and the New Zealand time zone display error is resolved.\n\n**Accessibility:** Screen reader labels on all workout-screen buttons, and the pace chart colour can now be changed.\n\nNo action is required from the team.",
+  "text": "**Stridewell 3.8 (released 14 Oct 2026)**\n\nThank you for taking the time to review this release. Below is an overview of what Stridewell 3.8 includes, organised into new features, improvements, fixes and accessibility changes.\n\n**New features:**\n- **Route sharing:** You can now share your saved walking or running routes by link. Recipients are able to view the map and elevation without needing the app installed.\n- **Heat warnings:** Alerts appear before workouts whenever the forecast is 35°C or higher. This feature can be turned off in Settings > Safety, should users prefer not to receive these alerts.\n- **Weekly summary email:** Each Monday, users receive an email covering their distance, active minutes and personal bests. Users can unsubscribe if they no longer wish to receive these emails.\n\n**Improvements:** This release brings more accurate GPS in cities. It also reduces battery use on long workouts by about 15% on recent phones. In addition, workout history now loads faster, and step counts sync every 15 minutes instead of hourly.\n\n**Fixes:** Several issues have been resolved in this version. Paused workouts no longer keep recording distance, and cycling calorie estimates are now corrected for weights entered in pounds. Finally, the New Zealand time zone display error has been resolved.\n\n**Accessibility:** Screen reader labels have been added to all workout-screen buttons. The pace chart colour can also now be changed.\n\nOverall, no action is required from the team.",
+  "ratio": 1.58,
+  "usage": {
+    "input": 525,
+    "output": 1239
+  },
+  "cost": 0.000672
+}

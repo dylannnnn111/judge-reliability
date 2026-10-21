@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-13",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is slightly better, mainly because its cause statement is less garbled and its content is more complete. Both are slightly over the 120-word limit by my count, A at about 127 words and B at about 126, so length does not separate them.\n\n**Accuracy:**\n- **Response A:** Its cause statement, \"a failed biocide dosing pump that the contractor missed during a monthly visit\", is misleading. It suggests the contractor visited and overlooked the failure. In fact the visit was missed entirely, so the failure went undetected. It also says \"plan to recover\" the costs, which is a little firmer than the report's \"seeking to recover\".\n- **Response B:** \"Failed after the contractor missed a monthly visit\" gets the order slightly wrong, since the pump failed in mid-September and the visit was missed afterwards. It is still much closer to the report: the visit was missed and we weren't told. \"Seeking to recover\" matches the report.\n\n**Content kept:**\n- **Response A:** It omits the move to fortnightly sampling and the tenant notification.\n- **Response B:** It includes the fortnightly sampling and the tenant notification. It also leads with the decision needed, which helps a busy manager.\n\nBoth state the $4,800 approval and the weekly manual checks.\n\nVerdict: B",
+  "usage": {
+    "input": 1502,
+    "output": 1954
+  },
+  "cost": 0.022544
+}

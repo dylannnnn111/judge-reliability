@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-17",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better, mainly on accuracy.\n\n**Response A:**\n- It credits Arjun with noting \"the fourth weekend in a row\". That was Colleen's statement, so this is a misattribution.\n- Its subject line says \"resolved for now\", which overstates things. The matter is only being monitored after a verbal agreement, and the weekend result is still unknown.\n- It says the music was \"running past midnight\". Colleen's complaint was about the bar going past midnight with music thumping, so this is a loose reading.\n- It runs to about 135 words including the subject, which breaks the 120-word limit.\n- It leaves out that the regulator needs dated evidence, which explains why residents are logging.\n\n**Response B:**\n- It is accurate. It says \"four weekends running\", gets the licence hours and the 10pm music condition right, and says the regulator needs evidence.\n- It notes the dissenting resident, which is minor but correct.\n- It says the regulator complaint remains the fallback and does not call the matter resolved.\n- It is about 120–124 words, only marginally over the limit and much closer than A.\n\nVerdict: B",
+  "usage": {
+    "input": 1559,
+    "output": 1295
+  },
+  "cost": 0.016068
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-30",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B.** The user asked for under 200 words. By my count, Response B is about 188 words and Response A is about 228, so A breaks that constraint.\n\nBoth responses correctly find the main bug, `COUNT(*)` returning 1 for agents with no tickets. Both also flag the misleading `COALESCE(..., 0)` and the NULL-exclusion bias in the average.\n\nA adds some useful points: the missing time window for a \"weekly\" report, possible integer truncation in `AVG`, and a note that the `ON` clause filter is correctly placed. These make A slightly richer, but the integer-truncation point is speculative and the correct-placement note is padding in a list of problems.\n\nB's extra points are about hard-coded schema assumptions (`status = 'open'`, `active = 1`) and labeling the report as open tickets only. The last one is weak, but B stays within the word limit.\n\nSince A's extra content is partly marginal and it exceeds the explicit limit, B is the better response.\n\n**B**",
+  "usage": {
+    "input": 1336,
+    "output": 1759
+  },
+  "cost": 0.020262
+}

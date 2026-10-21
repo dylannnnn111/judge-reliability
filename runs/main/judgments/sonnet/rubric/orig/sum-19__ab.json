@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-19",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses cover the key points, but A is more accurate and slightly more concise.\n\n**Accuracy:** The source says the tenant \"could remain liable for the rest of the term.\" Response A keeps that hedge (\"may stay liable… possibly for the rest of the term\"). Response B says \"we remain liable for the full remaining term,\" which turns a possibility into a certainty and overstates the risk. B also adopts a \"we\" voice that the source doesn't use, though that is minor. Otherwise the figures and conditions match the source in both: 28 days, $1,500–$3,000, three months' rent, 30%, and the change-of-control rule.\n\n**Coverage:** Both include consent, the assignment conditions, the liability risk, subletting limits, change of control, the 28-day response time and the advice to get a lawyer. A also names Kingsley Property Group for consent forms. B names the unit and park in its header and gives the two years of accounts, which A omits. This is roughly even.\n\n**Concision:** I count about 130 words for A and about 135 for B, so both likely exceed the 120-word limit. B is slightly longer, and its header adds little for a manager.\n\nA's better accuracy decides it.\n\nVerdict: A",
+  "usage": {
+    "input": 1515,
+    "output": 1888
+  },
+  "cost": 0.02191
+}

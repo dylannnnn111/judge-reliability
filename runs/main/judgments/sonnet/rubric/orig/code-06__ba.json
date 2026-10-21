@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-06",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same four substantive problems in the same order: the `is not` identity comparison, the 404/403 existence leak, the check-then-save race in `cancel_order`, and cancelling paid orders with no refund handling. Both give workable fixes.\n\n**Response A**\n- Its minor items are mostly legitimate. The order is mutated in memory before `save`, so a failed save leaves callers holding a false status. Magic-string statuses are also a fair point.\n- \"Most legitimate customers get Forbidden\" slightly overstates the identity bug, but it correctly notes that small-ID tests would hide it.\n- The race fix is sound but omits the row-count check.\n- It runs about 205 words, slightly over the limit.\n\n**Response B**\n- Its race-condition fix is slightly better. It includes `customer_id` in the conditional update and says to check the row count.\n- Its \"intermittent\" description of the identity bug is accurate.\n- Its minor items are weaker. A customer seeing the status of their own order in a `ValueError` message is not a real leak. \"Save is not shown to be transactional\" is vague.\n- It runs about 215 words, a bit further over the limit.\n\nThe core findings are equivalent. A's minor points are more valid and it is slightly shorter. B's fix detail is slightly better, but its padding includes a questionable issue, so it is marginally weaker on avoiding flags that are fine.\n\nVerdict: A",
+  "usage": {
+    "input": 1549,
+    "output": 2051
+  },
+  "cost": 0.023608
+}

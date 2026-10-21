@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-25",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is accurate on the key facts: 347 misdirected statements, the exposed fields, no external access, the regulator notified, members contacted by 6 October, and the fixes and dates. Its one unsupported detail is \"stopped after 35 minutes,\" since the source gives the stop time (9:35am) but no start time for the job. It also omits the premature \"we've been hacked\" all-staff message and its leak to the press, which a manager may want to know about.\n\nResponse B covers the same core facts and adds the media point, which is useful. However, it runs to roughly 190 words, well over the 120-word limit, and includes filler such as \"To be clear at the outset\" and \"To give some background.\" The extra length doesn't add enough to justify breaking the constraint. Response A stays within the limit and is tighter, and its main weakness is a minor inference rather than a material error.\n\nVerdict: A",
+  "usage": {
+    "input": 1491,
+    "output": 942
+  },
+  "cost": 0.0006201000000000001
+}

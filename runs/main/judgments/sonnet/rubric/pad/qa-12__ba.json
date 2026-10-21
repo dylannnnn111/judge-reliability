@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-12",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses reach the correct answer: 671/1296 ≈ 0.518. Both are under 120 words (A is roughly 75 words, B roughly 70).\n\nCorrectness: Both are right. A's historical note on the Chevalier de Méré is accurate. In his actual problem, the four-roll single-die bet was favorable, and it is \"slightly better than even odds.\"\n\nReasoning: A states the complement approach up front and shows the single-roll probability, the independence assumption, and the four-roll product. B gives the complement calculation too, but it leaves out the single-roll step and pads with a redundant paragraph (\"Put another way, subtracting the chance...\") that adds nothing.\n\nClarity: A is cleaner and more structured. B is slightly wordy and repeats itself, though still clear.\n\nA is better because it explains more clearly and is less padded.\n\nVerdict: A",
+  "usage": {
+    "input": 628,
+    "output": 284
+  },
+  "cost": 0.004096
+}

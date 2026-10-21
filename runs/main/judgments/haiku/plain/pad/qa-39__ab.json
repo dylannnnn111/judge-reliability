@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-39",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. Response A runs well past the 120-word limit, while Response B stays under it (about 97 words) and still covers the key explanation: binary floating-point, the rounding of 0.1 and 0.2, and the resulting 0.30000000000000004 versus the nearest double to 0.3.\n\nB",
+  "usage": {
+    "input": 781,
+    "output": 777
+  },
+  "cost": 0.0004666
+}

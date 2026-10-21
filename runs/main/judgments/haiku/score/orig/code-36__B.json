@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-36",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response catches the most serious problem, the `Invalidate` method calling `delete` under `RLock`. That is a real race, and Go's fatal \"concurrent map writes\" error can't be recovered, so ranking it first is right. The stampede, stale-overwrite, and unbounded-growth points are also real and well explained, with reasonable fixes. The TTL point is more speculative, since the code doesn't show the token's actual lifetime, but it's a fair design concern. The failure-handling item is valid but minor. The response is close to the 200-word limit, and its fixes are concrete without padding. It doesn't flag anything that is actually fine. A slightly sharper ranking and less hedging would make it stronger, but it is solid overall.\n\nScore: 8",
+  "usage": {
+    "input": 1298,
+    "output": 767
+  },
+  "cost": 0.0005133
+}

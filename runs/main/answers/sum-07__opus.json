@@ -1,0 +1,13 @@
+{
+  "item": "sum-07",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**Ledgerly 5.0 (released 21 October 2026): key points**\n\n**Action needed:** The Classic CSV export has been removed. If any team exports data to another accounting system or a spreadsheet, those imports will **break after updating**, because the new format uses different column names and puts GST in its own column. See the help article \"Moving from Classic CSV\" before updating.\n\n**Also note:** Android 9 will no longer receive updates.\n\n**New features:** Automatic recurring invoices, bulk reminders for overdue invoices, and dark mode.\n\n**Improvements:** A faster dashboard for large accounts, better client search, ATO-aligned GST rounding, and fixes for the Western Australia due-date error, an iOS crash and duplicate notifications.\n\n**Coming soon:** Multi-currency invoicing and credit union bank feeds.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 656,
+    "output": 300
+  },
+  "cost": 0.008624,
+  "at": "2026-10-14T01:51:15.335Z"
+}

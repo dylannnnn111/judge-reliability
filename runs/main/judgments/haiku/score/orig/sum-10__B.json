@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-10",
+  "side": "B",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate throughout. The Green status, the 1 December go-live, the 12 testers and the 48-to-21-second login improvement, the three accessibility issues all fixed, the $186,000 of $310,000 spend, the helpdesk risk moving to low, and the next-fortnight tasks all match the source. It is under 120 words and reads well for a busy manager. It leaves out a few minor items: the next update date (24 October), the project lead's name, the PDF invoice download, and the new team member. It also drops the fact that the audit covered only the first six screens. None of these is essential for a status skim, though the update date and the audit scope are slightly useful. The omissions cost little, so this is a strong summary with only small gaps.\n\nScore: 9",
+  "usage": {
+    "input": 931,
+    "output": 521
+  },
+  "cost": 0.00035360000000000003
+}

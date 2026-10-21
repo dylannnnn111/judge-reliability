@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-40",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer under 120 words, so I'll check each response against that limit.\n\nResponse A: the first paragraph runs about 85 words, the second about 45, the bullets about 25, the example about 20, and the final paragraph about 30. That puts it well over 120, roughly 200 words, so it violates the constraint.\n\nResponse B: the opening is about 40 words, the steps about 30, the example about 17, and the safety tip about 35. That totals roughly 120–125 by a rough count, so I'll count more carefully.\n\n\"You see lightning first because light travels far faster than sound.\" = 11\n\"Light moves at about 300,000 km per second, so the flash reaches you almost instantly.\" = 15 (26)\n\"Sound travels at only about 343 meters per second in air, so the thunder lags behind.\" = 15 (41)\n\"To estimate distance:\" = 3 (44)\n\"1. Start counting seconds when you see the flash.\" = 8 (52)\n\"2. Stop when you hear the thunder.\" = 6 (58)\n\"3. Divide by 3 for kilometers or by 5 for miles.\" = 10 (68)\n\"Example: A 15-second gap means the strike was about 5 km (3 miles) away.\" = 14 (82)\n\"Safety tip: If the gap is 30 seconds or less (within about 10 km or 6 miles), you're within striking range.\" = 20 (102)\n\"Seek shelter and wait 30 minutes after the last thunder.\" = 10 (112)\n\nThat comes to about 112 words, under the limit. Response B meets the constraint and Response A does not, and B's content is accurate as well.\n\n**B**",
+  "usage": {
+    "input": 750,
+    "output": 527
+  },
+  "cost": 0.00677
+}

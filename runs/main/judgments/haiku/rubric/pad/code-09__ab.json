@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-09",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the top issue: `revoke_permission` never clears `_permission_cache`, so revoked permissions stay active. Both also cover cross-process staleness, missing invalidation for other changes, unbounded memory growth, and the need to invalidate after commit. Response A adds a valid thread-safety note (benign in practice under CPython, but worth flagging) and ends with a clear, actionable fix summary. Response B gives a concrete one-line fix (`_permission_cache.pop(user_id, None)` after commit) and makes a sharp point that nonexistent user IDs get cached as empty sets, which A misses. However, B opens with filler (\"Let me walk through the issues...\") that the user's brevity request didn't ask for, and its fifth item largely repeats the ordering point. A is tighter and covers a slightly broader set of real issues, while B's specific insights are its main advantage. The gap is small, with a slight edge to A.\n\nVerdict: A",
+  "usage": {
+    "input": 1640,
+    "output": 915
+  },
+  "cost": 0.0006215
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-02",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\n**Response B** meets the under-120-word limit and **Response A** does not.\n\n- **Word limit:** Response B is about 113 words including its heading. Response A is about 123 words including its heading, so it breaches the explicit constraint. Even without the heading it sits at about 116, uncomfortably close.\n- **Fit for a busy manager:** Response B opens the opening-hours item with the outcome (\"No agreement reached\"). That is the right priority for a reader who only needs the bottom line.\n- **Content and accuracy:** Both responses capture the key decisions and actions accurately: hours unchanged pending revised figures, the volunteer deadline of 24 October, the roof replacement going into the capital works bid, and the next meeting date. Response A adds the visitor numbers, which is useful context, but this is what pushes it over the limit. Response B's mention of the air conditioning service is minor filler.",
+  "usage": {
+    "input": 1467,
+    "output": 2228
+  },
+  "cost": 0.050428
+}

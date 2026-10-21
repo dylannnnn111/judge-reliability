@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-01",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses capture the same key facts accurately: the new 30 October deadline and why it moved, the three deliverables, the new template and its location, the variance threshold, numbers rather than screenshots, leave cover, Marcus's optional session, and calling Priya if there's a problem. Both are about 117 words, so both meet the under-120 limit.\n\nResponse A is better for a busy manager. Its headings and bullet lists make the deliverables and requirements quick to scan. It also places the urgent \"call Priya today\" instruction right after the deadline change, where it can't be missed. Response B puts everything in a single dense paragraph that is harder to skim, and it leaves that urgent instruction until the end.",
+  "usage": {
+    "input": 1258,
+    "output": 1099
+  },
+  "cost": 0.027012
+}

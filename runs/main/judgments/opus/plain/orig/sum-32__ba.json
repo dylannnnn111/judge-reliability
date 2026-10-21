@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-32",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse A runs to roughly 155–160 words, well over the 120-word limit. That fails an explicit instruction. Response B comes in at about 120 words and still covers everything a manager needs:\n- the claimed promise and the current rate\n- why the rate rose (the August standard variable rate increase, with the discount still applied)\n- what Jordan's 12 May email actually guaranteed\n- the $250 goodwill payment and the feedback to lending\n- that the customers still feel misled\n- the request for a call about fixed rates\n- the closure\n\nB's closing flag is slightly interpretive, since the customers did accept the payment. Even so, it is a reasonable point to raise with a busy manager. A's AFCA risk note is useful too, but it doesn't make up for breaking the length limit.",
+  "usage": {
+    "input": 1444,
+    "output": 937
+  },
+  "cost": 0.024516
+}

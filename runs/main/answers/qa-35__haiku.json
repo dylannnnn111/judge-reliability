@@ -1,0 +1,13 @@
+{
+  "item": "qa-35",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "Antibiotics target structures and processes unique to bacteria, such as cell walls (penicillin), bacterial ribosomes (tetracyclines), or bacterial DNA enzymes (fluoroquinolones). Viruses lack these features: they have no cell wall, no independent metabolism, and they replicate using the host cell's machinery, so there's no target for antibiotics to disrupt.\n\nAntibiotic resistance develops through natural selection. Random genetic mutations or horizontal gene transfer (such as plasmids) can give some bacteria a survival advantage against a drug. When antibiotics kill susceptible bacteria, the resistant ones survive and multiply. Overuse and misuse accelerate this process.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 59,
+    "output": 237
+  },
+  "cost": 0.00012440000000000002,
+  "at": "2026-10-14T01:50:55.021Z"
+}

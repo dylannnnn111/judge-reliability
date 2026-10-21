@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-39",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are factually correct. The stored values of 0.1 and 0.2, the rounded sum of about 0.30000000000000004, and the nearest double to 0.3 all check out. Both explain the key reason: 0.1 and 0.2 have no exact binary representation, so rounding errors combine. Both also suggest sensible workarounds.\n\nResponse A is clearer on the mechanism, with the extra detail about the two different doubles. However, it runs well over 120 words, roughly 200, which violates the explicit length limit. Response B covers the same core reasoning and the workarounds in roughly 90 words, within the limit.\n\nSince A breaks an explicit constraint and B satisfies it without losing the key reasoning, B is the better response.\n\nVerdict: B",
+  "usage": {
+    "input": 926,
+    "output": 1006
+  },
+  "cost": 0.0005956000000000001
+}

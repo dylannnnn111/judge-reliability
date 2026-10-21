@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-32",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.**\n\n**Accuracy:** Response A's closing flag says \"the customers have not accepted the outcome.\" That is misleading. The customers explicitly accepted the $250 while still feeling misled, so they partly accepted the resolution. A manager reading only this summary would get the wrong picture of where things stand. A's line that the complaint was \"closed as resolved and referred to the lending team\" is a slightly muddled merging of two actions, but close enough. Response B's facts are all correct: the rate breakdown, the August rise, what Jordan's 12 May email actually locked, the $250 payment, the referral and the closure. Its risk note about possible escalation to AFCA is a reasonable reading of the thread, not a misstatement.\n\n**Coverage:** B explains why the rate is 6.04%: the standard variable rate less the 0.90% discount, plus the 0.25% rise. It also notes that the contract allows variable rates to change and states the customers' original demand for a refund. A gives most of the same points but with less clarity on the rate mechanics. B leaves out the package-account condition, which is a minor gap.\n\n**Concision:** Both run over the 120-word limit, at roughly 165–175 words each. A spends words on filler such as \"I would like to take a moment to summarise this complaint for you\" and \"In this regard.\" B's labelled sections suit a busy manager better.\n\nVerdict: B",
+  "usage": {
+    "input": 1670,
+    "output": 1269
+  },
+  "cost": 0.03206
+}

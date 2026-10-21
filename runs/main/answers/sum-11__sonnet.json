@@ -1,0 +1,13 @@
+{
+  "item": "sum-11",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Office move: Collins St to 200 Lygon Rd, weekend of 15-16 Nov**\n\n- **Rachel Tan** (Office Manager): overall coordinator and removalist contact. Direct questions about the move and desk locations to her. She also allocates the 14 parking spaces, using last month's survey list (non-respondents miss out).\n- **Sam Okonkwo** (IT): moves all monitors, docking stations and phones, so don't pack them. Take laptops home Friday 14th and bring them back Monday.\n- **Lena Fischer** (Records): boxes for paper files are available from Mon 10th. Files must be boxed by Wed 12th or they'll be left behind.\n- **Personal items:** pack into two crates by 3pm Friday. Take any excess home.\n- **Access cards (Grant):** collect at the 8:30am Monday welcome in the Lygon Rd lobby. Everyone must attend, as you can't get past the lobby without a card.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 702,
+    "output": 324
+  },
+  "cost": 0.004644,
+  "at": "2026-10-14T01:51:21.587Z"
+}

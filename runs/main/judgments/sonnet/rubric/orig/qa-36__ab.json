@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-36",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Word count: Response A is about 105 words, so it fits under 120. Response B is about 110 words, so it also fits.\n\nOn correctness, both give the standard pressure-difference and downward-deflection explanation. Response A says the wing's \"curved, asymmetric shape\" and angle of attack matter. That is fine, though symmetric wings also generate lift at an angle of attack. Response A frames deflection as the primary mechanism and pressure as an equivalent description, which is accurate.\n\nResponse B is more problematic. It repeats the \"flatter lower surface keeps air slower\" explanation, which is a common oversimplification. It does not state the equal-transit-time fallacy, but it implies the shape alone causes the speed difference. It also presents Bernoulli and Newton as two separate contributions (\"Together... produce lift\"), which is a mild misconception, since they are equivalent descriptions rather than additive ones. Response A's \"Equivalently\" is the more accurate framing.\n\nResponse A also adds the stall point and the dependence of lift on speed and angle of attack, which is useful. Response B has nothing comparable.\n\nResponse A is more accurate and more complete, and it is equally clear.\n\nVerdict: A",
+  "usage": {
+    "input": 685,
+    "output": 388
+  },
+  "cost": 0.00525
+}

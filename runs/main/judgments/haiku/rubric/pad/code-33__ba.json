@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-33",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the main bug: `WHERE p.status = 'succeeded'` filters out customers with no payments, so the at-risk rows never appear. Both give the same fix of moving the condition into the join. Response B is stronger after that. Its annual/quarterly billing point is probably the most important domain issue for a churn list, since annual subscribers would show zero payments for most of the window and be flagged as false alarms. Its point about cancelled and new accounts is also relevant to who CS calls. Its Unix-timestamp point is a concrete, correct SQLite pitfall that silently matches nothing. Response A's date-format concern is more speculative, and its \"paying vs. non-free plan\" point is weaker. Response B has a flaw: item 6 about refunds is truncated and unexplained. Response A's minor items add little. Overall, Response B finds more of the issues that matter for this use case and ranks them sensibly.\n\nVerdict: B",
+  "usage": {
+    "input": 1754,
+    "output": 971
+  },
+  "cost": 0.0006609
+}

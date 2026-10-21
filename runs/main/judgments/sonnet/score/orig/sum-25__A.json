@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-25",
+  "side": "A",
+  "score": 5,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is concise, about 105 words, and its core is right. It says the incident was a job error rather than a hack, and it gives the 347 affected statements, the data exposed, the 11,200 unsent statements, regulator notification, member contact by 6 October and the 9 October resend.\n\nThere is one factual error. The report says the job was stopped at 9:35am, which is a clock time. The response turns this into \"stopped after 35 minutes\", which is wrong. The first call came in at 8:20am, so the gap was about 75 minutes. That misstates how long the problem ran.\n\nIt also leaves out several points a manager would likely need:\n- The duty manager's \"we've been hacked\" message was forwarded externally and quoted in a local news story, which is a reputational issue.\n- The action to update the incident communications guide is missing.\n- The regulator notification date of 3 October is missing.\n\nThe omissions are tolerable under the word limit, but the invented duration is a real accuracy flaw.\n\nScore: 5",
+  "usage": {
+    "input": 1101,
+    "output": 636
+  },
+  "cost": 0.008562
+}

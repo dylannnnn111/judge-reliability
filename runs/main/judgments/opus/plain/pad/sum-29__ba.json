@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-29",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse A is about 220 words, which breaks the explicit under-120-word limit by a wide margin. It also wastes words on filler such as \"Here is how the changes will look for each plan\" and the full support details, which a busy manager doesn't need.\n\nResponse B comes in at about 114 words. It still covers the essentials: the price changes, the extra data, who is affected, the exit option, and the reason.\n\nB has one minor wording flaw. It merges Classic plan customers and fixed-contract customers into one phrase, \"unaffected until their contract ends.\" Classic customers are actually unaffected for this year, not until a contract ends. This is a small imprecision. A's failure to meet the core length constraint is the more serious problem.",
+  "usage": {
+    "input": 1370,
+    "output": 553
+  },
+  "cost": 0.01654
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-38",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is accurate. The dates, figures and conditions all match the source: launch on 18 November, 431 of 600 members installed, a 4.3 rating, 21 of 23 bugs fixed, $268,500 of $290,000 spent, and a risk of up to a week's delay. It keeps the points a manager needs: status, beta outcome, key dates, budget and main risk. Its word count is about 118–120, so it sits right at the limit, but it is essentially compliant.\n\nResponse B is also accurate. It adds some small extras, such as the most-liked features and the mitigation of checking the submission against store guidelines. But it runs to roughly 200 words, well over the 120-word cap, and it wastes words on filler. Examples are \"I am pleased to report\", a sentence announcing what the sections cover, and a repeated \"(to 10 Oct)\". That fails the explicit constraint and does not suit a busy manager.\n\nSince both are accurate, A is better because it respects the length limit and is more concise while keeping the essentials.\n\nVerdict: A",
+  "usage": {
+    "input": 1566,
+    "output": 1392
+  },
+  "cost": 0.017052
+}

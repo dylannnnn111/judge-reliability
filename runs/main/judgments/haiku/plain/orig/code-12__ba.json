@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-12",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "A\n\nResponse A is more likely to meet the under-200-word limit, while Response B runs noticeably longer. Response A also has the sharper points: the negative-amount formatting bug, and the explicit note that the N+1 pattern means about 40,000 round trips at this scale. Response B's \"COUNT(*) undercounts units\" point rests on a schema the user never showed, and its currency and reconciliation notes are less important.",
+  "usage": {
+    "input": 1594,
+    "output": 644
+  },
+  "cost": 0.0004814
+}

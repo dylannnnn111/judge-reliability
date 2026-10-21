@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-25",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the main off-by-one: the `>` check lets a sixth attempt through when the limit is 5. Both also flag unbounded memory growth, per-IP-only limiting, in-memory state, the hardcoded `retryAfterSec`, and proxy IP trust. Neither flags anything that is actually fine. Both exceed the 200-word limit, with Response A running noticeably longer.\n\nResponse B is more useful. It gives concrete fixes: the exact `retryAfterSec` formula, keying on the IPv6 /64 prefix, and the observation that the effective limit is `limit × instances`. It also notes that stale timestamps are pruned only when the same key returns, which explains the memory problem precisely. Response A's point about `X-Forwarded-For` spoofing is valuable and arguably more important than B's proxy-lockout framing, but A is wordier and its fixes are vaguer. B's closing item about tests is weak filler, but it is brief.\n\nResponse B is more specific, more actionable, and closer to the word limit.\n\nVerdict: B",
+  "usage": {
+    "input": 1791,
+    "output": 1264
+  },
+  "cost": 0.0008111
+}

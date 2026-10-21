@@ -1,0 +1,13 @@
+{
+  "item": "sum-10",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**Customer Portal Rebuild: Status Green (week ending 10 Oct 2026)**\n\nOn track for go-live on **Tuesday 1 December**. No decisions needed from you.\n\n- **Progress:** Account settings and billing history screens are complete, including PDF invoice downloads. In testing, all 12 customers logged in unaided, and average login time fell from 48 to 21 seconds. An external accessibility audit found three minor issues, all now fixed.\n- **Budget:** $186k spent of $310k, in line with plan.\n- **Risks:** No new risks. Helpdesk integration risk is down to low after the vendor confirmed API support.\n- **Next:** Build the support ticket screen, start load testing and draft customer switch-over communications.\n\nNew front-end developer Ben Castillo joined on 6 October. Next update: 24 October.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 577,
+    "output": 342
+  },
+  "cost": 0.009148,
+  "at": "2026-10-14T01:51:20.549Z"
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-23",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better, mainly on accuracy.**\n\n**Accuracy:** Response B says \"Council will install a speed counter\" on Wattle Road. The minutes say only that Councillor Tse would *ask* council traffic staff to put one in and report back. B turns a request into a firm commitment, which is misleading about who decided what. Response A's \"Tse will request a speed counter\" is correct. I found no other errors in either response.\n\n**Coverage:** Response A keeps several useful details that B drops:\n- Who is responsible: Laila coordinating Clean Up Day, Peter booking the sound system.\n- What the playground equipment includes.\n- The Facebook action item.\n\nB adds the school choir, which is minor.\n\n**Length:** By my count, A is about 111 words, within the 120-word limit. Its extra words are all accurate and useful. B is more concise, but its accuracy error outweighs that advantage.\n\nVerdict: A",
+  "usage": {
+    "input": 1550,
+    "output": 1050
+  },
+  "cost": 0.0272
+}

@@ -1,0 +1,13 @@
+{
+  "item": "qa-40",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "You see lightning first because light travels about 300,000 km per second, essentially instantaneous over any storm distance, while sound travels only about 343 meters per second in air. The flash and the thunder start at the same moment, but the light arrives almost immediately and the sound lags behind.\n\nTo estimate distance, count the seconds between the flash and the thunder:\n\n- **Divide by 3** for kilometers (about 3 seconds per km)\n- **Divide by 5** for miles (about 5 seconds per mile)\n\nFor example, a 10-second gap means the strike was roughly 3 km (2 miles) away.\n\nIf the gap is 30 seconds or less, the storm is close enough to be dangerous, so seek shelter.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 62,
+    "output": 230
+  },
+  "cost": 0.002424,
+  "at": "2026-10-14T01:51:01.506Z"
+}

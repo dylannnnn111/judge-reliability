@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-25",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate on the core facts: no external access, 347 members affected, no passwords or card numbers, the job stopped before the remaining 11,200 statements went out, the regulator notified on 3 October, members contacted by 6 October, and the 9 October resend. Response B adds that the job \"was stopped after 35 minutes,\" but the report gives only the 9:35am stop time, not when the job started, so that figure is unsupported. Response A has no such error. Response A also covers the premature \"we've been hacked\" all-staff message and its leak to local news, which a manager would want to know about and which Response B omits. However, Response A runs to roughly 160 words, breaking the explicit under-120-word limit, while Response B stays at about 110. Weighing accuracy first, Response A is the better summary despite the length overrun, though the word limit keeps this from being a clear-cut call.\n\nVerdict: A",
+  "usage": {
+    "input": 1443,
+    "output": 1902
+  },
+  "cost": 0.0010953
+}

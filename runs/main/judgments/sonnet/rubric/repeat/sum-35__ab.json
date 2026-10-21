@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-35",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better. Response B overstates the timing consequence and runs over the word limit, while A reports the point correctly and stays at or near the limit.\n\n**Accuracy:** Response B says \"Overrunning means paying daily rent.\" The source says only that the tenant \"may have to pay rent\" for extra days the landlord needs. B turns a possibility into a certainty. Response A says \"may incur rent for extra days,\" which matches the source. Otherwise both are accurate on the kitchenette condition, the two quotes, the three months' notice, the $18,000 bond, the 30-day return and the 30 June 2027 date. A's \"us\" assumes the reader is the tenant, which fits because the guide is written for Marlow & Quay.\n\n**Coverage:** Both capture the main obligations, the kitchenette exception, the payment alternative, the timing risk and the bond. Neither adds anything the other lacks. B's bullets are easier to scan, but they add nothing correct that A omits.\n\n**Concision:** I count Response A at about 120 words, so it is right at the limit. Response B comes to roughly 128 words with its heading and labels, which breaks the \"under 120\" instruction.\n\nVerdict: A",
+  "usage": {
+    "input": 1454,
+    "output": 2209
+  },
+  "cost": 0.024998
+}

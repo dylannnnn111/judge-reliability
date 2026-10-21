@@ -1,0 +1,14 @@
+{
+  "pair": "sum-39",
+  "side": "B",
+  "author": "opus",
+  "model": "claude-haiku-5-5",
+  "original": "**Riverbend scraps library late fees from 1 December**\n\n- Council voted 7-2 to end overdue fines on books, magazines and DVDs at all five libraries.\n- Existing fines (about $38,000 across 6,400 members) will be wiped. Cards blocked only for fines unblock automatically on 1 December, and members will be emailed in November.\n- **Exceptions:** Lost or damaged items, or items not returned within 60 days, incur replacement cost and a blocked account. Inter-library loans keep lending councils' late fees.\n- **Rationale:** Fines deterred families, especially children. Other councils saw more returns after dropping them.\n- **Cost:** About $52,000 in annual revenue lost, less $19,000 previously spent chasing payments (net about $33,000). One opposing councillor cited rates pressure.\n- The policy will be reviewed in 12 months.",
+  "text": "**Riverbend scraps library late fees from 1 December**\n\n- In a vote of 7-2, council has agreed to end overdue fines on books, magazines and DVDs at all five libraries across the district.\n- Existing fines, which total about $38,000 across 6,400 members, will be wiped in full. Cards that were blocked only because of fines will unblock automatically on 1 December, and members will be emailed about this change in November.\n- **Exceptions:** Lost or damaged items, or items not returned within 60 days, will still incur replacement cost and a blocked account. Inter-library loans will continue to keep lending councils' late fees, as they do now.\n- **Rationale:** Council's reasoning is that fines deterred families, especially children, from using the libraries. It is also worth noting that other councils saw more returns after dropping their own fines.\n- **Cost:** The change means about $52,000 in annual revenue is lost. This is partly offset by $19,000 previously spent chasing payments, which brings the net cost to about $33,000. One opposing councillor raised rates pressure as a concern.\n- To make sure the policy is working as intended, it will be reviewed in 12 months.",
+  "ratio": 1.54,
+  "usage": {
+    "input": 477,
+    "output": 1039
+  },
+  "cost": 0.0005672
+}

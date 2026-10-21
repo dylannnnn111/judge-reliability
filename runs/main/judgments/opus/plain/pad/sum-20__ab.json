@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-20",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses exceed the 120-word limit. A is roughly 260 words, about double the cap. B is roughly 130 words, only slightly over.\n\nB is better suited to a busy manager. Its bolded bullet headings are easy to skim, and it keeps all the key details: time, venue, agenda, prep, food deadline, out-of-office arrangements and the optional drinks.\n\nA reads as a rewritten email rather than a summary. It even slips into Hannah's first-person voice (\"I would kindly ask\"), which is inappropriate when the manager is the reader.",
+  "usage": {
+    "input": 1460,
+    "output": 1416
+  },
+  "cost": 0.03416
+}

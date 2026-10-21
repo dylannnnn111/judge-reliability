@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-09",
+  "side": "B",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The final answer is correct. At 3:15 the minute hand is at 90° and the hour hand is at 97.5°, so the smaller angle is 7.5°. The response also gives the key reasoning clearly: the 6° per minute and 0.5° per minute rates, and the hour hand's offset from the 3.\n\nHowever, the user asked for an answer under 120 words, and this response runs roughly 170 to 180 words. The extra material, such as the closing paragraph confirming that 7.5° is the smaller angle, adds little, so this is a clear instruction violation.\n\nScore: 5",
+  "usage": {
+    "input": 574,
+    "output": 737
+  },
+  "cost": 0.0004259
+}

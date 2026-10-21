@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-30",
+  "side": "B",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly identifies the most important bug: `COUNT(*)` counts the NULL-padded row from the LEFT JOIN, so agents with no open tickets show 1 instead of 0. It also correctly flags that `COALESCE(AVG(...), 0)` makes agents with no tickets appear to have a 0-minute response time, which is misleading. Both are ranked sensibly, and the fixes (`COUNT(t.id)`, returning NULL and rendering it as \"n/a\") are clear. The point about NULL `first_response_mins` being silently excluded from the average is real and useful. The hard-coded `status` and `active` values are speculative, since the schema isn't shown, but they are framed as things to confirm. The response misses that placing `status = 'open'` in the ON clause is correct, which a reviewer might note. The final item is weak: it calls the ORDER BY \"fine\" and then lists it as a problem, which is contradictory padding. Overall the important issues are found and well ordered, with a small deduction for the filler item and speculative points.\n\nScore: 7",
+  "usage": {
+    "input": 904,
+    "output": 834
+  },
+  "cost": 0.0005074
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-01",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response finds the real problems: the truncation bug (`int(amount * 100)` turns 10.29 into 1028 cents, which I confirmed), float money arithmetic, dropped negative totals, one bad row aborting the batch, the unnormalized `customer_id` grouping, and the lack of idempotency or per-customer error handling when `charge()` fails. Its ranking is sensible. Non-idempotent reruns and partial failures are the biggest operational risk for a nightly billing job, though the truncation bug could arguably rank first since it is a certain, silent undercharge on every affected customer. Each item has a concrete fix. The hardcoded tax item is a design concern rather than a bug, and it is weaker than the others, but it is not a false claim. The response stays under 200 words with no padding, and nothing it flags is actually fine code.\n\nScore: 8",
+  "usage": {
+    "input": 1002,
+    "output": 755
+  },
+  "cost": 0.0004777
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-15",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A** is better: it is accurate, keeps every key point and stays within the length limit.\n\n**Accuracy:** Both report the core figures correctly: 96 workers, a 20-minute nap at 3am, a 22% drop in lane drifting and a 0.09-second gain in reaction time. Both also note that new night workers got no measurable benefit and some felt groggy for about 15 minutes, that 7am drives showed about twice the lane drifting of 6am drives, and that naps do not replace earlier shift ends or transport home. Response B says \"6 or more months\" where the source says \"more than six months\", a slight imprecision. Response A's phrasing matches the source.\n\n**Coverage:** Both keep all the points the manager needs, including the limitations.\n\n**Concision:** This decides it. The user set a hard limit of under 120 words. Response A is about 110 words and meets it. Response B is roughly 230 words, nearly double the limit. Much of its extra length is restatement that adds no information: \"In other words…\", \"Put differently…\" and \"It is worth keeping this in mind…\". Breaking an explicit constraint with redundant text is a clear failure for a busy reader.\n\nVerdict: A",
+  "usage": {
+    "input": 1568,
+    "output": 672
+  },
+  "cost": 0.019712
+}

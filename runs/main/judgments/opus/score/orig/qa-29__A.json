@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-29",
+  "side": "A",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The response is **correct**, gives the **key reasoning** and is **clear**, all within the word limit.\n\n**Correctness**\n- **Simple interest:** $1,000 + ($1,000 × 0.05 × 30) = $2,500. Correct.\n- **Annual compounding:** $1,000 × 1.05³⁰ ≈ $4,321.94, which rounds to about $4,322. Correct.\n- **Core explanation:** Compounding earns \"interest on interest,\" giving exponential growth versus linear growth. This is accurate.\n- **\"The gap grows exponentially\":** Strictly, the gap is an exponential minus a linear term. That difference is still dominated by the exponential, so the claim is not misleading.\n\n**Key reasoning**\n- It names the mechanism: earnings are added back to the principal and themselves earn returns.\n- It contrasts the linear and exponential growth shapes.\n- It explains why time horizon matters: the effects accumulate.\n- It gives a concrete numerical example.\n\n**Clarity and length**\n- The response is about 100 words, so it meets the under-120 constraint.\n- The flow is logical and has no padding.\n- There is some slight redundancy between \"growth accelerates\" and \"grows exponentially,\" but it is minor.\n\nScore: 9",
+  "usage": {
+    "input": 387,
+    "output": 781
+  },
+  "cost": 0.017168
+}

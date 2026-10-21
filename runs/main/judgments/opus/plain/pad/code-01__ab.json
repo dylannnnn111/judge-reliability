@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-01",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse B is better. It covers the critical issues in the right priority order: idempotency, partial failure, truncation, float money, dropped credits, bad rows, and tax. Its truncation example is concrete and correct (`10.29 * 100` → 1028 cents). It stays at roughly the 200-word limit.\n\nResponse A raises comparable points and adds billing-period scoping. However, it runs well over the limit at about 300 words. It also pads with filler, such as the redundant opening sentence about severity ordering and \"Put plainly…\".",
+  "usage": {
+    "input": 1535,
+    "output": 768
+  },
+  "cost": 0.0215
+}

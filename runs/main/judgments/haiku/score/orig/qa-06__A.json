@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-06",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response's final answer is correct. Counting from 15 December 2027: 16 days reach 31 December, 31 more reach 31 January (47 total), 29 more reach 29 February 2028 (76 total), and 24 more reach 24 March 2028 (100 total). The weekday is also right: 100 = 14×7 + 2, and Wednesday + 2 days is Friday. The key steps (month-by-month countdown with the leap year, and the mod-7 weekday shift) are both shown concisely, and the response is well under 120 words. The only minor gap is that it doesn't spell out the counting convention (that day 0 is 15 December), but the arithmetic is unambiguous.\n\nScore: 9",
+  "usage": {
+    "input": 345,
+    "output": 541
+  },
+  "cost": 0.000305
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-14",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A.** Response B runs to about 139 words, clearly breaking the 120-word limit, which is the request's one hard constraint. Response A comes to about 125 words with labels and title, or about 115 without the title. It stays within or very close to the limit and still covers every key change: office days, exceptions, excluded teams, equipment, hot desking and the rationale. B adds minor details (lockers, existing equipment kept, the Q&A pointer), but these do not justify exceeding the limit for a busy reader.",
+  "usage": {
+    "input": 1301,
+    "output": 1247
+  },
+  "cost": 0.030144
+}

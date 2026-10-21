@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-34",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Accuracy: Response A contains some problems. It says \"so practitioners do not need to adjust the booking schedule by hand\", which is an invented claim, since the original says admins enter leave in advance. It also states \"We will share further details as these features approach their release\", which is not in the original. \"The next free appointments are now shown in the day view\" is slightly vague, and \"Telehealth video links\" is fine. It also says \"texts the next patient on the waitlist\" when a booked slot is cancelled, which is acceptable. It omits the tablet and invoice fixes, which is a minor point. Its length is probably over 120 words: counting roughly, it comes to about 230 words, which clearly violates the constraint.\n\nResponse B: it is accurate, and \"Practitioner leave entered in advance\" is correct. It covers all the points, including all three fixes, and it is under 120 words (roughly 115). It says \"When a slot opens, the first patient is texted\", which is fine. \"Acceptance still works\" is fine. It also leaves out the 30-minute detail's \"before the next person\" nuance, which is minor.\n\nResponse B is better on accuracy, coverage, concision, and the word limit.\n\nVerdict: B",
+  "usage": {
+    "input": 1619,
+    "output": 379
+  },
+  "cost": 0.007028
+}

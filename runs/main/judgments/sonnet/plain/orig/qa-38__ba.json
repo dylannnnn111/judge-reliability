@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-38",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** Response A is about 96 words, within the limit. Response B is about 125 words, so it breaks the \"under 120 words\" instruction. Both explain the mechanism correctly: polar stratospheric clouds, the vortex, and sunlight returning in spring. B adds a few useful details, such as the Arctic comparison, but the length violation tips it to A.",
+  "usage": {
+    "input": 682,
+    "output": 1536
+  },
+  "cost": 0.016724
+}

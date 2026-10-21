@@ -1,0 +1,13 @@
+{
+  "item": "sum-40",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "Riverstone Education Research Group studied whether allowing water bottles in exams improves results in 11 regional NSW secondary schools, using 1,622 Year 10 students. Students with water bottles improved by an average of 1.8 marks out of 100 compared with the previous year, versus 1.1 marks without. This 0.7-mark gap was not statistically significant, so the large overseas claim of a 10 per cent gain was not supported. Most students (71 per cent) said water helped them concentrate, and there were no significant problems when clear, label-free bottles were required. The study concludes that water bottles are low-cost and well liked, but schools should not expect better marks. The decision should rest on student comfort and wellbeing. Limitations include non-random school allocation and hot exam weather.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 657,
+    "output": 253
+  },
+  "cost": 0.00019219999999999998,
+  "at": "2026-10-14T01:52:36.543Z"
+}

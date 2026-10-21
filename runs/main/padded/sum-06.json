@@ -1,0 +1,14 @@
+{
+  "pair": "sum-06",
+  "side": "A",
+  "author": "opus",
+  "model": "claude-haiku-5-5",
+  "original": "**Narrawin Aquatic Centre reopens Saturday 31 October after an eight-month, $3.2 million upgrade**, funded jointly by Greendale Regional Council and a state government grant.\n\n**Key improvements:**\n- New heated 25m program pool, allowing year-round swim lessons (it replaces a leaking, nearly 50-year-old pool)\n- Accessible change rooms with adult change table\n- Ramp entry to the 50m pool\n- Solar array expected to supply about a third of power needs\n\n**Operations:**\n- All programs and the water play area resume on opening day\n- Term one swim school enrolments open online 20 October\n- Prices unchanged for 2026-27: adults $6.50, children/concession $4.50, under-3s free\n- Hours: 6am–8pm weekdays, 7am–6pm weekends\n\n**Opening day:** free entry 10am–4pm, sausage sizzle, and a surf life saving demonstration.",
+  "text": "**Good news: the Narrawin Aquatic Centre reopens on Saturday 31 October** after an eight-month, $3.2 million upgrade. The project was funded jointly by Greendale Regional Council and a state government grant, and we are pleased to share the details of what has been completed below.\n\n**Key improvements:**\n- A new heated 25m program pool, which allows year-round swim lessons. It replaces a leaking pool that was nearly 50 years old.\n- Accessible change rooms, including an adult change table.\n- A ramp entry to the 50m pool.\n- A solar array, which is expected to supply about a third of the centre's power needs.\n\n**Operations:**\n- All programs and the water play area will resume on opening day, so families can return to their regular routines straight away.\n- Term one swim school enrolments open online on 20 October. We encourage you to mark the date in your calendar.\n- Prices remain unchanged for 2026-27: adults $6.50, children and concession $4.50, and under-3s free.\n- Opening hours are 6am to 8pm on weekdays and 7am to 6pm on weekends.\n\n**Opening day:** Please join us for free entry from 10am to 4pm. The day will also feature a sausage sizzle and a surf life saving demonstration, and we look forward to welcoming you.",
+  "ratio": 1.72,
+  "usage": {
+    "input": 499,
+    "output": 565
+  },
+  "cost": 0.0003324
+}

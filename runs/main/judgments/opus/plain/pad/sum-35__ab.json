@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-35",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\n- **Word limit:** Response B comes in under 120 words, at about 118 including the heading. Response A runs to roughly 180 words, well over the limit. That alone is a clear failure for A.\n- **Busy-manager format:** B's headings and bullets are much easier to scan.\n- **Accuracy:** Both cover the key points: the obligations, the kitchenette exception, payment in lieu, the deadline and the bond.",
+  "usage": {
+    "input": 1396,
+    "output": 1371
+  },
+  "cost": 0.033004
+}

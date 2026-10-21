@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-04",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response catches the most important problem: retrying a POST without an idempotency key can double-charge a customer. Its ranking is sensible, with the 4xx retry issue, the response-parsing paths, the sleep behavior, and the blocking checkout all correctly identified and given concrete fixes. Its claim that `ValueError` from a bad JSON body may be retried is accurate for some requests versions, and it correctly notes that `KeyError` escapes uncaught. Nothing it flags is a false positive. The amount-validation and hardcoded-currency points are weaker but reasonable.\n\nThe main weakness is the explicit \"under 200 words\" constraint. The response runs roughly 300 words, so it breaks a direct instruction. Item 3 is also a bit muddled about which exceptions are caught and retried, and the response omits the point that an unparsed success response may mean the charge already went through, which matters for the idempotency discussion.\n\nOverall the substance is strong, but the length violation and minor muddling keep it from the top range.\n\nScore: 6",
+  "usage": {
+    "input": 1069,
+    "output": 892
+  },
+  "cost": 0.0005528999999999999
+}

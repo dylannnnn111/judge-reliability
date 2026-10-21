@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-21",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. The totals ($229,140 and $209,880), the budget overrun ($13,140), the delegation point, the 24 October deadline, and the hire-car cost all match the email. Neither misstates who decides what.\n\nResponse A covers the same essentials and adds a note that Coastal Fleet Sales is dearer with no hybrid until March, which is marginally useful context. Its closing \"Decision needed\" line is also helpful. However, my word count puts it at roughly 120–125 words, which is at or slightly over the user's \"under 120 words\" limit.\n\nResponse B stays comfortably under the limit (roughly 95–100 words). It keeps the decision, the recommendation, the budget gap, the alternative, and the deadline. It also adds a computed figure (about $21,600 in hire costs for the two-month gap) that a busy manager would value. It omits the Coastal detail, which is the least important point for this reader.\n\nGiven the word limit and the slightly more useful cost figure, Response B is somewhat better.\n\nVerdict: B",
+  "usage": {
+    "input": 1518,
+    "output": 2427
+  },
+  "cost": 0.0013652999999999998
+}

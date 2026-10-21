@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-38",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better. Both go over the 200-word limit: I count about 220 words for A and about 240 for B. A is closer to the limit and still covers more distinct problems.\n\nBoth responses lead with the most important issue, that `set -e` makes one failed `tar` abort every later site. Both also catch partial archives, unquoted variables, overlapping runs, backups kept on the same server, and the 15-day retention quirk.\n\nA also catches the empty-glob case. If `/srv/sites` has no subdirectories, the loop runs once on the literal pattern and `tar` fails. It also explains that archives may be world-readable and gives `umask 077` as a fix.\n\nB adds a monitoring point and a clear fix for tar's exit code 1, and it notes that the abort skips pruning. However, its exit-code point mostly repeats item 1, which A already folds into its first item. B also spends words on quoting examples, which pushes it further over the limit. It leaves the `umask` advice and the `-type f` tweak to a minor line.",
+  "usage": {
+    "input": 1500,
+    "output": 1941
+  },
+  "cost": 0.02241
+}

@@ -1,0 +1,13 @@
+{
+  "item": "code-40",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Bugs, most important first:**\n\n1. **The script never exits non-zero on a full disk.** The `while` loop runs in a pipeline subshell, so `alerts` is always 0 in the parent. The \"alerts sent\" branch and `exit 1` are dead code, and the cron job never pages on-call. Fix: `done < <(df -P | tail -n +2)`, or use `shopt -s lastpipe`.\n\n2. **Exit codes are inverted by accident.** If `curl` fails, `-f` plus `set -e` and `pipefail` makes the script exit non-zero, so the page fires only when the webhook is broken. A full disk with a working webhook exits 0. A webhook failure also aborts the loop, so later disks go unchecked. Handle `curl` failure explicitly (`|| rc=1`) and keep looping.\n\n3. **Pseudo-filesystems cause false alerts.** Squashfs/snap loop mounts are always 100%, and `df` may also list tmpfs, overlay, and similar. Use `df -P -x tmpfs -x devtmpfs -x squashfs -x overlay`.\n\n4. **A non-numeric `pct` crashes the script.** Some filesystems report `-`, and `[ \"-\" -gt 90 ]` errors out under `set -e`, aborting the whole check. Validate with `[[ $usage =~ ^[0-9]+$ ]] || continue`.\n\n5. **Alert spam.** There is no state or dedup, so a full disk alerts every 5 minutes, and the exit code pages a second time on top of the webhook.\n\n6. **A stale NFS mount can hang `df`.** Cron runs would pile up. Wrap it in `timeout 30 df ...`, and add `curl --max-time`.\n\n7. **Minor:** unused variables (`fs size used avail`), and inode usage isn't checked.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 415,
+    "output": 1142
+  },
+  "cost": 0.01225,
+  "at": "2026-10-14T01:55:12.480Z"
+}

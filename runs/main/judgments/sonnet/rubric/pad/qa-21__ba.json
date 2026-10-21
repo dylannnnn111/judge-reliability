@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-21",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses correctly say perihelion occurs in early January. The deciding factor is the constraint: \"Answer in under 120 words.\"\n\nResponse A is about 60 words, so it meets the limit. It gives the correct answer, the distance, and the key point that the axial tilt causes the seasons.\n\nResponse B is roughly 270 words, far over the 120-word limit. It is accurate, but it breaks an explicit instruction. Its extra content (aphelion distances, the 3% difference) is useful but not required, and the limit was clear.\n\nResponse A is the better one, since it is correct, gives the key reasoning, and follows the constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 821,
+    "output": 210
+  },
+  "cost": 0.003742
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "qa-38",
+  "side": "A",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is scientifically accurate: the polar vortex, PSCs, conversion of reservoir chlorine, and the need for sunlight to produce the active chlorine that destroys ozone are all covered. Details such as −78°C for PSC formation and September–October timing are correct. The Arctic comparison is also fine.\n\nHowever, the user asked for under 120 words. Count the words: the first paragraph is roughly 90 words, the second around 70, the third around 45. The total is about 200 words, well over the limit. This is a clear violation of an explicit constraint.\n\nSmall content issues: \"Breaking Cl₂ apart\" is accurate. \"On the surfaces of their ice and particles\" is slightly awkward. Bolding is unnecessary but harmless.\n\nCorrectness of the science is strong, but the explicit length instruction is badly violated. Since the grading prioritizes correctness, then reasoning, then clarity, the content is good, but ignoring the word limit is a significant failure of instruction-following.\n\nScore: 4",
+  "usage": {
+    "input": 653,
+    "output": 330
+  },
+  "cost": 0.004606
+}

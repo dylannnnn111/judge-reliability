@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-18",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "A is better. It stays under the 120-word limit (about 115 words by my count) and is easy for a busy manager to scan. It covers every section of the release notes without padding.\n\nB is roughly twice the word limit, so it breaks the main constraint. It also adds filler, such as the opening thank-you and the description of its own structure. Its closing line, \"no action is required from the team,\" isn't supported by the source text.\n\n**A**",
+  "usage": {
+    "input": 1433,
+    "output": 619
+  },
+  "cost": 0.009056
+}

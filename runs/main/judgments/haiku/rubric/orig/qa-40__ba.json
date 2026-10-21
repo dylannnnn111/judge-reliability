@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-40",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are correct. Both explain that light is far faster than sound, give the same divide-by-3 (km) and divide-by-5 (miles) rules, and use the same 30-second danger threshold. Response A's worked example (15 seconds gives 5 km or 3 miles) is exact, while Response B's 10-second example is only approximately right (3.3 km, rounded to 3). Response A also adds the standard guidance to wait 30 minutes after the last thunder, which is useful safety information that Response B omits. Response B does state more explicitly that the flash and thunder start together, which is a nice piece of reasoning, but Response A covers the key points and adds more practical value. Both are within the word limit.\n\nVerdict: A",
+  "usage": {
+    "input": 745,
+    "output": 653
+  },
+  "cost": 0.000401
+}

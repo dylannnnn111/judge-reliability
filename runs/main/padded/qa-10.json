@@ -1,0 +1,14 @@
+{
+  "pair": "qa-10",
+  "side": "B",
+  "author": "opus",
+  "model": "claude-haiku-5-5",
+  "original": "**Answer: 1/3**\n\nA two-child family has four equally likely outcomes: BB, BG, GB, GG.\n\nThe condition \"at least one girl\" rules out BB, leaving three equally likely cases: BG, GB, GG.\n\nOnly GG has two girls, so the fraction is **1/3**.\n\nThis differs from the common intuition of 1/2 because the condition doesn't identify *which* child is a girl. If you knew a specific child (say, the older one) was a girl, the answer would be 1/2.",
+  "text": "**Answer: 1/3**\n\nTo begin, consider a two-child family. There are four equally likely outcomes for the sexes of the two children: BB, BG, GB, and GG, where B stands for boy and G stands for girl.\n\nNext, apply the given condition. The condition \"at least one girl\" rules out BB, since it is the only outcome with no girls. This leaves three equally likely cases: BG, GB, and GG.\n\nFinally, count the cases with two girls. Only GG has two girls, so out of the three remaining cases, the fraction is **1/3**.\n\nThis result differs from the common intuition of 1/2, and the reason is worth spelling out. The condition doesn't identify *which* child is a girl; it only tells us that at least one of them is. If you knew a specific child (say, the older one) was a girl, the answer would be 1/2.",
+  "ratio": 1.9,
+  "usage": {
+    "input": 349,
+    "output": 678
+  },
+  "cost": 0.0003739
+}

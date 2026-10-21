@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-04",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better: it stays within the word limit and has only a minor imprecision, while Response B breaks the limit and adds advice that isn't in the source.\n\n**Length:** Response A comes to about 119 words, just inside the 120-word limit. Response B comes to about 135, which breaks an explicit constraint.\n\n**Accuracy:**\n- **Response A:** Its figures and dates are correct. \"Leave can now be split into up to three blocks\" doesn't say the split applies only to primary carers, which is slightly imprecise. It also leaves out \"up to 18 weeks\" on the super change.\n- **Response B:** It is more precise on the split (primary carers only), the \"on top of government pay\" point, and the super cap. However, \"Plan rosters for split leave\" is advice the source never gives. It is mild, but it is invented.\n\n**Coverage:** B includes a few more details, such as the add-on to government pay and the cap on super. Most of them are minor for a busy manager, and they cost B the word limit.\n\nOverall, A's small imprecision is less serious than B's breach of the length limit plus its invented advice.\n\nVerdict: A",
+  "usage": {
+    "input": 1508,
+    "output": 1872
+  },
+  "cost": 0.021736
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-04",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly compute the final price as $480 and the overall change as −4%. Both explain why the percentages don't cancel: the 20% discount applies to the larger $600 base, so it removes $120 while the increase added only $100. Both stay under 120 words.\n\nResponse A adds a general result: raising and then lowering by the same percentage *p* gives a net change of −*p*². That is correct and gives the user a reusable insight beyond this specific problem. Response B's step-by-step layout is clear, and its check that 1.20 × 0.80 = 0.96 is also useful, but it doesn't generalize as far. The difference is small, but the extra correct insight in A gives it a slight edge.\n\nVerdict: A",
+  "usage": {
+    "input": 658,
+    "output": 522
+  },
+  "cost": 0.00032680000000000003
+}

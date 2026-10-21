@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-25",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** Response A is better. It stays under the 120-word limit at about 109 words, and it leads with the key point that this was not a hack. It does contain one factual error. It says the job was stopped \"after 35 minutes\", but the report says the job was stopped at 9:35am, and the first call came at 8:20am. That is about 75 minutes after the first call, and the report gives no start time for the job.\n\nResponse B breaks the length limit, at roughly 190 words. It also pads with filler such as \"To give some background\" and \"Please be aware\". Its content is accurate and it covers the media leak, but the broken constraint and the padding make it a poorer fit for a busy manager.\n\nA",
+  "usage": {
+    "input": 1337,
+    "output": 748
+  },
+  "cost": 0.010154
+}

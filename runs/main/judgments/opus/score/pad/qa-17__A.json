@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "qa-17",
+  "side": "A",
+  "score": 6,
+  "model": "claude-opus-5-5",
+  "text": "The response is **correct**. Venus has the hottest surface, at about 465°C (870°F), and it rightly notes this beats Mercury despite Mercury being closer to the Sun.\n\nThe **key reasoning** is present and accurate. A thick CO₂ atmosphere drives a runaway greenhouse effect by trapping outgoing infrared radiation. The point about sulfuric acid clouds reflecting sunlight is a useful nuance. The pressure point is loosely phrased: pressure \"contributing\" is roughly defensible, since dense atmosphere broadens absorption and the heat stays trapped, but the link is vague.\n\nHowever, the response has real problems:\n- **Word limit broken:** it runs to about 132 words, despite the explicit instruction to stay under 120.\n- **Filler:** much of the overage is padding that adds nothing, such as \"It is worth noting that,\" \"To explain this more fully,\" and \"Finally, it is also important to mention that.\" This is exactly the extra length that does not earn its place.\n- **Fixable:** trimming the filler would have met the limit with no loss of content.\n\nOverall, it is correct and well-reasoned but fails a clear formatting constraint because of verbosity.\n\nScore: 6",
+  "usage": {
+    "input": 468,
+    "output": 928
+  },
+  "cost": 0.020432
+}

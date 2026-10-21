@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-02",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A is better.** Both responses identify the same core issues in the same order. The deciding factor is the user's explicit \"under 200 words\" constraint.\n\n**Response A** stays at roughly 190 words, including the code fix. It covers:\n- **Mutable default argument:** tags leak between events and the list grows without bound in a long-running worker.\n- **Narrow `KeyError` handling:** a non-string `type` or non-dict `raw` aborts the whole batch.\n- **Misleading log message:** any `KeyError` is reported as a missing id.\n- **Logging the full raw payload:** this risks PII or huge blobs in the logs.\n\n**Response B** runs to roughly 240 words, so it clearly breaks the length limit. It adds two things:\n- **Dead-letter/metrics suggestion:** reasonable, but not essential.\n- **Point 5, per-event `received_at`:** arguably not a bug at all. A per-event receipt timestamp is defensible and may even be intended. This adds length while diluting the \"bugs that matter\" focus the user asked for.\n\nResponse A delivers the same substantive findings while respecting the constraint.\n\nA",
+  "usage": {
+    "input": 1367,
+    "output": 958
+  },
+  "cost": 0.024628
+}

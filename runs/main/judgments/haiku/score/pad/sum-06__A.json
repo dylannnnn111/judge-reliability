@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-06",
+  "side": "A",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate. Dates, prices, hours, the grant split, the solar share and the opening-day details all match the source, and the \"2026-27\" price detail is only slightly loosened from \"rest of the 2026-27 season.\" It covers the points a manager needs: reopening date, cost, new facilities, programs, prices, hours and the opening-day event. It omits the mayor's and swimmer's quotes, which is reasonable for a busy reader.\n\nThe main failure is the explicit limit of 120 words. The response runs well over 150 words, probably closer to 180. It also includes filler such as \"we are pleased to share the details of what has been completed below,\" \"so families can return to their regular routines straight away,\" and \"we look forward to welcoming you.\" These add length without adding useful information, so concision is weak.\n\nAccuracy is high, key points are well covered, but the word limit is clearly broken and the padding is avoidable.\n\nScore: 5",
+  "usage": {
+    "input": 1242,
+    "output": 954
+  },
+  "cost": 0.0006012000000000001
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-28",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is slightly better because it avoids a misleading statement that Response B makes. Both summaries are under 120 words and get the main figures and dates right.\n\n**Accuracy:**\n- Response B says staff \"use four days' leave, or take unpaid leave or make up time.\" This presents the three options as equal choices. In the original, unpaid leave or making up time is only available to staff without enough leave, and make-up time needs the manager's agreement. This is a real distortion.\n- Response B also says \"if four weeks remain\" where the original says \"at least four weeks.\" This is a minor looseness.\n- Response A says staff \"must use leave\" for the four working days. That is accurate, though it leaves out the fallback for staff without enough leave.\n- Response A's other points (cap, direction up to a quarter with eight weeks' notice, cash-out conditions, warehouse exemption, 31 October) are all correct.\n\n**Coverage:**\n- Response B includes who the policy applies to (permanent staff under the 2025 Enterprise Agreement) and flags cash-out as new. Response A has neither.\n- Response A omits the unpaid-leave and make-up option for staff short of leave.\n- Response B's coverage is a little fuller, but it is not enough to offset the inaccuracy.\n\n**Concision:** Both are tight and about equal in length.\n\nResponse A's omission is less harmful than Response B's mischaracterisation, so A wins on accuracy, which is the first criterion.\n\nVerdict: A",
+  "usage": {
+    "input": 1466,
+    "output": 1127
+  },
+  "cost": 0.014202
+}

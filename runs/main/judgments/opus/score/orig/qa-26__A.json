@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-26",
+  "side": "A",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The response is **physically correct**. Sunlight contains all wavelengths, and Rayleigh scattering by air molecules affects short wavelengths much more strongly, so blue light is redirected across the sky. At sunset, light travels a longer path through the atmosphere, so most of the blue is scattered out of the direct beam and the longer red and orange wavelengths remain.\n\nIt covers the **key reasoning** for both halves of the question: wavelength-dependent scattering for the blue sky, and path length for the red sunset.\n\nThere is one **small gap**. It says violet is scattered strongly too, but never explains why the sky looks blue rather than violet. The reasons are that the sun emits less violet, the upper atmosphere absorbs some of it, and our eyes are less sensitive to it. This omission is understandable given the word limit, but it leaves a natural follow-up question open.\n\nThe response is **clear**, well-organized into two short paragraphs, and about 100 words. That meets the under-120 constraint without padding.\n\nScore: 9",
+  "usage": {
+    "input": 404,
+    "output": 664
+  },
+  "cost": 0.014896
+}

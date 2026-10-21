@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-25",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B has a factual error. It says the job \"was stopped after 35 minutes\", but the report says it was stopped at 9:35am. The first call came at 8:20am and the problem began earlier, so \"35 minutes\" is invented and understates how long the error ran. B also leaves out the leaked staff message and the news story, which a manager would probably want to know about. Otherwise B is tight, at about 105 words, within the limit.\n\nResponse A is accurate on every figure and date, and it includes the media angle and the comms guide fix. But it runs to roughly 175 words, well over the 120-word cap. It also pads with filler (\"To give some background\", \"We would like to note\", \"Looking ahead\", \"Finally\"), which adds nothing.\n\nAccuracy comes first in the criteria. A has no factual errors, while B misstates the timing, and A keeps more of the points a manager needs. A's breach of the word limit is a real failing, but it does not outweigh B's inaccuracy under this ordering.\n\nVerdict: A",
+  "usage": {
+    "input": 1491,
+    "output": 1275
+  },
+  "cost": 0.015732
+}

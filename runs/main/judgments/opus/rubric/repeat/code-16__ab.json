@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "code-16",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.** It ranks the most consequential issue first and avoids A's weaker points.\n\n**Most important issue: GST.** Australian consumer prices are normally required to be displayed GST-inclusive. Adding 10% on top of `afterDiscount` is therefore likely a real overcharging bug that affects every order.\n- B ranks this first, says what to confirm, and gives the fix (extract GST rather than add it).\n- A raises it only as its final item (#7), as a soft \"verify this is intended.\" That is a significant ranking failure.\n\n**Shared points.** Both correctly flag:\n- `sortByPrice` mutating its input, with the right fix.\n- Missing input validation.\n- Server-side recomputation of totals.\n- `formatAud` mishandling negatives and lacking thousands separators, with the `Intl.NumberFormat` fix.\n\n**A's extra items are weak:**\n- The rounding point is marginal. The suggested `Math.round(subtotalCents * 10 / 100)` is still floating-point division, so it barely differs from the original.\n- Flagging `==` vs `===` is a nitpick. Comparing a `string | undefined` against a string literal with `==` behaves correctly here.\n- The \"hardcoded code with no expiry\" point is more design commentary than a bug.\n\n**Length.** A is also clearly over the 200-word limit. B is close to it.\n\n**B's additions.** B's discount-matching advice is concrete (`trim().toUpperCase()`). Its suggestion to return an error for unknown codes is a useful extra.\n\nVerdict: B",
+  "usage": {
+    "input": 1699,
+    "output": 1158
+  },
+  "cost": 0.029956
+}

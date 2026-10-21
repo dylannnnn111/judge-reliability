@@ -1,0 +1,14 @@
+{
+  "pair": "sum-02",
+  "side": "B",
+  "author": "haiku",
+  "model": "claude-haiku-5-5",
+  "original": "**Branch managers meeting, 8 October 2026: key points**\n\n- **Opening hours:** No agreement reached. Helen proposed closing Mount Lavell at 1pm Saturdays from January to fund Thursday evening opening at Corrie Creek. Ross objected, citing farming families and faulty visitor counter data. No changes for now. Helen will revise the figures for the November meeting.\n- **Summer reading program:** Runs 1 December to 31 January, \"Under the Sea\" theme. Registration opens 10 November. Each branch must send two launch-day volunteers to Kate by 24 October.\n- **Maintenance:** Westbrook Central air conditioning was serviced. The children's area roof needs full replacement within two years. Helen will include this in the capital works bid.\n\n**Next meeting:** 12 November.",
+  "text": "**Branch Managers Meeting, 8 October 2026: Key Points**\n\nThank you for taking the time to review the key points from the branch managers meeting held on 8 October 2026. The main items discussed are summarised below.\n\n- **Opening hours:** The group did not reach an agreement on this item. Helen proposed closing Mount Lavell at 1pm on Saturdays from January, with the aim of funding Thursday evening opening at Corrie Creek. Ross objected, citing the needs of farming families and faulty visitor counter data. As a result, no changes will be made for now. Helen will revise the figures and bring them back for discussion at the November meeting.\n- **Summer reading program:** The program will run from 1 December to 31 January, under the \"Under the Sea\" theme. Registration will open on 10 November. Each branch is asked to send two launch-day volunteers to Kate by 24 October, so please plan accordingly.\n- **Maintenance:** The air conditioning at Westbrook Central was serviced during this period. The children's area roof will need full replacement within the next two years. Helen will include this work in the capital works bid.\n\n**Next meeting:** The next branch managers meeting will be held on 12 November.",
+  "ratio": 1.74,
+  "usage": {
+    "input": 456,
+    "output": 540
+  },
+  "cost": 0.00031560000000000003
+}

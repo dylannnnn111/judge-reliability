@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-09",
+  "side": "B",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate on every figure and condition I checked: the $62,400 starting rent plus GST, the 1 March review date, the 3% to 5% CPI band for years 2 to 4, the market review in year 5 with the year-4 floor, the 30-day window for an independent valuer with costs split equally, the 14-day notice rule, and the late-notice treatment. It also keeps the points a manager needs. However, it fails the explicit \"under 120 words\" limit. The response runs to roughly 230 words once the header, bullets and closing paragraph are counted, and the closing caveat and the intro sentence add little a busy manager needs. A response that trimmed to about 110 words while keeping the same facts would have fully met the brief.\n\nScore: 4",
+  "usage": {
+    "input": 1316,
+    "output": 725
+  },
+  "cost": 0.0004941
+}

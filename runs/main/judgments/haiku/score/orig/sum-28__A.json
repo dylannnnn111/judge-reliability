@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-28",
+  "side": "A",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate on every figure and condition I checked: the 84 staff, $3.9M, the eight-week/40-day cap, the one-quarter direction with eight weeks' notice, the two-week cash-out with four weeks remaining and written agreement, the 24 December to 2 January closure, and the 31 October list date. It is well under 120 words and easy to scan. However, it omits some points a manager would need. It doesn't say the policy covers only permanent staff under the Greywater Enterprise Agreement 2025. It also leaves out the option for staff without enough leave to take unpaid leave or make up time with manager approval, which is the practical follow-up for the shutdown. These gaps reduce completeness, but nothing stated is wrong or misleading.\n\nScore: 7",
+  "usage": {
+    "input": 1083,
+    "output": 741
+  },
+  "cost": 0.00047880000000000004
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-38",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nThe deciding factor is the 120-word limit.\n\n- **Response A** runs to roughly 140 words, which clearly breaks the limit. It also has a small typo (\"App stores submissions\").\n- **Response B** is about 120 words. That is right at the limit, so it is borderline against \"under 120\", but far closer than A.\n\nBoth cover the essentials a busy manager needs: green status, the 18 November launch date, beta results, bug status, key dates, budget, and the main risk. A adds a few extra details, such as the liked features and the guideline check. Those extras are what push it well past the limit, so they don't make up for the breach. B is concise and complete enough.",
+  "usage": {
+    "input": 1255,
+    "output": 1276
+  },
+  "cost": 0.03054
+}

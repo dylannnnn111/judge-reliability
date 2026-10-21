@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-10",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both summaries are accurate. Every date, figure, and decision matches the source, and both come in under 120 words (Response A is about 118, Response B about 103). Response A keeps a few more useful details: the PDF invoice download, the vendor's API confirmation behind the risk downgrade, and the new front-end developer. Its bulleted layout also makes the status, budget, risks, and next steps quicker to scan, which suits a busy manager. Response B is tighter and reads well as prose, but it drops those details and its single paragraph is denser. Neither contains an error, so the difference is modest, but Response A serves this reader slightly better.\n\nVerdict: A",
+  "usage": {
+    "input": 1275,
+    "output": 1600
+  },
+  "cost": 0.0009275
+}

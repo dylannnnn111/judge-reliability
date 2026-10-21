@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-27",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. The request set a limit of under 120 words, and my count puts Response A at about 122 words, so it likely breaks the limit. Response B comes to about 111 words and stays within it.\n\nBoth summaries are accurate and cover the same key points: the 81% vs 74% headline, the free-month confound, the 78% vs 76% gap among paying customers, the cost, and the proposed randomised test. B also puts its conclusion (\"inconclusive\") and the decision needed at the 21 October meeting where a busy manager will see them.\n\n**B**",
+  "usage": {
+    "input": 1360,
+    "output": 1722
+  },
+  "cost": 0.01994
+}

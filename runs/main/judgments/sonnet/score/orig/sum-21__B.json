@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-21",
+  "side": "B",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate. The figures check out: six Elmwood hybrids at $38,190 come to $229,140, which is $13,140 over the $216,000 budget. Six Northside petrol cars at $34,980 come to $209,880. The $5,400 fuel saving and the 24 October deadline match the email. The $21,600 hire-car total is the response's own calculation (6 cars × 2 months × $1,800), and it is correct and useful. It also keeps Dom's recommendation, the sign-off request, the budget alternative and the timing consequence. It leaves out only minor details, such as the Coastal quote and the $260 hybrid price gap. At roughly 110 words it is under the 120 limit and easy to scan. One small gap is that it doesn't say the fuel saving is the stated justification for exceeding budget, though that is implied.\n\nScore: 9",
+  "usage": {
+    "input": 1134,
+    "output": 1579
+  },
+  "cost": 0.018058
+}

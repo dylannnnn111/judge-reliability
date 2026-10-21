@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-21",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. Its bullets are more precise: it flags that the `catch` retries `AbortError` and permanent `TypeError`s, and that `refundId` can come back `undefined`, which A misses. It also stays under the 200-word limit, while A likely runs over. A's point about double-submits in the support console is a useful addition, but it doesn't outweigh B's advantages.\n\nB",
+  "usage": {
+    "input": 1590,
+    "output": 977
+  },
+  "cost": 0.0006475
+}

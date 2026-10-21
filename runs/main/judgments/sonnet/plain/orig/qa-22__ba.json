@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-22",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A**\n\nBoth responses are accurate and come in under 120 words, by my count about 119 for A and 117 for B. A gives more concrete, verifiable detail: hurricanes rotate clockwise in the Southern Hemisphere, toilet rim jets set the swirl, and the 1962 Shapiro experiment at MIT was followed by the 1965 Sydney replication, which ties neatly to the question's Australia framing. B is solid but more generic.",
+  "usage": {
+    "input": 596,
+    "output": 1683
+  },
+  "cost": 0.018022
+}

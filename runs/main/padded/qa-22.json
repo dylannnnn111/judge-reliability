@@ -1,0 +1,14 @@
+{
+  "pair": "qa-22",
+  "side": "A",
+  "author": "sonnet",
+  "model": "claude-haiku-5-5",
+  "original": "No, this is a myth. The Coriolis effect is real, but it's far too weak to influence water in something as small as a sink or toilet. It matters for large-scale systems like hurricanes and ocean currents.\n\nIn a sink or toilet, the drain direction is determined by factors like the basin's shape, the angle of water jets (toilets), residual motion from filling, and any slight asymmetries in the container. You can see both directions in either hemisphere, and even two identical sinks side by side may drain differently.\n\nOnly in extremely controlled experiments, with perfectly symmetrical basins and water left still for a day or more, has the Coriolis effect been shown to determine swirl direction.",
+  "text": "No, this is a myth, and it's a widely repeated one. The Coriolis effect is real, but it is far too weak to influence the movement of water in something as small as a sink or toilet. Its influence becomes noticeable only in large-scale systems such as hurricanes and ocean currents, which span hundreds or thousands of kilometers.\n\nIn a sink or toilet, the direction of drainage is determined by a range of more immediate factors. These include the shape of the basin, the angle of the water jets (in the case of toilets), any residual motion left over from filling, and slight asymmetries in the container itself. As a result, you can observe water draining in both directions in either hemisphere, and even two identical sinks placed side by side may drain differently from one another.\n\nOnly in extremely controlled experiments, using perfectly symmetrical basins and allowing the water to sit still for a day or more, has the Coriolis effect been shown to determine the direction of swirl. Even in those carefully arranged conditions, it takes considerable effort to isolate its influence from other factors.",
+  "ratio": 1.6,
+  "usage": {
+    "input": 402,
+    "output": 433
+  },
+  "cost": 0.0002567
+}

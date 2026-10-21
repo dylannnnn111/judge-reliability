@@ -1,0 +1,14 @@
+{
+  "pair": "sum-08",
+  "side": "A",
+  "author": "sonnet",
+  "model": "claude-haiku-5-5",
+  "original": "**Ticket #88214 – Daniel Mbeki, Frostline 400L fridge (bought 14 Aug, Penrith)**\n\nThe fridge failed on 4 Oct (the Sunday before the 2 Oct complaint is unclear, but the fault is within the 90-day store-responsibility window). Daniel lost about $300 of food.\n\n**Status:**\n- **Replacement:** Assistant manager Priya Nand has arranged delivery of a new fridge for Wednesday. Frostline will separately collect the faulty unit, so he may receive two calls.\n- **Food claim:** Still outstanding. Kevin Hales (customer relations) has not yet sent the claim form despite being chased. Claims up to $500 need no manager sign-off.\n\n**Next step:** If the form isn't sent by 9 Oct, escalate to Amara Osei.\n\n**Risk:** The customer has had to chase twice and says he \"just wants this finished.\"\n\n---\n\nCorrection: the fault date isn't stated precisely. The customer wrote on 2 Oct that it stopped \"on Sunday.\" Please disregard my first sentence's date reference.",
+  "text": "**Ticket #88214 – Daniel Mbeki, Frostline 400L fridge (bought 14 Aug, Penrith)**\n\nTo begin with, I would like to summarise the situation for this ticket. The fridge failed on 4 Oct. The Sunday before the 2 Oct complaint is unclear, but the fault falls within the 90-day store-responsibility window. As a result of the failure, Daniel lost about $300 of food, and I appreciate that this has been a considerable inconvenience for him.\n\n**Status:**\n- **Replacement:** Assistant manager Priya Nand has kindly arranged delivery of a new fridge for Wednesday. Please note that Frostline will separately collect the faulty unit, so Daniel may receive two calls. I would ask that he be made aware of this in advance so the calls do not cause confusion.\n- **Food claim:** This remains outstanding at present. Kevin Hales (customer relations) has not yet sent the claim form, despite having been chased on more than one occasion. For your reference, claims up to $500 do not need manager sign-off, so no additional approval should be required before the form is processed.\n\n**Next step:** If the form has not been sent by 9 Oct, I would recommend that the matter be escalated to Amara Osei, so that it can be resolved promptly and without further delay.\n\n**Risk:** Please bear in mind that the customer has already had to chase twice and has said he \"just wants this finished.\" Given this, a clear and timely resolution would be greatly appreciated.\n\n---\n\nCorrection: I should clarify that the fault date isn't stated precisely. The customer wrote on 2 Oct that it stopped \"on Sunday.\" Please kindly disregard my first sentence's date reference, as it was not accurate.",
+  "ratio": 1.83,
+  "usage": {
+    "input": 556,
+    "output": 727
+  },
+  "cost": 0.00041910000000000005
+}

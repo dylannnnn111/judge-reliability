@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-04",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better, mainly because it comes much closer to the word limit.\n\n**Length:** The user asked for under 120 words.\n- Response A is about 137 words, clearly over the limit.\n- Response B is about 120 words, so it sits right at the limit. It is not clearly under, but it misses by far less than A.\n\n**Accuracy:**\n- Both responses capture the core changes, the cut-off date, eligibility, superannuation, the application deadline and the info sessions.\n- Response A adds \"Plan rosters for split leave\", which is not in the source. It is a reasonable inference for a manager, but it is invented.\n- Response B drops the \"up to 18 weeks\" cap on superannuation for the government-funded portion. This is a minor omission.\n\n**Format:** Response A's bullets are easier for a busy manager to scan. That advantage does not outweigh breaking an explicit constraint by a wide margin.\n\n**B**",
+  "usage": {
+    "input": 1354,
+    "output": 2351
+  },
+  "cost": 0.026218
+}

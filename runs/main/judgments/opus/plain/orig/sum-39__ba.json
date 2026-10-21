@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-39",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A** is better.\n\n1. **Word limit:** Response A comes to about 117 words, under the 120-word limit. Response B runs to roughly 126 words, which breaks the user's explicit constraint.\n\n2. **Accuracy:** Response B says \"Opponents say the council is giving up revenue…\", but the article quotes only one councillor, Neil Ashcroft. Response A correctly attributes the argument to \"one opposing councillor.\"\n\n3. **Completeness:** Response A states that lost or damaged items remain excluded from the change. Response B mentions only items not returned within 60 days and leaves out damaged items.\n\n4. **Usefulness for a busy manager:** Response A's bullet format is easy to scan. Its net-cost figure (about $33,000) is a reasonable inference that gives a quick bottom line.\n\nBoth are otherwise accurate and well organised, but A meets the length requirement and is slightly more precise.\n\n**A**",
+  "usage": {
+    "input": 1254,
+    "output": 1738
+  },
+  "cost": 0.039776
+}

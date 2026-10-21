@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-19",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. It is a tight, accurate summary that covers the key points: consent, the landlord's conditions, the lingering liability because the lease isn't a retail lease, the subletting limits, change of control, the 28-day response time, and the advice to get a release. It runs to about 130 words by my count, so it slightly exceeds the 120-word limit.\n\nA is well over the limit, at roughly 250 words. It is padded with filler such as \"Thank you for reviewing this summary\" and \"To put this another way\", and it repeats itself. It also switches to a \"we\" voice that doesn't suit a briefing for a manager. Its content is accurate, but it fails the brevity requirement far more badly than B.\n\n**B**",
+  "usage": {
+    "input": 1687,
+    "output": 647
+  },
+  "cost": 0.009844
+}

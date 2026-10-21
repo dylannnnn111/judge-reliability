@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-30",
+  "side": "B",
+  "score": 6,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Most facts are correct:\n- 410 frequency rises from every 30 to every 15 minutes at weekday peak.\n- The 412 runs every 20 minutes, 6am–9pm, seven days a week.\n- The 408 averages nine passengers per trip.\n- The start date, Monday 19 January, is right.\n- Fares, the December timetables, the early-January app listing and the 6 December stall details all match.\n\nThere is one misleading phrase. \"Industrial estate workers with early starts **lose** service before 6am\" implies they currently have pre-6am buses on the 408. The source never says when the 408 runs. It only says workers are concerned because the 412 won't run before 6am. The response presents an inference as fact.\n\n**Coverage:** It keeps what a manager needs: the route changes, the start date, the reason, the main concern and the authority's response, and the practical logistics. It leaves out the consultation's second finding, that half-hourly buses don't work for people getting to jobs and school. That finding also justifies the 410 change, but the omission is minor.\n\n**Concision and constraint:** The format is scannable and efficient. However, by my count the response is about 127 words including the heading, which breaks the explicit \"under 120 words\" instruction. Even if the heading is excluded, it sits right at the limit (about 119). The stall details or the app timing could have been trimmed to fit.\n\nOverall, this is a well-structured and largely accurate summary. It is pulled down by one unsupported implication and by overshooting the stated word limit.\n\nScore: 6",
+  "usage": {
+    "input": 1116,
+    "output": 1813
+  },
+  "cost": 0.040724
+}

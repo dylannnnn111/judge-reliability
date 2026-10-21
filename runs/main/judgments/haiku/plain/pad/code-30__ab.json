@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-30",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "A is better. It is concise and stays within the 200-word limit, while B runs well over it. A's points are also sharper: it identifies the bias from dropping unanswered tickets and the truncation risk of integer AVG on SQL Server. B's \"hard-coded assumptions\" point is weaker, its final item is not a real bug, and its filler opener adds length without content.\n\nA",
+  "usage": {
+    "input": 1558,
+    "output": 397
+  },
+  "cost": 0.0003543
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-31",
+  "side": "B",
+  "score": 10,
+  "model": "claude-opus-5-5",
+  "text": "The response is **correct**. It attributes seasons to axial tilt rather than distance from the Sun. It correctly notes that the tilt stays fixed in direction as Earth orbits, and it explains that sun angle and day length drive heating.\n\nIt gives the **key reasoning**. Opposite hemispheres tilt toward or away from the Sun at the same time, which explains why Europe and Australia have opposite seasons. It also covers the reversal six months later.\n\nIt is **clear and concise**, at about 109 words, under the 120-word limit. Every sentence contributes something correct and useful. A minor nitpick is that \"tilts away\" is a slight simplification, but it is a standard and accurate framing.\n\nScore: 10",
+  "usage": {
+    "input": 430,
+    "output": 550
+  },
+  "cost": 0.01272
+}

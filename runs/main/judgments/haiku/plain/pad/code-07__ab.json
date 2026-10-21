@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-07",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "A is better. It is tighter and more direct, and it is close to the 200-word limit (roughly 205 words). B is much longer, around 370 words, and includes filler like \"Taken together, the issues below...\" and \"Each item is described in turn...\". Both identify the same core issues, but B clearly ignores the length constraint.\n\nA",
+  "usage": {
+    "input": 1561,
+    "output": 811
+  },
+  "cost": 0.0005616
+}

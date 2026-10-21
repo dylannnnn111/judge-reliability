@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-40",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main bug: the pipe into `while` runs the loop in a subshell, so `alerts` stays 0, the script always exits 0, and on-call is never paged. Both give the correct process-substitution fix. Both also correctly explain that a `curl -f` failure under `set -e` and `pipefail` aborts the loop and produces the only non-zero exit. Both catch the non-numeric `-` percentage crash and the lack of alert dedup.\n\n**Response A** has more real issues:\n- It flags pseudo-filesystems. Snap/squashfs loop mounts are always 100%, so on many servers this would cause constant false alerts as soon as the exit-code bug is fixed. This is a significant practical problem that B misses.\n- It flags the NFS hang risk, which is real. Cron runs would pile up, and it suggests `timeout` and `curl --max-time`.\n- It gives concrete fixes for each issue.\n- Its framing of the inverted exit codes is accurate and clear.\n- Its weakness is length: roughly 260 words against a 200-word limit.\n\n**Response B** is tighter, at roughly 210 words, which is still slightly over the limit. It misses the pseudo-filesystem and hang issues. Its `|| true` suggestion would silently swallow webhook failures, though it does add \"or handle explicitly\". Its \"two alert channels\" point is more a design note than a bug.\n\nA finds more of the issues that matter, with correct fixes, at the cost of exceeding the word limit by more than B does. The extra content is correct and useful, particularly the squashfs point, so A is better overall.\n\nVerdict: A",
+  "usage": {
+    "input": 1729,
+    "output": 1502
+  },
+  "cost": 0.018478
+}

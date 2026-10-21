@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-17",
+  "side": "B",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is mostly faithful on the main facts: licence terms, Clare's apology and the new DJ explanation, the agreed fixes, and the 20 October report-back. It has several problems, though.\n\n- **Length:** it runs to about 145 words, well over the 120-word limit the user set.\n- **Misattribution:** it says Arjun \"noted this was the fourth weekend in a row\". Colleen said that. Arjun reported the three other complaints.\n- **Overstated headline:** \"resolved for now\" is stronger than the source supports. David only said \"let's see how this weekend goes\", so the outcome is still unknown.\n- **Unconfirmed breach:** it never makes clear that a licence breach is conditional. Arjun said it only counts if the music went past 10pm.\n- **Missing points:** it leaves out that the regulator needs evidence (dates, times, recordings), and it doesn't mention that David asked residents to keep logs and record videos. It also drops that one resident had no problem with the bar.\n\nBecause of the misattribution, the overstated headline and the word-limit breach, it falls short despite broadly sound content.\n\nScore: 4",
+  "usage": {
+    "input": 1246,
+    "output": 1087
+  },
+  "cost": 0.013362
+}

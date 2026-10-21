@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-37",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is the better response. Both responses slightly exceed the 120-word limit, but A is much closer, at roughly 124 words against about 140 for B.\n\nA also covers more of what a manager needs. It includes the progress figures (14 of 22 reports rebuilt and matching), the status change, the risk, the options, the approval needed, and the budget. It also notes that Tomas is documenting the payroll system in the meantime.\n\nB drops the progress detail and the documentation mitigation. It keeps the \"next update\" date, which matters less. B's note that option 2 \"may not be acceptable\" is a useful nuance, but it doesn't make up for the extra length and the missing progress.\n\nBoth are accurate and both say no decision has been made.\n\n**A**",
+  "usage": {
+    "input": 1321,
+    "output": 1552
+  },
+  "cost": 0.018162
+}

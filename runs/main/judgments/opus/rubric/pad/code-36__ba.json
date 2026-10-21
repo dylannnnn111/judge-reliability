@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-36",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.** Both responses find essentially the same real issues, so the difference comes down to ranking, fixes, and following the instructions.\n\n**Correctness and coverage.** Both are accurate and catch the most important bug first: `Invalidate` mutates the map under `RLock`, which can trigger a fatal \"concurrent map writes\" crash. Both also flag the cache stampede, stale overwrite after `Invalidate`, TTL not tied to the token's real lifetime, unbounded growth, and the missing context/timeout on `fetch`. Response A adds a valid point about errors not being cached and no backoff. Response A's note that `recover` cannot catch the fatal error usefully explains the severity.\n\n**Ranking and fixes.** Response A gives a concrete fix for every item:\n- `Lock`/`Unlock` for the race\n- singleflight, or a per-tenant mutex with a re-check\n- a generation counter\n- returning the expiry from `fetch` with a safety margin\n- periodic sweeping\n- a context for timeouts\n\nResponse B gives no fix for item 2 (stale tokens re-cached). It also says it lists issues \"in the order I found them,\" which directly contradicts the request to put the most important first. Its actual order is still reasonable.\n\n**Constraints.** The user asked for under 200 words. Response A is roughly 200–210 words, about at the limit. Response B is around 300+ words, padded with a preamble and wordy phrasing (\"There are two ways to address this…\"), so it clearly exceeds the limit. The extra length adds nothing that A lacks.\n\nNeither response flags things that are actually fine.\n\nVerdict: A",
+  "usage": {
+    "input": 1978,
+    "output": 1382
+  },
+  "cost": 0.035552
+}

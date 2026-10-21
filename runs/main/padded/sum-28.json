@@ -1,0 +1,14 @@
+{
+  "pair": "sum-28",
+  "side": "B",
+  "author": "opus",
+  "model": "claude-haiku-5-5",
+  "original": "**Annual leave changes, effective 1 December 2026**\n\n84 staff have over eight weeks' leave banked, and $3.9M is owed in total. This is both a cost risk and a burnout risk.\n\n- **Balance cap:** Staff with over eight weeks must agree a reduction plan with their manager. Without agreement, the company can direct them to take up to a quarter of their balance, with eight weeks' notice.\n- **Cash-out (new):** Staff can cash out up to two weeks a year, agreed in writing, if four weeks remain.\n- **Christmas shutdown (24 Dec–2 Jan):** Staff use four days' leave, or take unpaid leave or make up time.\n\n**Applies to:** Permanent staff under the 2025 Enterprise Agreement. 24/7 warehouse staff at Erskine Park and Truganina are exempt from the shutdown only.\n\n**Your action:** You'll receive your team's high-balance list by 31 October.",
+  "text": "**Annual leave changes, effective 1 December 2026**\n\nWe would like to draw your attention to the annual leave changes that take effect on 1 December 2026. At present, 84 staff have over eight weeks' leave banked, and $3.9M is owed in total. This situation presents both a cost risk and a burnout risk, which is why these changes are being introduced.\n\nThe main changes are set out below.\n\n- **Balance cap:** Staff with over eight weeks of leave are asked to agree a reduction plan with their manager. Where no agreement is reached, the company can direct them to take up to a quarter of their balance, with eight weeks' notice given.\n- **Cash-out (new):** Staff may cash out up to two weeks of leave a year, provided this is agreed in writing and four weeks remain in their balance.\n- **Christmas shutdown (24 Dec–2 Jan):** Staff are required to use four days' leave during the shutdown period, or alternatively take unpaid leave or make up time.\n\n**Applies to:** These changes apply to permanent staff under the 2025 Enterprise Agreement. The only exemption is for 24/7 warehouse staff at Erskine Park and Truganina, who are exempt from the shutdown only.\n\n**Your action:** Please note that you will receive your team's high-balance list by 31 October, so you can review it ahead of the changes.",
+  "ratio": 1.6,
+  "usage": {
+    "input": 502,
+    "output": 1073
+  },
+  "cost": 0.0005867
+}

@@ -1,0 +1,13 @@
+{
+  "item": "sum-25",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "**Summary: statements sent to wrong members (not a hack)**\n\nOn 2 October, a scheduled statement job error sent 347 members' statements to the wrong recipients. The exposed details were names, addresses, account numbers and September transactions. No passwords or card numbers were included, and investigation found no external access. The job was stopped after 35 minutes, before the remaining 11,200 statements were sent. The regulator was notified, and all affected members were contacted by 6 October. Fixes include an email-to-account check (done), a second-reviewer rule for member communication changes (from 13 October), and free 12-month credit monitoring (in progress). Remaining statements will go out on 9 October.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 720,
+    "output": 409
+  },
+  "cost": 0.0002765,
+  "at": "2026-10-14T01:52:01.378Z"
+}

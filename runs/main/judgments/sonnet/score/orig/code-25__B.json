@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-25",
+  "side": "B",
+  "score": 7,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds the central bug and ranks it first. `> this.limit` really does let six attempts through (attempts 1–6 pass, 7 is blocked), and `>=` is the right fix. It also correctly flags the unbounded `hits` map, the hardcoded `retryAfterSec: 60`, and the per-process, in-memory state. Each item comes with a concrete fix.\n\nWeaknesses:\n- **Padding:** Items 5 and 7 are weaker. Counting all attempts is a common, defensible design for login limiting, and the response presents it as a flaw. Item 7 is speculative, since the code takes `ip` as a parameter and says nothing about where it comes from.\n- **Ranking:** The per-IP-only bypass (item 3) is a design observation and arguably outranks the hardcoded retry value, but it sits above it only slightly.\n- **Length:** The response is about 200 words, right at the limit.\n\nOverall the real bugs are found and prioritized sensibly, with a little speculative filler.\n\nScore: 7",
+  "usage": {
+    "input": 1034,
+    "output": 1497
+  },
+  "cost": 0.017038
+}

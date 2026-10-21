@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-26",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse B is the better summary for a busy manager. Its headings (Impact, Actions, Feedback) make it quick to scan. It also covers points Response A leaves out: the refresher training for staff who used the evacuation chair, the phone calls to families of high-care residents, and the approval date for the spare board.\n\nBoth responses go over the 120-word limit by a similar amount (roughly 150 words each), so neither has an edge there. Each has a small inaccuracy:\n\n- **Response A** says residents were \"carried down the stairs,\" which slightly overstates \"helped down the stairs.\" It also drops the risk assessment.\n- **Response B** calls the daily updates \"printed,\" though the source only says the first notice was printed.\n\nNeither error is serious.",
+  "usage": {
+    "input": 1387,
+    "output": 1159
+  },
+  "cost": 0.028728
+}

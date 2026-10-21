@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-01",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate throughout. The new deadline (Friday 30 October, close of business), the reason for the change (the board meeting was brought forward a week), and the \"call Priya today\" instruction all match the source. The three required submissions, the template path, the software subscriptions split, the variance threshold (\"whichever is smaller\"), the no-screenshots rule, the leave delegation, and Marcus's optional Thursday 2pm session in the Level 6 boardroom are all correct. The summary omits only minor points, such as the drop-in being aimed at people unfamiliar with the software subscriptions tab, and the note that everything else still stands. These don't affect what the manager needs. The word count is about 118, just under the limit, and the formatting is clear and scannable.\n\nScore: 9",
+  "usage": {
+    "input": 1102,
+    "output": 976
+  },
+  "cost": 0.0005982
+}

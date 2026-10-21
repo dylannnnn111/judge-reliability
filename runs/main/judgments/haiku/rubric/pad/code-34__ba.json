@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-34",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the most important issue: the loop variable captured by the goroutines, which is a real bug under Go 1.21. Both also flag the discarded errors, the nondeterministic result order, and the missing timeout or cancellation. Response A is more accurate on the Go version point. It correctly says Go 1.22 changed the loop-variable semantics but the CI image uses 1.21. Response B says the change applies \"only if `go.mod` declares `go 1.22` or later,\" which is misleading here. A Go 1.21 toolchain never uses the new semantics regardless of `go.mod`, so B's note could lead someone to think a `go.mod` edit would fix the problem on this CI image.\n\nResponse B also adds a preamble that wastes words, includes a panic/recover point that is minor, and drifts into test-harness advice. Its length is likely over the 200-word limit, while Response A stays under it. Response A is tighter, more accurate on the critical version detail, and gives clear fixes.\n\nVerdict: A",
+  "usage": {
+    "input": 1713,
+    "output": 1028
+  },
+  "cost": 0.0006852999999999999
+}

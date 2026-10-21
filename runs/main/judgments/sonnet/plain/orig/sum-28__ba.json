@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-28",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**B**\n\nBoth responses are accurate, well structured and written for a manager. My rough word counts put both slightly over the 120-word limit, with B at about 129 and A at about 134, so B is closer to compliance.\n\nB also keeps more of the precise policy details: the 40-day full-time figure, \"at least eight weeks' notice\", the four non-public-holiday days, and the full 24 December to 2 January closure dates. It states clearly that warehouse staff are covered by the cap and cash-out rules.\n\nA does cover the unpaid-leave option and who the policy applies to, which B omits, and it flags that cash-out is new. But it is longer and drops some of those precise details.\n\nThe gap is small, so the call is close.",
+  "usage": {
+    "input": 1312,
+    "output": 1597
+  },
+  "cost": 0.018594
+}

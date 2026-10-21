@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-21",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly rank duplicate refunds first. The POST has no idempotency key and is retried on 502/503/504 and network errors, so a retry can charge the same refund twice. Both also flag the missing timeout, the ignored `Retry-After`, and the undrained response bodies, all real issues.\n\nResponse B adds two sharper points that A misses. It notes that the `catch` retries everything, including caller-initiated `AbortError`s, which is a real bug in a shared wrapper. It also flags that the `as { refundId }` cast can let an undefined refund ID through as a success, which matters for a money-moving call. Its suggestion to refuse retrying non-idempotent methods by default is a useful design fix.\n\nResponse A's strengths are the input validation on `amountCents` and the jitter bound, both valid but lower-impact. Its double-submit item is plausible but speculative, and it is noticeably longer, running past the 200-word limit more clearly than B does.\n\nOn balance B finds the more consequential issues, ranks them sensibly, and stays closer to the length limit.\n\nVerdict: B",
+  "usage": {
+    "input": 1944,
+    "output": 925
+  },
+  "cost": 0.0006569
+}

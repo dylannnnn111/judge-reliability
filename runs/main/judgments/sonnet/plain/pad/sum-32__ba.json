@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-32",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "A is better. Both responses break the 120-word limit, A at roughly 165 words and B at roughly 180, so neither meets the main constraint, but A is closer.\n\nA is also better in other ways:\n- **Format:** Its labelled sections (Issue, Our position, Outcome, Risk) are easy for a busy manager to scan.\n- **Filler:** B opens with \"I would like to take a moment to summarise this complaint for you\", which wastes words.\n- **Sequencing:** B says the complaint was \"closed as resolved and referred to the lending team\", which blurs the order of events.\n- **Accuracy:** B's flag says the customers \"have not accepted the outcome\". That is partly misleading, because they accepted the $250 but still feel misled. A's risk note, that the continued belief could lead to an AFCA escalation, is more precise.\n\nA also captures the key point that the customers asked for a fixed-rate call.\n\n**A**",
+  "usage": {
+    "input": 1516,
+    "output": 1162
+  },
+  "cost": 0.014652
+}

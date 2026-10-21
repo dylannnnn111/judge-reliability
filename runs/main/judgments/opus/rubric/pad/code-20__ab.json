@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-20",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.**\n\n**Do the issues hold up?** Both responses identify the same main issues, and rank them the same way: DST off-by-one first, then silent NaN on malformed input, then timezone dependence, then staleness after midnight. Both DST examples are arithmetically correct.\n\n- A's spring-forward example (due tomorrow, 23h, 0.96, floors to 0, \"Due today\") is correct.\n- B's spring-forward example (71h, 2.96, floors to 2) is correct.\n- Both fall-back examples (-25h, -1.04, floors to -2) are correct.\n\n**Where they differ on accuracy:**\n\n- A says the DST bug \"may land [the invoice] in the wrong place on the overdue list.\" This is inaccurate. The overdue filter only checks `< 0`, and DST never flips the sign. Spring-forward pushes values toward zero from above, and fall-back pushes negative values further negative.\n- B states this correctly: the overdue list is unaffected and only the labels are wrong. That precision helps the reader judge the impact.\n\n**Fixes:** Both are valid. A uses exact UTC division; B uses UTC with `Math.round`.\n\n**Concision:**\n\n- A includes odd meta filler (\"I've kept the explanations and the suggested fix as they were...\") that reads like a rewrite artifact and adds nothing.\n- A also runs well over the 200-word limit.\n- B is tighter, though it is also somewhat long.\n- B adds a useful concrete detail on why a full ISO timestamp fails (\"...T00:00:00ZT00:00:00\").\n\nVerdict: B",
+  "usage": {
+    "input": 1983,
+    "output": 1008
+  },
+  "cost": 0.028092
+}

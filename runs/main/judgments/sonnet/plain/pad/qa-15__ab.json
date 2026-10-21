@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-15",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer of 18 °F and use the same method and check. Both are under 120 words.\n\nResponse A has a word count of roughly 100, which is under 120. Let me estimate: \"I'm happy to walk through this. The temperature rose by 18 degrees Fahrenheit.\" (13) \"To see how we arrive at that figure, we can first find the rise in Celsius.\" (16) \"Subtracting the starting value from the ending value gives 25 − 15 = 10 degrees Celsius.\" (~15) \"Since a temperature difference scales by 9/5 without the 32-degree offset, we can convert that difference directly: 10 × 9/5 = 18 °F.\" (~23) \"As a check on this result, we can convert both temperatures to Fahrenheit separately.\" (13) \"15 °C is 59 °F and 25 °C is 77 °F, and 77 − 59 = 18, which confirms the answer.\" (~19). Total is about 99, so it is within the limit.\n\nResponse B is more concise and direct, with no filler such as \"I'm happy to walk through this.\" It is correct and clear.\n\nBoth satisfy the constraints. B is tighter and has no filler, so it is slightly better.\n\n**B**",
+  "usage": {
+    "input": 503,
+    "output": 392
+  },
+  "cost": 0.004926
+}

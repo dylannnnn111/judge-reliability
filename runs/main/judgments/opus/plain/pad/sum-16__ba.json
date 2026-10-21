@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-16",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is about 120 words. That is borderline against the limit, but close. It covers status, the new date, causes, budget, the key risk and the decisions needed. It also usefully links the quoting-fix risk to the sales director's request for no December training.\n\nResponse B runs to roughly 280 words, more than double the limit. It is padded with phrases like \"I want to be clear\" and \"Good headway has been made,\" which a busy manager doesn't need.",
+  "usage": {
+    "input": 1550,
+    "output": 500
+  },
+  "cost": 0.0162
+}

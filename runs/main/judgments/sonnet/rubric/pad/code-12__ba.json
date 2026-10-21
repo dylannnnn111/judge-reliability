@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-12",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better. Both responses find the three real problems: the N+1 queries, the crash when a customer row is missing, and the non-sargable `strftime` filter. Both also give sensible fixes for them.\n\n**Response A**\n- It adds real secondary points: negative amounts render as `$-12.34`, ordering within a customer is nondeterministic, and totals are exported as formatted strings.\n- Its last items, input validation and timezone, are minor but plausible.\n- It runs somewhat over the 200-word limit, but not by much.\n\n**Response B**\n- It opens with filler that restates the task.\n- Several items are speculative or padding. Item 4 assumes a quantity column that may not exist. Item 7 says float formatting \"is usually fine\" and then flags it anyway. Item 8 asks for a reconciliation total nobody requested. Item 5 on snapshot consistency is marginal.\n- It misses the nondeterministic ordering and the negative-amount formatting problem.\n- It is much longer than 200 words, which breaks the constraint more badly.\n\nResponse B's extra length adds mostly speculative content rather than correct, useful findings.\n\nVerdict: A",
+  "usage": {
+    "input": 1920,
+    "output": 768
+  },
+  "cost": 0.01152
+}

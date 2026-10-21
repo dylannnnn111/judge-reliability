@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-04",
+  "side": "B",
+  "score": 6,
+  "model": "claude-opus-5-5",
+  "text": "**Score: 6.** The content is accurate and well targeted, but the response breaks the explicit under-120-word limit.\n\n**Accuracy:** Every figure and condition checks out against the source:\n- Leave rises from 12 to 18 weeks for primary carers and from 2 to 4 weeks for secondary carers, on top of government pay.\n- Primary carers can use up to three blocks within 24 months.\n- The cut-off is children born or adopted on or after 1 Jan 2027, and earlier arrivals keep the old entitlements.\n- Staff need 12 months' continuous service, and regular, systematic casuals qualify.\n- Super is extended to the government-funded portion for primary carers, up to 18 weeks.\n- Staff apply via the portal 10 weeks ahead, with automatic manager notification.\n- Info sessions are on 5 and 19 Nov at 12:30pm.\n\n\"Plan rosters for split leave\" is the summariser's own suggestion rather than something the source says. It is reasonable but should not read as policy. \"12 months' continuous service\" leaves out \"by the expected date of birth or placement\", a small loss of precision. Nothing is wrong or misleading.\n\n**Coverage:** It keeps the points a manager needs. It does omit that managers may need to adjust dates if circumstances change, such as an early birth. It also drops the contact email.\n\n**Concision and the length limit:** The writing is tight, but by my count the response is about 137 words, over the explicit \"under 120 words\" instruction. That is a clear failure on a hard constraint. It could easily have come in under the limit, for example by shortening the heading, removing repeated \"primary carers\" wording, or dropping the extra roster advice.\n\nScore: 6",
+  "usage": {
+    "input": 1214,
+    "output": 1919
+  },
+  "cost": 0.043236
+}

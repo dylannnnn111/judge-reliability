@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-25",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. The main difference is the word limit.\n\nBoth responses find the same top issues: the off-by-one, unbounded memory growth, per-IP-only limiting, the hardcoded `retryAfterSec`, in-memory state, and IP trust.\n\n- **Length:** The user asked for under 200 words. Response A runs to roughly 280–290 words, well over the limit. Response B is around 200, close to compliant and much tighter.\n- **Signal versus noise:** Response A's item 7 is filler (\"no tests\", \"no way to reset a key\"), which goes against \"bugs and problems that matter\". It also splits the proxy and NAT concerns into a long item and adds an IPv6 /64 point that mostly repeats item 2.\n- **Missed issue:** Response B notes that the limiter counts all attempts, so successful logins also use up quota. This is a real design issue that Response A omits.\n- **Accuracy:** Both are accurate. A's formula for `retryAfterSec` is a nice detail, but it costs words the user asked to save.\n\nResponse B is more concise, better prioritized, and covers one more relevant issue.\n\n**B**",
+  "usage": {
+    "input": 1484,
+    "output": 1070
+  },
+  "cost": 0.013668
+}

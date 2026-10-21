@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-12",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "A\n\nBoth responses cover the fee rises, the concession pass, the repair rationale, the staff exemption and the petition. Both also run slightly over the 120-word limit, by my count about 122 words for A and 126 for B.\n\nEach adds a small unsupported claim. A calls the weekly pass \"a significant saving for regular users\", which is an editorial inference. B says the weekly pass \"will replace\" the $9 daily concession, but the article says only that concession parking was \"extended\". A's \"instead of the current $9 daily concession\" has a similar flaw, but it is softer.\n\nA is a little tighter and has no \"Summary:\" label. A's inference is also partly backed by the Barry Sutton quote, whereas B's \"replace\" has no basis in the article. That gives A a slight edge.\n\n**A**",
+  "usage": {
+    "input": 1210,
+    "output": 1887
+  },
+  "cost": 0.02129
+}

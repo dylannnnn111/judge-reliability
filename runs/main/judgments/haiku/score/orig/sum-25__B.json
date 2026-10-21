@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-25",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate. The figures (347 statements, 11,200 unsent, 3, 6, 9, 13 and 31 October dates) match the report, and the ownership and status of actions are correctly stated. It omits that members were asked to delete the misdirected statements and that the hacking message was forwarded outside the organisation, but neither omission is critical for a manager. Its main weakness is the length constraint: at roughly 140 words it exceeds the 120-word limit, which the user stated explicitly. The key points are all present, so the main deduction is for failing the word limit.\n\nScore: 6",
+  "usage": {
+    "input": 1156,
+    "output": 1032
+  },
+  "cost": 0.0006316000000000001
+}

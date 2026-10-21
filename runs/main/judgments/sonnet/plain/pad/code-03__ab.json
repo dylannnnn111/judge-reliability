@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-03",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better.\n\nBoth responses correctly put SQL injection first and give the same parameterized fix. Both also correctly note that `with sqlite3.connect()` does not close the connection. The difference comes from the \"under 200 words\" constraint and from how much each response pads.\n\n- **Length:** Response A runs roughly 350 words, well over the limit. Response B is also over once the code block is counted, but it is much tighter and closer to the requested brevity.\n- **Prioritization:** A's list is padded with low-value items, such as ordering and limits, the redundant `if not rows`, and the `is not None` nit. These dilute the \"bugs and problems that matter\" focus. B's items are more relevant to a support portal handling customer PII: authorization and audit logging, validation, and configuration.\n- **Accuracy:** A is slightly more precise. B's claim that \"worse inputs can modify data depending on the driver\" is loose, since sqlite3 rejects stacked statements. B's advice on `with` is also a bit muddled, because it suggests `with` and then immediately says it isn't enough. These are minor flaws.\n\nOverall, B follows the brevity instruction better and focuses more on what matters, so it comes out ahead despite its small imprecisions.\n\n**B**",
+  "usage": {
+    "input": 1582,
+    "output": 849
+  },
+  "cost": 0.011654
+}

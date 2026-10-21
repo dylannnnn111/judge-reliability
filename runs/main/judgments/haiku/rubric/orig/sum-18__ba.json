@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-18",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both summaries are under 120 words and cover the three new features, the main improvements, the fixes and the accessibility changes. Response A is accurate throughout. Its wording tracks the source closely, such as \"35° or above\" and \"colour-blind users\" for colour vision deficiency.\n\nResponse B has more useful detail, notably the step counter now syncing every 15 minutes instead of hourly, and the Settings > Safety path for turning off heat warnings. But it has two accuracy problems. It writes \"35°C\" where the source says only \"35 degrees\", an assumed unit. Its closing line, \"No action is required from the team,\" is not in the release notes. It is an unsupported conclusion, and for a manager it could be misleading, since the release notes don't say whether any team needs to act, for example to tell users about the new features. Accuracy comes first, so this outweighs B's extra detail. Response A omits the step counter change, but that omission is a lesser gap than B's unsupported claim.\n\nVerdict: A",
+  "usage": {
+    "input": 1441,
+    "output": 868
+  },
+  "cost": 0.0005781
+}

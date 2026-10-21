@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-03",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer: a 1 percentage point rise, which is a 25% relative increase, with the correct calculation (5 − 4) ÷ 4 × 100. Both also appear to stay under the 120-word limit (A is roughly 109 words, B roughly 100).\n\nThe difference is in how the words are used. Response A spends a lot of them on filler: the opening thanks, the closing pleasantry, and a restatement of the percentage-point change that repeats itself. Response B sets out the distinction between percentage points and percent clearly and shows the calculation. It then adds a short, accurate example ($16,000 to $20,000 on a $400,000 loan) that shows what the 25% means for a borrower. That example is correct and relevant to a home loan, so the extra words add something useful. B is also better organised.\n\nResponse B is the stronger answer.\n\nVerdict: B",
+  "usage": {
+    "input": 696,
+    "output": 972
+  },
+  "cost": 0.011112
+}

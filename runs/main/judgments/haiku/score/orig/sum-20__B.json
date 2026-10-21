@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-20",
+  "side": "B",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate on every point I checked: the date, times, venue address, travel options, the five-priority limit, the prep tasks, the dietary deadline of 31 October to Tariq, the out-of-office arrangement with Ella, and the optional pub drinks from 4:15pm. It omits only minor detail, such as that the morning review includes feedback on the team's reports and that the food comes from the centre's cafe. A busy manager would not need either. It stays well under 120 words, uses clear labelled bullets, and leads with the logistics a reader would need first.\n\nScore: 9",
+  "usage": {
+    "input": 1101,
+    "output": 525
+  },
+  "cost": 0.0003726
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-08",
+  "side": "B",
+  "score": 6,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy.** Most of the summary is correct:\n- **Purchase:** 14 August at Penrith, 400L Frostline fridge.\n- **Food loss:** about $300.\n- **Exchange:** the store handles it under the 90-day policy.\n- **People:** Priya is covering for Jason, who is on leave until 9 October.\n- **Replacement:** delivery is booked for Wednesday.\n- **Collection:** Frostline's contractor collects the faulty unit separately.\n- **Claim form:** Kevin Hales owes it, and it has not arrived.\n- **Approval limit:** claims up to $500 need no manager sign-off.\n- **Escalation:** escalate to Amara Osei if the form isn't sent by 9 October.\n\nThe main problem is \"It failed on 29 September.\" The customer only said it stopped cooling \"on Sunday,\" in a message dated 2 October, and no year is given. The exact date is an unsupported inference. In some years that Sunday would be 28 September, not 29 September. A manager could rely on this invented date. Saying the contractor \"may call\" rather than \"will call\" is a minor softening. \"Patience is wearing thin\" is a fair reading of \"I just want this finished.\"\n\n**Coverage.** The summary keeps the key points: exchange status, the outstanding claim form, the escalation trigger, and the two separate calls. It omits that receipts or photos are needed for the claim, and that Megan has already chased Kevin. Both are minor gaps.\n\n**Concision.** At roughly 115 words it fits the limit and is well organised. It spends some words on purchase details that matter less than the open actions.\n\nThe fabricated date is a real accuracy flaw in a response that is otherwise strong.\n\nScore: 6",
+  "usage": {
+    "input": 1203,
+    "output": 943
+  },
+  "cost": 0.023672
+}

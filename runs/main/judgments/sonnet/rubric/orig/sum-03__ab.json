@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-03",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better, mainly because it respects the word limit and states the cause more precisely.\n\n**Accuracy:** Both are accurate on the numbers, dates and actions. Response A calls the certificate \"outdated\" where the source says \"expired\", and omits that the vendor renewed it in August, so its cause is less precise. Response B states the cause correctly: connector B pinned an expired intermediate certificate after the vendor's August renewal. Response B's \"Support escalation led to the fix\" is a slight simplification, since an engineer identified the cause at 12:10 after the escalation. It is not misleading.\n\n**Coverage:** Both include the key points: the window, the failure scale, the revenue impact, the support spike, the slow detection, and the actions. Response B also gives owners for the open actions and marks which are done. Response A mentions the 11:35 escalation time, which is a small extra.\n\n**Concision:** The request set a 120-word limit. My count puts Response A at about 125–135 words, so it likely breaks the limit. Response B comes to about 105 words and stays under it.\n\nVerdict: B",
+  "usage": {
+    "input": 1597,
+    "output": 1551
+  },
+  "cost": 0.018704
+}

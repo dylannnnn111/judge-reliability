@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-04",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly rank the missing idempotency key as the top problem and flag retries on 4xx errors. Response A is more accurate on the parsing issue. With modern requests, `resp.json()` raises a `JSONDecodeError` that subclasses `RequestException`, so a malformed 2xx body is caught and retried, which can double-charge. Response A identifies this, while Response B says `ValueError` \"isn't caught,\" which is wrong for current versions. Response A also notes the sleep after the final attempt and the generic `RuntimeError` that prevents callers from distinguishing declines from outages. Response B's point about the ambiguous post-failure state and the need for reconciliation is a valuable addition that A lacks. On balance, A's extra findings are more correct, and B's one notable factual error weighs against it.\n\nVerdict: A",
+  "usage": {
+    "input": 1651,
+    "output": 899
+  },
+  "cost": 0.0006146
+}

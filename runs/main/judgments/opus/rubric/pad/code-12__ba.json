@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-12",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A** is the better review.\n\n- **Coverage of the main issues:** Both find the three issues that matter most: N+1 queries, the crash when a customer row is missing, and the non-sargable date filter. Both give concrete fixes for each.\n- **Ranking:** B puts the crash first, which is defensible because correctness outranks performance. A's order, with N+1 first given 20,000 invoices, is also reasonable.\n- **Additional points in A:** A adds a real, useful issue that B misses. Exporting totals as formatted strings like `\"$1,234.56\"` hurts finance, who will want to sum them. A also notes that negatives render oddly as `$-12.34`. Its deterministic-ordering and input-validation points are minor but correct.\n- **Additional points in B:** B's extras are weaker.\n  - The `COUNT(*)` point assumes a quantity column that may not exist.\n  - The float-formatting point admits the code is \"usually fine.\"\n  - The currency-symbol concern is hypothetical.\n  - \"No reconciliation\" is more a feature request than a bug.\n  - The snapshot-consistency point is valid but low-impact.\n- **Length:** B opens with filler and runs well over the 200-word limit, roughly double. A is close to the limit. B's extra words mostly add speculative or marginal content rather than correct, useful findings.\n\nOverall, A is tighter, includes a more practical additional finding, and better respects the length constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 1920,
+    "output": 752
+  },
+  "cost": 0.02272
+}

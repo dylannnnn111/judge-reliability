@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-22",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer: this is a myth, because the Coriolis effect is too weak at sink or toilet scale. Both also stay under 120 words (about 115 for A and 117 for B) and describe the same extreme lab conditions.\n\nResponse A adds checkable facts that are accurate:\n- Hurricanes rotate clockwise in the Southern Hemisphere.\n- Shapiro's 1962 MIT experiment is real.\n- The 1965 Sydney replication (Trefethen et al.) is real and directly relevant to a question about Australia.\n- Toilet rim jets set the flush direction, so the same model flushes the same way everywhere.\n\nResponse B is also correct and clear. It adds the point that two identical sinks can drain differently and that both directions occur in either hemisphere. Its content is more generic and less tied to the Australian framing.\n\nA's concrete, accurate details, especially the Sydney replication, make it slightly more informative within the word limit.\n\nVerdict: A",
+  "usage": {
+    "input": 741,
+    "output": 1159
+  },
+  "cost": 0.013072
+}

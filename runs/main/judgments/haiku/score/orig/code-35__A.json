@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-35",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response's technical claims hold up. The ignored `ParseInt` error is correctly ranked first, and the `row[1]` panic, the `$-1.-50` formatting example, the missing `os.Args` check, and the blind header skip are all real. The reconciliation suggestion is also sound for a payments pipeline. Its ranking is sensible, and most items include a fix.\n\nWeaknesses: the overflow and `%w` points are minor and padded in. The response also runs roughly 280-300 words, clearly over the \"under 200 words\" instruction, so it fails an explicit constraint. The final paragraph about reconciliation is useful, but the response could have been tighter without losing any substance.\n\nScore: 6",
+  "usage": {
+    "input": 1329,
+    "output": 870
+  },
+  "cost": 0.0005679
+}

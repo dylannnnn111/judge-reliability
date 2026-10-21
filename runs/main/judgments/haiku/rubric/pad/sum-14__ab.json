@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-14",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Neither invents facts, and both correctly state the three-day minimum, the Fair Work exception, the informal-agreement caveat, the Claims and Customer Contact exclusion, the equipment rule, and the Spaces booking window. Both also run over the 120-word limit: Response A is roughly 200 words and Response B roughly 145.\n\nResponse A spends its opening sentences on filler (\"This section sets out the changes...\") that a busy manager doesn't need. It also omits the lockers and the point that managers are the first contact for questions. Its one minor gain is describing the common team day as one where \"all members\" attend, which is a slight overstatement of the source's \"at least one common day.\"\n\nResponse B is tighter, keeps every substantive point including lockers and where to direct questions, and states the common-day requirement accurately (\"one common team day weekly\"). It is still over the word limit, but it is closer and carries more useful content per word.\n\nVerdict: B",
+  "usage": {
+    "input": 1590,
+    "output": 1110
+  },
+  "cost": 0.000714
+}

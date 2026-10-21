@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-03",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses are correct and under 120 words, and both separate the 1 percentage point rise from the 25% relative increase. Response A is clearer and adds a useful worked example: a $400,000 loan's interest rises from $16,000 to $20,000. Response B spends words on filler (\"Thank you for your question,\" \"I hope this explanation is helpful\") and repeats the 4%-to-5% point unnecessarily.",
+  "usage": {
+    "input": 551,
+    "output": 656
+  },
+  "cost": 0.015324
+}

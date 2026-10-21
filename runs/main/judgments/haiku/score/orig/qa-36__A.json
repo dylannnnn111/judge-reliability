@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-36",
+  "side": "A",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response is largely correct. It names the right ingredients (airfoil shape and angle of attack), explains lift through the pressure difference between the upper and lower surfaces, and links this to Newton's third law, which is the downwash view of lift. It avoids the common \"equal transit time\" myth. It also correctly notes that too steep an angle causes flow separation and stall. Its one simplification is that it doesn't explain why air speeds up over the upper surface, but that is a reasonable level of detail for this question. It is under 120 words (about 109) and clearly organized.\n\nScore: 8",
+  "usage": {
+    "input": 418,
+    "output": 720
+  },
+  "cost": 0.0004018
+}

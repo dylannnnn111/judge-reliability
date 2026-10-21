@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-05",
+  "side": "B",
+  "score": 6,
+  "model": "claude-opus-5-5",
+  "text": "The summary is mostly accurate and well-structured, but it frames one finding in a misleading way.\n\n**Accuracy**\n- The figures are correct: 214 workers, 12 weeks, 31% vs 44%, 78%, and 47 falling to 19 minutes.\n- \"No different\" is a fair plain-language rendering of \"no statistically significant difference.\"\n- The 78% who \"felt more productive\" is listed under **Benefits found**, next to the back-discomfort result. This is the study's central tension: people *felt* more productive, but measured output did not change. The authors stress this contrast.\n- A busy manager could read the response as \"desks don't measurably help, but most users say they're more productive,\" which is the conclusion the study warns against. The response never states that perception and measurement diverged.\n\n**Coverage**\n- It keeps the main finding, the back-discomfort benefit, the novelty fade-off and both limitations.\n- It drops the point that no desk suppliers funded the study. That would be useful context, since supplier claims are the study's premise, but the omission is minor.\n- \"Back discomfort was lower\" leaves out that this was weekly discomfort measured at week 12. That is acceptable compression.\n\n**Concision**\n- At about 93 words it is within the limit, and the headed structure is easy to scan.\n\nThe response is clean and mostly accurate. However, presenting self-reported productivity as a benefit, without the \"felt vs measured\" contrast, undercuts the key message on a point a manager is likely to act on.\n\nScore: 6",
+  "usage": {
+    "input": 1088,
+    "output": 982
+  },
+  "cost": 0.023992
+}

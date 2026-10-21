@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-17",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses correctly name Venus, give about 465°C, and explain the runaway greenhouse effect from the thick CO₂ atmosphere. They also both note that Venus is hotter than the closer Mercury.\n\nThe deciding factor is the \"under 120 words\" constraint. Response A comes to roughly 130 words. It is padded with filler such as \"It is worth noting,\" \"To explain this more fully,\" and \"Finally, it is also important to mention,\" so it breaks the limit. Response B comes to roughly 118 words, so it stays within the limit. It also adds useful content: the 96% CO₂ figure, the even temperatures across the planet, and the contrast with Mercury's lack of atmosphere. Its formatting is clear.\n\nResponse B is therefore better on both constraint compliance and informational value.\n\nVerdict: B",
+  "usage": {
+    "input": 836,
+    "output": 1407
+  },
+  "cost": 0.015742
+}

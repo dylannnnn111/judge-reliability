@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-18",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better on accuracy, constraint and concision.\n\n**Accuracy:** Both summaries get the facts right, but Response B closes with \"No action is required from the team.\" Nothing in the release notes says this. It is an invented claim presented as fact, and a busy manager might rely on it.\n\n**Word limit:** The request caps the summary at 120 words. By my count Response A is about 116 words. Response B is about 140–147, so it breaks the limit.\n\n**Coverage:** Response B keeps a few details A drops: the Settings > Safety path, the unsubscribe option, and \"walking or running\". These are minor for a manager who won't read the original. A covers all the main points: the three new features, the improvements, the fixes and the accessibility changes.\n\nResponse A is accurate, within the limit and has no fabricated content.\n\nVerdict: A",
+  "usage": {
+    "input": 1441,
+    "output": 1536
+  },
+  "cost": 0.018242
+}

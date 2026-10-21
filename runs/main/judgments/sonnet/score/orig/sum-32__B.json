@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-32",
+  "side": "B",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is mostly accurate, but it breaks the explicit \"under 120 words\" limit, and it includes one unsupported assertion.\n\n**Accuracy:**\n- The rate figures are correct: 5.79% was the standard variable rate less a 0.90% discount, and the August 0.25% rise took it to 6.04%.\n- Jordan's 12 May email is described correctly, as locking the discount rather than the overall rate.\n- The goodwill payment, the customers' acceptance while still feeling misled, the referral for a fixed-rate call and the closure are all correct.\n- \"Paid $250\" slightly overstates things. The source says the payment was arranged and should appear within five business days.\n- The \"Risk\" line about a possible AFCA escalation is the writer's own inference and appears nowhere in the thread. The customers accepted the payment and the complaint was closed, so it adds speculation a manager might act on.\n\n**Coverage:** The key points are all there: the claim, the explanation, the email wording, the outcome and the next step. It omits that Harriet gave feedback about the confusing wording only in passing, which is acceptable.\n\n**Concision:** I count about 160 words, well over the 120-word cap. The Risk section and some repeated detail could have been cut. For a busy manager, this is a clear failure of the stated constraint.\n\nThe mostly accurate content is outweighed by the roughly 33% overrun on the word limit and the small unsupported addition.\n\nScore: 4",
+  "usage": {
+    "input": 1276,
+    "output": 1669
+  },
+  "cost": 0.019242
+}

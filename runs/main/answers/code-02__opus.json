@@ -1,0 +1,13 @@
+{
+  "item": "code-02",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**1. Mutable default argument `tags=[]` (critical).** The default list is created once and shared by every call. Since `normalise_batch` never passes `tags`, every event appends to the same list, and every event's `\"tags\"` points to that one object. Tags leak between events: after one high-priority event, *all* events look urgent, including ones already emitted. In a long-running worker the list also grows forever, so memory leaks. Fix:\n```python\ndef normalise_event(raw, tags=None):\n    tags = list(tags) if tags else []\n```\n(Copying also avoids mutating a caller-supplied list.)\n\n**2. One bad event can crash the whole batch.** Only `KeyError` is caught. `{\"type\": None}` or a non-string type raises `AttributeError` on `.lower()`, and a non-dict `raw` raises `TypeError`. Either aborts the batch and drops the good events too. Use `(raw.get(\"type\") or \"unknown\")`, validate the type, and catch broader exceptions per event with `log.exception`.\n\n**3. Misleading log message.** Any `KeyError` gets reported as \"no id\", which will mislead debugging if more required fields are added.\n\n**4. Logging the full raw payload.** `%r` of the entire event can put PII or huge blobs in the logs. Log the id or a truncated summary instead.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 335,
+    "output": 649
+  },
+  "cost": 0.01432,
+  "at": "2026-10-14T01:52:51.670Z"
+}

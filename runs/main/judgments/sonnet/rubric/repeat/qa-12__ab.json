@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "qa-12",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses reach the correct answer of 671/1296 ≈ 51.8%, so correctness doesn't separate them. Both also stay under 120 words.\n\nResponse A gives the complement method concisely. It shows (5/6)^4 = 625/1296, subtracts from 1, and states the result. The reasoning is complete but terse. It does not explain that the rolls are independent or why the single-roll no-six probability is 5/6.\n\nResponse B spells out the steps: the single-roll probability, independence, the fourth power, and the subtraction. It also adds a note about the Chevalier de Méré. The note is correct historically, since de Méré's problem involved at least one six in four rolls of a die. It is a small extra that adds some context, though it isn't needed.\n\nOn key reasoning, B is slightly more complete because it mentions independence and the single-roll probability. Both are clear. B's extra context is accurate and mildly useful, and it stays within the word limit, so B is slightly better.\n\nVerdict: B",
+  "usage": {
+    "input": 557,
+    "output": 324
+  },
+  "cost": 0.004354
+}

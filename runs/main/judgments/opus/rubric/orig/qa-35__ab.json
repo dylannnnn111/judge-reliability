@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-35",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Correctness.** Both responses correctly explain why antibiotics fail against viruses. Antibiotics target bacteria-specific structures (cell walls, ribosomes, enzymes), and viruses lack these because they replicate using host machinery. Both also correctly describe resistance as natural selection acting on mutations and on genes shared via plasmids.\n\nResponse A adds that \"not finishing courses\" accelerates resistance. This is a widely repeated claim, but current evidence questions it, and shorter courses are often adequate. It is debated rather than plainly false, but it is a weak spot. Response B makes no questionable claims.\n\n**Key reasoning.** Response A usefully names resistance mechanisms (destroying the drug, efflux pumps, target alteration) and gives concrete overuse examples. Response B instead pairs each drug target with an example antibiotic class and correctly names horizontal gene transfer. Both cover the essential reasoning, with A slightly richer on resistance mechanisms.\n\n**Constraints and clarity.** Both are clear and well organized. Response A comes in at roughly 119 words, just under the limit. Response B is about 90 words, well within it.\n\n**Overall.** A's extra mechanistic detail is a genuine plus. However, correctness takes priority, and A includes a contested claim that B avoids. B is fully accurate, concise and complete, so it edges ahead.\n\nVerdict: B",
+  "usage": {
+    "input": 797,
+    "output": 1081
+  },
+  "cost": 0.024808
+}

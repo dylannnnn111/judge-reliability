@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-14",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "A\n\nBoth responses correctly identify the main bug: OFFSET combined with deletion skips rows. Both also cover crash safety and idempotency, and both note the string comparison on `created_at`. Response A adds the missing-rollback issue (an exception during archive or delete leaves the transaction open), which Response B omits. Response A is also somewhat tighter, and both responses run somewhat past the 200-word limit. Response B's suggestion to increase batch size to reduce commits is weaker advice here.",
+  "usage": {
+    "input": 1474,
+    "output": 807
+  },
+  "cost": 0.0005509
+}

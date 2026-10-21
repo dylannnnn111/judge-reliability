@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-09",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. Both responses correctly identify the main bug: `revoke_permission` never invalidates the cache, so revoked permissions stay active. Both also cover multi-process staleness, unbounded growth, and invalidating after commit.\n\n**Response B** has these advantages:\n- It gives a concrete one-line fix for the top bug (`_permission_cache.pop(user_id, None)` after the commit).\n- It notes that nonexistent user IDs get cached as empty sets, so arbitrary IDs can inflate the cache.\n- It mentions that deleted or banned users keep their cached permissions.\n- It has less redundancy and stays under the 200-word limit.\n\n**Response A** has these weaknesses:\n- Items 2 and 3 overlap heavily.\n- Item 6 is titled \"not atomic,\" but its content is about invalidation ordering, so the label is misleading.\n- It spends space on a thread-safety point that it admits is low-impact, plus a trailing \"Suggested fix\" section, which pushes its length to the edge of the limit.",
+  "usage": {
+    "input": 1314,
+    "output": 1850
+  },
+  "cost": 0.021128
+}

@@ -1,0 +1,13 @@
+{
+  "item": "code-03",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "**1. SQL injection (critical).** `customer_email` is interpolated directly into the SQL string. An input like `' OR '1'='1` returns every customer's orders, and worse inputs can modify data depending on the driver. Use a parameter for the email too:\n\n```python\nquery = \"SELECT id, total_cents, status FROM orders WHERE email = ?\"\nparams = [customer_email]\nif status:\n    query += \" AND status = ?\"\n    params.append(status)\ncur.execute(query, params)\n```\n\n**2. Connection is never closed.** `conn` leaks on every call, and on exceptions too. Use `with sqlite3.connect(DB_PATH) as conn:` or a `try/finally`. Note that `with` on a sqlite3 connection commits or rolls back but does not close it, so you also need `contextlib.closing` or an explicit `conn.close()`.\n\n**3. No authorization or audit trail.** This exposes customer PII (emails, orders) to any caller of the function. Confirm the caller is an authenticated staff member with permission to view that customer, and log who searched for whom.\n\n**4. No input validation.** The email and status aren't validated or normalized. Consider trimming whitespace, lowercasing the email if addresses are stored that way, and checking `status` against an allowed set.\n\n**5. Hardcoded path.** `DB_PATH` should come from configuration so it can differ across environments and be tested.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 302,
+    "output": 657
+  },
+  "cost": 0.0003587,
+  "at": "2026-10-14T01:52:52.448Z"
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-26",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is the better summary, mainly because it is more concise. Both are accurate, and both exceed the 120-word limit.\n\n**Accuracy:** Both are broadly correct on the main facts: the lift stopped between levels 2 and 3, the fault was a worn door controller board, and the lift was restored at 2:10pm on 23 September. Both also give the same figures for meals, evacuation-chair help and residents staying with family, plus the $2,300 spare board and the second-lift request. Response A says residents \"received printed updates every day\", which slightly blurs the original (a printed notice Monday, then an update each afternoon). It also adds the first-person \"I am pleased to report\", which doesn't belong in a summary of someone else's report. Response B has no clear errors. \"Carried down the stairs with an evacuation chair\" is a fair paraphrase.\n\n**Content kept:** Both keep the essentials a manager needs: what happened, the cause, the impact, the follow-up and the feedback. Response A adds the staff refresher training and the 26 September approval date. These are minor details and do not justify the extra length.\n\n**Concision:** I count Response A at about 190 words, well over the 120-word limit. It also has filler such as \"This summary sets out…\" and \"Residents took the time to praise…\". Response B is about 150 words, which is also over the limit but much closer. It is tighter and has no filler.\n\nVerdict: B",
+  "usage": {
+    "input": 1653,
+    "output": 1181
+  },
+  "cost": 0.015116
+}

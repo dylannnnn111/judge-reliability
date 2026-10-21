@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "code-16",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nB is better on ordering, accuracy, and length.\n\n- **Ordering:** The user asked for issues \"most important first.\" For Australian GST, the likeliest serious bug is that prices are GST-inclusive. In that case the code overcharges every customer by 10%. B ranks this first. A mentions it only as item 7, an afterthought.\n\n- **Accuracy:** A's rounding item is doubtful. Its suggested `Math.round(subtotalCents * 10 / 100)` still uses floating-point division, so it doesn't fix the problem it describes. A also calls `==` versus `===` a meaningful issue, even though both operands are strings here. B's discount-code point is more useful: unknown codes are silently ignored instead of returning an error.\n\n- **Length:** A runs over the 200-word limit, at roughly 220–250 words. B stays at or near it.\n\nBoth correctly flag `sortByPrice` mutating its input, the missing input validation, the need for server-side recomputation, and `formatAud`'s handling of negatives.",
+  "usage": {
+    "input": 1543,
+    "output": 585
+  },
+  "cost": 0.017872
+}

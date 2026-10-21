@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-09",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Real issues and coverage.** Both responses lead with the critical bug: `revoke_permission` never invalidates `_permission_cache`, so revoked permissions stay active. Both also cover the next most important points:\n- the cache is per-process, so a revoke in one worker leaves the others stale;\n- there is no TTL or invalidation for grants and other changes;\n- memory grows without bound;\n- invalidation must happen after the commit.\n\nA adds a useful detail: nonexistent IDs get cached as empty sets, so arbitrary IDs can inflate the cache. B adds a thread-safety note and is honest that the worst case is usually a redundant query, not corruption. Neither raises false problems.\n\n**Ranking and fixes.** The ordering is essentially identical and sensible in both. A gives a concrete line of code (`_permission_cache.pop(user_id, None)`) and lists options. B closes with a coherent overall fix: drop the local cache, or use a shared cache with a TTL, invalidate on grant and revoke after commit, and bound any local cache.\n\n**Constraint and concision.** The user asked for under 200 words. A runs to roughly 370 words, padded with filler such as \"Let me walk through the issues in order of priority…\" and repeated restatements. B is around 220–230 words. That is slightly over, but far closer, and nearly every sentence carries content. A's extra length mostly repeats points rather than adding substance.\n\nSubstance is roughly equal. B respects the length constraint much better and is tighter, so it is the better response.\n\nVerdict: B",
+  "usage": {
+    "input": 1640,
+    "output": 812
+  },
+  "cost": 0.0228
+}

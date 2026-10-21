@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-30",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses identify the main bug (COUNT(*)) and the COALESCE issue. Compare the rest.\n\nResponse A: item 3 covers the NULL exclusion in the average, though less pointedly. Item 4 is speculative (hard-coded assumptions, other statuses). Item 5 is filler (\"the tiebreaker is fine, but...\") and not really a bug. Word count is about 210, so it possibly exceeds the 200-word limit.\n\nResponse B: item 3 is a sharper explanation, with a concrete fix. Item 4, the missing time window, is a real concern for a \"weekly\" report, though the comment says \"open tickets per agent\", so it may be intentional; still, it's a reasonable point to raise. Item 5 is a database-specific integer truncation, which is minor but valid. It closes with a note that the ON clause placement is correct, which is useful, though it adds words. Word count: roughly 230, which is probably over 200 as well.\n\nBoth are likely slightly over 200 words. Let me estimate more carefully. A: item 1 ~50 words, item 2 ~40, item 3 ~40, item 4 ~40, item 5 ~30, total about 200-210. B: item 1 ~50, item 2 ~25, item 3 ~50, item 4 ~45, item 5 ~35, closing ~30, total about 235-250. So B is more over the limit.\n\nQuality: B is more insightful (bias toward fast responders, time window, correct ON placement). A has weaker filler items. The length constraint is a violation for both, but B more so. The \"matter\" criterion: A's item 5 is not a bug that matters; B's items are more substantive, though item 5 is minor and flagged as such.\n\nOverall, B's content is better, but the length violation is larger. A is closer to the limit, perhaps over by a small amount. Judges would probably weigh the content more heavily; B is a bit better in substance. But the constraint \"under 200 words\" is explicit. Both break it; B by more.\n\nI'd lean B for quality, though it's close.\n\n**B**",
+  "usage": {
+    "input": 1336,
+    "output": 669
+  },
+  "cost": 0.009362
+}

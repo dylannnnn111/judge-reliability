@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-39",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy.** Response A is accurate throughout.\n- It correctly states that lost or damaged items, and items not returned within 60 days, incur the replacement cost and a blocked account.\n- It correctly says inter-library loans keep the lending councils' late fees.\n- It attributes the dissent to \"one opposing councillor\", which matches the article: only Ashcroft is quoted, though two voted against.\n- The \"net about $33,000\" figure is simple arithmetic ($52,000 minus $19,000) and is clearly marked as an estimate.\n\nResponse B has a small accuracy problem. It writes \"Opponents say…\", which attributes one councillor's quote to the opponents as a group.\n\n**Completeness.** Response B drops two points a manager would want:\n- Damaged items are still charged.\n- Accounts stay blocked until an overdue item is returned or paid for.\n\nResponse A keeps both.\n\n**Length.** Response A comes to about 119 words, just under the limit. Response B runs to roughly 124 words, which breaks the explicit under-120 constraint.\n\nResponse A is more accurate and more complete, and it stays within the word limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1408,
+    "output": 2035
+  },
+  "cost": 0.046332
+}

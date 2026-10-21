@@ -1,0 +1,13 @@
+{
+  "item": "code-17",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**1. Off-by-one in pagination (definite bug).**\n`OFFSET page * pageSize` skips the first 20 rows. Page 1 starts at row 20, so users with ≤20 addresses see an empty list. Use `(page - 1) * pageSize`.\n\n**2. Likely type mismatch in the auth check.**\n`req.params.userId` is always a string. If `req.session.userId` is stored as a number, the strict `!==` is always true and every non-admin gets 403. Normalize both sides, e.g. `String(req.session.userId) !== req.params.userId`.\n\n**3. Unhandled async errors.**\nIn Express 4, a rejected `req.db.query` isn't caught. The request hangs and you get an unhandled rejection. Wrap the handler in try/catch or use an async wrapper, or upgrade to Express 5.\n\n**4. No validation of `page`.**\n`parseInt(\"-3\")` returns `-3`, which is truthy and produces a negative OFFSET, so the DB errors. Huge values cause pointless deep scans. Clamp it with `Math.max(1, …)` and a sane upper bound, and pass radix 10.\n\n**5. Minor: the client can't tell when to stop.**\nThere's no total or `hasMore` in the response. Return a count, or fetch `pageSize + 1` rows to detect a next page.\n\nThe parameterized query is good: there's no SQL injection risk here.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 342,
+    "output": 719
+  },
+  "cost": 0.015748,
+  "at": "2026-10-14T01:53:44.261Z"
+}

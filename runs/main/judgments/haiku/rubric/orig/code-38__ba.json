@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-38",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the most important problem: `set -e` aborts the whole run when one site's `tar` fails, which also skips pruning. Both also flag partial archives left under the final name, unquoted variables, missing `flock`, same-server backups, and the `-mtime` off-by-one. Each has one point the other lacks. Response A catches the empty-glob issue (`nullglob`) and gives umask 077 more prominence, since uploads may be private. Response B explains that GNU tar exits 1 for \"file changed as we read it\" on a live server and gives the precise fix of tolerating 1 while failing on 2 or higher. It also gives concrete quoting fixes and raises cron monitoring, which matters for an unattended nightly job. Response B's tar exit-code point is the more specific, production-relevant insight, and its fixes are more actionable. Response A's nullglob point is real but an edge case, since `/srv/sites` almost always has sites. The two are close, with a slight edge to B.\n\nVerdict: B",
+  "usage": {
+    "input": 1656,
+    "output": 1149
+  },
+  "cost": 0.0007401
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-13",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better: it is more accurate, gives concrete fixes, and is tighter, though it still runs a bit over the 200-word limit.\n\n**Response A**\n- It finds the two crash bugs and ranks them first: the December `month + 1 = 13` error and the day-of-month overflow.\n- It explains the drift risk that appears if the overflow is \"fixed\" by clamping and chaining from the previous date.\n- It spots that a hardcoded 30-day period would bill more than `monthly_cents` for a 31-day month, and suggests using the real period length and capping `days_used`.\n- It covers missing validation and floor rounding.\n- The timezone and \"no tests\" point is minor padding.\n- It is about 230 words, slightly over the limit.\n\n**Response B**\n- It finds the same core issues and adds a useful note about confirming whether the end date is inclusive or exclusive.\n- It says a schedule \"crossing into December\" fails. The failure actually happens when the current date is in December.\n- It says `//` \"floors toward zero\". Floor division rounds toward negative infinity, though the conclusion about under-billing positive amounts holds.\n- It opens with filler and is wordier, at about 330 words, well over the limit.\n- Its fix suggestions are less specific, with no `relativedelta`, `calendar.monthrange` or concrete period-length expression.\n\nVerdict: A",
+  "usage": {
+    "input": 1729,
+    "output": 814
+  },
+  "cost": 0.011598
+}

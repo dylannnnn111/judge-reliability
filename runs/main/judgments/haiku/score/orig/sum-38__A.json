@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-38",
+  "side": "A",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate on nearly all points. Status, launch date, beta figures (600 invited, 431 installed, 4.3/5), bug counts (23 raised, 21 fixed, 2 post-launch), key dates, budget, and the risk are all correct, and it stays under 120 words. Two small imprecisions: it says the weekend loading complaint \"is fixed\" when the source says it is fixed and load times are under two seconds *in testing*, and \"member email and posters on 17–18 November\" blurs that the email goes out on 18 November and posters start on the 17th. It also omits who owns each workstream and the next update date, which a manager might want, though neither is essential. Overall it is accurate, well-organised and concise, with minor room for precision.\n\nScore: 8",
+  "usage": {
+    "input": 1045,
+    "output": 970
+  },
+  "cost": 0.0005895
+}

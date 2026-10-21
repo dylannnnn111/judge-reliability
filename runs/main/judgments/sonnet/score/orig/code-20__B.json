@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-20",
+  "side": "B",
+  "score": 8,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds the real bug and ranks it first. Spring forward makes the gap 23 hours, so `Math.floor` turns \"Due tomorrow\" into \"Due today\". Fall back makes yesterday's gap −25 hours, so a one-day-overdue invoice reads \"Overdue by 2 days\". I checked the other direction too. A future date across fall back, and a past date across spring forward, still come out correct, so the response's claim that the overdue list is unaffected is accurate because the sign never flips. Its UTC-plus-`Math.round` fix is correct.\n\nThe second issue is also real. An ISO timestamp or malformed string gives an invalid date and `NaN`. The label then reads \"Due in NaN days\", and the invoice silently drops out of the overdue list because `NaN < 0` is false.\n\nThe timezone point is reasonable but speculative, since it depends on a business-timezone requirement the user never stated. The stale-after-midnight point is valid for a long-lived browser page but minor. Both are ranked appropriately low and neither is a false alarm. Pluralization and local parsing of the date string are fine, and the response doesn't flag them.\n\nWeaknesses: it runs a bit over the 200-word limit (about 230 words including code). The spring-forward example mixes a \"3 days away\" case with a \"tomorrow\" claim, which is slightly confusing. Fixes for items 3 and 4 are only sketched.\n\nScore: 8",
+  "usage": {
+    "input": 1203,
+    "output": 1695
+  },
+  "cost": 0.019356
+}

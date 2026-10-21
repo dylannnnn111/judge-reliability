@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-29",
+  "side": "B",
+  "score": 8,
+  "model": "claude-sonnet-5-5",
+  "text": "The key bug is the NOT IN with NULLs, which the user's note about NULL referrer_id hints at. The response identifies it first and gives the correct fix (NOT EXISTS, or filtering NULLs). Its explanation is accurate: one NULL in the list makes NOT IN evaluate to UNKNOWN for every row, so no rows are returned.\n\nThe second issue, the date filter contradicting \"never referred,\" is also real. The comment says \"never\" but the filter limits to 2026 signups. The response handles it well and gives options. Note its NOT EXISTS fix in item 1 drops the date filter, which is consistent with the \"never\" intent.\n\nThe third issue, LIMIT with ORDER BY bias, is a legitimate but lesser concern. It's somewhat speculative, but reasonable: always picking the oldest customers is a real consequence, and a 5000 cap with no tracking of past sends could cause repeat targeting month after month. Sensible as a lower priority.\n\nThe minor points: the date format concern is valid (SQLite's date() returns 'YYYY-MM-DD', and comparing to a timestamp like '2026-01-01 12:00:00' works lexicographically fine, though ISO 'T' format would also work mostly; mismatched formats could be a problem). It is hedged. The suppression and duplicates points are generic and a bit speculative, but flagged as minor.\n\nMissed: the marketing_opt_in = 1 is fine. Also, does \"referrer_id\" in signups refer to customers.id? Presumably. The created_at < 30 days condition is arguably undocumented relative to the comment, but it's not a bug. The response didn't mention that the 30-day filter is not in the comment; minor.\n\nWord count: roughly 230 words, which exceeds the 200-word limit. That's a mild instruction violation. The generic minor items add some padding.\n\nOverall strong: the top issues are found, ranked well, and fixes are given. A slight deduction for length and the speculative extras.\n\nScore: 8",
+  "usage": {
+    "input": 1000,
+    "output": 657
+  },
+  "cost": 0.00857
+}

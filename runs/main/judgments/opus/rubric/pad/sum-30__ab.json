@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-30",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Both responses get the core facts right: the dates, the 15- and 20-minute frequencies, the 6am–9pm hours, the nine passengers per trip, unchanged fares, and the stall details.\n\n- **Response B** has one mild overreach. It says early-start workers \"lose service before 6am.\" That implies the 408 currently runs before 6am, which the article never says.\n- **Response A** words this point accurately: the 412 \"does not start early enough for their shifts.\"\n\nSo A has a slight edge on accuracy.\n\n**Key points:** B keeps the *why*: the consultation's top request was a direct Mill Flat–station link. That context is useful to a manager. A mentions the consultation but drops what it found.\n\n**Concision and constraints:** A is padded with filler such as \"I would like to share a summary…\", \"Under the new arrangements…\" and \"Turning to how you can find out more…\". It runs to roughly 190–200 words, well over the explicit 120-word limit. B is about 120 words, tight and scannable, which suits a busy manager.\n\n**Weighing it up:** A's accuracy edge is small, because B's wording is only a slight inference. A's breach of the stated length limit is substantial, and it adds no useful information to justify the extra words. B meets the brief better overall.\n\nVerdict: B",
+  "usage": {
+    "input": 1592,
+    "output": 973
+  },
+  "cost": 0.025828
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-01",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both responses are accurate on the facts that matter:\n\n- The new deadline is Friday 30 October, close of business, moved up from 4 November.\n- The three deliverables and the new template's file path are correct.\n- The software subscriptions split was requested by the board.\n- Variances must be explained if over $50,000 or 10%, whichever is smaller.\n- Numbers must be pasted, not screenshots.\n- Anyone on leave must nominate cover and tell Priya.\n- Marcus's optional session is Thursday at 2pm in the Level 6 boardroom.\n- Anyone with a problem should call Priya today.\n\nNeither introduces an error. Both say only \"Thursday\" for the drop-in, carrying over the same ambiguity as the source. Both drop the coffee-machine aside, which is correct.\n\n**Attribution.** Response B says the CFO brought the board meeting forward. Response A only says it \"has been brought forward.\" A's version is not wrong, but B keeps the \"who decided what\" detail the evaluation specifically values.\n\n**Retained details.** B also keeps \"rather than emailing,\" a small but real instruction from Priya. It also places the urgent \"call Priya today\" step near the top, where a busy manager will see it.\n\n**Length and format.** Both are under 120 words (roughly 117 vs 115), so neither has a concision advantage. B's structure makes the deliverables and requirements quicker to scan. That is a modest practical benefit for this reader, not padding.\n\nThe differences are small, but B is slightly more complete on attribution and on Priya's contact instruction, at no cost in length or accuracy.\n\nVerdict: B",
+  "usage": {
+    "input": 1412,
+    "output": 1741
+  },
+  "cost": 0.040468
+}

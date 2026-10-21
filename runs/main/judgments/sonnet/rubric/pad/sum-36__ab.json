@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-36",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better, mainly because it meets the word limit and keeps the key points. Neither response mentions that the Business Manager signed the lease on 15 September, which is a minor shared omission.\n\n**Accuracy:** Both responses get the main figures right: 48 months, 22 printers, $3,480 plus GST, a 24-month fixed period, a 4% cap, 75% early-exit cost and the $195 colour overage. Response A's wording that term months \"will likely exceed the colour allowance by about $195\" is slightly garbled, because $195 is a cost, not a page count. Response B's \"expect roughly $195 extra\" is correct.\n\n**Content:** Response B includes the overage rates (0.9c and 6.5c per page), which help a manager judge the cost risk. Response A leaves them out.\n\n**Concision:** I count Response B at about 115 words, inside the 120-word limit. Response A is well over the limit. It also opens with filler (\"Thank you for reviewing this summary...\") and adds a contact line that is not useful to a busy manager.\n\nVerdict: B",
+  "usage": {
+    "input": 1662,
+    "output": 1143
+  },
+  "cost": 0.014754
+}

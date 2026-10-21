@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-19",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.** Both responses are factually sound. Each correctly traces \"kangaroo\" to *gangurru* in Guugu Yimithirr, recorded by Cook's expedition in 1770 near Cooktown. Each also debunks the \"I don't understand\" myth, citing John Haviland's 1970s research.\n\n**Length constraint:**\n- Response A runs about 190 words, well over the 120-word limit the user set. It includes filler (\"worth looking at closely,\" \"worth being clear about why\").\n- Response B comes in around 104 words, within the limit.\n\n**Content:**\n- Response A adds a useful explanation of why the myth arose: other Aboriginal groups did not recognize the word.\n- Response B explains the myth's narrative itself: the crew pointed at the animal and took the reply as its name.\n- Both give adequate reasoning. Response B's version is concise and still clear.\n\n**Precision:** Response A's \"eastern grey kangaroo\" is slightly over-precise. Sources usually describe *gangurru* as a large black or grey kangaroo. Response B's \"large grey kangaroo\" is safer.\n\nResponse B answers correctly, gives the key reasoning, and respects the explicit length constraint. Response A clearly violates that constraint.\n\nVerdict: B",
+  "usage": {
+    "input": 886,
+    "output": 790
+  },
+  "cost": 0.019344
+}

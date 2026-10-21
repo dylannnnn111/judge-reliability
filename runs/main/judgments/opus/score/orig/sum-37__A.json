@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-37",
+  "side": "A",
+  "score": 5,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Mostly faithful, with a few problems.\n- Dates, the $64,000 figure, the budget numbers, the sponsor's return date and the next update date are all correct.\n- Option 2 is softened. Finance said a partial go-live is acceptable *only if* no month-end reports depend on payroll, and four do. That makes the option effectively unacceptable as it stands, not something that \"may not be acceptable.\"\n- Smaller slips: the $64,000 is stated as a fixed cost rather than an estimate. The response also drops the team's reason for preferring option 1, which is that it is the option most likely to protect the date.\n\n**Key points:** The core issue, the impact, the options, the decision owner and the timing are all kept. It omits that the team is continuing on the current plan and that Tomas is documenting the payroll system before he leaves. Both matter to a manager wondering what happens before 20 October. Leaving out the progress details is a reasonable trade-off.\n\n**Concision and constraint:** The user set a hard limit of under 120 words. The response is about 139 words, a clear violation of an explicit instruction. Some wording could easily have been trimmed, such as the restated heading details and \"Three options were discussed, and none has been decided.\"\n\nThe response is well organised and largely accurate. However, it breaks the word limit, understates the problem with option 2, and omits the interim plan.\n\nScore: 5",
+  "usage": {
+    "input": 1105,
+    "output": 1513
+  },
+  "cost": 0.03468
+}

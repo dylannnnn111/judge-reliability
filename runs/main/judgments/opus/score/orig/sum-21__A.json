@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-21",
+  "side": "A",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The response is accurate, complete on what matters and concise. It earns a 9 rather than a 10 only because of the slightly broad opening line and the omitted \"cheapest hybrid\" rationale.\n\n**Accuracy:** I checked every figure and found no errors.\n- 6 × $38,190 = $229,140, which is $13,140 over the $216,000 budget.\n- 6 × $34,980 = $209,880, which is within budget.\n- The fuel savings of $1,350 a year and $5,400 over four years are correct. The hybrid premium (about $2,790–$3,210) is indeed below the savings.\n- The 24 October deadline, four-week delivery, February fallback, roughly two-month gap and $1,800 per car per month hire cost all match.\n- Coastal is correctly described as dearer with no hybrid until March.\n- Attribution is right: Dominic recommends, and Ruth must sign off because the hybrid option exceeds his delegation.\n\nThe opening line, \"needs Ruth's sign-off on replacing six…\", is slightly broad. Strictly, only the over-budget option needs her approval. The body and the closing \"Decision needed\" line make this clear, so it isn't misleading.\n\n**Coverage:** It keeps the recommendation, cost, budget gap, delegation issue, justification, the within-budget alternative and the deadline consequence. It also frames the decision clearly. The only minor omission is the reason for choosing Elmwood specifically (the cheapest hybrid, by $260 a car), which is a small point.\n\n**Concision:** It is about 119 words, just under the 120-word limit. The structure is well suited to a busy reader, and there is no padding.\n\nScore: 9",
+  "usage": {
+    "input": 1184,
+    "output": 1945
+  },
+  "cost": 0.043636
+}

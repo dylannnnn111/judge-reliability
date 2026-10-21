@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-33",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both summaries capture the release correctly in most respects. Each gives the 28 Oct release date, the three new features, the improvements and fixes, and the payroll connector deadline. Both use the updated 31 January 2027 shutdown date rather than the superseded 30 November date. Both also correctly limit the action to v1 connector users, about 8% of customers, and give the ~15-minute switching time.\n\n**Accuracy:** Response B labels the new features as \"(automatic)\". That is not true for shift swap approvals by area, which admins must configure in Admin > Permissions > Areas. A manager reading B could assume area-based approvals are already in place when they aren't, which is a material misunderstanding. Response A makes no such claim. Its statement \"No action is needed for most customers\" refers to the payroll action and matches the source. A also notes that the deadline moved from 30 Nov, which shows the change accurately.\n\n**Key points:** B is somewhat stronger here. It puts the action item first, includes the consequence that staff could be paid late, and gives the menu path and help-centre guide. A conveys the main consequence (timesheets stop reaching payroll) but omits the late-pay risk, which is a useful but not critical detail.\n\n**Concision:** The two are similar, each about 125 words, so both are slightly over the 120-word limit. Neither gains an edge on length.\n\nSince accuracy comes first, B's misleading \"(automatic)\" label outweighs its somewhat better coverage of the action item.\n\nVerdict: A",
+  "usage": {
+    "input": 1556,
+    "output": 1686
+  },
+  "cost": 0.039944
+}

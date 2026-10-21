@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-33",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy.** Both responses get the dates, the 8% figure, the 15-minute switch time and the conditions right. Both correctly report that the shutdown moved to 31 January 2027.\n\nResponse A has one inaccuracy. It labels the new features \"(automatic)\", but area-based shift swap approvals have to be set up in Admin > Permissions > Areas. A manager reading A could assume this just works and never configure it. Response B makes no such claim, so it is accurate throughout.\n\n**Key points.** A's strengths are that it leads with the action item and includes the menu path, the help-centre guide and the \"staff could be paid late\" consequence. B leaves these out, but \"timesheets will stop reaching payroll\" still conveys the risk. B also usefully notes the change from 30 Nov, and it reassures readers that most customers need do nothing.\n\n**Concision.** A comes to roughly 120–125 words, so it is at or slightly over the limit. B sits comfortably under it.\n\nBecause accuracy comes first, A's misleading \"automatic\" label and borderline length outweigh its extra detail.\n\nVerdict: B",
+  "usage": {
+    "input": 1556,
+    "output": 1066
+  },
+  "cost": 0.027544
+}

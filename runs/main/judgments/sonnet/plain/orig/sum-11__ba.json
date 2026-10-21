@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-11",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**B.** Both responses appear to exceed the 120-word limit by my rough counts, but Response B is nearer to it.\n\n- **Response A:** about 134 words. It covers every role, including Lena's archive room and client files, and adds the inferred Monday date of 17 Nov, which is correct.\n- **Response B:** about 129 words. It leaves out the archive room and client files detail, and the effect of unboxed files on client access. It also folds parking into Rachel's bullet, which is accurate and tidy.\n\nNeither meets the hard constraint, so the tiebreaker is how far over each runs. B overshoots by less, and it loses little of importance for a busy manager.\n\n**B**",
+  "usage": {
+    "input": 1474,
+    "output": 2160
+  },
+  "cost": 0.024548
+}

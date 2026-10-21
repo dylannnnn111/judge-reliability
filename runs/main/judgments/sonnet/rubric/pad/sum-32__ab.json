@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-32",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses break the 120-word limit. A runs to roughly 180 words and B to roughly 155, so B is closer to the limit.\n\n**Accuracy:** Both are broadly accurate on the facts: the 5.79% rate, the 6.04% rate after the 0.25% August rise, the 0.90% discount, the 12 May email, the $250 goodwill payment and the closure. A omits the customers' refund request. A also says the customers \"have not accepted the outcome\", which slightly overstates things, because they did accept the $250. B's AFCA escalation risk is an inference, but it is reasonable. B leaves out the package-account condition, which is a minor omission.\n\n**Content:** B covers the refund demand and the contract basis for variable rate changes, and its headings make it easy for a busy manager to scan. A's flag that closure may be premature is useful, but B's risk line makes a similar point.\n\n**Concision:** A opens with filler (\"I would like to take a moment to summarise...\") and phrases like \"In this regard\" and \"Following this\". B is tighter, though still over the limit.\n\nB is more complete, a little more accurate and more concise.\n\nVerdict: B",
+  "usage": {
+    "input": 1670,
+    "output": 954
+  },
+  "cost": 0.01288
+}

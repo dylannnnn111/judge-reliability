@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-27",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. The request asked for under 120 words. A runs to roughly 200, and its opening restates the headline in a second sentence, repeating the bold title. It also adds odd phrasing (\"kindly recommend\", \"We would kindly ask\") that doesn't suit a busy manager. B is much tighter, at roughly 125 words by my count, so it may slightly exceed the limit, but it is far closer. B still covers the key points: the headline gap, the free-month confound, the adjusted 2-point gap, the sales claim, the cost, and the proposal with its decision date.\n\n**B**",
+  "usage": {
+    "input": 1494,
+    "output": 944
+  },
+  "cost": 0.012428
+}

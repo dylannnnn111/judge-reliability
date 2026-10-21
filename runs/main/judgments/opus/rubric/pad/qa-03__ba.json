@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-03",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** Both responses are correct. Each gives the 1 percentage point rise and the 25% relative increase.\n\n**Reasoning:** Both show the key calculation, (5 − 4) ÷ 4 × 100 = 25%.\n\n- **Response A** opens by naming the distinction between percentage points and percent, which is the real point of the question.\n- A then adds a concrete example: $16,000 rising to $20,000 on a $400,000 loan. This shows why the 25% figure matters. The claim that interest at a given balance rises 25% is accurate.\n\n**Clarity:** Both stay under 120 words, but they use their words differently.\n\n- **Response A** is cleanly structured, and its extra words add something useful.\n- **Response B** spends many of its words on filler (\"Thank you for your question,\" \"I hope this explanation is helpful\"). It also restates the obvious (\"the rate was 4% before the change and is 5% after it\"), which adds nothing.\n\nResponse A is clearer, more substantive and better organised.\n\nVerdict: A",
+  "usage": {
+    "input": 696,
+    "output": 941
+  },
+  "cost": 0.021604
+}

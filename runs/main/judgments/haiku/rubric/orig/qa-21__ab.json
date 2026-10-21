@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-21",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify early January as perihelion, when Earth is closest to the Sun, and both correctly state that axial tilt, not distance, causes the seasons. Response A adds accurate perihelion and aphelion distances, explains why the Northern Hemisphere's winter coincides with closest approach, and notes that the roughly 3% distance difference is small relative to the tilt effect. Its distances are right, and it stays under 120 words. Response B is also accurate and concise, and gives the 23.4° tilt, which is a fine value, but it leaves out the explanation of why the seasons don't follow distance. A is more complete and clearer on the key reasoning, though the gap is modest.\n\nVerdict: A",
+  "usage": {
+    "input": 608,
+    "output": 782
+  },
+  "cost": 0.00045180000000000003
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-15",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Every figure (96 workers, 22% fewer lane drifting events, 0.09 seconds, six-month and three-month thresholds, 7am versus 6am drives, 15 minutes of grogginess) matches the source, and both state the policy implication correctly. Both are well under 120 words and omit the same minor detail, that the nap took place in a sleep lab.\n\nResponse A files the experience-level and drive-timing findings under \"Key caveats,\" which mislabels them, since they are findings rather than limitations. Response B's bolded labels (\"Not for everyone,\" \"Timing matters more\") describe each point accurately, and its takeaway names both alternatives (earlier shift ends and transport home) in a single sentence. Response B is slightly clearer and more useful for a busy manager, though the difference is small.\n\nVerdict: B",
+  "usage": {
+    "input": 1400,
+    "output": 1132
+  },
+  "cost": 0.000706
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-33",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main bug: `WHERE p.status = 'succeeded'` turns the LEFT JOIN into an inner join and removes zero-payment customers. Both give the same correct fix of moving the condition into the `ON` clause.\n\n**Response A:**\n- Its date-format concern is partly valid, since a Unix epoch would break the comparison. The note about UTC being off by a day is minor.\n- Its \"paying vs. plan <> 'free'\" point and the NULL-plan point are reasonable.\n- Its minor item recommends `COUNT(*)` as clearer. That advice is wrong. After the fix, `COUNT(*)` would return 1 for customers with no matching payment, which would hide exactly the zero-payment customers the list is meant to find. This would introduce a bug.\n- It is also the longer of the two and clearly over the 200-word limit.\n\n**Response B:**\n- It explains that customers whose only payments failed are also dropped, which is a more complete account of the main bug.\n- It gives the full corrected query.\n- It raises annual and quarterly plans as a source of false alarms. This is a real, high-impact problem for a list that treats zero payments in 90 days as at risk.\n- It also covers cancelled and new accounts, the NULL plan, and the date-type risk.\n- Its last point, about refunds and chargebacks, is speculative and left as a bare heading with no explanation. That is a small flaw.\n- It contains no incorrect advice, and it is closer to the word limit.\n\nResponse B finds more of the important issues, ranks them sensibly, and avoids the harmful `COUNT(*)` suggestion.\n\nVerdict: B",
+  "usage": {
+    "input": 1524,
+    "output": 1139
+  },
+  "cost": 0.014438
+}

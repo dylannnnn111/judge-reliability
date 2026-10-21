@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-18",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the critical bug: the cache key `fx:${from}` omits `to`, so one currency pair's rate gets served for every other pair. Both also cover response validation, the missing timeout, the thundering herd, unencoded query parameters, and unbounded cache growth, and both give concrete fixes.\n\nResponse A has two edges. Its in-flight deduplication point says to evict the cached promise if it rejects, which matters because otherwise a failed fetch would be cached for 60 seconds. Its money-precision point (floating-point rates and multiplication for invoice amounts) is directly relevant to an invoicing service. Response B's unsafe-generic-cast point is real but minor, and its in-flight fix omits the rejection case. Response B's `typeof` check is a small plus, but it doesn't outweigh A's coverage. Length is similar, and both are at or slightly over the 200-word limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1637,
+    "output": 698
+  },
+  "cost": 0.0005127
+}

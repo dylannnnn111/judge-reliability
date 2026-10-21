@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-39",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.**\n\n**Accuracy:** Both responses get the core facts right: the 7-2 vote, 1 December, five libraries, $38,000 across 6,400 members, automatic unblocking, the November email, the 60-day replacement rule, inter-library loans and the 12-month review.\n\n- Response B adds a \"net cost of about $33,000.\" The article never gives that figure. The $19,000 was staff time spent chasing payments, which may not translate into real savings. Stating it as the net cost is a misleading inference. B also calls the $52,000 \"annual revenue lost,\" though it is only last year's figure.\n- Response A sticks to what the article says. Its \"opponents say\" is a mild generalisation from one quoted councillor, but two did vote against.\n\n**Coverage:** Response B is slightly more complete. It mentions lost or damaged items and that accounts stay blocked, which A leaves out. These are minor gaps, and A's replacement-charge point captures the practical effect.\n\n**Concision and the length limit:** Response A is about 126 words, slightly over the 120-word limit. Response B is roughly 190 words, far over. B also pads with filler such as \"It is also worth noting that,\" \"Council's reasoning is that\" and \"To make sure the policy is working as intended.\" Exceeding the limit by this much is a clear failure of an explicit instruction.\n\nA is more accurate and much closer to the length limit. B's extra detail does not make up for its invented net-cost figure and the large overrun.\n\nVerdict: A",
+  "usage": {
+    "input": 1496,
+    "output": 2189
+  },
+  "cost": 0.049764
+}

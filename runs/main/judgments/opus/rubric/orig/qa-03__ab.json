@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-03",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both responses reach the correct answer: a **25% relative increase**, which is **1 percentage point**. Both show the key calculation, (5 − 4) ÷ 4 × 100 = 25%, and both separate percentage points from percent. Neither wins on correctness or reasoning.\n\nThe difference is in what B adds and how it opens:\n\n- **Opening hedge:** B begins with \"The answer depends on…\", which is slightly evasive. It does settle on 25% afterwards.\n- **Borrower paragraph:** B's $400,000 example is arithmetically correct, but it is tangential to the question asked.\n  - It illustrates a 25% rise in interest rather than the distinction B says \"matters for borrowers\".\n  - The claim that \"the interest portion of the repayments rises by 25%\" holds only loosely, essentially for interest on a fixed balance. \"All else equal\" softens this, but it does not add much.\n\nA gives the same correct answer and reasoning in two clear sentences. Since extra length only counts if it adds something genuinely useful, A's tighter, direct answer edges ahead.\n\nVerdict: A",
+  "usage": {
+    "input": 590,
+    "output": 993
+  },
+  "cost": 0.02222
+}

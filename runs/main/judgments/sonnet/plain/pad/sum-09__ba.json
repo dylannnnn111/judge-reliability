@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-09",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. The user asked for under 120 words. Response A runs to roughly 200 words, far over the limit, and includes filler such as the opening restatement and a closing \"In short\" paragraph. Response B is much tighter. By my count it is about 127 words, slightly over the limit, but far closer than A. B also keeps the essentials a busy manager needs: rent amounts, the CPI collar, the year-5 market review with its floor, the dispute window, outgoings, and notice rules. Its one weakness is calling year 5 \"no cap\", which is a mild simplification, but the source says the 5% cap does not apply.\n\n**B**",
+  "usage": {
+    "input": 1543,
+    "output": 1282
+  },
+  "cost": 0.015906
+}

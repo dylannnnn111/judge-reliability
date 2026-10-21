@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-05",
+  "side": "A",
+  "score": 8,
+  "model": "claude-sonnet-5-5",
+  "text": "Accuracy check: The study had 214 workers in Brisbane and Gold Coast, so \"Queensland\" is fine. It was randomised and ran 12 weeks. No difference in speed or accuracy, which is correct. 78% felt more productive, correct. Back discomfort 31% vs 44%, correct. Standing time fell from 47 to 19 minutes more per day, correct, though \"Extra standing time\" is the relative difference to controls, and the response conveys this adequately. \"So the novelty fades\" is the authors' interpretation, stated a bit more firmly but acceptable.\n\n\"Implication: Justify these desks on comfort and health, not productivity gains\" is a recommendation the brief doesn't explicitly make, but it is a reasonable inference from \"most reliable benefit was reduced back discomfort.\" It is slightly beyond the text, but mild. The brief's recommendation was that organisations should not assume desks will be used heavily long-term; the response doesn't state that as an implication, but it does mention the novelty fade.\n\n\"Clearest benefit\" matches \"most reliable.\" The funding detail (independent, no suppliers) is omitted, which could matter for credibility, but is minor. Limitations are included.\n\nWord count: roughly 90 words, under 120.\n\nMinor issues: the added implication is a slight overreach, and the funding independence is omitted. Overall it is accurate, concise, and covers key points.\n\nScore: 8",
+  "usage": {
+    "input": 1112,
+    "output": 465
+  },
+  "cost": 0.006874
+}

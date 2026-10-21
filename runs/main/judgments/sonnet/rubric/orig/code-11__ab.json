@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-11",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main bug: `reserve` checks stock and decrements it under separate lock acquisitions, so two threads can oversell. Both also correctly flag that `threading.Lock` does not work across processes, with the same atomic-UPDATE fix. Both flag missing `qty` validation, an unchecked `release`, and the global lock. Their rankings are almost identical and sensible.\n\n**Response A** adds an unknown-SKU/`None` point. That depends on how `db.get_stock` behaves, which the code doesn't show, so it is speculative. A also mentions that abandoned carts never release stock, which is a useful point. Its fix for the main bug is described in prose only. It runs to about 235 words, well over the 200-word limit.\n\n**Response B** gives a concrete code fix for the top bug. It adds the point that `available()` is only advisory, which follows directly from the race. It notes that a negative `qty` in `release` also decreases stock. Its global-lock point is tighter, saying it becomes moot once the DB is atomic. It is also somewhat over the limit, at about 210 words, but closer than A.\n\nB is slightly better: it is more concise, gives a copy-pasteable fix, and avoids the speculative `None` point.\n\nVerdict: B",
+  "usage": {
+    "input": 1553,
+    "output": 1733
+  },
+  "cost": 0.020436
+}

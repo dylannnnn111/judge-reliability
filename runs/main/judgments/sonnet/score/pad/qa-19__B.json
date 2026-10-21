@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "qa-19",
+  "side": "B",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is factually accurate: \"gangurru\" from Guugu Yimithirr, recorded in 1770 by Cook and Banks near present-day Cooktown during the Endeavour's repairs; the \"I don't understand\" story is a myth; Haviland's 1970s work confirmed the meaning. The claim that gangurru refers specifically to the eastern grey (actually the large black/grey kangaroo, often given as the eastern grey or Macropus robustus) is roughly standard.\n\nThe main problem is the length constraint: \"under 120 words.\" Counting the response, the first paragraph is about 55 words and the second about 130, so the total is around 185 words. That clearly violates the explicit limit. It also has filler like \"has an interesting origin that is worth looking at closely\" and \"it's worth being clear about why.\"\n\nOn correctness the content is right. On key reasoning it covers the origin and the myth's explanation. Clarity is fine but padded. The failure to follow the word limit is a significant instruction violation.\n\nScore: 4",
+  "usage": {
+    "input": 583,
+    "output": 330
+  },
+  "cost": 0.004466
+}

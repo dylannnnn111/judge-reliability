@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-32",
+  "side": "B",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is factually correct: the tropical year is about 365.2422 days, a leap day every four years approximates 365.25, and the century rule (divisible by 100 not leap unless divisible by 400) gives an average of 365.2425. Its handling of 1900 vs 2000 is right.\n\nWord count: first paragraph is about 37 words, second about 58, so roughly 95 words in total. That's under 120.\n\nA slight gap: it doesn't explicitly say that the four-year rule overcorrects (365.25 vs 365.2422), so the century rule removes ~3 leap days every 400 years. It does say \"correct for the small excess,\" which implies this. It could have mentioned the Gregorian calendar, but this isn't necessary. The reasoning is adequate and clear.\n\nScore: 9",
+  "usage": {
+    "input": 367,
+    "output": 257
+  },
+  "cost": 0.003304
+}

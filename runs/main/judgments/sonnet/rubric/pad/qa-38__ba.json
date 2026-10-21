@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-38",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for under 120 words. Response A is about 90 words. Response B is well over 120 words, roughly 200, so it breaks the explicit constraint.\n\nOn correctness, A is accurate. It covers the cold stratosphere, PSCs, conversion of reservoir species, the polar vortex, sunlight returning in spring, catalytic destruction, and the September–October peak. One small point: A says PSC surfaces convert reservoirs into Cl₂ and HOCl, which is correct. A also mentions the vortex breakdown.\n\nB is also correct. It adds the Arctic comparison, but it breaks the word limit by a wide margin. Its \"−78°C\" figure is right, since PSC formation needs about −78°C.\n\nBecause the explicit constraint is violated by B and A is correct and complete, A is better.\n\nVerdict: A",
+  "usage": {
+    "input": 965,
+    "output": 274
+  },
+  "cost": 0.00467
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "code-12",
+  "side": "B",
+  "score": 8,
+  "model": "claude-opus-5-5",
+  "text": "**Score: 8/10.** All seven issues are real, the important ones are found and fixed, and nothing correct is flagged as a bug. The main weaknesses are a debatable ordering of the top two and some low-value padding at the bottom. It stays under 200 words (about 187).\n\n**Accuracy**\n- **N+1 queries:** Correct. One initial query plus two per invoice gives about 40,001 queries at 20,000 invoices. The proposed fix (JOIN for customer, GROUP BY or correlated subquery for item count) is right.\n- **Missing customer crash:** Correct. `fetchone()` returns `None` and tuple unpacking raises `TypeError`, aborting the whole export. Pairing it with `LEFT JOIN` and a fallback value is a sound fix.\n- **Non-sargable date filter:** A legitimate point. Wrapping `issued_at` in `strftime` prevents index use, and the half-open range fix is correct.\n- **Formatted-string totals:** Valid. The `$-12.34` detail is accurate, because the `$` sits outside the format spec. Exporting cents or `Decimal` is the right fix.\n- **Ordering, validation, timezone:** All real but minor.\n\n**Ranking**\n- Putting N+1 first is defensible given the stated volume.\n- A case can be made that the crash should come first. It is a correctness failure that kills the whole export, while 40k queries against a local SQLite connection may only be slow.\n\n**Signal-to-noise**\n- Items 5–7 are true but low-stakes and pad the list.\n- Item 5 is still useful for a finance export, where reproducibility matters.\n- Item 7 is more a question to confirm than a defect.",
+  "usage": {
+    "input": 1111,
+    "output": 1506
+  },
+  "cost": 0.034564
+}

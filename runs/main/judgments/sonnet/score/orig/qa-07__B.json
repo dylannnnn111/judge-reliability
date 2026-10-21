@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-07",
+  "side": "B",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "Checking the calculation: 235.215 / 30 = 7.8405, so 7.84 L/100 km is correct, and rounding to 7.8 is fine.\n\nThe working is correct: 30 × 1.609 = 48.28 km, and 48.28 / 3.785 = 12.756 km/L. Then 100 / 12.756 = 7.84. The shortcut constant, 235.2, is also correct.\n\nThe word count is about 85, which is under 120. The response is clear and gives the key reasoning. The closing caveat about EPA versus Australian test ratings is mildly useful and accurate (EPA ratings and ADR/ECE-style tests differ), though not necessary.\n\nMinor quibble: the caveat is slightly extraneous, but it's brief and relevant.\n\nScore: 9",
+  "usage": {
+    "input": 449,
+    "output": 260
+  },
+  "cost": 0.003498
+}

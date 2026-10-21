@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-38",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is the better response. It is closer to the 200-word limit, and it catches the empty-glob problem (`nullglob`), which A misses. A's advantages are its more precise tar exit-code advice and its point about monitoring, but these don't outweigh B's concision and extra catch.\n\nB",
+  "usage": {
+    "input": 1500,
+    "output": 649
+  },
+  "cost": 0.0004745
+}

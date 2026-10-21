@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-17",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** Response A comes to about 118 words, just under the 120-word limit. Response B comes to about 132 words, so it breaks the constraint. B also has filler phrases like \"It is worth noting\" and \"it is also important to mention.\" Its claim that surface pressure \"further contributes\" to the heat is dubious as well. A is more concise, better organized, and accurate.\n\n**A**",
+  "usage": {
+    "input": 691,
+    "output": 852
+  },
+  "cost": 0.009902
+}

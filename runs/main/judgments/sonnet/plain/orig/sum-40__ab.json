@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-40",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. It stays under the 120-word limit at about 116 words, and its bold labels make it easy for a busy manager to scan. It also covers the findings, the bottom-line recommendation and the caveats accurately.\n\n**B** runs to about 126 words, which breaks the explicit limit. It also says \"no significant problems\", which subtly changes the source's \"no reports of problems\". It is a single dense block that is harder to skim.\n\nA",
+  "usage": {
+    "input": 1231,
+    "output": 1697
+  },
+  "cost": 0.019432
+}

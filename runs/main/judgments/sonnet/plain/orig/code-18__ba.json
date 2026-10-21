@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-18",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. Both responses find the same critical bug first: the cache key ignores `to`, so one target currency's rate is reused for others. Both also cover validation, timeout, deduplication, URL encoding and eviction, in nearly the same order.\n\nThe main difference is the 200-word limit. By my count, Response A comes to about 200 or slightly over, while Response B is around 185 and clearly within it.\n\nB also has two substantive advantages:\n- It says to evict a cached in-flight promise if it rejects. Without that, caching the promise would cache failures.\n- It points out the precision risk of using floats for money, which matters for invoicing.\n\nA's \"unsafe generic cast\" point is minor and less relevant to this service.\n\n**B**",
+  "usage": {
+    "input": 1481,
+    "output": 1900
+  },
+  "cost": 0.021962
+}

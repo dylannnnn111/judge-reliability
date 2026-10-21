@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-25",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse A runs to roughly 190 words, well over the requested 120-word limit. Response B comes in at about 118 words. Both are accurate and cover the same key points: the plain Gjermundbu helmet, the 19th-century origin of the myth through Doepler's designs for Wagner, and the earlier Bronze Age ceremonial horned helmets. B does this within the constraint and in a clearer, more scannable structure.",
+  "usage": {
+    "input": 761,
+    "output": 750
+  },
+  "cost": 0.018044
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "qa-30",
+  "side": "A",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "Correctness: The content is accurate. The definition is right, and the \"not\" list is standard and correct. The closing point, that a p-value can't say how likely any hypothesis is without prior information, is also right.\n\nConstraint: The request says to answer in under 120 words. Let me count roughly.\n\nParagraph 1: \"What it is: A p-value is the probability of seeing data at least as extreme as what you observed, assuming the null hypothesis is true (along with the model's other assumptions).\" ≈ 33 words. \"In other words, it measures how surprising your data would be in a world where there's no effect.\" ≈ 18. \"Put another way, the p-value answers a specific question: if the null hypothesis were correct, how often would we expect results this extreme or more extreme to appear?\" ≈ 29. Subtotal ≈ 80.\n\nList: \"What it is NOT:\" 4; items: 7 + 11 + 7 + 10 + 14 ≈ 49. Total ≈ 133.\n\nFinal paragraphs: \"Because these points are easy to confuse, it's worth going through them one at a time.\" ≈ 16. \"Each item in the list above describes a common misreading, and each is worth keeping in mind when interpreting results.\" ≈ 20. \"To summarize...\" ≈ 40. \"I hope this clarifies...\" ≈ 17. About 93 more.\n\nThe total is about 225 words, nearly double the limit. That is a clear violation of an explicit constraint. The response also contains padding: a redundant restatement of the definition, filler about going through points \"one at a time\" (which it doesn't actually do), and a closing pleasantry.\n\nThe content quality is good, but the length constraint is clearly violated, and the extra material adds little. The core answer, up to the list, would have been fine in a shorter form.\n\nScore: 4",
+  "usage": {
+    "input": 588,
+    "output": 584
+  },
+  "cost": 0.007016
+}

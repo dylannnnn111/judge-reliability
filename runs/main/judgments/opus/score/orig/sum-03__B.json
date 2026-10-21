@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-03",
+  "side": "B",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** All the figures are correct:\n- the date and time window\n- 2,391 of 4,812 attempts failed\n- 1,940 customers retried, 451 abandoned\n- $41,900 estimated lost revenue, with the caveat that some may buy later\n- 312 support contacts, about four times normal\n\nThe root cause is stated correctly: connector B pinned the old intermediate certificate after the vendor's August renewal. \"Detection was slow\" matches the source, since alerts didn't fire because failures were split across connectors and support escalated first. The action items show the right status, owners and due dates. The two done items omit their owners, which is acceptable because they are complete.\n\nThere is one small ambiguity. \"Certificate expiry added to vendor checks\" reads slightly like it is done, but the due date makes clear it is pending.\n\n**Key points:** The summary covers what a manager needs: what happened, the scale and revenue impact, why it happened, why detection lagged, and what is being done. It omits severity level 2, the resolution step (removing connector B from rotation) and the discount code's target group. All are minor losses.\n\n**Concision:** At roughly 100 words it is under the 120-word limit. It is well structured and easy to scan, with no padding.\n\nThis is a strong, accurate summary with only trivial omissions.\n\nScore: 9",
+  "usage": {
+    "input": 1227,
+    "output": 1075
+  },
+  "cost": 0.026408
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-06",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the same core issues: the `is` vs `!=` identity bug, the not-found/forbidden enumeration leak, the non-atomic check-then-save race, the missing refund logic, and some minor points. Both rank the identity bug first and give sensible fixes.\n\nResponse B has a slight edge. It adds the useful observation that small-ID tests would pass and hide the identity bug, and its race description is more concrete, noting that a concurrent ship or refund could be overwritten with \"cancelled.\" Its minor point about mutating the object before `save` is also a real, if small, concern. Its fixes (conditional update, row locking, optimistic versioning) are appropriate.\n\nResponse A is also accurate. Its conditional update includes `customer_id` in the WHERE clause, which is a nice touch, and its point that the `ValueError` message may leak internal status strings is valid. However, it runs well over the 200-word limit (roughly 260 words), while Response B stays at about the limit.\n\nGiven the shared correctness, B's tighter adherence to the length constraint and its slightly sharper insights make it the better response.\n\nVerdict: B",
+  "usage": {
+    "input": 1752,
+    "output": 1198
+  },
+  "cost": 0.0007742000000000001
+}

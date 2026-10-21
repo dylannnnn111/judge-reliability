@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-04",
+  "side": "B",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response is correct throughout. The increase gives $600, the 20% discount gives $480, and the overall change is −4% ($20 lower). The explanation that the discount removes $120 while the increase added $100 correctly identifies why the changes don't cancel. The check 1.20 × 0.80 = 0.96 is also right. The response is concise, well organized, and under the 120-word limit.\n\nScore: 9",
+  "usage": {
+    "input": 427,
+    "output": 231
+  },
+  "cost": 0.0001582
+}

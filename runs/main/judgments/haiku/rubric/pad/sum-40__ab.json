@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-40",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is accurate. It gives the key numbers (1.8 vs 1.1 marks, a 0.7-mark gap that is not statistically significant), the 71% concentration finding, the absence of reported problems, the bottom-line recommendation, and both caveats. Its word count is roughly 115, so it meets the under-120 limit. Its one loose phrasing is \"No problems were reported,\" which correctly reflects the source.\n\nResponse B is also broadly accurate, but it runs to roughly 270 words, more than double the limit. Its extra sentences mostly restate the same points (\"Put simply,\" \"Taking these findings together\") and add no new facts. It also says \"no significant problems,\" a slight overstatement of \"no reports of problems.\" It keeps the same essential content as A, so the extra length buys nothing.\n\nOn accuracy both are sound, with B's wording slightly looser. On retaining the needed points, both cover them, and A does so more cleanly. On concision, A is clearly better and meets the stated constraint, which B does not.\n\nVerdict: A",
+  "usage": {
+    "input": 1601,
+    "output": 793
+  },
+  "cost": 0.0005566
+}

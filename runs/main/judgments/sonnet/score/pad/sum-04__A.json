@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "sum-04",
+  "side": "A",
+  "score": 3,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is mostly accurate, but it ignores the hard length limit and carries filler.\n\n**Accuracy:** The core numbers are right: 12 to 18 weeks for primary carers, 2 to 4 weeks for secondary carers, 1 January 2027, 24 months, three blocks, 10 weeks' notice, and 5 and 19 November at 12:30pm. There are some small distortions:\n- The block-splitting option is described as general, but the source gives it to primary carers only.\n- \"Each block\" within 24 months is a loose paraphrase of \"all leave within 24 months\".\n- Casual eligibility is reduced to \"regular work\", dropping \"regular and systematic\".\n- The \"up to 18 weeks\" cap on super for the government-funded portion is omitted.\n- The 12 months' service is measured at the expected date of birth or placement, which is not mentioned.\n\n**Key points:** It leaves out that leave is in addition to government pay and that employees whose child arrives before the date stay on the old entitlements, though \"applies to children born on or after\" partly covers that. It also leaves out the contact address and the fact that recordings will be posted. These omissions are acceptable in a short summary.\n\n**Concision:** This is the main failure. I estimate the response at about 210–220 words, far above the 120-word limit. It also includes filler such as \"pleased to share\", \"To begin with the main change\", \"Please note\" and \"To help staff understand the changes\". A busy manager would find it too long, and the brief was explicit.\n\nBecause it breaks the explicit length constraint by a wide margin and has some minor inaccuracies, it earns a low score despite the correct headline facts.\n\nScore: 3",
+  "usage": {
+    "input": 1248,
+    "output": 1174
+  },
+  "cost": 0.014236
+}

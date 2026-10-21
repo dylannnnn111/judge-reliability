@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-34",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "A\n\nBoth responses go over the 120-word limit. By my count, Response A runs to about 127 words and Response B to about 133, so A breaks the constraint by less.\n\nB's bulleted layout is easier to skim, but that does not make up for the larger overrun. A also covers the same key content in a compact form: the three new features, the improvements, a general mention of fixes, the known issue and next month's plans.",
+  "usage": {
+    "input": 1243,
+    "output": 1524
+  },
+  "cost": 0.017726
+}

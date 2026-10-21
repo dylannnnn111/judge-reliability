@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-19",
+  "side": "B",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The response's facts check out: \"kangaroo\" comes from *gangurru* in Guugu Yimithirr, Cook and Banks recorded it in 1770 near Cooktown, and the \"I don't understand\" story is a myth. The explanation of why the myth arose is plausible and clearly reasoned. However, the user asked for an answer under 120 words, and this response runs roughly 170 words, so it breaks an explicit constraint. The extra length doesn't add much beyond what a shorter answer could cover. Correctness is strong, but the length violation and some padding weigh against it.\n\nScore: 5",
+  "usage": {
+    "input": 583,
+    "output": 608
+  },
+  "cost": 0.0003623
+}

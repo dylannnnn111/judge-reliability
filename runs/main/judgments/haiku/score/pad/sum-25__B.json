@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-25",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response is factually accurate. The dates, the 347 misdirected statements, the 11,200 unsent statements, the regulator notification on 3 October, the member calls by 6 October, the fixes and their deadlines, and the 9 October release all match the source. \"Leaked\" slightly overstates the source, which says the email was forwarded outside the organisation and quoted in local news, but this is minor. The summary covers what a manager needs: the cause was internal, the scale and data exposed, the response, and the remaining actions. It does omit the specific cause (a sorting error in a scheduled job) and the detail that the all-staff message was forwarded externally. However, the main problem is the explicit limit of under 120 words. The response is roughly 150 words, with filler such as \"To give some background\" and \"To be clear at the outset.\" It breaks the user's constraint, though the extra words are not wasted on errors.\n\nScore: 6",
+  "usage": {
+    "input": 1204,
+    "output": 952
+  },
+  "cost": 0.0005964
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-20",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is more accurate, keeps the key points and is far more concise. Response B is much longer and more clumsy.\n\n**Accuracy:** Both are broadly accurate on the date, time, venue, transport, prep tasks, dietary deadline, out-of-office arrangement and optional pub. Response B drifts into first-person phrasing (\"I would kindly ask\") while also opening in the third person (\"Hannah Pryce would like to invite\"). This muddles who is speaking. It also drops \"no need to send them beforehand\", which Response A keeps. Response A calls the pub visit \"drinks\", a trivial inference.\n\n**Coverage:** Both include the essentials. Response A is scannable, with labelled bullets a busy manager can use quickly. Response B includes slightly more detail on the morning agenda (\"what worked, what didn't, feedback on reports\"), but this adds little for a manager.\n\n**Concision:** The limit was 120 words. Response A runs about 133, slightly over. Response B runs around 220, nearly double the limit. Neither complies fully, but B's breach is far worse, and its extra length is mostly filler and invitation-style phrasing.\n\nVerdict: A",
+  "usage": {
+    "input": 1614,
+    "output": 1695
+  },
+  "cost": 0.020178
+}

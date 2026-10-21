@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-14",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the critical bug: OFFSET pagination combined with deletion skips rows, so the job leaves much of the backlog behind. Both also flag the non-atomic archive-then-delete sequence and the need for an idempotent archive. Both give valid fixes (drop OFFSET or use keyset pagination) and note the string-comparison risk on `created_at`.\n\nResponse B adds two points that Response A omits. It notes that the failure is silent because the returned count looks plausible, which explains why this bug would go unnoticed. It also flags the missing error handling and rollback, which is a real gap in a nightly job. Response B's point that a buffered or async archive could let the delete destroy unwritten data is more concrete than Response A's brief durability remark. Response A's suggestion to raise the batch size is a minor performance note, and its ranking is sound. Response A is tighter, but it leaves out meaningful issues that Response B covers, and neither response flags anything that is wrong.\n\nVerdict: B",
+  "usage": {
+    "input": 1514,
+    "output": 953
+  },
+  "cost": 0.0006279
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-36",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate on the key facts: term, fleet size, fee, price review, early-exit penalty, end-of-term options, and the roughly $195 colour overage. Response A opens with filler (\"Thank you for reviewing this summary...\") and runs to roughly 200 words, well over the 120-word limit. Response B is about 120 words and covers the same essentials, including the per-page overage rates, the no-carry-over rule, and the lost holiday allowance. Its \"Risk\" line states the overage concisely. Response A's contact line is a minor extra, but it does not outweigh breaking the length constraint and padding the summary for a busy reader.\n\nVerdict: B",
+  "usage": {
+    "input": 1662,
+    "output": 907
+  },
+  "cost": 0.0006197
+}

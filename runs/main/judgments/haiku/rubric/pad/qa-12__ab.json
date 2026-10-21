@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-12",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses reach the correct answer: (5/6)^4 = 625/1296, so the probability of at least one six is 671/1296 ≈ 51.8%. Both are under 120 words.\n\nResponse B shows the reasoning more clearly. It states the single-roll no-six probability, notes that the rolls are independent, and lays out each step. Its historical note about the Chevalier de Méré is accurate and adds context without padding. Response A reaches the same answer but is vaguer about independence, and its closing sentence mostly restates the complement idea.\n\nVerdict: B",
+  "usage": {
+    "input": 628,
+    "output": 397
+  },
+  "cost": 0.0002613
+}

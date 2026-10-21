@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-31",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** Both responses stay under the 120-word limit (A is about 119 words, B about 100) and report the figures accurately. A is easier for a busy manager to scan. Its bullets also keep the nuance that accuracy gains were smaller where errors were already low, and it ends with a clear takeaway. B is a single dense paragraph and drops some of those details. A's length is borderline, but it still meets the constraint.\n\n**A**",
+  "usage": {
+    "input": 1316,
+    "output": 1263
+  },
+  "cost": 0.015262
+}

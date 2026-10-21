@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-07",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. Both correctly identify the dropped final partial batch as the most important bug. B stays under the 200-word limit, which A clearly exceeds with filler sentences like \"Taken together...\" and \"Each item is described in turn...\". B also adds a useful point about confirming `upsert_contacts` is idempotent before adding retries.\n\nB",
+  "usage": {
+    "input": 1561,
+    "output": 411
+  },
+  "cost": 0.0003616
+}

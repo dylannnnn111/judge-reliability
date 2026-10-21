@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-20",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.**\n\n**Accuracy.** Both responses get the facts right: dates, times, venue, transport, the 30-minute prep, Tariq and 31 October, Ella monitoring the inbox, and the five-priority limit.\n\nResponse A has a framing problem. It slips into Hannah's first-person voice (\"I would kindly ask each person…\", \"you are very welcome to join us\"). A summary for a manager should not read as though the summariser is the sender, so this is mildly misleading.\n\nResponse B has only a trivial slip: it says drinks are \"from 4:15pm\" rather than \"from about 4:15pm.\"\n\n**Coverage.** Both keep all the points the reader needs. Response B also keeps \"no need to send them in advance,\" which Response A drops.\n\n**Concision.** Response A runs to roughly 260 words, more than double the 120-word limit. Much of that is filler such as \"To give you a sense of how the day is structured\" and \"For those planning their travel.\" Response B is about 133 words, also slightly over the limit, but far closer. Its scannable bullet format suits a busy manager.\n\nResponse B is more accurate in voice, at least as complete, and much more concise.\n\nVerdict: B",
+  "usage": {
+    "input": 1614,
+    "output": 1591
+  },
+  "cost": 0.038276
+}

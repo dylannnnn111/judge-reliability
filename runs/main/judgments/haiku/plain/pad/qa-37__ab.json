@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-37",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. Response A runs to roughly 160 words, over the 120-word limit. Response B is about 100 words, so it complies while covering the same core points: the rust coating, the grey interior, and the sunset colour.\n\nB",
+  "usage": {
+    "input": 724,
+    "output": 443
+  },
+  "cost": 0.0002939
+}

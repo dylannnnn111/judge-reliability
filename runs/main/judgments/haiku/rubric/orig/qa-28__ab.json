@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-28",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are technically correct. Both explain chaining and open addressing, the link between load factor and performance, and resizing. Response A adds two correct details: Java's treeification gives O(log n) worst-case chains, and open addressing suffers from clustering. Response B explains why resizing preserves performance: each resize costs O(n), but the amortized cost per insert stays O(1). That is the key reasoning for why the approach works. B also notes that lookups follow the same probe sequence as inserts, which clarifies how open addressing works. Both are close to the 120-word limit, with A running a bit longer. B is slightly tighter and gives the more important reasoning, so it edges ahead.\n\nVerdict: B",
+  "usage": {
+    "input": 835,
+    "output": 1138
+  },
+  "cost": 0.0006525
+}

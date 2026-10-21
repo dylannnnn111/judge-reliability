@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-34",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better. The user set a limit of under 120 words, and the two responses differ on it.\n\nResponse A comes to about 110 words, or about 114 if the list numbers are counted, so it meets the limit.\n\nResponse B comes to about 122 words, or about 126 with the list numbers, so it likely goes over.\n\nBoth give the same accurate explanation: Diffie-Hellman key exchange, a symmetric session key, and certificates to prevent man-in-the-middle attacks. Response B adds a slightly more explicit note that certificates bind a public key to a domain name. That extra detail does not outweigh breaking the explicit length constraint.\n\n**A**",
+  "usage": {
+    "input": 628,
+    "output": 1417
+  },
+  "cost": 0.015426
+}

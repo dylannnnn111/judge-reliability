@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-37",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer in under 120 words, so I counted each response.\n\nResponse A: Paragraph 1 is about 55 words. \"Uluru is red because of rust. (6) The rock is arkose, a sandstone rich in feldspar and quartz, and it contains small amounts of iron-bearing minerals. (21, running total 27) Over millions of years, exposure to oxygen and water has oxidized this iron, forming iron oxides (essentially rust) that coat the surface and give it its rusty-orange to red colour. (~29, total ~56)\". Paragraph 2: \"The effect is mostly superficial. If you look at a freshly broken piece of the rock, the interior is grey. The outer weathered layer is what appears red.\" is about 27 words, total ~83. Paragraph 3: \"Uluru's colour also seems to change throughout the day. At sunrise and sunset, the low-angle light is richer in red wavelengths, so the rock can glow deep red, orange, or even purple.\" is about 32 words, total ~115. That is under 120, though close.\n\nResponse B is clearly over 120 words, probably around 230. It breaks the explicit length constraint.\n\nOn correctness, both are accurate. B adds more detail on scattering and hematite, but that extra length violates the constraint. A is correct, concise, and compliant.\n\nVerdict: A",
+  "usage": {
+    "input": 869,
+    "output": 438
+  },
+  "cost": 0.006118
+}

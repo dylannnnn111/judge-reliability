@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "qa-16",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify Antarctica as the largest desert, with accurate area figures (about 14 million km²), and both correctly note that the Sahara is the largest hot desert and the Arctic is second overall. Both explain that a desert is defined by low precipitation rather than heat, which is the key reasoning. Both are under 120 words.\n\nResponse B supports that reasoning with a concrete precipitation figure (about 200 mm annually on the coast, far less inland), which makes the definition more convincing. Response A's bulleted ranking is easy to scan and gives a clear, direct answer to the \"hot desert\" interpretation. B's closing line is slightly less decisive, but it still explains why the answer depends on the definition. The edge goes to B for the added supporting detail, though the difference is small.\n\nVerdict: B",
+  "usage": {
+    "input": 666,
+    "output": 1003
+  },
+  "cost": 0.0005681
+}

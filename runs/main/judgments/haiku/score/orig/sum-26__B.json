@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-26",
+  "side": "B",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The summary is largely accurate. The timings, causes, repair dates, meal and appointment figures, Tower A check, $2,300 cost, approval date, and referral to the board all match the report. One small inaccuracy: it says residents received \"daily printed updates,\" but the report only specifies a printed notice on Monday and afternoon updates without stating they were printed. The key points a manager needs are all present, including the outage, safe release, cause, return to service, resident impact, follow-up spend, and the capital-plan request. The main failure is the explicit limit of under 120 words. By my count the response runs to roughly 145 words, so it breaks a direct instruction and includes some detail a busy manager could cut, such as the exact impact breakdown and the training note.\n\nScore: 5",
+  "usage": {
+    "input": 1198,
+    "output": 1294
+  },
+  "cost": 0.0007668
+}

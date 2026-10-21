@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-12",
+  "side": "B",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The summary is accurate on every figure and condition I checked: the fee changes and start date, the $3 to $4 hourly and $18 to $24 daily rates, the 180 closed spaces, the 18-month repairs, the $15 weekly pass and its eligibility, the 20 October form availability, the treating-team letter requirement, the staff exemption, and the 2,000-signature petition. The one small inference is \"replace\" for the $9 daily concession. The article implies the weekly pass takes its place but never says the daily rate is scrapped. It is well under 120 words and covers what a manager needs. It omits Barry Sutton's perspective, but that is reasonable for a busy reader.\n\nScore: 9",
+  "usage": {
+    "input": 1048,
+    "output": 833
+  },
+  "cost": 0.0005212999999999999
+}

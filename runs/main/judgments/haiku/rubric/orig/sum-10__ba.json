@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-10",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Every date, figure and status matches the source, and neither invents a decision or risk. Response A is a single dense paragraph of about 97 words. It covers the go-live date, progress, accessibility audit, budget, risk, decisions and next steps, but omits the next update date. Response B is about 120 words, right at the limit. It is more scannable, which suits a busy manager. It also adds the reason the helpdesk risk dropped (vendor API confirmation) and the next update date of 24 October. Its mention of the new developer is low value, and \"from you\" slightly reframes \"none this fortnight,\" but neither error misleads. The extra words in B carry useful content, so B is somewhat better, though the margin is modest.\n\nVerdict: B",
+  "usage": {
+    "input": 1275,
+    "output": 1343
+  },
+  "cost": 0.000799
+}

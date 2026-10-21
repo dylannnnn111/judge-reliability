@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-16",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is accurate. It covers the status, the 17 November proposal, the 24 October fix dependency, the budget figures, the unconfirmed vendor credit, and the two decisions. However, it runs well over 200 words, breaching the 120-word limit. Its extra detail, such as the 98.6% migration rate and the training materials, is useful but not essential for a busy manager.\n\nResponse B is accurate on every date, figure, and condition. It states that the $12k credit is verbal and that the $26k figure depends on written confirmation. It keeps the key risk and the decisions needed, and it adds the link between a late fix and the sales director's December training constraint, which is a useful inference for a manager. It omits the duplicate-record issue and the training materials, which is a minor loss. At roughly 120 words, it sits at the limit.\n\nResponse B meets the length constraint while keeping the points the manager needs, so it is the better response.\n\nVerdict: B",
+  "usage": {
+    "input": 1704,
+    "output": 1086
+  },
+  "cost": 0.0007134
+}

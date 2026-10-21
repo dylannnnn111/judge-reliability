@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-32",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct explanation: Earth's orbit is about 365.2422 days, and the Gregorian rules skip leap years divisible by 100 unless they are also divisible by 400. So 1900 was a common year and 2000 was a leap year.\n\nResponse A is about 85 words, within the 120-word limit. It covers the key reasoning clearly and accurately.\n\nResponse B is roughly 230 words, nearly double the limit. Its extra material is mostly accurate (the 6-hour drift, the 11-minute overcorrection, the 1582 introduction), but it breaks the explicit length constraint. Its bolded headers and bullet list add some clarity, but not enough to offset the violation.\n\nSince the two are equally correct and Response A follows the length instruction while still giving the key reasoning, Response A is better.\n\nVerdict: A",
+  "usage": {
+    "input": 843,
+    "output": 464
+  },
+  "cost": 0.0003163
+}

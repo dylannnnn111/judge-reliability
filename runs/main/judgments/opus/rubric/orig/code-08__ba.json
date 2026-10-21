@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-08",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Verdict: A**, because it covers the same core issues more concisely, with fewer weak points and better adherence to the word limit.\n\n**Coverage.** Both responses find the issues that matter:\n- half-uploaded SFTP files get processed;\n- exceptions are swallowed and the file is still moved to `done`;\n- partial imports have no idempotency;\n- overlapping cron runs are not locked against;\n- `os.rename` overwrites an existing file in `done`;\n- the file handle is never closed;\n- the whole file is read into memory.\n\n**Ranking.** A ranks the incomplete upload first and B ranks silent failure first. Both orders are defensible, since the two problems combine to cause data loss. Both give concrete fixes: temp-name or marker conventions, an error directory with logging, upsert or a per-file transaction, and `flock`.\n\n**Where they differ:**\n- **A's extra points are real.** The misleading `imported` count is correct. So is the observation that one rename error aborts the whole loop.\n- **B adds weaker points.** The case-sensitive `.jsonl` filter is a nitpick and arguably intended behaviour. \"One bad line kills the whole file\" frames reasonable whole-file rejection as a bug. The cross-filesystem `os.rename` failure is unlikely, since both directories sit under `/srv/imports`.\n- **Word limit.** A is around 210 words, slightly over the 200-word limit. B is noticeably longer, around 260 words, and includes a redundant header.",
+  "usage": {
+    "input": 1561,
+    "output": 920
+  },
+  "cost": 0.024644
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-04",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Response A is better. Both responses miss the 120-word limit, but A is more accurate, keeps more of what a manager needs, and comes much closer to the limit.\n\n**Accuracy:**\n- A's facts are all correct: 12→18 and 2→4 weeks, on top of government pay, and only primary carers can split leave. It also gets the 24-month window, the cut-off with earlier arrivals keeping the current entitlements, eligibility including regular and systematic casuals, the expanded super, the 10-week notice, the automatic manager notification and the session dates.\n- B says \"Leave can now be split into up to three separate blocks\" without limiting this to primary carers. That wrongly implies secondary carers can split their leave too.\n- B also shortens the casual eligibility condition to \"12 months of regular work\", dropping \"systematic\". That is a minor imprecision.\n\n**Key points for the reader:**\n- B leaves out that the leave is in addition to government Parental Leave Pay.\n- B leaves out that children arriving before 1 January 2027 stay on the old entitlements, even if part of the leave falls after that date.\n- B leaves out the automatic manager notification, which matters most to this reader.\n- B is written to staff (\"If you are planning to take leave\") rather than to a manager.\n- A speaks directly to the manager (\"you'll be notified\", \"Plan rosters for split leave\").\n\n**Concision:**\n- A runs to about 137 words, which is slightly over the 120-word limit.\n- B runs to about 210 words, well over the limit, and is padded with filler (\"is pleased to share\", \"To begin with the main change\").\n\nVerdict: A",
+  "usage": {
+    "input": 1644,
+    "output": 1916
+  },
+  "cost": 0.044896
+}

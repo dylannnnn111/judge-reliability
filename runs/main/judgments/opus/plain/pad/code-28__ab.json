@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-28",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses exceed the 200-word limit: A runs roughly 260 words and B roughly 310. B is further over, and much of its excess is filler: a preamble announcing \"seven points\" and phrases like \"To address this,\" \"You may want to consider,\" and \"so that every transfer acquires its locks the same way.\" A is tighter and closer to the requested constraint.\n\nOn substance, both catch the core bugs: the connection leak, the double-spend race, the unchecked destination wallet, deadlock risk, ROLLBACK masking errors, and same-wallet transfers. Their orderings are both defensible. A puts the leak first, since it hangs the API almost immediately. B puts the race first, since it causes financial loss.\n\nB is more accurate on deadlocks. It notes that opposing transfers deadlock as written, because the UPDATEs already take row locks. A says the risk appears \"once you add row locks.\"\n\nA adds two valuable points B lacks:\n- **Idempotency and audit trail:** a real problem for an API moving money.\n- **`bigint` returned as a string by `pg`:** a subtle but genuine comparison bug.\n\nB's one unique point, a `CHECK` constraint, is useful but less important than either of those.",
+  "usage": {
+    "input": 1824,
+    "output": 1030
+  },
+  "cost": 0.027896
+}

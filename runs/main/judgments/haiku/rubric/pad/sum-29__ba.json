@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-29",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response B is better. It stays under the 120-word limit, at roughly 110 words, and keeps the points a manager needs: the price rises and data boosts with dates, which plans are affected, the no-exit-fee switching window, the remaining repayments caveat, and the reason. Its one weakness is grouping Classic plan customers with fixed-contract customers under \"unaffected until their contract ends,\" which slightly blurs the Classic case, since those customers are simply unaffected this year. Response A is more precise on that point and clearer in layout, but at roughly 200 words it breaks the explicit length limit. It also includes support-channel details a busy manager doesn't need. Those extra words don't add enough to justify the overrun.\n\nVerdict: B",
+  "usage": {
+    "input": 1524,
+    "output": 910
+  },
+  "cost": 0.0006074
+}

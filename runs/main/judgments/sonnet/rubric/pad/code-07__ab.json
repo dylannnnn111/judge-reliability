@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-07",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main bug, the dropped final partial batch, and the second main one, the swallowed failures. Both also give sensible fixes.\n\nThe user asked for under 200 words. Response A is about 230 words by a rough count, so it is slightly over. Response B is about 400 words, which is far over the limit. It also opens with a filler paragraph that adds nothing.\n\nAccuracy: Response A says \"1,234 contacts sends only 1,000,\" which is correct. Response B says \"With fewer than 500 contacts, nothing is sent at all,\" which is correct and a useful addition. B's claim that \"the log reports a plausible-looking count\" is fine.\n\nResponse A's items 2, 3 and 4 overlap: swallowed failures, a misleading log message, and no failure signal are largely the same issue split three ways. That is some padding, but each item is brief. Response B's item 4, the broad except, is a weaker point, though it is valid. B's claim that a failed batch is \"only picked up again on the next hourly run, and only if that run happens to include it\" is speculative. B's item 6 is a good observation: logging sent against the total would expose the bug.\n\nOn the constraint, A is much closer and tighter, with no filler. B clearly violates the length limit and has a meaningless intro. Content quality is comparable, and B has a few extras (the exception specificity, islice). The length instruction was explicit, though, so A wins.\n\nVerdict: A",
+  "usage": {
+    "input": 1717,
+    "output": 462
+  },
+  "cost": 0.008054
+}

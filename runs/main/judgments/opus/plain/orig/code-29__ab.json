@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-29",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses find the same three main problems in the same order: `NOT IN` with NULLs returns an empty audience, the 2026 date filter contradicts \"never referred,\" and `ORDER BY created_at` with `LIMIT 5000` always picks the oldest customers. Both also give the correct `NOT EXISTS` fix.\n\nThe differences favour A:\n\n- **Word limit:** The request asked for under 200 words. A sits at roughly 200, while B runs about 230 or more. B's extra \"Minor\" bullet on duplicate, bounced or suppressed emails is speculative padding that pushes it over.\n- **Accuracy of the date-format point:** A's minor point is precise. It notes that `date('now', ...)` is SQLite-specific, compares as a string, and silently misfilters if `created_at` is stored as epoch integers. B's version is muddier. Comparing a date-only string against ISO timestamps actually works fine for a \"<\" comparison, so its concern doesn't quite land.\n- **B's one advantage:** B suggests avoiding the hardcoded date, which is a small plus. It doesn't outweigh A's tighter, more accurate answer.",
+  "usage": {
+    "input": 1412,
+    "output": 689
+  },
+  "cost": 0.019428
+}

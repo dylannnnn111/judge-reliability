@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-12",
+  "side": "A",
+  "score": 5,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is mostly accurate and covers the key points: the new rates, the concession pass and how to apply, the reason for the increase, the repair timeline, staff being unaffected, and the petition. It has two problems.\n\n1. **Word limit.** It runs to about 125 words, which breaks the explicit \"under 120 words\" instruction. The editorial sentence about savings could have been cut to fix this.\n2. **Unsupported claim.** \"This is a significant saving for regular users\" is the response's own judgement, not something the text states. The text only has Barry Sutton saying he would pay less, and he visits three times a week. The comparison is also loose: a $15 weekly pass against a $9 daily rate only saves money if someone visits at least twice a week.\n\nThere are minor framing issues as well. \"The health service says the increase funds repairs\" is fine. Dropping the COO's name and the \"safety not profit\" point is acceptable for a manager.\n\nScore: 5",
+  "usage": {
+    "input": 1046,
+    "output": 1471
+  },
+  "cost": 0.016802
+}

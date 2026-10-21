@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-20",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. The request asked for a summary under 120 words. Response B is about 133 words, so it slightly exceeds the limit, but it is close. Response A is roughly 230 words, nearly double the limit. A also reads as a rewritten version of the email, and its first-person phrasing (\"I would kindly ask\") makes it sound as if the manager were writing it.\n\nB's bulleted structure with bold labels lets a busy manager scan it quickly, and it keeps the key facts: date, venue, agenda, prep, food, out-of-office and the optional pub. Both responses cover the content accurately, but B follows the brief far more closely.\n\n**B**",
+  "usage": {
+    "input": 1460,
+    "output": 1204
+  },
+  "cost": 0.01496
+}

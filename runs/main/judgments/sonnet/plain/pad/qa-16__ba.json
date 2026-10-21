@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-16",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better because it stays within the 120-word limit and Response B does not.\n\n**Accuracy:** Both give the same correct facts. Antarctica is the largest desert, the Arctic is second, and the Sahara is the largest hot desert. Response A's \"second-largest cold desert\" for the Arctic is slightly loose but fine.\n\n**Word limit:** Response A is about 97 words. Response B comes to about 125 by my count, which breaks the explicit instruction to stay under 120 words.\n\n**Style:** Response B has a clearer comparison list, but its opening and closing lines are padded, and that padding is what pushes it over the limit.\n\nA",
+  "usage": {
+    "input": 587,
+    "output": 1469
+  },
+  "cost": 0.015864
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-18",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly identifies Willem Janszoon and the *Duyfken* as the first recorded European landing on the Australian mainland, dating it to February–March 1606 on western Cape York Peninsula near the Pennefather River. The details about exploring the New Guinea coast and the fatal skirmish with Aboriginal people match the standard historical account. It also correctly notes the undocumented speculation about earlier Portuguese or Spanish contact and places Hartog (1616) and Cook (1770) later. The answer is clear, directly responsive, and within the 120-word limit. The main reasoning, that Janszoon mistook the land for part of New Guinea, is included. The only minor gap is that it does not explicitly say why the landing is considered the \"first recorded,\" but that is a small omission.\n\nScore: 9",
+  "usage": {
+    "input": 451,
+    "output": 881
+  },
+  "cost": 0.00048560000000000004
+}

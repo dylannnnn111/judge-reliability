@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-06",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better because it stays within the 120-word limit, while Response B does not.\n\n**Accuracy:** Both responses get the facts right: the date, cost, funding, upgrades, prices, hours, enrolment date and opening-day events. Response B adds promotional phrasing such as \"we are pleased to share\", \"we encourage you to mark the date\" and \"we look forward to welcoming you\". This is not in the source and reads as if the manager's organisation were the council. That is a minor distortion. Response B also says \"all programs\" resume, which is slightly looser than the source's list of lap swimming, aqua aerobics and learn-to-swim.\n\n**Coverage:** Both include everything a busy manager needs. Response B adds the adult change table and the year-round lessons detail, but these are small extras.\n\n**Concision:** I estimate Response A at about 115 words, which fits the limit. Response B runs to roughly 170 words, clearly over the 120-word limit, and spends many of them on filler.\n\nVerdict: A",
+  "usage": {
+    "input": 1622,
+    "output": 833
+  },
+  "cost": 0.011574
+}

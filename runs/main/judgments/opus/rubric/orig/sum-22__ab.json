@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-22",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Both responses get the core facts right: the senior rise to $340, juniors held at $180, the 9% turf increase, the $3,200 shortfall, the grant closing 14 November, the grounds actions, presentation night details, the $600 gazebo and the next meeting date.\n\nB has two small distortions:\n- **\"Mostly due to cost.\"** The minutes say cost was the *most common reason given*. That does not mean most players left because of it, so this overstates the source.\n- **\"The rise covers a 9% increase.\"** This is too strong, because the minutes immediately note a remaining $3,200 shortfall. A's \"offset\" is softer and less misleading.\n\nA's \"apply for a council grant by 14 November\" is a fair rendering of the 14 November closing date.\n\n**Coverage:** B adds the 5-0 vote, Natalie organising trophies and the cost reason for the junior decline. These are mildly useful but not essential for a busy manager. A leaves out why junior numbers fell, which makes its reasoning slightly thinner. It still keeps every decision, figure, date and action.\n\n**Concision and constraint:** A is about 105 words, comfortably under the limit. B is about 119 words without its title and about 127 with it, so it is at best on the edge of the 120-word cap and arguably over it.\n\n**Overall:** Accuracy comes first, and B's extra content brings small inaccuracies and risks breaching the length limit. A is accurate, complete on the points that matter and well within the cap, so it is better overall.\n\nVerdict: A",
+  "usage": {
+    "input": 1571,
+    "output": 1974
+  },
+  "cost": 0.045764
+}

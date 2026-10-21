@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-25",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Response A is factually accurate. The dates, numbers and exposed fields all match the source, and its paraphrases are fair: \"mismatched email addresses\" for the sorting error, and \"leaked\" for an email forwarded outside and quoted in the news.\n\nResponse B contains an invented fact: \"The job was stopped after 35 minutes.\" The source only says the job was stopped at 9:35am. It gives no start time, and members were already calling at 8:20am, so the job must have run well over 35 minutes. This understates how long the misdirected emails went out, which is a misleading error on a key point.\n\nOn coverage, A keeps two things a manager needs that B drops:\n- The premature \"we've been hacked\" staff message that reached local news, which has reputational impact.\n- The communications-guide fix with its 31 October deadline.\n\nB's main strength is length. It is about 110 words and meets the limit. A runs to roughly 170 words, so it clearly breaks the user's explicit 120-word limit. Much of that excess is filler (\"To be clear at the outset,\" \"To give some background,\" \"We would like to note\"). That is a real failure against the brief, and it counts against A on both instruction-following and concision.\n\nThe evaluation criteria rank accuracy first, then coverage of needed points, then concision. A is ahead on the first two and B on the third. A is the better response on that basis, but the word-limit breach is a significant flaw rather than a minor one.\n\nVerdict: A",
+  "usage": {
+    "input": 1491,
+    "output": 1304
+  },
+  "cost": 0.032044
+}

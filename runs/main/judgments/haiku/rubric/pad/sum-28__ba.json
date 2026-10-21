@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-28",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate on the key figures, dates, and conditions. Response A is the more complete of the two. It includes the burnout rationale and the unpaid-leave or make-up-time alternative for the shutdown. However, it runs to roughly 200+ words, well over the 120-word limit. Response B is around 130 words, slightly over but much closer. It keeps every point a manager needs: the cap and its direction mechanism, the cash-out conditions, the shutdown dates and leave requirement, the warehouse exemption, and the 31 October deadline. Its omission of the unpaid-leave option and the burnout rationale is minor for a busy manager. Given the explicit length constraint and B's accuracy, B is the better summary.\n\nVerdict: B",
+  "usage": {
+    "input": 1590,
+    "output": 1223
+  },
+  "cost": 0.0007705
+}

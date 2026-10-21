@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "sum-30",
+  "side": "A",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The facts are mostly accurate: the dates, frequencies, hours, fares and the 412's coverage of the 408 stops are all correct. One minor issue is that \"scrapped, as it averages nine passengers per trip\" states a cause more firmly than the source does. The source gives the figure but doesn't say it was the reason. The response also omits the 412 serving the 408's stops for industrial estate workers only by implication, which is acceptable.\n\nThe main failure is length. The response runs to roughly 200 words, well over the explicit 120-word limit. Much of that is filler a busy manager doesn't need: \"I would like to share a summary...\", \"The main changes to each route are set out below\", \"Turning to how you can find out more\", and \"For those who would like to speak to someone in person\". It also lacks a clear takeaway about why the change is happening, such as the consultation finding that people wanted a Mill Flat–station link, while spending words on minor logistics.\n\nAccurate content, but it breaks a hard constraint and is padded.\n\nScore: 4",
+  "usage": {
+    "input": 1221,
+    "output": 1043
+  },
+  "cost": 0.012872
+}

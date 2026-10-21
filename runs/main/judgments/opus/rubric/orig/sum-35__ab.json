@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-35",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.**\n\n**Accuracy**\n- **Payment instead of make good.** A says the landlord \"must notify us at least three months before lease end,\" which matches clause 19.6. B says \"must give three months' notice.\" That drops both \"at least\" and the anchor to the lease end date, so the deadline becomes vaguer.\n- **Late completion.** A says late completion \"may incur rent for extra days,\" which keeps the conditional wording of the source. B says \"Overrunning means paying daily rent,\" which states as certain something the guide presents as a possibility tied to the landlord's extra days.\n- **Kitchenette.** Both handle this condition correctly.\n- **Payment amount.** Both slightly compress the \"reasonable estimate supported by two quotes\" point.\n\n**Coverage**\n- B keeps two small details A drops: \"patching and painting\" and the fact that the landlord confirms completion.\n- These are minor next to the two timing points above.\n\n**Concision**\n- B is around 117 words, comfortably under the limit.\n- A is about 120, borderline against \"under 120,\" depending on how \"$18,000\" and \"it's\" are counted. This is a slight weakness for A.\n- B's headed, bulleted layout is easy to scan.\n\nBecause accuracy comes first, A's precise notice deadline and correctly hedged late-completion consequence outweigh B's formatting and its small extra details.\n\nVerdict: A",
+  "usage": {
+    "input": 1454,
+    "output": 2243
+  },
+  "cost": 0.050676
+}

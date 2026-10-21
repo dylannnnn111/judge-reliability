@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-29",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the top bug: `NOT IN` with a NULL in the subquery returns no rows. Both also flag the 2026 date filter contradicting the \"never referred\" intent and the `LIMIT` with `ORDER BY created_at` always favoring the oldest customers. Both give working fixes, and both note the SQLite date-format dependency.\n\nResponse A adds useful marketing-specific points: excluding bounced or suppressed addresses and customers already contacted in earlier campaigns. Those are worth raising. However, A runs well over the 200-word limit the user explicitly set, and its extra material is partly padding around points B already covers. Response B hits the same core findings concisely, stays within the limit, and states its reasoning clearly, including hedging the claim that the subquery \"almost certainly\" contains a NULL.\n\nSince the user set a hard word cap and B delivers the same key findings within it, B is the better response, though A's suppression and contact-history points keep the gap from being large.\n\nVerdict: B",
+  "usage": {
+    "input": 1749,
+    "output": 832
+  },
+  "cost": 0.0005909
+}

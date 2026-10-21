@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-33",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly identifies the most important bug. Putting `p.status = 'succeeded'` in the WHERE clause turns the LEFT JOIN into an inner join, so customers with zero payments disappear from the list, which defeats its purpose. The proposed fix, moving the status and date conditions into the ON clause, is correct. Issues 2 and 3 (annual billing cycles and cancelled or new accounts) are real design gaps for a churn list. Issue 4 (NULL plans) and issue 5 (date type) are conditional but plausible. Issue 6 is cut off mid-section, with a heading and no explanation, so the reader gets no fix or reasoning for it. The ranking is sensible, and the response stays under 200 words. The truncation and the thin treatment of the later points keep it from scoring higher.\n\nScore: 6",
+  "usage": {
+    "input": 983,
+    "output": 899
+  },
+  "cost": 0.0005478
+}

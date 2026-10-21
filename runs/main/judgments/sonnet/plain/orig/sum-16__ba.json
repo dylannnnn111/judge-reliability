@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-16",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** Response A is better, mainly because it respects the word limit.\n\n- **Length:** Response A comes to about 121 words, essentially at the 120-word cap. Response B comes to about 156 words, which is clearly over the limit.\n- **Content:** Response A includes the clash between a December cut-over and the sales director's no-December-training request. That is a useful point for a manager. Response B includes the data-quality detail (98.6% migrated, about 3,100 duplicate records), which is less important for a busy reader.\n- **Accuracy:** Both are accurate and both cover the decisions needed.",
+  "usage": {
+    "input": 1386,
+    "output": 2344
+  },
+  "cost": 0.026212
+}

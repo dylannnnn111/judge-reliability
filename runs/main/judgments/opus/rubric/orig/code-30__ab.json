@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-30",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both responses correctly identify the main bug and rank it first. `COUNT(*)` counts the NULL row a LEFT JOIN produces for agents with no tickets, and both give the right fix, `COUNT(t.id)`. Both also correctly flag `COALESCE(AVG(...), 0)` as misleading, since it presents idle agents as having perfect response times.\n\n**Unanswered tickets in the average.** Both note that tickets with NULL `first_response_mins` drop out of the average. Response A explains why this matters: unanswered open tickets are likely the slowest ones, so the average is systematically biased toward fast responders. It also gives concrete fixes, either the unanswered-count expression or computing the wait time so far. Response B is vaguer, saying \"decide whether that is intended.\"\n\n**Additional real issues in A.**\n- **Time window:** A \"weekly\" report that has no date filter is a genuine scope ambiguity.\n- **Integer truncation:** `AVG` on an integer column truncates in SQL Server and some other databases. A labels this correctly as minor and gives a fix.\n- **Placement check:** A confirms the `status = 'open'` filter is correctly in the `ON` clause and explains why. This is useful and guards against a harmful \"fix.\"\n\n**Weaker points in B.**\n- Point 4 (other unresolved statuses, how `active` is typed) is speculative schema second-guessing rather than an identified problem.\n- Point 5 is essentially filler. It says the `ORDER BY` is fine and suggests wording for the email.\n\n**Length.** Both responses run a bit over 200 words. A's extra words carry correct, actionable content, while B's tail items add little.\n\nResponse A is stronger in the issues it finds, the depth of its reasoning, and the concreteness of its fixes.\n\nVerdict: A",
+  "usage": {
+    "input": 1492,
+    "output": 801
+  },
+  "cost": 0.021988
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-27",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is accurate and stays under the 120-word limit. It explains the open hexagonal lattice, the roughly 9% density difference, surface insulation, the 4°C bottom layer, and the consequence of ice sinking.\n\nResponse B runs about 123 words, which breaks the length constraint. It also says \"slightly warmer water sinks,\" which is misleading. The key point is that 4°C water is densest and settles at the bottom, while colder water stays near the surface.",
+  "usage": {
+    "input": 604,
+    "output": 599
+  },
+  "cost": 0.014396
+}

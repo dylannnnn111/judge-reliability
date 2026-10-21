@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-05",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "A is better. Both responses find the same core problems in the same order: DST arithmetic, ambiguous or nonexistent local times, weekend loading judged by the start day only, float and rounding issues, and missing holiday and validation handling. Their technical claims are accurate.\n\n**A**\n- It gives concrete DST examples: a 01:00–05:00 shift on the April fall-back night is paid 4h but lasts 5h, and on the October spring-forward night it is paid 4h for 3h worked.\n- Its fixes are specific, such as the UTC conversion code and `ROUND_HALF_UP`.\n- It adds a useful point about a typo'd date producing an absurdly long shift.\n- It is around 200 words, so it meets the limit or exceeds it only slightly.\n\n**B**\n- It is also correct, but its DST example is vaguer (\"off by an hour\").\n- It adds a minor point about calling `parse_local` repeatedly, which matters little.\n- It is clearly longer, roughly 240 words, so it breaks the 200-word limit by more.\n- It does suggest keeping minutes as integers, which is a good tip.\n\nA is more concrete, more actionable, and closer to the length constraint.\n\n**A**",
+  "usage": {
+    "input": 1618,
+    "output": 2136
+  },
+  "cost": 0.024596
+}

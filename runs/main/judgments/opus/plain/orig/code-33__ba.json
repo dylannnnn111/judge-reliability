@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-33",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses correctly find the critical bug: the `WHERE p.status = 'succeeded'` filter turns the LEFT JOIN into an inner join and removes exactly the zero-payment customers the list is meant to show. Both give the right fix. B also notes that customers whose only payments failed are dropped too.\n\nA gives harmful advice in item 4. It suggests `COUNT(*)` would be \"clearer\" than `COUNT(p.id)`. With a LEFT JOIN, `COUNT(*)` counts the NULL-extended row, so zero-payment customers would show 1 instead of 0. That would silently reintroduce the problem that hides at-risk customers. A's date point is also somewhat muddled: \"works only by string ordering\" is in fact fine for ISO text.\n\nB covers problems that matter for what customer success uses this list for:\n- **Annual and quarterly plans:** healthy subscribers on these plans would be flagged as at-risk.\n- **Account status:** already-cancelled and brand-new accounts would be included.\n- **Refunds and chargebacks:** these would count as successful payments.\n\nThese are the issues that make a churn-call list wrong in practice. B also covers the NULL `plan` and date-format points that A raises. It is better prioritised and contains no incorrect advice.",
+  "usage": {
+    "input": 1368,
+    "output": 672
+  },
+  "cost": 0.018912
+}

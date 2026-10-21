@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-09",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "**B**\n\nBoth responses stay under 200 words and identify the core bug: `revoke_permission` never invalidates the cache. Response B is slightly stronger. It gives the immediate fix (`_permission_cache.pop(user_id, None)` after the commit), and it notes that nonexistent user IDs get cached as empty sets, which lets arbitrary IDs inflate memory. It also points out that deleted or banned users keep their permissions. Response A's thread-safety point is valid and B omits it, but B's concrete fix and sharper observations about the cache's behavior outweigh that.",
+  "usage": {
+    "input": 1314,
+    "output": 639
+  },
+  "cost": 0.00045089999999999996
+}

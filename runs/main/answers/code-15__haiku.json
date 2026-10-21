@@ -1,0 +1,13 @@
+{
+  "item": "code-15",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "1. **`db.updateLastLogin` is not awaited.** The write is fire-and-forget. If it fails, the error becomes an unhandled promise rejection (which can crash the process in Node), and the caller still gets a success response with no record stored. Add `await`.\n\n2. **Batch failures lose partial results.** In `recordLogins`, if one user throws, the function rejects and the successfully recorded logins are not returned, so the caller can't tell which users were updated. Consider `Promise.allSettled` or per-user error collection.\n\n3. **Two different timestamps.** `updateLastLogin` gets one `new Date()` and the returned object gets another. The returned `lastLoginAt` may not match the stored value. Create one `const now = new Date()` and use it for both.\n\n4. **Sequential N+1 processing.** `recordLogins` awaits each user in turn, so a large list makes many round trips. Consider batching or running with bounded concurrency.\n\n5. **Duplicate IDs are not handled.** Passing the same ID twice records two logins and returns two entries. Deduplicate the input if that is not intended.\n\n6. **Minor: error message exposes the user ID.** `unknown user ${userId}` may leak identifiers into logs or responses if this error reaches the client. Consider a generic message and logging the ID server-side.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 353,
+    "output": 851
+  },
+  "cost": 0.00046080000000000003,
+  "at": "2026-10-14T01:53:34.080Z"
+}

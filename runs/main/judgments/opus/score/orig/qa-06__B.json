@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-06",
+  "side": "B",
+  "score": 10,
+  "model": "claude-opus-5-5",
+  "text": "The response is **correct, well reasoned, and clear**.\n\n**Date check:** Counting from 15 December 2027:\n- 16 days reach 31 December.\n- 31 more reach 31 January (47 days).\n- 29 more reach 29 February, since 2028 is a leap year (76 days).\n- The remaining 24 days land on **24 March 2028**.\n\n**Weekday check:** 100 = 14 × 7 + 2, so the weekday advances two places from Wednesday to **Friday**. The premise also holds: 1 January 2027 is a Friday, and 15 December is day 349, which falls on a Wednesday.\n\n**Reasoning and clarity:** The response shows both key steps, the month-by-month count (including the leap year) and the mod-7 weekday shift. It is concise, clear, and well under the 120-word limit. There are no errors or padding.\n\nScore: 10",
+  "usage": {
+    "input": 323,
+    "output": 518
+  },
+  "cost": 0.011652
+}

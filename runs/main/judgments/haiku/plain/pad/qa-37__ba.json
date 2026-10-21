@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-37",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "A is better. Response A is about 105 words, within the 120-word limit. Response B runs to roughly 170 words, so it breaks the length constraint. Both are accurate on the rust and grey-interior points, and B's explanation of sunset scattering is somewhat more precise, but that doesn't outweigh the violation.\n\nA",
+  "usage": {
+    "input": 724,
+    "output": 446
+  },
+  "cost": 0.00029539999999999997
+}

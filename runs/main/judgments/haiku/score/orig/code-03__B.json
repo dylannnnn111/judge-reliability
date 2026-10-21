@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-03",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly identifies the most important problem: the f-string SQL injection, which is critical here because the function exposes customer PII. Its suggested parameterized fix is correct and covers both the email and the optional status. The connection leak is also real, and the note that `with sqlite3.connect()` commits or rolls back but does not close the connection is accurate and useful. The authorization and audit concern is a reasonable design issue for a staff-facing PII lookup, and the validation and hardcoded-path points are minor but valid.\n\nWeaknesses: the claim that worse inputs \"can modify data depending on the driver\" is shaky, since Python's sqlite3 `execute` rejects multiple statements, so this is mostly a read-disclosure issue. The ranking is sensible, but the response spends words on minor items. With the code blocks, it likely exceeds the 200-word limit. It also includes code fixes, which are helpful but not requested. Overall it finds the key issues and ranks them well, with a small accuracy slip and a length overrun.\n\nScore: 6",
+  "usage": {
+    "input": 925,
+    "output": 786
+  },
+  "cost": 0.0004855
+}

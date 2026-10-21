@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-28",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses find the same core bugs: the double-spend race, the unvalidated `toId` that lets money vanish, the connection leak, deadlock risk, and ROLLBACK masking the real error. Both give concrete fixes. Ranking is defensible in both. The pool leak breaks the service outright, while the race and the vanishing money lose funds.\n\nThe differences favour A:\n\n- **Deadlock description:** B says deadlock arises \"once you add row locks.\" That is inaccurate. The existing UPDATEs already take row locks, so opposing transfers can deadlock today. A describes this correctly.\n- **B's item 8 is mostly wrong:** B claims a `bigint` returned as a string makes the comparison unreliable. But `amountCents` is a validated number, and JS coerces `\"500\" < 300` numerically. The comparison works, except for precision loss beyond 2^53. This flags something that is essentially fine.\n- **B's item 7 is scope creep:** the audit trail and idempotency point is useful but goes beyond reviewing this code's bugs.\n- **Word limit:** B runs to roughly 260+ words, breaking the 200-word limit. A is around 195.\n- **A's CHECK constraint:** recommending `CHECK (balance_cents >= 0)` is a sound defence-in-depth addition.\n\nA is more accurate and concise, and it respects the user's constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 1821,
+    "output": 968
+  },
+  "cost": 0.026644
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-02",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer of 96 km/h and use the same sound method: total distance of 320 km divided by total time of 10/3 hours. Both are well under the 120-word limit, at roughly 80–90 words each.\n\nThey differ only in the closing explanation. Response A says the result is the harmonic mean rather than the simple 100 km/h average, but it gives no formula. Response B explicitly shows why 100 km/h is wrong, (80+120)/2, and gives the harmonic mean formula with the numbers plugged in, which checks out to 96. B's extra words add something correct and useful, so it is slightly better, though the gap is small.\n\nVerdict: B",
+  "usage": {
+    "input": 719,
+    "output": 1226
+  },
+  "cost": 0.013698
+}

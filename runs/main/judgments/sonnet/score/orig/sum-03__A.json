@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-03",
+  "side": "A",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate on the numbers, times, owners and statuses. 2,391 of 4,812 is about half, the 1,940 retries, 451 lost orders, $41,900 estimate with its caveat, and 312 contacts at four times normal are all correct. The completed and pending actions are correctly separated, and the dates (17 Oct, 31 Oct) are right. Two small weaknesses:\n\n- \"Outdated certificate pinned\" softens the actual cause, which was an expired intermediate certificate on connector B.\n- The detection point is compressed but still reasonable.\n\nOn content, it leaves out when the fault was found and fixed (12:10 identified, 12:58 connector removed), which a manager might want. It also omits the vendor's August renewal as context.\n\nOn concision, I count about 125 words including the heading, which breaks the explicit \"under 120 words\" limit. That is a clear constraint violation, though a small one.\n\nOverall it is accurate and well structured, but it exceeds the word limit and omits some resolution details.\n\nScore: 6",
+  "usage": {
+    "input": 1255,
+    "output": 1449
+  },
+  "cost": 0.017
+}

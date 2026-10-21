@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-19",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the same correct core answer: the word comes from *gangurru* in Guugu Yimithirr, was recorded in 1770 near present-day Cooktown, and the \"I don't understand\" story is a myth. Both cite Haviland's 1970s work and stay under 120 words.\n\nResponse A adds a plausible reason the myth arose: Australia had hundreds of languages, so Aboriginal people elsewhere did not recognize the word. This fits the historical record, where later visitors heard different names for the animal. It also names Banks alongside Cook and specifies the eastern grey kangaroo. Its explanation of why the myth persists is a modest speculation.\n\nResponse B describes the myth itself: the crew pointed, asked what the animal was, and mistook the reply for its name. That is a useful description, but it says less about why the myth is false or how it arose. Its \"northeastern Queensland\" and \"large grey kangaroo\" are accurate but less precise.\n\nResponse A gives slightly fuller and more informative reasoning in a similar word count.\n\nVerdict: A",
+  "usage": {
+    "input": 788,
+    "output": 1257
+  },
+  "cost": 0.014146
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-16",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Both responses are essentially accurate on dates, figures and conditions.\n\n- **Response A** frames the $26k as conditional on written confirmation of a verbal credit, which is precise. Its note that an early-December cut-over would clash with the sales director's request for no December training is a reasonable link between two risks the source lists.\n- **Response B** is also correct. It notes the credit awaits written confirmation but doesn't say it was offered verbally. That is a minor omission, not an error.\n\n**Coverage:** Both keep what the manager needs: status, the new date and its pending approval, the causes, the budget, the key risk and the decisions required. B adds the progress details (data mapping, 98.6% clean migration, training materials). These are correct but not essential for a busy manager. A instead adds the December training conflict, which is more decision-relevant.\n\n**Concision and the 120-word limit:** This is decisive. Response A comes in at roughly 119 words, within the limit. Response B runs to about 265 words, more than double the cap. It also includes padding such as \"I want to be clear that\" and \"Good headway has been made,\" which suits a busy manager poorly.\n\nA meets the explicit constraint, is accurate and keeps the key points. B breaks the word limit badly.\n\nVerdict: A",
+  "usage": {
+    "input": 1704,
+    "output": 1023
+  },
+  "cost": 0.027276
+}

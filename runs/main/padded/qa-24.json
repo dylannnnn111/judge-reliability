@@ -1,0 +1,14 @@
+{
+  "pair": "qa-24",
+  "side": "A",
+  "author": "sonnet",
+  "model": "claude-haiku-5-5",
+  "original": "No to both.\n\n**Base to peak:** Mauna Kea in Hawaii is the tallest mountain measured from base to summit. It rises about 10,200 m from the seafloor, though only about 4,207 m is above sea level. Everest rises roughly 4,600 to 5,000 m from its base on the Tibetan Plateau.\n\n**Farthest from Earth's centre:** The summit of Chimborazo in Ecuador is the farthest point on the surface from Earth's centre. Earth bulges at the equator, and Chimborazo sits almost on it. Its peak is about 6,384 km from the centre, roughly 2 km farther than Everest's summit, even though Chimborazo is only 6,263 m above sea level.\n\nEverest holds the record only for elevation above sea level.",
+  "text": "The answer to both questions is no, and it helps to look at each measure separately.\n\n**Base to peak:** When height is measured from base to summit, Mauna Kea in Hawaii is the tallest mountain. Its base lies on the seafloor, and it rises about 10,200 m from there, although only about 4,207 m of that height is above sea level. By comparison, Everest rises roughly 4,600 to 5,000 m from its base on the Tibetan Plateau, so it does not come out on top under this measure.\n\n**Farthest from Earth's centre:** The summit of Chimborazo in Ecuador is the farthest point on the surface from Earth's centre. This is because Earth bulges at the equator, and Chimborazo sits almost on that bulge. Its peak is about 6,384 km from the centre, which is roughly 2 km farther than the summit of Everest. This is notable because Chimborazo is only 6,263 m above sea level, a much lower elevation than Everest's.\n\nTo sum up, Everest holds the record only for elevation above sea level, and it does not hold the record for base-to-summit height or for distance from Earth's centre.",
+  "ratio": 1.62,
+  "usage": {
+    "input": 442,
+    "output": 488
+  },
+  "cost": 0.0002882
+}

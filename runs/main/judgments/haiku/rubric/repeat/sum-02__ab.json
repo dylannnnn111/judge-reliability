@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-02",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both summaries are accurate and under 120 words. Neither misstates dates, numbers, or who decided what. Response A includes the visitor figures (11 vs 64) that explain the Mount Lavell proposal, which a manager would want for context. It also states that the roof leak was patched but full replacement is still recommended, which is the complete maintenance picture. Response B leads with \"no agreement reached,\" which is useful, and mentions the air conditioning service, but it omits the supporting data and says the roof \"needs full replacement\" without noting it has been patched. Response B's wording \"faulty visitor counter data\" is slightly more precise, but that doesn't outweigh A's added substance. Response A is marginally longer, but the extra words carry relevant, correct information.\n\nVerdict: A",
+  "usage": {
+    "input": 1621,
+    "output": 1117
+  },
+  "cost": 0.0007206000000000001
+}

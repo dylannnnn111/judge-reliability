@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-20",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify Canberra as the capital and 1927 as the year Federal Parliament first sat there, with the provisional Parliament House opening on 9 May. Neither has a factual error, so correctness does not separate them.\n\nResponse A adds accurate, useful context: the opening was performed by the Duke of York (later King George VI), it names the building as Old Parliament House, and it notes the 1988 move to the current Parliament House. These details answer the question more fully and are all correct, and the response stays well within the word limit.\n\nResponse B is accurate but thinner. Its opening filler (\"I hope this helpful background is useful\") adds nothing, and its closing summary repeats points already made. It gives the Melbourne period and Federation date, which A also covers, but offers less substance overall.\n\nResponse A is more informative without padding, and it is at least as clear as B.\n\nVerdict: A",
+  "usage": {
+    "input": 570,
+    "output": 561
+  },
+  "cost": 0.0003375
+}

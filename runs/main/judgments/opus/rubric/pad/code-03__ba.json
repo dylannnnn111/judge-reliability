@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-03",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses rank the two most important real problems first, in the same order. Each gives a correct parameterized fix for the SQL injection. Each also correctly notes that `with sqlite3.connect(...)` does not close the connection.\n\n**Response A**\n- Adds authorization/audit and input validation (including whitelisting `status` and normalizing email), plus a hardcoded-path note. These are reasonable concerns for a function exposing PII to a support portal.\n- Its claim that injection could \"modify data depending on the driver\" slightly overstates the risk for sqlite3, which rejects stacked statements. It is hedged, though.\n- Its connection advice briefly suggests `with` before correcting itself. That is a little awkward but not wrong.\n- It stays roughly at the requested limit of under 200 words.\n\n**Response B**\n- Raises more genuine points: case-sensitive matching, no ORDER BY or LIMIT, the redundant `if not rows`, and `if status:` treating an empty string as no filter. All are real, but they are minor.\n- It roughly doubles the 200-word limit. Much of the extra length is filler (\"I want to flag this first, since it is the most serious issue,\" \"With this change, the database driver handles...,\" \"It's worth keeping in mind...\") rather than substance.\n- The user explicitly asked for brevity and for the issues that matter. B ignores the length constraint and pads its prose, so its extra minor findings don't outweigh that.\n\nA delivers the critical issues with fixes and sensible secondary concerns within the requested limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1738,
+    "output": 887
+  },
+  "cost": 0.024692
+}

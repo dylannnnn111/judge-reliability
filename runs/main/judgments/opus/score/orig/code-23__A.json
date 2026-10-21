@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "code-23",
+  "side": "A",
+  "score": 7,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy and ranking:** The response is technically accurate and well ranked.\n\n1. **Zero readings dropped.** This is the real and most important bug. `!r.value` drops 0 °C readings, which matter in a cold room. The response correctly says this biases averages away from zero and gives the right fix (`== null`). It is properly placed first.\n2. **Dead sensors vanish.** All-null sensors disappear from the output. This is a legitimate monitoring concern, and the suggested remedy is reasonable.\n3. **String timestamp comparison.** This is a real fragility with mixed offsets or formats, and the fix is concrete.\n4. **Null-valued latest reading.** This is more a design question than a bug. It is framed honestly as \"decide and document,\" but it is the weakest numbered item.\n5. **Minor issues.** O(n log n) versus a linear scan, and a comparator that never returns 0, are both accurate and correctly labeled minor.\n\n**False positives:** None. In particular, it does not wrongly claim that `sort` mutates the input; `filter` creates a new array first.\n\n**Length:** The response runs about 210–215 words, slightly over the 200-word limit. Item 4 and the second half of item 5 are the least valuable parts and could have been cut to fit. This is a modest instruction-following lapse.\n\nOverall, the response has strong substance, correct priorities and actionable fixes. It loses points for exceeding the length limit and for some low-value filler that pushed it over.\n\nScore: 7",
+  "usage": {
+    "input": 1027,
+    "output": 1319
+  },
+  "cost": 0.030488
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-05",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better: it is accurate, within the word limit, and gives the manager a clear takeaway.\n\n**Accuracy:** Both responses report the figures correctly (214 workers, 31% vs 44%, 47 to 19 minutes, 78%). Response A frames the 78% as perceived productivity (\"*felt* more productive\") set against the null measured result. Response B lists the 78% under \"Benefits found\", which could mislead a skimming reader into treating it as a real benefit. Response A also correctly describes the standing-time drop as a fade in novelty.\n\n**Length:** Response A is about 100 words, inside the 120-word limit. Response B is about 145 words, so it breaks the explicit constraint. Much of the excess is filler (\"It is worth noting that\", \"There are also a few points to keep in mind\").\n\n**Useful content:** Response A includes a practical implication (justify the desks on comfort and health, not productivity). Response B leaves the manager to work that out.\n\nVerdict: A",
+  "usage": {
+    "input": 1457,
+    "output": 1084
+  },
+  "cost": 0.013754
+}

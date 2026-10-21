@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-33",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses correctly identify the critical bug: putting `p.status = 'succeeded'` in the `WHERE` clause turns the `LEFT JOIN` into an inner join. Both give the right fix.\n\n**Response B has a factual error.** Its item 4 recommends `COUNT(*)` as \"clearer.\" After a `LEFT JOIN`, `COUNT(*)` counts 1 for customers with no payments, because the unmatched row still exists. That would reintroduce the exact bug the review is meant to catch. Its flag-column suggestion adds little, since `payments_90d = 0` already serves as the flag.\n\n**Response A is more precise and more useful.**\n- It notes that customers whose only payments failed are also dropped, not just those with no payment rows.\n- It raises the annual and quarterly billing false-alarm problem. This is a major practical issue for a churn-risk list that customer success uses to make calls.\n- It flags cancelled and new accounts, `NULL` plans, date-format mismatch and refunds.\n\nItem 6 is terse, and the response sits near the 200-word limit. Neither is a real problem.",
+  "usage": {
+    "input": 1368,
+    "output": 560
+  },
+  "cost": 0.016672
+}

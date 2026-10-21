@@ -1,0 +1,13 @@
+{
+  "item": "code-16",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Bugs and problems, most important first:**\n\n1. **`sortByPrice` mutates its input.** `Array.prototype.sort` sorts in place, so if you pass React/Redux cart state, you reorder the cart as a side effect (and may break rendering). Use `[...items].sort(...)`.\n\n2. **No input validation.** Negative or fractional `qty`, negative `priceCents`, or `NaN` flow straight into the totals. That can produce negative or fractional-cent totals. Validate that `qty` is a positive integer and `priceCents` is a non-negative integer.\n\n3. **Totals are only trustworthy if the server recomputes them.** This runs at checkout, and the discount logic lives in client-reachable code. Make sure the charged amount is calculated server-side, not taken from this function's output on the client.\n\n4. **Hardcoded discount code.** `WELCOME10` is baked in, with no expiry, usage limit, or eligibility check. The comparison is also case- and whitespace-sensitive (`\"welcome10\"` fails) and uses `==` instead of `===`.\n\n5. **Rounding.** Floating-point multiplication with `Math.round` can occasionally misround half-cent cases. Prefer integer math, e.g. `Math.round(subtotalCents * 10 / 100)`. Also confirm whether GST should be calculated per line or on the total, since invoices may require a specific method.\n\n6. **`formatAud` edge cases.** Negative values render as `$-1.00`, and there are no thousands separators. Use `Intl.NumberFormat(\"en-AU\", { style: \"currency\", currency: \"AUD\" })`.\n\n7. **Assumes prices are GST-exclusive.** In Australia, prices are often displayed GST-inclusive, so verify this is intended.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 417,
+    "output": 1132
+  },
+  "cost": 0.012154,
+  "at": "2026-10-14T01:53:42.585Z"
+}

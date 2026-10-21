@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-17",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses are accurate and within the 120-word limit. Response A comes in just under at about 117 words, while Response B uses about 90.\n\nResponse A explains the \"why\" more completely. It gives the CO₂ composition (about 96%) and describes how infrared radiation gets trapped. It also notes the even distribution of heat across day and night sides and from poles to equator. Most importantly, it explains why Mercury, despite being closer to the Sun, stays cooler: it has almost no atmosphere to hold heat. That directly resolves the paradox both responses raise.\n\nResponse B also mentions Mercury but never explains the contrast. Its claim that surface pressure is \"further contributing\" to the heat is vague.",
+  "usage": {
+    "input": 623,
+    "output": 710
+  },
+  "cost": 0.016692
+}

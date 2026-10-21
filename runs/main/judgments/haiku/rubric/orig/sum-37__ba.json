@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-37",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate on the key facts: the Amber rating, Tomas Novak's 7 November departure, the 8 December to late January slip, the $64k unbudgeted contractor option, Margaret Lowe's return on 20 October, and the $298k of $455k spent. Neither invents anything or misstates who decided what.\n\nResponse A covers more of what a manager needs. It summarises progress (nightly loads, 14 of 22 reports matching) and notes the mitigating action that Tomas is documenting the payroll system. Its bold headers make it easy to scan. Its treatment of option 2 is slightly thinner, since it omits that finance accepts a partial go-live only if month-end reports don't depend on payroll, though \"four month-end reports need it\" conveys the core problem.\n\nResponse B handles option 2's condition more precisely and includes the next update date. However, it drops the progress details and the documentation mitigation, which are useful context for a manager who won't read the original.\n\nThe difference is modest, but Response A's extra coverage of progress and mitigation gives it a slight edge at similar length.\n\nVerdict: A",
+  "usage": {
+    "input": 1475,
+    "output": 1250
+  },
+  "cost": 0.0007725
+}

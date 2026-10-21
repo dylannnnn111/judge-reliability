@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "qa-27",
+  "side": "A",
+  "score": 3,
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for under 120 words. The response is clearly over that, probably around 220 words, so it breaks an explicit constraint.\n\nOn correctness, the core claims are right: ice is less dense, about 9% less, because of the hexagonal hydrogen-bonded lattice, and it insulates the water below so lakes rarely freeze solid. There are some small problems, though. \"As water cools below about 4°C, its molecules begin arranging themselves into the open hexagonal lattice\" is loosely right, since water expands below 4°C, but the full lattice only forms at freezing. The sentence \"The coldest water sits at the surface, while slightly warmer water sinks\" is muddled. Water at 4°C is the densest and sinks, so the 4°C water sits at the bottom, and the coldest water, near 0°C, is at the top. The wording is vaguely consistent with that but poorly phrased. Overall the content is mostly accurate, with some imprecision.\n\nThe response is also padded: \"Put another way,\" the ice cube example, and \"It is worth considering...\" add little.\n\nThe length violation is a significant failure of an explicit instruction, even though the content is mostly correct. The score should be moderate to low.\n\nScore: 3",
+  "usage": {
+    "input": 635,
+    "output": 391
+  },
+  "cost": 0.00518
+}

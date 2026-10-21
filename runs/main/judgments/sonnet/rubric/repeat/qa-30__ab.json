@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "qa-30",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Word count matters: the limit is under 120 words.\n\nResponse A: Counting roughly. \"What it is:\" (3) + the definition sentence: \"A p-value is the probability of seeing data at least as extreme as what you observed, assuming the null hypothesis is true (along with the model's other assumptions).\" ≈ 28 words. \"It measures how surprising your data would be in a world where there's no effect.\" ≈ 15. So about 46 so far. \"What it is NOT:\" 4 → 50. Bullets: \"Not the probability the null hypothesis is true\" 8 → 58; \"Not the probability your result happened 'by chance'\" 8 → 66; \"Not the probability your finding will replicate\" 7 → 73; \"Not a measure of effect size or practical importance\" 9 → 82; \"Not proof: p < 0.05 doesn't mean 'real,' and p > 0.05 doesn't mean 'no effect'\" ≈ 15 → 97. Final sentence: \"A small p-value suggests the data are incompatible with the null model, but it can't tell you how likely any hypothesis is without prior information.\" ≈ 25 → 122. That is borderline, possibly slightly over 120. Counting more carefully, the symbols \"p < 0.05\" count as about 3 tokens, so the total is around 120-125. It likely violates or just touches the limit.\n\nResponse B: about 85 words, comfortably under.\n\nCorrectness: both are accurate. B's last bullet, \"Evidence that the alternative hypothesis is true with a given confidence,\" is a bit awkward but acceptable. A is richer, including the point that p>0.05 does not mean no effect, and the caveat about model assumptions.\n\nBecause of the constraint, A is at risk of exceeding 120 words. A careful count of A: \nLine 1: What(1) it(2) is:(3) A(4) p-value(5) is(6) the(7) probability(8) of(9) seeing(10) data(11) at(12) least(13) as(14) extreme(15) as(16) what(17) you(18) observed,(19) assuming(20) the(21) null(22) hypothesis(23) is(24) true(25) (along(26) with(27) the(28) model's(29) other(30) assumptions).(31) It(32) measures(33) how(34) surprising(35) your(36) data(37) would(38) be(39) in(40) a(41) world(42) where(43) there's(44) no(45) effect.(46)\n\"What it is NOT:\" 4 → 50. Bullets: 8 → 58; \"Not the probability your result happened by chance\" 8 → 66; 7 → 73; 9 → 82; \"Not proof: p < 0.05 doesn't mean real, and p > 0.05 doesn't mean no effect\" = Not, proof:, p, <, 0.05, doesn't, mean, real, and, p, >, 0.05, doesn't, mean, no, effect = 16 → 98. Final: A(1) small p-value suggests the data are incompatible with the null model,(12) but it can't tell you how likely any hypothesis is without prior information.(25) → 123.\n\nSo A is about 123 words, exceeding the limit. B respects the constraint, and both are correct, so B wins.\n\nVerdict: B",
+  "usage": {
+    "input": 644,
+    "output": 1062
+  },
+  "cost": 0.011908
+}

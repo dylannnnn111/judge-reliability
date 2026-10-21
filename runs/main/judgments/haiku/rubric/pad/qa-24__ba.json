@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-24",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses answer \"no\" to both questions, which is correct. Mauna Kea rises about 10,200 m from its seafloor base, and Chimborazo's summit is about 2 km farther from Earth's centre than Everest's. Both also give the key reasoning, the equatorial bulge for the centre-distance point.\n\nResponse A stays within the 120-word limit (about 100 words). Response B is well over it, at roughly 180 to 200 words. Its extra detail, such as the Tibetan Plateau base range and the summary, is accurate but not needed. Since the user set an explicit word limit, B's length is a real instruction violation, and A is the better response.\n\nVerdict: A",
+  "usage": {
+    "input": 888,
+    "output": 901
+  },
+  "cost": 0.0005392999999999999
+}

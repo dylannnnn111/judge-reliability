@@ -1,0 +1,13 @@
+{
+  "item": "sum-23",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "**Elm Gully Residents' Association general meeting, 1 October 2026**\n\n- **Council:** Banksia Street footpath work starts February (about six weeks). New Gully Reserve playground equipment is due in April. Feedback on the draft tree canopy plan closes 31 October.\n- **Finances:** Balance is $5,610. Membership is up, with 142 member households.\n- **Clean Up Day:** Sunday 15 November, 8am at the scout hall. Council is supplying bags, gloves and a skip.\n- **Christmas carols:** Saturday 12 December, 6:30pm at Gully Reserve, with a school choir. Budget capped at $900.\n- **Wattle Road:** Council will install a speed counter after resident concerns about speeding.\n- **Next meeting:** Thursday 3 December 2026.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 723,
+    "output": 401
+  },
+  "cost": 0.0002728,
+  "at": "2026-10-14T01:51:56.667Z"
+}

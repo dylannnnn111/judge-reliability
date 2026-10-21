@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-25",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.**\n\n**Real issues found.** Both responses correctly identify the main problems:\n- the off-by-one error that allows 6 attempts instead of 5;\n- unbounded memory growth from keys that are never deleted;\n- per-IP-only limiting, which distributed guessing bypasses;\n- in-memory, per-process state;\n- the hardcoded `retryAfterSec`;\n- IP trust and proxy concerns.\n\nEach covers the success/failure accounting angle in some form. A's item 5 notes that successful logins consume quota. B's item 7 notes there is no way to reset a key after a successful login.\n\n**Ranking and fixes.** B is more specific and more useful:\n- **IPv6:** it recommends keying on the /64 prefix, which closes the rotation hole.\n- **Retry time:** it gives a concrete formula, `ceil((oldest + windowMs - now) / 1000)`, and notes that `allow` would need to return that value.\n- **Multiple instances:** it explains that the effective limit becomes `limit × instances`.\n- **Proxy failure mode:** it points out that the whole site could be locked out if `ip` is the proxy's address.\n- **Memory:** it names both a sweep strategy and an LRU/TTL store.\n\n**Flagging things that are fine.** B's ordering is sensible, and its small overreach is the claim that \"there are no tests,\" which can't be judged from the snippet. A raises nothing false, but its wording is padded (\"It is worth deciding…\", \"It is important to confirm…\") without adding substance.\n\n**Length.** Both exceed the 200-word limit. A runs to roughly 300+ words and B to roughly 250, so B comes closer to the user's constraint. B also packs more actionable detail into fewer words.\n\nVerdict: B",
+  "usage": {
+    "input": 1791,
+    "output": 998
+  },
+  "cost": 0.027124
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-22",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. Both responses correctly identify the critical flaw, that `jwt.decode` never verifies the signature. Both also catch the 401 vs 403 problem, the loose `Bearer` parsing, the exported `SECRET`, and the missing `JWT_SECRET` check.\n\n**Length constraint:** The user asked for under 200 words, and both responses exceed it. A is much further over, at roughly 330 words including a code block and a padded \"Minor\" section. B is closer, at roughly 250 words.\n\n**Content quality:**\n- A has redundancy. Algorithm pinning (item 3) and expiry (item 4) are already covered by the `verify` fix in item 1. The \"Minor\" items (single role claim, logging, swallowed errors) add little, which goes against \"bugs and problems that matter.\"\n- B includes the useful observation that the `try/catch` is dead code, since `decode` doesn't throw on malformed input. It also notes that the catch becomes necessary after the switch to `verify`.\n- B has a small inaccuracy. It says a missing secret \"fails open\", but `verify` would throw and produce a 401. The hedge \"or fails late\" softens this.\n- A flags that `SECRET` is unused, which is correct, but this is a minor point.\n\n**Prioritization:** Both order the issues sensibly, with the critical one first. B labels severity explicitly, which helps with the \"most important first\" request.\n\nOverall, B is tighter, closer to the word limit, and less padded, so it follows the instructions better despite the minor inaccuracy.\n\n**B**",
+  "usage": {
+    "input": 1562,
+    "output": 900
+  },
+  "cost": 0.012124
+}

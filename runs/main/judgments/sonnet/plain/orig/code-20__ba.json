@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-20",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is the better response.\n\nBoth responses find the same two main problems, and both analyze the DST bug correctly. In both, the 23-hour and 25-hour days make `Math.floor` return the wrong count, and both give a working UTC-based fix. Both also catch the `NaN` problem with malformed dates, and both mention the timezone and stale-after-midnight issues.\n\nThe difference is accuracy. Response B says the DST bug \"may land in the wrong place on the overdue list.\" That is wrong. The overdue filter only checks `< 0`, and the DST error shifts the count by at most one day without changing its sign. A due date of today is still 0, and a due date of yesterday is still negative. Response A states this correctly: the list is unaffected and only the labels are wrong.\n\nResponse A is also slightly shorter, which matters given the 200-word limit. Both go over it, but A goes over by less. Response B's \"Minor\" grouping is a nice touch, but it doesn't outweigh the factual slip.\n\n**A**",
+  "usage": {
+    "input": 1703,
+    "output": 952
+  },
+  "cost": 0.012926
+}

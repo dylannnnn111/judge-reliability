@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-11",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses identify the main race condition, the process-scope limitation, input validation, unguarded release, and global lock issues. The constraint is under 200 words.\n\nWord count for A: roughly 230-250 words? Counting: Item 1 ~50 words, item 2 ~55, item 3 ~28, item 4 ~30, item 5 ~30, item 6 ~20. Total is around 220 with the header. So A is slightly over 200.\n\nB is much longer: the intro sentence, code block, and longer explanations come to roughly 330 words. B clearly violates the limit more severely. B also includes a filler preamble (\"Thank you for sharing the code...\").\n\nContent: A adds unknown SKU handling and abandoned carts. B adds the advisory `available()` point, which is largely redundant with item 1. B includes a code fix, which is useful but costs words.\n\nA is closer to the constraint and more concise, with no filler. Both exceed the limit, but B by much more.\n\n**A**",
+  "usage": {
+    "input": 1633,
+    "output": 318
+  },
+  "cost": 0.006446
+}

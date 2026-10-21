@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "sum-15",
+  "side": "B",
+  "score": 4,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** The content is largely accurate. The figures are correct: 96 workers, a 20-minute nap at 3am, a 22% drop in lane drifting, a 0.09-second reaction-time gain, about twice the drifting at 7am versus 6am, and the caveats. There is one small slip. \"6 or more months\" should be \"more than six months\". It is minor, but it is a condition stated wrongly. \"Associated with\" slightly undersells a randomised crossover design, though it is not wrong. The \"Timing matters more\" point and the recommendation are faithfully conveyed.\n\n**Coverage:** All the key points a manager needs are present:\n- the overall benefit\n- that new workers get no benefit and some feel groggy\n- that timing of the drive outweighs the nap\n- that naps do not substitute for rostering or transport\n- the simulator and sample limits\n\nThe contact person is omitted, which is acceptable.\n\n**Concision:** This is the major failure. The user set a hard limit of under 120 words, and the response runs to roughly 230. That is nearly double the limit. Much of the excess is pure restatement:\n- \"In other words, the nap was associated with measurable gains…\"\n- \"Put differently, the time of day…had a larger effect…\"\n- \"It is worth keeping this in mind when deciding how to support night-shift drivers as a whole.\"\n- \"so the nap did not clearly help them\"\n\nThese phrases add no information. They are exactly the padding that a \"busy manager\" brief and a word cap are meant to exclude. Breaking an explicit, simple constraint this badly is a serious problem, even though the content is sound.\n\nThe response is accurate and complete but clearly violates the length requirement through redundant filler.\n\nScore: 4",
+  "usage": {
+    "input": 1252,
+    "output": 845
+  },
+  "cost": 0.021908
+}

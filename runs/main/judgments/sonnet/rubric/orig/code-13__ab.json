@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-13",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same core bugs: the December crash, the day-of-month overflow, schedule drift, the fixed 30-day proration, missing validation, and rounding. Both rank them sensibly, with the crashes first.\n\n**Response A**\n- It adds a useful point about the inclusive vs. exclusive end-date convention.\n- It notes that `days_used` can exceed 30, which charges more than a full month.\n- It contains a small technical slip: `//` floors toward negative infinity, not toward zero. The two are the same for the positive values here, so the practical point still holds.\n- It presents drift as a current bug, although today the code crashes before drift can occur. The fix it gives (compute from `start`, clamped) is correct.\n- It is around 200 words, only slightly over the limit.\n- It flags nothing spurious.\n\n**Response B**\n- It is clearer that drift only appears if the overflow bug is naively fixed.\n- It gives more concrete fixes: `dateutil.relativedelta`, `calendar.monthrange`, and a real-period-length proration with capping.\n- Its proration suggestion relies on `next_billing_date`, which is itself buggy until fixed.\n- Its #7 is weak. Timezone handling is irrelevant to `date` objects, and \"no tests\" is filler. This flags something that is not a real problem, which counts against it.\n- At roughly 250 words, it clearly breaks the 200-word limit.\n\nB's fix guidance is slightly better, but it breaks the length constraint more clearly and adds a spurious timezone flag and filler. A is tighter and stays on real issues. Its floor-division slip is minor.\n\nVerdict: A",
+  "usage": {
+    "input": 1499,
+    "output": 1612
+  },
+  "cost": 0.019118
+}

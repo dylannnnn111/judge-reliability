@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-35",
+  "side": "A",
+  "score": 7,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate. The dates, the $18,000 bond, the 30-day return, the three-month notice, the two quotes and the kitchenette condition all match the source. It also keeps the points a manager needs: the Annexure C benchmark, the 2023 partitions, the kitchenette exception, the payment-in-lieu option, the rent risk for late completion and the bond.\n\nThere are small weaknesses:\n- \"Repairing damage\" drops the patching and painting detail.\n- It does not say the payment is the landlord's reasonable estimate.\n- It does not make clear that the payment option is the landlord's choice, though \"may instead accept\" implies it.\n- It does not say that the kitchenette exception rests on the landlord's written consent.\n\nOn length, my count is about 120 words, which sits right at the \"under 120\" limit and is arguably a marginal breach. It is otherwise concise and readable.\n\nScore: 7",
+  "usage": {
+    "input": 1106,
+    "output": 1549
+  },
+  "cost": 0.017702
+}

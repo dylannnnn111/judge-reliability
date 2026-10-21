@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-05",
+  "side": "A",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The summary is accurate on the key figures: 214 workers, 12 weeks, no difference in speed or accuracy, 78% feeling more productive, and back discomfort at 31% versus 44%. The one overstatement is \"so the novelty fades,\" which presents as established a conclusion the brief only says the drop \"suggests.\" It also says \"justify on comfort and health,\" which stretches the brief's \"reduced back discomfort\" finding slightly. It covers what a manager needs: the productivity verdict, the comfort benefit, the fading use, and the main limitations. It omits the funding note, which is low priority. At roughly 105 words it is well within the limit and no padding is evident.\n\nScore: 8",
+  "usage": {
+    "input": 1112,
+    "output": 659
+  },
+  "cost": 0.0004407
+}

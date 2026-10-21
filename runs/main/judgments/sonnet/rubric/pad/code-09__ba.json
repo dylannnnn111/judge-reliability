@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-09",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main bug: `revoke_permission` never clears `_permission_cache`, so a revoked permission stays active until the process restarts. Both also correctly flag the per-process cache across workers, the lack of TTL or invalidation for grants, unbounded growth, and the need to invalidate after commit. The ranking is sensible in both.\n\n**Response A:**\n- It gives the concrete one-line fix (`_permission_cache.pop(user_id, None)` after commit).\n- It notes that nonexistent IDs get cached as empty sets, which is a useful detail.\n- It opens with filler (\"Let me walk through the issues...\").\n- It is wordy, at roughly 280–290 words against a 200-word limit.\n- It spends words restating points, for example \"this is a separate concern from the previous item\".\n\n**Response B:**\n- It is tighter, at roughly 220 words. That is still over the limit but much closer.\n- It ends with a consolidated suggested fix covering a shared cache, TTL, invalidation on grant and revoke, and doing it after commit.\n- It adds a thread-safety point. This is marginal and low-value under the GIL, but it hedges honestly that the worst case is a redundant query.\n- It does not give the explicit one-line patch for the primary bug, though its suggested fix covers the remedy.\n\nThe limit is explicit, and A exceeds it more and carries filler, while B delivers comparable correct content more concisely with a clear fix summary. A's concrete patch is a plus, but B's better adherence to the constraint and its overall fix section give it a slight edge. B's thread-safety item is minor noise but not wrong.\n\nVerdict: B",
+  "usage": {
+    "input": 1640,
+    "output": 1018
+  },
+  "cost": 0.01346
+}

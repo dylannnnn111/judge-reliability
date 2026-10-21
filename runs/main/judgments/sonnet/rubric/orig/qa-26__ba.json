@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-26",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are correct on the core physics: Rayleigh scattering, the longer path at sunset, and blue being scattered out of the direct beam.\n\nWord counts: Response A is about 105 words, which is under 120. Response B is about 100 words, also under 120.\n\nResponse A adds the explanation of why the sky isn't violet. The sun emits less violet, and our eyes are less sensitive to it. This is a common follow-up question and a useful, correct addition. It also separates daytime from sunset clearly with bold headings. Its sentence \"the sun is high, so light travels a relatively short path\" also explains the contrast between the two situations.\n\nResponse B is correct and concise. It mentions \"blue and violet\" scattering but never says why we see blue rather than violet, which leaves a small gap. It does not say the daytime light path is shorter, but that is implied.\n\nBoth are accurate, but A gives the slightly fuller reasoning, with the violet clarification and the explicit short-versus-long path contrast, and stays within the limit. A's bold formatting is fine.\n\nVerdict: A",
+  "usage": {
+    "input": 706,
+    "output": 347
+  },
+  "cost": 0.004882
+}

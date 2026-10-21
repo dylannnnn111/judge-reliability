@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-11",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** Both responses find the same core issues in nearly the same order: the check-then-act race in `reserve`, the process-local lock, missing input validation, unguarded `release`, and the global lock. The differences are small.\n\nB adds a few extra points: lock held during DB I/O, unknown SKU returning `None`, and abandoned carts never releasing. These are modestly useful, but the unknown-SKU point is minor.\n\nThe user asked for under 200 words. By my rough count, A comes in at about 200 including the code block, so it is borderline. B runs around 240, a clearer overrun. A also includes a concrete code fix for the main bug. A's last point, that `available()` is only advisory, is somewhat redundant with point 1.\n\nA follows the length constraint better and is just as accurate on the important issues, so A is slightly better.\n\n**A**",
+  "usage": {
+    "input": 1397,
+    "output": 1347
+  },
+  "cost": 0.016264
+}

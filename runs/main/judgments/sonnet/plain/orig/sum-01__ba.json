@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-01",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. Both responses capture the key facts: the new deadline of Friday 30 October, the reason for the change, the three deliverables, the new template with its software subscriptions line, the variance threshold, the paste-numbers rule, the leave nomination, Marcus's optional session, and calling Priya today if there is a problem. Both also leave out the coffee machine.\n\nThe differences are in length and format:\n\n- **Length:** Response A is a dense block of text that comes to about 121 words if the \">\" symbols in the file path are counted, which is just over the 120-word limit. Response B is about 119 words by the same count, so it stays under the limit.\n- **Scannability:** Response B uses a bold headline, a clear list of deliverables and a short requirements list. This suits a busy manager who skims. It also puts the \"call Priya today if this is a real problem\" instruction near the top, where it is easy to spot.\n\nB is safer on the word limit and easier to read.\n\n**B**",
+  "usage": {
+    "input": 1258,
+    "output": 1539
+  },
+  "cost": 0.017906
+}

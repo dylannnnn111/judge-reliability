@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-02",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** The user set a hard limit of 120 words. I counted Response A at about 113 words, which is within it. Response B comes to about 122 words, which is likely over, though the exact total depends on how the dashes and hyphens are counted.\n\nBoth summaries are accurate and cover the same main points: the unresolved opening-hours debate, the reading program dates and volunteer deadline, the roof replacement, and the next meeting. B adds the 11 vs 64 visitor figures and flags the volunteer request as an \"Action\", which are useful touches. It leaves out the air conditioning service, but that is minor. A includes the service and leaves out the visitor figures, which were disputed anyway because of the faulty counter.\n\nSince B probably breaks the explicit constraint and A stays safely under it, A is the better response.\n\n**A**",
+  "usage": {
+    "input": 1467,
+    "output": 1777
+  },
+  "cost": 0.020704
+}

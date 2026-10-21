@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-23",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse A clearly breaks the explicit limit: it runs to roughly 200 words against a cap of 120. Much of the excess is filler (\"Thank you all for attending…\", \"Cr Tse kindly provided…\", \"The meeting reached the following decisions\"). That kind of padding is the opposite of what a busy manager needs.\n\nResponse B is about 90 words, so it fits the limit. Its tight bullet format is easy to scan, and it keeps all the key dates, figures and decisions.\n\nB does have flaws:\n- It overstates the Wattle Road item. The councillor only said she would *ask* traffic staff to install a speed counter; B presents it as a commitment.\n- It omits the Facebook request and the names of the people responsible.\n\nThese are smaller problems than A's failure on a hard constraint.",
+  "usage": {
+    "input": 1534,
+    "output": 759
+  },
+  "cost": 0.021316
+}

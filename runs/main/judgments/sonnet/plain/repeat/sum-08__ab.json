@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "sum-08",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. It stays under 120 words (about 114), reads cleanly, and covers the key facts: the purchase, the store's responsibility under the 90-day policy, the replacement booked for Wednesday, the separate Frostline collection, the outstanding claim form, and the escalation path. It does have a minor error. It states the failure date as 29 September, which is not in the text. Working from the ticket's own dates, the \"Sunday\" before 2 Oct would be 28 September. This is a small inaccuracy in an otherwise good summary.\n\nResponse A has a worse problem. It first says the fridge failed on 4 Oct, which contradicts the 2 Oct complaint, and then appends a clumsy correction telling the reader to disregard that sentence. This is confusing for a busy manager. A also likely exceeds 120 words once the correction is counted. Its bulleted structure is nice, but the self-contradiction and the length undermine it.\n\n**B**",
+  "usage": {
+    "input": 1486,
+    "output": 1014
+  },
+  "cost": 0.013112
+}

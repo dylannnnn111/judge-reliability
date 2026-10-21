@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-14",
+  "side": "B",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate and covers the key points, but it breaks the explicit limit of under 120 words.\n\n**Accuracy:** The content is largely correct. The date, the move from 2 to 3 office days, the formal-versus-informal arrangement distinction, the exclusion of the Claims and Customer Contact teams with their 2027 roster review, the equipment rule, the hot desking details and the rationale all match the source. There is one small imprecision: \"one common team day\" drops the \"at least\" from the original. The response also never says the policy replaces the 2024 interim guidance, which is a minor omission.\n\n**Coverage:** It keeps what a manager needs, including who is exempt and what changes.\n\n**Concision:** I counted about 144 words, well over the 120-word limit. Some content, such as the lockers, the Spaces app detail and the Q&A pointer, could have been cut to comply. Breaking a stated hard constraint is a significant flaw.\n\nScore: 4",
+  "usage": {
+    "input": 1108,
+    "output": 1566
+  },
+  "cost": 0.017876
+}

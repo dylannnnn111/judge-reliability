@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-24",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses use the corrected figures ($88,200 approved, $31,800 rollover, $14,500 for Saltwater), and both stay under 120 words (A is about 117, B about 114). Neither contains factual errors.\n\nThe difference is in what each keeps:\n\n- **Response B** records the conflict of interest. Jarrah Wilson, a former board member, left the call for the Saltwater item, and Saltwater received a grant. This is a governance point a manager would likely want to know. B also says the Saltwater amount was \"corrected from $45,000\", which flags the correction clearly and stops anyone relying on the original figure.\n- **Response A** leaves out the conflict of interest. It does keep the detail that the two encouraged applicants should reapply \"with revised budgets\", which B drops. That is a minor loss for B.\n\nB's extra items matter more than A's one extra detail, so B is slightly better.\n\n**B**",
+  "usage": {
+    "input": 1601,
+    "output": 1534
+  },
+  "cost": 0.018542
+}

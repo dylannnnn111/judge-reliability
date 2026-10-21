@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-08",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is accurate on the key facts: the store handles the exchange, Priya Nand has booked Wednesday's replacement, Frostline collects the faulty unit separately, Kevin Hales still owes the claim form, claims up to $500 need no manager sign-off, and the 9 October escalation to Amara Osei. Its \"29 September\" failure date is an inference from \"Sunday\" in a 2 October message, but it is a reasonable one. At about 110 words, it meets the under-120 limit and reads cleanly for a manager.\n\nResponse B is weaker on accuracy and concision. It states the fridge \"failed on 4 Oct,\" which is wrong: 4 October is when the customer said it was still dead. It then issues a clumsy correction at the end, which signals the error without fixing it cleanly. The padding (\"I would like to summarise,\" \"kindly,\" \"greatly appreciated\") adds nothing, and at roughly 230 words it breaks the 120-word limit. It does include useful points, such as the two-call warning and the risk note, but these don't offset the error and length.\n\nVerdict: A",
+  "usage": {
+    "input": 1839,
+    "output": 801
+  },
+  "cost": 0.0005844
+}

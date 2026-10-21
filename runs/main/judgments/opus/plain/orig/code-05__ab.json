@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-05",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth reviews find the same core problems in the same sensible order: DST arithmetic, ambiguous or nonexistent times, start-day-only weekend loading, float money math, then missing holidays and validation. Both are technically accurate. Same-`tzinfo` subtraction really does use wall-clock time. `fold=0` really is the default. `round()` really uses banker's rounding.\n\nResponse A is better on concreteness and the length limit:\n\n- **Concrete DST examples:** A gives exact cases with real numbers. A 01:00–05:00 shift on the April fall-back night is paid 4h but lasts 5h. The same shift on the October spring-forward night is paid 4h for 3h worked. Both are correct for Sydney. B describes the over/underpayment direction correctly but more abstractly.\n- **Actionable fixes:** A suggests a UTC round-trip check to detect nonexistent times. It also flags that there is no sanity limit on shift length, so a 300-hour typo would be paid. That is a realistic payroll risk that B omits.\n- **Length:** A comes in around 200 words, close to the \"under 200\" limit. B runs noticeably longer, roughly 250 or more.\n- **Padding:** B lists \"`parse_local` is called repeatedly\" under validation. That is a minor efficiency note, not a bug that matters, so it dilutes the \"problems that matter\" focus.\n\nB does have one small advantage: it suggests keeping minutes as integers. That does not outweigh A's tighter, more concrete review that better respects the constraint.",
+  "usage": {
+    "input": 1618,
+    "output": 1528
+  },
+  "cost": 0.037032
+}

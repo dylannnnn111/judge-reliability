@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-40",
+  "side": "A",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate. The figures (1,622 students, 11 schools, 1.8 vs 1.1 marks, a 0.7-mark gap that isn't significant, 71% of students) all match the source. The conditions are also right: clear bottles with labels removed, non-random allocation, and hot weather as a caveat. It reads as a statement of what the study found, not a claim that water causes better results.\n\nIt keeps the points a manager needs: what was tested, the result, the survey feedback, the recommendation and the limitations.\n\nTwo small weaknesses:\n- It never says outright that the 10% effect was not replicated. A reader has to infer this from \"not statistically significant\".\n- It says \"drinking water\" where the study compared schools that allowed bottles with schools that didn't.\n\nAt roughly 118 words it is just under the 120-word limit, and the formatting is easy to scan.\n\nScore: 9",
+  "usage": {
+    "input": 1067,
+    "output": 880
+  },
+  "cost": 0.010934
+}

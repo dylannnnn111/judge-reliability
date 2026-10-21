@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-35",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the most important bug: the ignored `ParseInt` error, which turns bad amounts into silent zeros and underpays drivers. Both also cover the missing argument check, the blind header skip, the negative-total formatting bug (which both describe correctly), and the lack of validation for negatives and duplicate IDs. Response A adds a few useful points, such as whitespace handling and the control-total reconciliation suggestion, but it also includes weaker items like the overflow guard and the `%w` wrapping note. Response B's line-number-via-`Read()` suggestion is shaky, but its core points are sound and prioritized sensibly.\n\nThe user set a hard limit of under 200 words. Response A runs noticeably longer, around 300 words, while Response B is closer to 220. Neither fully meets the limit, but A violates it more, and its extra material is less central to the payment risk. Response B's tighter focus and better adherence to the constraint make it slightly better overall.\n\nVerdict: B",
+  "usage": {
+    "input": 1876,
+    "output": 1204
+  },
+  "cost": 0.0007896
+}

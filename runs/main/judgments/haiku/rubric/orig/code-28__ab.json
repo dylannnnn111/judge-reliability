@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-28",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the main problems: the connection leak, the race condition on the balance check, the unvalidated destination that lets money vanish, the deadlock risk, and the ROLLBACK masking. Response A ranks the connection leak first, which is defensible since it takes the API down after a few calls. Response B ranks the double spend and vanishing funds higher, which is also reasonable. A adds a useful point about missing ledger records and idempotency for API retries, but its item 8 overstates the string-versus-number issue: JavaScript's `<` coerces the string, so the comparison works for safe integers. A also runs noticeably past the 200-word limit, around 235 words. B stays close to the limit, and its CHECK constraint suggestion is a practical defense-in-depth fix. A's extra coverage is useful, but B is tighter and more accurate, so I lean slightly toward B.\n\nVerdict: B",
+  "usage": {
+    "input": 1821,
+    "output": 1148
+  },
+  "cost": 0.0007561
+}

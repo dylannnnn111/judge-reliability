@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-40",
+  "side": "B",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response is factually accurate. Light travels at about 300,000 km/s and sound at about 343 m/s, which explains the delay. The counting method is correct: dividing the seconds by 3 gives kilometers and by 5 gives miles, and the 15-second example works out to 5 km (3 miles). The 30-second safety threshold (about 10 km or 6 miles) and the 30-minute wait after the last thunder match standard guidance. The response is about 112 words, under the limit, and it is clearly organized with steps, an example, and a safety note. The divide-by-3 rule is a rounded approximation, but it is standard and the response does not overstate its precision.\n\nScore: 9",
+  "usage": {
+    "input": 450,
+    "output": 837
+  },
+  "cost": 0.0004635
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-27",
+  "side": "A",
+  "score": 7,
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** The core science is right.\n- Ice floats because it is less dense than liquid water.\n- Hydrogen bonding locks molecules into an open hexagonal lattice in ice.\n- Ice is about 9% less dense than liquid water.\n- Water is densest at 4°C, so in winter the near-0°C water stays at the surface while 4°C water collects at the bottom.\n- The floating ice layer insulates the water below, so lakes rarely freeze solid.\n\nOne simplification is loose: saying molecules \"begin arranging into the open hexagonal lattice\" below 4°C. It is defensible as transient ice-like clustering, but it slightly blurs the liquid/solid distinction. There are no outright errors.\n\n**Reasoning:** Both parts get the key mechanism. Density and hydrogen bonding explain why ice floats. Insulation and the 4°C density maximum explain why lakes don't freeze solid. The counterfactual about sinking ice is a useful addition.\n\n**Clarity:** It is well organised and easy to follow.\n\n**Constraint:** The user asked for under 120 words. The response is about 123 words, a small but real miss on an explicit instruction. The \"stable habitat\" sentence could have been trimmed to fit.\n\nOverall, the response is accurate and well reasoned, with a minor imprecision and a slight breach of the length limit.\n\nScore: 7",
+  "usage": {
+    "input": 467,
+    "output": 942
+  },
+  "cost": 0.020708
+}

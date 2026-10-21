@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-22",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "A is better. It is about 106 words, under the 120-word limit, and it covers the key points concisely: the fee decision and its reason, the shortfall and grant deadline, grounds, presentation night, the gazebo and the next meeting.\n\nB is well over 120 words, which breaks the explicit constraint. It also pads the summary with filler such as \"Thank you all for attending\" and \"We look forward to seeing everyone there\". That filler suits a message to attendees, not a brief for a busy manager.\n\n**A**",
+  "usage": {
+    "input": 1629,
+    "output": 697
+  },
+  "cost": 0.010228
+}

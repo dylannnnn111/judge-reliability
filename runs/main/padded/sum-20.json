@@ -1,0 +1,14 @@
+{
+  "pair": "sum-20",
+  "side": "A",
+  "author": "haiku",
+  "model": "claude-haiku-5-5",
+  "original": "Hannah Pryce has invited the Customer Insights Team to a planning day on Friday 7 November, 9:30am to 4pm, at the Boathouse Room, Lakeside Community Centre, 12 Shore Road, Canberra (about ten minutes from the office, with free parking and the number 56 bus).\n\nThe morning will review the year: what worked, what didn't, and feedback on our reports. The afternoon will set no more than five priorities for next year, each with a named lead.\n\nBefore the day, each person should spend about 30 minutes noting their two proudest pieces of work, one thing to stop doing, and one idea for next year. Bring these along.\n\nLunch and morning tea are provided. Dietary requirements should go to Tariq by 31 October. Optional drinks at the pub across the road from about 4:15pm.\n\nSet your out-of-office, and direct urgent requests to the central insights inbox, which Ella from the Data team is covering.",
+  "text": "Hannah Pryce would like to invite the Customer Insights Team to a planning day. The day is on Friday 7 November, running from 9:30am to 4pm, and it will be held in the Boathouse Room at Lakeside Community Centre, 12 Shore Road, Canberra. For those planning their travel, the venue is about ten minutes from the office, offers free parking, and is accessible by the number 56 bus.\n\nTo give you a sense of how the day is structured, the morning will be devoted to reviewing the year as a whole. This includes looking at what worked, what didn't, and gathering feedback on our reports. The afternoon will then turn to looking ahead, with the aim of setting no more than five priorities for next year, each with a named lead.\n\nBefore the day, I would kindly ask each person to set aside about 30 minutes to make some notes. Please identify your two proudest pieces of work, one thing you would like to stop doing, and one idea for next year. Please bring these notes along on the day.\n\nLunch and morning tea will be provided. If you have any dietary requirements, please let Tariq know by 31 October. Optional drinks will be held at the pub across the road from about 4:15pm, and you are very welcome to join us.\n\nFinally, please set your out-of-office. If you have any urgent requests while you are away, please direct them to the central insights inbox, which Ella from the Data team is covering.",
+  "ratio": 1.65,
+  "usage": {
+    "input": 491,
+    "output": 1145
+  },
+  "cost": 0.0006216
+}

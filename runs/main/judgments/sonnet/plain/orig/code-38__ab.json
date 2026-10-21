@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-38",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B is slightly better. Both responses identify the same core problems in a sensible order: `set -e` aborting the whole run, partial archives, unquoted variables, same-host backups, overlapping runs and the off-by-one retention. Both also run over the 200-word limit, by my rough count about 245 words for A and about 219 for B, so B is closer to compliance.\n\nOn content, A adds monitoring and a separate point on tar's exit-code-1 behaviour, which is useful. Its minor `-type f` suggestion is of little value. B folds the exit-1 issue into its first point and adds two points A lacks. One is the `umask 077` risk to private uploads, which A only mentions as a minor item. The other is the final count including non-archive files, which is accurate but small. B's empty-glob point is weak, since tar would just fail on that one iteration, but it is harmless. Neither response has real errors.\n\nGiven the similar quality, B's tighter adherence to the length constraint and its slightly more relevant security point give it a small edge.\n\n**B**",
+  "usage": {
+    "input": 1500,
+    "output": 1861
+  },
+  "cost": 0.02161
+}

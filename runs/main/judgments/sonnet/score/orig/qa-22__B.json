@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-22",
+  "side": "B",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is correct. Drain direction is not set by the Coriolis effect at sink or toilet scale. It also gives the right reasoning: the effect is real for large systems such as hurricanes, which rotate clockwise in the Southern Hemisphere, but is negligible at household scale. Basin shape, residual motion and jet angles dominate instead. The historical detail also checks out: Shapiro at MIT in 1962 and the Sydney replication by Trefethen et al. in 1965. At roughly 115 words, it meets the length limit. It is clear and well organized.\n\nScore: 9",
+  "usage": {
+    "input": 458,
+    "output": 755
+  },
+  "cost": 0.008466
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "code-10",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the two core problems: the missing authentication and the path traversal. The traversal comes from `SLUG_RE.match` anchoring only at the start, combined with `<path:slug>` accepting slashes. Both give the right fix (`fullmatch` and a plain `<slug>` converter). Both also run over the 200-word limit, B slightly more.\n\n**Response A:**\n- Item 6 is muddled. It says the regex class is fine, then complains about 400 versus 404 in a way that mostly repeats item 1, so it flags something that isn't a problem.\n- The symlink escape is speculative, since nothing suggests untrusted symlinks exist in the report directory.\n- The TOCTOU point is real but low value.\n- It does not mention `send_from_directory`, the simplest robust fix.\n\n**Response B:**\n- It recommends `send_from_directory`, which handles the containment check and is the best fix.\n- It spots a concrete failure: `os.path.exists` is true for a directory named `foo.pdf`, which would cause a 500, and it suggests `isfile`.\n- It gives a concrete traversal example.\n- Its extras (per-report authorization, cache headers) are plausible for sensitive reports, though speculative. The logging and hard-coded-path point is filler.\n\nB's fixes are more actionable and its flagged issues are slightly more accurate, with less of the incoherent padding that A has.\n\nVerdict: B",
+  "usage": {
+    "input": 1550,
+    "output": 1295
+  },
+  "cost": 0.01605
+}

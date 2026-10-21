@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-31",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better because it is the only one that meets the word limit. Response B comes to roughly 105 words, under the 120-word cap. Response A runs to roughly 200 words or more, which breaks the constraint. It also pads the summary with filler such as \"The key findings are listed below\" and \"It is worth keeping this limitation in mind\", which a busy manager doesn't need.\n\nResponse B also covers all the key points in a compact form: the speed and accuracy gains, the 17% gain for new workers, worker preference, the heat complaint, cost and payback, and the limitation.\n\n**B**",
+  "usage": {
+    "input": 1457,
+    "output": 737
+  },
+  "cost": 0.010284
+}

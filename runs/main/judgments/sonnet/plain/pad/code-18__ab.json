@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-18",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "The request asks for a code review under 200 words, listing the bugs that matter, most important first.\n\nResponse A comes to about 190 words, which looks like it fits the limit. Response B is clearly over 200 words, probably around 330, so it breaks the explicit constraint.\n\nOn content, both identify the critical bug, the cache key ignoring `to`, and both cover validation, timeouts, thundering herd, URL encoding, and unbounded growth. A's seventh point is money precision. B's seventh is the unsafe generic cast, which is a weaker point. A's ordering is also slightly better, putting thundering herd ahead of the timeout. Either ordering is defensible.\n\nA is the better response because it respects the word limit and is more concise.\n\n**A**",
+  "usage": {
+    "input": 1646,
+    "output": 240
+  },
+  "cost": 0.005692
+}

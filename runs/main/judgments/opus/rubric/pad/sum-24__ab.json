@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-24",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.**\n\n**Accuracy:** Both responses use the corrected figures: Saltwater at $14,500, a total of $88,200 and a rollover of $31,800. Both also get the dates and conditions right.\n- A has two small imprecisions. It describes the quick-response grant as \"$2,000\" rather than \"up to $2,000\". It also drops \"with revised budgets\" from the reapply point.\n- B is slightly more precise on both points.\n- A usefully flags that the Saltwater figure was corrected from $45,000. It also notes Jarrah's conflict of interest. B omits both.\n\n**Completeness:** Both cover the key decisions, deadlines and next steps.\n\n**Concision:** This is the deciding factor. The user set a hard limit of 120 words.\n- A is about 110 words, within the limit.\n- B is roughly 190 words, well over the limit. It also opens with an empty sentence (\"Thank you for reviewing the update below…\") and uses wordy phrasing throughout (\"Once the approved grants are accounted for…\").\n\nB's extra precision on two minor details does not outweigh clearly breaking the user's explicit length constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 1891,
+    "output": 1080
+  },
+  "cost": 0.029164
+}

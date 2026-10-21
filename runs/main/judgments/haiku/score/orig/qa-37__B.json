@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-37",
+  "side": "B",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly identifies the main cause: iron-bearing minerals in the arkose sandstone oxidize, forming iron oxide coatings on the grains. It also correctly notes that the red colour is mostly a weathered surface layer, since freshly broken rock is grey. The sunrise and sunset colour shifts are real, though \"purple\" is a looser claim. The explanation is clear and well organised, and at roughly 115 words it fits the limit. The main weakness is the informal use of \"rust\" for iron oxide, which is acceptable here.\n\nScore: 9",
+  "usage": {
+    "input": 422,
+    "output": 755
+  },
+  "cost": 0.0004197
+}

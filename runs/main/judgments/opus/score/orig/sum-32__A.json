@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-32",
+  "side": "A",
+  "score": 7,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** The core facts are right.\n- 5.79% has become 6.04% after the 0.25% standard variable rate rise in August.\n- Jordan's 12 May email locked only the 0.90% discount, and that discount still applies.\n- Care made a $250 goodwill gesture and passed feedback to the lending team.\n- The customers still feel misled and want a call about fixing their rate.\n- The complaint was closed as resolved, with a referral to lending.\n\nThere are a few small imprecisions:\n- \"Paid a $250 credit\" turns \"arranged, should appear within five business days\" into a completed payment.\n- The flag says the customers \"haven't accepted the outcome\". They explicitly accepted the $250 while disputing the finding. That nuance is captured earlier (\"accepted the credit but still feel misled\"), but the flag states as fact something more absolute than the record supports. The concern behind the flag is reasonable for a manager: the complaint was closed while the customer still disputes it. The wording, though, slightly overstates the position.\n\n**Points the reader needs:** The summary leaves out two things.\n- The customers were told they could escalate to Internal Dispute Resolution or AFCA. That matters given the \"premature closure\" concern.\n- The loan contract permits variable rate changes, which is the basis for finding no overcharge.\n\nThese omissions are modest, but the AFCA point is relevant to risk.\n\n**Concision:** At about 119 words it is just under the limit, clearly structured and easy to scan. The flag adds useful judgement, despite its wording.\n\nOverall this is a solid, mostly accurate summary. It has minor overstatement in the flag and on the payment, and it misses the escalation rights.\n\nScore: 7",
+  "usage": {
+    "input": 1183,
+    "output": 1613
+  },
+  "cost": 0.036992
+}

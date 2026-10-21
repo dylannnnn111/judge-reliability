@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-34",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "**B**\n\nResponse B stays under the 120-word limit, at roughly 111 words. Response A runs well over, at roughly 220 words. Both explain the core idea (Diffie-Hellman key exchange, then symmetric encryption, with certificates against man-in-the-middle attacks) accurately. A is more detailed, but that detail is what breaks the length constraint.",
+  "usage": {
+    "input": 762,
+    "output": 1025
+  },
+  "cost": 0.0005887
+}

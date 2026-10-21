@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-33",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. The user asked for fewer than 120 words.\n\nBy my count, Response A is exactly 120 words, so it fails the \"under 120\" limit. Response B is about 85 words and stays within it.\n\nBoth are accurate. Response A adds a fuller explanation of the tidal bulge, but that extra detail is what pushes it over the limit. Response B covers the essentials: tidal locking, the 27.3-day match, the far side still getting sunlight, and libration.\n\n**B**",
+  "usage": {
+    "input": 532,
+    "output": 972
+  },
+  "cost": 0.010784
+}

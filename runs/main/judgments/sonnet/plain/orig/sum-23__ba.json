@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-23",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. Both responses stay under 120 words, at roughly 104 for A and 112 for B.\n\n**Accuracy:** A says the council \"will install a speed counter\" on Wattle Road. The minutes only say Councillor Tse will ask council traffic staff to put one in and report back, so A overstates the outcome. B says Tse \"will request a speed counter\", which is correct.\n\n**Completeness:** B includes the people responsible for tasks: Laila coordinating Clean Up Day and Peter booking the sound system. It also notes the Facebook action item and separates decisions from updates, which helps a manager scanning for what needs doing. A drops the Facebook item and all the names. It does mention the school choir, which B omits, but that is a minor detail.\n\n**Format:** Both are clear and skimmable. B's grouping is slightly more useful.\n\nB's accuracy on the speed counter and its action-item detail outweigh A's small advantages.\n\n**B**",
+  "usage": {
+    "input": 1396,
+    "output": 1524
+  },
+  "cost": 0.018032
+}

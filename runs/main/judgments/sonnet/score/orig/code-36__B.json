@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-36",
+  "side": "B",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds the key bug and ranks it first. `Invalidate` calls `delete` under `RLock`, which is a real concurrent map write and can cause a fatal crash. The fix (`Lock`) is correct. The stampede on a cache miss and the stale overwrite after `Invalidate` are also real and sensibly ordered, with workable fixes (singleflight, versioning). The TTL point is valid, since the TTL counts from fetch completion rather than from the token's real lifetime.\n\nThere are three weaknesses:\n- **Unbounded growth:** it is real but minor, because the map is bounded by the number of tenants.\n- **Failure handling and cancellation:** this item is mostly generic advice. The \"errors aren't cached\" part is a design choice, not a bug.\n- **Length:** the response runs to about 215 words, over the explicit 200-word limit. The two weakest items are the padding that pushed it over.\n\nIt flags nothing that is outright fine, but the last two items dilute the \"bugs that matter\" brief.\n\nScore: 6",
+  "usage": {
+    "input": 1298,
+    "output": 1225
+  },
+  "cost": 0.014846
+}

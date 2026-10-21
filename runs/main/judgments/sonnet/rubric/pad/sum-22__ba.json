@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-22",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. It is the only one that keeps to the word limit, at roughly 110 words, and it is accurate.\n\nResponse A runs to about 230 words, nearly double the limit. It also contains a factual slip: it says Wes will get two quotes for the roof \"and for replacing a north-side light globe\", but the quotes are only for the roof, and the globe is a separate task. It adds filler a busy manager doesn't need, such as \"Thank you all for attending\" and \"We look forward to seeing everyone there\". It also reads like a message to attendees rather than a summary.\n\nResponse B captures the main points: the fee decision and its reasons, the shortfall and the grant deadline, the grounds work, presentation night, the gazebo and the next meeting date. Its omissions, such as Natalie organising the trophies and the thanks to Kylie, are minor. Wes will \"arrange\" the globe rather than replace it himself, so \"replace\" is slightly loose but not misleading.\n\nVerdict: B",
+  "usage": {
+    "input": 1783,
+    "output": 753
+  },
+  "cost": 0.011096
+}

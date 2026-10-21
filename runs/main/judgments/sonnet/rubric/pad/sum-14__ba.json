@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-14",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better. Both go over the 120-word limit, but A overshoots by far less and is more accurate.\n\n**Length:** A is about 144 words, so it is over the limit, but only moderately. B is longer, at roughly 180–190 words. It spends a whole sentence on a filler introduction (\"This section sets out the changes…\") that adds nothing for a busy manager.\n\n**Accuracy:**\n- A is accurate throughout. It keeps the key conditions: formal arrangements continue until their next review, informal agreements don't count, and the Claims and call centre teams are excluded with rosters reviewed in early 2027.\n- B states that the Claims Lodgement and Customer Contact teams are excluded \"as their rosters will be reviewed in early 2027\". That gets the reason wrong: they are excluded because they already have rostered office days, and the review is a separate later step.\n- B also softens \"at least one common day\" to \"a common day on which all members are in the office together\", which is slightly less precise.\n\n**Completeness:** A includes the existing-equipment carve-out, the lockers and where to direct questions. B omits the questions and contact information and the point that current equipment is kept.\n\nA is more accurate, more complete and closer to the word limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1590,
+    "output": 1619
+  },
+  "cost": 0.01937
+}

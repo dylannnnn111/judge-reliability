@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-36",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses stay under 120 words. Response A is the more accurate of the two.\n\n- **Equivalence:** A correctly presents the pressure difference and Newton's third law as *equivalent* descriptions of the same phenomenon.\n- **Additive framing:** B describes the pressure difference and air deflection as working \"together.\" That implies they are separate, additive contributions, a common misconception.\n- **Equal-transit hint:** B's phrasing that air \"splits around it\" faintly echoes the discredited equal-transit explanation.\n- **Extra content:** A adds useful context on how speed and angle of attack affect lift, and what causes a stall.",
+  "usage": {
+    "input": 540,
+    "output": 662
+  },
+  "cost": 0.0154
+}

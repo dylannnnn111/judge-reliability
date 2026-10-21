@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-21",
+  "side": "B",
+  "score": 10,
+  "model": "claude-sonnet-5-5",
+  "text": "The response correctly states that Earth is closest to the Sun in early January (perihelion), at about 147 million km (91.4 million miles). The perihelion distance is about 147.1 million km, which is accurate. It correctly notes this occurs during Northern Hemisphere winter and that the seasons come from axial tilt of about 23.4 degrees. The response is well under 120 words, clear, and includes the key reasoning that distance doesn't cause the seasons. One minor omission is that it doesn't say the date shifts slightly (Jan 2–5), but \"early January\" covers this. Overall it is accurate and concise.\n\nScore: 10",
+  "usage": {
+    "input": 316,
+    "output": 207
+  },
+  "cost": 0.002702
+}

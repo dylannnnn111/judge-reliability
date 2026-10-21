@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-32",
+  "side": "A",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds the two real bugs and puts them first. `BETWEEN ... '2026-09-30'` drops almost all of September 30, and integer division truncates both averages. It gives correct fixes for both, including the half-open date range. Its ranking is sensible.\n\nThe weaker part is the lower-ranked items:\n- **Item 3:** The NULL-status point is real. The claims about cancelled, pending, and partial-refund orders are guesses, because the status values aren't known.\n- **Item 4:** It correctly notes that `HAVING COUNT(o.id) > 0` is redundant with the inner join. But it suggests a `LEFT JOIN` without warning that this would create division by zero in the average expressions.\n- **Item 5:** The timezone and parameterization points are generic and speculative.\n\nThe response also looks to run over the 200-word limit, at roughly 240 words.\n\nOverall, the core findings are strong, but the speculative extras, the incomplete `LEFT JOIN` advice, and the length overrun pull the score down.\n\nScore: 6",
+  "usage": {
+    "input": 1139,
+    "output": 956
+  },
+  "cost": 0.011838
+}

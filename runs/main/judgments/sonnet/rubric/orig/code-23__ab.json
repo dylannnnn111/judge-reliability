@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-23",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main bug: `!r.value` drops legitimate `0` readings, which matters in a cold room. Both also flag the string timestamp comparison, the comparator that never returns 0, the possible null-valued latest reading, and sensors with no valid data being omitted. Both give fixes.\n\n**Response A:**\n- It ranks the \"dead sensors vanish\" issue second, which suits a monitoring dashboard well.\n- It misses the plain-object key collision. With an id like `constructor` or `__proto__`, `sums[id] ??= ...` returns an existing non-nullish object, so the accumulation silently goes wrong.\n- It doesn't handle `NaN` or non-finite values.\n- It is about 215 words, slightly over the 200-word limit.\n\n**Response B:**\n- It catches the same core issues, plus the prototype-key collision. That is real, though unlikely to matter in practice.\n- Its fix for issue 1 also guards against `NaN` and `Infinity`, which is sensible.\n- It notes that an all-zero sensor vanishes from the panel, which is a correct consequence of the `0` bug.\n- It ranks the no-data sensor issue last, arguably too low.\n- It is about 245 words, further over the limit than A.\n\nBoth are accurate and flag nothing that is fine. B covers one more real issue and gives a slightly more robust fix. A has marginally better ranking and is closer to the word limit. B's added substance is correct and useful, so I give it a slight edge.\n\nVerdict: B",
+  "usage": {
+    "input": 1630,
+    "output": 1738
+  },
+  "cost": 0.02064
+}

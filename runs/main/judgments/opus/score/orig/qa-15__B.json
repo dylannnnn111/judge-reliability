@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-15",
+  "side": "B",
+  "score": 10,
+  "model": "claude-opus-5-5",
+  "text": "The answer is correct. The rise is 25 − 15 = 10 °C, and a temperature difference converts by the 9/5 factor alone, giving 18 °F.\n\nThe response gives the key reasoning: it explains why the +32 offset cancels for differences, which is the main conceptual trap in this question. It then checks the result by converting both endpoints (59 °F and 77 °F) and subtracting, which confirms 18 °F.\n\nIt is clear, well formatted, and well under 120 words. The check adds a little length but is useful verification rather than padding. I see no errors.\n\nScore: 10",
+  "usage": {
+    "input": 361,
+    "output": 271
+  },
+  "cost": 0.006864
+}

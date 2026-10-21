@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-08",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is the better summary, mainly because it is accurate on nearly everything that matters and stays under the limit.\n\n**Response A**\n- It gets the key facts right: the 90-day store responsibility, Priya Nand covering for Jason Reilly, the replacement due Wednesday, the separate Frostline collection, the outstanding claim form, the $500 threshold and the escalation to Amara Osei on 9 October.\n- Its one error is stating that the fridge failed on 29 September. The text only says \"Sunday\", and the calendar implied by the ticket points to 28 September. This is a minor, unsupported detail.\n- It is about 115 words, within the limit, and it is dense and scannable.\n- \"Patience is wearing thin\" is a fair inference from the customer's messages.\n\n**Response B**\n- It states the fault date wrongly as 4 October, then corrects itself at the end, which is confusing for a manager who may stop reading early.\n- It says Kevin was chased \"on more than one occasion\". The ticket shows only one chase, by Megan on 6 October.\n- It is well over 120 words, breaking the constraint.\n- It is padded with filler (\"To begin with, I would like to summarise…\", \"kindly\", \"I appreciate…\") and includes an in-text retraction. It also omits some useful context, such as why the store is responsible and the Jason Reilly leave.\n\nResponse B is worse on accuracy, concision and length compliance.\n\nVerdict: A",
+  "usage": {
+    "input": 1839,
+    "output": 1071
+  },
+  "cost": 0.014388
+}

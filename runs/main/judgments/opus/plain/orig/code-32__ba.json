@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-32",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses identify the same core bugs in a sensible order:\n- **Date range:** `BETWEEN` drops orders placed later on September 30.\n- **Integer division:** truncates the averages.\n- **Status filter:** `<> 'refunded'` silently excludes NULL statuses.\n- **Inner join:** drops stores with no orders, which makes the `HAVING` redundant.\n\nThe differences:\n\n- **Accuracy:** A recommends `AVG(o.total_cents)` / `AVG(o.item_count)` as a fix, while listing SQL Server as an affected engine. On SQL Server, `AVG` of an integer column returns an integer, so that fix still truncates. B's `AVG(o.item_count * 1.0)` or multiply-by-1.0 approach is correct on every engine.\n- **Length:** The user asked for under 200 words. Both responses exceed that, but A overshoots by noticeably more (about 280 words versus about 240).\n- **Substance:** B adds useful points on the status filter, namely partial refunds and listing the counted statuses explicitly. A's extra tiebreaker note is minor. A's division-by-zero aside (\"AVG returns NULL, which is fine\") is somewhat muddled.\n\nB is tighter, closer to the length limit, and avoids the incorrect `AVG` suggestion.",
+  "usage": {
+    "input": 1674,
+    "output": 782
+  },
+  "cost": 0.022336
+}

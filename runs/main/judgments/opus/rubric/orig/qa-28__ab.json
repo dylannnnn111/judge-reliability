@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-28",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses are technically correct. Each defines collisions and covers chaining and open addressing with the main probing schemes. Each states average O(1) and worst case O(n), explains the load factor, and describes resizing.\n\n**Response A** adds two accurate details:\n- Java's HashMap converts long chains to balanced trees, giving an O(log n) worst case.\n- Typical load-factor thresholds are 0.7–0.75.\n\n**Response B** adds two different, equally useful points:\n- Lookups follow the same chain or probe sequence used on insert.\n- Each resize costs O(n), but the amortized cost per insert stays O(1). This directly answers the performance part of the question, since it addresses the obvious worry that resizing hurts performance.\n\nOn the explicit \"under 120 words\" constraint, both appear to run slightly over. B is about 123 words; A is about 133, clearly further over. A's extra words mostly add implementation detail rather than core reasoning. B's extra point, amortized resize cost, is more central to the performance question.\n\nCorrectness is equal and the reasoning is comparable, with B's amortization point slightly more relevant. B also adheres better to the length limit, so it edges ahead.\n\nVerdict: B",
+  "usage": {
+    "input": 835,
+    "output": 1873
+  },
+  "cost": 0.0408
+}

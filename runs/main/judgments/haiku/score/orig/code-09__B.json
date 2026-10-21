@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-09",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response catches the most important bug: `revoke_permission` never clears `_permission_cache`, so revoked permissions persist for cached users. It correctly ranks this first and gives the one-line fix placed after the commit. The multi-process staleness, lack of expiry, and unbounded growth from caching nonexistent user IDs as empty sets are all real and correctly ordered below it. The invalidation-ordering point is accurate, though it partly repeats the \"after the commit\" advice already in #1. The response also stays within the word limit and avoids flagging code that is fine, such as the fail-closed behavior on DB errors. It misses some minor points, like the lack of thread-safety reasoning around the check-then-set, but none of those outweigh what it covers.\n\nScore: 8",
+  "usage": {
+    "input": 940,
+    "output": 833
+  },
+  "cost": 0.0005105
+}

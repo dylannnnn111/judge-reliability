@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-07",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries lead with the Classic CSV breaking change, which is the key point for a manager. The differences are in the word limit and some minor accuracy points.\n\n**Word limit:** The request says under 120 words. Response A comes to about 124 words, so it breaks the limit. Response B comes to about 118 words, which is tight but within the limit.\n\n**Accuracy:** Both are broadly accurate. B files the bug fixes under \"Improvements\", which is a minor categorisation slip. B's \"If any team exports data to another accounting system\" is slightly loose, but the meaning is clear. A is accurate on the CSV breakage.\n\n**Coverage:** B covers more of what the original said, including the GST rounding, the specific fixes and the \"see the article before updating\" instruction. A includes the beta program access and the per-client reminder wording, but leaves out the GST rounding and the specific fixes.\n\nB meets the explicit constraint and covers slightly more, so it is better.\n\nVerdict: B",
+  "usage": {
+    "input": 1401,
+    "output": 1783
+  },
+  "cost": 0.020632
+}

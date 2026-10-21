@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-27",
+  "side": "A",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "The response correctly identifies the main problems. Unbounded concurrency over 80,000 sends is the top issue. Next come the `Promise.all` failure semantics (no record of who was mailed, and a rerun resends to everyone) and the misleading `emails.length` return value. Each comes with a concrete fix, and the ordering is sensible.\n\nIt has weaknesses, though:\n- Items 5, 6 and 7 are speculative or low value. The `Customer` type declares `email: string`, so a null email is a data-contract violation rather than a code bug. A repeated-cursor loop guard is paranoid defensiveness against a misbehaving API. Re-checking opt-in at send time is a design nicety. These dilute the \"bugs that matter\" focus.\n- Item 4 (retry) is reasonable but secondary.\n- It runs to roughly 210–240 words, over the 200-word limit.\n- Items 2 and 3 overlap, since both concern the result of partial failure.\n\nOverall the key issues are found and ranked well, but the padding and the length overrun cost it points.\n\nScore: 6",
+  "usage": {
+    "input": 1113,
+    "output": 1124
+  },
+  "cost": 0.013466
+}

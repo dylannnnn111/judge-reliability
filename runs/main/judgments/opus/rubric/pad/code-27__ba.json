@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-27",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.**\n\n**Real issues found.** Both catch the core issues:\n- unbounded `Promise.all` concurrency\n- first-failure rejection that hides who was mailed and makes reruns resend\n- a misleading return count\n- a null-email crash\n- a non-advancing cursor\n- no retries\n\n**Ranking.** Response A ranks first an overstated claim: \"Sends to everyone, including people who unsubscribed or bounced.\" The code does filter on `marketingOptIn`, so \"sends to everyone\" is inaccurate. Whether bounces and complaints are already reflected in that flag is unknown, so presenting this as the top bug is speculative. Response B handles the related concern more accurately as \"stale opt-in,\" a recheck at send time, and ranks it appropriately low. Response B correctly puts unbounded concurrency first.\n\n**Fixes.** Response B gives a concrete remedy for every item: p-limit or batching, `allSettled` plus tracking sent IDs for idempotency, sent/failed counts, retry with backoff, validate and skip bad emails, and a cursor or page cap. Response A mostly describes problems without saying how to fix them.\n\n**Avoiding non-issues.** Response A flags holding 80k strings in memory, which is trivial. Its local-part lowercasing note is technically true but marginal.\n\n**Length.** Response A opens with filler (\"Thank you for sharing…\") and restates points, running well over the 200-word limit. Response B is close to the limit and denser.\n\nVerdict: B",
+  "usage": {
+    "input": 1830,
+    "output": 960
+  },
+  "cost": 0.02652
+}

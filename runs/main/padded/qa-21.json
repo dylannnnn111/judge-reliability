@@ -1,0 +1,14 @@
+{
+  "pair": "qa-21",
+  "side": "A",
+  "author": "sonnet",
+  "model": "claude-haiku-5-5",
+  "original": "Earth is closest to the Sun (called perihelion) in early January, typically around January 2–5. At that point, Earth is about 147.1 million km (91.4 million miles) away, compared with roughly 152.1 million km (94.5 million miles) at aphelion in early July.\n\nThis may seem surprising, since January is winter in the Northern Hemisphere. Seasons are caused by Earth's 23.5° axial tilt, not by distance from the Sun. When the Northern Hemisphere is tilted away from the Sun, it gets less direct sunlight, even though Earth is slightly closer overall.\n\nThe distance difference is only about 3%, so its effect on climate is small compared with the tilt.",
+  "text": "When it comes to Earth's orbit, the planet is closest to the Sun at a point called perihelion, which occurs in early January, typically around January 2–5. To put that distance in perspective, at perihelion Earth is about 147.1 million km (91.4 million miles) away from the Sun. By comparison, at aphelion, the point in its orbit where Earth is farthest from the Sun, which occurs in early July, the distance is roughly 152.1 million km (94.5 million miles).\n\nThis may seem surprising at first, since January is the middle of winter in the Northern Hemisphere, and it is natural to wonder why the planet would be nearest the Sun during the coldest months. However, seasons are not caused by Earth's distance from the Sun. Instead, they are caused by Earth's 23.5° axial tilt. When the Northern Hemisphere is tilted away from the Sun, as it is in January, it receives less direct sunlight, even though Earth is slightly closer to the Sun overall.\n\nIt is also worth putting the size of the distance difference into context. The gap between perihelion and aphelion is only about 3%, so its effect on climate is small compared with the effect of the tilt. In other words, while the change in distance is a real and measurable feature of Earth's orbit, it plays a much smaller role in shaping the seasons than the planet's axial tilt does.",
+  "ratio": 2.17,
+  "usage": {
+    "input": 411,
+    "output": 597
+  },
+  "cost": 0.0003396
+}

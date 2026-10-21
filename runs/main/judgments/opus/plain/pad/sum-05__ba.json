@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-05",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse B is better on both the explicit constraint and the accuracy of its framing.\n\n- **Word limit:** Response A runs to roughly 145–150 words, breaking the 120-word limit. Much of that is filler such as \"To summarize the main finding,\" \"In other words,\" \"It is worth noting that,\" and \"There are also a few points to keep in mind.\" Response B comes in at about 110 words, within the limit.\n- **Framing:** Response A lists \"78% felt more productive\" under \"Benefits found.\" That blurs the study's central point: perceived productivity did not match measured output. Response B makes that contrast explicit with \"*felt* more productive.\"\n- **Usefulness:** Response B gives a clear, actionable implication for a manager: justify the desks on comfort and health, not productivity.",
+  "usage": {
+    "input": 1303,
+    "output": 686
+  },
+  "cost": 0.018932
+}

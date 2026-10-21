@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-25",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B is better.** Both responses catch the same core bugs in a sensible order: the off-by-one, unbounded memory growth, per-IP-only limiting, the hardcoded `retryAfterSec`, in-memory state, and IP trust.\n\n- **Length:** The user asked for under 200 words. Response A runs to roughly 245 words, well over the limit. Response B comes in around 200, essentially at the limit.\n- **Problem selection:** Response B adds a meaningful issue that A misses. The limiter counts all attempts rather than only failures, so successful logins use up quota. Response B also frames the IP concern as spoofing via `X-Forwarded-For`, which is directly relevant to evading the limiter.\n- **Response A's extras:** A offers some useful details, such as IPv6 /64 prefixes, the proxy address locking everyone out, and an explicit retry formula. However, its point 7 (\"no tests,\" no reset) is low-value padding that pushes it further over the word limit.\n\nB is more concise and still complete, so it fits the request better.\n\nB",
+  "usage": {
+    "input": 1484,
+    "output": 1191
+  },
+  "cost": 0.029756
+}

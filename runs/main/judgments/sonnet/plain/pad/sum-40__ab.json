@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-40",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is about 100 words, which fits the under-120 limit. Response B is well over 200 words and breaks the constraint. B is also wordy and padded with filler such as \"it is useful to start with the central comparison.\"\n\nA is concise, accurate and easy for a manager to skim.\n\n**A**",
+  "usage": {
+    "input": 1447,
+    "output": 94
+  },
+  "cost": 0.003834
+}

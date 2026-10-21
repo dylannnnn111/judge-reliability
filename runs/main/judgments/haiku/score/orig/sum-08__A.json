@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-08",
+  "side": "A",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The response gets most of the substance right: the Priya-arranged Wednesday replacement, the separate Frostline collection and possible two calls, the outstanding claim form, the $500 no-sign-off threshold, and the 9 Oct escalation to Amara Osei. The main problem is the fault date. The response says the fridge \"failed on 4 Oct,\" but the customer wrote on 2 Oct that it stopped \"on Sunday,\" which points to 28 Sep, and 4 Oct is when he complained again. The trailing \"correction\" admits the date is unclear and asks the reader to disregard the first sentence, but it gives no replacement date. That leaves a misleading claim in the summary and an awkward self-correction a busy manager has to untangle. It also runs past the 120-word limit, with the correction section adding words without adding usable information. The key decision points are present, but the date error and the messy correction weigh heavily on accuracy and concision.\n\nScore: 4",
+  "usage": {
+    "input": 1323,
+    "output": 923
+  },
+  "cost": 0.0005937999999999999
+}

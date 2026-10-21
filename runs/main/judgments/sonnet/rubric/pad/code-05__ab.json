@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-05",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same real issues in nearly the same order: the DST wall-clock subtraction, ambiguous or nonexistent local times, start-day-only weekend loading, float money with banker's rounding, and missing holiday and validation handling. Their factual claims check out. For Sydney, the April fall-back repeats 02:00–02:59 and the October spring-forward skips it. Same-tzinfo aware datetimes do subtract by wall clock. A's worked examples (a 01:00–05:00 shift being 5h and 3h actual) are correct. B's direction of over- and underpayment is also correct.\n\nThe differences are small:\n- **Length limit:** The user asked for under 200 words. A runs roughly 330–380 words and B about 230–250. Both go over, but A overshoots much more.\n- **Wording:** A says \"the most serious problem in the response\", which reads oddly in a code review. It also pads with phrases like \"Next,\" \"Meanwhile,\" and \"Finally.\"\n- **Content:** A adds a useful sanity limit on shift length. B adds keeping minutes as integers, which is a good fix for the money arithmetic, and notes the redundant repeated parsing. These roughly offset.\n- **Fixes:** Both give a UTC-conversion fix, a midnight-split fix, and a Decimal or explicit rounding fix.\n\nSince the content is about equal, B's tighter adherence to the length limit and cleaner phrasing make it slightly better.\n\nVerdict: B",
+  "usage": {
+    "input": 2009,
+    "output": 1384
+  },
+  "cost": 0.017858
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-09",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer of 7.5°, and both use the same calculation. Both are well under 120 words.\n\nResponse B adds an explanation of why the minute hand sits at 90° and a closing check that 7.5° is under 180°, so it is already the smaller angle. These additions are correct and useful, though modest. Response A is more concise and complete enough for the question.\n\nCorrectness is equal and the key reasoning is the same. B's extra content is a small plus, since confirming \"smaller angle\" is part of the question. It is only slightly more helpful, but it does add something.\n\nVerdict: B",
+  "usage": {
+    "input": 576,
+    "output": 190
+  },
+  "cost": 0.003052
+}

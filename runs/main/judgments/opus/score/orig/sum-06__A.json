@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-06",
+  "side": "A",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** The facts match the source:\n- reopening date and duration\n- the $3.2 million cost and joint council/state funding\n- all four improvements, including the solar share of \"about a third\"\n- the enrolment date, unchanged prices and their amounts\n- opening hours and opening-day details\n\n\"Prices unchanged for 2026-27\" is a fair compression of \"same as before the closure for the rest of the 2026-27 season.\"\n\nOne small loose point is \"All programs … resume on opening day.\" The source names only lap swimming, aqua aerobics and learn-to-swim. It is not wrong, but it reaches slightly beyond the source.\n\n**Coverage:** A manager gets what they need: when it reopens, what it cost and who paid, what changed, what runs and when, prices, hours and opening-day plans. The detail about replacing the leaking 50-year-old pool briefly explains why the work was needed. Leaving out the quotes from the mayor and swimmer is the right call.\n\n**Concision:** It is about 115 words, so under the limit. The bold headings and bullets make it fast to scan, and there is no padding.\n\nIt is a strong, accurate and well-organised summary with one slight overgeneralisation.\n\nScore: 9",
+  "usage": {
+    "input": 1132,
+    "output": 1440
+  },
+  "cost": 0.033328
+}

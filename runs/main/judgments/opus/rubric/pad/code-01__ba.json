@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-01",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.**\n\n**Real issues and coverage.** Both responses catch the critical issues: no idempotency, one exception aborting the run partway, float money with `int()` truncation, credits silently skipped, and hard-coded tax.\n\n- **Response B** adds real points that A misses. These are no billing-period scoping, NaN/inf strings passing through `float()`, and negative units or prices slipping through unchecked.\n- **Response A** adds customer_id normalization. That is plausible but speculative.\n\n**Accuracy.** Response A's concrete truncation example is wrong. `10.29` has a representation error of at most about 8.9e-16, which becomes at most about 8.9e-14 after multiplying by 100. Half the spacing between doubles near 1029 is about 1.1e-13, so the product rounds to exactly `1029.0`. `int()` then gives 1029, not 1028. The underlying bug is real, but citing a false example undermines the explanation. Response B's `19.99 → 1998` example is a commonly cited real case.\n\n**Ranking and fixes.** Both rank sensibly, with idempotency and partial-failure first. Response A gives a fix for nearly every item. Response B gives fixes less consistently, though most are implied.\n\n**Length.** Both exceed the 200-word limit. Response B is worse here and includes a pointless filler sentence restating that items are ordered by severity.\n\nWeighing these, Response B's broader set of real issues and its lack of a factual error outweigh its extra verbosity. Response A is tighter and more fix-oriented, but its incorrect worked example is a correctness flaw.\n\nVerdict: B",
+  "usage": {
+    "input": 1691,
+    "output": 1494
+  },
+  "cost": 0.036644
+}

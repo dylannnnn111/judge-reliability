@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-01",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth reviews identify the same core problems. Each puts missing idempotency first and covers abort-on-failure, truncating float-to-cents conversion, floating-point money, skipped credits, malformed rows, and the hardcoded tax. Both truncation examples are accurate: `19.99 * 100` and `10.29 * 100` each evaluate to just under the intended value, so `int()` drops a cent.\n\nThe difference is the explicit constraint. The user asked for under 200 words.\n\n- **Response B** comes to about 195 words, within the limit.\n- **Response A** comes to about 235 words, clearly over. It adds some useful points (NaN/inf accepted by `float()`, billing-period scoping), but it ignores a clear instruction to get there.\n\nB also has strengths of its own:\n- It gives a concrete fix for each issue, such as an idempotency key per customer per billing period, and quarantining bad rows.\n- It separates truncation from general float accumulation error.\n- It flags the unnormalized `customer_id` grouping.\n\nB has one small inaccuracy. It says a bad row stops billing \"for all customers,\" but parsing happens inside the per-customer loop, so only the remaining customers are affected. This is minor next to A's breach of the stated length limit.",
+  "usage": {
+    "input": 1418,
+    "output": 2261
+  },
+  "cost": 0.050892
+}

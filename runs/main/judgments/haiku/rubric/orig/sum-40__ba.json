@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-40",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate on the key figures: 1,622 students, 11 schools, 1.8 vs 1.1 marks, the non-significant 0.7 gap, 71% finding, and the limitations. Response A is slightly more explicit that the overseas 10% claim was not supported, which Response B only implies. However, Response A runs about 130 words, breaking the explicit \"under 120 words\" limit, while Response B comes in at roughly 118. Response B's bolded bottom line and caveats also make the decision-relevant points easier for a busy manager to find. Since the length limit was a direct instruction and B delivers the same essential content within it, B is the better response.\n\nVerdict: B",
+  "usage": {
+    "input": 1385,
+    "output": 1174
+  },
+  "cost": 0.0007255
+}

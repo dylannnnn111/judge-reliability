@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "qa-08",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response is correct. 375 mL × 0.048 = 18 mL of ethanol, 18 mL × 0.789 g/mL ≈ 14.2 g, and 14.2 g ÷ 10 g ≈ 1.42 standard drinks. It shows each step with the density conversion, which is the key reasoning the question tests. The layout is clear and the answer is stated plainly at the end. Minor weaknesses are the unnecessary opening pleasantry and a somewhat repetitive summary, but the response stays under 120 words and nothing is wrong.\n\nScore: 9",
+  "usage": {
+    "input": 528,
+    "output": 671
+  },
+  "cost": 0.0003883
+}

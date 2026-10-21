@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-29",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate throughout. The prices, data allowances, plan dates, Classic and fixed-contract exemptions, the no-exit-fee deadline of 15 November, the device repayment caveat, the reason, and the support hours all match the notice. It also covers everything a manager needs: what changes, when, who is affected, the customer options, the reason, and where to get help.\n\nThe main problem is the length limit. By my count the response runs to roughly 125–130 words including headings and arrows, which breaks the explicit \"under 120 words\" instruction. The bullets and \"Who's affected\" section could be tightened to fit without losing any substance.\n\nScore: 6",
+  "usage": {
+    "input": 1100,
+    "output": 1217
+  },
+  "cost": 0.0007185
+}

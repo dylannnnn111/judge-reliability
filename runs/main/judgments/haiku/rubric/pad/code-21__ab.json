@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-21",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is stronger. Both correctly rank duplicate refunds from retrying a non-idempotent POST as the top issue. Response A states the fix more precisely, with a key generated once per refund intent and a default refusal to retry POST without one. It also catches two real problems that Response B misses: retrying `AbortError` when the caller has cancelled, and not validating that `refundId` exists before returning it. Response B's double-submit point is plausible for a support console, but it is speculative, and its jitter and \"no cancellation\" items are weak or minor. Response B also runs well past the 200-word limit, while Response A is close to it. Response A is better on correctness, prioritization, and the length constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 1944,
+    "output": 874
+  },
+  "cost": 0.0006314
+}

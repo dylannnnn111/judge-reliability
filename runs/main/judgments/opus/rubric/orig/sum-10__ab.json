@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-10",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both summaries are accurate. The dates, figures ($186k of $310k, 48→21 seconds, all 12 testers), the Green status, the helpdesk risk dropping to low and the \"no decisions needed\" point are all correct. Both are also under 120 words, though A comes in at about 118.\n\n**Response A**\n- Its layout suits a busy manager. The headline status and go-live date come first, followed by an explicit \"No decisions needed from you\", then labelled bullets for progress, budget, risks and next steps.\n- It adds a few correct details B omits: no new risks, PDF invoice downloads, the new developer, and the next update date (24 October).\n- Most of these extras are minor, but the next update date and \"no new risks\" are useful for a manager.\n\n**Response B**\n- It is a single dense paragraph covering the same core points.\n- It is more concise, at around 100 words, and keeps the \"for marketing review\" detail.\n- It is harder to scan.\n\nSince accuracy is equal, the deciding factors are coverage and usability. A's additions are correct and modestly useful, and its structure is better for a reader who won't read closely. B's concision advantage is small.\n\nVerdict: A",
+  "usage": {
+    "input": 1275,
+    "output": 1438
+  },
+  "cost": 0.03386
+}

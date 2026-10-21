@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-21",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy.** Both responses are accurate.\n\n- **Response A:** Its added hire-car total (6 × $1,800 × ~2 months ≈ $21,600) is correct arithmetic and suitably hedged with \"around.\"\n- **Response B:** Its line that Coastal is \"dearer\" is correct ($36,100 against $34,980 and $35,400 for petrol), as is \"no hybrid until March.\"\n- **Addressing the reader:** A says \"your sign-off,\" assuming the reader is Ruth. That fits, since the email is addressed to her as CEO, though it is slightly presumptuous. B names Ruth explicitly.\n\n**Key points.** Both keep the essentials: the recommendation, total cost, budget overrun and delegation, the rationale, the within-budget alternative, and the deadline with its consequence.\n\n- **A's addition:** A quantifies the cost of missing the deadline (~$21,600). This directly helps the decision and makes the urgency concrete.\n- **B's additions:** B adds the per-year fuel saving, which is minor and redundant with the four-year figure. Its Coastal note has low value, since that option was never in contention. Its closing \"Decision needed\" line repeats what was already said.\n\n**Concision.** A is tighter, about 114 words, and leads with the decision and deadline in its headline. B runs close to the 120-word limit with less useful material.\n\nOverall, A is more decision-focused, adds a useful correct figure, and is more concise.\n\nVerdict: A",
+  "usage": {
+    "input": 1518,
+    "output": 1537
+  },
+  "cost": 0.036812
+}

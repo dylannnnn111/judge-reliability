@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-25",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly answer \"No\" and give the same core evidence: the Gjermundbu helmet is a plain rounded iron cap with no horns, and the horned image comes mainly from 19th-century art and Doepler's 1876 Wagner costumes. Response A adds accurate detail, including Malmström's illustrations and the Veksø Bronze Age helmets. However, it runs about 140 words, which breaks the explicit \"under 120 words\" constraint. Response B covers the same key reasoning, including the Bronze Age grain of truth, in roughly 118 words, so it meets the limit. Since the substance is comparable and only A violates an explicit instruction, B is the better response.\n\nVerdict: B",
+  "usage": {
+    "input": 906,
+    "output": 1068
+  },
+  "cost": 0.0006246
+}

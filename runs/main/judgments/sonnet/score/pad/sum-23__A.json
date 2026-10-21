@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "sum-23",
+  "side": "A",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The facts in this response are accurate. The dates, times, figures, names and decisions all match the minutes, and the speed counter is correctly described as something Cr Tse will request. It also keeps the main points, though it drops the school choir and the fact that the carols include candles and a sausage sizzle.\n\nThe main failure is length. I count roughly 215 words, nearly double the 120-word limit the user set. Much of that is filler that adds nothing for a busy manager: \"Thank you all for attending...\", \"Cr Tse kindly provided the following update...\", \"The meeting reached the following decisions.\" The \"Thank you all\" line also reads as if the summary were addressed to the attendees rather than to a manager who wasn't there. It ignores both the hard limit and the busy reader's needs.\n\nAccuracy is good, but the clear breach of the explicit constraint and the padding pull the score down substantially.\n\nScore: 4",
+  "usage": {
+    "input": 1347,
+    "output": 1137
+  },
+  "cost": 0.014064
+}

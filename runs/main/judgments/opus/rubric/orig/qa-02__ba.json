@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-02",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both responses give the correct answer of **96 km/h**. Both show the same core reasoning: going takes 2 h, returning takes 4/3 h, the total is 320 km over 10/3 h, which gives 96. Both also explain why the simple average of 100 km/h is wrong, and both stay under 120 words.\n\nThe difference is small. A names the harmonic mean but does not show it. B adds the qualifier \"for equal distances,\" which states precisely when the harmonic mean applies. It then computes the harmonic mean explicitly as 2×80×120/(80+120) = 96. This gives the reader a reusable shortcut and an independent check of the answer, so it is correct and useful rather than padding. B's formatting is also slightly clearer, with bolded labels and an explicit 100 km/h comparison. The edge goes to B.\n\nVerdict: B",
+  "usage": {
+    "input": 719,
+    "output": 740
+  },
+  "cost": 0.017676
+}

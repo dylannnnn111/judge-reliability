@@ -1,0 +1,13 @@
+{
+  "item": "sum-26",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "Tower B's only passenger lift broke down on 21 September with two residents trapped between levels 2 and 3. A technician freed them within an hour, and neither was hurt. A worn door controller board caused the fault, and the replacement part came from Melbourne, so the lift was out of service until 2:10pm on 23 September.\n\nStaff delivered meals to 11 residents, and four residents with medical appointments were carried down the stairs with an evacuation chair. Two residents stayed with family. All residents received notices and daily updates.\n\nFollow-up actions: the Tower A lift was checked and found in good condition, and the village will now keep a spare door controller board on site for $2,300, which the manager approved. Residents have praised staff, and the Residents' Committee has asked for a second Tower B lift to be considered in the long-term capital plan. The request has gone to the board.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 711,
+    "output": 278
+  },
+  "cost": 0.0002101,
+  "at": "2026-10-14T01:52:01.701Z"
+}

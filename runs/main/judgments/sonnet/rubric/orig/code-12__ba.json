@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-12",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the three real problems: the N+1 queries, the crash when a customer row is missing, and the non-sargable `strftime` filter. Both also go over the 200-word limit, and B goes over by more.\n\n**Response A** ranks the N+1 pattern first, which fits the stated scale of about 20,000 invoices. Its fixes are concrete. Its extra points are mostly grounded: the formatted-string totals, the correct note that negatives render as `$-12.34`, and the unstable order within a customer. The input-validation and timezone points are minor but defensible.\n\n**Response B** puts the crash first, which is arguable, and its fixes are also concrete. Several of its extra points are speculative or padding:\n- The quantity-undercount point assumes a column that may not exist.\n- The money-formatting point admits float division \"is usually fine\".\n- The reconciliation point is not a bug.\n- The snapshot-consistency concern is marginal.\n\nB also misses the nondeterministic ordering. It flags more things that are probably fine, and it is longer.\n\nA has a more sensible ranking, fewer speculative items, and is closer to the length limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1750,
+    "output": 847
+  },
+  "cost": 0.01197
+}

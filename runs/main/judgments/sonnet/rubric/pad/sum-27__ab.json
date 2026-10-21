@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-27",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is more accurate to the source, much closer to the word limit, and more concise. Both responses cover the same key points: the mixed result, the free-month confound, the 2-point gap among full-paying customers, Sales' overclaim, the cost, and the proposed randomised test with its date.\n\n**Accuracy:** Both are largely accurate. Response B turns \"at least 60 days\" into \"a 60-day test\", dropping the minimum. It also adds \"kindly\" phrasing and a \"Decision needed\" framing that the source doesn't use. Response A keeps \"at least 60 days\" and the conditional \"if approved at the 21 October leadership meeting\".\n\n**Length:** The request was under 120 words. Response A comes to roughly 124 words, a slight overshoot. Response B is about 190 words, well over the limit. It also repeats itself: the bold headline is restated in the opening sentence, and the Aug–Sep dates and the 30-day measure are spelled out at length.\n\n**Coverage and concision:** Neither response drops an essential point. Response B's extra words add nothing useful, only padding and filler such as \"kindly\" and \"To summarise\".\n\nVerdict: A",
+  "usage": {
+    "input": 1648,
+    "output": 1373
+  },
+  "cost": 0.017026
+}

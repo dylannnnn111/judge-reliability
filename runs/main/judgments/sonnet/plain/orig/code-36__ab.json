@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-36",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better.\n\nBoth responses find the same main bugs in the same order. The `Invalidate` method deletes from the map under only a read lock. Concurrent misses cause a stampede. A slow fetch can overwrite a newer or invalidated token. The TTL ignores the token's real lifetime. Expired entries are never evicted. `fetch` has no context or timeout. The technical quality is close.\n\nThe deciding factor is the explicit \"under 200 words\" limit:\n- Response A is about 188 words, so it complies.\n- Response B is about 215–220 words, so it exceeds the limit.\n\nOn content, A's second point matches the code's actual use case. It describes a token that upstream just rejected being re-cached after `Invalidate`. B's third point covers the same race but frames it more generally.\n\nA's sixth point has a small inaccuracy. It says a hung fetch \"blocks every request waiting on that tenant\", but the current code has no waiting, since each caller fetches independently. That flaw is minor next to B's length violation. B's extra detail on the fatal error not being recoverable is a nice touch but doesn't offset the overrun.\n\n**A**",
+  "usage": {
+    "input": 1641,
+    "output": 2027
+  },
+  "cost": 0.023552
+}

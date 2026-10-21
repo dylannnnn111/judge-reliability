@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-35",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Word count check is key: the limit is under 120 words.\n\nResponse A: Count. Paragraph 1: \"Antibiotics target structures and processes unique to bacteria, such as cell walls (penicillin), bacterial ribosomes (tetracyclines), or bacterial DNA enzymes (fluoroquinolones).\" ≈ 23 words. \"Viruses lack these features: they have no cell wall, no independent metabolism, and they replicate using the host cell's machinery, so there's no target for antibiotics to disrupt.\" ≈ 29. Total ≈ 52.\nParagraph 2: \"Antibiotic resistance develops through natural selection.\" 6. \"Random genetic mutations or horizontal gene transfer (such as plasmids) can give some bacteria a survival advantage against a drug.\" 20. \"When antibiotics kill susceptible bacteria, the resistant ones survive and multiply.\" 11. \"Overuse and misuse accelerate this process.\" 6. Total ≈ 43. Overall ≈ 95. Under 120.\n\nResponse B is clearly over 120 words (roughly 200). It also has filler and redundancy.\n\nA satisfies the constraint; B violates it.\n\n**A**",
+  "usage": {
+    "input": 787,
+    "output": 397
+  },
+  "cost": 0.005544
+}

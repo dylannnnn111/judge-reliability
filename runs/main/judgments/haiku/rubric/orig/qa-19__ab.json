@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-19",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify *gangurru* from Guugu Yimithirr as the source, note the 1770 recording near Cooktown, and call the \"I don't understand\" story a myth. Both also cite John Haviland's fieldwork, which supports the claim that the word really named the animal.\n\nResponse A describes the myth's mechanism (Cook's crew pointing and asking), which is clear and helpful. Response B adds the specific species (eastern grey kangaroo), names Banks as a recorder, and gives a plausible reason the myth could have arisen (Australia's many languages, so the word would not be recognized elsewhere). That speculation is reasonable but not firmly established. B's explanation of why the story persists is also a useful touch. The two are close in accuracy and clarity, with B offering slightly more of the key reasoning.\n\nVerdict: B",
+  "usage": {
+    "input": 788,
+    "output": 1075
+  },
+  "cost": 0.0006163
+}

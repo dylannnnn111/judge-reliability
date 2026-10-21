@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-33",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Each gives the correct 31 January 2027 shutdown date, the 8% figure, the v1-to-v2 switch and its 15-minute effort, and the main features and fixes. Neither misstates the conditions of the public holiday change or the open shift notifications.\n\nResponse A leads with the action required, which is the most important point for a busy manager who won't read the original. It also keeps the \"switch soon\" advice clear. Its weakness is length: my count puts it around 135–140 words, somewhat over the 120-word limit.\n\nResponse B is tighter, at roughly 130 words, and well organised under clear headings. It places the action item last, though it is clearly labelled and still conveys the necessary urgency. It also gives the reassurance that most customers need no action.\n\nOn the criteria, accuracy is a tie, and both keep the points the reader needs. A has the edge on prioritising the action item, while B has the edge on concision. Neither is clearly superior. I give A a slight edge because the manager's most important takeaway is placed first.\n\nVerdict: A",
+  "usage": {
+    "input": 1556,
+    "output": 1722
+  },
+  "cost": 0.0010166
+}

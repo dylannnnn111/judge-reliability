@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-18",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.**\n\n**Real and important issues.** Both responses find the critical bug: the cache key ignores `to`, so one AUD rate gets applied to every target currency. Both give the same correct fix (`fx:${from}:${to}`). Both also raise the same set of valid secondary issues: response validation, fetch timeout, in-flight deduplication, unencoded query params, and unbounded cache growth.\n\n**Fixes and context.** A adds two useful points that B lacks:\n- **Evicting rejected promises.** A says to drop a cached promise when it rejects, so a failed fetch isn't cached. B suggests caching in-flight promises but omits this.\n- **Money precision.** A warns about doing currency conversion with raw float arithmetic. This matters directly for an invoicing service.\n\n**Ranking.** Both rank sensibly, with the critical bug first.\n\n**Weak or needless flags.** B's seventh point, the \"unsafe generic cast,\" is a minor type-hygiene note. It is far less relevant here than A's precision point.\n\n**Length.** The user asked for under 200 words. A comes in at roughly that limit. B is nearly double, padded with phrases like \"As a consequence\" and \"it would be prudent to,\" which add no substance.\n\nVerdict: A",
+  "usage": {
+    "input": 1802,
+    "output": 642
+  },
+  "cost": 0.020048
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "qa-21",
+  "side": "A",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The factual content is correct: perihelion falls in early January (around Jan 2–5), at about 147.1 million km, and aphelion in early July at about 152.1 million km. The seasonal explanation, axial tilt, is also right, and the roughly 3% difference is accurate.\n\nHowever, the user asked for an answer under 120 words, and this response is well over that. A rough count: paragraph 1 is about 75 words, paragraph 2 about 85, and paragraph 3 about 80, so around 240 words in total, double the limit. That is a clear violation of an explicit constraint.\n\nCorrectness is strong, and the reasoning is good, but the length constraint is broken substantially. The extra content is mostly useful, but it also repeats itself (the third paragraph restates the tilt point), and the user explicitly limited the length. Because the instruction was explicit and the overrun is large, the score should be reduced considerably.\n\nScore: 4",
+  "usage": {
+    "input": 638,
+    "output": 300
+  },
+  "cost": 0.004276
+}

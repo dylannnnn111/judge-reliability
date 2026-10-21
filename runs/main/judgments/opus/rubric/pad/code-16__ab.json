@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-16",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.** Both raise largely the same real issues: in-place mutation in `sortByPrice`, missing input validation, client-side totals being trusted at checkout, brittle discount-code matching, and `formatAud` problems with negative values and thousands separators.\n\nThe key difference is the GST assumption. In Australia, shelf prices are normally GST-inclusive. Adding 10% on top would then overcharge every customer on every order. That is arguably the most consequential bug.\n- B ranks it first and explains the fix: extract GST from the total rather than adding it.\n- A lists it last, as a soft \"you may wish to verify.\"\n\nA also adds a rounding item of doubtful value. Its suggested `Math.round(subtotalCents * 10 / 100)` is barely different from the original. The float concern is marginal at best, so this item edges toward flagging something that is fine.\n\nA badly exceeds the 200-word limit, at roughly 400 words. Much of that is filler (\"Thank you for sharing,\" \"It is worth noting,\" \"Please note\"), which adds nothing.\n\nB stays near the limit and gives concrete fixes for most items. Examples include `trim().toUpperCase()`, returning an error for unknown codes, and server-side recomputation from its own price data.\n\nVerdict: B",
+  "usage": {
+    "input": 1879,
+    "output": 590
+  },
+  "cost": 0.019316
+}

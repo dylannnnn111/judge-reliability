@@ -1,0 +1,13 @@
+{
+  "item": "sum-37",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "**Finance Data Warehouse: Week ending 10 October 2026 (Amber, down from Green)**\n\nThe project is on schedule, but lead data engineer Tomas Novak is leaving on 7 November, and he is the only one who knows the payroll system. Without him, payroll data would be delayed by five to six weeks, pushing go-live from 8 December to late January.\n\nThree options were discussed, and none has been decided:\n1. Hire a payroll contractor for about eight weeks at $64,000, not in budget. This is the team's preference.\n2. Go live without payroll and add it in February. Four month-end reports depend on payroll, so this may not be acceptable.\n3. Delay go-live to late January.\n\nApproval for option 1 is needed from sponsor Margaret Lowe, who is overseas until 20 October. Spend to date is $298,000 of $455,000. Next update: 24 October.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 654,
+    "output": 292
+  },
+  "cost": 0.00021140000000000002,
+  "at": "2026-10-14T01:52:30.915Z"
+}

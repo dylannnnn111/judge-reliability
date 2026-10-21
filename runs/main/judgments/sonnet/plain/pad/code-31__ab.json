@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-31",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. Both identify the main bug: with second-precision `created_at` and a strict `>` cursor, tied rows at a page boundary are skipped. Both also catch the missing tiebreaker, the index, the `IS NULL OR` pattern, and late-committed rows.\n\n**Response A:**\n- It is far over the 200-word limit, at roughly 350 words or more.\n- It claims the job \"can stall or loop forever\" if 1000 or more rows share a second. That is wrong for this query. With `created_at > :last_seen`, the cursor advances past the tied rows, so they are skipped and the job does not loop.\n- It pads the list with a non-issue (\"Selecting explicit columns is a good practice\"), which the user did not ask for.\n- Its termination-condition point is mostly redundant.\n\n**Response B:**\n- It is much tighter and puts the fix inline with the main bug.\n- Its claims are accurate.\n- It adds a useful point about persisting the cursor and making downstream writes idempotent.\n- It may be slightly over 200 words, but it is much closer to the limit than A.\n\nB is more accurate, more concise, and better follows the length constraint.\n\n**B**",
+  "usage": {
+    "input": 1741,
+    "output": 674
+  },
+  "cost": 0.010222
+}

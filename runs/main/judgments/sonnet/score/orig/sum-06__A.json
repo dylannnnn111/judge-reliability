@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-06",
+  "side": "A",
+  "score": 8,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is mostly accurate and covers the key facts: the reopening date, cost, funding, new features, enrolment date, prices, hours and opening-day events. By my count it is about 115 words, just under the limit.\n\nThere are two minor issues:\n- \"All programs and the water play area resume on opening day\" overgeneralises. The source names only lap swimming, aqua aerobics and learn-to-swim as resuming, and says the water play area reopens. Term-one swim school enrolments open on 20 October, which the response lists separately.\n- \"Term one\" is not tied to a year, but the source doesn't give one either, so this is fine.\n\nThe format is easy for a busy manager to scan. It leaves out the mayor's and Margaret Yeo's quotes, which is reasonable. It is tight and close to the word limit.\n\nScore: 8",
+  "usage": {
+    "input": 1132,
+    "output": 944
+  },
+  "cost": 0.011704
+}

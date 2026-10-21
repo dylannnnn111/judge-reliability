@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-09",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer in under 120 words. Both responses give the correct answer of 7.5°.\n\nResponse A's word count: it is clearly over 120 words. The intro sentence plus the bullets and the final paragraph add up to roughly 170 words, so it breaks the constraint.\n\nResponse B is concise, about 35 words, and correct.\n\nB is better.\n\n**B**",
+  "usage": {
+    "input": 616,
+    "output": 120
+  },
+  "cost": 0.002432
+}

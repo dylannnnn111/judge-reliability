@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-32",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A wins.** Both are largely accurate, but B breaks the explicit word limit.\n\n**Accuracy.** Both correctly give the 5.79% to 6.04% change, the 0.25% August rise, the 0.90% discount, Jordan's 12 May email, the $250 goodwill payment and the referral for a fixed-rate call.\n- A has two minor problems. \"Closed as resolved and referred to lending\" is a little ambiguous, because only the call request was referred. Its flag that the customers \"haven't accepted the outcome\" slightly overstates things, since they did accept the payment.\n- B is accurate throughout. It does omit the package-account condition.\n\n**Coverage.** Both keep the essentials.\n- B adds that the customers wanted a refund and that the contract allows variable rates to change.\n- B's AFCA risk note is a sensible flag.\n\n**Length.** This is the decisive difference.\n- A is about 117 words, within the limit.\n- B runs to roughly 160 words, well over the explicit \"under 120 words\" instruction.\n- B's extra words are mostly restatement of the rate mechanics, which A conveys more concisely.\n\nB's overrun is a clear failure of a stated constraint, and it outweighs A's small wording imprecision.\n\nVerdict: A",
+  "usage": {
+    "input": 1598,
+    "output": 1359
+  },
+  "cost": 0.033572
+}

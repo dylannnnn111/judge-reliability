@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-34",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "A is better. Both responses appear to go over the 120-word limit, but by very different margins.\n\nResponse A comes to roughly 130 words, which is slightly over. It is well organised for a busy manager, with clear headings and short bullets. It covers all the key points: the new features, improvements, fixes, the known issue and what is coming next. It also stays accurate to the source.\n\nResponse B is roughly 300 words, more than double the limit. It is written as flowing prose with filler such as \"I'm pleased to share\" and \"so you can see how they work together\", which makes it harder to skim. It adds claims the source doesn't make, for example that practitioners \"do not need to adjust the booking schedule by hand\". It also leaves out the tablet and invoice-printing fixes, and it promises further details that the source never mentions.\n\nA follows the brief much more closely and is more useful to the reader.\n\n**A**",
+  "usage": {
+    "input": 1465,
+    "output": 902
+  },
+  "cost": 0.01195
+}

@@ -1,0 +1,13 @@
+{
+  "item": "qa-03",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "The rate has increased by **1 percentage point** (from 4% to 5%).\n\nIn relative terms, the increase is **25%**, because the 1-point rise is 25% of the original 4% rate: (5 − 4) ÷ 4 × 100 = 25%.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 70,
+    "output": 144
+  },
+  "cost": 0.000079,
+  "at": "2026-10-14T01:50:08.133Z"
+}

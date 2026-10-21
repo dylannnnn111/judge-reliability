@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-10",
+  "side": "B",
+  "score": 10,
+  "model": "claude-opus-5-5",
+  "text": "The answer of 1/3 is correct. Among all two-child families, the outcomes BB, BG, GB, and GG are equally likely. Conditioning on \"at least one girl\" excludes BB and leaves three equally likely cases, only one of which is GG.\n\nThe response states this reasoning concisely and accurately. The final paragraph earns its place: it explains why intuition says 1/2 and contrasts this with the \"specific child is a girl\" version. That addresses the most common confusion.\n\nAt roughly 75 words, it stays within the 120-word limit. The formatting is clean and easy to follow. There are no errors or wasted words.\n\nScore: 10",
+  "usage": {
+    "input": 396,
+    "output": 386
+  },
+  "cost": 0.009304
+}

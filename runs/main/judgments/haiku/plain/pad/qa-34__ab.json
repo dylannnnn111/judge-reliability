@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-34",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "**A**\n\nResponse A stays under the 120-word limit, which I estimate at roughly 115 words. Response B runs closer to 220 words, so it breaks the length constraint. Both explain the same core ideas accurately: a Diffie-Hellman-style key exchange, a symmetric session key, and certificates to prevent man-in-the-middle attacks. Response B adds some useful framing, but not enough to offset the length violation.",
+  "usage": {
+    "input": 762,
+    "output": 461
+  },
+  "cost": 0.0003067
+}

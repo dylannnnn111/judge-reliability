@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-14",
+  "order": "ba",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer of 7.5 hours (7 hours 30 minutes). Both show the same reasoning: the tap fills 1/3 per hour, the drain empties 1/5 per hour, the net rate is 2/15 per hour, and the time is 15/2 hours. Both are well under 120 words.\n\nThe only differences are formatting. Response A puts the answer with the conversion up front and lists every step as a bullet. Response B puts the answer up front, bolds the net rate, and states the final computation in a line of its own. These differences are trivial and add no substance, so neither is better in any way that matters.\n\nVerdict: TIE",
+  "usage": {
+    "input": 600,
+    "output": 208
+  },
+  "cost": 0.00328
+}

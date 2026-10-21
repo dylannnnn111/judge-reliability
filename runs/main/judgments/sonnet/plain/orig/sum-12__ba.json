@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-12",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "A\n\nBoth summaries cover the same key facts and are about equally long, at roughly 125 words each by my count, so both slightly exceed the 120-word limit. The difference is in faithfulness.\n\n- **Response B** adds \"This is a significant saving for regular users,\" which is an unsupported inference. The article only says one dialysis patient's family would pay less. A weekly pass at $15 versus $9 per day would actually cost more for someone visiting only once a week.\n- **Response A** says the weekly pass will \"replace\" the $9 daily concession, which is a minor over-reading, since the article says concessions were \"extended\". Otherwise it sticks closely to the source.\n\nResponse A's order also suits a busy manager: the fee change, then the reason, then the concession, then the other points.",
+  "usage": {
+    "input": 1210,
+    "output": 1779
+  },
+  "cost": 0.02021
+}

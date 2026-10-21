@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-20",
+  "order": "ba",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answers: Canberra, and 1927. Both are under 120 words.\n\nChecking the details: Provisional Parliament House opened on 9 May 1927, and the Duke of York opened it. Parliament did meet in Melbourne from 1901 to 1927. The new Parliament House opened in 1988, also correct. Response A's claim that it \"moved to the current Parliament House on Capital Hill in 1988\" is accurate.\n\nResponse B says Melbourne \"had been the seat of government since Federation in 1901.\" That is accurate. Parliament met in Melbourne, which was the interim seat.\n\nResponse A adds a few more correct facts: the Duke of York opening it, and the 1988 move. These are mildly useful context, but the question only asks for the capital and the year. Response B is more concise and covers the key reasoning (that Parliament moved from Melbourne). Response A's additions are correct but not especially necessary, although the Duke of York detail helps explain the date. The instructions say length is not a merit unless the extra words add something correct and useful. The extra material is correct and slightly useful context, but it is not needed for the question.\n\nBoth are essentially equal on correctness and reasoning. Response A adds a bit more correct context; Response B is tighter. The difference is marginal, so this is close to a tie.\n\nVerdict: TIE",
+  "usage": {
+    "input": 485,
+    "output": 435
+  },
+  "cost": 0.00532
+}

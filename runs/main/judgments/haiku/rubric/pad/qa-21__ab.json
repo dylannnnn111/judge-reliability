@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-21",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify perihelion in early January, give accurate distances, and explain that axial tilt, not distance, causes the seasons. Response A adds useful context, including the aphelion comparison and the roughly 3% difference in distance, but it runs to about 200 words, well over the explicit \"under 120 words\" limit. Response B is about 60 words, meets the constraint, and still covers the core answer and key reasoning. The extra material in A does not outweigh breaking the stated length requirement, so B is better.\n\nVerdict: B",
+  "usage": {
+    "input": 821,
+    "output": 466
+  },
+  "cost": 0.0003151
+}

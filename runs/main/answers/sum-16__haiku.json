@@ -1,0 +1,13 @@
+{
+  "item": "sum-16",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "Status: Amber. The CRM migration is about two weeks behind, so the 3 November cut-over is off the table. The proposed new date is 17 November, pending steering committee approval on 15 October.\n\nProgress: Data mapping is complete and two of three test migrations have run. The latest test moved 98.6% of records cleanly; about 3,100 duplicate-email records are being fixed. Sales training materials are drafted.\n\nDelays: A vendor sandbox outage cost six working days, and the quoting tool integration is taking longer than planned. The vendor expects a fix by 24 October.\n\nBudget: $412K of $520K spent. The delay adds about $38K, or about $26K net after a $12K vendor credit still awaiting written confirmation.\n\nKey risk: If the quoting fix slips past 24 October, cut-over likely moves to early December.\n\nDecisions needed on 15 October: approve the 17 November date and the budget variation ($38K, or $26K if the credit is confirmed in writing).",
+  "stop": "end_turn",
+  "usage": {
+    "input": 714,
+    "output": 325
+  },
+  "cost": 0.0002339,
+  "at": "2026-10-14T01:51:34.245Z"
+}

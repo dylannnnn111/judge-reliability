@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-21",
+  "side": "A",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The response identifies the most important problem, duplicate refunds from retrying a non-idempotent POST, and ranks it first with a sound fix. The other five items are real issues: retrying aborts and permanent errors, no per-attempt timeout, ignored `Retry-After`, undrained discarded bodies, and the unchecked `refundId` cast. Nothing it flags is wrong. It misses little of importance, though it doesn't mention the lack of logging or an order-level dedupe check in the support console flow. The main weakness is length: at roughly 230 words it exceeds the explicit 200-word limit, and the second sentence of item 1 partly repeats the fix. The ordering and fixes are otherwise clear and actionable.\n\nScore: 7",
+  "usage": {
+    "input": 1192,
+    "output": 817
+  },
+  "cost": 0.0005277000000000001
+}

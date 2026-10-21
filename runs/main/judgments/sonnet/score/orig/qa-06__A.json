@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-06",
+  "side": "A",
+  "score": 10,
+  "model": "claude-sonnet-5-5",
+  "text": "The answer is correct. Counting forward, 16 days take us to 31 December, leaving 84. January's 31 days leave 53, and February 2028 (a leap year, so 29 days) leaves 24, which gives 24 March 2028.\n\nFor the weekday, 100 days is 14 weeks plus 2 days, so Wednesday + 2 = Friday. A separate check agrees: 1 January 2028 is a Saturday, and 24 March is day 84 of the year, so 83 days later is 83 mod 7 = 6 days after Saturday, which is Friday.\n\nThe response also gives the key reasoning clearly, stays well under the word limit, and leads with the answer.\n\nScore: 10",
+  "usage": {
+    "input": 345,
+    "output": 550
+  },
+  "cost": 0.00619
+}

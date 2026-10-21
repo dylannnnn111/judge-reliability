@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-26",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main bug: `qty` stays a string, so `o.items +=` concatenates. Both also explain correctly why `totalCents` hides it through coercion by `*`. They then cover the same secondary issues: naive CSV splitting, CRLF line endings, missing validation, and a plain object used as a map.\n\n**Response A**\n- It adds a real consequence of `NaN`: the sort comparator returns `NaN`, so `topOrders` order becomes unreliable.\n- Its minor points (CRLF, integer-key ordering of `Object.values`) are accurate.\n- It does not flag anything that is actually fine.\n- It runs slightly over the 200-word limit.\n\n**Response B**\n- Its \"no tie-breaker, so equal totals order unpredictably across runs/engines\" claim is wrong. `Array.prototype.sort` has been stable since ES2019, so ties keep input order deterministically.\n- It lists the empty-input case as an issue, then admits `slice(1)` handles it. That is a non-issue flagged anyway.\n- It suggests specific CSV libraries and `Object.create(null)`, which is mildly useful.\n- It is longer and further over the word limit.\n\nA is more accurate, avoids false positives, and is more concise, so A is better.\n\nVerdict: A",
+  "usage": {
+    "input": 1738,
+    "output": 868
+  },
+  "cost": 0.012156
+}

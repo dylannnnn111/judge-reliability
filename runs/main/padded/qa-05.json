@@ -1,0 +1,14 @@
+{
+  "pair": "qa-05",
+  "side": "B",
+  "author": "haiku",
+  "model": "claude-haiku-5-5",
+  "original": "**Friday, 28 February 2025.**\n\nSince 365 days is 52 weeks plus 1 day, the weekday advances by one. Thursday becomes Friday. The date is 28 February 2025, because 2025 is not a leap year, so there is no 29 February.",
+  "text": "**Friday, 28 February 2025.**\n\nTo explain how this answer was reached, consider first that 365 days equals 52 weeks plus 1 day. Because a full week returns the weekday to where it started, only that one extra day shifts it, so the weekday advances by one. Thursday therefore becomes Friday. As for the date itself, it is 28 February 2025, since 2025 is not a leap year and so there is no 29 February to account for.",
+  "ratio": 1.93,
+  "usage": {
+    "input": 273,
+    "output": 377
+  },
+  "cost": 0.00021580000000000001
+}

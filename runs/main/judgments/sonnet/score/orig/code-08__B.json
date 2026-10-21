@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-08",
+  "side": "B",
+  "score": 8,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds the main real problems and ranks them sensibly. The half-written-upload bug comes first, followed by the swallowed exceptions that move failed files to `done`. Partial imports, overlapping runs, the unclosed handle and the `os.rename` issues are all genuine. Most items include a concrete fix: the `.tmp`-then-rename convention, an `error/` directory, idempotent saves, `flock` and `with open`.\n\nWeaknesses:\n- It runs to roughly 210 words, slightly over the 200-word limit.\n- Items 5 and 8 are minor, and item 5 largely repeats item 3, so they dilute the list a little.\n- Item 8 (memory) is low-value for typical partner files.\n- Items 5 and 8 offer little or no fix.\n- Nothing it flags is wrong or a false alarm.\n\nScore: 8",
+  "usage": {
+    "input": 954,
+    "output": 1234
+  },
+  "cost": 0.014248
+}

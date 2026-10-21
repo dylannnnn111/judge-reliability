@@ -1,0 +1,13 @@
+{
+  "item": "code-39",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "1. **Catastrophic if `cd` fails.** `set -uo pipefail` omits `-e`, and `cd` isn't checked. If `$CACHE_ROOT/$APP_NAME` doesn't exist, the script keeps going and runs `rm -rf ./*` in whatever directory it was started from. Use `cd \"$dir\" || exit 1` or add `-e`.\n\n2. **No validation of `APP_NAME`.** A value like `..` or `../other` escapes the cache root. `..` makes `rm -rf ./*` clear all of `/var/cache`. Reject names containing `/` or `..`, or require a plain directory name that exists under `$CACHE_ROOT`.\n\n3. **Failures don't fail the script.** If `rm` fails (permissions, busy files) or files remain, the script only prints a warning and exits 0. The deploy pipeline then rebuilds on top of a stale cache with no error. Exit non-zero when files remain.\n\n4. **Hidden files are skipped.** The `*` glob doesn't match dotfiles, so `rm -rf ./*` leaves them behind. The `find` check does count them, so the warning fires, but the cache isn't fully cleared. Use `find . -mindepth 1 -delete` or include `.[!.]*` and `..?*` in the glob.\n\n5. **Minor:** the `while read` loop is just a slow way to count (`find . -type f | wc -l`), and `find -type f` ignores empty directories and symlinks.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 353,
+    "output": 1285
+  },
+  "cost": 0.0006778,
+  "at": "2026-10-14T01:55:01.691Z"
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "qa-10",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses reach the correct answer of 1/3 and give the same core reasoning. The remaining differences are the word limit and how concise each is.\n\nWord count for Response A: the text runs roughly 110-120 words. Counting more carefully:\n- \"**1/3**\" = 1\n- \"List the equally likely two-child families by birth order: BB, BG, GB, GG, each with probability 1/4.\" = 16, running total 17\n- \"The condition \"at least one child is a girl\" removes BB.\" = 10, total 27\n- \"That leaves BG, GB, and GG, which are still equally likely.\" = 11, total 38\n- \"Only GG has two girls, so the fraction is 1 out of 3.\" = 12, total 50\n- \"This is different from 1/2.\" = 5, total 55\n- \"The 1/2 answer would apply if you were told that a *specific* child, such as the older one, is a girl.\" = 21, total 76\n- \"Here the condition only says that at least one is a girl, so the families with one boy and one girl (BG and GB) together outnumber the two-girl families.\" = 29, total 105\n- \"**Answer: 1/3**\" = 2, total 107\n\nSo A is about 107 words, which is under 120.\n\nResponse B is about 85 words, also under the limit.\n\nBoth are correct and within the limit. A adds a little more explanation, such as the point that BG and GB together outnumber GG. It repeats the answer at the start and again at the end, which is slightly redundant. B is tighter and says the same thing. Neither is clearly better, so the difference is marginal.\n\nVerdict: TIE",
+  "usage": {
+    "input": 671,
+    "output": 507
+  },
+  "cost": 0.006412
+}

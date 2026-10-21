@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-36",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly explain lift through the pressure difference between the wing's upper and lower surfaces and through the downward deflection of air (Newton's third law). Neither has a factual error. Response A also covers the key reasoning: airfoil shape, angle of attack, and both explanations of lift.\n\nResponse B is much longer, roughly 270 words, which breaks the explicit \"under 120 words\" limit. Its extra material on speed, angle of attack, and stall is accurate and useful, but it does not outweigh ignoring the stated length constraint. Response A is concise, complete, and clear.\n\nVerdict: A",
+  "usage": {
+    "input": 908,
+    "output": 461
+  },
+  "cost": 0.0003213
+}

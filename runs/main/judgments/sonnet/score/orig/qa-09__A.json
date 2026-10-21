@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-09",
+  "side": "A",
+  "score": 10,
+  "model": "claude-sonnet-5-5",
+  "text": "The correct answer is 7.5°. At 3:15 the minute hand is at 90° (the 3), and the hour hand is at 3×30 + 15×0.5 = 97.5°. The difference is 7.5°, so the response is correct.\n\nThe reasoning is shown clearly, and the response stays well under 120 words. The format is concise and clear.\n\nScore: 10",
+  "usage": {
+    "input": 332,
+    "output": 120
+  },
+  "cost": 0.001864
+}

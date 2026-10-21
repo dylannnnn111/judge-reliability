@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-25",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.**\n\n**Correctness:** Both are accurate and reach the right answer: no, Viking warriors did not wear horned helmets. Both correctly cite:\n- the Gjermundbu helmet as the only near-complete Viking-age find;\n- the 19th-century Romantic origin of the myth, including Carl Emil Doepler's 1876 costumes for Wagner's *Ring*;\n- the Bronze Age horned helmets that predate the Vikings and were likely ceremonial.\n\nB adds Gustav Malmström and the Veksø helmets, which are correct and modestly informative.\n\n**Length constraint:** The user asked for an answer under 120 words. A comes in at about 119 words and meets it. B runs to about 180 words and clearly exceeds it. B also spends words on filler (\"I'm afraid,\" \"To be clear about what the archaeological record does show,\" \"It is worth mentioning, too\") rather than substance. Its extra details do not justify breaking an explicit instruction.\n\n**Clarity:** A's bolded sections make it easy to scan. B is dense prose.\n\nSince both are correct and cover the key reasoning, A's compliance with the word limit and its tighter structure make it the better response.\n\nVerdict: A",
+  "usage": {
+    "input": 906,
+    "output": 843
+  },
+  "cost": 0.020484
+}

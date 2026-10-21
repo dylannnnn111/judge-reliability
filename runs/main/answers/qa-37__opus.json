@@ -1,0 +1,13 @@
+{
+  "item": "qa-37",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "Uluru is red because of **rust**. The rock is arkose, a coarse sandstone rich in feldspar that contains iron-bearing minerals. Where the surface is exposed to air and water, those minerals weather and the iron oxidizes into iron oxides such as hematite. This forms a thin reddish-orange coating on the outside.\n\nBeneath this weathered skin, Uluru's rock is actually **grey**, which can be seen in places where the surface has flaked away.\n\nIts famous glowing reds, oranges, and purples at sunrise and sunset come from low-angle sunlight. The light passes through more atmosphere, which scatters away blue wavelengths and leaves warmer red tones to light up the iron-rich surface.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 39,
+    "output": 322
+  },
+  "cost": 0.006596,
+  "at": "2026-10-14T01:50:59.020Z"
+}

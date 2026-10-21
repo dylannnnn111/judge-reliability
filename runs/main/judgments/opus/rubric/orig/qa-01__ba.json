@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-01",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Verdict: A**, by a narrow margin.\n\n**Correctness:** Both are right. 90 / 981 ≈ 0.0917, about 9.2%. Each uses the natural-frequency method with 10,000 people: 90 true positives and 891 false positives.\n\n**Key reasoning:** Both give the full breakdown and explain why the result is low. The condition is rare, so false positives from the large healthy group swamp the true positives. Response A also names Bayes' theorem, which is useful framing.\n\n**Clarity and length:** Both are under 120 words and well organized. Response B puts the answer first, which is slightly more reader-friendly.\n\n**Accuracy of extra content:** Response B adds \"This effect is often called the base rate fallacy.\" That label is slightly off. The base rate fallacy is the reasoning error of ignoring the prior when judging such results. It is not the name of the statistical effect itself. So B's extra sentence is a minor imprecision rather than a correct, useful addition. Response A's interpretation contains no such slip.\n\nOverall: both are equally correct and similarly clear. B's answer-first layout is a small plus. A avoids B's mislabeling and gives a more precise figure (0.0917). The mislabel weighs slightly more than the layout advantage.\n\nVerdict: A",
+  "usage": {
+    "input": 745,
+    "output": 835
+  },
+  "cost": 0.01968
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-27",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "The prompt asks for fewer than 120 words. Response A is about 100 words, so it fits. Response B is well over 200 words and breaks the limit clearly.\n\nOn correctness, Response A is accurate. Ice is about 9% less dense, it forms an open hexagonal lattice, and the deeper water stays near 4°C. Response B has an error: it says \"As water cools below about 4°C, its molecules begin arranging themselves into the open hexagonal lattice.\" That is misleading, since the lattice forms at freezing, and water expands slightly below 4°C only because of emerging structure. It also says \"the coldest water sits at the surface, while slightly warmer water sinks,\" which is muddled, because 4°C water is the densest and sinks. The statement is roughly right in that the coldest water is at the surface, but the phrasing is confusing.\n\nResponse A is correct, concise, and meets the limit. Response B is longer, less precise, and violates the constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 917,
+    "output": 317
+  },
+  "cost": 0.005004
+}

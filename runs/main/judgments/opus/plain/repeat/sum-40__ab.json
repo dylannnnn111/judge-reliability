@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "sum-40",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A comes in at about 116 words, within the 120-word limit. Its \"Bottom line\" and \"Caveats\" labels make it easy for a busy manager to scan, and it covers every key point accurately. Its one gap is that it doesn't say outright that the 10 per cent claim wasn't supported, though the figures make that clear.\n\nResponse B states the overseas claim wasn't supported, which is good. But it runs to about 125 words, breaking the explicit limit. It also introduces two small inaccuracies:\n- It says \"no significant problems\" when the study reported no problems at all.\n- It drops the qualifier that the 71 per cent figure applied only to students in the water-bottle schools.",
+  "usage": {
+    "input": 1231,
+    "output": 995
+  },
+  "cost": 0.024824
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-23",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are correct that 0.999... = 1. The constraint is under 120 words, so I need to count.\n\nResponse A: Counting roughly. \"0.999... equals 1 exactly. They are two notations for the same number.\" (12) \"Quick arguments:\" (2) → 14. \"1. Fractions: 1/3 = 0.333..., so 3 × (1/3) = 0.999... But 3 × (1/3) = 1.\" about 17 → 31. \"2. Algebra: Let x = 0.999... Then 10x = 9.999... Subtract: 9x = 9, so x = 1.\" about 18 → 49. \"3. No gap: If two real numbers differ, some number lies between them, such as their average.\" 16 → 65. \"No number fits between 0.999... and 1.\" 7 → 72. \"Any proposed difference, like 0.000...1, would need a 1 after infinitely many zeros, which isn't a valid decimal.\" 18 → 90. \"Formally, 0.999... means the limit of 0.9, 0.99, 0.999, …, and that limit is exactly 1.\" about 16 → 106. So A is about 106 words, under 120, though close.\n\nResponse B: about 80 words, well under.\n\nBoth comply. A gives an additional argument (the no-gap argument with density), which adds useful correct reasoning. Its claim that \"0.000...1 isn't a valid decimal\" is correct. B is concise and also covers the key reasoning: algebra, fractions, and limit. B's \"no gap\" statement is asserted without justification.\n\nA adds a bit more substance, which is correct and useful, while remaining within the limit. The counting is somewhat uncertain, but A likely fits. The risk is that A exceeds 120 if the token counting includes symbols differently; my count says ~106, so it's fine.\n\nA is slightly better for the added reasoning, and its formatting is clear.\n\nVerdict: A",
+  "usage": {
+    "input": 726,
+    "output": 617
+  },
+  "cost": 0.007622
+}

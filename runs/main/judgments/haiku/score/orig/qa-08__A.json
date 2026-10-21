@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-08",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response is correct. 375 mL × 0.048 = 18 mL of ethanol, and 18 mL × 0.789 g/mL = 14.2 g. Dividing by 10 g per standard drink gives about 1.42 standard drinks. Each step is shown with the right units, the key reasoning (ABV gives volume, density converts volume to mass, and the standard drink definition converts mass to drinks) is included, and the response is concise and well under 120 words. The only minor point is that \"≈\" is slightly redundant given the rounding, but this does not hurt clarity.\n\nScore: 9",
+  "usage": {
+    "input": 383,
+    "output": 300
+  },
+  "cost": 0.00018830000000000002
+}

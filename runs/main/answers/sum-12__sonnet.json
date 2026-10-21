@@ -1,0 +1,13 @@
+{
+  "item": "sum-12",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Summary:** From 1 November, Tallis Valley Hospital will raise parking fees. The first hour stays free, then the hourly rate goes from $3 to $4 and the daily cap from $18 to $24. The health service says the money will fund repairs to the 1994 car park, where concrete cancer has closed 180 spaces. Repairs should take 18 months.\n\nA new $15 weekly concession pass will replace the current $9 daily concession. It is open to frequent visitors, such as chemotherapy and dialysis patients, and to carers of patients staying more than seven days. Applicants need a letter from their treating team. Forms will be available from 20 October at reception and online.\n\nStaff are unaffected. A petition for free regional hospital parking has over 2,000 signatures.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 636,
+    "output": 253
+  },
+  "cost": 0.003802,
+  "at": "2026-10-14T01:51:27.350Z"
+}

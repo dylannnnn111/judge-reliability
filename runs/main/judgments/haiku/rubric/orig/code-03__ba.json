@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-03",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the top bug, SQL injection from the f-string, and give the same parameterized fix. Both also catch the unclosed connection, and both correctly note that `with sqlite3.connect()` commits or rolls back but does not close. Neither flags anything that is actually fine.\n\nResponse A adds authorization and audit logging. For a support tool that exposes customer PII, that is a domain-relevant concern and arguably belongs near the top. Its hardcoded-path point is weak, and its claim that worse inputs \"can modify data\" is overstated for `sqlite3`, which rejects multiple statements in `execute`.\n\nResponse B catches case-sensitive, whitespace-sensitive email matching, which is a real functional bug staff would hit. It also raises missing ordering and unbounded results, which are legitimate. Its minor items (the redundant `if not rows`, `\"\"` treated as no filter) are accurate. It is vaguer on the injection impact (\"could do worse\"), and it omits the authorization concern.\n\nBoth are strong and close in quality. Response A's emphasis on access control for customer data is slightly more important for this use case, while Response B's matching and ordering issues are practical and accurate. The edge goes narrowly to A.\n\nVerdict: A",
+  "usage": {
+    "input": 1531,
+    "output": 1172
+  },
+  "cost": 0.0007391
+}

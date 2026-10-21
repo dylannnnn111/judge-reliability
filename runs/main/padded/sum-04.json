@@ -1,0 +1,14 @@
+{
+  "pair": "sum-04",
+  "side": "A",
+  "author": "haiku",
+  "model": "claude-haiku-5-5",
+  "original": "Tallowood Health Network is increasing its paid parental leave from 1 January 2027. Primary carers will get 18 weeks at full pay, up from 12, and secondary carers will get 4 weeks, up from 2. Leave can now be split into up to three blocks, provided it is taken within 24 months of birth or adoption. The increase applies to children born or placed on or after 1 January 2027, and staff need 12 months' continuous service (casuals need 12 months of regular work). Superannuation will be paid on the government-funded portion for primary carers. Applications are due at least 10 weeks before leave starts, via the staff portal. Information sessions are on 5 and 19 November at 12:30pm.",
+  "text": "Tallowood Health Network is pleased to share that it is increasing its paid parental leave entitlements, with the changes taking effect from 1 January 2027. To begin with the main change, primary carers will receive 18 weeks of leave at full pay, up from the current 12 weeks. Secondary carers will also see an increase, moving from 2 weeks to 4 weeks of paid leave.\n\nIn addition to the increase in the amount of leave, there is greater flexibility in how it can be used. Leave can now be split into up to three separate blocks, provided that each block is taken within 24 months of the child's birth or adoption.\n\nPlease note that the increase applies to children born or placed on or after 1 January 2027. To be eligible, staff need 12 months' continuous service, and casual staff need 12 months of regular work. Superannuation will also be paid on the government-funded portion of leave for primary carers.\n\nIf you are planning to take leave, applications are due at least 10 weeks before the leave starts, and they should be submitted via the staff portal. To help staff understand the changes, information sessions will be held on 5 and 19 November at 12:30pm.",
+  "ratio": 1.72,
+  "usage": {
+    "input": 413,
+    "output": 908
+  },
+  "cost": 0.0004953000000000001
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-06",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A.** Both responses give the correct answer, Friday 24 March 2028. The counting is also correct in each: 16 days to 31 December, then 31 for January and 29 for February 2028 leaves 24, and 100 days is 14 weeks plus 2 days, so Wednesday becomes Friday.\n\nThe difference is the word limit. Response A is about 60 words, well under the 120-word cap. Response B comes to roughly 134 words by my count, so it breaks the constraint and is also padded with filler.\n\n**A**",
+  "usage": {
+    "input": 522,
+    "output": 743
+  },
+  "cost": 0.008474
+}

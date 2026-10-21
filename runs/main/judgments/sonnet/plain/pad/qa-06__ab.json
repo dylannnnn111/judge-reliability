@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-06",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. Both responses give the correct answer, Friday, 24 March 2028. The calculation checks out: 16 days to 31 December, then 31 in January and 29 in leap-year February leaves 24 days, which lands on 24 March. The weekday is also right, since 100 days is 14 weeks plus 2 days, and Wednesday plus 2 is Friday.\n\nThe difference is the word limit. Response A comes to roughly 134 words, which breaks the \"under 120 words\" instruction. It is also padded with filler such as \"beginning from the starting date in the calculation\". Response B is concise, stays within the limit, and still shows the key steps.\n\n**B**",
+  "usage": {
+    "input": 522,
+    "output": 788
+  },
+  "cost": 0.008924
+}

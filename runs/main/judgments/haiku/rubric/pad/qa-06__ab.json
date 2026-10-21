@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-06",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct answer. Checking: 16 days to 31 Dec, then 31 (January) and 29 (February 2028, a leap year) gives 76 days, and 24 more days reaches 24 March 2028. Since 100 = 14×7 + 2, Wednesday plus 2 days is Friday. Both responses show the key reasoning: the month-by-month day count and the mod-7 weekday shift.\n\nResponse A is wordy, with filler phrases like \"I counted forward in stages\" and \"I took a slightly different approach.\" It runs about 130 words, which exceeds the user's \"under 120 words\" limit. Response B reaches the same correct result and reasoning in roughly 60 words, complies with the length constraint, and is clearer.\n\nResponse B is better on instruction-following and clarity, with equal correctness.\n\nVerdict: B",
+  "usage": {
+    "input": 667,
+    "output": 969
+  },
+  "cost": 0.0005512000000000001
+}

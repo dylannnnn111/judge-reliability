@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-23",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly state that 0.999... equals 1, and both are under 120 words. Response A gives two standard arguments (algebra and 1/3 × 3) and a limit explanation. Response B gives the same two arguments plus a third \"no gap\" argument that addresses the intuition behind the question: if two reals differ, a number lies between them, and no number fits between 0.999... and 1. It also explains why an \"0.000...1\" difference is not a valid decimal, which directly targets a common misconception. B's extra content is correct and useful, and its bolded structure is clear. A is slightly more concise but omits that intuition-targeting argument.\n\nVerdict: B",
+  "usage": {
+    "input": 726,
+    "output": 214
+  },
+  "cost": 0.00017960000000000003
+}

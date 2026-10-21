@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-09",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the main bug: `revoke_permission` never clears `_permission_cache`, so revoked permissions persist until restart. Both also flag the per-process cache problem across workers, the missing invalidation on grants, and unbounded growth. Both correctly advise invalidating after the commit.\n\nResponse A is somewhat stronger. It gives a concrete one-line fix for the top bug, and it notes that nonexistent user IDs get cached as empty sets, which is a real and specific detail that B misses. Its point on deleted or banned users also makes the staleness concern concrete. Its ordering is sensible.\n\nResponse B's thread-safety point is weak. Single dict get and set operations are atomic under CPython's GIL, and B itself concedes the worst case is a redundant query, so it spends a ranked slot on a minor concern. Its suggested fix is clear, but its \"lru_cache-style bounds\" advice doesn't fit well here, since `lru_cache` doesn't handle a `db` argument cleanly.\n\nResponse A edges ahead on specificity and on avoiding a weak item, while both are otherwise comparable in quality and length.\n\nVerdict: A",
+  "usage": {
+    "input": 1470,
+    "output": 942
+  },
+  "cost": 0.000618
+}

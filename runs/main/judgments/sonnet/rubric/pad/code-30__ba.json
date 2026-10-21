@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-30",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses identify the main bug: COUNT(*) returns 1 for agents with no tickets. Both flag the COALESCE-to-0 issue and the AVG-ignores-NULLs bias.\n\nResponse A: Its item 4 is speculative (\"if they exist\", \"confirm the schema\"), which is low-value. Item 5 is filler, since it calls the ORDER BY fine and then suggests a note to the email. It is wordy, with an intro and a closing sentence that add nothing, and it is likely over or near 200 words. It does not mention the weekly time window. Its fix for item 3 is vague (\"worth deciding\"), though it does suggest counting unanswered tickets. It also flags things that are fine (the ORDER BY tiebreaker, though it concedes it's fine).\n\nResponse B: It is concise and gives concrete fixes (`COUNT(t.id) - COUNT(t.first_response_mins)`). It notes the sort-order distortion caused by the COUNT bug, which is real. It raises the missing time window for a \"weekly\" report, which is a plausible, relevant concern, though the header comment says \"open tickets per agent\", so it is somewhat ambiguous but still reasonable. The integer-division point is flagged as minor and database-dependent, which is accurate. It explicitly notes that the status filter in the ON clause is correct, which avoids a false flag and is useful. Its reasoning that unanswered tickets are the slowest is sound. It is probably around 200 words, maybe slightly over, but it is tighter than A.\n\nB is better in accuracy, concreteness, and avoiding noise.\n\nVerdict: B",
+  "usage": {
+    "input": 1714,
+    "output": 534
+  },
+  "cost": 0.008768
+}

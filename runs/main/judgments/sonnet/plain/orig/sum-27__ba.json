@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-27",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "A is better. It stays under the 120-word limit (about 112 words by my count), while B comes to roughly 125. A also opens with a clear verdict (\"inconclusive, don't roll out\") and ends with an explicit decision needed at the 21 October meeting. That suits a busy manager. Both cover the key facts accurately, so the word limit and the clearer framing decide it.\n\n**A**",
+  "usage": {
+    "input": 1360,
+    "output": 1103
+  },
+  "cost": 0.01375
+}

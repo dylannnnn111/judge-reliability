@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-26",
+  "side": "B",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The response correctly identifies Rayleigh scattering as the cause. It explains that blue light scatters more, so the daytime sky looks blue. It also explains that violet is less prominent because of the solar spectrum and because human eyes are less sensitive to it (it also gets absorbed somewhat in the upper atmosphere, but this omission is minor). The sunset explanation is correct: a longer path through the atmosphere scatters away the blue, leaving red and orange.\n\nWord count: roughly 115 words, so under 120. Let me count more carefully.\n\n\"It comes down to Rayleigh scattering.\" (6) \"Sunlight contains all colors, and when it hits the tiny gas molecules in our atmosphere, shorter wavelengths (blue and violet) scatter far more strongly than longer ones (red and orange).\" (~29) → 35. \"During the day, the sun is high, so light travels a relatively short path through the air.\" (17) → 52. \"Blue light gets scattered across the whole sky, reaching your eyes from every direction.\" (14) → 66. \"The sky looks blue rather than violet because sunlight contains less violet and our eyes are less sensitive to it.\" (20) → 86. \"At sunset, sunlight passes through much more atmosphere to reach you.\" (11) → 97. \"Most of the blue scatters away along that long path, leaving mainly reds and oranges to come straight through.\" (19) → 116.\n\nAbout 116 words, which is under 120. The response meets the constraint, is accurate, clear, and well structured. It omits nothing essential; one could mention that the sunset's blue is scattered out of the line of sight, but it does so implicitly.\n\nScore: 9",
+  "usage": {
+    "input": 439,
+    "output": 544
+  },
+  "cost": 0.006318
+}

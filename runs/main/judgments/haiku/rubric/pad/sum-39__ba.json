@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-39",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response B is the better summary. Its facts are accurate: the 7-2 vote, the 1 December start, the $38,000 in existing fines, the 60-day replacement rule, and the inter-library loan exception are all correct. It reports the $52,000 and $19,000 figures as stated in the source, without drawing conclusions from them. It omits the blocked-account detail, a minor gap. At roughly 129 words, it slightly exceeds the 120-word limit but is close.\n\nResponse A has a substantive accuracy problem. It calculates a \"net cost of about $33,000\" by subtracting the $19,000 staff-time figure from the $52,000 revenue. The source doesn't say that staff time saved would offset revenue this way, so presenting it as the net cost is an unsupported inference that could mislead a manager. It is also well over the word limit, at roughly 190 words, and its bullet structure adds length without adding necessary information.\n\nVerdict: B",
+  "usage": {
+    "input": 1496,
+    "output": 1351
+  },
+  "cost": 0.0008251
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-29",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A** is better.\n\nBoth responses find the same core issues in the same order:\n\n- **`NOT IN` with NULLs:** this empties the result set. Both give the `NOT EXISTS` fix and the `IS NOT NULL` alternative.\n- **Date filter contradicts \"never referred\":** the subquery only checks referrals since 2026-01-01.\n- **`LIMIT 5000` with `ORDER BY created_at`:** this biases the audience toward the oldest customers.\n- **Date format fragility:** the minor storage-format point.\n\nResponse B adds one useful point: it notes there is no suppression or bounce handling. But the user asked for under 200 words. Response A is close to that limit. Response B runs well over it, roughly 350 or more words. Much of the excess is filler (\"To explain the problem,\" \"In other words,\" \"The issues below are listed in order of importance...\") rather than substance. Response A delivers the same technical content concisely and nearly follows the length constraint.",
+  "usage": {
+    "input": 1593,
+    "output": 481
+  },
+  "cost": 0.015992
+}

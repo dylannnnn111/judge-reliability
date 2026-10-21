@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "sum-03",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better, mainly because it respects the 120-word limit and A does not.\n\n**Word limit:** I counted about 124 words for Response A, so it slightly breaks the explicit constraint. Response B comes to roughly 100 words and stays under.\n\n**Accuracy and coverage:** Both responses give the key figures correctly: the failures, the 1,940 retries, the 451 abandoned orders, the $41,900 estimate and the 312 support contacts. B also names the root cause more precisely, saying connector B pinned the expired certificate after the vendor's August renewal. It lists the actions with owners and due dates in a scannable format. B's line that support escalation \"led to the fix\" simplifies the timeline slightly, but it is broadly accurate.\n\n**Scannability:** B's bulleted actions suit a busy manager. A's prose paragraph for the fixes is denser.",
+  "usage": {
+    "input": 1443,
+    "output": 1848
+  },
+  "cost": 0.021366
+}

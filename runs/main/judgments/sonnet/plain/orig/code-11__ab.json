@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-11",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B is slightly better. Both responses find the same top issues in the same order: the split check-and-decrement race, the process-local lock, missing `qty` validation, unchecked `release`, and the global lock. Their differences are small.\n\n**Length:** The user asked for under 200 words. By my rough count, A runs about 225 words and B about 205, including its code snippet. Both go over, but B is much closer and tighter.\n\n**Content:**\n- B gives a concrete code fix for the main race. A only describes the fix in prose.\n- B's point 3 notes that a negative `qty` in `release` also decreases stock, which is a slightly more complete observation.\n- A adds unknown-SKU/`None` handling, which depends on assumptions about `db.get_stock` that the code doesn't show. It also mentions DB I/O under the lock and abandoned carts, which are reasonable but marginal.\n- B's last point, that `available()` is only advisory, partly repeats point 1.\n\nB's concrete fix, closer adherence to the word limit, and tighter focus on what matters outweigh A's few extra minor points.\n\n**B**",
+  "usage": {
+    "input": 1397,
+    "output": 1886
+  },
+  "cost": 0.021654
+}

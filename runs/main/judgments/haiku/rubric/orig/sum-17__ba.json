@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-17",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response B is more accurate. Response A attributes the \"fourth weekend in a row\" point to Arjun Mehta, but Colleen raised it; Arjun's contribution was the three other complaints this month. Otherwise A's licence terms, the DJ explanation, the speaker and 10pm commitments, and the 20 October follow-up are correct. B gets the same key facts right, correctly credits \"four weekends running\" to the residents, and adds the regulator's need for dated evidence, which the manager may need if the problem recurs. B also notes that one resident is unaffected, which signals the committee is not unanimous about escalating. B drops the three-other-complaints detail, but that is a minor omission. Both run slightly over 120 words, with A around 135 and B around 125, so neither has a clear concision edge, though B is somewhat tighter.\n\nVerdict: B",
+  "usage": {
+    "input": 1559,
+    "output": 2049
+  },
+  "cost": 0.0011804
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-14",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.**\n\n**Core issues.** Both responses find the critical bug and rank it first: OFFSET pagination combined with deletion skips about half the rows. Both give the right fixes, dropping OFFSET or using keyset pagination. Both also correctly raise crash-safety and idempotency second, including the subtle point about `archive` needing to be durable before the delete. Each cover the string-format comparison on `created_at` and the missing index.\n\n**Where they differ.**\n- **B's error-handling item.** B adds a third item, \"no error handling or rollback,\" and ranks it above the timestamp issue. This is weak.\n  - If `archive` raises, nothing has been deleted yet, so the only open transaction is a read.\n  - An exception propagating out of a nightly job is not itself a bug; the caller can handle it.\n- **B's padding.** The logging/metrics bullet is generic filler.\n- **What B adds.** B's note that \"nothing fails, and the returned count looks plausible\" is useful, but it doesn't outweigh the padding.\n- **A's additions.** A's observation that each nightly run only halves the backlog is accurate and informative.\n- **A's batch-size remark** is a mild, reasonable aside.\n\n**Length.** The user asked for under 200 words. A runs about 220 words and B about 245, so A is closer to the limit and denser.\n\nOverall, A is tighter, avoids weak or filler points, and ranks its items sensibly.\n\nVerdict: A",
+  "usage": {
+    "input": 1514,
+    "output": 1074
+  },
+  "cost": 0.027536
+}

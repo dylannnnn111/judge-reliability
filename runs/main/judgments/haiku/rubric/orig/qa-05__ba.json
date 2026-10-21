@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-05",
+  "order": "ba",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct answer: 365 days after Thursday 29 February 2024 is Friday 28 February 2025. I checked this independently. 2025 is not a leap year, so 1 March 2024 to 1 March 2025 is exactly 365 days, which puts 29 February 2024 + 365 days on 28 February 2025. Also, 1 January 2025 was a Wednesday, and 58 days later (mod 7 = 2) is a Friday.\n\nBoth explain the key reasoning: 365 days is 52 weeks plus one day, so the weekday advances by one, and the absence of 29 February in 2025 explains the date. Response A states the leap-year point after the weekday logic, while Response B leads with it and walks through the date before the weekday. Both are clear, concise, and well under 120 words. Neither has a substantive advantage.\n\nVerdict: TIE",
+  "usage": {
+    "input": 467,
+    "output": 925
+  },
+  "cost": 0.0005092
+}

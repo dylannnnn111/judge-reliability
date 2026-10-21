@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-34",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. Response A runs about 280 words, well over the 120-word limit and padded with filler. Response B is about 135 words, slightly over but close, and its structured bullets suit a busy manager.\n\nB",
+  "usage": {
+    "input": 1465,
+    "output": 592
+  },
+  "cost": 0.0004425
+}

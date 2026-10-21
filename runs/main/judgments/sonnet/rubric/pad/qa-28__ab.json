@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-28",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "The request limits the answer to under 120 words. Response A is clearly over that, roughly 220 words. Response B is about 120 words, so I need to count it.\n\nResponse B, counted approximately:\n\"A collision occurs when two keys hash to the same slot.\" (11)\n\"There are two main fixes:\" (5) → 16\n\"Separate chaining: Each slot holds a list (or tree) of entries.\" (11) → 27\n\"Colliding keys are appended there, and a lookup scans that list.\" (11) → 38\n\"Open addressing: If a slot is taken, probe for another using linear probing, quadratic probing, or double hashing.\" (18) → 56\n\"Lookups follow the same probe sequence.\" (6) → 62\n\"Performance: With a good hash function and a moderate load factor (entries ÷ slots), operations average O(1).\" (17) → 79\n\"As collisions grow, chains lengthen or probe sequences cluster, degrading toward O(n) in the worst case.\" (16) → 95\n\"To prevent this, tables resize (typically doubling and rehashing) when the load factor passes a threshold.\" (16) → 111\n\"Each resize costs O(n), but the amortized cost per insert stays O(1).\" (12) → 123\n\nThat is about 123 words with the list markers, and it may be under 120 depending on how tokens are counted (the \"÷\" and the numbering \"1.\" \"2.\" are ambiguous). It is borderline, but much closer to the limit than A.\n\nBoth are correct. A adds detail such as the treeification in Java's HashMap and the load factor thresholds, but it breaks the length constraint badly. B is concise and covers the key points, with the amortized cost noted.\n\nB follows the constraint far better, so B wins.\n\nVerdict: B",
+  "usage": {
+    "input": 962,
+    "output": 563
+  },
+  "cost": 0.007554
+}

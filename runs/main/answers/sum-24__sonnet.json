@@ -1,0 +1,13 @@
+{
+  "item": "sum-24",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Grants Committee summary (5 Oct 2026, corrected 8 Oct)**\n\n- **Round 2:** 19 applications requested $286,000 against a $120,000 pool. Five grants were approved, totalling **$88,200**. **$31,800** rolls over to Round 3.\n- **Approved:** Youth Orchestra ($24,000), Pelican Point Mural ($8,500), First Nations storytelling festival ($35,000), Saltwater Theatre Collective ($14,500, corrected from $45,000), Seniors ceramics ($6,200).\n- **Conflict:** Jarrah Wilson left the call for the Saltwater item.\n- **Feedback:** Unsuccessful applicants hear by 31 October. Two are encouraged to reapply.\n- **Acquittals:** Three Round 1 recipients are overdue. They are ineligible for future rounds if they don't acquit by 30 November.\n- **Round 3:** Opens 2 February and closes 16 March.\n- **Next meeting:** Will discuss a possible $2,000 quick-response grant.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 811,
+    "output": 440
+  },
+  "cost": 0.006022,
+  "at": "2026-10-14T01:51:58.755Z"
+}

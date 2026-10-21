@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-22",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Verdict: A.** Both responses correctly call this a myth, so the decision rests on reasoning and relevance.\n\n**Correctness.** Both explain why: the Coriolis effect is real but negligible at sink scale. Both name the dominant factors: basin shape, residual motion and toilet jets. Both note that Coriolis-driven swirl has only been shown under extreme lab conditions. A's specific claims check out:\n- Shapiro's MIT experiment was in 1962.\n- The Southern Hemisphere replication was in Sydney in 1965 (Trefethen et al.).\n- Hurricanes do rotate clockwise in the Southern Hemisphere.\n\n**Reasoning.**\n- A ties the answer directly to the \"opposite direction\" framing by noting that large weather systems really do reverse between hemispheres. Its Sydney replication speaks directly to the Australia part of the question. Its point that the same toilet model flushes the same way everywhere is a concrete, useful takeaway.\n- B's observation that identical side-by-side sinks may drain differently is also a nice touch. Its account of the lab experiments, however, stays generic.\n\n**Length.** A's count is roughly 113 words, under the 120-word limit. B is also within it.\n\nA's extra details are accurate and relevant to the question, which gives it a modest edge.\n\nVerdict: A",
+  "usage": {
+    "input": 741,
+    "output": 1011
+  },
+  "cost": 0.023184
+}

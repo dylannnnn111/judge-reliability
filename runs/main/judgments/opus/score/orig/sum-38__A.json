@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-38",
+  "side": "A",
+  "score": 7,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** The response is largely accurate.\n- **Correct facts:** dates, figures, bug counts, budget and the beta results all match the source.\n- **Merged dates:** \"Member email and posters on 17–18 November\" combines posters (from 17th) and email (18th). This is compressed but not wrong.\n- **Risk condition slightly shifted:** The source says that if either store *rejects* the app, launch could move by up to a week. The response says review *delays* could push launch back by up to a week. That drops the rejection condition. It also omits the mitigation that the submission has been checked against both stores' guidelines.\n- **Install figure:** \"431 installed\" omits \"and logged in at least once\". This is acceptable compression.\n\n**Coverage:** The response keeps the essentials: status, launch date, beta outcome, the fixed complaint, key dates, budget and the main risk.\n- **Missing owners:** It drops the responsibilities section entirely. A busy manager would likely want to know who owns which part of the launch.\n- **Missing next update:** It also omits the next update date (24 October).\n\n**Concision and length:** The text is well organised and tight. By my count it is about 120 words, which sits on the limit rather than clearly \"under 120\".\n\nOverall, this is a solid, mostly faithful summary. It has a slightly imprecise risk statement, it omits the owners, and it is borderline on the word limit.\n\nScore: 7",
+  "usage": {
+    "input": 1045,
+    "output": 1788
+  },
+  "cost": 0.03994
+}

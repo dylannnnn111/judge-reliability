@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-04",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly put the missing idempotency key first, since retrying a POST after a lost response can double-charge a customer. Both also correctly flag retrying 4xx errors, the unhandled `KeyError`, blocking latency, and `print` in place of logging. Response A adds a strong point about the ambiguous \"maybe charged\" state after final failure and the need for reconciliation. Response B covers more of the code's specific details: it suggests deriving the key from the order ID, adds 429 to the retryable set, notes that `ValueError` from a bad JSON body may be retried depending on the requests version, points out the wasted sleep after the final attempt, and recommends distinct exception types so callers can tell a decline from an outage. Those extra points are accurate and actionable. Both responses appear to exceed the 200-word limit, so neither gains on brevity. B's additional correct specifics give it a slight edge.\n\nVerdict: B",
+  "usage": {
+    "input": 1651,
+    "output": 1016
+  },
+  "cost": 0.0006731
+}

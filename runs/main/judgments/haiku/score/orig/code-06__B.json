@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-06",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response catches the most important bug: `is not` compares object identity, so legitimate owners of larger IDs get `Forbidden`. It explains why small-ID tests would hide this and gives the fix. The enumeration leak (404 vs 403) and the lost-update race in `cancel_order` are both real, and each comes with a concrete fix. The refund concern is a domain-level point rather than a code defect, but it is reasonably flagged and framed as \"document or make explicit.\" The minor items are accurate. The ordering is sensible, with the critical correctness bug first. It is near the 200-word limit but not clearly over. It could have been tighter, and it doesn't mention that `get_order_for_user` only checks the owner for reads, but nothing it says is wrong.\n\nScore: 8",
+  "usage": {
+    "input": 1010,
+    "output": 701
+  },
+  "cost": 0.0004515
+}

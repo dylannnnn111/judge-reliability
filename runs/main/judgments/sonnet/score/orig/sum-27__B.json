@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-27",
+  "side": "B",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is accurate and fits the limit at about 111 words. The numbers are all correct: 81% vs 74%, 78% vs 76%, 60% of Sydney customers, about $95 per session, about $410,000 a year, the 21 October meeting and a November start. It also keeps the key reasoning that the apparent lift is confounded by the free-month promotion, along with the cost, the caution about sales' claim, and the proposed next step.\n\nTwo small imprecisions:\n- \"60-day test\" drops Marcus's \"at least 60 days\".\n- \"Approve\" and \"Decision needed\" are a slight reframing. Marcus says he can start if they agree at the meeting, so this is fair but not stated that way.\n\nCalling the free-month customers' retention \"inflated\" is a reasonable paraphrase. The format is easy for a busy manager to scan.\n\nScore: 9",
+  "usage": {
+    "input": 1153,
+    "output": 1272
+  },
+  "cost": 0.015026
+}

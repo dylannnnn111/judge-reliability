@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-06",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-opus-5-5",
+  "text": "Both responses give the correct answer, but **A** wins.\n\n**Checking the answer:** 1 January 2028 is a Saturday, so 15 December 2027 (17 days earlier) is indeed a Wednesday. Counting forward:\n- 15 to 31 December: 16 days\n- January: 31 days\n- February 2028 (leap year): 29 days\n\nThat totals 76 days. The remaining 24 days land on 24 March 2028. Since 100 days is 14 weeks plus 2 days, the weekday moves from Wednesday to Friday.\n\n**Why A is better:** The user asked for an answer in under 120 words. Response A is about 60 words. Response B runs to roughly 130 words, which breaks that limit. B also adds filler, such as \"I took a slightly different approach,\" that contributes nothing. A gives the same reasoning concisely.\n\nA",
+  "usage": {
+    "input": 522,
+    "output": 776
+  },
+  "cost": 0.017608
+}

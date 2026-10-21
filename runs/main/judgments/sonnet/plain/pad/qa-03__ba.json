@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-03",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. Both responses give the correct figures: a rise of 1 percentage point, which is a 25% relative increase. Both also appear to stay under the 120-word limit, with A at roughly 99 words and B at roughly 110.\n\nA is more direct and better organized. It separates the two measures clearly and gives a concrete loan example showing why the distinction matters.\n\nB is padded with pleasantries (\"Thank you for your question,\" \"I hope this explanation is helpful\") and repeats itself, restating the 4% to 5% change in several ways. It adds nothing A lacks.\n\n**A**",
+  "usage": {
+    "input": 551,
+    "output": 1300
+  },
+  "cost": 0.014102
+}

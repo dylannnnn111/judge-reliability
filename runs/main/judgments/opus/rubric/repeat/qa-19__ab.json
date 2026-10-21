@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "qa-19",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses get the core facts right. \"Kangaroo\" comes from Guugu Yimithirr *gangurru*, recorded in 1770 near Cooktown. The \"I don't understand\" story is a myth, and John Haviland's 1970s fieldwork confirmed that the word names the animal. Both are under 120 words (about 104 for A and 108 for B), so neither breaks the length limit.\n\nOn reasoning, B is stronger. It explains a plausible reason the myth arose: Aboriginal people elsewhere did not recognize the word, because Australia had hundreds of distinct languages. It also explains why the tale persists. A only retells the myth's storyline and asserts it is false. B also credits Joseph Banks alongside Cook, which is accurate.\n\nB's naming of the \"eastern grey kangaroo\" is slightly more specific than the evidence strictly supports, but this is minor. A's last sentence adds little beyond restating that the myth is false. B uses its words more productively.\n\nVerdict: B",
+  "usage": {
+    "input": 788,
+    "output": 1055
+  },
+  "cost": 0.024252
+}

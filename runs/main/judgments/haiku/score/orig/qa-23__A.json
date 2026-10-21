@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-23",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly answers that 0.999... equals 1. It gives several standard proofs: the 1/3 argument, the algebraic argument (10x − x), and the no-gap argument. It also states the formal definition as a limit. The no-gap argument is slightly loosely worded, since \"no number fits between\" is a claim about the reals that it doesn't fully justify, but it is essentially sound. The response stays within the 120-word limit (roughly 110 words), and the structure is clear and easy to follow.\n\nScore: 9",
+  "usage": {
+    "input": 484,
+    "output": 559
+  },
+  "cost": 0.0003279
+}

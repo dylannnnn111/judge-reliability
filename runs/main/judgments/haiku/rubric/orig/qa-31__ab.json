@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-31",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are factually correct. Both attribute the seasons to Earth's axial tilt, correctly place Australia in summer and Europe in winter around December, and stay under 120 words. Response A adds two useful points that Response B lacks: sunlight spreading over a larger area in winter, which is a key part of the mechanism, and a correction of the common misconception that distance from the Sun causes seasons. Response B's closing point that the hemispheres always have opposite seasons is valid, but it is less informative than A's misconception correction. A is slightly closer to the word limit, but it stays within it.\n\nVerdict: A",
+  "usage": {
+    "input": 760,
+    "output": 745
+  },
+  "cost": 0.0004485
+}

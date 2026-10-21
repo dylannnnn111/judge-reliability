@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "sum-20",
+  "side": "A",
+  "score": 3,
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for a summary under 120 words for a busy manager. The response is roughly 230 words, nearly double the limit. That's a clear violation of the explicit constraint.\n\nAccuracy: mostly accurate in the facts (date, time, venue, 30 minutes, five priorities, Tariq by 31 October, pub 4:15pm, Ella). However, there are perspective problems: \"Hannah Pryce would like to invite...\" then switches to \"I would kindly ask each person...\" and \"you are very welcome to join us\", which is written as if in Hannah's voice, mixing perspectives. It's also misleading for a manager who isn't the audience of the email. \"Gathering feedback on our reports\" is slightly off (what we heard from the business about our reports). Also \"Lunch and morning tea\" fine. \"Set your out-of-office\" - fine. The summary is also not framed as a summary; it's more a rewrite of the email.\n\nKey points: retains almost everything, including low-value details (bus number, parking). Doesn't prioritise what a manager needs. Missing nothing major, but far from concise.\n\nConcision: poor, breaks the word limit by about double.\n\nOverall, the length violation is a major failure of the explicit instruction, and the voice mixing is a flaw.\n\nScore: 3",
+  "usage": {
+    "input": 1227,
+    "output": 416
+  },
+  "cost": 0.006614
+}

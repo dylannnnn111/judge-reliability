@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-32",
+  "side": "B",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The summary is accurate. The figures (5.79%, 6.04%, 0.90% discount, 0.25% August rise, $250 goodwill) and the account of who decided what all match the source. It keeps the key points: the customers' claim, the company's position that only the discount is locked, the goodwill payment, the call about fixed rates, and the escalation risk. The \"Risk\" line is a reasonable inference rather than a stated fact, but it doesn't misrepresent anything. Its main weakness is length. At roughly 160 words, it breaks the explicit \"under 120 words\" limit, and some phrasing could be tightened without losing content. The response is accurate and complete, but it fails a stated constraint.\n\nScore: 5",
+  "usage": {
+    "input": 1276,
+    "output": 810
+  },
+  "cost": 0.0005326
+}

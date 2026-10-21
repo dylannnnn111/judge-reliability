@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-29",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A** is concise, at about 110 words, which keeps it under the user's 120-word limit. It keeps the key points: the price changes and data increases, the start date, who is affected, the exit-fee window, the device repayment caveat, and the reason. It has one flaw. The sentence \"Classic plan customers and those on fixed-price contracts are unaffected until their contract ends\" ties both groups to the contract condition. In fact, Classic customers are unaffected \"this year,\" not until a contract ends. This is a minor imprecision, but it is a real one.\n\n**Response B** is accurate throughout and handles the Classic and contract conditions correctly. However, it runs to roughly 220 words, nearly double the explicit limit the user set. Some of the extra length is useful, such as keeping the Classic condition precise. But much of it does not help the manager: the support hours and phone number, repeated framing like \"Here is how the changes will look,\" and polite padding. It also addresses the reader as a customer (\"If you would like to avoid the new prices, you can…\"), which does not suit a manager reading a summary.\n\n**Weighing them:** A's error is a small ambiguity in one clause. B's failure is a clear breach of the user's explicit hard constraint, by a wide margin, for a reader described as busy. A is accurate on all numbers, dates and the exit-fee condition, and its one muddled clause is less serious than B ignoring the length requirement.\n\nVerdict: A",
+  "usage": {
+    "input": 1524,
+    "output": 956
+  },
+  "cost": 0.025216
+}

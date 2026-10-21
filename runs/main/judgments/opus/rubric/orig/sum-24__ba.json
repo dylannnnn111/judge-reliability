@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-24",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy.** Both responses correctly use the corrected figures: $14,500 for Saltwater, $88,200 total and $31,800 rolling over. Neither repeats the superseded $45,000 or $1,300 figures as current. Dates (31 October, 30 November, 2 February to 16 March) are right in both.\n\nThe difference is in the smaller details:\n\n- **Quick-response grant:** Response B calls it \"a possible $2,000 quick-response grant,\" which drops the \"up to\" cap. That makes it sound like a fixed amount. Response A keeps \"up to $2,000,\" matching the minutes.\n- **Reapplication:** Response B says only that two applicants are \"encouraged to reapply.\" Response A keeps the condition that they reapply with revised budgets. That is the point of the encouragement.\n\nOn conditions, Response A is therefore slightly more precise.\n\n**Coverage.** Response B adds two things:\n\n- **Conflict of interest:** Jarrah left the call for the Saltwater item. This is reasonable governance information, though not essential for a manager.\n- **Correction flag:** It notes the Saltwater amount was \"corrected from $45,000.\" Response A already signals the correction in its header (\"corrected 8 October\"), so B's addition is useful but not critical.\n\n**Concision.** Both are under 120 words and similarly tight.\n\n**Overall.** B's extra conflict item is a modest plus. However, the instructions put accuracy first, explicitly including conditions. A faithfully keeps both the \"up to\" cap and the \"revised budgets\" condition, while B blurs both. A edges ahead.\n\nVerdict: A",
+  "usage": {
+    "input": 1755,
+    "output": 1716
+  },
+  "cost": 0.04134
+}

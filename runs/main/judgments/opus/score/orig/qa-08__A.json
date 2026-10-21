@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-08",
+  "side": "A",
+  "score": 10,
+  "model": "claude-opus-5-5",
+  "text": "The arithmetic is correct at each step. The ethanol volume is 375 × 0.048 = 18 mL. Its mass is 18 × 0.789 = 14.202 g, which rounds to 14.2 g. That gives 1.42 standard drinks, matching the roughly 1.4 printed on Australian labels for such cans.\n\nThe response lays out the key steps clearly: volume, then mass, then standard drinks. It stays well under 120 words, with no unnecessary content. The \"≈\" is apt, since the figure is rounded.\n\nScore: 10",
+  "usage": {
+    "input": 383,
+    "output": 274
+  },
+  "cost": 0.007012
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-32",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is well over the 120-word limit (roughly 220 words), so it breaks the explicit constraint. Response B is about 80 words, accurate, and answers both parts of the question.\n\nB",
+  "usage": {
+    "input": 698,
+    "output": 63
+  },
+  "cost": 0.002026
+}

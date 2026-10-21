@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-11",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the central bug (the check-then-act race in `reserve`) and rank it first. Both also raise the multi-process limitation of the lock, input validation, the unguarded `release`, and the global lock. They differ in a few ways.\n\n**Word limit:** The user asked for under 200 words. Response A runs roughly 330 words, with filler (\"Thank you for sharing the code...\") and a long preamble. Response B is roughly 250 words, which is also over the limit but closer. Neither complies, but A overshoots more.\n\n**Accuracy:**\n- A's point 3 says \"in `release` a negative value decreases stock with no check at all\", which is fine.\n- A's point 6, that `available()` is only advisory, is valid but largely redundant with point 1. It adds little.\n- A's point 5 says the global-lock concern becomes moot with DB atomicity, which is fine.\n- B's point 5 adds that the lock is held during DB I/O, a relevant detail. B's point 6 flags `None` from an unknown SKU raising a `TypeError`. That is plausible, though it depends on the db's behavior; it is a reasonable edge case. B also notes that abandoned carts never release, which is a useful practical observation.\n- B notes that non-integer values pass through, which is a small added value.\n\n**Fixes:** A gives a code snippet for the main fix, which is useful. B describes the fix in words. Both give the SQL fix for the multi-process case, and B's version is more concrete with named parameters.\n\n**Padding:** A has more filler and a redundant point 6. B is tighter and adds slightly more substantive points (I/O under the lock, unknown SKU, abandoned carts).\n\nOverall, B is better on conciseness and has slightly more useful content. A's code snippet is a plus, but B is more aligned with the length constraint.\n\nVerdict: B",
+  "usage": {
+    "input": 1789,
+    "output": 603
+  },
+  "cost": 0.009608
+}

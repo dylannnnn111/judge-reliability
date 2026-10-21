@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-23",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. The user asked for under 200 words. A runs only slightly over, at roughly 215 words. B runs to about 450 words, more than twice the limit.\n\nBoth responses find the most important bug first: `!r.value` drops legitimate `0` readings, which matters in a cold room. Both also cover the string timestamp comparison, the possible null-valued latest reading, and sensors that vanish when they have no valid data. B adds a real point about `__proto__` and `constructor` keys, but that is an edge case and not worth the extra length.\n\nA follows the \"most important first\" and brevity instructions much better. It also ranks the dead-sensor problem higher, which suits a monitoring dashboard.\n\n**A**",
+  "usage": {
+    "input": 1751,
+    "output": 1110
+  },
+  "cost": 0.014602
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-37",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A** is better.\n\n**Correctness:** Both responses are correct on the substance. Uluru is arkose sandstone, and iron-bearing minerals in it oxidize into a reddish surface coating while the interior stays grey. Both also explain the sunrise and sunset colour shifts by low-angle light. B adds a little detail by naming hematite and describing the atmosphere scattering away blue light.\n\n**Instruction compliance:** The user asked for an answer in under 120 words.\n- Response A is about 115 words, so it complies.\n- Response B is roughly 200 words, which clearly breaks the limit.\n\n**Clarity:** B's extra length is not justified. Much of it is filler, such as \"it is worth looking at how that color comes about\" and \"It is also worth noting that.\" Its added detail is small and does not offset ignoring an explicit constraint. A delivers the same key reasoning concisely.\n\nVerdict: A",
+  "usage": {
+    "input": 869,
+    "output": 675
+  },
+  "cost": 0.016976
+}

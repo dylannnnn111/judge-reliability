@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-13",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is better. It leads with the decision the manager needs to make, which suits a busy reader. It is also more complete: it covers the tenant notification and the move to fortnightly sampling, both of which Response B leaves out.\n\nBoth have a small inaccuracy about the cause, but B's is worse. B says the contractor \"missed\" the pump \"during a monthly visit\", which implies the visit took place when it was actually skipped. A says the pump failed \"after\" the missed visit, which slightly misstates the timeline, but it correctly says the visit was missed.\n\nBoth responses run slightly over 120 words when headings are counted, so length doesn't separate them.",
+  "usage": {
+    "input": 1348,
+    "output": 1139
+  },
+  "cost": 0.028172
+}

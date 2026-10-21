@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-25",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses are under 120 words (A is about 119, B about 112) and give the same accurate core answer. Each cites the Gjermundbu helmet, attributes the myth to 19th-century Romanticism and Doepler's 1876 Wagner costumes, and notes the earlier Bronze Age horned helmets.\n\nB is stronger on substance:\n- **More nuanced framing:** \"No solid evidence… in battle\" is more careful than A's flat \"didn't wear.\"\n- **More specific sourcing:** B adds Gustav Malmström's illustrations and names the Veksø helmets, where A says only \"Romantic artists\" and \"centuries before.\"\n- **Tighter fit:** B packs more information into fewer words.\n\nB's \"about 1,500 years\" is a slight underestimate (Veksø is around 900 BCE, so nearer 1,700 years), but it is a minor imprecision. A's headers aid readability, but they don't outweigh B's richer, more precise content.",
+  "usage": {
+    "input": 670,
+    "output": 1251
+  },
+  "cost": 0.0277
+}

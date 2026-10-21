@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-24",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses are factually accurate. Each correctly identifies Mauna Kea as tallest from base to peak, at about 10,200 m with roughly 4,200 m above sea level. Each correctly identifies Chimborazo's summit as the point farthest from Earth's centre, about 2 km farther than Everest's, because of the equatorial bulge.\n\nThe difference is the explicit constraint: the user asked for an answer in under 120 words.\n\n- **Response A** is about 103 words. It answers both questions clearly and within the limit.\n- **Response B** is roughly 200 words, well over the limit. It adds useful context, such as Everest's base-to-peak height on the Tibetan Plateau and Chimborazo's distance from the centre. However, that extra detail comes at the cost of ignoring a clear instruction.\n\nSince content quality is comparable and only A follows the length requirement, A is the better response.",
+  "usage": {
+    "input": 743,
+    "output": 610
+  },
+  "cost": 0.015172
+}

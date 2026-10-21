@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-37",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.** Both responses are accurate, but A keeps more of what a manager needs and is more concise.\n\n**Accuracy:** Neither response contains a factual error.\n- A says Margaret Lowe \"returns 20 October\". The original says she is overseas until 20 October, so this is a fair paraphrase.\n- A's option 2 leaves out the plan to add payroll in February. It does still give the key condition: four month-end reports need payroll.\n- B frames the delay as payroll data being \"delayed by five to six weeks\". That matches the source.\n- Both correctly say no decision has been made and that the team prefers option 1. Both state that sponsor approval is required.\n\n**Coverage:**\n- A keeps the progress highlights: GL and AP loading nightly, and 14 of 22 reports matching the old system. It also notes that Tomas is documenting the payroll system.\n- B drops all of these. It keeps the February detail and the next update date, which A omits.\n- For a manager judging how serious the situation is, A's evidence that the project is otherwise on track is the more useful content.\n\n**Concision and the word limit:**\n- By my count A is about 124 words, slightly over the 120 limit.\n- B is about 138 words, clearly over.\n- A's tighter wording (\"~$64k, unbudgeted\") delivers more substance in fewer words.\n\nVerdict: A",
+  "usage": {
+    "input": 1475,
+    "output": 2654
+  },
+  "cost": 0.05898
+}

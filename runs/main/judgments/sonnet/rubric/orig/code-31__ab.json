@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-31",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main bug: `created_at > :last_seen` with second-precision timestamps silently skips tied rows at a page boundary. Both also find the non-deterministic ordering, propose a `(created_at, id)` keyset cursor, and flag the missing index and the `:last_seen IS NULL OR ...` planner problem.\n\nResponse A makes a factual error. It says that if 1000 or more rows share one second, the job \"stalls or loops forever\" because the cursor never advances. With a strict `>` the cursor always advances, so the real outcome is data loss, not a loop. An infinite loop would only happen with `>=`. A also lists the fix as its own numbered \"problem\", and it runs longer.\n\nResponse B has no false claims. It folds the fix into the first item, flags late-committed rows with a sensible mitigation, and adds the useful point about persisting the cursor and making downstream writes idempotent. The persisted-cursor point is slightly speculative but reasonable. B's ranking and fixes are cleaner.\n\nResponse B is more accurate and better organized.\n\nVerdict: B",
+  "usage": {
+    "input": 1632,
+    "output": 709
+  },
+  "cost": 0.010354
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-40",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the main bug: the `while` loop runs in a pipeline subshell, so `alerts` stays 0 and the script never exits non-zero. Both give the right process-substitution fix. Both also repeat the same error about non-numeric `pct` values. `[ \"-\" -gt 90 ]` inside an `if` condition returns status 2, which the `if` treats as false, so `set -e` does not abort the script. The real effect is just a skipped row and stderr noise.\n\nResponse A covers more real issues. It flags that squashfs and snap loop mounts sit at 100% and cause false alerts, which is a genuine operational problem that B misses. It also flags the risk of a stale NFS mount hanging `df`, and it suggests `curl --max-time`. Its webhook fix (`|| rc=1` and keep looping) is sound, because it keeps checking the remaining disks and avoids hiding webhook failures. Response B's `|| true` suggestion would silently swallow webhook failures, which is a worse fix.\n\nResponse A's weaknesses are length and some padding. It may run slightly past the 200-word limit, and the heading \"Exit codes are inverted by accident\" is awkward. Response B is tighter and stays within the limit, but it omits important points and its fix for the curl problem is poorer.\n\nOn balance, A's extra content is mostly correct and useful, and it outweighs its modest length overrun.\n\nVerdict: A",
+  "usage": {
+    "input": 1729,
+    "output": 1647
+  },
+  "cost": 0.0009964
+}

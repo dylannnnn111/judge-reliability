@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-18",
+  "side": "B",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The response catches the most important bug: the cache key `fx:${from}` ignores `to`, so AUD→USD and AUD→EUR share an entry and invoices get converted at the wrong rate. It ranks this first and gives a concrete fix. The validation gap (trusting `body.rate` and caching bad values), the missing fetch timeout, and the unencoded query parameters are all real and ranked sensibly. The thundering-herd point is valid but less severe than the others. The memory-growth and unsafe-cast items are weaker: the key space is small and the cast is a typing nit rather than a bug, so they pad the list a little. The response stays close to the 200-word limit and is clear about fixes. It misses nothing major but has a couple of low-value entries.\n\nScore: 7",
+  "usage": {
+    "input": 1081,
+    "output": 721
+  },
+  "cost": 0.0004686
+}

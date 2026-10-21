@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-01",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response A covers the most important issues in a sensible order: non-idempotent reruns, a single `charge()` failure aborting the batch, and truncation via `int(amount * 100)`. Its truncation example (10.29 becoming 1028 cents) is correct, and each item gives a concrete fix. It also flags the silently dropped credits and the bad-row abort, both real. Its customer-ID normalization point is valid, though minor.\n\nResponse B identifies the same core problems and adds two useful points: NaN/inf strings passing through `float()`, and the lack of billing-period scoping. Its truncation example is also correct. However, it opens with a filler sentence that adds nothing, and it runs longer, likely over the 200-word limit. Its \"minor\" items (in-memory loading, no currency) are low-value padding. Its credit handling is folded into the validation item rather than called out, and several items give less explicit fixes than Response A.\n\nResponse A is more concise, better within the length constraint, and gives clearer, more actionable fixes. Response B's extra points (NaN/inf, billing period) are real but don't outweigh its verbosity and filler.\n\nVerdict: A",
+  "usage": {
+    "input": 1691,
+    "output": 1001
+  },
+  "cost": 0.0006696
+}

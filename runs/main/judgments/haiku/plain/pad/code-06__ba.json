@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-06",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "A is better. Both responses identify the same core issues, including the `is` vs `!=` bug, the existence leak, and the race condition. A stays closer to the 200-word limit, at roughly 210 words against B's roughly 300. B's extra points are reasonable, but its verbosity is the bigger problem given the explicit constraint.\n\nA",
+  "usage": {
+    "input": 1596,
+    "output": 1049
+  },
+  "cost": 0.0006841
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-10",
+  "order": "ba",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct answer, 1/3. Both enumerate the four equally likely birth orders, remove BB, and identify GG as the only two-girl family among the three remaining cases. Both also correctly note that the answer would be 1/2 if a specific child were known to be a girl. Both fall under the 120-word limit.\n\nResponse B adds a slightly more intuitive explanation: the mixed families (BG and GB) together outnumber the two-girl family. Response A is more concise and makes the same core point. The difference is minor and neither is clearly better on correctness, key reasoning, or clarity.\n\nVerdict: TIE",
+  "usage": {
+    "input": 671,
+    "output": 744
+  },
+  "cost": 0.00043910000000000005
+}

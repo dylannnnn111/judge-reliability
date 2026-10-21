@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-37",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries are accurate on the key facts: the dates, the $64,000 contractor option, the sponsor approval needed, and the fact that nothing has been decided.\n\n**Accuracy:**\n- Response A is correct throughout. Its \"may not be acceptable\" slightly softens Finance's condition, but it is not misleading.\n- Response B is also correct. It leaves out the February add-on date and the five-to-six-week estimate. It also drops Finance's explicit condition for a partial go-live, though \"four month-end reports need it\" still conveys the problem. \"Returns 20 October\" is a reasonable paraphrase of \"overseas until 20 October\".\n\n**Content kept:**\n- Response A keeps the February date, the delay estimate and the next-update date.\n- Response B keeps the progress status (the reason it is \"on schedule\"), the fact that the payroll load isn't built, and that Tomas is documenting the payroll system as mitigation. It omits the next-update date.\n- A manager would likely value B's progress and mitigation points about as much as A's extra detail.\n\n**Concision:** The limit is 120 words. By my count B is about 125–129 words, which is slightly over. A is about 140, which is clearly over. B's structure, with labelled Risk, Options and Budget sections, is also easier to scan.\n\nB is slightly better on concision and its content is comparable to A's, so I give it the edge.\n\nVerdict: B",
+  "usage": {
+    "input": 1475,
+    "output": 2656
+  },
+  "cost": 0.02951
+}

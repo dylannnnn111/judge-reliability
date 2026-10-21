@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-19",
+  "side": "A",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is factually accurate. \"Kangaroo\" comes from Guugu Yimithirr *gangurru*, which refers to a large grey kangaroo (specifically the eastern/western grey, the antilopine type). It was recorded in 1770 near Cooktown, where the Endeavour was being repaired. The \"I don't understand\" story is a myth, and Haviland's 1970s work did confirm the meaning. All of this checks out.\n\nConstraints: the response is under 120 words (roughly 100). It directly answers both questions.\n\nMinor quibbles: \"Supposedly, Cook's crew pointed...\" is a bit loosely phrased but acceptable. It could have noted that the myth's \"kanguru\" meaning \"I don't understand\" has been debunked, and that Cook and Banks recorded the word in their journals. The claim \"Linguist John Haviland documented in the 1970s\" is correct (1972 work, with Cook's word list verified). A nitpick is that the myth is \"a popular myth\" and later \"widespread but false\", which is slightly redundant. Also, there was a later dispute that Cook's 1770 word list recorded \"kangaru\", and that a later 1790s visit by others recorded a different word (\"patagorang\") for kangaroo in the Sydney area, which is not mentioned, but it isn't needed.\n\nOverall, it is correct, concise, and clear.\n\nScore: 9",
+  "usage": {
+    "input": 448,
+    "output": 452
+  },
+  "cost": 0.005416
+}

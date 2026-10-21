@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-09",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better**, mainly on accuracy.\n\n**Accuracy.** Both responses get the core figures right: $62,400 + GST, 1 March reviews, the CPI 3–5% collar for years 2–4, the uncapped market review in year 5 with a year-4 floor, and the 30-day independent valuer with costs split equally. A has two small imprecisions that B avoids:\n- **Outgoings:** A says they are \"billed separately and not reviewed.\" The original says only that outgoings are not part of the rent review. They can still change. A's wording could lead a manager to think those costs are fixed.\n- **Notice:** A says \"14 days' written notice,\" dropping \"at least\" and \"before it starts.\" B keeps \"at least 14 days' written notice of new rent,\" which is more faithful.\n\nA's \"could rise sharply\" is mild editorialising, though defensible. B also correctly says the valuer is landlord-appointed.\n\n**Coverage.** A includes the five-year lease length, the examples of outgoings and the \"not legal advice\" disclaimer. B implies the lease length through \"Years 2-4\" and \"Year 5\", omits the outgoings examples, and still notes that the lease is binding. These omissions are minor for a busy manager.\n\n**Concision.** Both sit right around the 120-word limit and are similarly tight.\n\nSince accuracy comes first, B's more precise wording outweighs A's slightly fuller coverage.\n\nVerdict: B",
+  "usage": {
+    "input": 1503,
+    "output": 1310
+  },
+  "cost": 0.032212
+}

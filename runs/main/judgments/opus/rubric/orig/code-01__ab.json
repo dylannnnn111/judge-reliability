@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-01",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Both responses catch the issues that matter most, and their claims are correct.\n- Both flag the lack of idempotency, which can cause double charges on a rerun.\n- Both note that a partial failure aborts the run.\n- Both flag `int(amount * 100)` truncation and float money. Each gives a valid truncation example: 19.99 becomes 1998 cents, and 10.29 becomes 1028 cents.\n- Both flag the hardcoded tax rate.\n\n**Ranking:** Both put the most important issues first.\n- Response A ranks the abort-on-failure problem second and ties it back to double-charging.\n- Response B folds fault tolerance into item 1, which is also reasonable.\n\n**What each adds:**\n- Response A adds billing-period scoping and NaN/inf inputs, which are genuine and useful. Its \"minor\" items add little.\n- Response B gives a concrete fix for nearly every item, including an idempotency key per customer per billing period and quarantining bad rows. It also explicitly calls out dropped credits.\n- Response B spends two items on float money and truncation, which is somewhat redundant. Its `customer_id` normalization point is plausible but more speculative.\n\n**Length:** The user asked for under 200 words.\n- Response A runs to roughly 230+ words, clearly over the limit.\n- Response B is about 200 words, close to the limit.\n\n**Conclusion:** The content quality is roughly comparable. Response B gives more consistent, actionable fixes and respects the stated length constraint, while Response A breaks it.\n\nVerdict: B",
+  "usage": {
+    "input": 1574,
+    "output": 1693
+  },
+  "cost": 0.040156
+}

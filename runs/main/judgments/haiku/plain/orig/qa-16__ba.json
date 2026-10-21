@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-16",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B\n\nBoth responses are accurate and under 120 words. Response B is slightly clearer: it gives the direct answer first, then lists the three relevant deserts with their sizes, so the comparison is easy to scan. Response A adds useful detail about Antarctica's precipitation, but its prose makes the figures harder to compare at a glance.",
+  "usage": {
+    "input": 521,
+    "output": 511
+  },
+  "cost": 0.0003076
+}

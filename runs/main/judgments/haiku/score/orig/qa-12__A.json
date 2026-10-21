@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-12",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response is correct. (5/6)^4 = 625/1296 is the probability of no sixes, and 1 − 625/1296 = 671/1296 ≈ 0.518 is the probability of at least one six. It uses the complement method, which is the key reasoning for this problem, and it states the steps clearly in well under 120 words. A brief note on why the complement is easier would have added a little, but the response is concise and complete.\n\nScore: 9",
+  "usage": {
+    "input": 300,
+    "output": 227
+  },
+  "cost": 0.0001435
+}

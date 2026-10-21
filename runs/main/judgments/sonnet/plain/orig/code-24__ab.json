@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-24",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better, mainly because it follows the length limit more closely.\n\nBoth responses put the concurrent-duplicate race first, which is the right priority given the user's note. Both also cover the in-memory dedup store, the timing-unsafe comparison, replay protection, error handling and amount validation.\n\n- **Length:** The user asked for under 200 words. A comes to roughly 245 words and B to roughly 210. B is still slightly over, but it is much closer to the limit.\n- **Quality of the main fix:** B says to claim the ID atomically before processing and to release the claim on failure so retries still work. That is the correct fix for the race, and it avoids a new bug where a failed first attempt blocks every retry. A does not give this guidance for the race itself.\n- **Coverage:** A includes a separate item on a crash between the side effect and marking, which is a real point. B partly covers it by saying `markInvoicePaid` should be idempotent. B also mentions malformed JSON and a missing `event.data`, which A omits.",
+  "usage": {
+    "input": 1525,
+    "output": 1782
+  },
+  "cost": 0.02087
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "qa-18",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct core answer: Willem Janszoon and the Duyfken, 1606, western Cape York near the Pennefather River.\n\nWord limit: A is about 100 words. B is about 90. Both are under 120.\n\nAccuracy check on A: \"February–March 1606\" is the commonly cited timeframe. The claim that they mistook the land for an extension of New Guinea is correct. The skirmish with Aboriginal people resulting in crew deaths is reported, since some crew members were killed, which is generally accepted. \"Dirk Hartog's 1616 landing on an island off Western Australia was later\" is correct. Cook in 1770 at Botany Bay is correct, though Cook landed on the east coast and not as a \"first\" claim. A is accurate.\n\nAccuracy check on B: Janszoon in 1606 is correct. Hartog in 1616 on an island in Shark Bay, leaving a pewter plate, is correct. The Portuguese speculation is noted. B is accurate too.\n\nOn substance, A adds the context of the mistaken belief and the skirmish, which is relevant to the \"recorded landing\" story. B adds the Hartog plate detail, which is somewhat tangential. A also gives a more precise date. A's added Cook mention is mildly useful for context. Both are clear. A is slightly more informative on the question asked (when, who, with the circumstances).\n\nB's bolding aids readability. But A has a bit more relevant substance.\n\nVerdict: A",
+  "usage": {
+    "input": 714,
+    "output": 481
+  },
+  "cost": 0.006238
+}

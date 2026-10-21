@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-39",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. Both responses are accurate on the main facts: the 7-2 vote, the 1 December start, the $38,000 in fines across 6,400 members, the exceptions, the 12-month review and the November email.\n\n**Accuracy:**\n- Response A goes further than the source with \"net cost about $33,000\". The text never says the $19,000 in staff time will be saved, so this is an unsupported inference presented as fact.\n- Response A also describes the vote as \"council has agreed\" and the exceptions slightly loosely, but those are minor.\n- Response B stays with what the text says. It gives the $52,000 and $19,000 figures and leaves the reader to draw conclusions.\n- Response B omits \"lost or damaged\" items, but its mention of replacement charges after 60 days covers the key point.\n\n**Coverage:** Both include the key points a manager needs: the decision, the date, the exceptions, the rationale, the cost, the dissent, and the review. Response A adds the automatic unblocking date and a clearer exceptions list. Response B covers most of this more tersely.\n\n**Concision:** The brief set a limit of under 120 words. Response A is about 190 words, well over the limit. Response B is about 126 words, slightly over but much closer, and it is tighter and easier for a busy reader to scan.\n\nOverall, Response B is more accurate and much closer to the length limit, so it is the better summary.\n\nVerdict: B",
+  "usage": {
+    "input": 1496,
+    "output": 1910
+  },
+  "cost": 0.022092
+}

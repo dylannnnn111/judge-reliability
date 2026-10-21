@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-29",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is the better summary. It stays within the 120-word limit, which Response B clearly exceeds at roughly 200 words. Both give the correct prices, data increases, effective date, and the exit-fee window before 15 November, and both explain the reason for the change. Response A has one small inaccuracy: it groups Classic plan customers with fixed-price contract holders as \"unaffected until their contract ends,\" but the notice says Classic customers won't see a change this year. Response B states this correctly. Response A also omits the support hours and the in-app plan check, but a busy manager doesn't need either. Response B's extra length mostly repeats the same facts with headers and adds only the support hours, so it fails the concision requirement without adding much.\n\nVerdict: A",
+  "usage": {
+    "input": 1524,
+    "output": 848
+  },
+  "cost": 0.0005764
+}

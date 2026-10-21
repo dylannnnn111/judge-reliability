@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-06",
+  "side": "A",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate on nearly every point. The dates, the $3.2 million cost, the eight-month timeline, the joint funding, the pool and accessibility features, the solar share, the swim school enrolment date, the prices, the hours and the opening-day details all match the source. Two small imprecisions: \"Prices unchanged for 2026-27\" drops the source's qualifier that prices hold only for the rest of that season, and \"All programs... resume\" slightly generalises the source's three named programs. The replacement of the leaking pool is a reasonable inference. It covers the key points a manager needs (what, when, cost, what changed, what it means operationally, opening day) in about 110 words, within the limit. The formatting is scannable. Its main weakness is the minor qualifier loss on prices.\n\nScore: 8",
+  "usage": {
+    "input": 1132,
+    "output": 893
+  },
+  "cost": 0.0005597
+}

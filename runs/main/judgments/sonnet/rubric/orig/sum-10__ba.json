@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-10",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries are accurate on dates, figures, status, risk change and decisions, and both stay under 120 words (A is about 98, B about 118). Neither has a factual error or misleading wording.\n\nOn content, both cover the go-live date, the completed screens, the login test results, the accessibility audit, budget, risk and next steps.\n- **Response A** includes \"for marketing review\" on the communications draft. It leaves out the PDF invoice detail and the reason the helpdesk risk dropped.\n- **Response B** includes the vendor's API confirmation, which explains the risk reduction. It also states \"no decisions needed from you\" plainly. It adds the new-hire note, which is low value for a manager, but it is harmless and still within the limit.\n\nOn format, B's labelled bullets are easier for a busy reader to scan than A's single paragraph. A is somewhat tighter, but B's extra words mostly add useful, correct information.\n\nOverall B is slightly stronger for a busy manager because it is easier to scan and gives the reason behind the risk change.\n\nVerdict: B",
+  "usage": {
+    "input": 1275,
+    "output": 2029
+  },
+  "cost": 0.02284
+}

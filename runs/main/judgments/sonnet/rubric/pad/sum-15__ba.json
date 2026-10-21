@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-15",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. The user asked for under 120 words. Response A is roughly 190 words, so it clearly breaks that limit. Response B is about 100 words and stays within it.\n\nOn accuracy, both are mostly faithful. A makes a small error by saying \"6 or more months\" where the source says \"more than six months\". Both note that the nap benefit was limited to experienced workers, that drive time mattered more than the nap, and that the study used a simulator and a sample of mostly men aged 25–50.\n\nB keeps all the points a manager needs: the main result, the experienced versus new worker split, the groggy-after-waking finding, the 7am versus 6am effect, the implication, and the limitations. A adds little beyond filler such as \"In other words\" and \"Put differently\". B labels the experience and timing findings as \"Key caveats\", which is slightly odd but not misleading.\n\nVerdict: B",
+  "usage": {
+    "input": 1568,
+    "output": 569
+  },
+  "cost": 0.008826
+}

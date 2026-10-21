@@ -1,0 +1,13 @@
+{
+  "item": "code-18",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "**1. Cache key ignores `to` (wrong rates, critical).** `getExchangeRate` keys on `fx:${from}` only, so AUD→USD and AUD→EUR share one entry. Whichever pair loads first is returned for the other for 60 seconds, so invoices get converted at the wrong rate. Use `fx:${from}:${to}`.\n\n**2. No validation of the response.** `body.rate` is trusted blindly. If the field is missing, a string, or NaN, that bad value gets cached for 60 seconds and flows into invoice totals. Check `typeof rate === \"number\"` and `Number.isFinite(rate) && rate > 0` before returning.\n\n**3. No timeout on `fetch`.** A hung upstream stalls every invoice request that misses the cache. Use `AbortSignal.timeout(...)`.\n\n**4. Thundering herd on cache miss.** Concurrent requests for the same key each call `load()` and fire duplicate fetches. Cache the in-flight promise instead of the resolved value.\n\n**5. Unencoded query parameters.** `from` and `to` are interpolated directly into the URL. Use `URLSearchParams` or `encodeURIComponent`.\n\n**6. Unbounded cache growth.** Expired entries are never deleted. The key space is currency pairs so it's small in practice, but the generic `cached` helper will leak memory if reused with arbitrary keys.\n\n**7. Unsafe generic cast.** The cache stores `unknown` and casts to `T`. Nothing ensures a given key always holds the same type.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 400,
+    "output": 878
+  },
+  "cost": 0.000479,
+  "at": "2026-10-14T01:53:47.251Z"
+}

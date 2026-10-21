@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-34",
+  "side": "A",
+  "score": 3,
+  "model": "claude-haiku-5-5",
+  "text": "The response has one clear accuracy problem: it says practitioners don't need to adjust the booking schedule by hand, but the original says admins enter practitioner leave. The other facts (30-minute waitlist window, 24/48-hour reminders, Medicare search, the Android browser issue, next month's features) are correct. It adds an unsupported promise that further details will be shared, and its framing about features \"working together\" is invented.\n\nIt covers the main points well, though it omits the minor fixes (tablet display, invoice printing), which is acceptable for a manager summary.\n\nThe main failure is length. The response runs roughly 220 words against a hard limit of 120, and much of that is preamble and filler (\"I'm pleased to share,\" \"so you can see how they work together\") that a busy manager doesn't need. It fails the explicit constraint.\n\nScore: 3",
+  "usage": {
+    "input": 1229,
+    "output": 797
+  },
+  "cost": 0.0005214
+}

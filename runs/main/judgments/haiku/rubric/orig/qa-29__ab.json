@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-29",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give correct figures. $1,000 at 5% for 30 years yields $2,500 with simple interest and about $4,322 with annual compounding, and both explain the key reason: compounding earns interest on previously earned interest. Response A is clearly under the 120-word limit. Response B is more scannable and adds a correct Rule of 72 shortcut, but its length is near or possibly over 120 words, and the extra shortcut isn't needed to answer the question. Neither is clearly better on the criteria that matter most.\n\nVerdict: TIE",
+  "usage": {
+    "input": 721,
+    "output": 1094
+  },
+  "cost": 0.0006191
+}

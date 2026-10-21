@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "code-36",
+  "side": "A",
+  "score": 5,
+  "model": "claude-opus-5-5",
+  "text": "**Score: 5/10.** The core findings are strong and correct, but the response breaks the stated length limit, mis-describes its own ordering, leaves one fix out, and gets one claim wrong.\n\n**Strengths:**\n- **Issue 1 is correct and ranked first.** `Invalidate` uses `RLock` around `delete`, which is a real data race. It can cause a fatal \"concurrent map writes\" crash, and the fix (`Lock`) is right.\n- **Issue 2 is a real, subtle race.** An invalidation during an in-flight fetch can let a just-rejected token be stored again for a full TTL. However, no fix is offered, such as a generation counter or checking a version before storing.\n- **Issue 3 (stampede) is valid.** The `singleflight` fix is appropriate.\n- **Issues 4 and 5 are reasonable.** Both are secondary design concerns with sensible fixes.\n\n**Weaknesses:**\n- **It is well over the 200-word limit,** at roughly 330 words. That was an explicit constraint.\n- **The opening framing is wrong.** \"I have reviewed… in the order I found them\" wastes words and contradicts the request for most-important-first. The actual ordering is mostly sensible, but the claim undercuts it.\n- **Issue 6 is partly inaccurate.** It says a hung fetch \"blocks every request waiting on that tenant.\" The current code has no in-flight sharing, so a hung fetch only blocks its own caller. The claim would only hold after the singleflight fix in issue 3. Lack of context or cancellation is a fair point, but it is overstated.\n- **The prose is padded.** Phrases like \"There are two ways to address this\" add little.\n\nScore: 5",
+  "usage": {
+    "input": 1409,
+    "output": 804
+  },
+  "cost": 0.021716
+}

@@ -1,0 +1,13 @@
+{
+  "item": "sum-39",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "Riverbend City Council voted 7-2 to end late fees on books, magazines and DVDs at its five libraries from 1 December. Existing fines, about $38,000 across 6,400 members, will be wiped, and cards blocked only because of fines will be unblocked automatically.\n\n**Exceptions:** Replacement charges still apply to items not returned within 60 days, and inter-library loans keep their late fees, which are set by the lending library.\n\n**Rationale:** Fines were keeping families, especially children, away. Other councils saw more books returned after scrapping fines.\n\n**Cost:** Fines raised about $52,000 last year, but roughly $19,000 went on chasing payments. Opponents say the council is giving up revenue while rates are under pressure.\n\nMembers will be emailed in November. The policy will be reviewed in 12 months.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 619,
+    "output": 272
+  },
+  "cost": 0.003958,
+  "at": "2026-10-14T01:52:34.377Z"
+}

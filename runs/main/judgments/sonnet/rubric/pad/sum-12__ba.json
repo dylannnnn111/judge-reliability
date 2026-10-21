@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-12",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. It is more accurate, better organised and much closer to the word limit.\n\n**Accuracy:** Both responses get the key facts right: the 1 November start, the fee changes, the $15 weekly pass replacing the $9 daily concession, the eligibility rules, the 20 October forms and the treating-team letter. Both also correctly attribute the repair rationale to the health service. Response B adds \"a significant saving for regular users\", which is a mild editorial claim. It is plausible for frequent visitors, but the source only has Sutton saying \"if the weekly pass is real\". Response A has no real inaccuracies, but it describes the concession as \"replaced\", which is a fair reading.\n\n**Length:** The limit is under 120 words. Response A runs to roughly 190 words, well over the limit. Response B comes to roughly 124 words by my count, slightly over but far closer. A is also padded with filler such as \"I would like to let you know\", \"Turning to concessions\", \"For your information\" and \"I want to reassure you\", which a busy manager doesn't need.\n\n**Content:** Both cover the same points. B states them more directly and in a better order.\n\nResponse A's breach of the word limit is a larger failure than B's marginal overage and B's mild editorialising.\n\nVerdict: B",
+  "usage": {
+    "input": 1468,
+    "output": 1490
+  },
+  "cost": 0.017836
+}

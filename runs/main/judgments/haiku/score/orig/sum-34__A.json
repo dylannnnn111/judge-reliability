@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-34",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate. The dates, the 30-minute acceptance window, the 24/48-hour reminder option, the Android known issue and the next-month items all match the source. It captures the three headline features, the main improvements, the key bug fix and the known issue, and it omits only minor items such as the invoice printing fix and the waitlist's \"fully booked day\" condition. The structure suits a busy manager.\n\nHowever, it breaks the explicit \"under 120 words\" constraint. Counting the four paragraphs gives roughly 127 words, so it overshoots the limit. That is a clear instruction failure, though a modest one. Tightening a few phrases would have fixed it without losing any key content.\n\nScore: 6",
+  "usage": {
+    "input": 1007,
+    "output": 1284
+  },
+  "cost": 0.0007427
+}

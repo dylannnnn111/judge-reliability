@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-15",
+  "side": "B",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly finds the temperature rise of 25 − 15 = 10 °C and converts it to Fahrenheit with the 9/5 factor, giving 18 °F. The key reasoning is included: a temperature difference scales by 9/5 without the +32 offset. The cross-check (15 °C = 59 °F, 25 °C = 77 °F, difference 18 °F) confirms the answer. It is well under the 120-word limit and clearly organized. The only minor issue is that the cross-check adds a little length, but it is useful verification rather than padding.\n\nScore: 9",
+  "usage": {
+    "input": 361,
+    "output": 291
+  },
+  "cost": 0.0001816
+}

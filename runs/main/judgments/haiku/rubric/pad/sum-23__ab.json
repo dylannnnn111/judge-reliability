@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-23",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is accurate on every date, figure, and decision, and it names who did what. It also covers the Facebook item. However, it runs well over the 120-word limit, with filler like \"Thank you all for attending\" and \"Cr Tse kindly provided,\" which a busy manager doesn't need.\n\nResponse B fits the word limit and keeps the points a manager needs: the council dates, the balance and membership, the Clean Up Day, the carols with budget, and the next meeting. It has one slight overstatement: \"Council will install a speed counter\" goes beyond the minutes, which say Cr Tse would ask traffic staff to install one and report back. It also drops the school choir's role in the carols, the Facebook item, and who is coordinating the events. These are minor omissions.\n\nOn accuracy, the one overstatement in B is small, and A has no errors. On the instruction to keep it under 120 words, B complies and A does not. For a busy manager, B's concision outweighs A's extra completeness, since A's extra words add little that is essential.\n\nVerdict: B",
+  "usage": {
+    "input": 1688,
+    "output": 904
+  },
+  "cost": 0.0006207999999999999
+}

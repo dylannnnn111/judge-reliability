@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-18",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the critical bug: the cache key `fx:${from}` ignores `to`, so one target currency's rate gets served for every other pair. Both also cover the main secondary issues: missing response validation, no fetch timeout, thundering herd on cache misses, unencoded query parameters, and unbounded cache growth.\n\nResponse B has a few advantages. Its in-flight deduplication fix notes that the promise should be evicted if it rejects, which is necessary for the fix to be correct and which Response A omits. Its point about money precision (floating-point rates and conversion) is directly relevant to an invoicing service, and its suggestion to validate currency codes against ISO 4217 is useful. It is also more concise while keeping the actionable fixes. Response A's point 7 about the unsafe generic cast is real but low-impact here, and its explanation of the wrong-rate scenario is clear, but it does not add enough to outweigh B's extra content.\n\nNeither response flags anything that is actually fine. Response B is modestly better overall.\n\nVerdict: B",
+  "usage": {
+    "input": 1802,
+    "output": 798
+  },
+  "cost": 0.0005792000000000001
+}

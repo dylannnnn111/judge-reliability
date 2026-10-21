@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-31",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the main bug: with second-precision `created_at`, ties straddling a page boundary are silently skipped, and both propose the same `(created_at, id)` keyset fix. Response A also catches a real edge case that B misses: if 1000 or more rows share one second, the cursor never advances and the job can loop forever. However, A's item 5 is weaker. A `created_at <= :export_start` bound does not fix late-committed rows with older timestamps, so its claim is inaccurate. A's item 6 is filler. Response B's late-commit fix (a safety lag, or a commit-ordered sequence) is more accurate, and its point about persisting the cursor and making downstream writes idempotent is practical for an export job. B also stays close to the 200-word limit, while A runs well over it, so A's extra length mostly adds weaker material. On balance B is the better response, though A's infinite-loop catch keeps the gap from being large.\n\nVerdict: B",
+  "usage": {
+    "input": 1897,
+    "output": 898
+  },
+  "cost": 0.0006387000000000001
+}

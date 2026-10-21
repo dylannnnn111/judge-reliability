@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-07",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response B is better. It stays near the 120-word limit (roughly 120 words), while Response A runs to about 175 words, so it breaks the constraint. Both cover the key points accurately: the Classic CSV removal and its import breakage, the Android 9 end of updates, the three new features, and the coming-soon items. B's \"no longer supported\" for Android 9 omits that the app still works, a minor gap that A handles better. A also adds filler like \"Thank you for your interest\" and repeats the action item, which doesn't add useful content. B's executive-style opening sentence gives the manager the headline at once, and it still flags the action item clearly.\n\nVerdict: B",
+  "usage": {
+    "input": 1514,
+    "output": 884
+  },
+  "cost": 0.0005934
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-33",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are factually correct. Both explain tidal locking, the role of tidal friction in slowing the Moon's spin, the 27.3-day match between rotation and orbit, libration allowing about 59% of the surface to be seen, and the fact that the far side gets sunlight.\n\nThe deciding factor is the explicit length limit of under 120 words. Response A runs to roughly 190-200 words, well over the limit. Its extra material, such as the detail about the far side and the more elaborate explanation of the tidal bulge, is accurate but not needed to answer the question. Response B covers the core reasoning in about 80 words and stays within the constraint.\n\nResponse B is therefore the better response because it meets the user's stated constraint while keeping the key reasoning.\n\nVerdict: B",
+  "usage": {
+    "input": 856,
+    "output": 547
+  },
+  "cost": 0.0003591
+}

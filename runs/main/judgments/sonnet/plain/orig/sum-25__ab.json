@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-25",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "A is better. B breaks the explicit length limit, while A's error is a smaller flaw.\n\n**Response A** comes to roughly 108 words, so it meets the \"under 120 words\" limit. It covers the main points: not a hack, 347 members affected, what data was exposed, regulator notification, and the fixes. It has one factual error. It says the job was \"stopped after 35 minutes\", but the report says it was stopped at 9:35am, about 75 minutes after the first member call at 8:20am. It also leaves out the media or communications issue.\n\n**Response B** is clearer and better organised, and it includes the media leak and the communications guide update. It comes to roughly 145 words, well over the 120-word cap. The user stated that limit explicitly, and a busy manager is the reader who most needs it respected. B's content is otherwise accurate.\n\nA follows the hard constraint and mostly gets the facts right. B is somewhat more complete but ignores the length limit.\n\n**A**",
+  "usage": {
+    "input": 1289,
+    "output": 1225
+  },
+  "cost": 0.014828
+}

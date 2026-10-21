@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-16",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify Antarctica as the largest desert, and both give accurate figures for the Arctic and the Sahara. Response B's precipitation detail is also reasonable. Both explain the key reasoning that deserts are defined by low precipitation rather than heat.\n\nThe difference is the word limit. Response A runs roughly 125 to 130 words, which exceeds the \"under 120 words\" instruction. Response B comes in around 95 words and complies. Response A's bullet list adds some useful ranking context, but its repetition of the same figures doesn't justify breaking the explicit constraint. Response B is clearer and more concise while still giving the key information.\n\nVerdict: B",
+  "usage": {
+    "input": 732,
+    "output": 1225
+  },
+  "cost": 0.0006857
+}

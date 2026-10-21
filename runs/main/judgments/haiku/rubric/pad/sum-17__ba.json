@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-17",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Response A correctly states the licence terms, the four-weekend pattern, the three other complaints, the conversation with Clare, the speaker and 10pm measures, and the 20 October report-back. Its \"resolved for now\" subject line slightly overstates the outcome, and its phrasing \"face its speakers away\" is awkward. Its main problem is length: at roughly 190 words it breaks the under-120 limit by a wide margin.\n\nResponse B is also accurate. It covers the licence distinction (bar open to midnight, but music must stop at 10pm), the regulator's evidence requirement, the manager's agreed measures, the logging, the fallback complaint, and the report-back date. It also notes Fiona's dissent, which a manager may want to know about. It is at or very close to the 120-word limit. Its wording \"blamed a new DJ\" is slightly pointed, but it is not inaccurate.\n\nResponse B meets the length constraint and keeps the points the manager needs. Response A is longer without adding substantive content that B lacks.\n\nVerdict: B",
+  "usage": {
+    "input": 1664,
+    "output": 1346
+  },
+  "cost": 0.0008394
+}

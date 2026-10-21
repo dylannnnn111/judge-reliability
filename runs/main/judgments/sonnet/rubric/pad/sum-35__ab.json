@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-35",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. It meets the limit and A does not.\n\n**Length:** The user asked for under 120 words. Response A runs to roughly 180 words, which clearly breaks the limit. Response B comes to about 118 words, including its heading, so it complies.\n\n**Accuracy:** Both responses are broadly accurate on the key dates and numbers: 30 June 2027, the $18,000 bond, the 30-day return, the three-month notice, the two quotes and the kitchenette condition. Neither misstates who decided what.\n- Response A says \"we may be charged rent for any extra days\", which is fine.\n- Response B says \"paying daily rent\", which is slightly more definite than \"may have to pay\". It is a minor compression and not misleading.\n- Both leave out that the landlord's estimate must be \"reasonable\".\n- Both omit the point that the kitchenette exception comes from the landlord's written consent.\n\n**Coverage:** Both keep the main obligations, the kitchenette exception, the payment alternative, the timing risk and the bond. Response B also names the patching and painting repairs, which A reduces to \"repairing any damage\". B's bullets and bold labels are quicker for a busy manager to scan.\n\n**Concision:** Response B delivers the same content in far fewer words, with a clearer structure.\n\nVerdict: B",
+  "usage": {
+    "input": 1550,
+    "output": 1655
+  },
+  "cost": 0.01965
+}

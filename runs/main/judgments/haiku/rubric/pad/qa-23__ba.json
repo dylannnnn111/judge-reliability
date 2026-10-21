@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-23",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly conclude that 0.999... equals 1, and both give the standard algebraic and fraction arguments. Response B also adds a \"no gap\" argument: if two reals differ, some number lies between them, and none does here. It then explains why a \"0.000...1\" difference is not a valid decimal, which addresses a common misconception directly.\n\nResponse B also fits the user's under-120-word limit (roughly 110 words). Response A runs closer to 160 words, so it breaks that constraint. Its extra sentences mostly restate the limit idea and add little.\n\nVerdict: B",
+  "usage": {
+    "input": 875,
+    "output": 691
+  },
+  "cost": 0.000433
+}

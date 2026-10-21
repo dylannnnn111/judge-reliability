@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-09",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better. It is more accurate on the length limit and more concise, while still covering the key points.\n\n**Accuracy:** Both responses get the numbers, dates and conditions right. These include the $62,400 starting rent, the 3–5% CPI collar in years 2–4, the uncapped year-5 market review with the year-4 floor, the 30-day window for requesting an independent valuer, and the 50/50 cost split. Both also give the 14-day notice rule and the late-notice rule. Both correctly say the landlord appoints the valuer.\n\n**Coverage:** Both include all the points a manager needs. Response B adds a framing sentence, a \"In short\" recap and a closing note about the binding lease. These add nothing a busy reader needs.\n\n**Concision:** The request set a limit of 120 words. Response A comes to roughly 117–127 words depending on whether the footer is counted, so it is at or only slightly over the limit. Response B is around 230 words, nearly double the limit, so it clearly fails the constraint. Its recap and introduction repeat what the bullets already say.\n\nResponse A is also easier to scan for a manager who won't read the original.\n\nVerdict: A",
+  "usage": {
+    "input": 1697,
+    "output": 1554
+  },
+  "cost": 0.018934
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-21",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly put duplicate refunds from retrying a non-idempotent POST at the top, and both cover the missing timeout, the ignored `Retry-After`, and the undrained response bodies. Response A adds the support-console double-submit risk and the missing `amountCents` validation, which are relevant to a refund flow. Response B catches that the `catch` block retries aborts and permanent errors, which is a real bug class, and that the `as { refundId }` cast can let an undefined ID pass as a successful refund, which matters for a payments path. Response B also gives a more concrete design fix (refuse to retry POST by default unless a key is supplied). Response A's minor jitter note is accurate but adds little. On balance B is slightly more precise and finds a correctness issue A misses, though A's console-context points are useful.\n\nVerdict: B",
+  "usage": {
+    "input": 1746,
+    "output": 1120
+  },
+  "cost": 0.0007346000000000001
+}

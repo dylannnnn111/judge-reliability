@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-23",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly answer that 0.999... equals 1, and both give the standard algebraic proof and the limit justification, so neither has a correctness problem.\n\nResponse A adds two useful points that B lacks. It gives the fraction argument (3 × 1/3) and the \"no gap\" argument, which uses the fact that between any two distinct reals there is another real. It also explains why a \"0.000...1\" difference is not a valid decimal, which addresses a common misconception. Both extras are correct and relevant. Response A stays under 120 words (roughly 105).\n\nResponse B is clearer and more concise, and it covers the core reasoning. However, its extra content is smaller, and it doesn't address the \"gap\" intuition that most readers have in mind.\n\nSince length alone is not a merit, A's advantage rests on the added correct reasoning that addresses the likely misconception, not on its length. That advantage is modest, so A is slightly better.\n\nVerdict: A",
+  "usage": {
+    "input": 726,
+    "output": 804
+  },
+  "cost": 0.00047460000000000004
+}

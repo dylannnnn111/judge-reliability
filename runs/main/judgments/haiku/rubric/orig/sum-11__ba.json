@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-11",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Neither misstates a date, number, or condition, and both correctly attribute the parking allocation to Rachel and the access cards to Grant. Response A is clearer in one respect: it states the Monday return date as 17 Nov and names Grant under building access. Response B says only \"Monday,\" which is a minor loss.\n\nOn length, the user asked for under 120 words, and both responses exceed it. By my count Response A is about 142 words and Response B about 133. Response B is closer to the limit and drops no required information beyond the explicit date. Its Rachel entry is slightly wordy, but overall it is the tighter summary.\n\nVerdict: B",
+  "usage": {
+    "input": 1628,
+    "output": 2960
+  },
+  "cost": 0.0016428
+}

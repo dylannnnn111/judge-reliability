@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-07",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. Both responses lead with the most important bug, the `// size` bug in `chunked` that silently drops the final partial batch. Both also cover swallowed failures, missing retries, and the sliceable-sequence assumption.\n\nThe deciding factor is the length limit. The user asked for under 200 words. Response A runs to roughly 250–280 words, clearly over. Response B comes in at about 200, so it meets or nearly meets the limit.\n\nB's content is also slightly stronger in one respect. It reminds the reader to confirm `upsert_contacts` is idempotent before adding retries, which matters for safe retries. A's point about the broad `except Exception` is reasonable but minor.\n\nB's items 2–4 overlap, since all concern failures being swallowed or hidden, which is a small weakness. A's item 6 also overlaps with its item 1.\n\nBecause A ignores the explicit length constraint, B is the better response.\n\n**B**",
+  "usage": {
+    "input": 1283,
+    "output": 1130
+  },
+  "cost": 0.013866
+}

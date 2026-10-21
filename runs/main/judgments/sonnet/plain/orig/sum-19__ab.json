@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-19",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "A\n\nBoth responses run slightly over the 120-word limit, A at roughly 129 words and B at roughly 128, so the limit doesn't separate them. Accuracy does.\n\nResponse A keeps the source's hedging. It says the tenant \"may stay liable\" and \"possibly for the rest of the term\", which matches the guide's wording that the tenant \"could remain liable\".\n\nResponse B states flatly that \"we remain liable for the full remaining term\". That overstates the risk, because the guide says liability is possible, not certain. B also assumes the manager is part of Brightside by writing \"we\", which the request doesn't say.\n\nB is easier to scan as bullets, which suits a busy reader, but that doesn't outweigh the loss of accuracy.\n\n**A**",
+  "usage": {
+    "input": 1361,
+    "output": 2032
+  },
+  "cost": 0.023042
+}

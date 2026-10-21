@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "code-05",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is slightly better.**\n\n**Real and important issues.** Both responses identify the same core problems, all real:\n- DST wall-clock subtraction when both datetimes share the same `tzinfo`.\n- Ambiguous and nonexistent local times silently accepted via `fold=0`.\n- Weekend loading decided by the start day only.\n- Float money arithmetic combined with banker's rounding.\n- No public-holiday handling.\n- No input validation.\n\n**Accuracy of the DST claims.** I checked both against Sydney's transitions:\n- **Response A's example is correct.** On the April fall-back night, 01:00 AEDT is 14:00 UTC and 05:00 AEST is 19:00 UTC. The shift is 5 real hours, but the code computes 4. On the October spring-forward night, the code computes 4 hours for 3 worked.\n- **Response B's direction is also correct.** It says the shift is overpaid when clocks go forward and underpaid when they go back.\n- **Both describe the ambiguous and nonexistent 02:00–02:59 window correctly.**\n\n**Ranking and fixes.** Both rank the issues sensibly, with DST first.\n- Response A is more concrete. It gives the exact UTC subtraction code and a specific detection method for nonexistent times (a UTC round-trip check). It also adds a shift-length sanity limit, which is a useful safeguard against a mistyped date producing a 300-hour shift.\n- Response B adds a good tip: keep minutes as integers rather than fractional hours.\n\n**Avoiding things that are fine.** Response B's item 6 flags that `parse_local` is called repeatedly. That is a trivial inefficiency, not a bug, and it is padding in a list meant to contain only issues that matter.\n\n**Length.** Both responses run around or over the 200-word limit. Response B is noticeably longer, and its extra length does not add more substance than A.\n\nOverall, Response A is tighter and more concrete, with no non-issues.\n\nVerdict: A",
+  "usage": {
+    "input": 1774,
+    "output": 1318
+  },
+  "cost": 0.033456
+}

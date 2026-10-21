@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-31",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Verdict: A.** Both responses find the core bug: `created_at > :last_seen` on a second-precision timestamp silently drops tied rows at page boundaries. Both propose the correct `(created_at, id)` keyset fix and the `(tenant_id, created_at, id)` index. Both note the missing tiebreaker, the late-committed or late-inserted rows problem, and the planner issue with `:last_seen IS NULL OR`.\n\n**Response B's main error.** Its top item claims that if 1000+ rows share one second, the job \"stalls or loops forever.\" That is wrong for this query. With a strict `>`, the next page skips past the entire timestamp, so the cursor still advances. The real result is more silent data loss, not an infinite loop; a loop would only happen with `>=`. This is a factual mistake in the highest-priority item.\n\n**Response B's other weaknesses.**\n- Item 6 spends words praising explicit column selection, which is not a problem.\n- Item 5's point about the termination condition adds little.\n- On the plus side, its fix handles the first-page NULL case inline, and its snapshot upper-bound suggestion is sound.\n\n**Response A's strengths.**\n- Its claims are accurate throughout.\n- Its ordering is sensible.\n- Its late-commit point comes with a concrete safety-lag fix.\n- It adds a genuinely useful point about persisting the cursor and making downstream writes idempotent.\n- Its fix snippet omits first-page handling, but item 5 covers that with a sentinel or two query variants.\n\nVerdict: A",
+  "usage": {
+    "input": 1632,
+    "output": 824
+  },
+  "cost": 0.023008
+}

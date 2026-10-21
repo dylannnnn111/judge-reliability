@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-13",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response's answer is correct. If A were a knight, A's statement \"We are both knaves\" would be true, which would make A a knave, a contradiction. So A is a knave, and the statement is false. Its falsity means A and B are not both knaves, and since A is a knave, B must be a knight. The response gives this key reasoning clearly and concisely, well under 120 words. The only minor gap is that it doesn't explicitly verify the final assignment against A's statement, but the logic is complete.\n\nScore: 9",
+  "usage": {
+    "input": 347,
+    "output": 389
+  },
+  "cost": 0.0002292
+}

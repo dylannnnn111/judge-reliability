@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-30",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both summaries are accurate on the key facts: the 410 peak frequency, the new 412 route and its hours, the 408 removal, unchanged fares, the timetable dates, and the information stall. Both are well under 120 words. Response B adds useful context, such as the consultation's top request, and its concern bullet is more specific about who is affected. However, its claim that the 412 \"will cover its industrial estate stops\" implies the 412 serves the industrial estate, which the source doesn't state. Its \"lose service before 6am\" phrasing is also looser than the source, which says only that the 412 won't run before 6am. Response A stays closer to the source wording (\"the 412 covers its stops\") and avoids these inferences, while still covering everything the manager needs. The accuracy edge outweighs B's slightly richer context.\n\nVerdict: A",
+  "usage": {
+    "input": 1491,
+    "output": 951
+  },
+  "cost": 0.0006246
+}

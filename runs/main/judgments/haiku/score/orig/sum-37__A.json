@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-37",
+  "side": "A",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The summary is factually accurate. The dates, the $64,000 contractor cost, the $298,000 of $455,000 spend, the four dependent reports, the sponsor's absence and the 24 October update all match the source. It softens Finance's condition on the partial go-live (acceptable only if no month-end reports depend on payroll) into \"may not be acceptable,\" which is a fair reading but less precise. It also omits that the team is proceeding on the current plan while Tomas documents the payroll system, which a manager might want to know. The main problem is length: the body is roughly 130 words, and with the title closer to 145, so it breaks the explicit under-120-word limit. Accuracy is high, but the limit violation and the minor omission weigh against it.\n\nScore: 5",
+  "usage": {
+    "input": 1105,
+    "output": 1575
+  },
+  "cost": 0.000898
+}

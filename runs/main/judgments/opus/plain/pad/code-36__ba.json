@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-36",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A is better.** Both responses find essentially the same issues and put the critical one first: the `Invalidate` write under `RLock`, which can cause a fatal concurrent-map-write crash. The difference is in how well each follows the request's constraints.\n\n**Length (under 200 words):**\n- Response A is about 210 words, slightly over the limit.\n- Response B is roughly 290 words, well over. It adds a filler preamble, and its explanations are wordier throughout.\n\n**Ordering (most important first):**\n- Response B says it lists issues \"in the order I found them.\" That openly contradicts the instruction to rank by importance, even though its actual order happens to be reasonable.\n- Response A presents a deliberate importance ranking.\n\n**Content quality:**\n- Response A's points are tight and concrete. It notes that `recover` can't catch the crash, names the specific `singleflight` package, suggests a generation counter for stale overwrites, and covers error backoff and context.\n- Response B's stale-token point is a bit sharper: it notes that the specific token upstream just rejected could be re-cached for a full TTL.\n- That advantage doesn't outweigh B's clearer violations of the length and ordering instructions.\n\n**A**",
+  "usage": {
+    "input": 1822,
+    "output": 1288
+  },
+  "cost": 0.033048
+}

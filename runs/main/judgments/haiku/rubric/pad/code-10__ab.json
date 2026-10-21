@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-10",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the two most serious issues: the unanchored regex combined with `<path:slug>` enables path traversal, and the code has no authentication check. Both also catch the `os.path.exists` problems and the missing download headers. Response A ranks path traversal first, which fits the code shown, since auth may be enforced elsewhere in the application. Response B ranks auth first, which is defensible but less clearly right. Response B adds a few useful points, such as `send_from_directory` as a fix and the directory-vs-file issue with `exists`. However, it also includes speculative items like per-report ownership and logging, which are not bugs in this code. Response A's symlink point is valid, and its fixes are concise. Both exceed the 200-word limit, but Response B exceeds it by a much wider margin, so Response A follows the instruction more closely. Overall, Response A is tighter and more accurate in its prioritization, with fewer padding items, though B has a couple of good extra catches.\n\nVerdict: A",
+  "usage": {
+    "input": 1715,
+    "output": 1080
+  },
+  "cost": 0.0007115
+}

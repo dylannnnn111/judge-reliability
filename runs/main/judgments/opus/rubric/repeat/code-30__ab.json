@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "code-30",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both responses lead with the real main bug. `COUNT(*)` counts the NULL row that the LEFT JOIN produces for agents with no open tickets, and both correctly prescribe `COUNT(t.id)`. Both also catch the misleading `COALESCE(AVG, 0)`, which makes idle agents look like they respond instantly.\n\n**Where A is stronger:**\n- **NULL-skipping in AVG:** Both raise it, but A explains why it matters. Unanswered open tickets are likely the slowest, so dropping them systematically flatters the average. A also gives a concrete fix (`COUNT(t.id) - COUNT(t.first_response_mins)`).\n- **Additional real issues:** A raises two that B misses:\n  - The report is called \"weekly\" but has no time window.\n  - `AVG` on an integer column truncates on some databases.\n- **Avoiding a bad fix:** A correctly confirms that the `status` filter belongs in the `ON` clause. This is useful because it heads off a common mistake.\n\n**Where B is weaker:**\n- Its fourth item is speculative: other unresolved statuses might exist, and `active = 1` depends on the column type. Neither point is a demonstrated problem.\n- Its fifth item is not a code issue at all, just a presentation note.\n\nSo B spends its remaining space on low-value or speculative points, while A adds substantive, accurate issues.\n\n**Length:** A likely runs somewhat over the 200-word limit. B is closer but may also be slightly over. A's extra content is correct and useful, so it outweighs the length concern.\n\nVerdict: A",
+  "usage": {
+    "input": 1492,
+    "output": 721
+  },
+  "cost": 0.020388
+}

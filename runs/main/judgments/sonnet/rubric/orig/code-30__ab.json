@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-30",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main bug: `COUNT(*)` returns 1 for agents with no open tickets, and `COUNT(t.id)` fixes it. Both also catch that `COALESCE(AVG(...), 0)` makes idle agents look like they have a perfect 0-minute response time. They rank these two the same way.\n\n**Response A**\n- Its third item gives a concrete fix for the survivorship bias in the average: `COUNT(t.id) - COUNT(t.first_response_mins)`, or the wait so far for unanswered tickets.\n- The integer-truncation note is a real, correctly caveated issue on some databases.\n- It says the `status = 'open'` filter is correctly placed in the `ON` clause, which avoids a false flag and is useful to the reader.\n- The \"no time window\" item is debatable. The query is explicitly about open tickets, so a snapshot may be intended. A does frame it as a decision to make rather than a certain bug.\n- It runs noticeably over the 200-word limit.\n\n**Response B**\n- It is closer to the length limit.\n- Its third item, the biased average, is raised without a concrete fix.\n- The fourth item is speculative (\"if they exist\", \"confirm the schema\").\n- The fifth item says the tiebreaker \"is fine\" and then offers a trivial note about labeling the email. That flags something that isn't a problem and adds little.\n\nA's content is more substantive and gives more actionable fixes, and it explicitly confirms what is correct. B has weaker filler items but better respects the length. On balance A's issues and fixes are somewhat more useful, though its length overrun and the debatable time-window point temper that.\n\nVerdict: A",
+  "usage": {
+    "input": 1492,
+    "output": 1253
+  },
+  "cost": 0.015514
+}

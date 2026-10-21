@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-30",
+  "side": "A",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The top issue, `COUNT(*)` counting the NULL-padded row for idle agents, is real and correctly ranked first, with the right fix (`COUNT(t.id)`). The `COALESCE(AVG, 0)` display problem is also real and reasonably ranked second. The bias from excluding unanswered open tickets from the average (point 3) is a substantive analytical flaw, and the response gives a usable fix. The missing time window (point 4) is a fair question about intent, though it's less clearly a bug. Point 5, integer truncation, is speculative since the column type is unknown and PostgreSQL's AVG returns numeric, so it's correctly hedged but weaker than the others. The response also correctly leaves the `status` filter in the ON clause rather than wrongly flagging it. It stays under 200 words. It misses nothing major, though the `a.active = 1` comparison could fail on boolean-typed columns in some databases. Overall it's accurate, well prioritized, and actionable, with only one minor speculative item.\n\nScore: 8",
+  "usage": {
+    "input": 983,
+    "output": 1059
+  },
+  "cost": 0.0006278
+}

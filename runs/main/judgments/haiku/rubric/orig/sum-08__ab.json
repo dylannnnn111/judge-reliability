@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-08",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses cover the key status points correctly: the store-handled 90-day exchange, Priya Nand's Wednesday replacement, Frostline's separate collection, the outstanding claim form, the $500 no-sign-off threshold, and the 9 October escalation to Amara Osei. The difference is the fault date. The ticket only says the fridge stopped \"on Sunday,\" so the date is unknown. Response B states \"29 September\" as fact, which is an invented detail in a summary a manager will rely on. Response A wrongly gives 4 October in its body, but it then flags the uncertainty, though the appended correction is clumsy and the response runs past the 120-word limit. Response B is tighter and within the limit, but its fabricated date is a more serious accuracy problem than A's messy but honest correction. On accuracy first, A edges ahead, though its length and presentation weaken it.\n\nVerdict: A",
+  "usage": {
+    "input": 1640,
+    "output": 1478
+  },
+  "cost": 0.000903
+}

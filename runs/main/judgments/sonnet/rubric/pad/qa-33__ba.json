@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-33",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer in under 120 words. Response A runs well over that limit, around 230 words. Response B is about 85 words, so it complies.\n\nOn correctness, both are accurate. A says the Moon's spin matches its orbital period, which is right. B says the same thing, and also gets the 59% libration figure and the far-side sunlight point right. A's explanation is slightly more detailed, with the tidal bulge and friction, but B covers the key mechanism: tidal friction slowing the rotation until it matched the orbit.\n\nA breaks the explicit length constraint, and its extra content doesn't make up for that. B is correct, covers the key reasoning, and follows the constraint.\n\nVerdict: B",
+  "usage": {
+    "input": 856,
+    "output": 228
+  },
+  "cost": 0.003992
+}

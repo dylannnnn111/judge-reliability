@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "code-11",
+  "side": "B",
+  "score": 7,
+  "model": "claude-opus-5-5",
+  "text": "The response finds the critical bug and ranks it first: the check-then-act race in `reserve`, where two threads can both pass `available()` before either decrements. Its fix of one critical section is correct.\n\nPoint 2 is arguably just as important. \"Web worker threads\" strongly suggests a multi-process or multi-host deployment, where `threading.Lock` provides no protection. The suggested fix, a conditional atomic `UPDATE` with a row-count check or `SELECT ... FOR UPDATE`, is the right one. Ranking it second is defensible, since point 1 is a bug even within one process.\n\nPoints 3 and 4 are real, correctly described, and come with concrete fixes:\n- **Point 3:** negative `qty` inverts both operations.\n- **Point 4:** `release` isn't tied to any reservation, so double or bogus releases inflate stock.\n\nThe weaker points:\n- **Point 5:** the global lock serializing all SKUs is true but minor. The response itself admits it becomes moot once the point 2 fix is applied.\n- **Point 6:** this mostly restates point 1. `available()` as a read-only display value is fine; the only problem was `reserve` relying on it, which point 1 already covers. It edges toward flagging something that is fine.\n\nOn the length constraint, my count puts the response at roughly 205 words including the code. That slightly exceeds the user's explicit \"under 200 words.\" Dropping the redundant point 6 alone would have fixed it.\n\nOverall, the substance is accurate, well prioritized, and actionable, with no false bugs. It loses points for the redundant or low-value tail items and for slightly exceeding the stated word limit because of them.\n\nScore: 7",
+  "usage": {
+    "input": 938,
+    "output": 1447
+  },
+  "cost": 0.032692
+}

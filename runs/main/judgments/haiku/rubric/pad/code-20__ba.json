@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-20",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is better. Both identify the DST off-by-one bug and the silent NaN handling, and both give a working UTC-based fix. Response A's DST arithmetic is more precise: its 71h example is correct, and it correctly notes that the overdue list is unaffected by the DST error because the sign stays right. Response B wrongly claims a DST-affected invoice \"may land in the wrong place on the overdue list,\" which is incorrect since -1.04 is still negative. Response B's fix also drops rounding, which is safe with UTC midnights but is presented alongside a \"use Math.round\" suggestion that the code doesn't match. B also adds a meta preamble and runs past the 200-word limit, while A stays within it. A's extra points on timezone and staleness are short and useful. Response B's minor items cover the same ground, but it adds no new substance.\n\nVerdict: A",
+  "usage": {
+    "input": 1983,
+    "output": 1000
+  },
+  "cost": 0.0006983
+}

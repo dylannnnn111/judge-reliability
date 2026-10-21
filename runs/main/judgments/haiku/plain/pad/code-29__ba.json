@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-29",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. It covers the same core bugs (the `NOT IN` NULL trap, the hardcoded date contradicting \"never referred,\" and the biased `LIMIT`/`ORDER BY`) and adds the SQLite-specific date-format concern. It also stays within the 200-word limit, while Response A runs to roughly 300 words.\n\nB",
+  "usage": {
+    "input": 1593,
+    "output": 479
+  },
+  "cost": 0.0003988
+}

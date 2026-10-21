@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-25",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses correctly find the main problems. These are the off-by-one that lets 6 attempts through, unbounded Map growth, per-IP-only limiting, the hardcoded `retryAfterSec`, in-memory state, and IP trust. Both rank the off-by-one first and give fixes.\n\n**Response A:**\n- It has the more concrete fixes: the exact retry-after formula, a periodic sweep, and keying on the IPv6 prefix.\n- It is clearly over the 200-word limit, at roughly 250 words.\n- Its last item (\"no tests, no reset after successful login\") is filler, and it admits the `now` parameter is fine.\n- It merges proxy and NAT concerns, which is valid but a bit diffuse.\n\n**Response B:**\n- It is tighter and stays near the limit, at roughly 200 words, with every item substantive.\n- It adds a distinct point, that successful logins consume quota, and suggests failure-based lockout or backoff. Whether that is a bug is a design question, but it is a reasonable one.\n- It covers X-Forwarded-For spoofing, a real bypass risk.\n- Its fixes are slightly less specific, though adequate.\n\nBoth are accurate, and neither flags anything that is actually fine, except A's weak minor item. B follows the length constraint better, has no padding, and covers essentially the same important issues.\n\nVerdict: B",
+  "usage": {
+    "input": 1640,
+    "output": 1068
+  },
+  "cost": 0.01396
+}

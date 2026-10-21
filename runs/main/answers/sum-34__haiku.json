@@ -1,0 +1,13 @@
+{
+  "item": "sum-34",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "Clinic Desk 7.2 (released 13 October 2026) adds three main features: an online waitlist that texts the next patient when a booked slot is cancelled, with 30 minutes to accept; telehealth video links included in reminder texts and emails; and a practitioner leave calendar that automatically blocks online bookings on leave days.\n\nImprovements include next free appointments shown in the day view, patient search by Medicare number, and per-clinic reminder timing of 24 or 48 hours. Several bugs are fixed, including recurring appointments skipping weeks after public holidays.\n\nOne known issue: on some older Android phones, waitlist links open in the browser instead of the app, though patients can still accept there.\n\nComing next month: SMS two-factor login for staff and a reporting dashboard for practice managers.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 587,
+    "output": 261
+  },
+  "cost": 0.0001892,
+  "at": "2026-10-14T01:52:22.914Z"
+}

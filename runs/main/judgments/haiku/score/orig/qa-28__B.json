@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-28",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response is technically correct. It explains both collision strategies (separate chaining and open addressing), links the load factor to performance, and gives the worst-case O(n) degradation. It also explains why resizing keeps the amortized insert cost at O(1), which is the key reasoning behind the performance claim. The structure is clear, with bolded terms and a short list.\n\nThe main flaw is the length constraint. By my count the response runs about 125 to 130 words, over the 120-word limit. It also omits that open addressing needs special handling for deletions (tombstones), though the question didn't require it.\n\nScore: 6",
+  "usage": {
+    "input": 482,
+    "output": 768
+  },
+  "cost": 0.0004322
+}

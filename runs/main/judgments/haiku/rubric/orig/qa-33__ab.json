@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-33",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are factually correct. Both identify tidal locking, give the 27.3-day match between spin and orbit, note libration and the roughly 59% of the surface visible over time, and point out that the far side gets sunlight. Both are under 120 words.\n\nOn the key reasoning, Response B explains the mechanism more fully. It describes the tidal bulge raised by Earth's gravity, friction within the Moon dragging on that bulge to slow the spin, and the bulge settling into alignment with Earth. Response A states that tidal friction slowed the spin until the periods matched, which is correct but less explanatory. Response B's phrase \"friction within it dragged on that bulge\" is somewhat loose, and its \"wobbles in the orbit\" framing of libration is similarly imprecise, but Response A has the same imprecision. Clarity is comparable, and neither is padded.\n\nResponse B is slightly better on the core explanation, though the difference is small.\n\nVerdict: B",
+  "usage": {
+    "input": 677,
+    "output": 859
+  },
+  "cost": 0.0004971999999999999
+}

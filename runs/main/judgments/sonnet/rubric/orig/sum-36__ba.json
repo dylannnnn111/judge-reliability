@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-36",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better: it stays within the word limit and states the figures more accurately, while B goes over the limit and garbles one key figure.\n\n**Accuracy:** Both responses get the main terms right: 48 months, 22 printers, $3,480 plus GST, the 24-month fix then up to 4% a year, the allowances, 75% of remaining fees on early exit, and the rollover. The $195 figure checks out (3,000 extra colour pages at 6.5c).\n\nResponse B writes that term months \"will likely exceed the colour allowance by about $195/month\". That mixes up the $195 cost with a page count, so it is slightly garbled. Response A says \"expect roughly $195 extra in term months\", which is correct.\n\n**Word limit:** The request says \"under 120 words\". I count Response A at about 116 words, which complies. I count Response B at about 127, which breaks the explicit constraint.\n\n**Content:** Response A includes the overage rates (0.9c and 6.5c), which a manager would need to judge the cost risk, and it labels the usage point as a risk. Response B leaves out the overage rates and adds the contact name, which is useful but less important than the rates. A's omission of the contact is a minor loss.\n\nVerdict: A",
+  "usage": {
+    "input": 1514,
+    "output": 2488
+  },
+  "cost": 0.027908
+}

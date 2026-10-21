@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-27",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly explain that ice floats because its open hexagonal hydrogen-bonded lattice makes it about 9% less dense than liquid water, and both correctly note that this insulates lakes so life can survive beneath the ice. Neither contains a factual error.\n\nResponse A is under the 120-word limit, at roughly 100 words. It covers the key reasoning (lattice structure, density difference, the 4°C density maximum, and bottom-up freezing as the counterfactual) concisely and clearly.\n\nResponse B runs well over 120 words, roughly 200, so it violates an explicit instruction. Its extra material, such as the layering discussion and the ice-cube example, is mostly accurate but adds little that A lacks. Its explanation is somewhat more thorough, but that doesn't outweigh failing the length constraint.\n\nSince the two are equal on correctness and key reasoning, the word limit decides it in favor of A.\n\nVerdict: A",
+  "usage": {
+    "input": 917,
+    "output": 660
+  },
+  "cost": 0.0004217
+}

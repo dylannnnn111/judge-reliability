@@ -1,0 +1,13 @@
+{
+  "item": "code-20",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**1. DST makes the labels off by one.** Both dates are local midnight, but a day across a DST change is 23 or 25 hours, not `MS_PER_DAY`. `Math.floor` then miscounts:\n- Spring forward: a due date 3 days away is 71h out, so `floor(2.96)` = 2. \"Due tomorrow\" can become \"Due today.\"\n- Fall back: due yesterday is −25h, so `floor(-1.04)` = −2, giving \"Overdue by 2 days.\"\n\nThe overdue *list* is unaffected because the sign is still right, but the labels are wrong for days around each transition. Fix by comparing calendar dates in UTC:\n```ts\nconst [y, m, d] = dueDate.split(\"-\").map(Number);\nconst due = Date.UTC(y, m - 1, d);\nconst today = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());\nreturn Math.round((due - today) / MS_PER_DAY);\n```\n\n**2. Invalid or unexpected input fails silently.** A malformed or null `dueDate`, or a full ISO timestamp (giving `\"...T00:00:00ZT00:00:00\"`), produces `NaN`. The label reads \"Due in NaN days\", and the invoice is quietly left out of the overdue list. Validate and throw or log.\n\n**3. \"Today\" depends on the viewer's timezone.** Users in different timezones see different overdue status for the same invoice. If due dates follow a business timezone, compute \"today\" in that zone.\n\n**4. Stale after midnight.** Labels are computed once, so a page left open overnight shows yesterday's counts.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 498,
+    "output": 1083
+  },
+  "cost": 0.023652,
+  "at": "2026-10-14T01:53:59.352Z"
+}

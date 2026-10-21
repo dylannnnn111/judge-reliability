@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-13",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses reach the correct answer: A is a knave and B is a knight. Both also give the same valid reasoning, and both stay under 120 words.\n\nResponse A is more concise. It gives the key reasoning in two bullets without losing anything essential.\n\nResponse B spells out the logic one step further, saying the statement is false when at least one is not a knave. It then repeats the answer at the end, which adds no new content. The extra clarity is minor, since A's \"not both knaves\" step already covers it.\n\nResponse A states the answer up front and is tight. Response B is slightly more explicit but more redundant, stating the answer twice. The difference is small, and since length is not a merit in itself, neither is clearly better. The extra explicitness in B is marginal, and A's concision is marginal, so this is close to a tie.\n\nVerdict: TIE",
+  "usage": {
+    "input": 582,
+    "output": 264
+  },
+  "cost": 0.003804
+}

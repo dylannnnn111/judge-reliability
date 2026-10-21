@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-25",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "A is better. Both responses go over the 200-word limit, but A (about 250 words) is much closer than B (about 330).\n\nThey agree on the same core problems in the same order: the off-by-one error, unbounded memory growth, per-IP-only limiting, the hardcoded `retryAfterSec`, in-memory state, and untrusted IPs. A adds concrete fixes, such as the exact `retryAfterSec` formula, keying IPv6 on the prefix, and the shared-NAT and proxy lockout risks. B pads its points with more prose and hedged wording like \"it is worth deciding.\" Its point about counting successful logins is debatable, since counting all attempts is standard for this kind of limiter.\n\nA's last item, about missing tests and no way to reset a key, is minor filler, but it is labeled \"Minor\" and does little harm.\n\n**A**",
+  "usage": {
+    "input": 1635,
+    "output": 878
+  },
+  "cost": 0.01205
+}

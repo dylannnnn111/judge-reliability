@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-19",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for fewer than 200 words, most important issues first. Both responses are probably near or over that limit, so I'll check the length.\n\nResponse A is long. Counting roughly: item 1 ~45 words, item 2 ~50, item 3 ~30, item 4 ~35, item 5 ~20, item 6 ~70. Total is around 250+ words, which breaks the limit.\n\nResponse B: item 1 ~35, item 2 ~35, item 3 ~25, item 4 ~30, item 5 ~20, item 6 ~35, fix ~30. Total is around 210-220 words including the headers. That's slightly over, but much closer than A.\n\nOn accuracy, A's last minor bullet is muddled: \"Re-running the script would not reprocess the thumbs folder's contents... but existing thumbnails get overwritten silently.\" That is confusing and padded. A's \"Output order would be nondeterministic\" is also marginal. A's claim that \"the exit code is not set to 1\" is accurate in older Node; in modern Node (15+), an unhandled rejection crashes the process with exit code 1, and A hedges on this. B's \"can crash the process or fail silently\" is also accurate.\n\nB's claim that \"One bad image can crash the process\" is correct. Both cover the same core issues. B is more concise and adheres better to the limit, and its closing fix is useful.\n\nB is better.\n\n**B**",
+  "usage": {
+    "input": 1528,
+    "output": 452
+  },
+  "cost": 0.007576
+}

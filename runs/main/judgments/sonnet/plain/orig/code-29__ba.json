@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-29",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. Both responses find the same top three problems: the `NOT IN` with NULLs bug, the date filter that contradicts \"never referred\", and the biased `LIMIT`/`ORDER BY`. Both give the same correct `NOT EXISTS` fix.\n\nThe difference is the 200-word limit. By my count, Response B comes to roughly 180 words, which is within the limit. Response A comes to roughly 210 words, which exceeds it. Part of that overage is A's extra \"Minor\" bullet about duplicate or suppressed emails, which is speculative and not tied to anything in the code.\n\nB is also a little tighter. It notes that the NULL is almost certain given the stated data, and it flags that the date function is SQLite-specific.\n\n**B**",
+  "usage": {
+    "input": 1412,
+    "output": 1465
+  },
+  "cost": 0.017474
+}

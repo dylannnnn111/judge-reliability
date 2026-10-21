@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-28",
+  "side": "A",
+  "score": 7,
+  "model": "claude-sonnet-5-5",
+  "text": "Correctness: The content is accurate. Chaining and open addressing are the two main approaches. The probing methods listed are right. Average O(1) and worst-case O(n) are correct, and Java's HashMap treeifies chains (O(log n)). Clustering in open addressing is a real issue. Resizing at a load factor of about 0.7–0.75 is typical (Java 0.75, open-addressing tables ~0.7). One nit: \"appended\" is fine.\n\nWord count: roughly 120 words. Counting: \"A collision happens when two keys hash to the same bucket.\" (11) \"The two main fixes are:\" (5) =16. \"Chaining: each bucket holds a linked list (or tree) of entries.\" (11) =27. \"Colliding keys are appended to that bucket's list.\" (8) =35. \"Open addressing: if the slot is taken, probe for another one using linear probing, quadratic probing, or double hashing.\" (19) =54. \"Performance: With a good hash function and a controlled load factor (entries ÷ buckets), lookups, inserts, and deletes average O(1).\" (21) =75. \"As collisions pile up, chains or probe sequences lengthen, and the worst case degrades to O(n) (or O(log n) if chains become balanced trees, as in Java's HashMap).\" (28) =103. \"Open addressing also suffers from clustering as it fills.\" (9) =112. \"To keep performance up, tables resize (typically doubling) and rehash when the load factor crosses a threshold, such as 0.7–0.75.\" (21) =133. So it is around 130 words, which slightly exceeds the 120-word limit. That is a constraint violation, though a modest one (~10% over).\n\nReasoning and clarity: covers both mechanisms, the performance effect, and mitigation. Clear and well structured.\n\nThe word limit violation lowers the score somewhat, though the content is strong.\n\nScore: 7",
+  "usage": {
+    "input": 489,
+    "output": 623
+  },
+  "cost": 0.007208
+}

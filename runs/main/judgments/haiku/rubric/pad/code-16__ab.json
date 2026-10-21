@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-16",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response B is better. Its top item, that GST is added on top of prices that are normally GST-inclusive in Australia, is probably the most important real problem in this code, and it is ranked first with a clear fix. Response A buries the same point at number 7 and hedges it. Response A also flags `==` versus `===` as a problem, which is a non-issue for string comparison here. Its rounding point is weaker, and it runs well past the 200-word limit, opening with filler (\"Thank you for sharing this code\"). Response B stays closer to the limit and gives concrete fixes for each item. Both correctly flag the mutating `sort`, missing input validation, client-side trust at checkout, and the `Intl.NumberFormat` suggestion for `formatAud`.\n\nVerdict: B",
+  "usage": {
+    "input": 1879,
+    "output": 791
+  },
+  "cost": 0.0005834
+}

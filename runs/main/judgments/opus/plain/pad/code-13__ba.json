@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-13",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses identify the same core bugs in a sensible priority order: the December crash, day-of-month overflow, schedule drift, the hardcoded 30-day proration, missing validation, and floor rounding.\n\n**Length:** Response A is about 220 words, slightly over the 200-word limit. Response B is roughly 330 words, far over it, and opens with filler (\"Below are the six issues… with each one explained in more detail\").\n\n**Accuracy:** Response A is more accurate in two places.\n- **Schedule drift:** A correctly notes that drift only appears if you naively fix bug #2 by clamping and chaining. The current code crashes before it can drift. B presents drift as something that already happens.\n- **December crash:** B says schedules fail when \"crossing into December.\" The crash actually happens when moving out of December, since 12 + 1 = 13. A's \"crossing December\" is correct.\n- **Rounding:** B says `//` \"floors toward zero.\" It actually floors toward negative infinity. The two agree for positive values but differ for negative ones.\n\n**Usefulness:** Response A gives concrete fixes: use `relativedelta` or `calendar.monthrange`, and use the real period length. It also flags negative amounts.",
+  "usage": {
+    "input": 1573,
+    "output": 1219
+  },
+  "cost": 0.030672
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-32",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both summaries exceed the 120-word limit, so neither fully meets the brief. On accuracy, both get the core facts right: the 0.90% discount is still applied, the August 0.25% rise explains the move to 6.04%, Jordan's 12 May email locks only the discount, and the $250 goodwill payment was accepted. Response A explains how the 5.79% was built (standard variable rate less the discount), which helps a manager see why there was no overcharge. Response B mentions the package-account condition, which A omits, but A's omission is minor.\n\nResponse B has more problems. Its opening sentence is filler for a busy reader. Its closing flag says the customers \"have not accepted the outcome,\" which is inaccurate: they accepted the $250 but still feel misled. Its last sentence also muddles the sequence by saying the complaint was closed and then referred. Response A's risk note about possible AFCA escalation is more precise and more useful for a manager. A is also tighter and better structured for skimming.\n\nVerdict: A",
+  "usage": {
+    "input": 1670,
+    "output": 884
+  },
+  "cost": 0.000609
+}

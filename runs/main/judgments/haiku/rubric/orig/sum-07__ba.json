@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-07",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Neither invents details, and both correctly flag the Classic CSV removal as the main action item, with the import break and the \"Moving from Classic CSV\" help article. Both also mention Android 9, the new features, and the coming-soon items.\n\nResponse A is about 124 words, slightly over the 120-word limit. It explains the dashboard and search improvements well but leaves out the bug fixes and the ATO-aligned GST change. Its prose is clear but denser.\n\nResponse B is about 115 words, within the limit. Its headed structure suits a busy manager who will scan it. It covers more of what the reader needs: the GST rounding change, the specific bug fixes, and the feature list. Its CSV warning is equally clear, and bolding \"break after updating\" highlights the urgent point. Its only weakness is that the dashboard and search gains are less specific than in A, a minor omission.\n\nOn accuracy, concision, and coverage of what the manager needs, B is slightly better.\n\nVerdict: B",
+  "usage": {
+    "input": 1401,
+    "output": 1787
+  },
+  "cost": 0.0010336
+}

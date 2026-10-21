@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-38",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is better, mainly because it stays closer to the 200-word limit while covering roughly the same ground.\n\n- **Length:** By my estimate, A runs about 215 words and B about 240. Both go over, but B exceeds the limit by more.\n- **Merged points:** A folds the tar \"file changed as we read it\" problem into its first item. B gives it a separate item, which repeats much of its first point.\n- **Coverage:** A catches the empty-glob problem (`shopt -s nullglob`), which B misses entirely. A also flags the umask exposure as a real issue, whereas B buries it under \"Minor.\"\n\nB does have some real strengths. It notes that the abort also skips pruning, and it gives exact quoting fixes. It also gives the more specific advice to tolerate tar's exit 1 but fail on 2 or higher. Its monitoring point is reasonable too. Still, these don't outweigh its redundancy and its larger overrun of the limit the user asked for.",
+  "usage": {
+    "input": 1500,
+    "output": 1698
+  },
+  "cost": 0.03996
+}

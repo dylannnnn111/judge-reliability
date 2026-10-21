@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-07",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Neither misstates the release date, the CSV removal, the Android 9 change, or the beta and coming-soon details. Both flag the Classic CSV break as the main action item and point to the \"Moving from Classic CSV\" help article. Both land at roughly 120 words, so length doesn't separate them.\n\nResponse A is easier to scan for a busy manager. Its labelled sections cover every category in the notes, and the new features are listed together. Its minor bug-fix detail, such as the Western Australia issue, is less useful to a manager, and it spends words there. Response B reads as tighter prose and gives the 40% speed figure, but it compresses the features and bug fixes into a vague \"several bugs are fixed,\" losing some useful content.\n\nOn balance, Response A keeps slightly more of what the reader needs in a format that is quicker to skim, so it edges ahead.\n\nVerdict: A",
+  "usage": {
+    "input": 1401,
+    "output": 1791
+  },
+  "cost": 0.0010355999999999998
+}

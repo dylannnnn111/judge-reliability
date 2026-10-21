@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-33",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the main bug: `WHERE p.status = 'succeeded'` discards zero-payment customers, and both give the same fix of moving the condition into the join. Response A goes on to raise the most useful domain issues: annual and quarterly billing creating false alarms, and churned or brand-new accounts being included. Its refund point is also valid, though the item is cut off mid-list. Response B's date and UTC points are weaker, its \"paying vs. non-free\" point is reasonable, and it contains an error: it suggests `COUNT(*)` as clearer, but after the join fix `COUNT(*)` would return 1 for customers with no payments, which would break the zero-payment signal. B also runs well over the 200-word limit, with filler such as \"I want to start with the most serious issue.\" A is tighter, closer to the limit, and more accurate, despite its truncated last item.\n\nVerdict: A",
+  "usage": {
+    "input": 1754,
+    "output": 1040
+  },
+  "cost": 0.0006954
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "code-05",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The DST diagnosis is correct. Both datetimes share the same `ZoneInfo` tzinfo, so subtraction ignores the offset change. The examples check out: 01:00–05:00 on the October spring-forward night is 3h of real time but 4h naive, and the April fall-back case is 5h real but 4h naive. The ambiguous-time and invalid-time points are also accurate, since `fold=0` picks the first occurrence and 02:30 on spring-forward doesn't exist. The weekend-loading point is real: loading keys off the start day only, so a Friday night shift running into Saturday gets no loading. The float-rounding point is valid, since `round()` uses banker's rounding and the loading multiplier produces floats.\n\nThe ranking is sensible. DST and weekend loading are the two most serious payroll errors, and the response puts them first. The fixes are mostly actionable, though the suggested `timezone.utc` isn't imported in the code and the response doesn't mention that. Nothing flagged is a false positive; the missing-validation and holiday points are lower-priority but legitimate.\n\nThe main failure is length. The user asked for under 200 words, and this response runs well over that. It also has some filler, such as calling the first item \"the most serious problem in the response,\" which is awkward. The substance is good, but it breaks an explicit constraint.\n\nScore: 6",
+  "usage": {
+    "input": 1365,
+    "output": 2149
+  },
+  "cost": 0.001211
+}

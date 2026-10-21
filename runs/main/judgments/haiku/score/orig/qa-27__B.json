@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-27",
+  "side": "B",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response is factually accurate. Ice's hexagonal lattice holds molecules farther apart than liquid water, so ice is about 8-9% less dense. It correctly explains the winter consequence: ice insulates the water below, which stays near 4°C, the temperature of maximum density, so aquatic life can survive. The \"if ice sank\" counterfactual is a sound way to show why this matters. It is about 103 words, under the limit. The opening sentence, \"water is unusual,\" is slightly vague, but the rest of the explanation makes the reasoning clear.\n\nScore: 9",
+  "usage": {
+    "input": 419,
+    "output": 718
+  },
+  "cost": 0.0004009
+}

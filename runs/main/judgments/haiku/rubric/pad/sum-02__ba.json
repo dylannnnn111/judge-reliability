@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-02",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response B is better. Both are accurate on the main points: the opening-hours dispute and its outcome, the reading program dates and the 24 October volunteer deadline, and the November meeting. Response B's one weak spot is labelling the roof leak as \"Westbrook Central,\" which the minutes never state explicitly. Response A's \"children's area roof\" is safer, and its \"will need full replacement\" is a slight overstatement of the contractor's recommendation.\n\nResponse A also runs over the 120-word limit. Its opening filler (\"Thank you for taking the time...\") adds nothing, and the bullets are wordier. Response B fits the limit at roughly 119 words, keeps every decision-relevant point (including the faulty counter, which explains Ross's objection), and flags the one action item in bold. That makes it the more useful summary for a busy manager.\n\nVerdict: B",
+  "usage": {
+    "input": 1742,
+    "output": 1473
+  },
+  "cost": 0.0009107000000000001
+}

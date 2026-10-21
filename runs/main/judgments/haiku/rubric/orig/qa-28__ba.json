@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-28",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly explain chaining and open addressing, and both correctly state that performance averages O(1) with a good hash and a controlled load factor, degrading toward O(n) as collisions grow. Both also cover resizing at a load-factor threshold.\n\nResponse A adds the amortized analysis: resizing costs O(n), but the amortized insert cost stays O(1). This directly answers \"what does that do to performance\" and is the key reasoning behind resizing. Response B adds two other useful points: open addressing suffers from clustering as it fills, and treeified chains give O(log n) worst case, as in Java's HashMap. Both are accurate. Response B's clustering point is a real performance consideration that A omits, but A's amortized argument is more central to the performance question. Both are close to the 120-word limit, so length does not separate them.\n\nOverall, Response A's amortized reasoning gives it a slight edge, though the difference is small.\n\nVerdict: A",
+  "usage": {
+    "input": 835,
+    "output": 1045
+  },
+  "cost": 0.000606
+}

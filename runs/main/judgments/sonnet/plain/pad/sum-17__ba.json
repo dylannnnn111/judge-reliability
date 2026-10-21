@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-17",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. Response A is around 200 words, well over the 120-word limit, and it is written as an announcement to residents rather than a summary for a manager. It also says the problem is \"resolved for now\" in the subject line, which overstates things since the committee is still waiting to see how the next weekend goes. It also muddles the facts by saying the music continued \"past midnight\", when the licence limit for music is 10pm.\n\nResponse B is about 123 words, so it slightly exceeds the limit, but it is far closer. It captures the key points accurately: the licence terms, the evidence the regulator needs, the outcome of the call with the venue manager, the fallback of a regulator complaint, and the 20 October follow-up. It is also better suited to a busy manager.\n\n**B**",
+  "usage": {
+    "input": 1510,
+    "output": 1013
+  },
+  "cost": 0.01315
+}

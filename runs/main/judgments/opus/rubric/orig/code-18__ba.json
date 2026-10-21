@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-18",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Verdict: B.** Both responses find the same core issues and rank the critical one first. B is slightly better because its fixes are more complete and correct.\n\n**Shared ground.** Both put the cache key ignoring `to` at #1 and correctly explain the wrong-rate impact on invoices. Both then cover:\n- response validation\n- fetch timeout\n- in-flight deduplication\n- unencoded query parameters\n- unbounded cache growth\n\nAll of these are real issues, and both suggest the right fixes.\n\n**Ordering.** A puts the timeout before deduplication; B reverses that. Either order is defensible.\n\n**Where they differ:**\n- **Deduplication fix.** B adds \"evict it if it rejects.\" This matters: a naive promise cache would store a rejected fetch and keep returning the failure for 60 seconds. B's fix is more correct and complete.\n- **Validation details.** B explicitly names `0` as a bad value and suggests checking inputs against ISO 4217 codes. A's checks also cover `0` via `rate > 0`, so this is a small difference.\n- **Last item.** A's #7, the unsafe generic cast, is technically true but low-impact for this code. B's #7, money precision, really concerns the caller rather than this code. Still, it is relevant to invoicing and framed as advice, so it is about as useful as A's point.\n\n**Length.** Both run slightly over the 200-word limit by similar amounts.\n\nVerdict: B",
+  "usage": {
+    "input": 1637,
+    "output": 771
+  },
+  "cost": 0.021968
+}

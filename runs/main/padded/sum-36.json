@@ -1,0 +1,14 @@
+{
+  "pair": "sum-36",
+  "side": "A",
+  "author": "opus",
+  "model": "claude-haiku-5-5",
+  "original": "**Printer Fleet Lease Summary (Crestline Office Solutions)**\n\n- **Term:** 48 months from installation on 3 November 2026.\n- **Includes:** 22 multifunction printers across both campuses, plus all toner, parts and servicing, with fault response within 8 business hours.\n- **Cost:** $3,480/month + GST, fixed for 24 months. From month 25 it can rise up to 4% a year.\n- **Page allowance:** 120,000 black-and-white and 15,000 colour pages monthly, with no carry-over. Based on last year's usage, term months will likely exceed the colour allowance by about $195/month, and unused holiday pages are lost.\n- **Early exit:** The school pays 75% of remaining fees, even if enrolments fall.\n- **End of term:** Return, buy or re-lease. If no action is taken, the lease rolls over monthly at the same fee.\n- **Contact:** Priyanka Shah, Crestline.",
+  "text": "**Printer Fleet Lease Summary (Crestline Office Solutions)**\n\nThank you for reviewing this summary. The key points of the printer fleet lease are set out below, and each one is described in more detail to help you assess the agreement.\n\n- **Term:** The lease runs for 48 months, beginning from the installation date of 3 November 2026.\n- **Includes:** The agreement covers 22 multifunction printers across both campuses. It also includes all toner, parts and servicing, with fault response provided within 8 business hours.\n- **Cost:** The monthly fee is $3,480 plus GST, and this fee is fixed for the first 24 months. From month 25 onward, the fee can rise by up to 4% a year.\n- **Page allowance:** Each month includes 120,000 black-and-white pages and 15,000 colour pages, and any unused pages do not carry over. Based on last year's usage, term months will likely exceed the colour allowance by about $195 per month. Please also note that unused holiday pages are lost.\n- **Early exit:** If the school ends the lease early, it pays 75% of the remaining fees. This applies even if enrolments fall.\n- **End of term:** At the end of the 48 months, the school may choose to return the printers, buy them, or re-lease them. If no action is taken, the lease rolls over monthly at the same fee.\n- **Contact:** For further questions, please contact Priyanka Shah at Crestline.",
+  "ratio": 1.76,
+  "usage": {
+    "input": 507,
+    "output": 615
+  },
+  "cost": 0.0003582
+}

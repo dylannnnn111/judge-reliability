@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-33",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** Both responses are accurate. Each correctly identifies tidal locking and the 27.3-day period that both rotation and orbit share. Each mentions libration letting us see about 59% of the surface, and each corrects the \"dark side\" misconception.\n\n**Key reasoning:** Response A explains the mechanism a bit more fully. It describes Earth raising a tidal bulge on the Moon and internal friction dragging on that bulge until the spin matched the orbit. Response B condenses this to \"tidal friction,\" which is correct but less explanatory. A has an edge here.\n\n**Clarity and constraints:** By my count, Response A runs to about 120 words. That does not satisfy \"under 120 words.\" Its closing \"though\" is also oddly placed, since the far-side point doesn't contrast with the libration sentence before it. Response B is about 89 words, comfortably within the limit, and reads cleanly. Its description of libration as wobbles arising from the Moon's orbit is reasonable.\n\n**Weighing:** A's extra detail on the tidal bulge is a genuine plus. But it comes at the cost of breaking the explicit length constraint. B delivers the essential correct answer and reasoning concisely within the limit. Because the user specified a hard word limit, B's compliance outweighs A's modest extra depth.\n\nVerdict: B",
+  "usage": {
+    "input": 677,
+    "output": 1193
+  },
+  "cost": 0.026568
+}

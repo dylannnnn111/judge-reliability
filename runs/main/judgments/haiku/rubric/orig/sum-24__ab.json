@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-24",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses report the key figures correctly: 19 applications, $286,000 requested against a $120,000 pool, five approvals totalling $88,200 (which sums correctly after the Saltwater correction), and a $31,800 rollover. Both get the dates, the 30 November acquittal deadline, and the Round 3 window right, and both fit well under 120 words.\n\nResponse A includes the Jarrah Wilson conflict of interest, which is a governance point a manager may care about. It also states that the Saltwater figure was corrected from $45,000, which helps a reader who may have seen the erroneous figure elsewhere. Response B omits the conflict entirely and mentions the correction only in the header. B's reapplication note is slightly more precise, since it mentions revised budgets, but that is a minor gain. Neither response contains an error.\n\nOn balance, Response A keeps more of the points a busy manager needs at similar length, so it is somewhat better.\n\nVerdict: A",
+  "usage": {
+    "input": 1755,
+    "output": 855
+  },
+  "cost": 0.000603
+}

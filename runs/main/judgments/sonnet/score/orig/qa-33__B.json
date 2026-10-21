@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-33",
+  "side": "B",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "Checking the facts: tidal locking is the correct explanation. The Moon's rotation period and orbital period are both about 27.3 days (sidereal), so that's accurate. The explanation of tidal bulge and friction dragging the spin is the standard account. Libration lets us see about 59% of the surface, which is correct. The far side gets sunlight, which is also correct.\n\nWord count: Paragraph 1: \"We always see the same side of the Moon because of tidal locking, which makes its rotation period match its orbital period.\" (22) \"The Moon spins once on its axis in the same 27.3 days it takes to circle Earth once.\" (18) → 40.\nParagraph 2: \"This isn't a coincidence.\" (4) \"Early on, the Moon rotated faster.\" (6) \"Earth's gravity raised a tidal bulge on it, and as the Moon rotated, friction within it dragged on that bulge and slowed the spin.\" (24) \"Eventually the bulge aligned with Earth and the rotation settled to match the orbit.\" (13) → 47. Total 87.\nParagraph 3: \"Because of slight wobbles called libration, we can actually see about 59% of the surface over time.\" (17) \"The \"far side\" isn't permanently dark, though.\" (7) \"It gets sunlight just like the near side.\" (8) → 32. Total about 119.\n\nThat is right at the limit and probably under 120, though it's close. Counting more carefully: the first paragraph, \"We(1) always(2) see(3) the(4) same(5) side(6) of(7) the(8) Moon(9) because(10) of(11) tidal(12) locking(13), which(14) makes(15) its(16) rotation(17) period(18) match(19) its(20) orbital(21) period(22).\" That's 22. The second sentence: \"The(1) Moon(2) spins(3) once(4) on(5) its(6) axis(7) in(8) the(9) same(10) 27.3(11) days(12) it(13) takes(14) to(15) circle(16) Earth(17) once(18).\" That's 18. Para 2: 4+6=10; \"Earth's(1) gravity(2) raised(3) a(4) tidal(5) bulge(6) on(7) it(8), and(9) as(10) the(11) Moon(12) rotated(13), friction(14) within(15) it(16) dragged(17) on(18) that(19) bulge(20) and(21) slowed(22) the(23) spin(24).\" That's 24. \"Eventually the bulge aligned with Earth and the rotation settled to match the orbit\" is 13. Para 3: \"Because(1) of(2) slight(3) wobbles(4) called(5) libration(6), we(7) can(8) actually(9) see(10) about(11) 59%(12) of(13) the(14) surface(15) over(16) time(17).\" That's 17. Then 7 and 8. Total: 22+18+10+24+13+17+7+8 = 119. Under 120.\n\nIt satisfies the constraint, is correct, and gives the key reasoning. The final point is a bit of extra, but it is useful. One small caveat: the claim that friction on the bulge slowed the spin is fine.\n\nScore: 9",
+  "usage": {
+    "input": 426,
+    "output": 1046
+  },
+  "cost": 0.011312
+}

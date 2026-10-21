@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "code-29",
+  "side": "B",
+  "score": 8,
+  "model": "claude-opus-5-5",
+  "text": "The response gets the most important bug right and ranks it first. With `NOT IN`, a single NULL `referrer_id` in the subquery makes the predicate UNKNOWN or FALSE for every customer, so the campaign audience is empty. The `NOT EXISTS` rewrite and the `IS NOT NULL` alternative are both correct fixes.\n\nItem 2 is also a real logic bug. The `2026-01-01` filter contradicts \"never referred anyone,\" and the response gives a sensible fix for each reading of the intent. Its `NOT EXISTS` snippet already drops the date filter, which matches the advice in item 2.\n\nItem 3 is a fair concern rather than a strict bug. `ORDER BY created_at LIMIT 5000` will always pick the same oldest customers. Ranking it below the two correctness bugs is reasonable.\n\nThe minor items are suitably hedged. In SQLite, comparing a `'YYYY-MM-DD'` string against ISO timestamps with `<` actually works fine. The response only flags trouble \"if\" the stored format differs, so this is noise rather than a false claim. The suppression and duplicates bullet is generic campaign hygiene, not a code bug, but it is short and placed under \"Minor.\"\n\nRanking is sensible and fixes are given throughout, with no wrong claims. The main flaw is length: the response runs to roughly 210–220 words, slightly over the user's explicit 200-word limit. The minor bullets are where it could have been cut.\n\nScore: 8",
+  "usage": {
+    "input": 1000,
+    "output": 1244
+  },
+  "cost": 0.02888
+}

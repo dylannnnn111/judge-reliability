@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-23",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is more accurate and keeps more of what the manager needs. Its details check out: the footpath timing, playground items, 31 October deadline, $5,610 balance, Clean Up Day logistics, the $900 carols budget, and Laila Haddad and Peter Vance's roles all match the minutes. Its Wattle Road line correctly says Councillor Tse \"will request\" a speed counter, which is what the minutes record.\n\nResponse B has one misstatement. It says \"Council will install a speed counter,\" but the minutes only say the councillor would ask traffic staff to install one and report back. That turns a request into a commitment. B also drops who is responsible for the Clean Up Day and carols, and omits the Facebook item, so it gives less of the \"who decided what\" detail. Its extra brevity doesn't offset these gaps.\n\nBoth are under 120 words, with A at roughly 110, so length doesn't separate them. A is better on accuracy and completeness.\n\nVerdict: A",
+  "usage": {
+    "input": 1550,
+    "output": 1207
+  },
+  "cost": 0.0007585
+}

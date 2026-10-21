@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-08",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses compute the same result correctly: 18 mL × 0.789 = 14.202 g, which gives about 1.42 standard drinks.\n\nResponse A adds that Australian labels round to 1.4, which is accurate and useful. It also states the headline answer up front, and it stays under 120 words. Response B is correct and concise, but it adds nothing beyond the calculation.\n\nOne small point: B writes \"= 14.2 g\" where the exact value is 14.202, which is a minor rounding issue. A uses \"≈\", which is more precise.\n\nA is slightly better.\n\n**A**",
+  "usage": {
+    "input": 451,
+    "output": 187
+  },
+  "cost": 0.002772
+}

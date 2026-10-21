@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-12",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response identifies real problems: the crash on a missing customer, the N+1 queries (the most important issue at 20,000 invoices), the non-sargable date filter, and the lack of a consistent snapshot. Its fixes are concrete and mostly correct. Some items are speculative or weak. The item-count issue depends on a schema the response never saw, the timezone point is conditional, and the money-formatting point is mostly filler since float division for display is usually fine. Ranking is sensible, though the N+1 problem could arguably rank above the crash for a 20k-row export. The response also runs roughly 230 words, over the 200-word limit, and the filler items account for much of that overage.\n\nScore: 6",
+  "usage": {
+    "input": 1142,
+    "output": 811
+  },
+  "cost": 0.0005197
+}

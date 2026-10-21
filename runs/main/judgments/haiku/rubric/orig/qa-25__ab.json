@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-25",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly answer \"No\" and cite the Gjermundbu helmet as the key evidence. Both attribute the horned-helmet image to 19th-century Romantic nationalism and Doepler's costumes for Wagner's *Ring* (1876), and both note the Bronze Age ceremonial horned helmets. Both fall under 120 words. Response B names Gustav Malmström, a real 19th-century illustrator of horned Vikings, and identifies the Veksø helmets specifically. It also explicitly links the image to Romantic nationalism, which is useful context. Its \"about 1,500 years\" gap is a rough approximation, but reasonable. Response A's \"centuries before\" is vaguer but not wrong, and its headed structure is clear. The difference is small, with B slightly more specific and complete.\n\nVerdict: B",
+  "usage": {
+    "input": 815,
+    "output": 1460
+  },
+  "cost": 0.0008115
+}

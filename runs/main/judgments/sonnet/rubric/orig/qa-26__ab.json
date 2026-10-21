@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-26",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are correct about Rayleigh scattering and the longer path at sunset. Both stay under 120 words, so I counted: A is about 98 words, and B is about 108 words, which is also under.\n\nB adds the explanation of why the sky looks blue rather than violet: the sun emits less violet, and our eyes are less sensitive to it. That is a useful point that anticipates an obvious follow-up question. B's claim that violet is absorbed in the upper atmosphere is not stated, and what it does state is accurate. A groups \"blue and violet\" together and never explains why the sky isn't violet, which leaves a small gap.\n\nB also structures the answer clearly with headers. A is clear and concise as well.\n\nA's one point of interest is that it says \"scattered out of the direct beam\", which is a good precision. B says \"leaving mainly reds and oranges to come straight through\", which is similar.\n\nB adds something correct and useful, so B is slightly better.\n\nVerdict: B",
+  "usage": {
+    "input": 706,
+    "output": 311
+  },
+  "cost": 0.004522
+}

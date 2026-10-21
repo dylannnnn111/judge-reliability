@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-35",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "A is better: it keeps every key point accurately within the 120-word limit, while B runs well over it.\n\n**Accuracy:** Both are largely accurate on dates, the $18,000 bond, the 30-day return and the kitchenette condition.\n- A has small imprecisions. \"Must give three months' notice\" omits \"at least ... before the lease ends.\" \"Overrunning means paying daily rent\" is firmer than the original \"may have to pay.\"\n- B has a small inaccuracy of scope. \"Repairing any damage\" is broader than the original, which covers only damage caused by removing fixtures. A's \"repair removal damage\" gets this right.\n- Neither mentions that the landlord's consent for the kitchenette was given in writing. That omission is minor.\n\n**Coverage:** Both keep the points the manager needs:\n- the deadline\n- the Annexure C baseline and fair wear and tear\n- the five make-good tasks\n- the kitchenette condition\n- the landlord's payment option with two quotes\n- the overrun cost\n- the bond return\n\n**Concision and the word limit:** A is about 117 words including its title, so it meets the explicit \"under 120 words\" requirement. Its bullet format also makes it easy to skim. B is about 185 words, well over the limit. Its extra length comes from padding (\"Turning to the 2023 kitchenette specifically\", \"Finally, please note that\") rather than useful content. Breaching a hard instruction is a clear failure.\n\nVerdict: A",
+  "usage": {
+    "input": 1550,
+    "output": 2499
+  },
+  "cost": 0.05618
+}

@@ -1,0 +1,13 @@
+{
+  "item": "qa-04",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Step 1: 20% increase**\n$500 × 1.20 = $600\n\n**Step 2: 20% discount on the new price**\n$600 × 0.80 = $480\n\n**Final price: $480**\n\n**Overall change:** ($480 − $500) / $500 = −4%\n\nThe price ends up 4% lower than the original, a $20 decrease. The percentages don't cancel out because the 20% discount is applied to the larger $600 price, so it removes more dollars ($120) than the increase added ($100).\n\nEquivalently, 1.20 × 0.80 = 0.96, which is a 4% decrease.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 80,
+    "output": 197
+  },
+  "cost": 0.00213,
+  "at": "2026-10-14T01:50:10.279Z"
+}

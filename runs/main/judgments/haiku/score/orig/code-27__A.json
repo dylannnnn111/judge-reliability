@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-27",
+  "side": "A",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response catches the most important problems. Unbounded concurrency with `Promise.all` over ~80,000 sends is the top issue, and the fix is sound. It also correctly flags that a partial failure leaves no record of who was mailed, so a rerun would resend to everyone, and it suggests idempotency tracking. The null-email crash is real at runtime despite the `string` type, and the pagination loop guard and stale opt-in issues are legitimate. The misleading return value is a valid but lesser point. Ranking is sensible, fixes are concrete, and it stays under 200 words. It flags nothing that is clearly fine. It could have noted that the lowercase-before-dedupe order is correct, or mentioned the compliance need for an unsubscribe mechanism, but these are small omissions.\n\nScore: 8",
+  "usage": {
+    "input": 1113,
+    "output": 682
+  },
+  "cost": 0.0004523
+}

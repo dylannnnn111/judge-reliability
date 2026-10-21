@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-13",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses reach the correct answer: A is a knave and B is a knight. If A were a knight, A's statement would be true, which would make A a knave, a contradiction. So A is a knave, his statement is false, and so B must be a knight.\n\nResponse A gives the same reasoning in two clear steps. Response B states the negation more explicitly (\"at least one of us is not a knave\"), which is the key logical point, and restates the answer at the end. Both are under 120 words, so length does not separate them. The difference is small, but Response B makes the crucial step slightly clearer.\n\nVerdict: B",
+  "usage": {
+    "input": 661,
+    "output": 508
+  },
+  "cost": 0.00032010000000000003
+}

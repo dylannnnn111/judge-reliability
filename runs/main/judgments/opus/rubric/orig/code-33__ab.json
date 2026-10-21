@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-33",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A** correctly identifies the critical bug. The `WHERE p.status = 'succeeded'` filter turns the LEFT JOIN into an inner join, which drops zero-payment customers. A also notes that customers whose only payments failed vanish too, and gives the correct fix. It then raises issues that genuinely matter for a churn list:\n- Annual and quarterly plans will create false alarms. This is significant and easy to miss.\n- Cancelled and brand-new accounts are included.\n- NULL plans are dropped.\n- A Unix-timestamp storage format would silently match nothing.\n- Refunds and chargebacks are counted as successful payments.\n\nThe ranking is sensible. The last item is terse, but every point is valid.\n\n**Response B** also nails the critical bug and fix. Its date point is reasonable but leans on a minor UTC quibble. Point 3 overlaps with A's account-status and NULL points. Point 4, however, is wrong in two ways:\n- It suggests `COUNT(*)` would be \"clearer.\" After a LEFT JOIN, `COUNT(*)` would return 1 for customers with no payments. That would reintroduce exactly the bug the list exists to catch.\n- It claims nothing distinguishes zero-payment rows from low-payment rows, but `payments_90d = 0` already does this.\n\nSo B flags a non-issue and recommends a harmful change. It also misses the important annual-billing false-positive problem.\n\nA finds more of the real, important issues and introduces no incorrect advice.\n\nVerdict: A",
+  "usage": {
+    "input": 1524,
+    "output": 791
+  },
+  "cost": 0.021916
+}

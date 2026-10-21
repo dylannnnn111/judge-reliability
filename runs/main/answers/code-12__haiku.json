@@ -1,0 +1,13 @@
+{
+  "item": "code-12",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "1. **Crashes on a missing customer.** If `customers` has no row for a `customer_id`, `fetchone()` returns `None`, and unpacking raises `TypeError`. The whole export fails after partial work. Use a LEFT JOIN and handle NULLs explicitly.\n\n2. **N+1 queries.** Each invoice runs two more queries, so about 40,000 extra round trips for 20,000 invoices. Replace them with one JOIN to `customers` and one grouped query over `invoice_items`.\n\n3. **Non-sargable date filter.** `strftime('%Y-%m', issued_at)` wraps the column, so an index on `issued_at` can't be used and every run scans the table. Use a half-open range: `issued_at >= ? AND issued_at < ?` with the month's start and next month's start.\n\n4. **Item count may be wrong.** `COUNT(*)` counts rows, not units. If items have a quantity column, this undercounts. Confirm what finance expects.\n\n5. **No consistent snapshot.** The invoice list and per-row lookups run as separate reads, so data can change mid-export. Run everything in one transaction (or a single query) so the output is internally consistent.\n\n6. **Timezone boundary.** If `issued_at` is stored with a timezone or in UTC, month membership may not match the finance team's local month. Confirm the convention.\n\n7. **Money formatting.** Dividing by 100 as a float is usually fine for display, but integer cents with `divmod` or `Decimal` avoids rounding surprises. Hardcoded `$` ignores currency.\n\n8. **No reconciliation.** The function doesn't return or check a total, so a dropped row goes unnoticed. Consider returning a grand total for comparison.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 407,
+    "output": 1343
+  },
+  "cost": 0.0007122000000000001,
+  "at": "2026-10-14T01:53:23.955Z"
+}

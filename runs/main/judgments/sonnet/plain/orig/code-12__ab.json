@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-12",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B**\n\nBoth responses go over the 200-word limit, but B is shorter, at roughly 230 words against A's roughly 280. The user also asked only for bugs and problems \"that matter\", and A pads its list with speculative or low-value items. Those include a quantity column that may not exist, a \"no consistent snapshot\" concern, a \"no reconciliation\" suggestion, and a note that float division is \"usually fine\". B's extra items are more concrete and actionable: negative amounts render as `$-12.34`, ordering within a customer is nondeterministic, and a malformed `month` silently returns nothing. B also flags that the totals are exported as formatted strings, which finance can't easily sum. Both catch the main issues (N+1 queries, the crash on a missing customer, the non-sargable date filter, timezone ambiguity). A ranks the crash first, which is arguably the better ordering, but that doesn't outweigh its padding.\n\n**B**",
+  "usage": {
+    "input": 1594,
+    "output": 874
+  },
+  "cost": 0.011928
+}

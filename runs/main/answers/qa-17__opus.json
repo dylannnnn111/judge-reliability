@@ -1,0 +1,13 @@
+{
+  "item": "qa-17",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**Venus** has the hottest surface, averaging about **465°C (870°F)**, hot enough to melt lead. It is hotter than Mercury even though Mercury is closer to the Sun.\n\nThe reason is a **runaway greenhouse effect**:\n\n- **Thick CO₂ atmosphere:** About 96% carbon dioxide, with surface pressure roughly 90 times Earth's.\n- **Trapped heat:** Sunlight warms the surface, but the dense CO₂ absorbs the outgoing infrared radiation and keeps the heat from escaping.\n- **Sulfuric acid clouds:** These reflect much of the incoming sunlight, but they also help trap heat below.\n- **Even temperatures:** The dense atmosphere spreads heat so well that day and night sides, and poles and equator, are almost equally hot.\n\nMercury, with almost no atmosphere, loses its heat to space.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 50,
+    "output": 316
+  },
+  "cost": 0.00652,
+  "at": "2026-10-14T01:50:30.337Z"
+}

@@ -1,0 +1,13 @@
+{
+  "item": "code-29",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Bugs, most important first**\n\n1. **`NOT IN` with NULLs returns zero rows.** `signups.referrer_id` is NULL for non-referred signups. If the subquery returns even one NULL, `c.id NOT IN (...)` evaluates to UNKNOWN for every customer, so the audience is empty. Use `NOT EXISTS`:\n   ```sql\n   AND NOT EXISTS (\n     SELECT 1 FROM signups s\n     WHERE s.referrer_id = c.id\n   )\n   ```\n   Alternatively, add `AND s.referrer_id IS NOT NULL` to the subquery.\n\n2. **The date filter contradicts the stated intent.** The comment says \"never referred anyone,\" but `s.created_at >= '2026-01-01'` only excludes people who referred since January. Anyone who referred in 2025 or earlier will be emailed as if they'd never referred. Drop the filter if \"never\" is the goal. If \"not this year\" is intended, fix the comment and avoid the hardcoded date.\n\n3. **`LIMIT 5000` with `ORDER BY created_at` is biased.** It always selects the oldest eligible customers, so newer ones never get picked. If 5000 is a send cap, order by something meaningful or randomize, and track who was already sent to.\n\n**Minor**\n\n- `date('now', '-30 days')` returns a date-only string. If `created_at` stores full timestamps in another format, the string comparison may behave unexpectedly. Check the stored format.\n- Nothing excludes duplicate emails, bounced or suppressed addresses, or customers already contacted in an earlier campaign.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 295,
+    "output": 893
+  },
+  "cost": 0.00952,
+  "at": "2026-10-14T01:54:26.789Z"
+}

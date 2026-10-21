@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-19",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses cover the main points: the consent requirement, the landlord's conditions, the 30% sublet cap, change of control and the advice to negotiate a release. Both also run a little over the 120-word limit (about 130 words each), so neither wins on that.\n\nAccuracy is the deciding factor. Response B states flatly that \"we remain liable for the full remaining term if the buyer defaults.\" The source says the tenant \"can remain liable\" and \"could remain liable\" unless released. Response A keeps that hedge with \"may stay liable... possibly for the rest of the term.\" Response B also writes in the first person (\"we\"), which assumes the manager is the tenant, something the request does not say. Response A does omit the \"two years of accounts\" detail and B does not, but that is a small loss. A also includes the Kingsley contact, which B leaves out.\n\nResponse B is easier to scan. Response A is slightly more faithful to the source's conditional wording.\n\nVerdict: A",
+  "usage": {
+    "input": 1515,
+    "output": 1652
+  },
+  "cost": 0.01955
+}

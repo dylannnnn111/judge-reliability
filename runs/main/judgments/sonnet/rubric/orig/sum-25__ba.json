@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-25",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is accurate but runs to roughly 145 words, well over the 120-word limit. Its only slip is calling the all-staff message an \"email\", when the source says \"message\". It keeps the key points: not a hack, scale, data exposed, regulator notification, the media leak, fixes and dates.\n\nResponse B fits the limit at about 107 words, but it contains a factual error. It says the job was stopped \"after 35 minutes\", when the source says it was stopped at 9:35am. The first call came in at 8:20am, so that is neither 35 minutes nor a clear duration. This is a misleading figure in a summary a manager will rely on. B also leaves out the media and communications issue, and the comms guide fix.\n\nAccuracy ranks first, so B's wrong number counts against it. A's length overrun is a real failure of the brief, but its content is correct and more complete.\n\nVerdict: A",
+  "usage": {
+    "input": 1443,
+    "output": 1627
+  },
+  "cost": 0.019156
+}

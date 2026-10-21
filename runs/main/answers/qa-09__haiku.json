@@ -1,0 +1,13 @@
+{
+  "item": "qa-09",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "At 3:15, the **smaller angle is 7.5°**.\n\n- **Minute hand:** 15 minutes × 6°/minute = 90°\n- **Hour hand:** 3 × 30° + 15 minutes × 0.5°/minute = 90° + 7.5° = 97.5°\n- **Difference:** 97.5° − 90° = 7.5°",
+  "stop": "end_turn",
+  "usage": {
+    "input": 60,
+    "output": 204
+  },
+  "cost": 0.000108,
+  "at": "2026-10-14T01:50:16.555Z"
+}

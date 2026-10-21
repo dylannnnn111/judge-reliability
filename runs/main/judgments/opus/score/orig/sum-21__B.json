@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-21",
+  "side": "B",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The response is accurate, keeps what the manager needs to decide, and is concise.\n\n**Accuracy**\n- Elmwood's hybrid at $38,190 × 6 = $229,140, which is correct.\n- That is $13,140 over the $216,000 budget, which is correct.\n- Northside's petrol at $34,980 × 6 = $209,880, which is correct.\n- The $5,400 fuel saving per car over four years matches the source.\n- \"Outweighs its higher purchase price\" fairly restates Dom's \"more than the price difference.\" The gap between Elmwood's hybrid and Northside's petrol is about $3,210 per car, so the claim holds.\n- The added hire-car figure is right: 6 cars × 2 months × $1,800 = $21,600. It is marked \"around,\" which suits Dom's \"about two months.\" It quietly assumes all six cars are hired for the full period, but that is the natural reading.\n- Attribution is correct: Dom recommends, and the CEO must sign off because the spend exceeds his delegation.\n- The deadline (24 October), the delivery time (four weeks) and the fallback (February) are all accurate.\n\n**Coverage**\n- The summary keeps everything needed to decide: the recommendation, its cost, the budget overrun, the sign-off requirement, the justification, the in-budget alternative, and the deadline with the cost of missing it.\n- Leaving out Coastal and the dealer-by-dealer price comparison is sensible.\n- The headline puts the deadline up front, which helps a busy reader.\n\n**Concision**\n- At about 110 words, it is under the 120-word limit.\n- Bolding and labelled sections make it easy to scan.\n- The one added calculation ($21,600) is correct and adds decision-relevant value: it shows the cost of delay exceeds the budget overrun.\n\n**Minor points**\n- The extra figure is a small extrapolation beyond the source.\n- \"Two months of hire cars\" slightly reframes \"without cars,\" though Dom's own costing implies hiring.\n\nNeither point is an error.\n\nScore: 9",
+  "usage": {
+    "input": 1134,
+    "output": 1883
+  },
+  "cost": 0.042196
+}

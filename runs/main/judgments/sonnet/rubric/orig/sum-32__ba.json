@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-32",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better, mainly because it respects the word limit. By my count, B is about 118 words, just under the 120-word cap. A is roughly 190 words, so it clearly breaks the constraint.\n\nOn accuracy, both are correct on the numbers, the 12 May email and the $250 goodwill payment. B also keeps the package-account condition, which A leaves out. Both add a risk or flag line. A's AFCA escalation risk and B's \"closure may be premature\" are both reasonable inferences, and B's is slightly better grounded in the customers' 1 Oct reply.\n\nA has a little more detail, such as the discount arithmetic, but that extra length goes beyond what the manager asked for.\n\nVerdict: B",
+  "usage": {
+    "input": 1598,
+    "output": 1468
+  },
+  "cost": 0.017876
+}

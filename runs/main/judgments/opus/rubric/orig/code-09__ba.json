@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-09",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.** Both responses find the real bugs and rank them the same way at the top.\n\n**Common ground.** Both put the critical security bug first: `revoke_permission` never invalidates `_permission_cache`, so revoked permissions stay active. Both then cover:\n- the per-process cache problem with multiple workers,\n- the lack of any expiry or TTL, so grants and other changes are never picked up,\n- unbounded memory growth,\n- invalidating after the commit rather than before.\n\n**Where A is stronger:**\n- **Fixes are concrete and attached to each issue.** It gives `_permission_cache.pop(user_id, None)` after the commit for #1, and three alternatives for #2 (shared cache, TTL, or no cache with an indexed query).\n- **Its memory-growth point is sharper.** It notes that nonexistent IDs are cached as empty sets, so arbitrary IDs can inflate the cache. That is a real abuse vector.\n- **It covers deleted or banned users** who keep their cached permissions, which adds security relevance.\n\n**Where B is weaker:**\n- **Item 5 (thread safety) is mostly a non-issue.** In CPython, single dict get and set operations are atomic. B itself admits the worst case is a redundant query. This is minor noise in a list meant to cover issues that matter.\n- **Item 6 repeats A's ordering point** without adding anything.\n- **Its fixes are gathered at the end** rather than tied to each issue, which makes it less actionable. Its fix summary is still sound.\n\n**Length.** Both are around the 200-word limit. B spends part of its budget on the weaker thread-safety item.\n\nVerdict: A",
+  "usage": {
+    "input": 1470,
+    "output": 2241
+  },
+  "cost": 0.0507
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "sum-15",
+  "side": "B",
+  "score": 3,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is mostly accurate but breaks the user's explicit \"under 120 words\" limit. My count is roughly 230 words, nearly double.\n\n**Accuracy:** The numbers are right (96 workers, 20-minute nap, 22%, 0.09 seconds, 7am vs 6am). There are small slips:\n- \"6 or more months\" replaces \"more than six months\".\n- \"Associated with\" understates a randomised crossover design.\n- \"Article\" is a slightly off label for the study write-up.\n- The 3–6 month group is not addressed, though the source doesn't address it either.\n\nNone of these seriously mislead.\n\n**Content:** The response keeps the key points: the overall benefit, the split between experienced and new night workers, the larger effect of drive time, the recommendation, and the limitations.\n\n**Concision:** This is the main failure. It has filler such as \"In other words\", \"Put differently\" and \"It is worth keeping this in mind...\". The intro also repeats what the bullets say. A busy manager needed a much tighter summary.\n\nBecause the explicit length constraint is badly missed, the score is held down despite the sound content.\n\nScore: 3",
+  "usage": {
+    "input": 1252,
+    "output": 861
+  },
+  "cost": 0.011114
+}

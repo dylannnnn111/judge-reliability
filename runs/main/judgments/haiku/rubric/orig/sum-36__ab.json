@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-36",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Neither misstates the term, fee, price review, early-exit penalty, rollover, or the roughly $195 monthly colour overage. Both run slightly over 120 words, at roughly 130 for A and 127 for B. Response B's excess-page rates are correct, and its \"Risk\" heading flags the colour overage more clearly for a manager who won't read the original. Response A includes the account manager's contact, which is useful, but it is a minor point. The gap is small, but B gives the reader slightly more of what they need to act on.\n\nVerdict: B",
+  "usage": {
+    "input": 1514,
+    "output": 1458
+  },
+  "cost": 0.0008803999999999999
+}

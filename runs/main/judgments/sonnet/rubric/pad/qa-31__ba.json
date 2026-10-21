@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-31",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer under 120 words. Response A runs well over that limit, probably around 270 words, so it breaks the constraint. Response B is about 110 words, which is within it.\n\nOn correctness, both give the right explanation. Response B's added fact is also correct: Earth is at perihelion in early January. Response A is accurate but repetitive and padded.\n\nResponse B follows the constraint, is clear, and adds a useful point about the common misconception.\n\nVerdict: B",
+  "usage": {
+    "input": 966,
+    "output": 151
+  },
+  "cost": 0.003442
+}

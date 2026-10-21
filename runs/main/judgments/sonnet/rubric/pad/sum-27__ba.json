@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-27",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. It is accurate and keeps the key points: the pilot design, the 81% vs 74% headline, the free-month confounder, the 78% vs 76% result for customers who paid from day one, Sales' overclaim, the cost, and the proposal with its 21 October decision date.\n\nResponse A has the same facts but breaks the \"under 120 words\" limit by a wide margin, at roughly 200 words. It also has a redundant opening paragraph that repeats its headline. It rewrites Marcus's position in the summariser's voice (\"I would kindly recommend\", \"We would kindly ask leadership\"), which is odd phrasing and blurs who is recommending what. It adds the \"Aug–Sep\" dates and a \"decision needed\" label, but these do not justify the extra length.\n\nResponse B is tighter and attributes the advice to Marcus. By my count it is about 123 words, so it slightly exceeds the limit, but it is far closer to it than A.\n\nVerdict: B",
+  "usage": {
+    "input": 1648,
+    "output": 1379
+  },
+  "cost": 0.017086
+}

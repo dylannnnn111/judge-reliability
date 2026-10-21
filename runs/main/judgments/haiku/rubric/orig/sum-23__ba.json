@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-23",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both summaries are under 120 words and get the core dates, figures and the next meeting right. Response A has one accuracy problem: it says the council \"will install a speed counter\" on Wattle Road, but the minutes say Councillor Tse would *ask* council traffic staff to install one and report back. That turns a request into a commitment. Response B states this correctly (\"Tse will request a speed counter\"). B also names who is responsible for the Clean Up Day and the carols sound system, which a manager would want to know. A omits those owners and the Facebook action item. A's inclusion of the school choir is a small plus, but it doesn't outweigh B's better accuracy and clearer ownership. B is slightly longer, but the extra words carry correct, useful detail.\n\nVerdict: B",
+  "usage": {
+    "input": 1550,
+    "output": 806
+  },
+  "cost": 0.000558
+}

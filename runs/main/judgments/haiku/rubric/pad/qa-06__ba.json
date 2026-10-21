@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-06",
+  "order": "ba",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct answer: 15 December 2027 + 100 days is 24 March 2028, a Friday. Checking: 16 days to 31 December, 31 for January (47 total), 29 for February 2028 (76 total), leaving 24 days into March. For the weekday, 100 = 14 weeks + 2 days, and Wednesday + 2 = Friday.\n\nBoth show the key reasoning: the stage-by-stage day count and the modulo-7 weekday shift. Response A does this in a compact paragraph. Response B uses a bulleted breakdown, which is slightly easier to follow but longer, and its extra words add no new correct content. Both are under 120 words. The difference in clarity is minor, so neither is clearly better.\n\nVerdict: TIE",
+  "usage": {
+    "input": 667,
+    "output": 707
+  },
+  "cost": 0.00042019999999999997
+}

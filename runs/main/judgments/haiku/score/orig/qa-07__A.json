@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-07",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response gives the correct answer. 30 mpg (US) is about 7.84 L/100 km, and the working checks out: 100 km is about 62.14 miles, which at 30 mpg uses about 2.071 US gallons, or about 7.84 litres. The shortcut 235.2 ÷ mpg is also correct, and the note that the imperial formula (282.5 ÷ mpg, about 9.4 L/100 km) would be wrong addresses a likely error. The explanation is clear and concise, and it stays under 120 words. The only minor issue is that the \"≈\" and the rounding are slightly inconsistent (2.0712 gallons is more precision than needed), but this does not affect correctness.\n\nScore: 9",
+  "usage": {
+    "input": 473,
+    "output": 420
+  },
+  "cost": 0.0002573
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-10",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is slightly better.** Both responses give the correct answer, 1/3, using the same reasoning. They enumerate the four equally likely outcomes (BB, BG, GB, GG), eliminate BB under the condition, and note that only GG of the remaining three has two girls. Both also explain the common 1/2 misconception: 1/2 applies only when a *specific* child, such as the older one, is known to be a girl.\n\nBoth stay under the 120-word limit (A is about 85 words, B about 107). The difference is concision:\n\n- **Response B** adds a sentence saying the mixed families together outnumber the two-girl families. This mostly restates what the enumeration already shows. B also states the answer twice, once at the top and again at the end, which is redundant.\n- **Response A** delivers the same correct content and the same key insight more efficiently.\n\nSince length is not a merit in itself, A's tighter presentation gives it the edge.\n\nVerdict: A",
+  "usage": {
+    "input": 671,
+    "output": 680
+  },
+  "cost": 0.016284
+}

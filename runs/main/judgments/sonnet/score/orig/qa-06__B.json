@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-06",
+  "side": "B",
+  "score": 10,
+  "model": "claude-sonnet-5-5",
+  "text": "The answer is correct. Dec 15 to Dec 31 is 16 days, plus 31 for January and 29 for February 2028 (a leap year) gives 76. The remaining 24 days land on 24 March 2028. Since 100 = 14×7 + 2, Wednesday moves forward two days to Friday. The response also stays well under the 120-word limit and is clear and concise. The one small flaw is that it doesn't state that 16 + 31 + 29 sums to 76, though this is easy to infer.\n\nScore: 10",
+  "usage": {
+    "input": 323,
+    "output": 405
+  },
+  "cost": 0.004696
+}

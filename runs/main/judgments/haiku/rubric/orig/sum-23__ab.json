@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-23",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is more accurate. Its details check out against the minutes: the Banksia Street timing, the playground items, Laila Haddad coordinating Clean Up Day, Peter Vance booking the sound system, and the Facebook follow-up. Its wording on the speed counter (\"Tse will request\") correctly reflects that the councillor only committed to asking council staff.\n\nResponse B has a substantive error. It says \"Council will install a speed counter,\" which overstates the commitment. The minutes say the councillor would ask traffic staff to install one and report back, so installation is not confirmed. B also drops who is responsible for Clean Up Day and the carols sound system, and omits the Facebook action item. Its mention of the school choir is a useful detail that A leaves out, and B is slightly more concise, but those advantages don't outweigh the misstatement and the lost ownership details.\n\nBoth stay under 120 words and cover the main decisions and dates, so the difference comes down to accuracy and the retained accountability details.\n\nVerdict: A",
+  "usage": {
+    "input": 1550,
+    "output": 910
+  },
+  "cost": 0.00061
+}

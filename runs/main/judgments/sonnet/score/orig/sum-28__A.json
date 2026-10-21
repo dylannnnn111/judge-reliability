@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-28",
+  "side": "A",
+  "score": 5,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate. The figures (84 staff, $3.9M, 40 days, a quarter of the balance, eight weeks' notice, two weeks cash-out with four remaining, 24 December to 2 January, 31 October) all match the source. The warehouse exemption is correct, and the 24/7 staff are rightly still covered by the cap and cash-out. Calling the $3.9M \"leave liability\" is a fair paraphrase.\n\nIt has two weaknesses:\n\n1. **Word limit exceeded.** I count about 131 words, over the explicit 120-word cap. This is a clear instruction failure.\n2. **Omissions.** It leaves out the options for staff without enough leave for the shutdown (leave without pay or making up the time). It also leaves out the scope (permanent full-time and part-time staff under the enterprise agreement). Both could matter to a manager.\n\nThe structure is clear and easy to scan, but breaking the length limit while dropping useful content is a notable flaw.\n\nScore: 5",
+  "usage": {
+    "input": 1083,
+    "output": 1724
+  },
+  "cost": 0.019406
+}

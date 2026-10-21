@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-31",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.** Both responses find the critical bug: `created_at > :last_seen` on a second-precision column skips tied rows at page boundaries. Both also propose the right fix, a keyset cursor on `(created_at, id)`.\n\n**Response A's problems:**\n- **A false claim in its top item.** It says that if 1000+ rows share one second, the job can \"stall or loop forever.\" With a strict `>` comparison, the cursor advances past that second. The result is more skipped rows, not an infinite loop.\n- **A fix listed as a bug.** Item 3 is a recommended fix, not a problem with the code.\n- **Filler.** Item 6 mostly praises explicit column selection, which adds nothing.\n- **A buried issue.** The late-commit/clock-skew problem is tucked inside a \"fragile termination\" item rather than given its own entry.\n- **Length.** At roughly 450 words, it clearly ignores the 200-word limit.\n\n**Response B's strengths:**\n- **Accurate and well ranked.** Every issue it raises is real, and the order makes sense.\n- **Fixes in context.** It gives the fix inline with the boundary bug and notes that the same fix resolves the ordering problem.\n- **Late commits handled concretely.** It treats them as their own issue and suggests a safety lag or a commit-ordered sequence.\n- **Useful additions.** It covers the index and the planner issue with the `IS NULL OR` pattern, and adds a valid operational point about persisting the cursor and keeping downstream writes idempotent.\n- **Length.** It is close to the 200-word limit.\n\nVerdict: B",
+  "usage": {
+    "input": 1897,
+    "output": 775
+  },
+  "cost": 0.023088
+}

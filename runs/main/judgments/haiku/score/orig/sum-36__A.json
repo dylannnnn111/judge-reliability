@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-36",
+  "side": "A",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The response is largely accurate. The term, equipment, fee, 24-month price fix, 4% escalation, 75% early-exit payment, end-of-term options, rollover, and contact all match the source. One minor issue: it says term months will \"exceed the colour allowance by about $195/month,\" but the source gives $195 as the cost of the overage, not the size of the excess. The summary also omits the per-page overage rates, which a manager might want, though they are not essential. On length, my count is roughly 125 to 128 words, slightly over the 120-word limit, which is a clear instruction miss even though the content is tight. Structure is clean and scannable for a busy reader.\n\nScore: 7",
+  "usage": {
+    "input": 1129,
+    "output": 1560
+  },
+  "cost": 0.0008929
+}

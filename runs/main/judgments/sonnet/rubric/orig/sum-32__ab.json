@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-32",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better, mainly because it keeps to the word limit and B does not.\n\n**Length:** I counted Response A at about 119 words, just under the 120-word limit. Response B runs to roughly 160 or more, so it clearly breaks the explicit constraint for a busy manager.\n\n**Accuracy:** Both are largely accurate. They cover the 5.79% to 6.04% change, the 0.25% rise, the 0.90% discount still applying, Jordan's 12 May email, the $250 goodwill payment and the closure. A's \"guaranteed only the 0.90% discount\" is faithful to the source. B adds that the customers wanted a refund, which is correct. B's \"Risk: could lead to an escalation to AFCA\" is a plausible inference but goes beyond the source. A's flag that closure may be premature is also an inference, but it is grounded in the customers' continued dissatisfaction and the open request for a call.\n\n**Key points:** Both include the essentials. A leaves out the refund demand and the explicit \"variable rates can change under the contract\" point. These are minor omissions given the space limit. B's extra detail does not justify breaking the limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1598,
+    "output": 1511
+  },
+  "cost": 0.018306
+}

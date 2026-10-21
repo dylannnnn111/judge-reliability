@@ -1,0 +1,14 @@
+{
+  "pair": "qa-06",
+  "side": "A",
+  "author": "sonnet",
+  "model": "claude-haiku-5-5",
+  "original": "**Friday, 24 March 2028**\n\n- 15 Dec → 31 Dec 2027 uses 16 days, leaving 84.\n- January (31 days) leaves 53.\n- February 2028 (leap year, 29 days) leaves 24.\n- That lands on 24 March 2028.\n\nFor the weekday, 100 days is 14 weeks plus 2 days, so Wednesday + 2 days = Friday.",
+  "text": "**Friday, 24 March 2028**\n\nTo work this out, I counted forward in stages, beginning from the starting date in the calculation. Here is the step-by-step process:\n\n- Moving from 15 Dec → 31 Dec 2027 uses 16 days, which leaves 84 days still to count.\n- Next, January, which has 31 days, is counted, and this leaves 53 days remaining.\n- After that, February 2028, which is a leap year with 29 days, is counted, and this leaves 24 days remaining.\n- Counting those remaining 24 days brings us to the final result: 24 March 2028.\n\nFor the weekday, I took a slightly different approach. Since 100 days is equal to 14 weeks plus 2 days, and the 14 full weeks do not change the day of the week, I simply advanced from Wednesday by 2 days, which gives Friday.",
+  "ratio": 2.5,
+  "usage": {
+    "input": 323,
+    "output": 855
+  },
+  "cost": 0.0004598
+}

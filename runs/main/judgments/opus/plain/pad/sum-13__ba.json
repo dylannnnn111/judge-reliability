@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-13",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is the better summary. It leads with the decision the manager must make, and it accurately states the cause: the pump failure went undetected because the contractor missed a monthly visit and didn't tell us. It also covers the response, outcome, next steps and cost recovery concisely. It is slightly over the limit, at about 126 words.\n\nResponse B has three problems:\n- **Length:** at roughly 250 words, it is about double the 120-word limit, padded with letter-style filler.\n- **Wrong cause:** it says the contractor \"had visited monthly and missed this fault,\" when in fact the visit was skipped entirely.\n- **Wrong date:** it says the resample was taken on 9 October, but it was taken on 6 October and the result came back on 9 October.\n\nIt also buries the decision near the end.",
+  "usage": {
+    "input": 1518,
+    "output": 1203
+  },
+  "cost": 0.030132
+}

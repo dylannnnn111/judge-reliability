@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-21",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses correctly put duplicate refunds first. A POST retried on 502/503/504 or a network error, with no idempotency key, can refund the same order twice. Both also catch the missing timeout, the ignored `Retry-After`, and the undrained response bodies. Both run over the 200-word limit by a similar amount, so that doesn't separate them.\n\n**Response A:**\n- It identifies a real bug that B only touches on: the `catch` retries everything, including `AbortError` after the caller cancels, and permanent `TypeError`s.\n- Its fix suggestions are concrete: an idempotency key, or refusing to retry non-idempotent methods by default.\n- It flags the unvalidated `as { refundId }` cast, which could return `undefined` as a \"successful\" refund ID. That is a real correctness risk in a payments path.\n- Its ranking is sensible, and nearly every item is grounded in the code.\n\n**Response B:**\n- Its item 2 (disable the button, server-side duplicate rejection) is mostly speculation about UI code that wasn't shown. The server-side dedupe is a reasonable defense in depth, but it drifts from the code under review.\n- Its item 6 (`amountCents` bounds) is weaker and more generic, though the point about unclear `res.json()` errors is fair.\n- Its jitter observation (up to about 60s) is accurate but minor.\n- It only gestures at the abort problem (\"no cancellation\") and misses that aborts are actively retried.\n- It misses the `refundId` validation issue.\n\nA finds more of the real issues, stays closer to the code, and avoids B's speculative items.\n\nVerdict: A",
+  "usage": {
+    "input": 1746,
+    "output": 1302
+  },
+  "cost": 0.016512
+}

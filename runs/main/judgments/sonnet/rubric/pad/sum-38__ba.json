@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-38",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. It is more accurate, and it is the only one that keeps to the length limit.\n\n**Length:** The user asked for under 120 words. Response A runs to roughly 230 words, nearly double the limit. It also opens with a wasted sentence that only describes what follows (\"The sections below summarise…\"). Response B comes to about 119 words, so it is right at the limit but within it.\n\n**Accuracy:** Both responses get the main facts right: the 18 November launch, 431 of 600 installs, the 4.3 rating, 21 of 23 bugs fixed, the weekend slowness fixed, the budget, and the app store risk. Response A has a small slip. It says club packs \"will be dispatched by 12 November\", but the source says club managers will *receive* them by then, which is a different commitment. Response B's \"posters… on 17–18 November\" is a fair compression of the source. Response B also slightly generalises the risk as \"review delays\" where the source says rejection, but this is minor.\n\n**Content kept:** Both cover status, beta results, key dates, budget and risk. Response A adds the checked-against-guidelines mitigation and the next update date, which are small extras. Response B drops these, but they are not essential for a busy manager.\n\n**Concision:** Response B respects the constraint, while Response A ignores it, and A's extra length adds little.\n\nVerdict: B",
+  "usage": {
+    "input": 1566,
+    "output": 912
+  },
+  "cost": 0.012252
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-27",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the main problems: unbounded concurrency, `Promise.all` hiding partial failure, the misleading return value, the null-email crash, the missing cursor-loop guard, and missing retries. Response B ranks the suppression gap first. For a newsletter to 80,000 addresses, mailing bounced, complaining, or unsubscribed recipients is a compliance and deliverability risk that matters more than throughput. Response A only covers unsubscribes that happen mid-run, so it misses bounces and complaints entirely. Response A is stronger on remedies, though: it names concrete fixes such as a concurrency limit of 10–50, `allSettled`, idempotent sent-tracking, and `trim()` before deduping. Response B's fixes are mostly implied rather than stated. Its lowercasing note is a fair, correctly hedged minor point. On balance, Response B's better prioritization of the most consequential issue outweighs Response A's more actionable fixes.\n\nVerdict: B",
+  "usage": {
+    "input": 1635,
+    "output": 1015
+  },
+  "cost": 0.000671
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-19",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer in under 120 words. Response A is clearly over that limit, at roughly 190 words. Response B is about 100 words, so it stays within the limit.\n\nOn correctness, both give the right etymology (Guugu Yimithirr gangurru, recorded in 1770 near Cooktown) and both call the \"I don't understand\" story a myth. Response A adds a speculative explanation for how the myth arose, which is a bit shaky and not well established. It also uses filler such as \"worth looking at closely\" and \"it's worth being clear about why.\"\n\nResponse B correctly describes the myth, that Cook's crew pointed and asked and took the reply as the name. It cites Haviland's 1970s work. \"Northeastern Queensland\" is a bit loose, though \"far north Queensland\" is more precise. Both are acceptable.\n\nResponse B meets the constraint and is accurate and concise, so it is better.\n\nVerdict: B",
+  "usage": {
+    "input": 886,
+    "output": 299
+  },
+  "cost": 0.004762
+}

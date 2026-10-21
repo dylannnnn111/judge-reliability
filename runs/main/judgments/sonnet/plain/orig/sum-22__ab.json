@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-22",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better. Both summaries cover the key decisions: the senior fee rise to $340, juniors held at $180, the $3,200 shortfall and grant application, the grounds jobs, presentation night, the gazebo, and the next meeting date.\n\nThe difference is the 120-word limit. Response A comes to about 107 words including its title, so it is safely under. Response B comes to about 127 words with its title, or about 119 without it. It sits on or over the limit depending on how you count, which is a risk when the user set a firm cap.\n\nResponse B adds a few details, such as the 5-0 vote and Natalie organising trophies, but a busy manager doesn't need them. Response B also says junior numbers fell \"mostly due to cost\", a slight paraphrase of \"most common reason given\". Response A's tighter, clearly compliant summary is the safer choice.\n\n**A**",
+  "usage": {
+    "input": 1417,
+    "output": 1871
+  },
+  "cost": 0.021544
+}

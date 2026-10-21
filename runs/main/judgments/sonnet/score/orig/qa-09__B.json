@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-09",
+  "side": "B",
+  "score": 10,
+  "model": "claude-sonnet-5-5",
+  "text": "The correct answer is 7.5°. At 3:15 the minute hand is at 90° and the hour hand is at 90° + 7.5° = 97.5°, so the difference is 7.5°.\n\nThe response gets this right. Its reasoning is correct and clear, with each step shown. It is also well under 120 words and ends by checking that 7.5° is the smaller angle. Nothing in it is wrong.\n\nScore: 10",
+  "usage": {
+    "input": 389,
+    "output": 138
+  },
+  "cost": 0.002158
+}

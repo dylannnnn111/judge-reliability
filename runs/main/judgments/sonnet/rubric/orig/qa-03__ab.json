@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-03",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer: a 1 percentage point increase, which is a 25% relative increase. The question asks \"by what percentage,\" so the main answer should be 25%, and both include it.\n\nResponse A leads with 1 percentage point and then says the relative increase is 25%, with the calculation shown. It is concise and under 120 words. It puts the percentage point figure first, which is slightly less direct, but it does give both.\n\nResponse B gives both figures, shows the calculation, and then adds a worked example. Check the example: 4% of $400,000 is $16,000 and 5% is $20,000, so the $4,000 difference is 25%. That is correct. The word count is the constraint to check. Counting roughly: the first sentence has about 14 words, \"Percentage point increase: 5% − 4% = 1 percentage point\" about 9, \"Percentage increase (relative):\" 3, the formula about 8, \"So the interest rate has risen by 25% in relative terms, which is a rise of 1 percentage point.\" about 19, \"This distinction matters for borrowers.\" 5, \"A 25% increase in the rate means that, all else equal, the interest portion of the repayments rises by 25%.\" about 20, and the example \"For example, on a $400,000 loan, annual interest goes from $16,000 to $20,000 (a $4,000 increase, or 25%).\" about 19. The total is about 97 words, so it is under 120.\n\nBoth comply with the limit. B adds a correct and useful example, but it is somewhat extra. The question is simple, and A answers it fully and concisely. B's answer is also clear, stating \"25%\" in relative terms, and its example helps show why the distinction matters. The added content is correct and mildly useful, though not essential. B's opening, \"depends on whether...\", is a bit hedgy, but it resolves the point clearly.\n\nA's one weakness is that it leads with the percentage point figure and so may seem to answer \"1\" first. Its second sentence clarifies. B also treats both measures. They are close; B's extra material adds some value through the concrete example, while A is tighter. I lean slightly toward B for the useful illustration, but it is marginal.\n\nVerdict: B",
+  "usage": {
+    "input": 590,
+    "output": 701
+  },
+  "cost": 0.00819
+}

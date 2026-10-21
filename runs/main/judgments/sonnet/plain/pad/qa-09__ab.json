@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-09",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. Both responses give the correct answer of 7.5°, with correct working. The difference is the user's limit of under 120 words. Response A is well within it. Response B comes to roughly 170 words, so it breaks the instruction.\n\n**A**",
+  "usage": {
+    "input": 616,
+    "output": 309
+  },
+  "cost": 0.004322
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-06",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses identify the same core issues: the `is not` identity bug, existence leak, race condition, refund concerns, and minor issues.\n\nThe user asked for under 200 words. Response A is clearly well over 200 words (roughly 290). Response B is about 210 words, so it probably also exceeds 200, but by much less. Rough count for B: item 1 ~55 words, item 2 ~35, item 3 ~50, item 4 ~30, item 5 ~35, which totals about 205-210. It's slightly over, but much closer than A.\n\nAccuracy: A says \"the owner can get a spurious Forbidden depending on how the ints were created\", which is accurate but vaguer. B says \"most legitimate customers get Forbidden\", which is a bit strong but is true for IDs above 256 in practice (e.g., from a DB driver, they're typically distinct objects). B also notes that tests with small IDs hide the bug, a useful point.\n\nA's race-condition fix includes customer_id in the conditional update, which is a nice touch. B mentions alternatives (locking, versioning). B's point that the in-memory order is mutated before save is a valid minor issue. A's minor point about the ValueError leaking the status is weak, and \"save is not shown to be transactional\" is vague.\n\nA is also wordier, with filler like \"In other words\" and \"Put differently\", which violates the concision requirement. B is tighter and better prioritized.\n\nB is better.\n\n**B**",
+  "usage": {
+    "input": 1596,
+    "output": 467
+  },
+  "cost": 0.007862
+}

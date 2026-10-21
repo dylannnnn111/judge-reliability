@@ -1,0 +1,13 @@
+{
+  "item": "qa-23",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**0.999... equals 1 exactly.** They are two notations for the same number.\n\n**Quick arguments:**\n\n1. **Fractions:** 1/3 = 0.333..., so 3 × (1/3) = 0.999... But 3 × (1/3) = 1.\n\n2. **Algebra:** Let x = 0.999...\n Then 10x = 9.999...\n Subtract: 9x = 9, so x = 1.\n\n3. **No gap:** If two real numbers differ, some number lies between them, such as their average. No number fits between 0.999... and 1. Any proposed difference, like 0.000...1, would need a 1 after infinitely many zeros, which isn't a valid decimal.\n\n**Formally**, 0.999... means the limit of 0.9, 0.99, 0.999, …, and that limit is exactly 1.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 61,
+    "output": 291
+  },
+  "cost": 0.006064,
+  "at": "2026-10-14T01:50:38.769Z"
+}

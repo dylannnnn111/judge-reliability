@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-23",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is accurate throughout. It correctly says Councillor Tse will *request* a speed counter on Wattle Road. Response B misstates this as \"Council will install a speed counter.\" In the minutes, she only agreed to ask traffic staff and report back. A manager relying on B would wrongly believe the counter is confirmed.\n\nA also gives more useful detail for a busy manager while staying under the limit (about 110 words). It names who is responsible for each action: Laila coordinating Clean Up Day and Peter booking the sound system. It also groups the agreed items under a clear \"Decisions\" heading and includes the Facebook action item, which B omits.\n\nB is concise and well formatted, but the factual error outweighs that.",
+  "usage": {
+    "input": 1396,
+    "output": 986
+  },
+  "cost": 0.025304
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-09",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct answer, 7.5°, and both show the same calculation: the minute hand at 90° and the hour hand at 97.5°, a difference of 7.5°. Both are well under 120 words and clearly formatted.\n\nResponse A adds one sentence noting that 7.5° is less than 180°, so it is the smaller angle. That directly addresses the \"smaller angle\" wording in the question, which is a small but relevant addition. Response B is more concise but omits this check. The difference is slight, so A is only marginally better.\n\nVerdict: A",
+  "usage": {
+    "input": 576,
+    "output": 386
+  },
+  "cost": 0.0002506
+}

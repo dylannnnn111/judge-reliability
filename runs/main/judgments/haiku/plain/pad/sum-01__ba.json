@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-01",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. It stays under the 120-word limit (about 110 words), while A runs to roughly 200. B also reads more easily for a busy manager, with the key deadline up front and the requirements in bullets. A is longer and includes filler such as \"I'm writing to let you know.\"\n\nB",
+  "usage": {
+    "input": 1417,
+    "output": 1173
+  },
+  "cost": 0.0007282
+}

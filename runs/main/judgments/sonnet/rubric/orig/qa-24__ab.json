@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-24",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses answer \"no\" to both questions and name the right mountains, Mauna Kea for base-to-peak height and Chimborazo for distance from Earth's centre. Both also stay under 120 words (A about 116, B about 104), and their facts are accurate.\n\nA adds useful details that B omits. It gives Everest's own base-to-summit rise (roughly 4,600 to 5,000 m from the Tibetan Plateau), which shows directly why Mauna Kea is taller on that measure. It also gives Chimborazo's distance from the centre (about 6,384 km) and its elevation (6,263 m). B includes Everest's elevation and explains the equatorial bulge, but it says less about the base-to-peak comparison.\n\nA is more informative and equally clear, so it has a slight edge.\n\nVerdict: A",
+  "usage": {
+    "input": 777,
+    "output": 1229
+  },
+  "cost": 0.013844
+}

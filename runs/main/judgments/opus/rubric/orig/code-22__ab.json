@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-22",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.** Both responses catch the critical bug: `jwt.decode` never verifies the signature, so anyone can forge an admin token. Both recommend `jwt.verify` with algorithms pinned. Both also flag the exported `SECRET`, the 403-instead-of-401 for missing tokens, the loose `Bearer` parsing, the missing startup check for `JWT_SECRET`, and the unchecked expiry.\n\n**Response A**\n- Its item 3 (algorithm pinning) repeats the fix it already gave in item 1.\n- Its \"Minor\" section adds low-value padding: role-string brittleness, logging, and swallowed errors.\n- Its reason for not exporting `SECRET` (\"other modules can't safely depend on it\") is muddled. The real risk is leakage.\n- It does note correctly that `decode` returns `null` rather than throwing, and its code snippet for the fixed core is useful.\n- It runs well over the 200-word limit.\n\n**Response B**\n- Each issue gets a clear severity label, and the ranking is sensible.\n- It explicitly identifies the dead `try/catch`, which is a precise and accurate observation.\n- It avoids redundancy and is much closer to the word limit, though still slightly over.\n- Its claim that a missing secret \"fails open\" is a bit off, since `verify` would throw and fail closed. It ranks that item low, so the error costs little.\n\nB covers the important issues with clearer prioritisation, less padding, and better respect for the length constraint. A's code snippet doesn't outweigh its redundancy and overrun.\n\nVerdict: B",
+  "usage": {
+    "input": 1718,
+    "output": 1085
+  },
+  "cost": 0.028572
+}

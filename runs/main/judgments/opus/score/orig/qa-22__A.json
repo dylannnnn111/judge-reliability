@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-22",
+  "side": "A",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The response is correct: draining direction in Australia is not reversed by the Coriolis effect, and calling it a myth is accurate.\n\n**Reasoning.** It gives the key points:\n- The Coriolis effect is real but negligible at sink or toilet scale.\n- It matters only for large systems such as hurricanes and ocean currents.\n- What actually sets the swirl is basin shape, jet angle, residual motion from filling, and asymmetries.\n- The note about tightly controlled experiments is accurate. Shapiro (1962) and later Southern Hemisphere replications let water settle for about a day, and that nuance adds value.\n\n**Minor flaw.** Saying Coriolis is \"far too weak to influence\" the water is a slight overstatement. It does exert a force, just one swamped by other factors, and the final paragraph partly contradicts this wording. It is small but a bit imprecise.\n\n**Clarity and length.** The answer is about 117 words, within the limit, and well organised: a direct answer, then the explanation, then the caveat. Every sentence adds useful content.\n\nScore: 9",
+  "usage": {
+    "input": 433,
+    "output": 739
+  },
+  "cost": 0.016512
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-12",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the main problems: the N+1 queries, the crash on a missing customer, the non-sargable `strftime` filter, and the timezone question. Response A ranks the N+1 pattern first, which fits the 20,000-invoice scale and is the most consequential performance issue. Response A also flags two concrete problems that Response B misses. Formatted strings like `\"$1,234.56\"` force finance to re-parse amounts, and negatives render as `$-12.34`. Its suggested fixes are specific, such as the LEFT JOIN, the half-open date range, and exporting `total_cents`.\n\nResponse B has a good point about the lack of a consistent snapshot across separate reads. But its item 4 (`COUNT(*)` undercounting units) rests on a schema assumption the code doesn't show. Its items 7 and 8 are mostly hedged suggestions rather than bugs. Response B also ranks the crash above N+1, which is a less defensible ordering at this data size.\n\nOverall, Response A is more accurate, better ordered, and more concrete within a similar length.\n\nVerdict: A",
+  "usage": {
+    "input": 1750,
+    "output": 880
+  },
+  "cost": 0.000615
+}

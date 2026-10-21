@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-31",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Both responses report the figures correctly: 10% speed gain (142 to 156 lines/hour), errors from 0.62% to 0.41%, 17% gain for new staff, 64% preference, $210,000 setup and 14-month payback. Both also state the limitation correctly.\n\n- A's \"gains settling within four weeks\" is a fair paraphrase.\n- A's takeaway about \"sites with many newer staff\" is an inference, but a reasonable one.\n- B's description of workers switching between methods is accurate and gives useful context about the trial design.\n- Neither contains an error.\n\n**Completeness:**\n- A keeps a few extra points: the smaller accuracy gain where errors were already low, the complaint about missing colleague chat, and an explicit recommendation to plan for headset comfort in heat.\n- B omits these, but it still conveys the heat discomfort, which is the actionable point.\n- B covers everything a busy manager needs to decide.\n\n**Concision and the word limit:**\n- The user asked for under 120 words.\n- By my count, A is exactly 120 words including its heading, or about 113 without it. That is at or over the limit on a strict reading.\n- B is about 104 words, comfortably within the limit, and reads as a tight, self-contained paragraph.\n\nA's bullet format is easier to scan, and its extra details are correct. However, they are marginal, and they push A to the edge of the hard constraint. B delivers all the essential information accurately and clearly satisfies the length requirement.\n\nVerdict: B",
+  "usage": {
+    "input": 1470,
+    "output": 2698
+  },
+  "cost": 0.05984
+}

@@ -1,0 +1,13 @@
+{
+  "item": "qa-29",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "Compound interest wins because **you earn interest on your interest**, not just on your original deposit.\n\n- **Simple interest** grows *linearly*. On $1,000 at 5%, you earn $50 every year, forever. After 30 years: $2,500.\n- **Compound interest** grows *exponentially*. Each year's interest is added to the balance, so next year's 5% applies to a larger amount. After 30 years: about $4,322.\n\nEarly on, the difference is small. But each year the compounding balance gets bigger, so the gap widens faster and faster. Time is the key ingredient: the longer the period, the more cycles of \"interest on interest\" occur.\n\nA handy shortcut is the **Rule of 72**: divide 72 by the interest rate to estimate the doubling time (72 ÷ 5 ≈ 14 years).",
+  "stop": "end_turn",
+  "usage": {
+    "input": 48,
+    "output": 284
+  },
+  "cost": 0.005872,
+  "at": "2026-10-14T01:50:48.499Z"
+}

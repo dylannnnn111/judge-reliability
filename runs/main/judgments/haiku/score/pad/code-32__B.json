@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "code-32",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response catches the most important bug: `BETWEEN '2026-09-01' AND '2026-09-30'` drops every order placed after midnight on September 30, which understates revenue. It also correctly identifies integer division truncating the averages, the NULL-status trap in `<> 'refunded'`, and the inner join hiding stores with no September orders. The fixes are sound, and the timezone and hardcoded-date notes are reasonable minor points. Two weaknesses: integer truncation affects every average on the dashboard, so it arguably deserves to rank above the stores-missing issue. The response also says it applies to \"Postgres, SQL Server, and SQLite\" without noting that MySQL behaves differently. The bigger problem is the explicit limit of 200 words. The response runs roughly 330 words, and it opens with filler (\"Let me walk through...\"). The instruction was clear, so this is a real compliance failure, even though the content is largely accurate and well-prioritized.\n\nScore: 6",
+  "usage": {
+    "input": 1340,
+    "output": 1221
+  },
+  "cost": 0.0007445
+}

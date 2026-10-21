@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-11",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Dates, crate limits, the parking allocation rule, and who handles each item match the original. Response B's \"Monday 17 November\" is a reasonable inference from the weekend dates, so it is not an error.\n\nThe difference is concision and the word limit. Response B runs to roughly 300 words, far over the 120-word cap, and includes filler such as the opening thank-you and closing lines. Response A is closer to the limit (about 150 words, still slightly over) and keeps every point a manager needs: owners, deadlines, the laptop schedule, crate rules, access cards, and the parking condition. Response A's \"non-respondents miss out\" is a clear rendering of the survey condition. Response B's extra wording adds tone rather than useful content.\n\nResponse A is better on concision while remaining equally accurate and complete.\n\nVerdict: A",
+  "usage": {
+    "input": 1797,
+    "output": 1094
+  },
+  "cost": 0.0007267
+}

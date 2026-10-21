@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-03",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses are correct. They state the rise is 1 percentage point and a 25% relative increase, and both show the calculation (5 − 4) ÷ 4 × 100 = 25%. Both are also under the 120-word limit (A is about 108 words, B about 94).\n\nThe difference is in quality of content and clarity.\n\n**Response A** carries filler:\n- It opens with \"Thank you for your question\" and closes with \"I hope this explanation is helpful…\".\n- It repeats the percentage-point point (\"Put another way, the rate was 4% before…\").\n- None of these words add information.\n\n**Response B** is more useful:\n- It frames the ambiguity up front, distinguishing percentage points from percent.\n- It presents both answers cleanly, which makes the key reasoning explicit.\n- It adds a short, correct illustration: on a $400,000 loan, interest goes from $16,000 to $20,000. This shows why the distinction matters to a borrower, and the figures are accurate.\n\nB's extra content is correct and helpful, while A's extra length is padding. B is clearer and more informative within the word limit.\n\nVerdict: B",
+  "usage": {
+    "input": 696,
+    "output": 933
+  },
+  "cost": 0.021444
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-02",
+  "side": "B",
+  "score": 10,
+  "model": "claude-opus-5-5",
+  "text": "The response's final answer of **96 km/h** is correct.\n\n- **Correctness:** Total distance is 320 km. Total time is 2 h plus 4/3 h, which is 10/3 h. Dividing gives 320 ÷ 10/3 = 96 km/h.\n- **Reasoning:** It gives the key steps: separate leg times, total time, then total distance over total time.\n- **Added insight:** It correctly notes that the result is the harmonic mean of 80 and 120, which equals 96. It also explains why the naive answer of 100 km/h fails: more time is spent on the slower leg. This is a correct and useful addition, not padding.\n- **Clarity and length:** The response is clearly formatted and around 80 words, so it meets the under-120-word constraint.\n\nThere are no errors or meaningful weaknesses.\n\nScore: 10",
+  "usage": {
+    "input": 422,
+    "output": 372
+  },
+  "cost": 0.009128
+}

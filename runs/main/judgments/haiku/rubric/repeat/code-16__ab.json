@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "code-16",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response B leads with the most consequential issue. The function adds 10% GST on top of prices, but Australian prices are normally shown GST-inclusive, so customers could be overcharged. It is framed as \"likely\" and asks for confirmation, which is appropriate since the code alone doesn't prove the intent. Response A mentions the same concern only as item 7 with a \"verify\" hedge, underranking a probable real-money bug.\n\nBoth correctly flag the in-place `sort` mutation, missing input validation, and client-side totals being trusted at checkout. Response A's claim that `==` instead of `===` is a problem is a style point with no behavioral effect here, since both sides are strings. Response A's integer-math rounding suggestion is a real but minor improvement, and its per-line versus total GST note is useful. Response B's discount-code point is more practical: normalize input and return errors for unknown codes rather than silently ignoring them.\n\nResponse A is slightly broader, but its extra items are weaker or padded, and it buries the key domain issue. Response B ranks better and is more focused, so it is the better response.\n\nVerdict: B",
+  "usage": {
+    "input": 1699,
+    "output": 979
+  },
+  "cost": 0.0006594
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "code-11",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly identifies the most important bug: `reserve` checks stock under one lock acquisition and decrements under another, so concurrent threads can oversell. It ranks this first and gives a concrete fix. The cross-process limitation of `threading.Lock` and the missing negative-quantity validation are also real and well placed. Item 4 (unchecked release) is a reasonable concern about double releases. Item 6 mostly restates item 1, and item 5 is weak, since a per-global lock is a performance note rather than a correctness problem. The response also ignores the explicit 200-word limit, running roughly 380 words with filler like \"Thank you for sharing the code.\" It is substantively accurate and well ordered, but it pads the list with redundant and low-value items and breaks the length constraint.\n\nScore: 6",
+  "usage": {
+    "input": 1174,
+    "output": 718
+  },
+  "cost": 0.0004764
+}

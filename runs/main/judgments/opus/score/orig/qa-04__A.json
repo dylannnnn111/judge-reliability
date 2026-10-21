@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-04",
+  "side": "A",
+  "score": 10,
+  "model": "claude-opus-5-5",
+  "text": "The final price of **$480** is correct ($500 × 1.20 = $600, then $600 × 0.80 = $480), and so is the **4% decrease** ($20 / $500).\n\n**Reasoning:** The response explains the key insight well. The discount applies to the larger $600 base, so it removes $120, while the increase added only $100. The general formula (1+p)(1−p) = 1 − p², giving a net change of −p², is correct and a useful generalization.\n\n**Clarity and length:** It is well formatted and about 80 words, within the 120-word limit. Every sentence adds something; there is no filler.\n\nThere are no errors or meaningful weaknesses.\n\nScore: 10",
+  "usage": {
+    "input": 396,
+    "output": 303
+  },
+  "cost": 0.007644
+}

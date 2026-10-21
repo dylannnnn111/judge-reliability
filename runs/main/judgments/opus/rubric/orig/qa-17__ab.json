@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-17",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses correctly identify **Venus** at about 465°C. Both attribute this to a runaway greenhouse effect from a thick CO₂ atmosphere, and both note it is hotter than Mercury despite being farther from the Sun. Correctness is equal.\n\nOn key reasoning, B is more complete:\n- **Why Mercury is cooler:** B explicitly states that Mercury has almost no atmosphere and so loses its heat to space. This directly resolves the comparison both responses raise. A mentions the Mercury paradox but never explains it.\n- **Extra correct detail:** B adds the 96% CO₂ figure and the even temperatures across day/night and poles/equator. Both are accurate and add explanatory value.\n- **Mechanism:** B lays out the heat-trapping process more clearly (sunlight warms the surface, then the outgoing infrared is absorbed).\n- **A's pressure point:** A says high pressure is \"further contributing\" to the heat, which is vague about the mechanism.\n\nOn clarity, B's bulleted structure is easy to scan. It stays within the limit at roughly 115 words, which is close but compliant. A is clear but less informative.\n\nB is better on reasoning and clarity, with no loss in correctness.\n\nVerdict: B",
+  "usage": {
+    "input": 768,
+    "output": 867
+  },
+  "cost": 0.020412
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-27",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Response A is better.\n\n**Real issues and coverage.** Both catch the core problems:\n- Unbounded `Promise.all` concurrency across ~80k sends.\n- First-failure rejection that hides which sends succeeded.\n- The misleading return count.\n- Null-email crashes.\n- The non-advancing cursor loop.\n- No retry on transient errors.\n\n**Overstatements.** Response B ranks first the claim that the code \"sends to everyone, including people who unsubscribed,\" citing CAN-SPAM/GDPR violations. That is overstated: the code filters on `marketingOptIn`, which presumably reflects unsubscribes. A separate suppression list for bounces and complaints is a reasonable operational point. Leading with a legal-violation framing, though, mis-ranks a speculative issue above the concrete concurrency bug. Response A raises the accurate version of this concern (opt-in can go stale during the run) and ranks it appropriately low.\n\n**Fixes.** Response A gives a concrete fix for nearly every item: p-limit or batching, `allSettled` plus idempotent tracking, returning sent/failed counts, retry with backoff, validate-and-skip, and a cursor guard. Response B mostly diagnoses without remedies.\n\n**Flagging non-issues.** Response B's #8 flags in-memory storage of 80k strings, which is trivial at that size. It also notes local-part lowercasing; that is technically true but marginal, and B itself calls it harmless.\n\n**Length.** Both slightly exceed the 200-word limit, by roughly the same amount, so this doesn't separate them.\n\nVerdict: A",
+  "usage": {
+    "input": 1635,
+    "output": 891
+  },
+  "cost": 0.02436
+}

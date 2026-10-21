@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "qa-20",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify Canberra and 1927. Both also correctly state that Parliament met in Melbourne from Federation in 1901 until the move. Response B adds accurate context: the Duke of York (later King George VI) opened the building, the 1927 building is now called Old Parliament House, and Parliament moved to the current building in 1988. These details are correct and relevant to the question's focus on when Parliament first sat in Canberra. Response A is accurate and concise but gives less useful background. Both are well under 120 words, so length does not separate them. Response B is slightly better because its extra content is correct and adds useful context.\n\nVerdict: B",
+  "usage": {
+    "input": 485,
+    "output": 495
+  },
+  "cost": 0.000296
+}

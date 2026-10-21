@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-34",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify public-key key exchange (Diffie-Hellman) as the answer and correctly explain how the shared secret is derived without being sent over the wire. Both also correctly note that certificates from trusted certificate authorities defend against man-in-the-middle attacks.\n\nResponse A adds a bit more precision, such as certificates binding a public key to a domain name. However, it runs about 127 words, which exceeds the \"under 120 words\" limit. Response B stays under the limit at roughly 116 words while covering the same key reasoning. Its statement that the server proves its identity is also accurate for typical TLS. The explanations are otherwise similar in clarity.\n\nSince B meets the explicit length constraint and A's extra detail is marginal, B is slightly better.\n\nVerdict: B",
+  "usage": {
+    "input": 773,
+    "output": 1031
+  },
+  "cost": 0.0005928
+}

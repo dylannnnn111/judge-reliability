@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-29",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse B is more accurate. Response A merges two different groups into one sentence: \"Classic plan customers and those on fixed-price contracts are unaffected until their contract ends.\" This misstates the Classic terms. The notice says Classic customers see no change *this year*, not \"until their contract ends.\" A manager reading only the summary would take away the wrong condition. Response B keeps the two groups separate and states each correctly.\n\nResponse B is also easier to scan. Its bolded labels, and bullets that pair each price change with its data increase, suit a busy manager. Response A lists the data increases separately from the prices, which takes more effort to compare.\n\nOn length, Response A is clearly under 120 words (about 112). Response B is about 117 if the arrows are not counted as words, and about 123 if a counter treats them as words. That is borderline. Response B's contact details are also less important for a manager. These are small concerns next to Response A's factual error.",
+  "usage": {
+    "input": 1252,
+    "output": 1785
+  },
+  "cost": 0.040708
+}

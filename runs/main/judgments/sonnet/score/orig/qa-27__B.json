@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-27",
+  "side": "B",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "Correctness: The explanation is accurate. Ice is about 9% less dense, hydrogen bonds form an open hexagonal lattice, water has maximum density at 4°C, the floating ice insulates, and lakes would freeze from the bottom up if ice sank. \"Potentially killing most aquatic life\" is a reasonable hedge. \"Water is unusual: it expands as it freezes\" is fine.\n\nWord count: First paragraph: \"Ice floats because water is unusual: it expands as it freezes.\" (11) \"In liquid water, hydrogen bonds constantly shift, but when cooled, molecules lock into an open hexagonal lattice that holds them farther apart.\" (21) → 32. \"Ice is therefore less dense than liquid water, about 9% less.\" (11) → 43. Second paragraph: \"This matters greatly for lake life.\" (6) → 49. \"Because ice floats, it forms on the surface and insulates the water below, while deeper water stays near 4°C, the temperature of maximum density.\" (24) → 73. \"Fish, plants, and microorganisms can survive winter in the liquid layers beneath.\" (12) → 85. \"If ice sank, lakes would freeze from the bottom up, potentially killing most aquatic life each winter.\" (17) → 102. Under 120, so the limit is met.\n\nMinor nit: \"deeper water stays near 4°C\" is accurate for the densest water sinking to the bottom. The explanation of why the lattice forms is concise and gets the key reasoning across. Clear and well structured.\n\nScore: 9",
+  "usage": {
+    "input": 419,
+    "output": 508
+  },
+  "cost": 0.005918
+}

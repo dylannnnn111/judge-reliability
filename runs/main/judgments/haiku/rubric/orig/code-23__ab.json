@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-23",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the most important bug: `if (!r.value)` drops legitimate 0 readings, which matter for a cold room near freezing. Both also flag string comparison of timestamps, the non-zero comparator, the possibility that `latestReading` returns a null-valued reading, and sensors vanishing from the output.\n\nResponse B covers more real ground. Its prototype-key point is valid: `sums[\"__proto__\"]` and `sums[\"constructor\"]` return non-nullish inherited values, so `??=` never creates a fresh accumulator and the code writes onto `Object.prototype` or `Object`. Response A misses this entirely. B's `Number.isFinite` guard also addresses NaN values, which A doesn't mention. Response A's point about the dead-sensor case is well argued, but B makes the same point concisely. Neither response's ranking is badly off. B ranks the prototype issue fifth, which is defensible since sensor IDs are probably not attacker-controlled, though it arguably deserves more weight than the comparator nitpick. Both stay within the word limit.\n\nOverall, B finds a real bug A misses, adds a useful guard, and stays concise.\n\nVerdict: B",
+  "usage": {
+    "input": 1630,
+    "output": 1029
+  },
+  "cost": 0.0006775
+}

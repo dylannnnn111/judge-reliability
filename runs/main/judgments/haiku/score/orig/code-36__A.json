@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-36",
+  "side": "A",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response finds the most serious bug, `Invalidate` deleting from a map under a read lock, which is a real data race that can crash the process, and ranks it first with the correct fix. The stale re-caching race (item 2), the stampede (3), unbounded growth from never-removed expired entries (5), and the missing timeout or context on `fetch` (6) are all real problems in this code. The TTL concern (4) is speculative because the code gives no token lifetime, but it is a reasonable design concern for \"short-lived\" tokens. Most items name a fix, though item 2 lacks one (a generation counter or per-tenant version would work) and item 6 doesn't say to pass a context. It avoids flagging fine code and stays close to the 200-word limit. It misses nothing major, though it doesn't mention that `Get` overwrites a freshly cached entry written by a concurrent miss.\n\nScore: 8",
+  "usage": {
+    "input": 1228,
+    "output": 805
+  },
+  "cost": 0.0005252999999999999
+}

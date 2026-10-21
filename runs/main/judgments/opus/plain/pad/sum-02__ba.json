@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-02",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse B is better. It follows the brief, while Response A breaks it in a few ways.\n\n- **Word limit:** Response B comes in at roughly 115–120 words, within the limit. Response A runs to about 180 words, well over the 120-word cap.\n- **Filler:** Much of Response A's excess is padding, such as \"Thank you for taking the time to review…\" and \"so please plan accordingly.\" A busy manager gets nothing from these lines.\n- **Accuracy:** Response A says the roof \"will need full replacement,\" but the minutes only say the contractor *recommends* it. It also leaves out that the leak has already been patched. Response B states both correctly.\n- **Usefulness:** Response B keeps the visitor figures (11 vs 64), which explain why the proposal was made. It also flags the volunteer request as an action item with its deadline, so the manager can see what to do.",
+  "usage": {
+    "input": 1588,
+    "output": 803
+  },
+  "cost": 0.022412
+}

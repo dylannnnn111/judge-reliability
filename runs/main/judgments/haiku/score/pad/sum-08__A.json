@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-08",
+  "side": "A",
+  "score": 3,
+  "model": "claude-haiku-5-5",
+  "text": "The response has several accuracy problems. It first states the fridge \"failed on 4 Oct,\" but the customer only said it stopped \"on Sunday\" in a 2 Oct message, so the date is wrong. It then says the Sunday date is \"unclear\" and appends a correction that is awkward for a busy reader. It also says Kevin Hales was chased \"on more than one occasion,\" but the transcript shows Megan chased him once. The core facts are otherwise right: the 90-day store responsibility, Priya arranging Wednesday's replacement, the separate Frostline collection with two possible calls, the $500 claim threshold, and the 9 Oct escalation to Amara Osei. However, the response runs well over the 120-word limit, with filler such as \"I would like to summarise\" and a trailing correction that adds clutter rather than value. It omits nothing critical, but its errors and self-contradictions undermine trust in a summary meant to replace reading the original.\n\nScore: 3",
+  "usage": {
+    "input": 1522,
+    "output": 862
+  },
+  "cost": 0.0005832000000000001
+}

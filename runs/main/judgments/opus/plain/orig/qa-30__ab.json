@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-30",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse A appears to break the explicit word limit. By a careful count it runs to about 121–123 words, depending on whether symbols like \"<\" and \">\" count. The user asked for \"under 120 words,\" so A at best barely misses and at worst clearly exceeds it.\n\nResponse B is about 80 words and well within the limit. It gives the same core definition and the main misconceptions:\n- not the probability the null is true,\n- not the probability the result is due to chance,\n- not effect size,\n- not replication probability.\n\nB's last bullet is slightly vaguer than A's points about p < 0.05 not meaning \"real.\" A's content is marginally richer, but it does not make up for missing a hard constraint.",
+  "usage": {
+    "input": 499,
+    "output": 1217
+  },
+  "cost": 0.026336
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-26",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both summaries are accurate on the key facts: the 7:50am stoppage, the release at 8:50am, the worn door controller, the 2:10pm return on Wednesday 23 September, the 11 meal deliveries, the four evacuation-chair assists, the $2,300 spare board, and the board referral. Both also run about 155 words, well over the 120-word limit, so neither wins on concision.\n\nResponse A has two small inaccuracies. \"Daily printed updates\" overstates the source, which only says there was a printed notice on Monday and an update each afternoon. Its \"freed within about an hour\" is correct but slightly loose. Response B's \"carried down the stairs\" misdescribes the evacuation-chair assistance, which was two staff helping residents down the stairs. Its \"$2,300\" phrasing is also a little ambiguous. Neither error is serious.\n\nFor a busy manager, Response A's labelled sections (Impact, Actions, Feedback) make the content easier to scan than Response B's denser prose. That structure gives A a slight edge on usefulness, though B's wording is marginally cleaner on accuracy.\n\nVerdict: A",
+  "usage": {
+    "input": 1541,
+    "output": 2201
+  },
+  "cost": 0.0012545999999999998
+}

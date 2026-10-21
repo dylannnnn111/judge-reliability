@@ -1,0 +1,14 @@
+{
+  "pair": "sum-21",
+  "side": "A",
+  "author": "sonnet",
+  "model": "claude-haiku-5-5",
+  "original": "**Summary:** Dominic needs Ruth's sign-off on replacing six home-care hatchbacks whose leases end in December.\n\n- **Recommendation:** Elmwood Auto hybrids, $229,140 total. That's $13,140 over the $216,000 budget and above his delegation.\n- **Why:** Hybrids save about $1,350 per car per year in fuel, or about $5,400 over four years. That exceeds the hybrid's price premium. Servicing costs are similar.\n- **Alternative:** Northside petrol, $209,880 total, within budget.\n- **Deadline:** Confirm by **24 October** for delivery in four weeks. Otherwise the next allocation is February, leaving a roughly two-month gap with hire cars at about $1,800 per car per month.\n- Coastal Fleet Sales is dearer and has no hybrid until March.\n\n**Decision needed:** Approve the over-budget hybrid or stay within budget with petrol.",
+  "text": "**Summary:** I'd like to ask for Ruth's sign-off on replacing the six home-care hatchbacks whose leases end in December. This decision goes beyond what Dominic is authorised to approve on his own, so it needs Ruth's approval before we proceed.\n\n- **Recommendation:** Elmwood Auto hybrids, at a total cost of $229,140. This is $13,140 over the $216,000 budget and above Dominic's delegation, which is why it requires Ruth's approval.\n- **Why:** Hybrids are expected to save about $1,350 per car per year in fuel, or about $5,400 over four years. That saving exceeds the hybrid's price premium. Servicing costs are similar for both options.\n- **Alternative:** Northside petrol vehicles, at a total cost of $209,880, which keeps the purchase within budget.\n- **Deadline:** To receive delivery in four weeks, the order must be confirmed by **24 October**. If we miss that date, the next allocation is in February. That would leave a gap of roughly two months, during which hire cars would be needed at about $1,800 per car per month.\n- **Other supplier:** Coastal Fleet Sales is more expensive than the options above, and it has no hybrid available until March.\n\n**Decision needed:** Please indicate whether you approve the over-budget Elmwood Auto hybrid, or whether we should stay within budget and proceed with the Northside petrol vehicles.",
+  "ratio": 1.76,
+  "usage": {
+    "input": 1007,
+    "output": 1724
+  },
+  "cost": 0.0009627
+}

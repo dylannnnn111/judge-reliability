@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-27",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses report the same figures and make the same points: the Sydney advantage is driven by the free-month promotion, the adjusted gap is 2 points, the cost is about $410,000 a year, and a randomised same-city test is proposed for the 21 October meeting. Neither contains an error.\n\nResponse B is better on the explicit constraint. By my count it is about 111 words, under the 120-word limit. Response A is about 136 words, so it breaks the limit the user set. Response B also gives the manager a clear bottom line in its heading (\"inconclusive. Don't roll out nationally yet\") and labels the cost as applying \"if rolled out,\" which is slightly more precise. Response A's extra length adds no new information.\n\nVerdict: B",
+  "usage": {
+    "input": 1514,
+    "output": 1964
+  },
+  "cost": 0.0011334000000000001
+}

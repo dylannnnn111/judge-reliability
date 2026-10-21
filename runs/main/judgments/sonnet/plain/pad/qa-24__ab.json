@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-24",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is well over 120 words, so it breaks the length limit. By rough count it runs about 210 words. Response B comes to about 100 words, which is within the limit.\n\nOn accuracy, B is correct. A has a few details to check. It says Everest rises about 4,600 to 5,000 m from its base on the Tibetan Plateau, which is plausible. It puts Chimborazo at about 6,384 km from the centre, which is correct. The main problem with A is the length violation.\n\nB is the better response.\n\n**B**",
+  "usage": {
+    "input": 743,
+    "output": 166
+  },
+  "cost": 0.003146
+}

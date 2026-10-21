@@ -1,0 +1,13 @@
+{
+  "item": "sum-36",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**Printer Fleet Lease Summary (Crestline Office Solutions)**\n\n- **Term:** 48 months from installation on 3 November 2026.\n- **Includes:** 22 multifunction printers across both campuses, plus all toner, parts and servicing, with fault response within 8 business hours.\n- **Cost:** $3,480/month + GST, fixed for 24 months. From month 25 it can rise up to 4% a year.\n- **Page allowance:** 120,000 black-and-white and 15,000 colour pages monthly, with no carry-over. Based on last year's usage, term months will likely exceed the colour allowance by about $195/month, and unused holiday pages are lost.\n- **Early exit:** The school pays 75% of remaining fees, even if enrolments fall.\n- **End of term:** Return, buy or re-lease. If no action is taken, the lease rolls over monthly at the same fee.\n- **Contact:** Priyanka Shah, Crestline.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 647,
+    "output": 373
+  },
+  "cost": 0.010048,
+  "at": "2026-10-14T01:52:30.210Z"
+}

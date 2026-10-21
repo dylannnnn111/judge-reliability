@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-01",
+  "side": "B",
+  "score": 5,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds the main real problems. The truncation in `int(amount * 100)` is a concrete bug that undercharges. The float-money, one-bad-row and no-idempotency or error-handling points are also valid and matter for nightly billing. Each comes with a reasonable fix, and putting retry safety first is defensible.\n\nWeaknesses:\n- **Ranking:** Truncation is a certain, silent undercharge and arguably belongs above the design-level concerns. Items 2 and 3 also overlap, since both stem from float money.\n- **Speculative padding:** Items 4, 6 and 7 are weak. Negative totals are unlikely in metered usage, and skipping zero is reasonable. Whitespace in customer IDs is invented. A hardcoded tax rate is a design preference, not a bug, given no stated requirement.\n- **Length:** The user asked for under 200 words, and the response looks to run over, roughly 230–260 words. Part of the overage is the low-value items.\n- **Missed points:** It does not note that `charge()`'s return value or failure is never checked, though item 1 partly covers this.\n\nOverall it is solid on the core issues but breaks the word limit and flags several marginal items.\n\nScore: 5",
+  "usage": {
+    "input": 1002,
+    "output": 951
+  },
+  "cost": 0.011514
+}

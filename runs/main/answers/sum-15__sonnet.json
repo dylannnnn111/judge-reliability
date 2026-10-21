@@ -1,0 +1,13 @@
+{
+  "item": "sum-15",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Summary:** A study of 96 night-shift workers found that a 20-minute nap at 3am reduced lane drifting by 22% and improved reaction time by 0.09 seconds in a post-shift driving simulator.\n\n**Key caveats:**\n- Benefits went mainly to workers with over six months of night-shift experience.\n- New workers (under three months) saw no measurable benefit, and some felt groggy for 15 minutes after waking.\n- Drive time mattered more than napping: drifting roughly doubled for 7am drives versus 6am.\n\n**Implication:** Naps are a cheap aid for experienced night workers but don't replace earlier shift finishes or transport home.\n\n**Limitations:** Simulator-based; sample mostly men aged 25–50.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 645,
+    "output": 251
+  },
+  "cost": 0.0038,
+  "at": "2026-10-14T01:51:32.232Z"
+}

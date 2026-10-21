@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "qa-30",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are correct. Each defines the p-value as the probability of data at least as extreme as observed, assuming the null hypothesis is true, and each lists the standard misconceptions: it is not the probability the null is true, not the probability of chance results, not a measure of effect size, and not the probability of replication.\n\nResponse A adds two points that matter for practical understanding. It warns that p > 0.05 does not mean \"no effect,\" which is a common and consequential error. It also closes by explaining that a p-value alone cannot say how likely a hypothesis is without prior information. Response B omits both. Response A's extra words carry correct, useful content, and it still fits under 120 words. Response B is more concise but less complete.\n\nVerdict: A",
+  "usage": {
+    "input": 644,
+    "output": 539
+  },
+  "cost": 0.0003339
+}

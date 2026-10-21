@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "code-25",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly identifies the most concrete bug: with `limit = 5`, the `>` check allows six attempts per window, so the sixth should be blocked. The unbounded `hits` map is a real memory-exhaustion risk, and per-IP-only limiting enabling distributed guessing is a major gap for login protection. The hardcoded `retryAfterSec: 60` and the in-memory, per-process state are also genuine problems. Point 5, about successful logins consuming quota, is a design observation rather than a clear bug. Point 7, about spoofable IPs, is conditional but relevant. Nothing important is missing, and the fixes are concrete enough to act on. The main weakness is the explicit constraint of under 200 words: the response runs to roughly 320 words, and it adds a preamble that the user did not ask for. Ranking is sensible, though the per-account bypass arguably deserves a higher slot than the off-by-one.\n\nScore: 6",
+  "usage": {
+    "input": 1185,
+    "output": 971
+  },
+  "cost": 0.000604
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-40",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses are correct and stay under 120 words (about 113 for A and 111 for B).\n\n**Correctness:** Both give accurate speeds for light (~300,000 km/s) and sound (~343 m/s). Both give the correct divide-by-3 (km) and divide-by-5 (miles) rules. Their examples check out: A's 10 s gives about 3 km or 2 miles, and B's 15 s gives 5 km or 3 miles. B's figure of 30 s ≈ 10 km / 6 miles is also accurate. Neither contains errors.\n\n**Key reasoning:** Both explain the speed difference. A adds a slightly sharper point: the flash and thunder are produced at the same moment, so the lag comes only from travel time. B implies this but does not state it.\n\n**Clarity and usefulness:** B's numbered steps make the counting method easy to follow. B also adds the standard \"wait 30 minutes after the last thunder\" rule, which is genuinely useful safety guidance. It fits within the word limit. A's safety line is correct but less complete.\n\nOn balance, A has a marginally more explicit causal explanation, but B's added correct and useful safety information and clearer procedure give it a slight edge.\n\nVerdict: B",
+  "usage": {
+    "input": 745,
+    "output": 1200
+  },
+  "cost": 0.02698
+}

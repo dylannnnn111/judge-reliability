@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "sum-01",
+  "side": "B",
+  "score": 4,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** The response is largely correct.\n- The new deadline (Friday 30 October, close of business, moved from 4 November) is right.\n- The three deliverables, template location, variance threshold, no-screenshots rule, leave nomination, Marcus's optional Thursday 2pm session and the \"call today\" instruction all match the source.\n- Small issues:\n  - It drops that the CFO made the change.\n  - It adds the unsupported phrase \"before the deadline\" to the drop-in session.\n  - It slips into Priya's voice (\"I'm writing to let you know\") while also calling her \"Priya\" in the third person. That is confusing in a summary meant for a manager.\n\n**Coverage:** All the points the reader needs are there.\n\n**Concision:** This is the major failure. The user set a hard limit of under 120 words, and the response runs to roughly 220, nearly double.\n- Much of the excess is redundant. The deadline change appears in the bold header and is then restated in full in the next sentences.\n- \"This earlier date applies to all regions\" is filler.\n- \"A few points to keep in mind as you prepare your submissions\" adds nothing.\n- The drop-in description repeats \"template walkthrough\" and \"guided run-through.\"\n\nThe extra length adds nothing useful and breaks an explicit constraint for a reader described as busy. The content is accurate and complete, but ignoring the word limit and padding the text are serious faults.\n\nScore: 4",
+  "usage": {
+    "input": 1224,
+    "output": 1069
+  },
+  "cost": 0.026276
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-24",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses answer \"no\" to both questions and give correct figures. Mauna Kea's base-to-peak height (about 10,200 m, with about 4,207 m above sea level), Everest's summit at 8,849 m, and Chimborazo's summit being roughly 2 km farther from Earth's centre than Everest's are all accurate. Both explain the equatorial bulge as the reason. Response A never states Everest's own base-to-peak height, so its base-to-peak comparison is implied rather than shown. Response B gives that figure, though as a rough range, and states the base-to-peak and centre-distance answers under separate headings. Its closing line, that Everest only holds the sea-level elevation record, is a useful summary. Response B is slightly more complete and easier to follow, while remaining under the word limit and free of errors.\n\nVerdict: B",
+  "usage": {
+    "input": 777,
+    "output": 919
+  },
+  "cost": 0.0005372
+}

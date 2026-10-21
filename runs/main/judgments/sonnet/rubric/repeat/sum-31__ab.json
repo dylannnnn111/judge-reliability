@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-31",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries are accurate on the key figures: the 10% speed gain (142 to 156), error rates falling from 0.62% to 0.41%, the 17% gain for new workers, 64% preference, $210,000 setup cost, 14-month payback, and the one-company, grocery-only limitation.\n\n**Length:** The request says \"under 120 words\". By my count, Response A comes to about 120 words including the title and labels, so it sits at or over the limit. Response B comes to about 104 words, which is clearly compliant.\n\n**Content:**\n- Response A adds the point that the error gain was smaller where errors were already low. It also adds a \"takeaway\" recommending the approach for sites with many newer staff, which is an inference rather than something the source states, though a mild one.\n- Response B omits the smaller-gain nuance and the four-week stabilisation. It does keep the headset comfort concern and all the headline numbers. It also leaves out the \"missed talking to colleagues\" complaint, which is minor.\n- Response A's bullet format is easier for a busy manager to scan.\n\nResponse B satisfies the word limit clearly and keeps what a manager needs. A's extra nuance is useful, but it pushes A to the limit.\n\nVerdict: B",
+  "usage": {
+    "input": 1470,
+    "output": 2251
+  },
+  "cost": 0.02545
+}

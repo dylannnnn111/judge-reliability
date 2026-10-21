@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-05",
+  "side": "A",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "Check: 29 Feb 2024 + 365 days. From 29 Feb 2024 to 28 Feb 2025: 29 Feb 2024 to 28 Feb 2025 is 365 days? Between 1 March 2024 and 28 Feb 2025 is 365 days minus... Let's compute: 29 Feb 2024 to 1 Mar 2024 = 1 day. 1 Mar 2024 to 1 Mar 2025 = 365 days. So 29 Feb 2024 to 1 Mar 2025 = 366 days. Therefore 365 days after is 28 Feb 2025. Correct.\n\nWeekday: 29 Feb 2024 was Thursday (true). 365 days = 52 weeks + 1 day, so Friday. 28 Feb 2025 was indeed a Friday. Correct.\n\nThe reasoning is brief and correct, though the \"counting 365 days lands on 28 February\" is stated rather than derived in detail. The statement that 2025 has no 29 Feb is a little tangential but fine. Under 120 words.\n\nScore: 9",
+  "usage": {
+    "input": 313,
+    "output": 361
+  },
+  "cost": 0.004236
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-24",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B.** Both responses correctly apply the 8 October correction: $14,500 for Saltwater, $88,200 total approved, and $31,800 rolling over. The deciding factor is the explicit length limit.\n\n- **Response A** runs to roughly 180 words, well over the 120-word cap. It also opens with a filler sentence (\"Thank you for reviewing the update below…\") and uses wordy phrasing (\"Once the approved grants are accounted for…\"), which doesn't suit a busy manager.\n- **Response B** comes in around 115 words, within the limit, and covers everything important:\n  - It flags that the Saltwater amount was corrected from $45,000, which matters because the manager may have seen the original figure.\n  - It notes the conflict of interest.\n\nB has one minor slip: it calls the proposal \"a possible $2,000 quick-response grant\" when the minutes say \"up to $2,000.\" This is small next to A's failure to meet the length constraint.\n\n**B**",
+  "usage": {
+    "input": 1737,
+    "output": 532
+  },
+  "cost": 0.017588
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-39",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "B is slightly better. Both responses are accurate and stay under 120 words (A is about 90, B about 100).\n\nResponse B explains more. It says why the numbers can't be stored exactly (repeating binary fractions that get rounded). It also gives the actual doubles involved: the sum is 0.3000000000000000444, while the double closest to 0.3 is 0.299999999999999988898, and both values are correct. It then notes that printing shows 0.30000000000000004 and lists three workarounds, including integer cents.\n\nResponse A is also correct and concise, but it says less about why the sum differs from 0.3. It gives the printed result without showing the two distinct doubles, and it offers fewer workarounds.\n\n**B**",
+  "usage": {
+    "input": 639,
+    "output": 1584
+  },
+  "cost": 0.017118
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "qa-06",
+  "side": "A",
+  "score": 6,
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** The answer, Friday 24 March 2028, is correct.\n\n- **Date:** From 15 Dec to 31 Dec is 16 days, leaving 84. January takes 31, leaving 53. February 2028 has 29 days because 2028 is a leap year, leaving 24. That lands on 24 March.\n- **Weekday:** 100 mod 7 = 2, and Wednesday + 2 days = Friday.\n- **Starting day:** 1 Jan 2027 is a Friday, and 15 Dec is 348 days later. Since 348 mod 7 = 5, Friday + 5 days = Wednesday. The premise holds.\n\n**Reasoning:** The key steps are all present: the month-by-month count, the leap-year check, and the modular weekday calculation.\n\n**Clarity and constraints:** The response runs to roughly 130 words, which breaks the explicit \"under 120 words\" instruction. The overrun comes from padding that adds nothing:\n- \"beginning from the starting date in the calculation\"\n- \"Here is the step-by-step process\"\n- \"I took a slightly different approach\"\n- \"brings us to the final result\"\n\nA tighter version would have kept all the reasoning and stayed well under the limit. Failing a clear, checkable instruction because of filler is a real flaw, though correctness matters most.\n\nScore: 6",
+  "usage": {
+    "input": 485,
+    "output": 1045
+  },
+  "cost": 0.02284
+}

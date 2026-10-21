@@ -1,0 +1,13 @@
+{
+  "item": "code-09",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**Bugs and problems, most important first:**\n\n1. **Revocation doesn't take effect (security bug).** `revoke_permission` deletes the DB row but never touches `_permission_cache`. Any user already cached keeps the revoked permission until the process restarts. At minimum, add `_permission_cache.pop(user_id, None)` after the commit.\n\n2. **Fixing #1 locally isn't enough with multiple workers or servers.** Each process has its own cache. Invalidating in one process leaves stale grants in all the others. Options:\n   - Use a shared cache (e.g., Redis) with explicit invalidation.\n   - Add a short TTL so stale entries expire.\n   - Skip caching and rely on an indexed query.\n\n3. **No expiry for any change.** Grants, role changes, user deletion, and edits made directly in the DB or by another service are never picked up. Deleted or banned users keep their cached permissions indefinitely.\n\n4. **Unbounded memory growth.** The cache stores an entry for every user ID ever checked, including nonexistent IDs (cached as empty sets). Arbitrary IDs can inflate it. Use an LRU or TTL cache with a size limit.\n\n5. **Invalidation ordering.** When adding invalidation, do it after the commit succeeds. Otherwise a concurrent request can re-cache the old permissions between invalidation and commit.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 323,
+    "output": 636
+  },
+  "cost": 0.014012,
+  "at": "2026-10-14T01:53:16.200Z"
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-33",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries are accurate. Each reports the later 31 January 2027 shutdown date, the roughly 15-minute switch, the 8% of customers affected, and the main new features. Neither distorts anything.\n\nBoth are slightly over the 120-word limit, A at about 128 words and B at about 129, so length does not separate them.\n\n**Response A**\n- It says plainly that most customers need do nothing, which is the key message for a busy manager.\n- It states the date change explicitly (\"moved from 30 Nov to 31 Jan 2027\").\n- It leaves out the Admin menu path, which a manager doesn't need.\n- It omits the \"staff could be paid late\" consequence, though \"timesheets will stop reaching payroll\" implies it.\n\n**Response B**\n- It leads with the action item, which is a good choice.\n- It keeps the consequence of late pay and the help-centre guide.\n- It spends words on the Admin menu path.\n- It folds the fixes into an \"Also\" line with the improvements, which is less clear.\n\nOverall, A is slightly tighter and clearer for the intended reader, and B gains little from the extra detail it keeps.\n\nVerdict: A",
+  "usage": {
+    "input": 1556,
+    "output": 2717
+  },
+  "cost": 0.030282
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-08",
+  "side": "A",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The response catches the most important problems: the bare `except` that marks failed files as done, the partial-upload race, the lack of idempotency, and the missing lock. The ranking is sensible, and each item gives a concrete fix. Its weaknesses are minor. The cross-filesystem claim is weak here because INBOX and DONE share a parent directory. The case-sensitivity point may be intentional, and the response doesn't say so. It also omits the lack of any logging as a separate issue, though item 1 touches on it. The main flaw is the length limit: at roughly 230 words, it exceeds the requested 200, and the user explicitly asked for that cap.\n\nScore: 7",
+  "usage": {
+    "input": 1032,
+    "output": 856
+  },
+  "cost": 0.0005312
+}

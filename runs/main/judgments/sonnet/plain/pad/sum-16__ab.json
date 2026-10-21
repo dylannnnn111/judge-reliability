@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-16",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better. The user asked for a summary under 120 words, and Response A is far over that limit at roughly 200 words. Response B is about 120 words by my count, which is borderline but much closer to the limit.\n\nResponse B also does the job a busy manager needs. It leads with the status and the new date, and it covers the cause of the delay, the budget impact, the key risk and the decisions needed. It also notes that the $12k credit is only verbal and ties the December slip risk to the sales director's training constraint, which is a useful connection. Response A is wordier and spends space on filler such as \"I want to be clear\".",
+  "usage": {
+    "input": 1550,
+    "output": 1218
+  },
+  "cost": 0.01528
+}

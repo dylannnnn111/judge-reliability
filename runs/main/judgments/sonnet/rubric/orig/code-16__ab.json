@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-16",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same real issues: `sortByPrice` mutates its input, there is no input validation, totals must be recomputed server-side, discount matching is brittle, and `formatAud` mishandles negatives and has no thousands separators. Both give sensible fixes.\n\n**Response A:**\n- It puts the definite bug (sort mutation) first.\n- It pads the list with weaker items. The rounding point is speculative: `Math.round(subtotalCents * 10 / 100)` is a marginal tweak, and \"per line vs total GST\" is guesswork. The \"hardcoded discount code with no expiry or usage limit\" point criticises missing features rather than bugs.\n- The GST-inclusive question is ranked last, even though it could be a significant pricing issue.\n- At roughly 270 words it clearly exceeds the 200-word limit.\n\n**Response B:**\n- It is tighter and closer to the word limit, though probably still slightly over.\n- It leads with a GST double-count concern. This is a business assumption, so it is speculative, but it is hedged (\"likely\", \"confirm\") and would be high impact if true.\n- It adds a useful fix for discounts: normalise the code and return an error for unknown codes instead of silently ignoring them.\n- It has less noise.\n\nB is more focused and respects the length constraint better, with fewer questionable flags. A's ordering is arguably more defensible for the top item, but its extra items add little.\n\nVerdict: B",
+  "usage": {
+    "input": 1699,
+    "output": 1216
+  },
+  "cost": 0.015558
+}

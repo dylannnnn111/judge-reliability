@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-32",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is about 118 words, which meets the under-120 limit. It covers the claim, the bank's explanation (the discount is locked, not the rate), the $250 goodwill credit, the customers' remaining dissatisfaction, and the referral to lending. Its closing flag slightly overstates things: the customers did accept the $250 but still feel misled. Even so, flagging the risk of a premature closure is useful to a manager.\n\nResponse B is well organised, and its risk note (possible escalation to AFCA) is more precisely worded. However, it runs to roughly 175 words, well over the explicit 120-word limit. For a busy manager, that is a clear failure of a hard constraint.",
+  "usage": {
+    "input": 1444,
+    "output": 1030
+  },
+  "cost": 0.026376
+}

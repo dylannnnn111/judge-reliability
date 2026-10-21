@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-14T01:46:12.103Z",
+  "outputTokens": {
+    "claude-opus-5-5": {
+      "answer": 249,
+      "plain": 56,
+      "rubric": 279,
+      "score": 320
+    },
+    "claude-sonnet-5-5": {
+      "answer": 226,
+      "plain": 95,
+      "rubric": 136,
+      "score": 259
+    },
+    "claude-haiku-5-5": {
+      "answer": 246,
+      "plain": 50,
+      "rubric": 299,
+      "score": 362
+    }
+  }
+}

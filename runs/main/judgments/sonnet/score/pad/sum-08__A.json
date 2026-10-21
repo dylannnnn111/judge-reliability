@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "sum-08",
+  "side": "A",
+  "score": 3,
+  "model": "claude-sonnet-5-5",
+  "text": "The response has accuracy problems, a length violation, and padding.\n\n- **Accuracy:** It opens by saying the fridge \"failed on 4 Oct\", which is wrong. It then adds a garbled sentence about \"the Sunday before the 2 Oct complaint\" and ends with a correction asking the reader to disregard the first sentence's date. A busy manager gets a confusing, self-contradicting account of a basic fact.\n- **Further inaccuracy:** It says Kevin was \"chased on more than one occasion\", but the ticket shows Megan chased him once, on 6 Oct. The customer noted the missing form and missing call on separate occasions, so this is overstated.\n- **Correct points:** The Priya Nand replacement, the Wednesday delivery, the separate Frostline collection with two calls, the $500 no-sign-off threshold, and the 9 Oct escalation to Amara Osei are all right.\n- **Missing points:** It leaves out that the claim needs receipts or photos. It also never says that Jason Reilly's leave caused the reassignment, though that is less critical.\n- **Concision:** It runs to roughly 230 words, nearly double the 120-word limit. Padding such as \"I would like to summarise\", \"kindly\", \"I appreciate\", and \"greatly appreciated\", plus the self-correction block, adds no value.\n\nOverall it gets the status right but breaks the length limit, states a wrong date, overstates the chasing, and is full of filler.\n\nScore: 3",
+  "usage": {
+    "input": 1522,
+    "output": 757
+  },
+  "cost": 0.010614
+}

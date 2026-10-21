@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-13",
+  "order": "ba",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify A as a knave and B as a knight. Both reasoning chains are valid: A cannot be a knight, since that would make its statement true and A a knave, so A is a knave, making the statement false. The statement being false means not both are knaves, so B must be a knight.\n\nResponse A spells out the logical step that a false \"both knaves\" means at least one is not a knave. Response B states the same point more concisely and leads with the answer in bold. Neither has an error, and both are well under the word limit, so neither is clearly better.\n\nVerdict: TIE",
+  "usage": {
+    "input": 582,
+    "output": 541
+  },
+  "cost": 0.00032869999999999997
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-22",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better.\n\nBoth responses correctly put the critical bug first: `jwt.decode` never checks the signature, so anyone can forge an admin token. Both also catch the missing expiry check, the 401/403 status confusion, the unvalidated `Bearer` prefix, and the exported or unvalidated secret.\n\nNeither stays under 200 words, but B is much closer. A runs roughly 330 words and opens with filler (\"Thank you for sharing this code…\"). B is leaner and gives a short code fix.\n\nA's ranking is weaker. It rates exporting `SECRET` as \"High\", which overstates it, and it ranks the dead `try/catch` and the 403/401 issue above more substantive concerns. B notes that `SECRET` is unused, which is a sharper observation. B also raises algorithm pinning and the `iss`/`aud` claims, which are relevant once `verify` is used. B's \"Minor\" items (single role claim, no logging) are mild padding. They are still flagged as minor and cost little.\n\nB is more concise, better prioritized, and more actionable.\n\n**B**",
+  "usage": {
+    "input": 1722,
+    "output": 781
+  },
+  "cost": 0.011254
+}

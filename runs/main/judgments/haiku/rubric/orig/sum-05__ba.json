@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-05",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both summaries are accurate. Each gets the core result right (no significant difference in task speed or accuracy), reports the back-discomfort figures (31% vs 44%) and the 78% who felt more productive, and gives the standing-time drop (47 to 19 minutes). Both note the short task and the lack of blinding. Both are under 120 words.\n\nResponse A hedges better: it says the novelty \"appears to fade,\" which matches the brief's \"suggests.\" Response B states it as fact, a minor overstatement. Response A is also a little tighter.\n\nResponse B gives the busy manager something to act on. Its \"Implication\" line, to justify the desks on comfort and health rather than productivity, follows directly from the brief's interpretation that back discomfort is the most reliable benefit. Its framing of \"even though 78% *felt* more productive\" also makes the perception-versus-measurement gap clear in one phrase. Response A lists the same facts but leaves the manager to draw the conclusion.\n\nOn balance, B's small overstatement is outweighed by its more useful takeaway for the reader's decision, so B is marginally better.\n\nVerdict: B",
+  "usage": {
+    "input": 1371,
+    "output": 1042
+  },
+  "cost": 0.0006581
+}

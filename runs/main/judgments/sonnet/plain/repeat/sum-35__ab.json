@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "sum-35",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better, mainly because it respects the word limit.\n\n**Word limit.** Response A comes to about 120 words, which is not \"under 120\". Response B comes to about 118 words, so it meets the limit.\n\n**Accuracy.** Response A hedges correctly with \"may incur rent\". Response B says \"Overrunning means paying daily rent\", which overstates the source. The lease says only that the tenant \"may have to pay\" rent for the extra days the landlord needs. Both responses cover the key points:\n- the Annexure C standard, with fair wear and tear\n- the 30 June 2027 deadline\n- the removal and repair list\n- the kitchenette exception\n- the payment-in-lieu option with its three-month notice\n- the bond\n\n**Format.** Response B's headings and bullets are easier for a busy manager to scan.\n\nB's loss of the \"may\" hedge is a smaller flaw than A missing the stated word limit.\n\n**B**",
+  "usage": {
+    "input": 1300,
+    "output": 2045
+  },
+  "cost": 0.02305
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-37",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are correct and under 120 words (A is about 108, B about 114). Each says the red colour comes from iron oxidising in the arkose sandstone, that the interior is grey, and that sunrise and sunset light intensifies the colour.\n\nA gives slightly better reasoning in two places:\n- It names hematite and explains the sunset effect more fully, saying the longer atmospheric path scatters away blue light and leaves the red.\n- It says the grey interior is visible where the surface has flaked away, which is accurate.\n\nB is also clear, and it adds the detail that the oxidation took place over millions of years. Its sunset explanation is thinner: \"light richer in red wavelengths\" without saying why. Overall A is marginally stronger.\n\nVerdict: A",
+  "usage": {
+    "input": 726,
+    "output": 962
+  },
+  "cost": 0.011072
+}

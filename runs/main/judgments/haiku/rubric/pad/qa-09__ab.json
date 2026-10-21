@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-09",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct answer, 7.5°, and both show the key reasoning: the minute hand at 90° and the hour hand at 97.5°, giving a difference of 7.5°. Response B explains a bit more, including why 7.5° is the smaller angle, but that extra explanation is not needed here. More importantly, B runs to roughly 165 words, which breaks the \"under 120 words\" instruction. Response A is about 40 words, meets the constraint, and still contains all the essential reasoning. Since correctness is equal, the word limit decides it in favor of A.\n\nVerdict: A",
+  "usage": {
+    "input": 761,
+    "output": 399
+  },
+  "cost": 0.00027560000000000003
+}

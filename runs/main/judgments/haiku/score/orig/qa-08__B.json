@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-08",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response is correct throughout. 375 mL × 0.048 = 18 mL of ethanol, 18 mL × 0.789 g/mL ≈ 14.2 g, and 14.2 g ÷ 10 g ≈ 1.42 standard drinks, so \"about 1.4\" is the right answer. It gives the key steps (volume of ethanol, conversion to mass, division by the 10 g standard) and stays well under the 120-word limit. The layout is clear. The one weakness is the unsupported closing claim that \"Australian labels round this to 1.4,\" which is extraneous and not verifiable from the question, so it slightly detracts from an otherwise solid answer.\n\nScore: 8",
+  "usage": {
+    "input": 403,
+    "output": 431
+  },
+  "cost": 0.00025580000000000004
+}

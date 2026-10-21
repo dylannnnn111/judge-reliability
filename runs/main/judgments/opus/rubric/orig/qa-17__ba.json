@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-17",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** Both responses correctly name Venus at about 465°C and attribute its heat to a runaway greenhouse effect from a thick CO₂ atmosphere. Both mention the sulfuric acid clouds and the roughly 90× Earth surface pressure. Neither contains a factual error. B's suggestion that pressure \"further contributes\" is loosely phrased, but it is defensible.\n\n**Key reasoning:** Both raise the Mercury paradox, but only A resolves it. A explains that Mercury has almost no atmosphere and so loses its heat to space. That completes the \"why\" of the comparison both responses invoke. A also adds that the dense atmosphere spreads heat so evenly that day and night sides, and poles and equator, are almost equally hot. This is a correct and useful detail that reinforces the role of the atmosphere. B states the mechanism adequately but leaves the Mercury contrast unexplained.\n\n**Clarity and constraint:** A is about 117 words, so it meets the under-120 limit, if narrowly. Its bullets separate the causal factors clearly. B is shorter and readable as a single paragraph, but less structured.\n\nA's extra content is correct and adds real explanatory value, especially the Mercury explanation.\n\nVerdict: A",
+  "usage": {
+    "input": 768,
+    "output": 926
+  },
+  "cost": 0.021592
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-21",
+  "side": "A",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate. The totals check out: $38,190 × 6 = $229,140, which is $13,140 over the $216,000 budget, and $34,980 × 6 = $209,880. The fuel savings, the 24 October deadline, the February fallback, the roughly two-month gap and the $1,800 hire cost are all correct. \"Dearer\" for Coastal is fair, since its petrol is the most expensive. Dominic's recommendation, and the fact that it needs Ruth's sign-off because it exceeds his delegation, are attributed correctly.\n\nIt keeps the points a busy CEO needs: the decision, the recommendation and its cost, the budget gap, the justification, the alternative, the deadline and the cost of missing it. At about 119 words it is just under the limit. The only small omission is that it doesn't say the hybrid is the cheapest of the hybrids, but that is not essential.\n\nScore: 9",
+  "usage": {
+    "input": 1184,
+    "output": 1628
+  },
+  "cost": 0.018648
+}

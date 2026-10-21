@@ -1,0 +1,14 @@
+{
+  "pair": "qa-30",
+  "side": "A",
+  "author": "sonnet",
+  "model": "claude-haiku-5-5",
+  "original": "**What it is:** A p-value is the probability of seeing data at least as extreme as what you observed, *assuming the null hypothesis is true* (along with the model's other assumptions). It measures how surprising your data would be in a world where there's no effect.\n\n**What it is NOT:**\n- Not the probability the null hypothesis is true\n- Not the probability your result happened \"by chance\"\n- Not the probability your finding will replicate\n- Not a measure of effect size or practical importance\n- Not proof: p < 0.05 doesn't mean \"real,\" and p > 0.05 doesn't mean \"no effect\"\n\nA small p-value suggests the data are incompatible with the null model, but it can't tell you how likely any hypothesis is without prior information.",
+  "text": "**What it is:** A p-value is the probability of seeing data at least as extreme as what you observed, *assuming the null hypothesis is true* (along with the model's other assumptions). In other words, it measures how surprising your data would be in a world where there's no effect. Put another way, the p-value answers a specific question: if the null hypothesis were correct, how often would we expect results this extreme or more extreme to appear?\n\n**What it is NOT:**\n- Not the probability the null hypothesis is true\n- Not the probability your result happened \"by chance\"\n- Not the probability your finding will replicate\n- Not a measure of effect size or practical importance\n- Not proof: p < 0.05 doesn't mean \"real,\" and p > 0.05 doesn't mean \"no effect\"\n\nBecause these points are easy to confuse, it's worth going through them one at a time. Each item in the list above describes a common misreading, and each is worth keeping in mind when interpreting results.\n\nTo summarize the key takeaway, a small p-value suggests the data are incompatible with the null model. However, it can't tell you how likely any hypothesis is without prior information. I hope this clarifies the distinction, and please feel free to ask if any part would benefit from further explanation.",
+  "ratio": 1.72,
+  "usage": {
+    "input": 421,
+    "output": 954
+  },
+  "cost": 0.0005191
+}

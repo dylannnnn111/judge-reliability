@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-02",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer, 96 km/h, with the same correct reasoning. The user asked for fewer than 120 words, so I counted each response.\n\nResponse A: the heading has about 5 words. The bullets add roughly 8 + 12 + 5 + 8 words, about 33. The calculation line adds about 8. The last paragraph is about 40 words. That puts the total at roughly 95–100, so it is under 120.\n\nResponse B: the opening is about 22 words (\"Thank you for your question. Your average speed for the whole round trip works out to 96 km/h.\"). The next sentence adds about 14. The bullets are about 25 + 9 + 12 + 8 = 54. The \"Putting these figures together\" line is about 12. The last paragraph is about 65 words. That totals roughly 165–175, which exceeds 120.\n\nResponse B breaks the length limit and A follows it, and the content is otherwise equivalent. A also states the harmonic mean formula explicitly. A is better.\n\nVerdict: A",
+  "usage": {
+    "input": 867,
+    "output": 329
+  },
+  "cost": 0.005024
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-25",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse A runs to about 170 words, well over the 120-word limit. Much of the excess is padding a busy manager doesn't need (\"To be clear at the outset,\" \"To give some background,\" \"We would like to note that\"). A does cover more: the leaked \"we've been hacked\" email and the comms guide update. But it breaks the explicit constraint, and its wordy style works against the brief.\n\nResponse B is about 107 words, within the limit, and concise. It covers the cause, scope, what was and wasn't exposed, no external access, containment, notifications, fixes and the next statement date. Its main flaw is \"stopped after 35 minutes,\" which the source doesn't support: the job's start time is never given, and 9:35am was 75 minutes after the first call. It also omits the leaked staff email and the comms guide action.\n\nOn balance, meeting the hard length requirement and staying readable outweighs A's slightly fuller coverage.",
+  "usage": {
+    "input": 1337,
+    "output": 1042
+  },
+  "cost": 0.026188
+}

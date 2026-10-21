@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-26",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy.** Both responses are essentially accurate on the key facts: two residents trapped and freed within an hour, the worn door controller board, the part from Melbourne, the 2:10pm return on 23 September, 11 meal deliveries, four residents helped with an evacuation chair, two residents staying with family, the Tower A check, the $2,300 spare board, and the second-lift request referred to the board.\n\n- **Response A** words one point loosely: it says staff \"helped four residents to medical appointments.\" Staff actually helped them down the stairs, not necessarily to the appointments.\n- **Response B** says residents were \"carried down the stairs,\" which is closer to the source.\n- Neither response is materially wrong.\n\n**Keeping the needed points.** Response A is more complete. It includes:\n- the families of high-care residents being phoned,\n- the staff refresher training on the evacuation chair, which is a safety follow-up a manager would care about,\n- the approval date.\n\nResponse B omits all three.\n\n**Concision and format.** Both exceed the 120-word limit by a similar margin (roughly 145–155 words each), so neither gains an advantage there. Response A's labelled sections (Impact / Actions / Feedback) make it faster for a busy manager to scan. Response B is plain prose of similar length but conveys less.\n\n**Overall.** With accuracy roughly equal and length violations comparable, Response A wins on completeness of follow-up actions and on scannability.\n\nVerdict: A",
+  "usage": {
+    "input": 1541,
+    "output": 1590
+  },
+  "cost": 0.037964
+}

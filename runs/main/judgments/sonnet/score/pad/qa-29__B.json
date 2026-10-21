@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "qa-29",
+  "side": "B",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The request limits the answer to under 120 words. Counting the response: it's roughly 170 words, so it breaks the length constraint clearly.\n\nCorrectness: simple interest at 5% on $1,000 for 30 years gives $1,000 + $1,500 = $2,500, which is right. Compound: 1.05^30 ≈ 4.3219, so $4,322, which is right. The Rule of 72 gives 14.4 years, which is fine. The content is accurate.\n\nKey reasoning: interest on interest, linear versus exponential growth, widening gap over time. All good.\n\nClarity: well organized, though it has filler (\"Compound interest wins for a simple reason\", \"it helps to compare\", \"If you would like a quick way...\"). The Rule of 72 is an extra that doesn't answer the question. The length violation is the main flaw, since the user gave an explicit constraint.\n\nThe content is correct and explanatory, but ignoring the word limit by about 40% is a significant instruction-following failure, and the padding adds little.\n\nScore: 4",
+  "usage": {
+    "input": 563,
+    "output": 337
+  },
+  "cost": 0.004496
+}

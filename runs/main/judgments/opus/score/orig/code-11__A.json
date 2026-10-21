@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "code-11",
+  "side": "A",
+  "score": 6,
+  "model": "claude-opus-5-5",
+  "text": "**Content:** The response is technically strong.\n\n- **Issue #1** is the real, critical bug. The check-then-act runs across two separate lock acquisitions, which allows overselling. It is correctly explained, and the fix is right.\n- **Issue #2** is also a genuine and important point. With multiple processes or servers, a `threading.Lock` is insufficient. The atomic conditional UPDATE is the right fix.\n- **Issue #3** is real. A negative qty inverts the operation.\n- **Issue #4** is reasonable design feedback.\n- **Issue #5** is fair, though minor.\n- **Issue #6** is speculative, since it depends on the unknown `get_stock` contract, but it is labelled sensibly.\n\nThe ranking is good and every item has a fix. Nothing that is actually fine gets flagged as broken.\n\n**Length:** The user explicitly asked for under 200 words. By my count the response is roughly 240–250 words, a clear violation of an explicit constraint. Items 5 and 6 could have been cut or compressed to fit. The extra words aren't wrong, but the user set the limit and the response ignored it.\n\n**Verdict:** Strong technical review with correct priorities, penalized for exceeding the requested length.\n\nScore: 6",
+  "usage": {
+    "input": 995,
+    "output": 895
+  },
+  "cost": 0.02188
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-15",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-opus-5-5",
+  "text": "Both responses give the correct answer of 18 °F. Each notes that a temperature *difference* converts using only the 9/5 factor, without the 32-degree offset. Each also confirms the result by converting the endpoints: 59 °F and 77 °F.\n\nThe differences are purely cosmetic:\n- **Response A** writes \"°F\" and says the offset \"cancels out.\"\n- **Response B** writes \"degrees Fahrenheit\" and says the difference scales \"without the 32-degree offset.\"\n\nBoth stay well under the 120-word limit and are equally clear and accurate.\n\n**TIE**",
+  "usage": {
+    "input": 414,
+    "output": 320
+  },
+  "cost": 0.008056
+}

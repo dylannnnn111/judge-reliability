@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-01",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "A is better. Both summaries are accurate and cover the new deadline, the required deliverables, the template, the variance threshold, the leave nomination, the optional drop-in and the call-today instruction.\n\nThe differences are length and format:\n\n- **Length:** A comes to about 119 words even if the \">\" symbols in the file path are counted, so it is safely under 120. B comes to about 117 words without the symbols and about 122 with them, so it risks going over.\n- **Format:** A opens with the key change, the deadline moving to Friday 30 October, and puts the deliverables and requirements in short bullets. That suits a manager who skims. B packs everything into one dense paragraph, which is harder to scan.\n\nA also makes it clearer which items are obligations and which are optional.\n\n**A**",
+  "usage": {
+    "input": 1258,
+    "output": 1783
+  },
+  "cost": 0.020346
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-36",
+  "side": "B",
+  "score": 8,
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** The core physics is right. Lift comes from a pressure difference, with lower pressure over the upper surface, and from the wing turning airflow downward. The answer names both airfoil shape and angle of attack, and it avoids the common \"equal transit time\" fallacy. There are two minor imprecisions:\n- It credits the slower flow beneath the wing to the \"flatter lower surface,\" which hints that camber is essential. Symmetric wings and flat plates also produce lift through angle of attack alone.\n- \"Newton's third law also plays a role\" suggests a separate, additional mechanism. In fact, pressure difference and downward deflection are two consistent descriptions of the same phenomenon. The final sentence partly corrects this by saying they act \"together.\"\n\n**Key reasoning:** It explains pressure difference, faster upper flow, downwash and the reaction force. That is adequate for the word limit, though it doesn't say *why* the air speeds up over the top.\n\n**Clarity:** It is well organised and easy to follow. At about 105 words, it meets the under-120 constraint.\n\nOverall it is a solid, accurate popular explanation with small conceptual looseness.\n\nScore: 8",
+  "usage": {
+    "input": 397,
+    "output": 621
+  },
+  "cost": 0.014008
+}

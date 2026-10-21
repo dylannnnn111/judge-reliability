@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-08",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse A has a factual error: it says the fridge failed on 4 Oct, which is after the 2 Oct complaint. It then adds an awkward correction at the end asking the reader to disregard part of its first sentence. That self-correction is confusing for a busy manager and pushes the summary past the 120-word limit.\n\nResponse B is clean, accurate on the key points, and within the word limit. Its one weakness is stating the failure date as 29 September. That is an inferred date: the text only says \"Sunday,\" and no year is given. Still, it is a reasonable inference and a far smaller flaw than A's contradiction and retraction.",
+  "usage": {
+    "input": 1486,
+    "output": 475
+  },
+  "cost": 0.015444
+}

@@ -1,0 +1,14 @@
+{
+  "pair": "sum-29",
+  "side": "B",
+  "author": "sonnet",
+  "model": "claude-haiku-5-5",
+  "original": "**Summary:** Pivot Mobile is raising postpaid plan prices from the first bill after 15 November 2026, while also increasing data.\n\n- **Small:** $35 → $38 (20GB → 30GB)\n- **Medium:** $45 → $49 (60GB → 80GB)\n- **Large:** $60 → $65 (150GB → 200GB)\n\n**Who's affected:** Only customers on current plans (introduced March 2024). Customers on the older \"Classic\" plans are unchanged this year. Customers on fixed 12- or 24-month contracts see no change until their contract ends.\n\n**Options:** Customers can leave or switch plans without an exit fee if they do so before 15 November. Device repayments still apply.\n\n**Reason:** Higher network costs and investment in regional coverage, including 120 new sites in Queensland and Western Australia.\n\n**Support:** In-app chat or 13 PIVOT, 8am–8pm daily.",
+  "text": "**Summary:** Pivot Mobile is raising the prices of its postpaid plans starting with the first bill issued after 15 November 2026. At the same time, the company is increasing the amount of data included in each plan.\n\nHere is how the changes will look for each plan:\n\n- **Small:** $35 → $38 (20GB → 30GB)\n- **Medium:** $45 → $49 (60GB → 80GB)\n- **Large:** $60 → $65 (150GB → 200GB)\n\n**Who's affected:** The price changes apply only to customers on current plans, which were introduced in March 2024. Customers on the older \"Classic\" plans will not see any change this year. Customers on fixed 12- or 24-month contracts will also see no change until their contract ends.\n\n**Options:** If you would like to avoid the new prices, you can leave or switch plans without an exit fee, provided you do so before 15 November. Please note that any device repayments still apply.\n\n**Reason:** Pivot Mobile has explained that the increases reflect higher network costs and its investment in regional coverage. This includes 120 new sites in Queensland and Western Australia.\n\n**Support:** If you have questions or need help, you can contact Pivot Mobile through the in-app chat or by calling 13 PIVOT. Support is available from 8am to 8pm, every day.",
+  "ratio": 1.68,
+  "usage": {
+    "input": 495,
+    "output": 561
+  },
+  "cost": 0.00033
+}

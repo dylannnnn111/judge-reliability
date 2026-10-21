@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-09",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Each gives the correct starting rent, the 1 March review date, the 3% to 5% CPI band for years 2 to 4, the uncapped year-5 market review with the year-4 floor, the 30-day dispute window, the 50/50 valuer cost split, the separately billed outgoings, and the 14-day notice rule with its late-notice consequence. Both come in well under 120 words and keep every point a manager needs. Response A's \"could rise sharply\" slightly overstates what the guide says, and Response B's \"landlord-appointed valuer\" is a reasonable reading of \"the landlord gets a valuer.\" Response A keeps the \"not legal advice\" caveat, which is useful context for a manager, while Response B states more precisely that increases \"could be larger.\" These differences are minor and roughly offset each other.\n\nVerdict: TIE",
+  "usage": {
+    "input": 1503,
+    "output": 939
+  },
+  "cost": 0.0006198
+}

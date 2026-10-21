@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-40",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.** Both get the top bugs right, but B finds two real issues that A misses, at the cost of being slightly longer.\n\n**Shared findings:**\n- **Pipeline subshell.** Both correctly identify the most important bug: the pipeline puts the `while` loop in a subshell, so `alerts` stays 0 and the script never pages for a full disk. Both rank it first and give the process-substitution fix. B also offers `shopt -s lastpipe` as an alternative.\n- **`curl` failure under `set -e`/`pipefail`.** Both catch that a failed `curl` aborts the loop and pages for the wrong reason. B frames it sharply: combined with bug 1, the page fires only when the webhook is broken. That framing is accurate and helps the reader see how bad the current behavior is.\n- **Non-numeric `Use%`.** Both catch the `-` value crashing the script. B gives a concrete validation snippet; A only says to skip such rows.\n- **Alert spam.** Both raise the repeated-alert issue. A's item 5 (\"two alert channels\") is vaguer, and B folds the same point into its item 5.\n\n**Issues only B raises:**\n- **Squashfs/snap loop mounts.** These always report 100% on Ubuntu-like systems. With a threshold of 90, the script would alert constantly if the paging bug were fixed. This is a real, high-impact problem, and A misses it entirely.\n- **Stale NFS mounts hanging `df`.** Cron runs would pile up. This is a legitimate operational concern, and B suggests `timeout` plus `curl --max-time` as fixes.\n- **Minor nits.** B's unused-variables point is trivial but clearly labeled minor. Inode checking is a fair addition.\n\n**Length:** Both responses appear to exceed the 200-word limit; B somewhat more so. B's extra content is correct and useful, though, and A is also over the limit. On substance, B covers more of the issues that matter, ranks them sensibly, and gives concrete fixes.\n\nVerdict: B",
+  "usage": {
+    "input": 1729,
+    "output": 1296
+  },
+  "cost": 0.032836
+}

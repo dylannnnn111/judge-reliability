@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-24",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main bug first: the duplicate check runs before the `await` and the add runs after it, so concurrent duplicates both process. Both also cover the non-durable in-memory `Set`, non-constant-time signature comparison, error handling, replay protection, and the amount check. The amount check and replay window are somewhat speculative in both.\n\n**Response A**\n- It adds the crash-between-side-effect-and-mark problem as its own item, which is a real and distinct issue.\n- It notes that `timingSafeEqual` throws on mismatched lengths.\n- It points out that an exception leaves the request with no response.\n- Its fix for the race is only implied, through the unique constraint in item 2, rather than stated as \"claim before processing.\"\n- At roughly 270 words it is over the 200-word limit, but with no filler.\n\n**Response B**\n- Its fix for the race is more explicit: claim the ID atomically before processing and release the claim on failure.\n- Its error-handling item also covers malformed JSON and a missing `event.data`, with a 400 versus 500 distinction.\n- It opens with a filler preamble that restates the request.\n- At roughly 330 words it breaks the 200-word limit by more, and it is wordier throughout.\n- It folds the crash and idempotency concern into item 2, so that issue gets less emphasis.\n\nThe content is comparable, with B somewhat better on the race fix and input validation. A is tighter and closer to the length constraint, with no padding, and it separates the crash-window issue more clearly. Since the length instruction was explicit and B overshoots it more and adds filler, A is slightly better overall.\n\nVerdict: A",
+  "usage": {
+    "input": 1856,
+    "output": 1037
+  },
+  "cost": 0.014082
+}

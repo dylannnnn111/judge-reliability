@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-11",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth summaries run over the 120-word limit by similar amounts: A is about 137 words and B about 132. Neither has a clear advantage on that constraint.\n\nOn content, A is more complete and precise:\n- It notes that Sam's team handles computers.\n- It notes that Lena is responsible for the archive room and client files.\n- It gives explicit dates, such as Monday 17 November for laptop return and the welcome.\n\nB is slightly tighter and sensibly groups parking under Rachel. However, it drops computers from Sam's remit and omits Lena's archive responsibility.\n\nA also frames its points as information about what staff must do, using phrases like \"Staff shouldn't pack…\" and \"everyone should attend\". That suits a manager who needs an overview. B uses instructions addressed directly to staff (\"don't pack them\", \"Take laptops home\"), which reads more like a re-sent all-staff email than a briefing.",
+  "usage": {
+    "input": 1474,
+    "output": 1626
+  },
+  "cost": 0.038416
+}

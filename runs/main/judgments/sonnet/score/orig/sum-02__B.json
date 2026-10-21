@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-02",
+  "side": "B",
+  "score": 7,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is mostly accurate, well organised and under 120 words (about 114). It has several small flaws:\n\n- **Volunteers:** It says each branch \"must send two launch-day volunteers to Kate by 24 October.\" The minutes say managers should send *names* of two volunteers per branch by that date. This is a minor misstatement of the action.\n- **Roof:** It says the roof \"needs full replacement within two years.\" The minutes say the contractor *recommends* this, and the leak has already been patched. The summary overstates the recommendation and leaves out the patch.\n- **Opening hours:** It leaves out Anjali's view that the Corrie Creek Thursday opening should not depend on cutting Mount Lavell hours. This was a significant point in the debate. It also doesn't say the revised figures will exclude the faulty weeks, though \"faulty visitor counter data\" implies it.\n- **Omissions:** The 24 October deadline is kept, and the next meeting date is included. The Christmas party and morning tea roster are reasonably dropped.\n\nOverall it is clear and concise, but the volunteer and roof wording are slightly inaccurate.\n\nScore: 7",
+  "usage": {
+    "input": 1230,
+    "output": 1584
+  },
+  "cost": 0.0183
+}

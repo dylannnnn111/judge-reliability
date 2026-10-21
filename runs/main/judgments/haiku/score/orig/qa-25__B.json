@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-25",
+  "side": "B",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response answers the question directly (\"No\") and that answer is correct. The Gjermundbu helmet description is accurate as the most complete Viking-age helmet, and the 19th-century origin of the horned image is well supported, with Malmström and Doepler named correctly. The Veksø reference is apt, and \"about 1,500 years\" is a fair approximation of the gap. The claim that most warriors wore simple caps or no helmet is hedged appropriately, though \"helmets were expensive\" is an inference rather than a documented fact. At roughly 107 words, it fits the limit and each sentence adds relevant content. Clarity is good, with a clear answer followed by context.\n\nScore: 9",
+  "usage": {
+    "input": 468,
+    "output": 892
+  },
+  "cost": 0.0004928
+}

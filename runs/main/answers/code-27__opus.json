@@ -1,0 +1,13 @@
+{
+  "item": "code-27",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**1. Unbounded concurrency.** `Promise.all(emails.map(send))` starts all ~80,000 sends at once. This will likely hit provider rate limits, exhaust sockets/file descriptors, or get you throttled or flagged as spam. Use a concurrency limiter (e.g. p-limit, 10–50 at a time) or batch sends.\n\n**2. One failure loses the whole run's outcome.** `Promise.all` rejects on the first error, but the other sends keep running. You can't tell who received the email. Rerunning resends to everyone already mailed. Use `Promise.allSettled` (or per-send try/catch), record successes, and make retries idempotent (e.g. track sent IDs per campaign).\n\n**3. Misleading return value.** `emails.length` is returned as if all sends succeeded. Return sent/failed counts instead.\n\n**4. No retry on transient errors.** A single failed `fetchPage` aborts collection, and a failed `send` is never retried. Add retry with backoff.\n\n**5. Bad data crashes everything.** A customer with a null or undefined `email` makes `toLowerCase()` throw and kills the run. Validate and skip these. Also `trim()` addresses before deduping.\n\n**6. Pagination has no loop guard.** If the API returns the same cursor repeatedly, the loop never ends. Detect repeated cursors or cap the page count.\n\n**7. Stale opt-in.** Someone who unsubscribes during the run still gets mailed. Consider rechecking opt-in at send time.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 444,
+    "output": 830
+  },
+  "cost": 0.018376,
+  "at": "2026-10-14T01:54:21.998Z"
+}

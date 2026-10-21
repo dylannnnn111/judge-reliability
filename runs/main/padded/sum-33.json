@@ -1,0 +1,14 @@
+{
+  "pair": "sum-33",
+  "side": "B",
+  "author": "opus",
+  "model": "claude-haiku-5-5",
+  "original": "**ShiftNest 12.4 (28 Oct 2026): Summary**\n\n**Action required (if applicable):** If your payroll export uses the old v1 connector (Admin > Integrations > Payroll (v1)), switch to v2. The shutdown was **extended to 31 January 2027**, but switch soon. Otherwise timesheets will stop reaching payroll and staff could be paid late. It takes about 15 minutes, with a guide in the help centre. Only ~8% of customers are affected.\n\n**New features (automatic):**\n- Managers can approve shift swaps for their own areas only.\n- Public holiday penalty rates now apply automatically for Hospitality and Retail awards, by state.\n- Staff get push notifications for open shifts.\n\n**Also:** faster rosters for large sites, unpaid break minutes in timesheet exports, availability up to 12 weeks ahead, and fixes for daylight saving and SA time zone errors.",
+  "text": "**ShiftNest 12.4 (28 Oct 2026): Summary**\n\nThank you for taking the time to read this summary of the ShiftNest 12.4 release, which went out on 28 October 2026. Below, you'll find any action that may be required of you, followed by the new features and other improvements included in this update.\n\n**Action required (if applicable):** If your payroll export uses the old v1 connector (Admin > Integrations > Payroll (v1)), we kindly ask that you switch to v2. The shutdown of the v1 connector has been **extended to 31 January 2027**, but we would still encourage you to switch soon. Otherwise, timesheets will stop reaching payroll, and staff could be paid late. The switch takes about 15 minutes, and a step-by-step guide is available in the help centre. Only around 8% of customers are affected by this change.\n\n**New features (automatic):** The following features are enabled automatically with this release, so no action is needed on your part:\n- Managers can approve shift swaps for their own areas only.\n- Public holiday penalty rates now apply automatically for Hospitality and Retail awards, by state.\n- Staff get push notifications for open shifts.\n\n**Also:** This release includes a number of other improvements. These cover faster rosters for large sites, unpaid break minutes in timesheet exports, availability up to 12 weeks ahead, and fixes for daylight saving and SA time zone errors.",
+  "ratio": 1.72,
+  "usage": {
+    "input": 495,
+    "output": 1104
+  },
+  "cost": 0.0006015
+}

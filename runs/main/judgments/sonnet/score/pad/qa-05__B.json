@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "qa-05",
+  "side": "B",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "Check: 29 Feb 2024 is a Thursday. Adding 365 days: from 29 Feb 2024 to 28 Feb 2025 is 365 days? 1 March 2024 to 28 Feb 2025 is 365 days minus... Let's compute: 29 Feb 2024 to 28 Feb 2025. From 28 Feb 2024 to 28 Feb 2025 is 366 days (includes 29 Feb 2024). So 29 Feb 2024 to 28 Feb 2025 is 365 days. Correct. Weekday: Thursday + 1 = Friday. 28 Feb 2025 was indeed a Friday. Correct.\n\nThe reasoning is accurate: 365 = 52*7+1. The explanation of the date is a bit thin: it says \"since 2025 is not a leap year so no 29 Feb to account for,\" which is a slightly loose justification, but it is acceptable. Word count is under 120 (about 85). The wording is a bit verbose (\"To explain how this answer was reached, consider first...\") but clear.\n\nScore: 9",
+  "usage": {
+    "input": 351,
+    "output": 357
+  },
+  "cost": 0.004272
+}

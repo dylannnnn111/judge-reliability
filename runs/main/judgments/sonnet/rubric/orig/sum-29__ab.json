@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-29",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is the stronger one, mainly on accuracy.\n\n**Accuracy:** Response A merges two separate conditions into one sentence: \"Classic plan customers and those on fixed-price contracts are unaffected until their contract ends.\" This suggests Classic customers are protected only until a contract ends. The notice actually says Classic customers won't change \"this year\", and the contract wording applies only to fixed-term customers. Response B keeps the two groups distinct and matches the notice. A's other details are correct. A also says \"the reason given\", which is a careful attribution.\n\n**Coverage:** Both include the prices, the data increases, the effective date, who is affected, the no-exit-fee option with the 15 November deadline, the device repayment caveat, and the reason. B pairs each price with its data increase, which is easier to scan. B also adds the support contact and hours, which a manager might want but is not essential.\n\n**Concision:** A is about 112 words. B is about 117 words without the arrow symbols and about 123 if a strict counter counts each \"→\" as a word. B is therefore right at the limit and could be slightly over. That is a minor risk, and it does not outweigh A's misleading sentence.\n\nVerdict: B",
+  "usage": {
+    "input": 1406,
+    "output": 2497
+  },
+  "cost": 0.027782
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-18",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. Both responses correctly identify Janszoon and the *Duyfken* landing at Cape York in 1606, and both are accurate about Hartog. However, Response A runs to roughly 165 words, well over the 120-word limit, while Response B stays within it at about 100 words.\n\nB",
+  "usage": {
+    "input": 660,
+    "output": 931
+  },
+  "cost": 0.0005315
+}

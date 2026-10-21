@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-40",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "A\n\nResponse A follows the instruction to stay under 200 words. Response B runs well over that limit because of its introductory sentence and seven detailed items. Both identify the main bug, the subshell that stops the exit code from ever being set, and both catch the `curl` and non-numeric `pct` problems. Response B adds useful points about NFS hangs and pseudo-filesystems, but the word limit is an explicit constraint, so Response A is the better answer.",
+  "usage": {
+    "input": 1811,
+    "output": 504
+  },
+  "cost": 0.0004331
+}

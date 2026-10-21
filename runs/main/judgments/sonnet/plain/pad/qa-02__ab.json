@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-02",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. It stays under the 120-word limit, at roughly 91 words. **B** goes well past it, at around 160 words, because of its filler intro and longer explanations. Both reach the correct answer of 96 km/h with the same method, so the word limit decides it.\n\n**A**",
+  "usage": {
+    "input": 722,
+    "output": 1024
+  },
+  "cost": 0.011684
+}

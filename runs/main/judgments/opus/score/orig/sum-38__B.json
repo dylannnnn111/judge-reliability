@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-38",
+  "side": "B",
+  "score": 5,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** The facts are correct.\n- Dates are right: 18 Nov launch, 3 Nov submission, 12/14/17 Nov milestones, next update 24 Oct.\n- Numbers are right: 431/600, 4.3/5, 23/21/2 bugs, $268.5k of $290k.\n- Conditions are right: rejection could cause a delay of up to a week.\n- \"Used it\" slightly simplifies \"installed and logged in at least once\", but it isn't misleading.\n- There is a minor typo: \"App stores submissions\".\n\n**Key points:** It covers status, beta results, the launch timeline, budget and the main risk. However, it drops the Responsibilities section entirely, so it doesn't say who owns what. A manager would likely want named owners (Jackson, Amelia, Tyrone, Harper), since they are the people to chase if something slips. It also omits the up-to-a-week store review window, though the risk line partly covers this.\n\n**Concision and constraint:** The explicit instruction was under 120 words. By my count the response is about 140 words, roughly 15–20% over. That is a clear failure on a stated requirement. Some detail could have been cut to fit, such as the specific liked features or the load-time figure. Meanwhile the more useful owner information was left out.\n\nOverall, the summary is accurate and well structured, but it breaks the word limit and omits ownership.\n\nScore: 5",
+  "usage": {
+    "input": 1111,
+    "output": 1113
+  },
+  "cost": 0.026704
+}

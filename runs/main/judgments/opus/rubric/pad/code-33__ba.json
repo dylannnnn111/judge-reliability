@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-33",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both responses find the critical bug, and both give the correct fix. `p.status = 'succeeded'` in the `WHERE` clause turns the `LEFT JOIN` into an inner join, which removes exactly the zero-payment customers the list exists to surface. B adds that customers whose only payments failed are also dropped, which sharpens the point.\n\nAfter that, the responses diverge in quality.\n\n**Response A**\n- **Contradictory advice:** Its \"minor\" point suggests `COUNT(*)` would be clearer than `COUNT(p.id)`. That is wrong in a harmful way. With a `LEFT JOIN`, `COUNT(*)` counts the NULL-extended row, so zero-payment customers would show 1. This brings back a variant of the very bug A just fixed.\n- **Over-flagging the date filter:** It calls the comparison \"fragile\" when `paid_at` is a full timestamp. In SQLite, ISO-format timestamps compare correctly against a date-only string. The genuine risk, epoch storage, is mentioned only in passing.\n- **Weak extra point:** The UTC remark is marginal.\n- **Length:** It is padded with filler (\"I want to start with…\", \"Next, the date filter deserves a closer look\"). It runs well over the 200-word limit the user set.\n- **Credit:** Its \"non-free ≠ paying\" point is useful.\n\n**Response B**\n- **Domain-relevant issues:** It raises problems that matter for a churn list. Annual and quarterly subscribers would produce false alarms, which is a major real-world flaw for this use case. Cancelled accounts and new accounts are included. Refunds and chargebacks count as successful payments.\n- **Ranking and fixes:** It covers the NULL plan and epoch-storage risks accurately. The ranking is sensible, and most items include a fix or a check to make.\n- **Gaps:** Point 6 lacks a fix.\n- **Length:** It stays near the word limit with no padding.\n\nB finds more of the issues that matter, avoids incorrect advice, and is concise. A includes a harmful suggestion and an overstated date concern.\n\nVerdict: B",
+  "usage": {
+    "input": 1754,
+    "output": 1008
+  },
+  "cost": 0.027176
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-18",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses agree on the critical bug: the cache key ignores `to`. Both also cover response validation, timeouts, in-flight deduplication, URL encoding and unbounded cache growth. Both run slightly over 200 words.\n\nB is better in a few ways:\n\n- **Deduplication caveat:** B says to evict the cached promise if it rejects. A just says to cache the in-flight promise, which would cache failures for 60 seconds.\n- **Validation:** B explicitly flags a rate of `0`. A's `typeof` check is redundant with `Number.isFinite`.\n- **Domain relevance:** B's seventh point, money precision with floats, matters for an invoicing service. A's seventh point, the generic cast, is a minor type-safety nit.\n- **Input checking:** B also suggests validating `from` and `to` against ISO 4217 codes.",
+  "usage": {
+    "input": 1481,
+    "output": 563
+  },
+  "cost": 0.017184
+}

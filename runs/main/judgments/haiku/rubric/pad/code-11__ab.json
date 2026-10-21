@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-11",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the main bug: `reserve` checks stock under one lock acquisition and decrements under another, so two threads can both pass the check and drive stock negative. Both also raise the multi-process limitation of `threading.Lock`, the lack of input validation, the unverified `release`, and the global-lock bottleneck. B's inline code for the fix to point 1 is a useful touch that A lacks. However, B's point 6 (`available()` is advisory) mostly restates point 1, while A's point 6 (a `None` return from `get_stock` causing a `TypeError`) is a distinct, real edge case that B misses. B also opens with a filler preamble and runs well over the explicit 200-word limit, whereas A stays close to it. Since the user set a length constraint and A's content is at least as correct and covers an extra real issue, A is the better response, though the gap is modest.\n\nVerdict: A",
+  "usage": {
+    "input": 1789,
+    "output": 918
+  },
+  "cost": 0.0006379
+}

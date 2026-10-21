@@ -1,0 +1,13 @@
+{
+  "item": "code-14",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**1. OFFSET pagination while deleting skips half the rows (critical).** Each batch deletes the rows it just read, so the remaining rows shift down. Advancing `offset` by 100 then skips the next 100 unarchived rows. The job archives roughly every other batch and leaves the rest behind. Each nightly run only halves the backlog. **Fix:** drop OFFSET and always fetch `LIMIT ?` from the start, or use keyset pagination (`AND id > ?` with the last id seen).\n\n**2. Not crash-safe or idempotent.** If the process dies after `archive(rows)` but before `commit()`, the rows stay live and get archived again on the next run, creating duplicates. Either make `archive` idempotent (upsert by `id`) or have it dedupe. Also confirm `archive` is durable (flushed or acknowledged) before returning. Otherwise a deleted row may never have actually reached cold storage.\n\n**3. String comparison on `created_at`.** `created_at < ?` compares text lexicographically. This is only correct if the stored values and `cutoff` share the same ISO-8601 format and timezone. Mixed formats silently archive the wrong rows. Validate or normalize `cutoff`.\n\n**4. Performance.** Without an index on `(created_at, id)`, every batch rescans the table. A batch size of 100 means many commits; consider making it larger.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 337,
+    "output": 777
+  },
+  "cost": 0.016888,
+  "at": "2026-10-14T01:53:33.307Z"
+}

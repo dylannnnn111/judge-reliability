@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "code-28",
+  "side": "A",
+  "score": 6,
+  "model": "claude-sonnet-5-5",
+  "text": "The response finds the main real bugs and gives concrete fixes. The missing `client.release()` is correctly ranked first. The unlocked `SELECT` race condition and the unchecked destination wallet, where money vanishes if `toId` doesn't exist, are also correct and well fixed. The deadlock risk with opposing transfers is real once row locks are added. The masked `ROLLBACK` error is valid but minor. The ranking is mostly sensible.\n\nThere are weaknesses:\n- The response is well over the 200-word limit, roughly 250-300 words, which breaks an explicit instruction.\n- Item 4 (same-wallet transfer) is trivial, since the net effect is harmless.\n- Item 7 (audit trail and idempotency) is scope creep and speculative.\n- Item 8 is shaky. JavaScript coerces a string to a number in `<`, so the comparison would work for realistic values, and calling it \"unreliable\" overstates the problem.\n- Items 4, 7 and 8 pad the list, which hurts the \"avoid flagging fine things\" criterion.\n\nThe core analysis is strong, but the length violation and low-value items cost it points.\n\nScore: 6",
+  "usage": {
+    "input": 1241,
+    "output": 806
+  },
+  "cost": 0.010542
+}

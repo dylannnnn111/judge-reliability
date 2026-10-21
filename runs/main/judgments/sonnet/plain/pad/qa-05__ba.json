@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-05",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "B is slightly better. Both responses give the correct answer, Friday 28 February 2025, and both are under the word limit. The weekday reasoning is the same in each: 365 days is 52 weeks plus 1 day, so Thursday moves to Friday.\n\nThe difference is in delivery. B is tighter and states the result and reasoning directly. A pads its explanation with filler such as \"To explain how this answer was reached, consider first…\". Both justify the date with the same slightly thin point about 2025 not being a leap year, so that does not separate them.\n\n**B**",
+  "usage": {
+    "input": 376,
+    "output": 481
+  },
+  "cost": 0.005562
+}

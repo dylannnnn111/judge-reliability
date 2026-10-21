@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-36",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Word count matters here: the limit is under 120 words.\n\nResponse A: Count words. \"An aeroplane wing generates lift mainly through its airfoil shape and its angle of attack.\" (15) \"As the wing moves forward, air splits around it: the curved upper surface makes air flow faster and reduces pressure above the wing, while the flatter lower surface keeps air slower, leaving higher pressure below.\" (~34) → 49. \"The pressure difference pushes the wing upward.\" (7) → 56. \"Newton's third law also plays a role.\" (7) → 63. \"The wing deflects air downward, and the equal and opposite reaction pushes the wing up.\" (15) → 78. \"Together, the pressure difference and this downward turning of the airflow (described by Bernoulli's principle and Newton's laws) produce lift.\" (20) → 98. Under 120.\n\nResponse B is clearly well over 120 words (about 270).\n\nA satisfies the constraint; B violates it. A has the \"flatter lower surface keeps air slower\" simplification, which is slightly questionable, but B's length violation is decisive.\n\n**A**",
+  "usage": {
+    "input": 763,
+    "output": 358
+  },
+  "cost": 0.005106
+}

@@ -1,0 +1,13 @@
+{
+  "item": "code-19",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Problems, most important first:**\n\n1. **`forEach(async ...)` isn't awaited.** `processUploads` returns `outputs` immediately, before any resize finishes. The script prints \"made 0 thumbnails\" and may exit while work is still running. Fix: use `Promise.all(files.map(...))`, or a `for...of` loop with `await`.\n\n2. **Rejections are unhandled.** Because the async callbacks are detached from the returned promise, a failed resize is an unhandled rejection. `main`'s `.catch` never sees it, so the exit code is not set to 1 (and on modern Node the process may crash unpredictably). Awaiting properly fixes this.\n\n3. **The `thumbs` directory is never created.** Unless `resize` creates it, every call will fail with ENOENT. Add `await fs.mkdir(path.join(dir, \"thumbs\"), { recursive: true })` before the loop.\n\n4. **Unbounded concurrency.** After fixing #1 with `Promise.all`, a bulk upload would start hundreds or thousands of resizes at once, risking memory exhaustion or file-handle limits. Use a concurrency limit (e.g. `p-limit`) or process in batches.\n\n5. **No argument validation.** If `process.argv[2]` is missing, `readdir` throws an unhelpful error. Print a usage message instead.\n\n6. **Minor:**\n   - `readdir` includes subdirectories, so a directory named `foo.jpg` would be passed to `resize`.\n   - Output order would be nondeterministic with concurrency.\n   - One failure aborts everything, with no per-file error reporting. Consider `Promise.allSettled` for a bulk job.\n   - Re-running the script would not reprocess the `thumbs` folder's contents, since `readdir` isn't recursive, but existing thumbnails get overwritten silently.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 358,
+    "output": 617
+  },
+  "cost": 0.006886,
+  "at": "2026-10-14T01:53:49.029Z"
+}

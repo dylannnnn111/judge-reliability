@@ -1,0 +1,13 @@
+{
+  "item": "sum-05",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "**Summary:** A 12-week randomised study of 214 Queensland office workers found that sit-stand desks did not improve afternoon productivity. Task speed and accuracy were no different from those of workers with fixed desks, even though 78% of sit-stand users *felt* more productive.\n\nThe clearest benefit was less lower-back discomfort: 31% reported weekly discomfort versus 44% of the control group. Extra standing time also fell sharply, from 47 to 19 minutes a day, so the novelty fades.\n\n**Implication:** Justify these desks on comfort and health, not productivity gains. Limitations: the test task was short, and participants knew which desk they had.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 735,
+    "output": 218
+  },
+  "cost": 0.00365,
+  "at": "2026-10-14T01:51:09.337Z"
+}

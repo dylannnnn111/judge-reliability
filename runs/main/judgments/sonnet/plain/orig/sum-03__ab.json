@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-03",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better because it stays under the 120-word limit and A likely does not.\n\nBy my count, Response A comes to about 125 words, over the limit. Response B comes to about 100.\n\nBoth are accurate on the key figures: the failure counts, the $41,900 estimate, the 312 support contacts, and the done and pending actions. B also names the cause more specifically (connector B, the August renewal) and lists the actions with owners and dates in a scannable format.\n\nB's line \"Support escalation led to the fix\" slightly simplifies the timeline, but it is a fair summary.\n\n**B**",
+  "usage": {
+    "input": 1443,
+    "output": 1553
+  },
+  "cost": 0.018416
+}

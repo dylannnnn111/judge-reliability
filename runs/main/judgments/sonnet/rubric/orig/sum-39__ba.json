@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-39",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries are broadly accurate on the main facts: the 7-2 vote, the 1 December start, the $38,000 in wiped fines across 6,400 members, the five libraries, the 60-day replacement rule, the inter-library loan exception, the November email and the 12-month review.\n\n**Response A**\n- It keeps more of what a manager needs. It covers lost or damaged items, the blocked account, the automatic unblocking, and the revenue concern.\n- Its \"net about $33,000\" figure is an inference the article never states. The $19,000 was staff time, which may not be recoverable as cash, so this is mildly speculative. It is plausible and clearly labelled as arithmetic on the article's own numbers.\n- At roughly 113 words without the title and 121 with it, it sits at or just over the limit.\n\n**Response B**\n- It is accurate and avoids the net-cost inference.\n- It says \"Opponents say\" when only one councillor, Ashcroft, was quoted, which is a minor overgeneralisation.\n- It leaves out the lost/damaged exception and the account-blocking consequence.\n- At about 126 words, it is clearly over the 120-word limit.\n\nA is slightly more complete and closer to the word limit. B's plural \"Opponents\" is a small inaccuracy, while A's net figure is a modest risk. Overall A is somewhat better.\n\nVerdict: A",
+  "usage": {
+    "input": 1408,
+    "output": 2986
+  },
+  "cost": 0.032676
+}

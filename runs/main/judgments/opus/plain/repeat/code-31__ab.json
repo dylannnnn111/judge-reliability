@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "code-31",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse A contains a factual error. It claims that if 1000+ rows share one second, the job \"stalls or loops forever.\" With `created_at > :last_seen`, the cursor still advances. The next page jumps past that timestamp and silently skips the remaining tied rows. An infinite loop would happen with `>=`, not `>`, so A misdiagnoses the failure mode in its top-priority item.\n\nA also lists the fix as a numbered \"problem\" (item 3). Its final \"minor\" item is filler: it praises the explicit column list rather than identifying a problem.\n\nResponse B describes the boundary-skipping bug correctly and puts the fix inline. It covers the same important issues: tiebreaker ordering, late-committed rows, the missing index, and planner trouble from the `IS NULL OR` pattern. It adds a useful point about persisting the cursor and making downstream writes idempotent.\n\nBoth responses likely run slightly over the 200-word limit, so length doesn't separate them. B is more accurate and better organized.",
+  "usage": {
+    "input": 1476,
+    "output": 616
+  },
+  "cost": 0.018224
+}

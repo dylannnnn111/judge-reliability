@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-34",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth summaries break the 120-word limit by about the same amount: Response A is roughly 127 words and Response B roughly 129. Neither gains a meaningful edge on that constraint, so other qualities decide it.\n\n- **Easier to scan:** Response B uses bold section labels and bullet points. A busy manager can skim it quickly. Response A is dense running prose.\n- **More complete:** Response B covers all three bug fixes. Response A names only one and says \"several bugs are fixed,\" dropping the tablet display and invoice printing fixes.\n- **Accuracy:** Both are accurate and cover the new features, improvements, known issue and next month's plans.",
+  "usage": {
+    "input": 1243,
+    "output": 1802
+  },
+  "cost": 0.041012
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-11",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "**B**\n\nResponse B is closer to the 120-word limit, at roughly 134 words including the title. Response A runs to roughly 260 words, more than double the limit. Response B also covers the key points concisely: who to contact, the laptop and monitor instructions, the box deadline, the crate limit, and the access-card welcome. Response A adds filler, such as the opening thanks and closing lines, and states the Monday 17 November dates, which the original email doesn't give explicitly.",
+  "usage": {
+    "input": 1643,
+    "output": 1599
+  },
+  "cost": 0.0009638
+}

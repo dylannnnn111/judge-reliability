@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-18",
+  "side": "B",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The response is **correct**. Willem Janszoon and the crew of the *Duyfken* made the first recorded European landing on the Australian mainland in **1606**. They went ashore on the western coast of Cape York Peninsula, near the Pennefather River. The supporting facts also hold up. Dirk Hartog landed in 1616 on what is now Dirk Hartog Island in Shark Bay and left an inscribed pewter plate. The response correctly calls this an island rather than the mainland, which avoids a common mix-up. Its note that Portuguese landings are unproven is fair and useful.\n\nThe **reasoning** is adequate. It gives who, when, where and the ship name, which together settle the question. The Hartog and Portuguese points add context without padding.\n\n**Clarity** is good. At about 95 words it meets the under-120 limit, and the bolding aids scanning. One small gap: it could have said explicitly that Hartog's landing is often confused with the first mainland landing. As written, the reader has to infer why it is mentioned. Otherwise the response is accurate, concise and well judged.\n\nScore: 9",
+  "usage": {
+    "input": 405,
+    "output": 544
+  },
+  "cost": 0.0125
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-14",
+  "side": "B",
+  "score": 10,
+  "model": "claude-sonnet-5-5",
+  "text": "The answer is correct: the net rate is 1/3 − 1/5 = 2/15 of the tank per hour, so filling takes 15/2 = 7.5 hours. The key reasoning is shown step by step and the format is clear. The response is well under 120 words. It adds a conversion to 7 hours 30 minutes, which is accurate and useful. Nothing is wrong or missing.\n\nScore: 10",
+  "usage": {
+    "input": 394,
+    "output": 134
+  },
+  "cost": 0.002128
+}

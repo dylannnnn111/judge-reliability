@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-17",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** Both responses correctly name Venus, give an average surface temperature of about 465°C (870°F), and note that Venus is hotter than Mercury despite being farther from the Sun. Both attribute this to a runaway greenhouse effect driven by a thick CO₂ atmosphere. Neither contains a factual error, though A's claim that the high surface pressure \"further contributes\" to the heat is vague.\n\n**Key reasoning:** B covers the essentials more completely and precisely:\n- It states the 96% CO₂ composition.\n- It explains the mechanism clearly: sunlight warms the surface, and CO₂ absorbs the outgoing infrared radiation.\n- It notes that the sulfuric acid clouds reflect sunlight but also help trap heat.\n- It explains that heat is spread evenly between day and night sides.\n- It directly answers the Mercury contrast: with almost no atmosphere, Mercury loses its heat to space.\n\nA never explains why Mercury is cooler, which leaves the \"surprising difference\" only half-resolved.\n\n**Constraints and clarity:** The user asked for under 120 words. A runs to roughly 130 words, inflated by filler phrases such as \"It is worth noting,\" \"To explain this more fully,\" and \"Finally, it is also important to mention.\" B comes in at about 118 words, within the limit. B is also better organized, using bullets for each factor.\n\nB is equally correct, gives more complete reasoning, is clearer, and meets the length constraint that A violates.\n\nVerdict: B",
+  "usage": {
+    "input": 836,
+    "output": 1291
+  },
+  "cost": 0.029164
+}

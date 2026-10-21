@@ -1,0 +1,13 @@
+{
+  "item": "qa-26",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "The sky looks blue because sunlight contains all colors, and when it enters the atmosphere, air molecules scatter shorter wavelengths (blue and violet) much more strongly than longer ones (red and orange). This is called Rayleigh scattering, and it sends blue light across the whole sky toward your eyes.\n\nAt sunset, sunlight passes through a much longer path of atmosphere because the sun is near the horizon. Along this longer path, most of the blue light is scattered out of the direct beam, leaving the longer wavelengths, like red and orange, to reach your eyes. That's why sunsets look red or orange.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 52,
+    "output": 202
+  },
+  "cost": 0.0001062,
+  "at": "2026-10-14T01:50:41.787Z"
+}

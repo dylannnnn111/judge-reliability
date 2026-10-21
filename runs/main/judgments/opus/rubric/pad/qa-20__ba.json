@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-20",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses are correct. Canberra is the capital, and Federal Parliament first sat there in 1927, when the provisional Parliament House opened on 9 May. Both also correctly note that Parliament met in Melbourne from Federation in 1901, and both stay under 120 words.\n\n**Response A** adds accurate, relevant context. The building was opened by the Duke of York, later George VI, and is now Old Parliament House. Parliament moved to the current Parliament House on Capital Hill in 1988. Each extra word is correct and useful, and the answer is concise.\n\n**Response B** is padded with filler: \"To answer your question directly,\" \"I hope this helpful background is useful,\" and \"To summarize the key points.\" The phrase \"I hope this helpful background is useful\" is also awkward. Its closing summary only repeats what it already said. These extra words add nothing.\n\nSince both are equally correct, A wins on clarity and on substantive extra information, while B's additional length is redundant.\n\nVerdict: A",
+  "usage": {
+    "input": 570,
+    "output": 437
+  },
+  "cost": 0.01102
+}

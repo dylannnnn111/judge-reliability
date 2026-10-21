@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-37",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Both responses get the dates, names and figures right. Response A softens option 2 to \"may not be acceptable.\" Finance's condition is that a partial go-live is acceptable *only if* month-end reports don't depend on payroll, and four of them do. That condition is not met, so \"may not\" understates the problem. Response B says \"though four month-end reports need it.\" That doesn't spell out Finance's condition, but it doesn't imply the option might still work. Both correctly say no decision has been made, that option 1 is the team's preference, and that it needs Margaret Lowe's approval.\n\n**Coverage:** Response B keeps the progress evidence (GL/AP loading nightly, 14 of 22 reports matching the old system). It also notes that Tomas is documenting the payroll system before he leaves, which is a mitigation a manager would want to know about. Response A drops both but keeps the \"five to six weeks\" figure and the next update date. B's omissions are minor, because the slip to late January conveys the impact. A's omissions are slightly more substantive.\n\n**Concision:** Both are close to the 120-word limit, possibly slightly over depending on whether headings are counted. B packs more relevant content into similar space with clear labels.\n\nOverall, B is more accurate on option 2 and keeps more of what the reader needs.\n\nVerdict: B",
+  "usage": {
+    "input": 1475,
+    "output": 1203
+  },
+  "cost": 0.02996
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-13",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.**\n\n**Real issues and coverage.** Both responses find the same core problems:\n- the December `ValueError`\n- the day-of-month overflow for the 29th–31st\n- schedule drift\n- the hardcoded 30-day proration\n- missing input validation\n- floor-division rounding\n\n**Accuracy.** B frames drift correctly. The current code crashes rather than drifting, so drift only appears \"if you 'fix' #2 naively.\" A presents drift as if it already happens, which muddles cause and effect. A also says `//` \"floors toward zero.\" Python floor division rounds toward negative infinity, so this is a small technical error.\n\n**Fixes.** B gives more concrete, actionable fixes:\n- `dateutil.relativedelta` or `calendar.monthrange` for clamping\n- computing the real period length\n- capping `days_used`\n\nA's fixes are thinner. It does suggest `Decimal` with `ROUND_HALF_UP`, which is useful.\n\n**False positives.** B's item #7 is mostly noise. Timezone handling is irrelevant for plain `date` objects, and \"no tests\" is not a code bug. Because it is labelled \"Minor\" and placed last, it does little harm.\n\n**Length.** The user asked for under 200 words. A runs well over, roughly 370 words, padded with filler such as \"Below are the six issues identified… with each one explained in more detail.\" B is also somewhat over but much closer to the limit and far tighter.\n\nOverall, B is more accurate, gives better fix guidance, and better respects the length constraint. Its weak #7 does not outweigh these advantages.\n\nVerdict: B",
+  "usage": {
+    "input": 1729,
+    "output": 961
+  },
+  "cost": 0.026136
+}

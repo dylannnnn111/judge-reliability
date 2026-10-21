@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-16",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Response A fits the brief. It is well under 120 words and covers the essentials: Amber status, the two-week slip, the move from 3 to 17 November, the cause of the delay, the budget position, the key risk, and the two decisions needed. Its figures and conditions match the source, including the verbal credit that becomes $26k only if confirmed in writing. It omits the duplicate-record issue (1.4% of records failing), which is a minor gap for a busy manager.\n\nResponse B is more detailed and accurate, and it correctly flags that the credit is unconfirmed. It also includes the duplicate-record detail. However, it runs to roughly 250–280 words, more than double the 120-word limit. Its extra material is mostly restatement and filler (\"I want to be clear,\" \"Good headway has been made\"), so the added length does not earn its place. Since the user set a hard length limit for a time-poor reader, B's overrun is a significant failure, and its one advantage (the duplicate-record detail) does not outweigh it.\n\nVerdict: A",
+  "usage": {
+    "input": 1704,
+    "output": 953
+  },
+  "cost": 0.0006469
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-04",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.** A has a misleading statement about eligibility, but B's word count is a real weakness that partly offsets its advantages.\n\n**Accuracy.** A says \"Leave can now be split into up to three blocks\" straight after describing both primary and secondary carer leave. This implies secondary carers can split their leave too. The source gives that option only to primary carers. A also drops \"up to 18 weeks\" from the superannuation point. B correctly limits the split to primary carers, includes the 18-week super cap, and states that the leave is on top of government pay. B's weaknesses are smaller:\n- The casual eligibility line is loosely worded (\"Regular, systematic casuals also qualify\") and doesn't explicitly repeat the 12-month requirement.\n- \"Plan rosters for split leave\" is advice not found in the source, though it is sensible.\n\n**Key points.** Both cover the cut-off for children arriving before 1 January 2027. B adds two things A leaves out:\n- Leave is on top of the government scheme.\n- Managers are notified automatically, which a manager specifically needs to know.\n\n**Concision.** A is about 119 words, just under the limit. B is about 133 words if the header and bold labels are counted, and about 117 without them. B's compliance with the limit is therefore questionable, a real weakness against an explicit instruction. Its bullet format does help a busy reader scan it.\n\nOn balance, B's better accuracy and its manager-relevant content outweigh its borderline length.\n\nVerdict: B",
+  "usage": {
+    "input": 1508,
+    "output": 1932
+  },
+  "cost": 0.044672
+}

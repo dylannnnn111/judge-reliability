@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-14",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate throughout. The dates, the three-day minimum, the team-day rule, the Fair Work exemption, the excluded Claims and Customer Contact teams, the 2027 roster review, the equipment funding limit, the Level 3 and 4 hot desking with its two-week booking window, and the rationale all match the source. It also covers what a manager needs: the main change, exceptions, equipment, hot desking, and where to go with questions.\n\nThe main problem is length. The user set a hard limit of under 120 words, and the summary runs to roughly 160 words, so it breaks an explicit constraint. Some detail could be cut without losing anything the manager needs, such as the \"Summary\" header wording, the full phrasing of the rationale, and some parenthetical detail. Accuracy and coverage are strong, but failing the stated word limit is a clear shortfall on concision.\n\nScore: 6",
+  "usage": {
+    "input": 1108,
+    "output": 813
+  },
+  "cost": 0.0005172999999999999
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-28",
+  "side": "B",
+  "score": 7,
+  "model": "claude-sonnet-5-5",
+  "text": "Correctness: The content is accurate. It covers separate chaining and open addressing with its probing variants. It states average O(1) and worst-case O(n), and it explains resizing with amortized O(1) inserts. A minor nitpick is that chaining with trees (Java) gives O(log n) worst case, but the response only says \"list (or tree)\" and doesn't claim otherwise. Its statement that the worst case degrades toward O(n) is standard.\n\nWord count: Roughly 115 words, so it probably meets the under-120 constraint. A rough count:\n- Intro line: ~15\n- Chaining: ~21\n- Open addressing: ~25\n- Performance: ~55\n\nThat comes to about 116, and it's close to the limit but likely under. Counting more carefully:\n- \"A collision occurs when two keys hash to the same slot.\" = 11\n- \"There are two main fixes:\" = 5 (16)\n- \"Separate chaining: Each slot holds a list (or tree) of entries.\" = 11 (27)\n- \"Colliding keys are appended there, and a lookup scans that list.\" = 11 (38)\n- \"Open addressing: If a slot is taken, probe for another using linear probing, quadratic probing, or double hashing.\" = 18 (56)\n- \"Lookups follow the same probe sequence.\" = 6 (62)\n- \"Performance: With a good hash function and a moderate load factor (entries ÷ slots), operations average O(1).\" = 18 (80)\n- \"As collisions grow, chains lengthen or probe sequences cluster, degrading toward O(n) in the worst case.\" = 16 (96)\n- \"To prevent this, tables resize (typically doubling and rehashing) when the load factor passes a threshold.\" = 16 (112)\n- \"Each resize costs O(n), but the amortized cost per insert stays O(1).\" = 13 (125)\n\nThat's about 125 words, which slightly exceeds 120. Tokenization of \"O(1)\" and \"entries ÷ slots\" could shift the count by a few, but it is probably over the limit by a small margin. This is a mild constraint violation.\n\nOverall, the answer is excellent in content and clarity but likely slightly exceeds the word limit.\n\nScore: 7",
+  "usage": {
+    "input": 482,
+    "output": 721
+  },
+  "cost": 0.008174
+}

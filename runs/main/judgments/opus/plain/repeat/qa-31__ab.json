@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "qa-31",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B.** Both responses explain the cause correctly: Earth's 23.5° axial tilt points the same way in space all year, so Australia and Europe are tilted toward the Sun at opposite times. Both also note that distance from the Sun is not the cause. The difference is the length limit.\n\n- **Response A** comes to about 121 words, just over the \"under 120 words\" limit. The overrun comes from its extra closing point about Earth being closest to the Sun in January. That point is accurate but not needed to answer the question.\n- **Response B** comes to about 109 words. It stays within the limit while covering the same essentials: sun angle, day length, and the six-month reversal.\n\nSince the content is roughly equal, following the explicit constraint decides it.",
+  "usage": {
+    "input": 615,
+    "output": 1879
+  },
+  "cost": 0.04004
+}

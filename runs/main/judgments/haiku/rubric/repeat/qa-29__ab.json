@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "qa-29",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are factually correct. Both give the right figures: $2,500 under simple interest and about $4,322 under annual compounding for $1,000 at 5% over 30 years. Both also explain the key reason, that interest is earned on previously earned interest, and both note that the gap widens with time.\n\nB adds the Rule of 72, which is accurate but not requested. B is also over the user's explicit 120-word limit: my count is roughly 123 words. A stays under the limit at roughly 100 words while covering the same core reasoning and the same example. Since the user set a hard length cap, B's violation is a real defect, and A's tighter compliance makes it the better response.\n\nVerdict: A",
+  "usage": {
+    "input": 721,
+    "output": 1773
+  },
+  "cost": 0.0009586
+}

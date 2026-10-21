@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-31",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses report the figures correctly: 10% speed gain (142 to 156), error rates of 0.62% to 0.41%, 17% for new staff, 64% preference, $210,000 for a 60-picker centre, 14-month payback, and the single-company limitation. Neither has a factual error.\n\nThe difference is the word limit. Counting hyphenated terms as one word, Response A comes to exactly 120 words, which is not \"under 120\". Response A also adds a \"Takeaway\" (\"especially for sites with many newer staff\") that the source does not state. It is a reasonable inference but still an addition. Its bulleted layout is easy to scan, and it keeps two details B drops: the smaller accuracy gain at the second centre and the complaint about missing colleague chat.\n\nResponse B is about 95–100 words, so it clearly meets the limit. It stays faithful to the source, keeps all the key numbers, and includes the limitation. It omits the second-centre nuance and the colleague-chat complaint, but these are minor for a busy manager. It also doesn't state the \"plan for headset comfort\" recommendation outright, though it mentions the discomfort. It is a dense paragraph, but it is accurate and compliant.\n\nSince both are accurate, the deciding factors are the constraint and the unsourced addition, and both favour B.\n\nVerdict: B",
+  "usage": {
+    "input": 1470,
+    "output": 2103
+  },
+  "cost": 0.02397
+}

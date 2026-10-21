@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "code-05",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is the better of the two.\n\nBoth responses find the same core problems, in a similar order:\n- Subtracting aware datetimes that share a `tzinfo` ignores the DST offset change.\n- Ambiguous and nonexistent local times are accepted silently.\n- Weekend loading depends only on the start day.\n- Float arithmetic and banker's rounding.\n- Missing public-holiday handling and input validation.\n\nBoth are technically accurate. The DST direction in Response B is correct (overpaid on spring-forward, underpaid on fall-back), and so are its 02:00–02:59 claims for Sydney.\n\nResponse A is better for three reasons:\n- **Concrete examples:** It gives worked DST examples that check out. A 01:00–05:00 shift on the April fall-back night is 5h but paid as 4h. On the October spring-forward night it is 3h but paid as 4h. Payroll readers can verify these immediately.\n- **Fixes:** It gives a specific fix for the DST bug, and a concrete rule for the rounding problem (`Decimal` with `ROUND_HALF_UP`, or whatever payroll specifies).\n- **Length:** The user asked for under 200 words. Response A is close to that limit, at roughly 200 words. Response B is noticeably longer, at roughly 240 or more. Response B also includes a minor point about calling `parse_local` repeatedly, which matters little given the brief.\n\nResponse B does add a useful suggestion to keep minutes as integers. Even so, Response A's precision, concrete examples and tighter fit to the word limit make it the stronger answer.\n\n**A**",
+  "usage": {
+    "input": 1618,
+    "output": 1297
+  },
+  "cost": 0.016206
+}

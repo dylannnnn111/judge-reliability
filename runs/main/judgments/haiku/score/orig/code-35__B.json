@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-35",
+  "side": "B",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response identifies real problems. The ignored `ParseInt` error is correctly ranked first, since it turns bad amounts into zero-dollar payouts. The missing duplicate and negative-amount checks, the unverified header, the negative-total formatting bug (`$-1.-50` is correct), and the missing-argument panic are all accurate. Its fixes are brief and actionable.\n\nIt misses a real crash: `row[1]` panics with an index-out-of-range error if a row has fewer than two fields. The csv reader's default field-count check only catches inconsistent row widths, so a consistently one-column file would still panic. For a payment tool, that belongs near the top. Item 6 is also weak: `csv.Reader` exposes `FieldPos` in recent Go versions, so the streaming rationale is overstated.\n\nThe response also appears to run slightly over the 200-word limit, which the user stated explicitly. Its ranking is sensible, but the missed panic and the length violation keep it from a higher score.\n\nScore: 6",
+  "usage": {
+    "input": 1164,
+    "output": 1032
+  },
+  "cost": 0.0006324
+}

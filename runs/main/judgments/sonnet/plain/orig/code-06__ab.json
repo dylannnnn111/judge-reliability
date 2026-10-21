@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-06",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is better, for three reasons.\n\n- **Accuracy on the main bug:** Both responses spot the `is not` identity comparison. B correctly says that for IDs above 256, most legitimate customers will be rejected, and it notes that small-ID tests would hide the problem. A calls the failures \"intermittent\", which understates a bug that is nearly deterministic for larger IDs.\n- **Quality of the minor points:** B raises the in-memory mutation before `save`, which is a real flaw. A's minor points are weaker: the status string in the `ValueError` is not a serious leak, and \"save is not shown to be transactional\" is vague.\n- **Length:** The user asked for under 200 words. Both responses run over, but B (roughly 209 words) is closer than A (roughly 218).\n\nThe two are otherwise similar, and both cover enumeration, the race condition and the refund concern.\n\n**B**",
+  "usage": {
+    "input": 1393,
+    "output": 1697
+  },
+  "cost": 0.019756
+}

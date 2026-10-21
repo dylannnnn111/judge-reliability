@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-03",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses are correct. Each distinguishes the 1 percentage point rise from the 25% relative increase, which answers \"by what percentage.\" Both stay under 120 words: B is roughly 95.\n\nResponse A is concise, complete and fully accurate.\n\nResponse B's borrower example is helpful but slightly imprecise. It claims \"the interest portion of the repayments rises by 25%.\" For an amortising home loan, repayments and the interest share don't scale exactly that way. The claim holds only for annual interest on the initial balance.\n\nA answers just as fully without that imprecision, so it edges ahead.",
+  "usage": {
+    "input": 445,
+    "output": 749
+  },
+  "cost": 0.01676
+}

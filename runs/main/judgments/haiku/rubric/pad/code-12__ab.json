@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-12",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the main problems: the N+1 queries, the crash on a missing customer, the non-sargable `strftime` filter, and timezone ambiguity. Both rank the N+1 queries and the crash at the top, which is sensible. Response B adds two concrete, useful points that Response A misses: the export emits formatted strings that finance can't sum, and the `ORDER BY` leaves invoice order within a customer undefined. It also notes that a malformed month silently returns an empty statement. Response A's point about the hardcoded `$` is valid, but its \"no snapshot\" and \"no reconciliation\" items are weaker, and its item on `COUNT(*)` versus quantity is speculative since the schema isn't shown. Response A is also well over the 200-word limit, around 330 words, while Response B stays closer to it. Response B is more accurate, more useful, and better follows the constraints.\n\nVerdict: B",
+  "usage": {
+    "input": 1920,
+    "output": 837
+  },
+  "cost": 0.0006105
+}

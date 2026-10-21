@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-19",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer in under 120 words, so I'll count each response.\n\nResponse A: First paragraph: \"The word \"kangaroo\" comes from gangurru, a word in Guugu Yimithirr, an Aboriginal language of northeastern Queensland.\" (18) \"It referred specifically to a type of large grey kangaroo.\" (10) → 28. \"Europeans first recorded it in 1770, when Captain James Cook's expedition repaired the Endeavour near present-day Cooktown.\" (17) → 45. Second paragraph: \"The story that it means \"I don't understand\" is a popular myth.\" (12) → 57. \"Supposedly, Cook's crew pointed at the animal, asked what it was, and took the reply as its name.\" (18) → 75. \"Linguist John Haviland documented in the 1970s that gangurru really did refer to the grey kangaroo.\" (16) → 91. \"The myth is widespread but false, though it's often repeated as a fun anecdote.\" (14) → 105. So A is about 105 words, under 120.\n\nResponse B is clearly longer, roughly 170 words, which breaks the constraint.\n\nA is accurate and meets the limit. Its one small flaw is that it describes the myth slightly oddly, but that does not matter much.\n\n**A**",
+  "usage": {
+    "input": 741,
+    "output": 412
+  },
+  "cost": 0.005602
+}

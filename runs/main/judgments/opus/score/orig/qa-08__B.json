@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-08",
+  "side": "B",
+  "score": 10,
+  "model": "claude-opus-5-5",
+  "text": "The response is correct: 375 × 0.048 = 18 mL of ethanol, 18 × 0.789 = 14.2 g, and 14.2 ÷ 10 = 1.42 standard drinks. Its note that Australian labels show **1.4** is accurate, since labels state the figure to one decimal place.\n\nIt gives every key step: volume of alcohol, then mass via density, then division by 10 g. The final answer appears up front and the presentation is clear. It stays well under 120 words with no filler.\n\nThe only nitpick is that \"≈ 14.2 g\" is a rounded intermediate value. That has no effect on the result.\n\nScore: 10",
+  "usage": {
+    "input": 403,
+    "output": 350
+  },
+  "cost": 0.008612
+}

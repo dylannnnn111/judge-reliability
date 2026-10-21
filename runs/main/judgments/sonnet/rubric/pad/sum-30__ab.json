@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-30",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Accuracy: Both are mostly accurate. Response A says the 408 \"is being scrapped, as it averages nine passengers per trip\", which presents the low ridership as the stated cause. The source says the authority \"says it carries an average of nine passengers per trip and its stops will be covered,\" which loosely implies the reason but doesn't say so outright. Response B also says \"It averages nine passengers per trip,\" without an explicit causal link, which is closer to the source. Response B's \"Industrial estate workers with early starts lose service before 6am\" is slightly misleading: the 408 is removed and the 412 doesn't run before 6am, so it is arguably inferred, and we don't know the 408 ran before 6am. That is a small inaccuracy or overreach. Response A's phrasing of the concern is closer to the source: \"does not start early enough for their shifts.\"\n\nResponse B's \"Why\" line says the consultation found the direct link was the top request, which is accurate and useful. Response A omits the reason for the changes beyond mentioning the consultation. Response A says \"overhauling\", which is fine.\n\nContent: Both include the key points. B adds the \"why\". A omits the \"journey planning\" detail but includes apps. A lacks \"first time\" for the link. A includes filler such as \"I would like to share a summary\" and \"Turning to how you can find out more\", which is unnecessary for a busy manager.\n\nConcision: B is tighter. Word count: A is around 150 words, which likely exceeds the 120-word limit. B is about 115 words. That is an important constraint: A likely violates the limit.\n\nCounting A roughly: the title has about 9 words, the intro about 40, the bullets about 75, and the closing about 40, so it comes to roughly 165. That is clearly over. B is about 120 and borderline, though probably around 110.\n\nB is better overall, despite the minor overreach on \"lose service before 6am\".\n\nVerdict: B",
+  "usage": {
+    "input": 1592,
+    "output": 612
+  },
+  "cost": 0.009304
+}

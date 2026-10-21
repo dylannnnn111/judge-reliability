@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-40",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.**\n\n**Shared top issues.** Both correctly lead with the most important bug: the pipeline subshell discards `alerts`, so `exit 1` is unreachable and on-call is never paged. Both correctly explain the `curl -f` + `set -e`/`pipefail` problem: a webhook failure aborts the loop and pages for the wrong reason.\n\n**Shared mistake.** Both claim a non-numeric `pct` \"crashes\" the script under `set -e`. That is wrong. A failing test inside an `if` condition does not trigger errexit. The `[ ]` prints an error and evaluates false, and the loop continues. The real issue is only noise in the output and a silently skipped row. This error cancels out between them.\n\n**Where A pulls ahead:**\n- **Squashfs/snap loop mounts.** These always report 100%, so on many Ubuntu hosts they would page every 5 minutes once the main bug is fixed. A flags this and gives a concrete `-x` exclusion list.\n- **Stale NFS mounts.** These can hang `df` and pile up cron runs. A suggests `timeout`, plus `curl --max-time`.\n- **Fixes.** A's fixes are more concrete throughout: `lastpipe` as an alternative, the regex guard, and the `|| rc=1` pattern.\n\nA's #2 heading (\"inverted by accident\") is awkwardly framed, but its content is correct.\n\n**Where B falls short.** B's #5 largely repeats its #4 and the double-paging point A already makes. Its fixes are vaguer (\"skip rows where pct isn't a number\").\n\n**Length.** Both exceed the 200-word limit; A exceeds it by more. However, A's extra words carry real, high-value findings rather than padding.\n\nVerdict: A",
+  "usage": {
+    "input": 1729,
+    "output": 1147
+  },
+  "cost": 0.029856
+}

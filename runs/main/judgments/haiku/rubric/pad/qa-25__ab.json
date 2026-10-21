@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-25",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly answer \"No\" and cite the Gjermundbu helmet and the 19th-century origins of the horned image. Both facts are accurate, so correctness doesn't separate them. Response A also gives the key reasoning clearly: the archaeological evidence, the Romantic-era origin of the myth, and the Bronze Age exception. Response B adds Malmström and the Veksø helmets, which are accurate but not essential. More importantly, B runs well over 120 words (roughly 160), breaking the explicit length limit. A stays just under it (roughly 115 to 120 words). Response A is therefore better because it follows the instruction while giving the same correct core content.\n\nVerdict: A",
+  "usage": {
+    "input": 906,
+    "output": 916
+  },
+  "cost": 0.0005486
+}

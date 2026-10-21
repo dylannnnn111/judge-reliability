@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-28",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. Both responses exceed the 120-word limit, but A only slightly (roughly 130 words), while B is far over (roughly 190).\n\nA is also more accurate and more concise. It keeps the 40-day figure, states the cash-out and shutdown rules correctly, and makes clear that the exempt warehouse staff are still covered by the cap and cash-out rules.\n\nB opens with filler (\"We would like to draw your attention…\") and softens the mandatory cap to staff being \"asked\" to agree a plan. It also says the changes apply to \"permanent staff\", dropping the full-time/part-time detail. Its \"Your action\" line is awkwardly worded.\n\n**A**",
+  "usage": {
+    "input": 1436,
+    "output": 1129
+  },
+  "cost": 0.014162
+}

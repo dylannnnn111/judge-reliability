@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-13",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Response A states that the contractor \"missed\" the failed pump \"during a monthly visit\". This implies the technician attended and failed to spot the fault. The report says the visit never happened, so this misstates the core cause. A also says the tower returned to service \"after a resample on 9 October\". The resample was taken on 6 October, and only the result came back on 9 October, which is a minor date slip.\n\nResponse B's cause line, \"failed after the contractor missed a monthly visit\", slightly overstates the sequence. The report says the pump failed in mid-September and wasn't caught because the visit was missed, not that the failure came after the missed visit. Even so, B correctly conveys the key fact that the visit was skipped and nobody was told. Its other facts are correct: dates, 24-hour notification, the $7,350 recovery and the $4,800 approval.\n\n**Coverage:** B puts the decision first, which suits a busy manager. It keeps the tenant notification and the fortnightly sampling, both of which A drops. A keeps the actual count (1,200 CFU/mL), which B replaces with \"above the legal threshold\". That is acceptable for this reader.\n\n**Concision:** Both are slightly over 120 words including headings, at about 126–127 each. Neither has an advantage here.\n\nOn balance, B is more accurate on the cause and keeps more of the actions the manager needs. Its decision-first structure also suits the reader better.\n\nVerdict: B",
+  "usage": {
+    "input": 1502,
+    "output": 2262
+  },
+  "cost": 0.051248
+}

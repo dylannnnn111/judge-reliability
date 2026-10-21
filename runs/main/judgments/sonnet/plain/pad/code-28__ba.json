@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-28",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. Both responses go over the 200-word limit: A is roughly 300 words and B roughly 250. B is closer to the limit and does not open with a preamble.\n\nB also leads with the connection leak. That bug is certain and breaks the API after a few calls, so it fits \"most important first.\" A leads with the race condition, which is serious but less immediate.\n\nB also catches a real issue A misses: `pg` returns `bigint` columns as strings, which makes the balance comparison unreliable.\n\nB has two weaker points. Its deadlock note says the risk appears \"once you add row locks,\" but the two `UPDATE`s already lock rows in opposite order, so A is more accurate there. B's audit-trail and idempotency item is somewhat speculative padding. Neither flaw outweighs B's better fit to the brief and its extra catch.\n\n**B**",
+  "usage": {
+    "input": 1824,
+    "output": 760
+  },
+  "cost": 0.011248
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-34",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy.** Both responses are largely correct on the date, the 30-minute window, the 24/48-hour per-clinic reminders and the Android known issue.\n\n- **Response A** slightly misstates the recurring-appointment bug. It says appointments were \"skipping weeks\", but the original says they \"sometimes skipped a week\". This turns an occasional single-week skip into what reads like a broader problem.\n- **Response A** also says the waitlist texts \"the next patient\". The original says \"the first patient on the waitlist\", and A never says patients join a waitlist for fully booked days. The meaning survives, but it is less precise.\n- **Response B** is accurate on both points: \"first patient is texted\" and \"skip a week\".\n\n**Completeness.** Response B covers all three fixes, including the tablet display and the invoice printing errors. Response A folds two of them into \"several bugs\". For a manager, the printing fix could matter to front-desk staff, so B keeps slightly more useful detail.\n\n**Length.** By my count, both are slightly over the 120-word limit: Response A is about 127 words and Response B about 129. Neither has a clear advantage here. B's headed format is easier for a busy manager to scan.\n\nOverall, Response B is more precise and more complete, and it is no worse on concision in any way that matters.\n\nVerdict: B",
+  "usage": {
+    "input": 1397,
+    "output": 2172
+  },
+  "cost": 0.049028
+}

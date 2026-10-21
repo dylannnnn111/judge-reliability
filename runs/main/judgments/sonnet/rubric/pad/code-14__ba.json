@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-14",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main bug: advancing `OFFSET` while deleting the rows just read skips about half the matching rows. Both give the right fixes (drop `OFFSET`, or use keyset pagination on `id`). Both also raise the same second issue: a crash between `archive()` and `commit()` causes duplicates unless `archive` is idempotent, and `archive` must be durable before the delete.\n\n**Response A** adds a real point that B lacks: there is no error handling or rollback if `archive` or the delete raises. It treats the string-comparison and index concerns as minor, which seems a sensible ranking. It is also tighter. It still exceeds the 200-word limit, but by less than B does.\n\n**Response B** ranks the string-comparison issue third, ahead of performance, which is reasonable but speculative, since nothing in the code shows the formats differ. Its performance item suggests larger batches to cut commits. That is a debatable trade-off, since smaller batches keep transactions short. It also has filler phrasing (\"It is worth noting\", \"Consider what happens\"). Its word count is well over the limit.\n\nOverall A is more concise and covers one more real issue (rollback). B's extras are weaker, and it overshoots the length constraint by more.\n\nVerdict: A",
+  "usage": {
+    "input": 1630,
+    "output": 1125
+  },
+  "cost": 0.01451
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-18",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct core answer: Willem Janszoon and the Duyfken, 1606, on the western side of Cape York Peninsula near the Pennefather River.\n\nThe user asked for under 120 words. Response A is about 85 words, so it complies. Response B runs to roughly 180 words, so it clearly violates the limit.\n\nOn accuracy, Response A says Hartog landed on an island in Shark Bay in 1616 and left a pewter plate. That is correct. Response B's claim that Janszoon's crew landed \"in February and March of 1606\" is approximately right, since the voyage was around then. Its claim of a skirmish with deaths among the crew is accurate, because some crew were killed by Aboriginal people. The detail that they mistook the land for an extension of New Guinea is also correct. B's content is accurate, but it adds filler (\"I would be happy to walk through this history\") and extra material such as Cook, which adds little.\n\nA is better because it meets the word limit and is concise and accurate. B's extra context is correct but exceeds the constraint.\n\nVerdict: A",
+  "usage": {
+    "input": 805,
+    "output": 350
+  },
+  "cost": 0.00511
+}

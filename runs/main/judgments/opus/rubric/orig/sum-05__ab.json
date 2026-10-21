@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-05",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Response A is better.** Both responses are largely accurate and under 120 words, but they differ in how they handle the gap between perceived and measured productivity.\n\n**Response A** frames that gap correctly. It states that measured speed and accuracy didn't change, \"even though 78% of sit-stand users *felt* more productive.\" This is the study's core interpretive point. A also gives an actionable implication that matches the authors' interpretation: justify the desks on comfort, not productivity. It covers the key numbers (31% vs 44%, 47 to 19 minutes), the novelty fade and both limitations. One small loss is that it omits the week 2 and week 12 labels.\n\n**Response B** is precise on the standing-time weeks. However, it lists \"78% of the sit-stand group felt more productive\" under \"Benefits found.\" This is mildly misleading: the study explicitly found that perceived productivity did not match measured output. A busy manager could read that line as a genuine productivity benefit, which is exactly the conclusion the study warns against. B also gives no implication or recommendation.\n\nSince accuracy comes first, A's careful framing outweighs B's slightly more precise week labelling.\n\nVerdict: A",
+  "usage": {
+    "input": 1371,
+    "output": 714
+  },
+  "cost": 0.019764
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-03",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "B is slightly better.\n\nBoth responses lead with the same critical issue, SQL injection, and give the same correct parameterized fix. Both also catch the connection leak and correctly note that `with sqlite3.connect(...)` doesn't close the connection. Both run over the 200-word limit by a similar margin, so length doesn't separate them.\n\nThe difference is in the remaining items.\n\n- **Response A:**\n  - Its authorization/audit point is reasonable but concerns the caller, not this function.\n  - \"Hardcoded path\" is low-value for a \"problems that matter\" list.\n  - Its claim that injection could \"modify data depending on the driver\" is shaky, since sqlite3's `execute` rejects multiple statements. It is hedged, though.\n  - Its connection-leak item recommends `with` and then walks it back.\n- **Response B:**\n  - It flags case-sensitive and whitespace-sensitive email matching, which matters for a support lookup tool.\n  - It flags the lack of ordering and limits, a practical concern.\n  - It explains the consequence of the leak (descriptor exhaustion, held locks).\n  - It puts the truly minor items (redundant empty check, `if status:` treating `\"\"` as no filter, audit logging) under a \"Minor\" label, which ranks priority better.\n  - Its \"crafted input could do worse\" claim is accurate.\n\nB's items are more tied to the code and the support-lookup use case, and its prioritization is clearer.\n\n**B**",
+  "usage": {
+    "input": 1375,
+    "output": 1619
+  },
+  "cost": 0.01894
+}

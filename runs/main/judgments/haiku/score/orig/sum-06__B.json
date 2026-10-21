@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-06",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate on the key facts: the Saturday 31 October reopening, the eight-month, $3.2 million upgrade and its joint funding, the pool and accessibility changes, the enrolment date, the prices, opening-day details and hours all match the source. Two small inaccuracies remain. It drops \"expected\" from the solar claim, turning a projection into a fact. It also says prices are unchanged \"for 2026-27\" when the source says \"for the rest of the 2026-27 season.\" Neither is material to a manager. It omits the heated pool's year-round lessons benefit, a minor point. At about 105 words it is well under the limit and well organised for a busy reader, and the omitted quotes and anecdotes are rightly left out.\n\nScore: 8",
+  "usage": {
+    "input": 1132,
+    "output": 760
+  },
+  "cost": 0.0004932
+}

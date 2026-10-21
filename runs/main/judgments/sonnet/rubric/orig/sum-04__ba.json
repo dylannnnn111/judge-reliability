@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-04",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better, mainly because it follows the length limit and A does not.\n\n**Accuracy:** Both responses are largely accurate.\n- A's \"Plan rosters for split leave\" is not in the source. It is a reasonable inference but an addition.\n- B says \"Leave can now be split\" without saying this applies to primary carers only, which is a small imprecision.\n- B also leaves out that the paid leave is on top of government Parental Leave Pay.\n- A includes the \"earlier arrivals keep current entitlements\" point explicitly. B covers this by saying the increase applies only to children born or placed on or after 1 January 2027.\n\n**Constraint:** The user said to keep it under 120 words. I counted about 137 words for A, including the heading, so it breaks the limit. B comes to about 117 words and stays within it.\n\n**Content and concision:** A's bullets are easier to scan, which suits a busy manager. B still covers the key points: amounts, splitting, cut-off, eligibility, super, application deadline and info sessions. A's extra words go partly on the unsupported roster advice.\n\nSince A breaks an explicit constraint and B keeps the essentials with only a minor imprecision, B wins.\n\nVerdict: B",
+  "usage": {
+    "input": 1508,
+    "output": 2000
+  },
+  "cost": 0.023016
+}

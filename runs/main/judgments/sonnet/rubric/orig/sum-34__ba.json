@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-34",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are accurate. Neither misstates a date, number or condition: the 30-minute window, the 24 or 48 hour reminders, the Android known issue and the next-month items are all correct in each.\n\nThe main difference is the 120-word limit. I counted about 133 words for A and about 127 for B. Both exceed the limit, but B is closer to it, and A overshoots by more.\n\nOn content, A lists each fix and keeps the \"first patient\" detail for the waitlist. B folds the tablet and invoice fixes into \"several bugs are fixed\" while keeping the fix a manager is most likely to care about. B's omissions are minor and reasonable under a length cap. A's headings and bullets are easier to skim, but they cost words, and the instruction was a hard limit.\n\nSince accuracy is equal and both break the limit, B's smaller overshoot gives it a slight edge.\n\nVerdict: B",
+  "usage": {
+    "input": 1397,
+    "output": 2430
+  },
+  "cost": 0.027094
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-27",
+  "side": "B",
+  "score": 8,
+  "model": "claude-opus-5-5",
+  "text": "The response is accurate on almost every point and keeps what the manager needs, with two minor precision lapses that hold it at an 8.\n\n**Accuracy.** The numbers all match the source: 81% vs 74%, the 7-point lift, the 60% promotion share, 78% vs 76%, $95 per session, $410,000 a year, and the 21 October meeting with a November start. \"Inconclusive\" fairly captures \"mixed\" plus \"the data doesn't support that yet.\" Attributing the \"proved\" claim to sales, without naming Kirsten, is accurate and appropriately discreet.\n\nThere are two small precision lapses:\n- **Test length:** Marcus asked for a test of \"at least 60 days,\" and the summary says \"60-day test.\" Dropping the minimum turns a floor into a fixed length.\n- **Comparison group:** \"Paying customers only\" is slightly looser than \"customers who paid from day one.\" Neither misleads in substance.\n\n**Key points.** It covers what a manager needs:\n- the recommendation (don't roll out yet);\n- the confound (the Sydney promotion) and why it matters;\n- the adjusted gap being within normal variation;\n- the cost exposure;\n- the warning about the sales claim;\n- a clearly framed decision with a date.\n\nOmitting the sample sizes (412 and 388) is a reasonable cut. Leading with the conclusion and a \"Decision needed\" line suits a busy reader well.\n\n**Concision.** At about 111 words it is under the 120 limit, tight and scannable, with no filler.\n\nScore: 8",
+  "usage": {
+    "input": 1153,
+    "output": 2022
+  },
+  "cost": 0.045052
+}

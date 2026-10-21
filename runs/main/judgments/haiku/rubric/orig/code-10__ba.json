@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-10",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify the main exploitable bug: `SLUG_RE.match` only anchors the start, and `<path:slug>` accepts slashes, so traversal is possible. Both also flag the missing authentication, which is a real gap in the shown code even if it might be enforced elsewhere.\n\nResponse A ranks auth above traversal, which is debatable since traversal is the concrete bug in this code. Its fixes are stronger, especially `send_from_directory`, which does its own containment check. It also catches the directory-vs-file problem with `os.path.exists`, adds per-report authorization and `Cache-Control` for sensitive files, and mentions audit logging. Its example path is slightly wrong, because appending `.pdf` means the attacker's slug must omit the extension, but the underlying point holds.\n\nResponse B ranks traversal first, which is sensible. Its symlink point is speculative, since nothing shows symlinks exist in the report directory. Its final point about the regex class is essentially a non-issue, so it flags something that is fine. It also omits the directory-vs-file bug and the caching and audit concerns.\n\nOverall, Response A finds more real problems and offers better fixes, with one minor example error and a debatable ranking. Response B is tighter but includes a non-issue and misses useful items.\n\nVerdict: A",
+  "usage": {
+    "input": 1550,
+    "output": 1285
+  },
+  "cost": 0.0007975
+}

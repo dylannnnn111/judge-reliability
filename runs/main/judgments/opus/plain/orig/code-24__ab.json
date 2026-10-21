@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-24",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses correctly put the concurrent-duplicate race first. Both also cover the non-durable in-memory `Set`, timing-unsafe signature comparison, error handling, amount validation, and replay protection. The deciding factors are the word limit and how actionable each top item is:\n\n- **Word limit:** The user asked for under 200 words. Response B comes in at roughly 205 words, about at the limit. Response A runs about 255 words, well over it.\n- **Actionable top issue:** Response B's first item gives the fix along with the problem. It says to claim the ID atomically *before* processing, via a unique constraint in the same transaction, and to release the claim on failure so retries still work. Response A's first item explains the race but offers no remedy until later items.\n- **Coverage:** Response B also flags malformed JSON and missing `event.data`, with a sensible 400/500 split. Response A has some good details B lacks: the explicit crash window between side effect and marking, and the warning that `timingSafeEqual` throws on mismatched lengths. However, the crash-window point largely overlaps with its second item, and these extras push it past the length the user set.\n\nOverall, Response B is tighter, more actionable, and closer to the requested limit.",
+  "usage": {
+    "input": 1525,
+    "output": 1650
+  },
+  "cost": 0.0391
+}

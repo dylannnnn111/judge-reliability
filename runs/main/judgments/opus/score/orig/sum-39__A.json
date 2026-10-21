@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-39",
+  "side": "A",
+  "score": 6,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** The core facts are correct:\n- the 7-2 vote and 1 December start date\n- coverage of books, magazines and DVDs at five libraries\n- $38,000 in fines across 6,400 members wiped\n- automatic unblocking of cards blocked only for fines\n- the inter-library loan exception and its reason\n- the $52,000 and $19,000 figures\n- the November email and 12-month review\n\nA few details are slightly off or ambiguous:\n- **60-day rule:** \"Not returned within 60 days\" drops \"of its due date\". A reader could take it to mean 60 days from borrowing, which is a meaningful condition for a manager.\n- **\"Opponents say\":** Only one opposing councillor, Ashcroft, is quoted. The article doesn't say both dissenters gave that reason, so the plural is a mild overgeneralisation.\n\n**Coverage:** The summary keeps nearly everything a manager needs. Two minor points are missing:\n- Accounts stay blocked for unreturned items.\n- Damaged items are also excluded from the change.\n\nThe rationale and cost trade-off are well captured, and the headed structure is easy to scan.\n\n**Concision and constraint:** The user asked for under 120 words. By my count the response is about 126 words with headers, and about 123 without. Either way it breaks an explicit instruction. It is also not padded, so trimming to fit would have been easy.\n\nOverall, this is a strong, accurate summary marred by exceeding the stated word limit and a small ambiguity in the 60-day condition.\n\nScore: 6",
+  "usage": {
+    "input": 1050,
+    "output": 1764
+  },
+  "cost": 0.03948
+}

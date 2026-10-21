@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-12",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy.** Both responses get the core facts right: the dates, the fee changes, the 1994 car park, the 180 closed spaces, the 18-month repairs, the application details and that staff are unaffected. Each also has a flaw.\n\n- **Response B** says the $9 daily concession \"will be replaced\" by the weekly pass. The text only says concession parking is being \"extended\". It never says the daily rate is abolished, so B states an unsupported change as fact.\n- **Response A** adds an editorial line: \"This is a significant saving for regular users.\" That holds for frequent visitors, such as the dialysis carer quoted. It is not universally true, though: someone using the concession only once a week would pay $15 instead of $9. Its phrasing \"instead of the current $9 daily concession\" also hints at replacement, but less firmly than B.\n\nOn balance, B's error is slightly worse because it presents a policy change as fact. A's is an overgeneralised inference.\n\n**Coverage.** Both keep the points a manager needs. These are the new fees, the concession pass and how to apply, why fees are rising, staff being unaffected, and the petition.\n\n**Concision.** This is the clearest difference. Response A is about 122 words, marginally over the 120-word limit. Response B is around 200 words, far over the limit. It is also padded with filler a busy manager doesn't need, such as \"I would like to let you know\", \"Turning to concessions\", \"I want to reassure you\" and \"For your information\".\n\n**Conclusion.** Accuracy is roughly comparable, with B's \"replaced\" claim the more misleading of the two. Coverage is equal. A is far more concise and nearly meets the word limit, while B badly breaks it.\n\nVerdict: A",
+  "usage": {
+    "input": 1468,
+    "output": 1334
+  },
+  "cost": 0.032552
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-11",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate on the key facts: dates, the laptop and crate rules, the Lena deadline, the parking conditions, and the access card welcome. Response A infers \"Monday 17 November\" for the laptop return and the welcome, which is a reasonable reading of the weekend dates. Neither response has a substantive error.\n\nResponse A is the longer of the two, at roughly 230 words, which breaks the 120-word limit by a wide margin. Much of that length is filler, such as the opening thank-you, \"warmly invited\", and the closing line. It also drops the consequence that delays may follow for client files.\n\nResponse B is also over 120 words, at roughly 150, but it is much closer to the limit. It keeps every actionable point: who to ask, the deadlines, what not to pack, the laptop dates, the card collection, and parking eligibility. Its only real omission is the note about delays to client files, which is minor. For a busy manager, it is the more useful and efficient summary.\n\nResponse B is better on concision and equally accurate, so it wins.\n\nVerdict: B",
+  "usage": {
+    "input": 1797,
+    "output": 902
+  },
+  "cost": 0.0006307000000000001
+}

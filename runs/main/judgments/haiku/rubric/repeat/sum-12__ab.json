@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-12",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both summaries state the core facts correctly: the 1 November start, the fee changes ($3 to $4 hourly, $18 to $24 daily cap), the $15 weekly pass, eligibility, the 20 October application date, the letter requirement, the 180 closed spaces, the 18-month repair, and the staff exemption. Both also say the new pass \"replaces\" or is \"instead of\" the $9 daily concession, which the source doesn't state outright. Both run about 120 to 126 words, so both slightly overshoot the limit.\n\nResponse A adds \"This is a significant saving for regular users.\" That is an evaluative claim not made in the article; it is a reasonable inference from the $15 weekly versus $9 daily comparison, but it is still unsourced. Response B sticks closer to the text and groups information by topic (fees, purpose of the increase, concession, staff, petition), which suits a busy manager scanning quickly. Neither omits anything the manager needs. Response B is marginally better for its cleaner structure and lack of editorialising, though the difference is small.\n\nVerdict: B",
+  "usage": {
+    "input": 1364,
+    "output": 1847
+  },
+  "cost": 0.0010599000000000001
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-27",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A comes in at roughly 120 words. It sits right at the limit, slightly over if you count the bold labels, but is essentially compliant. It covers every key point: the recommendation, the pilot design, the headline numbers, the confounding promotion, the adjusted 2-point gap, the sales claim, the cost, and the proposed randomised test with its decision date. It is concise and well suited to a busy manager.\n\nResponse B covers the same content but runs well over 120 words, likely 200 or more. It repeats itself: the bold headline and the first paragraph say the same thing, and phrases like \"During August and September\" restate the bullet labels. It also shifts into a first-person voice (\"I would kindly recommend\", \"We would kindly ask\"), which misattributes the author and adds filler.",
+  "usage": {
+    "input": 1494,
+    "output": 1377
+  },
+  "cost": 0.033516
+}

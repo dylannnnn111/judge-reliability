@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-05",
+  "side": "B",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate. The headline finding, the speed and accuracy results, the 31% vs 44% discomfort figures, the 78% who felt more productive, the standing-time drop from 47 to 19 minutes, and the short-task and blinding limitations all match the brief. Its weaknesses are length and some filler. My count is roughly 148 words, which breaks the explicit \"under 120 words\" limit. Phrases like \"To summarize the main finding,\" \"It is worth noting that,\" and \"There are also a few points to keep in mind\" add words without content. The funding note (no supplier involvement) is omitted, though a busy manager could reasonably skip it. The core message is clear and well organised, so the main deduction is for the constraint violation.\n\nScore: 5",
+  "usage": {
+    "input": 1174,
+    "output": 1137
+  },
+  "cost": 0.0006859
+}

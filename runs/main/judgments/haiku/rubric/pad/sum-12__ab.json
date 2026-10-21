@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-12",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are broadly accurate on the key figures: the $3 to $4 hourly rate, the $18 to $24 daily cap, the $15 weekly pass, the 20 October form availability, the 18-month repairs, and the 180 closed spaces. Response A adds a mild inference (\"a significant saving\"), but Barry Sutton's comment supports it. Response B says the $15 pass \"replaces\" the $9 concession, which the article doesn't state outright.\n\nResponse A stays under the 120-word limit, covers everything a manager needs (fees, who is affected, the pass, application timing, the reason for the change, the timeline, staff impact, and the petition), and reads cleanly. Response B runs well past 120 words, which breaks an explicit instruction. It also adds filler such as \"I would like to let you know\" and \"I want to reassure you\", which doesn't help a busy reader. Its extra detail, such as the collection and download options, doesn't justify the length.\n\nResponse A follows the brief better on length and concision, with no material accuracy problems.\n\nVerdict: A",
+  "usage": {
+    "input": 1468,
+    "output": 949
+  },
+  "cost": 0.0006213
+}

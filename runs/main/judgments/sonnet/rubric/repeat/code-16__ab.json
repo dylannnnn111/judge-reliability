@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "code-16",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same core real issues: `sortByPrice` mutates its input, there is no input validation, totals must be recomputed server-side, discount matching is brittle, and `formatAud` mishandles negatives and separators. Both also raise the GST-inclusive pricing question.\n\n**Response A:**\n- It puts the certain bug (sort mutation) first and the speculative GST question last, labelled \"verify\". That ranking is sensible.\n- It pads the list with low-value items. The \"hardcoded discount code\" point is a business-design complaint, not a bug. The rounding point is marginal, since half-cent float issues here are rare and the proposed fix is only a small improvement.\n- It runs to roughly 280 words, well over the 200-word limit.\n\n**Response B:**\n- It puts the GST issue first as \"likely double-counted\". That is speculative, because the code may legitimately use GST-exclusive prices. It does hedge with \"confirm whether\", but leading with it overstates its certainty compared with the sort mutation. It is also a high-impact point if true.\n- It covers the same real issues with concrete fixes. For example, it suggests normalising the discount code and returning an error for unknown codes, which is more useful than A's treatment.\n- It skips the marginal rounding and hardcoded-code points, so it is tighter and closer to the word limit, though it may still be slightly over.\n\nOverall, A ranks better at the top, but B is more focused and follows the length constraint more closely. B also avoids flagging near-non-issues. The difference is small, and B edges ahead.\n\nVerdict: B",
+  "usage": {
+    "input": 1699,
+    "output": 1269
+  },
+  "cost": 0.016088
+}

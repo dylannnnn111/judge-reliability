@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-07",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate on the release date, the removed Classic CSV export and its import risk, the Android 9 change, the new features, the improvements and fixes, and the coming-soon items. Its main weaknesses are minor. It omits that the app keeps working on Android 9, which a manager might read as a bigger problem than it is. It also files the bug fixes under \"Improvements,\" a small mislabelling. Its word count is about 125, which appears to exceed the 120-word limit, though my count is approximate. The structure is clear and the key action item leads, which suits a busy reader.\n\nScore: 6",
+  "usage": {
+    "input": 1090,
+    "output": 989
+  },
+  "cost": 0.0006035
+}

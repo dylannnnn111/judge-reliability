@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-17",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly identifies Venus and gives an accurate average surface temperature of about 465°C (870°F). It explains the key cause, a runaway greenhouse effect driven by a dense CO₂ atmosphere, and notes that Mercury, though closer to the Sun, is cooler. The surface pressure figure of roughly 90 times Earth's is also accurate. The sulfuric acid cloud detail is correct, though the sentence linking reflection to continued heating is a little awkward. It stays well under 120 words, and every sentence adds relevant content.\n\nScore: 9",
+  "usage": {
+    "input": 400,
+    "output": 376
+  },
+  "cost": 0.000228
+}

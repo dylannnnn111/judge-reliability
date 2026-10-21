@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "sum-34",
+  "side": "A",
+  "score": 3,
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** The response is mostly accurate. The date, the 30-minute window, the 24/48-hour reminder options, the Android known issue and next month's plans are all correct. There are a few small slips:\n- It says leave blocking means \"practitioners do not need to adjust the booking schedule by hand.\" The original says admins enter leave in advance, so this shifts who does what.\n- \"We will share further details as these features approach their release\" is invented.\n- The waitlist description drops two conditions: it applies to fully booked days, and an unaccepted slot passes to the next person.\n\n**Key points:** It covers the main features, the improvements and the most significant fix. Omitting the tablet and invoice fixes is reasonable for a summary.\n\n**Concision:** This is the major failure. The user set a hard limit of under 120 words, and the response runs to about 300, roughly two and a half times the limit. Much of that is padding: \"I'm pleased to share,\" \"so you can see how they work together,\" \"Beyond these three features,\" and \"Finally… We will share further details.\" The response ignores an explicit instruction and is far longer than a busy manager needs, while adding no useful content to justify the length.\n\nScore: 3",
+  "usage": {
+    "input": 1229,
+    "output": 596
+  },
+  "cost": 0.016836
+}

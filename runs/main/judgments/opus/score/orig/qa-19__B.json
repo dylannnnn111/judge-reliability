@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-19",
+  "side": "B",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The response is factually accurate on the main points:\n\n- **Source word:** \"Kangaroo\" comes from Guugu Yimithirr *gangurru*.\n- **Recording:** Cook and Banks recorded it in 1770 while repairing the *Endeavour* near present-day Cooktown.\n- **The myth:** The \"I don't understand\" story is false, and the response says so clearly.\n- **Haviland:** His 1970s fieldwork confirmed the word as a genuine animal name.\n\nThe explanation for how the myth arose is plausible and commonly cited. Other Aboriginal groups did not recognize the word, because Australia had many distinct languages.\n\nOne minor nuance: Haviland reported *gangurru* as naming a large black or grey kangaroo. \"Eastern grey kangaroo\" is a common and defensible gloss, but it slightly overstates the precision.\n\nThe response gives the key reasoning: the origin, the evidence that debunks the myth, and why the myth persists. It is clear and well organized. At about 110 words it meets the under-120 limit. The final sentence is slightly redundant but harmless.\n\nScore: 9",
+  "usage": {
+    "input": 485,
+    "output": 1330
+  },
+  "cost": 0.02854
+}

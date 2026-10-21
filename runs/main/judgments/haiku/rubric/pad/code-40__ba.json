@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-40",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the most important bug: the `while` loop runs in a pipeline subshell, so `alerts` never changes and the script always exits 0. Both also correctly flag the `set -e` abort on a failed `curl`, the crash on non-numeric `pct` values like `-`, and alert repetition every 5 minutes. Response A adds two real issues Response B misses: squashfs/snap mounts that sit at 100% and generate false alerts, and a stale NFS mount that can hang `df` and pile up cron runs. Its fixes are concrete, such as the `-x` exclusions and `timeout`/`--max-time`. Response B's point about two alert channels is reasonable but less important. Both exceed the 200-word limit, with A going further over, and A's preamble is filler. Still, A's extra content is correct and useful, so it is the stronger review despite the overrun.\n\nVerdict: A",
+  "usage": {
+    "input": 1967,
+    "output": 1191
+  },
+  "cost": 0.0007922000000000001
+}

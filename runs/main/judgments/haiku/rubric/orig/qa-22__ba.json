@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-22",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly answer \"no\" and explain that the Coriolis effect is far too weak to govern drain direction in a sink or toilet. Both also note that the effect only shows up in extremely controlled experiments.\n\nResponse A gives the key reasoning more concretely. It names the dominant factors and notes that toilet rim jets set the swirl direction, so the same model flushes the same way everywhere. It also ties the experiment to Australia by citing a Sydney replication, which is relevant to the question. The Sydney detail is specific enough that I can't fully verify it, which is a small risk.\n\nResponse B is accurate and clear. It adds the useful point that identical sinks side by side can drain differently, but it is less specific about the mechanisms and does not connect to Australia.\n\nOn balance, Response A gives the stronger reasoning and more relevant detail, with only a small uncertainty about the Sydney claim.\n\nVerdict: A",
+  "usage": {
+    "input": 741,
+    "output": 845
+  },
+  "cost": 0.0004966
+}

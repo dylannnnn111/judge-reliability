@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-20",
+  "side": "B",
+  "score": 10,
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** Canberra is the capital. The provisional Parliament House opened on 9 May 1927, and the Duke of York (later King George VI) performed the opening. Parliament had sat in Melbourne since 1901 and moved to the current Parliament House in 1988. All of this is accurate.\n\n**Reasoning and context:** The answer adds brief, relevant context: the opening date and who opened it, the earlier Melbourne arrangement, and the 1988 move. Each addition is correct and helps explain the answer.\n\n**Clarity:** The key answers are bolded and the response is concise, at about 65 words, well under the limit.\n\nScore: 10",
+  "usage": {
+    "input": 334,
+    "output": 315
+  },
+  "cost": 0.007636
+}

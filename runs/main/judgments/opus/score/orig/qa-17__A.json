@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-17",
+  "side": "A",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The response is correct: **Venus** has the hottest surface, at about 465°C (870°F). It rightly notes that Venus is hotter than Mercury despite Mercury being closer to the Sun, which shows real understanding.\n\n**Reasoning:** It gives the key reason, a runaway greenhouse effect driven by a thick CO₂ atmosphere that traps outgoing infrared radiation. It also adds a useful nuance: the sulfuric acid clouds reflect much sunlight, yet the surface still gets extremely hot. The 90-times-Earth pressure figure is accurate. However, saying pressure is \"further contributing\" is a bit loose, since pressure doesn't heat the surface by itself. It is the dense atmosphere's heat trapping and redistribution that matters.\n\n**Clarity and length:** The answer is clear and well organized, at about 86 words, which meets the under-120 limit.\n\nScore: 9",
+  "usage": {
+    "input": 400,
+    "output": 711
+  },
+  "cost": 0.01582
+}

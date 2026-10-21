@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-29",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "Both responses find the same core issues and rank them the same way:\n\n1. **`NOT IN` with a NULL subquery.** This is the critical bug, since it returns an empty audience. Both explain it correctly and fix it with `NOT EXISTS` or an `IS NOT NULL` filter.\n2. **The 2026 date filter.** It contradicts the \"never referred anyone\" intent. Both catch this.\n3. **`LIMIT 5000` with `ORDER BY created_at`.** This always picks the oldest cohort. Both flag it.\n4. **Date-format and storage concerns.** Both note this as minor.\n\nNeither raises a false problem, so substance and ranking are essentially equal.\n\n**Differences:**\n- **Length and filler.** Response A is padded: \"To explain the problem,\" \"In other words,\" and an opening paragraph that just restates the ordering. That puts it well over the 200-word limit the user set.\n- **Concision.** Response B is tight, close to the limit, and every sentence carries information.\n- **Precision.** Response B says the subquery \"almost certainly\" contains a NULL and calls out the SQLite-specific function and the Unix-epoch storage case. That is slightly sharper than A's vague \"another format.\"\n- **A's extra point.** Response A adds a bullet about duplicate emails, suppression lists, and prior contacts. This is reasonable but speculative and generic rather than a bug in the shown code. It does not outweigh the verbosity and the broken word limit.\n\nResponse B delivers the same correct, well-ranked findings with fixes, more precisely and within the requested constraint.\n\nVerdict: B",
+  "usage": {
+    "input": 1749,
+    "output": 728
+  },
+  "cost": 0.021556
+}

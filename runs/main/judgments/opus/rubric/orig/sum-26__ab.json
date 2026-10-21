@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-26",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.** Both responses break the user's 120-word limit by a similar amount: A runs to about 155 words and B to about 150 including its heading. Neither wins on that hard constraint, so the comparison rests on accuracy and coverage.\n\n**Accuracy:** Both are largely accurate.\n- **\"Within an hour\":** both use similar phrasing. Residents were trapped 7:50–8:50, so this is fine.\n- **A's \"carried down the stairs\":** a slight embellishment of \"helped down the stairs using an evacuation chair,\" but not misleading.\n- **B's \"daily printed updates\":** the source says the first notice was printed but doesn't say the afternoon updates were. This is a minor stretch.\n- Both correctly attribute the $2,300 approval to the village manager. Both correctly say the second-lift request was referred to the board.\n\n**Coverage:** B keeps more of what a manager needs at about the same length.\n- B includes the refresher training for staff who used the evacuation chair.\n- B notes that families of high-care residents were phoned.\n- B gives the approval date and explains *why* Tower A was checked (same model).\n- A omits the training and family calls, which are relevant follow-up and duty-of-care points.\n\n**Readability:** B's headings make it easier for a busy reader to scan.\n\nVerdict: B",
+  "usage": {
+    "input": 1541,
+    "output": 1466
+  },
+  "cost": 0.035484
+}

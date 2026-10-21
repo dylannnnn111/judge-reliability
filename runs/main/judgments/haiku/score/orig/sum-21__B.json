@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-21",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate. I checked the arithmetic: 6 × $38,190 = $229,140, which is $13,140 over the $216,000 budget. Northside's petrol option is 6 × $34,980 = $209,880, which is within budget. The four-year fuel saving of $5,400 and the hire-car estimate of about $21,600 (6 cars × 2 months × $1,800) are also correct, though the hire-car total assumes all six cars, which the email doesn't state. It correctly identifies who must decide (Ruth's sign-off, since the amount exceeds Dom's delegation) and the 24 October deadline. It is under 120 words and easy to scan. The main omissions are minor: it doesn't mention that Elmwood's hybrid is the cheapest hybrid, or that Coastal Fleet has no hybrid until March, which explains why Coastal was not preferred.\n\nScore: 8",
+  "usage": {
+    "input": 1134,
+    "output": 1576
+  },
+  "cost": 0.0009014
+}

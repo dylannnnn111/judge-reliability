@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-13",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same core bugs: the December crash, day-of-month overflow, schedule drift, the hardcoded 30-day proration, missing validation, and rounding. Both rank them sensibly, with crashes first, and both give fixes.\n\n**Response A** is somewhat richer. It suggests `dateutil.relativedelta` and `calendar.monthrange`, and it offers a concrete proration fix (`(next_billing_date(start) - start).days`, with `days_used` capped). However, it runs to roughly 250 words, clearly over the 200-word limit. Its last item, on timezones and tests, is low-value filler. The drift item is also framed as a risk of a naive fix rather than a bug in the current code, which is less direct.\n\n**Response B** stays at about 200 words, right at the limit, and covers the same substantive issues concisely. It states drift as an actual flaw in the design, and it notes that `days_used` can exceed 30. It also raises the useful question of inclusive versus exclusive end-date counting. Its one error is saying `//` \"floors toward zero\"; it floors toward negative infinity. This is minor, and it doesn't change the conclusion that billing is under-rounded for positive amounts.\n\nBecause A clearly breaks the word limit and adds a weak padding item, while B is equally accurate on the important issues apart from one small slip, B is the better response.\n\nVerdict: B",
+  "usage": {
+    "input": 1499,
+    "output": 1301
+  },
+  "cost": 0.016008
+}

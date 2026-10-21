@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-18",
+  "side": "A",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The response gets the core facts right: the release date, the 35-degree heat threshold and its Settings path, the 15% battery figure, the sync interval, and the fixes and accessibility items all match the source. Its main accuracy problem is the closing line, \"No action is required from the team.\" The release notes say nothing about team action, so this is an unsupported claim that a manager might act on. It also converts \"35 degrees\" to \"35°C,\" a reasonable but unstated assumption.\n\nOn coverage, it keeps the features, improvements, fixes and accessibility points a manager needs, and it drops only the thank-you and help-centre lines, which is acceptable. On length, the response runs to roughly 145 words, well over the 120-word limit, so it fails an explicit instruction. Its structure is clear, but the extra words are not needed to convey the content.\n\nThe unsupported closing claim and the length overrun pull the score down.\n\nScore: 5",
+  "usage": {
+    "input": 1072,
+    "output": 983
+  },
+  "cost": 0.0005987000000000001
+}

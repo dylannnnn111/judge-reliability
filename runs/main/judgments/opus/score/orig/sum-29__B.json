@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-29",
+  "side": "B",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The response is accurate throughout:\n\n- **Prices and data:** All six price changes and all six data allowances match the notice.\n- **Start date:** It correctly gives the first bill after 15 November 2026.\n- **Who's affected:**\n  - Current plans from March 2024 are affected.\n  - Classic plans are unchanged this year.\n  - Fixed 12- or 24-month contracts are deferred until they end.\n- **Options:** No exit fee before 15 November, and device repayments still apply.\n- **Reason:** Higher network costs and regional investment, including the 120 new sites.\n- **Support:** The contact details are right.\n\n**Minor imprecision:** It drops \"regional\" before Queensland and Western Australia, but \"regional coverage\" earlier in the same sentence keeps the meaning.\n\n**Omissions:** It leaves out how to check your plan in the app and that the Classic range ended in 2024. Neither matters to a manager, so cutting them is good judgement.\n\n**Length:** It comes to about 117 words if the arrow symbols aren't counted as words. That is under the limit, but only just. It would exceed 120 if the arrows were counted, which is a slight risk.\n\n**Structure:** The bolded sections let a busy manager scan it quickly, and nothing is padded.\n\n**Possible improvement:** It could have stated the overall framing more sharply, for example that prices rise about 8–9% with roughly 33–50% more data. This is not a flaw.\n\nScore: 9",
+  "usage": {
+    "input": 1100,
+    "output": 1583
+  },
+  "cost": 0.03606
+}

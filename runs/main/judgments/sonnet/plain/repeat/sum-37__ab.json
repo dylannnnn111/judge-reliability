@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "sum-37",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B** is the better response. Both summaries go over the 120-word limit, but B is closer (about 128 words against A's roughly 144).\n\nB also covers more of what a manager needs:\n- It includes the progress that is on track: the nightly data loads and 14 of 22 reports matching the old system.\n- It notes that Tomas is documenting the payroll system in the meantime.\n- Its bold headings make it easier to scan.\n\nA is slightly more accurate on option 2. It says going live without payroll \"may not be acceptable\", which reflects Finance's condition that a partial go-live only works if the month-end reports don't depend on payroll. B only says that four month-end reports need payroll. A also states more plainly that \"none has been decided\".\n\nA's greater accuracy on option 2 doesn't outweigh B's better length compliance and fuller coverage.\n\n**B**",
+  "usage": {
+    "input": 1321,
+    "output": 2054
+  },
+  "cost": 0.023182
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-02",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both summaries are accurate. Response A states the Mount Lavell and Westbrook Central visitor figures (11 vs 64), which explain the rationale behind the proposal. It also notes that the roof leak was patched and that the replacement is recommended within two years, and it flags the volunteer action with its deadline. Its one gap is omitting the air conditioning service. Response B is equally correct and mentions the air conditioning service, but it drops the visitor figures that give the opening-hours debate its context. It also omits that the leak was patched, which matters for a manager deciding urgency. Both are well under 120 words, and neither contains errors, so the difference is in which decision-relevant details each keeps. A keeps slightly more of what a busy manager needs without adding padding.\n\nVerdict: A",
+  "usage": {
+    "input": 1621,
+    "output": 1078
+  },
+  "cost": 0.0007011000000000001
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-10",
+  "side": "A",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly identifies the most serious problem: `SLUG_RE.match` anchors only the start of the string, and `<path:slug>` allows slashes, so traversal works. Its example is valid, and the fix (`fullmatch` plus the default `<slug>` converter) is correct. The missing authentication point is real, though the response hedges on whether it's enforced elsewhere, which is reasonable given that the snippet is partial. The symlink and TOCTOU points are legitimate, if lower priority. The `as_attachment=True` point is relevant since the user wants downloads.\n\nItem 6 is wrong. The code already returns 400 for slugs that fail the regex, so the claim that they \"fall through to a 404\" is false. The response also misses little of importance, though it could have noted that `send_file` error handling is absent. Overall it finds the key bugs, ranks them sensibly, and gives usable fixes, with one incorrect minor point and some padding in the lower items.\n\nScore: 7",
+  "usage": {
+    "input": 921,
+    "output": 1081
+  },
+  "cost": 0.0006326
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-23",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Accuracy: Response A is accurate throughout. \"Tse will request a speed counter\" matches the source (\"would ask council traffic staff to put a speed counter... and report back\"). \"Facebook page to post meeting dates more clearly\" is correct. \"Budget up to $900\" is correct. The word count looks to be roughly 100, so within limit.\n\nResponse B contains a misleading statement: \"Council will install a speed counter after resident concerns.\" The source says only that Cr Tse would ask council traffic staff to put one in and report back. That turns a request into a commitment, which is an accuracy error on who decided what. B also says \"Membership is up\", which is fine. It omits who is coordinating the Clean Up Day, who is booking the sound system, and the Facebook item. It does mention the school choir, which A omits. B also drops the playground details (flying fox, accessible swing), which are minor.\n\nOn key points: A keeps action owners (Laila, Peter), which a manager may find useful, plus the Facebook item. B keeps the choir. A is more complete, and it stays within the word limit.\n\nConcision: B is shorter, but its extra brevity costs an accuracy error and omitted owners. A is still concise.\n\nA is better on accuracy and completeness.\n\nVerdict: A",
+  "usage": {
+    "input": 1550,
+    "output": 407
+  },
+  "cost": 0.00717
+}

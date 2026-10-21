@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-29",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses find the same core issues in the same order:\n1. `NOT IN` with a NULL-producing subquery returns no rows.\n2. The date filter contradicts the \"never referred\" intent.\n3. `LIMIT` with `ORDER BY created_at` keeps picking the oldest customers.\n4. Date comparisons depend on how `created_at` is stored.\n\nBoth offer the correct `NOT EXISTS` fix and the alternative `IS NOT NULL` filter.\n\nThe deciding factor is the explicit \"under 200 words\" constraint. Response A is padded with filler, such as \"The issues below are listed in order of importance…\" and \"To explain the problem… In other words…\". It runs well over 200 words. Response B is tight and close to the limit, and it gives a clearer explanation of the NULL semantics. It also adds the useful point that `date('now', ...)` is SQLite-specific and fails silently with epoch integers.\n\nA's extra point about duplicate or suppressed emails is reasonable, but it does not outweigh breaking the length requirement and the verbosity.",
+  "usage": {
+    "input": 1593,
+    "output": 523
+  },
+  "cost": 0.016832
+}

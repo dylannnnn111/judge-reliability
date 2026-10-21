@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-32",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better, though both responses break the 120-word limit. A runs to roughly 175 words and B to roughly 165, so neither follows that instruction and the gap between them is small.\n\n**Response A:**\n- It opens with filler (\"I would like to take a moment to summarise this complaint for you\"), which wastes words for a busy reader.\n- It omits the customers' refund request.\n- It describes the sequence oddly (\"Following this, the complaint was closed... and referred\").\n- Its flag that closure may be premature is a useful insight, but it overstates the case by saying the customers \"have not accepted the outcome\". They accepted the $250 and still feel misled.\n\n**Response B:**\n- It is laid out in labelled sections (Issue, Our position, Outcome, Risk), so a manager can scan it quickly.\n- It includes the refund demand and explains the rate arithmetic clearly.\n- It correctly says the customers accepted the payment but still feel misled, and that a call about fixed-rate options was referred to lending.\n- Its risk note about a possible AFCA escalation is reasonable and relevant.\n\nB is cleaner and more accurate, so I prefer it.\n\n**B**",
+  "usage": {
+    "input": 1516,
+    "output": 1955
+  },
+  "cost": 0.022582
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-28",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the core bugs: the connection leak, the check-then-act race, the unvalidated `toId` that lets money vanish, deadlock risk, and the ROLLBACK error masking. Response B ranks the connection leak first, which is a reasonable call since it takes the API down. Response A ranks it third, behind the race and the vanished funds, which is also defensible but less intuitive. Response A's deadlock point is more accurate, since it doesn't suggest the locks only appear after a future change; in the current code the UPDATEs already lock rows in opposite orders. Response B's claim that `bigint` balances come back as strings and make the comparison unreliable is mostly wrong, because JavaScript's `<` coerces the string to a number, so it only matters past 2^53. Response B's idempotency point is a useful addition for an API that may retry. Response A's CHECK constraint suggestion is a good defense-in-depth point. On length, both exceed the 200-word limit, but Response A overshoots more, and Response B is tighter.\n\nVerdict: B",
+  "usage": {
+    "input": 1980,
+    "output": 1308
+  },
+  "cost": 0.000852
+}

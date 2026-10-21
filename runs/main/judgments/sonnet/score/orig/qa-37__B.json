@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "qa-37",
+  "side": "B",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "Correctness: Uluru is arkose sandstone, rich in feldspar, and its red colour comes from iron oxidation (rusting) of iron-bearing minerals on the weathered surface. The interior is grey. Sunset light intensifies the colour. All of this is accurate.\n\nWord count: the first paragraph has about 54 words and the second about 27, then the third about 38, for a total of roughly 119. Counting more carefully:\n\nParagraph 1: \"Uluru(1) is(2) red(3) because(4) of(5) rust.(6) The(7) rock(8) is(9) arkose,(10) a(11) sandstone(12) rich(13) in(14) feldspar(15) and(16) quartz,(17) and(18) it(19) contains(20) small(21) amounts(22) of(23) iron-bearing(24) minerals.(25) Over(26) millions(27) of(28) years,(29) exposure(30) to(31) oxygen(32) and(33) water(34) has(35) oxidized(36) this(37) iron,(38) forming(39) iron(40) oxides(41) (essentially(42) rust)(43) that(44) coat(45) the(46) surface(47) and(48) give(49) it(50) its(51) rusty-orange(52) to(53) red(54) colour.(55)\"\n\nParagraph 2: \"The(1) effect(2) is(3) mostly(4) superficial.(5) If(6) you(7) look(8) at(9) a(10) freshly(11) broken(12) piece(13) of(14) the(15) rock,(16) the(17) interior(18) is(19) grey.(20) The(21) outer(22) weathered(23) layer(24) is(25) what(26) appears(27) red.(28)\" That gives 28 words, for a running total of 83.\n\nParagraph 3: \"Uluru's(1) colour(2) also(3) seems(4) to(5) change(6) throughout(7) the(8) day.(9) At(10) sunrise(11) and(12) sunset,(13) the(14) low-angle(15) light(16) is(17) richer(18) in(19) red(20) wavelengths,(21) so(22) the(23) rock(24) can(25) glow(26) deep(27) red,(28) orange,(29) or(30) even(31) purple.(32)\" That gives 32 words, for a total of 115.\n\nAt 115 words the response is under 120, so it meets the constraint.\n\nThe key reasoning is present, and the response is clear. There is a minor quibble: the claim that the light is \"richer in red wavelengths\" is a simplification, since the light is scattered so that the blue is removed. It is a commonly accepted shorthand.\n\nScore: 9",
+  "usage": {
+    "input": 422,
+    "output": 888
+  },
+  "cost": 0.009724
+}

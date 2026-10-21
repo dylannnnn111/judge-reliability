@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-09",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries are accurate on the key facts: the $62,400 starting rent plus GST, the 1 March reviews, the 3–5% CPI collar in years 2–4, the year-5 market review with a floor at year-4 rent, the 30-day independent valuer with split costs, the separate outgoings, and the 14-day notice with back-payment if notice is late. Neither contains a real error. Both also say the landlord's valuer sets the market rent, which matches the source.\n\nThere are only small differences:\n- A says rent \"could rise sharply,\" a slight embellishment of \"can go up by more.\"\n- A says \"no cap,\" which is accurate.\n- B says \"at least 14 days,\" which is slightly more precise than A's \"14 days'.\"\n- A adds the examples of outgoings (rates, strata levies, cleaning), which are marginally useful but add words.\n\nBoth are slightly over the 120-word limit by my count, A at about 127 and B at about 129, so neither has a meaningful advantage on concision. The differences are too small to matter.\n\nVerdict: TIE",
+  "usage": {
+    "input": 1503,
+    "output": 2184
+  },
+  "cost": 0.024846
+}

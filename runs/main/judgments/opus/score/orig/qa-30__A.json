@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-30",
+  "side": "A",
+  "score": 8,
+  "model": "claude-opus-5-5",
+  "text": "**Correctness:** The definition is accurate. It names the key conditioning, including the often-omitted point that the p-value assumes the other model assumptions as well as the null. All five \"NOT\" items are standard misconceptions highlighted by the ASA statement:\n\n- the probability the null is true\n- the probability the result happened \"by chance\"\n- the probability of replication\n- a measure of effect size or importance\n- proof in either direction\n\nThe closing sentence correctly says you need prior information to get hypothesis probabilities. One phrasing is slightly too strong: \"incompatible with the null model\" would be better as \"less compatible.\" That is a small nuance, not an error.\n\n**Key reasoning:** It covers the essentials. It explains the conditional nature of the p-value and why that makes the probability the null is true the wrong reading.\n\n**Clarity and constraint:** The structure is clean and easy to scan. However, the count is about 119–123 words, depending on whether the \"<\" and \">\" symbols and the headers are counted. That is borderline on or slightly over the 120-word limit, which is a minor compliance issue.\n\nOverall, the content is strong and accurate, with a small risk of exceeding the length limit.\n\nScore: 8",
+  "usage": {
+    "input": 432,
+    "output": 1180
+  },
+  "cost": 0.025328
+}

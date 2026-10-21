@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-17",
+  "side": "A",
+  "score": 6,
+  "model": "claude-haiku-5-5",
+  "text": "The summary is largely accurate. The four-weekend pattern, the 10pm amplified-music condition, the midnight Friday/Saturday outdoor hours, the regulator's need for evidence, the venue manager's commitments and the 20 October report-back all match the thread. Two small issues: \"the bar's licence lets it open until midnight\" slightly blurs the outdoor-area licence, and \"blamed a new DJ\" is a mild editorial spin on Clare's explanation. The bigger problem is length. By my count the response runs about 124 words, over the 120-word limit the user set. It keeps the points a manager needs (the breach, the agreed fix, the next step and the fallback), but it isn't as concise as it could be, and it breaks an explicit constraint.\n\nScore: 6",
+  "usage": {
+    "input": 1199,
+    "output": 1806
+  },
+  "cost": 0.0010229
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-02",
+  "side": "A",
+  "score": 10,
+  "model": "claude-haiku-5-5",
+  "text": "The response is correct. Going takes 2 hours and returning takes 4/3 hours, so the round trip covers 320 km in 10/3 hours, giving an average of 96 km/h. The harmonic mean check, 2·80·120/(80+120) = 96, is also correct. The response explains why the simple average of 100 km/h is wrong, which is the key conceptual point, and it stays well under the 120-word limit. The layout is clear and each step is easy to follow.\n\nScore: 10",
+  "usage": {
+    "input": 461,
+    "output": 269
+  },
+  "cost": 0.0001806
+}

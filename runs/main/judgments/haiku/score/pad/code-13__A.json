@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "code-13",
+  "side": "A",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The response identifies real problems: the December crash (`month + 1 == 13`), the day-of-month overflow (Jan 31 → Feb 31), the hardcoded 30-day proration, missing input validation (negative day counts, `months <= 0`), and floor-division rounding. The December and overflow crashes are correctly ranked as the most important. The drift point (#3) is muddled: the code doesn't clamp, so it crashes rather than drifting, and the drift example describes behavior of a hypothetical fixed version. The response also gives fix directions for most items. However, it runs well over the 200-word limit (roughly 330 words) and includes filler like \"Below are the six issues identified,\" which violates an explicit constraint. Accuracy and ranking are solid, but the length violation and the confused drift item pull the score down.\n\nScore: 5",
+  "usage": {
+    "input": 1124,
+    "output": 907
+  },
+  "cost": 0.0005658999999999999
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-38",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses are scientifically correct. Each covers the same core mechanism:\n- The extremely cold winter stratosphere lets polar stratospheric clouds form.\n- Reactions on cloud surfaces convert chlorine reservoirs (HCl, ClONO₂) into reactive forms like Cl₂.\n- The polar vortex isolates the air.\n- Returning spring sunlight photolyzes Cl₂, releasing chlorine radicals that catalytically destroy ozone.\n- The vortex then breaks down and the hole refills.\n\nResponse A adds some useful context: the −78°C threshold, CFCs as the chlorine source, and a brief Arctic comparison explaining why Antarctica specifically. That is good reasoning content. However, by my count Response A runs to about 126 words, which breaks the explicit \"under 120 words\" instruction.\n\nResponse B gives the same key reasoning, including the spring timing and the September–October peak, in about 94 words. It omits the explicit CFC mention and the Arctic contrast, which slightly weakens its \"why Antarctica\" explanation. Still, it is accurate, clear, and complete enough while respecting the constraint.\n\nNeither has an error of fact. Response A's extra content is valuable, but it comes at the cost of failing a clear user instruction, while Response B delivers the essential explanation within the limit.\n\nVerdict: B",
+  "usage": {
+    "input": 827,
+    "output": 1254
+  },
+  "cost": 0.028388
+}

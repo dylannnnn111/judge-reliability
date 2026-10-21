@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-18",
+  "side": "B",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response correctly identifies Willem Janszoon and the *Duyfken* in 1606 as the first recorded European landing on the Australian mainland, at the western side of Cape York Peninsula. The Pennefather River location is accurate. It also correctly notes that Dirk Hartog's 1616 landing was on an island in Shark Bay, so it does not contradict the mainland answer, and the pewter plate detail is accurate. The mention of unverified Portuguese claims is a reasonable caveat. The answer is clear and well organized, and at roughly 110 words it fits the under-120 limit. The main reasoning, that the landing is documented in Janszoon's voyage, is implicit rather than explained, but the answer is complete for the question asked.\n\nScore: 9",
+  "usage": {
+    "input": 405,
+    "output": 598
+  },
+  "cost": 0.0003395
+}

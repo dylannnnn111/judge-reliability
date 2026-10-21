@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-08",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response A** is clear and well organised. It covers what the manager needs:\n- the purchase and fault context\n- the 90-day store responsibility\n- Priya covering for Jason, with the replacement booked for Wednesday\n- Frostline's separate collection\n- Kevin's outstanding claim form and the $500 no-sign-off threshold\n- the 9 Oct escalation to Amara Osei\n- the customer's frustration\n\nIts one weakness is stating the fault date as \"29 September.\" The ticket only says \"Sunday\" and gives no year, so this is an inference that could be wrong. A safer phrasing would have been \"the Sunday before 2 Oct.\" The error is minor and within a few days of the truth.\n\n**Response B** has a worse date error. It says the fridge failed on 4 Oct, which is impossible because the complaint was made on 2 Oct. It follows this with a garbled parenthetical and then a \"Correction\" at the end asking the reader to disregard its own first sentence. For a busy manager who won't read the original, this is confusing and unprofessional. The draft-correction appendix also adds words and likely pushes it past the 120-word limit. Its other content matches A's, and its structure and \"Risk\" line are nice. But its accuracy failure is more serious and more visible than A's, and its presentation undermines trust.\n\nOn accuracy, key points and concision, A is the better summary.\n\nVerdict: A",
+  "usage": {
+    "input": 1640,
+    "output": 845
+  },
+  "cost": 0.02346
+}

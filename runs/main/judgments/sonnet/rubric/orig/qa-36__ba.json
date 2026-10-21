@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-36",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are under 120 words. Checking correctness first:\n\nResponse A says the curved upper surface makes air flow faster while the flatter lower surface keeps air slower. This is a simplified version of the popular explanation, and it leans toward the \"longer path\" misconception, though it doesn't explicitly state equal transit time. It treats the pressure difference and the downward deflection of air as two separate contributions (\"Together... produce lift\"), which is a bit misleading, since they are two descriptions of the same phenomenon. It also describes Bernoulli's principle and Newton's laws as if they were separate mechanisms. Its claim that lift comes \"mainly through its airfoil shape and angle of attack\" is acceptable.\n\nResponse B leads with deflecting air downward and names the airfoil shape and angle of attack. It describes the pressure difference and says \"Equivalently\" for the Newton's third law account, which is the correct framing. It also covers the effect of speed and angle of attack and the stall, which adds useful information. It says \"curved, asymmetric shape\", which is slightly imprecise because symmetric airfoils can generate lift at an angle of attack, but this is minor.\n\nResponse B is more accurate in treating the explanations as equivalent, and it adds the stall, which is relevant. Response A's framing of the two as separate contributions is a conceptual flaw.\n\nVerdict: B",
+  "usage": {
+    "input": 685,
+    "output": 445
+  },
+  "cost": 0.00582
+}

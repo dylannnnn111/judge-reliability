@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-30",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. Response A comes to roughly 123 words by my count, which breaks the \"under 120 words\" limit. Response B is about 85 words and stays within it. It also covers the main points: the correct definition and the common misconceptions (null probability, \"by chance,\" effect size, replication). Its last bullet is slightly awkward but still accurate. Response A's content is somewhat richer, but the length violation outweighs that.\n\n**B**",
+  "usage": {
+    "input": 499,
+    "output": 916
+  },
+  "cost": 0.010158
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-10",
+  "side": "A",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The response gives the correct answer, **1/3**.\n\n**Reasoning:** It lists the four equally likely outcomes (BB, BG, GB, GG) and removes BB under the condition. It notes that the remaining three stay equally likely, and only GG has two girls. That is the essential argument, stated correctly.\n\n**Clarity and length:** The response is about 107 words, so it meets the under-120 limit. The contrast with the 1/2 answer (when a specific child is known to be a girl) adds real value, since it addresses the most common confusion. Two small weaknesses:\n- The answer appears both at the top and at the bottom, which is redundant.\n- The phrase \"together outnumber the two-girl families\" is slightly loose wording, though not wrong.\n\nOverall, it is correct, well-reasoned, and clear, with only minor redundancy.\n\nScore: 9",
+  "usage": {
+    "input": 441,
+    "output": 608
+  },
+  "cost": 0.013924
+}

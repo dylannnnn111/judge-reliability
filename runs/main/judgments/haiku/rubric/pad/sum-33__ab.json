@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-33",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is more accurate and more concise. It correctly states the v1 shutdown moved from 30 November to 31 January 2027, keeps the 8% figure and the 15-minute switch time, and lists the key changes and fixes with specifics. It is probably a little over 120 words, but it stays close.\n\nResponse B has a significant accuracy problem. It says the new features are \"enabled automatically... so no action is needed,\" but the source says the area-based shift swap approvals must be set up in Admin > Permissions > Areas. It also pads the summary with filler (\"Thank you for taking the time...\", \"we kindly ask\") and runs well past 120 words. Its \"Also\" section drops the specifics a manager would need.\n\nBoth omit the staff-facing detail that notifications can be turned off and the \"staff could be paid late\" consequence, but Response A's omissions are less serious than Response B's misstatement and length.\n\nVerdict: A",
+  "usage": {
+    "input": 1707,
+    "output": 878
+  },
+  "cost": 0.0006097
+}

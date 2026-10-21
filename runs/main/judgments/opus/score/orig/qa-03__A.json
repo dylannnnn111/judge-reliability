@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "qa-03",
+  "side": "A",
+  "score": 9,
+  "model": "claude-opus-5-5",
+  "text": "The response is correct. The question asks for a percentage increase, which is the relative change: (5 − 4) ÷ 4 × 100 = 25%. The response gives this, with the calculation shown.\n\nIt also notes the rise is 1 percentage point. That distinction is useful here, since this is exactly where people confuse \"percent\" with \"percentage points,\" and it adds clarity rather than padding.\n\nThe reasoning is shown, the wording is clear and concise, and the response is well under the 120-word limit. One minor quibble: it leads with the percentage-point figure, when the question's direct answer is 25%. Both are bolded and clearly labelled, though, so this costs little.\n\nScore: 9",
+  "usage": {
+    "input": 307,
+    "output": 288
+  },
+  "cost": 0.006988
+}

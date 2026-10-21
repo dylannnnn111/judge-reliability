@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-12",
+  "side": "B",
+  "score": 5,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary covers the key facts correctly: the 1 November start, the fee rises, the repair funding, the concession pass conditions, the 20 October forms and the staff exemption. It has two problems.\n\n- **Word limit:** it comes to about 127 words, over the explicit 120-word limit.\n- **Accuracy:** it says the weekly pass \"will replace\" the $9 daily concession. The article only says concession parking has been \"extended\" and that the daily rate is the current concession. It never says the daily rate is being withdrawn, so this is an unsupported claim about a point that matters to the reader.\n\nIt also spends words on the petition, which is minor, while not mentioning that the closed levels reopen in stages. Those words would have been better used on staying under the limit.\n\nScore: 5",
+  "usage": {
+    "input": 1048,
+    "output": 1486
+  },
+  "cost": 0.016956
+}

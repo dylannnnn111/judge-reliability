@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-38",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for under 120 words. Response A is well over 120 words (roughly 200), so it breaks the explicit constraint. Response B is about 90 words and complies.\n\nOn correctness, both are accurate. Response B says PSC surfaces convert reservoirs into Cl₂ and HOCl, which is correct. Response A says \"−78°C\", which is approximately right (PSC formation needs about −78°C or colder). Both are fine on content.\n\nB covers the key reasoning: cold, PSCs, the vortex, returning sunlight, catalytic destruction, and the breakup of the vortex. A adds a little more detail, such as the Arctic comparison, but it violates the length limit.\n\nBecause the length constraint is explicit and A breaks it significantly, B is better.\n\nVerdict: B",
+  "usage": {
+    "input": 965,
+    "output": 257
+  },
+  "cost": 0.0045
+}

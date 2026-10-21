@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-18",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "**A**\n\nBoth responses correctly identify Willem Janszoon and the *Duyfken* in 1606 at Cape York Peninsula, and both stay under 120 words. I counted about 111 words for A, and B is shorter.\n\nA adds useful context: the crew mistook the land for part of New Guinea, there was a reported skirmish with Aboriginal people, and it places Hartog (1616) and Cook (1770) in sequence. It also notes that earlier Portuguese or Spanish contact is speculative and undocumented.\n\nB is accurate and concise, and its detail about Hartog's pewter plate is correct. But it offers less on the 1606 landing itself, which is what the question asks about.\n\nA answers the question more fully while staying within the limit.\n\n**A**",
+  "usage": {
+    "input": 569,
+    "output": 1262
+  },
+  "cost": 0.013758
+}

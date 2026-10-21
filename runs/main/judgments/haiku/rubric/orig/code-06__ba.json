@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-06",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the same core issues: the `is not` identity bug, the enumeration leak from distinct `LookupError` and `Forbidden` paths, the check-then-save race in `cancel_order`, and the missing refund logic for paid orders. Both are correct and rank the identity bug first, which is right since it breaks legitimate customers.\n\nResponse A adds two useful points. It explains why small-ID tests would hide the identity bug, and it notes that the in-memory object is mutated before `save`, which can leave callers with a false status. Its race fix lists several options but doesn't show the concrete query.\n\nResponse B gives a more actionable race fix: a conditional `UPDATE` that includes `customer_id` in the `WHERE` clause and checks the row count. That also ties ownership into the write itself. It also flags that the `ValueError` message exposes internal status strings to handlers that may pass them to clients, which is a real concern for an API. Its point about `save` not being transactional with the check overlaps with the race item.\n\nBoth are close to the 200-word limit. The differences are small, but Response B's fixes are more concrete and it catches the error-message leak, while Response A's mutation-before-save and test-masking points are also worthwhile. I give B a slight edge.\n\nVerdict: B",
+  "usage": {
+    "input": 1549,
+    "output": 1017
+  },
+  "cost": 0.0006634
+}

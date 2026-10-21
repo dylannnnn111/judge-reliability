@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-31",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Every figure matches the source: 118 pickers, 142 to 156 lines per hour, error rates of 0.62% and 0.41%, the 17% gain for new staff, 64% preference, $210,000 setup cost, 14-month payback, and the single-company limitation. Neither contains a misleading claim or a wrong condition.\n\nOn completeness, Response A keeps more of what a manager needs. It notes that the error improvement was smaller where rates were already low, and it records the colleague-interaction complaint alongside the headset comfort issue. Response B omits both. Response A also states that speed gains settled within four weeks, which bears on how quickly benefits arrive.\n\nOn concision, both are under 120 words, and Response B is somewhat tighter. But B is a single dense paragraph, while A's labelled bullets let a busy reader find speed, accuracy, cost and caveats at a glance. A's extra words carry correct, useful content rather than padding.\n\nResponse A is the better summary for this reader.\n\nVerdict: A",
+  "usage": {
+    "input": 1470,
+    "output": 1516
+  },
+  "cost": 0.000905
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-06",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries are under 120 words (A is roughly 116, B roughly 113). Both get the main facts right: the date, cost, joint funding, pool upgrades, prices, hours and opening-day events.\n\n**Accuracy:** Response B writes that rooftop solar is \"covering about a third of power needs\", which states as fact something the article only says is \"expected to cover\". Response A keeps \"expected\". A's \"All programs and the water play area resume\" is slightly broader than the article, which names lap swimming, aqua aerobics and learn-to-swim. That is a reasonable shorthand, though, and less misleading than losing the hedge on a projection.\n\n**Completeness:** A keeps the adult change table and the point that the heated pool allows year-round lessons. B drops both, though it names the specific programs that resume. A's detail is slightly more useful for a manager.\n\n**Concision:** B is a bit tighter, but A is still within the limit and its extra words add correct, useful content.\n\nA has the edge on accuracy and completeness.\n\nVerdict: A",
+  "usage": {
+    "input": 1512,
+    "output": 1660
+  },
+  "cost": 0.019624
+}

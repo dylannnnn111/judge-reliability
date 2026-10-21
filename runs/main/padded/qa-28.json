@@ -1,0 +1,14 @@
+{
+  "pair": "qa-28",
+  "side": "A",
+  "author": "sonnet",
+  "model": "claude-haiku-5-5",
+  "original": "A collision happens when two keys hash to the same bucket. The two main fixes are:\n\n**Chaining:** each bucket holds a linked list (or tree) of entries. Colliding keys are appended to that bucket's list.\n\n**Open addressing:** if the slot is taken, probe for another one using linear probing, quadratic probing, or double hashing.\n\n**Performance:** With a good hash function and a controlled load factor (entries ÷ buckets), lookups, inserts, and deletes average O(1). As collisions pile up, chains or probe sequences lengthen, and the worst case degrades to O(n) (or O(log n) if chains become balanced trees, as in Java's HashMap). Open addressing also suffers from clustering as it fills.\n\nTo keep performance up, tables resize (typically doubling) and rehash when the load factor crosses a threshold, such as 0.7–0.75.",
+  "text": "Let me explain how collisions work in hash tables. A collision happens when two keys hash to the same bucket, so the table needs a way to handle it. The two main fixes are described below.\n\n**Chaining:** Each bucket holds a linked list (or tree) of entries. When colliding keys arrive, they are appended to that bucket's list, so the bucket stores every key that maps to it.\n\n**Open addressing:** If the slot a key maps to is already taken, the table probes for another one. This probing can use linear probing, quadratic probing, or double hashing, and each method determines the order in which alternative slots are checked.\n\n**Performance:** With a good hash function and a controlled load factor (entries ÷ buckets), lookups, inserts, and deletes average O(1). As collisions pile up, however, chains or probe sequences lengthen, and the worst case degrades to O(n) (or O(log n) if chains become balanced trees, as in Java's HashMap). Open addressing also suffers from clustering as it fills, which is another reason performance can decline as the table grows fuller.\n\nTo keep performance up, tables resize (typically doubling) and rehash when the load factor crosses a threshold, such as 0.7–0.75. In this way, the table stays within the range where the average-case behavior described above applies.",
+  "ratio": 1.64,
+  "usage": {
+    "input": 472,
+    "output": 1131
+  },
+  "cost": 0.0006127000000000001
+}

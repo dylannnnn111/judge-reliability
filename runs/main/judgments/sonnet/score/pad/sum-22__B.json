@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "sum-22",
+  "side": "B",
+  "score": 3,
+  "model": "claude-sonnet-5-5",
+  "text": "The response breaks the explicit 120-word limit. It runs to roughly 230 words, about double. It is also padded with filler, such as \"Thank you all for attending\", \"kindly\", \"We look forward to seeing everyone there\" and \"please let the committee know\". That makes it read like a notice to attendees rather than a brief for a busy manager.\n\nIt also contains accuracy errors:\n- It says Wes will get two quotes for both the roof and the light globe. In the minutes, the two quotes are for the roof only, and Wes will simply arrange the globe.\n- It frames the \"Key decision\" as made \"in light of\" the fall in junior numbers, a slight reframing. The tie of the senior rise to the 9% turf cost increase is reasonable.\n- It adds a call for volunteers to \"let the committee know\", which is not in the source.\n\nThe key facts are mostly right: the fee decision, the $3,200 shortfall, the 14 November grant deadline, the presentation night details, the $600 gazebo and the next meeting date. It leaves out Kylie's thanks, which is minor, and it omits the Seniors rationale. Those facts are buried in padding, though, and the length constraint is clearly violated.\n\nScore: 3",
+  "usage": {
+    "input": 1457,
+    "output": 707
+  },
+  "cost": 0.009984
+}

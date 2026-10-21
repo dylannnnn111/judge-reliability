@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-02",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. It is close to the 120-word limit (about 122 words by my count), while A runs to roughly 170 words. B is also tighter and keeps the key facts, including the visitor-count reasoning, the decision outcome, and the 24 October deadline.\n\nB",
+  "usage": {
+    "input": 1588,
+    "output": 1031
+  },
+  "cost": 0.0006743
+}

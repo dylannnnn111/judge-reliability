@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-34",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response A is better. Both responses find the same top bug, the loop variable captured by the goroutines under Go 1.21. Both also cover discarded errors, nondeterministic result order, and the missing timeout and concurrency limit, and the fixes they suggest are correct.\n\nThe difference is the 200-word limit.\n\n- **Response A** comes to roughly 200 words, right at the limit.\n- **Response B** comes to roughly 250 words, clearly over. Its extra length comes from a minor fifth item about `recover` and the `main` stub, plus a `go.mod` caveat on the Go 1.22 change that adds little for a Go 1.21 build.\n\nB's extras are accurate, but they break an explicit constraint. A also orders its issues sensibly and keeps each one concise.\n\n**A**",
+  "usage": {
+    "input": 1446,
+    "output": 1143
+  },
+  "cost": 0.014322
+}

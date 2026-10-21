@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-28",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are technically accurate. Both correctly describe chaining and open addressing, the O(1) average case, the degradation toward O(n), and resizing at a load-factor threshold. Response A also correctly notes that resizing keeps the amortized insert cost at O(1).\n\nResponse B adds useful detail, such as Java's tree-based buckets giving O(log n) and clustering in open addressing. However, it runs to roughly 200+ words, well over the 120-word limit. Response A is about 128 words, only slightly over, and covers the same core reasoning, including amortized cost, more concisely. Response A is therefore the better answer on constraint adherence and clarity, and B's extra detail does not outweigh its length violation.\n\nVerdict: A",
+  "usage": {
+    "input": 962,
+    "output": 1230
+  },
+  "cost": 0.0007112
+}

@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "code-29",
+  "side": "B",
+  "score": 5,
+  "model": "claude-opus-5-5",
+  "text": "The response gets the substance right, but it nearly doubles the requested 200-word limit, much of it with padding.\n\n**Strengths**\n- **Correct top issue.** It identifies `NOT IN` with a NULL-producing subquery as the critical bug, explains that this empties the audience, and gives correct fixes (`NOT EXISTS`, or filtering out NULLs).\n- **Real second issue.** The date filter does contradict the \"never referred\" intent, and the suggested remedies are sensible.\n- **Reasonable third issue.** The `LIMIT`/`ORDER BY` bias, which always picks the oldest customers, is a real problem.\n- **Fair minor points.** The date-format caveat is suitably hedged. Suppression and dedup concerns are relevant to an email audience.\n- **Sensible ranking.** Nothing is falsely flagged, and the order runs from most to least damaging.\n\n**Weaknesses**\n- **Length limit ignored.** The user asked for under 200 words, and the response is roughly 350 or more.\n- **Avoidable padding.** Much of the excess adds nothing:\n  - an opening paragraph that just restates \"most important first\";\n  - phrases like \"To explain the problem,\" \"In other words,\" and \"as shown here\";\n  - repetitive hedging.\n- **The extra length isn't justified.** It brings no additional correct content, so it is a cost, not a merit.\n\nThe technical findings are excellent and well prioritized, but the response breaks a clear constraint through filler.\n\nScore: 5",
+  "usage": {
+    "input": 1181,
+    "output": 793
+  },
+  "cost": 0.020584
+}

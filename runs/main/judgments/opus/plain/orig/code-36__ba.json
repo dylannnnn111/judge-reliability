@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-36",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses identify essentially the same issues, in nearly the same order:\n- the `RLock` in `Invalidate` (correctly ranked first by both)\n- cache stampede\n- stale re-cache after invalidation\n- TTL not tied to the token's real lifetime\n- unbounded growth\n- no context or timeout on `fetch`\n\nThe technical content is comparable in accuracy and depth.\n\n- **Response A** runs to roughly 210 words, which breaks the explicit \"under 200 words\" instruction. It adds a few extras, such as noting that `recover` cannot catch the fatal map error and suggesting errors be cached with backoff. These are good points, but they come at the cost of the stated limit.\n- **Response B** stays under 200 words while covering the same core bugs. It ranks the stale-token re-cache second, which fits the code's documented purpose (dropping tokens the upstream rejected). It also explains that consequence clearly: the rejected token gets served for another full TTL. Its last point slightly overstates that a hung fetch \"blocks every request waiting on that tenant\", since there is no in-flight sharing. This is a minor imprecision.\n\nGiven equivalent substance, the deciding factor is the explicit length constraint, which B respects and A does not.",
+  "usage": {
+    "input": 1641,
+    "output": 1263
+  },
+  "cost": 0.031824
+}

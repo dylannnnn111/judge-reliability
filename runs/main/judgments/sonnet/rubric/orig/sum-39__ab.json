@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-39",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is slightly better, mainly because Response A breaks the word limit and generalises one councillor's view to \"opponents\".\n\n**Accuracy**\n- Response A says \"Opponents say the council is giving up revenue\", but only Councillor Ashcroft said this. Two councillors voted against. This is a small overgeneralisation.\n- Response A leaves out lost or damaged items and mentions only the 60-day replacement rule. That is acceptable for a short summary.\n- Response B correctly attributes the revenue concern to \"one opposing councillor\". It also covers lost or damaged items and the account block.\n- Response B adds a derived figure, \"net about $33,000\" ($52,000 minus $19,000). The arithmetic is right, but it assumes all the staff-time cost is saved, which the source does not say. This is a mild risk, though many managers would find the figure useful.\n\n**Coverage**\nBoth responses include the key points: the 7-2 vote, the 1 December date, the wiped fines, the exceptions, the rationale, the cost, the November email and the 12-month review. Response B also notes the 1 December unblocking date more explicitly.\n\n**Concision**\n- Response A is about 126 words, over the 120-word limit.\n- Response B is about 114 words without its headline and about 122 with it, so it is at or near the limit.\n- Response B's bullets are also easier for a busy manager to scan.\n\nVerdict: B",
+  "usage": {
+    "input": 1408,
+    "output": 2249
+  },
+  "cost": 0.025306
+}

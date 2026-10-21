@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-10",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.**\n\n**Real issues found.** Both catch the two critical bugs:\n- **Path traversal.** The unanchored `match` combined with `<path:slug>` lets a slug escape the reports directory.\n- **Missing authentication.** Nothing checks that the user is logged-in staff.\n\n**Ranking.** A puts traversal first and B puts authentication first. Both orders are defensible. Missing auth exposes every report to anyone, while traversal exposes any readable PDF on the server.\n\n**Fixes.**\n- B's fixes are stronger. It recommends `fullmatch`, the `<slug>` converter, and `send_from_directory`. The last does its own containment check, which is the idiomatic Flask fix.\n- B's `os.path.isfile` point is correct and concrete: a directory named `x.pdf` would make `send_file` fail with a 500.\n- B's per-report authorization and `Cache-Control` points are legitimate concerns for sensitive files.\n\n**Flagging things that are fine.**\n- A's item 6 is confused. The regex already returns 400 for slugs that don't start with valid characters. The real flaw, anchoring, is item 1. So item 6 wastes space on a non-issue.\n- A's symlink point is weak. Symlinks inside `/srv/reports` are controlled by administrators, so this is a marginal concern.\n\n**Length.** Both responses exceed the 200-word limit, and B by somewhat more. Still, B's extra content is correct and useful, while A spends part of its words on a bogus item.\n\nVerdict: B",
+  "usage": {
+    "input": 1550,
+    "output": 886
+  },
+  "cost": 0.02392
+}

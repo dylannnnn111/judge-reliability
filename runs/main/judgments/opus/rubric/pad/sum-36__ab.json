@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-36",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.**\n\n**Accuracy:** Both are accurate on the core terms: the 48-month term from 3 November 2026, $3,480 plus GST, 24 months fixed then up to 4% a year, 75% of remaining fees on early exit, and monthly rollover. A's phrase \"exceed the colour allowance by about $195 per month\" is slightly muddled, since it measures excess pages in dollars, but the meaning is still clear.\n\n**Key points:** B keeps the excess page rates (0.9c and 6.5c), which A omits. It also briefly explains why the $195 risk arises, citing 18,000 colour pages a month. B drops the contact name, which matters little to a manager weighing the commercial terms.\n\n**Concision:** A runs to roughly 200 words, well over the 120-word limit. Much of that is filler, such as \"Thank you for reviewing this summary…\" and \"Please also note…\". B is about 105 words, within the limit, and denser with useful information.\n\nVerdict: B",
+  "usage": {
+    "input": 1662,
+    "output": 621
+  },
+  "cost": 0.019068
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-08",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**B is better.**\n\n**Response A** has several problems:\n- **Too long.** It runs to roughly 250 words, more than double the 120-word limit.\n- **Wrong date, then self-correction.** It says the fridge failed on 4 Oct, which contradicts the ticket. It then adds a correction note asking the reader to disregard its own first sentence. A busy manager shouldn't have to sort that out.\n- **Overstated chasing.** It says Kevin was \"chased on more than one occasion,\" but the ticket records only one chase.\n- **Filler.** Phrases like \"To begin with, I would like to summarise\" and \"would be greatly appreciated\" add words without information.\n\n**Response B** is about 113 words, so it meets the limit. It covers every key point concisely:\n- purchase details and the food loss\n- the 90-day store responsibility\n- Priya covering for Jason\n- Wednesday delivery and Frostline's separate collection\n- the outstanding claim form and the $500 no-sign-off threshold\n- the 9 Oct escalation to Amara Osei\n- the customer's frustration\n\nIts one flaw is the specific failure date of \"29 September.\" The ticket says only \"Sunday,\" so that date is an inference and may be wrong.\n\nThat single error is minor compared with A's length violation, factual errors and awkward self-correction.\n\n**B**",
+  "usage": {
+    "input": 1685,
+    "output": 975
+  },
+  "cost": 0.02624
+}

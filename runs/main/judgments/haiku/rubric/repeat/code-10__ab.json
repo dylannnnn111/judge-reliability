@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "code-10",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses identify the central bug: `SLUG_RE.match` anchors only the start, and `<path:slug>` accepts slashes, so `a/../../...` gets through. Both also flag the missing authentication check. Response A ranks path traversal first, which fits the code shown, since the auth check may live elsewhere and the traversal is directly exploitable here. Response A also catches the symlink escape, which Response B misses. Response B has stronger fixes: `send_from_directory` provides a containment check, and `isfile` correctly addresses the directory-named-`.pdf` case that would produce a 500. Its cache-control point is reasonable for sensitive files, but its logging and hard-coded path points are weaker filler. Response B is also likely closer to or over the 200-word limit. Response A is tighter and ranks the key issue more sensibly, though Response B's fix guidance is more practical. On balance, A is slightly better.\n\nVerdict: A",
+  "usage": {
+    "input": 1550,
+    "output": 1185
+  },
+  "cost": 0.0007475
+}

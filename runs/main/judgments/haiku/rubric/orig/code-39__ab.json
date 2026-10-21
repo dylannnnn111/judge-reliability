@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-39",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses identify the same core problems: the unchecked `cd` that can make `rm -rf ./*` run in the wrong directory, path traversal through `APP_NAME`, dotfiles surviving the glob, and the script exiting 0 even when files remain. All of these are real, and both rank the `cd` and traversal issues highest, which is correct. Neither flags anything that is actually fine. Response A's point that `find` still counts dotfiles, so the warning fires, is accurate and useful. Response B is more concrete in places: it names the likely pipeline working directory (the repo checkout), gives a specific validation regex, and notes that caches like `.cache/` and `.npm/` would survive. Its newline-miscount point is also correct, though minor. Response A's `-e` suggestion is a reasonable alternative fix. Both are under or near the 200-word limit. The difference is small, with Response B's fixes and impact explanations slightly more actionable.\n\nVerdict: B",
+  "usage": {
+    "input": 1626,
+    "output": 1214
+  },
+  "cost": 0.0007696000000000001
+}

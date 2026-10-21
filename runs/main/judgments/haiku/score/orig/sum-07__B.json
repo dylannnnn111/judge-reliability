@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-07",
+  "side": "B",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate. The dates, the 40% figure, the CSV removal and its consequences, the Android 9 end of support, and the beta access for upcoming features all match the source. It drops some minor points, such as the Western Australia due-date fix and the fact that the Android 9 app keeps working, but the manager loses nothing essential. The main weakness is the word limit: the response runs to roughly 124 words, which breaks the \"under 120 words\" instruction, though only slightly. The structure is clear, with the required action flagged up front.\n\nScore: 7",
+  "usage": {
+    "input": 1061,
+    "output": 1345
+  },
+  "cost": 0.0007786000000000001
+}

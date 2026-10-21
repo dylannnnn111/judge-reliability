@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-36",
+  "side": "B",
+  "score": 9,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate and stays under the word limit, at about 116 words. Checks against the source:\n- The term, start date, printer count, inclusions and 8-business-hour response all match.\n- The fee, allowances and overage rates are correct.\n- The $195 figure is right: 3,000 extra colour pages at 6.5c.\n- The 24-month fixed period, the \"up to 4%\" increase and the 75% early-exit charge are correct.\n- The end-of-term options and the monthly rollover are correct.\n\nIt leaves out some minor details. It doesn't say the increase starts from month 25, though \"fixed for 24 months, then\" implies it. It also doesn't say the purchase price is agreed at the time, or mention the 15 September signing date or the account manager. It states \"expect roughly $195\" where the source says \"would likely\", which is a very small hardening. The manager gets the key risks (colour overage, lost holiday allowance, no early exit, rollover) clearly and concisely.\n\nScore: 9",
+  "usage": {
+    "input": 1126,
+    "output": 1487
+  },
+  "cost": 0.017122
+}

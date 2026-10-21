@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "qa-01",
+  "order": "ab",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses compute the same correct answer: 90 true positives out of 981 total positives gives 90/981 ≈ 9.2%. Both use the same clear per-10,000 breakdown and explain why the false positives dominate. Both fit under 120 words.\n\nResponse A leads with the answer, names the base rate fallacy, and gives a slightly more intuitive explanation of why most positives are false alarms. Response B labels the method as Bayes' theorem and has a clean setup, calculation, and interpretation structure. These differences are cosmetic, and neither response is clearly more correct, complete, or clear.\n\nVerdict: TIE",
+  "usage": {
+    "input": 745,
+    "output": 685
+  },
+  "cost": 0.000417
+}

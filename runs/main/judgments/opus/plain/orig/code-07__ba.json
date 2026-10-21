@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-07",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse B is better.\n\n- **Word limit:** The user asked for under 200 words. B comes in at about 197 words. A runs to roughly 230, which breaks an explicit instruction.\n- **Accuracy:** A's item 6 says the log message lacks the total, but the log does include `sent`. That point is slightly inaccurate. A's item 4 on broad `except` is also weaker than its other points.\n- **Where A is stronger:** A makes a sharper observation in item 1: with fewer than 500 contacts, nothing gets sent at all.\n- **B's weaknesses:** Items 2–4 overlap and could be merged.\n- **B's added value:** B raises a useful point A misses, checking that `upsert_contacts` is idempotent before adding retries.\n\nOn balance, B meets the constraint and stays accurate. A's extra insight doesn't outweigh going over the length limit.",
+  "usage": {
+    "input": 1283,
+    "output": 1574
+  },
+  "cost": 0.036612
+}

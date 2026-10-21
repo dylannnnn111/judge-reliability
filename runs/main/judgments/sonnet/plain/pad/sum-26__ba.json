@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-26",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. Both responses go over the 120-word limit, but B is much closer: it runs to roughly 150 words, while A runs to about 200.\n\nA also wastes space on filler (\"This summary sets out…\", \"I am pleased to report\"), repeats the dates in a heading, and uses a more elaborate structure than a busy manager needs. B is tighter and covers the key facts: the cause, the duration, the impact, the follow-up actions and the request for a second lift.\n\nB's weak point is \"carried down the stairs\", which slightly overstates what the report says (residents were helped down with an evacuation chair). That is a minor inaccuracy next to A's larger breach of the length limit.\n\n**B**",
+  "usage": {
+    "input": 1499,
+    "output": 741
+  },
+  "cost": 0.010408
+}

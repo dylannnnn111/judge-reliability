@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-34",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Neither response contains a factual error. The date, the 30-minute window, the 24/48-hour reminder options and the Android known issue are all correct in both.\n- **A** keeps the condition that patients join the waitlist for *fully booked days*.\n- **B** drops that condition and says only \"when a booked slot is cancelled.\" This is slightly less precise but not wrong.\n\n**Coverage:**\n- **A** lists all three fixes. Its \"large-invoice printing errors\" is a fair compression of \"more than 20 line items.\"\n- **B** mentions only the recurring-appointments fix and covers the rest as \"several bugs.\" For a busy manager, the omitted tablet and invoice fixes are minor, but A is more complete without adding anything wrong.\n\n**Length:** Both exceed the 120-word limit, A at about 132 words and B at about 126.\n- B is a bit tighter, but both break the constraint, so neither wins outright on this point.\n- A's bolded section labels make it easier for a busy manager to skim than B's prose paragraphs.\n\n**Overall:** Both are accurate and both run slightly over. A keeps a meaningful condition, covers every fix, and is easier to scan. B's small word saving doesn't outweigh this, especially as B also fails the limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1397,
+    "output": 1716
+  },
+  "cost": 0.039908
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-05",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nBoth responses give the correct answer, Friday, 28 February 2025, and both stay under 120 words. Both also explain the weekday shift correctly: 365 days is 52 weeks plus 1 day, so Thursday becomes Friday.\n\nThe difference is in how they justify the date. Response A says the result is 28 February *because* 2025 has no 29 February. That implies a fallback rule rather than an actual count. Response B makes clear the date comes from counting 365 days. That is the correct reasoning: 29 Feb 2024 to 1 Mar 2025 is 366 days, so 365 days lands on 28 Feb 2025.\n\nThe gap is small, but B's explanation is slightly more accurate.",
+  "usage": {
+    "input": 322,
+    "output": 647
+  },
+  "cost": 0.014228
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-38",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is a tight summary of roughly 120 words. That is right at the stated limit, and close enough to meet the brief. It covers the essentials a busy manager needs: green status, the launch date, beta results, bug status, key dates, budget, and the main risk.\n\nResponse B is about 240 words, roughly double the 120-word limit. It also adds filler a busy manager doesn't need, such as \"I am pleased to report…\" and a paragraph explaining what the sections below cover. It repeats \"green (to 10 Oct)\" as well. Its content is accurate, but it clearly fails the length constraint.",
+  "usage": {
+    "input": 1412,
+    "output": 923
+  },
+  "cost": 0.024108
+}

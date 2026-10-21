@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-27",
+  "side": "B",
+  "score": 5,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate. Every figure matches the original: 81% vs 74%, 60% free-month customers, the 78% vs 76% paid-only comparison, $95 per session, $410,000 a year, the 60-day randomised test, and the 21 October decision point. It also correctly notes that Sales' \"proved\" claim isn't supported. It covers all the points a manager needs.\n\nThe main problem is the explicit length limit. The response runs to roughly 200 words, well over the 120-word cap. Its heading, bullet labels and filler phrases (\"I would kindly recommend\", \"at this stage\") add length without adding content. A tighter version could have kept every key point under 120 words.\n\nAccuracy is near-perfect and coverage is complete, but the response clearly breaks the length constraint, which is a significant instruction-following failure.\n\nScore: 5",
+  "usage": {
+    "input": 1287,
+    "output": 724
+  },
+  "cost": 0.0004907000000000001
+}

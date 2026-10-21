@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-07",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Both responses report the facts correctly: the release date, the three new features, the CSV removal and why imports will break, the Android 9 change, and the coming features.\n\n- **Response A** adds a correct, useful detail: the help article has a column mapping table.\n- **Response B** has three minor issues:\n  - It phrases the CSV condition loosely (\"exports data to another accounting system\"), though the meaning still holds.\n  - It adds advice the source doesn't give (\"before updating\"), but this is reasonable.\n  - It lists the bug fixes under \"Improvements.\"\n\nNone of B's issues is materially misleading.\n\n**Key points:** Both flag the breaking CSV change as the action item and keep the Android 9 note.\n\n- **Response B** puts the action item first, which suits a busy manager. It also mentions ATO-aligned GST rounding, which is relevant to finance.\n- **Response A** includes the 40% speed figure and early beta access. These are nice but not essential.\n\n**Concision and constraint:** The user set a hard limit of under 120 words.\n\n- **Response A** is about 124 words, so it breaks the limit.\n- **Response B** is about 113 words.\n\nBecause A fails an explicit instruction while B covers the essentials within the limit and leads with what matters, B is the better response.\n\nVerdict: B",
+  "usage": {
+    "input": 1401,
+    "output": 2043
+  },
+  "cost": 0.046464
+}

@@ -1,0 +1,13 @@
+{
+  "item": "qa-02",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**Average speed = 96 km/h**\n\n- **Going:** 160 km ÷ 80 km/h = 2 hours\n- **Returning:** 160 km ÷ 120 km/h = 4/3 hours (1 h 20 min)\n- **Total distance:** 320 km\n- **Total time:** 2 + 4/3 = 10/3 hours\n\nAverage speed = 320 ÷ (10/3) = **96 km/h**\n\nThe answer is not simply (80 + 120)/2 = 100 km/h, because you spend more time driving at the slower speed. For equal distances, the average speed is the harmonic mean: 2 × 80 × 120 / (80 + 120) = 96 km/h.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 79,
+    "output": 271
+  },
+  "cost": 0.005736,
+  "at": "2026-10-14T01:50:07.938Z"
+}

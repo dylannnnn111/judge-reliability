@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-17",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Response A is accurate throughout. It correctly states the licence terms (outdoor area open until midnight Friday and Saturday, amplified music stopping at 10pm nightly), the four-weekend pattern, and the outcome of David's call with Clare. It also keeps the points a manager needs: the regulator needs dated evidence, the fallback is a regulator complaint, and the 20 October report-back date.\n\nResponse B is mostly accurate and well organised, but it misattributes the \"fourth weekend in a row\" detail to Arjun, when Colleen raised it. Its subject line \"resolved for now\" is also more optimistic than the thread supports, since the committee is still waiting to see how the next weekend goes. It omits the evidence requirement for a regulator complaint, which a manager would likely want to know. Its length is similar to A's, so it gains no concision advantage.\n\nA is more accurate and keeps more of the decision-relevant content, so it is the better summary.\n\nVerdict: A",
+  "usage": {
+    "input": 1559,
+    "output": 881
+  },
+  "cost": 0.0005964
+}

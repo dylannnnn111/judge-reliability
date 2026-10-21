@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-23",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "A is better. Both responses correctly say that 0.999... equals 1, but only A follows the instruction to answer in under 120 words.\n\nResponse A comes to roughly 104 words and gives three clear arguments plus the formal limit definition. Response B runs to about 190 words, well over the limit, and adds filler such as \"It is worth being clear at the outset.\"\n\n**A**",
+  "usage": {
+    "input": 730,
+    "output": 715
+  },
+  "cost": 0.00861
+}

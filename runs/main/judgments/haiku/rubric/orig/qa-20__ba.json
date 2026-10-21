@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-20",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses correctly identify Canberra and 1927, the year Federal Parliament first sat there in the Provisional Parliament House, which opened on 9 May. Both also correctly note that Parliament met in Melbourne from Federation in 1901. Neither contains an error. Response A adds correct context: the building's later name (Old Parliament House), the opening by the Duke of York, and the 1988 move to the current building. That extra detail is accurate and gives useful background without going beyond the question's scope, so it is slightly more informative. Response B is tighter and fully answers both parts, so the difference is small.\n\nVerdict: A",
+  "usage": {
+    "input": 485,
+    "output": 521
+  },
+  "cost": 0.000309
+}

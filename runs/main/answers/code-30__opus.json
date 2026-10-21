@@ -1,0 +1,13 @@
+{
+  "item": "code-30",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**1. `COUNT(*)` reports 1 ticket for agents with none (the main bug).**\nWith a LEFT JOIN, an agent with no open tickets still produces one row with NULL ticket columns. `COUNT(*)` counts that row. Use `COUNT(t.id)` instead. This breaks the stated purpose of including agents with none, and it also distorts the sort order.\n\n**2. `COALESCE(AVG(...), 0)` shows idle agents as having a 0-minute response time.**\nReaders will see that as perfect performance. Leave it NULL, or display \"n/a\".\n\n**3. The average is biased toward fast responders.**\n`AVG` skips NULLs, and open tickets often have no first response yet. Those are the slowest ones, so they get dropped. Either report the unanswered count separately (`COUNT(t.id) - COUNT(t.first_response_mins)`) or compute the wait time so far for those tickets.\n\n**4. There is no time window.**\nIt's a \"weekly\" report, but the average covers every open ticket regardless of age. Decide whether you want a current snapshot or this week's activity. If it's the week, filter on `opened_at` or the response date.\n\n**5. The average may be truncated (minor, depends on the database).**\nOn SQL Server and some others, `AVG` of an integer column returns an integer. Use `AVG(t.first_response_mins * 1.0)` if you need decimals.\n\nThe `status = 'open'` filter is correctly placed in the `ON` clause. Keep it there, because moving it to `WHERE` would drop the agents who have no tickets.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 299,
+    "output": 815
+  },
+  "cost": 0.017496,
+  "at": "2026-10-14T01:54:31.960Z"
+}

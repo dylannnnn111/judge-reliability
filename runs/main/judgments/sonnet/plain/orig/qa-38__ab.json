@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-38",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**B.** Response A runs to roughly 124 words by my count, over the 120-word limit. Response B stays well under the limit, at about 85 words. It still covers the key points: polar stratospheric clouds, the polar vortex, sunlight returning in spring, and the vortex breaking down. A is slightly richer in content, including the Arctic comparison, but breaking an explicit constraint outweighs that.\n\n**B**",
+  "usage": {
+    "input": 682,
+    "output": 1200
+  },
+  "cost": 0.013364
+}

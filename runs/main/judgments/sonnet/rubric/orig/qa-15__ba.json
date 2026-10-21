@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-15",
+  "order": "ba",
+  "shown": "TIE",
+  "verdict": "TIE",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer of 18 °F, and both use the same reasoning: a 10 °C difference times 9/5, with the 32 offset cancelling. Both also verify by converting each temperature separately (59 °F and 77 °F, difference 18). Both are well under 120 words.\n\nThe differences are tiny. A says \"the +32 offset cancels out\", which is slightly more precise than B's \"scales by 9/5 without the 32-degree offset\". A writes \"18 °F\" in the headline, and B writes \"18 degrees Fahrenheit\", which matches the question's wording. Neither difference matters. B's check line omits the unit on the final 18, which is trivial.\n\nNeither is better in any way that matters.\n\nVerdict: TIE",
+  "usage": {
+    "input": 559,
+    "output": 241
+  },
+  "cost": 0.003528
+}

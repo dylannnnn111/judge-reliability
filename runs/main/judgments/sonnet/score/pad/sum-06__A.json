@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "sum-06",
+  "side": "A",
+  "score": 3,
+  "model": "claude-sonnet-5-5",
+  "text": "The facts are mostly accurate. The dates, the $3.2 million cost, the funding split, the prices, the hours and the features all match the source. \"All programs\" resuming is a slight generalisation, but the source lists lap swimming, aqua aerobics, learn-to-swim and the water play area, so it holds up.\n\nHowever, the response breaks the explicit instruction to stay under 120 words. At roughly 200 words, it is well over the limit. It also reads as promotional council copy rather than a summary for a manager, with phrases like \"we are pleased to share,\" \"we encourage you to mark the date in your calendar,\" \"Please join us\" and \"we look forward to welcoming you.\" This is the wrong voice and adds filler. It also spends space on low-value detail, such as the full price breakdown and the opening-day extras, and on the line \"details… below.\"\n\nIt keeps the key points, but the length violation and the wrong register are significant failures of the task.\n\nScore: 3",
+  "usage": {
+    "input": 1242,
+    "output": 720
+  },
+  "cost": 0.009684
+}

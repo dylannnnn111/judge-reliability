@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-34",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the same correct core answer: a Diffie-Hellman-style key exchange, a symmetric session key such as AES, and certificates to prevent man-in-the-middle attacks. Their technical content is equivalent, and neither contains an error.\n\nThe difference is the length limit of \"under 120 words.\" Counting Response A's words without the list numerals gives exactly 120, and counting the numerals pushes it to about 124. Either way it is not under 120, so it breaks the constraint. Response B is about 100 words, comfortably within the limit, and still covers the key reasoning: private and public values, the shared secret, why an eavesdropper can't compute it, symmetric encryption, and certificate-based authentication.\n\nResponse A adds slightly more explicit wording on the authentication problem. That doesn't outweigh failing the explicit word limit.\n\nVerdict: B",
+  "usage": {
+    "input": 773,
+    "output": 1261
+  },
+  "cost": 0.014156
+}

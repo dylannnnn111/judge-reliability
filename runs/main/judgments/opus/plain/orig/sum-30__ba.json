@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-30",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**B**\n\nResponse B is the safer, more accurate summary for this brief.\n\n- **Word limit:** By my count, Response A runs about 127 words including its heading, which breaks the \"under 120 words\" instruction. Response B comes in at about 120 with its heading and about 111 without, so it fits the constraint much better.\n- **Accuracy:** Response A says industrial estate workers \"lose service before 6am.\" The source never says they currently have pre-6am service. It only says workers raised concerns because the 412 won't run before 6am. Response B's wording (\"the 412 doesn't start early enough\") matches the source faithfully.\n- **Coverage:** Response A does add useful context: the consultation's top request and that the 412 is the \"first\" direct link. Response B still covers every key operational fact a manager needs: the start date, the three route changes, the concern and the authority's response, unchanged fares, timetable distribution, and the info stall.",
+  "usage": {
+    "input": 1337,
+    "output": 1730
+  },
+  "cost": 0.039948
+}

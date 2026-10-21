@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-05",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A is better on all three things that matter here.\n\n- **Word limit:** Response A is about 100 words, within the 120-word limit. Response B runs to roughly 150 words, so it breaks the user's explicit constraint.\n- **Accuracy:** Response B lists \"78% felt more productive\" under \"Benefits found.\" The study treats that self-report as contradicted by measured output, so presenting it as a benefit misleads. Response A correctly contrasts the feeling with the null measured result.\n- **Usefulness for a busy manager:** Response A gives a clear, actionable implication: justify the desks on comfort and health, not productivity. Response B wastes words on filler phrases like \"It is worth noting that...\" and \"To summarize the main finding...\".",
+  "usage": {
+    "input": 1303,
+    "output": 877
+  },
+  "cost": 0.022752
+}

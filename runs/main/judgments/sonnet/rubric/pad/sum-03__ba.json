@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-03",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries are factually accurate on the key numbers, dates and causes. Neither misstates who owns what or what was completed.\n\n**Accuracy:** Both are correct. A says the cause was an \"expired intermediate certificate\" that connector B had pinned after the vendor's August renewal. B says \"outdated certificate pinned\", which is looser but not wrong. A's \"Of the affected attempts, 1,940 customers retried\" mixes attempts and customers slightly, but it is not misleading. B correctly notes that the goodwill discount went to non-buyers and that the pinning removal is done.\n\n**Completeness:** Both include the failure rate, the revenue impact with the caveat that some customers may buy later, the support spike, the slow detection and the follow-up actions. B adds the severity level and the 11:35 support escalation. A adds the vendor renewal context.\n\n**Concision:** The request set a limit of 120 words. A runs to roughly 160 words and includes filler such as \"To show the scale of the incident, here is its impact\" and \"Following the incident, the following actions have been taken or scheduled\". B is about 125–130 words by my count, so it is slightly over the limit but much closer, and it is tighter and easier to scan.\n\nB respects the length constraint far better while keeping the points a manager needs, so B is better.\n\nVerdict: B",
+  "usage": {
+    "input": 1688,
+    "output": 1398
+  },
+  "cost": 0.017356
+}

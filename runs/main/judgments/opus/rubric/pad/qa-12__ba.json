@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-12",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both responses give the correct answer, 671/1296 ≈ 0.518, and both stay under 120 words. So correctness does not separate them.\n\n**Key reasoning:** Response A is more complete. It names the complement approach and states the single-roll probability of no six (5/6). It notes that the rolls are independent, which justifies raising 5/6 to the fourth power, before subtracting from 1. Response B goes straight to (5/6)^4 without explaining where 5/6 comes from or why multiplying is valid.\n\n**Clarity:** Response A's bulleted steps are easy to follow. Its aside about the Chevalier de Méré is accurate and adds context: the result is slightly better than even odds. Response B spends much of its length on filler (\"With that value in hand…\", \"Put another way…\") that restates the subtraction without adding anything. That is length without merit.\n\nOverall, Response A gives clearer and more complete reasoning in a comparable word count.\n\nVerdict: A",
+  "usage": {
+    "input": 628,
+    "output": 495
+  },
+  "cost": 0.012412
+}

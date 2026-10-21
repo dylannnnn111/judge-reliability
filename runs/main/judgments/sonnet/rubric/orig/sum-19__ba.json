@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-19",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses are accurate on most points: the consent requirement, the assignment conditions, the 30% sublet cap, the change-of-control rule and the 28-day response period.\n\n**Accuracy:**\n- Response A says \"we remain liable for the full remaining term if the buyer defaults.\" The source says the tenant \"could remain liable,\" so this is slightly firmer than the source. The conditional \"if the buyer defaults\" and \"unless the landlord releases us\" keep it mostly correct.\n- Response B hedges properly with \"may stay liable... possibly for the rest of the term.\"\n- B is slightly better on this point.\n\n**Coverage:** Both cover the key points. B adds the Kingsley Property Group contact, which is minor. A's heading and bullets are easier for a busy manager to scan.\n\n**Length:** Both go slightly over the 120-word limit. I count about 123 words for A and about 129 for B. A is closer to compliance and tighter.\n\nThe accuracy difference is minor and A's liability wording is still substantively correct, so A's better compliance with the word limit and its scannable layout tip it ahead.\n\nVerdict: A",
+  "usage": {
+    "input": 1515,
+    "output": 2246
+  },
+  "cost": 0.02549
+}

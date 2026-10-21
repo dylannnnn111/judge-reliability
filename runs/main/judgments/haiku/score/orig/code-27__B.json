@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "code-27",
+  "side": "B",
+  "score": 8,
+  "model": "claude-haiku-5-5",
+  "text": "The response catches the most important problems. Sending to unsubscribed or bounced addresses is the top issue, and it's correctly ranked first. The unbounded `Promise.all` over 80,000 sends, the lack of per-send failure tracking, and the misleading return value are all real and well prioritized. The non-advancing cursor and missing retry are valid defensive points. Weaknesses: the null-email item is overstated, since the `Customer` type declares `email: string`, so it's a contract violation rather than an evident bug. The local-part lowercasing point is pedantic. The response also gives only brief fixes, and it's under 200 words as requested.\n\nScore: 8",
+  "usage": {
+    "input": 1062,
+    "output": 738
+  },
+  "cost": 0.0004752
+}

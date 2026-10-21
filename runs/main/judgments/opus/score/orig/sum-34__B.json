@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-34",
+  "side": "B",
+  "score": 6,
+  "model": "claude-opus-5-5",
+  "text": "The summary is **accurate**, but it **breaks the explicit length limit**.\n\n**Accuracy.** Nothing is wrong or misleading:\n- The release date (13 October 2026) is correct.\n- The 30-minute acceptance window is correct.\n- The 24/48-hour per-clinic reminder setting is correct.\n- The waitlist trigger, telehealth links, leave blocking, fixes, known issue and next-month items all match the source.\n\nThere are a few small simplifications, none of them wrong:\n- It doesn't say that admins enter the leave.\n- It drops the detail that an unaccepted slot passes to the next person.\n- \"Large-invoice printing errors\" stands in for \"more than 20 line items.\"\n- It doesn't mention that the Android link opens in the browser instead of the app.\n\n**Coverage.** Every point a manager needs is kept, with nothing important lost.\n\n**Concision.** By my count the response is about 130 words, over the 120-word limit. The phrasing is already tight, but it still didn't meet a stated constraint. The \"Known issue\" and \"Next month\" lines could have been shortened to get under the limit. For a hard limit, that is a meaningful failure, even though the content is otherwise excellent.\n\nScore: 6",
+  "usage": {
+    "input": 1071,
+    "output": 1068
+  },
+  "cost": 0.025644
+}

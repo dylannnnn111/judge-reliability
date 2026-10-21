@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-32",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better because it meets the word limit and A does not.\n\nCounting the words, Response A runs to about 144, well over the 120-word limit. Response B comes to about 118, just under it.\n\nBoth summaries are accurate and cover the key points:\n- the customers' claim\n- the explanation of the rate rise\n- the finding that there was no overcharge\n- the $250 goodwill payment\n- the customers' request for a call about fixing their rate\n\nBoth also end with a useful flag for a manager. B's flag, that the closure may be premature because the customers haven't accepted the outcome, is arguably the more actionable of the two.",
+  "usage": {
+    "input": 1444,
+    "output": 1456
+  },
+  "cost": 0.017448
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-39",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B is slightly better. Both responses are under 120 words and correct. B explains the mechanism more precisely: it shows that the exact sum rounds to a different double than the one nearest 0.3, and it explains why the printed result is 0.30000000000000004. Its workarounds also include storing integers in cents. A's \"the rounding errors combine\" is looser, though it is still accurate and more concise.\n\nB",
+  "usage": {
+    "input": 639,
+    "output": 817
+  },
+  "cost": 0.0004724
+}

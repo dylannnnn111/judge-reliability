@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-01",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the main problems: no idempotency, one failure aborting the whole run, truncation in `int(amount * 100)`, float money, and the hardcoded tax. Both rank non-idempotent double-charging first, which is right for a billing job.\n\n**Accuracy.** The truncation examples are correct in both (A's 19.99 → 1998, B's 10.29 → 1028). A's extra items are weaker. \"No billing-period scoping,\" \"tax isn't itemized,\" \"whole file in memory\" and \"no currency\" are speculative or minor for this code. B's customer-ID normalization point is also minor, but it is a concrete issue in the code, and its credits-dropped point is specific and useful.\n\n**Fixes.** B gives a fix for nearly every item, such as an idempotency key per customer per period, catching and logging per-customer failures, and quarantining bad rows. A's fixes are thinner. It mostly describes the problems and suggests `Decimal` for the money issues.\n\n**Constraints.** The request asked for under 200 words. Both exceed it, but A is much longer, at roughly 330 words against B's roughly 230. A also opens with a filler sentence that adds nothing, and its padded minor items dilute the list.\n\nB is tighter, more actionable, and closer to the length limit.\n\nVerdict: B",
+  "usage": {
+    "input": 1691,
+    "output": 844
+  },
+  "cost": 0.011822
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-02",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A satisfies the hard constraint with room to spare at about 110 words. It still covers every decision, action and date a busy manager needs:\n\n- the unresolved opening-hours proposal and the November follow-up\n- the volunteer deadline of 24 October\n- the roof replacement going into the capital works bid\n- the next meeting date\n\nResponse B is slightly richer: it includes the 11 vs 64 visitor figures and labels the volunteer item as an action. However, by a careful count it runs to about 121–123 words, which breaks the explicit \"under 120 words\" instruction. Even on the most generous count, it sits right at the limit rather than under it. Its extra detail is nice-to-have rather than essential, so it doesn't make up for missing the stated length requirement.",
+  "usage": {
+    "input": 1467,
+    "output": 1522
+  },
+  "cost": 0.036308
+}

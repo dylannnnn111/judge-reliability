@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-27",
+  "side": "A",
+  "score": 7,
+  "model": "claude-haiku-5-5",
+  "text": "The response is accurate throughout. The figures (81% vs 74%, 60% free-month customers, 78% vs 76% for day-one payers, $95 per session, roughly $410,000 a year), the 60-day randomised same-city test, and the 21 October decision point all match the email. It keeps every point a manager needs: the recommendation against national rollout, why the headline result is misleading, the sales overclaim, the cost, and the next step. The formatting is clean and easy to scan. The main weakness is length. By my count it runs about 126 words, which breaks the \"under 120 words\" instruction, though only slightly and without losing anything important.\n\nScore: 7",
+  "usage": {
+    "input": 1141,
+    "output": 1013
+  },
+  "cost": 0.0006206
+}

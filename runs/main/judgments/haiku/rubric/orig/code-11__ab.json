@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-11",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses identify the main bug: the check in `reserve` and the decrement take the lock separately, so two threads can oversell. Both also correctly note that `threading.Lock` doesn't protect across processes and suggest an atomic conditional `UPDATE`. Both flag the missing `qty` validation and the unlinked `release`.\n\nResponse A adds two points B lacks: the lock is held during DB I/O, and abandoned carts never release their reservations. It also catches that a missing SKU makes `get_stock` return `None`, which raises a `TypeError` in the comparison. Those are real and useful. However, A only describes the fix for the top bug in prose.\n\nResponse B gives a correct, concrete code fix for the most important bug, which is the most actionable thing either response offers. Its point 6, that `available()` is advisory, partly repeats point 1, and it misses the None-SKU case and abandoned carts. Its point 5 correctly notes that the global lock issue becomes moot once DB atomicity is in place.\n\nBoth stay near the 200-word limit and cover the same core issues. A has slightly broader coverage of distinct problems, while B gives a better fix for the top bug. On balance B is marginally more useful, but the difference is small.\n\nVerdict: B",
+  "usage": {
+    "input": 1553,
+    "output": 984
+  },
+  "cost": 0.0006473
+}

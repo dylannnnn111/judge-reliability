@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-18",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the critical bug: the cache key `fx:${from}` ignores `to`, so one currency pair's rate gets applied to every other target currency. Both also cover response validation, the missing fetch timeout, unencoded query parameters, the thundering herd, and unbounded cache growth.\n\nResponse B edges ahead on fix quality. Its thundering-herd fix says to evict the cached promise if it rejects. Response A says to cache the in-flight promise without that step, which would leave a failed fetch cached for 60 seconds. B's money-precision point is also relevant for an invoicing service, where float arithmetic on converted amounts is a real concern. Response A's \"unsafe generic cast\" item is a weak nitpick, since the key is fixed per call site and the cast is not causing a current bug. B's ISO 4217 validation suggestion is useful too.\n\nNeither response is clearly longer in a way that adds value, and both stay under 200 words.\n\nVerdict: B",
+  "usage": {
+    "input": 1637,
+    "output": 773
+  },
+  "cost": 0.0005502
+}

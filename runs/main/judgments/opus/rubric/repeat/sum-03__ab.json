@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-03",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "Both summaries are factually accurate. They give the correct window, the failure counts (2,391 of 4,812), the 1,940 customers who retried, the 451 who did not buy with an estimated $41,900 lost, support contacts at four times normal (312), the root cause, the detection gap and the action items with their dates.\n\n**Response A:** It is clearly structured and includes the 11:35 support escalation time. It omits the action owners. Counting the heading, it comes to roughly 125 words, which breaks the explicit under-120-word limit.\n\n**Response B:** It keeps all the key numbers and caveats. It names connector B and the August vendor renewal, and it lists owners for the outstanding actions (SRE, Security), which a manager would find useful. It does this in about 100 words, within the limit. \"451 abandoned\" is slightly less precise than \"didn't buy that day,\" but the \"(some may buy later)\" caveat keeps it from misleading.\n\nAccuracy is equal, B keeps the needed points (plus owners), and B is more concise and meets the word limit where A does not.\n\nVerdict: B",
+  "usage": {
+    "input": 1597,
+    "output": 1837
+  },
+  "cost": 0.043128
+}

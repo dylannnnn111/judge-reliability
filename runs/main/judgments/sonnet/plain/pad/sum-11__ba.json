@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-11",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. Both responses go over the 120-word limit, but B only slightly (about 134 words) while A is nearly double (roughly 230).\n\nResponse A also keeps the email's courteous framing (\"Thank you for your patience,\" \"warmly invited\") and repeats the opening details. A busy manager doesn't need that.\n\nResponse B is tighter and covers the key actions and deadlines: the dates, the crates, laptops, file boxing, access cards, and parking. It also states more clearly that everyone must attend the Monday welcome. It leaves out a few details, such as the consequence of missing the file deadline and the 17 November date. These omissions are reasonable given the word limit.\n\n**B**",
+  "usage": {
+    "input": 1643,
+    "output": 1194
+  },
+  "cost": 0.015226
+}

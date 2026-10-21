@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "orig",
+  "pair": "sum-03",
+  "side": "B",
+  "score": 8,
+  "model": "claude-sonnet-5-5",
+  "text": "The summary is accurate and comes in at about 105 words, under the 120 limit. The figures all match the source: 2,391 of 4,812 attempts failed, 1,940 retried successfully, 451 abandoned, $41,900 estimated loss, 312 support contacts at about four times normal, and the correct window and dates. It correctly says some of the lost sales may be recovered later in the week. The cause is stated correctly, and so is the detection gap (alerts didn't fire because failures were split across connectors). The open actions carry the right owners and dates, and the two completed actions are marked done.\n\nWeaknesses:\n- \"Support escalation led to the fix\" is a slight inference. The source says support escalated at 11:35 and the on-call engineer found the cause at 12:10, but it doesn't say the escalation directly led to the fix.\n- It never says how the incident was resolved (connector B removed from rotation at 12:58), which a manager might want.\n- It omits the severity rating and the fact that pinning was removed from both connectors, though these are minor.\n\nOverall it is accurate, concise and well structured, with small omissions and one mild inference.\n\nScore: 8",
+  "usage": {
+    "input": 1227,
+    "output": 948
+  },
+  "cost": 0.011934
+}

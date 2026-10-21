@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-07",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct figure: 30 mpg (US) is about 7.84 L/100 km, and both show the 235.2 ÷ mpg shortcut. Response B's working is accurate and concise, and it also warns against using the imperial gallon, which would give about 9.4 L/100 km, a common error. Response A's explanation is also correct and includes a useful note about EPA test figures, but it is wordier and likely exceeds the 120-word limit. Since the two are equal on correctness, B's compliance with the length limit and its helpful warning about imperial gallons make it the better response.\n\nVerdict: B",
+  "usage": {
+    "input": 847,
+    "output": 692
+  },
+  "cost": 0.0004307
+}

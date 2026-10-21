@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-07",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "A is better, mainly because it stays within the 120-word limit and B does not.\n\nI counted the words in each response:\n- **Response A** comes to about 118 words, just under the limit.\n- **Response B** comes to about 124 words, over the limit.\n\nBoth responses put the main point first: the removal of Classic CSV export will break existing imports. Both also mention the Android 9 end of support and the upcoming features.\n\nA's minor flaw is that it lists bug fixes under \"Improvements\". That is a small labelling slip and does not change the meaning.\n\nB includes a few extra details, such as the 40% speed figure and the beta access, but it breaks the explicit length constraint to do so.\n\n**A**",
+  "usage": {
+    "input": 1247,
+    "output": 1903
+  },
+  "cost": 0.021524
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-29",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Constraint: under 120 words. Count Response A: about 100 words. Let me count roughly: \"Compound interest beats simple interest over long periods because it pays interest on previously earned interest, not just the original principal.\" (21) \"With simple interest, you earn a fixed amount each period, so growth is linear.\" (14) → 35. \"With compound interest, each period's earnings are added to the balance and start earning returns themselves, so growth accelerates over time.\" (21) → 56. \"The longer the horizon, the more these 'interest on interest' effects accumulate, and the gap between the two grows exponentially rather than steadily.\" (23) → 79. \"For example, $1,000 at 5% for 30 years yields $2,500 with simple interest but about $4,322 with annual compounding.\" (19) → 98. Under 120.\n\nResponse B is clearly over 120 words (around 200). It violates the explicit constraint.\n\nCorrectness: both numbers are correct (1000*1.05^30 ≈ 4321.94). A is fine.\n\nA satisfies the constraint and is correct; B violates it.\n\nVerdict: A",
+  "usage": {
+    "input": 817,
+    "output": 356
+  },
+  "cost": 0.005194
+}

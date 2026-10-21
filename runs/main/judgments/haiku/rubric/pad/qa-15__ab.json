@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-15",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct answer, 18 °F. The rise is 10 °C, and 10 × 9/5 = 18 °F. Both also verify the result by converting each temperature separately (59 °F and 77 °F, difference 18 °F). Both explain why the +32 offset drops out of a temperature difference, which is the key reasoning. Both are well under 120 words.\n\nResponse A adds a filler opener (\"I'm happy to walk through this\") that contributes nothing. Response B covers the same reasoning and check more directly, so it is slightly clearer. The edge is small, but it goes to B.\n\nVerdict: B",
+  "usage": {
+    "input": 648,
+    "output": 377
+  },
+  "cost": 0.00025330000000000003
+}

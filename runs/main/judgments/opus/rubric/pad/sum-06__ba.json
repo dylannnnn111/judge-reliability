@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-06",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Accuracy:** Both responses get the core facts right: the dates, the $3.2 million cost, the joint funding, the prices and the hours. Response A says \"rooftop solar\", which is accurate because the array is on the grandstand roof.\n\nResponse B has two accuracy problems:\n- **Voice:** It writes as though it were the council (\"we are pleased to share\", \"Please join us\", \"we look forward to welcoming you\"). That misrepresents who is speaking. The reader is a manager receiving a summary, not a member of the public receiving a promotional notice.\n- **Overgeneralisation:** It says \"All programs\" resume on opening day. The source names only lap swimming, aqua aerobics and learn-to-swim, so that claim goes slightly beyond it.\n\n**Key points:** Both keep essentially all the points a manager needs. B adds the adult change table and the year-round lessons. These are useful, but minor.\n\n**Concision:** This is decisive.\n- Response A is about 108 words and meets the under-120 limit.\n- Response B runs to roughly 230 words, about double the limit. That breaks an explicit instruction.\n- Much of B's extra length is filler that adds nothing for a busy manager, such as \"mark the date in your calendar\" and \"families can return to their regular routines\".\n\nResponse A is accurate, complete, within the word limit and appropriately neutral. Response B breaks the length constraint and adopts an inappropriate promotional voice.\n\nVerdict: A",
+  "usage": {
+    "input": 1622,
+    "output": 971
+  },
+  "cost": 0.025908
+}

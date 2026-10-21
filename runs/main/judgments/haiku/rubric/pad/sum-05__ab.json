@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-05",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Every figure (214 workers, 78% felt more productive, 31% vs 44% discomfort, 47 to 19 minutes of standing) matches the brief, and both correctly say participants knew which desk they had. Neither introduces a factual error.\n\nResponse A covers the points a manager needs: the null productivity result, the back-discomfort benefit, the fading novelty, the key limitations, and a practical implication (justify the desks on comfort and health, not productivity). It stays under the 120-word limit at roughly 105 words.\n\nResponse B covers the same findings but runs to roughly 145 words, which breaks the word limit. Much of that length is filler (\"To summarize the main finding\", \"It is worth noting\", \"There are also a few points to keep in mind\"). It also gives the manager no implication for decisions, which is the main thing a busy reader needs.\n\nResponse A is better on the word limit, concision, and usefulness to the reader, with no accuracy cost.\n\nVerdict: A",
+  "usage": {
+    "input": 1457,
+    "output": 826
+  },
+  "cost": 0.0005587000000000001
+}

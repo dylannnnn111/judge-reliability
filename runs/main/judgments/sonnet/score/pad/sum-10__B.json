@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "sonnet",
+  "variant": "pad",
+  "pair": "sum-10",
+  "side": "B",
+  "score": 4,
+  "model": "claude-sonnet-5-5",
+  "text": "The response is mostly accurate. It gets the Green status, the 1 December go-live, the login figures (12 of 12 testers, 48s down to 21s), the budget, the reduced helpdesk risk and the next steps right. One small slip: \"steering group\" is invented, since the source only says no decisions are needed. It also leaves out some context, such as the audit covering only the first six screens and the reason the risk was reduced.\n\nThe main failure is length. The brief says under 120 words, and the response runs to roughly 160. The first paragraph alone is about 103 words, and the budget sentence takes the total past 120. It also adds filler (\"I am pleased to report\", \"Turning to\", \"Finally, I would like to note\") and writes in the first person, which suits a busy manager poorly. This breaks an explicit constraint and is not concise.\n\nScore: 4",
+  "usage": {
+    "input": 1060,
+    "output": 1194
+  },
+  "cost": 0.01406
+}

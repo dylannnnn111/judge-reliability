@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "sum-22",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A** is better, mainly because B appears to break the word limit and A doesn't.\n\n**Word limit:** A comes to roughly 104 words, so it is comfortably under the 120-word limit. By my count, B runs to about 122–127 words, depending on how headings and figures are counted. That likely breaks the user's explicit constraint.\n\n**Accuracy and coverage:** Both are accurate and cover the essentials:\n- the senior fee rise to $340 and the junior fee freeze at $180\n- the 9% turf hire increase\n- the ~$3,200 shortfall and Bryce's grant application by 14 November\n- the dugout quotes and the north-side light globe\n- presentation night details\n- the $600 gazebo\n- the cash balance\n- the next meeting date\n\n**Where B adds detail:** B includes the 5-0 vote, that cost was the main reason juniors left, and that Natalie is organising trophies. These are useful but not essential for a busy manager.\n\n**Where B's structure is weaker:** B files presentation night and the gazebo approval under \"Actions,\" though they aren't really action items.\n\nA's omissions are minor. It is tight, well grouped, and meets the length requirement.\n\n**A**",
+  "usage": {
+    "input": 1417,
+    "output": 1301
+  },
+  "cost": 0.031688
+}

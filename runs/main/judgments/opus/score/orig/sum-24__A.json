@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "orig",
+  "pair": "sum-24",
+  "side": "A",
+  "score": 8,
+  "model": "claude-opus-5-5",
+  "text": "The response handles the most important accuracy test correctly: **it applies the 8 October correction**. Saltwater Theatre Collective is listed at $14,500, not $45,000. The five grants sum to $88,200 (24,000 + 8,500 + 35,000 + 14,500 + 6,200), and $120,000 − $88,200 = $31,800 rolls over. Flagging \"corrected from $45,000\" helps a manager who may have seen the earlier figure. Dates are all correct: 31 October feedback, 30 November acquittal deadline, Round 3 open 2 February and close 16 March. At about 112 words, it is under the limit.\n\nMinor imprecisions:\n- **Quick-response grant:** It says \"$2,000\", but the minutes say \"up to $2,000\". \"Possible\" softens this, but the cap/fixed-amount distinction is lost.\n- **Acquittals:** \"Overdue\" slightly overstates the minutes. They only say the reports have not yet been submitted, with a 30 November cut-off.\n- **Reapplying:** \"Two are encouraged to reapply\" drops the condition of Round 3 with revised budgets. It also presents as done something the committee asked Sunita to do.\n- **Conflict:** The reason Jarrah left (former board member) is omitted. This is acceptable for a busy reader.\n\nNone of these is seriously misleading. Coverage of what a manager needs is good: the money, the recipients, deadlines and consequences, timing, and the pending item. It is concise, with no padding.\n\nScore: 8",
+  "usage": {
+    "input": 1333,
+    "output": 1793
+  },
+  "cost": 0.041192
+}

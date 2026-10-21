@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "opus",
+  "variant": "pad",
+  "pair": "sum-17",
+  "side": "B",
+  "score": 3,
+  "model": "claude-opus-5-5",
+  "text": "**Score: 3**\n\n**Accuracy**\n- **Misattribution:** The response says Arjun \"noted that this was the fourth weekend in a row.\" Colleen said that, not Arjun. This is the kind of who-said-what error the brief warns against.\n- **Detail shifted:** \"Amplified music… continuing past midnight\" changes Colleen's claim. She said the bar was \"going until after midnight\" with music thumping. That is close but blurs the key point: music past 10pm is the breach, while the bar being open until midnight on Saturday is allowed.\n- **Correct points:** The licence terms, Clare's explanation, the two agreed measures, the fallback complaint to the regulator, and the 20 October meeting are all right.\n- **Overstated headline:** \"Resolved for now\" goes further than the thread, which ends with \"let's see how this weekend goes.\"\n\n**Coverage**\n- **Missing:** The regulator needs evidence, ideally recordings or videos as well as logs. The response mentions only logging.\n- **Missing:** Fiona's dissent is omitted. It is minor, but it is useful context about resident sentiment.\n- **Omitted context:** The Sunday–Thursday 10pm limit on the outdoor area is left out. That is defensible for a short summary.\n\n**Concision and format**\n- **Over the word limit:** At roughly 200 words, it far exceeds the 120-word limit, which is a direct breach of the instruction.\n- **Wrong audience:** It is framed as an update to residents (\"I'd like to update residents…\") rather than a summary for a busy manager.\n- **Padding:** Phrases like \"For context\" and \"As a result of that conversation\" add words without adding information.\n\nA factual misattribution, combined with clearly breaking the length constraint and the wrong framing, outweighs the generally correct core content.\n\nScore: 3",
+  "usage": {
+    "input": 1351,
+    "output": 851
+  },
+  "cost": 0.022424
+}

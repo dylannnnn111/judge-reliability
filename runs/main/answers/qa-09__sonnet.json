@@ -1,0 +1,13 @@
+{
+  "item": "qa-09",
+  "alias": "sonnet",
+  "model": "claude-sonnet-5-5",
+  "text": "The smaller angle at 3:15 is **7.5°**.\n\n- **Minute hand:** at 15 minutes it points at the 3, which is 15 × 6° = 90° from the 12.\n- **Hour hand:** at 3:00 it is at 90°. It moves 0.5° per minute, so after 15 minutes it is at 90° + 15 × 0.5° = 97.5°.\n- **Difference:** 97.5° − 90° = 7.5°.\n\nSince 7.5° is less than 180°, it is already the smaller angle.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 60,
+    "output": 179
+  },
+  "cost": 0.00191,
+  "at": "2026-10-14T01:50:17.719Z"
+}

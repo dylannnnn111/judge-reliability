@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-15",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "B is better. Both responses catch the main bugs: the unawaited `updateLastLogin`, the two `new Date()` calls, and the partial-failure behavior in `recordLogins`. B explains more clearly why the unawaited write matters, since the caller gets a success result it cannot verify. B's read-then-write race point, with its suggestion to return the updated row, is more substantive than A's minor concern about leaking user IDs in an error message. A's duplicate-ID point is valid, but overall B's list is more relevant to the code's correctness.\n\nB",
+  "usage": {
+    "input": 1309,
+    "output": 571
+  },
+  "cost": 0.0004164
+}

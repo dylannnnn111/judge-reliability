@@ -1,0 +1,13 @@
+{
+  "item": "code-21",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**1. Duplicate refunds (critical).** `issueRefund` POSTs through a wrapper that retries on network errors and 502/503/504. Those failures often occur *after* the payments service has processed the request, so a retry can refund the same order again. Fix it in one of two ways:\n- Send an idempotency key generated once per refund intent, and have the server honor it.\n- Or pass `maxAttempts = 1` for non-idempotent methods.\n\nThe wrapper should refuse to retry POST/PATCH by default unless a key is supplied.\n\n**2. Aborts and permanent errors are retried.** The `catch` retries everything. That includes `AbortError` (the caller cancelled) and `TypeError` from a bad URL or an unreusable `ReadableStream` body. Check `init.signal?.aborted` and only retry real network failures.\n\n**3. No per-attempt timeout.** A hung connection blocks forever, so the retry loop never runs. Add an `AbortSignal.timeout` per attempt, combined with the caller's signal.\n\n**4. `Retry-After` is ignored** on 429/503. You may retry too early and worsen throttling. Honor it when present.\n\n**5. Discarded responses aren't drained.** Retryable responses are dropped without `res.body?.cancel()`. In Node/undici this holds sockets and can exhaust the pool under load.\n\n**6. Unvalidated response.** The `as { refundId }` cast can return `undefined` as a \"successful\" refund ID. Validate it before returning.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 532,
+    "output": 781
+  },
+  "cost": 0.017748,
+  "at": "2026-10-14T01:53:58.158Z"
+}

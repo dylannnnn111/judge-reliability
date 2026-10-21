@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-31",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are accurate. Every figure matches the source (142 to 156 lines per hour, 0.62 to 0.41 per cent, 17 per cent for new staff, 64 per cent preference, $210,000, 14-month payback), and both correctly flag the single-company, grocery-only limitation. Response B adds useful detail about the accuracy gain being smaller where error rates were already low and about gains settling within four weeks, but Response A conveys the core points too. Response B's bulleted structure is easy to scan, but it runs to roughly 130 words, breaking the explicit \"under 120 words\" limit. Response A comes in at about 110 words and keeps all the points a busy manager needs, including the payback and the heat-related comfort issue. Since the length cap was an explicit instruction, Response A is the better response.\n\nVerdict: A",
+  "usage": {
+    "input": 1470,
+    "output": 1012
+  },
+  "cost": 0.000653
+}

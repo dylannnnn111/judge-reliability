@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-11",
+  "order": "ba",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "The correct answer is that switching gives 1/2, so it doesn't matter. Both responses reach this conclusion.\n\nThe constraint was under 120 words. Response A is roughly 110 words. Response B is well over 120 words, around 230. So B violates the explicit length constraint.\n\nOn accuracy, A's reasoning is correct: the host opens door 2 with probability 1/2 in each case, giving 1/6 each. B says \"door 2 shows a goat for certain\" when the car is behind door 1, which is a slightly loose statement, though it is conditional on door 2 being opened. It's fine but less precise.\n\nA is better on format compliance and precision.\n\n**A**",
+  "usage": {
+    "input": 850,
+    "output": 215
+  },
+  "cost": 0.00385
+}

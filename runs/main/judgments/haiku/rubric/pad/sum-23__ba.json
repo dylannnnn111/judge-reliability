@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-23",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses get the key dates, figures and conditions right: the footpath timing, the playground in April, the 31 October feedback deadline, the $5,610 balance, the Clean Up Day and carols details, and the next meeting date. Response A has one small inaccuracy. It says council \"will install\" a speed counter on Wattle Road, but the minutes say Cr Tse would ask council traffic staff to install one and report back. Response B states this more accurately as a request. Response A also omits minor items such as Peter booking the sound system, the Facebook posting request and the sausage sizzle, but none of these is essential for a busy manager.\n\nResponse B breaks the explicit under-120-word limit. It is roughly 200 words, padded with filler such as \"Thank you all for attending,\" \"kindly provided\" and \"The main items discussed are summarised below.\" Response A is about 110 words, meets the constraint, and keeps the decisions and figures the manager needs. The accuracy edge on the speed counter is small, and it does not outweigh B's length violation and padding.\n\nVerdict: A",
+  "usage": {
+    "input": 1688,
+    "output": 1047
+  },
+  "cost": 0.0006923
+}

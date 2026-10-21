@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "sum-17",
+  "side": "B",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The summary gets most facts right: the 10pm music condition, the midnight bar closing on Friday and Saturday, Clare's apology and the new DJ explanation, the speaker and 10pm staff-check commitments, and the 20 October report-back. It has one clear error: it attributes the \"fourth weekend in a row\" point to Arjun, but Colleen raised that. Arjun's point was three other complaints this month. It also loosely says \"music running past midnight,\" when the original's after-midnight detail concerns the bar being open, and the 10pm music rule is the actual breach. Those are minor but still misleading for a manager relying on the summary. On coverage, it keeps the key decisions and next steps, though it omits that the regulator needs dated evidence and recordings, which matters if the issue recurs. On length, the body is about 140 words plus a subject line, which exceeds the 120-word limit. Accuracy is flawed, coverage is good, and the length constraint is breached.\n\nScore: 4",
+  "usage": {
+    "input": 1246,
+    "output": 1277
+  },
+  "cost": 0.0007631000000000001
+}

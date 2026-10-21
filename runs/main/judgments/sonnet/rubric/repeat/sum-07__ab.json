@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "repeat",
+  "pair": "sum-07",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both summaries are accurate on the key point. Each says the Classic CSV removal will break imports into other systems or spreadsheets, and each points to the \"Moving from Classic CSV\" help article. Neither gets a date, number or condition wrong.\n\n**Accuracy:** Response A files the bug fixes under \"Improvements\", which is a small mislabel. Response B says \"Android 9 is no longer supported\", which is slightly stronger than the source, though it adds \"won't receive updates\". The source says the app will keep working. Neither error is serious.\n\n**Coverage:** Both keep the main points: the breaking change, the Android 9 end of support, the new features and what is coming soon. A leads with the action item, which suits a manager who won't read the original. B opens with features and puts the action item second. B adds a few details, such as the 40% figure and the beta access, but these matter less to the reader.\n\n**Length:** By my count, A is about 120 words and B about 123. A is at the limit and B is over it, so A is better on the explicit constraint.\n\nA is slightly better because it leads with the action item and stays closer to the word limit.\n\nVerdict: A",
+  "usage": {
+    "input": 1401,
+    "output": 1745
+  },
+  "cost": 0.020252
+}

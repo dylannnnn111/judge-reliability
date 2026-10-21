@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "pad",
+  "pair": "sum-39",
+  "side": "B",
+  "score": 4,
+  "model": "claude-haiku-5-5",
+  "text": "The response gets most facts right: the 7-2 vote, the 1 December start, the five libraries, the $38,000 in existing fines, the exceptions for lost or damaged items and inter-library loans, the automatic unblocking, and the 12-month review. Its main accuracy problem is the \"net cost of about $33,000.\" That is the response's own subtraction, and it assumes the $19,000 in chasing costs disappears entirely, which the article doesn't say. Presenting it as a settled figure is misleading. The \"partly offset\" wording compounds this.\n\nOn the instruction to stay under 120 words, the response runs to roughly 200 words, so it fails a explicit constraint. Its structure is clear and scannable, but several lines are padding, such as \"It is also worth noting,\" and the rationale and cost bullets are wordier than a busy manager needs. Most of the key points are present, though the cost bullet is the weakest.\n\nScore: 4",
+  "usage": {
+    "input": 1159,
+    "output": 890
+  },
+  "cost": 0.0005609
+}

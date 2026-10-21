@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "repeat",
+  "pair": "code-05",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses cover the same core issues in the same sensible order: DST arithmetic, ambiguous or nonexistent local times, start-day-only weekend loading, float money math, and missing holiday handling and validation. Both are technically accurate on the Sydney DST mechanics.\n\nA is better for three reasons:\n\n- **Concrete, correct examples.** A shows that a 01:00–05:00 shift on fall-back night is paid 4h but lasts 5h, and on spring-forward night is paid 4h for 3h worked. These numbers make the bug's payroll impact concrete. B's 22:00–06:00 example is also correct but stays generic.\n- **Closer to the length limit.** A runs about 230 words and B about 260, so both exceed the 200-word limit, but B overshoots by more.\n- **Only problems that matter.** B pads its list with \"`parse_local` is called repeatedly,\" which is a minor inefficiency rather than a bug the user needs flagged. A adds a practical point instead: a missing sanity cap on shift length, so a typo'd date could pay a 300-hour shift.\n\nB's suggestion to keep minutes as integers is a small plus. It doesn't outweigh A's tighter, more concrete review.",
+  "usage": {
+    "input": 1618,
+    "output": 981
+  },
+  "cost": 0.026092
+}

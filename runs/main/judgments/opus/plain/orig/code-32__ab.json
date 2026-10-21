@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "code-32",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses flag the same four core issues in a sensible order: the `BETWEEN` upper bound dropping September 30, integer division truncating the averages, `<> 'refunded'` excluding NULL statuses, and the inner join making `HAVING` redundant.\n\n**Where B goes wrong:**\n- **Incorrect averaging fix.** B says the integer-division problem applies to SQL Server, then recommends `AVG(o.total_cents)` and `AVG(o.item_count)` as the primary fix. In SQL Server, `AVG` over an integer column returns an integer, so it still truncates. The advice fails on a platform B explicitly named.\n- **Further over the limit.** The user asked for under 200 words. B runs roughly 260 words; A is closer, at roughly 215.\n\n**Where A is stronger:**\n- **Portable fix.** A's `AVG(o.item_count * 1.0)` or `* 1.0 / COUNT` works on every engine.\n- **Broader status point.** A also notes that the status filter admits cancelled, pending, and failed orders, and ignores partial refunds.\n\n**What B does better:**\n- It points out that a `LEFT JOIN` would make the manual division divide by zero.\n- It flags the missing `ORDER BY` tiebreaker.\n\nThese are useful but minor. They don't outweigh B's incorrect fix and its larger breach of the length limit.",
+  "usage": {
+    "input": 1674,
+    "output": 1035
+  },
+  "cost": 0.027396
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-14",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "**A** is better. Both responses break the 120-word limit, but A comes much closer. A is about 144 words, while B is roughly 230, padded with a filler introduction that tells a busy manager nothing.\n\nA also covers more of the source, including the lockers and the questions contact, and it describes the exclusions accurately. B misstates the reason for the Claims and Contact Customer exclusion. It says those teams are excluded *because* their rosters will be reviewed in 2027, but the source says they are excluded because they already have rostered days.",
+  "usage": {
+    "input": 1436,
+    "output": 1283
+  },
+  "cost": 0.015702
+}

@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-19",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**Response B is better.**\n\n**Core issues.** Both responses identify the same issues in a sensible order:\n1. `forEach(async)` isn't awaited.\n2. Rejections escape `main`'s catch.\n3. The `thumbs` directory is never created.\n4. Concurrency is unbounded.\n5. The command-line argument isn't validated.\n6. Directories with image-like names are passed to `resize`.\n\n**Accuracy.**\n- Response A says the script \"may exit while work is still running.\" That is misleading. Node won't exit while pending async work exists, because nothing calls `process.exit` on success.\n- Response A frames unbounded concurrency as a problem that would appear only \"after fixing #1 with Promise.all.\" In fact the current code already starts every resize at once, which Response B states correctly.\n- Response A's minor point about nondeterministic output order is shaky, since `Promise.all` with `map` preserves order.\n- Response A's last bullet is muddled and partly self-contradictory.\n\n**Length.** The user asked for under 200 words. Response A runs roughly 300 words, and the extra content is largely low-value or confused. Response B is close to the limit, tighter, and gives one coherent fix covering issues 1, 2 and 4: sequential processing with per-file error reporting.\n\n**Fixes.** Response A does offer slightly more fix options, such as `Promise.allSettled` and `p-limit`. That does not offset its inaccuracies or its disregard for the length constraint.\n\nVerdict: B",
+  "usage": {
+    "input": 1684,
+    "output": 874
+  },
+  "cost": 0.024216
+}

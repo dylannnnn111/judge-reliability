@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "orig",
+  "pair": "qa-09",
+  "order": "ab",
+  "shown": null,
+  "verdict": null,
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses give the correct answer of 7.5° and use the same method. Both are well under 120 words.\n\nResponse B explains more. It says the minute hand points at the 3, and it notes that 7.5° is below 180°, so it is already the smaller angle. That last point speaks directly to the \"smaller angle\" wording in the question. Response A is more concise but leaves that step out.\n\nBecause B covers the \"smaller\" requirement explicitly and stays within the word limit, B is slightly better.\n\n**B**",
+  "usage": {
+    "input": 431,
+    "output": 159
+  },
+  "cost": 0.002452
+}

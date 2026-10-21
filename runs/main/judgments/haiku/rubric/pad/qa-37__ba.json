@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-37",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses give the correct core answer: Uluru is red because of iron oxides (rust) formed by weathering of iron-bearing minerals in its arkose sandstone. Both also correctly note that the interior is grey and that sunset colours come from low-angle light.\n\nResponse B explains the sunset mechanism more precisely, describing atmospheric scattering of blue wavelengths, and names hematite. However, it runs to roughly 175 words, well over the \"under 120 words\" limit. Response A stays within the limit (about 110 words) while covering the same key reasoning. A's explanation of the sunset colours is less precise, but it is still correct. Since B breaks an explicit constraint and the extra detail doesn't outweigh that, A is the better response.\n\nVerdict: A",
+  "usage": {
+    "input": 869,
+    "output": 532
+  },
+  "cost": 0.00035289999999999996
+}

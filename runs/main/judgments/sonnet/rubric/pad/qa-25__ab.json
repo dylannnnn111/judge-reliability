@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-25",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "The user asked for an answer in under 120 words, so I'll start by checking each response against that limit.\n\nResponse A is roughly 115 words. Counting: \"No, Viking warriors didn't wear horned helmets. This is a popular myth.\" = 12. \"The evidence: Only one fairly complete Viking-age helmet has been found: the Gjermundbu helmet from Norway (10th century).\" = 18, total 30. \"It's a simple rounded iron cap with a spectacle-like face guard and no horns.\" = 14, total 44. \"Many warriors likely wore leather caps or no helmet at all, since iron was expensive.\" = 15, total 59. \"Where the myth came from: It largely stems from the 19th century.\" = 12, total 71. \"Romantic artists and costume designer Carl Emil Doepler, who outfitted Wagner's opera Der Ring des Nibelungen (1876), popularized horned helmets.\" = 20, total 91. \"A grain of truth: Horned helmets did exist in Scandinavia, but in the Bronze Age, centuries before the Vikings, and they were probably ceremonial rather than for battle.\" = 27, total 118. That is about 118, under 120 but close.\n\nResponse B is clearly over 120 words, probably around 190. That breaks the explicit constraint.\n\nOn correctness, both are accurate. B's claim that the Veksø helmets predate the Vikings by about 1,500 years is roughly right, since they date to about 900 BC. B's mention of Malmström is also accurate. Even so, B violates the length constraint and A does not.\n\nA is better.\n\nVerdict: A",
+  "usage": {
+    "input": 906,
+    "output": 524
+  },
+  "cost": 0.007052
+}

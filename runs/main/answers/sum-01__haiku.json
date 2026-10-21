@@ -1,0 +1,13 @@
+{
+  "item": "sum-01",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "**Q1 board pack: regional submissions due Friday 30 October, close of business (moved up from 4 November).** The board meeting has been brought forward a week. Each region must send variance commentary, the updated headcount table, and the capex forecast, using the new template on the shared drive (Finance > Board > 2026-27 > Templates). The template adds a software subscriptions split, which the board requested. Commentary is required for variances over the smaller of $50,000 or 10%. Paste numbers rather than screenshots. If you're on leave, nominate cover and tell Priya. Marcus is running an optional template walkthrough on Thursday at 2pm in the Level 6 boardroom. Regions with a problem meeting the new deadline should call Priya today.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 661,
+    "output": 479
+  },
+  "cost": 0.0003056,
+  "at": "2026-10-14T01:51:03.807Z"
+}

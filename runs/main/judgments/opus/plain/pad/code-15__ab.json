@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-15",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nResponse A stays within the 200-word limit (about 195 words) and orders its issues correctly. It puts the unawaited write first and the minor read-then-write race last. Its points are accurate. For example, it correctly notes that in `recordLogins` the earlier logins are already persisted when a later one throws.\n\nResponse B runs to roughly 330 words, which clearly breaks the length limit. It also has a factual error: it says logins recorded \"before or after\" the failing user are lost. Because the loop runs sequentially and stops at the first throw, nothing after the failure is ever recorded. B's extra points pad the response past the limit without adding much. Duplicate IDs are questionable as a bug, and the user ID in the error message is weak.",
+  "usage": {
+    "input": 1489,
+    "output": 889
+  },
+  "cost": 0.023736
+}

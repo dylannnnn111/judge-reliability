@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "sum-15",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are broadly accurate. Response A reports the key figures correctly (22% fewer lane drifting events, 0.09 s faster reaction time), the split by night-shift experience, the 7am versus 6am drive finding, and the limitations. Response B is also accurate, though it says \"6 or more months\" where the source says \"more than six months,\" a minor imprecision.\n\nThe decisive difference is the length constraint. Response A is roughly 110 words, under the 120-word limit. Response B runs to roughly 220 words, nearly double the limit, and includes padding such as \"Put differently\" and the repeated framing sentences. Its extra words don't add substantive content that A lacks, so the length is not justified. A busy manager gets the same essential points faster from A, which is formatted for quick scanning.\n\nVerdict: A",
+  "usage": {
+    "input": 1568,
+    "output": 798
+  },
+  "cost": 0.0005558
+}

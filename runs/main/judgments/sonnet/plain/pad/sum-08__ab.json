@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-08",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better. It is under 120 words (about 117) and covers the key points a manager needs: the purchase, the 90-day policy, the replacement booked for Wednesday, the separate Frostline collection, the outstanding claim form, the $500 threshold, and the escalation to Amara Osei on 9 October. Its one weakness is the failure date of \"29 September\". That date is inferred from \"Sunday\" and the year isn't given, so it is an unsupported guess.\n\nA is much worse. It runs well over 120 words and is padded with filler such as \"I would like to summarise\" and \"kindly disregard\". It also states an incorrect failure date (4 Oct) and then retracts it in a correction at the end, which is confusing in a summary for a busy manager. Its content is otherwise similar to B's, but the format and the self-correction undermine it.\n\n**B**",
+  "usage": {
+    "input": 1685,
+    "output": 835
+  },
+  "cost": 0.01172
+}

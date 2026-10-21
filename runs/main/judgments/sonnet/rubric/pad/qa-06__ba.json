@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "qa-06",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Check the date: Dec 15 + 16 days = Dec 31. 100 − 16 = 84. Minus 31 (Jan) = 53. Minus 29 (Feb) = 24. So March 24, 2028. Both responses give this.\n\nWeekday: 100 mod 7 = 2, so Wednesday + 2 = Friday. Was Dec 15, 2027 a Wednesday? Dec 15, 2027 is in fact a Wednesday. March 24, 2028 is a Friday, so this is consistent.\n\nBoth are correct. The question is length and clarity. The limit is under 120 words. Response A is about 60 words. Response B is about 150 words, which exceeds the limit of 120.\n\nCounting B: the heading is 4 words. The first bullet is about 20 words. \"Next, January, which has 31 days, is counted, and this leaves 53 days remaining.\" is about 14. The next bullet is about 20. The last is about 18. Then \"To work this out, I counted forward in stages, beginning from the starting date in the calculation. Here is the step-by-step process:\" is about 23. The weekday paragraph is about 45. Total is around 150, which is over 120.\n\nA satisfies the constraint and B violates it. A is better.\n\nVerdict: A",
+  "usage": {
+    "input": 667,
+    "output": 414
+  },
+  "cost": 0.005474
+}

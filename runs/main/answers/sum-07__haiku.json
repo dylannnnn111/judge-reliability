@@ -1,0 +1,13 @@
+{
+  "item": "sum-07",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "**Ledgerly 5.0 (released 21 October 2026)** adds recurring invoice templates, bulk payment reminders with customisable wording per client, and dark mode. The dashboard loads about 40% faster for large accounts, client search now matches ABN and email, and several bugs are fixed.\n\n**Action needed:** The Classic CSV export has been removed. If your team imports that file into another system or a spreadsheet, the import will break after the update, because the new format uses different column names and a separate GST column. The help article \"Moving from Classic CSV\" has a column mapping table.\n\n**Also:** Android 9 is no longer supported and won't receive updates. Multi-currency invoicing and a credit union bank feed are coming soon, with early access through the beta program.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 656,
+    "output": 620
+  },
+  "cost": 0.0003756,
+  "at": "2026-10-14T01:51:16.928Z"
+}

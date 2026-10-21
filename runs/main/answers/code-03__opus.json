@@ -1,0 +1,13 @@
+{
+  "item": "code-03",
+  "alias": "opus",
+  "model": "claude-opus-5-5",
+  "text": "**1. SQL injection (critical).** `customer_email` is interpolated into the query with an f-string. Input like `' OR '1'='1` returns every customer's orders, and crafted input could do worse. Parameterize both values:\n\n```python\nquery = \"SELECT id, total_cents, status FROM orders WHERE email = ?\"\nparams = [customer_email]\nif status:\n    query += \" AND status = ?\"\n    params.append(status)\ncur.execute(query, params)\n```\n\n**2. Connection leak.** `conn` is never closed, so each call leaks a file handle. Under portal load this can exhaust descriptors or hold locks. Use `contextlib.closing(sqlite3.connect(...))` or `try/finally: conn.close()`. Note that `with sqlite3.connect(...)` alone does *not* close the connection.\n\n**3. Email matching is brittle.** The comparison is exact and case-sensitive, so `Alice@x.com` won't find `alice@x.com`, and stray whitespace from copy-paste misses too. Normalize with `strip().lower()` on input, and store emails normalized or use `COLLATE NOCASE`.\n\n**4. No ordering or limit.** Results come back in arbitrary order, and a heavy customer returns unbounded rows. Add `ORDER BY` (e.g., created date DESC) and a `LIMIT` or pagination.\n\n**5. Minor:**\n- `if not rows: return []` is redundant because the comprehension already returns `[]`.\n- `if status:` treats `\"\"` as \"no filter\". Use `is not None` if that matters.\n- Consider audit-logging staff lookups of customer data.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 302,
+    "output": 801
+  },
+  "cost": 0.017228,
+  "at": "2026-10-14T01:52:54.497Z"
+}

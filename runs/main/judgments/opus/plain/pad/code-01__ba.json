@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "code-01",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A**\n\nBoth responses flag the same core issues: no idempotency, a single failure aborting the batch, float truncation undercharging, silently skipped non-positive totals, missing input validation, and a hard-coded tax rate. Both truncation examples are correct (`10.29 * 100` and `19.99 * 100` each fall just below the whole cent).\n\nThe difference is the \"under 200 words\" constraint:\n\n- **Response A** comes in at roughly 200 words, so it essentially meets the limit. It is tight, ordered sensibly, and gives a concrete fix for each issue.\n- **Response B** runs to about 330 words, well over the limit. It also pads with filler, such as an opening sentence repeating that the list is ordered by severity and phrases like \"Put plainly.\" It adds a couple of useful points, like billing-period scoping and NaN/inf being accepted by `float()`, but these don't make up for ignoring an explicit length requirement.",
+  "usage": {
+    "input": 1535,
+    "output": 967
+  },
+  "cost": 0.02548
+}

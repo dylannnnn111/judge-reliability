@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-08",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses catch the same core problems: swallowed exceptions followed by an unconditional move to `done`, half-written SFTP uploads, non-idempotent partial imports, missing locking, `os.rename` overwriting archives, the unclosed file handle, and whole-file memory use. Both rank the swallowed-failure bug first, which is the right call. Response A adds two real points that B omits: a rename error aborts the entire loop, and `imported` is misleading because it counts records from files that later failed. Response B catches the case-sensitive `.jsonl` filter, which is a legitimate minor issue, and its quarantine suggestion for bad lines is useful. However, B's claim that `os.rename` \"fails across filesystems\" is weak here, since `INBOX` and `DONE` share a parent and are likely on the same filesystem, and that point is presented as a problem when it is not one in this setup. Both fixes are sensible and both stay within the word limit. A is slightly more accurate and covers slightly more of the real failure modes, so I lean toward A.\n\nVerdict: A",
+  "usage": {
+    "input": 1561,
+    "output": 1068
+  },
+  "cost": 0.0006901
+}

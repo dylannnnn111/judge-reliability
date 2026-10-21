@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "code-11",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses find the same core issues in the same order: the check-then-act race in `reserve`, the process-local lock, missing `qty` validation, unguarded `release`, and the global lock. Both give correct fixes for the main race and the multi-process problem.\n\n**Response A:**\n- Gives a concrete code fix for the race.\n- Adds that `available()` is only advisory, which is accurate but largely a restatement of the first point.\n- Comes to roughly 200 words, so it just about meets the limit.\n\n**Response B:**\n- Notes that the lock is held during DB I/O, which is a slightly sharper point about the global lock.\n- Adds an unknown-SKU `None` → `TypeError` case. This is speculative, since it depends on how `db.get_stock` behaves.\n- Adds \"abandoned carts never release anything,\" which assumes code outside the snippet.\n- Comes to roughly 230 words, which clearly breaks the \"under 200 words\" constraint.\n\nThe substantive content is nearly equal. B's extras are marginal or speculative, and B overruns the length limit more clearly. A stays closer to the limit and shows the fix as code.\n\nVerdict: A",
+  "usage": {
+    "input": 1553,
+    "output": 2011
+  },
+  "cost": 0.023216
+}

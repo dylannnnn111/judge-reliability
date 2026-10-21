@@ -1,0 +1,15 @@
+{
+  "kind": "score",
+  "judge": "haiku",
+  "variant": "orig",
+  "pair": "qa-10",
+  "side": "A",
+  "score": 9,
+  "model": "claude-haiku-5-5",
+  "text": "The response gives the correct answer, 1/3. It lists the four equally likely birth-order outcomes, removes BB because the condition excludes it, and notes that only GG among the remaining three has two girls. It also explains the common confusion with 1/2, distinguishing \"at least one girl\" from \"a specific child is a girl.\" The reasoning is sound and clearly organized, and at roughly 108 words it fits the under-120 limit. The only minor redundancy is stating the answer twice.\n\nScore: 9",
+  "usage": {
+    "input": 441,
+    "output": 523
+  },
+  "cost": 0.0003056
+}

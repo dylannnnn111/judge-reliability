@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "opus",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "qa-26",
+  "order": "ba",
+  "shown": "A",
+  "verdict": "B",
+  "model": "claude-opus-5-5",
+  "text": "**A.** Response A explains the science correctly in about 116 words, staying within the 120-word limit. It also covers why the sky looks blue rather than violet. Response B is also accurate, but it runs to roughly 200 words and violates the length constraint. It also opens with filler (\"You may be curious…\") and repeats points.",
+  "usage": {
+    "input": 701,
+    "output": 748
+  },
+  "cost": 0.017764
+}

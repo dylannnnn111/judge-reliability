@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-24",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Both responses answer \"No\" to both questions, and both are correct. Both also stay under the 120-word limit: A is about 104 words and B about 117.\n\n**Response A:**\n- It correctly gives Mauna Kea's base-to-peak height (about 10,200 m) and the equatorial-bulge explanation for Chimborazo.\n- It never says how tall Everest is from base to peak, so the first \"No\" is only half supported. It gives Everest's height above sea level, which is not the quantity being compared.\n\n**Response B:**\n- It gives the same Mauna Kea and Chimborazo facts, plus a specific distance from the centre (about 6,384 km) and Chimborazo's elevation (6,263 m).\n- It states Everest's base-to-peak rise (roughly 4,600–5,000 m), which directly shows why Everest loses on that measure. Those figures are plausible.\n- It ends with a clear summary line that Everest holds the record only for elevation above sea level.\n- Its claim that Chimborazo is \"the farthest point on the surface\" is the standard one.\n\nB supports both \"No\" answers more fully and is organised more clearly, at no cost in correctness or length.\n\nVerdict: B",
+  "usage": {
+    "input": 777,
+    "output": 1344
+  },
+  "cost": 0.014994
+}

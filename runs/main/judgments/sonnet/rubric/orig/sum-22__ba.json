@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "sum-22",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-sonnet-5-5",
+  "text": "Response B is better. It is accurate and stays under the 120-word limit, at about 107 words. It leaves out the 5-0 vote and Natalie's trophy duty, but these are minor for a busy manager.\n\nResponse A comes to about 126 words, which breaks the explicit limit. It also says the fee rise \"covers\" the turf cost increase, when the minutes say the rise still leaves a roughly $3,200 shortfall. Its extra detail (the vote count and the trophies) adds little, so the overrun is not justified.\n\nBoth responses give the same key facts correctly: the fee decisions, the shortfall and grant, the grounds work, presentation night, the gazebo and the next meeting.\n\nVerdict: B",
+  "usage": {
+    "input": 1571,
+    "output": 1341
+  },
+  "cost": 0.016552
+}

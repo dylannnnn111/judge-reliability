@@ -1,0 +1,13 @@
+{
+  "item": "qa-38",
+  "alias": "haiku",
+  "model": "claude-haiku-5-5",
+  "text": "The ozone hole forms because Antarctic winter creates extremely cold stratospheric conditions, producing polar stratospheric clouds. Their surfaces convert stable chlorine reservoirs (like HCl and ClONO₂) into reactive forms such as Cl₂ and HOCl. The polar vortex, a strong circulation that isolates the air, keeps these reactions concentrated.\n\nSpring brings sunlight back. When sunlight returns, it splits Cl₂ and other compounds, releasing chlorine radicals that catalytically destroy ozone (O₃) at enormous rates. Ozone loss peaks in September and October, then the hole gradually closes as the vortex breaks down and fresh ozone-rich air mixes in.",
+  "stop": "end_turn",
+  "usage": {
+    "input": 56,
+    "output": 247
+  },
+  "cost": 0.0001291,
+  "at": "2026-10-14T01:50:58.803Z"
+}

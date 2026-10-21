@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "sonnet",
+  "format": "plain",
+  "variant": "pad",
+  "pair": "sum-35",
+  "order": "ab",
+  "shown": "B",
+  "verdict": "B",
+  "model": "claude-sonnet-5-5",
+  "text": "B is better, mainly because it respects the word limit. By my count it comes to about 118 words, just under 120. A runs to roughly 170 words, which breaks the explicit constraint.\n\nBoth summaries are broadly accurate. They cover the key points:\n- the Annexure C standard\n- the 30 June 2027 deadline\n- the kitchenette exception\n- the payment alternative with three months' notice\n- the daily rent for overruns\n- the bond\n\nB also uses a bulleted layout that suits a busy manager who will skim.\n\nOne small point in B's favour is accuracy. It names Marlow & Quay as the tenant, whereas A uses \"we\", which could confuse a reader who doesn't know who is speaking.\n\nB's fault is that it omits that the payment is the landlord's reasonable estimate, but A omits this too.\n\n**B**",
+  "usage": {
+    "input": 1396,
+    "output": 1718
+  },
+  "cost": 0.019972
+}

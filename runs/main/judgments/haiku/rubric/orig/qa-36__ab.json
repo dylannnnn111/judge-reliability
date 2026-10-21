@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "orig",
+  "pair": "qa-36",
+  "order": "ab",
+  "shown": "A",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses are broadly correct and cover the pressure-difference explanation and the Newton's third law view. Response A's \"deflecting air downward\" framing is the more accurate main explanation, and it presents the pressure and Newtonian views as equivalent, which is correct. It also adds useful reasoning: how speed and angle of attack affect lift, and why excessive angle causes a stall. Response B's claim that the flatter lower surface \"keeps air slower\" is a simplification that attributes the lower-surface pressure mainly to shape, when angle of attack matters as much. B's mention of Bernoulli's principle is fine but adds little beyond A. Both are under 120 words. A is slightly more accurate and gives more of the key reasoning.\n\nVerdict: A",
+  "usage": {
+    "input": 685,
+    "output": 611
+  },
+  "cost": 0.000374
+}

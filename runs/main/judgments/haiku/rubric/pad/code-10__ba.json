@@ -1,0 +1,17 @@
+{
+  "kind": "pair",
+  "judge": "haiku",
+  "format": "rubric",
+  "variant": "pad",
+  "pair": "code-10",
+  "order": "ba",
+  "shown": "B",
+  "verdict": "A",
+  "model": "claude-haiku-5-5",
+  "text": "Both responses identify the core bug: `SLUG_RE.match` anchors only the start of the string, and `<path:slug>` accepts slashes, so traversal is possible. Both also flag the missing authentication, the `exists`/TOCTOU issue, and the missing attachment and download-name handling. Response A adds per-report authorization, `Cache-Control` for sensitive files, and a useful `send_from_directory` fix, and it correctly notes that `exists` returns true for directories. Response B catches the symlink escape, which A misses, and its fix (\"resolve the real path and verify containment\") is a real concern. B's sixth point is weak, since falling through to 404 is not a meaningful problem.\n\nThe user asked for under 200 words. Response A runs roughly 380 words, nearly double the limit, and its extra material is mostly useful but not essential. Response B runs closer to 220 words, still slightly over, but much nearer the constraint while covering the important issues and adding the symlink point. Given the explicit length limit, B's tighter delivery is the better fit, though A's content is somewhat richer.\n\nVerdict: B",
+  "usage": {
+    "input": 1715,
+    "output": 1349
+  },
+  "cost": 0.000846
+}

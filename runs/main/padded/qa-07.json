@@ -1,0 +1,14 @@
+{
+  "pair": "qa-07",
+  "side": "B",
+  "author": "opus",
+  "model": "claude-haiku-5-5",
+  "original": "30 mpg (US) is about **7.8 L/100 km**.\n\n**Working:**\n- 1 US gallon = 3.785 L; 1 mile = 1.609 km\n- 30 miles = 48.28 km, so the car travels 48.28 km on 3.785 L, or 12.75 km per litre\n- 100 km ÷ 12.75 km/L ≈ **7.84 L**\n\n**Shortcut:** L/100 km ≈ 235.2 ÷ mpg (US). So 235.2 ÷ 30 ≈ 7.84.\n\nUS test figures (EPA) can differ from Australian ratings, so real-world comparisons may vary somewhat.",
+  "text": "To answer your question, 30 miles per gallon (US) works out to about **7.8 L/100 km**.\n\n**Working:**\n- To begin, recall the two conversion factors needed: 1 US gallon = 3.785 L, and 1 mile = 1.609 km.\n- Applying the mile conversion, 30 miles = 48.28 km. This means the car travels 48.28 km on 3.785 L, or 12.75 km per litre.\n- Finally, 100 km ÷ 12.75 km/L ≈ **7.84 L**, which matches the figure given above.\n\n**Shortcut:** There is also a quicker route to the same result. L/100 km ≈ 235.2 ÷ mpg (US). So, for this car, 235.2 ÷ 30 ≈ 7.84.\n\nI hope this helps. Please note that US test figures (EPA) can differ from Australian ratings, so real-world comparisons may vary somewhat.",
+  "ratio": 1.62,
+  "usage": {
+    "input": 408,
+    "output": 887
+  },
+  "cost": 0.0004843
+}
