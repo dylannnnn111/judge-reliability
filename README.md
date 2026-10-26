@@ -1,5 +1,7 @@
 # Who Judges the Judge
 
+[![CI](https://github.com/dylannnnn111/judge-reliability/actions/workflows/ci.yml/badge.svg)](https://github.com/dylannnnn111/judge-reliability/actions/workflows/ci.yml)
+
 A small, careful study of how far you can trust an LLM to grade other LLMs. Three Claude models answer 120 requests, I label the better answer in each pair by hand, and the same three models then judge every pair in three prompt formats. The question is how often the judges agree with a person, and how much of what they decide comes from things that shouldn't matter:
 
 - **Position:** does the judge favour whichever answer it reads first?
